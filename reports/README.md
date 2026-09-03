@@ -21,3 +21,10 @@ Raw corpora, caches, deduplication databases, logs, TensorBoard event files,
 and checkpoints are intentionally excluded. They are large, mutable, or may
 contain source text. Model weights will use a model-artifact release after the
 training and evaluation gates complete, rather than normal Git history.
+
+`environment-receipt.json` was captured before the final data-pipeline and
+launcher fixes, so its package/hardware fields remain useful while its embedded
+`project_sha256` map is historical. Use
+`production-source-comparison.json` for the post-launch comparison: 18 of 19
+production files match byte-for-byte, while `hf_config.py` differs only by one
+trailing blank line and has the same normalized SHA-256.

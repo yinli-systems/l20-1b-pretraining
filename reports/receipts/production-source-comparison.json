@@ -1,0 +1,46 @@
+{
+  "captured_at": "2026-09-03T14:42:36+08:00",
+  "repository": "yinli-systems/l20-1b-pretraining",
+  "source_code_commit": "bfeb946f5f491baac9e278c4952e74c5557ce614",
+  "gpu_source_root": "/home/hhai/pretrain/src/hq-pretrain",
+  "summary": {
+    "files_compared": 19,
+    "exact_matches": 18,
+    "normalized_matches": 19,
+    "tokenizer_files_exact": 5
+  },
+  "files": {
+    "pipeline_config.json": "62c10abdb1f0655f7e1d9d1eea2483302443c6ca21262acbe42fa8665be5434a",
+    "benchmark_model.py": "3c08090b48ed873e3626d141958cf78b92778f9e00da862ef9c54fd3e569b5dd",
+    "build_data.py": "dfefea9a17b9e55d9d6179d021fe18b0767bfbf89877357a132624daf09a2ff7",
+    "build_decontam.py": "2373429a1b03d5d27b5b800cec4ae62f4838238d12afad2d3a06983357f94eb2",
+    "capture_environment.py": "7af0482d464862ebcab8e76f483f2f54593ef798b091760d09861ff6dc20f072",
+    "convert_litdata.py": "4e94445feb870de1c819e41b213e23184628d23361037a8be11a2d64568759ae",
+    "data_module.py": "aef4ab86cc4749a39cdcba3299bb94078b4c5d71bfa22d9c25549b58aaa42579",
+    "evaluate_final.py": "43d76149d30c52a0bd600963fccf4f23d05fa8f7764a341c615ae27998d643a3",
+    "evaluation_watcher.py": "75812fcb730554d56978f6aa550310fb408b5dcdf14b3289b92fd72669e3bd79",
+    "pack_data.py": "e6ce3b9ce6602bd3ef3aff4c3c1514ab71ff2df9120afb8e29cad43d9ea9d415",
+    "pipeline_watchdog.py": "d2fbf7e0d80b089cea197667d1e57ec0b030ba93b577d1f60323432c060f5707",
+    "production_supervisor.py": "1b789838a52337b25947143b8ecca54117994ae03fd7abdfe10c5457b8d9e711",
+    "prune_checkpoints.py": "c0c6d3d78c98fa6cae027ee0d149ee8fb29ceb35836ad29f89301668d3631d20",
+    "run_gate.py": "6cd6c98267eb5d9941a3859077d4b83b38eedd99345907ac553fb65ea51cedbe",
+    "run_pretrain.py": "7139d5dadc46eef84085fb7a986f5a46ff7b8edc48264b638f77e9af63a417a4",
+    "sample_tokenizer.py": "47ae5aaeb6391f88cf275b44aafc3d6388ecffc7270145190067b9586e7a026f",
+    "source_docs.py": "f53a3bc8df592985de8cbf10a3604cd7e10cc56a82c99c902ce776cd3a71ea58",
+    "train_tokenizer.py": "0ad9b1ff4c78cba0e84dd29edbd29cbc70e4bdc98bc056fe50eb7aab73dd03d3"
+  },
+  "normalized_only_match": {
+    "file": "hf_config.py",
+    "repository_sha256": "b2b169ebed192ee1a0eb4cf3541d9ece260086a3821d218900a553668b9bd8b5",
+    "gpu_sha256": "8fd5948a99c3750a41e47f75ae1a4bad1843c975aac855b45f88f9d6fab13e29",
+    "normalized_sha256": "b2b169ebed192ee1a0eb4cf3541d9ece260086a3821d218900a553668b9bd8b5",
+    "difference": "GPU copy has one additional trailing blank line; executable content is identical."
+  },
+  "tokenizer_sha256": {
+    "config.json": "b9310f5a84d88f7a6dc84782fd6cec531f4d576c2881106dc1914e58ced67ebe",
+    "generation_config.json": "79cca6a73efb58dca56ba0f7a6a59257a5e4de6eb4417baa44f26298f0d1241e",
+    "tokenizer.json": "e755dfeeed1acab465839adc0988811983a3287db230a8d9bc0f74704208609c",
+    "tokenizer_config.json": "8d3942f70ed4c1520bed7f0ee7fdb41d6cccca1f29ea19fed94f0d601512b069",
+    "validation.json": "a567cf7c20e89365da4c4112085f764b926e149aa0409f40db52d79a56c4ece2"
+  }
+}
