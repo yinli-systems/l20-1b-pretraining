@@ -1,0 +1,48 @@
+{
+  "date": "2026-08-23",
+  "device": "NVIDIA L20",
+  "cuda_runtime": "13.0",
+  "torch": "2.12.1+cu130",
+  "model": "tiny-llama-1.1b",
+  "parameters": 1100048384,
+  "sequence_length": 2048,
+  "precision": "bf16-mixed",
+  "torch_compile": true,
+  "runs": [
+    {
+      "micro_batch_size": 4,
+      "measured_steps": 10,
+      "tokens_per_second": 12274.280878357904,
+      "peak_allocated_gib": 28.84268045425415,
+      "peak_reserved_gib": 31.001953125,
+      "status": "pass"
+    },
+    {
+      "micro_batch_size": 6,
+      "measured_steps": 60,
+      "tokens_per_second": 12586.170876605223,
+      "peak_allocated_gib": 36.131224155426025,
+      "peak_reserved_gib": 36.294921875,
+      "status": "pass"
+    },
+    {
+      "micro_batch_size": 8,
+      "status": "oom_on_second_warmup_backward",
+      "memory_in_use_gib": 44.17,
+      "free_mib": 215.31,
+      "failed_allocation_mib": 1000
+    }
+  ],
+  "telemetry": {
+    "samples": 12,
+    "sm_utilization_percent_min": 100,
+    "sm_utilization_percent_max": 100,
+    "power_watts_min": 343,
+    "power_watts_max": 358,
+    "framebuffer_mib": 37531
+  },
+  "selected_micro_batch_size": 6,
+  "selected_gradient_accumulation": 85,
+  "selected_effective_global_batch_sequences": 510,
+  "estimated_compute_only_days_for_20b": 18.39
+}

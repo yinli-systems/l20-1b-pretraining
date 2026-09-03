@@ -1,0 +1,87 @@
+{
+  "completed_unix": 1787552341.2013974,
+  "source_priority": [
+    "math",
+    "code",
+    "web",
+    "dclm"
+  ],
+  "sources": {
+    "code": {
+      "actual_train_tokens": 2423999784,
+      "actual_validation_tokens": 2423967,
+      "manifest_sha256": "bc615a89bd0e53ecc8572a4d8561ddab3697157cc6ad917f54be85a07d9db337",
+      "requested_train_tokens": 2424000000,
+      "splits": {
+        "train": {
+          "index_sha256": "cc63ca726e697318711cdf685dafe290619a3713fe2d9cb2975353022fc040d3",
+          "npy_tokens": 2423999784,
+          "packed_tokens": 2423999784
+        },
+        "val": {
+          "index_sha256": "a8b13c7e88b0838507191cd331f2c644ed85243fca87d0445bf99982a8a4a604",
+          "npy_tokens": 2423967,
+          "packed_tokens": 2423967
+        }
+      }
+    },
+    "dclm": {
+      "actual_train_tokens": 8584998552,
+      "actual_validation_tokens": 8583261,
+      "manifest_sha256": "96e5d65eeac57f49613ae8d2a43eda9456c6c9dfc92518067425aec74e574ef2",
+      "requested_train_tokens": 8585000000,
+      "splits": {
+        "train": {
+          "index_sha256": "5824674aef40fea758f757737e3da1940274eeb55395eec911caeac05d0c8800",
+          "npy_tokens": 8584998552,
+          "packed_tokens": 8584998552
+        },
+        "val": {
+          "index_sha256": "d64b3b2e4e63d03c2a6348dc23de90b7a0ad250ef1a738e89512331f295be57f",
+          "npy_tokens": 8583261,
+          "packed_tokens": 8583261
+        }
+      }
+    },
+    "math": {
+      "actual_train_tokens": 1107142317,
+      "actual_validation_tokens": 1022451,
+      "manifest_sha256": "f9f4619123292e72d5993455da7c1b145c41b078780f95498fd02bd133ab6d8b",
+      "requested_train_tokens": 606000000,
+      "splits": {
+        "train": {
+          "index_sha256": "c00d54b1014f70a19de78e5de7660d744561ce69c280f5ffd872ba55e01681fa",
+          "npy_tokens": 1107142317,
+          "packed_tokens": 1107142317
+        },
+        "val": {
+          "index_sha256": "a103172367abbfe4b63b559b09127eaf2692c3bbec2371a528683c5ebb7505e8",
+          "npy_tokens": 1022451,
+          "packed_tokens": 1022451
+        }
+      }
+    },
+    "web": {
+      "actual_train_tokens": 8584998552,
+      "actual_validation_tokens": 8583261,
+      "manifest_sha256": "966e7ebee5017095a05fb1dd73523736498a18ede497077bbc128929c9f1f9b9",
+      "requested_train_tokens": 8585000000,
+      "splits": {
+        "train": {
+          "index_sha256": "8fa7bf4e6092fdc907e99a8cd1cea4b011afe47d3fe359f76d2a2e65f9f59096",
+          "npy_tokens": 8584998552,
+          "packed_tokens": 8584998552
+        },
+        "val": {
+          "index_sha256": "240769d2bf12d2c1447952cd09d9f30dbef54832d564730b04a1b08d498a5026",
+          "npy_tokens": 8583261,
+          "packed_tokens": 8583261
+        }
+      }
+    }
+  },
+  "stage": "full",
+  "started_unix": 1787512202.74906,
+  "total_train_tokens": 20701139205,
+  "total_validation_tokens": 20612940
+}

@@ -1,0 +1,38 @@
+{
+  "active_gpu_mean_percent": 99.54970178926442,
+  "active_gpu_samples": 1006,
+  "active_power_mean_w": 345.7040258449304,
+  "checkpoints": [
+    {
+      "bytes": 13200786351,
+      "path": "/home/hhai/pretrain/checkpoints/gate/step-00000500"
+    },
+    {
+      "bytes": 13200786351,
+      "path": "/home/hhai/pretrain/checkpoints/gate/step-00001000"
+    }
+  ],
+  "data_receipt": "/home/hhai/pretrain/manifests/data-gate-receipt.json",
+  "final_validation_losses": [
+    5.285
+  ],
+  "finite_losses": true,
+  "logged_iterations": 1000,
+  "median_steady_iteration_ms": 1000.28,
+  "micro_batch_size": 6,
+  "no_nonfinite_markers": true,
+  "passed": true,
+  "peak_memory_mib": 40795.0,
+  "resume_returncode": 0,
+  "resume_seconds": 129.696452870965,
+  "steady_tokens_per_second": 12284.560323109528,
+  "train_returncode": 0,
+  "trained_tokens": 12288000,
+  "validation_losses": [
+    6.2327,
+    5.7374,
+    5.4292,
+    5.2849
+  ],
+  "wall_seconds": 1225.2467776173726
+}

@@ -1,0 +1,15 @@
+{
+  "action": "permanent_home_cleanup_before_fresh_pretraining",
+  "scope": "/home/hhai",
+  "preserved_home_entry": ".ssh",
+  "voice_service_stopped_before_cleanup": true,
+  "removed_contents_recoverable": false,
+  "preserved_system_components": [
+    "Ubuntu",
+    "NVIDIA driver",
+    "Docker",
+    "Tailscale",
+    "hhai user account"
+  ],
+  "post_cleanup_note": "The pretrain workspace and runtime cache directories visible now were created after the cleanup for this from-scratch run."
+}

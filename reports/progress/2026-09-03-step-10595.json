@@ -1,0 +1,37 @@
+{
+  "captured_at": "2026-09-03T14:29:31+08:00",
+  "status": "running",
+  "step": 10595,
+  "target_steps": 19148,
+  "tokens": 11066265600,
+  "target_tokens": 19999703040,
+  "latest_train_loss": 2.557335138320923,
+  "learning_rate": 0.0002037881495198235,
+  "throughput_tokens_per_second": 12845.234375,
+  "model_flops_per_second": 93947695202304.0,
+  "standard_mfu_percent": 71.17249636538182,
+  "remaining_seconds": 696742.5,
+  "latest_validation": {
+    "step": 10500,
+    "loss": 2.527658700942993,
+    "ppl": 12.524148941040039
+  },
+  "watchdog": {
+    "restart_count": 0,
+    "stage": "monitoring",
+    "updated_unix": 1788416969.1882415
+  },
+  "checkpoints": [
+    "step-00010000",
+    "step-00010500"
+  ],
+  "gpu": {
+    "name": "NVIDIA L20",
+    "utilization_percent": 100,
+    "memory_used_mib": 45265,
+    "memory_total_mib": 46068,
+    "temperature_c": 74,
+    "power_w": 348.30
+  },
+  "claim_boundary": "Live training telemetry only; downstream model quality is not yet evaluated."
+}

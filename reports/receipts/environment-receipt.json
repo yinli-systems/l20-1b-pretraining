@@ -1,0 +1,57 @@
+{
+  "captured_unix": 1787470706.4627428,
+  "cudnn_version": 92000,
+  "gpu": {
+    "driver": "580.159.04",
+    "memory_mib": 46068,
+    "name": "NVIDIA L20",
+    "uuid": "GPU-16538962-31d3-c98e-1bbd-874e70f5b813"
+  },
+  "litgpt": {
+    "commit": "7bf2960dfb26bae8e815c9a16a22732974824ac1",
+    "status": ""
+  },
+  "packages": {
+    "accelerate": "1.14.0",
+    "boto3": "1.43.78",
+    "datasets": "3.6.0",
+    "lightning": "2.6.5",
+    "litdata": "0.2.59",
+    "litgpt": "0.5.13",
+    "lm_eval": "0.4.9",
+    "numpy": "2.5.2",
+    "pyarrow": "25.0.1",
+    "tokenizers": "0.22.2",
+    "torch": "2.12.1+cu130",
+    "transformers": "4.56.2"
+  },
+  "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+  "project_sha256": {
+    "benchmark_model.py": "3c08090b48ed873e3626d141958cf78b92778f9e00da862ef9c54fd3e569b5dd",
+    "build_data.py": "86c6ef364294b376874bee55fd8638b0419418c779ea64cfe6709362905a2b83",
+    "build_decontam.py": "2373429a1b03d5d27b5b800cec4ae62f4838238d12afad2d3a06983357f94eb2",
+    "capture_environment.py": "7af0482d464862ebcab8e76f483f2f54593ef798b091760d09861ff6dc20f072",
+    "convert_litdata.py": "4e94445feb870de1c819e41b213e23184628d23361037a8be11a2d64568759ae",
+    "data_module.py": "bb37243c55c1e9bf3368b38bcdcef0b0bbea95f9260c363b52c27ef7131c910e",
+    "evaluate_final.py": "43d76149d30c52a0bd600963fccf4f23d05fa8f7764a341c615ae27998d643a3",
+    "evaluation_watcher.py": "75812fcb730554d56978f6aa550310fb408b5dcdf14b3289b92fd72669e3bd79",
+    "hf_config.py": "8fd5948a99c3750a41e47f75ae1a4bad1843c975aac855b45f88f9d6fab13e29",
+    "pack_data.py": "8b4ed4e5bec5c9015c56cd61da6f2bc1efcb0450935752d917be38c37a489faf",
+    "production_supervisor.py": "7652531949c1b961d40b9f0b30fde0d02875d933f007cf11d72591c12eeeff1f",
+    "prune_checkpoints.py": "c0c6d3d78c98fa6cae027ee0d149ee8fb29ceb35836ad29f89301668d3631d20",
+    "run_gate.py": "6cd6c98267eb5d9941a3859077d4b83b38eedd99345907ac553fb65ea51cedbe",
+    "run_pretrain.py": "b0f15a905b6a803fcea075972beca68c04024281ca0886878e326562f0efbe85",
+    "sample_tokenizer.py": "47ae5aaeb6391f88cf275b44aafc3d6388ecffc7270145190067b9586e7a026f",
+    "source_docs.py": "4530b4290166836a109edf96839e3ac15369d647091f256642811d1494868ba0",
+    "train_tokenizer.py": "0ad9b1ff4c78cba0e84dd29edbd29cbc70e4bdc98bc056fe50eb7aab73dd03d3"
+  },
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "tokenizer_sha256": {
+    "config.json": "b9310f5a84d88f7a6dc84782fd6cec531f4d576c2881106dc1914e58ced67ebe",
+    "generation_config.json": "79cca6a73efb58dca56ba0f7a6a59257a5e4de6eb4417baa44f26298f0d1241e",
+    "tokenizer.json": "e755dfeeed1acab465839adc0988811983a3287db230a8d9bc0f74704208609c",
+    "tokenizer_config.json": "8d3942f70ed4c1520bed7f0ee7fdb41d6cccca1f29ea19fed94f0d601512b069",
+    "validation.json": "a567cf7c20e89365da4c4112085f764b926e149aa0409f40db52d79a56c4ece2"
+  },
+  "torch_cuda_runtime": "13.0"
+}

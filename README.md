@@ -6,6 +6,17 @@ TinyLlama-class decoder (22 layers, width 2048, 32 attention heads, 4 query
 groups, SwiGLU 5632, context 2048) and the tokenizer is a newly trained 32K
 byte-level BPE.
 
+## Live evidence
+
+![Training and validation loss through step 10576](reports/figures/loss-curve-step-10576.png)
+
+The run is still in progress. Immutable environment, data, gate, benchmark,
+and live-progress receipts are indexed in [`reports/`](reports/README.md).
+Measured validation points and the explicitly labeled 20B-token extrapolation
+are available as CSV files so the chart can be independently reproduced.
+Checkpoint weights, source text, mutable logs, and raw TensorBoard events are
+not stored in normal Git history.
+
 ## Data contract
 
 The 20B-token production mixture is 42.5% FineWeb-Edu-Dedup score 4+, 42.5%
