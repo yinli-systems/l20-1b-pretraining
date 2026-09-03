@@ -1,0 +1,44 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Credentials and machine-local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+
+# Raw corpora, caches, and intermediate databases
+data/
+cache/
+downloads/
+*.parquet
+*.arrow
+*.sqlite
+*.sqlite-*
+*.db
+*.npy
+*.npz
+*.zst
+*.gz
+
+# Training output and model weights
+checkpoints/
+logs/
+wandb/
+lightning_logs/
+events.out.tfevents.*
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.bin
+

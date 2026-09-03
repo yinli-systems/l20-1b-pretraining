@@ -1,0 +1,71 @@
+{
+  "from_scratch": true,
+  "pretrained_model_weights": false,
+  "pretrained_tokenizer": false,
+  "tokenizer": {
+    "algorithm": "byte_level_bpe",
+    "vocab_size": 32000,
+    "training_characters": 200000000,
+    "source_character_mix": {
+      "web": 130000000,
+      "synthetic": 10000000,
+      "math": 40000000,
+      "code": 20000000
+    }
+  },
+  "model": {
+    "architecture": "TinyLlama-class decoder-only transformer",
+    "layers": 22,
+    "hidden_size": 2048,
+    "attention_heads": 32,
+    "query_groups": 4,
+    "intermediate_size": 5632,
+    "context_length": 2048,
+    "parameters": 1100048384
+  },
+  "train_token_mix": {
+    "web": 8500000000,
+    "dclm": 8500000000,
+    "math": 600000000,
+    "code": 2400000000
+  },
+  "unique_data_reservoir_mix": {
+    "web": 8585000000,
+    "dclm": 8585000000,
+    "math": 606000000,
+    "code": 2424000000
+  },
+  "data_build": {
+    "pack_workers": 6,
+    "pack_batch_docs": 1024,
+    "code_download_workers": 48,
+    "pinned_metadata_cache": true,
+    "parquet_row_group_resume": true,
+    "checkpointed_signal_stop": true
+  },
+  "dataset_revisions": {
+    "HuggingFaceTB/smollm-corpus": "3ba9d605774198c5868892d7a8deda78031a781f",
+    "HuggingFaceTB/finemath": "e92b25a616738fe95dc186b64dfb19f9c8525594",
+    "HuggingFaceTB/stack-edu": "eeec5caac5cc3758a18f1d3ba4416837a9ba814c",
+    "mlfoundations/dclm-baseline-1.0-parquet": "817d6752765f6a41261085171dd546b104f60626"
+  },
+  "quality_gates": {
+    "fineweb_edu_int_score_min": 4,
+    "dclm_language_score_min": 0.9,
+    "dclm_email_ipv4_redaction": true,
+    "language_score_min": 0.9,
+    "synthetic_seed_allowlist": ["stanford", "openstax", "khanacademy"],
+    "finemath_subset": "finemath-4plus",
+    "code_int_score_min_by_language": {
+      "Cpp": 3,
+      "Java": 2,
+      "JavaScript": 3,
+      "Python": 3,
+      "TypeScript": 3
+    },
+    "code_license_type": "permissive",
+    "global_exact_document_dedup": true,
+    "benchmark_decontamination_ngram": 13,
+    "validation_hash_holdout_modulus": 1000
+  }
+}
