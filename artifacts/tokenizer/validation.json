@@ -1,0 +1,9 @@
+{
+  "eos_id": 0,
+  "round_trip": [
+    true,
+    true,
+    true
+  ],
+  "vocab_size": 32000
+}
