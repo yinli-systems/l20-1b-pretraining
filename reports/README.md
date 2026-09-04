@@ -15,7 +15,7 @@ the unfinished model has passed downstream benchmarks.
   percentile bands derived from TensorBoard.
 - `metrics/loss-forecast.csv` is the documented late-window power-law
   extrapolation, not a measured result or statistical confidence interval.
-- `figures/loss-curve-step-11089.png` is the latest curve snapshot; earlier
+- `figures/loss-curve-step-11582.png` is the latest curve snapshot; earlier
   figures are retained as immutable historical evidence.
 
 Raw corpora, caches, deduplication databases, logs, TensorBoard event files,
