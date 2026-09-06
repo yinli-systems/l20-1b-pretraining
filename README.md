@@ -8,7 +8,7 @@ byte-level BPE.
 
 ## Live evidence
 
-![Training and validation loss through step 10576](reports/figures/loss-curve-step-10576.png)
+![Training and validation loss through step 14094](reports/figures/loss-curve-step-14094.png)
 
 The run is still in progress. Immutable environment, data, gate, benchmark,
 and live-progress receipts are indexed in [`reports/`](reports/README.md).
