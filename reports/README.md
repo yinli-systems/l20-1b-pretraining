@@ -1,8 +1,8 @@
 # Evidence bundle
 
 This directory contains small, immutable receipts and derived metrics from the
-single-L20 production run. The files are evidence snapshots, not claims that
-the unfinished model has passed downstream benchmarks.
+single-L20 production run. Training and the registered external evaluation are
+complete; the files report measured evidence without a cross-model superiority claim.
 
 - `receipts/` records the exact software/hardware environment, data token
   counts and hashes, gate outcome, selected micro-batch benchmark, and the
@@ -15,6 +15,9 @@ the unfinished model has passed downstream benchmarks.
   percentile bands derived from TensorBoard.
 - `metrics/loss-forecast.csv` is the documented late-window power-law
   extrapolation, not a measured result or statistical confidence interval.
+- `metrics/final-benchmarks.json` is the compact final metric summary. The large
+  raw lm-eval JSON files remain on the GPU host and are bound by hashes in
+  `receipts/final-evaluation-receipt.json`.
 - `figures/loss-curve-step-14094.png` is the latest curve snapshot; earlier
   figures are retained as immutable historical evidence.
 

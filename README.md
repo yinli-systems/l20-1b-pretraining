@@ -10,10 +10,13 @@ byte-level BPE.
 
 ![Training and validation loss through step 14094](reports/figures/loss-curve-step-14094.png)
 
-The run is still in progress. Immutable environment, data, gate, benchmark,
-and live-progress receipts are indexed in [`reports/`](reports/README.md).
-Measured validation points and the explicitly labeled 20B-token extrapolation
-are available as CSV files so the chart can be independently reproduced.
+The run completed all 19,148 optimizer steps and 19,999,703,040 prediction
+tokens. Final held-out loss was 2.4247146 (perplexity 11.2990036). Immutable
+environment, data, gate, benchmark, and progress receipts are indexed in
+[`reports/`](reports/README.md). The final external benchmark summary is in
+[`reports/metrics/final-benchmarks.json`](reports/metrics/final-benchmarks.json).
+Measured validation points and the explicitly labeled pre-completion 20B-token
+extrapolation are available as CSV files so the chart can be independently reproduced.
 Checkpoint weights, source text, mutable logs, and raw TensorBoard events are
 not stored in normal Git history.
 
@@ -85,7 +88,6 @@ run: `/home/hhai/pretrain/checkpoints/full` starts from random weights. The
 final checkpoint is converted with the canonical `hf_config.py` architecture
 and evaluated only after training has completed.
 
-This pipeline maximizes evidence and quality within the fixed 20B-token budget;
-it does not assert that a 20B-token model can be guaranteed to beat models
-trained on trillions of tokens. That claim requires completed external benchmark
-results, not configuration alone.
+This pipeline maximizes evidence and quality within the fixed 20B-token budget.
+The measured external results are reported without claiming superiority to
+models trained on hundreds of billions or trillions of tokens.

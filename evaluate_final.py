@@ -9,6 +9,11 @@ import os
 import time
 from pathlib import Path
 
+# Set the reachable Hub endpoint before importing LitGPT/lm-eval. Hugging Face
+# libraries cache endpoint constants at import time, so setting this in main()
+# is too late for dataset resolution on hosts where huggingface.co is blocked.
+os.environ.setdefault("HF_ENDPOINT", "https://hf-mirror.com")
+
 from litgpt.eval.evaluate import convert_and_evaluate
 
 from hf_config import write_hf_config
@@ -35,7 +40,6 @@ def sha256(path: Path) -> str:
 
 
 def main() -> None:
-    os.environ.setdefault("HF_ENDPOINT", "https://hf-mirror.com")
     checkpoint = ROOT / "checkpoints/full/final"
     if not (checkpoint / "lit_model.pth").is_file():
         raise SystemExit(f"missing final checkpoint: {checkpoint}")

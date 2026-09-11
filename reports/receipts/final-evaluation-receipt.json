@@ -1,0 +1,25 @@
+{
+  "checkpoint": "/home/hhai/pretrain/checkpoints/full/final",
+  "completed_unix": 1789115839.7040477,
+  "started_unix": 1789114259.781956,
+  "suites": {
+    "gsm8k_5shot": {
+      "num_fewshot": 5,
+      "result": "/home/hhai/pretrain/evaluations/final/gsm8k_5shot.json",
+      "sha256": "46fa267b4af7dbab3ef4177343a994126f42f854200f71d72a39f570ef8c11e3",
+      "tasks": "gsm8k"
+    },
+    "mmlu_5shot": {
+      "num_fewshot": 5,
+      "result": "/home/hhai/pretrain/evaluations/final/mmlu_5shot.json",
+      "sha256": "d506a9d5bc74c11b9752b20181c5b87f2ba685b05c3cb8d8eb1700880b98c5f0",
+      "tasks": "mmlu"
+    },
+    "zero_shot_core": {
+      "num_fewshot": 0,
+      "result": "/home/hhai/pretrain/evaluations/final/zero_shot_core.json",
+      "sha256": "6fa3ecfa69d3bf0bad50fcfe26207379fc65ca3aac9cf8b75d38ad33094045df",
+      "tasks": "hellaswag,piqa,winogrande,openbookqa,arc_easy,arc_challenge,lambada_openai,truthfulqa_mc2"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "checkpoint": "/home/hhai/pretrain/checkpoints/full/final/lit_model.pth",
+  "evaluation": {
+    "batch_size": "auto:4",
+    "dtype": "bfloat16",
+    "lm_eval_version": "0.4.9",
+    "seed": 42
+  },
+  "final_pretraining": {
+    "tokens": 19999703040,
+    "validation_loss": 2.4247145652770996,
+    "validation_perplexity": 11.299003601074219
+  },
+  "gsm8k_5shot": {
+    "exact_match_flexible_extract": 0.016679302501895376,
+    "exact_match_strict_match": 0.00530705079605762
+  },
+  "mmlu_5shot": {
+    "accuracy": 0.2530978493092152,
+    "accuracy_stderr": 0.0036649761750357874,
+    "context_limit": 2048,
+    "left_truncation_observed": true
+  },
+  "raw_results_in_git": false,
+  "selected_metric_core_mean": 0.4785265940898973,
+  "zero_shot_core": {
+    "arc_challenge_acc_norm": 0.3361774744027304,
+    "arc_easy_acc_norm": 0.6414141414141414,
+    "hellaswag_acc_norm": 0.45130452101175067,
+    "lambada_openai_accuracy": 0.4626431205123229,
+    "lambada_openai_perplexity": 13.241914520713838,
+    "openbookqa_acc_norm": 0.35,
+    "piqa_acc_norm": 0.6958650707290533,
+    "truthfulqa_mc2_accuracy": 0.3691036101266861,
+    "winogrande_accuracy": 0.5217048145224941
+  }
+}
