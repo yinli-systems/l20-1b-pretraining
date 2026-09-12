@@ -1,0 +1,41 @@
+{"stage": "waiting_for_B_gpu_lock", "jobs": 36}
+{"status": "partial", "verified_points": 7}
+{"status": "partial", "verified_points": 8}
+{"status": "partial", "verified_points": 9}
+{"status": "partial", "verified_points": 10}
+{"status": "partial", "verified_points": 11}
+{"status": "partial", "verified_points": 12}
+{"status": "partial", "verified_points": 13}
+{"status": "partial", "verified_points": 14}
+{"status": "partial", "verified_points": 15}
+{"status": "partial", "verified_points": 16}
+Traceback (most recent call last):
+  File "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/run_efficiency_evaluation.py", line 521, in <module>
+    main()
+  File "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/run_efficiency_evaluation.py", line 508, in main
+    queue(plan,args.plan)
+  File "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/run_efficiency_evaluation.py", line 443, in queue
+    hashes = download_model(job,directory)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/run_efficiency_evaluation.py", line 209, in download_model
+    raise RuntimeError(f'Download failed for {job["id"]}/{item["path"]}: {type(exc).__name__}; partial retained') from None
+RuntimeError: Download failed for dd_dclm_baseline_10000/model-00001-of-00002.safetensors: ConnectionError; partial retained
+{"stage": "waiting_for_B_gpu_lock", "jobs": 36}
+{"status": "partial", "verified_points": 17}
+{"status": "partial", "verified_points": 18}
+{"status": "partial", "verified_points": 19}
+{"status": "partial", "verified_points": 20}
+{"status": "partial", "verified_points": 21}
+{"status": "partial", "verified_points": 22}
+{"status": "partial", "verified_points": 23}
+Traceback (most recent call last):
+  File "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/run_efficiency_evaluation.py", line 521, in <module>
+    main()
+  File "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/run_efficiency_evaluation.py", line 508, in main
+    queue(plan,args.plan)
+  File "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/run_efficiency_evaluation.py", line 443, in queue
+    hashes = download_model(job,directory)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/run_efficiency_evaluation.py", line 209, in download_model
+    raise RuntimeError(f'Download failed for {job["id"]}/{item["path"]}: {type(exc).__name__}; partial retained') from None
+RuntimeError: Download failed for dd_dclm_baseline_qc_7p_fw3_15000/model-00001-of-00002.safetensors: ChunkedEncodingError; partial retained

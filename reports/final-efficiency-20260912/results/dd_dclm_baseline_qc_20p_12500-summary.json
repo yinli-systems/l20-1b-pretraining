@@ -1,0 +1,287 @@
+{
+  "job": "dd_dclm_baseline_qc_20p_12500",
+  "tasks": {
+    "hellaswag": {
+      "metric": "acc_norm,none",
+      "n": 10042,
+      "ours": 0.45130452101175067,
+      "baseline": 0.4900418243377813,
+      "difference_pp": -3.873730332603067,
+      "paired_95_ci_pp": [
+        -4.550886277633937,
+        -3.2065325632344157
+      ],
+      "ours_better_samples": 381,
+      "baseline_better_samples": 770,
+      "tied_samples": 8891,
+      "document_prompt_target_fingerprint": "1a390c76c9c87c49c7a765bfb92c2d619465fca0db677d1d89fe83ae7e11dc66",
+      "task_config_sha256": "bc3c95e5c833077e4c69333ca795f4458ca790dd525ba6f65b5c45733f8e0c68",
+      "protocol_alignment": "PASS"
+    },
+    "piqa": {
+      "metric": "acc_norm,none",
+      "n": 1838,
+      "ours": 0.6958650707290533,
+      "baseline": 0.7013057671381937,
+      "difference_pp": -0.544069640914037,
+      "paired_95_ci_pp": [
+        -2.121871599564744,
+        1.0337323177366704
+      ],
+      "ours_better_samples": 107,
+      "baseline_better_samples": 117,
+      "tied_samples": 1614,
+      "document_prompt_target_fingerprint": "c776098ae895c6058ac824449604db36f469c28ed04b9145a99c8d1a6542f416",
+      "task_config_sha256": "dfc6c21cc58b61a02e5d43e1ed1f239323ec519124913155090062a818c44da6",
+      "protocol_alignment": "PASS"
+    },
+    "winogrande": {
+      "metric": "acc,none",
+      "n": 1267,
+      "ours": 0.5217048145224941,
+      "baseline": 0.5588003157063931,
+      "difference_pp": -3.7095501183898976,
+      "paired_95_ci_pp": [
+        -7.02446724546172,
+        -0.4735595895816891
+      ],
+      "ours_better_samples": 206,
+      "baseline_better_samples": 253,
+      "tied_samples": 808,
+      "document_prompt_target_fingerprint": "fa103349a0fd29b1a7ab48695d225eb3f8225aa38287ec535ad443b8c8f557db",
+      "task_config_sha256": "8e44b42ee1d813b62f148d3f491b7bd6413bfac4d3bda85d0cc8184c009b554e",
+      "protocol_alignment": "PASS"
+    },
+    "openbookqa": {
+      "metric": "acc_norm,none",
+      "n": 500,
+      "ours": 0.35,
+      "baseline": 0.356,
+      "difference_pp": -0.6,
+      "paired_95_ci_pp": [
+        -3.5999999999999996,
+        2.4
+      ],
+      "ours_better_samples": 29,
+      "baseline_better_samples": 32,
+      "tied_samples": 439,
+      "document_prompt_target_fingerprint": "7a548546a99c1ce06635e63695a60304606155dc8c446f2e30d441db698da69e",
+      "task_config_sha256": "5969dfdaa167152c03c415cb00a7e1bfd4cb7391f3596d0c87cfb6fd6a759724",
+      "protocol_alignment": "PASS"
+    },
+    "arc_easy": {
+      "metric": "acc_norm,none",
+      "n": 2376,
+      "ours": 0.6414141414141414,
+      "baseline": 0.6224747474747475,
+      "difference_pp": 1.893939393939394,
+      "paired_95_ci_pp": [
+        0.25252525252525254,
+        3.535353535353535
+      ],
+      "ours_better_samples": 225,
+      "baseline_better_samples": 180,
+      "tied_samples": 1971,
+      "document_prompt_target_fingerprint": "03f139e210ce12f2f4560aa14bdc4d5030af2aef18ea3ddbb0ef62ef62424e41",
+      "task_config_sha256": "8d5bf8760e5ffa5e2bde7cb9179aad4ecd29c018527ba9c14316de17786f7eca",
+      "protocol_alignment": "PASS"
+    },
+    "arc_challenge": {
+      "metric": "acc_norm,none",
+      "n": 1172,
+      "ours": 0.3361774744027304,
+      "baseline": 0.3250853242320819,
+      "difference_pp": 1.1092150170648465,
+      "paired_95_ci_pp": [
+        -1.1092150170648465,
+        3.242320819112628
+      ],
+      "ours_better_samples": 92,
+      "baseline_better_samples": 79,
+      "tied_samples": 1001,
+      "document_prompt_target_fingerprint": "0c32baa042f9a16f04729bc4a882bc9790e7aeb449bb37e86b698ec4580ab6e4",
+      "task_config_sha256": "5b956c97bd7134b5dfc6fde19af8b6a5eb211f68cb92e016acfa578ea385abb6",
+      "protocol_alignment": "PASS"
+    },
+    "boolq": {
+      "metric": "acc,none",
+      "n": 3270,
+      "ours": 0.591743119266055,
+      "baseline": 0.5431192660550459,
+      "difference_pp": 4.862385321100918,
+      "paired_95_ci_pp": [
+        2.7217125382262997,
+        7.09480122324159
+      ],
+      "ours_better_samples": 738,
+      "baseline_better_samples": 579,
+      "tied_samples": 1953,
+      "document_prompt_target_fingerprint": "a55b0b6e810c0df7b6d372b1cadd4c8f97153fe776a90acc7f041dc01b68652d",
+      "task_config_sha256": "b124a540d891cd40fac33f93c14dedee00733dae7f1bc056c4b3f82db7c114b5",
+      "protocol_alignment": "PASS"
+    }
+  },
+  "seven_task_macro": {
+    "ours": 0.5126013059066035,
+    "baseline": 0.5138324635634633,
+    "ours_minus_baseline_pp": -0.1231157656859774,
+    "paired_95_ci_pp": [
+      -0.9789277934706767,
+      0.7016188691855261
+    ]
+  },
+  "six_task_without_boolq": {
+    "ours": 0.4994110036800283,
+    "baseline": 0.5089513298148662,
+    "ours_minus_baseline_pp": -0.9540326134837933,
+    "paired_95_ci_pp": [
+      -1.8818929990332083,
+      -0.050381760886679006
+    ]
+  },
+  "total_parameters": 1279854592,
+  "training_tokens": 18022400000,
+  "token_kind": "step_times_global_batch_times_sequence_length",
+  "training_flops_proxy_6ND": 138396308393164800000,
+  "category": "natural_corpus_base",
+  "pareto_scope": "candidate-set only; not global SOTA",
+  "limitations": [
+    "6ND is an approximate proxy, not measured hardware FLOPs; data/teacher/experimentation compute excluded.",
+    "Original 20B data did not explicitly decontaminate BoolQ; report the six-task sensitivity.",
+    "Paired intervals reflect benchmark sample uncertainty, not training seeds or multiple comparisons.",
+    "Tokenizer-dependent input truncation and default BOS behavior can differ."
+  ],
+  "result_sha256": "64591a298c8a71481b53af8e0605ed9ef65cf97b9b225784f85654d77ccdf64a",
+  "job_identity": {
+    "id": "dd_dclm_baseline_qc_20p_12500",
+    "repo": "allenai/DataDecide-dclm-baseline-qc-20p-1B",
+    "ref": "step12500-seed-default",
+    "ref_exists": true,
+    "training_tokens": 18022400000,
+    "token_kind": "step_times_global_batch_times_sequence_length",
+    "token_source": "https://github.com/allenai/DataDecide#hyperparameters",
+    "category": "natural_corpus_base",
+    "seed": "default",
+    "selection": "Top three-seed seven-task upstream OLMES mean at step69369 among 25 recipes; not held-out model selection.",
+    "resolution_status": "resolved",
+    "revision": "e97c7eb177d48cc33763a49a34769318a19a1eb1",
+    "config": {
+      "activation_type": "swiglu",
+      "alibi": false,
+      "alibi_bias_max": 8.0,
+      "architectures": [
+        "OLMoForCausalLM"
+      ],
+      "attention_dropout": 0.0,
+      "attention_layer_norm": false,
+      "attention_layer_norm_with_affine": false,
+      "bias_for_layer_norm": false,
+      "block_group_size": 1,
+      "block_type": "sequential",
+      "clip_qkv": null,
+      "d_model": 2048,
+      "emb_init_std": null,
+      "embedding_dropout": 0.0,
+      "embedding_layer_norm": false,
+      "embedding_size": 50304,
+      "eos_token_id": 50279,
+      "flash_attention": true,
+      "include_bias": false,
+      "init_cutoff_factor": 3.0,
+      "init_device": "cuda",
+      "init_fn": "normal",
+      "init_std": 0.02,
+      "layer_norm_eps": 1e-06,
+      "layer_norm_type": "rms",
+      "layer_norm_with_affine": true,
+      "max_sequence_length": 2048,
+      "mlp_hidden_size": null,
+      "mlp_ratio": 8,
+      "model_type": "hf_olmo",
+      "multi_query_attention": null,
+      "n_heads": 16,
+      "n_kv_heads": null,
+      "n_layers": 16,
+      "norm_after": false,
+      "pad_token_id": 1,
+      "precision": "amp_bf16",
+      "residual_dropout": 0.0,
+      "rope": true,
+      "rope_full_precision": true,
+      "rope_theta": 10000,
+      "scale_emb_init": false,
+      "scale_logits": false,
+      "torch_dtype": "float32",
+      "transformers_version": "4.50.3",
+      "use_cache": true,
+      "vocab_size": 50280,
+      "weight_tying": false
+    },
+    "config_sha256": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+    "gated": false,
+    "files": [
+      {
+        "path": "config.json",
+        "size": 1278,
+        "sha256": null,
+        "git_blob_sha1": "05f4ef82cfc33b7b334788dec2c0c50afc7a0199"
+      },
+      {
+        "path": "generation_config.json",
+        "size": 115,
+        "sha256": null,
+        "git_blob_sha1": "07e3d7c419977cfefe68b54ac117d61b5ea6ca9b"
+      },
+      {
+        "path": "model-00001-of-00002.safetensors",
+        "size": 4707339552,
+        "sha256": "5867162998c426f2238d500fba80766c2c27d3f2ad7784534229df5bea5ec4c6",
+        "git_blob_sha1": "73387fe1e5a93d02dab73407272af1b78a0e7986"
+      },
+      {
+        "path": "model-00002-of-00002.safetensors",
+        "size": 412090512,
+        "sha256": "8c2afc98cd9b4f3437c2e25aaba0c62a0c9c732e4db851094aa246cd851afe16",
+        "git_blob_sha1": "4b80e28d317d7462357c3939d28974ec3da1042c"
+      },
+      {
+        "path": "model.safetensors.index.json",
+        "size": 8539,
+        "sha256": null,
+        "git_blob_sha1": "6ddf92f0c1e1cb3e34b06c31213b166f41a2d855"
+      },
+      {
+        "path": "special_tokens_map.json",
+        "size": 293,
+        "sha256": null,
+        "git_blob_sha1": "a82714f41c337edb8f8f86fa67eadcb8f9e9c21d"
+      },
+      {
+        "path": "tokenizer.json",
+        "size": 3565402,
+        "sha256": null,
+        "git_blob_sha1": "e304f23d7e900f12b1ba89749b9d4d7dd7208b81"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 5324,
+        "sha256": null,
+        "git_blob_sha1": "050abfd7c8d4c97bd577fee2e473711c1be28c2e"
+      }
+    ],
+    "download_bytes": 5123011015,
+    "parameter_metadata": {
+      "parameters": {
+        "F32": 1279854592
+      },
+      "total": 1279854592
+    },
+    "license": "apache-2.0",
+    "metadata_url": "https://huggingface.co/api/models/allenai/DataDecide-dclm-baseline-qc-20p-1B/revision/step12500-seed-default?blobs=true",
+    "metadata_sha256": "6f4b93c7480b5e71865d7f80dae117532089fea694c4b1d5b1e014a5227abeef",
+    "model_card_url": "https://huggingface.co/allenai/DataDecide-dclm-baseline-qc-20p-1B/resolve/e97c7eb177d48cc33763a49a34769318a19a1eb1/README.md",
+    "model_card_sha256": "2d6265075d8392f623ce8c78ebd273e6f4b5f28da82404a8fd00059d67f00c20",
+    "model_card_status": 200,
+    "adapter": "author_hf_olmo"
+  }
+}

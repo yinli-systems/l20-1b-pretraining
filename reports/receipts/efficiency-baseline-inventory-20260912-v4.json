@@ -1,0 +1,3692 @@
+{
+  "created_unix": 1789158189.204822,
+  "discovery_script_sha256": "7760c20963f682157c34c3fb428f1beb5ab4c25a321f7fed5cf290a08204b601",
+  "jobs": [
+    {
+      "id": "cerebras_1_3b",
+      "repo": "cerebras/Cerebras-GPT-1.3B",
+      "training_tokens": 26300000000,
+      "token_kind": "paper_rounded",
+      "category": "natural_corpus_base",
+      "resolution_status": "blocked",
+      "error": "HTTP 401 at https://huggingface.co/api/models/cerebras/Cerebras-GPT-1.3B/revision/main?blobs=true"
+    },
+    {
+      "id": "dd_dclm_baseline_qc_20p_12500",
+      "repo": "allenai/DataDecide-dclm-baseline-qc-20p-1B",
+      "ref": "step12500-seed-default",
+      "ref_exists": true,
+      "training_tokens": 18022400000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "token_source": "https://github.com/allenai/DataDecide#hyperparameters",
+      "category": "natural_corpus_base",
+      "seed": "default",
+      "selection": "Top three-seed seven-task upstream OLMES mean at step69369 among 25 recipes; not held-out model selection.",
+      "resolution_status": "resolved",
+      "revision": "e97c7eb177d48cc33763a49a34769318a19a1eb1",
+      "config": {
+        "activation_type": "swiglu",
+        "alibi": false,
+        "alibi_bias_max": 8.0,
+        "architectures": [
+          "OLMoForCausalLM"
+        ],
+        "attention_dropout": 0.0,
+        "attention_layer_norm": false,
+        "attention_layer_norm_with_affine": false,
+        "bias_for_layer_norm": false,
+        "block_group_size": 1,
+        "block_type": "sequential",
+        "clip_qkv": null,
+        "d_model": 2048,
+        "emb_init_std": null,
+        "embedding_dropout": 0.0,
+        "embedding_layer_norm": false,
+        "embedding_size": 50304,
+        "eos_token_id": 50279,
+        "flash_attention": true,
+        "include_bias": false,
+        "init_cutoff_factor": 3.0,
+        "init_device": "cuda",
+        "init_fn": "normal",
+        "init_std": 0.02,
+        "layer_norm_eps": 1e-06,
+        "layer_norm_type": "rms",
+        "layer_norm_with_affine": true,
+        "max_sequence_length": 2048,
+        "mlp_hidden_size": null,
+        "mlp_ratio": 8,
+        "model_type": "hf_olmo",
+        "multi_query_attention": null,
+        "n_heads": 16,
+        "n_kv_heads": null,
+        "n_layers": 16,
+        "norm_after": false,
+        "pad_token_id": 1,
+        "precision": "amp_bf16",
+        "residual_dropout": 0.0,
+        "rope": true,
+        "rope_full_precision": true,
+        "rope_theta": 10000,
+        "scale_emb_init": false,
+        "scale_logits": false,
+        "torch_dtype": "float32",
+        "transformers_version": "4.50.3",
+        "use_cache": true,
+        "vocab_size": 50280,
+        "weight_tying": false
+      },
+      "config_sha256": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+      "gated": false,
+      "files": [
+        {
+          "path": "config.json",
+          "size": 1278,
+          "sha256": null,
+          "git_blob_sha1": "05f4ef82cfc33b7b334788dec2c0c50afc7a0199"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 115,
+          "sha256": null,
+          "git_blob_sha1": "07e3d7c419977cfefe68b54ac117d61b5ea6ca9b"
+        },
+        {
+          "path": "model-00001-of-00002.safetensors",
+          "size": 4707339552,
+          "sha256": "5867162998c426f2238d500fba80766c2c27d3f2ad7784534229df5bea5ec4c6",
+          "git_blob_sha1": "73387fe1e5a93d02dab73407272af1b78a0e7986"
+        },
+        {
+          "path": "model-00002-of-00002.safetensors",
+          "size": 412090512,
+          "sha256": "8c2afc98cd9b4f3437c2e25aaba0c62a0c9c732e4db851094aa246cd851afe16",
+          "git_blob_sha1": "4b80e28d317d7462357c3939d28974ec3da1042c"
+        },
+        {
+          "path": "model.safetensors.index.json",
+          "size": 8539,
+          "sha256": null,
+          "git_blob_sha1": "6ddf92f0c1e1cb3e34b06c31213b166f41a2d855"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 293,
+          "sha256": null,
+          "git_blob_sha1": "a82714f41c337edb8f8f86fa67eadcb8f9e9c21d"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 3565402,
+          "sha256": null,
+          "git_blob_sha1": "e304f23d7e900f12b1ba89749b9d4d7dd7208b81"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 5324,
+          "sha256": null,
+          "git_blob_sha1": "050abfd7c8d4c97bd577fee2e473711c1be28c2e"
+        }
+      ],
+      "download_bytes": 5123011015,
+      "parameter_metadata": {
+        "parameters": {
+          "F32": 1279854592
+        },
+        "total": 1279854592
+      },
+      "license": "apache-2.0",
+      "metadata_url": "https://huggingface.co/api/models/allenai/DataDecide-dclm-baseline-qc-20p-1B/revision/step12500-seed-default?blobs=true",
+      "metadata_sha256": "6f4b93c7480b5e71865d7f80dae117532089fea694c4b1d5b1e014a5227abeef",
+      "model_card_url": "https://huggingface.co/allenai/DataDecide-dclm-baseline-qc-20p-1B/resolve/e97c7eb177d48cc33763a49a34769318a19a1eb1/README.md",
+      "model_card_sha256": "2d6265075d8392f623ce8c78ebd273e6f4b5f28da82404a8fd00059d67f00c20",
+      "model_card_status": 200,
+      "adapter": "author_hf_olmo"
+    },
+    {
+      "id": "dd_dclm_baseline_qc_20p_15000",
+      "repo": "allenai/DataDecide-dclm-baseline-qc-20p-1B",
+      "ref": "step15000-seed-default",
+      "ref_exists": true,
+      "training_tokens": 21626880000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "token_source": "https://github.com/allenai/DataDecide#hyperparameters",
+      "category": "natural_corpus_base",
+      "seed": "default",
+      "selection": "Top three-seed seven-task upstream OLMES mean at step69369 among 25 recipes; not held-out model selection.",
+      "resolution_status": "resolved",
+      "revision": "65973642315bd332172ae3fd04bbcf7edad077fe",
+      "config": {
+        "activation_type": "swiglu",
+        "alibi": false,
+        "alibi_bias_max": 8.0,
+        "architectures": [
+          "OLMoForCausalLM"
+        ],
+        "attention_dropout": 0.0,
+        "attention_layer_norm": false,
+        "attention_layer_norm_with_affine": false,
+        "bias_for_layer_norm": false,
+        "block_group_size": 1,
+        "block_type": "sequential",
+        "clip_qkv": null,
+        "d_model": 2048,
+        "emb_init_std": null,
+        "embedding_dropout": 0.0,
+        "embedding_layer_norm": false,
+        "embedding_size": 50304,
+        "eos_token_id": 50279,
+        "flash_attention": true,
+        "include_bias": false,
+        "init_cutoff_factor": 3.0,
+        "init_device": "cuda",
+        "init_fn": "normal",
+        "init_std": 0.02,
+        "layer_norm_eps": 1e-06,
+        "layer_norm_type": "rms",
+        "layer_norm_with_affine": true,
+        "max_sequence_length": 2048,
+        "mlp_hidden_size": null,
+        "mlp_ratio": 8,
+        "model_type": "hf_olmo",
+        "multi_query_attention": null,
+        "n_heads": 16,
+        "n_kv_heads": null,
+        "n_layers": 16,
+        "norm_after": false,
+        "pad_token_id": 1,
+        "precision": "amp_bf16",
+        "residual_dropout": 0.0,
+        "rope": true,
+        "rope_full_precision": true,
+        "rope_theta": 10000,
+        "scale_emb_init": false,
+        "scale_logits": false,
+        "torch_dtype": "float32",
+        "transformers_version": "4.50.3",
+        "use_cache": true,
+        "vocab_size": 50280,
+        "weight_tying": false
+      },
+      "config_sha256": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+      "gated": false,
+      "files": [
+        {
+          "path": "config.json",
+          "size": 1278,
+          "sha256": null,
+          "git_blob_sha1": "05f4ef82cfc33b7b334788dec2c0c50afc7a0199"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 115,
+          "sha256": null,
+          "git_blob_sha1": "07e3d7c419977cfefe68b54ac117d61b5ea6ca9b"
+        },
+        {
+          "path": "model-00001-of-00002.safetensors",
+          "size": 4707339552,
+          "sha256": "35051b050e4122874b9a5ae3063336a1928ca803baa80c4a1256a59c7d41f1aa",
+          "git_blob_sha1": "cbbdf92e66dfeaff5a66d6353a0a6f5b04ed4a33"
+        },
+        {
+          "path": "model-00002-of-00002.safetensors",
+          "size": 412090512,
+          "sha256": "1f05fd619948d3b2bd60160fddb218d9ac89cea99e26602acc2e9fc3984c0418",
+          "git_blob_sha1": "aaf1d0f45dfe5ec0884e544323c67b6533e8a1e8"
+        },
+        {
+          "path": "model.safetensors.index.json",
+          "size": 8539,
+          "sha256": null,
+          "git_blob_sha1": "6ddf92f0c1e1cb3e34b06c31213b166f41a2d855"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 293,
+          "sha256": null,
+          "git_blob_sha1": "a82714f41c337edb8f8f86fa67eadcb8f9e9c21d"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 3565402,
+          "sha256": null,
+          "git_blob_sha1": "e304f23d7e900f12b1ba89749b9d4d7dd7208b81"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 5324,
+          "sha256": null,
+          "git_blob_sha1": "050abfd7c8d4c97bd577fee2e473711c1be28c2e"
+        }
+      ],
+      "download_bytes": 5123011015,
+      "parameter_metadata": {
+        "parameters": {
+          "F32": 1279854592
+        },
+        "total": 1279854592
+      },
+      "license": "apache-2.0",
+      "metadata_url": "https://huggingface.co/api/models/allenai/DataDecide-dclm-baseline-qc-20p-1B/revision/step15000-seed-default?blobs=true",
+      "metadata_sha256": "a9613babcc24701cbf05ac3a71f1e301102edca6965bd1e9ee0ff5c5a92309dc",
+      "model_card_url": "https://huggingface.co/allenai/DataDecide-dclm-baseline-qc-20p-1B/resolve/65973642315bd332172ae3fd04bbcf7edad077fe/README.md",
+      "model_card_sha256": "2d6265075d8392f623ce8c78ebd273e6f4b5f28da82404a8fd00059d67f00c20",
+      "model_card_status": 200,
+      "adapter": "author_hf_olmo"
+    },
+    {
+      "id": "dd_dclm_baseline_qc_20p_20000",
+      "repo": "allenai/DataDecide-dclm-baseline-qc-20p-1B",
+      "ref": "step20000-seed-default",
+      "ref_exists": true,
+      "training_tokens": 28835840000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "token_source": "https://github.com/allenai/DataDecide#hyperparameters",
+      "category": "natural_corpus_base",
+      "seed": "default",
+      "selection": "Top three-seed seven-task upstream OLMES mean at step69369 among 25 recipes; not held-out model selection.",
+      "resolution_status": "resolved",
+      "revision": "a50bdbfbfa8dd448280b49782691ad8bd430a821",
+      "config": {
+        "activation_type": "swiglu",
+        "alibi": false,
+        "alibi_bias_max": 8.0,
+        "architectures": [
+          "OLMoForCausalLM"
+        ],
+        "attention_dropout": 0.0,
+        "attention_layer_norm": false,
+        "attention_layer_norm_with_affine": false,
+        "bias_for_layer_norm": false,
+        "block_group_size": 1,
+        "block_type": "sequential",
+        "clip_qkv": null,
+        "d_model": 2048,
+        "emb_init_std": null,
+        "embedding_dropout": 0.0,
+        "embedding_layer_norm": false,
+        "embedding_size": 50304,
+        "eos_token_id": 50279,
+        "flash_attention": true,
+        "include_bias": false,
+        "init_cutoff_factor": 3.0,
+        "init_device": "cuda",
+        "init_fn": "normal",
+        "init_std": 0.02,
+        "layer_norm_eps": 1e-06,
+        "layer_norm_type": "rms",
+        "layer_norm_with_affine": true,
+        "max_sequence_length": 2048,
+        "mlp_hidden_size": null,
+        "mlp_ratio": 8,
+        "model_type": "hf_olmo",
+        "multi_query_attention": null,
+        "n_heads": 16,
+        "n_kv_heads": null,
+        "n_layers": 16,
+        "norm_after": false,
+        "pad_token_id": 1,
+        "precision": "amp_bf16",
+        "residual_dropout": 0.0,
+        "rope": true,
+        "rope_full_precision": true,
+        "rope_theta": 10000,
+        "scale_emb_init": false,
+        "scale_logits": false,
+        "torch_dtype": "float32",
+        "transformers_version": "4.50.3",
+        "use_cache": true,
+        "vocab_size": 50280,
+        "weight_tying": false
+      },
+      "config_sha256": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+      "gated": false,
+      "files": [
+        {
+          "path": "config.json",
+          "size": 1278,
+          "sha256": null,
+          "git_blob_sha1": "05f4ef82cfc33b7b334788dec2c0c50afc7a0199"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 115,
+          "sha256": null,
+          "git_blob_sha1": "07e3d7c419977cfefe68b54ac117d61b5ea6ca9b"
+        },
+        {
+          "path": "model-00001-of-00002.safetensors",
+          "size": 4707339552,
+          "sha256": "ca7e89a284a0a9153d39639c657fef8381022bba9014c8a9577af51beb6ef259",
+          "git_blob_sha1": "99a128788b17baba9412a0231c9f00671be52be6"
+        },
+        {
+          "path": "model-00002-of-00002.safetensors",
+          "size": 412090512,
+          "sha256": "f7491f53ebecd8bcf907536f141ca82a3ce206ce1bd55436ce78fe365d9b2f70",
+          "git_blob_sha1": "9f8f02e1309916b5137dc18a460a9c928b1938d4"
+        },
+        {
+          "path": "model.safetensors.index.json",
+          "size": 8539,
+          "sha256": null,
+          "git_blob_sha1": "6ddf92f0c1e1cb3e34b06c31213b166f41a2d855"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 293,
+          "sha256": null,
+          "git_blob_sha1": "a82714f41c337edb8f8f86fa67eadcb8f9e9c21d"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 3565402,
+          "sha256": null,
+          "git_blob_sha1": "e304f23d7e900f12b1ba89749b9d4d7dd7208b81"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 5324,
+          "sha256": null,
+          "git_blob_sha1": "050abfd7c8d4c97bd577fee2e473711c1be28c2e"
+        }
+      ],
+      "download_bytes": 5123011015,
+      "parameter_metadata": {
+        "parameters": {
+          "F32": 1279854592
+        },
+        "total": 1279854592
+      },
+      "license": "apache-2.0",
+      "metadata_url": "https://huggingface.co/api/models/allenai/DataDecide-dclm-baseline-qc-20p-1B/revision/step20000-seed-default?blobs=true",
+      "metadata_sha256": "2d6f3bc30d2eeeb38b5bd10bb150732c26c8b0cbb986a9fd50a7b9e4977c9927",
+      "model_card_url": "https://huggingface.co/allenai/DataDecide-dclm-baseline-qc-20p-1B/resolve/a50bdbfbfa8dd448280b49782691ad8bd430a821/README.md",
+      "model_card_sha256": "2d6265075d8392f623ce8c78ebd273e6f4b5f28da82404a8fd00059d67f00c20",
+      "model_card_status": 200,
+      "adapter": "author_hf_olmo"
+    },
+    {
+      "id": "dd_dclm_baseline_qc_20p_42500",
+      "repo": "allenai/DataDecide-dclm-baseline-qc-20p-1B",
+      "ref": "step42500-seed-default",
+      "ref_exists": true,
+      "training_tokens": 61276160000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "token_source": "https://github.com/allenai/DataDecide#hyperparameters",
+      "category": "natural_corpus_base",
+      "seed": "default",
+      "selection": "Top three-seed seven-task upstream OLMES mean at step69369 among 25 recipes; not held-out model selection.",
+      "resolution_status": "resolved",
+      "revision": "d7a69717858683a90fd3cb24e611c6d8717cec6d",
+      "config": {
+        "activation_type": "swiglu",
+        "alibi": false,
+        "alibi_bias_max": 8.0,
+        "architectures": [
+          "OLMoForCausalLM"
+        ],
+        "attention_dropout": 0.0,
+        "attention_layer_norm": false,
+        "attention_layer_norm_with_affine": false,
+        "bias_for_layer_norm": false,
+        "block_group_size": 1,
+        "block_type": "sequential",
+        "clip_qkv": null,
+        "d_model": 2048,
+        "emb_init_std": null,
+        "embedding_dropout": 0.0,
+        "embedding_layer_norm": false,
+        "embedding_size": 50304,
+        "eos_token_id": 50279,
+        "flash_attention": true,
+        "include_bias": false,
+        "init_cutoff_factor": 3.0,
+        "init_device": "cuda",
+        "init_fn": "normal",
+        "init_std": 0.02,
+        "layer_norm_eps": 1e-06,
+        "layer_norm_type": "rms",
+        "layer_norm_with_affine": true,
+        "max_sequence_length": 2048,
+        "mlp_hidden_size": null,
+        "mlp_ratio": 8,
+        "model_type": "hf_olmo",
+        "multi_query_attention": null,
+        "n_heads": 16,
+        "n_kv_heads": null,
+        "n_layers": 16,
+        "norm_after": false,
+        "pad_token_id": 1,
+        "precision": "amp_bf16",
+        "residual_dropout": 0.0,
+        "rope": true,
+        "rope_full_precision": true,
+        "rope_theta": 10000,
+        "scale_emb_init": false,
+        "scale_logits": false,
+        "torch_dtype": "float32",
+        "transformers_version": "4.50.3",
+        "use_cache": true,
+        "vocab_size": 50280,
+        "weight_tying": false
+      },
+      "config_sha256": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+      "gated": false,
+      "files": [
+        {
+          "path": "config.json",
+          "size": 1278,
+          "sha256": null,
+          "git_blob_sha1": "05f4ef82cfc33b7b334788dec2c0c50afc7a0199"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 115,
+          "sha256": null,
+          "git_blob_sha1": "07e3d7c419977cfefe68b54ac117d61b5ea6ca9b"
+        },
+        {
+          "path": "model-00001-of-00002.safetensors",
+          "size": 4707339552,
+          "sha256": "9c8a8c591e039ed1306a28e3592fc4c053d72bf88e05b761747f178f79196104",
+          "git_blob_sha1": "ad28184b162e18bfdb944e78dcee0b16f3874399"
+        },
+        {
+          "path": "model-00002-of-00002.safetensors",
+          "size": 412090512,
+          "sha256": "83db235cd459be84f9ba9e348a9ea44e255f5b64247935d1d9df967976df5ce7",
+          "git_blob_sha1": "11c3863c186938a706e42f47a279b69bb378da7b"
+        },
+        {
+          "path": "model.safetensors.index.json",
+          "size": 8539,
+          "sha256": null,
+          "git_blob_sha1": "6ddf92f0c1e1cb3e34b06c31213b166f41a2d855"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 293,
+          "sha256": null,
+          "git_blob_sha1": "a82714f41c337edb8f8f86fa67eadcb8f9e9c21d"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 3565402,
+          "sha256": null,
+          "git_blob_sha1": "e304f23d7e900f12b1ba89749b9d4d7dd7208b81"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 5324,
+          "sha256": null,
+          "git_blob_sha1": "050abfd7c8d4c97bd577fee2e473711c1be28c2e"
+        }
+      ],
+      "download_bytes": 5123011015,
+      "parameter_metadata": {
+        "parameters": {
+          "F32": 1279854592
+        },
+        "total": 1279854592
+      },
+      "license": "apache-2.0",
+      "metadata_url": "https://huggingface.co/api/models/allenai/DataDecide-dclm-baseline-qc-20p-1B/revision/step42500-seed-default?blobs=true",
+      "metadata_sha256": "bc269c37b070f7220a0b6bd8fb9d20681212131a2521331965d5b6f56fc209a0",
+      "model_card_url": "https://huggingface.co/allenai/DataDecide-dclm-baseline-qc-20p-1B/resolve/d7a69717858683a90fd3cb24e611c6d8717cec6d/README.md",
+      "model_card_sha256": "2d6265075d8392f623ce8c78ebd273e6f4b5f28da82404a8fd00059d67f00c20",
+      "model_card_status": 200,
+      "adapter": "author_hf_olmo"
+    },
+    {
+      "id": "dd_fineweb_edu_12500",
+      "repo": "allenai/DataDecide-fineweb-edu-1B",
+      "ref": "step12500-seed-default",
+      "ref_exists": true,
+      "training_tokens": 18022400000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "token_source": "https://github.com/allenai/DataDecide#hyperparameters",
+      "category": "natural_corpus_base",
+      "seed": "default",
+      "selection": "predeclared recipe anchor",
+      "resolution_status": "resolved",
+      "revision": "dfaa1ead8b1f6fb38b9310c32c49e48916ae2303",
+      "config": {
+        "activation_type": "swiglu",
+        "alibi": false,
+        "alibi_bias_max": 8.0,
+        "architectures": [
+          "OLMoForCausalLM"
+        ],
+        "attention_dropout": 0.0,
+        "attention_layer_norm": false,
+        "attention_layer_norm_with_affine": false,
+        "bias_for_layer_norm": false,
+        "block_group_size": 1,
+        "block_type": "sequential",
+        "clip_qkv": null,
+        "d_model": 2048,
+        "emb_init_std": null,
+        "embedding_dropout": 0.0,
+        "embedding_layer_norm": false,
+        "embedding_size": 50304,
+        "eos_token_id": 50279,
+        "flash_attention": true,
+        "include_bias": false,
+        "init_cutoff_factor": 3.0,
+        "init_device": "cuda",
+        "init_fn": "normal",
+        "init_std": 0.02,
+        "layer_norm_eps": 1e-06,
+        "layer_norm_type": "rms",
+        "layer_norm_with_affine": true,
+        "max_sequence_length": 2048,
+        "mlp_hidden_size": null,
+        "mlp_ratio": 8,
+        "model_type": "hf_olmo",
+        "multi_query_attention": null,
+        "n_heads": 16,
+        "n_kv_heads": null,
+        "n_layers": 16,
+        "norm_after": false,
+        "pad_token_id": 1,
+        "precision": "amp_bf16",
+        "residual_dropout": 0.0,
+        "rope": true,
+        "rope_full_precision": true,
+        "rope_theta": 10000,
+        "scale_emb_init": false,
+        "scale_logits": false,
+        "torch_dtype": "float32",
+        "transformers_version": "4.50.3",
+        "use_cache": true,
+        "vocab_size": 50280,
+        "weight_tying": false
+      },
+      "config_sha256": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+      "gated": false,
+      "files": [
+        {
+          "path": "config.json",
+          "size": 1278,
+          "sha256": null,
+          "git_blob_sha1": "05f4ef82cfc33b7b334788dec2c0c50afc7a0199"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 115,
+          "sha256": null,
+          "git_blob_sha1": "07e3d7c419977cfefe68b54ac117d61b5ea6ca9b"
+        },
+        {
+          "path": "model-00001-of-00002.safetensors",
+          "size": 4707339552,
+          "sha256": "746a27ff674105219f058f2c2adc300665822e085c62dc302a3322704ce674bc",
+          "git_blob_sha1": "ed307f21f975f0243d0e7e5ef30cf9c1d45bcc28"
+        },
+        {
+          "path": "model-00002-of-00002.safetensors",
+          "size": 412090512,
+          "sha256": "f93b250f29c912d54d7dde71415a70b58d3a6fb8e7e8518905df9703fc041e8d",
+          "git_blob_sha1": "77997ded57efb1ceb68841ba41f56d8ad437085f"
+        },
+        {
+          "path": "model.safetensors.index.json",
+          "size": 8539,
+          "sha256": null,
+          "git_blob_sha1": "6ddf92f0c1e1cb3e34b06c31213b166f41a2d855"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 293,
+          "sha256": null,
+          "git_blob_sha1": "a82714f41c337edb8f8f86fa67eadcb8f9e9c21d"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 3565402,
+          "sha256": null,
+          "git_blob_sha1": "e304f23d7e900f12b1ba89749b9d4d7dd7208b81"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 5324,
+          "sha256": null,
+          "git_blob_sha1": "050abfd7c8d4c97bd577fee2e473711c1be28c2e"
+        }
+      ],
+      "download_bytes": 5123011015,
+      "parameter_metadata": {
+        "parameters": {
+          "F32": 1279854592
+        },
+        "total": 1279854592
+      },
+      "license": "apache-2.0",
+      "metadata_url": "https://huggingface.co/api/models/allenai/DataDecide-fineweb-edu-1B/revision/step12500-seed-default?blobs=true",
+      "metadata_sha256": "de4e35efbbb06b2026efbc40e8878fae1d30275141c09d6a2d58c7ee2b67e97a",
+      "model_card_url": "https://huggingface.co/allenai/DataDecide-fineweb-edu-1B/resolve/dfaa1ead8b1f6fb38b9310c32c49e48916ae2303/README.md",
+      "model_card_sha256": "2d6265075d8392f623ce8c78ebd273e6f4b5f28da82404a8fd00059d67f00c20",
+      "model_card_status": 200,
+      "adapter": "author_hf_olmo"
+    },
+    {
+      "id": "dd_fineweb_edu_15000",
+      "repo": "allenai/DataDecide-fineweb-edu-1B",
+      "ref": "step15000-seed-default",
+      "ref_exists": true,
+      "training_tokens": 21626880000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "token_source": "https://github.com/allenai/DataDecide#hyperparameters",
+      "category": "natural_corpus_base",
+      "seed": "default",
+      "selection": "predeclared recipe anchor",
+      "resolution_status": "resolved",
+      "revision": "583c9e00ac2759d63b4e5c66c2e38e8aebe36d7e",
+      "config": {
+        "activation_type": "swiglu",
+        "alibi": false,
+        "alibi_bias_max": 8.0,
+        "architectures": [
+          "OLMoForCausalLM"
+        ],
+        "attention_dropout": 0.0,
+        "attention_layer_norm": false,
+        "attention_layer_norm_with_affine": false,
+        "bias_for_layer_norm": false,
+        "block_group_size": 1,
+        "block_type": "sequential",
+        "clip_qkv": null,
+        "d_model": 2048,
+        "emb_init_std": null,
+        "embedding_dropout": 0.0,
+        "embedding_layer_norm": false,
+        "embedding_size": 50304,
+        "eos_token_id": 50279,
+        "flash_attention": true,
+        "include_bias": false,
+        "init_cutoff_factor": 3.0,
+        "init_device": "cuda",
+        "init_fn": "normal",
+        "init_std": 0.02,
+        "layer_norm_eps": 1e-06,
+        "layer_norm_type": "rms",
+        "layer_norm_with_affine": true,
+        "max_sequence_length": 2048,
+        "mlp_hidden_size": null,
+        "mlp_ratio": 8,
+        "model_type": "hf_olmo",
+        "multi_query_attention": null,
+        "n_heads": 16,
+        "n_kv_heads": null,
+        "n_layers": 16,
+        "norm_after": false,
+        "pad_token_id": 1,
+        "precision": "amp_bf16",
+        "residual_dropout": 0.0,
+        "rope": true,
+        "rope_full_precision": true,
+        "rope_theta": 10000,
+        "scale_emb_init": false,
+        "scale_logits": false,
+        "torch_dtype": "float32",
+        "transformers_version": "4.50.3",
+        "use_cache": true,
+        "vocab_size": 50280,
+        "weight_tying": false
+      },
+      "config_sha256": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+      "gated": false,
+      "files": [
+        {
+          "path": "config.json",
+          "size": 1278,
+          "sha256": null,
+          "git_blob_sha1": "05f4ef82cfc33b7b334788dec2c0c50afc7a0199"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 115,
+          "sha256": null,
+          "git_blob_sha1": "07e3d7c419977cfefe68b54ac117d61b5ea6ca9b"
+        },
+        {
+          "path": "model-00001-of-00002.safetensors",
+          "size": 4707339552,
+          "sha256": "d9b9ea7937279a569bd6a875ba85ce303e5f5ae597b467a360cf96a0ea8e0551",
+          "git_blob_sha1": "1714e7d68cee8eea9bebb73d139d46f276aa1812"
+        },
+        {
+          "path": "model-00002-of-00002.safetensors",
+          "size": 412090512,
+          "sha256": "280dedc57b08b04be051e2d90ab6e1227f1847c8ba6e4b72aede591819765741",
+          "git_blob_sha1": "3fb394bd50e5526f5e1297648ad3c08bd7097bd2"
+        },
+        {
+          "path": "model.safetensors.index.json",
+          "size": 8539,
+          "sha256": null,
+          "git_blob_sha1": "6ddf92f0c1e1cb3e34b06c31213b166f41a2d855"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 293,
+          "sha256": null,
+          "git_blob_sha1": "a82714f41c337edb8f8f86fa67eadcb8f9e9c21d"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 3565402,
+          "sha256": null,
+          "git_blob_sha1": "e304f23d7e900f12b1ba89749b9d4d7dd7208b81"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 5324,
+          "sha256": null,
+          "git_blob_sha1": "050abfd7c8d4c97bd577fee2e473711c1be28c2e"
+        }
+      ],
+      "download_bytes": 5123011015,
+      "parameter_metadata": {
+        "parameters": {
+          "F32": 1279854592
+        },
+        "total": 1279854592
+      },
+      "license": "apache-2.0",
+      "metadata_url": "https://huggingface.co/api/models/allenai/DataDecide-fineweb-edu-1B/revision/step15000-seed-default?blobs=true",
+      "metadata_sha256": "e1dcb9583c14d7dcc349b30ed79bc3e54b46aa5c09126143564a430811a90d98",
+      "model_card_url": "https://huggingface.co/allenai/DataDecide-fineweb-edu-1B/resolve/583c9e00ac2759d63b4e5c66c2e38e8aebe36d7e/README.md",
+      "model_card_sha256": "2d6265075d8392f623ce8c78ebd273e6f4b5f28da82404a8fd00059d67f00c20",
+      "model_card_status": 200,
+      "adapter": "author_hf_olmo"
+    },
+    {
+      "id": "dd_fineweb_edu_20000",
+      "repo": "allenai/DataDecide-fineweb-edu-1B",
+      "ref": "step20000-seed-default",
+      "ref_exists": true,
+      "training_tokens": 28835840000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "token_source": "https://github.com/allenai/DataDecide#hyperparameters",
+      "category": "natural_corpus_base",
+      "seed": "default",
+      "selection": "predeclared recipe anchor",
+      "resolution_status": "resolved",
+      "revision": "91f35da0ec988fc94cd110c91dcb430d706d852a",
+      "config": {
+        "activation_type": "swiglu",
+        "alibi": false,
+        "alibi_bias_max": 8.0,
+        "architectures": [
+          "OLMoForCausalLM"
+        ],
+        "attention_dropout": 0.0,
+        "attention_layer_norm": false,
+        "attention_layer_norm_with_affine": false,
+        "bias_for_layer_norm": false,
+        "block_group_size": 1,
+        "block_type": "sequential",
+        "clip_qkv": null,
+        "d_model": 2048,
+        "emb_init_std": null,
+        "embedding_dropout": 0.0,
+        "embedding_layer_norm": false,
+        "embedding_size": 50304,
+        "eos_token_id": 50279,
+        "flash_attention": true,
+        "include_bias": false,
+        "init_cutoff_factor": 3.0,
+        "init_device": "cuda",
+        "init_fn": "normal",
+        "init_std": 0.02,
+        "layer_norm_eps": 1e-06,
+        "layer_norm_type": "rms",
+        "layer_norm_with_affine": true,
+        "max_sequence_length": 2048,
+        "mlp_hidden_size": null,
+        "mlp_ratio": 8,
+        "model_type": "hf_olmo",
+        "multi_query_attention": null,
+        "n_heads": 16,
+        "n_kv_heads": null,
+        "n_layers": 16,
+        "norm_after": false,
+        "pad_token_id": 1,
+        "precision": "amp_bf16",
+        "residual_dropout": 0.0,
+        "rope": true,
+        "rope_full_precision": true,
+        "rope_theta": 10000,
+        "scale_emb_init": false,
+        "scale_logits": false,
+        "torch_dtype": "float32",
+        "transformers_version": "4.50.3",
+        "use_cache": true,
+        "vocab_size": 50280,
+        "weight_tying": false
+      },
+      "config_sha256": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+      "gated": false,
+      "files": [
+        {
+          "path": "config.json",
+          "size": 1278,
+          "sha256": null,
+          "git_blob_sha1": "05f4ef82cfc33b7b334788dec2c0c50afc7a0199"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 115,
+          "sha256": null,
+          "git_blob_sha1": "07e3d7c419977cfefe68b54ac117d61b5ea6ca9b"
+        },
+        {
+          "path": "model-00001-of-00002.safetensors",
+          "size": 4707339552,
+          "sha256": "b67a52017b9ceec0da09f3cd5ff0b0ca3d92b579618cc6bec45928e9ecf16ac3",
+          "git_blob_sha1": "3729b3bd07dd788cc7ba10d16660e29a67900d65"
+        },
+        {
+          "path": "model-00002-of-00002.safetensors",
+          "size": 412090512,
+          "sha256": "00e8ec7f00693d286249c218b1c4925758345a225eb5406576f6509871091990",
+          "git_blob_sha1": "35aa2ac854e429522b55d4d5cc63857f0f1df161"
+        },
+        {
+          "path": "model.safetensors.index.json",
+          "size": 8539,
+          "sha256": null,
+          "git_blob_sha1": "6ddf92f0c1e1cb3e34b06c31213b166f41a2d855"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 293,
+          "sha256": null,
+          "git_blob_sha1": "a82714f41c337edb8f8f86fa67eadcb8f9e9c21d"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 3565402,
+          "sha256": null,
+          "git_blob_sha1": "e304f23d7e900f12b1ba89749b9d4d7dd7208b81"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 5324,
+          "sha256": null,
+          "git_blob_sha1": "050abfd7c8d4c97bd577fee2e473711c1be28c2e"
+        }
+      ],
+      "download_bytes": 5123011015,
+      "parameter_metadata": {
+        "parameters": {
+          "F32": 1279854592
+        },
+        "total": 1279854592
+      },
+      "license": "apache-2.0",
+      "metadata_url": "https://huggingface.co/api/models/allenai/DataDecide-fineweb-edu-1B/revision/step20000-seed-default?blobs=true",
+      "metadata_sha256": "b721699bd42ad08de0f33cacf71a02def2387f05c19982dbcb66c746811c29dc",
+      "model_card_url": "https://huggingface.co/allenai/DataDecide-fineweb-edu-1B/resolve/91f35da0ec988fc94cd110c91dcb430d706d852a/README.md",
+      "model_card_sha256": "2d6265075d8392f623ce8c78ebd273e6f4b5f28da82404a8fd00059d67f00c20",
+      "model_card_status": 200,
+      "adapter": "author_hf_olmo"
+    },
+    {
+      "id": "dd_fineweb_edu_42500",
+      "repo": "allenai/DataDecide-fineweb-edu-1B",
+      "ref": "step42500-seed-default",
+      "ref_exists": true,
+      "training_tokens": 61276160000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "token_source": "https://github.com/allenai/DataDecide#hyperparameters",
+      "category": "natural_corpus_base",
+      "seed": "default",
+      "selection": "predeclared recipe anchor",
+      "resolution_status": "resolved",
+      "revision": "772865f3211700174971c9fa048bf7b2f133b7ad",
+      "config": {
+        "activation_type": "swiglu",
+        "alibi": false,
+        "alibi_bias_max": 8.0,
+        "architectures": [
+          "OLMoForCausalLM"
+        ],
+        "attention_dropout": 0.0,
+        "attention_layer_norm": false,
+        "attention_layer_norm_with_affine": false,
+        "bias_for_layer_norm": false,
+        "block_group_size": 1,
+        "block_type": "sequential",
+        "clip_qkv": null,
+        "d_model": 2048,
+        "emb_init_std": null,
+        "embedding_dropout": 0.0,
+        "embedding_layer_norm": false,
+        "embedding_size": 50304,
+        "eos_token_id": 50279,
+        "flash_attention": true,
+        "include_bias": false,
+        "init_cutoff_factor": 3.0,
+        "init_device": "cuda",
+        "init_fn": "normal",
+        "init_std": 0.02,
+        "layer_norm_eps": 1e-06,
+        "layer_norm_type": "rms",
+        "layer_norm_with_affine": true,
+        "max_sequence_length": 2048,
+        "mlp_hidden_size": null,
+        "mlp_ratio": 8,
+        "model_type": "hf_olmo",
+        "multi_query_attention": null,
+        "n_heads": 16,
+        "n_kv_heads": null,
+        "n_layers": 16,
+        "norm_after": false,
+        "pad_token_id": 1,
+        "precision": "amp_bf16",
+        "residual_dropout": 0.0,
+        "rope": true,
+        "rope_full_precision": true,
+        "rope_theta": 10000,
+        "scale_emb_init": false,
+        "scale_logits": false,
+        "torch_dtype": "float32",
+        "transformers_version": "4.50.3",
+        "use_cache": true,
+        "vocab_size": 50280,
+        "weight_tying": false
+      },
+      "config_sha256": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+      "gated": false,
+      "files": [
+        {
+          "path": "config.json",
+          "size": 1278,
+          "sha256": null,
+          "git_blob_sha1": "05f4ef82cfc33b7b334788dec2c0c50afc7a0199"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 115,
+          "sha256": null,
+          "git_blob_sha1": "07e3d7c419977cfefe68b54ac117d61b5ea6ca9b"
+        },
+        {
+          "path": "model-00001-of-00002.safetensors",
+          "size": 4707339552,
+          "sha256": "d25807b3e1cbc21c57536c7c312cfb53524893520990b7772beee5671fa2ff8a",
+          "git_blob_sha1": "e57df5e7e5ecbbb2d5bd3158090aa553d9e84998"
+        },
+        {
+          "path": "model-00002-of-00002.safetensors",
+          "size": 412090512,
+          "sha256": "ab01af1bfa4334edbb072f16ca199b6c543d50d6f5ed01d691619bd9d8e1e6f1",
+          "git_blob_sha1": "c73b27c367e6e676bd899c77133f47d66d23ea5a"
+        },
+        {
+          "path": "model.safetensors.index.json",
+          "size": 8539,
+          "sha256": null,
+          "git_blob_sha1": "6ddf92f0c1e1cb3e34b06c31213b166f41a2d855"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 293,
+          "sha256": null,
+          "git_blob_sha1": "a82714f41c337edb8f8f86fa67eadcb8f9e9c21d"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 3565402,
+          "sha256": null,
+          "git_blob_sha1": "e304f23d7e900f12b1ba89749b9d4d7dd7208b81"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 5324,
+          "sha256": null,
+          "git_blob_sha1": "050abfd7c8d4c97bd577fee2e473711c1be28c2e"
+        }
+      ],
+      "download_bytes": 5123011015,
+      "parameter_metadata": {
+        "parameters": {
+          "F32": 1279854592
+        },
+        "total": 1279854592
+      },
+      "license": "apache-2.0",
+      "metadata_url": "https://huggingface.co/api/models/allenai/DataDecide-fineweb-edu-1B/revision/step42500-seed-default?blobs=true",
+      "metadata_sha256": "f817d4848c3b3ec0280bf7177df83e38e99c946fd4fcf27227dc1ece3b145176",
+      "model_card_url": "https://huggingface.co/allenai/DataDecide-fineweb-edu-1B/resolve/772865f3211700174971c9fa048bf7b2f133b7ad/README.md",
+      "model_card_sha256": "2d6265075d8392f623ce8c78ebd273e6f4b5f28da82404a8fd00059d67f00c20",
+      "model_card_status": 200,
+      "adapter": "author_hf_olmo"
+    },
+    {
+      "id": "dd_dclm_baseline_12500",
+      "repo": "allenai/DataDecide-dclm-baseline-1B",
+      "ref": "step12500-seed-default",
+      "ref_exists": true,
+      "training_tokens": 18022400000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "token_source": "https://github.com/allenai/DataDecide#hyperparameters",
+      "category": "natural_corpus_base",
+      "seed": "default",
+      "selection": "predeclared recipe anchor",
+      "resolution_status": "resolved",
+      "revision": "ae58b957e29595e9eb582c5266508c410ec89472",
+      "config": {
+        "activation_type": "swiglu",
+        "alibi": false,
+        "alibi_bias_max": 8.0,
+        "architectures": [
+          "OLMoForCausalLM"
+        ],
+        "attention_dropout": 0.0,
+        "attention_layer_norm": false,
+        "attention_layer_norm_with_affine": false,
+        "bias_for_layer_norm": false,
+        "block_group_size": 1,
+        "block_type": "sequential",
+        "clip_qkv": null,
+        "d_model": 2048,
+        "emb_init_std": null,
+        "embedding_dropout": 0.0,
+        "embedding_layer_norm": false,
+        "embedding_size": 50304,
+        "eos_token_id": 50279,
+        "flash_attention": true,
+        "include_bias": false,
+        "init_cutoff_factor": 3.0,
+        "init_device": "cuda",
+        "init_fn": "normal",
+        "init_std": 0.02,
+        "layer_norm_eps": 1e-06,
+        "layer_norm_type": "rms",
+        "layer_norm_with_affine": true,
+        "max_sequence_length": 2048,
+        "mlp_hidden_size": null,
+        "mlp_ratio": 8,
+        "model_type": "hf_olmo",
+        "multi_query_attention": null,
+        "n_heads": 16,
+        "n_kv_heads": null,
+        "n_layers": 16,
+        "norm_after": false,
+        "pad_token_id": 1,
+        "precision": "amp_bf16",
+        "residual_dropout": 0.0,
+        "rope": true,
+        "rope_full_precision": true,
+        "rope_theta": 10000,
+        "scale_emb_init": false,
+        "scale_logits": false,
+        "torch_dtype": "float32",
+        "transformers_version": "4.50.3",
+        "use_cache": true,
+        "vocab_size": 50280,
+        "weight_tying": false
+      },
+      "config_sha256": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+      "gated": false,
+      "files": [
+        {
+          "path": "config.json",
+          "size": 1278,
+          "sha256": null,
+          "git_blob_sha1": "05f4ef82cfc33b7b334788dec2c0c50afc7a0199"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 115,
+          "sha256": null,
+          "git_blob_sha1": "07e3d7c419977cfefe68b54ac117d61b5ea6ca9b"
+        },
+        {
+          "path": "model-00001-of-00002.safetensors",
+          "size": 4707339552,
+          "sha256": "8ca25fc3968178a15afa730716ea4af58314ba15310cf8c7d405d8fdadf387be",
+          "git_blob_sha1": "6e37c78d40af12226434410240025e005a75ef18"
+        },
+        {
+          "path": "model-00002-of-00002.safetensors",
+          "size": 412090512,
+          "sha256": "5890610262b2094ccb7600a5db18190baac740f92b09b8900fb65c74be338e2e",
+          "git_blob_sha1": "03969bc963defd8ccfcc1bbbd1a4ec6c5964610c"
+        },
+        {
+          "path": "model.safetensors.index.json",
+          "size": 8539,
+          "sha256": null,
+          "git_blob_sha1": "6ddf92f0c1e1cb3e34b06c31213b166f41a2d855"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 293,
+          "sha256": null,
+          "git_blob_sha1": "a82714f41c337edb8f8f86fa67eadcb8f9e9c21d"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 3565402,
+          "sha256": null,
+          "git_blob_sha1": "e304f23d7e900f12b1ba89749b9d4d7dd7208b81"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 5324,
+          "sha256": null,
+          "git_blob_sha1": "050abfd7c8d4c97bd577fee2e473711c1be28c2e"
+        }
+      ],
+      "download_bytes": 5123011015,
+      "parameter_metadata": {
+        "parameters": {
+          "F32": 1279854592
+        },
+        "total": 1279854592
+      },
+      "license": "apache-2.0",
+      "metadata_url": "https://huggingface.co/api/models/allenai/DataDecide-dclm-baseline-1B/revision/step12500-seed-default?blobs=true",
+      "metadata_sha256": "24ebc5dde17bdcacfae6f5860a18e0adf575deaa497b910aa7b7c124025115cc",
+      "model_card_url": "https://huggingface.co/allenai/DataDecide-dclm-baseline-1B/resolve/ae58b957e29595e9eb582c5266508c410ec89472/README.md",
+      "model_card_sha256": "2d6265075d8392f623ce8c78ebd273e6f4b5f28da82404a8fd00059d67f00c20",
+      "model_card_status": 200,
+      "adapter": "author_hf_olmo"
+    },
+    {
+      "id": "dd_dclm_baseline_15000",
+      "repo": "allenai/DataDecide-dclm-baseline-1B",
+      "ref": "step15000-seed-default",
+      "ref_exists": true,
+      "training_tokens": 21626880000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "token_source": "https://github.com/allenai/DataDecide#hyperparameters",
+      "category": "natural_corpus_base",
+      "seed": "default",
+      "selection": "predeclared recipe anchor",
+      "resolution_status": "resolved",
+      "revision": "75f394be7ee8847d3a1c9d25f2398ec92be91bd2",
+      "config": {
+        "activation_type": "swiglu",
+        "alibi": false,
+        "alibi_bias_max": 8.0,
+        "architectures": [
+          "OLMoForCausalLM"
+        ],
+        "attention_dropout": 0.0,
+        "attention_layer_norm": false,
+        "attention_layer_norm_with_affine": false,
+        "bias_for_layer_norm": false,
+        "block_group_size": 1,
+        "block_type": "sequential",
+        "clip_qkv": null,
+        "d_model": 2048,
+        "emb_init_std": null,
+        "embedding_dropout": 0.0,
+        "embedding_layer_norm": false,
+        "embedding_size": 50304,
+        "eos_token_id": 50279,
+        "flash_attention": true,
+        "include_bias": false,
+        "init_cutoff_factor": 3.0,
+        "init_device": "cuda",
+        "init_fn": "normal",
+        "init_std": 0.02,
+        "layer_norm_eps": 1e-06,
+        "layer_norm_type": "rms",
+        "layer_norm_with_affine": true,
+        "max_sequence_length": 2048,
+        "mlp_hidden_size": null,
+        "mlp_ratio": 8,
+        "model_type": "hf_olmo",
+        "multi_query_attention": null,
+        "n_heads": 16,
+        "n_kv_heads": null,
+        "n_layers": 16,
+        "norm_after": false,
+        "pad_token_id": 1,
+        "precision": "amp_bf16",
+        "residual_dropout": 0.0,
+        "rope": true,
+        "rope_full_precision": true,
+        "rope_theta": 10000,
+        "scale_emb_init": false,
+        "scale_logits": false,
+        "torch_dtype": "float32",
+        "transformers_version": "4.50.3",
+        "use_cache": true,
+        "vocab_size": 50280,
+        "weight_tying": false
+      },
+      "config_sha256": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+      "gated": false,
+      "files": [
+        {
+          "path": "config.json",
+          "size": 1278,
+          "sha256": null,
+          "git_blob_sha1": "05f4ef82cfc33b7b334788dec2c0c50afc7a0199"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 115,
+          "sha256": null,
+          "git_blob_sha1": "07e3d7c419977cfefe68b54ac117d61b5ea6ca9b"
+        },
+        {
+          "path": "model-00001-of-00002.safetensors",
+          "size": 4707339552,
+          "sha256": "fba9344cc9f6e909714800cf34b3a01ee339f916f2d60125048698ef10e1d468",
+          "git_blob_sha1": "cd67e53d5f594a57a248b05fc1229c262f2e2b6c"
+        },
+        {
+          "path": "model-00002-of-00002.safetensors",
+          "size": 412090512,
+          "sha256": "efe67a77c1cd0fbcfaa49e301ad0960aaceac85a7056bdd778de9baae5d7cd27",
+          "git_blob_sha1": "de7a1cbd11f8ad61290e8ce94b3eb548cf42697f"
+        },
+        {
+          "path": "model.safetensors.index.json",
+          "size": 8539,
+          "sha256": null,
+          "git_blob_sha1": "6ddf92f0c1e1cb3e34b06c31213b166f41a2d855"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 293,
+          "sha256": null,
+          "git_blob_sha1": "a82714f41c337edb8f8f86fa67eadcb8f9e9c21d"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 3565402,
+          "sha256": null,
+          "git_blob_sha1": "e304f23d7e900f12b1ba89749b9d4d7dd7208b81"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 5324,
+          "sha256": null,
+          "git_blob_sha1": "050abfd7c8d4c97bd577fee2e473711c1be28c2e"
+        }
+      ],
+      "download_bytes": 5123011015,
+      "parameter_metadata": {
+        "parameters": {
+          "F32": 1279854592
+        },
+        "total": 1279854592
+      },
+      "license": "apache-2.0",
+      "metadata_url": "https://huggingface.co/api/models/allenai/DataDecide-dclm-baseline-1B/revision/step15000-seed-default?blobs=true",
+      "metadata_sha256": "40011d198a61ebb943d45a752eef0ed6df38afc5b582dd6847eec51774e000e7",
+      "model_card_url": "https://huggingface.co/allenai/DataDecide-dclm-baseline-1B/resolve/75f394be7ee8847d3a1c9d25f2398ec92be91bd2/README.md",
+      "model_card_sha256": "2d6265075d8392f623ce8c78ebd273e6f4b5f28da82404a8fd00059d67f00c20",
+      "model_card_status": 200,
+      "adapter": "author_hf_olmo"
+    },
+    {
+      "id": "dd_dclm_baseline_20000",
+      "repo": "allenai/DataDecide-dclm-baseline-1B",
+      "ref": "step20000-seed-default",
+      "ref_exists": true,
+      "training_tokens": 28835840000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "token_source": "https://github.com/allenai/DataDecide#hyperparameters",
+      "category": "natural_corpus_base",
+      "seed": "default",
+      "selection": "predeclared recipe anchor",
+      "resolution_status": "resolved",
+      "revision": "b99dacc5a6d127dee0df82eb3966327794f80024",
+      "config": {
+        "activation_type": "swiglu",
+        "alibi": false,
+        "alibi_bias_max": 8.0,
+        "architectures": [
+          "OLMoForCausalLM"
+        ],
+        "attention_dropout": 0.0,
+        "attention_layer_norm": false,
+        "attention_layer_norm_with_affine": false,
+        "bias_for_layer_norm": false,
+        "block_group_size": 1,
+        "block_type": "sequential",
+        "clip_qkv": null,
+        "d_model": 2048,
+        "emb_init_std": null,
+        "embedding_dropout": 0.0,
+        "embedding_layer_norm": false,
+        "embedding_size": 50304,
+        "eos_token_id": 50279,
+        "flash_attention": true,
+        "include_bias": false,
+        "init_cutoff_factor": 3.0,
+        "init_device": "cuda",
+        "init_fn": "normal",
+        "init_std": 0.02,
+        "layer_norm_eps": 1e-06,
+        "layer_norm_type": "rms",
+        "layer_norm_with_affine": true,
+        "max_sequence_length": 2048,
+        "mlp_hidden_size": null,
+        "mlp_ratio": 8,
+        "model_type": "hf_olmo",
+        "multi_query_attention": null,
+        "n_heads": 16,
+        "n_kv_heads": null,
+        "n_layers": 16,
+        "norm_after": false,
+        "pad_token_id": 1,
+        "precision": "amp_bf16",
+        "residual_dropout": 0.0,
+        "rope": true,
+        "rope_full_precision": true,
+        "rope_theta": 10000,
+        "scale_emb_init": false,
+        "scale_logits": false,
+        "torch_dtype": "float32",
+        "transformers_version": "4.50.3",
+        "use_cache": true,
+        "vocab_size": 50280,
+        "weight_tying": false
+      },
+      "config_sha256": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+      "gated": false,
+      "files": [
+        {
+          "path": "config.json",
+          "size": 1278,
+          "sha256": null,
+          "git_blob_sha1": "05f4ef82cfc33b7b334788dec2c0c50afc7a0199"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 115,
+          "sha256": null,
+          "git_blob_sha1": "07e3d7c419977cfefe68b54ac117d61b5ea6ca9b"
+        },
+        {
+          "path": "model-00001-of-00002.safetensors",
+          "size": 4707339552,
+          "sha256": "63f582c013ea5581526f4d11930e1abd5100793852797a9c8354865d9cd594ba",
+          "git_blob_sha1": "5a6f7125341971839999c0448a9dd7f89a30628a"
+        },
+        {
+          "path": "model-00002-of-00002.safetensors",
+          "size": 412090512,
+          "sha256": "b6ce730d1a4fa9272e2082cb711fac6e4c07ed49c28793a5849c740c98726434",
+          "git_blob_sha1": "15c1f26c01d407cb90f29b177b40d4e0e4e65333"
+        },
+        {
+          "path": "model.safetensors.index.json",
+          "size": 8539,
+          "sha256": null,
+          "git_blob_sha1": "6ddf92f0c1e1cb3e34b06c31213b166f41a2d855"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 293,
+          "sha256": null,
+          "git_blob_sha1": "a82714f41c337edb8f8f86fa67eadcb8f9e9c21d"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 3565402,
+          "sha256": null,
+          "git_blob_sha1": "e304f23d7e900f12b1ba89749b9d4d7dd7208b81"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 5324,
+          "sha256": null,
+          "git_blob_sha1": "050abfd7c8d4c97bd577fee2e473711c1be28c2e"
+        }
+      ],
+      "download_bytes": 5123011015,
+      "parameter_metadata": {
+        "parameters": {
+          "F32": 1279854592
+        },
+        "total": 1279854592
+      },
+      "license": "apache-2.0",
+      "metadata_url": "https://huggingface.co/api/models/allenai/DataDecide-dclm-baseline-1B/revision/step20000-seed-default?blobs=true",
+      "metadata_sha256": "7eaabe554ef92ed6eb54bc061bb47d24c10aca4ba7582f4011cbc7450591daa5",
+      "model_card_url": "https://huggingface.co/allenai/DataDecide-dclm-baseline-1B/resolve/b99dacc5a6d127dee0df82eb3966327794f80024/README.md",
+      "model_card_sha256": "2d6265075d8392f623ce8c78ebd273e6f4b5f28da82404a8fd00059d67f00c20",
+      "model_card_status": 200,
+      "adapter": "author_hf_olmo"
+    },
+    {
+      "id": "dd_dclm_baseline_42500",
+      "repo": "allenai/DataDecide-dclm-baseline-1B",
+      "ref": "step42500-seed-default",
+      "ref_exists": true,
+      "training_tokens": 61276160000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "token_source": "https://github.com/allenai/DataDecide#hyperparameters",
+      "category": "natural_corpus_base",
+      "seed": "default",
+      "selection": "predeclared recipe anchor",
+      "resolution_status": "resolved",
+      "revision": "424685d36e00bf3da8912abf4b04914785b5e7bd",
+      "config": {
+        "activation_type": "swiglu",
+        "alibi": false,
+        "alibi_bias_max": 8.0,
+        "architectures": [
+          "OLMoForCausalLM"
+        ],
+        "attention_dropout": 0.0,
+        "attention_layer_norm": false,
+        "attention_layer_norm_with_affine": false,
+        "bias_for_layer_norm": false,
+        "block_group_size": 1,
+        "block_type": "sequential",
+        "clip_qkv": null,
+        "d_model": 2048,
+        "emb_init_std": null,
+        "embedding_dropout": 0.0,
+        "embedding_layer_norm": false,
+        "embedding_size": 50304,
+        "eos_token_id": 50279,
+        "flash_attention": true,
+        "include_bias": false,
+        "init_cutoff_factor": 3.0,
+        "init_device": "cuda",
+        "init_fn": "normal",
+        "init_std": 0.02,
+        "layer_norm_eps": 1e-06,
+        "layer_norm_type": "rms",
+        "layer_norm_with_affine": true,
+        "max_sequence_length": 2048,
+        "mlp_hidden_size": null,
+        "mlp_ratio": 8,
+        "model_type": "hf_olmo",
+        "multi_query_attention": null,
+        "n_heads": 16,
+        "n_kv_heads": null,
+        "n_layers": 16,
+        "norm_after": false,
+        "pad_token_id": 1,
+        "precision": "amp_bf16",
+        "residual_dropout": 0.0,
+        "rope": true,
+        "rope_full_precision": true,
+        "rope_theta": 10000,
+        "scale_emb_init": false,
+        "scale_logits": false,
+        "torch_dtype": "float32",
+        "transformers_version": "4.50.3",
+        "use_cache": true,
+        "vocab_size": 50280,
+        "weight_tying": false
+      },
+      "config_sha256": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+      "gated": false,
+      "files": [
+        {
+          "path": "config.json",
+          "size": 1278,
+          "sha256": null,
+          "git_blob_sha1": "05f4ef82cfc33b7b334788dec2c0c50afc7a0199"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 115,
+          "sha256": null,
+          "git_blob_sha1": "07e3d7c419977cfefe68b54ac117d61b5ea6ca9b"
+        },
+        {
+          "path": "model-00001-of-00002.safetensors",
+          "size": 4707339552,
+          "sha256": "c86932358bf656ec5eb513b60cc31e9ff520739995723394e5dd7b30f90312d2",
+          "git_blob_sha1": "8cf136bdc32fa8b663b2b0a05d0aa9bee85295d9"
+        },
+        {
+          "path": "model-00002-of-00002.safetensors",
+          "size": 412090512,
+          "sha256": "c02bc095823cc7f2040134ada8c07311805a67e602936cec39e5550f66cd58af",
+          "git_blob_sha1": "56ee5a2a74d43eb000219754e4cb50abbb471256"
+        },
+        {
+          "path": "model.safetensors.index.json",
+          "size": 8539,
+          "sha256": null,
+          "git_blob_sha1": "6ddf92f0c1e1cb3e34b06c31213b166f41a2d855"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 293,
+          "sha256": null,
+          "git_blob_sha1": "a82714f41c337edb8f8f86fa67eadcb8f9e9c21d"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 3565402,
+          "sha256": null,
+          "git_blob_sha1": "e304f23d7e900f12b1ba89749b9d4d7dd7208b81"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 5324,
+          "sha256": null,
+          "git_blob_sha1": "050abfd7c8d4c97bd577fee2e473711c1be28c2e"
+        }
+      ],
+      "download_bytes": 5123011015,
+      "parameter_metadata": {
+        "parameters": {
+          "F32": 1279854592
+        },
+        "total": 1279854592
+      },
+      "license": "apache-2.0",
+      "metadata_url": "https://huggingface.co/api/models/allenai/DataDecide-dclm-baseline-1B/revision/step42500-seed-default?blobs=true",
+      "metadata_sha256": "8b4e101eae36e0094431c39a85dcd24e7986b8ac8977c2b10770bdc7285b2be7",
+      "model_card_url": "https://huggingface.co/allenai/DataDecide-dclm-baseline-1B/resolve/424685d36e00bf3da8912abf4b04914785b5e7bd/README.md",
+      "model_card_sha256": "2d6265075d8392f623ce8c78ebd273e6f4b5f28da82404a8fd00059d67f00c20",
+      "model_card_status": 200,
+      "adapter": "author_hf_olmo"
+    },
+    {
+      "id": "dd_dclm_baseline_qc_7p_fw3_12500",
+      "repo": "allenai/DataDecide-dclm-baseline-qc-7p-fw3-1B",
+      "ref": "step12500-seed-default",
+      "ref_exists": true,
+      "training_tokens": 18022400000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "token_source": "https://github.com/allenai/DataDecide#hyperparameters",
+      "category": "natural_corpus_base",
+      "seed": "default",
+      "selection": "predeclared recipe anchor",
+      "resolution_status": "resolved",
+      "revision": "92cf4a29e96944aef67e15b0560f31851e474dd6",
+      "config": {
+        "activation_type": "swiglu",
+        "alibi": false,
+        "alibi_bias_max": 8.0,
+        "architectures": [
+          "OLMoForCausalLM"
+        ],
+        "attention_dropout": 0.0,
+        "attention_layer_norm": false,
+        "attention_layer_norm_with_affine": false,
+        "bias_for_layer_norm": false,
+        "block_group_size": 1,
+        "block_type": "sequential",
+        "clip_qkv": null,
+        "d_model": 2048,
+        "emb_init_std": null,
+        "embedding_dropout": 0.0,
+        "embedding_layer_norm": false,
+        "embedding_size": 50304,
+        "eos_token_id": 50279,
+        "flash_attention": true,
+        "include_bias": false,
+        "init_cutoff_factor": 3.0,
+        "init_device": "cuda",
+        "init_fn": "normal",
+        "init_std": 0.02,
+        "layer_norm_eps": 1e-06,
+        "layer_norm_type": "rms",
+        "layer_norm_with_affine": true,
+        "max_sequence_length": 2048,
+        "mlp_hidden_size": null,
+        "mlp_ratio": 8,
+        "model_type": "hf_olmo",
+        "multi_query_attention": null,
+        "n_heads": 16,
+        "n_kv_heads": null,
+        "n_layers": 16,
+        "norm_after": false,
+        "pad_token_id": 1,
+        "precision": "amp_bf16",
+        "residual_dropout": 0.0,
+        "rope": true,
+        "rope_full_precision": true,
+        "rope_theta": 10000,
+        "scale_emb_init": false,
+        "scale_logits": false,
+        "torch_dtype": "float32",
+        "transformers_version": "4.50.3",
+        "use_cache": true,
+        "vocab_size": 50280,
+        "weight_tying": false
+      },
+      "config_sha256": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+      "gated": false,
+      "files": [
+        {
+          "path": "config.json",
+          "size": 1278,
+          "sha256": null,
+          "git_blob_sha1": "05f4ef82cfc33b7b334788dec2c0c50afc7a0199"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 115,
+          "sha256": null,
+          "git_blob_sha1": "07e3d7c419977cfefe68b54ac117d61b5ea6ca9b"
+        },
+        {
+          "path": "model-00001-of-00002.safetensors",
+          "size": 4707339552,
+          "sha256": "ee3575b9707d35c5643e2426f85304782df510152b56e1abe78a8fda1a2d0228",
+          "git_blob_sha1": "9455de2a0ed2d23e39e913e3ff912b753a9d0f66"
+        },
+        {
+          "path": "model-00002-of-00002.safetensors",
+          "size": 412090512,
+          "sha256": "856ee43646a623c4966215b79896f8961e0374167f30cb9856d13bd391619dc1",
+          "git_blob_sha1": "df6f8d5a460626929095c22d15a135f829b7d7dc"
+        },
+        {
+          "path": "model.safetensors.index.json",
+          "size": 8539,
+          "sha256": null,
+          "git_blob_sha1": "6ddf92f0c1e1cb3e34b06c31213b166f41a2d855"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 293,
+          "sha256": null,
+          "git_blob_sha1": "a82714f41c337edb8f8f86fa67eadcb8f9e9c21d"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 3565402,
+          "sha256": null,
+          "git_blob_sha1": "e304f23d7e900f12b1ba89749b9d4d7dd7208b81"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 5324,
+          "sha256": null,
+          "git_blob_sha1": "050abfd7c8d4c97bd577fee2e473711c1be28c2e"
+        }
+      ],
+      "download_bytes": 5123011015,
+      "parameter_metadata": {
+        "parameters": {
+          "F32": 1279854592
+        },
+        "total": 1279854592
+      },
+      "license": "apache-2.0",
+      "metadata_url": "https://huggingface.co/api/models/allenai/DataDecide-dclm-baseline-qc-7p-fw3-1B/revision/step12500-seed-default?blobs=true",
+      "metadata_sha256": "92b1bb2ac4f23ee5483485f4aa511104a7e71771327743729fe83330666187bf",
+      "model_card_url": "https://huggingface.co/allenai/DataDecide-dclm-baseline-qc-7p-fw3-1B/resolve/92cf4a29e96944aef67e15b0560f31851e474dd6/README.md",
+      "model_card_sha256": "2d6265075d8392f623ce8c78ebd273e6f4b5f28da82404a8fd00059d67f00c20",
+      "model_card_status": 200,
+      "adapter": "author_hf_olmo"
+    },
+    {
+      "id": "dd_dclm_baseline_qc_7p_fw3_15000",
+      "repo": "allenai/DataDecide-dclm-baseline-qc-7p-fw3-1B",
+      "ref": "step15000-seed-default",
+      "ref_exists": true,
+      "training_tokens": 21626880000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "token_source": "https://github.com/allenai/DataDecide#hyperparameters",
+      "category": "natural_corpus_base",
+      "seed": "default",
+      "selection": "predeclared recipe anchor",
+      "resolution_status": "resolved",
+      "revision": "53b4ee752d243ae7fc3c15b7c9b5b6e87b947ced",
+      "config": {
+        "activation_type": "swiglu",
+        "alibi": false,
+        "alibi_bias_max": 8.0,
+        "architectures": [
+          "OLMoForCausalLM"
+        ],
+        "attention_dropout": 0.0,
+        "attention_layer_norm": false,
+        "attention_layer_norm_with_affine": false,
+        "bias_for_layer_norm": false,
+        "block_group_size": 1,
+        "block_type": "sequential",
+        "clip_qkv": null,
+        "d_model": 2048,
+        "emb_init_std": null,
+        "embedding_dropout": 0.0,
+        "embedding_layer_norm": false,
+        "embedding_size": 50304,
+        "eos_token_id": 50279,
+        "flash_attention": true,
+        "include_bias": false,
+        "init_cutoff_factor": 3.0,
+        "init_device": "cuda",
+        "init_fn": "normal",
+        "init_std": 0.02,
+        "layer_norm_eps": 1e-06,
+        "layer_norm_type": "rms",
+        "layer_norm_with_affine": true,
+        "max_sequence_length": 2048,
+        "mlp_hidden_size": null,
+        "mlp_ratio": 8,
+        "model_type": "hf_olmo",
+        "multi_query_attention": null,
+        "n_heads": 16,
+        "n_kv_heads": null,
+        "n_layers": 16,
+        "norm_after": false,
+        "pad_token_id": 1,
+        "precision": "amp_bf16",
+        "residual_dropout": 0.0,
+        "rope": true,
+        "rope_full_precision": true,
+        "rope_theta": 10000,
+        "scale_emb_init": false,
+        "scale_logits": false,
+        "torch_dtype": "float32",
+        "transformers_version": "4.50.3",
+        "use_cache": true,
+        "vocab_size": 50280,
+        "weight_tying": false
+      },
+      "config_sha256": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+      "gated": false,
+      "files": [
+        {
+          "path": "config.json",
+          "size": 1278,
+          "sha256": null,
+          "git_blob_sha1": "05f4ef82cfc33b7b334788dec2c0c50afc7a0199"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 115,
+          "sha256": null,
+          "git_blob_sha1": "07e3d7c419977cfefe68b54ac117d61b5ea6ca9b"
+        },
+        {
+          "path": "model-00001-of-00002.safetensors",
+          "size": 4707339552,
+          "sha256": "5d0483f770daea4b87381b9767254c4ecd21ca8c8f179fdea7146619602ad83a",
+          "git_blob_sha1": "db1ba60ccce6dc20b1fd1257a14bea838b0e68f7"
+        },
+        {
+          "path": "model-00002-of-00002.safetensors",
+          "size": 412090512,
+          "sha256": "0d7844b0ea31c555b35fcfb6117737722abc27ffc8d0dcf5eac1c1185d289b6a",
+          "git_blob_sha1": "4f7844c4c131b9c989d9337b7384fb34e3c0bd6c"
+        },
+        {
+          "path": "model.safetensors.index.json",
+          "size": 8539,
+          "sha256": null,
+          "git_blob_sha1": "6ddf92f0c1e1cb3e34b06c31213b166f41a2d855"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 293,
+          "sha256": null,
+          "git_blob_sha1": "a82714f41c337edb8f8f86fa67eadcb8f9e9c21d"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 3565402,
+          "sha256": null,
+          "git_blob_sha1": "e304f23d7e900f12b1ba89749b9d4d7dd7208b81"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 5324,
+          "sha256": null,
+          "git_blob_sha1": "050abfd7c8d4c97bd577fee2e473711c1be28c2e"
+        }
+      ],
+      "download_bytes": 5123011015,
+      "parameter_metadata": {
+        "parameters": {
+          "F32": 1279854592
+        },
+        "total": 1279854592
+      },
+      "license": "apache-2.0",
+      "metadata_url": "https://huggingface.co/api/models/allenai/DataDecide-dclm-baseline-qc-7p-fw3-1B/revision/step15000-seed-default?blobs=true",
+      "metadata_sha256": "10c0c61195ff5d9663e5c81030c9887c47b807bb62e5c73cc2c32da321fae0fc",
+      "model_card_url": "https://huggingface.co/allenai/DataDecide-dclm-baseline-qc-7p-fw3-1B/resolve/53b4ee752d243ae7fc3c15b7c9b5b6e87b947ced/README.md",
+      "model_card_sha256": "2d6265075d8392f623ce8c78ebd273e6f4b5f28da82404a8fd00059d67f00c20",
+      "model_card_status": 200,
+      "adapter": "author_hf_olmo"
+    },
+    {
+      "id": "dd_dclm_baseline_qc_7p_fw3_20000",
+      "repo": "allenai/DataDecide-dclm-baseline-qc-7p-fw3-1B",
+      "ref": "step20000-seed-default",
+      "ref_exists": true,
+      "training_tokens": 28835840000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "token_source": "https://github.com/allenai/DataDecide#hyperparameters",
+      "category": "natural_corpus_base",
+      "seed": "default",
+      "selection": "predeclared recipe anchor",
+      "resolution_status": "resolved",
+      "revision": "318bf7b9bd59bcb9fc706e3c69dab495275f42b6",
+      "config": {
+        "activation_type": "swiglu",
+        "alibi": false,
+        "alibi_bias_max": 8.0,
+        "architectures": [
+          "OLMoForCausalLM"
+        ],
+        "attention_dropout": 0.0,
+        "attention_layer_norm": false,
+        "attention_layer_norm_with_affine": false,
+        "bias_for_layer_norm": false,
+        "block_group_size": 1,
+        "block_type": "sequential",
+        "clip_qkv": null,
+        "d_model": 2048,
+        "emb_init_std": null,
+        "embedding_dropout": 0.0,
+        "embedding_layer_norm": false,
+        "embedding_size": 50304,
+        "eos_token_id": 50279,
+        "flash_attention": true,
+        "include_bias": false,
+        "init_cutoff_factor": 3.0,
+        "init_device": "cuda",
+        "init_fn": "normal",
+        "init_std": 0.02,
+        "layer_norm_eps": 1e-06,
+        "layer_norm_type": "rms",
+        "layer_norm_with_affine": true,
+        "max_sequence_length": 2048,
+        "mlp_hidden_size": null,
+        "mlp_ratio": 8,
+        "model_type": "hf_olmo",
+        "multi_query_attention": null,
+        "n_heads": 16,
+        "n_kv_heads": null,
+        "n_layers": 16,
+        "norm_after": false,
+        "pad_token_id": 1,
+        "precision": "amp_bf16",
+        "residual_dropout": 0.0,
+        "rope": true,
+        "rope_full_precision": true,
+        "rope_theta": 10000,
+        "scale_emb_init": false,
+        "scale_logits": false,
+        "torch_dtype": "float32",
+        "transformers_version": "4.50.3",
+        "use_cache": true,
+        "vocab_size": 50280,
+        "weight_tying": false
+      },
+      "config_sha256": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+      "gated": false,
+      "files": [
+        {
+          "path": "config.json",
+          "size": 1278,
+          "sha256": null,
+          "git_blob_sha1": "05f4ef82cfc33b7b334788dec2c0c50afc7a0199"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 115,
+          "sha256": null,
+          "git_blob_sha1": "07e3d7c419977cfefe68b54ac117d61b5ea6ca9b"
+        },
+        {
+          "path": "model-00001-of-00002.safetensors",
+          "size": 4707339552,
+          "sha256": "92b973e81071bc1e185548005ef676175d4a9802558ce55f308633c870b3cae6",
+          "git_blob_sha1": "f0e9b9f62f99ad09e80de48e16d3c938b7968714"
+        },
+        {
+          "path": "model-00002-of-00002.safetensors",
+          "size": 412090512,
+          "sha256": "b918f8f7029f386652a95199ccadde76db686338862b91d1a272162b9ff28b78",
+          "git_blob_sha1": "aca99d5b0823db94e00d009ca6b66544a9ee6eb3"
+        },
+        {
+          "path": "model.safetensors.index.json",
+          "size": 8539,
+          "sha256": null,
+          "git_blob_sha1": "6ddf92f0c1e1cb3e34b06c31213b166f41a2d855"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 293,
+          "sha256": null,
+          "git_blob_sha1": "a82714f41c337edb8f8f86fa67eadcb8f9e9c21d"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 3565402,
+          "sha256": null,
+          "git_blob_sha1": "e304f23d7e900f12b1ba89749b9d4d7dd7208b81"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 5324,
+          "sha256": null,
+          "git_blob_sha1": "050abfd7c8d4c97bd577fee2e473711c1be28c2e"
+        }
+      ],
+      "download_bytes": 5123011015,
+      "parameter_metadata": {
+        "parameters": {
+          "F32": 1279854592
+        },
+        "total": 1279854592
+      },
+      "license": "apache-2.0",
+      "metadata_url": "https://huggingface.co/api/models/allenai/DataDecide-dclm-baseline-qc-7p-fw3-1B/revision/step20000-seed-default?blobs=true",
+      "metadata_sha256": "f7f7aece9845dd944f681ea06614713bd3368d08bdeeaac8155a0c5e14d51555",
+      "model_card_url": "https://huggingface.co/allenai/DataDecide-dclm-baseline-qc-7p-fw3-1B/resolve/318bf7b9bd59bcb9fc706e3c69dab495275f42b6/README.md",
+      "model_card_sha256": "2d6265075d8392f623ce8c78ebd273e6f4b5f28da82404a8fd00059d67f00c20",
+      "model_card_status": 200,
+      "adapter": "author_hf_olmo"
+    },
+    {
+      "id": "dd_dclm_baseline_qc_7p_fw3_42500",
+      "repo": "allenai/DataDecide-dclm-baseline-qc-7p-fw3-1B",
+      "ref": "step42500-seed-default",
+      "ref_exists": true,
+      "training_tokens": 61276160000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "token_source": "https://github.com/allenai/DataDecide#hyperparameters",
+      "category": "natural_corpus_base",
+      "seed": "default",
+      "selection": "predeclared recipe anchor",
+      "resolution_status": "resolved",
+      "revision": "21c67019be5d0f7946a00024746dd41d68375a56",
+      "config": {
+        "activation_type": "swiglu",
+        "alibi": false,
+        "alibi_bias_max": 8.0,
+        "architectures": [
+          "OLMoForCausalLM"
+        ],
+        "attention_dropout": 0.0,
+        "attention_layer_norm": false,
+        "attention_layer_norm_with_affine": false,
+        "bias_for_layer_norm": false,
+        "block_group_size": 1,
+        "block_type": "sequential",
+        "clip_qkv": null,
+        "d_model": 2048,
+        "emb_init_std": null,
+        "embedding_dropout": 0.0,
+        "embedding_layer_norm": false,
+        "embedding_size": 50304,
+        "eos_token_id": 50279,
+        "flash_attention": true,
+        "include_bias": false,
+        "init_cutoff_factor": 3.0,
+        "init_device": "cuda",
+        "init_fn": "normal",
+        "init_std": 0.02,
+        "layer_norm_eps": 1e-06,
+        "layer_norm_type": "rms",
+        "layer_norm_with_affine": true,
+        "max_sequence_length": 2048,
+        "mlp_hidden_size": null,
+        "mlp_ratio": 8,
+        "model_type": "hf_olmo",
+        "multi_query_attention": null,
+        "n_heads": 16,
+        "n_kv_heads": null,
+        "n_layers": 16,
+        "norm_after": false,
+        "pad_token_id": 1,
+        "precision": "amp_bf16",
+        "residual_dropout": 0.0,
+        "rope": true,
+        "rope_full_precision": true,
+        "rope_theta": 10000,
+        "scale_emb_init": false,
+        "scale_logits": false,
+        "torch_dtype": "float32",
+        "transformers_version": "4.50.3",
+        "use_cache": true,
+        "vocab_size": 50280,
+        "weight_tying": false
+      },
+      "config_sha256": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+      "gated": false,
+      "files": [
+        {
+          "path": "config.json",
+          "size": 1278,
+          "sha256": null,
+          "git_blob_sha1": "05f4ef82cfc33b7b334788dec2c0c50afc7a0199"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 115,
+          "sha256": null,
+          "git_blob_sha1": "07e3d7c419977cfefe68b54ac117d61b5ea6ca9b"
+        },
+        {
+          "path": "model-00001-of-00002.safetensors",
+          "size": 4707339552,
+          "sha256": "ef3a80b455806f832af3be27cfa9269f031b0884caaf2dd7ef9342b85c93e6cf",
+          "git_blob_sha1": "b1e25689c2932ed17fb93d7525d005ea7c932b07"
+        },
+        {
+          "path": "model-00002-of-00002.safetensors",
+          "size": 412090512,
+          "sha256": "a6d32d45812e0ba31d9c13d7d50440e89a59591eb2af6e7672f69e6ea011123c",
+          "git_blob_sha1": "6da40d83f7c1ac3e5a576ba012a482813059bcee"
+        },
+        {
+          "path": "model.safetensors.index.json",
+          "size": 8539,
+          "sha256": null,
+          "git_blob_sha1": "6ddf92f0c1e1cb3e34b06c31213b166f41a2d855"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 293,
+          "sha256": null,
+          "git_blob_sha1": "a82714f41c337edb8f8f86fa67eadcb8f9e9c21d"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 3565402,
+          "sha256": null,
+          "git_blob_sha1": "e304f23d7e900f12b1ba89749b9d4d7dd7208b81"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 5324,
+          "sha256": null,
+          "git_blob_sha1": "050abfd7c8d4c97bd577fee2e473711c1be28c2e"
+        }
+      ],
+      "download_bytes": 5123011015,
+      "parameter_metadata": {
+        "parameters": {
+          "F32": 1279854592
+        },
+        "total": 1279854592
+      },
+      "license": "apache-2.0",
+      "metadata_url": "https://huggingface.co/api/models/allenai/DataDecide-dclm-baseline-qc-7p-fw3-1B/revision/step42500-seed-default?blobs=true",
+      "metadata_sha256": "d2cf67b49dca73e4ec73631a30c09486b4466f0d4d6682eb34b306871ca7ad16",
+      "model_card_url": "https://huggingface.co/allenai/DataDecide-dclm-baseline-qc-7p-fw3-1B/resolve/21c67019be5d0f7946a00024746dd41d68375a56/README.md",
+      "model_card_sha256": "2d6265075d8392f623ce8c78ebd273e6f4b5f28da82404a8fd00059d67f00c20",
+      "model_card_status": 200,
+      "adapter": "author_hf_olmo"
+    },
+    {
+      "id": "weborganizer_dclm",
+      "repo": "WebOrganizer/LM-1b_1x-DCLMFasttext",
+      "training_tokens": 28795904000,
+      "token_kind": "author_training_config",
+      "category": "natural_corpus_base",
+      "selection": "global DCLM score filter",
+      "resolution_status": "resolved",
+      "revision": "fc4aea2a8605a3e636a69904d890b2a6686f6584",
+      "config": {
+        "apply_qk_norm": true,
+        "architectures": [
+          "OpenLMForCausalLM"
+        ],
+        "attn_activation": null,
+        "attn_name": "torch_attn",
+        "attn_seq_scalar": null,
+        "attn_seq_scalar_alpha": null,
+        "dim": 2048,
+        "ffn_type": "swiglu_torch",
+        "model": "open_lm_1b_swiglutorch",
+        "model_type": "openlm",
+        "moe_capacity_factor": 1.25,
+        "moe_expert_model_parallelism": false,
+        "moe_freq": 0,
+        "moe_loss_weight": 0.1,
+        "moe_num_experts": null,
+        "moe_top_k": 2,
+        "moe_weight_parallelism": false,
+        "n_heads": 16,
+        "n_layers": 24,
+        "norm_eps": 1e-05,
+        "norm_type": "gain_only_lp_layer_norm",
+        "params": null,
+        "positional_embedding_type": "rotary",
+        "post_embed_norm": false,
+        "qk_norm": true,
+        "seq_len": 2048,
+        "torch_dtype": "float32",
+        "transformers_version": "4.40.2",
+        "vocab_size": 50432,
+        "weight_tying": false
+      },
+      "config_sha256": "1312008b0877d8ce480b1d97db785f4e5ffa504bdfbd397d027414ce3a56806d",
+      "gated": false,
+      "files": [
+        {
+          "path": "config.json",
+          "size": 832,
+          "sha256": null,
+          "git_blob_sha1": "ed9e86686ded39b9cd5c5e21b1fc1540713a7ef6"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 69,
+          "sha256": null,
+          "git_blob_sha1": "3d54d0bd7b1b40318ff1072b1fbbc50a6f901297"
+        },
+        {
+          "path": "model-00001-of-00002.safetensors",
+          "size": 4985679432,
+          "sha256": "48691256277a41066ec4b0c0a72f9b59cbab4ad801d27a85afbb7e813dc62cda",
+          "git_blob_sha1": "07e41f4682aea1302a9abf28cd34c74e19f639ef"
+        },
+        {
+          "path": "model-00002-of-00002.safetensors",
+          "size": 773925424,
+          "sha256": "2d9034d957b528a29b8a5b566df35bf2850b41315de3e5fac6d4caa0276a5a66",
+          "git_blob_sha1": "a9a887570803b79a406dcb39738bd2123b48520f"
+        },
+        {
+          "path": "model.safetensors.index.json",
+          "size": 18036,
+          "sha256": null,
+          "git_blob_sha1": "01fd9903cfdc2560483762eb9155ba8570ff410b"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 441,
+          "sha256": null,
+          "git_blob_sha1": "7fb88369a36878182d8a7d1d9249cca0f6093b1a"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 2114042,
+          "sha256": null,
+          "git_blob_sha1": "eb39a3d940ed41b696b46287f39ba3b76aad03f6"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 4834,
+          "sha256": null,
+          "git_blob_sha1": "f4028db2dc43c02072d73bb93b4cdadf162588a3"
+        }
+      ],
+      "download_bytes": 5761743110,
+      "parameter_metadata": {
+        "parameters": {
+          "F32": 1439895040
+        },
+        "total": 1439895040
+      },
+      "license": null,
+      "metadata_url": "https://huggingface.co/api/models/WebOrganizer/LM-1b_1x-DCLMFasttext/revision/main?blobs=true",
+      "metadata_sha256": "f671055d76b2ac91618894de92f9a57116eb370557a0bc25ffa8c8f135610b92",
+      "model_card_url": "https://huggingface.co/WebOrganizer/LM-1b_1x-DCLMFasttext/resolve/fc4aea2a8605a3e636a69904d890b2a6686f6584/README.md",
+      "model_card_sha256": "ed58facb3ba97c67feb6b3de2e9d979017b8c48ef9c0dfa52af658e307d7fe4a",
+      "model_card_status": 200,
+      "adapter": "author_open_lm"
+    },
+    {
+      "id": "weborganizer_domain_mix",
+      "repo": "WebOrganizer/LM-1b_1x-DCLMFasttext_over_Topics_x_Formats_for_MMLU_and_Hellaswag",
+      "training_tokens": 28795904000,
+      "token_kind": "author_training_config",
+      "category": "natural_corpus_base",
+      "selection": "domain-mix recipe optimized for MMLU and HellaSwag",
+      "resolution_status": "resolved",
+      "revision": "faf9d00dcbbb55be03600abeb52ae9dd423d0bac",
+      "config": {
+        "apply_qk_norm": true,
+        "architectures": [
+          "OpenLMForCausalLM"
+        ],
+        "attn_activation": null,
+        "attn_name": "torch_attn",
+        "attn_seq_scalar": null,
+        "attn_seq_scalar_alpha": null,
+        "dim": 2048,
+        "ffn_type": "swiglu_torch",
+        "model": "open_lm_1b_swiglutorch",
+        "model_type": "openlm",
+        "moe_capacity_factor": 1.25,
+        "moe_expert_model_parallelism": false,
+        "moe_freq": 0,
+        "moe_loss_weight": 0.1,
+        "moe_num_experts": null,
+        "moe_top_k": 2,
+        "moe_weight_parallelism": false,
+        "n_heads": 16,
+        "n_layers": 24,
+        "norm_eps": 1e-05,
+        "norm_type": "gain_only_lp_layer_norm",
+        "params": null,
+        "positional_embedding_type": "rotary",
+        "post_embed_norm": false,
+        "qk_norm": true,
+        "seq_len": 2048,
+        "torch_dtype": "float32",
+        "transformers_version": "4.40.2",
+        "vocab_size": 50432,
+        "weight_tying": false
+      },
+      "config_sha256": "1312008b0877d8ce480b1d97db785f4e5ffa504bdfbd397d027414ce3a56806d",
+      "gated": false,
+      "files": [
+        {
+          "path": "config.json",
+          "size": 832,
+          "sha256": null,
+          "git_blob_sha1": "ed9e86686ded39b9cd5c5e21b1fc1540713a7ef6"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 69,
+          "sha256": null,
+          "git_blob_sha1": "3d54d0bd7b1b40318ff1072b1fbbc50a6f901297"
+        },
+        {
+          "path": "model-00001-of-00002.safetensors",
+          "size": 4985679432,
+          "sha256": "ac584c6c8edf0a41721c886c282712fda205ef9ecd5232ae72af210d168ac626",
+          "git_blob_sha1": "6ff988c5147bc74c83656f92ee331b7a6e6fd47d"
+        },
+        {
+          "path": "model-00002-of-00002.safetensors",
+          "size": 773925424,
+          "sha256": "a8ca2cddbc27d70aa70f48f1f4df882fa1a38bbf39d3ebf62a36cfb370b2208e",
+          "git_blob_sha1": "db9ea56519b649922da3aa1340fc9facf78b7d53"
+        },
+        {
+          "path": "model.safetensors.index.json",
+          "size": 18036,
+          "sha256": null,
+          "git_blob_sha1": "01fd9903cfdc2560483762eb9155ba8570ff410b"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 441,
+          "sha256": null,
+          "git_blob_sha1": "7fb88369a36878182d8a7d1d9249cca0f6093b1a"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 2114042,
+          "sha256": null,
+          "git_blob_sha1": "eb39a3d940ed41b696b46287f39ba3b76aad03f6"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 4834,
+          "sha256": null,
+          "git_blob_sha1": "f4028db2dc43c02072d73bb93b4cdadf162588a3"
+        }
+      ],
+      "download_bytes": 5761743110,
+      "parameter_metadata": {
+        "parameters": {
+          "F32": 1439895040
+        },
+        "total": 1439895040
+      },
+      "license": null,
+      "metadata_url": "https://huggingface.co/api/models/WebOrganizer/LM-1b_1x-DCLMFasttext_over_Topics_x_Formats_for_MMLU_and_Hellaswag/revision/main?blobs=true",
+      "metadata_sha256": "15040f8b4249d50820cf4036d892f3e4c475a34fad9d40139088bdc085834a2c",
+      "model_card_url": "https://huggingface.co/WebOrganizer/LM-1b_1x-DCLMFasttext_over_Topics_x_Formats_for_MMLU_and_Hellaswag/resolve/faf9d00dcbbb55be03600abeb52ae9dd423d0bac/README.md",
+      "model_card_sha256": "fb29caee94011358d0303e95a6705cff287bfe0e0952592e7c848a99acfda158",
+      "model_card_status": 200,
+      "adapter": "author_open_lm"
+    },
+    {
+      "id": "phi_1_5",
+      "repo": "microsoft/phi-1_5",
+      "training_tokens": 150000000000,
+      "token_kind": "author_rounded",
+      "category": "teacher_synthetic_reference",
+      "resolution_status": "resolved",
+      "revision": "77aa61eeac94fbf33d492b9f2744c98b42d5b5eb",
+      "config": {
+        "_name_or_path": "microsoft/phi-1_5",
+        "architectures": [
+          "PhiForCausalLM"
+        ],
+        "attention_dropout": 0.0,
+        "bos_token_id": null,
+        "embd_pdrop": 0.0,
+        "eos_token_id": null,
+        "hidden_act": "gelu_new",
+        "hidden_size": 2048,
+        "initializer_range": 0.02,
+        "intermediate_size": 8192,
+        "layer_norm_eps": 1e-05,
+        "max_position_embeddings": 2048,
+        "model_type": "phi",
+        "num_attention_heads": 32,
+        "num_hidden_layers": 24,
+        "num_key_value_heads": null,
+        "partial_rotary_factor": 0.5,
+        "qk_layernorm": false,
+        "resid_pdrop": 0.0,
+        "rope_scaling": null,
+        "rope_theta": 10000.0,
+        "tie_word_embeddings": false,
+        "torch_dtype": "float16",
+        "transformers_version": "4.37.0",
+        "use_cache": true,
+        "vocab_size": 51200
+      },
+      "config_sha256": "2fe52126434075e8a23aca5bfed8cca8aff7051779e6f11c76de9e9e9923dcef",
+      "gated": false,
+      "files": [
+        {
+          "path": "added_tokens.json",
+          "size": 1080,
+          "sha256": null,
+          "git_blob_sha1": "7debb4784a7d53328d4d021fc46314bec4af3833"
+        },
+        {
+          "path": "config.json",
+          "size": 736,
+          "sha256": null,
+          "git_blob_sha1": "769ba572fa8324c55e100d239b6ee2b06b9f9987"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 74,
+          "sha256": null,
+          "git_blob_sha1": "d0015bdfafef527ca1481793b0dbccfaf8bc39e4"
+        },
+        {
+          "path": "merges.txt",
+          "size": 456318,
+          "sha256": null,
+          "git_blob_sha1": "226b0752cac7789c48f0cb3ec53eda48b7be36cc"
+        },
+        {
+          "path": "model.safetensors",
+          "size": 2836578696,
+          "sha256": "b4f562cc4b12f1154a0b658b9d74ab9d024a686420fdf154ebc00a2219976df7",
+          "git_blob_sha1": "eec996309519f29b61fcf8dcae4e36de0f1036b5"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 99,
+          "sha256": null,
+          "git_blob_sha1": "0204ed10c186a4c7c68f55dff8f26087a45898d6"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 2114924,
+          "sha256": null,
+          "git_blob_sha1": "c1148447551675ea739c440ee3e247df9f354d8f"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 237,
+          "sha256": null,
+          "git_blob_sha1": "e10f4ab8508c6cb06f731c68342800afa791a62a"
+        },
+        {
+          "path": "vocab.json",
+          "size": 798156,
+          "sha256": null,
+          "git_blob_sha1": "84ef7fb594b5c0979e48bdeddb60a0adef33df0b"
+        }
+      ],
+      "download_bytes": 2839950320,
+      "parameter_metadata": {
+        "parameters": {
+          "F16": 1418270720
+        },
+        "total": 1418270720
+      },
+      "license": "mit",
+      "metadata_url": "https://huggingface.co/api/models/microsoft/phi-1_5/revision/main?blobs=true",
+      "metadata_sha256": "118a504898ed419508f24e06f8261430df03df897ef3a4dea785189aea2b9abb",
+      "model_card_url": "https://huggingface.co/microsoft/phi-1_5/resolve/77aa61eeac94fbf33d492b9f2744c98b42d5b5eb/README.md",
+      "model_card_sha256": "0d640531410e28088c51bc12c4b59e95fccac487099635459b75920fb000530c",
+      "model_card_status": 200,
+      "adapter": "transformers_builtin"
+    },
+    {
+      "id": "opt_1_3b",
+      "repo": "facebook/opt-1.3b",
+      "training_tokens": 180000000000,
+      "token_kind": "author_rounded",
+      "category": "natural_corpus_base",
+      "resolution_status": "resolved",
+      "revision": "3f5c25d0bc631cb57ac65913f76e22c2dfb61d62",
+      "config": {
+        "_name_or_path": "facebook/opt-1.3b",
+        "activation_dropout": 0.0,
+        "activation_function": "relu",
+        "architectures": [
+          "OPTForCausalLM"
+        ],
+        "attention_dropout": 0.0,
+        "bos_token_id": 2,
+        "do_layer_norm_before": true,
+        "dropout": 0.1,
+        "eos_token_id": 2,
+        "ffn_dim": 8192,
+        "hidden_size": 2048,
+        "init_std": 0.02,
+        "layerdrop": 0.0,
+        "max_position_embeddings": 2048,
+        "model_type": "opt",
+        "num_attention_heads": 32,
+        "num_hidden_layers": 24,
+        "pad_token_id": 1,
+        "prefix": "</s>",
+        "torch_dtype": "float16",
+        "transformers_version": "4.21.0.dev0",
+        "use_cache": true,
+        "vocab_size": 50272,
+        "word_embed_proj_dim": 2048
+      },
+      "config_sha256": "f1aaceefb7d34d346e9b0400d95fdb4970567bcbe1d4aba1068c5402099b644f",
+      "gated": false,
+      "files": [
+        {
+          "path": "config.json",
+          "size": 653,
+          "sha256": null,
+          "git_blob_sha1": "1d966f7bdd3b64f7632fcc679393d9dc63cea7a7"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 137,
+          "sha256": null,
+          "git_blob_sha1": "cf739e3ba86db7791ebab2828cc34b8a5acd3a86"
+        },
+        {
+          "path": "merges.txt",
+          "size": 456318,
+          "sha256": null,
+          "git_blob_sha1": "226b0752cac7789c48f0cb3ec53eda48b7be36cc"
+        },
+        {
+          "path": "pytorch_model.bin",
+          "size": 2631639353,
+          "sha256": "cf7d5c970d6ddbd3b03009b397c0422e147edd5c8020d47a8d2fac0b11a3b08d",
+          "git_blob_sha1": "8b10b18dd607b5f523a5dd08774b30aa4dcfdc37"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 441,
+          "sha256": null,
+          "git_blob_sha1": "5dfa36546b8eddce0e04df3133c30df43fcc3828"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 685,
+          "sha256": null,
+          "git_blob_sha1": "27c24ca9d908d0b678b20c698aeb9e950c44d865"
+        },
+        {
+          "path": "vocab.json",
+          "size": 898822,
+          "sha256": null,
+          "git_blob_sha1": "0a39732b2d8be8e493cab3da68b68cc3e28221de"
+        }
+      ],
+      "download_bytes": 2632996409,
+      "parameter_metadata": null,
+      "license": "other",
+      "metadata_url": "https://huggingface.co/api/models/facebook/opt-1.3b/revision/main?blobs=true",
+      "metadata_sha256": "8833772ff23bcb20515c33d92991c10c045f48401f5ed11045cf8d6c30dfb7a1",
+      "model_card_url": "https://huggingface.co/facebook/opt-1.3b/resolve/3f5c25d0bc631cb57ac65913f76e22c2dfb61d62/README.md",
+      "model_card_sha256": "b007e43430911227bbe497e8402d85e1053173e2ad816e8ac9db643aa0a2e244",
+      "model_card_status": 200,
+      "adapter": "transformers_builtin"
+    },
+    {
+      "id": "pythia_1b",
+      "repo": "EleutherAI/pythia-1b",
+      "training_tokens": 300000000000,
+      "token_kind": "author_rounded",
+      "category": "natural_corpus_base",
+      "resolution_status": "resolved",
+      "revision": "f73d7dcc545c8bd326d8559c8ef84ffe92fea6b2",
+      "config": {
+        "architectures": [
+          "GPTNeoXForCausalLM"
+        ],
+        "bos_token_id": 0,
+        "eos_token_id": 0,
+        "hidden_act": "gelu",
+        "hidden_size": 2048,
+        "initializer_range": 0.02,
+        "intermediate_size": 8192,
+        "layer_norm_eps": 1e-05,
+        "max_position_embeddings": 2048,
+        "model_type": "gpt_neox",
+        "num_attention_heads": 8,
+        "num_hidden_layers": 16,
+        "rotary_emb_base": 10000,
+        "rotary_pct": 0.25,
+        "tie_word_embeddings": false,
+        "torch_dtype": "float16",
+        "transformers_version": "4.24.0",
+        "use_cache": true,
+        "use_parallel_residual": true,
+        "vocab_size": 50304
+      },
+      "config_sha256": "302d6702a29de1039066e41404877fb8c53b7ddc82e88f9aba277f230086cfe0",
+      "gated": false,
+      "files": [
+        {
+          "path": "config.json",
+          "size": 569,
+          "sha256": null,
+          "git_blob_sha1": "631d0e859247ad69414b72e657e7471a07403090"
+        },
+        {
+          "path": "model.safetensors",
+          "size": 2090701528,
+          "sha256": "7e6dff44849e036a73296368e663bd9420009977f03a8d4d747b234264f37107",
+          "git_blob_sha1": "321cf4560d73caf37ea9f2a47b7486cd46798dc8"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 99,
+          "sha256": null,
+          "git_blob_sha1": "0204ed10c186a4c7c68f55dff8f26087a45898d6"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 2113710,
+          "sha256": null,
+          "git_blob_sha1": "f74dfbfab8f97770a87769c739fb080c21c8bacc"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 396,
+          "sha256": null,
+          "git_blob_sha1": "f1860edb10f80bcaf7b023fce47c68a23b724c23"
+        }
+      ],
+      "download_bytes": 2092816302,
+      "parameter_metadata": {
+        "parameters": {
+          "F16": 1011782144,
+          "U8": 67108864
+        },
+        "total": 1078891008
+      },
+      "license": "apache-2.0",
+      "metadata_url": "https://huggingface.co/api/models/EleutherAI/pythia-1b/revision/main?blobs=true",
+      "metadata_sha256": "38b36257433d441ee1ed0020e3526ece70bac6a15b98df2d303de40c25288372",
+      "model_card_url": "https://huggingface.co/EleutherAI/pythia-1b/resolve/f73d7dcc545c8bd326d8559c8ef84ffe92fea6b2/README.md",
+      "model_card_sha256": "eb4025893f212f2baf2fe92be87d26c028593e86b0e3572b7ac5114080bbb6dc",
+      "model_card_status": 200,
+      "adapter": "transformers_builtin"
+    },
+    {
+      "id": "falcon_rw_1b",
+      "repo": "tiiuae/falcon-rw-1b",
+      "training_tokens": 350000000000,
+      "token_kind": "author_rounded",
+      "category": "natural_corpus_base",
+      "resolution_status": "resolved",
+      "revision": "e4b9872bb803165eb22f0a867d4e6a64d34fce19",
+      "config": {
+        "alibi": true,
+        "apply_residual_connection_post_layernorm": false,
+        "architectures": [
+          "FalconForCausalLM"
+        ],
+        "attention_dropout": 0.0,
+        "auto_map": {
+          "AutoConfig": "configuration_falcon.FalconConfig",
+          "AutoModel": "modeling_falcon.FalconModel",
+          "AutoModelForSequenceClassification": "modeling_falcon.FalconForSequenceClassification",
+          "AutoModelForTokenClassification": "modeling_falcon.FalconForTokenClassification",
+          "AutoModelForQuestionAnswering": "modeling_falcon.FalconForQuestionAnswering",
+          "AutoModelForCausalLM": "modeling_falcon.FalconForCausalLM"
+        },
+        "bias": true,
+        "bos_token_id": 1,
+        "eos_token_id": 2,
+        "hidden_dropout": 0.0,
+        "hidden_size": 2048,
+        "initializer_range": 0.02,
+        "layer_norm_epsilon": 1e-05,
+        "model_type": "falcon",
+        "multi_query": false,
+        "new_decoder_architecture": false,
+        "num_attention_heads": 32,
+        "num_hidden_layers": 24,
+        "parallel_attn": false,
+        "torch_dtype": "bfloat16",
+        "transformers_version": "4.27.4",
+        "use_cache": true,
+        "vocab_size": 50304
+      },
+      "config_sha256": "290abb8e65179fdde051605b65ab2256f090c6da5d558bc5c72eddb533ee438f",
+      "gated": false,
+      "files": [
+        {
+          "path": "config.json",
+          "size": 1046,
+          "sha256": null,
+          "git_blob_sha1": "8406492716d8479643a1b0d0be416ecd85ef21f2"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 115,
+          "sha256": null,
+          "git_blob_sha1": "e03a41102e042c156d9ddb05fca7e58a34677efd"
+        },
+        {
+          "path": "merges.txt",
+          "size": 456318,
+          "sha256": null,
+          "git_blob_sha1": "226b0752cac7789c48f0cb3ec53eda48b7be36cc"
+        },
+        {
+          "path": "pytorch_model.bin",
+          "size": 2623348889,
+          "sha256": "3a0d68f0309c8f7ec913f51edf8bf2eca849477c9f53db727f49ffa2f6019251",
+          "git_blob_sha1": "7cdd4f561d9e612f0f969de3f7accfeb2efc2204"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 99,
+          "sha256": null,
+          "git_blob_sha1": "0204ed10c186a4c7c68f55dff8f26087a45898d6"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 2107653,
+          "sha256": null,
+          "git_blob_sha1": "5de8effbe407429dce1f3ad068cd1bbd215d3a5c"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 234,
+          "sha256": null,
+          "git_blob_sha1": "546efe6d18ae2ad7758d0c9ef51cacdb81c8dc9d"
+        },
+        {
+          "path": "vocab.json",
+          "size": 798156,
+          "sha256": null,
+          "git_blob_sha1": "84ef7fb594b5c0979e48bdeddb60a0adef33df0b"
+        }
+      ],
+      "download_bytes": 2626712510,
+      "parameter_metadata": null,
+      "license": "apache-2.0",
+      "metadata_url": "https://huggingface.co/api/models/tiiuae/falcon-rw-1b/revision/main?blobs=true",
+      "metadata_sha256": "1d68eff756414098b272fbe15ee0fffe1f8083856d47e969e0286f6e575a98fd",
+      "model_card_url": "https://huggingface.co/tiiuae/falcon-rw-1b/resolve/e4b9872bb803165eb22f0a867d4e6a64d34fce19/README.md",
+      "model_card_sha256": "a82d599ab4c07663931273f23463ebb6030426a911b95230a42201e0b4954b63",
+      "model_card_status": 200,
+      "adapter": "transformers_builtin"
+    },
+    {
+      "id": "mobilellm_1b",
+      "repo": "facebook/MobileLLM-1B",
+      "training_tokens": 1000000000000,
+      "token_kind": "author_rounded",
+      "category": "natural_corpus_base",
+      "resolution_status": "blocked",
+      "error": "config HTTP 401"
+    },
+    {
+      "id": "tinyllama_early_21b",
+      "repo": "TinyLlama/tinyLlama-intermediate-checkpoints",
+      "ref": "step-10k-token-21B",
+      "training_tokens": 21000000000,
+      "token_kind": "nominal_official_branch_label",
+      "token_source": "https://huggingface.co/TinyLlama/tinyLlama-intermediate-checkpoints/refs",
+      "category": "natural_corpus_base",
+      "selection": "predeclared early trajectory milestones; labels are rounded, not exact token counters",
+      "resolution_status": "resolved",
+      "revision": "2912f88458c920a786d8a2be58854dd12598ce3a",
+      "config": {
+        "_name_or_path": "meta-llama/Llama-2-7b-hf",
+        "architectures": [
+          "LlamaForCausalLM"
+        ],
+        "bos_token_id": 1,
+        "eos_token_id": 2,
+        "hidden_act": "silu",
+        "hidden_size": 2048,
+        "initializer_range": 0.02,
+        "intermediate_size": 5632,
+        "max_position_embeddings": 2048,
+        "model_type": "llama",
+        "num_attention_heads": 32,
+        "num_hidden_layers": 22,
+        "num_key_value_heads": 4,
+        "pretraining_tp": 1,
+        "rms_norm_eps": 1e-05,
+        "rope_scaling": null,
+        "tie_word_embeddings": false,
+        "torch_dtype": "float32",
+        "transformers_version": "4.31.0.dev0",
+        "use_cache": true,
+        "vocab_size": 32000
+      },
+      "config_sha256": "921d10e1cc6a37404ae93a2b494bede8ae00aac5b97e2862466f414661c371c7",
+      "gated": false,
+      "files": [
+        {
+          "path": "config.json",
+          "size": 607,
+          "sha256": null,
+          "git_blob_sha1": "65b05b46e63b4641e539f890af9471137b911f29"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 129,
+          "sha256": null,
+          "git_blob_sha1": "89c1930ccf07b1ba0c1bf146b2ad2d2666761dfb"
+        },
+        {
+          "path": "pytorch_model.bin",
+          "size": 4400253617,
+          "sha256": "d8ef3cb9e3e0493cc4ed1c2aec0388e6e827ec6a12da3a327878ecfb121812b9",
+          "git_blob_sha1": "5d7aa9db4692017ce5c48c53c67b4e477333f18b"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 414,
+          "sha256": null,
+          "git_blob_sha1": "451134b2ddc2e78555d1e857518c54b4bdc2e87d"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 1842767,
+          "sha256": null,
+          "git_blob_sha1": "a6e931b92caff4c79c5c56282f1e89569a0ae558"
+        },
+        {
+          "path": "tokenizer.model",
+          "size": 499723,
+          "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+          "git_blob_sha1": "6c00c742ce03c627d6cd5b795984876fa49fa899"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 776,
+          "sha256": null,
+          "git_blob_sha1": "2ef41cbc275000b29afe157ba487f0530b8c26dc"
+        }
+      ],
+      "download_bytes": 4402598033,
+      "parameter_metadata": null,
+      "license": "apache-2.0",
+      "metadata_url": "https://huggingface.co/api/models/TinyLlama/tinyLlama-intermediate-checkpoints/revision/step-10k-token-21B?blobs=true",
+      "metadata_sha256": "391d80d9baf7e256c3460cb1f20c78e97edf012a109c4e7a78da9cd22862c0ba",
+      "model_card_url": "https://huggingface.co/TinyLlama/tinyLlama-intermediate-checkpoints/resolve/2912f88458c920a786d8a2be58854dd12598ce3a/README.md",
+      "model_card_sha256": "8aef70468800a47efde8881766ca2ba3f5698c4bb237e6015df64e2f31bc5542",
+      "model_card_status": 200,
+      "adapter": "transformers_builtin"
+    },
+    {
+      "id": "tinyllama_early_31b",
+      "repo": "TinyLlama/tinyLlama-intermediate-checkpoints",
+      "ref": "step-15k-token-31B",
+      "training_tokens": 31000000000,
+      "token_kind": "nominal_official_branch_label",
+      "token_source": "https://huggingface.co/TinyLlama/tinyLlama-intermediate-checkpoints/refs",
+      "category": "natural_corpus_base",
+      "selection": "predeclared early trajectory milestones; labels are rounded, not exact token counters",
+      "resolution_status": "resolved",
+      "revision": "60ddc9dcab19b6542e68316f1fd8a9758415ce2e",
+      "config": {
+        "_name_or_path": "meta-llama/Llama-2-7b-hf",
+        "architectures": [
+          "LlamaForCausalLM"
+        ],
+        "bos_token_id": 1,
+        "eos_token_id": 2,
+        "hidden_act": "silu",
+        "hidden_size": 2048,
+        "initializer_range": 0.02,
+        "intermediate_size": 5632,
+        "max_position_embeddings": 2048,
+        "model_type": "llama",
+        "num_attention_heads": 32,
+        "num_hidden_layers": 22,
+        "num_key_value_heads": 4,
+        "pretraining_tp": 1,
+        "rms_norm_eps": 1e-05,
+        "rope_scaling": null,
+        "tie_word_embeddings": false,
+        "torch_dtype": "float32",
+        "transformers_version": "4.31.0.dev0",
+        "use_cache": true,
+        "vocab_size": 32000
+      },
+      "config_sha256": "921d10e1cc6a37404ae93a2b494bede8ae00aac5b97e2862466f414661c371c7",
+      "gated": false,
+      "files": [
+        {
+          "path": "config.json",
+          "size": 607,
+          "sha256": null,
+          "git_blob_sha1": "65b05b46e63b4641e539f890af9471137b911f29"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 129,
+          "sha256": null,
+          "git_blob_sha1": "89c1930ccf07b1ba0c1bf146b2ad2d2666761dfb"
+        },
+        {
+          "path": "pytorch_model.bin",
+          "size": 4400253617,
+          "sha256": "7e7299a9338b7240b9598ada12d431d1443021ebd80f363259f2ef47c9eb8116",
+          "git_blob_sha1": "d121f5883f8e9837a17363c5387930ddecd9eebe"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 414,
+          "sha256": null,
+          "git_blob_sha1": "451134b2ddc2e78555d1e857518c54b4bdc2e87d"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 1842767,
+          "sha256": null,
+          "git_blob_sha1": "a6e931b92caff4c79c5c56282f1e89569a0ae558"
+        },
+        {
+          "path": "tokenizer.model",
+          "size": 499723,
+          "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+          "git_blob_sha1": "6c00c742ce03c627d6cd5b795984876fa49fa899"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 776,
+          "sha256": null,
+          "git_blob_sha1": "2ef41cbc275000b29afe157ba487f0530b8c26dc"
+        }
+      ],
+      "download_bytes": 4402598033,
+      "parameter_metadata": null,
+      "license": "apache-2.0",
+      "metadata_url": "https://huggingface.co/api/models/TinyLlama/tinyLlama-intermediate-checkpoints/revision/step-15k-token-31B?blobs=true",
+      "metadata_sha256": "b8f34e78bc0616206f7b14306b69c3304bb0f1c0b0d4b60545adc15cd5198954",
+      "model_card_url": "https://huggingface.co/TinyLlama/tinyLlama-intermediate-checkpoints/resolve/60ddc9dcab19b6542e68316f1fd8a9758415ce2e/README.md",
+      "model_card_sha256": "8aef70468800a47efde8881766ca2ba3f5698c4bb237e6015df64e2f31bc5542",
+      "model_card_status": 200,
+      "adapter": "transformers_builtin"
+    },
+    {
+      "id": "tinyllama_early_63b",
+      "repo": "TinyLlama/tinyLlama-intermediate-checkpoints",
+      "ref": "step-30k-token-63B",
+      "training_tokens": 63000000000,
+      "token_kind": "nominal_official_branch_label",
+      "token_source": "https://huggingface.co/TinyLlama/tinyLlama-intermediate-checkpoints/refs",
+      "category": "natural_corpus_base",
+      "selection": "predeclared early trajectory milestones; labels are rounded, not exact token counters",
+      "resolution_status": "resolved",
+      "revision": "af28afc492acefd741b0b5964d4d348c2a164c2c",
+      "config": {
+        "_name_or_path": "meta-llama/Llama-2-7b-hf",
+        "architectures": [
+          "LlamaForCausalLM"
+        ],
+        "bos_token_id": 1,
+        "eos_token_id": 2,
+        "hidden_act": "silu",
+        "hidden_size": 2048,
+        "initializer_range": 0.02,
+        "intermediate_size": 5632,
+        "max_position_embeddings": 2048,
+        "model_type": "llama",
+        "num_attention_heads": 32,
+        "num_hidden_layers": 22,
+        "num_key_value_heads": 4,
+        "pretraining_tp": 1,
+        "rms_norm_eps": 1e-05,
+        "rope_scaling": null,
+        "tie_word_embeddings": false,
+        "torch_dtype": "float32",
+        "transformers_version": "4.31.0.dev0",
+        "use_cache": true,
+        "vocab_size": 32000
+      },
+      "config_sha256": "921d10e1cc6a37404ae93a2b494bede8ae00aac5b97e2862466f414661c371c7",
+      "gated": false,
+      "files": [
+        {
+          "path": "config.json",
+          "size": 607,
+          "sha256": null,
+          "git_blob_sha1": "65b05b46e63b4641e539f890af9471137b911f29"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 129,
+          "sha256": null,
+          "git_blob_sha1": "89c1930ccf07b1ba0c1bf146b2ad2d2666761dfb"
+        },
+        {
+          "path": "pytorch_model.bin",
+          "size": 4400253617,
+          "sha256": "62965a70619301d51cbc22d6940528eb86dcea412d7d780dd8e20f2285243f51",
+          "git_blob_sha1": "d75a99aa8c65d4c84340f45a6aa223aecedbc32a"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 414,
+          "sha256": null,
+          "git_blob_sha1": "451134b2ddc2e78555d1e857518c54b4bdc2e87d"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 1842767,
+          "sha256": null,
+          "git_blob_sha1": "a6e931b92caff4c79c5c56282f1e89569a0ae558"
+        },
+        {
+          "path": "tokenizer.model",
+          "size": 499723,
+          "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+          "git_blob_sha1": "6c00c742ce03c627d6cd5b795984876fa49fa899"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 776,
+          "sha256": null,
+          "git_blob_sha1": "2ef41cbc275000b29afe157ba487f0530b8c26dc"
+        }
+      ],
+      "download_bytes": 4402598033,
+      "parameter_metadata": null,
+      "license": "apache-2.0",
+      "metadata_url": "https://huggingface.co/api/models/TinyLlama/tinyLlama-intermediate-checkpoints/revision/step-30k-token-63B?blobs=true",
+      "metadata_sha256": "2216e5c4de51061d525f92748b64fd0707ef7fb6ba3cdf7f99b1ea9bb36281e5",
+      "model_card_url": "https://huggingface.co/TinyLlama/tinyLlama-intermediate-checkpoints/resolve/af28afc492acefd741b0b5964d4d348c2a164c2c/README.md",
+      "model_card_sha256": "8aef70468800a47efde8881766ca2ba3f5698c4bb237e6015df64e2f31bc5542",
+      "model_card_status": 200,
+      "adapter": "transformers_builtin"
+    },
+    {
+      "id": "tinyllama_early_105b",
+      "repo": "TinyLlama/tinyLlama-intermediate-checkpoints",
+      "ref": "step-50k-token-105B",
+      "training_tokens": 105000000000,
+      "token_kind": "nominal_official_branch_label",
+      "token_source": "https://huggingface.co/TinyLlama/tinyLlama-intermediate-checkpoints/refs",
+      "category": "natural_corpus_base",
+      "selection": "predeclared early trajectory milestones; labels are rounded, not exact token counters",
+      "resolution_status": "resolved",
+      "revision": "7c98387695e55e843a4c6286c1fbb8dd8df41770",
+      "config": {
+        "_name_or_path": "meta-llama/Llama-2-7b-hf",
+        "architectures": [
+          "LlamaForCausalLM"
+        ],
+        "bos_token_id": 1,
+        "eos_token_id": 2,
+        "hidden_act": "silu",
+        "hidden_size": 2048,
+        "initializer_range": 0.02,
+        "intermediate_size": 5632,
+        "max_position_embeddings": 2048,
+        "model_type": "llama",
+        "num_attention_heads": 32,
+        "num_hidden_layers": 22,
+        "num_key_value_heads": 4,
+        "pretraining_tp": 1,
+        "rms_norm_eps": 1e-05,
+        "rope_scaling": null,
+        "tie_word_embeddings": false,
+        "torch_dtype": "float32",
+        "transformers_version": "4.31.0.dev0",
+        "use_cache": true,
+        "vocab_size": 32000
+      },
+      "config_sha256": "921d10e1cc6a37404ae93a2b494bede8ae00aac5b97e2862466f414661c371c7",
+      "gated": false,
+      "files": [
+        {
+          "path": "config.json",
+          "size": 607,
+          "sha256": null,
+          "git_blob_sha1": "65b05b46e63b4641e539f890af9471137b911f29"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 129,
+          "sha256": null,
+          "git_blob_sha1": "89c1930ccf07b1ba0c1bf146b2ad2d2666761dfb"
+        },
+        {
+          "path": "pytorch_model.bin",
+          "size": 4400253617,
+          "sha256": "faff29d75e7f135daf0a359a0a381bc7c079b5062c13488185f990a640a64073",
+          "git_blob_sha1": "dc940f5fdbdb76668b0a6a908e905f343d76f6f0"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 414,
+          "sha256": null,
+          "git_blob_sha1": "451134b2ddc2e78555d1e857518c54b4bdc2e87d"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 1842767,
+          "sha256": null,
+          "git_blob_sha1": "a6e931b92caff4c79c5c56282f1e89569a0ae558"
+        },
+        {
+          "path": "tokenizer.model",
+          "size": 499723,
+          "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+          "git_blob_sha1": "6c00c742ce03c627d6cd5b795984876fa49fa899"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 776,
+          "sha256": null,
+          "git_blob_sha1": "2ef41cbc275000b29afe157ba487f0530b8c26dc"
+        }
+      ],
+      "download_bytes": 4402598033,
+      "parameter_metadata": null,
+      "license": "apache-2.0",
+      "metadata_url": "https://huggingface.co/api/models/TinyLlama/tinyLlama-intermediate-checkpoints/revision/step-50k-token-105B?blobs=true",
+      "metadata_sha256": "51a79598574d128adc09059c184f8a50ea39a34c7343d0ba9fc27f9a30f3af41",
+      "model_card_url": "https://huggingface.co/TinyLlama/tinyLlama-intermediate-checkpoints/resolve/7c98387695e55e843a4c6286c1fbb8dd8df41770/README.md",
+      "model_card_sha256": "8aef70468800a47efde8881766ca2ba3f5698c4bb237e6015df64e2f31bc5542",
+      "model_card_status": 200,
+      "adapter": "transformers_builtin"
+    },
+    {
+      "id": "tinyllama_503b",
+      "repo": "TinyLlama/TinyLlama-1.1B-intermediate-step-240k-503b",
+      "training_tokens": 503000000000,
+      "token_kind": "nominal_repo_label",
+      "category": "natural_corpus_base",
+      "reuse_existing_if_verified": false,
+      "resolution_status": "resolved",
+      "revision": "a016b960b941eb6eb7884e363b935370bafa5932",
+      "config": {
+        "_name_or_path": "meta-llama/Llama-2-7b-hf",
+        "architectures": [
+          "LlamaForCausalLM"
+        ],
+        "bos_token_id": 1,
+        "eos_token_id": 2,
+        "hidden_act": "silu",
+        "hidden_size": 2048,
+        "initializer_range": 0.02,
+        "intermediate_size": 5632,
+        "max_position_embeddings": 2048,
+        "model_type": "llama",
+        "num_attention_heads": 32,
+        "num_hidden_layers": 22,
+        "num_key_value_heads": 4,
+        "pretraining_tp": 1,
+        "rms_norm_eps": 1e-05,
+        "rope_scaling": null,
+        "tie_word_embeddings": false,
+        "torch_dtype": "float32",
+        "transformers_version": "4.31.0.dev0",
+        "use_cache": true,
+        "vocab_size": 32000
+      },
+      "config_sha256": "921d10e1cc6a37404ae93a2b494bede8ae00aac5b97e2862466f414661c371c7",
+      "gated": false,
+      "files": [
+        {
+          "path": "config.json",
+          "size": 607,
+          "sha256": null,
+          "git_blob_sha1": "65b05b46e63b4641e539f890af9471137b911f29"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 129,
+          "sha256": null,
+          "git_blob_sha1": "89c1930ccf07b1ba0c1bf146b2ad2d2666761dfb"
+        },
+        {
+          "path": "model.safetensors",
+          "size": 4400216536,
+          "sha256": "8ffaa35974ad687fdf26ce7d06a8f05a8decd04500c483cf8473a9514c69220a",
+          "git_blob_sha1": "0859962f77b9ea0fa7fe88181c83c706ef9507fe"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 414,
+          "sha256": null,
+          "git_blob_sha1": "451134b2ddc2e78555d1e857518c54b4bdc2e87d"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 1842767,
+          "sha256": null,
+          "git_blob_sha1": "a6e931b92caff4c79c5c56282f1e89569a0ae558"
+        },
+        {
+          "path": "tokenizer.model",
+          "size": 499723,
+          "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+          "git_blob_sha1": "6c00c742ce03c627d6cd5b795984876fa49fa899"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 776,
+          "sha256": null,
+          "git_blob_sha1": "2ef41cbc275000b29afe157ba487f0530b8c26dc"
+        }
+      ],
+      "download_bytes": 4402560952,
+      "parameter_metadata": {
+        "parameters": {
+          "F32": 1100048384
+        },
+        "total": 1100048384
+      },
+      "license": "apache-2.0",
+      "metadata_url": "https://huggingface.co/api/models/TinyLlama/TinyLlama-1.1B-intermediate-step-240k-503b/revision/main?blobs=true",
+      "metadata_sha256": "a4e80d4b589342325fc621c8da49d0922d3a37d1e2b71af273e0812d1ae7e485",
+      "model_card_url": "https://huggingface.co/TinyLlama/TinyLlama-1.1B-intermediate-step-240k-503b/resolve/a016b960b941eb6eb7884e363b935370bafa5932/README.md",
+      "model_card_sha256": "0f921b07b67d08a2ceae5cfe6966c51156376d39ceadc57fb6cffe58ebff5a06",
+      "model_card_status": 200,
+      "adapter": "transformers_builtin"
+    },
+    {
+      "id": "tinyllama_1t",
+      "repo": "TinyLlama/TinyLlama-1.1B-intermediate-step-480k-1T",
+      "training_tokens": 1000000000000,
+      "token_kind": "nominal_repo_label",
+      "category": "natural_corpus_base",
+      "reuse_existing_if_verified": false,
+      "resolution_status": "resolved",
+      "revision": "0e23ce8110cbb7e9afe5296bc9686e6dfdae47c2",
+      "config": {
+        "architectures": [
+          "LlamaForCausalLM"
+        ],
+        "bos_token_id": 1,
+        "eos_token_id": 2,
+        "hidden_act": "silu",
+        "hidden_size": 2048,
+        "initializer_range": 0.02,
+        "intermediate_size": 5632,
+        "max_position_embeddings": 2048,
+        "model_type": "llama",
+        "num_attention_heads": 32,
+        "num_hidden_layers": 22,
+        "num_key_value_heads": 4,
+        "pretraining_tp": 1,
+        "rms_norm_eps": 1e-05,
+        "rope_scaling": null,
+        "tie_word_embeddings": false,
+        "torch_dtype": "float32",
+        "transformers_version": "4.31.0.dev0",
+        "use_cache": true,
+        "vocab_size": 32000
+      },
+      "config_sha256": "7ef24df4204405995b8a3936355171b0d80f64fc3bc0ca5991158eaa5c75de50",
+      "gated": false,
+      "files": [
+        {
+          "path": "config.json",
+          "size": 560,
+          "sha256": null,
+          "git_blob_sha1": "6a20305540fec9201e5c28b99dcd32c1000201fd"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 129,
+          "sha256": null,
+          "git_blob_sha1": "89c1930ccf07b1ba0c1bf146b2ad2d2666761dfb"
+        },
+        {
+          "path": "model.safetensors",
+          "size": 4400216536,
+          "sha256": "405b0ffb58c43a631fdfcb6c5d12eb96627fda277103db0402c1fa2908c35b72",
+          "git_blob_sha1": "88c5ba84c448f9bb575dd869e5a78f4abc5852f4"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 414,
+          "sha256": null,
+          "git_blob_sha1": "451134b2ddc2e78555d1e857518c54b4bdc2e87d"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 1842767,
+          "sha256": null,
+          "git_blob_sha1": "a6e931b92caff4c79c5c56282f1e89569a0ae558"
+        },
+        {
+          "path": "tokenizer.model",
+          "size": 499723,
+          "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+          "git_blob_sha1": "6c00c742ce03c627d6cd5b795984876fa49fa899"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 776,
+          "sha256": null,
+          "git_blob_sha1": "2ef41cbc275000b29afe157ba487f0530b8c26dc"
+        }
+      ],
+      "download_bytes": 4402560905,
+      "parameter_metadata": {
+        "parameters": {
+          "F32": 1100048384
+        },
+        "total": 1100048384
+      },
+      "license": "apache-2.0",
+      "metadata_url": "https://huggingface.co/api/models/TinyLlama/TinyLlama-1.1B-intermediate-step-480k-1T/revision/main?blobs=true",
+      "metadata_sha256": "715de8d258c16deb561efe17e015e1e8eb58916f0ffeaaf48b2f11baf54e7ed3",
+      "model_card_url": "https://huggingface.co/TinyLlama/TinyLlama-1.1B-intermediate-step-480k-1T/resolve/0e23ce8110cbb7e9afe5296bc9686e6dfdae47c2/README.md",
+      "model_card_sha256": "8f4d1d6031e1750c8a4ade7b4bf4f2950a878218212c18f8e0b567fae72c4963",
+      "model_card_status": 200,
+      "adapter": "transformers_builtin"
+    },
+    {
+      "id": "tinyllama_1_5t",
+      "repo": "TinyLlama/TinyLlama-1.1B-intermediate-step-715k-1.5T",
+      "training_tokens": 1500000000000,
+      "token_kind": "nominal_repo_label",
+      "category": "natural_corpus_base",
+      "reuse_existing_if_verified": false,
+      "resolution_status": "resolved",
+      "revision": "19a81efa07bf28ec81dc4de327776fa00e34cf3f",
+      "config": {
+        "architectures": [
+          "LlamaForCausalLM"
+        ],
+        "bos_token_id": 1,
+        "eos_token_id": 2,
+        "hidden_act": "silu",
+        "hidden_size": 2048,
+        "initializer_range": 0.02,
+        "intermediate_size": 5632,
+        "max_position_embeddings": 2048,
+        "model_type": "llama",
+        "num_attention_heads": 32,
+        "num_hidden_layers": 22,
+        "num_key_value_heads": 4,
+        "pretraining_tp": 1,
+        "rms_norm_eps": 1e-05,
+        "rope_scaling": null,
+        "tie_word_embeddings": false,
+        "torch_dtype": "float32",
+        "transformers_version": "4.31.0.dev0",
+        "use_cache": true,
+        "vocab_size": 32000
+      },
+      "config_sha256": "7ef24df4204405995b8a3936355171b0d80f64fc3bc0ca5991158eaa5c75de50",
+      "gated": false,
+      "files": [
+        {
+          "path": "config.json",
+          "size": 560,
+          "sha256": null,
+          "git_blob_sha1": "6a20305540fec9201e5c28b99dcd32c1000201fd"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 129,
+          "sha256": null,
+          "git_blob_sha1": "89c1930ccf07b1ba0c1bf146b2ad2d2666761dfb"
+        },
+        {
+          "path": "model.safetensors",
+          "size": 4400216536,
+          "sha256": "a4ae306511d26adaca7ab28378a129ff25c1ee575f6e2b959977c8aa8fd43f95",
+          "git_blob_sha1": "fe22383fe66b245ea2e3bd2e934c36b0750f9abc"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 414,
+          "sha256": null,
+          "git_blob_sha1": "451134b2ddc2e78555d1e857518c54b4bdc2e87d"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 1842767,
+          "sha256": null,
+          "git_blob_sha1": "a6e931b92caff4c79c5c56282f1e89569a0ae558"
+        },
+        {
+          "path": "tokenizer.model",
+          "size": 499723,
+          "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+          "git_blob_sha1": "6c00c742ce03c627d6cd5b795984876fa49fa899"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 776,
+          "sha256": null,
+          "git_blob_sha1": "2ef41cbc275000b29afe157ba487f0530b8c26dc"
+        }
+      ],
+      "download_bytes": 4402560905,
+      "parameter_metadata": {
+        "parameters": {
+          "F32": 1100048384
+        },
+        "total": 1100048384
+      },
+      "license": "apache-2.0",
+      "metadata_url": "https://huggingface.co/api/models/TinyLlama/TinyLlama-1.1B-intermediate-step-715k-1.5T/revision/main?blobs=true",
+      "metadata_sha256": "417380a96ab613bf05dfa117b876b8ceb35152247d9d305b0716fb15196caab6",
+      "model_card_url": "https://huggingface.co/TinyLlama/TinyLlama-1.1B-intermediate-step-715k-1.5T/resolve/19a81efa07bf28ec81dc4de327776fa00e34cf3f/README.md",
+      "model_card_sha256": "f08e0e8d17b60e2140311b684862bf899c4ce6ac9438aa18ec5701967fd3d554",
+      "model_card_status": 200,
+      "adapter": "transformers_builtin"
+    },
+    {
+      "id": "tinyllama_2t",
+      "repo": "TinyLlama/TinyLlama-1.1B-intermediate-step-955k-token-2T",
+      "training_tokens": 2000000000000,
+      "token_kind": "nominal_repo_label",
+      "category": "natural_corpus_base",
+      "reuse_existing_if_verified": false,
+      "resolution_status": "resolved",
+      "revision": "195255c4e3e1a56ac89ceb95899c58f742a730dc",
+      "config": {
+        "architectures": [
+          "LlamaForCausalLM"
+        ],
+        "bos_token_id": 1,
+        "eos_token_id": 2,
+        "hidden_act": "silu",
+        "hidden_size": 2048,
+        "initializer_range": 0.02,
+        "intermediate_size": 5632,
+        "max_position_embeddings": 2048,
+        "model_type": "llama",
+        "num_attention_heads": 32,
+        "num_hidden_layers": 22,
+        "num_key_value_heads": 4,
+        "pretraining_tp": 1,
+        "rms_norm_eps": 1e-05,
+        "rope_scaling": null,
+        "tie_word_embeddings": false,
+        "torch_dtype": "float32",
+        "transformers_version": "4.31.0.dev0",
+        "use_cache": true,
+        "vocab_size": 32000
+      },
+      "config_sha256": "7ef24df4204405995b8a3936355171b0d80f64fc3bc0ca5991158eaa5c75de50",
+      "gated": false,
+      "files": [
+        {
+          "path": "config.json",
+          "size": 560,
+          "sha256": null,
+          "git_blob_sha1": "6a20305540fec9201e5c28b99dcd32c1000201fd"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 129,
+          "sha256": null,
+          "git_blob_sha1": "89c1930ccf07b1ba0c1bf146b2ad2d2666761dfb"
+        },
+        {
+          "path": "model.safetensors",
+          "size": 4400216536,
+          "sha256": "e5ea60cff9bc8727c900a76ad016b8edfcaa81bea4b6a8bb45ad02a0080765e2",
+          "git_blob_sha1": "f3ce7d94b9a6676103959a55fc46b8480bc15221"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 414,
+          "sha256": null,
+          "git_blob_sha1": "451134b2ddc2e78555d1e857518c54b4bdc2e87d"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 1842767,
+          "sha256": null,
+          "git_blob_sha1": "a6e931b92caff4c79c5c56282f1e89569a0ae558"
+        },
+        {
+          "path": "tokenizer.model",
+          "size": 499723,
+          "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+          "git_blob_sha1": "6c00c742ce03c627d6cd5b795984876fa49fa899"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 776,
+          "sha256": null,
+          "git_blob_sha1": "2ef41cbc275000b29afe157ba487f0530b8c26dc"
+        }
+      ],
+      "download_bytes": 4402560905,
+      "parameter_metadata": {
+        "parameters": {
+          "F32": 1100048384
+        },
+        "total": 1100048384
+      },
+      "license": "apache-2.0",
+      "metadata_url": "https://huggingface.co/api/models/TinyLlama/TinyLlama-1.1B-intermediate-step-955k-token-2T/revision/main?blobs=true",
+      "metadata_sha256": "b3e2d3356df7ef0de1d1a63ef586f606c1d0d6b2dc81b91cd94dec4337355660",
+      "model_card_url": "https://huggingface.co/TinyLlama/TinyLlama-1.1B-intermediate-step-955k-token-2T/resolve/195255c4e3e1a56ac89ceb95899c58f742a730dc/README.md",
+      "model_card_sha256": "e0b3285b84b2def0371da422da626cb9240e3497bdac2bba977eb9a252dbaa97",
+      "model_card_status": 200,
+      "adapter": "transformers_builtin"
+    },
+    {
+      "id": "tinyllama_2_5t",
+      "repo": "TinyLlama/TinyLlama-1.1B-intermediate-step-1195k-token-2.5T",
+      "training_tokens": 2500000000000,
+      "token_kind": "nominal_repo_label",
+      "category": "natural_corpus_base",
+      "reuse_existing_if_verified": false,
+      "resolution_status": "resolved",
+      "revision": "706bc2851338c4a89bb212e96ff23f9cc1ebde1d",
+      "config": {
+        "architectures": [
+          "LlamaForCausalLM"
+        ],
+        "bos_token_id": 1,
+        "eos_token_id": 2,
+        "hidden_act": "silu",
+        "hidden_size": 2048,
+        "initializer_range": 0.02,
+        "intermediate_size": 5632,
+        "max_position_embeddings": 2048,
+        "model_type": "llama",
+        "num_attention_heads": 32,
+        "num_hidden_layers": 22,
+        "num_key_value_heads": 4,
+        "pretraining_tp": 1,
+        "rms_norm_eps": 1e-05,
+        "rope_scaling": null,
+        "tie_word_embeddings": false,
+        "torch_dtype": "float32",
+        "transformers_version": "4.31.0.dev0",
+        "use_cache": true,
+        "vocab_size": 32000
+      },
+      "config_sha256": "7ef24df4204405995b8a3936355171b0d80f64fc3bc0ca5991158eaa5c75de50",
+      "gated": false,
+      "files": [
+        {
+          "path": "config.json",
+          "size": 560,
+          "sha256": null,
+          "git_blob_sha1": "6a20305540fec9201e5c28b99dcd32c1000201fd"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 129,
+          "sha256": null,
+          "git_blob_sha1": "89c1930ccf07b1ba0c1bf146b2ad2d2666761dfb"
+        },
+        {
+          "path": "model.safetensors",
+          "size": 4400216536,
+          "sha256": "bba44032e690e2d0b3e2e0a17b497c9e3ea18934cdc5e914f3b86a94f5b1a7e2",
+          "git_blob_sha1": "f24c13d99456b70c26677f14e465fbe09929b769"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 414,
+          "sha256": null,
+          "git_blob_sha1": "451134b2ddc2e78555d1e857518c54b4bdc2e87d"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 1842767,
+          "sha256": null,
+          "git_blob_sha1": "a6e931b92caff4c79c5c56282f1e89569a0ae558"
+        },
+        {
+          "path": "tokenizer.model",
+          "size": 499723,
+          "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+          "git_blob_sha1": "6c00c742ce03c627d6cd5b795984876fa49fa899"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 776,
+          "sha256": null,
+          "git_blob_sha1": "2ef41cbc275000b29afe157ba487f0530b8c26dc"
+        }
+      ],
+      "download_bytes": 4402560905,
+      "parameter_metadata": {
+        "parameters": {
+          "F32": 1100048384
+        },
+        "total": 1100048384
+      },
+      "license": "apache-2.0",
+      "metadata_url": "https://huggingface.co/api/models/TinyLlama/TinyLlama-1.1B-intermediate-step-1195k-token-2.5T/revision/main?blobs=true",
+      "metadata_sha256": "8a2c983d724d54f7a5d7f10ca4729c6d31f784cc9514e352ba1c4059b7e4ec12",
+      "model_card_url": "https://huggingface.co/TinyLlama/TinyLlama-1.1B-intermediate-step-1195k-token-2.5T/resolve/706bc2851338c4a89bb212e96ff23f9cc1ebde1d/README.md",
+      "model_card_sha256": "3e22e3cc927e03ff4f0ab79e512e271692f18179beb15cff1a2a0e79cba699e1",
+      "model_card_status": 200,
+      "adapter": "transformers_builtin"
+    },
+    {
+      "id": "tinyllama_3t",
+      "repo": "TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T",
+      "training_tokens": 3000000000000,
+      "token_kind": "nominal_repo_label",
+      "category": "natural_corpus_base",
+      "reuse_existing_if_verified": true,
+      "resolution_status": "resolved",
+      "revision": "59f6f375b26bde864a6ca194a9a3044570490064",
+      "config": {
+        "architectures": [
+          "LlamaForCausalLM"
+        ],
+        "bos_token_id": 1,
+        "eos_token_id": 2,
+        "hidden_act": "silu",
+        "hidden_size": 2048,
+        "initializer_range": 0.02,
+        "intermediate_size": 5632,
+        "max_position_embeddings": 2048,
+        "model_type": "llama",
+        "num_attention_heads": 32,
+        "num_hidden_layers": 22,
+        "num_key_value_heads": 4,
+        "pretraining_tp": 1,
+        "rms_norm_eps": 1e-05,
+        "rope_scaling": null,
+        "tie_word_embeddings": false,
+        "torch_dtype": "float32",
+        "transformers_version": "4.31.0.dev0",
+        "use_cache": true,
+        "vocab_size": 32000
+      },
+      "config_sha256": "7ef24df4204405995b8a3936355171b0d80f64fc3bc0ca5991158eaa5c75de50",
+      "gated": false,
+      "files": [
+        {
+          "path": "config.json",
+          "size": 560,
+          "sha256": null,
+          "git_blob_sha1": "6a20305540fec9201e5c28b99dcd32c1000201fd"
+        },
+        {
+          "path": "generation_config.json",
+          "size": 129,
+          "sha256": null,
+          "git_blob_sha1": "89c1930ccf07b1ba0c1bf146b2ad2d2666761dfb"
+        },
+        {
+          "path": "model.safetensors",
+          "size": 4400216536,
+          "sha256": "9dc1c1a8c6b29e153dea7aaf2ed6c4d242163489add0e7c14c23889745437be4",
+          "git_blob_sha1": "248ab9a26013aed81d78ca89b36f7cfa45ca54cc"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "size": 414,
+          "sha256": null,
+          "git_blob_sha1": "451134b2ddc2e78555d1e857518c54b4bdc2e87d"
+        },
+        {
+          "path": "tokenizer.json",
+          "size": 1842767,
+          "sha256": null,
+          "git_blob_sha1": "a6e931b92caff4c79c5c56282f1e89569a0ae558"
+        },
+        {
+          "path": "tokenizer.model",
+          "size": 499723,
+          "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+          "git_blob_sha1": "6c00c742ce03c627d6cd5b795984876fa49fa899"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "size": 776,
+          "sha256": null,
+          "git_blob_sha1": "2ef41cbc275000b29afe157ba487f0530b8c26dc"
+        }
+      ],
+      "download_bytes": 4402560905,
+      "parameter_metadata": {
+        "parameters": {
+          "F32": 1100048384
+        },
+        "total": 1100048384
+      },
+      "license": "apache-2.0",
+      "metadata_url": "https://huggingface.co/api/models/TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T/revision/main?blobs=true",
+      "metadata_sha256": "3d769c8811a577bdd3b49a1bb20f8752fe2a7dfe2e867a0ec5d4fe78a65b1376",
+      "model_card_url": "https://huggingface.co/TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T/resolve/59f6f375b26bde864a6ca194a9a3044570490064/README.md",
+      "model_card_sha256": "c0d498c0a79ea7ce201c55cbdc36c59c2e26ea1656abbe13c815d8b69e70b6c9",
+      "model_card_status": 200,
+      "adapter": "transformers_builtin"
+    }
+  ],
+  "unresolved_requests": [
+    {
+      "id": "meta_lingua_1b_60b",
+      "status": "checkpoint_not_located",
+      "source": "https://github.com/facebookresearch/lingua",
+      "note": "Author README reports scores but no matching released checkpoint was found; do not replace by a similarly named model."
+    },
+    {
+      "id": "official_dclm_1b_1x",
+      "status": "checkpoint_not_located",
+      "source": "https://www.datacomp.ai/dclm/leaderboard.html",
+      "note": "WebOrganizer DCLM-filtered models are author-released research baselines, not the original DCLM competition checkpoint."
+    }
+  ],
+  "claim_boundary": "No ranking or Pareto result. Public metadata resolution is not weight verification, adapter admission or completed evaluation."
+}

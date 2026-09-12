@@ -1,0 +1,32 @@
+{
+  "created_unix": 1789152430.165903,
+  "exporter_sha256": "885f60e81da1c0d895a0238f5f792e2a6f0db2084fd5015ab59c8383384c4572",
+  "files": {
+    "config.json": "b9310f5a84d88f7a6dc84782fd6cec531f4d576c2881106dc1914e58ced67ebe",
+    "generation_config.json": "79cca6a73efb58dca56ba0f7a6a59257a5e4de6eb4417baa44f26298f0d1241e",
+    "model_config.yaml": "030d868464d4466007747b8f28c8fe5a43884b5aa4e28580d01b86df27b8ff8e",
+    "pytorch_model.bin": "0bdfbb285fbe5b082845f77a3cb91e1b56cd6a4367b827eb18bfb8d733fe03e3",
+    "tokenizer.json": "e755dfeeed1acab465839adc0988811983a3287db230a8d9bc0f74704208609c",
+    "tokenizer_config.json": "8d3942f70ed4c1520bed7f0ee7fdb41d6cccca1f29ea19fed94f0d601512b069"
+  },
+  "identity": {
+    "branch_prediction_tokens": 198451200,
+    "checkpoint_sha256": "b0cc29b4969878076f38190b20283260df0699e9b13f5b902102b7f1598338fc",
+    "data_plan_sha256": "a1b983010f116a31277f9d1c11baf100d8d54049d7abd636544c497a4e8d74a1",
+    "parent_sha256": "7a3ebb609c2d79b1b6370531bed6fd173466d23f4847c1b8c589cc969790a933",
+    "step": 190
+  },
+  "parity": {
+    "argmax_agreement": 0.986328125,
+    "max_abs": 0.75,
+    "passed": true,
+    "rmse": 0.03125747665762901,
+    "thresholds": {
+      "argmax_agreement_min": 0.98,
+      "rmse_max": 0.05
+    },
+    "tokens": 1024,
+    "training_tokens": 0
+  },
+  "tensor_round_trip_exact": true
+}

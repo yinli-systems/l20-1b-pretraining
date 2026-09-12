@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "status": "verified_recovery_applied",
+  "job": "dd_dclm_baseline_10000",
+  "plan_sha256": "a69eb4a9554ff3c0d9c9b2b9b1e0d5bc1342a5f3df9036b6f29553e644825be5",
+  "failed_receipt_sha256": "cb58be5ce71f52c3a778d9b854550b8eab15d958a02d72369a2afaca77e6b44c",
+  "queue_log_sha256_at_failure": "4da648147158e846e3b59207e8ed2d9e66e9e80e514e1a305a9307ef8b7ff683",
+  "partial_path": "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_10000/model-00001-of-00002.safetensors.part",
+  "partial_size": 0,
+  "partial_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "ownership_sha256": "5ed8457f271ae876e1b175f912b450c41e82f71409a500089e60403b48684d80",
+  "failure": "Download failed for dd_dclm_baseline_10000/model-00001-of-00002.safetensors: ConnectionError; partial retained",
+  "checked_unix": 1789176831.8416386,
+  "applied_unix": 1789176831.8420463,
+  "archived_receipt": "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/failures/dd_dclm_baseline_10000-cb58be5ce71f-receipt.json",
+  "archived_queue_log": "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/failures/dd_dclm_baseline_10000-cb58be5ce71f-queue.log",
+  "partial_verified_absent": true
+}

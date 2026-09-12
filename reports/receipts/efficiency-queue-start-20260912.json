@@ -1,0 +1,9 @@
+{
+  "plan_sha256": "cb12b567149ef30aa23bde14a05c56e201d6e8bd4461f7c7a8a73fe3d1c3eb78",
+  "created_unix": 1789159074.7240424,
+  "jobs": {},
+  "new_training_tokens": 0,
+  "status": "waiting_for_B_gpu_lock",
+  "pid": 3194909,
+  "updated_unix": 1789159074.724056
+}

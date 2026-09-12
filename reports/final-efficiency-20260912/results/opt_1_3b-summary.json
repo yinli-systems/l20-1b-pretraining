@@ -1,0 +1,247 @@
+{
+  "job": "opt_1_3b",
+  "tasks": {
+    "hellaswag": {
+      "metric": "acc_norm,none",
+      "n": 10042,
+      "ours": 0.45130452101175067,
+      "baseline": 0.5376419040031866,
+      "difference_pp": -8.633738299143596,
+      "paired_95_ci_pp": [
+        -9.370892252539335,
+        -7.906542521410081
+      ],
+      "ours_better_samples": 287,
+      "baseline_better_samples": 1154,
+      "tied_samples": 8601,
+      "document_prompt_target_fingerprint": "1a390c76c9c87c49c7a765bfb92c2d619465fca0db677d1d89fe83ae7e11dc66",
+      "task_config_sha256": "bc3c95e5c833077e4c69333ca795f4458ca790dd525ba6f65b5c45733f8e0c68",
+      "protocol_alignment": "PASS"
+    },
+    "piqa": {
+      "metric": "acc_norm,none",
+      "n": 1838,
+      "ours": 0.6958650707290533,
+      "baseline": 0.7230685527747551,
+      "difference_pp": -2.720348204570185,
+      "paired_95_ci_pp": [
+        -4.2981501632208925,
+        -1.1425462459194777
+      ],
+      "ours_better_samples": 89,
+      "baseline_better_samples": 139,
+      "tied_samples": 1610,
+      "document_prompt_target_fingerprint": "c776098ae895c6058ac824449604db36f469c28ed04b9145a99c8d1a6542f416",
+      "task_config_sha256": "dfc6c21cc58b61a02e5d43e1ed1f239323ec519124913155090062a818c44da6",
+      "protocol_alignment": "PASS"
+    },
+    "winogrande": {
+      "metric": "acc,none",
+      "n": 1267,
+      "ours": 0.5217048145224941,
+      "baseline": 0.5911602209944752,
+      "difference_pp": -6.945540647198106,
+      "paired_95_ci_pp": [
+        -10.181531176006315,
+        -3.7884767166535127
+      ],
+      "ours_better_samples": 180,
+      "baseline_better_samples": 268,
+      "tied_samples": 819,
+      "document_prompt_target_fingerprint": "fa103349a0fd29b1a7ab48695d225eb3f8225aa38287ec535ad443b8c8f557db",
+      "task_config_sha256": "8e44b42ee1d813b62f148d3f491b7bd6413bfac4d3bda85d0cc8184c009b554e",
+      "protocol_alignment": "PASS"
+    },
+    "openbookqa": {
+      "metric": "acc_norm,none",
+      "n": 500,
+      "ours": 0.35,
+      "baseline": 0.332,
+      "difference_pp": 1.7999999999999998,
+      "paired_95_ci_pp": [
+        -1.4000000000000001,
+        5.0
+      ],
+      "ours_better_samples": 37,
+      "baseline_better_samples": 28,
+      "tied_samples": 435,
+      "document_prompt_target_fingerprint": "7a548546a99c1ce06635e63695a60304606155dc8c446f2e30d441db698da69e",
+      "task_config_sha256": "5969dfdaa167152c03c415cb00a7e1bfd4cb7391f3596d0c87cfb6fd6a759724",
+      "protocol_alignment": "PASS"
+    },
+    "arc_easy": {
+      "metric": "acc_norm,none",
+      "n": 2376,
+      "ours": 0.6414141414141414,
+      "baseline": 0.5130471380471381,
+      "difference_pp": 12.836700336700337,
+      "paired_95_ci_pp": [
+        10.984848484848484,
+        14.68855218855219
+      ],
+      "ours_better_samples": 414,
+      "baseline_better_samples": 109,
+      "tied_samples": 1853,
+      "document_prompt_target_fingerprint": "03f139e210ce12f2f4560aa14bdc4d5030af2aef18ea3ddbb0ef62ef62424e41",
+      "task_config_sha256": "8d5bf8760e5ffa5e2bde7cb9179aad4ecd29c018527ba9c14316de17786f7eca",
+      "protocol_alignment": "PASS"
+    },
+    "arc_challenge": {
+      "metric": "acc_norm,none",
+      "n": 1172,
+      "ours": 0.3361774744027304,
+      "baseline": 0.29692832764505117,
+      "difference_pp": 3.9249146757679183,
+      "paired_95_ci_pp": [
+        1.4505119453924915,
+        6.484641638225256
+      ],
+      "ours_better_samples": 141,
+      "baseline_better_samples": 95,
+      "tied_samples": 936,
+      "document_prompt_target_fingerprint": "0c32baa042f9a16f04729bc4a882bc9790e7aeb449bb37e86b698ec4580ab6e4",
+      "task_config_sha256": "5b956c97bd7134b5dfc6fde19af8b6a5eb211f68cb92e016acfa578ea385abb6",
+      "protocol_alignment": "PASS"
+    },
+    "boolq": {
+      "metric": "acc,none",
+      "n": 3270,
+      "ours": 0.591743119266055,
+      "baseline": 0.5758409785932722,
+      "difference_pp": 1.5902140672782874,
+      "paired_95_ci_pp": [
+        -0.6422018348623854,
+        3.8837920489296636
+      ],
+      "ours_better_samples": 748,
+      "baseline_better_samples": 696,
+      "tied_samples": 1826,
+      "document_prompt_target_fingerprint": "a55b0b6e810c0df7b6d372b1cadd4c8f97153fe776a90acc7f041dc01b68652d",
+      "task_config_sha256": "b124a540d891cd40fac33f93c14dedee00733dae7f1bc056c4b3f82db7c114b5",
+      "protocol_alignment": "PASS"
+    }
+  },
+  "seven_task_macro": {
+    "ours": 0.5126013059066035,
+    "baseline": 0.5099553031511255,
+    "ours_minus_baseline_pp": 0.2646002755478079,
+    "paired_95_ci_pp": [
+      -0.6408969804965966,
+      1.1547235963718623
+    ]
+  },
+  "six_task_without_boolq": {
+    "ours": 0.4994110036800283,
+    "baseline": 0.498974357244101,
+    "ours_minus_baseline_pp": 0.043664643592728,
+    "paired_95_ci_pp": [
+      -0.9353240462112515,
+      0.9865087846081169
+    ]
+  },
+  "total_parameters": 1315758080,
+  "training_tokens": 180000000000,
+  "token_kind": "author_rounded",
+  "training_flops_proxy_6ND": 1421018726400000000000,
+  "category": "natural_corpus_base",
+  "pareto_scope": "candidate-set only; not global SOTA",
+  "limitations": [
+    "6ND is an approximate proxy, not measured hardware FLOPs; data/teacher/experimentation compute excluded.",
+    "Original 20B data did not explicitly decontaminate BoolQ; report the six-task sensitivity.",
+    "Paired intervals reflect benchmark sample uncertainty, not training seeds or multiple comparisons.",
+    "Tokenizer-dependent input truncation and default BOS behavior can differ."
+  ],
+  "result_sha256": "053cfe82544c55940a38df78540ca847b630bb9540075062f1bc5aa58ee066e7",
+  "job_identity": {
+    "id": "opt_1_3b",
+    "repo": "facebook/opt-1.3b",
+    "training_tokens": 180000000000,
+    "token_kind": "author_rounded",
+    "category": "natural_corpus_base",
+    "resolution_status": "resolved",
+    "revision": "3f5c25d0bc631cb57ac65913f76e22c2dfb61d62",
+    "config": {
+      "_name_or_path": "facebook/opt-1.3b",
+      "activation_dropout": 0.0,
+      "activation_function": "relu",
+      "architectures": [
+        "OPTForCausalLM"
+      ],
+      "attention_dropout": 0.0,
+      "bos_token_id": 2,
+      "do_layer_norm_before": true,
+      "dropout": 0.1,
+      "eos_token_id": 2,
+      "ffn_dim": 8192,
+      "hidden_size": 2048,
+      "init_std": 0.02,
+      "layerdrop": 0.0,
+      "max_position_embeddings": 2048,
+      "model_type": "opt",
+      "num_attention_heads": 32,
+      "num_hidden_layers": 24,
+      "pad_token_id": 1,
+      "prefix": "</s>",
+      "torch_dtype": "float16",
+      "transformers_version": "4.21.0.dev0",
+      "use_cache": true,
+      "vocab_size": 50272,
+      "word_embed_proj_dim": 2048
+    },
+    "config_sha256": "f1aaceefb7d34d346e9b0400d95fdb4970567bcbe1d4aba1068c5402099b644f",
+    "gated": false,
+    "files": [
+      {
+        "path": "config.json",
+        "size": 653,
+        "sha256": null,
+        "git_blob_sha1": "1d966f7bdd3b64f7632fcc679393d9dc63cea7a7"
+      },
+      {
+        "path": "generation_config.json",
+        "size": 137,
+        "sha256": null,
+        "git_blob_sha1": "cf739e3ba86db7791ebab2828cc34b8a5acd3a86"
+      },
+      {
+        "path": "merges.txt",
+        "size": 456318,
+        "sha256": null,
+        "git_blob_sha1": "226b0752cac7789c48f0cb3ec53eda48b7be36cc"
+      },
+      {
+        "path": "pytorch_model.bin",
+        "size": 2631639353,
+        "sha256": "cf7d5c970d6ddbd3b03009b397c0422e147edd5c8020d47a8d2fac0b11a3b08d",
+        "git_blob_sha1": "8b10b18dd607b5f523a5dd08774b30aa4dcfdc37"
+      },
+      {
+        "path": "special_tokens_map.json",
+        "size": 441,
+        "sha256": null,
+        "git_blob_sha1": "5dfa36546b8eddce0e04df3133c30df43fcc3828"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 685,
+        "sha256": null,
+        "git_blob_sha1": "27c24ca9d908d0b678b20c698aeb9e950c44d865"
+      },
+      {
+        "path": "vocab.json",
+        "size": 898822,
+        "sha256": null,
+        "git_blob_sha1": "0a39732b2d8be8e493cab3da68b68cc3e28221de"
+      }
+    ],
+    "download_bytes": 2632996409,
+    "parameter_metadata": null,
+    "license": "other",
+    "metadata_url": "https://huggingface.co/api/models/facebook/opt-1.3b/revision/main?blobs=true",
+    "metadata_sha256": "8833772ff23bcb20515c33d92991c10c045f48401f5ed11045cf8d6c30dfb7a1",
+    "model_card_url": "https://huggingface.co/facebook/opt-1.3b/resolve/3f5c25d0bc631cb57ac65913f76e22c2dfb61d62/README.md",
+    "model_card_sha256": "b007e43430911227bbe497e8402d85e1053173e2ad816e8ac9db643aa0a2e244",
+    "model_card_status": 200,
+    "adapter": "transformers_builtin"
+  }
+}

@@ -1,0 +1,237 @@
+{
+  "job": "pythia_1b",
+  "tasks": {
+    "hellaswag": {
+      "metric": "acc_norm,none",
+      "n": 10042,
+      "ours": 0.45130452101175067,
+      "baseline": 0.47171878111929894,
+      "difference_pp": -2.04142601075483,
+      "paired_95_ci_pp": [
+        -2.7185819557857,
+        -1.3642700657239593
+      ],
+      "ours_better_samples": 477,
+      "baseline_better_samples": 682,
+      "tied_samples": 8883,
+      "document_prompt_target_fingerprint": "1a390c76c9c87c49c7a765bfb92c2d619465fca0db677d1d89fe83ae7e11dc66",
+      "task_config_sha256": "bc3c95e5c833077e4c69333ca795f4458ca790dd525ba6f65b5c45733f8e0c68",
+      "protocol_alignment": "PASS"
+    },
+    "piqa": {
+      "metric": "acc_norm,none",
+      "n": 1838,
+      "ours": 0.6958650707290533,
+      "baseline": 0.6942328618063112,
+      "difference_pp": 0.1632208922742111,
+      "paired_95_ci_pp": [
+        -1.4145810663764962,
+        1.7410228509249184
+      ],
+      "ours_better_samples": 108,
+      "baseline_better_samples": 105,
+      "tied_samples": 1625,
+      "document_prompt_target_fingerprint": "c776098ae895c6058ac824449604db36f469c28ed04b9145a99c8d1a6542f416",
+      "task_config_sha256": "dfc6c21cc58b61a02e5d43e1ed1f239323ec519124913155090062a818c44da6",
+      "protocol_alignment": "PASS"
+    },
+    "winogrande": {
+      "metric": "acc,none",
+      "n": 1267,
+      "ours": 0.5217048145224941,
+      "baseline": 0.5256511444356748,
+      "difference_pp": -0.3946329913180742,
+      "paired_95_ci_pp": [
+        -3.4747434885556414,
+        2.7624309392265194
+      ],
+      "ours_better_samples": 203,
+      "baseline_better_samples": 208,
+      "tied_samples": 856,
+      "document_prompt_target_fingerprint": "fa103349a0fd29b1a7ab48695d225eb3f8225aa38287ec535ad443b8c8f557db",
+      "task_config_sha256": "8e44b42ee1d813b62f148d3f491b7bd6413bfac4d3bda85d0cc8184c009b554e",
+      "protocol_alignment": "PASS"
+    },
+    "openbookqa": {
+      "metric": "acc_norm,none",
+      "n": 500,
+      "ours": 0.35,
+      "baseline": 0.314,
+      "difference_pp": 3.5999999999999996,
+      "paired_95_ci_pp": [
+        0.2,
+        7.000000000000001
+      ],
+      "ours_better_samples": 47,
+      "baseline_better_samples": 29,
+      "tied_samples": 424,
+      "document_prompt_target_fingerprint": "7a548546a99c1ce06635e63695a60304606155dc8c446f2e30d441db698da69e",
+      "task_config_sha256": "5969dfdaa167152c03c415cb00a7e1bfd4cb7391f3596d0c87cfb6fd6a759724",
+      "protocol_alignment": "PASS"
+    },
+    "arc_easy": {
+      "metric": "acc_norm,none",
+      "n": 2376,
+      "ours": 0.6414141414141414,
+      "baseline": 0.4890572390572391,
+      "difference_pp": 15.235690235690235,
+      "paired_95_ci_pp": [
+        13.383838383838384,
+        17.087542087542086
+      ],
+      "ours_better_samples": 463,
+      "baseline_better_samples": 101,
+      "tied_samples": 1812,
+      "document_prompt_target_fingerprint": "03f139e210ce12f2f4560aa14bdc4d5030af2aef18ea3ddbb0ef62ef62424e41",
+      "task_config_sha256": "8d5bf8760e5ffa5e2bde7cb9179aad4ecd29c018527ba9c14316de17786f7eca",
+      "protocol_alignment": "PASS"
+    },
+    "arc_challenge": {
+      "metric": "acc_norm,none",
+      "n": 1172,
+      "ours": 0.3361774744027304,
+      "baseline": 0.26621160409556316,
+      "difference_pp": 6.996587030716723,
+      "paired_95_ci_pp": [
+        4.522184300341297,
+        9.556313993174061
+      ],
+      "ours_better_samples": 154,
+      "baseline_better_samples": 72,
+      "tied_samples": 946,
+      "document_prompt_target_fingerprint": "0c32baa042f9a16f04729bc4a882bc9790e7aeb449bb37e86b698ec4580ab6e4",
+      "task_config_sha256": "5b956c97bd7134b5dfc6fde19af8b6a5eb211f68cb92e016acfa578ea385abb6",
+      "protocol_alignment": "PASS"
+    },
+    "boolq": {
+      "metric": "acc,none",
+      "n": 3270,
+      "ours": 0.591743119266055,
+      "baseline": 0.6064220183486239,
+      "difference_pp": -1.4678899082568808,
+      "paired_95_ci_pp": [
+        -3.302752293577982,
+        0.3669724770642202
+      ],
+      "ours_better_samples": 434,
+      "baseline_better_samples": 482,
+      "tied_samples": 2354,
+      "document_prompt_target_fingerprint": "a55b0b6e810c0df7b6d372b1cadd4c8f97153fe776a90acc7f041dc01b68652d",
+      "task_config_sha256": "b124a540d891cd40fac33f93c14dedee00733dae7f1bc056c4b3f82db7c114b5",
+      "protocol_alignment": "PASS"
+    }
+  },
+  "seven_task_macro": {
+    "ours": 0.5126013059066035,
+    "baseline": 0.4810419498375301,
+    "ours_minus_baseline_pp": 3.1559356069073408,
+    "paired_95_ci_pp": [
+      2.3022545999009774,
+      4.020053702814538
+    ]
+  },
+  "six_task_without_boolq": {
+    "ours": 0.4994110036800283,
+    "baseline": 0.4601452717523478,
+    "ours_minus_baseline_pp": 3.926573192768044,
+    "paired_95_ci_pp": [
+      2.981293129389027,
+      4.8736100552950345
+    ]
+  },
+  "total_parameters": 1011781632,
+  "training_tokens": 300000000000,
+  "token_kind": "author_rounded",
+  "training_flops_proxy_6ND": 1821206937600000000000,
+  "category": "natural_corpus_base",
+  "pareto_scope": "candidate-set only; not global SOTA",
+  "limitations": [
+    "6ND is an approximate proxy, not measured hardware FLOPs; data/teacher/experimentation compute excluded.",
+    "Original 20B data did not explicitly decontaminate BoolQ; report the six-task sensitivity.",
+    "Paired intervals reflect benchmark sample uncertainty, not training seeds or multiple comparisons.",
+    "Tokenizer-dependent input truncation and default BOS behavior can differ."
+  ],
+  "result_sha256": "8afa2688f5d821ce908969c43bd536d97156abac07794e1ed32706ad7fadda32",
+  "job_identity": {
+    "id": "pythia_1b",
+    "repo": "EleutherAI/pythia-1b",
+    "training_tokens": 300000000000,
+    "token_kind": "author_rounded",
+    "category": "natural_corpus_base",
+    "resolution_status": "resolved",
+    "revision": "f73d7dcc545c8bd326d8559c8ef84ffe92fea6b2",
+    "config": {
+      "architectures": [
+        "GPTNeoXForCausalLM"
+      ],
+      "bos_token_id": 0,
+      "eos_token_id": 0,
+      "hidden_act": "gelu",
+      "hidden_size": 2048,
+      "initializer_range": 0.02,
+      "intermediate_size": 8192,
+      "layer_norm_eps": 1e-05,
+      "max_position_embeddings": 2048,
+      "model_type": "gpt_neox",
+      "num_attention_heads": 8,
+      "num_hidden_layers": 16,
+      "rotary_emb_base": 10000,
+      "rotary_pct": 0.25,
+      "tie_word_embeddings": false,
+      "torch_dtype": "float16",
+      "transformers_version": "4.24.0",
+      "use_cache": true,
+      "use_parallel_residual": true,
+      "vocab_size": 50304
+    },
+    "config_sha256": "302d6702a29de1039066e41404877fb8c53b7ddc82e88f9aba277f230086cfe0",
+    "gated": false,
+    "files": [
+      {
+        "path": "config.json",
+        "size": 569,
+        "sha256": null,
+        "git_blob_sha1": "631d0e859247ad69414b72e657e7471a07403090"
+      },
+      {
+        "path": "model.safetensors",
+        "size": 2090701528,
+        "sha256": "7e6dff44849e036a73296368e663bd9420009977f03a8d4d747b234264f37107",
+        "git_blob_sha1": "321cf4560d73caf37ea9f2a47b7486cd46798dc8"
+      },
+      {
+        "path": "special_tokens_map.json",
+        "size": 99,
+        "sha256": null,
+        "git_blob_sha1": "0204ed10c186a4c7c68f55dff8f26087a45898d6"
+      },
+      {
+        "path": "tokenizer.json",
+        "size": 2113710,
+        "sha256": null,
+        "git_blob_sha1": "f74dfbfab8f97770a87769c739fb080c21c8bacc"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 396,
+        "sha256": null,
+        "git_blob_sha1": "f1860edb10f80bcaf7b023fce47c68a23b724c23"
+      }
+    ],
+    "download_bytes": 2092816302,
+    "parameter_metadata": {
+      "parameters": {
+        "F16": 1011782144,
+        "U8": 67108864
+      },
+      "total": 1078891008
+    },
+    "license": "apache-2.0",
+    "metadata_url": "https://huggingface.co/api/models/EleutherAI/pythia-1b/revision/main?blobs=true",
+    "metadata_sha256": "38b36257433d441ee1ed0020e3526ece70bac6a15b98df2d303de40c25288372",
+    "model_card_url": "https://huggingface.co/EleutherAI/pythia-1b/resolve/f73d7dcc545c8bd326d8559c8ef84ffe92fea6b2/README.md",
+    "model_card_sha256": "eb4025893f212f2baf2fe92be87d26c028593e86b0e3572b7ac5114080bbb6dc",
+    "model_card_status": 200,
+    "adapter": "transformers_builtin"
+  }
+}

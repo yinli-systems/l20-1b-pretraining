@@ -1,0 +1,17 @@
+{
+  "branch": "B",
+  "branch_prediction_tokens": 1044480,
+  "branch_step": 1,
+  "budget_cap": 2000000000,
+  "experiment_charged_tokens": 199495680,
+  "grad_norm_before_clip": 0.11959920823574066,
+  "lineage_prediction_tokens": 20000747520,
+  "loss": 2.5272490978240967,
+  "lr": 4e-05,
+  "peak_allocated_gib": 40.27539825439453,
+  "pilot_steps": 190,
+  "stage": "training",
+  "step_seconds": 84.91895295213908,
+  "time": 1789154486.676578,
+  "training_tokens_per_second": 12299.727724960014
+}

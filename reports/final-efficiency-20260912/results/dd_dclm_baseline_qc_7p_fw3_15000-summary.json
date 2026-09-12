@@ -1,0 +1,287 @@
+{
+  "job": "dd_dclm_baseline_qc_7p_fw3_15000",
+  "tasks": {
+    "hellaswag": {
+      "metric": "acc_norm,none",
+      "n": 10042,
+      "ours": 0.45130452101175067,
+      "baseline": 0.46086436964748057,
+      "difference_pp": -0.9559848635729935,
+      "paired_95_ci_pp": [
+        -1.6430989842660824,
+        -0.26887074287990437
+      ],
+      "ours_better_samples": 566,
+      "baseline_better_samples": 662,
+      "tied_samples": 8814,
+      "document_prompt_target_fingerprint": "1a390c76c9c87c49c7a765bfb92c2d619465fca0db677d1d89fe83ae7e11dc66",
+      "task_config_sha256": "bc3c95e5c833077e4c69333ca795f4458ca790dd525ba6f65b5c45733f8e0c68",
+      "protocol_alignment": "PASS"
+    },
+    "piqa": {
+      "metric": "acc_norm,none",
+      "n": 1838,
+      "ours": 0.6958650707290533,
+      "baseline": 0.6866158868335147,
+      "difference_pp": 0.9249183895538629,
+      "paired_95_ci_pp": [
+        -0.7616974972796519,
+        2.557127312295974
+      ],
+      "ours_better_samples": 133,
+      "baseline_better_samples": 116,
+      "tied_samples": 1589,
+      "document_prompt_target_fingerprint": "c776098ae895c6058ac824449604db36f469c28ed04b9145a99c8d1a6542f416",
+      "task_config_sha256": "dfc6c21cc58b61a02e5d43e1ed1f239323ec519124913155090062a818c44da6",
+      "protocol_alignment": "PASS"
+    },
+    "winogrande": {
+      "metric": "acc,none",
+      "n": 1267,
+      "ours": 0.5217048145224941,
+      "baseline": 0.5303867403314917,
+      "difference_pp": -0.8681925808997633,
+      "paired_95_ci_pp": [
+        -4.183109707971586,
+        2.44672454617206
+      ],
+      "ours_better_samples": 218,
+      "baseline_better_samples": 229,
+      "tied_samples": 820,
+      "document_prompt_target_fingerprint": "fa103349a0fd29b1a7ab48695d225eb3f8225aa38287ec535ad443b8c8f557db",
+      "task_config_sha256": "8e44b42ee1d813b62f148d3f491b7bd6413bfac4d3bda85d0cc8184c009b554e",
+      "protocol_alignment": "PASS"
+    },
+    "openbookqa": {
+      "metric": "acc_norm,none",
+      "n": 500,
+      "ours": 0.35,
+      "baseline": 0.394,
+      "difference_pp": -4.3999999999999995,
+      "paired_95_ci_pp": [
+        -7.6,
+        -1.2
+      ],
+      "ours_better_samples": 24,
+      "baseline_better_samples": 46,
+      "tied_samples": 430,
+      "document_prompt_target_fingerprint": "7a548546a99c1ce06635e63695a60304606155dc8c446f2e30d441db698da69e",
+      "task_config_sha256": "5969dfdaa167152c03c415cb00a7e1bfd4cb7391f3596d0c87cfb6fd6a759724",
+      "protocol_alignment": "PASS"
+    },
+    "arc_easy": {
+      "metric": "acc_norm,none",
+      "n": 2376,
+      "ours": 0.6414141414141414,
+      "baseline": 0.6776094276094277,
+      "difference_pp": -3.61952861952862,
+      "paired_95_ci_pp": [
+        -5.260942760942761,
+        -2.0202020202020203
+      ],
+      "ours_better_samples": 150,
+      "baseline_better_samples": 236,
+      "tied_samples": 1990,
+      "document_prompt_target_fingerprint": "03f139e210ce12f2f4560aa14bdc4d5030af2aef18ea3ddbb0ef62ef62424e41",
+      "task_config_sha256": "8d5bf8760e5ffa5e2bde7cb9179aad4ecd29c018527ba9c14316de17786f7eca",
+      "protocol_alignment": "PASS"
+    },
+    "arc_challenge": {
+      "metric": "acc_norm,none",
+      "n": 1172,
+      "ours": 0.3361774744027304,
+      "baseline": 0.378839590443686,
+      "difference_pp": -4.266211604095563,
+      "paired_95_ci_pp": [
+        -6.5699658703071675,
+        -1.9624573378839592
+      ],
+      "ours_better_samples": 72,
+      "baseline_better_samples": 122,
+      "tied_samples": 978,
+      "document_prompt_target_fingerprint": "0c32baa042f9a16f04729bc4a882bc9790e7aeb449bb37e86b698ec4580ab6e4",
+      "task_config_sha256": "5b956c97bd7134b5dfc6fde19af8b6a5eb211f68cb92e016acfa578ea385abb6",
+      "protocol_alignment": "PASS"
+    },
+    "boolq": {
+      "metric": "acc,none",
+      "n": 3270,
+      "ours": 0.591743119266055,
+      "baseline": 0.5715596330275229,
+      "difference_pp": 2.0183486238532113,
+      "paired_95_ci_pp": [
+        -0.03058103975535168,
+        4.0672782874617734
+      ],
+      "ours_better_samples": 611,
+      "baseline_better_samples": 545,
+      "tied_samples": 2114,
+      "document_prompt_target_fingerprint": "a55b0b6e810c0df7b6d372b1cadd4c8f97153fe776a90acc7f041dc01b68652d",
+      "task_config_sha256": "b124a540d891cd40fac33f93c14dedee00733dae7f1bc056c4b3f82db7c114b5",
+      "protocol_alignment": "PASS"
+    }
+  },
+  "seven_task_macro": {
+    "ours": 0.5126013059066035,
+    "baseline": 0.528553663984732,
+    "ours_minus_baseline_pp": -1.5952358078128377,
+    "paired_95_ci_pp": [
+      -2.474805118761478,
+      -0.7201103079179052
+    ]
+  },
+  "six_task_without_boolq": {
+    "ours": 0.4994110036800283,
+    "baseline": 0.5213860024776001,
+    "ours_minus_baseline_pp": -2.197499879757179,
+    "paired_95_ci_pp": [
+      -3.141386295028439,
+      -1.2519839120070895
+    ]
+  },
+  "total_parameters": 1279854592,
+  "training_tokens": 21626880000,
+  "token_kind": "step_times_global_batch_times_sequence_length",
+  "training_flops_proxy_6ND": 166075570071797760000,
+  "category": "natural_corpus_base",
+  "pareto_scope": "candidate-set only; not global SOTA",
+  "limitations": [
+    "6ND is an approximate proxy, not measured hardware FLOPs; data/teacher/experimentation compute excluded.",
+    "Original 20B data did not explicitly decontaminate BoolQ; report the six-task sensitivity.",
+    "Paired intervals reflect benchmark sample uncertainty, not training seeds or multiple comparisons.",
+    "Tokenizer-dependent input truncation and default BOS behavior can differ."
+  ],
+  "result_sha256": "7c523635e5ef3350b3d354c1d3f634aba69e18bf66a6adfa0af0e50c1d7c9050",
+  "job_identity": {
+    "id": "dd_dclm_baseline_qc_7p_fw3_15000",
+    "repo": "allenai/DataDecide-dclm-baseline-qc-7p-fw3-1B",
+    "ref": "step15000-seed-default",
+    "ref_exists": true,
+    "training_tokens": 21626880000,
+    "token_kind": "step_times_global_batch_times_sequence_length",
+    "token_source": "https://github.com/allenai/DataDecide#hyperparameters",
+    "category": "natural_corpus_base",
+    "seed": "default",
+    "selection": "predeclared recipe anchor",
+    "resolution_status": "resolved",
+    "revision": "53b4ee752d243ae7fc3c15b7c9b5b6e87b947ced",
+    "config": {
+      "activation_type": "swiglu",
+      "alibi": false,
+      "alibi_bias_max": 8.0,
+      "architectures": [
+        "OLMoForCausalLM"
+      ],
+      "attention_dropout": 0.0,
+      "attention_layer_norm": false,
+      "attention_layer_norm_with_affine": false,
+      "bias_for_layer_norm": false,
+      "block_group_size": 1,
+      "block_type": "sequential",
+      "clip_qkv": null,
+      "d_model": 2048,
+      "emb_init_std": null,
+      "embedding_dropout": 0.0,
+      "embedding_layer_norm": false,
+      "embedding_size": 50304,
+      "eos_token_id": 50279,
+      "flash_attention": true,
+      "include_bias": false,
+      "init_cutoff_factor": 3.0,
+      "init_device": "cuda",
+      "init_fn": "normal",
+      "init_std": 0.02,
+      "layer_norm_eps": 1e-06,
+      "layer_norm_type": "rms",
+      "layer_norm_with_affine": true,
+      "max_sequence_length": 2048,
+      "mlp_hidden_size": null,
+      "mlp_ratio": 8,
+      "model_type": "hf_olmo",
+      "multi_query_attention": null,
+      "n_heads": 16,
+      "n_kv_heads": null,
+      "n_layers": 16,
+      "norm_after": false,
+      "pad_token_id": 1,
+      "precision": "amp_bf16",
+      "residual_dropout": 0.0,
+      "rope": true,
+      "rope_full_precision": true,
+      "rope_theta": 10000,
+      "scale_emb_init": false,
+      "scale_logits": false,
+      "torch_dtype": "float32",
+      "transformers_version": "4.50.3",
+      "use_cache": true,
+      "vocab_size": 50280,
+      "weight_tying": false
+    },
+    "config_sha256": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+    "gated": false,
+    "files": [
+      {
+        "path": "config.json",
+        "size": 1278,
+        "sha256": null,
+        "git_blob_sha1": "05f4ef82cfc33b7b334788dec2c0c50afc7a0199"
+      },
+      {
+        "path": "generation_config.json",
+        "size": 115,
+        "sha256": null,
+        "git_blob_sha1": "07e3d7c419977cfefe68b54ac117d61b5ea6ca9b"
+      },
+      {
+        "path": "model-00001-of-00002.safetensors",
+        "size": 4707339552,
+        "sha256": "5d0483f770daea4b87381b9767254c4ecd21ca8c8f179fdea7146619602ad83a",
+        "git_blob_sha1": "db1ba60ccce6dc20b1fd1257a14bea838b0e68f7"
+      },
+      {
+        "path": "model-00002-of-00002.safetensors",
+        "size": 412090512,
+        "sha256": "0d7844b0ea31c555b35fcfb6117737722abc27ffc8d0dcf5eac1c1185d289b6a",
+        "git_blob_sha1": "4f7844c4c131b9c989d9337b7384fb34e3c0bd6c"
+      },
+      {
+        "path": "model.safetensors.index.json",
+        "size": 8539,
+        "sha256": null,
+        "git_blob_sha1": "6ddf92f0c1e1cb3e34b06c31213b166f41a2d855"
+      },
+      {
+        "path": "special_tokens_map.json",
+        "size": 293,
+        "sha256": null,
+        "git_blob_sha1": "a82714f41c337edb8f8f86fa67eadcb8f9e9c21d"
+      },
+      {
+        "path": "tokenizer.json",
+        "size": 3565402,
+        "sha256": null,
+        "git_blob_sha1": "e304f23d7e900f12b1ba89749b9d4d7dd7208b81"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 5324,
+        "sha256": null,
+        "git_blob_sha1": "050abfd7c8d4c97bd577fee2e473711c1be28c2e"
+      }
+    ],
+    "download_bytes": 5123011015,
+    "parameter_metadata": {
+      "parameters": {
+        "F32": 1279854592
+      },
+      "total": 1279854592
+    },
+    "license": "apache-2.0",
+    "metadata_url": "https://huggingface.co/api/models/allenai/DataDecide-dclm-baseline-qc-7p-fw3-1B/revision/step15000-seed-default?blobs=true",
+    "metadata_sha256": "10c0c61195ff5d9663e5c81030c9887c47b807bb62e5c73cc2c32da321fae0fc",
+    "model_card_url": "https://huggingface.co/allenai/DataDecide-dclm-baseline-qc-7p-fw3-1B/resolve/53b4ee752d243ae7fc3c15b7c9b5b6e87b947ced/README.md",
+    "model_card_sha256": "2d6265075d8392f623ce8c78ebd273e6f4b5f28da82404a8fd00059d67f00c20",
+    "model_card_status": 200,
+    "adapter": "author_hf_olmo"
+  }
+}

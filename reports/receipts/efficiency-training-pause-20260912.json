@@ -1,0 +1,64 @@
+{
+  "reason": "user_requested_evaluation_priority",
+  "user_request": "先完成评测吧，训练可以等等",
+  "time": 1789159538.4176316,
+  "status": {
+    "branch": "B",
+    "branch_prediction_tokens": 63713280,
+    "branch_step": 61,
+    "budget_cap": 2000000000,
+    "checkpoint": "/home/hhai/pretrain/continuation/20260911-v1/pilot-B/resume.pth",
+    "experiment_charged_tokens": 262164480,
+    "grad_norm_before_clip": 0.11532200127840042,
+    "lineage_prediction_tokens": 20063416320,
+    "loss": 2.5535507202148438,
+    "lr": 4e-05,
+    "peak_allocated_gib": 40.27539825439453,
+    "pilot_steps": 190,
+    "stage": "checkpointed_stop",
+    "step_seconds": 80.32256506197155,
+    "time": 1789159399.4746687,
+    "training_tokens_per_second": 13003.568787851194,
+    "validation": {
+      "code": {
+        "loss": 1.0944039821624756,
+        "ppl": 2.9874016080235126,
+        "prediction_tokens": 196608
+      },
+      "dclm": {
+        "loss": 2.814983606338501,
+        "ppl": 16.69290212030138,
+        "prediction_tokens": 196608
+      },
+      "math": {
+        "loss": 2.1428146362304688,
+        "ppl": 8.523394152609159,
+        "prediction_tokens": 196608
+      },
+      "original_mix_100": {
+        "loss": 2.424492359161377,
+        "ppl": 11.296493402100333,
+        "prediction_tokens": 1228800
+      },
+      "web": {
+        "loss": 2.433605432510376,
+        "ppl": 11.399909679410959,
+        "prediction_tokens": 196608
+      }
+    },
+    "wall_seconds": 5089.453920856118
+  },
+  "checkpoint": {
+    "bytes": 13200791363,
+    "parent_sha256": "7a3ebb609c2d79b1b6370531bed6fd173466d23f4847c1b8c589cc969790a933",
+    "path": "/home/hhai/pretrain/continuation/20260911-v1/pilot-B/resume.pth",
+    "saved_unix": 1789159491.209094,
+    "sha256": "51de78a08b15fde30042e47553ca4cb2e5d3e65f280be86b5b362683b4d049af",
+    "step": 61
+  },
+  "cuda_processes": [],
+  "old_queue_archive": "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/receipt-plan-v2-paused.json",
+  "old_queue_sha256": "cd580f2450b6da8a7f9756c4ec32f8f9d6f9486b2f90aa7e37604bdf6c369e47",
+  "old_runner_sha256": "4ef71cc7a41524c33cfc796ca0d17543e195ac35abe9faa37fa2c09ad159729e",
+  "automatic_training_resume": false
+}

@@ -1,0 +1,56 @@
+{
+  "completed_unix": 1789122973.4262183,
+  "eager_vs_compile": {
+    "argmax_agreement": 0.9942220449447632,
+    "max_abs": 0.65625,
+    "rmse": 0.020107654854655266
+  },
+  "environment": {
+    "cuda": "13.0",
+    "device": "NVIDIA L20",
+    "torch": "2.12.1+cu130"
+  },
+  "historical_probe_delta": -1.5020370483398438e-05,
+  "historical_validation_loss": 2.4247145652770996,
+  "native_weight_copy_exact": true,
+  "new_training_tokens": 0,
+  "optimizer_inherited": true,
+  "parent": {
+    "bytes": 13200829231,
+    "checkpoint": "/home/hhai/pretrain/checkpoints/full/final/lit_model.pth",
+    "config_sha256": "030d868464d4466007747b8f28c8fe5a43884b5aa4e28580d01b86df27b8ff8e",
+    "hf_weights_sha256": "bc7c43425cf538d5dcea333fdd1513faef0a994679acc08681505a879b3cd1f3",
+    "sha256": "7a3ebb609c2d79b1b6370531bed6fd173466d23f4847c1b8c589cc969790a933",
+    "tokenizer_sha256": "e755dfeeed1acab465839adc0988811983a3287db230a8d9bc0f74704208609c",
+    "tokens": 19999703040
+  },
+  "policy": "Compare future runs to these frozen inputs and freshly measured native baseline.",
+  "validation": {
+    "code": {
+      "loss": 1.0949645042419434,
+      "ppl": 2.989076581971133,
+      "prediction_tokens": 196608
+    },
+    "dclm": {
+      "loss": 2.815621852874756,
+      "ppl": 16.703559707982127,
+      "prediction_tokens": 196608
+    },
+    "math": {
+      "loss": 2.142814874649048,
+      "ppl": 8.523396184744925,
+      "prediction_tokens": 196608
+    },
+    "original_mix_100": {
+      "loss": 2.424699544906616,
+      "ppl": 11.298834116977444,
+      "prediction_tokens": 1228800
+    },
+    "web": {
+      "loss": 2.4322285652160645,
+      "ppl": 11.384224317424211,
+      "prediction_tokens": 196608
+    }
+  },
+  "validation_manifest_sha256": "5a0818bc2593189f38a7f0cf9ca7b3f5b93de7c7489286550124309377cf82fe"
+}

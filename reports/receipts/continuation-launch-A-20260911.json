@@ -1,0 +1,47 @@
+{
+  "accumulation": 85,
+  "automatic_stop_steps": 190,
+  "branch": "A",
+  "cuda": "13.0",
+  "data_plan_sha256": "a1b983010f116a31277f9d1c11baf100d8d54049d7abd636544c497a4e8d74a1",
+  "experiment_budget_cap": 2000000000,
+  "global_batch": 510,
+  "micro_batch": 6,
+  "optimizer": {
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "clip_norm": 1.0,
+    "fused": true,
+    "type": "AdamW",
+    "weight_decay": 0.1
+  },
+  "optimizer_state_inherited": true,
+  "parent": {
+    "bytes": 13200829231,
+    "checkpoint": "/home/hhai/pretrain/checkpoints/full/final/lit_model.pth",
+    "config_sha256": "030d868464d4466007747b8f28c8fe5a43884b5aa4e28580d01b86df27b8ff8e",
+    "hf_weights_sha256": "bc7c43425cf538d5dcea333fdd1513faef0a994679acc08681505a879b3cd1f3",
+    "sha256": "7a3ebb609c2d79b1b6370531bed6fd173466d23f4847c1b8c589cc969790a933",
+    "tokenizer_sha256": "e755dfeeed1acab465839adc0988811983a3287db230a8d9bc0f74704208609c",
+    "tokens": 19999703040
+  },
+  "precision": "bf16-mixed",
+  "program_sha256": {
+    "continuation_common.py": "711f0505b82976cd06287c8bf5254991b1ff9183cf8b44bb3c3cc682aeddc260",
+    "data_module.py": "aef4ab86cc4749a39cdcba3299bb94078b4c5d71bfa22d9c25549b58aaa42579",
+    "prepare_continuation.py": "ac935ba96b1e19949fd873d6228c9d8372abc0fa4d3c17c6cd2ac63407760864",
+    "run_continuation.py": "32be4bd6f7eff60ae9f447aff1f28f97baad42046415056871506acfcde767ca"
+  },
+  "schedule": {
+    "branch_steps": 1724,
+    "end_lr": 4e-06,
+    "hold_steps": 172,
+    "start_lr": 4e-05
+  },
+  "seed": 42,
+  "sequence_length": 2048,
+  "torch": "2.12.1+cu130",
+  "validation_manifest_sha256": "5a0818bc2593189f38a7f0cf9ca7b3f5b93de7c7489286550124309377cf82fe"
+}

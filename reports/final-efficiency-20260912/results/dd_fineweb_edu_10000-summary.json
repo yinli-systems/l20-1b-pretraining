@@ -1,0 +1,287 @@
+{
+  "job": "dd_fineweb_edu_10000",
+  "tasks": {
+    "hellaswag": {
+      "metric": "acc_norm,none",
+      "n": 10042,
+      "ours": 0.45130452101175067,
+      "baseline": 0.4613622784305915,
+      "difference_pp": -1.005775741884087,
+      "paired_95_ci_pp": [
+        -1.6829316869149573,
+        -0.3385779725154352
+      ],
+      "ours_better_samples": 533,
+      "baseline_better_samples": 634,
+      "tied_samples": 8875,
+      "document_prompt_target_fingerprint": "1a390c76c9c87c49c7a765bfb92c2d619465fca0db677d1d89fe83ae7e11dc66",
+      "task_config_sha256": "bc3c95e5c833077e4c69333ca795f4458ca790dd525ba6f65b5c45733f8e0c68",
+      "protocol_alignment": "PASS"
+    },
+    "piqa": {
+      "metric": "acc_norm,none",
+      "n": 1838,
+      "ours": 0.6958650707290533,
+      "baseline": 0.704570184983678,
+      "difference_pp": -0.8705114254624592,
+      "paired_95_ci_pp": [
+        -2.50272034820457,
+        0.7072905331882481
+      ],
+      "ours_better_samples": 106,
+      "baseline_better_samples": 122,
+      "tied_samples": 1610,
+      "document_prompt_target_fingerprint": "c776098ae895c6058ac824449604db36f469c28ed04b9145a99c8d1a6542f416",
+      "task_config_sha256": "dfc6c21cc58b61a02e5d43e1ed1f239323ec519124913155090062a818c44da6",
+      "protocol_alignment": "PASS"
+    },
+    "winogrande": {
+      "metric": "acc,none",
+      "n": 1267,
+      "ours": 0.5217048145224941,
+      "baseline": 0.5390686661404893,
+      "difference_pp": -1.7363851617995265,
+      "paired_95_ci_pp": [
+        -4.972375690607735,
+        1.499605367008682
+      ],
+      "ours_better_samples": 209,
+      "baseline_better_samples": 231,
+      "tied_samples": 827,
+      "document_prompt_target_fingerprint": "fa103349a0fd29b1a7ab48695d225eb3f8225aa38287ec535ad443b8c8f557db",
+      "task_config_sha256": "8e44b42ee1d813b62f148d3f491b7bd6413bfac4d3bda85d0cc8184c009b554e",
+      "protocol_alignment": "PASS"
+    },
+    "openbookqa": {
+      "metric": "acc_norm,none",
+      "n": 500,
+      "ours": 0.35,
+      "baseline": 0.342,
+      "difference_pp": 0.8,
+      "paired_95_ci_pp": [
+        -2.204999999999995,
+        3.8
+      ],
+      "ours_better_samples": 33,
+      "baseline_better_samples": 29,
+      "tied_samples": 438,
+      "document_prompt_target_fingerprint": "7a548546a99c1ce06635e63695a60304606155dc8c446f2e30d441db698da69e",
+      "task_config_sha256": "5969dfdaa167152c03c415cb00a7e1bfd4cb7391f3596d0c87cfb6fd6a759724",
+      "protocol_alignment": "PASS"
+    },
+    "arc_easy": {
+      "metric": "acc_norm,none",
+      "n": 2376,
+      "ours": 0.6414141414141414,
+      "baseline": 0.5976430976430976,
+      "difference_pp": 4.377104377104377,
+      "paired_95_ci_pp": [
+        2.81986531986532,
+        5.934343434343434
+      ],
+      "ours_better_samples": 232,
+      "baseline_better_samples": 128,
+      "tied_samples": 2016,
+      "document_prompt_target_fingerprint": "03f139e210ce12f2f4560aa14bdc4d5030af2aef18ea3ddbb0ef62ef62424e41",
+      "task_config_sha256": "8d5bf8760e5ffa5e2bde7cb9179aad4ecd29c018527ba9c14316de17786f7eca",
+      "protocol_alignment": "PASS"
+    },
+    "arc_challenge": {
+      "metric": "acc_norm,none",
+      "n": 1172,
+      "ours": 0.3361774744027304,
+      "baseline": 0.3225255972696246,
+      "difference_pp": 1.3651877133105803,
+      "paired_95_ci_pp": [
+        -0.8532423208191127,
+        3.583617747440273
+      ],
+      "ours_better_samples": 92,
+      "baseline_better_samples": 76,
+      "tied_samples": 1004,
+      "document_prompt_target_fingerprint": "0c32baa042f9a16f04729bc4a882bc9790e7aeb449bb37e86b698ec4580ab6e4",
+      "task_config_sha256": "5b956c97bd7134b5dfc6fde19af8b6a5eb211f68cb92e016acfa578ea385abb6",
+      "protocol_alignment": "PASS"
+    },
+    "boolq": {
+      "metric": "acc,none",
+      "n": 3270,
+      "ours": 0.591743119266055,
+      "baseline": 0.5908256880733945,
+      "difference_pp": 0.09174311926605505,
+      "paired_95_ci_pp": [
+        -1.7737003058103975,
+        1.926605504587156
+      ],
+      "ours_better_samples": 466,
+      "baseline_better_samples": 463,
+      "tied_samples": 2341,
+      "document_prompt_target_fingerprint": "a55b0b6e810c0df7b6d372b1cadd4c8f97153fe776a90acc7f041dc01b68652d",
+      "task_config_sha256": "b124a540d891cd40fac33f93c14dedee00733dae7f1bc056c4b3f82db7c114b5",
+      "protocol_alignment": "PASS"
+    }
+  },
+  "seven_task_macro": {
+    "ours": 0.5126013059066035,
+    "baseline": 0.5082850732201251,
+    "ours_minus_baseline_pp": 0.43162326864784856,
+    "paired_95_ci_pp": [
+      -0.3889912799713344,
+      1.2618168092771755
+    ]
+  },
+  "six_task_without_boolq": {
+    "ours": 0.4994110036800283,
+    "baseline": 0.49452830407791354,
+    "ours_minus_baseline_pp": 0.48826996021148084,
+    "paired_95_ci_pp": [
+      -0.42690090299903355,
+      1.4114217574432422
+    ]
+  },
+  "total_parameters": 1279854592,
+  "training_tokens": 14417920000,
+  "token_kind": "step_times_global_batch_times_sequence_length",
+  "training_flops_proxy_6ND": 110717046714531840000,
+  "category": "natural_corpus_base",
+  "pareto_scope": "candidate-set only; not global SOTA",
+  "limitations": [
+    "6ND is an approximate proxy, not measured hardware FLOPs; data/teacher/experimentation compute excluded.",
+    "Original 20B data did not explicitly decontaminate BoolQ; report the six-task sensitivity.",
+    "Paired intervals reflect benchmark sample uncertainty, not training seeds or multiple comparisons.",
+    "Tokenizer-dependent input truncation and default BOS behavior can differ."
+  ],
+  "result_sha256": "846e8554cb2388796384d6dc8db9ddb89f5a904b7c7503312b505793c5bb431a",
+  "job_identity": {
+    "id": "dd_fineweb_edu_10000",
+    "repo": "allenai/DataDecide-fineweb-edu-1B",
+    "ref": "step10000-seed-default",
+    "ref_exists": true,
+    "training_tokens": 14417920000,
+    "token_kind": "step_times_global_batch_times_sequence_length",
+    "token_source": "https://github.com/allenai/DataDecide#hyperparameters",
+    "category": "natural_corpus_base",
+    "seed": "default",
+    "selection": "predeclared recipe anchor",
+    "resolution_status": "resolved",
+    "revision": "8551c6bc021306d7e1e5c23dd58eed39006ac773",
+    "config": {
+      "activation_type": "swiglu",
+      "alibi": false,
+      "alibi_bias_max": 8.0,
+      "architectures": [
+        "OLMoForCausalLM"
+      ],
+      "attention_dropout": 0.0,
+      "attention_layer_norm": false,
+      "attention_layer_norm_with_affine": false,
+      "bias_for_layer_norm": false,
+      "block_group_size": 1,
+      "block_type": "sequential",
+      "clip_qkv": null,
+      "d_model": 2048,
+      "emb_init_std": null,
+      "embedding_dropout": 0.0,
+      "embedding_layer_norm": false,
+      "embedding_size": 50304,
+      "eos_token_id": 50279,
+      "flash_attention": true,
+      "include_bias": false,
+      "init_cutoff_factor": 3.0,
+      "init_device": "cuda",
+      "init_fn": "normal",
+      "init_std": 0.02,
+      "layer_norm_eps": 1e-06,
+      "layer_norm_type": "rms",
+      "layer_norm_with_affine": true,
+      "max_sequence_length": 2048,
+      "mlp_hidden_size": null,
+      "mlp_ratio": 8,
+      "model_type": "hf_olmo",
+      "multi_query_attention": null,
+      "n_heads": 16,
+      "n_kv_heads": null,
+      "n_layers": 16,
+      "norm_after": false,
+      "pad_token_id": 1,
+      "precision": "amp_bf16",
+      "residual_dropout": 0.0,
+      "rope": true,
+      "rope_full_precision": true,
+      "rope_theta": 10000,
+      "scale_emb_init": false,
+      "scale_logits": false,
+      "torch_dtype": "float32",
+      "transformers_version": "4.50.3",
+      "use_cache": true,
+      "vocab_size": 50280,
+      "weight_tying": false
+    },
+    "config_sha256": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+    "gated": false,
+    "files": [
+      {
+        "path": "config.json",
+        "size": 1278,
+        "sha256": null,
+        "git_blob_sha1": "05f4ef82cfc33b7b334788dec2c0c50afc7a0199"
+      },
+      {
+        "path": "generation_config.json",
+        "size": 115,
+        "sha256": null,
+        "git_blob_sha1": "07e3d7c419977cfefe68b54ac117d61b5ea6ca9b"
+      },
+      {
+        "path": "model-00001-of-00002.safetensors",
+        "size": 4707339552,
+        "sha256": "422ef5f118f88936f82bce8cb6d5071f21bea99f92a163422b0e8cd1ad9b2a80",
+        "git_blob_sha1": "dd6cfd85cb209386d05d1a0e874e16067e49f6f0"
+      },
+      {
+        "path": "model-00002-of-00002.safetensors",
+        "size": 412090512,
+        "sha256": "a5c31aaae615d9102c5d7bc14cf0d94820a7e0cc41ff34ec7afb6c2723ab76e7",
+        "git_blob_sha1": "b04b4f95fc02945554394aa21a3280b220b5b189"
+      },
+      {
+        "path": "model.safetensors.index.json",
+        "size": 8539,
+        "sha256": null,
+        "git_blob_sha1": "6ddf92f0c1e1cb3e34b06c31213b166f41a2d855"
+      },
+      {
+        "path": "special_tokens_map.json",
+        "size": 293,
+        "sha256": null,
+        "git_blob_sha1": "a82714f41c337edb8f8f86fa67eadcb8f9e9c21d"
+      },
+      {
+        "path": "tokenizer.json",
+        "size": 3565402,
+        "sha256": null,
+        "git_blob_sha1": "e304f23d7e900f12b1ba89749b9d4d7dd7208b81"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 5324,
+        "sha256": null,
+        "git_blob_sha1": "050abfd7c8d4c97bd577fee2e473711c1be28c2e"
+      }
+    ],
+    "download_bytes": 5123011015,
+    "parameter_metadata": {
+      "parameters": {
+        "F32": 1279854592
+      },
+      "total": 1279854592
+    },
+    "license": "apache-2.0",
+    "metadata_url": "https://huggingface.co/api/models/allenai/DataDecide-fineweb-edu-1B/revision/step10000-seed-default?blobs=true",
+    "metadata_sha256": "b38c7c26faf78d97e14ea0444864df021381c1dd39e1b0b7e855c4827f20662f",
+    "model_card_url": "https://huggingface.co/allenai/DataDecide-fineweb-edu-1B/resolve/8551c6bc021306d7e1e5c23dd58eed39006ac773/README.md",
+    "model_card_sha256": "2d6265075d8392f623ce8c78ebd273e6f4b5f28da82404a8fd00059d67f00c20",
+    "model_card_status": 200,
+    "adapter": "author_hf_olmo"
+  }
+}

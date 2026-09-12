@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "status": "verified_ready",
+  "old_plan_sha256": "a52debd19314c47f5517b1075ef30c5b586da4e65525a9cef4920a958d4f5a3c",
+  "new_plan": "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/efficiency-evaluation-plan-20260912-v4.json",
+  "new_plan_sha256": "a69eb4a9554ff3c0d9c9b2b9b1e0d5bc1342a5f3df9036b6f29553e644825be5",
+  "old_receipt_sha256": "96e3508031c2395851066968f3bfc667cc59401c1b232f24a5012f61015604cd",
+  "archived_receipt_sha256": "96e3508031c2395851066968f3bfc667cc59401c1b232f24a5012f61015604cd",
+  "archived_runner_sha256": "2c725495eeba665ef1ab2dc9633957cff4b52c9f21e9d24812d0312e9ec21018",
+  "new_runner_sha256": "182d362c63c0867a48dc23ed91343398523baa84af70e8a71dbe24dbd1a39ce2",
+  "converter_sha256": "05945f873ec5acc0671d696305fbca0153d8192fef6350d29e886d04f374f233",
+  "conversion_receipt_sha256": "dd66ced75ca63326668f7fe3d04ab9ccbccb486a1a12e288aaa350c0b30c09ad",
+  "converted_weight_sha256": "757ed78026d5a4b8d3716a57ae08986c4d61f2e65efd0b0cf929a5f4effa8202",
+  "completed_jobs_preserved": [
+    "dd_dclm_baseline_qc_20p_10000",
+    "dd_dclm_baseline_qc_20p_12500",
+    "dd_dclm_baseline_qc_20p_15000",
+    "pythia_1b"
+  ],
+  "failed_job_requeued": "tinyllama_early_10b",
+  "training_resumed": false,
+  "completed_unix": 1789168430.2585626
+}

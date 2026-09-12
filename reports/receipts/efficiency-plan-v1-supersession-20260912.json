@@ -1,0 +1,12 @@
+{
+  "time": 1789158945.0596967,
+  "terminated_queue_pid": 3194470,
+  "previous_plan_sha256": "374b6e0652b258a8c3a6dddb8aef046ff0197547f9f15824f9b06f0fff56b5b1",
+  "previous_receipt_sha256": "12f8493522bbc8ec957319865d251945f6323cba49ccb09ea7282a7271abe75d",
+  "archive": "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/receipt-plan-v1-superseded.json",
+  "evaluations_started": 0,
+  "reason": "Add predeclared lower-compute DataDecide 14.42B and TinyLlama 10B controls before any new benchmark scores.",
+  "training_processes_untouched": [
+    "3190905"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "plan_sha256": "a52debd19314c47f5517b1075ef30c5b586da4e65525a9cef4920a958d4f5a3c",
+  "created_unix": 1789159618.6496928,
+  "jobs": {
+    "pythia_1b": {
+      "status": "running",
+      "started_unix": 1789159635.2251637,
+      "model_file_sha256": {
+        "config.json": "302d6702a29de1039066e41404877fb8c53b7ddc82e88f9aba277f230086cfe0",
+        "model.safetensors": "7e6dff44849e036a73296368e663bd9420009977f03a8d4d747b234264f37107",
+        "special_tokens_map.json": "6f50ab5a5a509a1c309d6171f339b196a900dc9c99ad0408ff23bb615fdae7ad",
+        "tokenizer.json": "c24618a1b3e6a38167beff1c72cffd126c3a66254347304b50547d12c5f25624",
+        "tokenizer_config.json": "70e38394e494931c6f773ba41e19460dd4436526b852207367f04341b4066d3f"
+      }
+    }
+  },
+  "new_training_tokens": 0,
+  "status": "running",
+  "pid": 3196358,
+  "updated_unix": 1789159635.2251613,
+  "B_checkpoint": {
+    "bytes": 13200791363,
+    "parent_sha256": "7a3ebb609c2d79b1b6370531bed6fd173466d23f4847c1b8c589cc969790a933",
+    "path": "/home/hhai/pretrain/continuation/20260911-v1/pilot-B/resume.pth",
+    "saved_unix": 1789159491.209094,
+    "sha256": "51de78a08b15fde30042e47553ca4cb2e5d3e65f280be86b5b362683b4d049af",
+    "step": 61
+  },
+  "current_job": "pythia_1b"
+}

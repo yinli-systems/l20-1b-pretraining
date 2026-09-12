@@ -1,12 +1,18 @@
 # High-quality English 1.1B pretraining
 
+The released base checkpoint is available at
+[`AliceYin/L20-1B-20B-Base`](https://huggingface.co/AliceYin/L20-1B-20B-Base).
+
 This is a from-zero pretraining pipeline for one NVIDIA L20. It does not load a
 pretrained model or tokenizer. The model is a 1,100,048,384-parameter
 TinyLlama-class decoder (22 layers, width 2048, 32 attention heads, 4 query
 groups, SwiGLU 5632, context 2048) and the tokenizer is a newly trained 32K
 byte-level BPE.
 
-## Live evidence
+Third-party pretrained weights are loaded only for separate baseline evaluations,
+never to initialize this model's training.
+
+## Results and evidence
 
 ![Training and validation loss through step 14094](reports/figures/loss-curve-step-14094.png)
 
@@ -15,6 +21,31 @@ tokens. Final held-out loss was 2.4247146 (perplexity 11.2990036). Immutable
 environment, data, gate, benchmark, and progress receipts are indexed in
 [`reports/`](reports/README.md). The final external benchmark summary is in
 [`reports/metrics/final-benchmarks.json`](reports/metrics/final-benchmarks.json).
+The revision-pinned, same-protocol TinyLlama comparison is documented in
+[`reports/research/tinyllama-comparison-20260911.md`](reports/research/tinyllama-comparison-20260911.md).
+The evidence review and strictly budgeted 2B-token continuation proposal are in
+[`reports/research/2b-continuation-plan.md`](reports/research/2b-continuation-plan.md).
+Pilot A completed 190 steps (198,451,200 additional prediction tokens); fixed
+validation PPL changed from 11.298834 to 11.297638, essentially flat. Its frozen
+checkpoint completed the nine-task core evaluation: primary seven-task mean
+51.01% versus the original 51.26%, with no confirmed improvement. Extended
+same-protocol evaluation is also complete; A is not promoted to the main run.
+Pilot B passed its bounded data-admission checks and completed its first real
+optimizer update from the original 20B parent; this does not automatically approve
+the main run. See the [execution protocol](reports/research/continuation-execution-protocol.md)
+and [pilot evaluation record](reports/research/continuation-pilot-evaluation-20260911.md).
+No post-continuation benchmark win is claimed.
+The additional low-compute baseline evaluations and candidate-set Pareto analysis
+are documented in the [baseline execution record](reports/research/efficiency-baseline-execution-20260912.md).
+All 36 frozen checkpoint evaluations completed. The model's seven-task
+same-protocol macro is 51.2601% (49.9411% excluding BoolQ). It significantly
+beats the TinyLlama 1T checkpoint by +1.0182 percentage points, 95% paired
+bootstrap CI [+0.1584, +1.8860], ties the 1.5T and 2T checkpoints, and loses to
+the 2.5T checkpoint. The [complete result table and claim boundaries](reports/metrics/efficiency-all-results-final-20260912.md)
+and [clean frontier figure](reports/plots/efficiency-frontier-clean-20260912.png)
+are checked in. This frozen subset is not a global census or proof that the
+model is universally first in token efficiency. At the user's request, B was
+safely checkpointed and paused at step 61; it is not part of the released base.
 Measured validation points and the explicitly labeled pre-completion 20B-token
 extrapolation are available as CSV files so the chart can be independently reproduced.
 Checkpoint weights, source text, mutable logs, and raw TensorBoard events are
@@ -58,6 +89,12 @@ The full run uses BF16, compiled PyTorch SDPA, fused AdamW, micro-batch 6,
 gradient accumulation 85, effective global batch 510 sequences, 1,000 optimizer
 steps of warmup, and cosine decay from 4e-4 to 4e-5. It retains the two latest
 complete step checkpoints and resumes automatically after interruption.
+
+The hardware was one NVIDIA L20 with 46,068 MiB VRAM. A representative live
+snapshot at step 10,595 measured 12,845 tokens/s, 93.948 TFLOP/s of model FLOPs,
+100% GPU utilization, 45,265/46,068 MiB memory use, and 348.3 W. Using exactly
+132 TFLOP/s as the BF16 peak denominator, `model_FLOP/s / 132e12`, this is
+71.17% standard MFU. It is point-in-time telemetry, not a full-run average.
 
 The packed reservoir contains at least 20.2B unique-source tokens (1% above the
 nominal mixture; a resumed source may retain a larger verified reservoir).

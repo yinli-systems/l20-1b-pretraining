@@ -1,0 +1,287 @@
+{
+  "job": "dd_fineweb_edu_42500",
+  "tasks": {
+    "hellaswag": {
+      "metric": "acc_norm,none",
+      "n": 10042,
+      "ours": 0.45130452101175067,
+      "baseline": 0.5455088627763394,
+      "difference_pp": -9.420434176458873,
+      "paired_95_ci_pp": [
+        -10.137422824138618,
+        -8.703445528779127
+      ],
+      "ours_better_samples": 243,
+      "baseline_better_samples": 1189,
+      "tied_samples": 8610,
+      "document_prompt_target_fingerprint": "1a390c76c9c87c49c7a765bfb92c2d619465fca0db677d1d89fe83ae7e11dc66",
+      "task_config_sha256": "bc3c95e5c833077e4c69333ca795f4458ca790dd525ba6f65b5c45733f8e0c68",
+      "protocol_alignment": "PASS"
+    },
+    "piqa": {
+      "metric": "acc_norm,none",
+      "n": 1838,
+      "ours": 0.6958650707290533,
+      "baseline": 0.7274211099020674,
+      "difference_pp": -3.1556039173014145,
+      "paired_95_ci_pp": [
+        -4.787812840043525,
+        -1.5778019586507073
+      ],
+      "ours_better_samples": 88,
+      "baseline_better_samples": 146,
+      "tied_samples": 1604,
+      "document_prompt_target_fingerprint": "c776098ae895c6058ac824449604db36f469c28ed04b9145a99c8d1a6542f416",
+      "task_config_sha256": "dfc6c21cc58b61a02e5d43e1ed1f239323ec519124913155090062a818c44da6",
+      "protocol_alignment": "PASS"
+    },
+    "winogrande": {
+      "metric": "acc,none",
+      "n": 1267,
+      "ours": 0.5217048145224941,
+      "baseline": 0.5659037095501184,
+      "difference_pp": -4.41988950276243,
+      "paired_95_ci_pp": [
+        -7.655880031570639,
+        -1.1838989739542225
+      ],
+      "ours_better_samples": 196,
+      "baseline_better_samples": 252,
+      "tied_samples": 819,
+      "document_prompt_target_fingerprint": "fa103349a0fd29b1a7ab48695d225eb3f8225aa38287ec535ad443b8c8f557db",
+      "task_config_sha256": "8e44b42ee1d813b62f148d3f491b7bd6413bfac4d3bda85d0cc8184c009b554e",
+      "protocol_alignment": "PASS"
+    },
+    "openbookqa": {
+      "metric": "acc_norm,none",
+      "n": 500,
+      "ours": 0.35,
+      "baseline": 0.388,
+      "difference_pp": -3.8,
+      "paired_95_ci_pp": [
+        -6.800000000000001,
+        -0.8
+      ],
+      "ours_better_samples": 22,
+      "baseline_better_samples": 41,
+      "tied_samples": 437,
+      "document_prompt_target_fingerprint": "7a548546a99c1ce06635e63695a60304606155dc8c446f2e30d441db698da69e",
+      "task_config_sha256": "5969dfdaa167152c03c415cb00a7e1bfd4cb7391f3596d0c87cfb6fd6a759724",
+      "protocol_alignment": "PASS"
+    },
+    "arc_easy": {
+      "metric": "acc_norm,none",
+      "n": 2376,
+      "ours": 0.6414141414141414,
+      "baseline": 0.6658249158249159,
+      "difference_pp": -2.441077441077441,
+      "paired_95_ci_pp": [
+        -3.9983164983164983,
+        -0.9248737373737527
+      ],
+      "ours_better_samples": 147,
+      "baseline_better_samples": 205,
+      "tied_samples": 2024,
+      "document_prompt_target_fingerprint": "03f139e210ce12f2f4560aa14bdc4d5030af2aef18ea3ddbb0ef62ef62424e41",
+      "task_config_sha256": "8d5bf8760e5ffa5e2bde7cb9179aad4ecd29c018527ba9c14316de17786f7eca",
+      "protocol_alignment": "PASS"
+    },
+    "arc_challenge": {
+      "metric": "acc_norm,none",
+      "n": 1172,
+      "ours": 0.3361774744027304,
+      "baseline": 0.3660409556313993,
+      "difference_pp": -2.986348122866894,
+      "paired_95_ci_pp": [
+        -5.2047781569965865,
+        -0.7679180887372014
+      ],
+      "ours_better_samples": 73,
+      "baseline_better_samples": 108,
+      "tied_samples": 991,
+      "document_prompt_target_fingerprint": "0c32baa042f9a16f04729bc4a882bc9790e7aeb449bb37e86b698ec4580ab6e4",
+      "task_config_sha256": "5b956c97bd7134b5dfc6fde19af8b6a5eb211f68cb92e016acfa578ea385abb6",
+      "protocol_alignment": "PASS"
+    },
+    "boolq": {
+      "metric": "acc,none",
+      "n": 3270,
+      "ours": 0.591743119266055,
+      "baseline": 0.5963302752293578,
+      "difference_pp": -0.45871559633027525,
+      "paired_95_ci_pp": [
+        -2.385321100917431,
+        1.4678899082568808
+      ],
+      "ours_better_samples": 502,
+      "baseline_better_samples": 517,
+      "tied_samples": 2251,
+      "document_prompt_target_fingerprint": "a55b0b6e810c0df7b6d372b1cadd4c8f97153fe776a90acc7f041dc01b68652d",
+      "task_config_sha256": "b124a540d891cd40fac33f93c14dedee00733dae7f1bc056c4b3f82db7c114b5",
+      "protocol_alignment": "PASS"
+    }
+  },
+  "seven_task_macro": {
+    "ours": 0.5126013059066035,
+    "baseline": 0.5507185469877426,
+    "ours_minus_baseline_pp": -3.8117241081139044,
+    "paired_95_ci_pp": [
+      -4.6517401890454435,
+      -2.9758123571903794
+    ]
+  },
+  "six_task_without_boolq": {
+    "ours": 0.4994110036800283,
+    "baseline": 0.5431165922808067,
+    "ours_minus_baseline_pp": -4.370558860077843,
+    "paired_95_ci_pp": [
+      -5.291046596324131,
+      -3.453515251155374
+    ]
+  },
+  "total_parameters": 1279854592,
+  "training_tokens": 61276160000,
+  "token_kind": "step_times_global_batch_times_sequence_length",
+  "training_flops_proxy_6ND": 470547448536760320000,
+  "category": "natural_corpus_base",
+  "pareto_scope": "candidate-set only; not global SOTA",
+  "limitations": [
+    "6ND is an approximate proxy, not measured hardware FLOPs; data/teacher/experimentation compute excluded.",
+    "Original 20B data did not explicitly decontaminate BoolQ; report the six-task sensitivity.",
+    "Paired intervals reflect benchmark sample uncertainty, not training seeds or multiple comparisons.",
+    "Tokenizer-dependent input truncation and default BOS behavior can differ."
+  ],
+  "result_sha256": "83ad07b9ed553f9f12d9df1761e3360d9cef7ce20b1014f374d4978dd432e7cb",
+  "job_identity": {
+    "id": "dd_fineweb_edu_42500",
+    "repo": "allenai/DataDecide-fineweb-edu-1B",
+    "ref": "step42500-seed-default",
+    "ref_exists": true,
+    "training_tokens": 61276160000,
+    "token_kind": "step_times_global_batch_times_sequence_length",
+    "token_source": "https://github.com/allenai/DataDecide#hyperparameters",
+    "category": "natural_corpus_base",
+    "seed": "default",
+    "selection": "predeclared recipe anchor",
+    "resolution_status": "resolved",
+    "revision": "772865f3211700174971c9fa048bf7b2f133b7ad",
+    "config": {
+      "activation_type": "swiglu",
+      "alibi": false,
+      "alibi_bias_max": 8.0,
+      "architectures": [
+        "OLMoForCausalLM"
+      ],
+      "attention_dropout": 0.0,
+      "attention_layer_norm": false,
+      "attention_layer_norm_with_affine": false,
+      "bias_for_layer_norm": false,
+      "block_group_size": 1,
+      "block_type": "sequential",
+      "clip_qkv": null,
+      "d_model": 2048,
+      "emb_init_std": null,
+      "embedding_dropout": 0.0,
+      "embedding_layer_norm": false,
+      "embedding_size": 50304,
+      "eos_token_id": 50279,
+      "flash_attention": true,
+      "include_bias": false,
+      "init_cutoff_factor": 3.0,
+      "init_device": "cuda",
+      "init_fn": "normal",
+      "init_std": 0.02,
+      "layer_norm_eps": 1e-06,
+      "layer_norm_type": "rms",
+      "layer_norm_with_affine": true,
+      "max_sequence_length": 2048,
+      "mlp_hidden_size": null,
+      "mlp_ratio": 8,
+      "model_type": "hf_olmo",
+      "multi_query_attention": null,
+      "n_heads": 16,
+      "n_kv_heads": null,
+      "n_layers": 16,
+      "norm_after": false,
+      "pad_token_id": 1,
+      "precision": "amp_bf16",
+      "residual_dropout": 0.0,
+      "rope": true,
+      "rope_full_precision": true,
+      "rope_theta": 10000,
+      "scale_emb_init": false,
+      "scale_logits": false,
+      "torch_dtype": "float32",
+      "transformers_version": "4.50.3",
+      "use_cache": true,
+      "vocab_size": 50280,
+      "weight_tying": false
+    },
+    "config_sha256": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+    "gated": false,
+    "files": [
+      {
+        "path": "config.json",
+        "size": 1278,
+        "sha256": null,
+        "git_blob_sha1": "05f4ef82cfc33b7b334788dec2c0c50afc7a0199"
+      },
+      {
+        "path": "generation_config.json",
+        "size": 115,
+        "sha256": null,
+        "git_blob_sha1": "07e3d7c419977cfefe68b54ac117d61b5ea6ca9b"
+      },
+      {
+        "path": "model-00001-of-00002.safetensors",
+        "size": 4707339552,
+        "sha256": "d25807b3e1cbc21c57536c7c312cfb53524893520990b7772beee5671fa2ff8a",
+        "git_blob_sha1": "e57df5e7e5ecbbb2d5bd3158090aa553d9e84998"
+      },
+      {
+        "path": "model-00002-of-00002.safetensors",
+        "size": 412090512,
+        "sha256": "ab01af1bfa4334edbb072f16ca199b6c543d50d6f5ed01d691619bd9d8e1e6f1",
+        "git_blob_sha1": "c73b27c367e6e676bd899c77133f47d66d23ea5a"
+      },
+      {
+        "path": "model.safetensors.index.json",
+        "size": 8539,
+        "sha256": null,
+        "git_blob_sha1": "6ddf92f0c1e1cb3e34b06c31213b166f41a2d855"
+      },
+      {
+        "path": "special_tokens_map.json",
+        "size": 293,
+        "sha256": null,
+        "git_blob_sha1": "a82714f41c337edb8f8f86fa67eadcb8f9e9c21d"
+      },
+      {
+        "path": "tokenizer.json",
+        "size": 3565402,
+        "sha256": null,
+        "git_blob_sha1": "e304f23d7e900f12b1ba89749b9d4d7dd7208b81"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 5324,
+        "sha256": null,
+        "git_blob_sha1": "050abfd7c8d4c97bd577fee2e473711c1be28c2e"
+      }
+    ],
+    "download_bytes": 5123011015,
+    "parameter_metadata": {
+      "parameters": {
+        "F32": 1279854592
+      },
+      "total": 1279854592
+    },
+    "license": "apache-2.0",
+    "metadata_url": "https://huggingface.co/api/models/allenai/DataDecide-fineweb-edu-1B/revision/step42500-seed-default?blobs=true",
+    "metadata_sha256": "f817d4848c3b3ec0280bf7177df83e38e99c946fd4fcf27227dc1ece3b145176",
+    "model_card_url": "https://huggingface.co/allenai/DataDecide-fineweb-edu-1B/resolve/772865f3211700174971c9fa048bf7b2f133b7ad/README.md",
+    "model_card_sha256": "2d6265075d8392f623ce8c78ebd273e6f4b5f28da82404a8fd00059d67f00c20",
+    "model_card_status": 200,
+    "adapter": "author_hf_olmo"
+  }
+}

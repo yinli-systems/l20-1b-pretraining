@@ -1,0 +1,287 @@
+{
+  "job": "dd_dclm_baseline_20000",
+  "tasks": {
+    "hellaswag": {
+      "metric": "acc_norm,none",
+      "n": 10042,
+      "ours": 0.45130452101175067,
+      "baseline": 0.5254929296952798,
+      "difference_pp": -7.418840868352918,
+      "paired_95_ci_pp": [
+        -8.125871340370445,
+        -6.721768571997611
+      ],
+      "ours_better_samples": 293,
+      "baseline_better_samples": 1038,
+      "tied_samples": 8711,
+      "document_prompt_target_fingerprint": "1a390c76c9c87c49c7a765bfb92c2d619465fca0db677d1d89fe83ae7e11dc66",
+      "task_config_sha256": "bc3c95e5c833077e4c69333ca795f4458ca790dd525ba6f65b5c45733f8e0c68",
+      "protocol_alignment": "PASS"
+    },
+    "piqa": {
+      "metric": "acc_norm,none",
+      "n": 1838,
+      "ours": 0.6958650707290533,
+      "baseline": 0.7121871599564744,
+      "difference_pp": -1.632208922742111,
+      "paired_95_ci_pp": [
+        -3.3188248095756254,
+        0.0
+      ],
+      "ours_better_samples": 104,
+      "baseline_better_samples": 134,
+      "tied_samples": 1600,
+      "document_prompt_target_fingerprint": "c776098ae895c6058ac824449604db36f469c28ed04b9145a99c8d1a6542f416",
+      "task_config_sha256": "dfc6c21cc58b61a02e5d43e1ed1f239323ec519124913155090062a818c44da6",
+      "protocol_alignment": "PASS"
+    },
+    "winogrande": {
+      "metric": "acc,none",
+      "n": 1267,
+      "ours": 0.5217048145224941,
+      "baseline": 0.5556432517758485,
+      "difference_pp": -3.3938437253354383,
+      "paired_95_ci_pp": [
+        -6.708760852407261,
+        -0.15785319652722968
+      ],
+      "ours_better_samples": 210,
+      "baseline_better_samples": 253,
+      "tied_samples": 804,
+      "document_prompt_target_fingerprint": "fa103349a0fd29b1a7ab48695d225eb3f8225aa38287ec535ad443b8c8f557db",
+      "task_config_sha256": "8e44b42ee1d813b62f148d3f491b7bd6413bfac4d3bda85d0cc8184c009b554e",
+      "protocol_alignment": "PASS"
+    },
+    "openbookqa": {
+      "metric": "acc_norm,none",
+      "n": 500,
+      "ours": 0.35,
+      "baseline": 0.352,
+      "difference_pp": -0.2,
+      "paired_95_ci_pp": [
+        -3.4000000000000004,
+        2.8000000000000003
+      ],
+      "ours_better_samples": 31,
+      "baseline_better_samples": 32,
+      "tied_samples": 437,
+      "document_prompt_target_fingerprint": "7a548546a99c1ce06635e63695a60304606155dc8c446f2e30d441db698da69e",
+      "task_config_sha256": "5969dfdaa167152c03c415cb00a7e1bfd4cb7391f3596d0c87cfb6fd6a759724",
+      "protocol_alignment": "PASS"
+    },
+    "arc_easy": {
+      "metric": "acc_norm,none",
+      "n": 2376,
+      "ours": 0.6414141414141414,
+      "baseline": 0.5744949494949495,
+      "difference_pp": 6.691919191919192,
+      "paired_95_ci_pp": [
+        5.008417508417509,
+        8.375420875420875
+      ],
+      "ours_better_samples": 294,
+      "baseline_better_samples": 135,
+      "tied_samples": 1947,
+      "document_prompt_target_fingerprint": "03f139e210ce12f2f4560aa14bdc4d5030af2aef18ea3ddbb0ef62ef62424e41",
+      "task_config_sha256": "8d5bf8760e5ffa5e2bde7cb9179aad4ecd29c018527ba9c14316de17786f7eca",
+      "protocol_alignment": "PASS"
+    },
+    "arc_challenge": {
+      "metric": "acc_norm,none",
+      "n": 1172,
+      "ours": 0.3361774744027304,
+      "baseline": 0.295221843003413,
+      "difference_pp": 4.09556313993174,
+      "paired_95_ci_pp": [
+        1.877133105802048,
+        6.313993174061433
+      ],
+      "ours_better_samples": 115,
+      "baseline_better_samples": 67,
+      "tied_samples": 990,
+      "document_prompt_target_fingerprint": "0c32baa042f9a16f04729bc4a882bc9790e7aeb449bb37e86b698ec4580ab6e4",
+      "task_config_sha256": "5b956c97bd7134b5dfc6fde19af8b6a5eb211f68cb92e016acfa578ea385abb6",
+      "protocol_alignment": "PASS"
+    },
+    "boolq": {
+      "metric": "acc,none",
+      "n": 3270,
+      "ours": 0.591743119266055,
+      "baseline": 0.5859327217125382,
+      "difference_pp": 0.581039755351682,
+      "paired_95_ci_pp": [
+        -1.437308868501529,
+        2.6299694189602447
+      ],
+      "ours_better_samples": 573,
+      "baseline_better_samples": 554,
+      "tied_samples": 2143,
+      "document_prompt_target_fingerprint": "a55b0b6e810c0df7b6d372b1cadd4c8f97153fe776a90acc7f041dc01b68652d",
+      "task_config_sha256": "b124a540d891cd40fac33f93c14dedee00733dae7f1bc056c4b3f82db7c114b5",
+      "protocol_alignment": "PASS"
+    }
+  },
+  "seven_task_macro": {
+    "ours": 0.5126013059066035,
+    "baseline": 0.5144246936626433,
+    "ours_minus_baseline_pp": -0.18233877560397885,
+    "paired_95_ci_pp": [
+      -1.0358031459935726,
+      0.6769322884027019
+    ]
+  },
+  "six_task_without_boolq": {
+    "ours": 0.4994110036800283,
+    "baseline": 0.5025066889876608,
+    "ours_minus_baseline_pp": -0.30956853076325563,
+    "paired_95_ci_pp": [
+      -1.2506874050386914,
+      0.6266023479411883
+    ]
+  },
+  "total_parameters": 1279854592,
+  "training_tokens": 28835840000,
+  "token_kind": "step_times_global_batch_times_sequence_length",
+  "training_flops_proxy_6ND": 221434093429063680000,
+  "category": "natural_corpus_base",
+  "pareto_scope": "candidate-set only; not global SOTA",
+  "limitations": [
+    "6ND is an approximate proxy, not measured hardware FLOPs; data/teacher/experimentation compute excluded.",
+    "Original 20B data did not explicitly decontaminate BoolQ; report the six-task sensitivity.",
+    "Paired intervals reflect benchmark sample uncertainty, not training seeds or multiple comparisons.",
+    "Tokenizer-dependent input truncation and default BOS behavior can differ."
+  ],
+  "result_sha256": "f68d67045138134ba1ee476a6d7a8d4516d653d73a67edd26fd496b4574193a5",
+  "job_identity": {
+    "id": "dd_dclm_baseline_20000",
+    "repo": "allenai/DataDecide-dclm-baseline-1B",
+    "ref": "step20000-seed-default",
+    "ref_exists": true,
+    "training_tokens": 28835840000,
+    "token_kind": "step_times_global_batch_times_sequence_length",
+    "token_source": "https://github.com/allenai/DataDecide#hyperparameters",
+    "category": "natural_corpus_base",
+    "seed": "default",
+    "selection": "predeclared recipe anchor",
+    "resolution_status": "resolved",
+    "revision": "b99dacc5a6d127dee0df82eb3966327794f80024",
+    "config": {
+      "activation_type": "swiglu",
+      "alibi": false,
+      "alibi_bias_max": 8.0,
+      "architectures": [
+        "OLMoForCausalLM"
+      ],
+      "attention_dropout": 0.0,
+      "attention_layer_norm": false,
+      "attention_layer_norm_with_affine": false,
+      "bias_for_layer_norm": false,
+      "block_group_size": 1,
+      "block_type": "sequential",
+      "clip_qkv": null,
+      "d_model": 2048,
+      "emb_init_std": null,
+      "embedding_dropout": 0.0,
+      "embedding_layer_norm": false,
+      "embedding_size": 50304,
+      "eos_token_id": 50279,
+      "flash_attention": true,
+      "include_bias": false,
+      "init_cutoff_factor": 3.0,
+      "init_device": "cuda",
+      "init_fn": "normal",
+      "init_std": 0.02,
+      "layer_norm_eps": 1e-06,
+      "layer_norm_type": "rms",
+      "layer_norm_with_affine": true,
+      "max_sequence_length": 2048,
+      "mlp_hidden_size": null,
+      "mlp_ratio": 8,
+      "model_type": "hf_olmo",
+      "multi_query_attention": null,
+      "n_heads": 16,
+      "n_kv_heads": null,
+      "n_layers": 16,
+      "norm_after": false,
+      "pad_token_id": 1,
+      "precision": "amp_bf16",
+      "residual_dropout": 0.0,
+      "rope": true,
+      "rope_full_precision": true,
+      "rope_theta": 10000,
+      "scale_emb_init": false,
+      "scale_logits": false,
+      "torch_dtype": "float32",
+      "transformers_version": "4.50.3",
+      "use_cache": true,
+      "vocab_size": 50280,
+      "weight_tying": false
+    },
+    "config_sha256": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+    "gated": false,
+    "files": [
+      {
+        "path": "config.json",
+        "size": 1278,
+        "sha256": null,
+        "git_blob_sha1": "05f4ef82cfc33b7b334788dec2c0c50afc7a0199"
+      },
+      {
+        "path": "generation_config.json",
+        "size": 115,
+        "sha256": null,
+        "git_blob_sha1": "07e3d7c419977cfefe68b54ac117d61b5ea6ca9b"
+      },
+      {
+        "path": "model-00001-of-00002.safetensors",
+        "size": 4707339552,
+        "sha256": "63f582c013ea5581526f4d11930e1abd5100793852797a9c8354865d9cd594ba",
+        "git_blob_sha1": "5a6f7125341971839999c0448a9dd7f89a30628a"
+      },
+      {
+        "path": "model-00002-of-00002.safetensors",
+        "size": 412090512,
+        "sha256": "b6ce730d1a4fa9272e2082cb711fac6e4c07ed49c28793a5849c740c98726434",
+        "git_blob_sha1": "15c1f26c01d407cb90f29b177b40d4e0e4e65333"
+      },
+      {
+        "path": "model.safetensors.index.json",
+        "size": 8539,
+        "sha256": null,
+        "git_blob_sha1": "6ddf92f0c1e1cb3e34b06c31213b166f41a2d855"
+      },
+      {
+        "path": "special_tokens_map.json",
+        "size": 293,
+        "sha256": null,
+        "git_blob_sha1": "a82714f41c337edb8f8f86fa67eadcb8f9e9c21d"
+      },
+      {
+        "path": "tokenizer.json",
+        "size": 3565402,
+        "sha256": null,
+        "git_blob_sha1": "e304f23d7e900f12b1ba89749b9d4d7dd7208b81"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 5324,
+        "sha256": null,
+        "git_blob_sha1": "050abfd7c8d4c97bd577fee2e473711c1be28c2e"
+      }
+    ],
+    "download_bytes": 5123011015,
+    "parameter_metadata": {
+      "parameters": {
+        "F32": 1279854592
+      },
+      "total": 1279854592
+    },
+    "license": "apache-2.0",
+    "metadata_url": "https://huggingface.co/api/models/allenai/DataDecide-dclm-baseline-1B/revision/step20000-seed-default?blobs=true",
+    "metadata_sha256": "7eaabe554ef92ed6eb54bc061bb47d24c10aca4ba7582f4011cbc7450591daa5",
+    "model_card_url": "https://huggingface.co/allenai/DataDecide-dclm-baseline-1B/resolve/b99dacc5a6d127dee0df82eb3966327794f80024/README.md",
+    "model_card_sha256": "2d6265075d8392f623ce8c78ebd273e6f4b5f28da82404a8fd00059d67f00c20",
+    "model_card_status": 200,
+    "adapter": "author_hf_olmo"
+  }
+}

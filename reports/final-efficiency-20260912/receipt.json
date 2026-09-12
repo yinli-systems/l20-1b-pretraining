@@ -1,0 +1,1424 @@
+{
+  "plan_sha256": "a06e5c3476a05a0c8853b0f2f7720a75afcdebe1740854b428b9cd33745aea75",
+  "created_unix": 1789168425.9778812,
+  "jobs": {
+    "pythia_1b": {
+      "status": "complete",
+      "started_unix": 1789159635.2251637,
+      "model_file_sha256": {
+        "config.json": "302d6702a29de1039066e41404877fb8c53b7ddc82e88f9aba277f230086cfe0",
+        "model.safetensors": "7e6dff44849e036a73296368e663bd9420009977f03a8d4d747b234264f37107",
+        "special_tokens_map.json": "6f50ab5a5a509a1c309d6171f339b196a900dc9c99ad0408ff23bb615fdae7ad",
+        "tokenizer.json": "c24618a1b3e6a38167beff1c72cffd126c3a66254347304b50547d12c5f25624",
+        "tokenizer_config.json": "70e38394e494931c6f773ba41e19460dd4436526b852207367f04341b4066d3f"
+      },
+      "completed_unix": 1789159824.2933424,
+      "result_sha256": "8afa2688f5d821ce908969c43bd536d97156abac07794e1ed32706ad7fadda32",
+      "summary_sha256": "21f7fbc02bc24cddb6deae3f62121cbafb0e39a24a9f5b1039d75867e54ccbed",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.4810419498375301,
+        "ours_minus_baseline_pp": 3.1559356069073408,
+        "paired_95_ci_pp": [
+          2.3022545999009774,
+          4.020053702814538
+        ]
+      },
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/pythia_1b/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/pythia_1b/model.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/pythia_1b/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/pythia_1b/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/pythia_1b/tokenizer_config.json"
+      ]
+    },
+    "dd_dclm_baseline_qc_20p_10000": {
+      "status": "complete",
+      "started_unix": 1789159828.2226584,
+      "model_file_sha256": {
+        "config.json": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+        "generation_config.json": "577d92aebd967ad8edcb7ca9a9e951cbab9b8fff7ff2e9dc8593d895d86ac8b9",
+        "model-00001-of-00002.safetensors": "5f6d75623317dafa9fbbf307efe38ab7e66d4b5d7305f18b537410e3eac482ca",
+        "model-00002-of-00002.safetensors": "1e84d9b2315f3cdd62001ee0a7cb071e34ab6dc7093622322a555d215a1edb5a",
+        "model.safetensors.index.json": "dd9920d8f44b7633b7d455c03b86455f4199d35a9d96f6fb7f702893442f6519",
+        "special_tokens_map.json": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193",
+        "tokenizer.json": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+        "tokenizer_config.json": "a178447e5b7165a9e1ad9c133cad418e948bf53467d03ef41753e179e57c18f6"
+      },
+      "completed_unix": 1789161735.581412,
+      "result_sha256": "fff72a35d3897a8150d5aeb82e7273b7515b4031e50143aba55ae1c78d277cc0",
+      "summary_sha256": "60424163d13f78826323432f1f0073af739199990949cd08fdb3a84792479298",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.4984364414222595,
+        "ours_minus_baseline_pp": 1.4164864484344066,
+        "paired_95_ci_pp": [
+          0.5600084736456981,
+          2.282061643726884
+        ]
+      },
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_10000/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_10000/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_10000/model-00001-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_10000/model-00002-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_10000/model.safetensors.index.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_10000/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_10000/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_10000/tokenizer_config.json"
+      ]
+    },
+    "dd_dclm_baseline_qc_20p_12500": {
+      "status": "complete",
+      "started_unix": 1789161744.655304,
+      "model_file_sha256": {
+        "config.json": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+        "generation_config.json": "577d92aebd967ad8edcb7ca9a9e951cbab9b8fff7ff2e9dc8593d895d86ac8b9",
+        "model-00001-of-00002.safetensors": "5867162998c426f2238d500fba80766c2c27d3f2ad7784534229df5bea5ec4c6",
+        "model-00002-of-00002.safetensors": "8c2afc98cd9b4f3437c2e25aaba0c62a0c9c732e4db851094aa246cd851afe16",
+        "model.safetensors.index.json": "dd9920d8f44b7633b7d455c03b86455f4199d35a9d96f6fb7f702893442f6519",
+        "special_tokens_map.json": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193",
+        "tokenizer.json": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+        "tokenizer_config.json": "a178447e5b7165a9e1ad9c133cad418e948bf53467d03ef41753e179e57c18f6"
+      },
+      "completed_unix": 1789162398.1460068,
+      "result_sha256": "64591a298c8a71481b53af8e0605ed9ef65cf97b9b225784f85654d77ccdf64a",
+      "summary_sha256": "a9fcd3a38243569c4a5a432e8ea06d411659575005fc0dac9d3dba034a1bacf9",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5138324635634633,
+        "ours_minus_baseline_pp": -0.1231157656859774,
+        "paired_95_ci_pp": [
+          -0.9789277934706767,
+          0.7016188691855261
+        ]
+      },
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_12500/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_12500/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_12500/model-00001-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_12500/model-00002-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_12500/model.safetensors.index.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_12500/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_12500/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_12500/tokenizer_config.json"
+      ]
+    },
+    "dd_dclm_baseline_qc_20p_15000": {
+      "status": "complete",
+      "started_unix": 1789162407.3468385,
+      "model_file_sha256": {
+        "config.json": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+        "generation_config.json": "577d92aebd967ad8edcb7ca9a9e951cbab9b8fff7ff2e9dc8593d895d86ac8b9",
+        "model-00001-of-00002.safetensors": "35051b050e4122874b9a5ae3063336a1928ca803baa80c4a1256a59c7d41f1aa",
+        "model-00002-of-00002.safetensors": "1f05fd619948d3b2bd60160fddb218d9ac89cea99e26602acc2e9fc3984c0418",
+        "model.safetensors.index.json": "dd9920d8f44b7633b7d455c03b86455f4199d35a9d96f6fb7f702893442f6519",
+        "special_tokens_map.json": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193",
+        "tokenizer.json": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+        "tokenizer_config.json": "a178447e5b7165a9e1ad9c133cad418e948bf53467d03ef41753e179e57c18f6"
+      },
+      "completed_unix": 1789164232.5945206,
+      "result_sha256": "9235e2c80ccf335513fe90b8b509b04bd4bb2758a2b7cf6594f18cbd14f8f827",
+      "summary_sha256": "4e5c16cd464cd5cb2b04143725d652cfb6eb341fa3a4b2a40e3d2739250fb5bf",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5202162294831799,
+        "ours_minus_baseline_pp": -0.7614923576576406,
+        "paired_95_ci_pp": [
+          -1.6135633590519178,
+          0.08409467796001198
+        ]
+      },
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_15000/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_15000/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_15000/model-00001-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_15000/model-00002-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_15000/model.safetensors.index.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_15000/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_15000/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_15000/tokenizer_config.json"
+      ]
+    },
+    "tinyllama_early_10b": {
+      "status": "complete",
+      "started_unix": 1789168476.9985142,
+      "model_file_sha256": {
+        "config.json": "921d10e1cc6a37404ae93a2b494bede8ae00aac5b97e2862466f414661c371c7",
+        "generation_config.json": "eb2d264819d797a5ccbd6bb45430d9017d38a4e21c54ca8400851aa0a6f1e9c4",
+        "pytorch_model.bin": "3419d60bfecfbf933a1351bee764686ed56023882a2414f89642de943de9dde3",
+        "special_tokens_map.json": "6fa06efa2785e450051989a6f8fb4416b10149ded485ddd3f127a40734f5cfd0",
+        "tokenizer.json": "bcd04f0eadf90287bd26e1a183ac487d8a141b09b06aecb7725bbdd343640f2e",
+        "tokenizer.model": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+        "tokenizer_config.json": "f514e7c3008881b6ba7e6a0cdb44c71ce47dc335920dac143ae7bc788197e53a"
+      },
+      "converted_runtime_weight": {
+        "path": "model.safetensors",
+        "size": 4400216680,
+        "sha256": "757ed78026d5a4b8d3716a57ae08986c4d61f2e65efd0b0cf929a5f4effa8202",
+        "receipt_sha256": "dd66ced75ca63326668f7fe3d04ab9ccbccb486a1a12e288aaa350c0b30c09ad"
+      },
+      "completed_unix": 1789168743.5335617,
+      "result_sha256": "3ba80c8450665e358c5c06319a5c2242af97a7c6f86156559a56b44fb41a29b7",
+      "summary_sha256": "05b130683e0ec3d79fccb183a437ff84313c56c5d4a51c3cc41165fae0dcf4db",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.407694458211109,
+        "ours_minus_baseline_pp": 10.490684769549455,
+        "paired_95_ci_pp": [
+          9.49712022038485,
+          11.444415355257558
+        ]
+      },
+      "converted_runtime_weights_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_10b/model.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_10b/conversion-receipt.json"
+      ],
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_10b/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_10b/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_10b/pytorch_model.bin",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_10b/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_10b/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_10b/tokenizer.model",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_10b/tokenizer_config.json"
+      ]
+    },
+    "tinyllama_early_21b": {
+      "status": "complete",
+      "started_unix": 1789168766.378506,
+      "model_file_sha256": {
+        "config.json": "921d10e1cc6a37404ae93a2b494bede8ae00aac5b97e2862466f414661c371c7",
+        "generation_config.json": "eb2d264819d797a5ccbd6bb45430d9017d38a4e21c54ca8400851aa0a6f1e9c4",
+        "pytorch_model.bin": "d8ef3cb9e3e0493cc4ed1c2aec0388e6e827ec6a12da3a327878ecfb121812b9",
+        "special_tokens_map.json": "6fa06efa2785e450051989a6f8fb4416b10149ded485ddd3f127a40734f5cfd0",
+        "tokenizer.json": "bcd04f0eadf90287bd26e1a183ac487d8a141b09b06aecb7725bbdd343640f2e",
+        "tokenizer.model": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+        "tokenizer_config.json": "f514e7c3008881b6ba7e6a0cdb44c71ce47dc335920dac143ae7bc788197e53a"
+      },
+      "converted_runtime_weight": {
+        "path": "model.safetensors",
+        "size": 4400216680,
+        "sha256": "735f505cca2a0d63a97506e607766ff01ad0dec52e91ca570bebd0c7ed7b4011",
+        "receipt_sha256": "8261649e47ea59ef6ca280750c3edc7382d763fb78ee0a0ba5b8aeab669dfa85"
+      },
+      "completed_unix": 1789169579.2843254,
+      "result_sha256": "648d27d1c01e092fbef23e73439baaaaa26489ad8c343661afc157e581a05b89",
+      "summary_sha256": "5137e75f78049c9736c462ac9750af10af67276bd8f4cb7b0dd8efcebf915f0c",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.4363878046471022,
+        "ours_minus_baseline_pp": 7.621350125950137,
+        "paired_95_ci_pp": [
+          6.683855052506811,
+          8.549670561132425
+        ]
+      },
+      "converted_runtime_weights_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_21b/model.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_21b/conversion-receipt.json"
+      ],
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_21b/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_21b/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_21b/pytorch_model.bin",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_21b/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_21b/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_21b/tokenizer.model",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_21b/tokenizer_config.json"
+      ]
+    },
+    "weborganizer_dclm": {
+      "status": "complete",
+      "started_unix": 1789169599.6938355,
+      "model_file_sha256": {
+        "config.json": "1312008b0877d8ce480b1d97db785f4e5ffa504bdfbd397d027414ce3a56806d",
+        "generation_config.json": "3af6fe4698bf9baf85cdbdeecb9da5fc0473a9360d5b4f348062e4e670ab42dd",
+        "model-00001-of-00002.safetensors": "48691256277a41066ec4b0c0a72f9b59cbab4ad801d27a85afbb7e813dc62cda",
+        "model-00002-of-00002.safetensors": "2d9034d957b528a29b8a5b566df35bf2850b41315de3e5fac6d4caa0276a5a66",
+        "model.safetensors.index.json": "4ac97af86952068ce0366fd6b72cfa8db908cd36e087732413b30843511e4613",
+        "special_tokens_map.json": "10b8c8852c1e1f70b54d9aff61728408c28971c0e97a6c5a7b2debbd1d3e9c0c",
+        "tokenizer.json": "870f4e2baa6b683221fa52004d5d6f40ab8c9d31961617304b78c910c2c3caf2",
+        "tokenizer_config.json": "eee017c5bd133137f45907bd0a6e781e2ccd1a533734b7ed2a2f2f4446659809"
+      },
+      "converted_runtime_weight": null,
+      "completed_unix": 1789170410.3485622,
+      "result_sha256": "1c27f6b55e49a3c00452c18d194a5bcccced64396b0eac01993aa648310bb6b2",
+      "summary_sha256": "5be53e95c44b047c708ce2e17230ea9a91e0f66afb5cdae62bef94ca946abbbd",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5444427660331644,
+        "ours_minus_baseline_pp": -3.184146012656087,
+        "paired_95_ci_pp": [
+          -4.027083030918059,
+          -2.3441578797687956
+        ]
+      },
+      "converted_runtime_weights_removed": [],
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/weborganizer_dclm/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/weborganizer_dclm/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/weborganizer_dclm/model-00001-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/weborganizer_dclm/model-00002-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/weborganizer_dclm/model.safetensors.index.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/weborganizer_dclm/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/weborganizer_dclm/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/weborganizer_dclm/tokenizer_config.json"
+      ]
+    },
+    "dd_fineweb_edu_12500": {
+      "status": "complete",
+      "started_unix": 1789170421.610546,
+      "model_file_sha256": {
+        "config.json": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+        "generation_config.json": "577d92aebd967ad8edcb7ca9a9e951cbab9b8fff7ff2e9dc8593d895d86ac8b9",
+        "model-00001-of-00002.safetensors": "746a27ff674105219f058f2c2adc300665822e085c62dc302a3322704ce674bc",
+        "model-00002-of-00002.safetensors": "f93b250f29c912d54d7dde71415a70b58d3a6fb8e7e8518905df9703fc041e8d",
+        "model.safetensors.index.json": "dd9920d8f44b7633b7d455c03b86455f4199d35a9d96f6fb7f702893442f6519",
+        "special_tokens_map.json": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193",
+        "tokenizer.json": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+        "tokenizer_config.json": "a178447e5b7165a9e1ad9c133cad418e948bf53467d03ef41753e179e57c18f6"
+      },
+      "converted_runtime_weight": null,
+      "completed_unix": 1789171059.5964613,
+      "result_sha256": "3cd527251f6c7d383579639de3d096751d5d72f2963f7ffc9f36570a08c8312e",
+      "summary_sha256": "38cd2923b67c636c30978f271e3895ddc97eb1e1a1ee06f1dbec621478aa3381",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5119909937536472,
+        "ours_minus_baseline_pp": 0.0610312152956234,
+        "paired_95_ci_pp": [
+          -0.749832986210728,
+          0.8739283263319648
+        ]
+      },
+      "converted_runtime_weights_removed": [],
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_12500/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_12500/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_12500/model-00001-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_12500/model-00002-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_12500/model.safetensors.index.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_12500/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_12500/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_12500/tokenizer_config.json"
+      ]
+    },
+    "dd_fineweb_edu_15000": {
+      "status": "complete",
+      "started_unix": 1789171069.3192456,
+      "model_file_sha256": {
+        "config.json": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+        "generation_config.json": "577d92aebd967ad8edcb7ca9a9e951cbab9b8fff7ff2e9dc8593d895d86ac8b9",
+        "model-00001-of-00002.safetensors": "d9b9ea7937279a569bd6a875ba85ce303e5f5ae597b467a360cf96a0ea8e0551",
+        "model-00002-of-00002.safetensors": "280dedc57b08b04be051e2d90ab6e1227f1847c8ba6e4b72aede591819765741",
+        "model.safetensors.index.json": "dd9920d8f44b7633b7d455c03b86455f4199d35a9d96f6fb7f702893442f6519",
+        "special_tokens_map.json": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193",
+        "tokenizer.json": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+        "tokenizer_config.json": "a178447e5b7165a9e1ad9c133cad418e948bf53467d03ef41753e179e57c18f6"
+      },
+      "converted_runtime_weight": null,
+      "completed_unix": 1789171559.3445265,
+      "result_sha256": "0732ab3e064d924522ac0139c27210552875cfa0d12e40902b30fada791bbacc",
+      "summary_sha256": "58cb9e636e55834f5c61b6ae9959fd35108b435b0d6164aaf8e49ad7075e77dd",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5203228373495281,
+        "ours_minus_baseline_pp": -0.772153144292456,
+        "paired_95_ci_pp": [
+          -1.5886156973827572,
+          0.03892724298741531
+        ]
+      },
+      "converted_runtime_weights_removed": [],
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_15000/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_15000/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_15000/model-00001-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_15000/model-00002-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_15000/model.safetensors.index.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_15000/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_15000/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_15000/tokenizer_config.json"
+      ]
+    },
+    "dd_dclm_baseline_qc_20p_20000": {
+      "status": "complete",
+      "started_unix": 1789171569.1846294,
+      "model_file_sha256": {
+        "config.json": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+        "generation_config.json": "577d92aebd967ad8edcb7ca9a9e951cbab9b8fff7ff2e9dc8593d895d86ac8b9",
+        "model-00001-of-00002.safetensors": "ca7e89a284a0a9153d39639c657fef8381022bba9014c8a9577af51beb6ef259",
+        "model-00002-of-00002.safetensors": "f7491f53ebecd8bcf907536f141ca82a3ce206ce1bd55436ce78fe365d9b2f70",
+        "model.safetensors.index.json": "dd9920d8f44b7633b7d455c03b86455f4199d35a9d96f6fb7f702893442f6519",
+        "special_tokens_map.json": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193",
+        "tokenizer.json": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+        "tokenizer_config.json": "a178447e5b7165a9e1ad9c133cad418e948bf53467d03ef41753e179e57c18f6"
+      },
+      "converted_runtime_weight": null,
+      "completed_unix": 1789172219.5891938,
+      "result_sha256": "870bfe304e35288a765b92cbd19ef58dd5d7d0739d333a196010fa574e95e91f",
+      "summary_sha256": "819f6f61db329380195f68b33f9e7c7bc28fb1f90784a4cddc85183c34e56eee",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.520780006178765,
+        "ours_minus_baseline_pp": -0.8178700272161386,
+        "paired_95_ci_pp": [
+          -1.6835287632776867,
+          0.07786723548217589
+        ]
+      },
+      "converted_runtime_weights_removed": [],
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_20000/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_20000/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_20000/model-00001-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_20000/model-00002-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_20000/model.safetensors.index.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_20000/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_20000/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_20000/tokenizer_config.json"
+      ]
+    },
+    "dd_dclm_baseline_qc_20p_42500": {
+      "status": "complete",
+      "started_unix": 1789172229.4413166,
+      "model_file_sha256": {
+        "config.json": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+        "generation_config.json": "577d92aebd967ad8edcb7ca9a9e951cbab9b8fff7ff2e9dc8593d895d86ac8b9",
+        "model-00001-of-00002.safetensors": "9c8a8c591e039ed1306a28e3592fc4c053d72bf88e05b761747f178f79196104",
+        "model-00002-of-00002.safetensors": "83db235cd459be84f9ba9e348a9ea44e255f5b64247935d1d9df967976df5ce7",
+        "model.safetensors.index.json": "dd9920d8f44b7633b7d455c03b86455f4199d35a9d96f6fb7f702893442f6519",
+        "special_tokens_map.json": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193",
+        "tokenizer.json": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+        "tokenizer_config.json": "a178447e5b7165a9e1ad9c133cad418e948bf53467d03ef41753e179e57c18f6"
+      },
+      "converted_runtime_weight": null,
+      "completed_unix": 1789172784.587128,
+      "result_sha256": "2f7fb668bc63b0d9a63d1c63ba90082c9776b18cf134ffa15815ea564fe7091d",
+      "summary_sha256": "94e9678ab8416e47756c9cdf9e3b6aeaec7f6186121510a6dc1703321323bff7",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5670621061061075,
+        "ours_minus_baseline_pp": -5.446080019950395,
+        "paired_95_ci_pp": [
+          -6.285912855732478,
+          -4.613892013605869
+        ]
+      },
+      "converted_runtime_weights_removed": [],
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_42500/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_42500/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_42500/model-00001-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_42500/model-00002-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_42500/model.safetensors.index.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_42500/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_42500/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_20p_42500/tokenizer_config.json"
+      ]
+    },
+    "dd_fineweb_edu_10000": {
+      "status": "complete",
+      "started_unix": 1789172795.3472416,
+      "model_file_sha256": {
+        "config.json": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+        "generation_config.json": "577d92aebd967ad8edcb7ca9a9e951cbab9b8fff7ff2e9dc8593d895d86ac8b9",
+        "model-00001-of-00002.safetensors": "422ef5f118f88936f82bce8cb6d5071f21bea99f92a163422b0e8cd1ad9b2a80",
+        "model-00002-of-00002.safetensors": "a5c31aaae615d9102c5d7bc14cf0d94820a7e0cc41ff34ec7afb6c2723ab76e7",
+        "model.safetensors.index.json": "dd9920d8f44b7633b7d455c03b86455f4199d35a9d96f6fb7f702893442f6519",
+        "special_tokens_map.json": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193",
+        "tokenizer.json": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+        "tokenizer_config.json": "a178447e5b7165a9e1ad9c133cad418e948bf53467d03ef41753e179e57c18f6"
+      },
+      "converted_runtime_weight": null,
+      "completed_unix": 1789174272.5510118,
+      "result_sha256": "846e8554cb2388796384d6dc8db9ddb89f5a904b7c7503312b505793c5bb431a",
+      "summary_sha256": "ab2abc5ed91e3b653c1d7ad1912e983558cc26b4da61cc98cb45eeb2f82be6d8",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5082850732201251,
+        "ours_minus_baseline_pp": 0.43162326864784856,
+        "paired_95_ci_pp": [
+          -0.3889912799713344,
+          1.2618168092771755
+        ]
+      },
+      "converted_runtime_weights_removed": [],
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_10000/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_10000/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_10000/model-00001-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_10000/model-00002-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_10000/model.safetensors.index.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_10000/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_10000/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_10000/tokenizer_config.json"
+      ]
+    },
+    "dd_fineweb_edu_20000": {
+      "status": "complete",
+      "started_unix": 1789174282.4959543,
+      "model_file_sha256": {
+        "config.json": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+        "generation_config.json": "577d92aebd967ad8edcb7ca9a9e951cbab9b8fff7ff2e9dc8593d895d86ac8b9",
+        "model-00001-of-00002.safetensors": "b67a52017b9ceec0da09f3cd5ff0b0ca3d92b579618cc6bec45928e9ecf16ac3",
+        "model-00002-of-00002.safetensors": "00e8ec7f00693d286249c218b1c4925758345a225eb5406576f6509871091990",
+        "model.safetensors.index.json": "dd9920d8f44b7633b7d455c03b86455f4199d35a9d96f6fb7f702893442f6519",
+        "special_tokens_map.json": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193",
+        "tokenizer.json": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+        "tokenizer_config.json": "a178447e5b7165a9e1ad9c133cad418e948bf53467d03ef41753e179e57c18f6"
+      },
+      "converted_runtime_weight": null,
+      "completed_unix": 1789175133.800438,
+      "result_sha256": "e0bfebbc6241cfa6ca06ee0d8a1b8be2af19eb464fbca283a777883b0d334fcd",
+      "summary_sha256": "a84e394c7dd803115491cb20e631aa3b80fe6912ef45a7397cb2a4073248e16d",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5242602134971781,
+        "ours_minus_baseline_pp": -1.1658907590574579,
+        "paired_95_ci_pp": [
+          -2.004163946910706,
+          -0.33494172133003935
+        ]
+      },
+      "converted_runtime_weights_removed": [],
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_20000/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_20000/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_20000/model-00001-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_20000/model-00002-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_20000/model.safetensors.index.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_20000/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_20000/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_20000/tokenizer_config.json"
+      ]
+    },
+    "dd_fineweb_edu_42500": {
+      "status": "complete",
+      "started_unix": 1789175143.868655,
+      "model_file_sha256": {
+        "config.json": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+        "generation_config.json": "577d92aebd967ad8edcb7ca9a9e951cbab9b8fff7ff2e9dc8593d895d86ac8b9",
+        "model-00001-of-00002.safetensors": "d25807b3e1cbc21c57536c7c312cfb53524893520990b7772beee5671fa2ff8a",
+        "model-00002-of-00002.safetensors": "ab01af1bfa4334edbb072f16ca199b6c543d50d6f5ed01d691619bd9d8e1e6f1",
+        "model.safetensors.index.json": "dd9920d8f44b7633b7d455c03b86455f4199d35a9d96f6fb7f702893442f6519",
+        "special_tokens_map.json": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193",
+        "tokenizer.json": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+        "tokenizer_config.json": "a178447e5b7165a9e1ad9c133cad418e948bf53467d03ef41753e179e57c18f6"
+      },
+      "converted_runtime_weight": null,
+      "completed_unix": 1789175652.642155,
+      "result_sha256": "83ad07b9ed553f9f12d9df1761e3360d9cef7ce20b1014f374d4978dd432e7cb",
+      "summary_sha256": "6c43778fef926ba6eea358d74418e420fd5be9e2a90bda8ddc856cd3dfbadf49",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5507185469877426,
+        "ours_minus_baseline_pp": -3.8117241081139044,
+        "paired_95_ci_pp": [
+          -4.6517401890454435,
+          -2.9758123571903794
+        ]
+      },
+      "converted_runtime_weights_removed": [],
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_42500/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_42500/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_42500/model-00001-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_42500/model-00002-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_42500/model.safetensors.index.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_42500/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_42500/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_fineweb_edu_42500/tokenizer_config.json"
+      ]
+    },
+    "dd_dclm_baseline_10000": {
+      "status": "complete",
+      "started_unix": 1789176873.2209392,
+      "model_file_sha256": {
+        "config.json": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+        "generation_config.json": "577d92aebd967ad8edcb7ca9a9e951cbab9b8fff7ff2e9dc8593d895d86ac8b9",
+        "model-00001-of-00002.safetensors": "1eee6cc07894a689f5c504053bd9930743f8f507c7705f8fa37df17c56c389e7",
+        "model-00002-of-00002.safetensors": "c42cc7a5a97bfe9498f2c75da1c306e46c6709e3730e44c8b190b288f37e3b68",
+        "model.safetensors.index.json": "dd9920d8f44b7633b7d455c03b86455f4199d35a9d96f6fb7f702893442f6519",
+        "special_tokens_map.json": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193",
+        "tokenizer.json": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+        "tokenizer_config.json": "a178447e5b7165a9e1ad9c133cad418e948bf53467d03ef41753e179e57c18f6"
+      },
+      "converted_runtime_weight": null,
+      "completed_unix": 1789177665.5959737,
+      "result_sha256": "ec301992ee65b88320725db86cace4da9fb2484c1959a2f69404eeaa0012d2a9",
+      "summary_sha256": "8b62bcef07c9c60080c87cacd96bb8487ef0de2dc48e676e78e7d94c647ee9ed",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.4906243040914052,
+        "ours_minus_baseline_pp": 2.1977001815198385,
+        "paired_95_ci_pp": [
+          1.3376760510644914,
+          3.071614143969438
+        ]
+      },
+      "converted_runtime_weights_removed": [],
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_10000/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_10000/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_10000/model-00001-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_10000/model-00002-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_10000/model.safetensors.index.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_10000/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_10000/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_10000/tokenizer_config.json"
+      ]
+    },
+    "dd_dclm_baseline_12500": {
+      "status": "complete",
+      "started_unix": 1789177676.052256,
+      "model_file_sha256": {
+        "config.json": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+        "generation_config.json": "577d92aebd967ad8edcb7ca9a9e951cbab9b8fff7ff2e9dc8593d895d86ac8b9",
+        "model-00001-of-00002.safetensors": "8ca25fc3968178a15afa730716ea4af58314ba15310cf8c7d405d8fdadf387be",
+        "model-00002-of-00002.safetensors": "5890610262b2094ccb7600a5db18190baac740f92b09b8900fb65c74be338e2e",
+        "model.safetensors.index.json": "dd9920d8f44b7633b7d455c03b86455f4199d35a9d96f6fb7f702893442f6519",
+        "special_tokens_map.json": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193",
+        "tokenizer.json": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+        "tokenizer_config.json": "a178447e5b7165a9e1ad9c133cad418e948bf53467d03ef41753e179e57c18f6"
+      },
+      "converted_runtime_weight": null,
+      "completed_unix": 1789178163.3437104,
+      "result_sha256": "9236eabc7b27022c48f9d3b480e49f8754f1b8bf21faacb169402504a4f38ed8",
+      "summary_sha256": "409057a5a2a20743d41aed22fc811f1e36924028adf6c5a281746bce90d38156",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5069991138366816,
+        "ours_minus_baseline_pp": 0.560219206992198,
+        "paired_95_ci_pp": [
+          -0.2777777769145643,
+          1.3982957245915286
+        ]
+      },
+      "converted_runtime_weights_removed": [],
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_12500/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_12500/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_12500/model-00001-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_12500/model-00002-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_12500/model.safetensors.index.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_12500/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_12500/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_12500/tokenizer_config.json"
+      ]
+    },
+    "dd_dclm_baseline_15000": {
+      "status": "complete",
+      "started_unix": 1789178173.897125,
+      "model_file_sha256": {
+        "config.json": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+        "generation_config.json": "577d92aebd967ad8edcb7ca9a9e951cbab9b8fff7ff2e9dc8593d895d86ac8b9",
+        "model-00001-of-00002.safetensors": "fba9344cc9f6e909714800cf34b3a01ee339f916f2d60125048698ef10e1d468",
+        "model-00002-of-00002.safetensors": "efe67a77c1cd0fbcfaa49e301ad0960aaceac85a7056bdd778de9baae5d7cd27",
+        "model.safetensors.index.json": "dd9920d8f44b7633b7d455c03b86455f4199d35a9d96f6fb7f702893442f6519",
+        "special_tokens_map.json": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193",
+        "tokenizer.json": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+        "tokenizer_config.json": "a178447e5b7165a9e1ad9c133cad418e948bf53467d03ef41753e179e57c18f6"
+      },
+      "converted_runtime_weight": null,
+      "completed_unix": 1789178815.6287081,
+      "result_sha256": "15a084d426b769e533cd07931c196fe3c30b1b0a1d91af0b963ee931da47f646",
+      "summary_sha256": "720cd87f3909ace960bbdccbcf58356c8cc7a625bfb150fa56be04995a098204",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5122724707742297,
+        "ours_minus_baseline_pp": 0.032883513237390596,
+        "paired_95_ci_pp": [
+          -0.7922243367143639,
+          0.8772642690026823
+        ]
+      },
+      "converted_runtime_weights_removed": [],
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_15000/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_15000/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_15000/model-00001-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_15000/model-00002-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_15000/model.safetensors.index.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_15000/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_15000/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_15000/tokenizer_config.json"
+      ]
+    },
+    "dd_dclm_baseline_20000": {
+      "status": "complete",
+      "started_unix": 1789178827.0227513,
+      "model_file_sha256": {
+        "config.json": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+        "generation_config.json": "577d92aebd967ad8edcb7ca9a9e951cbab9b8fff7ff2e9dc8593d895d86ac8b9",
+        "model-00001-of-00002.safetensors": "63f582c013ea5581526f4d11930e1abd5100793852797a9c8354865d9cd594ba",
+        "model-00002-of-00002.safetensors": "b6ce730d1a4fa9272e2082cb711fac6e4c07ed49c28793a5849c740c98726434",
+        "model.safetensors.index.json": "dd9920d8f44b7633b7d455c03b86455f4199d35a9d96f6fb7f702893442f6519",
+        "special_tokens_map.json": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193",
+        "tokenizer.json": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+        "tokenizer_config.json": "a178447e5b7165a9e1ad9c133cad418e948bf53467d03ef41753e179e57c18f6"
+      },
+      "converted_runtime_weight": null,
+      "completed_unix": 1789179349.0783386,
+      "result_sha256": "f68d67045138134ba1ee476a6d7a8d4516d653d73a67edd26fd496b4574193a5",
+      "summary_sha256": "55f38bd199b4e073e98d13e5e2dd63437dfa10ae1394b8ab43e37f514575ebba",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5144246936626433,
+        "ours_minus_baseline_pp": -0.18233877560397885,
+        "paired_95_ci_pp": [
+          -1.0358031459935726,
+          0.6769322884027019
+        ]
+      },
+      "converted_runtime_weights_removed": [],
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_20000/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_20000/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_20000/model-00001-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_20000/model-00002-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_20000/model.safetensors.index.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_20000/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_20000/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_20000/tokenizer_config.json"
+      ]
+    },
+    "dd_dclm_baseline_42500": {
+      "status": "complete",
+      "started_unix": 1789179360.482578,
+      "model_file_sha256": {
+        "config.json": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+        "generation_config.json": "577d92aebd967ad8edcb7ca9a9e951cbab9b8fff7ff2e9dc8593d895d86ac8b9",
+        "model-00001-of-00002.safetensors": "c86932358bf656ec5eb513b60cc31e9ff520739995723394e5dd7b30f90312d2",
+        "model-00002-of-00002.safetensors": "c02bc095823cc7f2040134ada8c07311805a67e602936cec39e5550f66cd58af",
+        "model.safetensors.index.json": "dd9920d8f44b7633b7d455c03b86455f4199d35a9d96f6fb7f702893442f6519",
+        "special_tokens_map.json": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193",
+        "tokenizer.json": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+        "tokenizer_config.json": "a178447e5b7165a9e1ad9c133cad418e948bf53467d03ef41753e179e57c18f6"
+      },
+      "converted_runtime_weight": null,
+      "completed_unix": 1789180912.225322,
+      "result_sha256": "ffd472627c734461aa26cfc7e03e3ffd8a09c7ad52b97aa6b7ec4c723f261f17",
+      "summary_sha256": "11bb2b2d05386d8a10547472e30e0fe473ae6279dbbdd283a5032ab626567ffb",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5500045777232196,
+        "ours_minus_baseline_pp": -3.740327181661605,
+        "paired_95_ci_pp": [
+          -4.596542558720971,
+          -2.8993882934294
+        ]
+      },
+      "converted_runtime_weights_removed": [],
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_42500/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_42500/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_42500/model-00001-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_42500/model-00002-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_42500/model.safetensors.index.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_42500/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_42500/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_42500/tokenizer_config.json"
+      ]
+    },
+    "dd_dclm_baseline_qc_7p_fw3_10000": {
+      "status": "complete",
+      "started_unix": 1789180923.045958,
+      "model_file_sha256": {
+        "config.json": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+        "generation_config.json": "577d92aebd967ad8edcb7ca9a9e951cbab9b8fff7ff2e9dc8593d895d86ac8b9",
+        "model-00001-of-00002.safetensors": "40d29be5d42f0ac88ba77ec08e8f2ea615b38ad8df58afe15190ab05f5f2ae6a",
+        "model-00002-of-00002.safetensors": "3be9d4202eeec5dfaad36f1b3dc82e1446d7a781b637b7251c7af210a9bd1878",
+        "model.safetensors.index.json": "dd9920d8f44b7633b7d455c03b86455f4199d35a9d96f6fb7f702893442f6519",
+        "special_tokens_map.json": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193",
+        "tokenizer.json": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+        "tokenizer_config.json": "a178447e5b7165a9e1ad9c133cad418e948bf53467d03ef41753e179e57c18f6"
+      },
+      "converted_runtime_weight": null,
+      "completed_unix": 1789181427.9168515,
+      "result_sha256": "a0b5798aa82b3ab4cd0c13e55a38d83806af95fb1bf54cbc69e39e444cc3ea1a",
+      "summary_sha256": "ade141f288b2762e84086843a6a956cae34528b9645a16e441b9a056d552eaaa",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5201086251100725,
+        "ours_minus_baseline_pp": -0.750731920346891,
+        "paired_95_ci_pp": [
+          -1.6156049036099673,
+          0.11618801694016344
+        ]
+      },
+      "converted_runtime_weights_removed": [],
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_10000/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_10000/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_10000/model-00001-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_10000/model-00002-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_10000/model.safetensors.index.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_10000/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_10000/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_10000/tokenizer_config.json"
+      ]
+    },
+    "dd_dclm_baseline_qc_7p_fw3_12500": {
+      "status": "complete",
+      "started_unix": 1789181438.7792697,
+      "model_file_sha256": {
+        "config.json": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+        "generation_config.json": "577d92aebd967ad8edcb7ca9a9e951cbab9b8fff7ff2e9dc8593d895d86ac8b9",
+        "model-00001-of-00002.safetensors": "ee3575b9707d35c5643e2426f85304782df510152b56e1abe78a8fda1a2d0228",
+        "model-00002-of-00002.safetensors": "856ee43646a623c4966215b79896f8961e0374167f30cb9856d13bd391619dc1",
+        "model.safetensors.index.json": "dd9920d8f44b7633b7d455c03b86455f4199d35a9d96f6fb7f702893442f6519",
+        "special_tokens_map.json": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193",
+        "tokenizer.json": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+        "tokenizer_config.json": "a178447e5b7165a9e1ad9c133cad418e948bf53467d03ef41753e179e57c18f6"
+      },
+      "converted_runtime_weight": null,
+      "completed_unix": 1789182168.9200974,
+      "result_sha256": "c74bc6ef135e4f422e467f5aaca6ade518a53f287a39686c21454504019fdffd",
+      "summary_sha256": "df2a2ed57885ac00341e02f8a9cf442c02c44372db41f8cb7546e3d8a094d7a8",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.524851104869611,
+        "ours_minus_baseline_pp": -1.2249798963007343,
+        "paired_95_ci_pp": [
+          -2.04816164777944,
+          -0.3833438127467909
+        ]
+      },
+      "converted_runtime_weights_removed": [],
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_12500/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_12500/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_12500/model-00001-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_12500/model-00002-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_12500/model.safetensors.index.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_12500/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_12500/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_12500/tokenizer_config.json"
+      ]
+    },
+    "dd_dclm_baseline_qc_7p_fw3_15000": {
+      "status": "complete",
+      "started_unix": 1789185694.3509867,
+      "model_file_sha256": {
+        "config.json": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+        "generation_config.json": "577d92aebd967ad8edcb7ca9a9e951cbab9b8fff7ff2e9dc8593d895d86ac8b9",
+        "model-00001-of-00002.safetensors": "5d0483f770daea4b87381b9767254c4ecd21ca8c8f179fdea7146619602ad83a",
+        "model-00002-of-00002.safetensors": "0d7844b0ea31c555b35fcfb6117737722abc27ffc8d0dcf5eac1c1185d289b6a",
+        "model.safetensors.index.json": "dd9920d8f44b7633b7d455c03b86455f4199d35a9d96f6fb7f702893442f6519",
+        "special_tokens_map.json": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193",
+        "tokenizer.json": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+        "tokenizer_config.json": "a178447e5b7165a9e1ad9c133cad418e948bf53467d03ef41753e179e57c18f6"
+      },
+      "converted_runtime_weight": null,
+      "completed_unix": 1789186409.5406034,
+      "result_sha256": "7c523635e5ef3350b3d354c1d3f634aba69e18bf66a6adfa0af0e50c1d7c9050",
+      "summary_sha256": "d7250a66975ba487d6f2b77b5060850368da88aaf4109df3ddc36243adfc8cd1",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.528553663984732,
+        "ours_minus_baseline_pp": -1.5952358078128377,
+        "paired_95_ci_pp": [
+          -2.474805118761478,
+          -0.7201103079179052
+        ]
+      },
+      "converted_runtime_weights_removed": [],
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_15000/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_15000/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_15000/model-00001-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_15000/model-00002-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_15000/model.safetensors.index.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_15000/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_15000/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_15000/tokenizer_config.json"
+      ]
+    },
+    "dd_dclm_baseline_qc_7p_fw3_20000": {
+      "status": "complete",
+      "started_unix": 1789186420.7982342,
+      "model_file_sha256": {
+        "config.json": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+        "generation_config.json": "577d92aebd967ad8edcb7ca9a9e951cbab9b8fff7ff2e9dc8593d895d86ac8b9",
+        "model-00001-of-00002.safetensors": "92b973e81071bc1e185548005ef676175d4a9802558ce55f308633c870b3cae6",
+        "model-00002-of-00002.safetensors": "b918f8f7029f386652a95199ccadde76db686338862b91d1a272162b9ff28b78",
+        "model.safetensors.index.json": "dd9920d8f44b7633b7d455c03b86455f4199d35a9d96f6fb7f702893442f6519",
+        "special_tokens_map.json": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193",
+        "tokenizer.json": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+        "tokenizer_config.json": "a178447e5b7165a9e1ad9c133cad418e948bf53467d03ef41753e179e57c18f6"
+      },
+      "converted_runtime_weight": null,
+      "completed_unix": 1789187152.9464128,
+      "result_sha256": "d8e5690d8ad63aaecbba78d8def90e0f05ad837b1f70f5974d27c194d2807a5f",
+      "summary_sha256": "ae1558566805ed732f337c08c884624545f700f95a4de1a238e15001f4cc4ad4",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.53703739531705,
+        "ours_minus_baseline_pp": -2.4436089410446393,
+        "paired_95_ci_pp": [
+          -3.278307668963903,
+          -1.6000510550404368
+        ]
+      },
+      "converted_runtime_weights_removed": [],
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_20000/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_20000/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_20000/model-00001-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_20000/model-00002-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_20000/model.safetensors.index.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_20000/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_20000/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_20000/tokenizer_config.json"
+      ]
+    },
+    "dd_dclm_baseline_qc_7p_fw3_42500": {
+      "status": "complete",
+      "started_unix": 1789187164.2103713,
+      "model_file_sha256": {
+        "config.json": "841079c8b24bf3656156550e13b2ff8c2cec285ad565e0acf8981ef5876611d7",
+        "generation_config.json": "577d92aebd967ad8edcb7ca9a9e951cbab9b8fff7ff2e9dc8593d895d86ac8b9",
+        "model-00001-of-00002.safetensors": "ef3a80b455806f832af3be27cfa9269f031b0884caaf2dd7ef9342b85c93e6cf",
+        "model-00002-of-00002.safetensors": "a6d32d45812e0ba31d9c13d7d50440e89a59591eb2af6e7672f69e6ea011123c",
+        "model.safetensors.index.json": "dd9920d8f44b7633b7d455c03b86455f4199d35a9d96f6fb7f702893442f6519",
+        "special_tokens_map.json": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193",
+        "tokenizer.json": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+        "tokenizer_config.json": "a178447e5b7165a9e1ad9c133cad418e948bf53467d03ef41753e179e57c18f6"
+      },
+      "converted_runtime_weight": null,
+      "completed_unix": 1789187757.6326025,
+      "result_sha256": "34ff06a7c8a2bb98cb590861e8f371de51f2df29c92fc32afa4d423c4d979520",
+      "summary_sha256": "6db97a3e4504b9a29189d9f1dd103c1b791592ae5129a699f52d12de028a4d12",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5636811824764714,
+        "ours_minus_baseline_pp": -5.107987656986782,
+        "paired_95_ci_pp": [
+          -5.98037848294412,
+          -4.2461259013193455
+        ]
+      },
+      "converted_runtime_weights_removed": [],
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_42500/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_42500/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_42500/model-00001-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_42500/model-00002-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_42500/model.safetensors.index.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_42500/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_42500/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/dd_dclm_baseline_qc_7p_fw3_42500/tokenizer_config.json"
+      ]
+    },
+    "weborganizer_domain_mix": {
+      "status": "complete",
+      "started_unix": 1789187769.031233,
+      "model_file_sha256": {
+        "config.json": "1312008b0877d8ce480b1d97db785f4e5ffa504bdfbd397d027414ce3a56806d",
+        "generation_config.json": "3af6fe4698bf9baf85cdbdeecb9da5fc0473a9360d5b4f348062e4e670ab42dd",
+        "model-00001-of-00002.safetensors": "ac584c6c8edf0a41721c886c282712fda205ef9ecd5232ae72af210d168ac626",
+        "model-00002-of-00002.safetensors": "a8ca2cddbc27d70aa70f48f1f4df882fa1a38bbf39d3ebf62a36cfb370b2208e",
+        "model.safetensors.index.json": "4ac97af86952068ce0366fd6b72cfa8db908cd36e087732413b30843511e4613",
+        "special_tokens_map.json": "10b8c8852c1e1f70b54d9aff61728408c28971c0e97a6c5a7b2debbd1d3e9c0c",
+        "tokenizer.json": "870f4e2baa6b683221fa52004d5d6f40ab8c9d31961617304b78c910c2c3caf2",
+        "tokenizer_config.json": "eee017c5bd133137f45907bd0a6e781e2ccd1a533734b7ed2a2f2f4446659809"
+      },
+      "converted_runtime_weight": null,
+      "completed_unix": 1789188652.5570436,
+      "result_sha256": "f0ae8abd45ae34ae04ef5655874b8665be1a4a80b8e42be79ac68b7b8bab3ea8",
+      "summary_sha256": "7f82ccb182cd92ba5484a58e0b5f173509d1db1dda0d1476032be58a2369bf9d",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5515642321745825,
+        "ours_minus_baseline_pp": -3.8962926267978966,
+        "paired_95_ci_pp": [
+          -4.70299756223746,
+          -3.080368103005063
+        ]
+      },
+      "converted_runtime_weights_removed": [],
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/weborganizer_domain_mix/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/weborganizer_domain_mix/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/weborganizer_domain_mix/model-00001-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/weborganizer_domain_mix/model-00002-of-00002.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/weborganizer_domain_mix/model.safetensors.index.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/weborganizer_domain_mix/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/weborganizer_domain_mix/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/weborganizer_domain_mix/tokenizer_config.json"
+      ]
+    },
+    "phi_1_5": {
+      "status": "complete",
+      "started_unix": 1789188665.0327783,
+      "model_file_sha256": {
+        "added_tokens.json": "eca8e90d1be6af3afeb1a37f070f9492645c551a9fb2e1ce2a4a8b21f04ffc8b",
+        "config.json": "2fe52126434075e8a23aca5bfed8cca8aff7051779e6f11c76de9e9e9923dcef",
+        "generation_config.json": "ff7c43946d3177ab1c63ea647c4a5055ba2e47a9e359dfd0fc87298399520e25",
+        "merges.txt": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+        "model.safetensors": "b4f562cc4b12f1154a0b658b9d74ab9d024a686420fdf154ebc00a2219976df7",
+        "special_tokens_map.json": "6f50ab5a5a509a1c309d6171f339b196a900dc9c99ad0408ff23bb615fdae7ad",
+        "tokenizer.json": "337da36be7a71a6e88aa9148967a7bc8736f4b47c7de8e19ba92b89e80734cfc",
+        "tokenizer_config.json": "001d5ef96609ff1bc02c1b7edabf97d4617c450620cf8dfbbad97c27cd9b5cb6",
+        "vocab.json": "3ba3c3109ff33976c4bd966589c11ee14fcaa1f4c9e5e154c2ed7f99d80709e7"
+      },
+      "converted_runtime_weight": null,
+      "completed_unix": 1789189479.7878761,
+      "result_sha256": "a0cedce20d6cf1c13c1181137e60c22a6c050dd0676e4a21e67ed22167e8324c",
+      "summary_sha256": "9053e9225206e18b1203e073adac7be644ae57de1d82bdee7ed7cf6e8d8bb5f9",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.6502616782183371,
+        "ours_minus_baseline_pp": -13.766037231173359,
+        "paired_95_ci_pp": [
+          -14.777331697157564,
+          -12.780377842940583
+        ]
+      },
+      "converted_runtime_weights_removed": [],
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/phi_1_5/added_tokens.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/phi_1_5/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/phi_1_5/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/phi_1_5/merges.txt",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/phi_1_5/model.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/phi_1_5/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/phi_1_5/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/phi_1_5/tokenizer_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/phi_1_5/vocab.json"
+      ]
+    },
+    "opt_1_3b": {
+      "status": "complete",
+      "started_unix": 1789189487.6300528,
+      "model_file_sha256": {
+        "config.json": "f1aaceefb7d34d346e9b0400d95fdb4970567bcbe1d4aba1068c5402099b644f",
+        "generation_config.json": "d37de99f9835d7a4d0916257f724504d12c4a668f36a50b2d42e09ba4ebd05d5",
+        "merges.txt": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+        "pytorch_model.bin": "cf7d5c970d6ddbd3b03009b397c0422e147edd5c8020d47a8d2fac0b11a3b08d",
+        "special_tokens_map.json": "0f3cd5f307a2735cfee31ddf33be88655e8be165ee2cdc26ced966f04258adf0",
+        "tokenizer_config.json": "d1e4185b43a0a06421ab7218d5c1a775350bd13024507b34fbed25dcf6c14c6b",
+        "vocab.json": "06b4d46c8e752d410213d9548eb27a54db70fda0319b6271fb8d59dead5e1cab"
+      },
+      "converted_runtime_weight": null,
+      "completed_unix": 1789190007.6743884,
+      "result_sha256": "053cfe82544c55940a38df78540ca847b630bb9540075062f1bc5aa58ee066e7",
+      "summary_sha256": "608f2a8c6ea1ed66764df73f767260f01dd30e993fc6f1e3b747ffe9c2aaff62",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5099553031511255,
+        "ours_minus_baseline_pp": 0.2646002755478079,
+        "paired_95_ci_pp": [
+          -0.6408969804965966,
+          1.1547235963718623
+        ]
+      },
+      "converted_runtime_weights_removed": [],
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/opt_1_3b/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/opt_1_3b/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/opt_1_3b/merges.txt",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/opt_1_3b/pytorch_model.bin",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/opt_1_3b/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/opt_1_3b/tokenizer_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/opt_1_3b/vocab.json"
+      ]
+    },
+    "falcon_rw_1b": {
+      "status": "complete",
+      "started_unix": 1789190015.0930786,
+      "model_file_sha256": {
+        "config.json": "290abb8e65179fdde051605b65ab2256f090c6da5d558bc5c72eddb533ee438f",
+        "generation_config.json": "aa8623f4a64ef43d4d38a7d2d4989d14e4634d209b210bf15619da04d1ac1599",
+        "merges.txt": "1ce1664773c50f3e0cc8842619a93edc4624525b728b188a9e0be33b7726adc5",
+        "pytorch_model.bin": "3a0d68f0309c8f7ec913f51edf8bf2eca849477c9f53db727f49ffa2f6019251",
+        "special_tokens_map.json": "6f50ab5a5a509a1c309d6171f339b196a900dc9c99ad0408ff23bb615fdae7ad",
+        "tokenizer.json": "cda20b8ca044949aa07ac4078420c80d1a57139d5f9f33700e46fb2d891e7c66",
+        "tokenizer_config.json": "551e26ec611d8d0c8edc3ef72e518a38418cb71f40de1347dd486a595e1557d7",
+        "vocab.json": "3ba3c3109ff33976c4bd966589c11ee14fcaa1f4c9e5e154c2ed7f99d80709e7"
+      },
+      "converted_runtime_weight": null,
+      "completed_unix": 1789190685.2967904,
+      "result_sha256": "c69a119e5d0c7a2d13319dc453afff91536cd81dac848fdd1160edf734f997fa",
+      "summary_sha256": "6ceacac05e6b358ecfc29c2687d9b458c1441d4cf28268ce941be547f1e1c98d",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5499392673614891,
+        "ours_minus_baseline_pp": -3.7337961454885593,
+        "paired_95_ci_pp": [
+          -4.63786855218101,
+          -2.859094869198314
+        ]
+      },
+      "converted_runtime_weights_removed": [],
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/falcon_rw_1b/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/falcon_rw_1b/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/falcon_rw_1b/merges.txt",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/falcon_rw_1b/pytorch_model.bin",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/falcon_rw_1b/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/falcon_rw_1b/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/falcon_rw_1b/tokenizer_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/falcon_rw_1b/vocab.json"
+      ]
+    },
+    "tinyllama_early_31b": {
+      "status": "complete",
+      "started_unix": 1789190692.4356241,
+      "model_file_sha256": {
+        "config.json": "921d10e1cc6a37404ae93a2b494bede8ae00aac5b97e2862466f414661c371c7",
+        "generation_config.json": "eb2d264819d797a5ccbd6bb45430d9017d38a4e21c54ca8400851aa0a6f1e9c4",
+        "pytorch_model.bin": "7e7299a9338b7240b9598ada12d431d1443021ebd80f363259f2ef47c9eb8116",
+        "special_tokens_map.json": "6fa06efa2785e450051989a6f8fb4416b10149ded485ddd3f127a40734f5cfd0",
+        "tokenizer.json": "bcd04f0eadf90287bd26e1a183ac487d8a141b09b06aecb7725bbdd343640f2e",
+        "tokenizer.model": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+        "tokenizer_config.json": "f514e7c3008881b6ba7e6a0cdb44c71ce47dc335920dac143ae7bc788197e53a"
+      },
+      "converted_runtime_weight": {
+        "path": "model.safetensors",
+        "size": 4400216680,
+        "sha256": "b9aae473bafb5b06872c2eec5c40080906c3700715f51cfd5ba7fe6ff21c9a98",
+        "receipt_sha256": "598f7c3c1f55771f5861d1a678b01e20ca7b83d4b182df2875dc9468a9218361"
+      },
+      "completed_unix": 1789191193.856644,
+      "result_sha256": "1e6565aa1c960c9e276525c25aa1d8e0027400472ac214cf42122fe823e00c56",
+      "summary_sha256": "1012b637d5fe2c7b16d3a56ef6a6ab34b7bffaa165bcd753903fa67124dcff4c",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.44079420528619245,
+        "ours_minus_baseline_pp": 7.180710062041108,
+        "paired_95_ci_pp": [
+          6.277536641127536,
+          8.068382311369264
+        ]
+      },
+      "converted_runtime_weights_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_31b/model.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_31b/conversion-receipt.json"
+      ],
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_31b/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_31b/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_31b/pytorch_model.bin",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_31b/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_31b/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_31b/tokenizer.model",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_31b/tokenizer_config.json"
+      ]
+    },
+    "tinyllama_early_63b": {
+      "status": "complete",
+      "started_unix": 1789191218.9751318,
+      "model_file_sha256": {
+        "config.json": "921d10e1cc6a37404ae93a2b494bede8ae00aac5b97e2862466f414661c371c7",
+        "generation_config.json": "eb2d264819d797a5ccbd6bb45430d9017d38a4e21c54ca8400851aa0a6f1e9c4",
+        "pytorch_model.bin": "62965a70619301d51cbc22d6940528eb86dcea412d7d780dd8e20f2285243f51",
+        "special_tokens_map.json": "6fa06efa2785e450051989a6f8fb4416b10149ded485ddd3f127a40734f5cfd0",
+        "tokenizer.json": "bcd04f0eadf90287bd26e1a183ac487d8a141b09b06aecb7725bbdd343640f2e",
+        "tokenizer.model": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+        "tokenizer_config.json": "f514e7c3008881b6ba7e6a0cdb44c71ce47dc335920dac143ae7bc788197e53a"
+      },
+      "converted_runtime_weight": {
+        "path": "model.safetensors",
+        "size": 4400216680,
+        "sha256": "c8c57290121d9d42cf4ffb032666b38130c6abf57ec49cc836b4bb66d208238d",
+        "receipt_sha256": "a9c89b829a7561e57f0c1b35258dcc6d8d8cfc7448d3ac4499c4b5cea9a90a56"
+      },
+      "completed_unix": 1789192066.5513768,
+      "result_sha256": "2ff5a73dcfb5bcec2d25891641b554f00b955a0e3e815e61741363dd29052884",
+      "summary_sha256": "b2699df3789fcd861e561575fe2a053bd5c7ed5790ab7f4fbd4347c79dd74939",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.45502847412919273,
+        "ours_minus_baseline_pp": 5.757283177741085,
+        "paired_95_ci_pp": [
+          4.857221458726809,
+          6.634606118165011
+        ]
+      },
+      "converted_runtime_weights_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_63b/model.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_63b/conversion-receipt.json"
+      ],
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_63b/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_63b/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_63b/pytorch_model.bin",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_63b/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_63b/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_63b/tokenizer.model",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_63b/tokenizer_config.json"
+      ]
+    },
+    "tinyllama_early_105b": {
+      "status": "complete",
+      "started_unix": 1789192089.018557,
+      "model_file_sha256": {
+        "config.json": "921d10e1cc6a37404ae93a2b494bede8ae00aac5b97e2862466f414661c371c7",
+        "generation_config.json": "eb2d264819d797a5ccbd6bb45430d9017d38a4e21c54ca8400851aa0a6f1e9c4",
+        "pytorch_model.bin": "faff29d75e7f135daf0a359a0a381bc7c079b5062c13488185f990a640a64073",
+        "special_tokens_map.json": "6fa06efa2785e450051989a6f8fb4416b10149ded485ddd3f127a40734f5cfd0",
+        "tokenizer.json": "bcd04f0eadf90287bd26e1a183ac487d8a141b09b06aecb7725bbdd343640f2e",
+        "tokenizer.model": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+        "tokenizer_config.json": "f514e7c3008881b6ba7e6a0cdb44c71ce47dc335920dac143ae7bc788197e53a"
+      },
+      "converted_runtime_weight": {
+        "path": "model.safetensors",
+        "size": 4400216680,
+        "sha256": "7dce6430bd7f685aa8995ee8c8023d589a86d9712e1cf6b2905cd57323f7e093",
+        "receipt_sha256": "5ddbfc5aac8333e005a179b9955cb895cc7f88beeba92b31a29159158b7f091c"
+      },
+      "completed_unix": 1789192760.1467714,
+      "result_sha256": "bebfe9dcf9a7ea1e7e8601ba5e4074c489bc9694635cb496a4d0436fa7ac0702",
+      "summary_sha256": "bcb5b5b093a1b42c6e54c12cad7cdaab39386ceafd3f15c2692791e3168b7be5",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.4613473984764215,
+        "ours_minus_baseline_pp": 5.125390743018206,
+        "paired_95_ci_pp": [
+          4.261161136540714,
+          5.995171070364455
+        ]
+      },
+      "converted_runtime_weights_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_105b/model.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_105b/conversion-receipt.json"
+      ],
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_105b/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_105b/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_105b/pytorch_model.bin",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_105b/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_105b/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_105b/tokenizer.model",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_early_105b/tokenizer_config.json"
+      ]
+    },
+    "tinyllama_503b": {
+      "status": "complete",
+      "started_unix": 1789192783.1371598,
+      "model_file_sha256": {
+        "config.json": "921d10e1cc6a37404ae93a2b494bede8ae00aac5b97e2862466f414661c371c7",
+        "generation_config.json": "eb2d264819d797a5ccbd6bb45430d9017d38a4e21c54ca8400851aa0a6f1e9c4",
+        "model.safetensors": "8ffaa35974ad687fdf26ce7d06a8f05a8decd04500c483cf8473a9514c69220a",
+        "special_tokens_map.json": "6fa06efa2785e450051989a6f8fb4416b10149ded485ddd3f127a40734f5cfd0",
+        "tokenizer.json": "bcd04f0eadf90287bd26e1a183ac487d8a141b09b06aecb7725bbdd343640f2e",
+        "tokenizer.model": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+        "tokenizer_config.json": "f514e7c3008881b6ba7e6a0cdb44c71ce47dc335920dac143ae7bc788197e53a"
+      },
+      "converted_runtime_weight": null,
+      "completed_unix": 1789193606.1306179,
+      "result_sha256": "c8577471c4b588e43d02bef6ed111e7d3c0363e9a2104ea0fc7d042c14cba12a",
+      "summary_sha256": "093a7c9d8cde80c42821770e0c80b5de6696eaa0fe8529608e3776e09fa3f673",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.4826269298761657,
+        "ours_minus_baseline_pp": 2.997437603043783,
+        "paired_95_ci_pp": [
+          2.1387675680645577,
+          3.8651336045821285
+        ]
+      },
+      "converted_runtime_weights_removed": [],
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_503b/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_503b/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_503b/model.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_503b/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_503b/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_503b/tokenizer.model",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_503b/tokenizer_config.json"
+      ]
+    },
+    "tinyllama_1t": {
+      "status": "complete",
+      "started_unix": 1789193616.9530358,
+      "model_file_sha256": {
+        "config.json": "7ef24df4204405995b8a3936355171b0d80f64fc3bc0ca5991158eaa5c75de50",
+        "generation_config.json": "eb2d264819d797a5ccbd6bb45430d9017d38a4e21c54ca8400851aa0a6f1e9c4",
+        "model.safetensors": "405b0ffb58c43a631fdfcb6c5d12eb96627fda277103db0402c1fa2908c35b72",
+        "special_tokens_map.json": "6fa06efa2785e450051989a6f8fb4416b10149ded485ddd3f127a40734f5cfd0",
+        "tokenizer.json": "bcd04f0eadf90287bd26e1a183ac487d8a141b09b06aecb7725bbdd343640f2e",
+        "tokenizer.model": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+        "tokenizer_config.json": "f514e7c3008881b6ba7e6a0cdb44c71ce47dc335920dac143ae7bc788197e53a"
+      },
+      "converted_runtime_weight": null,
+      "completed_unix": 1789194346.7973325,
+      "result_sha256": "3af1971784c1ac03265fdeca30a8d5abe10c5572a0180e304613537cc9792100",
+      "summary_sha256": "b646c5f138db67f5fdc84670afc81ae0629bc8ddcdcae90839f556701a9e86e4",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5024196747311408,
+        "ours_minus_baseline_pp": 1.0181631175462784,
+        "paired_95_ci_pp": [
+          0.1583640571808928,
+          1.885984268946491
+        ]
+      },
+      "converted_runtime_weights_removed": [],
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_1t/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_1t/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_1t/model.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_1t/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_1t/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_1t/tokenizer.model",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_1t/tokenizer_config.json"
+      ]
+    },
+    "tinyllama_1_5t": {
+      "status": "complete",
+      "started_unix": 1789194357.7399712,
+      "model_file_sha256": {
+        "config.json": "7ef24df4204405995b8a3936355171b0d80f64fc3bc0ca5991158eaa5c75de50",
+        "generation_config.json": "eb2d264819d797a5ccbd6bb45430d9017d38a4e21c54ca8400851aa0a6f1e9c4",
+        "model.safetensors": "a4ae306511d26adaca7ab28378a129ff25c1ee575f6e2b959977c8aa8fd43f95",
+        "special_tokens_map.json": "6fa06efa2785e450051989a6f8fb4416b10149ded485ddd3f127a40734f5cfd0",
+        "tokenizer.json": "bcd04f0eadf90287bd26e1a183ac487d8a141b09b06aecb7725bbdd343640f2e",
+        "tokenizer.model": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+        "tokenizer_config.json": "f514e7c3008881b6ba7e6a0cdb44c71ce47dc335920dac143ae7bc788197e53a"
+      },
+      "converted_runtime_weight": null,
+      "completed_unix": 1789195427.329772,
+      "result_sha256": "d1a5837c41a2973cf5c49e1b103c2c2d7bcc31f81b029e523b466a0d0c9576d2",
+      "summary_sha256": "25577e541833a9b2ccd88bf69dd539f69505b0e3193acba697683d8120964a2f",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5116914455208509,
+        "ours_minus_baseline_pp": 0.09098603857526537,
+        "paired_95_ci_pp": [
+          -0.7770536892759299,
+          0.9744890673998504
+        ]
+      },
+      "converted_runtime_weights_removed": [],
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_1_5t/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_1_5t/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_1_5t/model.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_1_5t/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_1_5t/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_1_5t/tokenizer.model",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_1_5t/tokenizer_config.json"
+      ]
+    },
+    "tinyllama_2t": {
+      "status": "complete",
+      "started_unix": 1789195438.2772532,
+      "model_file_sha256": {
+        "config.json": "7ef24df4204405995b8a3936355171b0d80f64fc3bc0ca5991158eaa5c75de50",
+        "generation_config.json": "eb2d264819d797a5ccbd6bb45430d9017d38a4e21c54ca8400851aa0a6f1e9c4",
+        "model.safetensors": "e5ea60cff9bc8727c900a76ad016b8edfcaa81bea4b6a8bb45ad02a0080765e2",
+        "special_tokens_map.json": "6fa06efa2785e450051989a6f8fb4416b10149ded485ddd3f127a40734f5cfd0",
+        "tokenizer.json": "bcd04f0eadf90287bd26e1a183ac487d8a141b09b06aecb7725bbdd343640f2e",
+        "tokenizer.model": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+        "tokenizer_config.json": "f514e7c3008881b6ba7e6a0cdb44c71ce47dc335920dac143ae7bc788197e53a"
+      },
+      "converted_runtime_weight": null,
+      "completed_unix": 1789196456.4641633,
+      "result_sha256": "43eeb75599ff2ef2e60f1050be8e9057fcc6bc2cc79763e25507e9355e246e4f",
+      "summary_sha256": "2f0c4d186738f3f7e79c39dea8cf4f8874fa33f1a46c6aa36054ff9058d7819c",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5156201411271628,
+        "ours_minus_baseline_pp": -0.3018835220559253,
+        "paired_95_ci_pp": [
+          -1.1978224624584721,
+          0.5871120823567979
+        ]
+      },
+      "converted_runtime_weights_removed": [],
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_2t/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_2t/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_2t/model.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_2t/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_2t/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_2t/tokenizer.model",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_2t/tokenizer_config.json"
+      ]
+    },
+    "tinyllama_2_5t": {
+      "status": "complete",
+      "started_unix": 1789196467.5570068,
+      "model_file_sha256": {
+        "config.json": "7ef24df4204405995b8a3936355171b0d80f64fc3bc0ca5991158eaa5c75de50",
+        "generation_config.json": "eb2d264819d797a5ccbd6bb45430d9017d38a4e21c54ca8400851aa0a6f1e9c4",
+        "model.safetensors": "bba44032e690e2d0b3e2e0a17b497c9e3ea18934cdc5e914f3b86a94f5b1a7e2",
+        "special_tokens_map.json": "6fa06efa2785e450051989a6f8fb4416b10149ded485ddd3f127a40734f5cfd0",
+        "tokenizer.json": "bcd04f0eadf90287bd26e1a183ac487d8a141b09b06aecb7725bbdd343640f2e",
+        "tokenizer.model": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+        "tokenizer_config.json": "f514e7c3008881b6ba7e6a0cdb44c71ce47dc335920dac143ae7bc788197e53a"
+      },
+      "converted_runtime_weight": null,
+      "completed_unix": 1789197064.3495421,
+      "result_sha256": "38aba6a43222f456f99c7297e845c19d040c79666382b467c05b294f96257dda",
+      "summary_sha256": "9e7b52073250bf77b006f27b2f7bb52afdaba754e7985ac2e66a561ec5d983d5",
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5389181238503081,
+        "ours_minus_baseline_pp": -2.6316817943704547,
+        "paired_95_ci_pp": [
+          -3.489065222629526,
+          -1.800558474497951
+        ]
+      },
+      "converted_runtime_weights_removed": [],
+      "regenerable_downloads_removed": [
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_2_5t/config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_2_5t/generation_config.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_2_5t/model.safetensors",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_2_5t/special_tokens_map.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_2_5t/tokenizer.json",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_2_5t/tokenizer.model",
+        "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/models/tinyllama_2_5t/tokenizer_config.json"
+      ]
+    }
+  },
+  "new_training_tokens": 0,
+  "status": "complete",
+  "B_checkpoint": {
+    "bytes": 13200791363,
+    "parent_sha256": "7a3ebb609c2d79b1b6370531bed6fd173466d23f4847c1b8c589cc969790a933",
+    "path": "/home/hhai/pretrain/continuation/20260911-v1/pilot-B/resume.pth",
+    "saved_unix": 1789159491.209094,
+    "sha256": "51de78a08b15fde30042e47553ca4cb2e5d3e65f280be86b5b362683b4d049af",
+    "step": 61
+  },
+  "imported_completed_jobs": [
+    "dd_dclm_baseline_qc_20p_10000",
+    "dd_dclm_baseline_qc_20p_12500",
+    "dd_dclm_baseline_qc_20p_15000",
+    "pythia_1b"
+  ],
+  "superseded_receipt_sha256": "96e3508031c2395851066968f3bfc667cc59401c1b232f24a5012f61015604cd",
+  "failure_preserved_in": "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/receipt-plan-v3-failed-tiny10b.json",
+  "updated_unix": 1789196467.5570004,
+  "failed_attempts": [
+    {
+      "dd_dclm_baseline_10000": {
+        "status": "failed",
+        "started_unix": 1789175662.814611,
+        "error": "Download failed for dd_dclm_baseline_10000/model-00001-of-00002.safetensors: ConnectionError; partial retained",
+        "failed_unix": 1789176209.5423715,
+        "archived_receipt_sha256": "cb58be5ce71f52c3a778d9b854550b8eab15d958a02d72369a2afaca77e6b44c",
+        "recovery_receipt": "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/failures/dd_dclm_baseline_10000-cb58be5ce71f-recovery.json"
+      }
+    },
+    {
+      "dd_dclm_baseline_qc_7p_fw3_15000": {
+        "status": "failed",
+        "started_unix": 1789182179.9086876,
+        "error": "Download failed for dd_dclm_baseline_qc_7p_fw3_15000/model-00001-of-00002.safetensors: ChunkedEncodingError; partial retained",
+        "failed_unix": 1789183639.812098,
+        "archived_receipt_sha256": "e54416a5f17f08dd40fb534ef16fabe9d296e2039405eeedd818f47c56b3b68d",
+        "partial_sha256_at_migration": "71125b7210fb845c46e53cbf5e616d6ed113e0ea2e36011613551176027feb21",
+        "partial_size_at_migration": 171966464
+      }
+    }
+  ],
+  "pid": 3219858,
+  "completed_unix": 1789197075.5649736
+}

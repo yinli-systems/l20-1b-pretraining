@@ -1,0 +1,29 @@
+{
+  "inputs": {
+    "base_inputs_sha256": "56674817407c9138a128481bf3bc4b6adcb6f940ce79d327659141ffa298d4a1",
+    "benchmark_sha256": "0f377b5541558ff6fbe39e98da1b0ebec1ba31ee583e2349600ba53cc4f84ede",
+    "existing_B_manifests": {
+      "/home/hhai/pretrain/continuation/20260911-v1/b-candidate-v1/code/manifest.json": "c9069ec367a527ced7762980fc5619dc372efc49e1f463d52d91af6041086343",
+      "/home/hhai/pretrain/continuation/20260911-v1/b-candidate-v1/dclm/manifest.json": "ae253e3aa89fb5ff7fd501e70e826d6d2b8ca3c8829a8f7534d3f3cbaffd7a89",
+      "/home/hhai/pretrain/continuation/20260911-v1/b-candidate-v1/math/manifest.json": "d408dcee1a9e1711ae24feef62b14dec8eba717c18413267871583fc1db1fa4b",
+      "/home/hhai/pretrain/continuation/20260911-v1/b-candidate-v1/narrative/manifest.json": "638751d2884f64ff4542708327634bfe7b7a604ed8373d404331bfd4898694c5",
+      "/home/hhai/pretrain/continuation/20260911-v1/b-candidate-v1/new-dclm/manifest.json": "aeeb079c47bb5c36ac084bc84321f44dddd7c2742196a9c87923bbe5bd58a682",
+      "/home/hhai/pretrain/continuation/20260911-v1/b-candidate-v1/new-math/manifest.json": "4dc0cb3aedd2c5e6ee36d83495904da0c8e736ccd946fa3441fc37360c9ca6bc",
+      "/home/hhai/pretrain/continuation/20260911-v1/b-candidate-v1/new-narrative/manifest.json": "74e0f99795702232f935f741fe296a1b325a9d9bf693a29c946a9032ae4151d5",
+      "/home/hhai/pretrain/continuation/20260911-v1/b-candidate-v1/web/manifest.json": "e0deb34179a10d7213f54ad4d5ad02a00370e3c0dc84863a7d1e72e0d285fcda"
+    },
+    "indices": {
+      "train": {
+        "path": "/home/hhai/pretrain/continuation/20260911-v1/indices/old-train.npy",
+        "sha256": "8446b757392ac7d2d6ba7cdab30c73871e86fdebd0cd9b9782d059eb50475510"
+      },
+      "val": {
+        "path": "/home/hhai/pretrain/continuation/20260911-v1/indices/old-val.npy",
+        "sha256": "b2e62311c50e29f7fee5bf3a4bbefcd45696d303a6208ae62b4e9ba3f3a53842"
+      }
+    },
+    "old_dedup_sha256": "828bb66f7de93c327d95b1fa172b9f3bb03c1b252ea94d503debf76adb9310be",
+    "tokenizer_sha256": "e755dfeeed1acab465839adc0988811983a3287db230a8d9bc0f74704208609c"
+  },
+  "stage": "pre_and_post_checks_passed"
+}

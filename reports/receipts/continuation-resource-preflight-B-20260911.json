@@ -1,0 +1,18 @@
+{
+  "branch": "B",
+  "data_plan_sha256": "764552cb860de74b1004bdad8f74a8153b251c37a25fa8ccbb978af826cff163",
+  "first_batch_max_token": 31978,
+  "first_batch_min_token": 0,
+  "first_batch_shape": [
+    6,
+    2049
+  ],
+  "launcher_sha256": "10ee4c01d791c1c27f76427d4548be12f049099d3b09da627bde4c7ebfb3a635",
+  "mapped_shards": 1254,
+  "new_training_tokens": 0,
+  "nofile_after": 4096,
+  "nofile_before": 1024,
+  "nofile_hard": 1048576,
+  "scope": "child_process_only",
+  "time": 1789154288.1981363
+}

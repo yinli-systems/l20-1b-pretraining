@@ -1,0 +1,249 @@
+{
+  "job": "tinyllama_2t",
+  "tasks": {
+    "hellaswag": {
+      "metric": "acc_norm,none",
+      "n": 10042,
+      "ours": 0.45130452101175067,
+      "baseline": 0.5459071898028282,
+      "difference_pp": -9.460266879107747,
+      "paired_95_ci_pp": [
+        -10.217088229436367,
+        -8.723361880103566
+      ],
+      "ours_better_samples": 273,
+      "baseline_better_samples": 1223,
+      "tied_samples": 8546,
+      "document_prompt_target_fingerprint": "1a390c76c9c87c49c7a765bfb92c2d619465fca0db677d1d89fe83ae7e11dc66",
+      "task_config_sha256": "bc3c95e5c833077e4c69333ca795f4458ca790dd525ba6f65b5c45733f8e0c68",
+      "protocol_alignment": "PASS"
+    },
+    "piqa": {
+      "metric": "acc_norm,none",
+      "n": 1838,
+      "ours": 0.6958650707290533,
+      "baseline": 0.705658324265506,
+      "difference_pp": -0.9793253536452665,
+      "paired_95_ci_pp": [
+        -2.665941240478781,
+        0.7072905331882481
+      ],
+      "ours_better_samples": 112,
+      "baseline_better_samples": 130,
+      "tied_samples": 1596,
+      "document_prompt_target_fingerprint": "c776098ae895c6058ac824449604db36f469c28ed04b9145a99c8d1a6542f416",
+      "task_config_sha256": "dfc6c21cc58b61a02e5d43e1ed1f239323ec519124913155090062a818c44da6",
+      "protocol_alignment": "PASS"
+    },
+    "winogrande": {
+      "metric": "acc,none",
+      "n": 1267,
+      "ours": 0.5217048145224941,
+      "baseline": 0.5651144435674822,
+      "difference_pp": -4.3409629044988165,
+      "paired_95_ci_pp": [
+        -7.576953433307025,
+        -1.1049723756906076
+      ],
+      "ours_better_samples": 197,
+      "baseline_better_samples": 252,
+      "tied_samples": 818,
+      "document_prompt_target_fingerprint": "fa103349a0fd29b1a7ab48695d225eb3f8225aa38287ec535ad443b8c8f557db",
+      "task_config_sha256": "8e44b42ee1d813b62f148d3f491b7bd6413bfac4d3bda85d0cc8184c009b554e",
+      "protocol_alignment": "PASS"
+    },
+    "openbookqa": {
+      "metric": "acc_norm,none",
+      "n": 500,
+      "ours": 0.35,
+      "baseline": 0.334,
+      "difference_pp": 1.6,
+      "paired_95_ci_pp": [
+        -1.7999999999999998,
+        5.2
+      ],
+      "ours_better_samples": 43,
+      "baseline_better_samples": 35,
+      "tied_samples": 422,
+      "document_prompt_target_fingerprint": "7a548546a99c1ce06635e63695a60304606155dc8c446f2e30d441db698da69e",
+      "task_config_sha256": "5969dfdaa167152c03c415cb00a7e1bfd4cb7391f3596d0c87cfb6fd6a759724",
+      "protocol_alignment": "PASS"
+    },
+    "arc_easy": {
+      "metric": "acc_norm,none",
+      "n": 2376,
+      "ours": 0.6414141414141414,
+      "baseline": 0.5441919191919192,
+      "difference_pp": 9.722222222222223,
+      "paired_95_ci_pp": [
+        7.954545454545454,
+        11.531986531986533
+      ],
+      "ours_better_samples": 367,
+      "baseline_better_samples": 136,
+      "tied_samples": 1873,
+      "document_prompt_target_fingerprint": "03f139e210ce12f2f4560aa14bdc4d5030af2aef18ea3ddbb0ef62ef62424e41",
+      "task_config_sha256": "8d5bf8760e5ffa5e2bde7cb9179aad4ecd29c018527ba9c14316de17786f7eca",
+      "protocol_alignment": "PASS"
+    },
+    "arc_challenge": {
+      "metric": "acc_norm,none",
+      "n": 1172,
+      "ours": 0.3361774744027304,
+      "baseline": 0.2832764505119454,
+      "difference_pp": 5.290102389078498,
+      "paired_95_ci_pp": [
+        2.8156996587030716,
+        7.849829351535837
+      ],
+      "ours_better_samples": 146,
+      "baseline_better_samples": 84,
+      "tied_samples": 942,
+      "document_prompt_target_fingerprint": "0c32baa042f9a16f04729bc4a882bc9790e7aeb449bb37e86b698ec4580ab6e4",
+      "task_config_sha256": "5b956c97bd7134b5dfc6fde19af8b6a5eb211f68cb92e016acfa578ea385abb6",
+      "protocol_alignment": "PASS"
+    },
+    "boolq": {
+      "metric": "acc,none",
+      "n": 3270,
+      "ours": 0.591743119266055,
+      "baseline": 0.6311926605504588,
+      "difference_pp": -3.9449541284403673,
+      "paired_95_ci_pp": [
+        -5.81039755351682,
+        -2.079510703363914
+      ],
+      "ours_better_samples": 408,
+      "baseline_better_samples": 537,
+      "tied_samples": 2325,
+      "document_prompt_target_fingerprint": "a55b0b6e810c0df7b6d372b1cadd4c8f97153fe776a90acc7f041dc01b68652d",
+      "task_config_sha256": "b124a540d891cd40fac33f93c14dedee00733dae7f1bc056c4b3f82db7c114b5",
+      "protocol_alignment": "PASS"
+    }
+  },
+  "seven_task_macro": {
+    "ours": 0.5126013059066035,
+    "baseline": 0.5156201411271628,
+    "ours_minus_baseline_pp": -0.3018835220559253,
+    "paired_95_ci_pp": [
+      -1.1978224624584721,
+      0.5871120823567979
+    ]
+  },
+  "six_task_without_boolq": {
+    "ours": 0.4994110036800283,
+    "baseline": 0.49635805455661347,
+    "ours_minus_baseline_pp": 0.3052949123414817,
+    "paired_95_ci_pp": [
+      -0.6941683904707208,
+      1.308362467721879
+    ]
+  },
+  "total_parameters": 1100048384,
+  "training_tokens": 2000000000000,
+  "token_kind": "nominal_repo_label",
+  "training_flops_proxy_6ND": 13200580608000000000000,
+  "category": "natural_corpus_base",
+  "pareto_scope": "candidate-set only; not global SOTA",
+  "limitations": [
+    "6ND is an approximate proxy, not measured hardware FLOPs; data/teacher/experimentation compute excluded.",
+    "Original 20B data did not explicitly decontaminate BoolQ; report the six-task sensitivity.",
+    "Paired intervals reflect benchmark sample uncertainty, not training seeds or multiple comparisons.",
+    "Tokenizer-dependent input truncation and default BOS behavior can differ."
+  ],
+  "result_sha256": "43eeb75599ff2ef2e60f1050be8e9057fcc6bc2cc79763e25507e9355e246e4f",
+  "job_identity": {
+    "id": "tinyllama_2t",
+    "repo": "TinyLlama/TinyLlama-1.1B-intermediate-step-955k-token-2T",
+    "training_tokens": 2000000000000,
+    "token_kind": "nominal_repo_label",
+    "category": "natural_corpus_base",
+    "reuse_existing_if_verified": false,
+    "resolution_status": "resolved",
+    "revision": "195255c4e3e1a56ac89ceb95899c58f742a730dc",
+    "config": {
+      "architectures": [
+        "LlamaForCausalLM"
+      ],
+      "bos_token_id": 1,
+      "eos_token_id": 2,
+      "hidden_act": "silu",
+      "hidden_size": 2048,
+      "initializer_range": 0.02,
+      "intermediate_size": 5632,
+      "max_position_embeddings": 2048,
+      "model_type": "llama",
+      "num_attention_heads": 32,
+      "num_hidden_layers": 22,
+      "num_key_value_heads": 4,
+      "pretraining_tp": 1,
+      "rms_norm_eps": 1e-05,
+      "rope_scaling": null,
+      "tie_word_embeddings": false,
+      "torch_dtype": "float32",
+      "transformers_version": "4.31.0.dev0",
+      "use_cache": true,
+      "vocab_size": 32000
+    },
+    "config_sha256": "7ef24df4204405995b8a3936355171b0d80f64fc3bc0ca5991158eaa5c75de50",
+    "gated": false,
+    "files": [
+      {
+        "path": "config.json",
+        "size": 560,
+        "sha256": null,
+        "git_blob_sha1": "6a20305540fec9201e5c28b99dcd32c1000201fd"
+      },
+      {
+        "path": "generation_config.json",
+        "size": 129,
+        "sha256": null,
+        "git_blob_sha1": "89c1930ccf07b1ba0c1bf146b2ad2d2666761dfb"
+      },
+      {
+        "path": "model.safetensors",
+        "size": 4400216536,
+        "sha256": "e5ea60cff9bc8727c900a76ad016b8edfcaa81bea4b6a8bb45ad02a0080765e2",
+        "git_blob_sha1": "f3ce7d94b9a6676103959a55fc46b8480bc15221"
+      },
+      {
+        "path": "special_tokens_map.json",
+        "size": 414,
+        "sha256": null,
+        "git_blob_sha1": "451134b2ddc2e78555d1e857518c54b4bdc2e87d"
+      },
+      {
+        "path": "tokenizer.json",
+        "size": 1842767,
+        "sha256": null,
+        "git_blob_sha1": "a6e931b92caff4c79c5c56282f1e89569a0ae558"
+      },
+      {
+        "path": "tokenizer.model",
+        "size": 499723,
+        "sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+        "git_blob_sha1": "6c00c742ce03c627d6cd5b795984876fa49fa899"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 776,
+        "sha256": null,
+        "git_blob_sha1": "2ef41cbc275000b29afe157ba487f0530b8c26dc"
+      }
+    ],
+    "download_bytes": 4402560905,
+    "parameter_metadata": {
+      "parameters": {
+        "F32": 1100048384
+      },
+      "total": 1100048384
+    },
+    "license": "apache-2.0",
+    "metadata_url": "https://huggingface.co/api/models/TinyLlama/TinyLlama-1.1B-intermediate-step-955k-token-2T/revision/main?blobs=true",
+    "metadata_sha256": "b3e2d3356df7ef0de1d1a63ef586f606c1d0d6b2dc81b91cd94dec4337355660",
+    "model_card_url": "https://huggingface.co/TinyLlama/TinyLlama-1.1B-intermediate-step-955k-token-2T/resolve/195255c4e3e1a56ac89ceb95899c58f742a730dc/README.md",
+    "model_card_sha256": "e0b3285b84b2def0371da422da626cb9240e3497bdac2bba977eb9a252dbaa97",
+    "model_card_status": 200,
+    "adapter": "transformers_builtin"
+  }
+}

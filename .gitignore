@@ -41,4 +41,4 @@ events.out.tfevents.*
 *.ckpt
 *.safetensors
 *.bin
-
+hf-release/

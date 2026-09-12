@@ -1,0 +1,258 @@
+{
+  "job": "falcon_rw_1b",
+  "tasks": {
+    "hellaswag": {
+      "metric": "acc_norm,none",
+      "n": 10042,
+      "ours": 0.45130452101175067,
+      "baseline": 0.6158135829516033,
+      "difference_pp": -16.45090619398526,
+      "paired_95_ci_pp": [
+        -17.267476598287193,
+        -15.664210316669985
+      ],
+      "ours_better_samples": 143,
+      "baseline_better_samples": 1795,
+      "tied_samples": 8104,
+      "document_prompt_target_fingerprint": "1a390c76c9c87c49c7a765bfb92c2d619465fca0db677d1d89fe83ae7e11dc66",
+      "task_config_sha256": "bc3c95e5c833077e4c69333ca795f4458ca790dd525ba6f65b5c45733f8e0c68",
+      "protocol_alignment": "PASS"
+    },
+    "piqa": {
+      "metric": "acc_norm,none",
+      "n": 1838,
+      "ours": 0.6958650707290533,
+      "baseline": 0.749727965179543,
+      "difference_pp": -5.386289445048966,
+      "paired_95_ci_pp": [
+        -7.127312295973885,
+        -3.6452665941240476
+      ],
+      "ours_better_samples": 86,
+      "baseline_better_samples": 185,
+      "tied_samples": 1567,
+      "document_prompt_target_fingerprint": "c776098ae895c6058ac824449604db36f469c28ed04b9145a99c8d1a6542f416",
+      "task_config_sha256": "dfc6c21cc58b61a02e5d43e1ed1f239323ec519124913155090062a818c44da6",
+      "protocol_alignment": "PASS"
+    },
+    "winogrande": {
+      "metric": "acc,none",
+      "n": 1267,
+      "ours": 0.5217048145224941,
+      "baseline": 0.6101026045777427,
+      "difference_pp": -8.83977900552486,
+      "paired_95_ci_pp": [
+        -12.233622730860299,
+        -5.445935280189424
+      ],
+      "ours_better_samples": 198,
+      "baseline_better_samples": 310,
+      "tied_samples": 759,
+      "document_prompt_target_fingerprint": "fa103349a0fd29b1a7ab48695d225eb3f8225aa38287ec535ad443b8c8f557db",
+      "task_config_sha256": "8e44b42ee1d813b62f148d3f491b7bd6413bfac4d3bda85d0cc8184c009b554e",
+      "protocol_alignment": "PASS"
+    },
+    "openbookqa": {
+      "metric": "acc_norm,none",
+      "n": 500,
+      "ours": 0.35,
+      "baseline": 0.356,
+      "difference_pp": -0.6,
+      "paired_95_ci_pp": [
+        -3.8,
+        2.6
+      ],
+      "ours_better_samples": 33,
+      "baseline_better_samples": 36,
+      "tied_samples": 431,
+      "document_prompt_target_fingerprint": "7a548546a99c1ce06635e63695a60304606155dc8c446f2e30d441db698da69e",
+      "task_config_sha256": "5969dfdaa167152c03c415cb00a7e1bfd4cb7391f3596d0c87cfb6fd6a759724",
+      "protocol_alignment": "PASS"
+    },
+    "arc_easy": {
+      "metric": "acc_norm,none",
+      "n": 2376,
+      "ours": 0.6414141414141414,
+      "baseline": 0.5749158249158249,
+      "difference_pp": 6.6498316498316505,
+      "paired_95_ci_pp": [
+        4.966329966329966,
+        8.375420875420875
+      ],
+      "ours_better_samples": 297,
+      "baseline_better_samples": 139,
+      "tied_samples": 1940,
+      "document_prompt_target_fingerprint": "03f139e210ce12f2f4560aa14bdc4d5030af2aef18ea3ddbb0ef62ef62424e41",
+      "task_config_sha256": "8d5bf8760e5ffa5e2bde7cb9179aad4ecd29c018527ba9c14316de17786f7eca",
+      "protocol_alignment": "PASS"
+    },
+    "arc_challenge": {
+      "metric": "acc_norm,none",
+      "n": 1172,
+      "ours": 0.3361774744027304,
+      "baseline": 0.3225255972696246,
+      "difference_pp": 1.3651877133105803,
+      "paired_95_ci_pp": [
+        -1.023890784982935,
+        3.668941979522184
+      ],
+      "ours_better_samples": 111,
+      "baseline_better_samples": 95,
+      "tied_samples": 966,
+      "document_prompt_target_fingerprint": "0c32baa042f9a16f04729bc4a882bc9790e7aeb449bb37e86b698ec4580ab6e4",
+      "task_config_sha256": "5b956c97bd7134b5dfc6fde19af8b6a5eb211f68cb92e016acfa578ea385abb6",
+      "protocol_alignment": "PASS"
+    },
+    "boolq": {
+      "metric": "acc,none",
+      "n": 3270,
+      "ours": 0.591743119266055,
+      "baseline": 0.6204892966360857,
+      "difference_pp": -2.874617737003058,
+      "paired_95_ci_pp": [
+        -5.045871559633028,
+        -0.764525993883792
+      ],
+      "ours_better_samples": 585,
+      "baseline_better_samples": 679,
+      "tied_samples": 2006,
+      "document_prompt_target_fingerprint": "a55b0b6e810c0df7b6d372b1cadd4c8f97153fe776a90acc7f041dc01b68652d",
+      "task_config_sha256": "b124a540d891cd40fac33f93c14dedee00733dae7f1bc056c4b3f82db7c114b5",
+      "protocol_alignment": "PASS"
+    }
+  },
+  "seven_task_macro": {
+    "ours": 0.5126013059066035,
+    "baseline": 0.5499392673614891,
+    "ours_minus_baseline_pp": -3.7337961454885593,
+    "paired_95_ci_pp": [
+      -4.63786855218101,
+      -2.859094869198314
+    ]
+  },
+  "six_task_without_boolq": {
+    "ours": 0.4994110036800283,
+    "baseline": 0.5381809291490564,
+    "ours_minus_baseline_pp": -3.87699254690281,
+    "paired_95_ci_pp": [
+      -4.8513326585949725,
+      -2.896474039084158
+    ]
+  },
+  "total_parameters": 1311625216,
+  "training_tokens": 350000000000,
+  "token_kind": "author_rounded",
+  "training_flops_proxy_6ND": 2754412953600000000000,
+  "category": "natural_corpus_base",
+  "pareto_scope": "candidate-set only; not global SOTA",
+  "limitations": [
+    "6ND is an approximate proxy, not measured hardware FLOPs; data/teacher/experimentation compute excluded.",
+    "Original 20B data did not explicitly decontaminate BoolQ; report the six-task sensitivity.",
+    "Paired intervals reflect benchmark sample uncertainty, not training seeds or multiple comparisons.",
+    "Tokenizer-dependent input truncation and default BOS behavior can differ."
+  ],
+  "result_sha256": "c69a119e5d0c7a2d13319dc453afff91536cd81dac848fdd1160edf734f997fa",
+  "job_identity": {
+    "id": "falcon_rw_1b",
+    "repo": "tiiuae/falcon-rw-1b",
+    "training_tokens": 350000000000,
+    "token_kind": "author_rounded",
+    "category": "natural_corpus_base",
+    "resolution_status": "resolved",
+    "revision": "e4b9872bb803165eb22f0a867d4e6a64d34fce19",
+    "config": {
+      "alibi": true,
+      "apply_residual_connection_post_layernorm": false,
+      "architectures": [
+        "FalconForCausalLM"
+      ],
+      "attention_dropout": 0.0,
+      "auto_map": {
+        "AutoConfig": "configuration_falcon.FalconConfig",
+        "AutoModel": "modeling_falcon.FalconModel",
+        "AutoModelForSequenceClassification": "modeling_falcon.FalconForSequenceClassification",
+        "AutoModelForTokenClassification": "modeling_falcon.FalconForTokenClassification",
+        "AutoModelForQuestionAnswering": "modeling_falcon.FalconForQuestionAnswering",
+        "AutoModelForCausalLM": "modeling_falcon.FalconForCausalLM"
+      },
+      "bias": true,
+      "bos_token_id": 1,
+      "eos_token_id": 2,
+      "hidden_dropout": 0.0,
+      "hidden_size": 2048,
+      "initializer_range": 0.02,
+      "layer_norm_epsilon": 1e-05,
+      "model_type": "falcon",
+      "multi_query": false,
+      "new_decoder_architecture": false,
+      "num_attention_heads": 32,
+      "num_hidden_layers": 24,
+      "parallel_attn": false,
+      "torch_dtype": "bfloat16",
+      "transformers_version": "4.27.4",
+      "use_cache": true,
+      "vocab_size": 50304
+    },
+    "config_sha256": "290abb8e65179fdde051605b65ab2256f090c6da5d558bc5c72eddb533ee438f",
+    "gated": false,
+    "files": [
+      {
+        "path": "config.json",
+        "size": 1046,
+        "sha256": null,
+        "git_blob_sha1": "8406492716d8479643a1b0d0be416ecd85ef21f2"
+      },
+      {
+        "path": "generation_config.json",
+        "size": 115,
+        "sha256": null,
+        "git_blob_sha1": "e03a41102e042c156d9ddb05fca7e58a34677efd"
+      },
+      {
+        "path": "merges.txt",
+        "size": 456318,
+        "sha256": null,
+        "git_blob_sha1": "226b0752cac7789c48f0cb3ec53eda48b7be36cc"
+      },
+      {
+        "path": "pytorch_model.bin",
+        "size": 2623348889,
+        "sha256": "3a0d68f0309c8f7ec913f51edf8bf2eca849477c9f53db727f49ffa2f6019251",
+        "git_blob_sha1": "7cdd4f561d9e612f0f969de3f7accfeb2efc2204"
+      },
+      {
+        "path": "special_tokens_map.json",
+        "size": 99,
+        "sha256": null,
+        "git_blob_sha1": "0204ed10c186a4c7c68f55dff8f26087a45898d6"
+      },
+      {
+        "path": "tokenizer.json",
+        "size": 2107653,
+        "sha256": null,
+        "git_blob_sha1": "5de8effbe407429dce1f3ad068cd1bbd215d3a5c"
+      },
+      {
+        "path": "tokenizer_config.json",
+        "size": 234,
+        "sha256": null,
+        "git_blob_sha1": "546efe6d18ae2ad7758d0c9ef51cacdb81c8dc9d"
+      },
+      {
+        "path": "vocab.json",
+        "size": 798156,
+        "sha256": null,
+        "git_blob_sha1": "84ef7fb594b5c0979e48bdeddb60a0adef33df0b"
+      }
+    ],
+    "download_bytes": 2626712510,
+    "parameter_metadata": null,
+    "license": "apache-2.0",
+    "metadata_url": "https://huggingface.co/api/models/tiiuae/falcon-rw-1b/revision/main?blobs=true",
+    "metadata_sha256": "1d68eff756414098b272fbe15ee0fffe1f8083856d47e969e0286f6e575a98fd",
+    "model_card_url": "https://huggingface.co/tiiuae/falcon-rw-1b/resolve/e4b9872bb803165eb22f0a867d4e6a64d34fce19/README.md",
+    "model_card_sha256": "a82d599ab4c07663931273f23463ebb6030426a911b95230a42201e0b4954b63",
+    "model_card_status": 200,
+    "adapter": "transformers_builtin"
+  }
+}

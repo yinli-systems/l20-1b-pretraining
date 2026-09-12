@@ -1,0 +1,9 @@
+{"stage": "waiting_for_B_gpu_lock", "jobs": 36}
+Traceback (most recent call last):
+  File "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/run_efficiency_evaluation.py", line 415, in <module>
+    main()
+  File "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/run_efficiency_evaluation.py", line 402, in main
+    queue(plan,args.plan)
+  File "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/run_efficiency_evaluation.py", line 318, in queue
+    raise RuntimeError('B did not finish normally; do not take over after an early stop/failure')
+RuntimeError: B did not finish normally; do not take over after an early stop/failure

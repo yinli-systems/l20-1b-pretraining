@@ -1,0 +1,15 @@
+{"stage": "waiting_for_B_gpu_lock", "jobs": 36}
+{"status": "partial", "verified_points": 3}
+{"status": "partial", "verified_points": 4}
+{"status": "partial", "verified_points": 5}
+{"status": "partial", "verified_points": 6}
+Traceback (most recent call last):
+  File "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/run_efficiency_evaluation.py", line 427, in <module>
+    main()
+  File "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/run_efficiency_evaluation.py", line 414, in main
+    queue(plan,args.plan)
+  File "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/run_efficiency_evaluation.py", line 362, in queue
+    subprocess.run([sys.executable,str(Path(__file__).resolve()),'--plan',str(plan_path),'--worker',name],
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/hhai/pretrain/.venv/bin/python', '/home/hhai/pretrain/evaluations/efficiency-20260912-v1/run_efficiency_evaluation.py', '--plan', '/home/hhai/pretrain/evaluations/efficiency-20260912-v1/efficiency-evaluation-plan-20260912-v3.json', '--worker', 'tinyllama_early_10b']' returned non-zero exit status 1.

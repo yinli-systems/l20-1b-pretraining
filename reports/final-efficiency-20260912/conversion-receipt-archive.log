@@ -1,0 +1,7 @@
+{"status": "archived", "job": "tinyllama_early_21b", "sha256": "8261649e47ea59ef6ca280750c3edc7382d763fb78ee0a0ba5b8aeab669dfa85", "path": "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/conversion-receipts/tinyllama_early_21b.json"}
+{"status": "queue_terminal", "queue_status": "failed"}
+{"status": "queue_terminal", "queue_status": "failed"}
+{"status": "archived", "job": "tinyllama_early_31b", "sha256": "598f7c3c1f55771f5861d1a678b01e20ca7b83d4b182df2875dc9468a9218361", "path": "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/conversion-receipts/tinyllama_early_31b.json"}
+{"status": "archived", "job": "tinyllama_early_63b", "sha256": "a9c89b829a7561e57f0c1b35258dcc6d8d8cfc7448d3ac4499c4b5cea9a90a56", "path": "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/conversion-receipts/tinyllama_early_63b.json"}
+{"status": "archived", "job": "tinyllama_early_105b", "sha256": "5ddbfc5aac8333e005a179b9955cb895cc7f88beeba92b31a29159158b7f091c", "path": "/home/hhai/pretrain/evaluations/efficiency-20260912-v1/conversion-receipts/tinyllama_early_105b.json"}
+{"status": "queue_terminal", "queue_status": "complete"}
