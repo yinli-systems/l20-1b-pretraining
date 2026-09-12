@@ -87,6 +87,17 @@ def main() -> None:
             extra = sorted(seen - set(original))
             raise ValueError(f"Tensor key mismatch; missing={missing[:5]} extra={extra[:5]}")
 
+        # Transformers may count the full backing storage of sliced tensors when
+        # constructing this field. That can overstate the bytes actually indexed
+        # by safetensors even though the saved tensor values are correct.
+        tensor_bytes = sum(tensor.numel() * tensor.element_size() for tensor in original.values())
+        index_path = tmp / "model.safetensors.index.json"
+        index = json.loads(index_path.read_text())
+        if set(index["weight_map"]) != seen:
+            raise ValueError("Safetensors index keys do not match verified tensors")
+        index.setdefault("metadata", {})["total_size"] = tensor_bytes
+        atomic_json(index_path, index)
+
         files = {}
         for path in sorted(tmp.iterdir()):
             if path.is_file():
@@ -103,6 +114,7 @@ def main() -> None:
             "parameter_count": parameter_count,
             "stored_dtype": source_dtypes,
             "tensor_count": len(seen),
+            "tensor_bytes": tensor_bytes,
             "tensor_exact_equality_verified": True,
             "files": files,
         }
