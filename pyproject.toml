@@ -7,10 +7,10 @@ name = "l20-1b-pretraining"
 version = "0.1.0"
 description = "Evidence-first, from-scratch 1.1B language-model pretraining on one NVIDIA L20"
 readme = "README.md"
+license = "MIT"
 requires-python = ">=3.12"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["."]
 addopts = "-ra"
-

@@ -173,5 +173,5 @@ The release contains three sharded safetensors files. Conversion verified exact
 equality for all 201 tensors against the final Transformers checkpoint. The
 release manifest records file hashes, source checkpoint hash, parameter count,
 and storage dtype. Training code, compact receipts, derived metrics, confidence
-intervals, and plotting scripts are maintained in the accompanying private
-GitHub evidence repository.
+intervals, and plotting scripts are maintained in the public
+[GitHub evidence repository](https://github.com/yinli-systems/l20-1b-pretraining).

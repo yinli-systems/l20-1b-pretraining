@@ -1,11 +1,16 @@
 # High-quality English 1.1B pretraining
 
+[![CI](https://github.com/yinli-systems/l20-1b-pretraining/actions/workflows/ci.yml/badge.svg)](https://github.com/yinli-systems/l20-1b-pretraining/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-2ea44f.svg)](LICENSE)
+
 > Part of [Pretraining Lab](https://github.com/yinli-systems/pretraining-lab),
 > an evidence-first collection of from-scratch language models trained on one
 > NVIDIA L20.
 
 The released base checkpoint is available at
 [`AliceYin/L20-1B-20B-Base`](https://huggingface.co/AliceYin/L20-1B-20B-Base).
+The complete training code, frozen protocols, compact receipts, evaluation
+artifacts, and plotting tools are maintained in this public repository.
 
 This is a from-zero pretraining pipeline for one NVIDIA L20. It does not load a
 pretrained model or tokenizer. The model is a 1,100,048,384-parameter
@@ -53,8 +58,8 @@ bootstrap CI [+0.1584, +1.8860], ties the 1.5T and 2T checkpoints, and loses to
 the 2.5T checkpoint. The [complete result table and claim boundaries](reports/metrics/efficiency-all-results-final-20260912.md)
 and [clean frontier figure](reports/plots/efficiency-frontier-clean-20260912.png)
 are checked in. This frozen subset is not a global census or proof that the
-model is universally first in token efficiency. At the user's request, B was
-safely checkpointed and paused at step 61; it is not part of the released base.
+model is universally first in token efficiency. Continuation B is a separate,
+evidence-gated experiment and is not part of the released base checkpoint.
 Measured validation points and the explicitly labeled pre-completion 20B-token
 extrapolation are available as CSV files so the chart can be independently reproduced.
 Checkpoint weights, source text, mutable logs, and raw TensorBoard events are
@@ -137,3 +142,9 @@ and evaluated only after training has completed.
 This pipeline maximizes evidence and quality within the fixed 20B-token budget.
 The measured external results are reported without claiming superiority to
 models trained on hundreds of billions or trillions of tokens.
+
+## License
+
+The code and repository-authored documentation are released under the
+[MIT License](LICENSE). External datasets, baseline models, and generated model
+artifacts remain subject to their respective licenses and terms.
