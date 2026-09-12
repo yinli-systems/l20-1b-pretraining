@@ -47,6 +47,11 @@ complete; the files report measured evidence without a cross-model superiority c
 - `research/2b-continuation-plan.md` reviews primary research and proposes a
   strictly budgeted continuation experiment. Subsequent recipe revisions and
   actual execution are recorded in the execution protocol.
+- `research/1b-posttraining-deep-research-20260912.md` validates the proposed
+  distillation/SFT/preference/RLVR/re-distillation route against primary sources,
+  corrects its single-L20 compute assumptions, and defines the Stage-0 access
+  boundary. The matching machine-readable contract is
+  `../posttraining_protocol.json`; no post-training run is claimed started.
 - `research/continuation-execution-protocol.md` records the follow-up research,
   isolated implementation, budget ledger, data/quality gates, and current
   execution boundary. Pilot A completed all 190 steps; this is not an automatic

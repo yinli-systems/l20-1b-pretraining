@@ -1,0 +1,164 @@
+{
+  "protocol_version": "2026-09-12-v1",
+  "objective": "Develop the strongest evidence-bounded instruction and reasoning derivatives of the released 1.1B English base on one NVIDIA L20.",
+  "automatic_promotion": false,
+  "released_parent": {
+    "model": "AliceYin/L20-1B-20B-Base",
+    "prediction_tokens": 19999703040,
+    "parameters": 1100048384,
+    "context_length": 2048
+  },
+  "parent_selection": {
+    "candidates": ["base-20b", "continuation-b-terminal"],
+    "required_evidence": [
+      "same_protocol_core_and_extended_evaluation",
+      "paired_sample_level_confidence_intervals",
+      "fixed_validation_probe",
+      "weight_and_tokenizer_identity_receipt"
+    ],
+    "fallback": "base-20b",
+    "rule": "Use continuation B only if it passes its frozen retention and aggregate-improvement gates; otherwise use the released 20B base."
+  },
+  "global_data_rules": {
+    "benchmark_seeded_training_data": "forbidden",
+    "evaluation_split_training_use": "forbidden",
+    "deduplication": ["exact_document_sha256", "normalized_near_duplicate_family"],
+    "decontamination": [
+      "prompt_and_choices",
+      "short_question_exact_match",
+      "source_problem_family",
+      "synthetic_seed_family"
+    ],
+    "required_record_fields": [
+      "source_dataset",
+      "source_revision",
+      "license",
+      "sample_id",
+      "normalized_hash",
+      "problem_family",
+      "teacher_or_generator",
+      "verifier",
+      "verification_result",
+      "input_tokens",
+      "target_tokens"
+    ]
+  },
+  "candidate_source_registry": [
+    {
+      "dataset": "open-thoughts/OpenThoughts3-1.2M",
+      "revision": "61bcf9d4eb38b30295efc2021227a63cc5bb34c8",
+      "license": "apache-2.0",
+      "admission": "candidate_only_pending_local_quality_and_contamination_audit"
+    },
+    {
+      "dataset": "nvidia/Nemotron-Post-Training-Dataset-v1",
+      "revision": "74e23eb6f830fef4a9e96a92f6f6262214cbb9a8",
+      "license": "cc-by-4.0",
+      "admission": "candidate_only_pending_subset_selection_quality_and_contamination_audit"
+    },
+    {
+      "dataset": "allenai/tulu-3-sft-olmo-2-mixture-0225",
+      "revision": "d91a0785ade02942520280fb484866fce41e448f",
+      "license": "mixed_or_undeclared_at_dataset_level",
+      "admission": "blocked_pending_component_level_license_and_provenance_audit"
+    },
+    {
+      "dataset": "allenai/RLVR-GSM-MATH-IF-Mixed-Constraints",
+      "revision": "7dbd180f5440c0b90f2944e6efea934b85437a95",
+      "license": "odc-by",
+      "admission": "candidate_only_pending_eval_overlap_and_problem_family_audit"
+    }
+  ],
+  "stages": [
+    {
+      "id": "stage-0-base-selection",
+      "status": "blocked_live_verification",
+      "train": false,
+      "description": "Finish and evaluate the already-budgeted continuation B pilot before selecting a post-training parent.",
+      "gate": "No automatic continuation main run and no post-training until live state and frozen evaluation are verified."
+    },
+    {
+      "id": "stage-1-reasoning-bootstrap-pilot",
+      "status": "planned",
+      "train": true,
+      "max_sequence_length": 2048,
+      "loss": "assistant_or_completion_only_plus_separate_causal_replay",
+      "candidate_learning_rates": [1e-05, 2e-05, 3e-05],
+      "pilot_target_tokens_per_arm": 20000000,
+      "mixture": {
+        "verified_reasoning_traces": 0.9,
+        "base_causal_replay": 0.1
+      },
+      "gate": "Select by preregistered reasoning, instruction, contamination, and base-retention metrics; stop if all arms fail."
+    },
+    {
+      "id": "stage-2-dual-mode-sft",
+      "status": "planned",
+      "train": true,
+      "max_sequence_length": 2048,
+      "target_token_range": [300000000, 600000000],
+      "mixture": {
+        "general_instruction": 0.3,
+        "math_stem_reasoning": 0.25,
+        "code_reasoning": 0.15,
+        "general_reasoning": 0.1,
+        "rewrite_summarization_qa": 0.08,
+        "tool_and_structured_output": 0.05,
+        "multi_turn": 0.02,
+        "base_causal_replay": 0.05
+      },
+      "modes": ["think", "no_think"],
+      "gate": "Improve instruction/reasoning development metrics without a preregistered material drop in base retention."
+    },
+    {
+      "id": "stage-3-preference-pilot",
+      "status": "planned",
+      "train": true,
+      "arms": ["dpo", "apo_zero"],
+      "pairs_per_arm": 10000,
+      "candidate_learning_rates": [1e-06, 2.5e-06, 5e-06],
+      "pair_policy": "Prefer verified on-policy hard negatives; reject trivial garbage and judge-only pairs without an audit trail.",
+      "gate": "Scale only the objective and learning rate that improve held-out preference and instruction metrics while passing retention and length-bias checks."
+    },
+    {
+      "id": "stage-4-rlvr",
+      "status": "planned",
+      "train": true,
+      "single_l20_episode_ladder": [10000, 50000, 100000],
+      "rollouts_per_prompt_pilot": 4,
+      "max_completion_length_pilot": 1024,
+      "domains": ["math", "code", "instruction_constraints"],
+      "reward": "deterministic_or_executable_verifier",
+      "gate": "Advance only with rising held-out pass rate, non-collapsed entropy, bounded KL, stable length, and retained non-RL capability.",
+      "not_authorized": "The literature-scale 2,000,000 episodes per stage is not authorized on one L20 without a new measured cost and quality decision."
+    },
+    {
+      "id": "stage-5-redistillation",
+      "status": "planned",
+      "train": true,
+      "successful_trace_range": [10000, 50000],
+      "source": "verifier-passing on-policy trajectories from the admitted RLVR checkpoint",
+      "gate": "Keep only if it reproduces RLVR gains with lower serving cost or improves retained capability."
+    },
+    {
+      "id": "stage-6-soup-and-base-merge",
+      "status": "planned",
+      "train": false,
+      "candidate_base_weights": [0.05, 0.1, 0.15],
+      "soup": "preregistered top checkpoints from one compatible trajectory",
+      "gate": "Evaluate every merge under the same frozen protocol; do not select on final test sets."
+    }
+  ],
+  "evaluation": {
+    "development": ["ifeval", "gsm8k", "math500", "bbh", "humaneval", "mbpp", "base_retention_suite"],
+    "final_only": ["mmlu", "gpqa", "livecodebench", "held_out_instruction_set"],
+    "reporting": [
+      "point_estimates",
+      "paired_confidence_intervals_where_defined",
+      "decoding_protocol",
+      "training_and_generation_compute",
+      "wall_clock_and_gpu_hours",
+      "failure_and_restart_tokens"
+    ]
+  }
+}

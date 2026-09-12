@@ -25,6 +25,11 @@ The revision-pinned, same-protocol TinyLlama comparison is documented in
 [`reports/research/tinyllama-comparison-20260911.md`](reports/research/tinyllama-comparison-20260911.md).
 The evidence review and strictly budgeted 2B-token continuation proposal are in
 [`reports/research/2b-continuation-plan.md`](reports/research/2b-continuation-plan.md).
+The evidence-checked, single-L20 post-training roadmap and its compute limits are in
+[`reports/research/1b-posttraining-deep-research-20260912.md`](reports/research/1b-posttraining-deep-research-20260912.md).
+Its fail-closed stage contract is [`posttraining_protocol.json`](posttraining_protocol.json);
+it explicitly forbids automatic promotion and literature-scale RLVR without new
+measured admission evidence.
 Pilot A completed 190 steps (198,451,200 additional prediction tokens); fixed
 validation PPL changed from 11.298834 to 11.297638, essentially flat. Its frozen
 checkpoint completed the nine-task core evaluation: primary seven-task mean
