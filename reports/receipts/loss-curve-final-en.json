@@ -1,0 +1,48 @@
+{
+  "aggregation": {
+    "training": "non-overlapping 100-step mean with 10th and 90th percentiles",
+    "validation": "fixed held-out evaluation every 500 steps plus the final step"
+  },
+  "files": {
+    "png": {
+      "path": "reports/figures/loss-curve-final-en.png",
+      "sha256": "e814803d8f2ed9334b8d15b53dda0de6401ad08e7448bdd4649e5bb76b02874d"
+    },
+    "svg": {
+      "path": "reports/figures/loss-curve-final-en.svg",
+      "sha256": "60593d61e9e0cc02ab52cc6a380916b62bed4ce508ae9a5f9a96452d5a87b9e6"
+    },
+    "training_csv": {
+      "path": "reports/metrics/training-loss-100-step.csv",
+      "sha256": "5ae236674caa7130b1b3755dfbdff3e3dafec1a90dd589167e1f0d193fd3c48d"
+    },
+    "validation_csv": {
+      "path": "reports/metrics/validation-loss.csv",
+      "sha256": "c9b2bad204de0ed3faf7e102d887c72853b3061601c8dcace7e2d31e223d7dba"
+    }
+  },
+  "final": {
+    "prediction_tokens": 19999703040,
+    "step": 19148,
+    "validation_loss": 2.424714565,
+    "validation_perplexity": 11.299003601
+  },
+  "language": "en",
+  "measurement_boundary": "all plotted curves are measured; no extrapolation",
+  "schema_version": 1,
+  "source_event": {
+    "event_file_bytes": 16473400,
+    "event_file_sha256": "295a8a4cfa71709450b559029cf13830781dc7fa9d505e93d6f1ed227a333407",
+    "optimizer_steps": 19148,
+    "prediction_tokens": 19999703040,
+    "scalar_counts": {
+      "loss": 19148,
+      "tokens": 19148,
+      "val_loss": 39,
+      "val_ppl": 39
+    },
+    "tokens_per_step": 1044480,
+    "training_windows": 192,
+    "validation_points": 39
+  }
+}

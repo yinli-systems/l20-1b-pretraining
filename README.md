@@ -23,7 +23,18 @@ never to initialize this model's training.
 
 ## Results and evidence
 
-![Training and validation loss through step 14094](reports/figures/loss-curve-step-14094.png)
+![Complete English training and validation loss curve](reports/figures/loss-curve-final-en.png)
+
+The figure covers the complete 20B-token run using measured TensorBoard points
+only; the final panel contains no forecast or extrapolated segment. Its
+machine-readable source receipt is
+[`reports/receipts/loss-curve-final-en.json`](reports/receipts/loss-curve-final-en.json),
+and it can be regenerated with:
+
+```bash
+python -m pip install -r requirements-plot.txt
+python plot_loss_curve.py
+```
 
 The run completed all 19,148 optimizer steps and 19,999,703,040 prediction
 tokens. Final held-out loss was 2.4247146 (perplexity 11.2990036). Immutable

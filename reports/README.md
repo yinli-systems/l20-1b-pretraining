@@ -10,9 +10,11 @@ complete; the files report measured evidence without a cross-model superiority c
 - `progress/` records point-in-time live telemetry. A snapshot does not update
   automatically and must not be interpreted as the current state after its
   `captured_at` timestamp.
-- `metrics/validation-loss.csv` contains every completed 500-step validation.
-- `metrics/training-loss-100-step.csv` contains 100-step means and 10th/90th
-  percentile bands derived from TensorBoard.
+- `metrics/validation-loss.csv` contains all 39 held-out evaluations through the
+  final optimizer step.
+- `metrics/training-loss-100-step.csv` contains all 19,148 optimizer steps as
+  non-overlapping 100-step means and 10th/90th percentile bands derived from
+  TensorBoard.
 - `metrics/loss-forecast.csv` is the documented late-window power-law
   extrapolation, not a measured result or statistical confidence interval.
 - `metrics/final-benchmarks.json` is the compact final metric summary. The large
@@ -91,8 +93,10 @@ complete; the files report measured evidence without a cross-model superiority c
   training configuration and validated child-process file-limit adjustment.
 - `receipts/continuation-pilot-A-start-20260911.json` is a dated early-training
   snapshot, not a live status endpoint or a new held-out validation result.
-- `figures/loss-curve-step-14094.png` is the latest curve snapshot; earlier
-  figures are retained as immutable historical evidence.
+- `figures/loss-curve-final-en.{png,svg}` is the complete English publication
+  figure; `receipts/loss-curve-final-en.json` binds it to the source event hash,
+  complete scalar counts, derived CSVs, and output files. Earlier step-specific
+  figures remain immutable historical snapshots.
 
 Raw corpora, caches, deduplication databases, logs, TensorBoard event files,
 and checkpoints are intentionally excluded. They are large, mutable, or may
