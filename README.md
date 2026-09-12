@@ -1,5 +1,9 @@
 # High-quality English 1.1B pretraining
 
+> Part of [Pretraining Lab](https://github.com/yinli-systems/pretraining-lab),
+> an evidence-first collection of from-scratch language models trained on one
+> NVIDIA L20.
+
 The released base checkpoint is available at
 [`AliceYin/L20-1B-20B-Base`](https://huggingface.co/AliceYin/L20-1B-20B-Base).
 
