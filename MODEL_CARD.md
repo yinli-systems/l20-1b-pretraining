@@ -146,6 +146,11 @@ training-seed variance and are not adjusted for multiple comparisons. The full
 36-checkpoint study contains both wins and losses; it is a frozen candidate set,
 not a global census or a claim of universal token-efficiency leadership.
 
+Machine-readable [final benchmark metrics](https://huggingface.co/AliceYin/L20-1B-20B-Base/blob/main/evaluation/final-benchmarks.json),
+the complete [36-checkpoint comparison](https://huggingface.co/AliceYin/L20-1B-20B-Base/blob/main/evaluation/efficiency-all-results.md),
+and [GPU telemetry](https://huggingface.co/AliceYin/L20-1B-20B-Base/tree/main/training)
+are included in this release.
+
 ![Compute-efficiency frontier](https://huggingface.co/AliceYin/L20-1B-20B-Base/resolve/main/assets/efficiency-frontier-clean.png)
 
 ## Limitations
