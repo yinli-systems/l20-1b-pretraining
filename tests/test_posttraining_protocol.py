@@ -1,4 +1,5 @@
 import copy
+import hashlib
 import json
 from pathlib import Path
 
@@ -48,3 +49,15 @@ def test_protocol_rejects_unpinned_or_unlicensed_sources():
     assert not result["valid"]
     assert any("not a pinned commit" in error for error in result["errors"])
     assert any("lacks license" in error for error in result["errors"])
+
+
+def test_validation_receipt_binds_protocol_artifacts():
+    receipt = json.loads(
+        (ROOT / "reports/receipts/posttraining-protocol-validation-20260912.json").read_text()
+    )
+    for relative_path, expected in receipt["files"].items():
+        actual = hashlib.sha256((ROOT / relative_path).read_bytes()).hexdigest()
+        assert actual == expected
+    assert receipt["local_validation"]["protocol_valid"] is True
+    assert receipt["github_actions"]["classification"] == "infrastructure_not_executed"
+    assert receipt["github_actions"]["steps_started"] == 0

@@ -52,6 +52,10 @@ complete; the files report measured evidence without a cross-model superiority c
   corrects its single-L20 compute assumptions, and defines the Stage-0 access
   boundary. The matching machine-readable contract is
   `../posttraining_protocol.json`; no post-training run is claimed started.
+- `receipts/posttraining-protocol-validation-20260912.json` binds the first
+  protocol implementation and local test result. It also records that GitHub
+  Actions did not execute any step because of an account billing/spending-limit
+  gate; this is infrastructure failure, not a green or failed code test.
 - `research/continuation-execution-protocol.md` records the follow-up research,
   isolated implementation, budget ledger, data/quality gates, and current
   execution boundary. Pilot A completed all 190 steps; this is not an automatic
