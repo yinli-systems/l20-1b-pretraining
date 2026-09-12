@@ -56,6 +56,11 @@ complete; the files report measured evidence without a cross-model superiority c
   protocol implementation and local test result. It also records that GitHub
   Actions did not execute any step because of an account billing/spending-limit
   gate; this is infrastructure failure, not a green or failed code test.
+- `receipts/posttraining-space-cleanup-20260912.json` records the exact,
+  hash-bound removal of one obsolete 20-step smoke checkpoint to make room for
+  continuation B's atomic resume save. Production, gate, continuation,
+  evaluation, and published weights were explicitly preserved. The constrained
+  cleanup implementation is `../cleanup_obsolete_smoke_checkpoint.py`.
 - `research/continuation-execution-protocol.md` records the follow-up research,
   isolated implementation, budget ledger, data/quality gates, and current
   execution boundary. Pilot A completed all 190 steps; this is not an automatic

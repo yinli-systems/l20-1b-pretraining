@@ -1,0 +1,23 @@
+{
+  "bytes": 13200786287,
+  "completed_unix": 1789212239.4408042,
+  "cuda_processes_before": [],
+  "free_bytes_after": 39113535488,
+  "free_bytes_before": 25912741888,
+  "hard_links": 1,
+  "inode": 14419972,
+  "open_references_before": [],
+  "preserved_classes": [
+    "production_20b_checkpoints",
+    "gate_checkpoints",
+    "continuation_a_and_b",
+    "evaluation_outputs",
+    "published_hf_weights"
+  ],
+  "recovery": "Re-run the 20-step smoke test from the retained source and data.",
+  "sha256": "a3af3c1766858480216298b0ed4c71f96496dbe7dc44ddc622e5e39bea5dcbb2",
+  "started_unix": 1789212239.4062445,
+  "status": "verified_complete",
+  "target": "/home/hhai/pretrain/checkpoints/smoke-test/smoke/step-00000020/lit_model.pth",
+  "uid": 1000
+}
