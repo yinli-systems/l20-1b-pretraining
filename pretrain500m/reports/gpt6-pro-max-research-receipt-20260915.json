@@ -1,0 +1,36 @@
+{
+  "schema": "p529m-gpt6-pro-max-research-receipt-v1",
+  "status": "COMPLETE_RESPONSE_DOWNLOADED_AND_HASHED",
+  "created_date": "2026-09-15",
+  "model_ui": "GPT-6 Pro",
+  "reasoning_ui": "Pro, 5 of 5 (maximum)",
+  "conversation_url": "https://chatgpt.com/c/6aa86dd4-ec70-83eb-a384-4d71b452cfe1",
+  "source_repository": "yinli-systems/l20-1b-pretraining",
+  "source_branch": "codex/529m-results",
+  "source_commit": "eb5eded979ba148b3dc06052d436eabc583bf3fc",
+  "artifacts": [
+    {
+      "path": "pretrain500m/reports/gpt6-pro-max-research-response-20260915.md",
+      "bytes": 62138,
+      "sha256": "c18223656df0ff24af6636d7d03652af230149ce2c3b49ae3bfe98e6b1580dcd"
+    },
+    {
+      "path": "pretrain500m/reports/gpt6-pro-max-research-plan-20260915.json",
+      "bytes": 12208,
+      "sha256": "58d56059111eb92dea1c0f9213a1e7ebbacabe7dea55c24cf31e366401dcc1a7"
+    },
+    {
+      "path": "pretrain500m/reports/gpt6-pro-max-competitor-registry-20260915.json",
+      "bytes": 16320,
+      "sha256": "ccfb1052abd2e612984604e99e706ebf12a69ef8f516e7935bac041be6c43038"
+    }
+  ],
+  "referenced_but_not_delivered_as_downloads": [
+    "audit_plan.py",
+    "audit_checkpoint.py",
+    "launch_segmented.py",
+    "R3_20B_quota_plan.json",
+    "source_budget.json"
+  ],
+  "claim_boundary": "The response is an external research recommendation. It did not run GPU training, admit new data, validate the parent checkpoint binary, build new proxy/sealed suites, or perform matched competitor reruns."
+}

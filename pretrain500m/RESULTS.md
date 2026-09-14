@@ -139,3 +139,29 @@ measured MFU, held-out loss improvement, and matched base-model multiple-choice
 accuracy. It does not establish instruction following, safety, calibrated
 generation, tool use, domain mastery, or superiority over current public
 models. SFT, preference optimization, and RLVR have not started.
+
+## GPT-6 Pro external research review
+
+GPT-6 Pro at its maximum 5/5 reasoning setting reviewed this evidence and
+primary public sources. The downloaded output is archived as an immutable
+[research response](reports/gpt6-pro-max-research-response-20260915.md),
+[proposed plan](reports/gpt6-pro-max-research-plan-20260915.json), and
+[competitor registry](reports/gpt6-pro-max-competitor-registry-20260915.json).
+These are recommendations, not completed training or matched competitor results.
+
+The review corrected the model description to the actual `deep` configuration:
+26 layers, hidden size 1,280, intermediate size 3,584, 20 query heads, five KV
+heads, and head dimension 64. It also identified that the held-out receipt's
+16,678,912 packed/processed prediction-token budget is distinct from the
+10,103,815 mask-selected loss targets summed across the five domains. Future
+receipts must report those quantities separately.
+
+Its primary proposal is to retain F2 as a control and compare five fresh-corpus
+recipes from the immutable parent, using new development and sealed evaluation
+suites. The proposed funnel is 536,870,912-token pilots, two-seed
+2,147,483,648-token confirmations, and only then a two-seed 20,000,538,624-token
+run. The leading untrained hypothesis allocates 30% fresh FineWeb-Edu, 25%
+DCLM, 20% English FinePDFs, 15% math, and 10% code, with peak LR 6e-5 as a
+screened hypothesis. It is explicitly `PROPOSED_NOT_TRAINED` and blocked on
+fresh-data admission, independent proxy/sealed suites, exact runtime binding,
+full-state disk measurement, and fixed-horizon resume qualification.

@@ -30,8 +30,10 @@ prediction tokens、什么 LR/decay/curriculum；怎样修复 WinoGrande 和 ARC
 - decoder-only、Llama-compatible、RoPE、SwiGLU、RMSNorm、GQA、tied embeddings；
 - `528,748,800` parameters；
 - vocabulary `50,280`；context length `2,048`；
-- hidden size `1,536`，intermediate size `4,096`，18 layers，12 query heads，
-  4 KV heads，head dim 128，RoPE theta 10,000；
+- 实际父检查点使用训练器的 `deep` 配置：hidden size `1,280`，intermediate size
+  `3,584`，26 layers，20 query heads，5 KV heads，head dim 64，RoPE theta 10,000；
+  `pretrain500m/model.py` 中 18x1536 的无参默认值是另一个 `wide` 架构（530,271,744
+  parameters），不能用来描述这个检查点；
 - parent step `7,629`，parent prediction tokens `15,999,172,608`；
 - parent checkpoint SHA-256：
   `13aa21721e15c48cdfdafe30d8fdd41d9c95c90be766327661d96af1e90dd6cf`；
