@@ -1,0 +1,18 @@
+{
+  "review_type": "bounded qualitative inspection by assistant",
+  "sample_selection": "rows 0, middle and last in each named downloaded sample",
+  "documents_inspected": 30,
+  "population_quality_estimate": false,
+  "findings": [
+    {"sample": "fineweb_edu", "rows": [0,64,127], "finding": "Mindfulness self-help, gardening guidance and folklore prose; educational score does not establish factual correctness or remove promotional prose."},
+    {"sample": "dclm_100bt", "rows": [0,64,127], "finding": "Diverse reflective writing and product documentation; conference announcements and dated product instructions remain."},
+    {"sample": "finepdfs_en", "rows": [0,64,127], "finding": "English partition includes an Indonesian-language opening, newsletter material, and a worked geometry exam. Page language and section-level extraction need independent checks."},
+    {"sample": "finemath4", "rows": [0,64,127], "finding": "Automated integer-property page, a document-preview extract with broken formula formatting, and a math discussion containing an incorrect attempted formula; quality 4plus does not guarantee clean reasoning."},
+    {"sample": "infiwebmath4", "rows": [0,64,127], "finding": "Templated percentage page, worked rational-expression simplification and a programming discussion. Keep useful elementary reasoning while capping near-identical template families."},
+    {"sample": "cosmopedia2", "rows": [0,64,127], "finding": "Readable tutorial material but repetitive pedagogical framing and synthetic first-person anecdotes; factual statements were not independently verified."},
+    {"sample": "fineweb2hq_zh", "rows": [0,64,127], "finding": "Technical prose, noisy joke aggregation and fictional narrative coexist. HQ is not an educational-only label."},
+    {"sample": "fineweb2hq_es", "rows": [0,64,127], "finding": "Legal-news prose, sports reporting and a movie description illustrate broad non-English coverage rather than a specialist reasoning corpus."},
+    {"sample": "stackedu_python_text", "rows": [0,7,13], "finding": "Commented exercises, a simulation environment and an application example. They parse as Python 3, but static parsing does not prove dependencies, tests or semantic correctness."},
+    {"sample": "smol_smoltalk", "rows": [0,64,127], "finding": "General rewrites, conversational advice and many simultaneous formatting constraints. Training requires assistant-only masking and complete response filtering."}
+  ]
+}

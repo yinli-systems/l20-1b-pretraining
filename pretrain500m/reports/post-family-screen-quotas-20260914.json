@@ -1,0 +1,111 @@
+{
+  "status": "POST_FAMILY_TRAIN_QUOTA_LOWER_BOUNDS_MEASURED_NOT_PACKED",
+  "sources": {
+    "code_cpp": {
+      "documents": 3849,
+      "encoded_tokens": 4638963,
+      "packed_prediction_tokens_upper_bound": 4636672,
+      "screen_unique_minimum_prediction_tokens_two_epoch_cap": 4026368,
+      "shortage_lower_bound_before_packing": 0
+    },
+    "code_java": {
+      "documents": 7230,
+      "encoded_tokens": 5625473,
+      "packed_prediction_tokens_upper_bound": 5621760,
+      "screen_unique_minimum_prediction_tokens_two_epoch_cap": 4026368,
+      "shortage_lower_bound_before_packing": 0
+    },
+    "code_javascript": {
+      "documents": 9492,
+      "encoded_tokens": 9588124,
+      "packed_prediction_tokens_upper_bound": 9582592,
+      "screen_unique_minimum_prediction_tokens_two_epoch_cap": 8054784,
+      "shortage_lower_bound_before_packing": 0
+    },
+    "code_python": {
+      "documents": 20482,
+      "encoded_tokens": 23865570,
+      "packed_prediction_tokens_upper_bound": 23853056,
+      "screen_unique_minimum_prediction_tokens_two_epoch_cap": 20133888,
+      "shortage_lower_bound_before_packing": 0
+    },
+    "code_typescript": {
+      "documents": 5841,
+      "encoded_tokens": 4885631,
+      "packed_prediction_tokens_upper_bound": 4882432,
+      "screen_unique_minimum_prediction_tokens_two_epoch_cap": 4026368,
+      "shortage_lower_bound_before_packing": 0
+    },
+    "dclm": {
+      "documents": 43993,
+      "encoded_tokens": 59852166,
+      "packed_prediction_tokens_upper_bound": 59822080,
+      "screen_unique_minimum_prediction_tokens_two_epoch_cap": 53688320,
+      "shortage_lower_bound_before_packing": 0
+    },
+    "finemath4": {
+      "documents": 27762,
+      "encoded_tokens": 39618041,
+      "packed_prediction_tokens_upper_bound": 39598080,
+      "screen_unique_minimum_prediction_tokens_two_epoch_cap": 40265728,
+      "shortage_lower_bound_before_packing": 667648
+    },
+    "infiwebmath4": {
+      "documents": 10501,
+      "encoded_tokens": 14516926,
+      "packed_prediction_tokens_upper_bound": 14508032,
+      "screen_unique_minimum_prediction_tokens_two_epoch_cap": 13422592,
+      "shortage_lower_bound_before_packing": 0
+    },
+    "multilingual_arb_Arab": {
+      "documents": 2952,
+      "encoded_tokens": 6879887,
+      "packed_prediction_tokens_upper_bound": 6875136,
+      "screen_unique_minimum_prediction_tokens_two_epoch_cap": 2684928,
+      "shortage_lower_bound_before_packing": 0
+    },
+    "multilingual_cmn_Hani": {
+      "documents": 10138,
+      "encoded_tokens": 17102373,
+      "packed_prediction_tokens_upper_bound": 17092608,
+      "screen_unique_minimum_prediction_tokens_two_epoch_cap": 13422592,
+      "shortage_lower_bound_before_packing": 0
+    },
+    "multilingual_deu_Latn": {
+      "documents": 3560,
+      "encoded_tokens": 5524726,
+      "packed_prediction_tokens_upper_bound": 5521408,
+      "screen_unique_minimum_prediction_tokens_two_epoch_cap": 2684928,
+      "shortage_lower_bound_before_packing": 0
+    },
+    "multilingual_fra_Latn": {
+      "documents": 3350,
+      "encoded_tokens": 4682246,
+      "packed_prediction_tokens_upper_bound": 4679680,
+      "screen_unique_minimum_prediction_tokens_two_epoch_cap": 2684928,
+      "shortage_lower_bound_before_packing": 0
+    },
+    "multilingual_jpn_Jpan": {
+      "documents": 3670,
+      "encoded_tokens": 4316345,
+      "packed_prediction_tokens_upper_bound": 4313088,
+      "screen_unique_minimum_prediction_tokens_two_epoch_cap": 2684928,
+      "shortage_lower_bound_before_packing": 0
+    },
+    "multilingual_spa_Latn": {
+      "documents": 3318,
+      "encoded_tokens": 3598554,
+      "packed_prediction_tokens_upper_bound": 3596288,
+      "screen_unique_minimum_prediction_tokens_two_epoch_cap": 2684928,
+      "shortage_lower_bound_before_packing": 0
+    },
+    "pdf_en": {
+      "documents": 14334,
+      "encoded_tokens": 71346878,
+      "packed_prediction_tokens_upper_bound": 71311360,
+      "screen_unique_minimum_prediction_tokens_two_epoch_cap": 67108864,
+      "shortage_lower_bound_before_packing": 0
+    }
+  },
+  "training_admitted": false
+}

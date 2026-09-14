@@ -1,0 +1,11 @@
+{
+  "version": "2.3.1",
+  "home_page": "http://github.com/WojciechMula/pyahocorasick",
+  "files": [
+    {
+      "name": "pyahocorasick-2.3.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/a1/f2/d13807476195e4ec5999a78f22db592a64da54229c9183438f3165105779/pyahocorasick-2.3.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "sha256": "9ec1d3465f25a5063c7eaa85ecb106cbe256064669c754e0b13b2483cf613a98"
+    }
+  ]
+}

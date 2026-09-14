@@ -1,0 +1,29 @@
+{
+  "schema": "p529m-resource-concurrency-amendment-v1",
+  "status": "FROZEN_PROSPECTIVE",
+  "frozen_utc": "2026-09-14T00:27:00.813372+00:00",
+  "reason": "User authorized more GPUs and requested fastest execution while preserving rolling-median MFU strictly above 0.50.",
+  "scope": "Resource scheduling only; no recipe, data, checkpoint, optimizer, token budget, learning rate, seed set, MFU rule, or evaluation change.",
+  "prior_max_simultaneous_runs": 2,
+  "amended_max_simultaneous_runs": 4,
+  "evidence_at_freeze": {
+    "active_jobs": [
+      "1588453",
+      "1588454"
+    ],
+    "active_jobs_final_validation_available": false,
+    "free_gpu_5090": 57,
+    "total_gpu_5090": 248,
+    "free_storage_bytes": 19305971712,
+    "per_job_conservative_writer_gate_bytes": 4262478848,
+    "four_job_aggregate_gate_bytes": 17049915392,
+    "aggregate_gate_passed": true,
+    "active_mfu_gate_passed": true,
+    "active_step_snapshot": {
+      "1588453": 34,
+      "1588454": 35
+    }
+  },
+  "launch_policy": "At most four independent four-GPU jobs; every job retains its own rolling ten-step median MFU >0.50 fail-closed gate.",
+  "scientific_boundary": "Concurrency cannot be selected using final quality outcomes; this amendment was frozen before either active job produced final validation."
+}

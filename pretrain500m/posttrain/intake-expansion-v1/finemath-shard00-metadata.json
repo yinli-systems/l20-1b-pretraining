@@ -1,0 +1,19 @@
+{
+  "endpoint": "https://huggingface.co/api/datasets/HuggingFaceTB/finemath/tree/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus?recursive=true&limit=1000",
+  "entry": {
+    "lfs": {
+      "oid": "5d0b26114b4cf309c82a4ba8f6f45857480b27812e23a46b61b45e8bbed61fe5",
+      "pointerSize": 134,
+      "size": 286267316
+    },
+    "oid": "053df10b28d11c998e68b1f31b12e02702276436",
+    "path": "finemath-4plus/train-00000-of-00064.parquet",
+    "size": 286267316,
+    "type": "file",
+    "xetHash": "ba5b75d59fa2e3ba6d1a8030d6e9af0c63e8a60130c1901beb11c4e3152dd9dd"
+  },
+  "repo_id": "HuggingFaceTB/finemath",
+  "retrieved_utc": "2026-09-14T03:00:47.035839+00:00",
+  "revision": "e92b25a616738fe95dc186b64dfb19f9c8525594",
+  "schema_version": 1
+}

@@ -1,0 +1,47 @@
+{
+  "checked_utc": "2026-09-13T22:05:07.755120+00:00",
+  "pid": 2487833,
+  "command": "/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python /ssd/scxi253/pretrain500m-20260912-v1/source/old-source-overlap-v1/scan.py --manifest /ssd/scxi253/pretrain500m-20260912-v1/source/old-source-overlap-v1/old-source-manifest.json --expected-manifest-sha256 8291e6c2a9af017904a3cc17b838cff231ff1a6da4cf7b9fe810b2dd6995a6e5 --index-report /ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-three-tranche/report.json --expected-index-report-sha256 a644aaa72d371e0da1db917a30d6a5d227e7585fcbc0e5e4a03e88d5ece021ce --output /ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1 --workers 4 ",
+  "free_bytes": 21799518208,
+  "launch": {
+    "status": "RUNNING",
+    "workers": 4,
+    "new_rows": 199407,
+    "new_normalized_hashes": 199365,
+    "old_shards": 14,
+    "training_admitted": false
+  },
+  "progress": [
+    {
+      "file": "000_00000.parquet.progress.json",
+      "status": "RUNNING",
+      "rows": 393216,
+      "matched_old_rows": 2,
+      "elapsed_seconds": 56.33342625806108
+    },
+    {
+      "file": "001_00000.parquet.progress.json",
+      "status": "RUNNING",
+      "rows": 393216,
+      "matched_old_rows": 0,
+      "elapsed_seconds": 56.75891691399738
+    },
+    {
+      "file": "002_00000.parquet.progress.json",
+      "status": "RUNNING",
+      "rows": 393216,
+      "matched_old_rows": 1,
+      "elapsed_seconds": 56.409798874054104
+    },
+    {
+      "file": "003_00000.parquet.progress.json",
+      "status": "RUNNING",
+      "rows": 393216,
+      "matched_old_rows": 1,
+      "elapsed_seconds": 56.493172116111964
+    }
+  ],
+  "report": null,
+  "log_tail": "",
+  "children": "    PID     ELAPSED %CPU %MEM COMMAND\n2488015       00:59 98.6  0.0 /ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python /ssd/scxi253/pretrain500m-20260912-v1/source/old-source-overlap-v1/scan.py --manifest /ssd/scxi253/pretrain500m-20260912-v1/source/old-source-overlap-v1/old-source-manifest.json --expected-manifest-sha256 8291e6c2a9af017904a3cc17b838cff231ff1a6da4cf7b9fe810b2dd6995a6e5 --index-report /ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-three-tranche/report.json --expected-index-report-sha256 a644aaa72d371e0da1db917a30d6a5d227e7585fcbc0e5e4a03e88d5ece021ce --output /ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1 --workers 4\n2488020       00:59 98.5  0.0 /ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python /ssd/scxi253/pretrain500m-20260912-v1/source/old-source-overlap-v1/scan.py --manifest /ssd/scxi253/pretrain500m-20260912-v1/source/old-source-overlap-v1/old-source-manifest.json --expected-manifest-sha256 8291e6c2a9af017904a3cc17b838cff231ff1a6da4cf7b9fe810b2dd6995a6e5 --index-report /ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-three-tranche/report.json --expected-index-report-sha256 a644aaa72d371e0da1db917a30d6a5d227e7585fcbc0e5e4a03e88d5ece021ce --output /ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1 --workers 4\n2488024       00:59 98.6  0.0 /ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python /ssd/scxi253/pretrain500m-20260912-v1/source/old-source-overlap-v1/scan.py --manifest /ssd/scxi253/pretrain500m-20260912-v1/source/old-source-overlap-v1/old-source-manifest.json --expected-manifest-sha256 8291e6c2a9af017904a3cc17b838cff231ff1a6da4cf7b9fe810b2dd6995a6e5 --index-report /ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-three-tranche/report.json --expected-index-report-sha256 a644aaa72d371e0da1db917a30d6a5d227e7585fcbc0e5e4a03e88d5ece021ce --output /ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1 --workers 4\n2488030       00:59 98.5  0.0 /ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python /ssd/scxi253/pretrain500m-20260912-v1/source/old-source-overlap-v1/scan.py --manifest /ssd/scxi253/pretrain500m-20260912-v1/source/old-source-overlap-v1/old-source-manifest.json --expected-manifest-sha256 8291e6c2a9af017904a3cc17b838cff231ff1a6da4cf7b9fe810b2dd6995a6e5 --index-report /ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-three-tranche/report.json --expected-index-report-sha256 a644aaa72d371e0da1db917a30d6a5d227e7585fcbc0e5e4a03e88d5ece021ce --output /ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1 --workers 4\n"
+}

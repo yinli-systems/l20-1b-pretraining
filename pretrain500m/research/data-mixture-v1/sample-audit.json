@@ -1,0 +1,833 @@
+[
+  {
+    "id": "fineweb_edu",
+    "repo_id": "HuggingFaceFW/fineweb-edu",
+    "revision": "87f09149ef4734204d70ed1d046ddc9ca3f2b8f9",
+    "prefix": "data/CC-MAIN-2024-",
+    "checked_utc": "2026-09-13T16:50:39.112506+00:00",
+    "method": "hash-selected single shard and row group; up to 128 rows",
+    "training_admitted": false,
+    "representative_quality_estimate": false,
+    "path": "data/CC-MAIN-2024-46/000_00000.parquet",
+    "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu/resolve/87f09149ef4734204d70ed1d046ddc9ca3f2b8f9/data/CC-MAIN-2024-46/000_00000.parquet",
+    "candidate_shards": 500,
+    "schema": [
+      "text",
+      "id",
+      "dump",
+      "url",
+      "date",
+      "file_path",
+      "language",
+      "language_score",
+      "token_count",
+      "score",
+      "int_score"
+    ],
+    "row_groups": 506,
+    "selected_row_group": 423,
+    "file_bytes": 1560148236,
+    "row_group_rows": 1000,
+    "status": "SAMPLE_DOWNLOADED",
+    "rows": 128,
+    "sample_bytes": 783569,
+    "sample_sha256": "cea208dfa644e29f55f12a8b0c093f4b21d970476a872a1212d24773c21e31b2",
+    "text_rows": 128,
+    "local_sample": "samples/fineweb_edu.jsonl",
+    "median_chars": 3728.5,
+    "within_sample_exact_duplicates": 0,
+    "network_bytes": 5248117,
+    "range_receipts": [
+      {
+        "offset": 0,
+        "length": 1,
+        "sha256": "5c62e091b8c0565f1bafad0dad5934276143ae2ccef7a5381e8ada5b1a8d26d2"
+      },
+      {
+        "offset": 1560082700,
+        "length": 65536,
+        "sha256": "d34d46de07a94ab41f08fd2cc2d4535f530ac744011dc33c013d1b23773f6088"
+      },
+      {
+        "offset": 1558009159,
+        "length": 2139069,
+        "sha256": "16399803da590a459da9cd8731185065e91efe35b14e895691f015388be21b02"
+      },
+      {
+        "offset": 1300673185,
+        "length": 2949392,
+        "sha256": "f0c086d25c242abae20b67c58a718cab1b8026c4ee45550caf443d73a22fdbf9"
+      },
+      {
+        "offset": 1303660975,
+        "length": 54099,
+        "sha256": "734819c5a00e3f6551fd464152377c4483f85b8caad633a924f720fdfdfb366a"
+      },
+      {
+        "offset": 1303622577,
+        "length": 38294,
+        "sha256": "c8595374a4ada0513877d82d76f545c366ad73c3fe5a045d5d907fa00934fc46"
+      },
+      {
+        "offset": 1303723941,
+        "length": 65,
+        "sha256": "01783474d91e1916460fdc8e31cc2d4482abb037618fb47719425178a15641e1"
+      },
+      {
+        "offset": 1303735458,
+        "length": 1397,
+        "sha256": "7341ddbba34415f5ecd4907186c284863038f99ac26710be7bd40301c046b877"
+      },
+      {
+        "offset": 1303736855,
+        "length": 264,
+        "sha256": "b63958be8c334ff0702476e154fe0199487f6bc3d4993eb5e46bc8d296df525d"
+      }
+    ]
+  },
+  {
+    "id": "dclm",
+    "repo_id": "mlfoundations/dclm-baseline-1.0-parquet",
+    "revision": "817d6752765f6a41261085171dd546b104f60626",
+    "prefix": "filtered/",
+    "checked_utc": "2026-09-13T16:50:39.114564+00:00",
+    "method": "hash-selected single shard and row group; up to 128 rows",
+    "training_admitted": false,
+    "representative_quality_estimate": false,
+    "path": "filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_06_of_10/local-shard_1_of_10/shard_00000178_processed.parquet",
+    "url": "https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0-parquet/resolve/817d6752765f6a41261085171dd546b104f60626/filtered/OH_eli5_vs_rw_v2_bigram_200k_train/fasttext_openhermes_reddit_eli5_vs_rw_v2_bigram_200k_train/processed_data/global-shard_06_of_10/local-shard_1_of_10/shard_00000178_processed.parquet",
+    "candidate_shards": 27938,
+    "schema": [
+      "text",
+      "url",
+      "id",
+      "language",
+      "language_score",
+      "fasttext_score"
+    ],
+    "row_groups": 1,
+    "selected_row_group": 0,
+    "file_bytes": 229756572,
+    "row_group_rows": 98325,
+    "status": "BLOCKED",
+    "error": "network budget exceeded; choose a smaller row group or shard",
+    "network_bytes": 65537,
+    "range_receipts": [
+      {
+        "offset": 0,
+        "length": 1,
+        "sha256": "5c62e091b8c0565f1bafad0dad5934276143ae2ccef7a5381e8ada5b1a8d26d2"
+      },
+      {
+        "offset": 229691036,
+        "length": 65536,
+        "sha256": "229cefed1572fbe8b19b27bd7c27fd647c19dea6a634afa4dcf040612790c2eb"
+      }
+    ]
+  },
+  {
+    "id": "finepdfs_en",
+    "repo_id": "HuggingFaceFW/finepdfs-edu",
+    "revision": "9cfabe2127faca99b3d5c4dc6d1fcb397399ebde",
+    "prefix": "data/eng_Latn/train/",
+    "checked_utc": "2026-09-13T16:50:39.134694+00:00",
+    "method": "hash-selected single shard and row group; up to 128 rows",
+    "training_admitted": false,
+    "representative_quality_estimate": false,
+    "path": "data/eng_Latn/train/000_00064.parquet",
+    "url": "https://huggingface.co/datasets/HuggingFaceFW/finepdfs-edu/resolve/9cfabe2127faca99b3d5c4dc6d1fcb397399ebde/data/eng_Latn/train/000_00064.parquet",
+    "candidate_shards": 100,
+    "schema": [
+      "text",
+      "id",
+      "dump",
+      "url",
+      "date",
+      "file_path",
+      "offset",
+      "token_count",
+      "language",
+      "page_average_lid",
+      "page_average_lid_score",
+      "full_doc_lid",
+      "full_doc_lid_score",
+      "per_page_languages",
+      "is_truncated",
+      "extractor",
+      "page_ends",
+      "fw_edu_scores",
+      "minhash_cluster_size",
+      "duplicate_count"
+    ],
+    "row_groups": 229,
+    "selected_row_group": 8,
+    "file_bytes": 2965122989,
+    "row_group_rows": 1000,
+    "status": "SAMPLE_DOWNLOADED",
+    "rows": 128,
+    "sample_bytes": 1956342,
+    "sample_sha256": "b593e079dfb75dd00411d83ae166c301f8097a4950d7b4595f6298a89927b0d6",
+    "text_rows": 128,
+    "local_sample": "samples/finepdfs_en.jsonl",
+    "median_chars": 7200.0,
+    "within_sample_exact_duplicates": 0,
+    "network_bytes": 8518540,
+    "range_receipts": [
+      {
+        "offset": 0,
+        "length": 1,
+        "sha256": "5c62e091b8c0565f1bafad0dad5934276143ae2ccef7a5381e8ada5b1a8d26d2"
+      },
+      {
+        "offset": 2965057453,
+        "length": 65536,
+        "sha256": "04ed160d6d46db2a22df16b9e77d8830a26f746afc673e890512a364928da8ae"
+      },
+      {
+        "offset": 2964158076,
+        "length": 964905,
+        "sha256": "62968b9a772e6b33345981c3a3b22c379dc2a1826170733f19a5a3b99905cf59"
+      },
+      {
+        "offset": 63289788,
+        "length": 7392286,
+        "sha256": "c31726415fc8a7ae43cecbbc1e5b59c842e83b9bc9b4d65f09b16cccd0a9cf9c"
+      },
+      {
+        "offset": 70720563,
+        "length": 57673,
+        "sha256": "567ebeb184b150ee121c2058a91c576327d6d142cce8410b8514d31b735ba4ee"
+      },
+      {
+        "offset": 70682074,
+        "length": 38054,
+        "sha256": "bf5c4ccd6b4a248dcbe9dbc60e9f220748066327caf505bbfd1d6cf57ee608f4"
+      },
+      {
+        "offset": 70804804,
+        "length": 85,
+        "sha256": "c1d6ef4aa6af9aaf7948e0eda8d413be5cb08b05004fdb0132d5a747742add93"
+      }
+    ]
+  },
+  {
+    "id": "finemath4",
+    "repo_id": "HuggingFaceTB/finemath",
+    "revision": "e92b25a616738fe95dc186b64dfb19f9c8525594",
+    "prefix": "finemath-4plus/",
+    "checked_utc": "2026-09-13T16:50:43.865321+00:00",
+    "method": "hash-selected single shard and row group; up to 128 rows",
+    "training_admitted": false,
+    "representative_quality_estimate": false,
+    "path": "finemath-4plus/train-00056-of-00064.parquet",
+    "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/finemath-4plus/train-00056-of-00064.parquet",
+    "candidate_shards": 64,
+    "schema": [
+      "url",
+      "fetch_time",
+      "content_mime_type",
+      "warc_filename",
+      "warc_record_offset",
+      "warc_record_length",
+      "text",
+      "token_count",
+      "char_count",
+      "metadata",
+      "score",
+      "int_score",
+      "crawl",
+      "snapshot_type",
+      "language",
+      "language_score"
+    ],
+    "row_groups": 105,
+    "selected_row_group": 58,
+    "file_bytes": 285402320,
+    "row_group_rows": 1000,
+    "status": "SAMPLE_DOWNLOADED",
+    "rows": 128,
+    "sample_bytes": 777787,
+    "sample_sha256": "2537ef99403e54199d6a098ad9df8bdff698f130ffe206a9a9f29f6b0479c6ca",
+    "text_rows": 128,
+    "local_sample": "samples/finemath4.jsonl",
+    "median_chars": 2903.5,
+    "within_sample_exact_duplicates": 0,
+    "network_bytes": 3416686,
+    "range_receipts": [
+      {
+        "offset": 0,
+        "length": 1,
+        "sha256": "5c62e091b8c0565f1bafad0dad5934276143ae2ccef7a5381e8ada5b1a8d26d2"
+      },
+      {
+        "offset": 285336784,
+        "length": 65536,
+        "sha256": "1d2dc3590f841cc5d78d902f645add486bffaf9442f0481f4b95f8642019c32e"
+      },
+      {
+        "offset": 284810927,
+        "length": 591385,
+        "sha256": "2e666c894d8efdae520e993b2583a6f18666847c524c612c82405d9bbe8c727e"
+      },
+      {
+        "offset": 157775999,
+        "length": 2706134,
+        "sha256": "2dceaa9b32bbda8844ef66f315e183e1d5071369b002903db019c95418780009"
+      },
+      {
+        "offset": 157663191,
+        "length": 52201,
+        "sha256": "1b84867847875b7abf9d1e5b979f3e9d1c554ebfd076b873685746cd8a482c63"
+      },
+      {
+        "offset": 160505112,
+        "length": 65,
+        "sha256": "01783474d91e1916460fdc8e31cc2d4482abb037618fb47719425178a15641e1"
+      },
+      {
+        "offset": 160501582,
+        "length": 1111,
+        "sha256": "be85a8314752f73ffe9089d5c7c6761c21fd7cbd69d950e6bc183d9884a59dbb"
+      },
+      {
+        "offset": 160502800,
+        "length": 253,
+        "sha256": "6945d11e70e649c81e64340475d827b42391e6c091cc23ee58db3bc946a350bb"
+      }
+    ]
+  },
+  {
+    "id": "infiwebmath4",
+    "repo_id": "HuggingFaceTB/finemath",
+    "revision": "e92b25a616738fe95dc186b64dfb19f9c8525594",
+    "prefix": "infiwebmath-4plus/",
+    "checked_utc": "2026-09-13T16:50:55.862817+00:00",
+    "method": "hash-selected single shard and row group; up to 128 rows",
+    "training_admitted": false,
+    "representative_quality_estimate": false,
+    "path": "infiwebmath-4plus/train-00006-of-00032.parquet",
+    "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath/resolve/e92b25a616738fe95dc186b64dfb19f9c8525594/infiwebmath-4plus/train-00006-of-00032.parquet",
+    "candidate_shards": 32,
+    "schema": [
+      "url",
+      "metadata",
+      "score",
+      "int_score",
+      "token_count",
+      "char_count",
+      "text"
+    ],
+    "row_groups": 197,
+    "selected_row_group": 40,
+    "file_bytes": 603144084,
+    "row_group_rows": 1000,
+    "status": "SAMPLE_DOWNLOADED",
+    "rows": 128,
+    "sample_bytes": 638107,
+    "sample_sha256": "b77c064f400b1dc9fadc5be84ed44904558832cb41432bcd28f87abc82e8fb35",
+    "text_rows": 128,
+    "local_sample": "samples/infiwebmath4.jsonl",
+    "median_chars": 3076.5,
+    "within_sample_exact_duplicates": 0,
+    "network_bytes": 3744230,
+    "range_receipts": [
+      {
+        "offset": 0,
+        "length": 1,
+        "sha256": "5c62e091b8c0565f1bafad0dad5934276143ae2ccef7a5381e8ada5b1a8d26d2"
+      },
+      {
+        "offset": 603078548,
+        "length": 65536,
+        "sha256": "416d43d9b616ec9c369f90ffabd7d48f231381ae8eb0cf6a47d4b92269b5c95c"
+      },
+      {
+        "offset": 601891240,
+        "length": 1252836,
+        "sha256": "5d9a180e71cf64b474f522f4e5d4ef4d803380a5f98745dbecdbdb0bb6d6a34c"
+      },
+      {
+        "offset": 123645472,
+        "length": 2374382,
+        "sha256": "fe9958bf35fe5bc3950762eb67773df1336814840c7e089e1166cedbe9be16d4"
+      },
+      {
+        "offset": 123077126,
+        "length": 49970,
+        "sha256": "4833f8ac09311f4a3940aff88a31c34220936dd1b9bceb45c8d6ed1c13558588"
+      },
+      {
+        "offset": 123633735,
+        "length": 1233,
+        "sha256": "c95c6d66b6976df27c588a75135d4b767834205bd7ae108c7f92031fbc114238"
+      },
+      {
+        "offset": 123635072,
+        "length": 272,
+        "sha256": "9a0e991eca9e627f43d399e3ff4036e1898d8de14d16980843192ab6e3b8959c"
+      }
+    ]
+  },
+  {
+    "id": "stackedu_python_ids",
+    "repo_id": "HuggingFaceTB/stack-edu",
+    "revision": "eeec5caac5cc3758a18f1d3ba4416837a9ba814c",
+    "prefix": "Python/",
+    "checked_utc": "2026-09-13T16:50:58.253851+00:00",
+    "method": "hash-selected single shard and row group; up to 128 rows",
+    "training_admitted": false,
+    "representative_quality_estimate": false,
+    "path": "Python/train-00002-of-00005.parquet",
+    "url": "https://huggingface.co/datasets/HuggingFaceTB/stack-edu/resolve/eeec5caac5cc3758a18f1d3ba4416837a9ba814c/Python/train-00002-of-00005.parquet",
+    "candidate_shards": 5,
+    "schema": [
+      "blob_id",
+      "language",
+      "repo_name",
+      "path",
+      "src_encoding",
+      "length_bytes",
+      "score",
+      "int_score",
+      "detected_licenses",
+      "license_type"
+    ],
+    "row_groups": 5058,
+    "selected_row_group": 4741,
+    "file_bytes": 500172909,
+    "row_group_rows": 1000,
+    "status": "SAMPLE_DOWNLOADED",
+    "rows": 128,
+    "sample_bytes": 31791,
+    "sample_sha256": "60d2acfe721b251573a10c5afef083174923ec702346799a216baec4f596496f",
+    "text_rows": 0,
+    "local_sample": "samples/stackedu_python_ids.jsonl",
+    "median_chars": 0.0,
+    "within_sample_exact_duplicates": 0,
+    "network_bytes": 5845215,
+    "range_receipts": [
+      {
+        "offset": 0,
+        "length": 1,
+        "sha256": "5c62e091b8c0565f1bafad0dad5934276143ae2ccef7a5381e8ada5b1a8d26d2"
+      },
+      {
+        "offset": 500107373,
+        "length": 65536,
+        "sha256": "4b79a4f3819fcc87ab29a0ceef4f66ff5018b3fe4db81065457d10574cba94c6"
+      },
+      {
+        "offset": 494485593,
+        "length": 5687308,
+        "sha256": "e11618e899bbea87de3348d136d17ba8a5386af564a039bdf84ef1ed3ecc3371"
+      },
+      {
+        "offset": 463566169,
+        "length": 42057,
+        "sha256": "fe2a8e042fd383bed871ef9f5f777423881262a5830ad0f6b13e71d4eaf703a7"
+      },
+      {
+        "offset": 463608303,
+        "length": 24798,
+        "sha256": "39ef1ec980e9c21fcd6c695ba219e5982e50951daa53275cd367e51ba4d10ccb"
+      },
+      {
+        "offset": 463633101,
+        "length": 22703,
+        "sha256": "9449a7c6130cd7d0450ead1d89e914cf7f64274b9a8512e3d5bd242999e07d28"
+      },
+      {
+        "offset": 463608226,
+        "length": 77,
+        "sha256": "7b89b69dad9e580b34f737e46e0b2921fd9506743ba89be8438f4e35a1dfb727"
+      },
+      {
+        "offset": 463660965,
+        "length": 1430,
+        "sha256": "6fd33b2652cbddf48a4271d49fc1e02df88ed140fea3a10d1cc408607a341508"
+      },
+      {
+        "offset": 463662395,
+        "length": 369,
+        "sha256": "d4cb72f5045b9418a0eaa7258a7f95440aaeef55d7227af8946fa00796d13f64"
+      },
+      {
+        "offset": 463662764,
+        "length": 688,
+        "sha256": "211405a688c349e828aa7e39ef8d6073a68ca3364f3aa97b43a10f448d2fe4a6"
+      },
+      {
+        "offset": 463663452,
+        "length": 248,
+        "sha256": "68435b0fcc5b81f8e51116649ebf8c58e85a229c2e565e786f4658e196705612"
+      }
+    ]
+  },
+  {
+    "id": "cosmopedia2",
+    "repo_id": "HuggingFaceTB/cosmopedia-v2",
+    "revision": "3ba9d605774198c5868892d7a8deda78031a781f",
+    "prefix": "cosmopedia-v2/",
+    "checked_utc": "2026-09-13T16:50:59.801480+00:00",
+    "method": "hash-selected single shard and row group; up to 128 rows",
+    "training_admitted": false,
+    "representative_quality_estimate": false,
+    "path": "cosmopedia-v2/train-00079-of-00104.parquet",
+    "url": "https://huggingface.co/datasets/HuggingFaceTB/cosmopedia-v2/resolve/3ba9d605774198c5868892d7a8deda78031a781f/cosmopedia-v2/train-00079-of-00104.parquet",
+    "candidate_shards": 104,
+    "schema": [
+      "prompt",
+      "text",
+      "token_length",
+      "audience",
+      "format",
+      "seed_data"
+    ],
+    "row_groups": 377,
+    "selected_row_group": 169,
+    "file_bytes": 1177011979,
+    "row_group_rows": 1000,
+    "status": "SAMPLE_DOWNLOADED",
+    "rows": 128,
+    "sample_bytes": 689093,
+    "sample_sha256": "a1857a251da18026b016e53bdd2075d957d329e08f7d14f887493d21180d01a5",
+    "text_rows": 128,
+    "local_sample": "samples/cosmopedia2.jsonl",
+    "median_chars": 3479.5,
+    "within_sample_exact_duplicates": 0,
+    "network_bytes": 6080857,
+    "range_receipts": [
+      {
+        "offset": 0,
+        "length": 1,
+        "sha256": "5c62e091b8c0565f1bafad0dad5934276143ae2ccef7a5381e8ada5b1a8d26d2"
+      },
+      {
+        "offset": 1176946443,
+        "length": 65536,
+        "sha256": "53df42e4cdb39626f742bdcc63dfdf3073962b2c9135cb090d2bd2b000ef46ff"
+      },
+      {
+        "offset": 1174091610,
+        "length": 2920361,
+        "sha256": "4c563044fbeef3c76422e3cc9569d773930510edf694802b1cce32e37c07bc58"
+      },
+      {
+        "offset": 528874701,
+        "length": 2308780,
+        "sha256": "c4f68ef00aff71ceb2908e1012adcf87f6cb46b5a97b1b0a127a236696b22448"
+      },
+      {
+        "offset": 528085186,
+        "length": 786179,
+        "sha256": "c7789893b6ef4566b633e15b44f86a46851d05cdb3c391b8285eda79a24fa8ed"
+      }
+    ]
+  },
+  {
+    "id": "fineweb2hq_zh",
+    "repo_id": "epfml/FineWeb2-HQ",
+    "revision": "c0c06e94fd3a44ae9e802b2b0fc533817601eb5e",
+    "prefix": "cmn_Hani/",
+    "checked_utc": "2026-09-13T16:51:11.407262+00:00",
+    "method": "hash-selected single shard and row group; up to 128 rows",
+    "training_admitted": false,
+    "representative_quality_estimate": false,
+    "path": "cmn_Hani/000_00036.parquet",
+    "url": "https://huggingface.co/datasets/epfml/FineWeb2-HQ/resolve/c0c06e94fd3a44ae9e802b2b0fc533817601eb5e/cmn_Hani/000_00036.parquet",
+    "candidate_shards": 975,
+    "schema": [
+      "text",
+      "id",
+      "date",
+      "dump",
+      "embeddings",
+      "file_path",
+      "language",
+      "language_score",
+      "language_script",
+      "minhash_cluster_size",
+      "top_langs",
+      "url",
+      "quality_score"
+    ],
+    "row_groups": 80,
+    "selected_row_group": 48,
+    "file_bytes": 1155952261,
+    "row_group_rows": 1000,
+    "status": "SAMPLE_DOWNLOADED",
+    "rows": 128,
+    "sample_bytes": 469086,
+    "sample_sha256": "99f1445900587bb9500367a9357828653ab7d50fd17e213874e13d69fdb72ba0",
+    "text_rows": 128,
+    "local_sample": "samples/fineweb2hq_zh.jsonl",
+    "median_chars": 571.5,
+    "within_sample_exact_duplicates": 0,
+    "network_bytes": 4040635,
+    "range_receipts": [
+      {
+        "offset": 0,
+        "length": 1,
+        "sha256": "5c62e091b8c0565f1bafad0dad5934276143ae2ccef7a5381e8ada5b1a8d26d2"
+      },
+      {
+        "offset": 1155886725,
+        "length": 65536,
+        "sha256": "6884d9d01683cab978b609120051121bde37c5865e3c760c1e86344fd45ca1f6"
+      },
+      {
+        "offset": 1155623000,
+        "length": 329253,
+        "sha256": "8eb3e8bb3ec192f4360c42e4a76013e4b348b7742ef22c03d2bbdd0022f4e408"
+      },
+      {
+        "offset": 720654246,
+        "length": 3534436,
+        "sha256": "2557e2bf1abc342dafdcf6f9b56278eeac4ff8029e8f3acef48019528277bbd7"
+      },
+      {
+        "offset": 735674513,
+        "length": 58944,
+        "sha256": "2cdbf78d0c95f32289f2644add27b0b5ab299bc5edaaff5e1f991399dee8b0f6"
+      },
+      {
+        "offset": 724188682,
+        "length": 52401,
+        "sha256": "8386253293941bd5afe3c4db3c5c38e194c824bbfd7085b0a2e0a34afa8b95bc"
+      },
+      {
+        "offset": 735602923,
+        "length": 64,
+        "sha256": "768b4664b8305b38bc8c1b8d7a4fc8f296250a49ed423714734ad2dc9015b231"
+      }
+    ]
+  },
+  {
+    "id": "fineweb2hq_es",
+    "repo_id": "epfml/FineWeb2-HQ",
+    "revision": "c0c06e94fd3a44ae9e802b2b0fc533817601eb5e",
+    "prefix": "spa_Latn/",
+    "checked_utc": "2026-09-13T16:51:14.618685+00:00",
+    "method": "hash-selected single shard and row group; up to 128 rows",
+    "training_admitted": false,
+    "representative_quality_estimate": false,
+    "path": "spa_Latn/000_00042.parquet",
+    "url": "https://huggingface.co/datasets/epfml/FineWeb2-HQ/resolve/c0c06e94fd3a44ae9e802b2b0fc533817601eb5e/spa_Latn/000_00042.parquet",
+    "candidate_shards": 504,
+    "schema": [
+      "text",
+      "id",
+      "date",
+      "dump",
+      "embeddings",
+      "file_path",
+      "language",
+      "language_score",
+      "language_script",
+      "minhash_cluster_size",
+      "top_langs",
+      "url",
+      "quality_score"
+    ],
+    "row_groups": 87,
+    "selected_row_group": 51,
+    "file_bytes": 1180201283,
+    "row_group_rows": 1000,
+    "status": "SAMPLE_DOWNLOADED",
+    "rows": 128,
+    "sample_bytes": 421155,
+    "sample_sha256": "3cc24f1e3df8b21eec59b77b0903dcba54da69cdef85936313588d7965cb43f0",
+    "text_rows": 128,
+    "local_sample": "samples/fineweb2hq_es.jsonl",
+    "median_chars": 1809.5,
+    "within_sample_exact_duplicates": 0,
+    "network_bytes": 3749827,
+    "range_receipts": [
+      {
+        "offset": 0,
+        "length": 1,
+        "sha256": "5c62e091b8c0565f1bafad0dad5934276143ae2ccef7a5381e8ada5b1a8d26d2"
+      },
+      {
+        "offset": 1180135747,
+        "length": 65536,
+        "sha256": "f8c2bc9ec8ca8906a4c5c5002a0aa7ef3aa09fc31f3b8650565ff674eb634d90"
+      },
+      {
+        "offset": 1179803198,
+        "length": 398077,
+        "sha256": "fc2bdf5fd718a4e27df039073ed5af5002ac216711f84abb56a4d839685879d3"
+      },
+      {
+        "offset": 650842907,
+        "length": 3147931,
+        "sha256": "8d622abf515915338e52f2d596dbbcea9a28b55d0d05803801982fc951a411fa"
+      },
+      {
+        "offset": 663816656,
+        "length": 85817,
+        "sha256": "8cf1bcbf82abd477f4249169cb50a245b358faaa1dc66b1accf2715bf4c8f1a9"
+      },
+      {
+        "offset": 653990838,
+        "length": 52401,
+        "sha256": "9439c0e39448b2c0ec1c8e13df7728553197aa5a448938d6a4c314d44fc693f4"
+      },
+      {
+        "offset": 663762322,
+        "length": 64,
+        "sha256": "be82f7a57a6a5ea9b44d66e2defa25a1ad8b8c41f14804ecbe6ab390d7dc950e"
+      }
+    ]
+  },
+  {
+    "id": "python_edu",
+    "repo_id": "HuggingFaceTB/smollm-corpus",
+    "revision": "3ba9d605774198c5868892d7a8deda78031a781f",
+    "prefix": "python-edu/",
+    "checked_utc": "2026-09-13T16:51:18.376118+00:00",
+    "method": "hash-selected single shard and row group; up to 128 rows",
+    "training_admitted": false,
+    "representative_quality_estimate": false,
+    "path": "python-edu/train-00000-of-00002.parquet",
+    "url": "https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus/resolve/3ba9d605774198c5868892d7a8deda78031a781f/python-edu/train-00000-of-00002.parquet",
+    "candidate_shards": 2,
+    "schema": [
+      "blob_id",
+      "repo_name",
+      "path",
+      "length_bytes",
+      "score",
+      "int_score"
+    ],
+    "row_groups": 3840,
+    "selected_row_group": 472,
+    "file_bytes": 321933475,
+    "row_group_rows": 1000,
+    "status": "SAMPLE_DOWNLOADED",
+    "rows": 128,
+    "sample_bytes": 22148,
+    "sample_sha256": "bd8552b9a71b3f515bd21cb4ae5c54d33f7a3aee3c21c1193629e028e75b4d87",
+    "text_rows": 0,
+    "local_sample": "samples/python_edu.jsonl",
+    "median_chars": 0.0,
+    "within_sample_exact_duplicates": 0,
+    "network_bytes": 3067968,
+    "range_receipts": [
+      {
+        "offset": 0,
+        "length": 1,
+        "sha256": "5c62e091b8c0565f1bafad0dad5934276143ae2ccef7a5381e8ada5b1a8d26d2"
+      },
+      {
+        "offset": 321867939,
+        "length": 65536,
+        "sha256": "755ed1e2d11a79d4d8f49913eb2c7cd703ec471e50c61fe3034aa2fffd397173"
+      },
+      {
+        "offset": 319009665,
+        "length": 2923802,
+        "sha256": "3c004c17ec7c2cac03f5b28771ff023c43ae04c4a13bfca5ff7ac56927d81e22"
+      },
+      {
+        "offset": 39224054,
+        "length": 41999,
+        "sha256": "612e2aaa14a3284759e86c59c6e21a23b55343ef5ef1c1cc692b75809aff0df4"
+      },
+      {
+        "offset": 39266205,
+        "length": 14984,
+        "sha256": "8b7e1f2bac3e3eb4aee102a2f693e01b72fe75eb1fdbc7fe6b9542e0641d211b"
+      },
+      {
+        "offset": 39281292,
+        "length": 20442,
+        "sha256": "a5879bca448cda5aebac4487cff9035d5f4234c9e1b4e763904d48d1c5425360"
+      },
+      {
+        "offset": 39306568,
+        "length": 1068,
+        "sha256": "87154da8691700a5d4259abf1dfc5854d42b6625e3ce21e307e838273158944d"
+      },
+      {
+        "offset": 39307740,
+        "length": 136,
+        "sha256": "ca25a40990386bd980ce858e25335ba02665fd7f4d43bd55104154986deb153d"
+      }
+    ]
+  },
+  {
+    "id": "smol_smoltalk",
+    "repo_id": "HuggingFaceTB/smol-smoltalk",
+    "revision": "f73fe857d519ff6ac5af2ea67c4d3834da7b8bcc",
+    "prefix": "data/train-",
+    "checked_utc": "2026-09-13T16:51:27.274955+00:00",
+    "method": "hash-selected single shard and row group; up to 128 rows",
+    "training_admitted": false,
+    "representative_quality_estimate": false,
+    "path": "data/train-00003-of-00004.parquet",
+    "url": "https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk/resolve/f73fe857d519ff6ac5af2ea67c4d3834da7b8bcc/data/train-00003-of-00004.parquet",
+    "candidate_shards": 4,
+    "schema": [
+      "messages",
+      "source"
+    ],
+    "row_groups": 116,
+    "selected_row_group": 64,
+    "file_bytes": 231879938,
+    "row_group_rows": 1000,
+    "status": "SAMPLE_DOWNLOADED",
+    "rows": 128,
+    "sample_bytes": 556379,
+    "sample_sha256": "f3faf823edfd6f943c6f8e513174c59c17d5989c601c36d0dceacc4534c249ce",
+    "text_rows": 0,
+    "local_sample": "samples/smol_smoltalk.jsonl",
+    "median_chars": 0.0,
+    "within_sample_exact_duplicates": 0,
+    "network_bytes": 2278075,
+    "range_receipts": [
+      {
+        "offset": 0,
+        "length": 1,
+        "sha256": "5c62e091b8c0565f1bafad0dad5934276143ae2ccef7a5381e8ada5b1a8d26d2"
+      },
+      {
+        "offset": 231814402,
+        "length": 65536,
+        "sha256": "f6edede8d01afbe50b728316f1cc06d92aaf19cafad1cc4b6daed4f3ad90fbce"
+      },
+      {
+        "offset": 231733997,
+        "length": 145933,
+        "sha256": "cef25eb7d2be0e5706b7f1a148f6cc40fd18bb549b79cd0544178ddd23ceab46"
+      },
+      {
+        "offset": 129150407,
+        "length": 2064782,
+        "sha256": "9b5e08306727dddbf8c035dc50d6cceece47e0fdc95adc213b2b2f1f510c7ae6"
+      },
+      {
+        "offset": 131215189,
+        "length": 1043,
+        "sha256": "56a091599b4f4933b155b3cefd7f6d71739fbc8f001eb96f31dd4755209afbba"
+      },
+      {
+        "offset": 131216232,
+        "length": 780,
+        "sha256": "a272046d570f2dd4b4bcaada8b61cabba27bb3057c06eeb581589713509216ae"
+      }
+    ]
+  },
+  {
+    "id": "nemotron_specialized",
+    "repo_id": "nvidia/Nemotron-Pretraining-Specialized-v1",
+    "revision": "9ed3718b5f2ae29074c5e34e64115432b7c4320f",
+    "prefix": "Nemotron-Pretraining-SynthQA/",
+    "checked_utc": "2026-09-13T16:51:30.066976+00:00",
+    "method": "hash-selected single shard and row group; up to 128 rows",
+    "training_admitted": false,
+    "representative_quality_estimate": false,
+    "status": "BLOCKED",
+    "error": "no matching Parquet files"
+  }
+]

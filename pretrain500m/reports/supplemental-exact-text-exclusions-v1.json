@@ -1,0 +1,126 @@
+{
+  "status": "EXACT_TEXT_EXCLUSION_PLAN_BOUND_AND_VERIFIED",
+  "checked_utc": "2026-09-13T21:20:45.221049+00:00",
+  "audit_report_sha256": "e8d87df65ab22e6d83dce79ee16dc9ccd92160b8a33d875ba5f794bbb5efea49",
+  "candidate_file_sha256": "eab988703973fcdf9a48463a752092a2059bcc00aefe7035fb934a98f6992f69",
+  "reference_bundle_sha256": "4a00a3aa9cfdd9f3a85d3b886a8de3b23687b1690c34b66f139ab451080a4e5c",
+  "exclude_text_sha256_across_all_tranches": [
+    "a2821c8a4854bcbcb1c41dc694d4da3289a721ee4992468e517efd89a500deee",
+    "af6c5fe44773728ada228bef3c42e4c3c89836cfdc7ec0d89326eb1cdae0248b"
+  ],
+  "verified_candidates": [
+    {
+      "source_id": "code_python",
+      "tranche": 1,
+      "row": 2447,
+      "text_sha256": "a2821c8a4854bcbcb1c41dc694d4da3289a721ee4992468e517efd89a500deee",
+      "provenance": {
+        "source_id": "code_python",
+        "repo_id": "HuggingFaceTB/stack-edu",
+        "revision": "eeec5caac5cc3758a18f1d3ba4416837a9ba814c",
+        "shard": "Python/train-00001-of-00005.parquet",
+        "row_group": 1946,
+        "row_in_group": 80,
+        "physical_row": 1946080
+      },
+      "url": null,
+      "repo_name": "eaniyom/python-challenge-solutions",
+      "matches": [
+        {
+          "mode": "literal",
+          "match_kind": "exact_normalized_span",
+          "normalized_start": 426,
+          "normalized_end": 505,
+          "matched_sha256": "0ee8a2773569f9f3bca720ff0b6f7f08f984eae7a597c84bf41ba86309909774",
+          "reference_owners": [
+            {
+              "reference_id": "34945d4d4541dd75b10203bae4bc55d3a4d1f59e6cbde7d3f74e9094ccc27443",
+              "field": "code",
+              "field_index": 0,
+              "provenance": {
+                "provider": "huggingface",
+                "repo": "google-research-datasets/mbpp",
+                "revision": "4bb6404fdc6cacfda99d4ac4205087b89d32030c",
+                "path": "full/validation-00000-of-00001.parquet",
+                "row": 14,
+                "upstream_id": 525
+              }
+            }
+          ],
+          "reference_owner_count": 1
+        }
+      ]
+    },
+    {
+      "source_id": "finemath4",
+      "tranche": 1,
+      "row": 23086,
+      "text_sha256": "af6c5fe44773728ada228bef3c42e4c3c89836cfdc7ec0d89326eb1cdae0248b",
+      "provenance": {
+        "source_id": "finemath4",
+        "repo_id": "HuggingFaceTB/finemath",
+        "revision": "e92b25a616738fe95dc186b64dfb19f9c8525594",
+        "shard": "finemath-4plus/train-00053-of-00064.parquet",
+        "row_group": 32,
+        "row_in_group": 86,
+        "physical_row": 32086
+      },
+      "url": "https://web2.0calc.com/questions/help-plz_33275",
+      "repo_name": null,
+      "matches": [
+        {
+          "mode": "literal",
+          "match_kind": "exact_normalized_span",
+          "normalized_start": 26,
+          "normalized_end": 218,
+          "matched_sha256": "52e5c8c6fb0f4971dd7e88c872ae893c662585f44561f9e29fba8e74fcc80ca5",
+          "reference_owners": [
+            {
+              "reference_id": "984cb06ac2714e6b3b61ed929bca8645233679e85b4a965d638e9f2b1ebfb936",
+              "field": "problem",
+              "field_index": 0,
+              "provenance": {
+                "provider": "huggingface",
+                "repo": "HuggingFaceH4/MATH-500",
+                "revision": "6e4ed1a2a79af7d8630a6b768ec859cb5af4d3be",
+                "path": "test.jsonl",
+                "row": 294,
+                "upstream_id": null
+              }
+            }
+          ],
+          "reference_owner_count": 1
+        },
+        {
+          "mode": "literal",
+          "match_kind": "exact_normalized_span",
+          "normalized_start": 113,
+          "normalized_end": 305,
+          "matched_sha256": "fef27fe7e071306ca38f88a3e711503e1caaaaa2f452c7aea00078ce05c51d1b",
+          "reference_owners": [
+            {
+              "reference_id": "984cb06ac2714e6b3b61ed929bca8645233679e85b4a965d638e9f2b1ebfb936",
+              "field": "problem",
+              "field_index": 0,
+              "provenance": {
+                "provider": "huggingface",
+                "repo": "HuggingFaceH4/MATH-500",
+                "revision": "6e4ed1a2a79af7d8630a6b768ec859cb5af4d3be",
+                "path": "test.jsonl",
+                "row": 294,
+                "upstream_id": null
+              }
+            }
+          ],
+          "reference_owner_count": 1
+        }
+      ]
+    }
+  ],
+  "candidate_rows": 2,
+  "training_admitted": false,
+  "raw_files_modified": false,
+  "packing_has_consumed_plan": false,
+  "family_or_near_duplicate_expansion_completed": false,
+  "rule": "Exclude byte-identical content matching these hashes from every training pool before packing; apply broader family/near-duplicate rules separately."
+}

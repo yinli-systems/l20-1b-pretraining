@@ -1,0 +1,251 @@
+{
+  "protocol_id": "p529m-fast-start-nosynthetic-v1",
+  "status": "PREREGISTERED_SEPARATE_SCREEN_DATA_ADMISSION_PENDING",
+  "created_date": "2026-09-13",
+  "objective": "Broad text capability improvement, measured against smaller, similar and larger models; universal superiority is unproven",
+  "base_checkpoint_sha256": "13aa21721e15c48cdfdafe30d8fdd41d9c95c90be766327661d96af1e90dd6cf",
+  "architecture_changes_in_cpt": false,
+  "mixture_unit": "prediction tokens after filtering, global deduplication, split assignment and tokenization",
+  "recipe_status": "HYPOTHESES_NOT_EMPIRICALLY_OPTIMAL",
+  "sources": {
+    "fineweb_edu": {
+      "repo": "HuggingFaceFW/fineweb-edu",
+      "subset": "fresh admitted documents plus explicitly measured replay"
+    },
+    "dclm": {
+      "repo": "HuggingFaceFW/dclm_100BT",
+      "upstream": "mlfoundations/dclm-baseline-1.0-parquet"
+    },
+    "finepdfs_edu": {
+      "repo": "HuggingFaceFW/finepdfs-edu",
+      "subset": "eng_Latn; page language and extraction checks"
+    },
+    "math": {
+      "components": {
+        "HuggingFaceTB/finemath:finemath-4plus": 0.75,
+        "HuggingFaceTB/finemath:infiwebmath-4plus": 0.25
+      },
+      "overlap_must_be_accounted": true
+    },
+    "code": {
+      "repo": "HuggingFaceTB/stack-edu",
+      "content_rehydration": "Software Heritage public S3; raw SHA1 must equal blob_id",
+      "pilot_languages": {
+        "Python": 0.5,
+        "JavaScript": 0.2,
+        "TypeScript": 0.1,
+        "Cpp": 0.1,
+        "Java": 0.1
+      },
+      "unknown_license_admitted": false,
+      "syntax_checks_only_do_not_prove_correctness": true
+    },
+    "synthetic": {
+      "repo": "HuggingFaceTB/smollm-corpus",
+      "subset": "cosmopedia-v2",
+      "cap_percent": 5,
+      "alternative_requires_separate_ablation": "nvidia/Nemotron-Pretraining-Specialized-v1",
+      "scope": "No synthetic examples enter this separate screen. Original source investigation remains deferred."
+    },
+    "multilingual": {
+      "repo": "epfml/FineWeb2-HQ",
+      "within_source_percent": {
+        "cmn_Hani": 50,
+        "spa_Latn": 10,
+        "fra_Latn": 10,
+        "deu_Latn": 10,
+        "jpn_Jpan": 10,
+        "arb_Arab": 10
+      },
+      "claim": "coverage probe only; not all-language competence"
+    }
+  },
+  "recipes_percent": {
+    "F0_existing_web_control": {
+      "fineweb_edu": 100,
+      "dclm": 0,
+      "finepdfs_edu": 0,
+      "math": 0,
+      "code": 0,
+      "synthetic": 0,
+      "multilingual": 0
+    },
+    "F1_broad_english_no_synthetic": {
+      "fineweb_edu": 35,
+      "dclm": 20,
+      "finepdfs_edu": 20,
+      "math": 15,
+      "code": 10,
+      "synthetic": 0,
+      "multilingual": 0
+    },
+    "F2_reasoning_no_synthetic": {
+      "fineweb_edu": 25,
+      "dclm": 15,
+      "finepdfs_edu": 25,
+      "math": 20,
+      "code": 15,
+      "synthetic": 0,
+      "multilingual": 0
+    },
+    "F3_broad_multilingual_no_synthetic": {
+      "fineweb_edu": 25,
+      "dclm": 15,
+      "finepdfs_edu": 20,
+      "math": 15,
+      "code": 15,
+      "synthetic": 0,
+      "multilingual": 10
+    }
+  },
+  "preferred_starting_hypothesis": "F3_broad_multilingual_no_synthetic",
+  "quality_substrata": {
+    "math": "start with short complete explanations; cap repeated numeric templates; no blanket removal of elementary math",
+    "pdf": "segment by page/section, retain complete text across blocks, do not head-truncate entire documents",
+    "synthetic": "group by originating prompt and source document before split; factual checks required",
+    "web": "education score is a feature, not a factual correctness guarantee"
+  },
+  "screen": {
+    "model_parameters": 528748800,
+    "recipes": [
+      "F0_existing_web_control",
+      "F1_broad_english_no_synthetic",
+      "F2_reasoning_no_synthetic",
+      "F3_broad_multilingual_no_synthetic"
+    ],
+    "seeds": [
+      20260914,
+      20260915
+    ],
+    "prediction_tokens_per_run": 536870912,
+    "sequence_length": 2048,
+    "global_prediction_tokens_per_step": 2097152,
+    "world_size_per_run": 4,
+    "learning_rate_starting_hypothesis": 0.0001,
+    "lr_must_be_rechecked_after_data_shift": true,
+    "learning_rate_policy": "same LR and schedule across recipes; separate fixed-mixture 1e-4 versus 3e-4 bracket before confirmation",
+    "purpose": "triage harmful mixtures and discover directional signal; not a final quality claim",
+    "max_simultaneous_runs": 2,
+    "save_model_only_final": true,
+    "separate_resumable_finalist_run_required": true
+  },
+  "confirmation": {
+    "recipes": "top two F-series exploratory candidates plus F0, conditional on independent evidence",
+    "seeds": [
+      20260914,
+      20260915
+    ],
+    "prediction_tokens_per_run": 2147483648,
+    "start_from_same_base_again": true,
+    "M0_declared_cumulative_data_epoch_cap": 2.2,
+    "early_loss_only_promotion": false,
+    "confirmation_dev_reserve_fraction": 0.5
+  },
+  "development": {
+    "domains": [
+      "general_web",
+      "knowledge_reading",
+      "math",
+      "code",
+      "multilingual"
+    ],
+    "minimum_distinct_document_families_per_domain": 1000,
+    "minimum_prediction_tokens_per_domain": 1048576,
+    "split_before_packing": true,
+    "split_groups": [
+      "canonical URL family",
+      "document duplicate cluster",
+      "code repository",
+      "synthetic prompt family"
+    ],
+    "loss_objective": "equal-domain mean of L_candidate/L_base minus 1, using the same tokenizer and token masks",
+    "effect_margin_relative_loss": 0.005,
+    "non_regression_margin_relative_loss_per_domain": 0.005,
+    "non_regression_margin_accuracy_pp_per_family": 1.0,
+    "confidence": "paired bootstrap of independent document or problem families; simultaneous intervals for domain non-regression; two training seeds must agree in direction",
+    "additional_quality_evidence": "held-out problem answer likelihood AND generated exact answers or sandboxed code correctness; short instructions and multilingual dev tasks",
+    "selection_test_leakage": false,
+    "small_screen_inconclusive_action": "extend confirmation budget or choose control; never label a noise-level winner optimal",
+    "current_corpus_status": "NOT_BUILT"
+  },
+  "promotion_requirements": [
+    "all corpus sources revision-pinned and content available at training site",
+    "cross-source duplicate audit including old FineWeb train/val, aliases and synthetic parents",
+    "benchmarks reserved; evaluation contents never enter training documents",
+    "data and optimizer RNG state resume equivalence under the exact GPU topology",
+    "all source quotas measured after packing; no silent renormalization when a source exhausts",
+    "two-seed confirmation improves primary dev loss by at least 0.5 percent with paired interval excluding zero",
+    "every domain passes predeclared non-inferiority checks; mean gain cannot hide a large regression",
+    "correctness and instruction evaluation support the loss trend",
+    "same-recipe real-data rolling median MFU strictly greater than 0.50",
+    "disk headroom includes two complete optimizer checkpoints and next packed segment"
+  ],
+  "long_run": {
+    "initial_tranche_prediction_tokens": 20000000000,
+    "research_scale_milestones_prediction_tokens": [
+      50000000000,
+      100000000000,
+      300000000000
+    ],
+    "auto_launch": false,
+    "advance_rule": "next tranche only after multi-domain improvement and renewed capacity checks",
+    "repeat_cap_initial_per_source": 2.0,
+    "repeat_experiment_above_cap": "separate justified ablation; never infer universal four-epoch guarantee",
+    "candidate_curriculum": "first 70 percent selected broad static mixture; next 20 percent gradually increase selected quality subsets; final 10 percent LR decay; static-versus-dynamic control required",
+    "context_extension": "separate 2048 to 4096 pilot on repacked long documents before any 8192 attempt; measure retrieval and short-context retention"
+  },
+  "post_training": {
+    "sft_loss_unit": "assistant target tokens, with separate sample and total-context budgets reported",
+    "initial_assistant_token_percent": {
+      "general_dialogue_knowledge": 30,
+      "math_short_verified": 20,
+      "code_explanation_tests": 20,
+      "structured_output_tools": 15,
+      "multilingual": 10,
+      "calibration_and_safety": 5
+    },
+    "initial_target_sample_range": [
+      100000,
+      300000
+    ],
+    "max_initial_sequence_length": 2048,
+    "long_trace_truncation": "reject or re-derive a complete short solution; do not cut off the answer or tool observation",
+    "stages": [
+      "short complete SFT",
+      "preference optimization with checked pairs",
+      "verifiable-reward pilot once base success exceeds zero",
+      "held-out matched evaluation"
+    ],
+    "rl_empty_reward_policy": "return to teaching data or easier problems; do not increase rollouts blindly",
+    "unverified_teacher_outputs_admitted": false,
+    "latest_candidates": [
+      "nvidia/Nemotron-SFT-Math-v3",
+      "nvidia/Open-SWE-Traces",
+      "nvidia/Nemotron-Instruction-Following-Chat-v1",
+      "allenai/Dolci-Instruct-SFT",
+      "HuggingFaceTB/smoltalk2"
+    ],
+    "latest_is_not_automatically_best": true
+  },
+  "created_utc": "2026-09-13T21:54:03.540584+00:00",
+  "parent_protocol_id": "p529m-data-mixture-research-v1",
+  "parent_protocol_sha256": "614c653cad91ac76e146a99e9b4eaeb7d4b3aab0d164d8b985983f253c4791a9",
+  "amendment": {
+    "reason": "User requested faster execution; unverified synthetic-parent identity is blocking every candidate in the original screen. Separate a non-synthetic screen from the later original synthetic-source comparison.",
+    "timing": "No new-mixture training or candidate evaluation result has occurred. Amendment responds to data readiness, not observed candidate performance.",
+    "recipe_change": "Transfer exactly the original synthetic 5 percentage points to the existing FineWeb-Edu replay component; control unchanged. Preserve each other top-level and within-source percentage.",
+    "original_protocol_preserved": true,
+    "original_synthetic_comparison": "Deferred separate ablation; no equivalence or synthetic-quality claim.",
+    "source_identity_quality_or_mfu_gates_relaxed": false,
+    "data_admission_passed": false,
+    "old_source_overlap_and_replay_accounting_still_required": true,
+    "m0_peak_replay_quota_unchanged": true
+  },
+  "resource_policy": {
+    "cpu_checks": "Run independent required checks concurrently; avoid duplicate tokenization and reuse bound normalization indexes.",
+    "screen_concurrency": "The inherited maximum of two runs is an upper bound, subject to aggregate disk reservation, actual allocation and measured MFU.",
+    "additional_gpu_scaling": "Increase independent run concurrency only after measured aggregate checkpoint/pack headroom is sufficient; do not increase world size or batch silently.",
+    "aggregate_storage_gate": "Sum each concurrent writer peak (existing checkpoint plus atomic replacement), next packed segments and safety margin; per-process free-space checks alone are insufficient.",
+    "current_sufficient_storage_for_multiple_full_checkpoint_writers": "UNVERIFIED"
+  }
+}

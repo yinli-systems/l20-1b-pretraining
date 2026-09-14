@@ -1,0 +1,27 @@
+{
+  "schema": "p529m-quality-family-features-v1",
+  "seed": 20260914,
+  "min_code_tokens": 64,
+  "min_other_tokens": 128,
+  "max_control_fraction": 0.001,
+  "max_replacement_fraction": 0.001,
+  "max_repeated_long_line_fraction": 0.3,
+  "repetition_min_line_characters": 30,
+  "max_dominant_character_fraction": 0.4,
+  "language_window_characters": 2048,
+  "language_window_positions": [
+    "start",
+    "middle",
+    "end"
+  ],
+  "minimum_language_probability": 0.6,
+  "language_required_window_fraction": 0.6666666666666666,
+  "minhash_permutations": 64,
+  "minhash_shingle_tokens": 5,
+  "minhash_chunk_shingles": 512,
+  "minhash_lsh_bands": 16,
+  "minhash_lsh_rows": 4,
+  "training_text_modified": false,
+  "factual_correctness_verified": false,
+  "candidate_generation_is_not_verified_near_duplicate_removal": true
+}

@@ -1,0 +1,25 @@
+{
+  "protocol_id": "p529m-fast-start-nosynthetic-v1",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1587,
+      "sha256": "41efe67fb9745b96a3a6ca5c730b40604e16ff237780750d6eab33f41af53f16"
+    },
+    {
+      "path": "experiment-design.json",
+      "bytes": 11179,
+      "sha256": "3d58055a1d2398b90c963c9ed4be7e99e1d1644281b95599c4ad5339d805d105"
+    },
+    {
+      "path": "subsource-quotas-v1.json",
+      "bytes": 35975,
+      "sha256": "0a6522258e1037dac86a5c6f8fd9d8cb65e6b40ecb3ff3cf9193f52b9999cf50"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 398,
+      "sha256": "7681edbc64b703f981ab860b08ccba5102c5d7426f5c482cd90c50c49d042601"
+    }
+  ]
+}

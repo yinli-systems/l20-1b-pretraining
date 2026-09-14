@@ -12,6 +12,13 @@ The released base checkpoint is available at
 The complete training code, frozen protocols, compact receipts, evaluation
 artifacts, and plotting tools are maintained in this public repository.
 
+An independent 529M data-mixture and distributed-training experiment is
+published under [`pretrain500m/`](pretrain500m/). Its compact
+[result report](pretrain500m/RESULTS.md) covers data admission, deterministic
+restart qualification, 4/8/16-GPU scaling, the frozen two-seed recipe screen,
+and four long confirmation runs. Checkpoints and corpus payloads remain outside
+Git history.
+
 This is a from-zero pretraining pipeline for one NVIDIA L20. It does not load a
 pretrained model or tokenizer. The model is a 1,100,048,384-parameter
 TinyLlama-class decoder (22 layers, width 2048, 32 attention heads, 4 query

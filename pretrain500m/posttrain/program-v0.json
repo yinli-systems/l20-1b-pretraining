@@ -1,0 +1,74 @@
+{
+  "base_model": {
+    "checkpoint_sha256": "13aa21721e15c48cdfdafe30d8fdd41d9c95c90be766327661d96af1e90dd6cf",
+    "checkpoint_step": 7629,
+    "parameters_total": 528748800,
+    "prediction_tokens": 15999172608
+  },
+  "base_evaluation": {
+    "aggregate_score": 0.4795681745464077,
+    "aggregate_bootstrap_ci_95": [
+      0.47032896471236924,
+      0.48876142640048303
+    ],
+    "final_audit_sha256": "155e53cbae48d640b8f24f5203b2308ba8a57a5665ec2f384d8e4ba0d98c8cc0",
+    "protocol_sha256": "a71ce3c8cc85cac6fe6751cb46f7e50dfb78d266602d6377cb2e65249f11c761",
+    "status": "PASS_FORMAL_V5_END_TO_END_AUDIT",
+    "tasks": {
+      "arc_challenge": 0.2832764505119454,
+      "arc_easy": 0.5526094276094277,
+      "boolq": 0.5629969418960244,
+      "hellaswag": 0.4235212109141605,
+      "openbookqa": 0.33,
+      "piqa": 0.6686615886833515,
+      "winogrande": 0.5359116022099447
+    }
+  },
+  "active_experiment": {
+    "job_id": "1587857",
+    "learning_rates": [
+      0.00003,
+      0.0001,
+      0.0003
+    ],
+    "prediction_tokens_per_candidate": 536870912,
+    "protocol_id": "p529m-cpt-lr-pilot-v1",
+    "protocol_sha256": "17c91660cfbbd48a3216243be9db9c5e8716c082dc8d8fcf02c75c582e84f993",
+    "status": "RUNNING"
+  },
+  "candidate_selection": {
+    "final_test_reuse_for_hyperparameter_selection": false,
+    "negative_results_preserved": true,
+    "one_writer_per_artifact_directory": true,
+    "promotion_rule": "all integrity gates pass; primary development objective improves; base capability and safety non-regression gates pass; latency and memory are reported",
+    "statistical_rule": "paired bootstrap confidence intervals on matched examples when available"
+  },
+  "comparison": {
+    "direct_claim_requires_matched_rerun": true,
+    "market_superiority_status": "UNPROVEN",
+    "parameter_class": "AWAITING_USER_DEFINITION"
+  },
+  "domain": {
+    "status": "AWAITING_USER_SELECTION",
+    "value": null
+  },
+  "evaluation_layers": [
+    "base capability retention",
+    "instruction following",
+    "safety and calibration",
+    "domain capability",
+    "latency, memory, and throughput"
+  ],
+  "phases": [
+    "base result audit and error taxonomy",
+    "data provenance and decontamination",
+    "controlled SFT pilots",
+    "formal SFT",
+    "preference optimization",
+    "domain-adaptive continued pretraining versus SFT-only ablation",
+    "domain preference or verifier-based optimization",
+    "sealed final evaluation and matched competitor reruns"
+  ],
+  "program_id": "p529m-posttrain-program-v0",
+  "status": "CPT_LR_PILOT_RUNNING_AWAITING_DOMAIN"
+}

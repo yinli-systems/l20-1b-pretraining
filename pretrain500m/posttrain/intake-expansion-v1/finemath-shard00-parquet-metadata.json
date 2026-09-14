@@ -1,0 +1,10 @@
+{
+  "bytes": 286267316,
+  "id": "finemath4_shard00",
+  "max_rows_per_group": 1000,
+  "min_rows_per_group": 680,
+  "network_bytes": 645794,
+  "path": "finemath-4plus/train-00000-of-00064.parquet",
+  "row_groups": 105,
+  "rows": 104680
+}

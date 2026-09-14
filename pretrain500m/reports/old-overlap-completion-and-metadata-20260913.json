@@ -1,0 +1,606 @@
+{
+  "checked_utc": "2026-09-13T22:19:48.946581+00:00",
+  "process_present": false,
+  "free_bytes": 21691707392,
+  "report": {
+    "status": "OLD_SOURCE_NORMALIZED_OVERLAP_COMPLETE_NOT_ADMITTED",
+    "training_admitted": false,
+    "checked_utc": "2026-09-13T22:10:54.749865+00:00",
+    "elapsed_seconds": 407.38540191110224,
+    "manifest_sha256": "8291e6c2a9af017904a3cc17b838cff231ff1a6da4cf7b9fe810b2dd6995a6e5",
+    "new_index_report_sha256": "a644aaa72d371e0da1db917a30d6a5d227e7585fcbc0e5e4a03e88d5ece021ce",
+    "new_rows": 199407,
+    "old_rows": 9672101,
+    "matched_old_rows": 20,
+    "files": [
+      {
+        "status": "COMPLETED",
+        "path": "/ssd/scxi253/corpus/fineweb-edu-10BT/sample/10BT/000_00000.parquet",
+        "sha256": "b1ba7b2ce4cb5ea6ef42dca40263eabb85f37700d01693a68e9b30a31d78e871",
+        "rows": 726000,
+        "matched_old_rows": 2,
+        "matched_old_rows_passing_initial_filters": 2,
+        "matches": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/000_00000.parquet.matches.jsonl.gz",
+        "matches_sha256": "74f3e1149d21fdde20d8303fa18025778bdd8b9d2872a4c760b906c1c9438626",
+        "host_counts": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/000_00000.parquet.eligible-hosts.json",
+        "host_counts_sha256": "91194495edb262d7d0c3466ca1439705bf8d993104f5b89334ad80894bf3af53",
+        "elapsed_seconds": 101.97447091527283
+      },
+      {
+        "status": "COMPLETED",
+        "path": "/ssd/scxi253/corpus/fineweb-edu-10BT/sample/10BT/001_00000.parquet",
+        "sha256": "3fcf2dc69cd52503986276d3d2d26a8c356d0f2ea28a0de4fdbda8cf87755693",
+        "rows": 729000,
+        "matched_old_rows": 0,
+        "matched_old_rows_passing_initial_filters": 0,
+        "matches": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/001_00000.parquet.matches.jsonl.gz",
+        "matches_sha256": "4856122e0795080df5c1f8a0b974270306bb0c18e121a5241d8fb710f64459c4",
+        "host_counts": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/001_00000.parquet.eligible-hosts.json",
+        "host_counts_sha256": "56b8339a62bdf2bc12c1bbd66d7b0e1c27b0efa2df4c3ffb8229d146355886b5",
+        "elapsed_seconds": 102.57440217677504
+      },
+      {
+        "status": "COMPLETED",
+        "path": "/ssd/scxi253/corpus/fineweb-edu-10BT/sample/10BT/002_00000.parquet",
+        "sha256": "547ae182d132c9f06b6ce63149567208ea9f57630bfd9b1a2938e504f0c9ebd7",
+        "rows": 727000,
+        "matched_old_rows": 1,
+        "matched_old_rows_passing_initial_filters": 1,
+        "matches": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/002_00000.parquet.matches.jsonl.gz",
+        "matches_sha256": "a17f49686a7beb9e1f2f1a01a6a9a230515976e9162ad5c588ced9a4253ae689",
+        "host_counts": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/002_00000.parquet.eligible-hosts.json",
+        "host_counts_sha256": "15ea7d908c798049433fde8fbff9d54b2e13ad58ed263b3a83e72001b570ee6d",
+        "elapsed_seconds": 101.69983899313956
+      },
+      {
+        "status": "COMPLETED",
+        "path": "/ssd/scxi253/corpus/fineweb-edu-10BT/sample/10BT/003_00000.parquet",
+        "sha256": "22184e6eb25759ddd97783751ffc73e1705dfa2542e630dae1f2a8bac8ee6ddb",
+        "rows": 734000,
+        "matched_old_rows": 1,
+        "matched_old_rows_passing_initial_filters": 1,
+        "matches": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/003_00000.parquet.matches.jsonl.gz",
+        "matches_sha256": "3898315ffeeaca89297e25d00bb983394c452031b7c9025d345449e4269fdd06",
+        "host_counts": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/003_00000.parquet.eligible-hosts.json",
+        "host_counts_sha256": "d182a154a7609f46328d94f1c7fd705d85ebf40d216de3c678e36dd3d73ad42d",
+        "elapsed_seconds": 102.23244370194152
+      },
+      {
+        "status": "COMPLETED",
+        "path": "/ssd/scxi253/corpus/fineweb-edu-10BT/sample/10BT/004_00000.parquet",
+        "sha256": "33557ddd87a07a4ae6fcaf7a4789c7b484e5cc0c273ca12a65b74200e6d8748b",
+        "rows": 745000,
+        "matched_old_rows": 2,
+        "matched_old_rows_passing_initial_filters": 2,
+        "matches": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/004_00000.parquet.matches.jsonl.gz",
+        "matches_sha256": "bf0519b80deb26bf086966e7d6b1519c296d431e993fff4ad3e1633faa56be9d",
+        "host_counts": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/004_00000.parquet.eligible-hosts.json",
+        "host_counts_sha256": "914654fd1fdeb577802f6378f3fc1464adff362b1a3730e16027037691eb4eae",
+        "elapsed_seconds": 100.3739749812521
+      },
+      {
+        "status": "COMPLETED",
+        "path": "/ssd/scxi253/corpus/fineweb-edu-10BT/sample/10BT/005_00000.parquet",
+        "sha256": "e08d79927ecb377786572cd854817c748ceb8880878b1a0eb91abf8c85d505ea",
+        "rows": 738000,
+        "matched_old_rows": 1,
+        "matched_old_rows_passing_initial_filters": 1,
+        "matches": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/005_00000.parquet.matches.jsonl.gz",
+        "matches_sha256": "50e27cfef019cbe855c716ae797b09d01ed8527eef4c7b6f39051c8942f16f44",
+        "host_counts": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/005_00000.parquet.eligible-hosts.json",
+        "host_counts_sha256": "714c50549b20a7670daae58455e5247418036d53f677962d04223234bcdd167e",
+        "elapsed_seconds": 100.9387884028256
+      },
+      {
+        "status": "COMPLETED",
+        "path": "/ssd/scxi253/corpus/fineweb-edu-10BT/sample/10BT/006_00000.parquet",
+        "sha256": "554fa2613c9261d6c9c396caab881de3160175794c6c3e1856bf28a0e9cb9b76",
+        "rows": 732000,
+        "matched_old_rows": 1,
+        "matched_old_rows_passing_initial_filters": 1,
+        "matches": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/006_00000.parquet.matches.jsonl.gz",
+        "matches_sha256": "f084720b5aa55121c165f18bd7ea4c0006d579c59908b5399b59f444bbaa04bc",
+        "host_counts": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/006_00000.parquet.eligible-hosts.json",
+        "host_counts_sha256": "ef2402451a55f93b5bf17954bb54d9ee4806d95cb998c798b5443299a8884320",
+        "elapsed_seconds": 99.78109754994512
+      },
+      {
+        "status": "COMPLETED",
+        "path": "/ssd/scxi253/corpus/fineweb-edu-10BT/sample/10BT/007_00000.parquet",
+        "sha256": "4b7d1f697d4afff7f5f65cb7aa4d83acc6db716da4d46ea23399d0c50608c6e3",
+        "rows": 725000,
+        "matched_old_rows": 2,
+        "matched_old_rows_passing_initial_filters": 2,
+        "matches": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/007_00000.parquet.matches.jsonl.gz",
+        "matches_sha256": "b3e1d201b91226796f9d528e472712c5f3fea3369d2f592342fbd1f430b4b019",
+        "host_counts": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/007_00000.parquet.eligible-hosts.json",
+        "host_counts_sha256": "f124f8e26b8ca605595633e21ea43966a019ef9da18ffe1d9e3c573bbba10754",
+        "elapsed_seconds": 100.46627545589581
+      },
+      {
+        "status": "COMPLETED",
+        "path": "/ssd/scxi253/corpus/fineweb-edu-10BT/sample/10BT/008_00000.parquet",
+        "sha256": "a6d9dcc0c72ecd7c7f0173c2d06b3a4249a2ccaa94961469d1a522ca689bbf1a",
+        "rows": 724000,
+        "matched_old_rows": 4,
+        "matched_old_rows_passing_initial_filters": 4,
+        "matches": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/008_00000.parquet.matches.jsonl.gz",
+        "matches_sha256": "727cb92caaff40dc91dcdac0694076e2835c9371861ea41c78e0490b11acf617",
+        "host_counts": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/008_00000.parquet.eligible-hosts.json",
+        "host_counts_sha256": "0a321f57956d874e7aa0ee8a48886aa6b0a916b23e7ba9ddd95706cfbf96a8d5",
+        "elapsed_seconds": 100.72347172582522
+      },
+      {
+        "status": "COMPLETED",
+        "path": "/ssd/scxi253/corpus/fineweb-edu-10BT/sample/10BT/009_00000.parquet",
+        "sha256": "f836cd3c70b95776699eb6c356b2dbf702816e25dcf39992f5c80a29029d23c3",
+        "rows": 713000,
+        "matched_old_rows": 0,
+        "matched_old_rows_passing_initial_filters": 0,
+        "matches": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/009_00000.parquet.matches.jsonl.gz",
+        "matches_sha256": "0f1fe3142154f10c89996c88d587d96d96cdf7022707327ea4499164be57b845",
+        "host_counts": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/009_00000.parquet.eligible-hosts.json",
+        "host_counts_sha256": "cab9d33e22957cbd8860ee84348ceb45712d587c36dac7e025a0da51ef49253e",
+        "elapsed_seconds": 103.08826673589647
+      },
+      {
+        "status": "COMPLETED",
+        "path": "/ssd/scxi253/corpus/fineweb-edu-10BT/sample/10BT/010_00000.parquet",
+        "sha256": "e5a2eae25f057f0856a10bfae314c6ca8ea8bb08456d2131e9e89b2b8305e2f6",
+        "rows": 730000,
+        "matched_old_rows": 3,
+        "matched_old_rows_passing_initial_filters": 3,
+        "matches": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/010_00000.parquet.matches.jsonl.gz",
+        "matches_sha256": "ddb2092b6824c8e70e48f14ef0630ebcddd632737032e246656fa028791c8d56",
+        "host_counts": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/010_00000.parquet.eligible-hosts.json",
+        "host_counts_sha256": "32001fdbb0880bc8023dd3805f4c8144a539edc4e7b91b456d26ccf542845b04",
+        "elapsed_seconds": 100.43259595800191
+      },
+      {
+        "status": "COMPLETED",
+        "path": "/ssd/scxi253/corpus/fineweb-edu-10BT/sample/10BT/011_00000.parquet",
+        "sha256": "db71cf0425bb3d1813a09f12ff1acd6dabdfb91a2e4f141960254ee5a7f036e7",
+        "rows": 735000,
+        "matched_old_rows": 2,
+        "matched_old_rows_passing_initial_filters": 2,
+        "matches": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/011_00000.parquet.matches.jsonl.gz",
+        "matches_sha256": "da88cf06c6aa1bae24bc0ce89f04551e23bac5a17d2d1249e986f4447e96b675",
+        "host_counts": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/011_00000.parquet.eligible-hosts.json",
+        "host_counts_sha256": "946aca13dfcb32babe56143a82b52078042b94664318e6854ab2ea5554d29251",
+        "elapsed_seconds": 101.42483624629676
+      },
+      {
+        "status": "COMPLETED",
+        "path": "/ssd/scxi253/corpus/fineweb-edu-10BT/sample/10BT/012_00000.parquet",
+        "sha256": "08b47a3e1c25161f796d2f8dbf99ccf60affdebdcea4910833d0d5783315551f",
+        "rows": 732000,
+        "matched_old_rows": 1,
+        "matched_old_rows_passing_initial_filters": 1,
+        "matches": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/012_00000.parquet.matches.jsonl.gz",
+        "matches_sha256": "d0b4c6f96689645d5cbc70416bae7affb059903d535c362766e450fc769dcc91",
+        "host_counts": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/012_00000.parquet.eligible-hosts.json",
+        "host_counts_sha256": "edfb700d76cf2ce6cbd692bd6d85a6c286c83ad559def581e22bd75cc94667d6",
+        "elapsed_seconds": 103.29063082812354
+      },
+      {
+        "status": "COMPLETED",
+        "path": "/ssd/scxi253/corpus/fineweb-edu-10BT/sample/10BT/013_00000.parquet",
+        "sha256": "b393f51fefab26cd6f4c8f65707c1924f6666c4961a0ebebe04bb57f7ec832de",
+        "rows": 182101,
+        "matched_old_rows": 0,
+        "matched_old_rows_passing_initial_filters": 0,
+        "matches": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/013_00000.parquet.matches.jsonl.gz",
+        "matches_sha256": "390932d5cb95360535a167696216e6ec48943ec8f697a9ed375ec8d0ef1431d0",
+        "host_counts": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/013_00000.parquet.eligible-hosts.json",
+        "host_counts_sha256": "6e9c842c4bb9a4cf162f9d807b62502ae370e05e875d759b327abc4b20abff01",
+        "elapsed_seconds": 25.7201470551081
+      }
+    ],
+    "scope": "NFKC/lower/whitespace full-document SHA256 equality against all fourteen original source shards.",
+    "limits": [
+      "Source-snapshot matches do not prove exact formal-pack membership; initial language/score eligibility is recorded separately.",
+      "Case/whitespace normalization does not establish code equivalence; matches may support conservative exclusions.",
+      "This does not detect paraphrases, translated overlaps or arbitrary near duplicates.",
+      "Host counts are metadata for later family checks, not certified independent family counts.",
+      "No shared corpus files were written, deleted, copied or repacked."
+    ]
+  },
+  "progress": [
+    {
+      "status": "COMPLETED",
+      "path": "/ssd/scxi253/corpus/fineweb-edu-10BT/sample/10BT/000_00000.parquet",
+      "sha256": "b1ba7b2ce4cb5ea6ef42dca40263eabb85f37700d01693a68e9b30a31d78e871",
+      "rows": 726000,
+      "matched_old_rows": 2,
+      "matched_old_rows_passing_initial_filters": 2,
+      "matches": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/000_00000.parquet.matches.jsonl.gz",
+      "matches_sha256": "74f3e1149d21fdde20d8303fa18025778bdd8b9d2872a4c760b906c1c9438626",
+      "host_counts": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/000_00000.parquet.eligible-hosts.json",
+      "host_counts_sha256": "91194495edb262d7d0c3466ca1439705bf8d993104f5b89334ad80894bf3af53",
+      "elapsed_seconds": 101.97447091527283
+    },
+    {
+      "status": "COMPLETED",
+      "path": "/ssd/scxi253/corpus/fineweb-edu-10BT/sample/10BT/001_00000.parquet",
+      "sha256": "3fcf2dc69cd52503986276d3d2d26a8c356d0f2ea28a0de4fdbda8cf87755693",
+      "rows": 729000,
+      "matched_old_rows": 0,
+      "matched_old_rows_passing_initial_filters": 0,
+      "matches": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/001_00000.parquet.matches.jsonl.gz",
+      "matches_sha256": "4856122e0795080df5c1f8a0b974270306bb0c18e121a5241d8fb710f64459c4",
+      "host_counts": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/001_00000.parquet.eligible-hosts.json",
+      "host_counts_sha256": "56b8339a62bdf2bc12c1bbd66d7b0e1c27b0efa2df4c3ffb8229d146355886b5",
+      "elapsed_seconds": 102.57440217677504
+    },
+    {
+      "status": "COMPLETED",
+      "path": "/ssd/scxi253/corpus/fineweb-edu-10BT/sample/10BT/002_00000.parquet",
+      "sha256": "547ae182d132c9f06b6ce63149567208ea9f57630bfd9b1a2938e504f0c9ebd7",
+      "rows": 727000,
+      "matched_old_rows": 1,
+      "matched_old_rows_passing_initial_filters": 1,
+      "matches": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/002_00000.parquet.matches.jsonl.gz",
+      "matches_sha256": "a17f49686a7beb9e1f2f1a01a6a9a230515976e9162ad5c588ced9a4253ae689",
+      "host_counts": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/002_00000.parquet.eligible-hosts.json",
+      "host_counts_sha256": "15ea7d908c798049433fde8fbff9d54b2e13ad58ed263b3a83e72001b570ee6d",
+      "elapsed_seconds": 101.69983899313956
+    },
+    {
+      "status": "COMPLETED",
+      "path": "/ssd/scxi253/corpus/fineweb-edu-10BT/sample/10BT/003_00000.parquet",
+      "sha256": "22184e6eb25759ddd97783751ffc73e1705dfa2542e630dae1f2a8bac8ee6ddb",
+      "rows": 734000,
+      "matched_old_rows": 1,
+      "matched_old_rows_passing_initial_filters": 1,
+      "matches": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/003_00000.parquet.matches.jsonl.gz",
+      "matches_sha256": "3898315ffeeaca89297e25d00bb983394c452031b7c9025d345449e4269fdd06",
+      "host_counts": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/003_00000.parquet.eligible-hosts.json",
+      "host_counts_sha256": "d182a154a7609f46328d94f1c7fd705d85ebf40d216de3c678e36dd3d73ad42d",
+      "elapsed_seconds": 102.23244370194152
+    },
+    {
+      "status": "COMPLETED",
+      "path": "/ssd/scxi253/corpus/fineweb-edu-10BT/sample/10BT/004_00000.parquet",
+      "sha256": "33557ddd87a07a4ae6fcaf7a4789c7b484e5cc0c273ca12a65b74200e6d8748b",
+      "rows": 745000,
+      "matched_old_rows": 2,
+      "matched_old_rows_passing_initial_filters": 2,
+      "matches": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/004_00000.parquet.matches.jsonl.gz",
+      "matches_sha256": "bf0519b80deb26bf086966e7d6b1519c296d431e993fff4ad3e1633faa56be9d",
+      "host_counts": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/004_00000.parquet.eligible-hosts.json",
+      "host_counts_sha256": "914654fd1fdeb577802f6378f3fc1464adff362b1a3730e16027037691eb4eae",
+      "elapsed_seconds": 100.3739749812521
+    },
+    {
+      "status": "COMPLETED",
+      "path": "/ssd/scxi253/corpus/fineweb-edu-10BT/sample/10BT/005_00000.parquet",
+      "sha256": "e08d79927ecb377786572cd854817c748ceb8880878b1a0eb91abf8c85d505ea",
+      "rows": 738000,
+      "matched_old_rows": 1,
+      "matched_old_rows_passing_initial_filters": 1,
+      "matches": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/005_00000.parquet.matches.jsonl.gz",
+      "matches_sha256": "50e27cfef019cbe855c716ae797b09d01ed8527eef4c7b6f39051c8942f16f44",
+      "host_counts": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/005_00000.parquet.eligible-hosts.json",
+      "host_counts_sha256": "714c50549b20a7670daae58455e5247418036d53f677962d04223234bcdd167e",
+      "elapsed_seconds": 100.9387884028256
+    },
+    {
+      "status": "COMPLETED",
+      "path": "/ssd/scxi253/corpus/fineweb-edu-10BT/sample/10BT/006_00000.parquet",
+      "sha256": "554fa2613c9261d6c9c396caab881de3160175794c6c3e1856bf28a0e9cb9b76",
+      "rows": 732000,
+      "matched_old_rows": 1,
+      "matched_old_rows_passing_initial_filters": 1,
+      "matches": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/006_00000.parquet.matches.jsonl.gz",
+      "matches_sha256": "f084720b5aa55121c165f18bd7ea4c0006d579c59908b5399b59f444bbaa04bc",
+      "host_counts": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/006_00000.parquet.eligible-hosts.json",
+      "host_counts_sha256": "ef2402451a55f93b5bf17954bb54d9ee4806d95cb998c798b5443299a8884320",
+      "elapsed_seconds": 99.78109754994512
+    },
+    {
+      "status": "COMPLETED",
+      "path": "/ssd/scxi253/corpus/fineweb-edu-10BT/sample/10BT/007_00000.parquet",
+      "sha256": "4b7d1f697d4afff7f5f65cb7aa4d83acc6db716da4d46ea23399d0c50608c6e3",
+      "rows": 725000,
+      "matched_old_rows": 2,
+      "matched_old_rows_passing_initial_filters": 2,
+      "matches": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/007_00000.parquet.matches.jsonl.gz",
+      "matches_sha256": "b3e1d201b91226796f9d528e472712c5f3fea3369d2f592342fbd1f430b4b019",
+      "host_counts": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/007_00000.parquet.eligible-hosts.json",
+      "host_counts_sha256": "f124f8e26b8ca605595633e21ea43966a019ef9da18ffe1d9e3c573bbba10754",
+      "elapsed_seconds": 100.46627545589581
+    },
+    {
+      "status": "COMPLETED",
+      "path": "/ssd/scxi253/corpus/fineweb-edu-10BT/sample/10BT/008_00000.parquet",
+      "sha256": "a6d9dcc0c72ecd7c7f0173c2d06b3a4249a2ccaa94961469d1a522ca689bbf1a",
+      "rows": 724000,
+      "matched_old_rows": 4,
+      "matched_old_rows_passing_initial_filters": 4,
+      "matches": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/008_00000.parquet.matches.jsonl.gz",
+      "matches_sha256": "727cb92caaff40dc91dcdac0694076e2835c9371861ea41c78e0490b11acf617",
+      "host_counts": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/008_00000.parquet.eligible-hosts.json",
+      "host_counts_sha256": "0a321f57956d874e7aa0ee8a48886aa6b0a916b23e7ba9ddd95706cfbf96a8d5",
+      "elapsed_seconds": 100.72347172582522
+    },
+    {
+      "status": "COMPLETED",
+      "path": "/ssd/scxi253/corpus/fineweb-edu-10BT/sample/10BT/009_00000.parquet",
+      "sha256": "f836cd3c70b95776699eb6c356b2dbf702816e25dcf39992f5c80a29029d23c3",
+      "rows": 713000,
+      "matched_old_rows": 0,
+      "matched_old_rows_passing_initial_filters": 0,
+      "matches": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/009_00000.parquet.matches.jsonl.gz",
+      "matches_sha256": "0f1fe3142154f10c89996c88d587d96d96cdf7022707327ea4499164be57b845",
+      "host_counts": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/009_00000.parquet.eligible-hosts.json",
+      "host_counts_sha256": "cab9d33e22957cbd8860ee84348ceb45712d587c36dac7e025a0da51ef49253e",
+      "elapsed_seconds": 103.08826673589647
+    },
+    {
+      "status": "COMPLETED",
+      "path": "/ssd/scxi253/corpus/fineweb-edu-10BT/sample/10BT/010_00000.parquet",
+      "sha256": "e5a2eae25f057f0856a10bfae314c6ca8ea8bb08456d2131e9e89b2b8305e2f6",
+      "rows": 730000,
+      "matched_old_rows": 3,
+      "matched_old_rows_passing_initial_filters": 3,
+      "matches": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/010_00000.parquet.matches.jsonl.gz",
+      "matches_sha256": "ddb2092b6824c8e70e48f14ef0630ebcddd632737032e246656fa028791c8d56",
+      "host_counts": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/010_00000.parquet.eligible-hosts.json",
+      "host_counts_sha256": "32001fdbb0880bc8023dd3805f4c8144a539edc4e7b91b456d26ccf542845b04",
+      "elapsed_seconds": 100.43259595800191
+    },
+    {
+      "status": "COMPLETED",
+      "path": "/ssd/scxi253/corpus/fineweb-edu-10BT/sample/10BT/011_00000.parquet",
+      "sha256": "db71cf0425bb3d1813a09f12ff1acd6dabdfb91a2e4f141960254ee5a7f036e7",
+      "rows": 735000,
+      "matched_old_rows": 2,
+      "matched_old_rows_passing_initial_filters": 2,
+      "matches": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/011_00000.parquet.matches.jsonl.gz",
+      "matches_sha256": "da88cf06c6aa1bae24bc0ce89f04551e23bac5a17d2d1249e986f4447e96b675",
+      "host_counts": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/011_00000.parquet.eligible-hosts.json",
+      "host_counts_sha256": "946aca13dfcb32babe56143a82b52078042b94664318e6854ab2ea5554d29251",
+      "elapsed_seconds": 101.42483624629676
+    },
+    {
+      "status": "COMPLETED",
+      "path": "/ssd/scxi253/corpus/fineweb-edu-10BT/sample/10BT/012_00000.parquet",
+      "sha256": "08b47a3e1c25161f796d2f8dbf99ccf60affdebdcea4910833d0d5783315551f",
+      "rows": 732000,
+      "matched_old_rows": 1,
+      "matched_old_rows_passing_initial_filters": 1,
+      "matches": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/012_00000.parquet.matches.jsonl.gz",
+      "matches_sha256": "d0b4c6f96689645d5cbc70416bae7affb059903d535c362766e450fc769dcc91",
+      "host_counts": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/012_00000.parquet.eligible-hosts.json",
+      "host_counts_sha256": "edfb700d76cf2ce6cbd692bd6d85a6c286c83ad559def581e22bd75cc94667d6",
+      "elapsed_seconds": 103.29063082812354
+    },
+    {
+      "status": "COMPLETED",
+      "path": "/ssd/scxi253/corpus/fineweb-edu-10BT/sample/10BT/013_00000.parquet",
+      "sha256": "b393f51fefab26cd6f4c8f65707c1924f6666c4961a0ebebe04bb57f7ec832de",
+      "rows": 182101,
+      "matched_old_rows": 0,
+      "matched_old_rows_passing_initial_filters": 0,
+      "matches": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/013_00000.parquet.matches.jsonl.gz",
+      "matches_sha256": "390932d5cb95360535a167696216e6ec48943ec8f697a9ed375ec8d0ef1431d0",
+      "host_counts": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1/013_00000.parquet.eligible-hosts.json",
+      "host_counts_sha256": "6e9c842c4bb9a4cf162f9d807b62502ae370e05e875d759b327abc4b20abff01",
+      "elapsed_seconds": 25.7201470551081
+    }
+  ],
+  "log_tail": "{\"status\": \"OLD_SOURCE_NORMALIZED_OVERLAP_COMPLETE_NOT_ADMITTED\", \"elapsed_seconds\": 407.38540191110224, \"new_rows\": 199407, \"old_rows\": 9672101, \"matched_old_rows\": 20}\n",
+  "example_metadata": {
+    "code_cpp.jsonl.gz": {
+      "blob_id": "3f13b95705e30ac4e39825923fc814632368a798",
+      "language": "C++",
+      "repo_name": "EvanCGriffin/soccergame",
+      "path": "/Year3Engine/EngineFont.cpp",
+      "score": 3.0,
+      "int_score": 3,
+      "detected_licenses": [
+        "MIT"
+      ],
+      "license_type": "permissive",
+      "text": {
+        "type": "text",
+        "chars": 1221
+      },
+      "content_sha256": "fa9d7fbad2ef4b15b45c7146f33daee74e67265f452c42e742137d933d1944a1"
+    },
+    "code_java.jsonl.gz": {
+      "blob_id": "d265eb1ebb722496dcb81657bbcb6323ee33b3f8",
+      "language": "Java",
+      "repo_name": "merjiezo/leetcode-java-solution",
+      "path": "/java/com/merjiezo/simple/PlusOne.java",
+      "score": 3.96875,
+      "int_score": 4,
+      "detected_licenses": [
+        "MIT"
+      ],
+      "license_type": "permissive",
+      "text": {
+        "type": "text",
+        "chars": 1006
+      },
+      "content_sha256": "bd920a8567e6d4e75f10a5dcccde01a7e6718c5f81a531b1297f8b95b3287d98"
+    },
+    "code_javascript.jsonl.gz": {
+      "blob_id": "271725cdee329b6ca25e974a937610adb78f6aa1",
+      "language": "JavaScript",
+      "repo_name": "yutro/study",
+      "path": "/js/games/simonGame/src/containers/App.js",
+      "score": 2.546875,
+      "int_score": 3,
+      "detected_licenses": [
+        "MIT"
+      ],
+      "license_type": "permissive",
+      "text": {
+        "type": "text",
+        "chars": 5680
+      },
+      "content_sha256": "910d29d06997beef3199b7a68034e94196b82984f7aeb84d11b1fafef698a6f6"
+    },
+    "code_python.jsonl.gz": {
+      "blob_id": "8ce1783996adf73d5c9bcf8813080e2b8a016b63",
+      "language": "Python",
+      "repo_name": "kpranke/Getting-Started-with-Deep-Learning-for-Natural-Language-Processing",
+      "path": "/Chapter03/weighing_function.py",
+      "score": 2.96875,
+      "int_score": 3,
+      "detected_licenses": [
+        "MIT"
+      ],
+      "license_type": "permissive",
+      "text": {
+        "type": "text",
+        "chars": 829
+      },
+      "content_sha256": "688cc4c562e2fb414a8759996648b62518306c0f80a360dd834aa51cfdadfe2a"
+    },
+    "code_typescript.jsonl.gz": {
+      "blob_id": "3e424c750087d403dae85723c7cf816103343803",
+      "language": "TypeScript",
+      "repo_name": "kecleveland/figjam-create-sticky",
+      "path": "/src/plugin/controller.ts",
+      "score": 2.890625,
+      "int_score": 3,
+      "detected_licenses": [
+        "MIT"
+      ],
+      "license_type": "permissive",
+      "text": {
+        "type": "text",
+        "chars": 4576
+      },
+      "content_sha256": "306d51472f1d0de6614e438a1e36d8f46d679cdee296d66e8981e57f795266c6"
+    },
+    "cosmopedia2.jsonl.gz": {
+      "prompt": {
+        "type": "text",
+        "chars": 1710
+      },
+      "text": {
+        "type": "text",
+        "chars": 5077
+      },
+      "audience": "college_students",
+      "format": "textbook",
+      "seed_data": "fineweb"
+    },
+    "dclm.jsonl.gz": {
+      "text": {
+        "type": "text",
+        "chars": 4690
+      },
+      "id": "<urn:uuid:2d390434-f155-4051-9d1b-fae744e36e89>",
+      "url": "https://www.livingtrustnetwork.com/estate-planning-center/last-will-and-testament/what-the-experts-say/estate-planning-no-contest-clause-in-your-will.html",
+      "language": "en",
+      "language_score": 0.9790993332862854
+    },
+    "finemath4.jsonl.gz": {
+      "url": "https://bestincentivetours.com/best-places/quick-answer-how-to-solve-the-journey-rubix-puzzzles.html",
+      "text": {
+        "type": "text",
+        "chars": 2384
+      },
+      "score": 3.890625,
+      "int_score": 4,
+      "language": "en",
+      "language_score": 0.7930697202682495
+    },
+    "infiwebmath4.jsonl.gz": {
+      "url": "https://www.jiskha.com/questions/1713/find-sales-tax-in-your-area-6-using-tax-rate-write-a-linear-equation-representing",
+      "score": 3.984375,
+      "int_score": 4,
+      "text": {
+        "type": "text",
+        "chars": 2713
+      }
+    },
+    "multilingual_arb_Arab.jsonl.gz": {
+      "text": {
+        "type": "text",
+        "chars": 403
+      },
+      "id": "<urn:uuid:98b00db7-3bc8-46dc-b764-c9a890c98430>",
+      "date": "2021-03-07T17:05:35Z",
+      "dump": "CC-MAIN-2021-10",
+      "language": "arb",
+      "language_score": 0.9310382604598999,
+      "url": "https://www.arabicwrestling.com/%D9%83%D9%8A%D9%81%D9%86-%D8%A3%D9%88%D9%8A%D9%86%D8%B2-%D9%8A%D8%AA%D9%88%D8%B9%D8%AF-%D8%A8%D8%AA%D8%B5%D8%AD%D9%8A%D8%AD-%D9%85%D8%B3%D8%A7%D8%B1-%D8%A8%D8%B7%D9%88%D9%84%D8%A9-%D8%A7%D9%84%D9%8A/"
+    },
+    "multilingual_cmn_Hani.jsonl.gz": {
+      "text": {
+        "type": "text",
+        "chars": 3408
+      },
+      "id": "<urn:uuid:80fb1353-6fd5-403f-8519-08dfd0f90437>",
+      "date": "2022-08-11T04:58:06Z",
+      "dump": "CC-MAIN-2022-33",
+      "language": "cmn",
+      "language_score": 0.9917470812797546,
+      "url": "https://book.qq.com/book-read/495844/7"
+    },
+    "multilingual_deu_Latn.jsonl.gz": {
+      "text": {
+        "type": "text",
+        "chars": 5483
+      },
+      "id": "<urn:uuid:94342d4e-4026-447d-bab5-a0c02b9e1c21>",
+      "date": "2021-12-05T05:50:00Z",
+      "dump": "CC-MAIN-2021-49",
+      "language": "deu",
+      "language_score": 0.9979346990585327,
+      "url": "https://www.lucapomponio.com/de/bauen-oder-umbauen-haus-am-gardasee-durchschnittliche-baukosten/"
+    },
+    "multilingual_fra_Latn.jsonl.gz": {
+      "text": {
+        "type": "text",
+        "chars": 1631
+      },
+      "id": "<urn:uuid:43c5e244-b32b-462e-86a4-d970291558fc>",
+      "date": "2021-01-16T04:45:21Z",
+      "dump": "CC-MAIN-2021-04",
+      "language": "fra",
+      "language_score": 0.9985076189041138,
+      "url": "https://magny-en-vexin.allo-electricien.ltd/electricien-depannage-choisy-le-roi.html"
+    },
+    "multilingual_jpn_Jpan.jsonl.gz": {
+      "text": {
+        "type": "text",
+        "chars": 1262
+      },
+      "id": "<urn:uuid:8ddad837-2ebe-46ac-b801-547c96bbf24c>",
+      "date": "2021-10-18T21:19:02Z",
+      "dump": "CC-MAIN-2021-43",
+      "language": "jpn",
+      "language_score": 1.0000096559524536,
+      "url": "https://yukashikisekai.com/?p=115801"
+    },
+    "multilingual_spa_Latn.jsonl.gz": {
+      "text": {
+        "type": "text",
+        "chars": 3876
+      },
+      "id": "<urn:uuid:1e1c9e4e-8420-421b-a61c-9a3e5e066442>",
+      "date": "2018-06-19T10:14:11Z",
+      "dump": "CC-MAIN-2018-26",
+      "language": "spa",
+      "language_score": 0.9930642247200012,
+      "url": "https://www.ufo-spain.com/2017/11/09/katy-perry-carne-humana-mas-fina-del-mundo-mejor-la-animal/"
+    },
+    "pdf_en.jsonl.gz": {
+      "text": {
+        "type": "text",
+        "chars": 4747
+      },
+      "id": "<urn:uuid:711e0d4f-5e3e-4915-b1e8-adc460791f98>",
+      "dump": "CC-MAIN-2022-33",
+      "url": "https://extension.uga.edu/content/dam/extension-county-offices/carroll-county/anr/ccmgv/ask-a-mg/2016/april-2016/APRIL%2026%202016%20PIZZA%20Garden.pdf",
+      "date": "2022-08-12T12:56:16+00:00",
+      "language": "eng_Latn"
+    }
+  }
+}

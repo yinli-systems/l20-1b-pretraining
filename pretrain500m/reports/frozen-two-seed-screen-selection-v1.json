@@ -1,0 +1,241 @@
+{
+  "aggregate": {
+    "F0_existing_web_control": {
+      "mean_equal_domain_loss": 3.312785542380966,
+      "mean_loss_by_domain": {
+        "code": 3.5090406235210057,
+        "general_web": 3.343211955359853,
+        "knowledge_reading": 2.9431268664304073,
+        "math": 2.9311226458004818,
+        "multilingual": 3.8374256207930815
+      },
+      "seed_spread": 0.005397235982284254,
+      "worst_seed_equal_domain_loss": 3.315484160372108
+    },
+    "F1_broad_english_no_synthetic": {
+      "mean_equal_domain_loss": 2.7025417762065977,
+      "mean_loss_by_domain": {
+        "code": 1.7996703167534096,
+        "general_web": 3.104054197549591,
+        "knowledge_reading": 2.6168460872081436,
+        "math": 2.233421982833634,
+        "multilingual": 3.7587162966882097
+      },
+      "seed_spread": 0.0011444291873417,
+      "worst_seed_equal_domain_loss": 2.7031139908002686
+    },
+    "F2_reasoning_no_synthetic": {
+      "mean_equal_domain_loss": 2.689510472736955,
+      "mean_loss_by_domain": {
+        "code": 1.7481176253665276,
+        "general_web": 3.111118825810376,
+        "knowledge_reading": 2.6157758892912204,
+        "math": 2.21498116446021,
+        "multilingual": 3.757558858756442
+      },
+      "seed_spread": 5.915759676344834e-05,
+      "worst_seed_equal_domain_loss": 2.689540051535337
+    },
+    "F3_broad_multilingual_no_synthetic": {
+      "mean_equal_domain_loss": 2.571669466879479,
+      "mean_loss_by_domain": {
+        "code": 1.7471462928647572,
+        "general_web": 3.112201759018707,
+        "knowledge_reading": 2.619483603655643,
+        "math": 2.240669009113579,
+        "multilingual": 3.1388466697447073
+      },
+      "relative_mean_loss_reduction_vs_control": 0.22371387040310242,
+      "seed_spread": 0.0007990005393252453,
+      "worst_seed_equal_domain_loss": 2.5720689671491415
+    }
+  },
+  "next_gate": "held-out confirmation and expanded admitted training data; this screen is not final promotion",
+  "ranking": [
+    "F3_broad_multilingual_no_synthetic",
+    "F2_reasoning_no_synthetic",
+    "F1_broad_english_no_synthetic"
+  ],
+  "runs": [
+    {
+      "checkpoint_bytes": 2372504677,
+      "checkpoint_digest_evidence": "runner digest after atomic save; status and digest file agree",
+      "checkpoint_sha256": "8784c17737488c9b30d273aaeb3d65e58a3d290405e6ddacca5094393cd04e3d",
+      "final_equal_domain_loss": 3.315484160372108,
+      "final_loss_by_domain": {
+        "code": 3.5144881584863517,
+        "general_web": 3.3429925666643534,
+        "knowledge_reading": 2.943807090616361,
+        "math": 2.933513636806446,
+        "multilingual": 3.8426193492870273
+      },
+      "initial_equal_domain_loss": 3.322205684833928,
+      "manifest_sha256": "e1f5f8524349319362fd377be62ea8affb9acb59f1a491ddcd31d3fad2a25343",
+      "metrics_sha256": "38bba71efefd9fcfc57bf4a6fc87c6c12d4ff6420fa711bbe061ad26cfb8e55d",
+      "mfu10_median": 0.7594084967279439,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/screens-v2/F0_existing_web_control-1588453/train",
+      "recipe": "F0_existing_web_control",
+      "run_fingerprint_sha256": "9b01858c5fe50edb63029f383de4925d3d56ad7d010d4f1d8bcf7bdca062a183",
+      "seed": 20260914,
+      "status_sha256": "047d61032197b5845bc45004a3ce15ad3eddd767e312ed0e7875fb2b09b4ce36"
+    },
+    {
+      "checkpoint_bytes": 2372504677,
+      "checkpoint_digest_evidence": "runner digest after atomic save; status and digest file agree",
+      "checkpoint_sha256": "111be00221a7448a389cc82885051762dc35fefec5c5ac12006fd3a79cf0aef2",
+      "final_equal_domain_loss": 3.310086924389824,
+      "final_loss_by_domain": {
+        "code": 3.5035930885556597,
+        "general_web": 3.343431344055353,
+        "knowledge_reading": 2.9424466422444535,
+        "math": 2.928731654794518,
+        "multilingual": 3.832231892299136
+      },
+      "initial_equal_domain_loss": 3.322205684833928,
+      "manifest_sha256": "e64a21b8dcae0b39d0585ec447ab7a46781aa587b6594d2a13f1a7139275f66f",
+      "metrics_sha256": "0350ce468755c20767bd97274bf297b78f87aff9139af4097b2f9514b1ce38f8",
+      "mfu10_median": 0.7585056186575218,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/screens-v3/F0_existing_web_control-seed20260915-1588561/train",
+      "recipe": "F0_existing_web_control",
+      "run_fingerprint_sha256": "2c3484c3a7905729572630f411117144926082a54a1ca6c23994075631b20d8e",
+      "seed": 20260915,
+      "status_sha256": "4668d223f0e8f0a0e956329e7c6de0dbb77d669dc4e9fb9e1e87289f44a65734"
+    },
+    {
+      "checkpoint_bytes": 2372504677,
+      "checkpoint_digest_evidence": "runner digest after atomic save; status and digest file agree",
+      "checkpoint_sha256": "cd64090e27902580ffd155007e102202c91eb814b85b8016051596c717592001",
+      "final_equal_domain_loss": 2.7031139908002686,
+      "final_loss_by_domain": {
+        "code": 1.799706218443768,
+        "general_web": 3.1039262081900594,
+        "knowledge_reading": 2.616846793102803,
+        "math": 2.233284099361718,
+        "multilingual": 3.761806634902993
+      },
+      "initial_equal_domain_loss": 3.322205684833928,
+      "manifest_sha256": "020bebc2922abda744be289791349b3134ec3066d450f616fdbbe8618726848d",
+      "metrics_sha256": "a491b9c01fa20c5064f67bd820214ae8aef3fc55164c18c48efc8eb12f0c0df3",
+      "mfu10_median": 0.7751155095740696,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/screens-v3/F1_broad_english_no_synthetic-seed20260914-1588467/train",
+      "recipe": "F1_broad_english_no_synthetic",
+      "run_fingerprint_sha256": "53ce5c66fc3a59b2524789e6e6a7c24e7face2be553b998c8debabb68aef239a",
+      "seed": 20260914,
+      "status_sha256": "89842bca0a5fa1b4d560713d92b142cf79e1fe4c712c95df1674ff58c80868d6"
+    },
+    {
+      "checkpoint_bytes": 2372504677,
+      "checkpoint_digest_evidence": "runner digest after atomic save; status and digest file agree",
+      "checkpoint_sha256": "0d2a45c4c8071df2cf894f57661ec02940e963d23bcfe83463b3ea9d84c1b694",
+      "final_equal_domain_loss": 2.701969561612927,
+      "final_loss_by_domain": {
+        "code": 1.799634415063051,
+        "general_web": 3.1041821869091226,
+        "knowledge_reading": 2.6168453813134835,
+        "math": 2.2335598663055505,
+        "multilingual": 3.7556259584734266
+      },
+      "initial_equal_domain_loss": 3.322205684833928,
+      "manifest_sha256": "098319e0a9796f10d93148bdaea17df63311065a717fdccb927a0ff51df7da4b",
+      "metrics_sha256": "ce9cbd675fd63f472b9cd0821c9a29de9b627e9b0f2ef1823455399a68c1ffcb",
+      "mfu10_median": 0.7518971068397534,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/screens-v3/F1_broad_english_no_synthetic-seed20260915-1588468/train",
+      "recipe": "F1_broad_english_no_synthetic",
+      "run_fingerprint_sha256": "a6c6b170f87ea3cc83427caf583d359ab165d6e02a7da809d9cb48d0638762f5",
+      "seed": 20260915,
+      "status_sha256": "d9b7298bc04397ab3545d7e2ecd5053b7b56882b836973b4d94777136495bbee"
+    },
+    {
+      "checkpoint_bytes": 2372504677,
+      "checkpoint_digest_evidence": "runner digest after atomic save; status and digest file agree",
+      "checkpoint_sha256": "52e7944d7d604df4dbf8875f3f76e026b30af22191254dfb682cb7b9f084be1f",
+      "final_equal_domain_loss": 2.6894808939385735,
+      "final_loss_by_domain": {
+        "code": 1.7493945703837075,
+        "general_web": 3.111382465982588,
+        "knowledge_reading": 2.616040917170649,
+        "math": 2.215937238707306,
+        "multilingual": 3.7546492774486167
+      },
+      "initial_equal_domain_loss": 3.322205684833928,
+      "manifest_sha256": "0af8c28443313d24b357c0fe11a22167efcc4e27e56895d541441476275a3255",
+      "metrics_sha256": "48fbee3c013ea298daa905a571b84b22f88eae73fe4baf44bfc8e18cfcce8ca1",
+      "mfu10_median": 0.759147599224308,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/screens-v3/F2_reasoning_no_synthetic-seed20260914-1588523/train",
+      "recipe": "F2_reasoning_no_synthetic",
+      "run_fingerprint_sha256": "8bd8c9483134aa6aac36073852b4f189600f4ddd40b14f57f3dde0d3df61f693",
+      "seed": 20260914,
+      "status_sha256": "a3146394840566230897a322a5eed12f0b77d4bc0b494b19e5570f942ed039cb"
+    },
+    {
+      "checkpoint_bytes": 2372504677,
+      "checkpoint_digest_evidence": "runner digest after atomic save; status and digest file agree",
+      "checkpoint_sha256": "5c6c93b36484316324af1aa9bb82a6abca895c486ec7bf2f107ed26cac639522",
+      "final_equal_domain_loss": 2.689540051535337,
+      "final_loss_by_domain": {
+        "code": 1.7468406803493477,
+        "general_web": 3.1108551856381643,
+        "knowledge_reading": 2.6155108614117917,
+        "math": 2.214025090213114,
+        "multilingual": 3.760468440064267
+      },
+      "initial_equal_domain_loss": 3.322205684833928,
+      "manifest_sha256": "6babe1d864d97789a770a951a5fbd813321730879e7d813260f7162a0eb3426c",
+      "metrics_sha256": "b6903b88a2d96273496dc7a0bcbd29c842de047644f4aaecd7da72c2c23675b1",
+      "mfu10_median": 0.7731097753560855,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/screens-v3/F2_reasoning_no_synthetic-seed20260915-1588524/train",
+      "recipe": "F2_reasoning_no_synthetic",
+      "run_fingerprint_sha256": "71e23593fa11ede44fdbc42280cd13fa062ae2a60a2dfed18969f6adbf5f62d6",
+      "seed": 20260915,
+      "status_sha256": "ea0dc7fce3864599db777e92da975525fab9de9b382a907074905328e8e70ea4"
+    },
+    {
+      "checkpoint_bytes": 2372504677,
+      "checkpoint_digest_evidence": "runner digest after atomic save; status and digest file agree",
+      "checkpoint_sha256": "4212f9aded17a8b5b0047efc83c7c2ba7d1198b51c2e4b63bc54e3daca6d7d4c",
+      "final_equal_domain_loss": 2.5720689671491415,
+      "final_loss_by_domain": {
+        "code": 1.7479109225371041,
+        "general_web": 3.112344661490994,
+        "knowledge_reading": 2.6196413745832516,
+        "math": 2.2408333467079387,
+        "multilingual": 3.139614530426418
+      },
+      "initial_equal_domain_loss": 3.322205684833928,
+      "manifest_sha256": "70803f311092c9dc734b097f1be765d2811b802938b1e1800620cc212cd856c7",
+      "metrics_sha256": "43a5e9f0c0ceda25ce0fae92038d138c00ac8a1dcdc2384c9448d69abb48adc7",
+      "mfu10_median": 0.7685061400395917,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/screens-v2/F3_broad_multilingual_no_synthetic-1588454/train",
+      "recipe": "F3_broad_multilingual_no_synthetic",
+      "run_fingerprint_sha256": "f3c1e61338c22d964182cbb8da108a2f001627bba2085a928ca6bc956c849d26",
+      "seed": 20260914,
+      "status_sha256": "1a8dbd87fe62f49ab05967c3cd2ad639077af51f32e758f80ac6a7dd10f3a2e5"
+    },
+    {
+      "checkpoint_bytes": 2372504677,
+      "checkpoint_digest_evidence": "runner digest after atomic save; status and digest file agree",
+      "checkpoint_sha256": "dcc9a4f935d8b5574dc449b6263c696d9d355e70d157c8914f647c7aed61324a",
+      "final_equal_domain_loss": 2.571269966609816,
+      "final_loss_by_domain": {
+        "code": 1.74638166319241,
+        "general_web": 3.1120588565464207,
+        "knowledge_reading": 2.6193258327280344,
+        "math": 2.240504671519219,
+        "multilingual": 3.1380788090629967
+      },
+      "initial_equal_domain_loss": 3.322205684833928,
+      "manifest_sha256": "39f7c16980c5f52f50f203b77ce2efde9a80074b9eccc5eb7b6912c70f4b11d4",
+      "metrics_sha256": "9d0a82f8baed25e8c35204dcb90d49dc97c9d4e176b3fe52fd24921c8dc55c17",
+      "mfu10_median": 0.7748475340859227,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/screens-v3/F3_broad_multilingual_no_synthetic-seed20260915-1588560/train",
+      "recipe": "F3_broad_multilingual_no_synthetic",
+      "run_fingerprint_sha256": "7e0b5820dd1bf4a6f2a4f3c022164e2143dc8fa759978936be6cfd8b246155fa",
+      "seed": 20260915,
+      "status_sha256": "133075ddfc4175b8c7613008f2f9ae2fd11d47d2efb3c59d31825be6e1728098"
+    }
+  ],
+  "schema_version": 1,
+  "selection_rule": "candidate with lower worst-seed equal-domain loss, then lower mean, then recipe id",
+  "status": "PASS_FROZEN_TWO_SEED_SCREEN_SELECTION",
+  "winner": "F3_broad_multilingual_no_synthetic"
+}

@@ -1,0 +1,68 @@
+{
+  "checked_utc": "2026-09-13T21:00:13.476327+00:00",
+  "free_bytes": 22417489920,
+  "sources": [
+    {
+      "id": "code_cpp",
+      "status": "RAW_SEGMENT_READY",
+      "rows_written": 3509,
+      "uncompressed_output_bytes": 16392823,
+      "network_bytes": 7066977,
+      "updated_utc": "2026-09-13T20:58:49.756431+00:00",
+      "stop_reason": null,
+      "error": null,
+      "groups_read": 26,
+      "groups_requested": 26
+    },
+    {
+      "id": "code_java",
+      "status": "READING",
+      "rows_written": 7452,
+      "uncompressed_output_bytes": 25848194,
+      "network_bytes": 29784249,
+      "updated_utc": "2026-09-13T21:00:04.790369+00:00",
+      "stop_reason": null,
+      "error": null,
+      "groups_read": 224,
+      "groups_requested": 226
+    },
+    {
+      "id": "code_javascript",
+      "status": "RAW_SEGMENT_READY",
+      "rows_written": 9372,
+      "uncompressed_output_bytes": 37641227,
+      "network_bytes": 9811214,
+      "updated_utc": "2026-09-13T20:14:42.297107+00:00",
+      "stop_reason": null,
+      "error": null,
+      "groups_read": 52,
+      "groups_requested": 52
+    },
+    {
+      "id": "code_python",
+      "status": "RAW_SEGMENT_READY",
+      "rows_written": 21299,
+      "uncompressed_output_bytes": 96715740,
+      "network_bytes": 18826865,
+      "updated_utc": "2026-09-13T20:49:19.294494+00:00",
+      "stop_reason": null,
+      "error": null,
+      "groups_read": 141,
+      "groups_requested": 141
+    },
+    {
+      "id": "code_typescript",
+      "status": "READING",
+      "rows_written": 378,
+      "uncompressed_output_bytes": 1631763,
+      "network_bytes": 5020158,
+      "updated_utc": "2026-09-13T20:59:37.561731+00:00",
+      "stop_reason": null,
+      "error": null,
+      "groups_read": 1,
+      "groups_requested": 13
+    }
+  ],
+  "worker": "  11401    01:08:42 Ssl  /ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python /ssd/scxi253/pretrain500m-20260912-v1/source/intake-v2/intake.py\n",
+  "combined_inputs_ready": false
+}

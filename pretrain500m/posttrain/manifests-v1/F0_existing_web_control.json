@@ -1,0 +1,226 @@
+{
+  "schema": "p529m-packed-mixture-v3",
+  "protocol_id": "p529m-fast-start-nosynthetic-v1",
+  "recipe": "F0_existing_web_control",
+  "sequence_length": 2048,
+  "tokenizer_sha256": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+  "source_block_quotas": {
+    "fineweb_edu": 262144
+  },
+  "sources": [
+    {
+      "id": "fineweb_edu",
+      "revision": "87f09149ef4734204d70ed1d046ddc9ca3f2b8f9",
+      "prior_prediction_tokens": 15999172608,
+      "max_cumulative_epochs": "2.2",
+      "shards": [
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00000.npy",
+          "sha256": "1e668bebf685855fb3014b44fa39b9750a9d67775de19b8fb45667f6065be37b",
+          "blocks": 131072
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00001.npy",
+          "sha256": "3ba65abf61f86ddb64285d35dc9cafe9da42d583dfa48d5af6c7cba937fc9998",
+          "blocks": 131072
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00002.npy",
+          "sha256": "603972901ca8835b1ebe80c250e54be00801de72affaf56f16add8c3956b1103",
+          "blocks": 60430
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00003.npy",
+          "sha256": "67751feffcf67fd82bd10005e9265cad39336baadeaf3f563d63d92919d6169e",
+          "blocks": 131072
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00004.npy",
+          "sha256": "9969be06baa234e5d0fc6de8b840085f06b958b4126c8e8474550b4d8078ac86",
+          "blocks": 131072
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00005.npy",
+          "sha256": "c9b3f8c76b4b239102d9df0f1fc30e13f4a6f7979e6920cd6aac5bd5a9e73a34",
+          "blocks": 58730
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00006.npy",
+          "sha256": "d7ea855db46dd7ca91f3c97bbe932a5c64923a96313f279a974476126e98be26",
+          "blocks": 131072
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00007.npy",
+          "sha256": "3dd1981c66e917cbf038fceb5ef30f637291a7c903cc3321c434a0c750b68647",
+          "blocks": 131072
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00008.npy",
+          "sha256": "5e10c1f1ce0b2b456bce42ddd61bc6847e962d19bb6129a6cd4fd94bc7e7a6cf",
+          "blocks": 55496
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00009.npy",
+          "sha256": "ab98a051a432a5525e9b748ae15d20325f6999a020493770948053a02dc958f8",
+          "blocks": 131072
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00010.npy",
+          "sha256": "54612f7428c01e141a86fa62e1d0d8da78d42537a694eec141a27bbd4409b0f4",
+          "blocks": 131072
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00011.npy",
+          "sha256": "fb30ff46c4d8e3a2f795e1b62a63f7344233db31401f44a0a697cc92bb564ed4",
+          "blocks": 54627
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00012.npy",
+          "sha256": "21a5e770a60404b84ed8c502635d4bdd3be33aecf3cc0dfbf8de9b611d63e76a",
+          "blocks": 131072
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00013.npy",
+          "sha256": "8c1b45292b7a5a361e9dd6f638f9c2f0616f8f73b7c31cc3d16baf4efd0bdd5e",
+          "blocks": 131072
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00014.npy",
+          "sha256": "1d48d8abd6bf4daa8420617252d2680fdf8064029868ae966bba86c7356f4d01",
+          "blocks": 49519
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00015.npy",
+          "sha256": "1b7fa899e8b500ef3b00312e1ed375fd46b3be1870df1870295127c622fdaeff",
+          "blocks": 131072
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00016.npy",
+          "sha256": "0d83cea8d0d4e019132411d48ee1017d6cd7b2de21b5aa286961c35c33b49a97",
+          "blocks": 131072
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00017.npy",
+          "sha256": "e8df37624813c9d8e4c32abdcd6d1e3a660d817c462cf34808769bf3b550c157",
+          "blocks": 45169
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00018.npy",
+          "sha256": "a15a3b7c42933f600af8eb004b1bfeb037f1cb07cfed26739d1b7286a06fb9e6",
+          "blocks": 131072
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00019.npy",
+          "sha256": "51136e3ffa5dad4e61fabcbae53c5f7258c8656819f350d2c63a6f0e6b94e27f",
+          "blocks": 131072
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00020.npy",
+          "sha256": "a0d2cf896ede984cda9816ba9225a3f9967db96a49106ca1aa0a8da2206437a0",
+          "blocks": 43605
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00021.npy",
+          "sha256": "3760ee11e0df6e655b9c91cc2a7d2ee815b97e2e1cffdefa4235e2afa7959d7a",
+          "blocks": 131072
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00022.npy",
+          "sha256": "9bf4b01bce84414cb0118fc4b7c523bd69121d478f4c6d9fecf43ab2ccbb3ded",
+          "blocks": 131072
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00023.npy",
+          "sha256": "e8a9546c1a6494f222c336d5a627d19d339492c7c3545ec42fda5514570fbcc7",
+          "blocks": 41895
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00024.npy",
+          "sha256": "9ce1ec82cfd405e9edf49813724b5e39a0732c5cbf6df2503d78dfafbd20e627",
+          "blocks": 131072
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00025.npy",
+          "sha256": "809af840b8e8334e59193728f35c34af6bd515165a32c7dea121db7dffae5f5d",
+          "blocks": 131072
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00026.npy",
+          "sha256": "2a5e79493df4e8ccf15293732147e720abd4fb13d2ad3dde4a240803ffc89103",
+          "blocks": 40166
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00027.npy",
+          "sha256": "365073efdb608a1ba2ab4d3e118ef15c399ce4f9b2dd5f8d4fbb25f357161e0a",
+          "blocks": 131072
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00028.npy",
+          "sha256": "df6ad56f89fa45e89fe48188ba9ec315aa7c7571a28a545db2d3981951d6bf31",
+          "blocks": 131072
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00029.npy",
+          "sha256": "16755c8ca53f96af2bf417b666577cc40b2520146d5277f0617166713606a843",
+          "blocks": 39052
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00030.npy",
+          "sha256": "43178919970bedbf2ea31a9be1345ae48ec05e5e40aa7b84660658ea66741ea5",
+          "blocks": 131072
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00031.npy",
+          "sha256": "782b5693a699cf4462df1ffaa584971ef76294b53647017c07efb8aa48fc5a54",
+          "blocks": 131072
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00032.npy",
+          "sha256": "228b21c6a269dc78e4cb26ee55a5d5818a5a12cf40b60efec8a1de93d918f5b9",
+          "blocks": 38148
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00033.npy",
+          "sha256": "cc0f0245c56b830516255f7c26a0466e2829931370866fc93cb0980cab750ff2",
+          "blocks": 131072
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00034.npy",
+          "sha256": "65492127c35d86baa96e5b864e4a9dff0f80006adac069d6a3ab97053aef5ea7",
+          "blocks": 131072
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00035.npy",
+          "sha256": "4e923bde431dfea351aeb23bc430b28f2cc9672dab9cfe58e4e5e89e34ffb8e2",
+          "blocks": 39602
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00036.npy",
+          "sha256": "577ac823ffb96efd1e05daf9579c2f8765704b279164e9d08c0adea396ded073",
+          "blocks": 131072
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00037.npy",
+          "sha256": "45602a638f8073efc61728b4c4e19f7447f1b507d9ed9c6cb3dde3df4ef65229",
+          "blocks": 131072
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00038.npy",
+          "sha256": "7c316d2626b80b515b06d56e4a5916b009f830e6079db6862e454efacc9f019f",
+          "blocks": 39831
+        },
+        {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/train-npy/train-00039.npy",
+          "sha256": "935813921eb379df04f02bdef55ec739d4b7f83c830716b7d4b31719dd3aea01",
+          "blocks": 76016
+        }
+      ]
+    }
+  ],
+  "evidence": {
+    "experiment_design_sha256": "3d58055a1d2398b90c963c9ed4be7e99e1d1644281b95599c4ad5339d805d105",
+    "quota_plan_sha256": "0a6522258e1037dac86a5c6f8fd9d8cb65e6b40ecb3ff3cf9193f52b9999cf50",
+    "filtered_pack_sha256": "1d0fcd10e2e107c49402f0ba4601d4dc50b29d64e245dbfbf472702f61b49103",
+    "fineweb_parent_manifest_sha256": "29f75eca421f26653dd520e650d50e6a7802e9a499944b3b8382688fa3806e1a"
+  }
+}

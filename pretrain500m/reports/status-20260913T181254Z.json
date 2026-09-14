@@ -1,0 +1,30 @@
+{
+  "checked_utc": "2026-09-13T18:12:54.245158+00:00",
+  "scheduler_checked_utc": "2026-09-13T18:11:47.189261+00:00",
+  "project_running_jobs": 0,
+  "project_pending_jobs": 0,
+  "gpu_unallocated_on_healthy_nodes": {
+    "RTX_5090": 46,
+    "RTX_4090": 26
+  },
+  "gpu_caveat": "Scheduler-unallocated capacity, not guaranteed immediate allocation; 6 of the 4090 GPUs are on MIXED+PLANNED nodes. CPU, reservations and account limits were not qualified.",
+  "shared_ssd_free_human": "39G",
+  "huggingface_head": {
+    "exit_code": 28,
+    "http_status": "000",
+    "error": "curl: (28) Failed to connect to huggingface.co port 443 after 2722 ms: Connection timed out\n"
+  },
+  "posttrain_entries": [
+    "cpt-lr-v1-1587857"
+  ],
+  "formal_training_status": {
+    "checkpoint_sha256": "13aa21721e15c48cdfdafe30d8fdd41d9c95c90be766327661d96af1e90dd6cf",
+    "status": "COMPLETED",
+    "step": 7629,
+    "tokens": 15999172608,
+    "unix": 1789308737.016033
+  },
+  "pipeline_stage": "DATA_AND_GPU_QUALIFICATION_PENDING",
+  "new_mixture_training_launched": false,
+  "new_sft_launched": false
+}

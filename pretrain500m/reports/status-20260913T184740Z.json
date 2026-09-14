@@ -1,0 +1,248 @@
+{
+  "checked_utc": "2026-09-13T18:47:40.673705+00:00",
+  "queue": {
+    "stdout": "",
+    "stderr": ""
+  },
+  "accounting": {
+    "stdout": "1588191|FAILED|00:19:11|1:0\n1588191.batch|FAILED|00:19:11|1:0\n1588191.extern|COMPLETED|00:19:11|0:0\n1588191.0|COMPLETED|00:08:55|0:0\n1588191.1|COMPLETED|00:05:06|0:0\n1588191.2|COMPLETED|00:05:07|0:0\n",
+    "stderr": ""
+  },
+  "comparison.json": {
+    "status": "FAIL",
+    "formal_quality_gain": false,
+    "scope": "same-allocation 4-GPU recovery with frozen FineWeb data",
+    "error": "tensor mismatch: root/model/model.embed_tokens.weight"
+  },
+  "continuous/training-status.json": {
+    "checkpoint_sha256": "53799d5f6d27f79a420293b27482c0ed32f64ca51d1c5a58ed1083a866dc5a36",
+    "formal_promotion": false,
+    "mfu_window_passed": true,
+    "status": "QUALIFICATION_COMPLETED",
+    "step": 32,
+    "tokens": 67108864,
+    "unix": 1789324415.0527058
+  },
+  "split/training-status.json": {
+    "checkpoint_sha256": "38c34ba53e81bf7fbdf251d5bbd9b8994ac9a7093bf940ddba6e01a452ab6660",
+    "formal_promotion": false,
+    "mfu_window_passed": true,
+    "status": "QUALIFICATION_COMPLETED",
+    "step": 32,
+    "tokens": 67108864,
+    "unix": 1789325027.9084823
+  },
+  "continuous_files": [
+    "launches.jsonl",
+    "metrics.jsonl",
+    "resume.pt",
+    "resume.sha256",
+    "run-manifest.json",
+    "training-status.json"
+  ],
+  "continuous/launches.jsonl": {
+    "rows": 1,
+    "last": [
+      {
+        "code_sha256": {
+          "mixture.py": "6ede8634331f83c21c8320d6fcad0d13f6d13a5636d5bd4adbaa6d0d8dad2251",
+          "model.py": "581a9e0ccd00d940d6ae27ff011d3d430dae8825a257b9ebc91f24b1a9637998",
+          "resume.py": "31442c090c47151bfde5b8ce5d19b930a66e96c134676bd744ea1e6f5c29f811",
+          "train_cpt.py": "8a69aa55b3e992ccdbbfb30ae799bf8dbd67d9ca2c90a06eb2e1cb2a706340d0"
+        },
+        "resume": false,
+        "run_fingerprint_sha256": "3d2723fcfac39ce84d7ae4eeb5b7cdf4d175dc7c814d80ff04a3d9b85536b392",
+        "slurm_job_id": "1588191",
+        "step_at_launch": 0,
+        "unix": 1789323940.5192366
+      }
+    ],
+    "recent_mfu": [
+      null
+    ]
+  },
+  "continuous/metrics.jsonl": {
+    "rows": 35,
+    "last": [
+      {
+        "step": 32,
+        "val_loss": 2.720053195953369,
+        "val_ppl": 15.181129798147257,
+        "unix": 1789324397.0417218
+      }
+    ],
+    "recent_mfu": [
+      0.7756569098678106,
+      0.7756365189310023,
+      0.7754872632129569,
+      0.7756125515020708,
+      0.7754932902127084,
+      0.7753698158172909,
+      0.7587325974735133,
+      0.7678079460043101,
+      0.7650358497148309,
+      null
+    ]
+  },
+  "split_files": [
+    "launches.jsonl",
+    "metrics.jsonl",
+    "resume.pt",
+    "resume.sha256",
+    "run-manifest.json",
+    "training-status.json"
+  ],
+  "split/launches.jsonl": {
+    "rows": 2,
+    "last": [
+      {
+        "code_sha256": {
+          "mixture.py": "6ede8634331f83c21c8320d6fcad0d13f6d13a5636d5bd4adbaa6d0d8dad2251",
+          "model.py": "581a9e0ccd00d940d6ae27ff011d3d430dae8825a257b9ebc91f24b1a9637998",
+          "resume.py": "31442c090c47151bfde5b8ce5d19b930a66e96c134676bd744ea1e6f5c29f811",
+          "train_cpt.py": "8a69aa55b3e992ccdbbfb30ae799bf8dbd67d9ca2c90a06eb2e1cb2a706340d0"
+        },
+        "resume": true,
+        "run_fingerprint_sha256": "3d2723fcfac39ce84d7ae4eeb5b7cdf4d175dc7c814d80ff04a3d9b85536b392",
+        "slurm_job_id": "1588191",
+        "step_at_launch": 16,
+        "unix": 1789324780.3303459
+      }
+    ],
+    "recent_mfu": [
+      null,
+      null
+    ]
+  },
+  "split/metrics.jsonl": {
+    "rows": 36,
+    "last": [
+      {
+        "step": 32,
+        "val_loss": 2.7200846672058105,
+        "val_ppl": 15.181607574833556,
+        "unix": 1789325011.1632712
+      }
+    ],
+    "recent_mfu": [
+      0.7747137056077084,
+      0.7747420688899339,
+      0.7743707814039095,
+      0.7745744761660324,
+      0.7745430665691274,
+      0.7743429808856112,
+      0.774420378407384,
+      0.7744392674943428,
+      0.7744330594452967,
+      null
+    ]
+  },
+  "intake_summary": {
+    "status": "RAW_INTAKE_FINISHED_NOT_ADMITTED",
+    "checked_utc": "2026-09-13T18:40:51.064818+00:00",
+    "sources_ready": 16,
+    "sources_blocked": 0,
+    "rows": 47078,
+    "training_admitted": false
+  },
+  "intake_receipts": [
+    {
+      "file": "code_cpp.receipt.json",
+      "status": "RAW_SEGMENT_READY",
+      "rows": null,
+      "errors": null
+    },
+    {
+      "file": "code_java.receipt.json",
+      "status": "RAW_SEGMENT_READY",
+      "rows": null,
+      "errors": null
+    },
+    {
+      "file": "code_javascript.receipt.json",
+      "status": "RAW_SEGMENT_READY",
+      "rows": null,
+      "errors": null
+    },
+    {
+      "file": "code_python.receipt.json",
+      "status": "RAW_SEGMENT_READY",
+      "rows": null,
+      "errors": null
+    },
+    {
+      "file": "code_typescript.receipt.json",
+      "status": "RAW_SEGMENT_READY",
+      "rows": null,
+      "errors": null
+    },
+    {
+      "file": "cosmopedia2.receipt.json",
+      "status": "RAW_SEGMENT_READY",
+      "rows": null,
+      "errors": null
+    },
+    {
+      "file": "dclm.receipt.json",
+      "status": "RAW_SEGMENT_READY",
+      "rows": null,
+      "errors": null
+    },
+    {
+      "file": "finemath4.receipt.json",
+      "status": "RAW_SEGMENT_READY",
+      "rows": null,
+      "errors": null
+    },
+    {
+      "file": "infiwebmath4.receipt.json",
+      "status": "RAW_SEGMENT_READY",
+      "rows": null,
+      "errors": null
+    },
+    {
+      "file": "multilingual_arb_Arab.receipt.json",
+      "status": "RAW_SEGMENT_READY",
+      "rows": null,
+      "errors": null
+    },
+    {
+      "file": "multilingual_cmn_Hani.receipt.json",
+      "status": "RAW_SEGMENT_READY",
+      "rows": null,
+      "errors": null
+    },
+    {
+      "file": "multilingual_deu_Latn.receipt.json",
+      "status": "RAW_SEGMENT_READY",
+      "rows": null,
+      "errors": null
+    },
+    {
+      "file": "multilingual_fra_Latn.receipt.json",
+      "status": "RAW_SEGMENT_READY",
+      "rows": null,
+      "errors": null
+    },
+    {
+      "file": "multilingual_jpn_Jpan.receipt.json",
+      "status": "RAW_SEGMENT_READY",
+      "rows": null,
+      "errors": null
+    },
+    {
+      "file": "multilingual_spa_Latn.receipt.json",
+      "status": "RAW_SEGMENT_READY",
+      "rows": null,
+      "errors": null
+    },
+    {
+      "file": "pdf_en.receipt.json",
+      "status": "RAW_SEGMENT_READY",
+      "rows": null,
+      "errors": null
+    }
+  ],
+  "intake_process": "",
+  "disk": "Filesystem                   Size  Used Avail Use% Mounted on\nJuiceFS:juicefs-shared-nvme   10T   10T   27G 100% /ssd\n"
+}

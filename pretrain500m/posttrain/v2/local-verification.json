@@ -1,0 +1,33 @@
+{
+  "checked_utc": "2026-09-13T17:44:28.895227+00:00",
+  "status": "LOCAL_CPU_VERIFIED_GPU_QUALIFICATION_PENDING",
+  "tests": {
+    "passed": 31,
+    "failed": 0,
+    "skipped": 0,
+    "seconds": 1.843,
+    "junit_sha256": "53f3772d246e8c6bbbd5f3b20791fe5cbd164b80cd2acac679a4fc0708bce1ee"
+  },
+  "python_syntax": "PASS",
+  "cli_help": "PASS",
+  "continuous_vs_resumed_cpu_model_optimizer_rng": "BIT_EXACT",
+  "scope": "Synthetic fixed blocks and tiny CPU dropout network; not the 529M CUDA/NCCL trainer",
+  "source_sha256": {
+    "mixture.py": "6ede8634331f83c21c8320d6fcad0d13f6d13a5636d5bd4adbaa6d0d8dad2251",
+    "resume.py": "31442c090c47151bfde5b8ce5d19b930a66e96c134676bd744ea1e6f5c29f811",
+    "test_v2.py": "8b04d063d9532a09f51ed84774f45a20861d7aa1b6337c747208026897e9e47d",
+    "train_cpt.py": "3cf9226a16fc4ea78d8385f9df47ac15cca5c73d2583fd67e395d587c9ff10f5"
+  },
+  "preserved_v1_source_sha256": {
+    "posttrain/train_cpt.py": "e2ba47a19ee24ed023a114cb2793611072ef3aa1ca8f0dee2a60e1870cc25610",
+    "data.py": "ef5469eafa503fa767fd5fe1e86ef464cf31b44db15f1082fcab3f945cb71b0c",
+    "model.py": "581a9e0ccd00d940d6ae27ff011d3d430dae8825a257b9ebc91f24b1a9637998"
+  },
+  "cuda_nccl_resume_test": "NOT_RUN",
+  "real_mixture_mfu": "UNMEASURED",
+  "new_gpu_training_launched": false,
+  "formal_quality_gain": "UNPROVEN",
+  "full_corpus_admission": "PENDING",
+  "five_domain_evaluator": "PENDING",
+  "subsource_mixture_preparation": "PENDING"
+}

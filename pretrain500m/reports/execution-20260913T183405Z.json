@@ -1,0 +1,71 @@
+{
+  "checked_utc": "2026-09-13T18:34:05.180320+00:00",
+  "queue": "1588191|RUNNING|9:16|wqd10nbj01g3",
+  "continuous": {
+    "last": {
+      "step": 32,
+      "loss": 2.6632652282714844,
+      "mfu": 0.7650358497148309,
+      "tokens_per_second": 160677.70741268303
+    },
+    "recent_10_mfu_median": 0.7754902767128327,
+    "status": {
+      "checkpoint_sha256": "53799d5f6d27f79a420293b27482c0ed32f64ca51d1c5a58ed1083a866dc5a36",
+      "formal_promotion": false,
+      "mfu_window_passed": true,
+      "status": "QUALIFICATION_COMPLETED",
+      "step": 32,
+      "tokens": 67108864,
+      "unix": 1789324415.0527058
+    }
+  },
+  "intake": [
+    {
+      "id": "code_cpp",
+      "status": "READING",
+      "rows_written": 414,
+      "output_bytes": null,
+      "network_bytes": 4904548,
+      "error": null,
+      "stop_reason": null
+    },
+    {
+      "id": "code_java",
+      "status": "RAW_SEGMENT_READY",
+      "rows_written": 134,
+      "output_bytes": 116458,
+      "network_bytes": 5338883,
+      "error": null,
+      "stop_reason": null
+    },
+    {
+      "id": "code_javascript",
+      "status": "READING",
+      "rows_written": 0,
+      "output_bytes": null,
+      "network_bytes": null,
+      "error": null,
+      "stop_reason": null
+    },
+    {
+      "id": "finemath4",
+      "status": "RAW_SEGMENT_READY",
+      "rows_written": 4000,
+      "output_bytes": 8419734,
+      "network_bytes": 11955509,
+      "error": null,
+      "stop_reason": null
+    },
+    {
+      "id": "infiwebmath4",
+      "status": "RAW_SEGMENT_READY",
+      "rows_written": 4000,
+      "output_bytes": 9160835,
+      "network_bytes": 13548644,
+      "error": null,
+      "stop_reason": null
+    }
+  ],
+  "intake_log_tail": "0, \"code_attempts\": 0}\n{\"source\": \"infiwebmath4\", \"rows\": 4000, \"network_bytes\": 13548644, \"code_attempts\": 0}\n{\"id\": \"infiwebmath4\", \"status\": \"RAW_SEGMENT_READY\", \"rows_written\": 4000, \"output_bytes\": 9160835, \"error_type\": null, \"stop_reason\": null}\n{\"source\": \"finemath4\", \"rows\": 4000, \"network_bytes\": 11955509, \"code_attempts\": 0}\n{\"id\": \"finemath4\", \"status\": \"RAW_SEGMENT_READY\", \"rows_written\": 4000, \"output_bytes\": 8419734, \"error_type\": null, \"stop_reason\": null}\n{\"source\": \"code_java\", \"rows\": 35, \"network_bytes\": 5007648, \"code_attempts\": 35}\n{\"source\": \"code_cpp\", \"rows\": 144, \"network_bytes\": 4716380, \"code_attempts\": 147}\n{\"source\": \"code_java\", \"rows\": 63, \"network_bytes\": 5118135, \"code_attempts\": 63}\n{\"source\": \"code_java\", \"rows\": 96, \"network_bytes\": 5228780, \"code_attempts\": 96}\n{\"source\": \"code_cpp\", \"rows\": 269, \"network_bytes\": 4810278, \"code_attempts\": 274}\n{\"source\": \"code_java\", \"rows\": 134, \"network_bytes\": 5338883, \"code_attempts\": 134}\n{\"id\": \"code_java\", \"status\": \"RAW_SEGMENT_READY\", \"rows_written\": 134, \"output_bytes\": 116458, \"error_type\": null, \"stop_reason\": null}\n{\"source\": \"code_cpp\", \"rows\": 414, \"network_bytes\": 4904548, \"code_attempts\": 423}\n",
+  "disk": "Filesystem                   Size  Used Avail Use% Mounted on\nJuiceFS:juicefs-shared-nvme   10T   10T   33G 100% /ssd\n"
+}

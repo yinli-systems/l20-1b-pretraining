@@ -1,0 +1,365 @@
+{
+  "schema": "p529m-reserved-quality-review-exclusions-v1",
+  "status": "RESERVED_QUALITY_REVIEW_EXCLUSIONS_BOUND_REPLACEMENTS_PENDING",
+  "checked_utc": "2026-09-13T23:58:27.180444+00:00",
+  "review_report_sha256": "ecc9bea57af8df1ffecfc9f887f136e8b2f198023400c826619e6c995e00e836",
+  "policy": {
+    "exclude_high_precision_candidate_reasons": [
+      "adult_keyword_stuffing",
+      "dominant_platform_boilerplate",
+      "repeated_dating_keyword",
+      "seo_footer"
+    ],
+    "extreme_repetition_rule": {
+      "repeated_10gram_coverage_at_least": 0.75,
+      "compression_ratio_at_most": 0.25
+    }
+  },
+  "exclude_text_sha256": {
+    "0106a802c3ac9fb8a8043b3828540bd641ded1b2d777ad830be285e7e076b1d4": {
+      "family_id": "1fd4009fd32ec2274cd6b5e9090d4158195e8d17ae53e816441fed32301982a8",
+      "source_id": "finemath4",
+      "partition": "development",
+      "reasons": [
+        "extreme_repetition_and_compression"
+      ]
+    },
+    "0196640ebc717bda17da69f0d0e74fd9a6dd16af2c8890006d97b81ddb62a69a": {
+      "family_id": "68a0213e925f35f8cbbbc3b6e937245af0cf94064f8f8822e2762bc1e586fc13",
+      "source_id": "multilingual_jpn_Jpan",
+      "partition": "confirmation",
+      "reasons": [
+        "high_precision_dominant_platform_boilerplate"
+      ]
+    },
+    "0e71c4ffe67e1eca1dbb67cf8098bea7f399621707ac302f9cfee44fe7c264f9": {
+      "family_id": "958dca483ee067bc3611312b00e4a6a229a53d90851bed0f11214651b2769676",
+      "source_id": "multilingual_cmn_Hani",
+      "partition": "confirmation",
+      "reasons": [
+        "high_precision_seo_footer"
+      ]
+    },
+    "1639cd953e9dbbcfeabb231af307877f7ed94405bfaeba8e9e065ec1bfbb2aaa": {
+      "family_id": "75cbda1599df6fc29d641cc6109277fac912afc267c93e17f3ab990510483674",
+      "source_id": "multilingual_jpn_Jpan",
+      "partition": "development",
+      "reasons": [
+        "high_precision_dominant_platform_boilerplate"
+      ]
+    },
+    "1b3a8c31c98579f5782c45444ca326b24e70ae18e6206425065afc1c400903fa": {
+      "family_id": "c5f24c3baf940e9000c141dd1d8f630adc0332a4d7bfdc089d3c576b7f504b31",
+      "source_id": "multilingual_cmn_Hani",
+      "partition": "development",
+      "reasons": [
+        "high_precision_seo_footer"
+      ]
+    },
+    "1bb8c36d410304ff2c1ad3d1db26520ead09cf75f607e77ae769963825b1a7e4": {
+      "family_id": "dac10c459cc319231e0e9444ce5a6a2957cafe10569c086164826fe444a06289",
+      "source_id": "multilingual_spa_Latn",
+      "partition": "development",
+      "reasons": [
+        "high_precision_dominant_platform_boilerplate"
+      ]
+    },
+    "1fd300706168a0cffedbf6e26c940b18a1de60e0461c2920fa9765a1679c1ad3": {
+      "family_id": "44b1392663105ea893fa6431d8f7d8b796ebc782d61cec8a2d4bf2f153847514",
+      "source_id": "multilingual_spa_Latn",
+      "partition": "confirmation",
+      "reasons": [
+        "high_precision_dominant_platform_boilerplate"
+      ]
+    },
+    "29d569ed386aab219b1c8a4e8630262c3a2b0f2cf1e2e04fddee594234fcb494": {
+      "family_id": "716d7bdffa7eee53ae5414daa06606b2fdb686166e8e11a7861dc3ac29d077e4",
+      "source_id": "pdf_en",
+      "partition": "confirmation",
+      "reasons": [
+        "extreme_repetition_and_compression"
+      ]
+    },
+    "2fa4e6b73de13ec04227ed977f8d7da961098f4bddbe8fc4b509ac39ac01ca0d": {
+      "family_id": "179d9009a0d4e45eb9a3c2f912e992a44c98e593d49c6d72409acdf0698b2294",
+      "source_id": "pdf_en",
+      "partition": "confirmation",
+      "reasons": [
+        "extreme_repetition_and_compression"
+      ]
+    },
+    "3e4e2520f15fe21eb8d6f70678ee3ccd6280090446ff4c80ecfa8eb8b5f5fa4d": {
+      "family_id": "0a2fe77335b2a81f1e4514ac749909944643f695df095a5646ced79cef2faa6f",
+      "source_id": "pdf_en",
+      "partition": "confirmation",
+      "reasons": [
+        "extreme_repetition_and_compression"
+      ]
+    },
+    "45fb3d2acc8bda860dadaf8e3c614242ef28215e6e7a6dbaf27a4e5eb05e605b": {
+      "family_id": "cc1b0a96811390567d1e85d033d989e6035d7c41b68bf0b7e4a00906b4507d32",
+      "source_id": "pdf_en",
+      "partition": "confirmation",
+      "reasons": [
+        "extreme_repetition_and_compression"
+      ]
+    },
+    "4bf6b31139b5ef185ba6f5af994ca5421a22088f7eb4bd78f88ff7b439a2b486": {
+      "family_id": "2cabd958f95cf2ad20519d40b97e3a87bea57e04bd180907b6e5c634ba17a151",
+      "source_id": "finemath4",
+      "partition": "confirmation",
+      "reasons": [
+        "extreme_repetition_and_compression"
+      ]
+    },
+    "63ea7e8dd7fb6cf669f3ff3242828853a1de47c14e2cb248c2a0bd3522355e61": {
+      "family_id": "a1fec74085abec5c6d3274709da621a025589c9e29448e64c2ce02d8159c6cee",
+      "source_id": "multilingual_cmn_Hani",
+      "partition": "confirmation",
+      "reasons": [
+        "high_precision_seo_footer"
+      ]
+    },
+    "6909fdb3988080484e9b6c44df5c5380dec7efbeec652615a83a4976c3efcfce": {
+      "family_id": "de4b8cd3c32b135bc6bba2e22b127a295ee8ba95cc18d350db90f8bdfb445ab1",
+      "source_id": "infiwebmath4",
+      "partition": "confirmation",
+      "reasons": [
+        "extreme_repetition_and_compression"
+      ]
+    },
+    "6d9ac495c18fe9e73a74e99fa52839897341f3e247ccc55fba1b77ee415cb013": {
+      "family_id": "60ffa714c3c690e57988b4653b9891be685cd9a840aa5f4b8eab267b903c6de2",
+      "source_id": "pdf_en",
+      "partition": "development",
+      "reasons": [
+        "extreme_repetition_and_compression"
+      ]
+    },
+    "70aa9e277ed20e15f29cb0daa9389dde0f8f79a88af1c9f761b120551194cb7b": {
+      "family_id": "36269455afcfe4db0784cb36604c01a227a6053a0c5a878a2ae5ff047aa43186",
+      "source_id": "pdf_en",
+      "partition": "development",
+      "reasons": [
+        "extreme_repetition_and_compression"
+      ]
+    },
+    "731e7c7dc7daf1d93ff97b032fe0c952af4a118ff4d2dccd8d786a1198f1f717": {
+      "family_id": "0e2e79542558f7035356df3d14576371598e615055157270871823f0ed604b50",
+      "source_id": "pdf_en",
+      "partition": "confirmation",
+      "reasons": [
+        "extreme_repetition_and_compression"
+      ]
+    },
+    "7bcebe686d9bc3d29fd3c9b859835cb953a1e4228ec959f3788d5fc67b49bbb7": {
+      "family_id": "806304b62918c488bb07603a4c097d7559f3d16edea594a79787800bfcdd0605",
+      "source_id": "finemath4",
+      "partition": "confirmation",
+      "reasons": [
+        "extreme_repetition_and_compression"
+      ]
+    },
+    "962b0496335f3cf47c68ab88ddc58a4b2538599f57542e8d2c8c09857c8214d0": {
+      "family_id": "8e7284c2bb26bee63e21c8c0e8dc0bd77600888d31f93223d67ba7840db08832",
+      "source_id": "multilingual_cmn_Hani",
+      "partition": "development",
+      "reasons": [
+        "high_precision_seo_footer"
+      ]
+    },
+    "9b94ecb28ef6789925bbbb3fbe03b907c548d765cdf2f581e3a740189e76e26b": {
+      "family_id": "11d0bf37fbb06ff3c9d4063d3cd55e539cdbf03f939b3d4a474737066c07cdec",
+      "source_id": "multilingual_jpn_Jpan",
+      "partition": "development",
+      "reasons": [
+        "high_precision_dominant_platform_boilerplate"
+      ]
+    },
+    "a50655b9952fb408b1e73dfb0e48b489a10c01d21cee9c1f3dd43c6cce8f5b5b": {
+      "family_id": "7560df37d5a8496a0b20280b5ef2ae2ae664b8220f083d9352bdb45691caed3d",
+      "source_id": "multilingual_cmn_Hani",
+      "partition": "development",
+      "reasons": [
+        "high_precision_seo_footer"
+      ]
+    },
+    "a5d20eb10f7865f8e66c4a9207f8849e95e20608550d9f235811e0a921f97a50": {
+      "family_id": "925d56bc0d2f7302dbc54072d1ce595cb2f5671f5a3c7dd504e65b1ac20db689",
+      "source_id": "pdf_en",
+      "partition": "confirmation",
+      "reasons": [
+        "extreme_repetition_and_compression"
+      ]
+    },
+    "b5ef14ec264421e09f537c8f7fb64cb6f6ae1d9044ab380210211efe744ad6ad": {
+      "family_id": "64d08b72b4c951fda936e5f6c6b084ab7d439c1a79beb7f313137115912373e9",
+      "source_id": "pdf_en",
+      "partition": "confirmation",
+      "reasons": [
+        "extreme_repetition_and_compression"
+      ]
+    },
+    "dfe277168364eb1e2398a155232053057ee58aecc1bfd71fc612551bad56051e": {
+      "family_id": "f0da4878f6a40b15f3299299d73749ef0e38b01b5227d94d646116d1b60c8802",
+      "source_id": "multilingual_cmn_Hani",
+      "partition": "confirmation",
+      "reasons": [
+        "high_precision_seo_footer"
+      ]
+    },
+    "e1bdae75504eb6561073f504d57855ae9646beaaace03d276e9e723d1bbc0294": {
+      "family_id": "0e5c50e2edd862394276e9786e098d783f2179bf95808025d44240cf2e800018",
+      "source_id": "multilingual_jpn_Jpan",
+      "partition": "confirmation",
+      "reasons": [
+        "high_precision_dominant_platform_boilerplate"
+      ]
+    },
+    "e9a80b888caa052bb84e077d55270da050dae4ad42748e91a3d6d12ad244ef3a": {
+      "family_id": "447a1c0d7606cfe215e1cdc0046bb6dfda7684641255e885ca2356f9438a0f41",
+      "source_id": "multilingual_cmn_Hani",
+      "partition": "development",
+      "reasons": [
+        "high_precision_seo_footer"
+      ]
+    },
+    "ec9a8c90bd9d40be43ae8f9415882e92be673e5657803a00776bd601ba151d9a": {
+      "family_id": "4b85ce277eac7ce8a23c958aeb6f21d41d023825e8498f8bb045d75e54021ada",
+      "source_id": "finemath4",
+      "partition": "development",
+      "reasons": [
+        "extreme_repetition_and_compression"
+      ]
+    },
+    "f287a886a27fa0cb523c16d1167b47ba0a5a567a3f5b18111915ed2fc054c681": {
+      "family_id": "865693161b69be05a4939fa1990ff7be86240213ade9632dc0f78594fdd50f2f",
+      "source_id": "finemath4",
+      "partition": "confirmation",
+      "reasons": [
+        "extreme_repetition_and_compression"
+      ]
+    },
+    "fb9303455faf4daaf908134f3b70806629c3da439ba264e8614d7425e4e3f02e": {
+      "family_id": "8b4d907d0819c8097bcdd4008097ca7fb5e2750d5a8ce33132d302cd74536132",
+      "source_id": "multilingual_cmn_Hani",
+      "partition": "development",
+      "reasons": [
+        "high_precision_seo_footer"
+      ]
+    }
+  },
+  "exclude_family_id_reasons": {
+    "0a2fe77335b2a81f1e4514ac749909944643f695df095a5646ced79cef2faa6f": [
+      "extreme_repetition_and_compression"
+    ],
+    "0e2e79542558f7035356df3d14576371598e615055157270871823f0ed604b50": [
+      "extreme_repetition_and_compression"
+    ],
+    "0e5c50e2edd862394276e9786e098d783f2179bf95808025d44240cf2e800018": [
+      "high_precision_dominant_platform_boilerplate"
+    ],
+    "11d0bf37fbb06ff3c9d4063d3cd55e539cdbf03f939b3d4a474737066c07cdec": [
+      "high_precision_dominant_platform_boilerplate"
+    ],
+    "179d9009a0d4e45eb9a3c2f912e992a44c98e593d49c6d72409acdf0698b2294": [
+      "extreme_repetition_and_compression"
+    ],
+    "1fd4009fd32ec2274cd6b5e9090d4158195e8d17ae53e816441fed32301982a8": [
+      "extreme_repetition_and_compression"
+    ],
+    "2cabd958f95cf2ad20519d40b97e3a87bea57e04bd180907b6e5c634ba17a151": [
+      "extreme_repetition_and_compression"
+    ],
+    "36269455afcfe4db0784cb36604c01a227a6053a0c5a878a2ae5ff047aa43186": [
+      "extreme_repetition_and_compression"
+    ],
+    "447a1c0d7606cfe215e1cdc0046bb6dfda7684641255e885ca2356f9438a0f41": [
+      "high_precision_seo_footer"
+    ],
+    "44b1392663105ea893fa6431d8f7d8b796ebc782d61cec8a2d4bf2f153847514": [
+      "high_precision_dominant_platform_boilerplate"
+    ],
+    "4b85ce277eac7ce8a23c958aeb6f21d41d023825e8498f8bb045d75e54021ada": [
+      "extreme_repetition_and_compression"
+    ],
+    "60ffa714c3c690e57988b4653b9891be685cd9a840aa5f4b8eab267b903c6de2": [
+      "extreme_repetition_and_compression"
+    ],
+    "64d08b72b4c951fda936e5f6c6b084ab7d439c1a79beb7f313137115912373e9": [
+      "extreme_repetition_and_compression"
+    ],
+    "68a0213e925f35f8cbbbc3b6e937245af0cf94064f8f8822e2762bc1e586fc13": [
+      "high_precision_dominant_platform_boilerplate"
+    ],
+    "716d7bdffa7eee53ae5414daa06606b2fdb686166e8e11a7861dc3ac29d077e4": [
+      "extreme_repetition_and_compression"
+    ],
+    "7560df37d5a8496a0b20280b5ef2ae2ae664b8220f083d9352bdb45691caed3d": [
+      "high_precision_seo_footer"
+    ],
+    "75cbda1599df6fc29d641cc6109277fac912afc267c93e17f3ab990510483674": [
+      "high_precision_dominant_platform_boilerplate"
+    ],
+    "806304b62918c488bb07603a4c097d7559f3d16edea594a79787800bfcdd0605": [
+      "extreme_repetition_and_compression"
+    ],
+    "865693161b69be05a4939fa1990ff7be86240213ade9632dc0f78594fdd50f2f": [
+      "extreme_repetition_and_compression"
+    ],
+    "8b4d907d0819c8097bcdd4008097ca7fb5e2750d5a8ce33132d302cd74536132": [
+      "high_precision_seo_footer"
+    ],
+    "8e7284c2bb26bee63e21c8c0e8dc0bd77600888d31f93223d67ba7840db08832": [
+      "high_precision_seo_footer"
+    ],
+    "925d56bc0d2f7302dbc54072d1ce595cb2f5671f5a3c7dd504e65b1ac20db689": [
+      "extreme_repetition_and_compression"
+    ],
+    "958dca483ee067bc3611312b00e4a6a229a53d90851bed0f11214651b2769676": [
+      "high_precision_seo_footer"
+    ],
+    "a1fec74085abec5c6d3274709da621a025589c9e29448e64c2ce02d8159c6cee": [
+      "high_precision_seo_footer"
+    ],
+    "c5f24c3baf940e9000c141dd1d8f630adc0332a4d7bfdc089d3c576b7f504b31": [
+      "high_precision_seo_footer"
+    ],
+    "cc1b0a96811390567d1e85d033d989e6035d7c41b68bf0b7e4a00906b4507d32": [
+      "extreme_repetition_and_compression"
+    ],
+    "dac10c459cc319231e0e9444ce5a6a2957cafe10569c086164826fe444a06289": [
+      "high_precision_dominant_platform_boilerplate"
+    ],
+    "de4b8cd3c32b135bc6bba2e22b127a295ee8ba95cc18d350db90f8bdfb445ab1": [
+      "extreme_repetition_and_compression"
+    ],
+    "f0da4878f6a40b15f3299299d73749ef0e38b01b5227d94d646116d1b60c8802": [
+      "high_precision_seo_footer"
+    ]
+  },
+  "excluded_texts": 29,
+  "excluded_families": 29,
+  "partition_source_counts": {
+    "confirmation:finemath4": 3,
+    "confirmation:infiwebmath4": 1,
+    "confirmation:multilingual_cmn_Hani": 3,
+    "confirmation:multilingual_jpn_Jpan": 2,
+    "confirmation:multilingual_spa_Latn": 1,
+    "confirmation:pdf_en": 7,
+    "development:finemath4": 2,
+    "development:multilingual_cmn_Hani": 5,
+    "development:multilingual_jpn_Jpan": 2,
+    "development:multilingual_spa_Latn": 1,
+    "development:pdf_en": 2
+  },
+  "reason_counts": {
+    "extreme_repetition_and_compression": 15,
+    "high_precision_dominant_platform_boilerplate": 6,
+    "high_precision_seo_footer": 8
+  },
+  "training_admitted": false,
+  "limits": [
+    "Rejected reserved families require deterministic disjoint replacements before masked development is protocol compliant."
+  ]
+}

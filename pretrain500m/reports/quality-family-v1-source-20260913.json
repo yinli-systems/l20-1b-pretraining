@@ -1,0 +1,21 @@
+{
+  "archive": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/posttrain/quality-family-v1-20260913.tar.gz",
+  "bytes": 127817767,
+  "sha256": "1442fc0c86d2d74f2b2d7f73f92bbe1f5b647fc21d92199f63f263f125594fd6",
+  "files": [
+    "README.md",
+    "SHA256SUMS",
+    "dependency-receipts.json",
+    "features.py",
+    "policy.json",
+    "scan.py",
+    "test_features.py",
+    "test_scan.py",
+    "vendor/fasttext_wheel-0.9.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "vendor/lid.176.bin",
+    "vendor/public_suffix_list.dat"
+  ],
+  "local_tests_passed": 11,
+  "local_native_inference_skipped": 1,
+  "training_admitted": false
+}

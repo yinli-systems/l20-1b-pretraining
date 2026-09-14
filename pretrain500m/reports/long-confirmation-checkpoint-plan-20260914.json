@@ -1,0 +1,66 @@
+{
+  "checkpoints": [
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/formal/run-v5/resume.pt",
+      "checkpoint_id": "base",
+      "checkpoint_sha256": "13aa21721e15c48cdfdafe30d8fdd41d9c95c90be766327661d96af1e90dd6cf",
+      "step": 7629
+    },
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260914-1589567/train/model-final.pt",
+      "checkpoint_id": "F2_reasoning_no_synthetic_seed20260914",
+      "checkpoint_sha256": "69d9d8d3358f23815f2455f7e075645056f90fe01ed40a11525130a0e58ca085",
+      "job_id": 1589567,
+      "recipe": "F2_reasoning_no_synthetic",
+      "run_manifest": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260914-1589567/train/run-manifest.json",
+      "run_manifest_sha256": "5c41ae5a94d1c95d68b289208acbcd3269fc8c243116705a597da1730e8163d2",
+      "seed": 20260914,
+      "training_status": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260914-1589567/train/training-status.json",
+      "training_status_sha256": "b956512cc8bf880c1f261ce436da1fde7ea04da728a26b2ee8d83592d48a594e"
+    },
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260915-1590004/train/model-final.pt",
+      "checkpoint_id": "F2_reasoning_no_synthetic_seed20260915",
+      "checkpoint_sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc",
+      "job_id": 1590004,
+      "recipe": "F2_reasoning_no_synthetic",
+      "run_manifest": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260915-1590004/train/run-manifest.json",
+      "run_manifest_sha256": "6abcd8eed9d03e86220952553c76ae31944f679ce3fda035a58ee1e71ac71f17",
+      "seed": 20260915,
+      "training_status": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260915-1590004/train/training-status.json",
+      "training_status_sha256": "8af7930fdc2361e3b512fe33e9e56c1e418469e522313211b3345bc048e58e21"
+    },
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F3_broad_multilingual_no_synthetic-seed20260914-1590005/train/model-final.pt",
+      "checkpoint_id": "F3_broad_multilingual_no_synthetic_seed20260914",
+      "checkpoint_sha256": "194e1da1ba1e74a77e28ae207d1dd74a4baa6889408e41c6dce36d551f1e222e",
+      "job_id": 1590005,
+      "recipe": "F3_broad_multilingual_no_synthetic",
+      "run_manifest": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F3_broad_multilingual_no_synthetic-seed20260914-1590005/train/run-manifest.json",
+      "run_manifest_sha256": "f43cffd19cede8e52d7caab7a7187c32b6d1bd0ece36a32176d66149d999cdf8",
+      "seed": 20260914,
+      "training_status": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F3_broad_multilingual_no_synthetic-seed20260914-1590005/train/training-status.json",
+      "training_status_sha256": "c5d45900fc6e192ede1625f383e0d54e7dae991fd08c97cb14e822a3f303e06d"
+    },
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F3_broad_multilingual_no_synthetic-seed20260915-1589570/train/model-final.pt",
+      "checkpoint_id": "F3_broad_multilingual_no_synthetic_seed20260915",
+      "checkpoint_sha256": "8ee551307118a52bc79e9268ce3a08be20c6776234051fc48e3192d5d3e09a21",
+      "job_id": 1589570,
+      "recipe": "F3_broad_multilingual_no_synthetic",
+      "run_manifest": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F3_broad_multilingual_no_synthetic-seed20260915-1589570/train/run-manifest.json",
+      "run_manifest_sha256": "15d39429f08ab827208333f2852b3e7f85cd96d9aedfedb71f18e34e2a27191b",
+      "seed": 20260915,
+      "training_status": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F3_broad_multilingual_no_synthetic-seed20260915-1589570/train/training-status.json",
+      "training_status_sha256": "9d96295cb3e64c5df5f77c8332a7aebf174b95450c4f3eb4462a124f76b1241b"
+    }
+  ],
+  "claim_boundary": "four model checkpoints admitted for frozen held-out loss evaluation; evaluation and selection remain pending",
+  "inputs_receipt": "/ssd/scxi253/pretrain500m-20260912-v1/source/confirmation-inputs-expansion-v1/build-receipt.json",
+  "inputs_receipt_sha256": "1f2ee8a9a28c886877886fd34bb56f39beb46938047adbb1d9df4150715c71f5",
+  "protocol": "/ssd/scxi253/pretrain500m-20260912-v1/source/confirmation-inputs-expansion-v1/confirmation-protocol.json",
+  "protocol_sha256": "d0c0fbb59bda58de814ab9f297ff4c8f00e9349b8e3f565ce0bb7e0fea4873f5",
+  "schema": "p529m-long-confirmation-checkpoint-plan-v1",
+  "status": "PASS_EXACT_FOUR_RUN_CHECKPOINT_PLAN",
+  "training_completed": true
+}

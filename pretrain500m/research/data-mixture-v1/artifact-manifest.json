@@ -1,0 +1,660 @@
+{
+  "checked_utc": "2026-09-13T23:08:59.593522+00:00",
+  "files": [
+    {
+      "path": "DATA-CATALOG.md",
+      "bytes": 9079,
+      "sha256": "5b947fcec17a7cb75bf7734c2ea13e6f4b760c82c1d7cf89d6a500ab1a1a51a1"
+    },
+    {
+      "path": "RESEARCH.md",
+      "bytes": 31967,
+      "sha256": "4d993aee66e2ac97cf2df6fa33b68005606dac171e219ae36daebc4c2fb68f8c"
+    },
+    {
+      "path": "acquire_samples.py",
+      "bytes": 7705,
+      "sha256": "76a11d887760e82870bf402ca9da6466a09b9013306da9f20cb7bd8f49a922b6"
+    },
+    {
+      "path": "code-rehydration-receipt.json",
+      "bytes": 7151,
+      "sha256": "5acd91e2bdd86e7350bfcfe0dc10ea5ffcf81bd27f66d439ede6597f6bb16349"
+    },
+    {
+      "path": "code-syntax-audit.json",
+      "bytes": 1859,
+      "sha256": "98534d75c2d819fd5ae2729ebcfa444d9a894f56ca9fafaa635168b0c7c70f13"
+    },
+    {
+      "path": "collect_sources.py",
+      "bytes": 4006,
+      "sha256": "dd2c4d6bd2027c1e458c128f31e0bf0f1e2d841fb6741c372447dee0da75f1d8"
+    },
+    {
+      "path": "execution-readiness.json",
+      "bytes": 32374,
+      "sha256": "29dbe76c015dd0fb6442eda6b5a72c67086192b7ab2b05812874dee0ecd7220d"
+    },
+    {
+      "path": "experiment-design.json",
+      "bytes": 8170,
+      "sha256": "614c653cad91ac76e146a99e9b4eaeb7d4b3aab0d164d8b985983f253c4791a9"
+    },
+    {
+      "path": "lr-pilot-live-receipt.json",
+      "bytes": 251966,
+      "sha256": "0b186634011e7d0343e5e0decb94e0b67a48fb4c77b1420a78f989b58f3ce509"
+    },
+    {
+      "path": "lr-pilot-records/lr-0.00003/metrics.jsonl",
+      "bytes": 75202,
+      "sha256": "eaf1aebce2cfabc2b58418476d820efc039a0c8ccbc0f4ca24992d147aab3de1"
+    },
+    {
+      "path": "lr-pilot-records/lr-0.00003/run-manifest.json",
+      "bytes": 2716,
+      "sha256": "dc32ae87f0f00b64218a3e955f0bab4c9e96d53587fc693ce3fb48b334f0f744"
+    },
+    {
+      "path": "lr-pilot-records/lr-0.00003/training-status.json",
+      "bytes": 95,
+      "sha256": "f49c1dbf9d1c7591804a501e3d30546560c1bc78d3d2c45b241d85f034719e6d"
+    },
+    {
+      "path": "lr-pilot-records/lr-0.0001/metrics.jsonl",
+      "bytes": 75392,
+      "sha256": "4b5710a372d4e3bac06e6147cec16a8e12ce62ed99191039dd0868d16cdd3076"
+    },
+    {
+      "path": "lr-pilot-records/lr-0.0001/run-manifest.json",
+      "bytes": 2717,
+      "sha256": "d892a1e529b65f1f11cde94f00cc0f93962fc67ecb5c3d55eb35370721ed5430"
+    },
+    {
+      "path": "lr-pilot-records/lr-0.0001/training-status.json",
+      "bytes": 96,
+      "sha256": "4501d5435b05d66afa064a14b13910f906d3c7394b3f3bbb8886c15730ac50e5"
+    },
+    {
+      "path": "lr-pilot-records/lr-0.0003/metrics.jsonl",
+      "bytes": 75327,
+      "sha256": "a2ce121e865674b5276d128330db20060f4fdee1ef094af43134c159efe6b877"
+    },
+    {
+      "path": "lr-pilot-records/lr-0.0003/run-manifest.json",
+      "bytes": 2717,
+      "sha256": "0b53e833a1cee93cac0461a6927648f032f42e11d5b88c06eded23c3e69d7097"
+    },
+    {
+      "path": "lr-pilot-records/lr-0.0003/training-status.json",
+      "bytes": 96,
+      "sha256": "c4bd5feb36049a12bc7de93cb9e7df42ec4d788175e66c96e2bec43d4e56b4c5"
+    },
+    {
+      "path": "lr-pilot-selection-exploratory-v1.json",
+      "bytes": 1111,
+      "sha256": "f56156dd83376f3e8820dafad38bce956bc256d794418dc6134ace2c0d15cac6"
+    },
+    {
+      "path": "manual-sample-review.json",
+      "bytes": 2466,
+      "sha256": "af90af57c498c9da5306dda24390f1c84ce0e7ca998a06273fd75c29084c675e"
+    },
+    {
+      "path": "papers/datadecide.source",
+      "bytes": 230821,
+      "sha256": "dd53b05c745305bb559971299e80e17c2f8b82858b480d6923f5b2fc81b0061a"
+    },
+    {
+      "path": "papers/datadecide.txt",
+      "bytes": 67817,
+      "sha256": "0dcb38f8dc5f3667da95ae99374100fabf29b2c0f469d926440a0cd238d4f73c"
+    },
+    {
+      "path": "papers/finepdfs_blog.source",
+      "bytes": 265728,
+      "sha256": "d6698d1ab3c9c5b01abf574c8f11a401a91b7d1bae12cea750be38e3c8fd63e1"
+    },
+    {
+      "path": "papers/finepdfs_blog.txt",
+      "bytes": 69922,
+      "sha256": "6cf01a83c58514dcb0685860c3e6dd56195878f43eee79de08f52a00121fa6f9"
+    },
+    {
+      "path": "papers/lfm2.source",
+      "bytes": 861747,
+      "sha256": "3e2c7523b580b13b91ae3d6d6734c6ce33f87a58eb71edba47f48e5b9f10d23e"
+    },
+    {
+      "path": "papers/lfm2.txt",
+      "bytes": 182781,
+      "sha256": "e6c924c5f40cd25c918d27d011dd6075e2967ac9ebfa3a3e3e9fde033bd12319"
+    },
+    {
+      "path": "papers/mobilellm_r1.source",
+      "bytes": 366764,
+      "sha256": "35cdab38b485c94bdfb550d9049c2027d875f72066d02a242358cdbc32634dc1"
+    },
+    {
+      "path": "papers/mobilellm_r1.txt",
+      "bytes": 83404,
+      "sha256": "572238f4bb4fb864be7a9964de5acd84126856cfb362be0fe0a9728cb056ba3b"
+    },
+    {
+      "path": "papers/playbook.source",
+      "bytes": 485543,
+      "sha256": "fdceff7fc9627c1e5e4a327a37be74fa36cda51452e786db4ba593dcceefcaa2"
+    },
+    {
+      "path": "papers/playbook.txt",
+      "bytes": 485543,
+      "sha256": "fdceff7fc9627c1e5e4a327a37be74fa36cda51452e786db4ba593dcceefcaa2"
+    },
+    {
+      "path": "papers/receipts.json",
+      "bytes": 1338,
+      "sha256": "657a54ef65792b08b0c42cba6229af22eb625e88250c5a1ebb7e5ae2508c2abd"
+    },
+    {
+      "path": "papers/smollm2.source",
+      "bytes": 280220,
+      "sha256": "6a1e79bcd781f4e49bf6b1302a2137463307a0851be149f4121df92fefcb893f"
+    },
+    {
+      "path": "papers/smollm2.txt",
+      "bytes": 86409,
+      "sha256": "f500664b455dbb5d85539e935dc01668d37fc7452404d9bc4fb244757dfde440"
+    },
+    {
+      "path": "plan_tokens.py",
+      "bytes": 2188,
+      "sha256": "6d09a3f08b4319b80512bd7dcc4e00cb3d1b5685d03403bbf42b3c5264c4d7a3"
+    },
+    {
+      "path": "rehydrate_code_samples.py",
+      "bytes": 3150,
+      "sha256": "5a488c16e860674f4e92d137d4adf30f2cc8aa711d4036dcca629fda893181f8"
+    },
+    {
+      "path": "sample-audit.json",
+      "bytes": 26816,
+      "sha256": "c4402b59b894a0fd7b6fd8467cb3d186c4c64c1041dd4971199837b7235d2631"
+    },
+    {
+      "path": "samples/cosmopedia2.jsonl",
+      "bytes": 689093,
+      "sha256": "a1857a251da18026b016e53bdd2075d957d329e08f7d14f887493d21180d01a5"
+    },
+    {
+      "path": "samples/dclm_100bt.jsonl",
+      "bytes": 745893,
+      "sha256": "4bb1f99fa8109a426c27a1a7825db19ae438ece6042b2febbe2f3a505e00196d"
+    },
+    {
+      "path": "samples/finemath4.jsonl",
+      "bytes": 777787,
+      "sha256": "2537ef99403e54199d6a098ad9df8bdff698f130ffe206a9a9f29f6b0479c6ca"
+    },
+    {
+      "path": "samples/finepdfs_en.jsonl",
+      "bytes": 1956342,
+      "sha256": "b593e079dfb75dd00411d83ae166c301f8097a4950d7b4595f6298a89927b0d6"
+    },
+    {
+      "path": "samples/fineweb2hq_es.jsonl",
+      "bytes": 421155,
+      "sha256": "3cc24f1e3df8b21eec59b77b0903dcba54da69cdef85936313588d7965cb43f0"
+    },
+    {
+      "path": "samples/fineweb2hq_zh.jsonl",
+      "bytes": 469086,
+      "sha256": "99f1445900587bb9500367a9357828653ab7d50fd17e213874e13d69fdb72ba0"
+    },
+    {
+      "path": "samples/fineweb_edu.jsonl",
+      "bytes": 783569,
+      "sha256": "cea208dfa644e29f55f12a8b0c093f4b21d970476a872a1212d24773c21e31b2"
+    },
+    {
+      "path": "samples/infiwebmath4.jsonl",
+      "bytes": 638107,
+      "sha256": "b77c064f400b1dc9fadc5be84ed44904558832cb41432bcd28f87abc82e8fb35"
+    },
+    {
+      "path": "samples/python_edu.jsonl",
+      "bytes": 22148,
+      "sha256": "bd8552b9a71b3f515bd21cb4ae5c54d33f7a3aee3c21c1193629e028e75b4d87"
+    },
+    {
+      "path": "samples/smol_smoltalk.jsonl",
+      "bytes": 556379,
+      "sha256": "f3faf823edfd6f943c6f8e513174c59c17d5989c601c36d0dceacc4534c249ce"
+    },
+    {
+      "path": "samples/stackedu_python_ids.jsonl",
+      "bytes": 31791,
+      "sha256": "60d2acfe721b251573a10c5afef083174923ec702346799a216baec4f596496f"
+    },
+    {
+      "path": "samples/stackedu_python_text.jsonl",
+      "bytes": 81355,
+      "sha256": "d8671c0c0b7113c823d961b5464cf20e2cd8205eca8738c526cd08ff7942e671"
+    },
+    {
+      "path": "source-inventory.json",
+      "bytes": 11028540,
+      "sha256": "b7c23cb28a258d3dd9b423d2a7f4b29c92e8029c406c52952e38e3a92bf83f91"
+    },
+    {
+      "path": "sources/HuggingFaceFW--dclm_100BT/README.md",
+      "bytes": 2143,
+      "sha256": "b69325071a250106a3ac1f6a988e4ed415ce8f7564feae7728aff5c783de5c69"
+    },
+    {
+      "path": "sources/HuggingFaceFW--dclm_100BT/metadata.json",
+      "bytes": 4848,
+      "sha256": "8b3d8d2a15261cfcec2f21cfb92062db65b9e2d96655b1f86de2fc75e8f58773"
+    },
+    {
+      "path": "sources/HuggingFaceFW--finepdfs-edu/README.md",
+      "bytes": 16192,
+      "sha256": "83950c5b703d8917bffcffe159d318e42f4d2b6e3527099b14747d22a8874943"
+    },
+    {
+      "path": "sources/HuggingFaceFW--finepdfs-edu/metadata.json",
+      "bytes": 40667,
+      "sha256": "08910cb9dcdb0e59d14ed273d8df28e0fc29a57f3dc150aaaa1f0ed7285422d1"
+    },
+    {
+      "path": "sources/HuggingFaceFW--finepdfs_edu_50BT-dclm_30BT-fineweb_edu_20BT/README.md",
+      "bytes": 2775,
+      "sha256": "1a6833230d3d85b473db267d56730a97c43533d7555d3a7937409ef44fb1bb5f"
+    },
+    {
+      "path": "sources/HuggingFaceFW--finepdfs_edu_50BT-dclm_30BT-fineweb_edu_20BT/metadata.json",
+      "bytes": 14037,
+      "sha256": "afda4b98165411696dd3400ad9176dba895e88ded17bf2fd0feb698b7e5378da"
+    },
+    {
+      "path": "sources/HuggingFaceFW--fineweb-2/README.md",
+      "bytes": 329009,
+      "sha256": "08d38a7e5cb7aae4b6fcc284fec4dd636ea653e4e5e74ef66a60d9616005b090"
+    },
+    {
+      "path": "sources/HuggingFaceFW--fineweb-2/metadata.json",
+      "bytes": 1015397,
+      "sha256": "2d1e430ae5b4d4d138ac00f228e1354df5f16f0436278e119e7c4c5daab0ecd6"
+    },
+    {
+      "path": "sources/HuggingFaceFW--fineweb-edu/README.md",
+      "bytes": 26354,
+      "sha256": "a0cc8998a20499432b28b6575f3046b714938eb8e11b8d59a1d25ddf3716061e"
+    },
+    {
+      "path": "sources/HuggingFaceFW--fineweb-edu/metadata.json",
+      "bytes": 176301,
+      "sha256": "dd16a8302892fa14e1428fc9159ee690d5d987e5933f88a8f14b567fef3d96b7"
+    },
+    {
+      "path": "sources/HuggingFaceFW--finewiki/README.md",
+      "bytes": 39827,
+      "sha256": "669dd8da189c5cbbd9d1a63d28fb4325f23ca988f80be156141b2d158116ad3f"
+    },
+    {
+      "path": "sources/HuggingFaceFW--finewiki/metadata.json",
+      "bytes": 72436,
+      "sha256": "47897403f742cd075cd467128764d32477fd256e024a9b5cf634bb3691d6cc32"
+    },
+    {
+      "path": "sources/HuggingFaceTB--SmolLM2-360M/README.md",
+      "bytes": 6623,
+      "sha256": "631f842e4a02262e07fc522ede86c816114541319dea53dbf86bac4539a24ac9"
+    },
+    {
+      "path": "sources/HuggingFaceTB--SmolLM2-360M/config.json",
+      "bytes": 689,
+      "sha256": "34f7801487078de7e434e19162c497e5cc6ff397080e40e8586627cb68a5168a"
+    },
+    {
+      "path": "sources/HuggingFaceTB--SmolLM2-360M/metadata.json",
+      "bytes": 1496,
+      "sha256": "35eed5d3c4e48d98c8d0715b42152f4099a1540e4450a4fdb49a46e5f529ab55"
+    },
+    {
+      "path": "sources/HuggingFaceTB--cosmopedia-v2/README.md",
+      "bytes": 7048,
+      "sha256": "e09544d7132303ae6bbc6e156e984db0305d81561615476be49eabd4be4b8bed"
+    },
+    {
+      "path": "sources/HuggingFaceTB--cosmopedia-v2/metadata.json",
+      "bytes": 22738,
+      "sha256": "1bd88757870357d28a9a5732fd76fdbcb8874b7cd6258666935b810347c537da"
+    },
+    {
+      "path": "sources/HuggingFaceTB--finemath/README.md",
+      "bytes": 12402,
+      "sha256": "77b9162c99fc6b5944da8793f18fb99c3b520ab7cdce0cc67ec8a1e47871da61"
+    },
+    {
+      "path": "sources/HuggingFaceTB--finemath/metadata.json",
+      "bytes": 22232,
+      "sha256": "afb06112dc0ebc80832b89b186f777c386e7f7d1a62bc2060060c341554480c8"
+    },
+    {
+      "path": "sources/HuggingFaceTB--smol-smoltalk/README.md",
+      "bytes": 2239,
+      "sha256": "4de8fe5ebb738a835f780332c35ec5a7dd1e8dae058308e7caa176dca6bbf808"
+    },
+    {
+      "path": "sources/HuggingFaceTB--smol-smoltalk/metadata.json",
+      "bytes": 2358,
+      "sha256": "179d013f0fa5f838caf7722c04e72ea265e7a2c57bb617f1673e3c214a25c6a8"
+    },
+    {
+      "path": "sources/HuggingFaceTB--smollm-corpus/README.md",
+      "bytes": 7048,
+      "sha256": "e09544d7132303ae6bbc6e156e984db0305d81561615476be49eabd4be4b8bed"
+    },
+    {
+      "path": "sources/HuggingFaceTB--smollm-corpus/metadata.json",
+      "bytes": 22738,
+      "sha256": "23f626a179f6f7cbc5ca476a7ef4118db7535225b0540b8a88089524a9f188b9"
+    },
+    {
+      "path": "sources/HuggingFaceTB--smoltalk2/README.md",
+      "bytes": 23465,
+      "sha256": "8bdc71dea7688d0b57e7eeb463f468641b460e5e512b2c57f8b45a070588b2c7"
+    },
+    {
+      "path": "sources/HuggingFaceTB--smoltalk2/metadata.json",
+      "bytes": 40174,
+      "sha256": "0b2b94e9a145674ffbf903b664e2c59d965fd3f8fa7d0808c53be460b64e74fe"
+    },
+    {
+      "path": "sources/HuggingFaceTB--stack-edu/README.md",
+      "bytes": 14847,
+      "sha256": "fa264b336a946b87e05e540d449a51968149fbe1ab9b34af340f2d20fc290cd4"
+    },
+    {
+      "path": "sources/HuggingFaceTB--stack-edu/metadata.json",
+      "bytes": 24149,
+      "sha256": "8ba4ac5e6254cbf1bddf5d97d0ec112919c34f6d8d74072c8770f82ff78021a4"
+    },
+    {
+      "path": "sources/LLM360--MegaMath/README.md",
+      "bytes": 3916,
+      "sha256": "dd7d747251ad17a8ac2856694620fee371eb3eed04aa5bcf88dc89691aa1b2de"
+    },
+    {
+      "path": "sources/LLM360--MegaMath/metadata.json",
+      "bytes": 285523,
+      "sha256": "7faa789491cc8b54a5e5ddbef77f8a0babe8adea57ac45cdf82d6dc3e1c78972"
+    },
+    {
+      "path": "sources/LiquidAI--LFM2.5-1.2B-Instruct/README.md",
+      "bytes": 16291,
+      "sha256": "682de876c2d172eaeffff775ad8422b5fd7ada701543916e62129e3be8eab077"
+    },
+    {
+      "path": "sources/LiquidAI--LFM2.5-1.2B-Instruct/config.json",
+      "bytes": 1224,
+      "sha256": "15d6157fb6df3f8272e2fe90e18f57727ccf02a125c94469198b0f3281510185"
+    },
+    {
+      "path": "sources/LiquidAI--LFM2.5-1.2B-Instruct/metadata.json",
+      "bytes": 1834,
+      "sha256": "b759ee9eb7c8ee8507bf4b733764869d20ee6603e305f24ece058e8a013d3ca5"
+    },
+    {
+      "path": "sources/LiquidAI--LFM2.5-350M/README.md",
+      "bytes": 14508,
+      "sha256": "a2bb9f40aca96e21d0e2c497af58f459a4b1f92c9d459dc0ece67ec63f7480b5"
+    },
+    {
+      "path": "sources/LiquidAI--LFM2.5-350M/config.json",
+      "bytes": 1281,
+      "sha256": "720b43d6ddc2ed25be23eed355aefcf342434a176dedad23dbe0a5e3ac24bbb8"
+    },
+    {
+      "path": "sources/LiquidAI--LFM2.5-350M/metadata.json",
+      "bytes": 1906,
+      "sha256": "0a17d57631f15cb7a355593d051161ccd07ab7f56e791e847f671620caa0f7cb"
+    },
+    {
+      "path": "sources/Qwen--Qwen3-0.6B-Base/README.md",
+      "bytes": 2973,
+      "sha256": "910d9be25c648ab1cb5a7b1d20d67ca6d43d43559a705010198886f9af68e8f1"
+    },
+    {
+      "path": "sources/Qwen--Qwen3-0.6B-Base/config.json",
+      "bytes": 727,
+      "sha256": "504a6b58c4271583724e66584b6b7698aea18450209df6b2f7582df0e89cee59"
+    },
+    {
+      "path": "sources/Qwen--Qwen3-0.6B-Base/metadata.json",
+      "bytes": 1459,
+      "sha256": "8f2712e2a865729cdda1d2e70fb52083d0b69f02f334de47d323c2f8ebfbc360"
+    },
+    {
+      "path": "sources/Qwen--Qwen3.5-0.8B/README.md",
+      "bytes": 61705,
+      "sha256": "87a163af54f32fa608a0f8d3ac67945c53dd2b4a7c96740b3d7fdc28e8458864"
+    },
+    {
+      "path": "sources/Qwen--Qwen3.5-0.8B/config.json",
+      "bytes": 2907,
+      "sha256": "b90b86f35c8e6925ef74ee04d0e758f0a845c83a42089ad82bbaa948de9b4204"
+    },
+    {
+      "path": "sources/Qwen--Qwen3.5-0.8B/metadata.json",
+      "bytes": 1723,
+      "sha256": "3b882ac61931e3b14f69ec3f6f387fcbad967f6c7e817e02e9f266348172b4f9"
+    },
+    {
+      "path": "sources/allenai--Dolci-Instruct-SFT/README.md",
+      "bytes": 5543,
+      "sha256": "db0307ffbeab4a90bb41cb966fcc2bca09ce3495afcdb8e173c0370287002a5b"
+    },
+    {
+      "path": "sources/allenai--Dolci-Instruct-SFT/metadata.json",
+      "bytes": 3881,
+      "sha256": "f6faf6c215b6cdd52cba706ab36b10275d3f73c1937791b043fb76d98a853cd8"
+    },
+    {
+      "path": "sources/allenai--dolma3_dolmino_mix-10B-1025/README.md",
+      "bytes": 5357,
+      "sha256": "8b7f915504a1c8752d16bb4e1417180c1c2d3d7b2c99a979bd78d2344d2c1a2a"
+    },
+    {
+      "path": "sources/allenai--dolma3_dolmino_mix-10B-1025/metadata.json",
+      "bytes": 92324,
+      "sha256": "83821942d6a4be25d446073d6eb17bf30e148bcae42bfb91f9c02f5cfacb75c7"
+    },
+    {
+      "path": "sources/allenai--dolmino-mix-1124/README.md",
+      "bytes": 7131,
+      "sha256": "f687a2e72e4e30eb978438317ff4c724c8bcba4a3c7bd230c3a1a067d3809cf7"
+    },
+    {
+      "path": "sources/allenai--dolmino-mix-1124/metadata.json",
+      "bytes": 548085,
+      "sha256": "94ead628e2ad7db40c276d26ed4ec683e1562c38af5d310148637173a9b934ae"
+    },
+    {
+      "path": "sources/epfml--FineWeb2-HQ/README.md",
+      "bytes": 9609,
+      "sha256": "3382e62ff31050348de8a1cd5f1f09a643419aa8d8d70334e9d6fa80ff59b157"
+    },
+    {
+      "path": "sources/epfml--FineWeb2-HQ/metadata.json",
+      "bytes": 205139,
+      "sha256": "35098f4a8302bcc2a3887ad056ef1264c2ddd247a0cc6c0b8e784d5ab0a13858"
+    },
+    {
+      "path": "sources/facebook--MobileLLM-R1-360M-base/README.md",
+      "bytes": 28643,
+      "sha256": "6e07c2155a811cd933322389b20887af0936c6b25081731a0ebd9f6157bbbb50"
+    },
+    {
+      "path": "sources/facebook--MobileLLM-R1-360M-base/metadata.json",
+      "bytes": 14315,
+      "sha256": "3fec0f4e04e0337e3ee274809619393bb832ca7b63c2bc2f042fc26af43fe9cb"
+    },
+    {
+      "path": "sources/google--gemma-3-270m/README.md",
+      "bytes": 28276,
+      "sha256": "d35dc4974f6dacb6b7844f373c9045fe65c21b391505ab8004a50e3e92e35c93"
+    },
+    {
+      "path": "sources/google--gemma-3-270m/metadata.json",
+      "bytes": 1802,
+      "sha256": "a8599eb9888c5b3ab3f00f3ad827b7e46266a68faa89d7e818d6e89fe5fd624f"
+    },
+    {
+      "path": "sources/mlfoundations--dclm-baseline-1.0/README.md",
+      "bytes": 7463,
+      "sha256": "7836ae55a3a8decc25e1d5c15900f3b40e91a4d20f4d2bf4f048d86f1db2c4ff"
+    },
+    {
+      "path": "sources/mlfoundations--dclm-baseline-1.0/metadata.json",
+      "bytes": 2341608,
+      "sha256": "47fbdea9bd86c885070942a62ef54fe39d50ad50a3ff9754f1a33e20407cadc9"
+    },
+    {
+      "path": "sources/mlfoundations--dclm-baseline-1.0-parquet/README.md",
+      "bytes": 6553,
+      "sha256": "fee0be33fa4d0639645208be1d72cb8b3a0e4850306f381b32db3b128fe938d8"
+    },
+    {
+      "path": "sources/mlfoundations--dclm-baseline-1.0-parquet/metadata.json",
+      "bytes": 5588640,
+      "sha256": "789359c2dd7d7530bf802d2bb75e008a6b1025dbf455ca77643f89f775eacb8c"
+    },
+    {
+      "path": "sources/nvidia--Nemotron-CC-Code-v1/README.md",
+      "bytes": 24057,
+      "sha256": "d8c7f423fd09f5557094b0c86394c8657c2c3b6cafc2ffd4efad591bf2ab404f"
+    },
+    {
+      "path": "sources/nvidia--Nemotron-CC-Code-v1/metadata.json",
+      "bytes": 7086,
+      "sha256": "667eae798946d036d29bbcbadf6e5809ce4c41ee5794045971cb3031b2053f66"
+    },
+    {
+      "path": "sources/nvidia--Nemotron-CC-Math-v1/README.md",
+      "bytes": 15036,
+      "sha256": "e34457ea97edceb31d0385759ecc88d9cac38db11e704878243c6039b6e23a3f"
+    },
+    {
+      "path": "sources/nvidia--Nemotron-CC-Math-v1/metadata.json",
+      "bytes": 8686,
+      "sha256": "89e3749cafd571b9e40c98b4e66419deee7a22b15a9c7a2c7b408af1d2bd7027"
+    },
+    {
+      "path": "sources/nvidia--Nemotron-CC-v2.1/README.md",
+      "bytes": 25087,
+      "sha256": "0260fc3634a80fbd71fff602ef9b09bafc82b199ed1b36327cab68422037690f"
+    },
+    {
+      "path": "sources/nvidia--Nemotron-CC-v2.1/metadata.json",
+      "bytes": 146149,
+      "sha256": "e05042ecbe13f6368402112a4e2249c66c2d759dd9544b410fe323b7d4c9e7d8"
+    },
+    {
+      "path": "sources/nvidia--Nemotron-Instruction-Following-Chat-v1/README.md",
+      "bytes": 4151,
+      "sha256": "332155e4ba76072a497a1bc0c850aec2b5444feff59d77c684c28c5bee7a7cc5"
+    },
+    {
+      "path": "sources/nvidia--Nemotron-Instruction-Following-Chat-v1/metadata.json",
+      "bytes": 1445,
+      "sha256": "bbf351506b9dd531c607ebcf5f9dcdda4967ab817a54ab2da20a890db26310b2"
+    },
+    {
+      "path": "sources/nvidia--Nemotron-Pretraining-Specialized-v1/README.md",
+      "bytes": 24372,
+      "sha256": "414c2f6ed620bb83828a412f8f5cf9e4d54fcb1ae0d4025aeda894a7f8dde1f3"
+    },
+    {
+      "path": "sources/nvidia--Nemotron-Pretraining-Specialized-v1/metadata.json",
+      "bytes": 20921,
+      "sha256": "14306ffde64dc7dfa8480159716c9eec6b1b15130e1023896049e61208f1bd08"
+    },
+    {
+      "path": "sources/nvidia--Nemotron-SFT-Math-v3/README.md",
+      "bytes": 6249,
+      "sha256": "40dc12f0ff95372b980c35c7ddd1e35d304464c261c08d8c0eff25980afe7ee5"
+    },
+    {
+      "path": "sources/nvidia--Nemotron-SFT-Math-v3/metadata.json",
+      "bytes": 1402,
+      "sha256": "15f44aa19515018882f8188e421f84940e437f3fa38b58e698f9dcc8125ba730"
+    },
+    {
+      "path": "sources/nvidia--Open-SWE-Traces/README.md",
+      "bytes": 10345,
+      "sha256": "9b6e8a5a0df20b2f8da9d4c9684ab982dfd74820275b850cea53b4c2157c8a9e"
+    },
+    {
+      "path": "sources/nvidia--Open-SWE-Traces/metadata.json",
+      "bytes": 18698,
+      "sha256": "400bf053f8926ef69530ddf336fb3c7594e0a6b70b9e81fc63323f183b5443a3"
+    },
+    {
+      "path": "sources/nvidia--OpenMathInstruct-2/README.md",
+      "bytes": 6408,
+      "sha256": "8d0513c2f85e6ee1258f109017c2565f638cc10a72f1ffbee34ab8601c0dc199"
+    },
+    {
+      "path": "sources/nvidia--OpenMathInstruct-2/metadata.json",
+      "bytes": 5058,
+      "sha256": "851ed84880e0456409bdcd6de7fca34ec57b9f9e4ae608595d022c3f13d2504d"
+    },
+    {
+      "path": "sources/open-thoughts--OpenThoughts3-1.2M/README.md",
+      "bytes": 7759,
+      "sha256": "8bc5c1c91e5fce307d33b049701606f2a3fb73521c4bae89e16cdacf1aa9b2e1"
+    },
+    {
+      "path": "sources/open-thoughts--OpenThoughts3-1.2M/metadata.json",
+      "bytes": 7093,
+      "sha256": "494a3817374420f1b0ed27306ad9ef229fe3df63b349a593addaa4fd47b98301"
+    },
+    {
+      "path": "sources/tiiuae--Falcon-H1-0.5B-Base/README.md",
+      "bytes": 4649,
+      "sha256": "1d44bb62b049cdb7c47f841bbcc54c8025d037170986051cacbf303ecd5ab381"
+    },
+    {
+      "path": "sources/tiiuae--Falcon-H1-0.5B-Base/config.json",
+      "bytes": 1584,
+      "sha256": "73d036cc5e36429ba554c9e6d553571c0042af137e070380818980a7ef02b1ff"
+    },
+    {
+      "path": "sources/tiiuae--Falcon-H1-0.5B-Base/metadata.json",
+      "bytes": 1612,
+      "sha256": "2a1b34dadd7f2b47407ce58f942f5294665b8fa971bed36bdfea64d20157d691"
+    },
+    {
+      "path": "supplemental-sample-audit.json",
+      "bytes": 5030,
+      "sha256": "40ee327a18a41d696e51c7790bdbd4849120ff46d5140de05a0cc707bfc9b06e"
+    },
+    {
+      "path": "token-budget-plan.json",
+      "bytes": 3481,
+      "sha256": "155bd49305c107a09fdb8d56f573e587586701317b147ba5aa6e3f909587c67a"
+    },
+    {
+      "path": "tokenizer-sample-audit.json",
+      "bytes": 4277,
+      "sha256": "85016b9119bba2698f7850e0aef6fbebbbca3fb2b669ce034badc974b368131d"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 621,
+      "sha256": "dd3e9b956bea59f5a7dd6fcedbeb2b7459f530ec807e9f8d46be5d9241193acc"
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "design_sha256": "614c653cad91ac76e146a99e9b4eaeb7d4b3aab0d164d8b985983f253c4791a9",
+  "status": "OFFLINE_QUOTA_PLAN_NOT_A_LAUNCH_RECEIPT",
+  "prediction_tokens_per_run": 536870912,
+  "optimizer_steps": 256,
+  "total_screen_prediction_tokens": 4294967296,
+  "recipes": {
+    "M0_existing_web_control": {
+      "blocks": {
+        "fineweb_edu": 262144,
+        "dclm": 0,
+        "finepdfs_edu": 0,
+        "math": 0,
+        "code": 0,
+        "synthetic": 0,
+        "multilingual": 0
+      },
+      "prediction_tokens": {
+        "fineweb_edu": 536870912,
+        "dclm": 0,
+        "finepdfs_edu": 0,
+        "math": 0,
+        "code": 0,
+        "synthetic": 0,
+        "multilingual": 0
+      },
+      "realized_percent": {
+        "fineweb_edu": 100.0,
+        "dclm": 0.0,
+        "finepdfs_edu": 0.0,
+        "math": 0.0,
+        "code": 0.0,
+        "synthetic": 0.0,
+        "multilingual": 0.0
+      },
+      "raw_uint16_packed_bytes": 1074266112
+    },
+    "M1_broad_english": {
+      "blocks": {
+        "fineweb_edu": 78643,
+        "dclm": 52429,
+        "finepdfs_edu": 52429,
+        "math": 39322,
+        "code": 26214,
+        "synthetic": 13107,
+        "multilingual": 0
+      },
+      "prediction_tokens": {
+        "fineweb_edu": 161060864,
+        "dclm": 107374592,
+        "finepdfs_edu": 107374592,
+        "math": 80531456,
+        "code": 53686272,
+        "synthetic": 26843136,
+        "multilingual": 0
+      },
+      "realized_percent": {
+        "fineweb_edu": 29.999923706054688,
+        "dclm": 20.000076293945312,
+        "finepdfs_edu": 20.000076293945312,
+        "math": 15.000152587890625,
+        "code": 9.999847412109375,
+        "synthetic": 4.9999237060546875,
+        "multilingual": 0.0
+      },
+      "raw_uint16_packed_bytes": 1074266112
+    },
+    "M2_reasoning": {
+      "blocks": {
+        "fineweb_edu": 52429,
+        "dclm": 39321,
+        "finepdfs_edu": 65536,
+        "math": 52429,
+        "code": 39322,
+        "synthetic": 13107,
+        "multilingual": 0
+      },
+      "prediction_tokens": {
+        "fineweb_edu": 107374592,
+        "dclm": 80529408,
+        "finepdfs_edu": 134217728,
+        "math": 107374592,
+        "code": 80531456,
+        "synthetic": 26843136,
+        "multilingual": 0
+      },
+      "realized_percent": {
+        "fineweb_edu": 20.000076293945312,
+        "dclm": 14.999771118164062,
+        "finepdfs_edu": 25.0,
+        "math": 20.000076293945312,
+        "code": 15.000152587890625,
+        "synthetic": 4.9999237060546875,
+        "multilingual": 0.0
+      },
+      "raw_uint16_packed_bytes": 1074266112
+    },
+    "M3_broad_multilingual": {
+      "blocks": {
+        "fineweb_edu": 52429,
+        "dclm": 39322,
+        "finepdfs_edu": 52429,
+        "math": 39321,
+        "code": 39322,
+        "synthetic": 13107,
+        "multilingual": 26214
+      },
+      "prediction_tokens": {
+        "fineweb_edu": 107374592,
+        "dclm": 80531456,
+        "finepdfs_edu": 107374592,
+        "math": 80529408,
+        "code": 80531456,
+        "synthetic": 26843136,
+        "multilingual": 53686272
+      },
+      "realized_percent": {
+        "fineweb_edu": 20.000076293945312,
+        "dclm": 15.000152587890625,
+        "finepdfs_edu": 20.000076293945312,
+        "math": 14.999771118164062,
+        "code": 15.000152587890625,
+        "synthetic": 4.9999237060546875,
+        "multilingual": 9.999847412109375
+      },
+      "raw_uint16_packed_bytes": 1074266112
+    }
+  }
+}

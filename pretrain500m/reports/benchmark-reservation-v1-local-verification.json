@@ -1,0 +1,12 @@
+{
+  "status": "PASS_LOCAL_REFERENCE_CONTENT_IDENTITY",
+  "archive": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/posttrain/benchmark-reservation-v1-20260913.tar.gz",
+  "archive_sha256": "105e9d4744fdf54657fb38d614b9b1535037629e0d2304c1f0a648c0db289c0c",
+  "archive_bytes": 7757046,
+  "source_files": 32,
+  "reference_records": 11830,
+  "reference_fields": 53073,
+  "training_admitted": false,
+  "matcher_implemented": false,
+  "corpus_scan_completed": false
+}

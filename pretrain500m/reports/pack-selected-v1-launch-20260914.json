@@ -1,0 +1,31 @@
+{
+  "status": "LAUNCHED_SELECTED_SOURCE_PACKING_NOT_ADMITTED",
+  "checked_utc": "2026-09-13T23:05:47.489969+00:00",
+  "pid": 3573747,
+  "command": [
+    "/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python",
+    "/ssd/scxi253/pretrain500m-20260912-v1/source/pack-selected-v1/pack.py",
+    "--family-report",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/family-split-v1/report.json",
+    "--expected-family-sha256",
+    "aa6f8d733135f410f318e9bf4944033670103eaf118a1cdb0c43663609680a4c",
+    "--tokenizer",
+    "/ssd/scxi253/pretrain500m-20260912-v1/formal/hf-v5/tokenizer.json",
+    "--expected-tokenizer-sha256",
+    "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+    "--output",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1",
+    "--workers",
+    "4"
+  ],
+  "source": "/ssd/scxi253/pretrain500m-20260912-v1/source/pack-selected-v1",
+  "output": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1",
+  "log": "/ssd/scxi253/pretrain500m-20260912-v1/logs/pack-selected-v1.log",
+  "workers": 4,
+  "archive_sha256": "61b556b801592323eb321f891d65ac7c8917f44cf9e91bd80be5895f7ea3f3a9",
+  "local_tests_passed": 3,
+  "remote_tests_passed": 3,
+  "training_admitted": false,
+  "training_launched": false,
+  "free_bytes": 21247483904
+}

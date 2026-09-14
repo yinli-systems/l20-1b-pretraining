@@ -1,0 +1,27 @@
+{
+  "status": "LAUNCHED_REVIEW_FILTERED_PACK_NOT_ADMITTED",
+  "pid": 4175374,
+  "archive_sha256": "875de267c83aae02b6bbda5c7b77c49174de9a583ac0a02f3ba2b7c7542a3e2a",
+  "decisions_sha256": "31837495a2f874aa70fc7d3d60d9b3a046d1faf2772fb2d568126dbca2e88ef0",
+  "manual_review_sha256": "95ea54d0e3a8709a6c71068948e5bf3c0a2a76b7dd2156253596872251fd1a3d",
+  "tests": "..                                                                       [100%]\n2 passed in 0.31s",
+  "command": [
+    "/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python",
+    "/ssd/scxi253/pretrain500m-20260912-v1/source/filter-packed-v1/filter_pack.py",
+    "--parent-report",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/report.json",
+    "--expected-parent-sha256",
+    "b706b08e036e148ab53f70cf55997065596c426bf9b532abbc9431bb6cf3b927",
+    "--decisions",
+    "/ssd/scxi253/pretrain500m-20260912-v1/vendor/quality-review-exclusions-v1.json",
+    "--expected-decisions-sha256",
+    "31837495a2f874aa70fc7d3d60d9b3a046d1faf2772fb2d568126dbca2e88ef0",
+    "--output",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-quality-v1",
+    "--workers",
+    "4"
+  ],
+  "training_admitted": false,
+  "launched_unix": 1789342779.9548323,
+  "free_bytes_before": 20599304192
+}

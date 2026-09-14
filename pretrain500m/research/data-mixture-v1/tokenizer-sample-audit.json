@@ -1,0 +1,117 @@
+{
+  "tokenizer_path": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/sources/allenai--DataDecide-fineweb-edu-530M/tokenizer.json",
+  "tokenizer_sha256": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+  "special_tokens_included": false,
+  "results": [
+    {
+      "sample_id": "cosmopedia2",
+      "documents": 128,
+      "total_tokens": 92005,
+      "median_tokens": 684.0,
+      "p95_tokens": 1152,
+      "fraction_documents_over_2048": 0.0,
+      "fraction_tokens_lost_if_head_truncated_2048": 0.0,
+      "tokens_per_unicode_character": 0.19596629562891113,
+      "scope": "engineering sample; not population estimate"
+    },
+    {
+      "sample_id": "dclm_100bt",
+      "documents": 128,
+      "total_tokens": 164708,
+      "median_tokens": 676.0,
+      "p95_tokens": 3999,
+      "fraction_documents_over_2048": 0.1328125,
+      "fraction_tokens_lost_if_head_truncated_2048": 0.29792724093547374,
+      "tokens_per_unicode_character": 0.23223594138407025,
+      "scope": "engineering sample; not population estimate"
+    },
+    {
+      "sample_id": "finemath4",
+      "documents": 128,
+      "total_tokens": 199737,
+      "median_tokens": 839.5,
+      "p95_tokens": 5829,
+      "fraction_documents_over_2048": 0.21875,
+      "fraction_tokens_lost_if_head_truncated_2048": 0.337573909691244,
+      "tokens_per_unicode_character": 0.27174140778693545,
+      "scope": "engineering sample; not population estimate"
+    },
+    {
+      "sample_id": "finepdfs_en",
+      "documents": 128,
+      "total_tokens": 435154,
+      "median_tokens": 1689.0,
+      "p95_tokens": 13708,
+      "fraction_documents_over_2048": 0.4140625,
+      "fraction_tokens_lost_if_head_truncated_2048": 0.5810701498779742,
+      "tokens_per_unicode_character": 0.228892892366362,
+      "scope": "engineering sample; not population estimate"
+    },
+    {
+      "sample_id": "fineweb2hq_es",
+      "documents": 128,
+      "total_tokens": 117703,
+      "median_tokens": 552.0,
+      "p95_tokens": 2542,
+      "fraction_documents_over_2048": 0.1015625,
+      "fraction_tokens_lost_if_head_truncated_2048": 0.10134830887912794,
+      "tokens_per_unicode_character": 0.30366034250568863,
+      "scope": "engineering sample; not population estimate"
+    },
+    {
+      "sample_id": "fineweb2hq_zh",
+      "documents": 128,
+      "total_tokens": 210235,
+      "median_tokens": 757.5,
+      "p95_tokens": 5602,
+      "fraction_documents_over_2048": 0.25,
+      "fraction_tokens_lost_if_head_truncated_2048": 0.3391157514210289,
+      "tokens_per_unicode_character": 1.2742596341507764,
+      "scope": "engineering sample; not population estimate"
+    },
+    {
+      "sample_id": "fineweb_edu",
+      "documents": 128,
+      "total_tokens": 154055,
+      "median_tokens": 804.0,
+      "p95_tokens": 3093,
+      "fraction_documents_over_2048": 0.1015625,
+      "fraction_tokens_lost_if_head_truncated_2048": 0.22928824121255398,
+      "tokens_per_unicode_character": 0.20523536354989036,
+      "scope": "engineering sample; not population estimate"
+    },
+    {
+      "sample_id": "infiwebmath4",
+      "documents": 128,
+      "total_tokens": 166332,
+      "median_tokens": 865.0,
+      "p95_tokens": 4652,
+      "fraction_documents_over_2048": 0.1328125,
+      "fraction_tokens_lost_if_head_truncated_2048": 0.22319818194935426,
+      "tokens_per_unicode_character": 0.2761022460738112,
+      "scope": "engineering sample; not population estimate"
+    },
+    {
+      "sample_id": "smol_smoltalk",
+      "documents": 128,
+      "total_tokens": 121117,
+      "median_tokens": 892.0,
+      "p95_tokens": 1399,
+      "fraction_documents_over_2048": 0.0078125,
+      "fraction_tokens_lost_if_head_truncated_2048": 0.12051982793497196,
+      "tokens_per_unicode_character": 0.23282552070818235,
+      "scope": "engineering sample; not population estimate"
+    },
+    {
+      "sample_id": "stackedu_python_text",
+      "documents": 14,
+      "total_tokens": 22240,
+      "median_tokens": 1233.5,
+      "p95_tokens": 5288,
+      "fraction_documents_over_2048": 0.21428571428571427,
+      "fraction_tokens_lost_if_head_truncated_2048": 0.2885791366906475,
+      "tokens_per_unicode_character": 0.2968262018524945,
+      "scope": "engineering sample; not population estimate"
+    }
+  ]
+}

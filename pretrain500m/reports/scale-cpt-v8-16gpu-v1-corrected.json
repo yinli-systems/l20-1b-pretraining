@@ -1,0 +1,57 @@
+{
+  "accumulation": 16,
+  "claim_boundary": "16-GPU throughput and integration qualification; no quality or promotion claim",
+  "correction": {
+    "authoritative_source": "run-manifest.json and executed sbatch command",
+    "correct_value": 16,
+    "incorrect_field": "accumulation",
+    "incorrect_value": 32,
+    "superseded_receipt_sha256": "f7f2adbfbb3772cef78b4b424da051dacd38c0f3421eca8e4b2b4405131f7d0c",
+    "training_behavior_affected": false
+  },
+  "ddp_buckets_rebuilt": false,
+  "ddp_policy": {
+    "bucket_cap_mb": 25,
+    "find_unused_parameters": true,
+    "gradient_as_bucket_view": true,
+    "static_graph": false
+  },
+  "distinct_gpu_uuids": 16,
+  "evidence": {
+    "gpu_inventory_sha256": "38e52d906c3f621a2245b59fe79db4eed561226c6dc1e5e3eef91eb46d0a5133",
+    "metrics_sha256": "5ca4157ef54fc8366e395f50aa18d3459fdd19319268ec7e3742d7cb085ac937",
+    "run_manifest_sha256": "c090486737a1671a4368ac4eaa97e162d09ef7f9596ba21510b38ec90bcd8ce2",
+    "training_status_sha256": "84d0d47ddf6ca49840f6cd8f5f0149bff83df76d551dad77fc2df2c456c4d549"
+  },
+  "final_mfu10_median": 0.5308622985026885,
+  "finite_training_metrics": true,
+  "global_prediction_tokens_per_step": 2097152,
+  "gpu_model": "NVIDIA GeForce RTX 5090",
+  "gpus_per_node": 4,
+  "job_id": 1588636,
+  "kind": "corrected_scale_qualification_receipt",
+  "median_tokens_per_second": 467715.7272670797,
+  "microbatch": 4,
+  "nodes": 4,
+  "owner": "pretrain500m 2026-09-12 isolated run; owner task 01a09290-b43f-7431-be8a-412ea5d37954",
+  "run_fingerprint_sha256": "052f8d433ec73f4ed7335c21de80fe9679b58c005831a0c3de9923f4b4f4e97d",
+  "schema_version": 1,
+  "slurm": {
+    "elapsed_seconds": 258,
+    "exit_code": "0:0",
+    "nodes": [
+      "wqd10nah09g3",
+      "wqd10nah10g5",
+      "wqd10nbj04g5",
+      "wqd10nbj06g2"
+    ],
+    "state": "COMPLETED"
+  },
+  "status": "PASS_MFU_AND_INTEGRITY",
+  "steady_mfu_median": 0.5567345100271764,
+  "steady_steps": "6..20",
+  "steps": 20,
+  "val_loss_equal_domain": 2.9616529398440647,
+  "validation_microbatch": 1,
+  "world_size": 16
+}

@@ -1,0 +1,87 @@
+{
+  "checked_utc": "2026-09-13T19:53:18.404751+00:00",
+  "free_bytes": 22534356992,
+  "verification": {
+    "status": "PASS_CPU_REGRESSION_AND_INTAKE_EXCLUSION",
+    "checked_utc": "2026-09-13T19:51:31.210193+00:00",
+    "intake_exclusion_cases_passed": 3,
+    "cpu_tests_stdout": "...............................                                          [100%]\n31 passed in 6.83s\n",
+    "initial_test_environment_failure": "Four plan-quota cases lacked the two unchanged research fixtures on the remote host; fixtures copied by content hash, original failure JUnit preserved, full suite rerun.",
+    "junit_sha256": "f269ff77fc4fa8bc4348c7afd9a91b3a72c67f061084109a4777fa79ed158208",
+    "formal_mixture_gpu_qualified": false,
+    "recovery_policy_actual_gpu_evidence": "recovery-v2-1588249/comparison.json",
+    "test_fixture_archive_sha256": "b77e9ba0aabec01c74c4f578d83561fab107f55eaa02b9b8d772924f9965a07e"
+  },
+  "launch": {
+    "status": "STARTED",
+    "pid": 11401,
+    "checked_utc": "2026-09-13T19:51:31.247274+00:00",
+    "command": [
+      "/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python",
+      "/ssd/scxi253/pretrain500m-20260912-v1/source/intake-v2/intake.py"
+    ],
+    "source_archive_sha256": "29fd21788a30822ccebd953567eeb503942ecb85f3d1b82e9a153e0bc997f9ff",
+    "sources": 10,
+    "free_bytes_at_launch": 22535700480,
+    "training_admitted": false
+  },
+  "sources": [
+    {
+      "id": "code_javascript",
+      "status": "READING",
+      "rows_written": 550,
+      "network_bytes": 5351949,
+      "stop_reason": null,
+      "error": null,
+      "groups": [
+        {
+          "row_group": 1164,
+          "physical_row_offset": 1164000,
+          "rows_read": 1000
+        },
+        {
+          "row_group": 2747,
+          "physical_row_offset": 2747000,
+          "rows_read": 1000
+        },
+        {
+          "row_group": 855,
+          "physical_row_offset": 855000,
+          "rows_read": 1000
+        }
+      ]
+    },
+    {
+      "id": "code_python",
+      "status": "READING",
+      "rows_written": 608,
+      "network_bytes": 6125374,
+      "stop_reason": null,
+      "error": null,
+      "groups": [
+        {
+          "row_group": 985,
+          "physical_row_offset": 985000,
+          "rows_read": 1000
+        },
+        {
+          "row_group": 4444,
+          "physical_row_offset": 4444000,
+          "rows_read": 1000
+        },
+        {
+          "row_group": 122,
+          "physical_row_offset": 122000,
+          "rows_read": 1000
+        },
+        {
+          "row_group": 4623,
+          "physical_row_offset": 4623000,
+          "rows_read": 1000
+        }
+      ]
+    }
+  ],
+  "process": "  11401       01:47 Ssl  /ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python /ssd/scxi253/pretrain500m-20260912-v1/source/intake-v2/intake.py\n",
+  "log_tail": "<unknown>:37: SyntaxWarning: invalid escape sequence '\\o'\n<unknown>:42: SyntaxWarning: invalid escape sequence '\\,'\n<unknown>:43: SyntaxWarning: invalid escape sequence '\\,'\n<unknown>:77: SyntaxWarning: invalid escape sequence '\\o'\n<unknown>:87: SyntaxWarning: invalid escape sequence '\\,'\n{\"source\": \"code_javascript\", \"rows\": 167, \"network_bytes\": 5170302, \"code_attempts\": 168}\n{\"source\": \"code_python\", \"rows\": 161, \"network_bytes\": 5847273, \"code_attempts\": 177}\n{\"source\": \"code_python\", \"rows\": 310, \"network_bytes\": 5939912, \"code_attempts\": 338}\n{\"source\": \"code_javascript\", \"rows\": 365, \"network_bytes\": 5261301, \"code_attempts\": 366}\n<unknown>:51: SyntaxWarning: invalid escape sequence '\\|'\n<unknown>:56: SyntaxWarning: invalid escape sequence '\\s'\n{\"source\": \"code_python\", \"rows\": 455, \"network_bytes\": 6032086, \"code_attempts\": 494}\n{\"source\": \"code_javascript\", \"rows\": 550, \"network_bytes\": 5351949, \"code_attempts\": 551}\n<unknown>:23: SyntaxWarning: invalid escape sequence '\\m'\n<unknown>:17: SyntaxWarning: invalid escape sequence '\\d'\n<unknown>:11: SyntaxWarning: invalid escape sequence '\\p'\n<unknown>:12: SyntaxWarning: invalid escape sequence '\\S'\n<unknown>:13: SyntaxWarning: invalid escape sequence '\\S'\n<unknown>:14: SyntaxWarning: invalid escape sequence '\\S'\n<unknown>:215: SyntaxWarning: invalid escape sequence '\\c'\n<unknown>:236: SyntaxWarning: invalid escape sequence '\\['\n{\"source\": \"code_python\", \"rows\": 608, \"network_bytes\": 6125374, \"code_attempts\": 658}\n"
+}

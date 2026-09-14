@@ -1,0 +1,107 @@
+{
+  "aggregate": {
+    "bootstrap_ci_95": [
+      0.47032896471236924,
+      0.48876142640048303
+    ],
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 20260912,
+    "name": "seven_task_unweighted_mean",
+    "percentile_method": "linear",
+    "score": 0.4795681745464077,
+    "task_weighting": "unweighted"
+  },
+  "input_sha256": {
+    "protocol": "a71ce3c8cc85cac6fe6751cb46f7e50dfb78d266602d6377cb2e65249f11c761",
+    "results": "28b65e37ee7359e91bc7ea4f5a370108efddf6a45c1f2528812b6bde9f536e51",
+    "samples_arc_challenge": "1faa5a12ca27ba5e2d556307ab9ffa6b8af9f480315ba32b81de936febd8ebfd",
+    "samples_arc_easy": "e2e6808ca4c4261b85a65c3a37c74e912be321c6470a0baa1bb2ca99b92afab8",
+    "samples_boolq": "72dc7410df89fb3ef6512c210cc18e7cc1b1a18f7c3a49ba18f4f674961657e5",
+    "samples_hellaswag": "4e29984ba505e8be0fcdb48c316c41e53a79adb214af9b2fed9b7fc02648cef8",
+    "samples_openbookqa": "4a908e6483fba3b9f21cf345fe22f20ff0f169d90015735c45ffe72f8e8df906",
+    "samples_piqa": "e92ee62ac1748c867c1228a72172199fba63dbdbfdc74b27577385249262da05",
+    "samples_winogrande": "e7ac5d9c1fd05ff800aca9859af16a57bdd317d1b2f3b6f639dffc7dccaba239"
+  },
+  "protocol_id": "p500m-english-base-v5",
+  "protocol_sha256": "a71ce3c8cc85cac6fe6751cb46f7e50dfb78d266602d6377cb2e65249f11c761",
+  "status": "PASS_FROZEN_EVALUATION_AGGREGATE",
+  "tasks": {
+    "arc_challenge": {
+      "bootstrap_ci_95": [
+        0.257679180887372,
+        0.3097269624573379
+      ],
+      "primary_metric": "acc_norm",
+      "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/formal/eval-v5/__ssd__scxi253__pretrain500m-20260912-v1__formal__hf-v5/samples_arc_challenge_2026-09-13T22-24-17.766168.jsonl",
+      "sample_log_sha256": "1faa5a12ca27ba5e2d556307ab9ffa6b8af9f480315ba32b81de936febd8ebfd",
+      "samples": 1172,
+      "score": 0.2832764505119454
+    },
+    "arc_easy": {
+      "bootstrap_ci_95": [
+        0.5328282828282829,
+        0.5723905723905723
+      ],
+      "primary_metric": "acc_norm",
+      "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/formal/eval-v5/__ssd__scxi253__pretrain500m-20260912-v1__formal__hf-v5/samples_arc_easy_2026-09-13T22-24-17.766168.jsonl",
+      "sample_log_sha256": "e2e6808ca4c4261b85a65c3a37c74e912be321c6470a0baa1bb2ca99b92afab8",
+      "samples": 2376,
+      "score": 0.5526094276094277
+    },
+    "boolq": {
+      "bootstrap_ci_95": [
+        0.545565749235474,
+        0.5798165137614679
+      ],
+      "primary_metric": "acc",
+      "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/formal/eval-v5/__ssd__scxi253__pretrain500m-20260912-v1__formal__hf-v5/samples_boolq_2026-09-13T22-24-17.766168.jsonl",
+      "sample_log_sha256": "72dc7410df89fb3ef6512c210cc18e7cc1b1a18f7c3a49ba18f4f674961657e5",
+      "samples": 3270,
+      "score": 0.5629969418960244
+    },
+    "hellaswag": {
+      "bootstrap_ci_95": [
+        0.4138617805218084,
+        0.4331806413065126
+      ],
+      "primary_metric": "acc_norm",
+      "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/formal/eval-v5/__ssd__scxi253__pretrain500m-20260912-v1__formal__hf-v5/samples_hellaswag_2026-09-13T22-24-17.766168.jsonl",
+      "sample_log_sha256": "4e29984ba505e8be0fcdb48c316c41e53a79adb214af9b2fed9b7fc02648cef8",
+      "samples": 10042,
+      "score": 0.4235212109141605
+    },
+    "openbookqa": {
+      "bootstrap_ci_95": [
+        0.288,
+        0.372
+      ],
+      "primary_metric": "acc_norm",
+      "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/formal/eval-v5/__ssd__scxi253__pretrain500m-20260912-v1__formal__hf-v5/samples_openbookqa_2026-09-13T22-24-17.766168.jsonl",
+      "sample_log_sha256": "4a908e6483fba3b9f21cf345fe22f20ff0f169d90015735c45ffe72f8e8df906",
+      "samples": 500,
+      "score": 0.33
+    },
+    "piqa": {
+      "bootstrap_ci_95": [
+        0.64689880304679,
+        0.6898939064200215
+      ],
+      "primary_metric": "acc_norm",
+      "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/formal/eval-v5/__ssd__scxi253__pretrain500m-20260912-v1__formal__hf-v5/samples_piqa_2026-09-13T22-24-17.766168.jsonl",
+      "sample_log_sha256": "e92ee62ac1748c867c1228a72172199fba63dbdbfdc74b27577385249262da05",
+      "samples": 1838,
+      "score": 0.6686615886833515
+    },
+    "winogrande": {
+      "bootstrap_ci_95": [
+        0.5082872928176796,
+        0.56353591160221
+      ],
+      "primary_metric": "acc",
+      "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/formal/eval-v5/__ssd__scxi253__pretrain500m-20260912-v1__formal__hf-v5/samples_winogrande_2026-09-13T22-24-17.766168.jsonl",
+      "sample_log_sha256": "e7ac5d9c1fd05ff800aca9859af16a57bdd317d1b2f3b6f639dffc7dccaba239",
+      "samples": 1267,
+      "score": 0.5359116022099447
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "claim_boundary": "scheduler acceptance only; no allocation, measured MFU, or quality claim yet",
+  "ddp_policy": {
+    "bucket_cap_mb": 25,
+    "find_unused_parameters": true,
+    "gradient_as_bucket_view": true,
+    "static_graph": false
+  },
+  "global_prediction_tokens_per_step": 2097152,
+  "job_id": 1588621,
+  "kind": "cpt_v8_scale_qualification_launch",
+  "local_tests": {
+    "bash_syntax": "PASS",
+    "pytest": "38 passed"
+  },
+  "mfu_gate": {
+    "grace_steps": 5,
+    "strictly_greater_than": 0.5,
+    "window": 10
+  },
+  "observed_at": "2026-09-14T10:12:55+08:00",
+  "owner": "pretrain500m 2026-09-12 isolated run; owner task 01a09290-b43f-7431-be8a-412ea5d37954",
+  "pending_reason": "Resources",
+  "purpose": "qualify exact current CPT runner at 8 GPUs before using it for a longer phase",
+  "remote_tests": {
+    "bash_syntax": "PASS",
+    "hashes": "PASS",
+    "pytest": "38 passed"
+  },
+  "request": {
+    "gpus_per_node": 4,
+    "gpus_total": 8,
+    "nodes": 2,
+    "partition": "gpu_5090",
+    "qos": "gpugpu",
+    "time_limit": "00:30:00"
+  },
+  "scheduler_state": "PENDING",
+  "schema_version": 1,
+  "source": {
+    "sbatch_sha256": "8587bb7f5828ef8c2eeb858c0be6fab184930d380de0ff5db6c40ee38bffa3f5",
+    "train_cpt_sha256": "63bef25bed20c2534017141dec0e7ef72257d952d5052037c47e97152ea05386"
+  },
+  "submitted_at": "2026-09-14T10:12:36+08:00",
+  "training": {
+    "accumulation": 32,
+    "checkpoint_mode": "none",
+    "microbatch": 4,
+    "pilot_steps": 20
+  },
+  "validation": {
+    "blocks": 7824,
+    "microbatch": 2,
+    "prediction_tokens": 16023552
+  }
+}

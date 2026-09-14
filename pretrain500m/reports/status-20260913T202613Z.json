@@ -1,0 +1,52 @@
+{
+  "checked_utc": "2026-09-13T20:26:13.836299+00:00",
+  "free_bytes": 22487535616,
+  "worker": "  11401       34:42 Ssl  /ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python /ssd/scxi253/pretrain500m-20260912-v1/source/intake-v2/intake.py\n",
+  "sources": [
+    {
+      "id": "code_java",
+      "status": "READING",
+      "rows_written": 1870,
+      "uncompressed_output_bytes": 6524069,
+      "network_bytes": 11002614,
+      "updated_utc": "2026-09-13T20:26:03.338167+00:00",
+      "stop_reason": null,
+      "error": null,
+      "groups_read": 55,
+      "groups_requested": 226
+    },
+    {
+      "id": "code_javascript",
+      "status": "RAW_SEGMENT_READY",
+      "rows_written": 9372,
+      "uncompressed_output_bytes": 37641227,
+      "network_bytes": 9811214,
+      "updated_utc": "2026-09-13T20:14:42.297107+00:00",
+      "stop_reason": null,
+      "error": null,
+      "groups_read": 52,
+      "groups_requested": 52
+    },
+    {
+      "id": "code_python",
+      "status": "READING",
+      "rows_written": 12518,
+      "uncompressed_output_bytes": 56877040,
+      "network_bytes": 13353926,
+      "updated_utc": "2026-09-13T20:25:57.930843+00:00",
+      "stop_reason": null,
+      "error": null,
+      "groups_read": 82,
+      "groups_requested": 141
+    }
+  ],
+  "audit_progress": {
+    "status": "RUNNING",
+    "source": "multilingual_deu_Latn",
+    "tranche": 0,
+    "source_file_rows": 2000,
+    "completed_files": 11,
+    "elapsed_seconds": 82.80570101737976
+  },
+  "audit_log_tail": ""
+}

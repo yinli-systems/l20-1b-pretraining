@@ -1,0 +1,32 @@
+{
+  "files": [
+    {
+      "name": "fasttext_wheel-0.9.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/ff/40/ed638abf8ac6fd0d1e7c47d07d37621e86f46522bbad0bec6e4f6d85a39d/fasttext_wheel-0.9.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "bytes": 4565768,
+      "sha256": "5758d911a4e4539c75e93d58d9feee2c6de96a5addc4f4d7d76ed4e8953a4f35",
+      "upstream_expected_sha256": "5758d911a4e4539c75e93d58d9feee2c6de96a5addc4f4d7d76ed4e8953a4f35",
+      "checked_utc": "2026-09-13T22:23:48.252610+00:00"
+    },
+    {
+      "name": "lid.176.bin",
+      "url": "https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.bin",
+      "bytes": 131266198,
+      "sha256": "7e69ec5451bc261cc7844e49e4792a85d7f09c06789ec800fc4a44aec362764e",
+      "upstream_expected_sha256": null,
+      "checked_utc": "2026-09-13T22:24:04.250472+00:00"
+    },
+    {
+      "name": "public_suffix_list.dat",
+      "url": "https://publicsuffix.org/list/public_suffix_list.dat",
+      "bytes": 334129,
+      "sha256": "4b673689999dbaca60b93fa3e1da5752505ef9717b1c4dc44acbfdafd35679ea",
+      "upstream_expected_sha256": null,
+      "checked_utc": "2026-09-13T22:24:06.491840+00:00"
+    }
+  ],
+  "model_license": "CC-BY-SA-3.0",
+  "model_primary_source": "https://fasttext.cc/docs/en/language-identification.html",
+  "psl_primary_source": "https://publicsuffix.org/list/",
+  "psl_license": "MPL-2.0"
+}

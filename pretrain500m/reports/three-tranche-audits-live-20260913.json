@@ -1,0 +1,34 @@
+{
+  "checked_utc": "2026-09-13T21:45:32.787923+00:00",
+  "audits": [
+    {
+      "key": "active_data_audit",
+      "pid": 2141186,
+      "process_command": "/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python /ssd/scxi253/pretrain500m-20260912-v1/source/raw-audit-v2/audit_raw_intake_v2.py --input /ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1 --input /ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2 --input /ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v3 --tokenizer /ssd/scxi253/pretrain500m-20260912-v1/formal/hf-v5/tokenizer.json --expected-tokenizer-sha256 30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6 --quotas /ssd/scxi253/pretrain500m-20260912-v1/source/raw-audit-v2/subsource-quotas-v1.json --output /ssd/scxi253/pretrain500m-20260912-v1/data/diverse-audit-v2-three-tranche ",
+      "progress": {
+        "status": "RUNNING",
+        "source": "code_javascript",
+        "tranche": 1,
+        "source_file_rows": 5000,
+        "completed_files": 5,
+        "elapsed_seconds": 33.44657039642334
+      },
+      "report_present": false,
+      "log_tail": ""
+    },
+    {
+      "key": "active_contamination_audit",
+      "pid": 2141256,
+      "process_command": "/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python /ssd/scxi253/pretrain500m-20260912-v1/source/contamination-v1/scan.py --input /ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1 --input /ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2 --input /ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v3 --bundle /ssd/scxi253/pretrain500m-20260912-v1/evaluation/benchmark-reservation-v1/data --output /ssd/scxi253/pretrain500m-20260912-v1/data/contamination-v1-three-tranche ",
+      "progress": {
+        "status": "RUNNING",
+        "source": "0:multilingual_deu_Latn",
+        "rows_in_source": 4000,
+        "completed_files": 11,
+        "elapsed_seconds": 33.55063486099243
+      },
+      "report_present": false,
+      "log_tail": ""
+    }
+  ]
+}

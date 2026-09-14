@@ -1,0 +1,7 @@
+{
+  "frozen_auditor_archive_sha256": "ac7d8f60912139558be80445f2eeb62eb4050a03c9495ca1a58893e9d2d446bc",
+  "audit_source": "/ssd/scxi253/pretrain500m-20260912-v1/source/raw-audit-v2",
+  "original_packer_sha256": "2de36bcfe2a18f4faf091bfc54a709b1177448625ea6db6fb6b5c2e6377565bb",
+  "legacy_database_sha256": "661f939a8787d2c14a52b305ec6a6b5737aabe5146f557461473e89f22e3a256",
+  "training_admitted": false
+}

@@ -1,0 +1,69 @@
+{
+  "checked_utc": "2026-09-13T22:40:40.538945+00:00",
+  "pid": 3092282,
+  "command": "/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python /ssd/scxi253/pretrain500m-20260912-v1/source/quality-family-v1/scan.py --raw-report /ssd/scxi253/pretrain500m-20260912-v1/data/diverse-audit-v2-three-tranche/report.json --expected-raw-report-sha256 71240c265d14bc4ddb234503ca2a50724de4cbb9874637e8c9609a8e961319c8 --exclusions /ssd/scxi253/pretrain500m-20260912-v1/receipts/exclusion-union-v1.json --expected-exclusions-sha256 c622932c94ae2c56dfd0e14691e72975214381288c03979c4be759211acb00df --audit-source /ssd/scxi253/pretrain500m-20260912-v1/source/raw-audit-v2 --output /ssd/scxi253/pretrain500m-20260912-v1/data/quality-family-v1 --workers 4 ",
+  "free_bytes": 21370376192,
+  "progress": [
+    {
+      "status": "RUNNING",
+      "source_id": "dclm",
+      "tranche": 1,
+      "rows": 30000,
+      "passed_rows": 26975,
+      "elapsed_seconds": 116.60045952582732
+    },
+    {
+      "status": "RUNNING",
+      "source_id": "finemath4",
+      "tranche": 1,
+      "rows": 25000,
+      "passed_rows": 21516,
+      "elapsed_seconds": 115.32445388333872
+    },
+    {
+      "status": "RUNNING",
+      "source_id": "pdf_en",
+      "tranche": 1,
+      "rows": 8000,
+      "passed_rows": 7366,
+      "elapsed_seconds": 104.30771204596385
+    },
+    {
+      "status": "RUNNING",
+      "source_id": "dclm",
+      "tranche": 2,
+      "rows": 11000,
+      "passed_rows": 9979,
+      "elapsed_seconds": 43.14576399885118
+    },
+    {
+      "status": "COMPLETED",
+      "source_id": "pdf_en",
+      "tranche": 2,
+      "rows": 5000,
+      "passed_rows": 4526,
+      "passed_encoded_token_upper_bound_before_eligible_dedup_and_reserves": 25234613,
+      "flags": {
+        "language_windows": 244,
+        "repeated_long_lines": 48,
+        "too_short": 150,
+        "missing_registrable_domain": 31,
+        "dominant_character": 30,
+        "legacy_13word_hash_candidate_conservative_exclusion": 15
+      },
+      "features": "/ssd/scxi253/pretrain500m-20260912-v1/data/quality-family-v1/2-pdf_en.features.jsonl.gz",
+      "features_sha256": "5e055e5c30af9843fa25e737f68fcfa6e33479e77cceb15d1dcfbfa64b47164a",
+      "elapsed_seconds": 71.65927881700918
+    }
+  ],
+  "report": null,
+  "log_tail": "Warning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.\nWarning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.\nWarning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.\nWarning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.\n",
+  "children": "    PID     ELAPSED %CPU %MEM COMMAND\n3094072       01:57 98.9  0.0 /ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python /ssd/scxi253/pretrain500m-20260912-v1/source/quality-family-v1/scan.py --raw-report /ssd/scxi253/pretrain500m-20260912-v1/data/diverse-audit-v2-three-tranche/report.json --expected-raw-report-sha256 71240c265d14bc4ddb234503ca2a50724de4cbb9874637e8c9609a8e961319c8 --exclusions /ssd/scxi253/pretrain500m-20260912-v1/receipts/exclusion-union-v1.json --expected-exclusions-sha256 c622932c94ae2c56dfd0e14691e72975214381288c03979c4be759211acb00df --audit-source /ssd/scxi253/pretrain500m-20260912-v1/source/raw-audit-v2 --output /ssd/scxi253/pretrain500m-20260912-v1/data/quality-family-v1 --workers 4\n3094074       01:57 99.3  0.0 /ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python /ssd/scxi253/pretrain500m-20260912-v1/source/quality-family-v1/scan.py --raw-report /ssd/scxi253/pretrain500m-20260912-v1/data/diverse-audit-v2-three-tranche/report.json --expected-raw-report-sha256 71240c265d14bc4ddb234503ca2a50724de4cbb9874637e8c9609a8e961319c8 --exclusions /ssd/scxi253/pretrain500m-20260912-v1/receipts/exclusion-union-v1.json --expected-exclusions-sha256 c622932c94ae2c56dfd0e14691e72975214381288c03979c4be759211acb00df --audit-source /ssd/scxi253/pretrain500m-20260912-v1/source/raw-audit-v2 --output /ssd/scxi253/pretrain500m-20260912-v1/data/quality-family-v1 --workers 4\n3094075       01:57 99.0  0.0 /ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python /ssd/scxi253/pretrain500m-20260912-v1/source/quality-family-v1/scan.py --raw-report /ssd/scxi253/pretrain500m-20260912-v1/data/diverse-audit-v2-three-tranche/report.json --expected-raw-report-sha256 71240c265d14bc4ddb234503ca2a50724de4cbb9874637e8c9609a8e961319c8 --exclusions /ssd/scxi253/pretrain500m-20260912-v1/receipts/exclusion-union-v1.json --expected-exclusions-sha256 c622932c94ae2c56dfd0e14691e72975214381288c03979c4be759211acb00df --audit-source /ssd/scxi253/pretrain500m-20260912-v1/source/raw-audit-v2 --output /ssd/scxi253/pretrain500m-20260912-v1/data/quality-family-v1 --workers 4\n3094076       01:57 99.4  0.0 /ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python /ssd/scxi253/pretrain500m-20260912-v1/source/quality-family-v1/scan.py --raw-report /ssd/scxi253/pretrain500m-20260912-v1/data/diverse-audit-v2-three-tranche/report.json --expected-raw-report-sha256 71240c265d14bc4ddb234503ca2a50724de4cbb9874637e8c9609a8e961319c8 --exclusions /ssd/scxi253/pretrain500m-20260912-v1/receipts/exclusion-union-v1.json --expected-exclusions-sha256 c622932c94ae2c56dfd0e14691e72975214381288c03979c4be759211acb00df --audit-source /ssd/scxi253/pretrain500m-20260912-v1/source/raw-audit-v2 --output /ssd/scxi253/pretrain500m-20260912-v1/data/quality-family-v1 --workers 4\n",
+  "launch": {
+    "status": "RUNNING",
+    "workers": 4,
+    "rows": 199407,
+    "raw_report_sha256": "71240c265d14bc4ddb234503ca2a50724de4cbb9874637e8c9609a8e961319c8",
+    "exclusion_plan_sha256": "c622932c94ae2c56dfd0e14691e72975214381288c03979c4be759211acb00df"
+  }
+}

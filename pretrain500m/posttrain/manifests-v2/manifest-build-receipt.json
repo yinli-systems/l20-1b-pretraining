@@ -1,0 +1,14 @@
+{
+  "schema": "p529m-final-manifest-build-receipt-v2",
+  "status": "PASS",
+  "checked_utc": "2026-09-14T00:10:57.766613+00:00",
+  "filtered_pack_sha256": "8b17fcfd920124040686cdaa1c1415f9da86feee67becb6e05216c69a2230334",
+  "split_patch_sha256": "3c629768245519646c5d7957d2f4d65cc65a92f6b0f261ec379b974546ed3720",
+  "validation_manifest_sha256": "429c1ab33bdb8a92214ffdd2327462a05275b29fbd60abecc1d98b9fad634af3",
+  "manifests": {
+    "F0_existing_web_control": "980933a08910d2d2aa8ede107bea2460da1f223c7184784cbf25755d693645e2",
+    "F1_broad_english_no_synthetic": "db8faa104e832a37d2e4044a678e159c5ffc98b9b3af28078d1e3e779df1c615",
+    "F3_broad_multilingual_no_synthetic": "4cf466475ef56cff66fcd90e6077532f7657de0e5e127126dce91e30aa72b6cb"
+  },
+  "protocol_sha256": "17c91660cfbbd48a3216243be9db9c5e8716c082dc8d8fcf02c75c582e84f993"
+}

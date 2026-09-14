@@ -1,0 +1,44 @@
+[
+  {
+    "id": "smollm2",
+    "url": "https://arxiv.org/html/2502.02737v1",
+    "sha256": "6a1e79bcd781f4e49bf6b1302a2137463307a0851be149f4121df92fefcb893f",
+    "bytes": 280220,
+    "status": 200
+  },
+  {
+    "id": "mobilellm_r1",
+    "url": "https://arxiv.org/html/2509.24945v1",
+    "sha256": "35cdab38b485c94bdfb550d9049c2027d875f72066d02a242358cdbc32634dc1",
+    "bytes": 366764,
+    "status": 200
+  },
+  {
+    "id": "datadecide",
+    "url": "https://arxiv.org/html/2504.11393v1",
+    "sha256": "dd53b05c745305bb559971299e80e17c2f8b82858b480d6923f5b2fc81b0061a",
+    "bytes": 230821,
+    "status": 200
+  },
+  {
+    "id": "lfm2",
+    "url": "https://arxiv.org/html/2511.23404v1",
+    "sha256": "3e2c7523b580b13b91ae3d6d6734c6ce33f87a58eb71edba47f48e5b9f10d23e",
+    "bytes": 861747,
+    "status": 200
+  },
+  {
+    "id": "finepdfs_blog",
+    "url": "https://huggingfacefw-finepdfsblog.hf.space/",
+    "sha256": "d6698d1ab3c9c5b01abf574c8f11a401a91b7d1bae12cea750be38e3c8fd63e1",
+    "bytes": 265728,
+    "status": 200
+  },
+  {
+    "id": "playbook",
+    "url": "https://huggingface.co/spaces/HuggingFaceTB/smol-training-playbook/resolve/85619ff54b69ad566a0ed4f3daf8a5ae3056e88d/app/src/content/article.mdx",
+    "sha256": "fdceff7fc9627c1e5e4a327a37be74fa36cda51452e786db4ba593dcceefcaa2",
+    "bytes": 485543,
+    "status": 200
+  }
+]

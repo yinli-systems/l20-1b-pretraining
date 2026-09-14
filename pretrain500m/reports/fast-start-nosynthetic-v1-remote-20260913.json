@@ -1,0 +1,8 @@
+{
+  "status": "PASS_SEPARATE_PROTOCOL_REMOTE_INTEGRITY",
+  "checked_utc": "2026-09-13T21:56:11.375039+00:00",
+  "remote_source": "/ssd/scxi253/pretrain500m-20260912-v1/source/fast-start-nosynthetic-v1",
+  "archive_sha256": "48025c1ff6dab18b5e8646d3e9bb65bb2e8c67fe20dceb60b2b4ebfafe93c078",
+  "protocol_sha256": "3d58055a1d2398b90c963c9ed4be7e99e1d1644281b95599c4ad5339d805d105",
+  "training_admitted": false
+}

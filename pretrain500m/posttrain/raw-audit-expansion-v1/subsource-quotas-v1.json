@@ -1,0 +1,1191 @@
+{
+  "status": "QUOTA_DESIGN_ONLY_DATA_NOT_ADMITTED",
+  "design_sha256": "614c653cad91ac76e146a99e9b4eaeb7d4b3aab0d164d8b985983f253c4791a9",
+  "source_inventory_sha256": "b7c23cb28a258d3dd9b423d2a7f4b29c92e8029c406c52952e38e3a92bf83f91",
+  "sequence_length": 2048,
+  "rounding": "Hamilton within each parent quota; ties by leaf source id",
+  "unit": "prediction tokens after filtering, deduplication, family splitting and packing",
+  "seeds_share_pools_but_do_not_share_optimizer_state": true,
+  "screen": {
+    "M0_existing_web_control": {
+      "fineweb_edu": {
+        "blocks": 262144,
+        "prediction_tokens": 536870912,
+        "leaves": {
+          "fineweb_edu": {
+            "blocks": 262144,
+            "prediction_tokens": 536870912,
+            "target_within_group_percent": 100,
+            "realized_within_group_percent": 100.0
+          }
+        }
+      },
+      "dclm": {
+        "blocks": 0,
+        "prediction_tokens": 0,
+        "leaves": {
+          "dclm": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 100,
+            "realized_within_group_percent": null
+          }
+        }
+      },
+      "finepdfs_edu": {
+        "blocks": 0,
+        "prediction_tokens": 0,
+        "leaves": {
+          "finepdfs_edu": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 100,
+            "realized_within_group_percent": null
+          }
+        }
+      },
+      "math": {
+        "blocks": 0,
+        "prediction_tokens": 0,
+        "leaves": {
+          "HuggingFaceTB/finemath:finemath-4plus": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 75,
+            "realized_within_group_percent": null
+          },
+          "HuggingFaceTB/finemath:infiwebmath-4plus": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 25,
+            "realized_within_group_percent": null
+          }
+        }
+      },
+      "code": {
+        "blocks": 0,
+        "prediction_tokens": 0,
+        "leaves": {
+          "Python": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 50,
+            "realized_within_group_percent": null
+          },
+          "JavaScript": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 20,
+            "realized_within_group_percent": null
+          },
+          "TypeScript": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          },
+          "Cpp": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          },
+          "Java": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          }
+        }
+      },
+      "synthetic": {
+        "blocks": 0,
+        "prediction_tokens": 0,
+        "leaves": {
+          "synthetic": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 100,
+            "realized_within_group_percent": null
+          }
+        }
+      },
+      "multilingual": {
+        "blocks": 0,
+        "prediction_tokens": 0,
+        "leaves": {
+          "cmn_Hani": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 50,
+            "realized_within_group_percent": null
+          },
+          "spa_Latn": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          },
+          "fra_Latn": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          },
+          "deu_Latn": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          },
+          "jpn_Jpan": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          },
+          "arb_Arab": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          }
+        }
+      }
+    },
+    "M1_broad_english": {
+      "fineweb_edu": {
+        "blocks": 78643,
+        "prediction_tokens": 161060864,
+        "leaves": {
+          "fineweb_edu": {
+            "blocks": 78643,
+            "prediction_tokens": 161060864,
+            "target_within_group_percent": 100,
+            "realized_within_group_percent": 100.0
+          }
+        }
+      },
+      "dclm": {
+        "blocks": 52429,
+        "prediction_tokens": 107374592,
+        "leaves": {
+          "dclm": {
+            "blocks": 52429,
+            "prediction_tokens": 107374592,
+            "target_within_group_percent": 100,
+            "realized_within_group_percent": 100.0
+          }
+        }
+      },
+      "finepdfs_edu": {
+        "blocks": 52429,
+        "prediction_tokens": 107374592,
+        "leaves": {
+          "finepdfs_edu": {
+            "blocks": 52429,
+            "prediction_tokens": 107374592,
+            "target_within_group_percent": 100,
+            "realized_within_group_percent": 100.0
+          }
+        }
+      },
+      "math": {
+        "blocks": 39322,
+        "prediction_tokens": 80531456,
+        "leaves": {
+          "HuggingFaceTB/finemath:finemath-4plus": {
+            "blocks": 29492,
+            "prediction_tokens": 60399616,
+            "target_within_group_percent": 75,
+            "realized_within_group_percent": 75.0012715528203
+          },
+          "HuggingFaceTB/finemath:infiwebmath-4plus": {
+            "blocks": 9830,
+            "prediction_tokens": 20131840,
+            "target_within_group_percent": 25,
+            "realized_within_group_percent": 24.998728447179698
+          }
+        }
+      },
+      "code": {
+        "blocks": 26214,
+        "prediction_tokens": 53686272,
+        "leaves": {
+          "Python": {
+            "blocks": 13107,
+            "prediction_tokens": 26843136,
+            "target_within_group_percent": 50,
+            "realized_within_group_percent": 50.0
+          },
+          "JavaScript": {
+            "blocks": 5243,
+            "prediction_tokens": 10737664,
+            "target_within_group_percent": 20,
+            "realized_within_group_percent": 20.000762951094835
+          },
+          "TypeScript": {
+            "blocks": 2621,
+            "prediction_tokens": 5367808,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": 9.99847409781033
+          },
+          "Cpp": {
+            "blocks": 2622,
+            "prediction_tokens": 5369856,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": 10.002288853284504
+          },
+          "Java": {
+            "blocks": 2621,
+            "prediction_tokens": 5367808,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": 9.99847409781033
+          }
+        }
+      },
+      "synthetic": {
+        "blocks": 13107,
+        "prediction_tokens": 26843136,
+        "leaves": {
+          "synthetic": {
+            "blocks": 13107,
+            "prediction_tokens": 26843136,
+            "target_within_group_percent": 100,
+            "realized_within_group_percent": 100.0
+          }
+        }
+      },
+      "multilingual": {
+        "blocks": 0,
+        "prediction_tokens": 0,
+        "leaves": {
+          "cmn_Hani": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 50,
+            "realized_within_group_percent": null
+          },
+          "spa_Latn": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          },
+          "fra_Latn": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          },
+          "deu_Latn": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          },
+          "jpn_Jpan": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          },
+          "arb_Arab": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          }
+        }
+      }
+    },
+    "M2_reasoning": {
+      "fineweb_edu": {
+        "blocks": 52429,
+        "prediction_tokens": 107374592,
+        "leaves": {
+          "fineweb_edu": {
+            "blocks": 52429,
+            "prediction_tokens": 107374592,
+            "target_within_group_percent": 100,
+            "realized_within_group_percent": 100.0
+          }
+        }
+      },
+      "dclm": {
+        "blocks": 39321,
+        "prediction_tokens": 80529408,
+        "leaves": {
+          "dclm": {
+            "blocks": 39321,
+            "prediction_tokens": 80529408,
+            "target_within_group_percent": 100,
+            "realized_within_group_percent": 100.0
+          }
+        }
+      },
+      "finepdfs_edu": {
+        "blocks": 65536,
+        "prediction_tokens": 134217728,
+        "leaves": {
+          "finepdfs_edu": {
+            "blocks": 65536,
+            "prediction_tokens": 134217728,
+            "target_within_group_percent": 100,
+            "realized_within_group_percent": 100.0
+          }
+        }
+      },
+      "math": {
+        "blocks": 52429,
+        "prediction_tokens": 107374592,
+        "leaves": {
+          "HuggingFaceTB/finemath:finemath-4plus": {
+            "blocks": 39322,
+            "prediction_tokens": 80531456,
+            "target_within_group_percent": 75,
+            "realized_within_group_percent": 75.00047683533923
+          },
+          "HuggingFaceTB/finemath:infiwebmath-4plus": {
+            "blocks": 13107,
+            "prediction_tokens": 26843136,
+            "target_within_group_percent": 25,
+            "realized_within_group_percent": 24.99952316466078
+          }
+        }
+      },
+      "code": {
+        "blocks": 39322,
+        "prediction_tokens": 80531456,
+        "leaves": {
+          "Python": {
+            "blocks": 19661,
+            "prediction_tokens": 40265728,
+            "target_within_group_percent": 50,
+            "realized_within_group_percent": 50.0
+          },
+          "JavaScript": {
+            "blocks": 7865,
+            "prediction_tokens": 16107520,
+            "target_within_group_percent": 20,
+            "realized_within_group_percent": 20.001525863384366
+          },
+          "TypeScript": {
+            "blocks": 3932,
+            "prediction_tokens": 8052736,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": 9.999491378871879
+          },
+          "Cpp": {
+            "blocks": 3932,
+            "prediction_tokens": 8052736,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": 9.999491378871879
+          },
+          "Java": {
+            "blocks": 3932,
+            "prediction_tokens": 8052736,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": 9.999491378871879
+          }
+        }
+      },
+      "synthetic": {
+        "blocks": 13107,
+        "prediction_tokens": 26843136,
+        "leaves": {
+          "synthetic": {
+            "blocks": 13107,
+            "prediction_tokens": 26843136,
+            "target_within_group_percent": 100,
+            "realized_within_group_percent": 100.0
+          }
+        }
+      },
+      "multilingual": {
+        "blocks": 0,
+        "prediction_tokens": 0,
+        "leaves": {
+          "cmn_Hani": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 50,
+            "realized_within_group_percent": null
+          },
+          "spa_Latn": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          },
+          "fra_Latn": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          },
+          "deu_Latn": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          },
+          "jpn_Jpan": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          },
+          "arb_Arab": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          }
+        }
+      }
+    },
+    "M3_broad_multilingual": {
+      "fineweb_edu": {
+        "blocks": 52429,
+        "prediction_tokens": 107374592,
+        "leaves": {
+          "fineweb_edu": {
+            "blocks": 52429,
+            "prediction_tokens": 107374592,
+            "target_within_group_percent": 100,
+            "realized_within_group_percent": 100.0
+          }
+        }
+      },
+      "dclm": {
+        "blocks": 39322,
+        "prediction_tokens": 80531456,
+        "leaves": {
+          "dclm": {
+            "blocks": 39322,
+            "prediction_tokens": 80531456,
+            "target_within_group_percent": 100,
+            "realized_within_group_percent": 100.0
+          }
+        }
+      },
+      "finepdfs_edu": {
+        "blocks": 52429,
+        "prediction_tokens": 107374592,
+        "leaves": {
+          "finepdfs_edu": {
+            "blocks": 52429,
+            "prediction_tokens": 107374592,
+            "target_within_group_percent": 100,
+            "realized_within_group_percent": 100.0
+          }
+        }
+      },
+      "math": {
+        "blocks": 39321,
+        "prediction_tokens": 80529408,
+        "leaves": {
+          "HuggingFaceTB/finemath:finemath-4plus": {
+            "blocks": 29491,
+            "prediction_tokens": 60397568,
+            "target_within_group_percent": 75,
+            "realized_within_group_percent": 75.00063579257903
+          },
+          "HuggingFaceTB/finemath:infiwebmath-4plus": {
+            "blocks": 9830,
+            "prediction_tokens": 20131840,
+            "target_within_group_percent": 25,
+            "realized_within_group_percent": 24.99936420742097
+          }
+        }
+      },
+      "code": {
+        "blocks": 39322,
+        "prediction_tokens": 80531456,
+        "leaves": {
+          "Python": {
+            "blocks": 19661,
+            "prediction_tokens": 40265728,
+            "target_within_group_percent": 50,
+            "realized_within_group_percent": 50.0
+          },
+          "JavaScript": {
+            "blocks": 7865,
+            "prediction_tokens": 16107520,
+            "target_within_group_percent": 20,
+            "realized_within_group_percent": 20.001525863384366
+          },
+          "TypeScript": {
+            "blocks": 3932,
+            "prediction_tokens": 8052736,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": 9.999491378871879
+          },
+          "Cpp": {
+            "blocks": 3932,
+            "prediction_tokens": 8052736,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": 9.999491378871879
+          },
+          "Java": {
+            "blocks": 3932,
+            "prediction_tokens": 8052736,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": 9.999491378871879
+          }
+        }
+      },
+      "synthetic": {
+        "blocks": 13107,
+        "prediction_tokens": 26843136,
+        "leaves": {
+          "synthetic": {
+            "blocks": 13107,
+            "prediction_tokens": 26843136,
+            "target_within_group_percent": 100,
+            "realized_within_group_percent": 100.0
+          }
+        }
+      },
+      "multilingual": {
+        "blocks": 26214,
+        "prediction_tokens": 53686272,
+        "leaves": {
+          "cmn_Hani": {
+            "blocks": 13107,
+            "prediction_tokens": 26843136,
+            "target_within_group_percent": 50,
+            "realized_within_group_percent": 50.0
+          },
+          "spa_Latn": {
+            "blocks": 2621,
+            "prediction_tokens": 5367808,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": 9.99847409781033
+          },
+          "fra_Latn": {
+            "blocks": 2621,
+            "prediction_tokens": 5367808,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": 9.99847409781033
+          },
+          "deu_Latn": {
+            "blocks": 2622,
+            "prediction_tokens": 5369856,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": 10.002288853284504
+          },
+          "jpn_Jpan": {
+            "blocks": 2621,
+            "prediction_tokens": 5367808,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": 9.99847409781033
+          },
+          "arb_Arab": {
+            "blocks": 2622,
+            "prediction_tokens": 5369856,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": 10.002288853284504
+          }
+        }
+      }
+    }
+  },
+  "confirmation_candidate_options": {
+    "M0_existing_web_control": {
+      "fineweb_edu": {
+        "blocks": 1048576,
+        "prediction_tokens": 2147483648,
+        "leaves": {
+          "fineweb_edu": {
+            "blocks": 1048576,
+            "prediction_tokens": 2147483648,
+            "target_within_group_percent": 100,
+            "realized_within_group_percent": 100.0
+          }
+        }
+      },
+      "dclm": {
+        "blocks": 0,
+        "prediction_tokens": 0,
+        "leaves": {
+          "dclm": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 100,
+            "realized_within_group_percent": null
+          }
+        }
+      },
+      "finepdfs_edu": {
+        "blocks": 0,
+        "prediction_tokens": 0,
+        "leaves": {
+          "finepdfs_edu": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 100,
+            "realized_within_group_percent": null
+          }
+        }
+      },
+      "math": {
+        "blocks": 0,
+        "prediction_tokens": 0,
+        "leaves": {
+          "HuggingFaceTB/finemath:finemath-4plus": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 75,
+            "realized_within_group_percent": null
+          },
+          "HuggingFaceTB/finemath:infiwebmath-4plus": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 25,
+            "realized_within_group_percent": null
+          }
+        }
+      },
+      "code": {
+        "blocks": 0,
+        "prediction_tokens": 0,
+        "leaves": {
+          "Python": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 50,
+            "realized_within_group_percent": null
+          },
+          "JavaScript": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 20,
+            "realized_within_group_percent": null
+          },
+          "TypeScript": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          },
+          "Cpp": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          },
+          "Java": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          }
+        }
+      },
+      "synthetic": {
+        "blocks": 0,
+        "prediction_tokens": 0,
+        "leaves": {
+          "synthetic": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 100,
+            "realized_within_group_percent": null
+          }
+        }
+      },
+      "multilingual": {
+        "blocks": 0,
+        "prediction_tokens": 0,
+        "leaves": {
+          "cmn_Hani": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 50,
+            "realized_within_group_percent": null
+          },
+          "spa_Latn": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          },
+          "fra_Latn": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          },
+          "deu_Latn": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          },
+          "jpn_Jpan": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          },
+          "arb_Arab": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          }
+        }
+      }
+    },
+    "M1_broad_english": {
+      "fineweb_edu": {
+        "blocks": 314573,
+        "prediction_tokens": 644245504,
+        "leaves": {
+          "fineweb_edu": {
+            "blocks": 314573,
+            "prediction_tokens": 644245504,
+            "target_within_group_percent": 100,
+            "realized_within_group_percent": 100.0
+          }
+        }
+      },
+      "dclm": {
+        "blocks": 209715,
+        "prediction_tokens": 429496320,
+        "leaves": {
+          "dclm": {
+            "blocks": 209715,
+            "prediction_tokens": 429496320,
+            "target_within_group_percent": 100,
+            "realized_within_group_percent": 100.0
+          }
+        }
+      },
+      "finepdfs_edu": {
+        "blocks": 209715,
+        "prediction_tokens": 429496320,
+        "leaves": {
+          "finepdfs_edu": {
+            "blocks": 209715,
+            "prediction_tokens": 429496320,
+            "target_within_group_percent": 100,
+            "realized_within_group_percent": 100.0
+          }
+        }
+      },
+      "math": {
+        "blocks": 157286,
+        "prediction_tokens": 322121728,
+        "leaves": {
+          "HuggingFaceTB/finemath:finemath-4plus": {
+            "blocks": 117965,
+            "prediction_tokens": 241592320,
+            "target_within_group_percent": 75,
+            "realized_within_group_percent": 75.00031789224725
+          },
+          "HuggingFaceTB/finemath:infiwebmath-4plus": {
+            "blocks": 39321,
+            "prediction_tokens": 80529408,
+            "target_within_group_percent": 25,
+            "realized_within_group_percent": 24.999682107752754
+          }
+        }
+      },
+      "code": {
+        "blocks": 104858,
+        "prediction_tokens": 214749184,
+        "leaves": {
+          "Python": {
+            "blocks": 52429,
+            "prediction_tokens": 107374592,
+            "target_within_group_percent": 50,
+            "realized_within_group_percent": 50.0
+          },
+          "JavaScript": {
+            "blocks": 20971,
+            "prediction_tokens": 42948608,
+            "target_within_group_percent": 20,
+            "realized_within_group_percent": 19.999427797592936
+          },
+          "TypeScript": {
+            "blocks": 10486,
+            "prediction_tokens": 21475328,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": 10.000190734135689
+          },
+          "Cpp": {
+            "blocks": 10486,
+            "prediction_tokens": 21475328,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": 10.000190734135689
+          },
+          "Java": {
+            "blocks": 10486,
+            "prediction_tokens": 21475328,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": 10.000190734135689
+          }
+        }
+      },
+      "synthetic": {
+        "blocks": 52429,
+        "prediction_tokens": 107374592,
+        "leaves": {
+          "synthetic": {
+            "blocks": 52429,
+            "prediction_tokens": 107374592,
+            "target_within_group_percent": 100,
+            "realized_within_group_percent": 100.0
+          }
+        }
+      },
+      "multilingual": {
+        "blocks": 0,
+        "prediction_tokens": 0,
+        "leaves": {
+          "cmn_Hani": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 50,
+            "realized_within_group_percent": null
+          },
+          "spa_Latn": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          },
+          "fra_Latn": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          },
+          "deu_Latn": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          },
+          "jpn_Jpan": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          },
+          "arb_Arab": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          }
+        }
+      }
+    },
+    "M2_reasoning": {
+      "fineweb_edu": {
+        "blocks": 209715,
+        "prediction_tokens": 429496320,
+        "leaves": {
+          "fineweb_edu": {
+            "blocks": 209715,
+            "prediction_tokens": 429496320,
+            "target_within_group_percent": 100,
+            "realized_within_group_percent": 100.0
+          }
+        }
+      },
+      "dclm": {
+        "blocks": 157286,
+        "prediction_tokens": 322121728,
+        "leaves": {
+          "dclm": {
+            "blocks": 157286,
+            "prediction_tokens": 322121728,
+            "target_within_group_percent": 100,
+            "realized_within_group_percent": 100.0
+          }
+        }
+      },
+      "finepdfs_edu": {
+        "blocks": 262144,
+        "prediction_tokens": 536870912,
+        "leaves": {
+          "finepdfs_edu": {
+            "blocks": 262144,
+            "prediction_tokens": 536870912,
+            "target_within_group_percent": 100,
+            "realized_within_group_percent": 100.0
+          }
+        }
+      },
+      "math": {
+        "blocks": 209715,
+        "prediction_tokens": 429496320,
+        "leaves": {
+          "HuggingFaceTB/finemath:finemath-4plus": {
+            "blocks": 157286,
+            "prediction_tokens": 322121728,
+            "target_within_group_percent": 75,
+            "realized_within_group_percent": 74.99988079059676
+          },
+          "HuggingFaceTB/finemath:infiwebmath-4plus": {
+            "blocks": 52429,
+            "prediction_tokens": 107374592,
+            "target_within_group_percent": 25,
+            "realized_within_group_percent": 25.000119209403238
+          }
+        }
+      },
+      "code": {
+        "blocks": 157287,
+        "prediction_tokens": 322123776,
+        "leaves": {
+          "Python": {
+            "blocks": 78643,
+            "prediction_tokens": 161060864,
+            "target_within_group_percent": 50,
+            "realized_within_group_percent": 49.99968210977385
+          },
+          "JavaScript": {
+            "blocks": 31457,
+            "prediction_tokens": 64423936,
+            "target_within_group_percent": 20,
+            "realized_within_group_percent": 19.999745687819082
+          },
+          "TypeScript": {
+            "blocks": 15729,
+            "prediction_tokens": 32212992,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": 10.000190734135689
+          },
+          "Cpp": {
+            "blocks": 15729,
+            "prediction_tokens": 32212992,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": 10.000190734135689
+          },
+          "Java": {
+            "blocks": 15729,
+            "prediction_tokens": 32212992,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": 10.000190734135689
+          }
+        }
+      },
+      "synthetic": {
+        "blocks": 52429,
+        "prediction_tokens": 107374592,
+        "leaves": {
+          "synthetic": {
+            "blocks": 52429,
+            "prediction_tokens": 107374592,
+            "target_within_group_percent": 100,
+            "realized_within_group_percent": 100.0
+          }
+        }
+      },
+      "multilingual": {
+        "blocks": 0,
+        "prediction_tokens": 0,
+        "leaves": {
+          "cmn_Hani": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 50,
+            "realized_within_group_percent": null
+          },
+          "spa_Latn": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          },
+          "fra_Latn": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          },
+          "deu_Latn": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          },
+          "jpn_Jpan": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          },
+          "arb_Arab": {
+            "blocks": 0,
+            "prediction_tokens": 0,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": null
+          }
+        }
+      }
+    },
+    "M3_broad_multilingual": {
+      "fineweb_edu": {
+        "blocks": 209715,
+        "prediction_tokens": 429496320,
+        "leaves": {
+          "fineweb_edu": {
+            "blocks": 209715,
+            "prediction_tokens": 429496320,
+            "target_within_group_percent": 100,
+            "realized_within_group_percent": 100.0
+          }
+        }
+      },
+      "dclm": {
+        "blocks": 157286,
+        "prediction_tokens": 322121728,
+        "leaves": {
+          "dclm": {
+            "blocks": 157286,
+            "prediction_tokens": 322121728,
+            "target_within_group_percent": 100,
+            "realized_within_group_percent": 100.0
+          }
+        }
+      },
+      "finepdfs_edu": {
+        "blocks": 209715,
+        "prediction_tokens": 429496320,
+        "leaves": {
+          "finepdfs_edu": {
+            "blocks": 209715,
+            "prediction_tokens": 429496320,
+            "target_within_group_percent": 100,
+            "realized_within_group_percent": 100.0
+          }
+        }
+      },
+      "math": {
+        "blocks": 157286,
+        "prediction_tokens": 322121728,
+        "leaves": {
+          "HuggingFaceTB/finemath:finemath-4plus": {
+            "blocks": 117965,
+            "prediction_tokens": 241592320,
+            "target_within_group_percent": 75,
+            "realized_within_group_percent": 75.00031789224725
+          },
+          "HuggingFaceTB/finemath:infiwebmath-4plus": {
+            "blocks": 39321,
+            "prediction_tokens": 80529408,
+            "target_within_group_percent": 25,
+            "realized_within_group_percent": 24.999682107752754
+          }
+        }
+      },
+      "code": {
+        "blocks": 157287,
+        "prediction_tokens": 322123776,
+        "leaves": {
+          "Python": {
+            "blocks": 78643,
+            "prediction_tokens": 161060864,
+            "target_within_group_percent": 50,
+            "realized_within_group_percent": 49.99968210977385
+          },
+          "JavaScript": {
+            "blocks": 31457,
+            "prediction_tokens": 64423936,
+            "target_within_group_percent": 20,
+            "realized_within_group_percent": 19.999745687819082
+          },
+          "TypeScript": {
+            "blocks": 15729,
+            "prediction_tokens": 32212992,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": 10.000190734135689
+          },
+          "Cpp": {
+            "blocks": 15729,
+            "prediction_tokens": 32212992,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": 10.000190734135689
+          },
+          "Java": {
+            "blocks": 15729,
+            "prediction_tokens": 32212992,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": 10.000190734135689
+          }
+        }
+      },
+      "synthetic": {
+        "blocks": 52429,
+        "prediction_tokens": 107374592,
+        "leaves": {
+          "synthetic": {
+            "blocks": 52429,
+            "prediction_tokens": 107374592,
+            "target_within_group_percent": 100,
+            "realized_within_group_percent": 100.0
+          }
+        }
+      },
+      "multilingual": {
+        "blocks": 104858,
+        "prediction_tokens": 214749184,
+        "leaves": {
+          "cmn_Hani": {
+            "blocks": 52429,
+            "prediction_tokens": 107374592,
+            "target_within_group_percent": 50,
+            "realized_within_group_percent": 50.0
+          },
+          "spa_Latn": {
+            "blocks": 10485,
+            "prediction_tokens": 21473280,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": 9.999237063457247
+          },
+          "fra_Latn": {
+            "blocks": 10486,
+            "prediction_tokens": 21475328,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": 10.000190734135689
+          },
+          "deu_Latn": {
+            "blocks": 10486,
+            "prediction_tokens": 21475328,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": 10.000190734135689
+          },
+          "jpn_Jpan": {
+            "blocks": 10486,
+            "prediction_tokens": 21475328,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": 10.000190734135689
+          },
+          "arb_Arab": {
+            "blocks": 10486,
+            "prediction_tokens": 21475328,
+            "target_within_group_percent": 10,
+            "realized_within_group_percent": 10.000190734135689
+          }
+        }
+      }
+    }
+  },
+  "confirmation_note": "all options budgeted; only two selected mixtures plus control would run",
+  "requirements": [
+    "record actual leaf provenance on each packed block",
+    "materialize or hierarchically sample exact leaf quotas; arbitrary shard concatenation cannot enforce them",
+    "include leaf pools and packing identity in parent manifest provenance",
+    "verify source-specific cumulative repeat caps including any overlapping old FineWeb data",
+    "use the same admitted pools for paired recipes and independent seeds",
+    "deduplicate aliases, source parents and cross-source content before pool counts are called unique",
+    "retain an independent family-disjoint development and confirmation reserve"
+  ]
+}

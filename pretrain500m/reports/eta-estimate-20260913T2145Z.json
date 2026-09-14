@@ -1,0 +1,17 @@
+{
+  "checked_utc": "2026-09-13T21:45:32.787923+00:00",
+  "raw_intake_v3": "COMPLETED_19000_ROWS",
+  "current_audits": "RUNNING_REAL_PROGRESS_VERIFIED",
+  "current_audit_estimated_remaining_minutes": [
+    15,
+    25
+  ],
+  "audit_estimate_basis": "Prior two-tranche raw audit took 616 seconds and supplemental scan 213 seconds. New input is 199407 rows, with extra long PDF documents; estimate includes margin and is not admission ETA.",
+  "formal_training_start_estimate": "Hours of unfinished engineering/admission work, no reliable bounded ETA while synthetic-parent provenance and retained independent families remain unresolved.",
+  "screen_pure_training_hours_conditional": [
+    4,
+    6
+  ],
+  "screen_estimate_basis": "Eight screen runs, 256 steps each, at most two simultaneous four-GPU runs. Prior 32-step continuous recovery branch took 546 seconds including startup/checkpoint; scaling gives 4.85 hours for four waves. New-mixture speed unmeasured; excludes queue, qualification, evaluation, confirmation and all data preparation.",
+  "new_mixture_training_started": false
+}

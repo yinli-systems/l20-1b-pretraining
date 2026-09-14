@@ -1,0 +1,584 @@
+{
+  "checked_utc": "2026-09-13T23:08:59.593522+00:00",
+  "free_bytes": 20637196288,
+  "process_present": true,
+  "progress": [
+    {
+      "status": "SELECTED_SOURCE_PACKED_NOT_ADMITTED",
+      "source_id": "code_cpp",
+      "elapsed_seconds": 9.651529388967901,
+      "outputs": {
+        "train": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/train-code_cpp.blocks.npy",
+          "sha256": "466178b18104bd498f27bcd8cc68b92f311d627498e00b6fb023f5ac03fa8c50",
+          "documents": 3849,
+          "encoded_tokens": 4638963,
+          "array_tokens": 4638936,
+          "tail_tokens": 27,
+          "dtype": "uint16",
+          "blocks": 2264,
+          "prediction_tokens": 4636672,
+          "tail_path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/code_cpp.train-tail.json",
+          "tail_sha256": "cc43844a3ba2d76cfd3d9c6971263461fc9f2d21205db6b38349fea3803779e8"
+        },
+        "development": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/development-code_cpp.stream.npy",
+          "sha256": "e84eb9f0eebd5ef5f628bf1eba0be69fb2aabebbb751aa8d6c7fc7576f323adc",
+          "documents": 75,
+          "encoded_tokens": 83686,
+          "array_tokens": 83686,
+          "tail_tokens": 0,
+          "dtype": "uint16"
+        },
+        "confirmation": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/confirmation-code_cpp.stream.npy",
+          "sha256": "76e64499c99794ff52e2c1cb830a2c165c30ec65e9a3b2bf4af35c962295b759",
+          "documents": 74,
+          "encoded_tokens": 84144,
+          "array_tokens": 84144,
+          "tail_tokens": 0,
+          "dtype": "uint16"
+        }
+      },
+      "document_index": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/code_cpp.documents.jsonl.gz",
+      "document_index_sha256": "a77491ad45e488fe428fcfdb2d204749f22aa85eae45a3cf40353cb723bdcd5d"
+    },
+    {
+      "status": "SELECTED_SOURCE_PACKED_NOT_ADMITTED",
+      "source_id": "code_java",
+      "elapsed_seconds": 11.94525393191725,
+      "outputs": {
+        "train": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/train-code_java.blocks.npy",
+          "sha256": "79cea3cd5ec0cac6cf3bbb28acbaaab55b026a5b09622c20442b8b6f5ef097e9",
+          "documents": 7230,
+          "encoded_tokens": 5625473,
+          "array_tokens": 5624505,
+          "tail_tokens": 968,
+          "dtype": "uint16",
+          "blocks": 2745,
+          "prediction_tokens": 5621760,
+          "tail_path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/code_java.train-tail.json",
+          "tail_sha256": "af73ccd32b3cf12b281843898bfb1a9ecfba73d979ea3cddc69b63db5228bba9"
+        },
+        "development": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/development-code_java.stream.npy",
+          "sha256": "2a2386188de59676122eeba6658cbc501d32b0ba78fe5396e869013a0cb447d2",
+          "documents": 185,
+          "encoded_tokens": 152648,
+          "array_tokens": 152648,
+          "tail_tokens": 0,
+          "dtype": "uint16"
+        },
+        "confirmation": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/confirmation-code_java.stream.npy",
+          "sha256": "1ad3753ce3beaef7dc0101ace1e0bea8fb498d04cb03754acb16b765c246cdd5",
+          "documents": 158,
+          "encoded_tokens": 118109,
+          "array_tokens": 118109,
+          "tail_tokens": 0,
+          "dtype": "uint16"
+        }
+      },
+      "document_index": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/code_java.documents.jsonl.gz",
+      "document_index_sha256": "40c09edf3dff556892a5f990b2805998eea30b94105b13874b66734af051ff1e"
+    },
+    {
+      "status": "SELECTED_SOURCE_PACKED_NOT_ADMITTED",
+      "source_id": "code_javascript",
+      "elapsed_seconds": 19.758606992661953,
+      "outputs": {
+        "train": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/train-code_javascript.blocks.npy",
+          "sha256": "ae15c3a68fa11d7777fd73f405236c9e32f86104a2258db60706fe7d013fd555",
+          "documents": 9492,
+          "encoded_tokens": 9588124,
+          "array_tokens": 9587271,
+          "tail_tokens": 853,
+          "dtype": "uint16",
+          "blocks": 4679,
+          "prediction_tokens": 9582592,
+          "tail_path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/code_javascript.train-tail.json",
+          "tail_sha256": "2bc5cccb051bc677ebea053e96b84cb0b3da00d29b1f92ada8e6ba73b35359cb"
+        },
+        "development": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/development-code_javascript.stream.npy",
+          "sha256": "dc8aadd2320a917773429df0c57e216d4dc3b4c31e054131e927105520841308",
+          "documents": 208,
+          "encoded_tokens": 184088,
+          "array_tokens": 184088,
+          "tail_tokens": 0,
+          "dtype": "uint16"
+        },
+        "confirmation": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/confirmation-code_javascript.stream.npy",
+          "sha256": "728213c244e542943fd61c5ac0a4a0f485e3e952a4062c4c5f63071d74aa0a5f",
+          "documents": 211,
+          "encoded_tokens": 181815,
+          "array_tokens": 181815,
+          "tail_tokens": 0,
+          "dtype": "uint16"
+        }
+      },
+      "document_index": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/code_javascript.documents.jsonl.gz",
+      "document_index_sha256": "e3c4f45738dd66941f1b81f61319379f38c8a971ec39bcc901c4b944fc2814ac"
+    },
+    {
+      "status": "SELECTED_SOURCE_PACKED_NOT_ADMITTED",
+      "source_id": "code_python",
+      "elapsed_seconds": 48.02668573288247,
+      "outputs": {
+        "train": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/train-code_python.blocks.npy",
+          "sha256": "52a5bbf958705cef9e8f0477181c0d61747d44b9a8bed85ec9f0b0e85ccf4d56",
+          "documents": 20482,
+          "encoded_tokens": 23865570,
+          "array_tokens": 23864703,
+          "tail_tokens": 867,
+          "dtype": "uint16",
+          "blocks": 11647,
+          "prediction_tokens": 23853056,
+          "tail_path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/code_python.train-tail.json",
+          "tail_sha256": "6a377ae6b45ed02da32acd02b873261b689fdd61a6448eccbfb9cd04df5bd61d"
+        },
+        "development": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/development-code_python.stream.npy",
+          "sha256": "b57c86b159bb7c001b55fe5b5705e6df66936272f8e37b9c95940eaab9a8b1e2",
+          "documents": 465,
+          "encoded_tokens": 637853,
+          "array_tokens": 637853,
+          "tail_tokens": 0,
+          "dtype": "uint16"
+        },
+        "confirmation": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/confirmation-code_python.stream.npy",
+          "sha256": "658758aeaaf976c8246e2796fd23cad64a4b103b092862a886cd0cce0c604b91",
+          "documents": 487,
+          "encoded_tokens": 631583,
+          "array_tokens": 631583,
+          "tail_tokens": 0,
+          "dtype": "uint16"
+        }
+      },
+      "document_index": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/code_python.documents.jsonl.gz",
+      "document_index_sha256": "1b54bff2eea08031100a35578bdb90ad5f3a4964184386fa41aac64d5e5b1e93"
+    },
+    {
+      "status": "SELECTED_SOURCE_PACKED_NOT_ADMITTED",
+      "source_id": "code_typescript",
+      "elapsed_seconds": 10.31319787306711,
+      "outputs": {
+        "train": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/train-code_typescript.blocks.npy",
+          "sha256": "dddb64aabe6a9a49cbaee5bd7279daf0bfdb0cd3895b9801b179731b846371a4",
+          "documents": 5841,
+          "encoded_tokens": 4885631,
+          "array_tokens": 4884816,
+          "tail_tokens": 815,
+          "dtype": "uint16",
+          "blocks": 2384,
+          "prediction_tokens": 4882432,
+          "tail_path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/code_typescript.train-tail.json",
+          "tail_sha256": "7ee899fb527e5215746ef5f68640e31adec8b6fe83ab4d01e4bc63b2a5058711"
+        },
+        "development": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/development-code_typescript.stream.npy",
+          "sha256": "5a74cb6a63ece86679eba15b3f6b72012c6f336295e507277d326943ead24ef0",
+          "documents": 139,
+          "encoded_tokens": 98608,
+          "array_tokens": 98608,
+          "tail_tokens": 0,
+          "dtype": "uint16"
+        },
+        "confirmation": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/confirmation-code_typescript.stream.npy",
+          "sha256": "aab009a6e7273c0770bb400a3a4aae5a98adebfe68dcf6b7fef8e9f4a78d0c88",
+          "documents": 146,
+          "encoded_tokens": 126627,
+          "array_tokens": 126627,
+          "tail_tokens": 0,
+          "dtype": "uint16"
+        }
+      },
+      "document_index": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/code_typescript.documents.jsonl.gz",
+      "document_index_sha256": "a32560256c2dbaa5ba295396fa38a13976b8a5023b7ae86d8513cea6e06b7a5d"
+    },
+    {
+      "status": "SELECTED_SOURCE_PACKED_NOT_ADMITTED",
+      "source_id": "dclm",
+      "elapsed_seconds": 160.00775834918022,
+      "outputs": {
+        "train": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/train-dclm.blocks.npy",
+          "sha256": "2e9a23743bbb68f8f45f7328079f2498511f6895dc95e73d21e8d92d74aeda6c",
+          "documents": 43993,
+          "encoded_tokens": 59852166,
+          "array_tokens": 59851290,
+          "tail_tokens": 876,
+          "dtype": "uint16",
+          "blocks": 29210,
+          "prediction_tokens": 59822080,
+          "tail_path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/dclm.train-tail.json",
+          "tail_sha256": "5f91ecacc63eae453f08e236f6d78d7857ebe95f8405c376555dd694f96eb15c"
+        },
+        "development": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/development-dclm.stream.npy",
+          "sha256": "e901117eaa009402f987c7fca54947d9502623a171fa52930cfbf3b4dd272936",
+          "documents": 1000,
+          "encoded_tokens": 1241415,
+          "array_tokens": 1241415,
+          "tail_tokens": 0,
+          "dtype": "uint16"
+        },
+        "confirmation": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/confirmation-dclm.stream.npy",
+          "sha256": "503153b46bdf9293bb724483a8d692dc83996db7845d5046af8ab9bc6de8445d",
+          "documents": 1000,
+          "encoded_tokens": 1648291,
+          "array_tokens": 1648291,
+          "tail_tokens": 0,
+          "dtype": "uint16"
+        }
+      },
+      "document_index": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/dclm.documents.jsonl.gz",
+      "document_index_sha256": "429df717c147f283ccb2c14d2701d786b0555a45eab7511369fc9b233051ac82"
+    },
+    {
+      "status": "SELECTED_SOURCE_PACKED_NOT_ADMITTED",
+      "source_id": "finemath4",
+      "elapsed_seconds": 93.60567805916071,
+      "outputs": {
+        "train": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/train-finemath4.blocks.npy",
+          "sha256": "781db562a88f2973526f559b97afdb44cdb45b570c4d3b5649be05604583299c",
+          "documents": 27762,
+          "encoded_tokens": 39618041,
+          "array_tokens": 39617415,
+          "tail_tokens": 626,
+          "dtype": "uint16",
+          "blocks": 19335,
+          "prediction_tokens": 39598080,
+          "tail_path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/finemath4.train-tail.json",
+          "tail_sha256": "0e35ab35628bd8c6af76d867cd1e20bfadfbf16d7be2813ef4b47d593939d635"
+        },
+        "development": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/development-finemath4.stream.npy",
+          "sha256": "3a562063e3ef5254995e9138283927b7bfe87b516dac77aa8aba53fca71cb05c",
+          "documents": 726,
+          "encoded_tokens": 876934,
+          "array_tokens": 876934,
+          "tail_tokens": 0,
+          "dtype": "uint16"
+        },
+        "confirmation": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/confirmation-finemath4.stream.npy",
+          "sha256": "5e8264aef5daa00eb2d98e128eaf1e6afd511e288864edc1ff2c33a7c4d1f7f8",
+          "documents": 721,
+          "encoded_tokens": 1239699,
+          "array_tokens": 1239699,
+          "tail_tokens": 0,
+          "dtype": "uint16"
+        }
+      },
+      "document_index": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/finemath4.documents.jsonl.gz",
+      "document_index_sha256": "7c67a619d70dd29c5760097e4833760d074607926a53a18706d082c3c50b47e3"
+    },
+    {
+      "status": "SELECTED_SOURCE_PACKED_NOT_ADMITTED",
+      "source_id": "infiwebmath4",
+      "elapsed_seconds": 33.09679017169401,
+      "outputs": {
+        "train": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/train-infiwebmath4.blocks.npy",
+          "sha256": "87765c85e9a3b94dd8ec257bb0c6c9cfad1cbdd9295be497052a3f80097a438d",
+          "documents": 10501,
+          "encoded_tokens": 14516926,
+          "array_tokens": 14515116,
+          "tail_tokens": 1810,
+          "dtype": "uint16",
+          "blocks": 7084,
+          "prediction_tokens": 14508032,
+          "tail_path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/infiwebmath4.train-tail.json",
+          "tail_sha256": "e22bff2fa052009afec3edcb77a5932385f026310702c664ec6206b1baa337ec"
+        },
+        "development": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/development-infiwebmath4.stream.npy",
+          "sha256": "9a03b11af8538b217fb7b5907e4747d547d57afe484315a9f2a6d14e9215a3a0",
+          "documents": 283,
+          "encoded_tokens": 405227,
+          "array_tokens": 405227,
+          "tail_tokens": 0,
+          "dtype": "uint16"
+        },
+        "confirmation": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/confirmation-infiwebmath4.stream.npy",
+          "sha256": "0202d8ff3cf723a2c840cb0ed6a0ef74d1377f18fd1c2c55cf472c2e8bd336ba",
+          "documents": 287,
+          "encoded_tokens": 386561,
+          "array_tokens": 386561,
+          "tail_tokens": 0,
+          "dtype": "uint16"
+        }
+      },
+      "document_index": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/infiwebmath4.documents.jsonl.gz",
+      "document_index_sha256": "4253e280603282aec5bdaefd394021c48f71b2dcca3b39b5e573cb673fcff096"
+    },
+    {
+      "status": "SELECTED_SOURCE_PACKED_NOT_ADMITTED",
+      "source_id": "multilingual_arb_Arab",
+      "elapsed_seconds": 10.504159634001553,
+      "outputs": {
+        "train": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/train-multilingual_arb_Arab.blocks.npy",
+          "sha256": "b7f70c6f6f677d2c9c5ed156271522472acc1d0fb7d9ec94cb0d82a7e0c1a245",
+          "documents": 2952,
+          "encoded_tokens": 6879887,
+          "array_tokens": 6878493,
+          "tail_tokens": 1394,
+          "dtype": "uint16",
+          "blocks": 3357,
+          "prediction_tokens": 6875136,
+          "tail_path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/multilingual_arb_Arab.train-tail.json",
+          "tail_sha256": "546861cb8fa27cecfa43ff11a25df69eed8738737ee5c49f1f82c17a709e9265"
+        },
+        "development": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/development-multilingual_arb_Arab.stream.npy",
+          "sha256": "17c3c7f29a060e1db4b543246eec8f9f447847b0aa3ed8e0ffda3172e1b69e7e",
+          "documents": 91,
+          "encoded_tokens": 203026,
+          "array_tokens": 203026,
+          "tail_tokens": 0,
+          "dtype": "uint16"
+        },
+        "confirmation": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/confirmation-multilingual_arb_Arab.stream.npy",
+          "sha256": "a35d8e17c6f51129ec3f27715b8f59cff3fa36982c97d6dca15801c3a4a3ddab",
+          "documents": 105,
+          "encoded_tokens": 238511,
+          "array_tokens": 238511,
+          "tail_tokens": 0,
+          "dtype": "uint16"
+        }
+      },
+      "document_index": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/multilingual_arb_Arab.documents.jsonl.gz",
+      "document_index_sha256": "0a3c5e92b062fd194af2483039457ba1cbc96b603b515bd563f1e2ff81739ca9"
+    },
+    {
+      "status": "SELECTED_SOURCE_PACKED_NOT_ADMITTED",
+      "source_id": "multilingual_cmn_Hani",
+      "elapsed_seconds": 19.37848624167964,
+      "outputs": {
+        "train": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/train-multilingual_cmn_Hani.blocks.npy",
+          "sha256": "ebfb4fe6a6f59aa5bd1612d1b8774ce0d8fe64b6c1bf0fff2de3dc8e7e2d2c87",
+          "documents": 10138,
+          "encoded_tokens": 17102373,
+          "array_tokens": 17100954,
+          "tail_tokens": 1419,
+          "dtype": "uint16",
+          "blocks": 8346,
+          "prediction_tokens": 17092608,
+          "tail_path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/multilingual_cmn_Hani.train-tail.json",
+          "tail_sha256": "a13c5d8a489a8a20a8bc30e6260217a5b203be9e7beafff328bba2663e683645"
+        },
+        "development": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/development-multilingual_cmn_Hani.stream.npy",
+          "sha256": "fcf3b0af9d2e7aaed2624190fb041fdd1128bb6631c3a8042af59c095288e2f1",
+          "documents": 388,
+          "encoded_tokens": 699423,
+          "array_tokens": 699423,
+          "tail_tokens": 0,
+          "dtype": "uint16"
+        },
+        "confirmation": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/confirmation-multilingual_cmn_Hani.stream.npy",
+          "sha256": "0ee26669ba615c9a8b3c996401e71fbce25845eb5308895117f68eb200d45b9d",
+          "documents": 379,
+          "encoded_tokens": 562035,
+          "array_tokens": 562035,
+          "tail_tokens": 0,
+          "dtype": "uint16"
+        }
+      },
+      "document_index": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/multilingual_cmn_Hani.documents.jsonl.gz",
+      "document_index_sha256": "6ee1a595f628dbc4ab6497c2571dc3f01585998405890f6c01e242d8786de686"
+    },
+    {
+      "status": "SELECTED_SOURCE_PACKED_NOT_ADMITTED",
+      "source_id": "multilingual_deu_Latn",
+      "elapsed_seconds": 11.69403295405209,
+      "outputs": {
+        "train": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/train-multilingual_deu_Latn.blocks.npy",
+          "sha256": "d59a67384e193389389c4b907bb45d9bb3ea8158fcdd4f645e2a5cb802b6b833",
+          "documents": 3560,
+          "encoded_tokens": 5524726,
+          "array_tokens": 5524104,
+          "tail_tokens": 622,
+          "dtype": "uint16",
+          "blocks": 2696,
+          "prediction_tokens": 5521408,
+          "tail_path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/multilingual_deu_Latn.train-tail.json",
+          "tail_sha256": "d5f326b45317ca70dc448263b6500e95b34c74c44d0596079b847340633dcc7f"
+        },
+        "development": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/development-multilingual_deu_Latn.stream.npy",
+          "sha256": "d65362ed744176944daf00f52703726fad5e8c1fa057f8a3fde06bb9529d5d9f",
+          "documents": 153,
+          "encoded_tokens": 222754,
+          "array_tokens": 222754,
+          "tail_tokens": 0,
+          "dtype": "uint16"
+        },
+        "confirmation": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/confirmation-multilingual_deu_Latn.stream.npy",
+          "sha256": "bdfcd2f152297d538934cb00bd9eadf074b03d61afca73dc913f806e307f510d",
+          "documents": 134,
+          "encoded_tokens": 184383,
+          "array_tokens": 184383,
+          "tail_tokens": 0,
+          "dtype": "uint16"
+        }
+      },
+      "document_index": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/multilingual_deu_Latn.documents.jsonl.gz",
+      "document_index_sha256": "b42f101e678c3afef9313ecedb8ef0efc58c7b3a303e153f580bee41b4b1fd09"
+    },
+    {
+      "status": "SELECTED_SOURCE_PACKED_NOT_ADMITTED",
+      "source_id": "multilingual_fra_Latn",
+      "elapsed_seconds": 10.72871422721073,
+      "outputs": {
+        "train": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/train-multilingual_fra_Latn.blocks.npy",
+          "sha256": "d44d8ab0fb94c5a8d5cf551fd668a7d41a099a09eac5f5aa85740acaf2054a58",
+          "documents": 3350,
+          "encoded_tokens": 4682246,
+          "array_tokens": 4681965,
+          "tail_tokens": 281,
+          "dtype": "uint16",
+          "blocks": 2285,
+          "prediction_tokens": 4679680,
+          "tail_path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/multilingual_fra_Latn.train-tail.json",
+          "tail_sha256": "9e2296fea517db1ad63ecf5daaf2d0c29c8cd02f9e04fbb71497d40eb2730785"
+        },
+        "development": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/development-multilingual_fra_Latn.stream.npy",
+          "sha256": "b04875b6411c109be4d32965fed3bc15645ce730fc95e6bc2d113d99d9239798",
+          "documents": 118,
+          "encoded_tokens": 127756,
+          "array_tokens": 127756,
+          "tail_tokens": 0,
+          "dtype": "uint16"
+        },
+        "confirmation": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/confirmation-multilingual_fra_Latn.stream.npy",
+          "sha256": "084fbe9fc23ac8ed42da08a620d7d5af0423773fa3d1d5291f95946188d4628f",
+          "documents": 138,
+          "encoded_tokens": 218184,
+          "array_tokens": 218184,
+          "tail_tokens": 0,
+          "dtype": "uint16"
+        }
+      },
+      "document_index": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/multilingual_fra_Latn.documents.jsonl.gz",
+      "document_index_sha256": "6d502ddb342df4c813234b767fa19be8110721f710de2b83485469d34952f7e8"
+    },
+    {
+      "status": "SELECTED_SOURCE_PACKED_NOT_ADMITTED",
+      "source_id": "multilingual_jpn_Jpan",
+      "elapsed_seconds": 6.04236565111205,
+      "outputs": {
+        "train": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/train-multilingual_jpn_Jpan.blocks.npy",
+          "sha256": "cb8b4d42bdb3cdc49d2c4c4ba4bb2fd4078040dadfaa08aa9eec44c41b7c577b",
+          "documents": 3670,
+          "encoded_tokens": 4316345,
+          "array_tokens": 4315194,
+          "tail_tokens": 1151,
+          "dtype": "uint16",
+          "blocks": 2106,
+          "prediction_tokens": 4313088,
+          "tail_path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/multilingual_jpn_Jpan.train-tail.json",
+          "tail_sha256": "ce30b45ae142daa643aff09c186e37c31ddfe6c18b414564332c8498e0a61e14"
+        },
+        "development": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/development-multilingual_jpn_Jpan.stream.npy",
+          "sha256": "07b2bb6df52f3a8b5cbd1905ed1dfe81241580db15514a85acfa16a94bb2ab25",
+          "documents": 122,
+          "encoded_tokens": 110325,
+          "array_tokens": 110325,
+          "tail_tokens": 0,
+          "dtype": "uint16"
+        },
+        "confirmation": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/confirmation-multilingual_jpn_Jpan.stream.npy",
+          "sha256": "0283b6ce65b425a351a0ca496293bc6d5c9cb4cb0bbd6bcc1b1377c1eb924043",
+          "documents": 139,
+          "encoded_tokens": 244889,
+          "array_tokens": 244889,
+          "tail_tokens": 0,
+          "dtype": "uint16"
+        }
+      },
+      "document_index": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/multilingual_jpn_Jpan.documents.jsonl.gz",
+      "document_index_sha256": "ede6a73797ff4ee3e9099cd6a3e3311e6f905bf900bad95746f991ea262e2a7c"
+    },
+    {
+      "status": "SELECTED_SOURCE_PACKED_NOT_ADMITTED",
+      "source_id": "multilingual_spa_Latn",
+      "elapsed_seconds": 8.188424585852772,
+      "outputs": {
+        "train": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/train-multilingual_spa_Latn.blocks.npy",
+          "sha256": "b37fa15536990ab433dfb3c0bf5076fb0ca8ff0ac04cd440a8303d94527bf7df",
+          "documents": 3318,
+          "encoded_tokens": 3598554,
+          "array_tokens": 3598044,
+          "tail_tokens": 510,
+          "dtype": "uint16",
+          "blocks": 1756,
+          "prediction_tokens": 3596288,
+          "tail_path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/multilingual_spa_Latn.train-tail.json",
+          "tail_sha256": "6a3cb1f44ccc3d4aa1cef102575f630966ea95690e8720d82d579be7522a02b6"
+        },
+        "development": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/development-multilingual_spa_Latn.stream.npy",
+          "sha256": "506dc6a8191d42e91fa132720c1e8fcd9173b09939d460f9a09ec2155afd04e1",
+          "documents": 128,
+          "encoded_tokens": 115706,
+          "array_tokens": 115706,
+          "tail_tokens": 0,
+          "dtype": "uint16"
+        },
+        "confirmation": {
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/confirmation-multilingual_spa_Latn.stream.npy",
+          "sha256": "2daace2f90231f75146b51fac12f406482a50a0e0acd18b6e4eb677a2cf1e5ae",
+          "documents": 105,
+          "encoded_tokens": 107304,
+          "array_tokens": 107304,
+          "tail_tokens": 0,
+          "dtype": "uint16"
+        }
+      },
+      "document_index": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/multilingual_spa_Latn.documents.jsonl.gz",
+      "document_index_sha256": "959b41784d4934b73afe26f4ef2f22f6cea4828178ecdd7bca800482ee189912"
+    },
+    {
+      "status": "RUNNING",
+      "source_id": "pdf_en",
+      "documents": 9000,
+      "elapsed_seconds": 95.24594612419605
+    }
+  ],
+  "launch.json": {
+    "status": "PACKING_SELECTED_CONTENT_NOT_ADMITTED",
+    "workers": 4,
+    "selected_documents": 180637,
+    "reserved_bytes": 725632848,
+    "tokenizer_sha256": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+    "family_report_sha256": "aa6f8d733135f410f318e9bf4944033670103eaf118a1cdb0c43663609680a4c",
+    "training_admitted": false
+  },
+  "processes": "    PID    PPID %CPU ELAPSED COMMAND\n3573747       1  1.0     192 /ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python /ssd/scxi253/pretrain500m-20260912-v1/source/pack-selected-v1/pack.py --family-report /ssd/scxi253/pretrain500m-20260912-v1/data/family-split-v1/report.json --expected-family-sha256 aa6f8d733135f410f318e9bf4944033670103eaf118a1cdb0c43663609680a4c --tokenizer /ssd/scxi253/pretrain500m-20260912-v1/formal/hf-v5/tokenizer.json --expected-tokenizer-sha256 30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6 --output /ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1 --workers 4\n3573966 3573747 44.0     190 /ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python /ssd/scxi253/pretrain500m-20260912-v1/source/pack-selected-v1/pack.py --family-report /ssd/scxi253/pretrain500m-20260912-v1/data/family-split-v1/report.json --expected-family-sha256 aa6f8d733135f410f318e9bf4944033670103eaf118a1cdb0c43663609680a4c --tokenizer /ssd/scxi253/pretrain500m-20260912-v1/formal/hf-v5/tokenizer.json --expected-tokenizer-sha256 30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6 --output /ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1 --workers 4\n3573967 3573747 86.7     190 /ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python /ssd/scxi253/pretrain500m-20260912-v1/source/pack-selected-v1/pack.py --family-report /ssd/scxi253/pretrain500m-20260912-v1/data/family-split-v1/report.json --expected-family-sha256 aa6f8d733135f410f318e9bf4944033670103eaf118a1cdb0c43663609680a4c --tokenizer /ssd/scxi253/pretrain500m-20260912-v1/formal/hf-v5/tokenizer.json --expected-tokenizer-sha256 30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6 --output /ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1 --workers 4\n3573968 3573747 57.6     190 /ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python /ssd/scxi253/pretrain500m-20260912-v1/source/pack-selected-v1/pack.py --family-report /ssd/scxi253/pretrain500m-20260912-v1/data/family-split-v1/report.json --expected-family-sha256 aa6f8d733135f410f318e9bf4944033670103eaf118a1cdb0c43663609680a4c --tokenizer /ssd/scxi253/pretrain500m-20260912-v1/formal/hf-v5/tokenizer.json --expected-tokenizer-sha256 30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6 --output /ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1 --workers 4\n3573970 3573747 92.6     190 /ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python /ssd/scxi253/pretrain500m-20260912-v1/source/pack-selected-v1/pack.py --family-report /ssd/scxi253/pretrain500m-20260912-v1/data/family-split-v1/report.json --expected-family-sha256 aa6f8d733135f410f318e9bf4944033670103eaf118a1cdb0c43663609680a4c --tokenizer /ssd/scxi253/pretrain500m-20260912-v1/formal/hf-v5/tokenizer.json --expected-tokenizer-sha256 30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6 --output /ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1 --workers 4\n",
+  "log_tail": ""
+}

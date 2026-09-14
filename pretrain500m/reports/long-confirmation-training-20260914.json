@@ -1,0 +1,129 @@
+{
+  "base_checkpoint_sha256": "13aa21721e15c48cdfdafe30d8fdd41d9c95c90be766327661d96af1e90dd6cf",
+  "checked_utc": "2026-09-14T16:05:39Z",
+  "checkpoint_plan_sha256": "1c109069ff6d8a86d667d11c470e0169cb2699c057dcacb03112ddbb58cd3ce3",
+  "claim_boundary": "training completion and checkpoint integrity only; held-out evaluation, recipe selection, task capability, promotion, and market comparison remain pending",
+  "model_parameters": 528748800,
+  "protocol_sha256": "d0c0fbb59bda58de814ab9f297ff4c8f00e9349b8e3f565ce0bb7e0fea4873f5",
+  "runs": [
+    {
+      "checkpoint_bytes": 2372504677,
+      "checkpoint_sha256": "69d9d8d3358f23815f2455f7e075645056f90fe01ed40a11525130a0e58ca085",
+      "distinct_gpu_uuids": 4,
+      "final_mfu_10_median": 0.7664356275252712,
+      "final_validation_equal_domain_loss": 2.542318793996241,
+      "final_validation_loss_by_domain": {
+        "code": 1.4706604703546633,
+        "general_web": 3.0538937620346216,
+        "knowledge_reading": 2.5338428503698247,
+        "math": 2.0331121313869938,
+        "multilingual": 3.620084755835101
+      },
+      "gpu_count": 4,
+      "gpu_inventory_sha256": "3efd395d83bd7ddb23d3f6d5c7a20709316c64db13de5a54615ec84e0b1d4fbf",
+      "gpu_model": [
+        "NVIDIA GeForce RTX 5090"
+      ],
+      "job_id": 1589567,
+      "mfu_window_passed": true,
+      "prediction_tokens": 2147483648,
+      "recipe": "F2_reasoning_no_synthetic",
+      "run_manifest_sha256": "5c41ae5a94d1c95d68b289208acbcd3269fc8c243116705a597da1730e8163d2",
+      "seed": 20260914,
+      "slurm_exit_code": "0:0",
+      "slurm_state": "COMPLETED",
+      "steps": 1024,
+      "training_status_sha256": "b956512cc8bf880c1f261ce436da1fde7ea04da728a26b2ee8d83592d48a594e"
+    },
+    {
+      "checkpoint_bytes": 2372504677,
+      "checkpoint_sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc",
+      "distinct_gpu_uuids": 4,
+      "final_mfu_10_median": 0.7665330073793669,
+      "final_validation_equal_domain_loss": 2.54658423831816,
+      "final_validation_loss_by_domain": {
+        "code": 1.473302497801856,
+        "general_web": 3.0492362003843008,
+        "knowledge_reading": 2.5590605329531635,
+        "math": 2.034188524107709,
+        "multilingual": 3.61713343634377
+      },
+      "gpu_count": 4,
+      "gpu_inventory_sha256": "3efd395d83bd7ddb23d3f6d5c7a20709316c64db13de5a54615ec84e0b1d4fbf",
+      "gpu_model": [
+        "NVIDIA GeForce RTX 5090"
+      ],
+      "job_id": 1590004,
+      "mfu_window_passed": true,
+      "prediction_tokens": 2147483648,
+      "recipe": "F2_reasoning_no_synthetic",
+      "run_manifest_sha256": "6abcd8eed9d03e86220952553c76ae31944f679ce3fda035a58ee1e71ac71f17",
+      "seed": 20260915,
+      "slurm_exit_code": "0:0",
+      "slurm_state": "COMPLETED",
+      "steps": 1024,
+      "training_status_sha256": "8af7930fdc2361e3b512fe33e9e56c1e418469e522313211b3345bc048e58e21"
+    },
+    {
+      "checkpoint_bytes": 2372504677,
+      "checkpoint_sha256": "194e1da1ba1e74a77e28ae207d1dd74a4baa6889408e41c6dce36d551f1e222e",
+      "distinct_gpu_uuids": 4,
+      "final_mfu_10_median": 0.775366304392645,
+      "final_validation_equal_domain_loss": 2.378189631960088,
+      "final_validation_loss_by_domain": {
+        "code": 1.472322571255838,
+        "general_web": 3.056239050086329,
+        "knowledge_reading": 2.5656760147242235,
+        "math": 2.0637344322714832,
+        "multilingual": 2.732976091462567
+      },
+      "gpu_count": 4,
+      "gpu_inventory_sha256": "e6642c99c5a73bb1f6f630520e7a04455c7f543ebc204f73414ab8891fc9ebc0",
+      "gpu_model": [
+        "NVIDIA GeForce RTX 5090"
+      ],
+      "job_id": 1590005,
+      "mfu_window_passed": true,
+      "prediction_tokens": 2147483648,
+      "recipe": "F3_broad_multilingual_no_synthetic",
+      "run_manifest_sha256": "f43cffd19cede8e52d7caab7a7187c32b6d1bd0ece36a32176d66149d999cdf8",
+      "seed": 20260914,
+      "slurm_exit_code": "0:0",
+      "slurm_state": "COMPLETED",
+      "steps": 1024,
+      "training_status_sha256": "c5d45900fc6e192ede1625f383e0d54e7dae991fd08c97cb14e822a3f303e06d"
+    },
+    {
+      "checkpoint_bytes": 2372504677,
+      "checkpoint_sha256": "8ee551307118a52bc79e9268ce3a08be20c6776234051fc48e3192d5d3e09a21",
+      "distinct_gpu_uuids": 4,
+      "final_mfu_10_median": 0.7760089031531763,
+      "final_validation_equal_domain_loss": 2.379312804727533,
+      "final_validation_loss_by_domain": {
+        "code": 1.4763809571571134,
+        "general_web": 3.0521298803404706,
+        "knowledge_reading": 2.564939122338393,
+        "math": 2.0693181656170996,
+        "multilingual": 2.733795898184589
+      },
+      "gpu_count": 4,
+      "gpu_inventory_sha256": "b1824d1546a99b029797e4c7c401907ab86cdb48eee9342cbb415fce07303a71",
+      "gpu_model": [
+        "NVIDIA GeForce RTX 5090"
+      ],
+      "job_id": 1589570,
+      "mfu_window_passed": true,
+      "prediction_tokens": 2147483648,
+      "recipe": "F3_broad_multilingual_no_synthetic",
+      "run_manifest_sha256": "15d39429f08ab827208333f2852b3e7f85cd96d9aedfedb71f18e34e2a27191b",
+      "seed": 20260915,
+      "slurm_exit_code": "0:0",
+      "slurm_state": "COMPLETED",
+      "steps": 1024,
+      "training_status_sha256": "9d96295cb3e64c5df5f77c8332a7aebf174b95450c4f3eb4462a124f76b1241b"
+    }
+  ],
+  "schema_version": 1,
+  "status": "PASS_EXACT_FOUR_RUN_LONG_CONFIRMATION_TRAINING",
+  "total_prediction_tokens": 8589934592
+}

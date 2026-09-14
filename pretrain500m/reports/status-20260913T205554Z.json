@@ -1,0 +1,235 @@
+{
+  "checked_utc": "2026-09-13T20:55:54.403659+00:00",
+  "free_bytes": 22420185088,
+  "sources": [
+    {
+      "id": "code_cpp",
+      "status": "READING",
+      "rows_written": 2305,
+      "uncompressed_output_bytes": 10625108,
+      "network_bytes": 6220295,
+      "updated_utc": "2026-09-13T20:55:37.929371+00:00",
+      "stop_reason": null,
+      "error": null,
+      "groups_read": 17,
+      "groups_requested": 26
+    },
+    {
+      "id": "code_java",
+      "status": "READING",
+      "rows_written": 6738,
+      "uncompressed_output_bytes": 23360261,
+      "network_bytes": 27338411,
+      "updated_utc": "2026-09-13T20:55:44.435193+00:00",
+      "stop_reason": null,
+      "error": null,
+      "groups_read": 202,
+      "groups_requested": 226
+    },
+    {
+      "id": "code_javascript",
+      "status": "RAW_SEGMENT_READY",
+      "rows_written": 9372,
+      "uncompressed_output_bytes": 37641227,
+      "network_bytes": 9811214,
+      "updated_utc": "2026-09-13T20:14:42.297107+00:00",
+      "stop_reason": null,
+      "error": null,
+      "groups_read": 52,
+      "groups_requested": 52
+    },
+    {
+      "id": "code_python",
+      "status": "RAW_SEGMENT_READY",
+      "rows_written": 21299,
+      "uncompressed_output_bytes": 96715740,
+      "network_bytes": 18826865,
+      "updated_utc": "2026-09-13T20:49:19.294494+00:00",
+      "stop_reason": null,
+      "error": null,
+      "groups_read": 141,
+      "groups_requested": 141
+    }
+  ],
+  "worker": "  11401    01:04:23 Ssl  /ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python /ssd/scxi253/pretrain500m-20260912-v1/source/intake-v2/intake.py\n",
+  "progress.json": {
+    "status": "RUNNING",
+    "source": "0:multilingual_cmn_Hani",
+    "rows_in_source": 4000,
+    "completed_files": 10,
+    "elapsed_seconds": 28.64821171760559
+  },
+  "reference-coverage.json": {
+    "policy": {
+      "schema": "p529m-unicode-reservation-span-v1",
+      "unicode_normalization": "NFC",
+      "whitespace": "collapse Unicode whitespace to one ASCII space, then strip",
+      "prose_case": "casefold, then NFC",
+      "code_and_math_case": "preserve",
+      "full_field_min_chars": 64,
+      "long_span_chars": 192,
+      "long_span_stride": 96,
+      "minimum_distinct_nonspace_chars": 12,
+      "short_primary_whole_document_min_chars": 16,
+      "short_primary_minimum_distinct_nonspace_chars": 8,
+      "short_primary_fields": [
+        "prompt",
+        "question",
+        "problem"
+      ],
+      "maximum_saved_hits_per_document": 32,
+      "maximum_saved_owners_per_pattern": 4,
+      "action": "AUDIT_CANDIDATES_ONLY_NO_TRAINING_ADMISSION"
+    },
+    "runtime": {
+      "python": "3.12.13 (main, Jul 18 2026, 17:02:19) [Clang 22.1.3 ]",
+      "unicode_version": "15.0.0",
+      "pyahocorasick": "2.3.1",
+      "unicode_build": 1
+    },
+    "counts": {
+      "anchored_fields": 18516,
+      "skipped_short_or_low_diversity_fields": 31153,
+      "whole_document_only_fields": 3404,
+      "reference_records": 11830,
+      "unique_anchor_patterns": 31641
+    },
+    "by_reference_file": {
+      "openai/openai_humaneval:openai_humaneval/test-00000-of-00001.parquet": {
+        "anchored_fields": 452,
+        "skipped_short_or_low_diversity_fields": 40
+      },
+      "google-research-datasets/mbpp:full/prompt-00000-of-00001.parquet": {
+        "anchored_fields": 28,
+        "skipped_short_or_low_diversity_fields": 22
+      },
+      "google-research-datasets/mbpp:full/test-00000-of-00001.parquet": {
+        "anchored_fields": 1284,
+        "skipped_short_or_low_diversity_fields": 1233
+      },
+      "google-research-datasets/mbpp:full/train-00000-of-00001.parquet": {
+        "anchored_fields": 961,
+        "skipped_short_or_low_diversity_fields": 910
+      },
+      "google-research-datasets/mbpp:full/validation-00000-of-00001.parquet": {
+        "anchored_fields": 232,
+        "skipped_short_or_low_diversity_fields": 218
+      },
+      "google-research-datasets/mbpp:sanitized/prompt-00000-of-00001.parquet": {
+        "anchored_fields": 23,
+        "whole_document_only_fields": 1,
+        "skipped_short_or_low_diversity_fields": 15
+      },
+      "google-research-datasets/mbpp:sanitized/test-00000-of-00001.parquet": {
+        "anchored_fields": 687,
+        "skipped_short_or_low_diversity_fields": 552,
+        "whole_document_only_fields": 51
+      },
+      "google-research-datasets/mbpp:sanitized/train-00000-of-00001.parquet": {
+        "anchored_fields": 330,
+        "skipped_short_or_low_diversity_fields": 291,
+        "whole_document_only_fields": 13
+      },
+      "google-research-datasets/mbpp:sanitized/validation-00000-of-00001.parquet": {
+        "anchored_fields": 108,
+        "skipped_short_or_low_diversity_fields": 99,
+        "whole_document_only_fields": 8
+      },
+      "google/IFEval:ifeval_input_data.jsonl": {
+        "anchored_fields": 539,
+        "whole_document_only_fields": 2
+      },
+      "facebook/belebele:data/arb_Arab.jsonl": {
+        "anchored_fields": 1274,
+        "skipped_short_or_low_diversity_fields": 3561,
+        "whole_document_only_fields": 565
+      },
+      "facebook/belebele:data/deu_Latn.jsonl": {
+        "anchored_fields": 1719,
+        "skipped_short_or_low_diversity_fields": 3371,
+        "whole_document_only_fields": 310
+      },
+      "facebook/belebele:data/eng_Latn.jsonl": {
+        "anchored_fields": 1619,
+        "skipped_short_or_low_diversity_fields": 3497,
+        "whole_document_only_fields": 284
+      },
+      "facebook/belebele:data/fra_Latn.jsonl": {
+        "anchored_fields": 1941,
+        "skipped_short_or_low_diversity_fields": 3307,
+        "whole_document_only_fields": 152
+      },
+      "facebook/belebele:data/jpn_Jpan.jsonl": {
+        "anchored_fields": 902,
+        "whole_document_only_fields": 891,
+        "skipped_short_or_low_diversity_fields": 3607
+      },
+      "facebook/belebele:data/spa_Latn.jsonl": {
+        "anchored_fields": 1780,
+        "skipped_short_or_low_diversity_fields": 3393,
+        "whole_document_only_fields": 227
+      },
+      "facebook/belebele:data/zho_Hans.jsonl": {
+        "anchored_fields": 893,
+        "whole_document_only_fields": 736,
+        "skipped_short_or_low_diversity_fields": 3771
+      },
+      "HuggingFaceH4/MATH-500:test.jsonl": {
+        "anchored_fields": 936,
+        "skipped_short_or_low_diversity_fields": 505,
+        "whole_document_only_fields": 59
+      },
+      "google-research/url-nlp:mgsm/exemplars.py": {
+        "anchored_fields": 163,
+        "skipped_short_or_low_diversity_fields": 11
+      },
+      "google-research/url-nlp:mgsm/mgsm_bn.tsv": {
+        "anchored_fields": 250,
+        "skipped_short_or_low_diversity_fields": 250
+      },
+      "google-research/url-nlp:mgsm/mgsm_de.tsv": {
+        "anchored_fields": 250,
+        "skipped_short_or_low_diversity_fields": 250
+      },
+      "google-research/url-nlp:mgsm/mgsm_en.tsv": {
+        "anchored_fields": 250,
+        "skipped_short_or_low_diversity_fields": 250
+      },
+      "google-research/url-nlp:mgsm/mgsm_es.tsv": {
+        "anchored_fields": 250,
+        "skipped_short_or_low_diversity_fields": 250
+      },
+      "google-research/url-nlp:mgsm/mgsm_fr.tsv": {
+        "anchored_fields": 250,
+        "skipped_short_or_low_diversity_fields": 250
+      },
+      "google-research/url-nlp:mgsm/mgsm_ja.tsv": {
+        "anchored_fields": 223,
+        "skipped_short_or_low_diversity_fields": 250,
+        "whole_document_only_fields": 27
+      },
+      "google-research/url-nlp:mgsm/mgsm_ru.tsv": {
+        "anchored_fields": 250,
+        "skipped_short_or_low_diversity_fields": 250
+      },
+      "google-research/url-nlp:mgsm/mgsm_sw.tsv": {
+        "anchored_fields": 250,
+        "skipped_short_or_low_diversity_fields": 250
+      },
+      "google-research/url-nlp:mgsm/mgsm_te.tsv": {
+        "anchored_fields": 250,
+        "skipped_short_or_low_diversity_fields": 250
+      },
+      "google-research/url-nlp:mgsm/mgsm_th.tsv": {
+        "anchored_fields": 250,
+        "skipped_short_or_low_diversity_fields": 250
+      },
+      "google-research/url-nlp:mgsm/mgsm_zh.tsv": {
+        "anchored_fields": 172,
+        "skipped_short_or_low_diversity_fields": 250,
+        "whole_document_only_fields": 78
+      }
+    }
+  },
+  "contamination_log_tail": ""
+}

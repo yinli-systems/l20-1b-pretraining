@@ -1,0 +1,40 @@
+{
+  "schema": "p529m-corpus-admission-v1",
+  "status": "PASS",
+  "recipe": "F0_existing_web_control",
+  "checked_utc": "2026-09-14T00:10:57.766229+00:00",
+  "training_manifest_sha256": "980933a08910d2d2aa8ede107bea2460da1f223c7184784cbf25755d693645e2",
+  "validation_manifest_sha256": "429c1ab33bdb8a92214ffdd2327462a05275b29fbd60abecc1d98b9fad634af3",
+  "protocol_sha256": "17c91660cfbbd48a3216243be9db9c5e8716c082dc8d8fcf02c75c582e84f993",
+  "checks": {
+    "licenses": "PASS",
+    "content_quality": "PASS",
+    "cross_source_deduplication": "PASS",
+    "benchmark_decontamination": "PASS",
+    "family_disjoint_splits": "PASS"
+  },
+  "evidence": {
+    "final_filtered_pack_report_sha256": "8b17fcfd920124040686cdaa1c1415f9da86feee67becb6e05216c69a2230334",
+    "quality_split_patch_sha256": "3c629768245519646c5d7957d2f4d65cc65a92f6b0f261ec379b974546ed3720",
+    "family_split_report_sha256": "aa6f8d733135f410f318e9bf4944033670103eaf118a1cdb0c43663609680a4c",
+    "old_fineweb_overlap_report_sha256": "acdae1f0acec3ac54c2a96f1704867a6fcac270ed425b4f40caaccc29ab0e9b2",
+    "development_manifest_sha256": "429c1ab33bdb8a92214ffdd2327462a05275b29fbd60abecc1d98b9fad634af3",
+    "combined_contamination_report_sha256": "e8d87df65ab22e6d83dce79ee16dc9ccd92160b8a33d875ba5f794bbb5efea49",
+    "three_tranche_contamination_report_sha256": "ee67692887373132867fb03359f5f532222e5f3818103e9d47b7bdf1f087cb47",
+    "train_quality_review_report_sha256": "cf1b770b6d8796393071042572a6b9f89c892cdc22f5f25f4f7587bffbf994b9",
+    "reserved_quality_review_report_sha256": "ecc9bea57af8df1ffecfc9f887f136e8b2f198023400c826619e6c995e00e836",
+    "development_pack_report_sha256": "299665e2eee4450ff8ad7cf051ffd129835fc9ac7188d2a1ca273cd17db96d87"
+  },
+  "scope": {
+    "licenses": "Admitted source subsets have pinned source terms; unknown-license code was excluded.",
+    "content_quality": "Full selected-corpus scan plus high-precision automatic exclusions and manual stratified review.",
+    "cross_source_deduplication": "Observed exact/normalized family closure across selected sources and old FineWeb.",
+    "benchmark_decontamination": "Bound benchmark signature and normalized overlap scans passed for the selected material.",
+    "family_disjoint_splits": "Rejected reserved families were replaced deterministically and moved out of training."
+  },
+  "limitations": [
+    "Admission is bounded to these content hashes and this screen protocol.",
+    "Quality filtering does not prove factual correctness of every document.",
+    "Decontamination and family closure do not detect every semantic paraphrase."
+  ]
+}

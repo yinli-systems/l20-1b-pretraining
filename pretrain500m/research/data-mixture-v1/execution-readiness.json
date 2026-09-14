@@ -1,0 +1,646 @@
+{
+  "checked_date": "2026-09-13",
+  "status": "FAMILY_SPLITS_COMPLETE_SELECTED_SOURCE_PACKING_RUNNING",
+  "bulk_training_launched": false,
+  "gates": {
+    "primary_source_research": "COMPLETE",
+    "version_pinned_inventory": "COMPLETE",
+    "bounded_content_samples": "COMPLETE_FOR_PRIMARY_EN_MATH_PDF_ZH_ES_AND_PYTHON_SOURCES",
+    "stackedu_rehydration_path": "14_CONTENT_HASHES_VERIFIED",
+    "offline_token_quota_checks": "PASS",
+    "full_corpus_acquisition_and_license_filter": "THREE_RAW_TRANCHES_COMPLETE_199407_ROWS_ADMISSION_PENDING",
+    "remote_huggingface_connectivity": "PRIMARY_BLOCKED_MIRROR_PINNED_DOWNLOAD_AND_S3_CONTENT_VERIFIED",
+    "remote_training_corpus": "SELECTED_LEAF_SOURCE_PACKING_RUNNING_NO_RECIPE_ADMISSION",
+    "global_deduplication_and_decontamination": "DECLARED_EXACT_AND_VERIFIED_CANDIDATE_NEAR_EDGES_FAMILY_CLOSURE_COMPLETE_SCOPE_LIMITS_REMAIN",
+    "multi_domain_development_and_confirmation_sets": "GLOBAL_FAMILY_ASSIGNMENTS_COMPLETE_EACH_RESERVE_FIVE_DOMAINS_1000_FAMILIES_PACKING_AND_EVALUATOR_PENDING",
+    "token_weighted_sampler_integration": "V3_CPU_31_PASS_NEW_MIXTURE_GPU_PENDING",
+    "cpt_resume_provenance_repair": "FULL_MODEL_GPU_EXACTNESS_PASS_STABLE_BUCKET_POLICY_TRANSFERRED_TO_V3",
+    "exact_gpu_resume_test": "PASS_GPU_RECOVERY_EXACT_JOB_1588249",
+    "new_mixture_mfu_over_50_percent": "UNMEASURED",
+    "formal_quality_gain": "UNPROVEN",
+    "universal_cross_size_superiority": "UNPROVEN",
+    "math_code_multilingual_submixture_preparation": "PENDING",
+    "five_domain_evaluation_integration": "PENDING",
+    "nested_subsource_quota_design": "EXACT_SCREEN_AND_CONFIRMATION_OPTIONS_VERIFIED",
+    "inspection_pool_family_sufficiency": "EACH_RESERVED_DOMAIN_MINIMUM_MET_UNDER_OBSERVED_EDGES",
+    "multilingual_and_code_benchmark_decontamination": "DECLARED_SCANS_AND_CONSERVATIVE_FAMILY_EXCLUSIONS_APPLIED_NOT_UNIVERSAL_SEMANTIC_DECONTAMINATION",
+    "raw_intake_token_and_family_audit": "POST_FAMILY_TRAIN_QUOTAS_MEASURED_F2_FINEMATH_SHORT_667648_PREDICTION_TOKENS_BEFORE_PACKING",
+    "supplemental_benchmark_reference_reservation": "32_PINNED_FILES_11830_REFERENCE_RECORDS_AVAILABLE_REMOTE_OUTSIDE_TRAINING_POOLS",
+    "synthetic_parent_provenance": "EXCLUDED_FROM_SEPARATE_F_SCREEN_DEFERRED_FOR_ORIGINAL_M_SCREEN",
+    "old_fineweb_source_overlap": "COMPLETED_9672101_OLD_ROWS_20_MATCHES_NORMALIZED_EXACT_SCOPE"
+  },
+  "resource_snapshot": {
+    "local_free_gib_approx": 15,
+    "remote_checked_utc": "2026-09-13T22:05:07.755120+00:00",
+    "remote_free_bytes": 21799518208,
+    "remote_free_gib": 20.3,
+    "scheduler_reported_available_gpus": {
+      "gpu_5090": 38,
+      "gpu_4090": 27
+    },
+    "gpu_capacity_checked_utc": "2026-09-13T21:39:01.477619+00:00"
+  },
+  "next_actions": [
+    "Finish identity-bound leaf packing already running as PID 3573747; verify output reports, actual token counts and document/family boundaries. Do not rescan completed stages.",
+    "Prepare F0/F1/F3 while acquiring only the bounded measured F2 FineMath deficit; preserve frozen reserved families, and check supplements against all existing splits. No silent change to recipes or repeat caps.",
+    "Complete bounded stratified content review, five-domain document-masked evaluation, exact nested leaf quotas and evidence-derived corpus admission.",
+    "Implement explicit non-resumable model-only screen artifacts and aggregate concurrent disk reservation before two four-GPU runs. Current v3 full checkpoint mode remains unchanged.",
+    "Qualify actual new-mixture GPU recovery policy and rolling median MFU strictly above 0.50, then start admitted short screens. Confirmation and SFT follow demonstrated quality evidence."
+  ],
+  "prior_lr_pilot": {
+    "job_id": "1587857",
+    "interpretation": "exploratory learning-rate screen only; no automatic large-run promotion",
+    "status": "COMPLETED_ALL_THREE",
+    "selected_lr_exploratory": 0.0001,
+    "development_loss_improvement": 0.0025653839111328125,
+    "formal_promotion": false
+  },
+  "checked_utc": "2026-09-13T23:08:59.593522+00:00",
+  "implementation_receipt": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/reports/cpt-v3-verification-20260913.json",
+  "admission_preparation": {
+    "readme": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/posttrain/admission/README.md",
+    "receipt": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/posttrain/admission/verification.json",
+    "quota_plan": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/posttrain/admission/subsource-quotas-v1.json",
+    "sample_family_audit": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/posttrain/admission/sample-family-audit-v1.json"
+  },
+  "resource_snapshot_note": "At 2026-09-13T23:08:59.593522+00:00 remote shared /ssd had 20637196288 free bytes. Selected packing is active, fourteen of fifteen source outputs complete. GPU capacity was not measured in this check.",
+  "latest_status_receipt": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/reports/pack-selected-v1-status-20260914.json",
+  "latest_execution_receipt": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/reports/pack-selected-v1-launch-20260914.json",
+  "local_cleanup": {
+    "verified_logical_bytes_removed": 4893010803,
+    "receipt": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/reports/cleanup-local-pip-20260913.json",
+    "scope": "old pip HTTP downloads; installed environments and model caches retained"
+  },
+  "raw_audit_report": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/reports/raw-intake-audit-three-tranche-20260913.json",
+  "recovery_receipt": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/reports/recovery-v2-final-20260913.json",
+  "remote_duplicate_cleanup_receipt": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/reports/cleanup-equivalent-recovery-v2-20260913.json",
+  "prepared_combined_data_audit": {
+    "status": "COMBINED_RAW_INTAKE_MEASURED_NOT_ADMITTED",
+    "source": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/posttrain/raw-audit-v2",
+    "remote_source": "/ssd/scxi253/pretrain500m-20260912-v1/source/raw-audit-v2",
+    "archive_sha256": "ac7d8f60912139558be80445f2eeb62eb4050a03c9495ca1a58893e9d2d446bc",
+    "local_and_remote_fixture_tests_passed": 14,
+    "real_v1_regression_status": "PASS_REAL_SINGLE_TRANCHE_REGRESSION",
+    "real_v1_regression_rows": 47078,
+    "real_v1_regression_receipt": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/reports/raw-audit-v2-v1-regression-20260913.json",
+    "verification_receipt": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/reports/raw-audit-v2-verification-20260913.json",
+    "real_combined_audit_launched": true,
+    "training_admitted": false,
+    "checked_utc": "2026-09-13T21:22:07.206403+00:00",
+    "next_output": "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-audit-v2-combined",
+    "pid": 1547473,
+    "writer_finished": true,
+    "report": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/reports/raw-intake-audit-v2-combined-20260913.json",
+    "latest_evidence": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/reports/raw-intake-audit-v2-combined-20260913.json",
+    "raw_rows": 180407,
+    "globally_byte_identical_unique_documents": 180374,
+    "globally_deduplicated_prediction_tokens_upper_bound": 276158464,
+    "report_sha256": "af1951c9f41bce778a73dcb78a64aa5ad5739f192229103ec51a14a5e9991bb1",
+    "elapsed_seconds": 616.4356164932251,
+    "raw_shortage_lower_bounds_before_quality_and_reserves": {
+      "cosmopedia2": 10462208,
+      "dclm": 5993472,
+      "pdf_en": 8241152
+    }
+  },
+  "benchmark_reservation": {
+    "status": "PASS_REMOTE_REFERENCE_BUNDLE_INTEGRITY",
+    "checked_utc": "2026-09-13T20:50:13.267899+00:00",
+    "remote_output": "/ssd/scxi253/pretrain500m-20260912-v1/evaluation/benchmark-reservation-v1",
+    "archive_sha256": "105e9d4744fdf54657fb38d614b9b1535037629e0d2304c1f0a648c0db289c0c",
+    "source_files": 32,
+    "reference_records": 11830,
+    "reference_fields": 53073,
+    "references_sha256": "4a00a3aa9cfdd9f3a85d3b886a8de3b23687b1690c34b66f139ab451080a4e5c",
+    "training_admitted": false,
+    "matcher_implemented": true,
+    "corpus_scan_completed": false,
+    "local_verification": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/reports/benchmark-reservation-v1-local-verification.json",
+    "remote_verification": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/reports/benchmark-reservation-v1-remote-verification.json",
+    "supplemental_matcher_implemented": true,
+    "combined_corpus_scan_completed": true,
+    "first_tranche_corpus_scan_completed": true,
+    "supplemental_all_three_tranche_scan_completed": true
+  },
+  "supplemental_contamination_audit": {
+    "status": "SUPPLEMENTAL_EXACT_SPAN_AUDIT_COMPLETE_ADMISSION_PENDING",
+    "source": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/posttrain/contamination-v1",
+    "remote_source": "/ssd/scxi253/pretrain500m-20260912-v1/source/contamination-v1",
+    "archive_sha256": "f1979b66385a3eaa1d1703dfd618848ebfb4b6829818cd36089db57a13478f7f",
+    "overlay": "/ssd/scxi253/pretrain500m-20260912-v1/overlay-contamination-v1",
+    "fixture_tests_passed": 11,
+    "first_tranche_only": true,
+    "first_tranche_rows": 47078,
+    "first_tranche_characters": 212181598,
+    "candidate_exclusion_rows": 0,
+    "candidate_file_verified_empty": true,
+    "reference_coverage": {
+      "anchored_fields": 18516,
+      "skipped_short_or_low_diversity_fields": 31153,
+      "whole_document_only_fields": 3404,
+      "reference_records": 11830,
+      "unique_anchor_patterns": 31641
+    },
+    "report": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/reports/contamination-v1-first-tranche-20260913.json",
+    "runtime": {
+      "python": "3.12.13 (main, Jul 18 2026, 17:02:19) [Clang 22.1.3 ]",
+      "unicode_version": "15.0.0",
+      "pyahocorasick": "2.3.1",
+      "unicode_build": 1
+    },
+    "training_admitted": false,
+    "combined_scan_completed": true,
+    "next_output": "/ssd/scxi253/pretrain500m-20260912-v1/data/contamination-v1-combined",
+    "checked_utc": "2026-09-13T20:56:18.858595+00:00",
+    "combined_report": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/reports/contamination-v1-combined-20260913.json"
+  },
+  "active_data_audit": {
+    "key": "active_data_audit",
+    "name": "three-tranche-raw-audit-v2",
+    "command": [
+      "/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python",
+      "/ssd/scxi253/pretrain500m-20260912-v1/source/raw-audit-v2/audit_raw_intake_v2.py",
+      "--input",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1",
+      "--input",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2",
+      "--input",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v3",
+      "--tokenizer",
+      "/ssd/scxi253/pretrain500m-20260912-v1/formal/hf-v5/tokenizer.json",
+      "--expected-tokenizer-sha256",
+      "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+      "--quotas",
+      "/ssd/scxi253/pretrain500m-20260912-v1/source/raw-audit-v2/subsource-quotas-v1.json",
+      "--output",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-audit-v2-three-tranche"
+    ],
+    "output": "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-audit-v2-three-tranche",
+    "log": "/ssd/scxi253/pretrain500m-20260912-v1/logs/three-tranche-raw-audit-v2.log",
+    "overlay": "overlay",
+    "pid": 2141186,
+    "status": "COMBINED_RAW_INTAKE_MEASURED_NOT_ADMITTED",
+    "checked_utc": "2026-09-13T21:57:16.930343+00:00",
+    "training_admitted": false,
+    "combined_raw_rows_expected": 199407,
+    "latest_evidence": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/reports/raw-intake-audit-three-tranche-20260913.json",
+    "writer_finished": true,
+    "raw_rows": 199407,
+    "globally_byte_identical_unique_documents": 199372,
+    "globally_deduplicated_prediction_tokens_upper_bound": 321808384,
+    "raw_shortage_lower_bounds_before_quality_and_reserves": {
+      "cosmopedia2": 10462208
+    }
+  },
+  "active_contamination_audit": {
+    "key": "active_contamination_audit",
+    "name": "three-tranche-contamination-v1",
+    "command": [
+      "/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python",
+      "/ssd/scxi253/pretrain500m-20260912-v1/source/contamination-v1/scan.py",
+      "--input",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1",
+      "--input",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2",
+      "--input",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v3",
+      "--bundle",
+      "/ssd/scxi253/pretrain500m-20260912-v1/evaluation/benchmark-reservation-v1/data",
+      "--output",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/contamination-v1-three-tranche"
+    ],
+    "output": "/ssd/scxi253/pretrain500m-20260912-v1/data/contamination-v1-three-tranche",
+    "log": "/ssd/scxi253/pretrain500m-20260912-v1/logs/three-tranche-contamination-v1.log",
+    "overlay": "overlay-contamination-v1",
+    "pid": 2141256,
+    "status": "SUPPLEMENTAL_EXACT_SPAN_AUDIT_COMPLETE_ADMISSION_PENDING",
+    "checked_utc": "2026-09-13T21:49:16.001780+00:00",
+    "training_admitted": false,
+    "combined_raw_rows_expected": 199407,
+    "latest_evidence": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/reports/contamination-three-tranche-20260913.json",
+    "writer_finished": true,
+    "rows_scanned": 199407,
+    "candidate_exclusion_rows": 3
+  },
+  "legacy_corpus_artifact_inventory": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/reports/legacy-corpus-artifact-inventory-20260913.json",
+  "supplemental_exclusion_plan": {
+    "status": "EXACT_TEXT_EXCLUSION_PLAN_BOUND_AND_VERIFIED",
+    "local_receipt": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/reports/supplemental-exact-text-exclusions-v2.json",
+    "remote_receipt": "/ssd/scxi253/pretrain500m-20260912-v1/receipts/supplemental-exact-text-exclusions-v2.json",
+    "candidate_rows": 3,
+    "unique_text_hashes": 3,
+    "packing_has_consumed_plan": false,
+    "raw_files_modified": false,
+    "family_expansion_pending": true,
+    "training_admitted": false
+  },
+  "active_data_intake": {
+    "pid": 2026051,
+    "status": "RAW_INTAKE_FINISHED_NOT_ADMITTED",
+    "checked_utc": "2026-09-13T21:43:59.323885+00:00",
+    "source": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/posttrain/intake-v3",
+    "remote_source": "/ssd/scxi253/pretrain500m-20260912-v1/source/intake-v3",
+    "remote_output": "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v3",
+    "log": "/ssd/scxi253/pretrain500m-20260912-v1/logs/intake-v3.log",
+    "archive_sha256": "eebdb4296180d57040be2d8ff6d31584e8d6ceba8220b2f2f91181697cf67ec8",
+    "planned_sources": 2,
+    "source_workers": 2,
+    "local_and_remote_tests_passed": 7,
+    "current_rows_written": 19000,
+    "sources_ready": 2,
+    "sources_reading": 0,
+    "sources_blocked": 0,
+    "source_progress": {
+      "dclm": {
+        "status": "RAW_SEGMENT_READY",
+        "started_utc": "2026-09-13T21:38:25.865308+00:00",
+        "completed_utc": "2026-09-13T21:40:06.314296+00:00",
+        "updated_utc": "2026-09-13T21:40:06.216553+00:00",
+        "rows_written": 14000,
+        "uncompressed_output_bytes": 83747472,
+        "stop_reason": null,
+        "error_type": null,
+        "error": null,
+        "groups_read": 14
+      },
+      "pdf_en": {
+        "status": "RAW_SEGMENT_READY",
+        "started_utc": "2026-09-13T21:38:25.854231+00:00",
+        "completed_utc": "2026-09-13T21:39:16.156025+00:00",
+        "updated_utc": "2026-09-13T21:39:16.025266+00:00",
+        "rows_written": 5000,
+        "uncompressed_output_bytes": 121869540,
+        "stop_reason": null,
+        "error_type": null,
+        "error": null,
+        "groups_read": 5
+      }
+    },
+    "training_admitted": false,
+    "writer_finished": true,
+    "latest_evidence": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/reports/eta-status-20260913T2143Z.json",
+    "launch_receipt": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/reports/intake-v3-launch-20260913.json"
+  },
+  "targeted_extension_plan": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/posttrain/intake-v3/segments.json",
+  "prior_data_audits": [
+    {
+      "name": "combined-raw-audit-v2",
+      "pid": 1547473,
+      "status": "COMBINED_RAW_INTAKE_MEASURED_NOT_ADMITTED",
+      "checked_utc": "2026-09-13T21:22:07.206403+00:00",
+      "command": [
+        "/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python",
+        "/ssd/scxi253/pretrain500m-20260912-v1/source/raw-audit-v2/audit_raw_intake_v2.py",
+        "--input",
+        "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1",
+        "--input",
+        "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2",
+        "--tokenizer",
+        "/ssd/scxi253/pretrain500m-20260912-v1/formal/hf-v5/tokenizer.json",
+        "--expected-tokenizer-sha256",
+        "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+        "--quotas",
+        "/ssd/scxi253/pretrain500m-20260912-v1/source/raw-audit-v2/subsource-quotas-v1.json",
+        "--output",
+        "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-audit-v2-combined"
+      ],
+      "output": "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-audit-v2-combined",
+      "log": "/ssd/scxi253/pretrain500m-20260912-v1/logs/combined-raw-audit-v2.log",
+      "training_admitted": false,
+      "kind": "COMBINED_TOKEN_AND_EXACT_DEDUP_AUDIT",
+      "combined_raw_rows_expected": 180407,
+      "latest_evidence": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/reports/raw-intake-audit-v2-combined-20260913.json",
+      "writer_finished": true,
+      "report": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/reports/raw-intake-audit-v2-combined-20260913.json",
+      "raw_rows": 180407,
+      "globally_byte_identical_unique_documents": 180374,
+      "globally_deduplicated_prediction_tokens_upper_bound": 276158464,
+      "report_sha256": "af1951c9f41bce778a73dcb78a64aa5ad5739f192229103ec51a14a5e9991bb1",
+      "elapsed_seconds": 616.4356164932251,
+      "raw_shortage_lower_bounds_before_quality_and_reserves": {
+        "cosmopedia2": 10462208,
+        "dclm": 5993472,
+        "pdf_en": 8241152
+      }
+    }
+  ],
+  "prior_contamination_audits": [
+    {
+      "name": "combined-contamination-v1",
+      "pid": 1547474,
+      "status": "SUPPLEMENTAL_EXACT_SPAN_AUDIT_COMPLETE_ADMISSION_PENDING",
+      "checked_utc": "2026-09-13T21:15:24.019147+00:00",
+      "command": [
+        "/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python",
+        "/ssd/scxi253/pretrain500m-20260912-v1/source/contamination-v1/scan.py",
+        "--input",
+        "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1",
+        "--input",
+        "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2",
+        "--bundle",
+        "/ssd/scxi253/pretrain500m-20260912-v1/evaluation/benchmark-reservation-v1/data",
+        "--output",
+        "/ssd/scxi253/pretrain500m-20260912-v1/data/contamination-v1-combined"
+      ],
+      "output": "/ssd/scxi253/pretrain500m-20260912-v1/data/contamination-v1-combined",
+      "log": "/ssd/scxi253/pretrain500m-20260912-v1/logs/combined-contamination-v1.log",
+      "training_admitted": false,
+      "kind": "COMBINED_SUPPLEMENTAL_UNICODE_SPAN_SCAN",
+      "combined_raw_rows_expected": 180407,
+      "latest_evidence": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/reports/contamination-v1-combined-20260913.json",
+      "legacy_seven_task_audit_completed": false,
+      "rows_scanned": 180407,
+      "candidate_exclusion_rows": 2,
+      "elapsed_seconds": 212.94598746299744
+    }
+  ],
+  "active_screen_protocol": {
+    "protocol_id": "p529m-fast-start-nosynthetic-v1",
+    "status": "PREREGISTERED_SEPARATE_SCREEN_DATA_ADMISSION_PENDING",
+    "design": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/research/fast-start-nosynthetic-v1/experiment-design.json",
+    "design_sha256": "3d58055a1d2398b90c963c9ed4be7e99e1d1644281b95599c4ad5339d805d105",
+    "remote_design": "/ssd/scxi253/pretrain500m-20260912-v1/source/fast-start-nosynthetic-v1/experiment-design.json",
+    "quota_plan": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/research/fast-start-nosynthetic-v1/subsource-quotas-v1.json",
+    "verification": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/research/fast-start-nosynthetic-v1/verification.json",
+    "original_protocol_preserved": true,
+    "synthetic_share": 0,
+    "replacement": "Transfer five synthetic percentage points to existing FineWeb replay; other source shares and all quality/MFU gates retained.",
+    "raw_non_synthetic_prediction_token_upper_bound": 318849024,
+    "post_filter_admission_passed": false
+  },
+  "legacy_benchmark_scan": {
+    "status": "LEGACY_HASH_SCAN_COMPLETE_NOT_ADMITTED",
+    "pid": 2279059,
+    "checked_utc": "2026-09-13T21:52:41.825491+00:00",
+    "command": [
+      "/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python",
+      "/ssd/scxi253/pretrain500m-20260912-v1/source/legacy-screen-v1/scan.py",
+      "--input",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1",
+      "--input",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2",
+      "--input",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v3",
+      "--database",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/decontam-13word.sqlite",
+      "--expected-database-sha256",
+      "661f939a8787d2c14a52b305ec6a6b5737aabe5146f557461473e89f22e3a256",
+      "--audit-source",
+      "/ssd/scxi253/pretrain500m-20260912-v1/source/raw-audit-v2",
+      "--output",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-three-tranche",
+      "--workers",
+      "2"
+    ],
+    "output": "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-three-tranche",
+    "log": "/ssd/scxi253/pretrain500m-20260912-v1/logs/legacy-screen-v1.log",
+    "source": "/ssd/scxi253/pretrain500m-20260912-v1/source/legacy-screen-v1",
+    "archive_sha256": "f3d94e84517fc27ff65bc50dc5a56b0f0da91cbed2f10ed92852e3e7f5a55f08",
+    "workers": 2,
+    "local_and_remote_tests_passed": 5,
+    "training_admitted": false,
+    "free_bytes": 21846310912,
+    "writer_finished": true,
+    "rows": 199407,
+    "candidate_rows": 181,
+    "elapsed_seconds": 147.61136282375082,
+    "latest_evidence": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/reports/legacy-screen-v1-three-tranche-20260913.json"
+  },
+  "active_old_source_overlap": {
+    "status": "OLD_SOURCE_NORMALIZED_OVERLAP_COMPLETE_NOT_ADMITTED",
+    "checked_utc": "2026-09-13T22:10:54.749865+00:00",
+    "pid": 2487833,
+    "command": [
+      "/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python",
+      "/ssd/scxi253/pretrain500m-20260912-v1/source/old-source-overlap-v1/scan.py",
+      "--manifest",
+      "/ssd/scxi253/pretrain500m-20260912-v1/source/old-source-overlap-v1/old-source-manifest.json",
+      "--expected-manifest-sha256",
+      "8291e6c2a9af017904a3cc17b838cff231ff1a6da4cf7b9fe810b2dd6995a6e5",
+      "--index-report",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-three-tranche/report.json",
+      "--expected-index-report-sha256",
+      "a644aaa72d371e0da1db917a30d6a5d227e7585fcbc0e5e4a03e88d5ece021ce",
+      "--output",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1",
+      "--workers",
+      "4"
+    ],
+    "source": "/ssd/scxi253/pretrain500m-20260912-v1/source/old-source-overlap-v1",
+    "output": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1",
+    "log": "/ssd/scxi253/pretrain500m-20260912-v1/logs/old-source-overlap-v1.log",
+    "workers": 4,
+    "archive_sha256": "1bc462765517780c9ea505929e79ba0782f06af6b519ba773f1541722fcdbf61",
+    "local_and_remote_tests_passed": 3,
+    "free_bytes": 21799608320,
+    "training_admitted": false,
+    "actual_worker_processes_verified": 4,
+    "latest_evidence": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/reports/old-source-overlap-v1-completed-20260913.json",
+    "writer_finished": true,
+    "old_rows": 9672101,
+    "matched_old_rows": 20,
+    "elapsed_seconds": 407.38540191110224
+  },
+  "quality_family_features": {
+    "status": "QUALITY_AND_FAMILY_FEATURES_COMPLETE_NOT_ADMITTED",
+    "checked_utc": "2026-09-13T22:42:20.429751+00:00",
+    "writer_finished": true,
+    "rows": 199407,
+    "passed_rows_before_eligible_dedup_and_reserves": 180758,
+    "elapsed_seconds": 219.9067794540897,
+    "report_sha256": "8e4d1446084cc9893f0d08250f1b79579dfd4630a0bb148ac84098d44ea055ba",
+    "source": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/posttrain/quality-family-v1",
+    "remote_source": "/ssd/scxi253/pretrain500m-20260912-v1/source/quality-family-v1",
+    "archive_sha256": "1442fc0c86d2d74f2b2d7f73f92bbe1f5b647fc21d92199f63f263f125594fd6",
+    "local_tests_passed": 11,
+    "local_native_inference_skipped": 1,
+    "remote_tests_passed": 12,
+    "latest_evidence": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/reports/quality-family-v1-completed-20260913.json",
+    "training_admitted": false
+  },
+  "exclusion_union": {
+    "status": "BOUND_EXCLUSIONS_APPLIED_TO_ELIGIBILITY_AND_OBSERVED_FAMILIES",
+    "unique_text_hashes": 203,
+    "sha256": "c622932c94ae2c56dfd0e14691e72975214381288c03979c4be759211acb00df",
+    "local_path": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/reports/exclusion-union-v1.json",
+    "remote_path": "/ssd/scxi253/pretrain500m-20260912-v1/receipts/exclusion-union-v1.json",
+    "eligibility_consumed": true,
+    "observed_family_expansion_completed": true,
+    "training_admitted": false
+  },
+  "family_split": {
+    "status": "FAMILY_CLOSURE_AND_RESERVED_ASSIGNMENTS_COMPLETE_NOT_ADMITTED",
+    "checked_utc": "2026-09-13T23:00:01.055781+00:00",
+    "pid": 3464798,
+    "command": [
+      "/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python",
+      "/ssd/scxi253/pretrain500m-20260912-v1/source/family-split-v1/scan.py",
+      "--features-report",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/quality-family-v1/report.json",
+      "--expected-features-sha256",
+      "8e4d1446084cc9893f0d08250f1b79579dfd4630a0bb148ac84098d44ea055ba",
+      "--raw-report",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-audit-v2-three-tranche/report.json",
+      "--exclusions",
+      "/ssd/scxi253/pretrain500m-20260912-v1/receipts/exclusion-union-v1.json",
+      "--design",
+      "/ssd/scxi253/pretrain500m-20260912-v1/source/fast-start-nosynthetic-v1/experiment-design.json",
+      "--expected-design-sha256",
+      "3d58055a1d2398b90c963c9ed4be7e99e1d1644281b95599c4ad5339d805d105",
+      "--output",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/family-split-v1",
+      "--workers",
+      "4"
+    ],
+    "source": "/ssd/scxi253/pretrain500m-20260912-v1/source/family-split-v1",
+    "output": "/ssd/scxi253/pretrain500m-20260912-v1/data/family-split-v1",
+    "log": "/ssd/scxi253/pretrain500m-20260912-v1/logs/family-split-v1.log",
+    "workers": 4,
+    "archive_sha256": "45575131223dc790c6682939176720ddcc5f5bc52d9ac7d4da4cb0255cee08e2",
+    "local_tests_passed": 11,
+    "remote_tests_passed": 11,
+    "training_admitted": false,
+    "training_launched": false,
+    "free_bytes": 21268054016,
+    "writer_finished": true,
+    "completed_utc": "2026-09-13T23:01:04.680973+00:00",
+    "elapsed_seconds": 63.49293065397069,
+    "report_sha256": "aa6f8d733135f410f318e9bf4944033670103eaf118a1cdb0c43663609680a4c",
+    "latest_evidence": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/reports/family-split-v1-completed-20260914.json",
+    "partition_counts": {
+      "train": 170472,
+      "excluded": 18770,
+      "confirmation": 5084,
+      "development": 5081
+    },
+    "reserved_partitions": {
+      "family_counts": {
+        "development": {
+          "multilingual": 1000,
+          "code": 1000,
+          "math": 1000,
+          "general_web": 1000,
+          "knowledge_reading": 1000
+        },
+        "confirmation": {
+          "multilingual": 1000,
+          "code": 1000,
+          "math": 1000,
+          "general_web": 1000,
+          "knowledge_reading": 1000
+        }
+      },
+      "document_prediction_tokens": {
+        "development": {
+          "multilingual": 1477990,
+          "code": 1155811,
+          "math": 1281152,
+          "general_web": 1240415,
+          "knowledge_reading": 4298370
+        },
+        "confirmation": {
+          "multilingual": 1554306,
+          "code": 1141202,
+          "math": 1625252,
+          "general_web": 1647291,
+          "knowledge_reading": 4233703
+        }
+      },
+      "deficits": {
+        "development": {
+          "general_web": {
+            "families": 0,
+            "prediction_tokens": 0
+          },
+          "knowledge_reading": {
+            "families": 0,
+            "prediction_tokens": 0
+          },
+          "math": {
+            "families": 0,
+            "prediction_tokens": 0
+          },
+          "code": {
+            "families": 0,
+            "prediction_tokens": 0
+          },
+          "multilingual": {
+            "families": 0,
+            "prediction_tokens": 0
+          }
+        },
+        "confirmation": {
+          "general_web": {
+            "families": 0,
+            "prediction_tokens": 0
+          },
+          "knowledge_reading": {
+            "families": 0,
+            "prediction_tokens": 0
+          },
+          "math": {
+            "families": 0,
+            "prediction_tokens": 0
+          },
+          "code": {
+            "families": 0,
+            "prediction_tokens": 0
+          },
+          "multilingual": {
+            "families": 0,
+            "prediction_tokens": 0
+          }
+        }
+      }
+    },
+    "candidate_pairs": 17851,
+    "verified_near_edges": 193,
+    "quarantined_families": 203,
+    "quarantined_rows": 209
+  },
+  "active_selected_packing": {
+    "status": "LAUNCHED_SELECTED_SOURCE_PACKING_NOT_ADMITTED",
+    "checked_utc": "2026-09-13T23:08:59.593522+00:00",
+    "pid": 3573747,
+    "command": [
+      "/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python",
+      "/ssd/scxi253/pretrain500m-20260912-v1/source/pack-selected-v1/pack.py",
+      "--family-report",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/family-split-v1/report.json",
+      "--expected-family-sha256",
+      "aa6f8d733135f410f318e9bf4944033670103eaf118a1cdb0c43663609680a4c",
+      "--tokenizer",
+      "/ssd/scxi253/pretrain500m-20260912-v1/formal/hf-v5/tokenizer.json",
+      "--expected-tokenizer-sha256",
+      "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+      "--output",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1",
+      "--workers",
+      "4"
+    ],
+    "source": "/ssd/scxi253/pretrain500m-20260912-v1/source/pack-selected-v1",
+    "output": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1",
+    "log": "/ssd/scxi253/pretrain500m-20260912-v1/logs/pack-selected-v1.log",
+    "workers": 4,
+    "archive_sha256": "61b556b801592323eb321f891d65ac7c8917f44cf9e91bd80be5895f7ea3f3a9",
+    "local_tests_passed": 3,
+    "remote_tests_passed": 3,
+    "training_admitted": false,
+    "training_launched": false,
+    "free_bytes": 20637196288,
+    "latest_evidence": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/reports/pack-selected-v1-status-20260914.json",
+    "process_present": true,
+    "sources_completed": 14,
+    "sources_total": 15
+  },
+  "post_family_quota_report": "/Users/alice/.codex/worktrees/44ca/Pretraining 2/pretrain500m/reports/post-family-screen-quotas-20260914.json",
+  "acceleration": {
+    "checked_utc": "2026-09-13T23:07:56.086028+00:00",
+    "continuous_family_closure_and_splits_seconds": 63.49293065397069,
+    "packing_workers": 4,
+    "heartbeat_interval_minutes": 1,
+    "screen_f2_finemath_shortage_prediction_tokens_before_packing": 667648,
+    "training_launched": false,
+    "formal_model_quality_gain": false
+  }
+}

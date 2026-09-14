@@ -1,0 +1,352 @@
+{
+  "status": "RAW_INTAKE_MEASURED_NOT_ADMITTED",
+  "training_admitted": false,
+  "tokenizer_sha256": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+  "quota_plan_sha256": "a739b245be96eb708d1e2039a91723652c906582b3241f772768d92615e754d2",
+  "sources": {
+    "code_cpp": {
+      "rows": 548,
+      "encoded_tokens_including_one_eos": 698785,
+      "exact_unique_encoded_tokens_including_one_eos": 698785,
+      "byte_identical_unique_documents": 548,
+      "provisional_family_candidates": 544,
+      "family_status": {
+        "repository_aliases_unresolved": 548
+      },
+      "token_length_histogram": {
+        "128_to_2048": 456,
+        "2049_to_8192": 67,
+        "lt128": 14,
+        "8193_to_32768": 11
+      },
+      "raw_file_sha256": "c153a2833cc94fba70b4e3679d721e8d9ec3df89840488a33fc4601989fa672f",
+      "packed_prediction_tokens_upper_bound_before_filtering": 698368,
+      "min_unique_prediction_tokens_for_largest_single_screen_at_two_epochs": 4026368,
+      "shortage_lower_bound_before_validation_and_quality_filters": 3328000
+    },
+    "code_java": {
+      "rows": 134,
+      "encoded_tokens_including_one_eos": 96037,
+      "exact_unique_encoded_tokens_including_one_eos": 96037,
+      "byte_identical_unique_documents": 134,
+      "provisional_family_candidates": 134,
+      "family_status": {
+        "repository_aliases_unresolved": 134
+      },
+      "token_length_histogram": {
+        "128_to_2048": 124,
+        "2049_to_8192": 6,
+        "lt128": 4
+      },
+      "raw_file_sha256": "e1b0656984646f658e781db3f00885e75131518b7472e8f3a8ff2f95ce900060",
+      "packed_prediction_tokens_upper_bound_before_filtering": 94208,
+      "min_unique_prediction_tokens_for_largest_single_screen_at_two_epochs": 4026368,
+      "shortage_lower_bound_before_validation_and_quality_filters": 3932160
+    },
+    "code_javascript": {
+      "rows": 720,
+      "encoded_tokens_including_one_eos": 772370,
+      "exact_unique_encoded_tokens_including_one_eos": 772370,
+      "byte_identical_unique_documents": 720,
+      "provisional_family_candidates": 719,
+      "family_status": {
+        "repository_aliases_unresolved": 720
+      },
+      "token_length_histogram": {
+        "128_to_2048": 619,
+        "2049_to_8192": 56,
+        "lt128": 37,
+        "8193_to_32768": 8
+      },
+      "raw_file_sha256": "78103d75272d2a493287f84aa9f372449889778acc128e986bc362cc2e8da382",
+      "packed_prediction_tokens_upper_bound_before_filtering": 770048,
+      "min_unique_prediction_tokens_for_largest_single_screen_at_two_epochs": 8053760,
+      "shortage_lower_bound_before_validation_and_quality_filters": 7283712
+    },
+    "code_python": {
+      "rows": 629,
+      "encoded_tokens_including_one_eos": 748879,
+      "exact_unique_encoded_tokens_including_one_eos": 748879,
+      "byte_identical_unique_documents": 629,
+      "provisional_family_candidates": 625,
+      "family_status": {
+        "repository_aliases_unresolved": 629
+      },
+      "token_length_histogram": {
+        "128_to_2048": 493,
+        "2049_to_8192": 86,
+        "lt128": 45,
+        "8193_to_32768": 4,
+        "gt32768": 1
+      },
+      "raw_file_sha256": "0fa98345a6d907173d03e2dce6376c7dd7919c339c60d76a1ba1ae4172456cdd",
+      "packed_prediction_tokens_upper_bound_before_filtering": 747520,
+      "min_unique_prediction_tokens_for_largest_single_screen_at_two_epochs": 20132864,
+      "shortage_lower_bound_before_validation_and_quality_filters": 19385344
+    },
+    "code_typescript": {
+      "rows": 1464,
+      "encoded_tokens_including_one_eos": 1209812,
+      "exact_unique_encoded_tokens_including_one_eos": 1209812,
+      "byte_identical_unique_documents": 1464,
+      "provisional_family_candidates": 1423,
+      "family_status": {
+        "repository_aliases_unresolved": 1464
+      },
+      "token_length_histogram": {
+        "128_to_2048": 1228,
+        "2049_to_8192": 114,
+        "lt128": 113,
+        "8193_to_32768": 9
+      },
+      "raw_file_sha256": "d6e47424abe2b8bf1e70ab8f3f96ab73219895d30269c49e1aa6791ec386f83b",
+      "packed_prediction_tokens_upper_bound_before_filtering": 1208320,
+      "min_unique_prediction_tokens_for_largest_single_screen_at_two_epochs": 4026368,
+      "shortage_lower_bound_before_validation_and_quality_filters": 2818048
+    },
+    "cosmopedia2": {
+      "rows": 4000,
+      "encoded_tokens_including_one_eos": 2960875,
+      "exact_unique_encoded_tokens_including_one_eos": 2960875,
+      "missing_family_rows": 4000,
+      "byte_identical_unique_documents": 4000,
+      "provisional_family_candidates": 0,
+      "family_status": {
+        "seed_source_label_is_not_parent_document_identity": 4000
+      },
+      "token_length_histogram": {
+        "128_to_2048": 3992,
+        "lt128": 8
+      },
+      "raw_file_sha256": "8f8a80a9a24fa2e4281ad830928de90916570798bd9ff66440a42c6c43065397",
+      "packed_prediction_tokens_upper_bound_before_filtering": 2959360,
+      "min_unique_prediction_tokens_for_largest_single_screen_at_two_epochs": 13421568,
+      "shortage_lower_bound_before_validation_and_quality_filters": 10462208
+    },
+    "dclm": {
+      "rows": 4000,
+      "encoded_tokens_including_one_eos": 5058752,
+      "exact_unique_encoded_tokens_including_one_eos": 5058288,
+      "within_source_byte_identical_duplicates": 1,
+      "byte_identical_unique_documents": 3999,
+      "provisional_family_candidates": 3761,
+      "family_status": {
+        "host_only_registrable_domain_and_aliases_unresolved": 4000
+      },
+      "token_length_histogram": {
+        "128_to_2048": 3215,
+        "lt128": 249,
+        "2049_to_8192": 473,
+        "8193_to_32768": 58,
+        "gt32768": 5
+      },
+      "raw_file_sha256": "fa08ad0dba01cd63be202ac658135fa8c4ac1f7326ff19268353ba90ebf4c435",
+      "packed_prediction_tokens_upper_bound_before_filtering": 5054464,
+      "min_unique_prediction_tokens_for_largest_single_screen_at_two_epochs": 53687296,
+      "shortage_lower_bound_before_validation_and_quality_filters": 48632832
+    },
+    "finemath4": {
+      "rows": 4000,
+      "encoded_tokens_including_one_eos": 6323057,
+      "exact_unique_encoded_tokens_including_one_eos": 6323057,
+      "missing_family_rows": 60,
+      "byte_identical_unique_documents": 4000,
+      "provisional_family_candidates": 1695,
+      "family_status": {
+        "host_only_registrable_domain_and_aliases_unresolved": 3940,
+        "missing_url_host": 60
+      },
+      "token_length_histogram": {
+        "128_to_2048": 3307,
+        "lt128": 66,
+        "2049_to_8192": 549,
+        "8193_to_32768": 68,
+        "gt32768": 10
+      },
+      "raw_file_sha256": "fa2cfc741cd270e742906289eb4da9cb64bc641dedebe78e0c2c51635ab8ddad",
+      "packed_prediction_tokens_upper_bound_before_filtering": 6318080,
+      "min_unique_prediction_tokens_for_largest_single_screen_at_two_epochs": 40265728,
+      "shortage_lower_bound_before_validation_and_quality_filters": 33947648
+    },
+    "infiwebmath4": {
+      "rows": 4000,
+      "encoded_tokens_including_one_eos": 5567856,
+      "exact_unique_encoded_tokens_including_one_eos": 5567226,
+      "within_source_byte_identical_duplicates": 2,
+      "byte_identical_unique_documents": 3998,
+      "provisional_family_candidates": 1903,
+      "family_status": {
+        "host_only_registrable_domain_and_aliases_unresolved": 4000
+      },
+      "token_length_histogram": {
+        "128_to_2048": 3306,
+        "2049_to_8192": 577,
+        "8193_to_32768": 62,
+        "lt128": 53,
+        "gt32768": 2
+      },
+      "raw_file_sha256": "d36cea89a7123bcf2e5f193bb1c31a6bf8b67dfa3fa9255da9f82d90621b5ba2",
+      "packed_prediction_tokens_upper_bound_before_filtering": 5564416,
+      "min_unique_prediction_tokens_for_largest_single_screen_at_two_epochs": 13421568,
+      "shortage_lower_bound_before_validation_and_quality_filters": 7857152
+    },
+    "multilingual_arb_Arab": {
+      "rows": 3583,
+      "encoded_tokens_including_one_eos": 9111455,
+      "exact_unique_encoded_tokens_including_one_eos": 9111455,
+      "byte_identical_unique_documents": 3583,
+      "provisional_family_candidates": 2407,
+      "family_status": {
+        "host_only_registrable_domain_and_aliases_unresolved": 3583
+      },
+      "token_length_histogram": {
+        "128_to_2048": 2609,
+        "2049_to_8192": 818,
+        "8193_to_32768": 136,
+        "gt32768": 20
+      },
+      "raw_file_sha256": "0b9732a70a53f06bd1b0086bba492784b6c5d767896a5b7c60f7768632d0607b",
+      "packed_prediction_tokens_upper_bound_before_filtering": 9105408,
+      "min_unique_prediction_tokens_for_largest_single_screen_at_two_epochs": 2684928,
+      "shortage_lower_bound_before_validation_and_quality_filters": 0
+    },
+    "multilingual_cmn_Hani": {
+      "rows": 4000,
+      "encoded_tokens_including_one_eos": 6153800,
+      "exact_unique_encoded_tokens_including_one_eos": 6153800,
+      "byte_identical_unique_documents": 4000,
+      "provisional_family_candidates": 3522,
+      "family_status": {
+        "host_only_registrable_domain_and_aliases_unresolved": 4000
+      },
+      "token_length_histogram": {
+        "2049_to_8192": 723,
+        "128_to_2048": 3212,
+        "8193_to_32768": 57,
+        "lt128": 4,
+        "gt32768": 4
+      },
+      "raw_file_sha256": "f99c586e7630f5a5edc04ff693d2b6ad2ac02beba9611e6955f468510233c638",
+      "packed_prediction_tokens_upper_bound_before_filtering": 6150144,
+      "min_unique_prediction_tokens_for_largest_single_screen_at_two_epochs": 13421568,
+      "shortage_lower_bound_before_validation_and_quality_filters": 7271424
+    },
+    "multilingual_deu_Latn": {
+      "rows": 4000,
+      "encoded_tokens_including_one_eos": 5959319,
+      "exact_unique_encoded_tokens_including_one_eos": 5959319,
+      "byte_identical_unique_documents": 4000,
+      "provisional_family_candidates": 3177,
+      "family_status": {
+        "host_only_registrable_domain_and_aliases_unresolved": 4000
+      },
+      "token_length_histogram": {
+        "128_to_2048": 3158,
+        "2049_to_8192": 598,
+        "8193_to_32768": 87,
+        "lt128": 150,
+        "gt32768": 7
+      },
+      "raw_file_sha256": "9ccc669f268f78cce0a79158a51b0df3ab2a958498f16b79ef2a8c502731816b",
+      "packed_prediction_tokens_upper_bound_before_filtering": 5955584,
+      "min_unique_prediction_tokens_for_largest_single_screen_at_two_epochs": 2684928,
+      "shortage_lower_bound_before_validation_and_quality_filters": 0
+    },
+    "multilingual_fra_Latn": {
+      "rows": 4000,
+      "encoded_tokens_including_one_eos": 5082856,
+      "exact_unique_encoded_tokens_including_one_eos": 5082856,
+      "byte_identical_unique_documents": 4000,
+      "provisional_family_candidates": 2947,
+      "family_status": {
+        "host_only_registrable_domain_and_aliases_unresolved": 4000
+      },
+      "token_length_histogram": {
+        "128_to_2048": 3093,
+        "lt128": 385,
+        "8193_to_32768": 90,
+        "2049_to_8192": 427,
+        "gt32768": 5
+      },
+      "raw_file_sha256": "6e96d355f2d53451a0f08cbcfa64e25cd0f6795141ab1c3f577d8c09b97f82b0",
+      "packed_prediction_tokens_upper_bound_before_filtering": 5079040,
+      "min_unique_prediction_tokens_for_largest_single_screen_at_two_epochs": 2683904,
+      "shortage_lower_bound_before_validation_and_quality_filters": 0
+    },
+    "multilingual_jpn_Jpan": {
+      "rows": 4000,
+      "encoded_tokens_including_one_eos": 4681767,
+      "exact_unique_encoded_tokens_including_one_eos": 4681767,
+      "byte_identical_unique_documents": 4000,
+      "provisional_family_candidates": 3154,
+      "family_status": {
+        "host_only_registrable_domain_and_aliases_unresolved": 4000
+      },
+      "token_length_histogram": {
+        "128_to_2048": 3386,
+        "2049_to_8192": 503,
+        "lt128": 68,
+        "8193_to_32768": 38,
+        "gt32768": 5
+      },
+      "raw_file_sha256": "4e49a02dc704de4efc64b3230115fd7f29d014079ea97a18fa4076a94d41f451",
+      "packed_prediction_tokens_upper_bound_before_filtering": 4677632,
+      "min_unique_prediction_tokens_for_largest_single_screen_at_two_epochs": 2683904,
+      "shortage_lower_bound_before_validation_and_quality_filters": 0
+    },
+    "multilingual_spa_Latn": {
+      "rows": 4000,
+      "encoded_tokens_including_one_eos": 3891983,
+      "exact_unique_encoded_tokens_including_one_eos": 3891983,
+      "byte_identical_unique_documents": 4000,
+      "provisional_family_candidates": 2973,
+      "family_status": {
+        "host_only_registrable_domain_and_aliases_unresolved": 4000
+      },
+      "token_length_histogram": {
+        "128_to_2048": 3189,
+        "2049_to_8192": 332,
+        "lt128": 441,
+        "8193_to_32768": 32,
+        "gt32768": 6
+      },
+      "raw_file_sha256": "955fb234baaf9aabb5c9b1783a6c33df82310bd7f5bd9aa47cfedba3ff53d844",
+      "packed_prediction_tokens_upper_bound_before_filtering": 3889152,
+      "min_unique_prediction_tokens_for_largest_single_screen_at_two_epochs": 2683904,
+      "shortage_lower_bound_before_validation_and_quality_filters": 0
+    },
+    "pdf_en": {
+      "rows": 4000,
+      "encoded_tokens_including_one_eos": 12555088,
+      "exact_unique_encoded_tokens_including_one_eos": 12555088,
+      "byte_identical_unique_documents": 4000,
+      "provisional_family_candidates": 3491,
+      "family_status": {
+        "host_only_registrable_domain_and_aliases_unresolved": 4000
+      },
+      "token_length_histogram": {
+        "128_to_2048": 2473,
+        "8193_to_32768": 327,
+        "gt32768": 23,
+        "2049_to_8192": 1076,
+        "lt128": 101
+      },
+      "raw_file_sha256": "ee560c2e2a04192f861f3babc82cc0f18d3007e5c0f85bd2343b4c301daec55c",
+      "packed_prediction_tokens_upper_bound_before_filtering": 12548096,
+      "min_unique_prediction_tokens_for_largest_single_screen_at_two_epochs": 67108864,
+      "shortage_lower_bound_before_validation_and_quality_filters": 54560768
+    }
+  },
+  "rows": 47078,
+  "elapsed_seconds": 146.99157810211182,
+  "cross_source_byte_identical_overlap_rows": {},
+  "normalized_nonidentical_candidate_overlap_rows": {},
+  "row_index_sha256": "0a6a07b8cec8c01038274ffdfcb17d6a5a956115f3a9722b000c25528c86c3ee",
+  "limits": [
+    "Token counts include one EOS per document and are upper bounds before filtering and held-out reserves.",
+    "Host and repository candidates are not certified independent families; registrable domains, aliases and synthetic parents remain unresolved.",
+    "No near-duplicate removal, old-FineWeb overlap, benchmark decontamination or quality admission has been performed.",
+    "Normalized nonidentical candidates are not automatically discarded, especially for mathematical notation and code.",
+    "Two-epoch shortage is a lower bound for one screen run only, not cumulative screening/confirmation sufficiency."
+  ]
+}

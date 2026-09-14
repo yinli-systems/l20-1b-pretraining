@@ -1,0 +1,285 @@
+{
+  "status": "EXACT_TEXT_EXCLUSION_PLAN_BOUND_AND_VERIFIED",
+  "checked_utc": "2026-09-13T21:57:25.313395+00:00",
+  "audit_report_sha256": "ee67692887373132867fb03359f5f532222e5f3818103e9d47b7bdf1f087cb47",
+  "candidate_file_sha256": "13a6daf12eddeb3fed05dec74b85717e1585acb7f27710f13dc6a2c2a9eed8eb",
+  "reference_bundle_sha256": "4a00a3aa9cfdd9f3a85d3b886a8de3b23687b1690c34b66f139ab451080a4e5c",
+  "exclude_text_sha256_across_all_tranches": [
+    "5a1465c4dc5c551665194e392710d20e09d697738968440292129e1c7c7e561a",
+    "a2821c8a4854bcbcb1c41dc694d4da3289a721ee4992468e517efd89a500deee",
+    "af6c5fe44773728ada228bef3c42e4c3c89836cfdc7ec0d89326eb1cdae0248b"
+  ],
+  "verified_candidates": [
+    {
+      "source_id": "code_python",
+      "tranche": 1,
+      "row": 2447,
+      "text_sha256": "a2821c8a4854bcbcb1c41dc694d4da3289a721ee4992468e517efd89a500deee",
+      "provenance": {
+        "source_id": "code_python",
+        "repo_id": "HuggingFaceTB/stack-edu",
+        "revision": "eeec5caac5cc3758a18f1d3ba4416837a9ba814c",
+        "shard": "Python/train-00001-of-00005.parquet",
+        "row_group": 1946,
+        "row_in_group": 80,
+        "physical_row": 1946080
+      },
+      "matches": [
+        {
+          "mode": "literal",
+          "match_kind": "exact_normalized_span",
+          "normalized_start": 426,
+          "normalized_end": 505,
+          "matched_sha256": "0ee8a2773569f9f3bca720ff0b6f7f08f984eae7a597c84bf41ba86309909774",
+          "reference_owners": [
+            {
+              "reference_id": "34945d4d4541dd75b10203bae4bc55d3a4d1f59e6cbde7d3f74e9094ccc27443",
+              "field": "code",
+              "field_index": 0,
+              "provenance": {
+                "provider": "huggingface",
+                "repo": "google-research-datasets/mbpp",
+                "revision": "4bb6404fdc6cacfda99d4ac4205087b89d32030c",
+                "path": "full/validation-00000-of-00001.parquet",
+                "row": 14,
+                "upstream_id": 525
+              }
+            }
+          ],
+          "reference_owner_count": 1
+        }
+      ],
+      "url": null,
+      "repo_name": "eaniyom/python-challenge-solutions"
+    },
+    {
+      "source_id": "finemath4",
+      "tranche": 1,
+      "row": 23086,
+      "text_sha256": "af6c5fe44773728ada228bef3c42e4c3c89836cfdc7ec0d89326eb1cdae0248b",
+      "provenance": {
+        "source_id": "finemath4",
+        "repo_id": "HuggingFaceTB/finemath",
+        "revision": "e92b25a616738fe95dc186b64dfb19f9c8525594",
+        "shard": "finemath-4plus/train-00053-of-00064.parquet",
+        "row_group": 32,
+        "row_in_group": 86,
+        "physical_row": 32086
+      },
+      "matches": [
+        {
+          "mode": "literal",
+          "match_kind": "exact_normalized_span",
+          "normalized_start": 26,
+          "normalized_end": 218,
+          "matched_sha256": "52e5c8c6fb0f4971dd7e88c872ae893c662585f44561f9e29fba8e74fcc80ca5",
+          "reference_owners": [
+            {
+              "reference_id": "984cb06ac2714e6b3b61ed929bca8645233679e85b4a965d638e9f2b1ebfb936",
+              "field": "problem",
+              "field_index": 0,
+              "provenance": {
+                "provider": "huggingface",
+                "repo": "HuggingFaceH4/MATH-500",
+                "revision": "6e4ed1a2a79af7d8630a6b768ec859cb5af4d3be",
+                "path": "test.jsonl",
+                "row": 294,
+                "upstream_id": null
+              }
+            }
+          ],
+          "reference_owner_count": 1
+        },
+        {
+          "mode": "literal",
+          "match_kind": "exact_normalized_span",
+          "normalized_start": 113,
+          "normalized_end": 305,
+          "matched_sha256": "fef27fe7e071306ca38f88a3e711503e1caaaaa2f452c7aea00078ce05c51d1b",
+          "reference_owners": [
+            {
+              "reference_id": "984cb06ac2714e6b3b61ed929bca8645233679e85b4a965d638e9f2b1ebfb936",
+              "field": "problem",
+              "field_index": 0,
+              "provenance": {
+                "provider": "huggingface",
+                "repo": "HuggingFaceH4/MATH-500",
+                "revision": "6e4ed1a2a79af7d8630a6b768ec859cb5af4d3be",
+                "path": "test.jsonl",
+                "row": 294,
+                "upstream_id": null
+              }
+            }
+          ],
+          "reference_owner_count": 1
+        }
+      ],
+      "url": "https://web2.0calc.com/questions/help-plz_33275",
+      "repo_name": null
+    },
+    {
+      "source_id": "dclm",
+      "tranche": 2,
+      "row": 12474,
+      "text_sha256": "5a1465c4dc5c551665194e392710d20e09d697738968440292129e1c7c7e561a",
+      "provenance": {
+        "source_id": "dclm",
+        "repo_id": "HuggingFaceFW/dclm_100BT",
+        "revision": "01022d378d944de6deeb1c79d08fecb4d27b2c6f",
+        "shard": "data/000_00040.parquet",
+        "row_group": 770,
+        "row_in_group": 474,
+        "physical_row": 770474
+      },
+      "matches": [
+        {
+          "mode": "prose",
+          "match_kind": "exact_normalized_span",
+          "normalized_start": 257,
+          "normalized_end": 449,
+          "matched_sha256": "ef45c2e42411ba20e1079cb7eafe8121c83a6d0c27dde2e2b3d4e19313e4d5b3",
+          "reference_owners": [
+            {
+              "reference_id": "55758b9eaf8ce8edf61b57ae425d10d7f6148064e4796ef67268c5736453ebe5",
+              "field": "flores_passage",
+              "field_index": 0,
+              "provenance": {
+                "provider": "huggingface",
+                "repo": "facebook/belebele",
+                "revision": "7899cdfa4e1e0d733fd77c848e2c273cb1d32be2",
+                "path": "data/eng_Latn.jsonl",
+                "row": 88,
+                "upstream_id": null
+              }
+            }
+          ],
+          "reference_owner_count": 1
+        },
+        {
+          "mode": "prose",
+          "match_kind": "exact_normalized_span",
+          "normalized_start": 353,
+          "normalized_end": 545,
+          "matched_sha256": "edbbd5f31ebea67712a1960c4d03518913113a809deb1f02114082fa77fc4927",
+          "reference_owners": [
+            {
+              "reference_id": "55758b9eaf8ce8edf61b57ae425d10d7f6148064e4796ef67268c5736453ebe5",
+              "field": "flores_passage",
+              "field_index": 0,
+              "provenance": {
+                "provider": "huggingface",
+                "repo": "facebook/belebele",
+                "revision": "7899cdfa4e1e0d733fd77c848e2c273cb1d32be2",
+                "path": "data/eng_Latn.jsonl",
+                "row": 88,
+                "upstream_id": null
+              }
+            }
+          ],
+          "reference_owner_count": 1
+        },
+        {
+          "mode": "prose",
+          "match_kind": "exact_normalized_span",
+          "normalized_start": 449,
+          "normalized_end": 641,
+          "matched_sha256": "26f2f2e44ff7325e7104c6fdaf6ab42d76f051523f10775cbbe647f41673616c",
+          "reference_owners": [
+            {
+              "reference_id": "55758b9eaf8ce8edf61b57ae425d10d7f6148064e4796ef67268c5736453ebe5",
+              "field": "flores_passage",
+              "field_index": 0,
+              "provenance": {
+                "provider": "huggingface",
+                "repo": "facebook/belebele",
+                "revision": "7899cdfa4e1e0d733fd77c848e2c273cb1d32be2",
+                "path": "data/eng_Latn.jsonl",
+                "row": 88,
+                "upstream_id": null
+              }
+            }
+          ],
+          "reference_owner_count": 1
+        },
+        {
+          "mode": "prose",
+          "match_kind": "exact_normalized_span",
+          "normalized_start": 735,
+          "normalized_end": 927,
+          "matched_sha256": "6b7d46ce6cf25e10090e8b678c182fd63f0d27174ae19ddc3b27d0789214900e",
+          "reference_owners": [
+            {
+              "reference_id": "55758b9eaf8ce8edf61b57ae425d10d7f6148064e4796ef67268c5736453ebe5",
+              "field": "flores_passage",
+              "field_index": 0,
+              "provenance": {
+                "provider": "huggingface",
+                "repo": "facebook/belebele",
+                "revision": "7899cdfa4e1e0d733fd77c848e2c273cb1d32be2",
+                "path": "data/eng_Latn.jsonl",
+                "row": 88,
+                "upstream_id": null
+              }
+            }
+          ],
+          "reference_owner_count": 1
+        },
+        {
+          "mode": "prose",
+          "match_kind": "exact_normalized_span",
+          "normalized_start": 831,
+          "normalized_end": 1023,
+          "matched_sha256": "ec838fc606609c466846ea265b17cd7415166946526788e27a2ded2b390ca642",
+          "reference_owners": [
+            {
+              "reference_id": "55758b9eaf8ce8edf61b57ae425d10d7f6148064e4796ef67268c5736453ebe5",
+              "field": "flores_passage",
+              "field_index": 0,
+              "provenance": {
+                "provider": "huggingface",
+                "repo": "facebook/belebele",
+                "revision": "7899cdfa4e1e0d733fd77c848e2c273cb1d32be2",
+                "path": "data/eng_Latn.jsonl",
+                "row": 88,
+                "upstream_id": null
+              }
+            }
+          ],
+          "reference_owner_count": 1
+        },
+        {
+          "mode": "prose",
+          "match_kind": "exact_normalized_span",
+          "normalized_start": 927,
+          "normalized_end": 1119,
+          "matched_sha256": "26c5cfafeaf06fd693430394ee70e9044fc1c7f2b66f0ac49e7c826011239805",
+          "reference_owners": [
+            {
+              "reference_id": "55758b9eaf8ce8edf61b57ae425d10d7f6148064e4796ef67268c5736453ebe5",
+              "field": "flores_passage",
+              "field_index": 0,
+              "provenance": {
+                "provider": "huggingface",
+                "repo": "facebook/belebele",
+                "revision": "7899cdfa4e1e0d733fd77c848e2c273cb1d32be2",
+                "path": "data/eng_Latn.jsonl",
+                "row": 88,
+                "upstream_id": null
+              }
+            }
+          ],
+          "reference_owner_count": 1
+        }
+      ],
+      "url": "http://en.wikibooks.org/wiki/History_of_Technology/Technological_Determinism",
+      "repo_name": null
+    }
+  ],
+  "candidate_rows": 3,
+  "training_admitted": false,
+  "raw_files_modified": false,
+  "packing_has_consumed_plan": false,
+  "family_or_near_duplicate_expansion_completed": false,
+  "supersedes": "/ssd/scxi253/pretrain500m-20260912-v1/receipts/supplemental-exact-text-exclusions-v1.json",
+  "rule": "Exclude byte-identical content matching these hashes from every training pool before packing; apply broader family/near-duplicate rules separately."
+}

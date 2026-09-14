@@ -1,0 +1,158 @@
+{
+  "method": "first up to 32 eligible rows within the pinned inspection sample",
+  "eligible_license_and_score_rows": 14,
+  "attempted": 14,
+  "verified_code_documents": 14,
+  "sample_sha256": "d8671c0c0b7113c823d961b5464cf20e2cd8205eca8738c526cd08ff7942e671",
+  "sample_bytes": 81355,
+  "training_admitted": false,
+  "still_required": [
+    "cross-source dedup",
+    "benchmark decontamination",
+    "repository split",
+    "full corpus audit"
+  ],
+  "content_hash_note": "blob_id is raw-content SHA-1; do not compare it with sha1_git",
+  "files": [
+    {
+      "blob_id": "1f097ee011e245ac5ea3f59ea908cadfbb44c4fd",
+      "url": "https://softwareheritage.s3.amazonaws.com/content/1f097ee011e245ac5ea3f59ea908cadfbb44c4fd",
+      "checked_utc": "2026-09-13T16:54:15.229626+00:00",
+      "http_status": 200,
+      "status": "CONTENT_IDENTITY_VERIFIED",
+      "bytes": 1315,
+      "sha1": "1f097ee011e245ac5ea3f59ea908cadfbb44c4fd",
+      "sha256": "a70bc883e849878b1264db987fa13fc10fa96bad77c5e3d92d713b67f103fc8c"
+    },
+    {
+      "blob_id": "e73eb0c8ad6ccd31af4b2efa0beb021a65cf35d7",
+      "url": "https://softwareheritage.s3.amazonaws.com/content/e73eb0c8ad6ccd31af4b2efa0beb021a65cf35d7",
+      "checked_utc": "2026-09-13T16:54:15.229944+00:00",
+      "http_status": 200,
+      "status": "CONTENT_IDENTITY_VERIFIED",
+      "bytes": 18747,
+      "sha1": "e73eb0c8ad6ccd31af4b2efa0beb021a65cf35d7",
+      "sha256": "ec5bb383d29efea13b9878c69fe550efa93022d95b22d972a24d6f22e6252eb2"
+    },
+    {
+      "blob_id": "d937dc36be74f8d8b445162c0e7699dd74dc9eca",
+      "url": "https://softwareheritage.s3.amazonaws.com/content/d937dc36be74f8d8b445162c0e7699dd74dc9eca",
+      "checked_utc": "2026-09-13T16:54:15.230053+00:00",
+      "http_status": 200,
+      "status": "CONTENT_IDENTITY_VERIFIED",
+      "bytes": 7792,
+      "sha1": "d937dc36be74f8d8b445162c0e7699dd74dc9eca",
+      "sha256": "06a06ef4f2b35c9ab1a5961e60747141a900a0022de844d94e5587c343ba5bd1"
+    },
+    {
+      "blob_id": "f8d280e974468076f15fd16d8f038f228823aae0",
+      "url": "https://softwareheritage.s3.amazonaws.com/content/f8d280e974468076f15fd16d8f038f228823aae0",
+      "checked_utc": "2026-09-13T16:54:16.365410+00:00",
+      "http_status": 200,
+      "status": "CONTENT_IDENTITY_VERIFIED",
+      "bytes": 1574,
+      "sha1": "f8d280e974468076f15fd16d8f038f228823aae0",
+      "sha256": "8bcce0ca3db3fc64a45d3d7bc73ee525673f5f0d2e48444a2cc389d71c07f0ce"
+    },
+    {
+      "blob_id": "38903df7bb5843fb5e2c7877d66c2f96f6de1aef",
+      "url": "https://softwareheritage.s3.amazonaws.com/content/38903df7bb5843fb5e2c7877d66c2f96f6de1aef",
+      "checked_utc": "2026-09-13T16:54:16.456158+00:00",
+      "http_status": 200,
+      "status": "CONTENT_IDENTITY_VERIFIED",
+      "bytes": 4793,
+      "sha1": "38903df7bb5843fb5e2c7877d66c2f96f6de1aef",
+      "sha256": "4556bfbe6f938ffacbb3fd0802de35ff77387fcedec6edbe826c9f89c26123ff"
+    },
+    {
+      "blob_id": "5a8163aadb2014a93b3783a19940d7a21dee729f",
+      "url": "https://softwareheritage.s3.amazonaws.com/content/5a8163aadb2014a93b3783a19940d7a21dee729f",
+      "checked_utc": "2026-09-13T16:54:16.492320+00:00",
+      "http_status": 200,
+      "status": "CONTENT_IDENTITY_VERIFIED",
+      "bytes": 928,
+      "sha1": "5a8163aadb2014a93b3783a19940d7a21dee729f",
+      "sha256": "136835c67b3822505d9a75c237006dea993f802e8c49ab0f4b33e0f3d58b294a"
+    },
+    {
+      "blob_id": "c91b3fcb8fb00e5687148a3aa512a3ed983289ca",
+      "url": "https://softwareheritage.s3.amazonaws.com/content/c91b3fcb8fb00e5687148a3aa512a3ed983289ca",
+      "checked_utc": "2026-09-13T16:54:17.410798+00:00",
+      "http_status": 200,
+      "status": "CONTENT_IDENTITY_VERIFIED",
+      "bytes": 389,
+      "sha1": "c91b3fcb8fb00e5687148a3aa512a3ed983289ca",
+      "sha256": "80e093b08c8bace164b64591de6d16b25ac8ba527c063aa6fe75ca2aad85ff37"
+    },
+    {
+      "blob_id": "848a4670f90f73983e3cbb14d1e398d03844a6d3",
+      "url": "https://softwareheritage.s3.amazonaws.com/content/848a4670f90f73983e3cbb14d1e398d03844a6d3",
+      "checked_utc": "2026-09-13T16:54:17.624204+00:00",
+      "http_status": 200,
+      "status": "CONTENT_IDENTITY_VERIFIED",
+      "bytes": 16597,
+      "sha1": "848a4670f90f73983e3cbb14d1e398d03844a6d3",
+      "sha256": "d35681d6a1d2579b6ba9124d1ebb7744b8bdc9845d83a279c28044d33fc94e5f"
+    },
+    {
+      "blob_id": "8c74faf40fa0361adb67f8c1821f4f0caf668b27",
+      "url": "https://softwareheritage.s3.amazonaws.com/content/8c74faf40fa0361adb67f8c1821f4f0caf668b27",
+      "checked_utc": "2026-09-13T16:54:17.675374+00:00",
+      "http_status": 200,
+      "status": "CONTENT_IDENTITY_VERIFIED",
+      "bytes": 3625,
+      "sha1": "8c74faf40fa0361adb67f8c1821f4f0caf668b27",
+      "sha256": "502966a24745387f1f4c29bef2a88f55b8fae5adf3367362a91f0e861fd307a4"
+    },
+    {
+      "blob_id": "224645ab10ea6055168db0c4c4257347c89cbe7a",
+      "url": "https://softwareheritage.s3.amazonaws.com/content/224645ab10ea6055168db0c4c4257347c89cbe7a",
+      "checked_utc": "2026-09-13T16:54:18.536221+00:00",
+      "http_status": 200,
+      "status": "CONTENT_IDENTITY_VERIFIED",
+      "bytes": 4527,
+      "sha1": "224645ab10ea6055168db0c4c4257347c89cbe7a",
+      "sha256": "9f7e037840683d1852afe802bd135dc03f78759c37875b9ffa6da6deaf418b46"
+    },
+    {
+      "blob_id": "51a445b2401607922e14b355cbef47bbc9348fab",
+      "url": "https://softwareheritage.s3.amazonaws.com/content/51a445b2401607922e14b355cbef47bbc9348fab",
+      "checked_utc": "2026-09-13T16:54:18.741713+00:00",
+      "http_status": 200,
+      "status": "CONTENT_IDENTITY_VERIFIED",
+      "bytes": 4527,
+      "sha1": "51a445b2401607922e14b355cbef47bbc9348fab",
+      "sha256": "418ddff206444a507494d41206d18dab380a9fa3a9b686bb0dbad5f4804d7b5a"
+    },
+    {
+      "blob_id": "032484f8617b2e0ecaf44b8b3085f69f308e9b44",
+      "url": "https://softwareheritage.s3.amazonaws.com/content/032484f8617b2e0ecaf44b8b3085f69f308e9b44",
+      "checked_utc": "2026-09-13T16:54:18.904370+00:00",
+      "http_status": 200,
+      "status": "CONTENT_IDENTITY_VERIFIED",
+      "bytes": 4753,
+      "sha1": "032484f8617b2e0ecaf44b8b3085f69f308e9b44",
+      "sha256": "b9f2eb4b8041a3cda3627de255b8ba09447c643b9a07156b6935a34398b59ca5"
+    },
+    {
+      "blob_id": "7cc99c0b6593706a5291a6143143d2a6c3d8945e",
+      "url": "https://softwareheritage.s3.amazonaws.com/content/7cc99c0b6593706a5291a6143143d2a6c3d8945e",
+      "checked_utc": "2026-09-13T16:54:19.645966+00:00",
+      "http_status": 200,
+      "status": "CONTENT_IDENTITY_VERIFIED",
+      "bytes": 3631,
+      "sha1": "7cc99c0b6593706a5291a6143143d2a6c3d8945e",
+      "sha256": "da64953906e50545f2229160442d167e91cc614b4896950ae8887300f8f2f628"
+    },
+    {
+      "blob_id": "f949eba590f0f74aca887152decbeed1a8fb2d0c",
+      "url": "https://softwareheritage.s3.amazonaws.com/content/f949eba590f0f74aca887152decbeed1a8fb2d0c",
+      "checked_utc": "2026-09-13T16:54:19.791263+00:00",
+      "http_status": 200,
+      "status": "CONTENT_IDENTITY_VERIFIED",
+      "bytes": 1784,
+      "sha1": "f949eba590f0f74aca887152decbeed1a8fb2d0c",
+      "sha256": "7e3b0b7c56a815f13a26038e211cf0ff45ccddf2e376b279ad835dbdf0025d8e"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "checked_utc": "2026-09-13T18:40:28.343066+00:00",
+  "status": "GPU_RECOVERY_AND_RAW_DATA_INTAKE_RUNNING",
+  "gpu_job": {
+    "id": 1588191,
+    "state": "RUNNING",
+    "node": "wqd10nbj01g3",
+    "gpu_count": 4,
+    "gpu_model": "RTX 5090",
+    "elapsed": "15:39",
+    "purpose": "Frozen-data continuous versus resumed GPU training qualification",
+    "continuous_final_step": 32,
+    "continuous_recent_10_mfu_median": 0.7754902767128327,
+    "split_latest_step": 17,
+    "split_latest_mfu": 0.2730822236765495,
+    "split_recent_10_mfu_median": 0.77602577740729,
+    "split_window_caveat": "This window spans the process restart. The first resumed step includes compilation; a post-restart steady window and final comparison remain pending.",
+    "exact_recovery_comparison": "PENDING",
+    "formal_quality_gain": false
+  },
+  "raw_data_intake": {
+    "ready_sources": 15,
+    "written_rows": 44078,
+    "blocked": [],
+    "active_sources": ["pdf_en"],
+    "training_admitted": false,
+    "remaining": "Measure retained source and family deficits, acquire additional disjoint segments as required, deduplicate, decontaminate, split validation families, and pack before mixture screening."
+  },
+  "remote_disk_available_df_h": "27G",
+  "local_cleanup": {
+    "receipt": "cleanup-local-pip-20260913.json",
+    "verified_absent_files": 4037,
+    "logical_bytes_removed": 4893010803
+  }
+}

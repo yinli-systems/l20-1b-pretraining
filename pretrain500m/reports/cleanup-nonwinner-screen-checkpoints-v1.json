@@ -1,0 +1,59 @@
+{
+  "active_owned_jobs": [],
+  "bytes_planned": 14235028062,
+  "bytes_removed": 14235028062,
+  "completed_utc": "2026-09-14T02:37:35.337226+00:00",
+  "created_utc": "2026-09-14T02:37:32.771452+00:00",
+  "owner": "pretrain500m 2026-09-12 isolated run; owner task 01a09290-b43f-7431-be8a-412ea5d37954",
+  "preserved": "all F3 checkpoints and every log, metric, manifest, status, and digest sidecar",
+  "schema_version": 1,
+  "selection_receipt": "/ssd/scxi253/pretrain500m-20260912-v1/receipts/frozen-two-seed-screen-selection-v1.json",
+  "selection_sha256": "0b81f83f0b7a78f9b35575c856fc904e2dd7830e93d33ce896afab56823bf9da",
+  "status": "VERIFIED_ABSENT",
+  "targets": [
+    {
+      "bytes": 2372504677,
+      "hardlinks": 1,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/screens-v2/F0_existing_web_control-1588453/train/model-final.pt",
+      "sha256": "8784c17737488c9b30d273aaeb3d65e58a3d290405e6ddacca5094393cd04e3d",
+      "uid": 1256
+    },
+    {
+      "bytes": 2372504677,
+      "hardlinks": 1,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/screens-v3/F0_existing_web_control-seed20260915-1588561/train/model-final.pt",
+      "sha256": "111be00221a7448a389cc82885051762dc35fefec5c5ac12006fd3a79cf0aef2",
+      "uid": 1256
+    },
+    {
+      "bytes": 2372504677,
+      "hardlinks": 1,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/screens-v3/F1_broad_english_no_synthetic-seed20260914-1588467/train/model-final.pt",
+      "sha256": "cd64090e27902580ffd155007e102202c91eb814b85b8016051596c717592001",
+      "uid": 1256
+    },
+    {
+      "bytes": 2372504677,
+      "hardlinks": 1,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/screens-v3/F1_broad_english_no_synthetic-seed20260915-1588468/train/model-final.pt",
+      "sha256": "0d2a45c4c8071df2cf894f57661ec02940e963d23bcfe83463b3ea9d84c1b694",
+      "uid": 1256
+    },
+    {
+      "bytes": 2372504677,
+      "hardlinks": 1,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/screens-v3/F2_reasoning_no_synthetic-seed20260914-1588523/train/model-final.pt",
+      "sha256": "52e7944d7d604df4dbf8875f3f76e026b30af22191254dfb682cb7b9f084be1f",
+      "uid": 1256
+    },
+    {
+      "bytes": 2372504677,
+      "hardlinks": 1,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/screens-v3/F2_reasoning_no_synthetic-seed20260915-1588524/train/model-final.pt",
+      "sha256": "5c6c93b36484316324af1aa9bb82a6abca895c486ec7bf2f107ed26cac639522",
+      "uid": 1256
+    }
+  ],
+  "verified_absent": true,
+  "winner_preserved": "F3_broad_multilingual_no_synthetic"
+}

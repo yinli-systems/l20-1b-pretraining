@@ -1,0 +1,443 @@
+{
+  "schema": "p529m-benchmark-reservation-v1",
+  "status": "PINNED_REFERENCE_ACQUISITION_PENDING",
+  "training_admitted": false,
+  "scope": "Supplemental code, mathematics, multilingual and instruction benchmark reservation; legacy seven-task decontamination still required separately.",
+  "expected_total_bytes": 12016431,
+  "files": [
+    {
+      "provider": "huggingface",
+      "repo": "openai/openai_humaneval",
+      "revision": "7dce6050a7d6d172f3cc5c32aa97f52fa1a2e544",
+      "path": "openai_humaneval/test-00000-of-00001.parquet",
+      "bytes": 83920,
+      "sha256": "2f2871a15fbc95b6c683043359f4ed8e144c5a1c4f24f25f66bc51f598dfcfb6",
+      "git_blob_sha1": null,
+      "declared_license": [
+        "mit"
+      ],
+      "domain": "code",
+      "purpose": "benchmark_reference_only",
+      "url": "https://huggingface.co/datasets/openai/openai_humaneval/resolve/7dce6050a7d6d172f3cc5c32aa97f52fa1a2e544/openai_humaneval/test-00000-of-00001.parquet?download=true"
+    },
+    {
+      "provider": "huggingface",
+      "repo": "google-research-datasets/mbpp",
+      "revision": "4bb6404fdc6cacfda99d4ac4205087b89d32030c",
+      "path": "full/prompt-00000-of-00001.parquet",
+      "bytes": 7878,
+      "sha256": "a053e4bb85ceb77430ae80592addb4ca4dc6ba087592f9e04537800ee88b7431",
+      "git_blob_sha1": null,
+      "declared_license": [
+        "cc-by-4.0"
+      ],
+      "domain": "code",
+      "purpose": "benchmark_reference_only",
+      "url": "https://huggingface.co/datasets/google-research-datasets/mbpp/resolve/4bb6404fdc6cacfda99d4ac4205087b89d32030c/full/prompt-00000-of-00001.parquet?download=true"
+    },
+    {
+      "provider": "huggingface",
+      "repo": "google-research-datasets/mbpp",
+      "revision": "4bb6404fdc6cacfda99d4ac4205087b89d32030c",
+      "path": "full/test-00000-of-00001.parquet",
+      "bytes": 115824,
+      "sha256": "566fd53060ffba5766dace1d1e2f4c38906781526de222b0dfbdbc325b696c77",
+      "git_blob_sha1": null,
+      "declared_license": [
+        "cc-by-4.0"
+      ],
+      "domain": "code",
+      "purpose": "benchmark_reference_only",
+      "url": "https://huggingface.co/datasets/google-research-datasets/mbpp/resolve/4bb6404fdc6cacfda99d4ac4205087b89d32030c/full/test-00000-of-00001.parquet?download=true"
+    },
+    {
+      "provider": "huggingface",
+      "repo": "google-research-datasets/mbpp",
+      "revision": "4bb6404fdc6cacfda99d4ac4205087b89d32030c",
+      "path": "full/train-00000-of-00001.parquet",
+      "bytes": 87223,
+      "sha256": "09d125ca31edacb7800be8c67c45abff618faf0214ff551291817d06bdb914ae",
+      "git_blob_sha1": null,
+      "declared_license": [
+        "cc-by-4.0"
+      ],
+      "domain": "code",
+      "purpose": "benchmark_reference_only",
+      "url": "https://huggingface.co/datasets/google-research-datasets/mbpp/resolve/4bb6404fdc6cacfda99d4ac4205087b89d32030c/full/train-00000-of-00001.parquet?download=true"
+    },
+    {
+      "provider": "huggingface",
+      "repo": "google-research-datasets/mbpp",
+      "revision": "4bb6404fdc6cacfda99d4ac4205087b89d32030c",
+      "path": "full/validation-00000-of-00001.parquet",
+      "bytes": 25144,
+      "sha256": "3f0ec060987432d99fe8fb409d31e6c67445b208a01741c5583517c80a10fe80",
+      "git_blob_sha1": null,
+      "declared_license": [
+        "cc-by-4.0"
+      ],
+      "domain": "code",
+      "purpose": "benchmark_reference_only",
+      "url": "https://huggingface.co/datasets/google-research-datasets/mbpp/resolve/4bb6404fdc6cacfda99d4ac4205087b89d32030c/full/validation-00000-of-00001.parquet?download=true"
+    },
+    {
+      "provider": "huggingface",
+      "repo": "google-research-datasets/mbpp",
+      "revision": "4bb6404fdc6cacfda99d4ac4205087b89d32030c",
+      "path": "sanitized/prompt-00000-of-00001.parquet",
+      "bytes": 6717,
+      "sha256": "73c623309b7b5d65fd5661204b35f779f8e66301aa9832d1ad4b8fc3b21151fd",
+      "git_blob_sha1": null,
+      "declared_license": [
+        "cc-by-4.0"
+      ],
+      "domain": "code",
+      "purpose": "benchmark_reference_only",
+      "url": "https://huggingface.co/datasets/google-research-datasets/mbpp/resolve/4bb6404fdc6cacfda99d4ac4205087b89d32030c/sanitized/prompt-00000-of-00001.parquet?download=true"
+    },
+    {
+      "provider": "huggingface",
+      "repo": "google-research-datasets/mbpp",
+      "revision": "4bb6404fdc6cacfda99d4ac4205087b89d32030c",
+      "path": "sanitized/test-00000-of-00001.parquet",
+      "bytes": 60864,
+      "sha256": "e9e9efa2c0d59ef5e55537a9d126b8f875d5ac010a8d75628d76824884e15850",
+      "git_blob_sha1": null,
+      "declared_license": [
+        "cc-by-4.0"
+      ],
+      "domain": "code",
+      "purpose": "benchmark_reference_only",
+      "url": "https://huggingface.co/datasets/google-research-datasets/mbpp/resolve/4bb6404fdc6cacfda99d4ac4205087b89d32030c/sanitized/test-00000-of-00001.parquet?download=true"
+    },
+    {
+      "provider": "huggingface",
+      "repo": "google-research-datasets/mbpp",
+      "revision": "4bb6404fdc6cacfda99d4ac4205087b89d32030c",
+      "path": "sanitized/train-00000-of-00001.parquet",
+      "bytes": 33854,
+      "sha256": "d95f8ad6d2fff08fe4826122d6e3e31f75716825d0c5c340d297aca5e9e0de0e",
+      "git_blob_sha1": null,
+      "declared_license": [
+        "cc-by-4.0"
+      ],
+      "domain": "code",
+      "purpose": "benchmark_reference_only",
+      "url": "https://huggingface.co/datasets/google-research-datasets/mbpp/resolve/4bb6404fdc6cacfda99d4ac4205087b89d32030c/sanitized/train-00000-of-00001.parquet?download=true"
+    },
+    {
+      "provider": "huggingface",
+      "repo": "google-research-datasets/mbpp",
+      "revision": "4bb6404fdc6cacfda99d4ac4205087b89d32030c",
+      "path": "sanitized/validation-00000-of-00001.parquet",
+      "bytes": 13987,
+      "sha256": "27e065fcab3c863959933328a7fdbf404e1bcb5464b1be6fe0dcd9530e420204",
+      "git_blob_sha1": null,
+      "declared_license": [
+        "cc-by-4.0"
+      ],
+      "domain": "code",
+      "purpose": "benchmark_reference_only",
+      "url": "https://huggingface.co/datasets/google-research-datasets/mbpp/resolve/4bb6404fdc6cacfda99d4ac4205087b89d32030c/sanitized/validation-00000-of-00001.parquet?download=true"
+    },
+    {
+      "provider": "huggingface",
+      "repo": "google/IFEval",
+      "revision": "966cd89545d6b6acfd7638bc708b98261ca58e84",
+      "path": "ifeval_input_data.jsonl",
+      "bytes": 207111,
+      "sha256": null,
+      "git_blob_sha1": "7c875005c09550bc3fd94c7f42867f78490bc554",
+      "declared_license": "apache-2.0",
+      "domain": "instructions",
+      "purpose": "benchmark_reference_only",
+      "url": "https://huggingface.co/datasets/google/IFEval/resolve/966cd89545d6b6acfd7638bc708b98261ca58e84/ifeval_input_data.jsonl?download=true"
+    },
+    {
+      "provider": "huggingface",
+      "repo": "facebook/belebele",
+      "revision": "7899cdfa4e1e0d733fd77c848e2c273cb1d32be2",
+      "path": "data/arb_Arab.jsonl",
+      "bytes": 2847724,
+      "sha256": null,
+      "git_blob_sha1": "ad431fd6ec25ea4269350292170122313e1ead75",
+      "declared_license": "cc-by-sa-4.0",
+      "domain": "multilingual_reading",
+      "purpose": "benchmark_reference_only",
+      "url": "https://huggingface.co/datasets/facebook/belebele/resolve/7899cdfa4e1e0d733fd77c848e2c273cb1d32be2/data/arb_Arab.jsonl?download=true"
+    },
+    {
+      "provider": "huggingface",
+      "repo": "facebook/belebele",
+      "revision": "7899cdfa4e1e0d733fd77c848e2c273cb1d32be2",
+      "path": "data/deu_Latn.jsonl",
+      "bytes": 965468,
+      "sha256": null,
+      "git_blob_sha1": "4b4b53c502886ab82cb0048295afc48bdcb034b0",
+      "declared_license": "cc-by-sa-4.0",
+      "domain": "multilingual_reading",
+      "purpose": "benchmark_reference_only",
+      "url": "https://huggingface.co/datasets/facebook/belebele/resolve/7899cdfa4e1e0d733fd77c848e2c273cb1d32be2/data/deu_Latn.jsonl?download=true"
+    },
+    {
+      "provider": "huggingface",
+      "repo": "facebook/belebele",
+      "revision": "7899cdfa4e1e0d733fd77c848e2c273cb1d32be2",
+      "path": "data/eng_Latn.jsonl",
+      "bytes": 836071,
+      "sha256": null,
+      "git_blob_sha1": "a678517e601a401ba28a8c51287b7e186b161ef6",
+      "declared_license": "cc-by-sa-4.0",
+      "domain": "multilingual_reading",
+      "purpose": "benchmark_reference_only",
+      "url": "https://huggingface.co/datasets/facebook/belebele/resolve/7899cdfa4e1e0d733fd77c848e2c273cb1d32be2/data/eng_Latn.jsonl?download=true"
+    },
+    {
+      "provider": "huggingface",
+      "repo": "facebook/belebele",
+      "revision": "7899cdfa4e1e0d733fd77c848e2c273cb1d32be2",
+      "path": "data/fra_Latn.jsonl",
+      "bytes": 1084944,
+      "sha256": null,
+      "git_blob_sha1": "14a302455c98e0768bda44522bc1a126b0b03a52",
+      "declared_license": "cc-by-sa-4.0",
+      "domain": "multilingual_reading",
+      "purpose": "benchmark_reference_only",
+      "url": "https://huggingface.co/datasets/facebook/belebele/resolve/7899cdfa4e1e0d733fd77c848e2c273cb1d32be2/data/fra_Latn.jsonl?download=true"
+    },
+    {
+      "provider": "huggingface",
+      "repo": "facebook/belebele",
+      "revision": "7899cdfa4e1e0d733fd77c848e2c273cb1d32be2",
+      "path": "data/jpn_Jpan.jsonl",
+      "bytes": 1716297,
+      "sha256": null,
+      "git_blob_sha1": "e1db8f457523bda1a524b8119bbbd7475268276b",
+      "declared_license": "cc-by-sa-4.0",
+      "domain": "multilingual_reading",
+      "purpose": "benchmark_reference_only",
+      "url": "https://huggingface.co/datasets/facebook/belebele/resolve/7899cdfa4e1e0d733fd77c848e2c273cb1d32be2/data/jpn_Jpan.jsonl?download=true"
+    },
+    {
+      "provider": "huggingface",
+      "repo": "facebook/belebele",
+      "revision": "7899cdfa4e1e0d733fd77c848e2c273cb1d32be2",
+      "path": "data/spa_Latn.jsonl",
+      "bytes": 1000865,
+      "sha256": null,
+      "git_blob_sha1": "51b7c9d9eff46187aa79bd0c878728c3e3a23aba",
+      "declared_license": "cc-by-sa-4.0",
+      "domain": "multilingual_reading",
+      "purpose": "benchmark_reference_only",
+      "url": "https://huggingface.co/datasets/facebook/belebele/resolve/7899cdfa4e1e0d733fd77c848e2c273cb1d32be2/data/spa_Latn.jsonl?download=true"
+    },
+    {
+      "provider": "huggingface",
+      "repo": "facebook/belebele",
+      "revision": "7899cdfa4e1e0d733fd77c848e2c273cb1d32be2",
+      "path": "data/zho_Hans.jsonl",
+      "bytes": 1285910,
+      "sha256": null,
+      "git_blob_sha1": "36ae417c066c4ed1cb226a2ddb9e1b76861acd9d",
+      "declared_license": "cc-by-sa-4.0",
+      "domain": "multilingual_reading",
+      "purpose": "benchmark_reference_only",
+      "url": "https://huggingface.co/datasets/facebook/belebele/resolve/7899cdfa4e1e0d733fd77c848e2c273cb1d32be2/data/zho_Hans.jsonl?download=true"
+    },
+    {
+      "provider": "huggingface",
+      "repo": "HuggingFaceH4/MATH-500",
+      "revision": "6e4ed1a2a79af7d8630a6b768ec859cb5af4d3be",
+      "path": "test.jsonl",
+      "bytes": 446564,
+      "sha256": null,
+      "git_blob_sha1": "2376b9a194b46c0790e197c91b7249e5f88ac09b",
+      "declared_license": null,
+      "domain": "math",
+      "purpose": "benchmark_reference_only",
+      "url": "https://huggingface.co/datasets/HuggingFaceH4/MATH-500/resolve/6e4ed1a2a79af7d8630a6b768ec859cb5af4d3be/test.jsonl?download=true"
+    },
+    {
+      "provider": "github",
+      "repo": "google-research/url-nlp",
+      "revision": "452a21ad3dae5668c06ceeac21ff073e1e40f9be",
+      "path": "mgsm/LICENSE",
+      "bytes": 14990,
+      "sha256": null,
+      "git_blob_sha1": "36790535ceb416da90d11bbdd65e5258d3b1951f",
+      "declared_license": "cc-by-sa-4.0",
+      "domain": "multilingual_math",
+      "purpose": "source_documentation",
+      "url": "https://raw.githubusercontent.com/google-research/url-nlp/452a21ad3dae5668c06ceeac21ff073e1e40f9be/mgsm/LICENSE"
+    },
+    {
+      "provider": "github",
+      "repo": "google-research/url-nlp",
+      "revision": "452a21ad3dae5668c06ceeac21ff073e1e40f9be",
+      "path": "mgsm/README.md",
+      "bytes": 734,
+      "sha256": null,
+      "git_blob_sha1": "6a2475bfc8fa8733d8ca070b56b8aa92ab04ca5f",
+      "declared_license": "cc-by-sa-4.0",
+      "domain": "multilingual_math",
+      "purpose": "source_documentation",
+      "url": "https://raw.githubusercontent.com/google-research/url-nlp/452a21ad3dae5668c06ceeac21ff073e1e40f9be/mgsm/README.md"
+    },
+    {
+      "provider": "github",
+      "repo": "google-research/url-nlp",
+      "revision": "452a21ad3dae5668c06ceeac21ff073e1e40f9be",
+      "path": "mgsm/exemplars.py",
+      "bytes": 104924,
+      "sha256": null,
+      "git_blob_sha1": "98cb95b816cc3cd3bf9d3e2a1d87f82332a1516a",
+      "declared_license": "cc-by-sa-4.0",
+      "domain": "multilingual_math",
+      "purpose": "benchmark_reference_only",
+      "url": "https://raw.githubusercontent.com/google-research/url-nlp/452a21ad3dae5668c06ceeac21ff073e1e40f9be/mgsm/exemplars.py"
+    },
+    {
+      "provider": "github",
+      "repo": "google-research/url-nlp",
+      "revision": "452a21ad3dae5668c06ceeac21ff073e1e40f9be",
+      "path": "mgsm/mgsm_bn.tsv",
+      "bytes": 156684,
+      "sha256": null,
+      "git_blob_sha1": "8a14ad80f60e4c9bdb07f0281a7559a6c28d3593",
+      "declared_license": "cc-by-sa-4.0",
+      "domain": "multilingual_math",
+      "purpose": "benchmark_reference_only",
+      "url": "https://raw.githubusercontent.com/google-research/url-nlp/452a21ad3dae5668c06ceeac21ff073e1e40f9be/mgsm/mgsm_bn.tsv"
+    },
+    {
+      "provider": "github",
+      "repo": "google-research/url-nlp",
+      "revision": "452a21ad3dae5668c06ceeac21ff073e1e40f9be",
+      "path": "mgsm/mgsm_de.tsv",
+      "bytes": 69640,
+      "sha256": null,
+      "git_blob_sha1": "328073633236d55a937b3e5f3a94a8daec48fc5d",
+      "declared_license": "cc-by-sa-4.0",
+      "domain": "multilingual_math",
+      "purpose": "benchmark_reference_only",
+      "url": "https://raw.githubusercontent.com/google-research/url-nlp/452a21ad3dae5668c06ceeac21ff073e1e40f9be/mgsm/mgsm_de.tsv"
+    },
+    {
+      "provider": "github",
+      "repo": "google-research/url-nlp",
+      "revision": "452a21ad3dae5668c06ceeac21ff073e1e40f9be",
+      "path": "mgsm/mgsm_en.tsv",
+      "bytes": 61299,
+      "sha256": null,
+      "git_blob_sha1": "40ebde3e9206309211b5ef2634d8d5dbd33c1b84",
+      "declared_license": "cc-by-sa-4.0",
+      "domain": "multilingual_math",
+      "purpose": "benchmark_reference_only",
+      "url": "https://raw.githubusercontent.com/google-research/url-nlp/452a21ad3dae5668c06ceeac21ff073e1e40f9be/mgsm/mgsm_en.tsv"
+    },
+    {
+      "provider": "github",
+      "repo": "google-research/url-nlp",
+      "revision": "452a21ad3dae5668c06ceeac21ff073e1e40f9be",
+      "path": "mgsm/mgsm_es.tsv",
+      "bytes": 66896,
+      "sha256": null,
+      "git_blob_sha1": "44a27c01c034010b0fe47af55d95720f912a5c66",
+      "declared_license": "cc-by-sa-4.0",
+      "domain": "multilingual_math",
+      "purpose": "benchmark_reference_only",
+      "url": "https://raw.githubusercontent.com/google-research/url-nlp/452a21ad3dae5668c06ceeac21ff073e1e40f9be/mgsm/mgsm_es.tsv"
+    },
+    {
+      "provider": "github",
+      "repo": "google-research/url-nlp",
+      "revision": "452a21ad3dae5668c06ceeac21ff073e1e40f9be",
+      "path": "mgsm/mgsm_fr.tsv",
+      "bytes": 69141,
+      "sha256": null,
+      "git_blob_sha1": "85474473613e2a10c6e060dbd63c684c27889720",
+      "declared_license": "cc-by-sa-4.0",
+      "domain": "multilingual_math",
+      "purpose": "benchmark_reference_only",
+      "url": "https://raw.githubusercontent.com/google-research/url-nlp/452a21ad3dae5668c06ceeac21ff073e1e40f9be/mgsm/mgsm_fr.tsv"
+    },
+    {
+      "provider": "github",
+      "repo": "google-research/url-nlp",
+      "revision": "452a21ad3dae5668c06ceeac21ff073e1e40f9be",
+      "path": "mgsm/mgsm_ja.tsv",
+      "bytes": 81043,
+      "sha256": null,
+      "git_blob_sha1": "8ffeefab976f7dae262a52be91c4cbf65427e455",
+      "declared_license": "cc-by-sa-4.0",
+      "domain": "multilingual_math",
+      "purpose": "benchmark_reference_only",
+      "url": "https://raw.githubusercontent.com/google-research/url-nlp/452a21ad3dae5668c06ceeac21ff073e1e40f9be/mgsm/mgsm_ja.tsv"
+    },
+    {
+      "provider": "github",
+      "repo": "google-research/url-nlp",
+      "revision": "452a21ad3dae5668c06ceeac21ff073e1e40f9be",
+      "path": "mgsm/mgsm_ru.tsv",
+      "bytes": 110953,
+      "sha256": null,
+      "git_blob_sha1": "d7817a2bb170085f5677d63409b0cb52f164159b",
+      "declared_license": "cc-by-sa-4.0",
+      "domain": "multilingual_math",
+      "purpose": "benchmark_reference_only",
+      "url": "https://raw.githubusercontent.com/google-research/url-nlp/452a21ad3dae5668c06ceeac21ff073e1e40f9be/mgsm/mgsm_ru.tsv"
+    },
+    {
+      "provider": "github",
+      "repo": "google-research/url-nlp",
+      "revision": "452a21ad3dae5668c06ceeac21ff073e1e40f9be",
+      "path": "mgsm/mgsm_sw.tsv",
+      "bytes": 67456,
+      "sha256": null,
+      "git_blob_sha1": "ab6238a88aeaecdbda841bf01855d30367313504",
+      "declared_license": "cc-by-sa-4.0",
+      "domain": "multilingual_math",
+      "purpose": "benchmark_reference_only",
+      "url": "https://raw.githubusercontent.com/google-research/url-nlp/452a21ad3dae5668c06ceeac21ff073e1e40f9be/mgsm/mgsm_sw.tsv"
+    },
+    {
+      "provider": "github",
+      "repo": "google-research/url-nlp",
+      "revision": "452a21ad3dae5668c06ceeac21ff073e1e40f9be",
+      "path": "mgsm/mgsm_te.tsv",
+      "bytes": 176547,
+      "sha256": null,
+      "git_blob_sha1": "3f5505f82da89c1470054dcce6486b587703c49b",
+      "declared_license": "cc-by-sa-4.0",
+      "domain": "multilingual_math",
+      "purpose": "benchmark_reference_only",
+      "url": "https://raw.githubusercontent.com/google-research/url-nlp/452a21ad3dae5668c06ceeac21ff073e1e40f9be/mgsm/mgsm_te.tsv"
+    },
+    {
+      "provider": "github",
+      "repo": "google-research/url-nlp",
+      "revision": "452a21ad3dae5668c06ceeac21ff073e1e40f9be",
+      "path": "mgsm/mgsm_th.tsv",
+      "bytes": 151921,
+      "sha256": null,
+      "git_blob_sha1": "db1c4b24777da7530b39a63e452d91e655c51490",
+      "declared_license": "cc-by-sa-4.0",
+      "domain": "multilingual_math",
+      "purpose": "benchmark_reference_only",
+      "url": "https://raw.githubusercontent.com/google-research/url-nlp/452a21ad3dae5668c06ceeac21ff073e1e40f9be/mgsm/mgsm_th.tsv"
+    },
+    {
+      "provider": "github",
+      "repo": "google-research/url-nlp",
+      "revision": "452a21ad3dae5668c06ceeac21ff073e1e40f9be",
+      "path": "mgsm/mgsm_zh.tsv",
+      "bytes": 57838,
+      "sha256": null,
+      "git_blob_sha1": "60d740933a9ee72abca71907127aa061609ac867",
+      "declared_license": "cc-by-sa-4.0",
+      "domain": "multilingual_math",
+      "purpose": "benchmark_reference_only",
+      "url": "https://raw.githubusercontent.com/google-research/url-nlp/452a21ad3dae5668c06ceeac21ff073e1e40f9be/mgsm/mgsm_zh.tsv"
+    }
+  ]
+}

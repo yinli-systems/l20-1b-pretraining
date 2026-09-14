@@ -1,0 +1,181 @@
+{
+  "segments": [
+    {
+      "bytes": 3154340075,
+      "id": "dclm",
+      "max_rows_per_group": 1000,
+      "min_rows_per_group": 941,
+      "network_bytes": 3070035,
+      "path": "data/000_00040.parquet",
+      "repo_id": "HuggingFaceFW/dclm_100BT",
+      "row_groups": 894,
+      "rows": 893941
+    },
+    {
+      "bytes": 3067667936,
+      "id": "pdf_en",
+      "max_rows_per_group": 1000,
+      "min_rows_per_group": 591,
+      "network_bytes": 1027085,
+      "path": "data/eng_Latn/train/000_00034.parquet",
+      "repo_id": "HuggingFaceFW/finepdfs-edu",
+      "row_groups": 234,
+      "rows": 233591
+    },
+    {
+      "bytes": 288438678,
+      "id": "finemath4",
+      "max_rows_per_group": 1000,
+      "min_rows_per_group": 679,
+      "network_bytes": 626742,
+      "path": "finemath-4plus/train-00053-of-00064.parquet",
+      "repo_id": "HuggingFaceTB/finemath",
+      "row_groups": 105,
+      "rows": 104679
+    },
+    {
+      "bytes": 602180999,
+      "id": "infiwebmath4",
+      "max_rows_per_group": 1000,
+      "min_rows_per_group": 756,
+      "network_bytes": 1284957,
+      "path": "infiwebmath-4plus/train-00029-of-00032.parquet",
+      "repo_id": "HuggingFaceTB/finemath",
+      "row_groups": 197,
+      "rows": 196756
+    },
+    {
+      "bytes": 1177410933,
+      "id": "cosmopedia2",
+      "max_rows_per_group": 1000,
+      "min_rows_per_group": 289,
+      "network_bytes": 3010336,
+      "path": "cosmopedia-v2/train-00005-of-00104.parquet",
+      "repo_id": "HuggingFaceTB/smollm-corpus",
+      "row_groups": 377,
+      "rows": 376289
+    },
+    {
+      "bytes": 500201312,
+      "id": "code_python",
+      "max_rows_per_group": 1000,
+      "min_rows_per_group": 204,
+      "network_bytes": 5753279,
+      "path": "Python/train-00001-of-00005.parquet",
+      "repo_id": "HuggingFaceTB/stack-edu",
+      "row_groups": 5058,
+      "rows": 5057204
+    },
+    {
+      "bytes": 429038200,
+      "id": "code_javascript",
+      "max_rows_per_group": 1000,
+      "min_rows_per_group": 810,
+      "network_bytes": 5079652,
+      "path": "JavaScript/train-00001-of-00003.parquet",
+      "repo_id": "HuggingFaceTB/stack-edu",
+      "row_groups": 4418,
+      "rows": 4417810
+    },
+    {
+      "bytes": 425942502,
+      "id": "code_typescript",
+      "max_rows_per_group": 1000,
+      "min_rows_per_group": 356,
+      "network_bytes": 4927736,
+      "path": "TypeScript/train-00000-of-00001.parquet",
+      "repo_id": "HuggingFaceTB/stack-edu",
+      "row_groups": 4291,
+      "rows": 4290356
+    },
+    {
+      "bytes": 408220495,
+      "id": "code_cpp",
+      "max_rows_per_group": 1000,
+      "min_rows_per_group": 686,
+      "network_bytes": 4623187,
+      "path": "Cpp/train-00003-of-00004.parquet",
+      "repo_id": "HuggingFaceTB/stack-edu",
+      "row_groups": 4062,
+      "rows": 4061686
+    },
+    {
+      "bytes": 481089004,
+      "id": "code_java",
+      "max_rows_per_group": 1000,
+      "min_rows_per_group": 15,
+      "network_bytes": 4897049,
+      "path": "Java/train-00002-of-00011.parquet",
+      "repo_id": "HuggingFaceTB/stack-edu",
+      "row_groups": 4091,
+      "rows": 4090015
+    },
+    {
+      "bytes": 1032971393,
+      "id": "multilingual_cmn_Hani",
+      "max_rows_per_group": 1000,
+      "min_rows_per_group": 413,
+      "network_bytes": 361864,
+      "path": "cmn_Hani/000_00253.parquet",
+      "repo_id": "epfml/FineWeb2-HQ",
+      "row_groups": 71,
+      "rows": 70413
+    },
+    {
+      "bytes": 1200882025,
+      "id": "multilingual_spa_Latn",
+      "max_rows_per_group": 1000,
+      "min_rows_per_group": 843,
+      "network_bytes": 385874,
+      "path": "spa_Latn/000_00128.parquet",
+      "repo_id": "epfml/FineWeb2-HQ",
+      "row_groups": 83,
+      "rows": 82843
+    },
+    {
+      "bytes": 1311943767,
+      "id": "multilingual_fra_Latn",
+      "max_rows_per_group": 1000,
+      "min_rows_per_group": 26,
+      "network_bytes": 362185,
+      "path": "fra_Latn/000_00300.parquet",
+      "repo_id": "epfml/FineWeb2-HQ",
+      "row_groups": 72,
+      "rows": 71026
+    },
+    {
+      "bytes": 578993409,
+      "id": "multilingual_deu_Latn",
+      "max_rows_per_group": 1000,
+      "min_rows_per_group": 420,
+      "network_bytes": 213268,
+      "path": "deu_Latn/000_00551.parquet",
+      "repo_id": "epfml/FineWeb2-HQ",
+      "row_groups": 34,
+      "rows": 33420
+    },
+    {
+      "bytes": 872877086,
+      "id": "multilingual_jpn_Jpan",
+      "max_rows_per_group": 1000,
+      "min_rows_per_group": 267,
+      "network_bytes": 366565,
+      "path": "jpn_Jpan/000_00246.parquet",
+      "repo_id": "epfml/FineWeb2-HQ",
+      "row_groups": 71,
+      "rows": 70267
+    },
+    {
+      "bytes": 1379004824,
+      "id": "multilingual_arb_Arab",
+      "max_rows_per_group": 1000,
+      "min_rows_per_group": 583,
+      "network_bytes": 340296,
+      "path": "arb_Arab/000_00018.parquet",
+      "repo_id": "epfml/FineWeb2-HQ",
+      "row_groups": 77,
+      "rows": 76583
+    }
+  ],
+  "status": "PARQUET_METADATA_ONLY"
+}

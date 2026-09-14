@@ -1,0 +1,307 @@
+{
+  "status": "INSPECTION_POOL_ONLY_NOT_ADMITTED",
+  "sources": [
+    {
+      "source": "fineweb_edu",
+      "domain": "general_web",
+      "sample_sha256": "cea208dfa644e29f55f12a8b0c093f4b21d970476a872a1212d24773c21e31b2",
+      "rows": 128,
+      "nonempty_text_rows": 128,
+      "distinct_observed_family_keys_upper_bound": 128,
+      "missing_primary_family_metadata": 0,
+      "synthetic_rows_without_seed_parent_identity": 0,
+      "top_hosts_in_inspection_sample_only": [
+        [
+          "womenwithcents.com.au",
+          1
+        ],
+        [
+          "asiaresearchnews.com",
+          1
+        ],
+        [
+          "christianity.com",
+          1
+        ],
+        [
+          "emoryhealthcare.org",
+          1
+        ],
+        [
+          "heinemann.com",
+          1
+        ]
+      ],
+      "population_quality_inference_allowed": false
+    },
+    {
+      "source": "dclm_100bt",
+      "domain": "general_web",
+      "sample_sha256": "4bb1f99fa8109a426c27a1a7825db19ae438ece6042b2febbe2f3a505e00196d",
+      "rows": 128,
+      "nonempty_text_rows": 128,
+      "distinct_observed_family_keys_upper_bound": 128,
+      "missing_primary_family_metadata": 0,
+      "synthetic_rows_without_seed_parent_identity": 0,
+      "top_hosts_in_inspection_sample_only": [
+        [
+          "europrogovision.blogspot.co.uk",
+          1
+        ],
+        [
+          "gobukan.blogspot.com",
+          1
+        ],
+        [
+          "gawker.com",
+          1
+        ],
+        [
+          "ifood.tv",
+          1
+        ],
+        [
+          "gizmodo.com",
+          1
+        ]
+      ],
+      "population_quality_inference_allowed": false
+    },
+    {
+      "source": "finepdfs_en",
+      "domain": "knowledge_reading",
+      "sample_sha256": "b593e079dfb75dd00411d83ae166c301f8097a4950d7b4595f6298a89927b0d6",
+      "rows": 128,
+      "nonempty_text_rows": 128,
+      "distinct_observed_family_keys_upper_bound": 128,
+      "missing_primary_family_metadata": 0,
+      "synthetic_rows_without_seed_parent_identity": 0,
+      "top_hosts_in_inspection_sample_only": [
+        [
+          "repository.poltekkes-tjk.ac.id",
+          1
+        ],
+        [
+          "deeepunderground.com",
+          1
+        ],
+        [
+          "acadiafirstnation.ca",
+          1
+        ],
+        [
+          "ddeku.edu.in",
+          1
+        ],
+        [
+          "musicschoolunion.eu",
+          1
+        ]
+      ],
+      "population_quality_inference_allowed": false
+    },
+    {
+      "source": "finemath4",
+      "domain": "math",
+      "sample_sha256": "2537ef99403e54199d6a098ad9df8bdff698f130ffe206a9a9f29f6b0479c6ca",
+      "rows": 128,
+      "nonempty_text_rows": 128,
+      "distinct_observed_family_keys_upper_bound": 125,
+      "missing_primary_family_metadata": 3,
+      "synthetic_rows_without_seed_parent_identity": 0,
+      "top_hosts_in_inspection_sample_only": [
+        [
+          "jiskha.com",
+          5
+        ],
+        [
+          "mathhelpforum.com",
+          4
+        ],
+        [
+          "gradesaver.com",
+          4
+        ],
+        [
+          "nrich.maths.org",
+          3
+        ],
+        [
+          "math.stackexchange.com",
+          3
+        ]
+      ],
+      "population_quality_inference_allowed": false
+    },
+    {
+      "source": "infiwebmath4",
+      "domain": "math",
+      "sample_sha256": "b77c064f400b1dc9fadc5be84ed44904558832cb41432bcd28f87abc82e8fb35",
+      "rows": 128,
+      "nonempty_text_rows": 128,
+      "distinct_observed_family_keys_upper_bound": 128,
+      "missing_primary_family_metadata": 0,
+      "synthetic_rows_without_seed_parent_identity": 0,
+      "top_hosts_in_inspection_sample_only": [
+        [
+          "math.stackexchange.com",
+          5
+        ],
+        [
+          "answers.everydaycalculation.com",
+          4
+        ],
+        [
+          "socratic.org",
+          4
+        ],
+        [
+          "metanumbers.com",
+          3
+        ],
+        [
+          "jiskha.com",
+          3
+        ]
+      ],
+      "population_quality_inference_allowed": false
+    },
+    {
+      "source": "stackedu_python_text",
+      "domain": "code",
+      "sample_sha256": "d8671c0c0b7113c823d961b5464cf20e2cd8205eca8738c526cd08ff7942e671",
+      "rows": 14,
+      "nonempty_text_rows": 14,
+      "distinct_observed_family_keys_upper_bound": 14,
+      "missing_primary_family_metadata": 0,
+      "synthetic_rows_without_seed_parent_identity": 0,
+      "top_hosts_in_inspection_sample_only": [],
+      "population_quality_inference_allowed": false
+    },
+    {
+      "source": "fineweb2hq_zh",
+      "domain": "multilingual",
+      "sample_sha256": "99f1445900587bb9500367a9357828653ab7d50fd17e213874e13d69fdb72ba0",
+      "rows": 128,
+      "nonempty_text_rows": 128,
+      "distinct_observed_family_keys_upper_bound": 128,
+      "missing_primary_family_metadata": 0,
+      "synthetic_rows_without_seed_parent_identity": 0,
+      "top_hosts_in_inspection_sample_only": [
+        [
+          "verycd.com",
+          4
+        ],
+        [
+          "voachinese.com",
+          4
+        ],
+        [
+          "xbshare.com",
+          3
+        ],
+        [
+          "ergeshipin.com",
+          2
+        ],
+        [
+          "man.renai.cn",
+          2
+        ]
+      ],
+      "population_quality_inference_allowed": false
+    },
+    {
+      "source": "fineweb2hq_es",
+      "domain": "multilingual",
+      "sample_sha256": "3cc24f1e3df8b21eec59b77b0903dcba54da69cdef85936313588d7965cb43f0",
+      "rows": 128,
+      "nonempty_text_rows": 128,
+      "distinct_observed_family_keys_upper_bound": 128,
+      "missing_primary_family_metadata": 0,
+      "synthetic_rows_without_seed_parent_identity": 0,
+      "top_hosts_in_inspection_sample_only": [
+        [
+          "lanacion.com.ar",
+          2
+        ],
+        [
+          "juri-dileyc.com",
+          1
+        ],
+        [
+          "uncurioso.com",
+          1
+        ],
+        [
+          "teva.com.ar",
+          1
+        ],
+        [
+          "blog.is-arquitectura.es",
+          1
+        ]
+      ],
+      "population_quality_inference_allowed": false
+    },
+    {
+      "source": "cosmopedia2",
+      "domain": "synthetic",
+      "sample_sha256": "a1857a251da18026b016e53bdd2075d957d329e08f7d14f887493d21180d01a5",
+      "rows": 128,
+      "nonempty_text_rows": 128,
+      "distinct_observed_family_keys_upper_bound": 128,
+      "missing_primary_family_metadata": 0,
+      "synthetic_rows_without_seed_parent_identity": 128,
+      "top_hosts_in_inspection_sample_only": [],
+      "population_quality_inference_allowed": false
+    }
+  ],
+  "domains": {
+    "general_web": {
+      "sample_rows": 256,
+      "observed_family_key_upper_bound": 256,
+      "required_distinct_families": 1000,
+      "minimum_additional_independent_families": 744,
+      "sufficiency_status": "INSUFFICIENT"
+    },
+    "knowledge_reading": {
+      "sample_rows": 128,
+      "observed_family_key_upper_bound": 128,
+      "required_distinct_families": 1000,
+      "minimum_additional_independent_families": 872,
+      "sufficiency_status": "INSUFFICIENT"
+    },
+    "math": {
+      "sample_rows": 256,
+      "observed_family_key_upper_bound": 253,
+      "required_distinct_families": 1000,
+      "minimum_additional_independent_families": 747,
+      "sufficiency_status": "INSUFFICIENT"
+    },
+    "code": {
+      "sample_rows": 14,
+      "observed_family_key_upper_bound": 14,
+      "required_distinct_families": 1000,
+      "minimum_additional_independent_families": 986,
+      "sufficiency_status": "INSUFFICIENT"
+    },
+    "multilingual": {
+      "sample_rows": 256,
+      "observed_family_key_upper_bound": 256,
+      "required_distinct_families": 1000,
+      "minimum_additional_independent_families": 744,
+      "sufficiency_status": "INSUFFICIENT"
+    }
+  },
+  "normalized_exact_duplicate_groups": [],
+  "limitations": [
+    "URL keys are an upper bound: mirrors, near duplicates and parent relations can join them",
+    "this does not inspect or certify corpus licenses or factual quality",
+    "no benchmark content was used or exposed in this audit",
+    "English-only ASCII word n-grams in the old decontam builder do not cover multilingual contamination",
+    "synthetic prompt identity does not establish seed-document independence",
+    "no train/development/confirmation split was created from this inspection pool"
+  ],
+  "training_admitted": false
+}

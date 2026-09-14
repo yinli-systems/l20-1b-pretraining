@@ -1,0 +1,32 @@
+{
+  "candidates": [
+    {
+      "final_step": 256,
+      "final_val_loss": 2.6968793869018555,
+      "initial_val_loss": 2.6989951133728027,
+      "learning_rate": 3e-05,
+      "median_mfu_after_grace": 0.7755384358681623,
+      "output_directory": "pretrain500m/research/data-mixture-v1/lr-pilot-records/lr-0.00003"
+    },
+    {
+      "final_step": 256,
+      "final_val_loss": 2.69642972946167,
+      "initial_val_loss": 2.6989951133728027,
+      "learning_rate": 0.0001,
+      "median_mfu_after_grace": 0.7752973564401435,
+      "output_directory": "pretrain500m/research/data-mixture-v1/lr-pilot-records/lr-0.0001"
+    },
+    {
+      "final_step": 256,
+      "final_val_loss": 2.702540874481201,
+      "initial_val_loss": 2.6989951133728027,
+      "learning_rate": 0.0003,
+      "median_mfu_after_grace": 0.7757553073115103,
+      "output_directory": "pretrain500m/research/data-mixture-v1/lr-pilot-records/lr-0.0003"
+    }
+  ],
+  "development_loss_improvement": 0.0025653839111328125,
+  "frozen_seven_task_test_used_for_selection": false,
+  "selected_learning_rate": 0.0001,
+  "status": "PASS_CPT_PILOT"
+}

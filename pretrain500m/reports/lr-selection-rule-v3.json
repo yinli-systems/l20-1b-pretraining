@@ -1,0 +1,49 @@
+{
+  "candidates": [
+    0.0015,
+    0.0025
+  ],
+  "data": {
+    "partition": "fineweb-edu-parts/part-00/web",
+    "same_training_order_and_validation_split_for_all_candidates": true
+  },
+  "frozen_at_utc": "2026-09-12T04:08:48Z",
+  "frozen_before_long_pilot_results": true,
+  "pilot": {
+    "ddp_bucket_cap_mb": 200,
+    "ddp_gradient_reduction": "bf16",
+    "deterministic_algorithms": true,
+    "global_prediction_tokens_per_step": 2097152,
+    "gpus": 16,
+    "microbatch": 4,
+    "nccl_algo": "Ring",
+    "nccl_proto": "Simple",
+    "optimizer_steps": 300,
+    "protocol_id": "p500m-english-base-v4",
+    "validation_steps": [
+      100,
+      200,
+      300
+    ]
+  },
+  "qualification": {
+    "all_recorded_losses_and_gradient_norms_must_be_finite": true,
+    "post_compile_median_mfu_strictly_greater_than": 0.65,
+    "required_validation_steps": [
+      100,
+      200,
+      300
+    ]
+  },
+  "rule_id": "p529m-long-lr-selection-v3",
+  "selection": {
+    "primary": "lowest arithmetic mean of held-out validation loss at steps 100, 200, and 300",
+    "tie_breaker": "lower peak learning rate"
+  },
+  "status": "FROZEN_BEFORE_LONG_PILOT_RESULTS",
+  "supersedes": {
+    "reason": "Formal distributed implementation changed before training; repeat LR selection under the exact 16-GPU BF16-reduction code path.",
+    "rule_id": "p529m-long-lr-selection-v2",
+    "sha256": "8d2e0ef5c8def7c14ebbdf5e52d056539944b178cbbe53d369611d5dbbe8320d"
+  }
+}

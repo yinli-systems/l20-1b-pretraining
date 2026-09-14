@@ -1,0 +1,53 @@
+{
+  "checked_utc": "2026-09-13T21:39:01.477619+00:00",
+  "pid": 2026051,
+  "process_command": "/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python /ssd/scxi253/pretrain500m-20260912-v1/source/intake-v3/intake.py ",
+  "free_bytes": 22003380224,
+  "sources": {
+    "dclm": {
+      "status": "READING",
+      "started_utc": "2026-09-13T21:38:25.865308+00:00",
+      "updated_utc": "2026-09-13T21:38:57.914194+00:00",
+      "completed_utc": null,
+      "rows_written": 4000,
+      "uncompressed_output_bytes": 23653200,
+      "network_bytes": 16582416,
+      "stop_reason": null,
+      "error_type": null,
+      "error": null,
+      "groups_read": 4
+    },
+    "pdf_en": {
+      "status": "READING",
+      "started_utc": "2026-09-13T21:38:25.854231+00:00",
+      "updated_utc": "2026-09-13T21:38:56.849759+00:00",
+      "completed_utc": null,
+      "rows_written": 3000,
+      "uncompressed_output_bytes": 68201104,
+      "network_bytes": 36042233,
+      "stop_reason": null,
+      "error_type": null,
+      "error": null,
+      "groups_read": 3
+    }
+  },
+  "summary": null,
+  "reports": {
+    "raw": {
+      "sha256": "af1951c9f41bce778a73dcb78a64aa5ad5739f192229103ec51a14a5e9991bb1",
+      "status": "COMBINED_RAW_INTAKE_MEASURED_NOT_ADMITTED",
+      "rows": 180407
+    },
+    "supplemental": {
+      "sha256": "e8d87df65ab22e6d83dce79ee16dc9ccd92160b8a33d875ba5f794bbb5efea49",
+      "status": "SUPPLEMENTAL_EXACT_SPAN_AUDIT_COMPLETE_ADMISSION_PENDING",
+      "rows": null
+    }
+  },
+  "scheduler_capacity_output": "\u516c\u5171partition\uff1a\nPartition      \u53ef\u7528GPU\u6570\u91cf  \u603b\u5361\u6570\ngpu_4090            27     248\ngpu_5090            38     248\nhp_4090             27     272\nhp_5090             54     408\n\n\u53ef\u8fd0\u884c\u4f5c\u4e1a\u6570\u91cf\uff08\u6309GPU\u89c4\u6a21\uff09\uff1a\nPartition      1\u5361GPU 2\u5361GPU 3\u5361GPU 4\u5361GPU 5\u5361GPU 6\u5361GPU 7\u5361GPU 8\u5361GPU\ngpu_4090       27      9      4      0      0      0      0      0\ngpu_5090       38     15      5      3      2      2      1      0\nhp_4090        27      9      4      0      0      0      0      0\nhp_5090        54     23      9      7      4      4      3      2\n",
+  "scheduler_capacity_returncode": 0,
+  "user_queue": "             JOBID                     NAME      STATE       TIME     NODELIST(REASON)\n           1560103     biomm-lssd03-receipt    PENDING       0:00         (Dependency)\n           1560080     biomm-instr20-select    PENDING       0:00         (Dependency)\n           1560079       biomm-instr-paired    PENDING       0:00         (Dependency)\n           1560078        biomm-instr20-sqa    PENDING       0:00 (DependencyNeverSati\n           1560077        biomm-instr20-vqa    PENDING       0:00 (DependencyNeverSati\n           1560076       biomm-instr20-pmqa    PENDING       0:00 (DependencyNeverSati\n           1500015   abf-late-scale-analyze    PENDING       0:00 (DependencyNeverSati\n           1588375            l20-engine-v2    RUNNING       5:52         wqd10nba10g8\n           1588100                lob-bench    PENDING       0:00         (Dependency)\n           1588099                 lob-eval    RUNNING      27:51         wqd10nah04g5\n",
+  "user_queue_returncode": 0,
+  "log_tail": "{\"source\": \"dclm\", \"rows\": 1000, \"network_bytes\": 6276378, \"code_attempts\": 0}\n{\"source\": \"pdf_en\", \"rows\": 1000, \"network_bytes\": 7492142, \"code_attempts\": 0}\n{\"source\": \"dclm\", \"rows\": 2000, \"network_bytes\": 9763835, \"code_attempts\": 0}\n{\"source\": \"pdf_en\", \"rows\": 2000, \"network_bytes\": 15097267, \"code_attempts\": 0}\n{\"source\": \"dclm\", \"rows\": 3000, \"network_bytes\": 13057913, \"code_attempts\": 0}\n{\"source\": \"pdf_en\", \"rows\": 3000, \"network_bytes\": 36042233, \"code_attempts\": 0}\n{\"source\": \"dclm\", \"rows\": 4000, \"network_bytes\": 16582416, \"code_attempts\": 0}\n",
+  "formal_mixture_training_started": false
+}

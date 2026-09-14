@@ -1,0 +1,423 @@
+{
+  "checked_utc": "2026-09-13T21:54:44.041210+00:00",
+  "free_bytes": 21814251520,
+  "audits": {
+    "diverse-audit-v2-three-tranche": {
+      "pid": 2141186,
+      "command": "/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python /ssd/scxi253/pretrain500m-20260912-v1/source/raw-audit-v2/audit_raw_intake_v2.py --input /ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1 --input /ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2 --input /ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v3 --tokenizer /ssd/scxi253/pretrain500m-20260912-v1/formal/hf-v5/tokenizer.json --expected-tokenizer-sha256 30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6 --quotas /ssd/scxi253/pretrain500m-20260912-v1/source/raw-audit-v2/subsource-quotas-v1.json --output /ssd/scxi253/pretrain500m-20260912-v1/data/diverse-audit-v2-three-tranche ",
+      "progress.json": {
+        "status": "RUNNING",
+        "source": "pdf_en",
+        "tranche": 1,
+        "source_file_rows": 2000,
+        "completed_files": 26,
+        "elapsed_seconds": 561.69398188591
+      }
+    },
+    "contamination-v1-three-tranche": {
+      "pid": 2141256,
+      "command": null,
+      "progress.json": {
+        "status": "RUNNING",
+        "source": "2:pdf_en",
+        "rows_in_source": 5000,
+        "completed_files": 27,
+        "elapsed_seconds": 256.377890586853
+      },
+      "report.json": {
+        "status": "SUPPLEMENTAL_EXACT_SPAN_AUDIT_COMPLETE_ADMISSION_PENDING",
+        "training_admitted": false,
+        "checked_utc": "2026-09-13T21:49:16.001780+00:00",
+        "policy": {
+          "schema": "p529m-unicode-reservation-span-v1",
+          "unicode_normalization": "NFC",
+          "whitespace": "collapse Unicode whitespace to one ASCII space, then strip",
+          "prose_case": "casefold, then NFC",
+          "code_and_math_case": "preserve",
+          "full_field_min_chars": 64,
+          "long_span_chars": 192,
+          "long_span_stride": 96,
+          "minimum_distinct_nonspace_chars": 12,
+          "short_primary_whole_document_min_chars": 16,
+          "short_primary_minimum_distinct_nonspace_chars": 8,
+          "short_primary_fields": [
+            "prompt",
+            "question",
+            "problem"
+          ],
+          "maximum_saved_hits_per_document": 32,
+          "maximum_saved_owners_per_pattern": 4,
+          "action": "AUDIT_CANDIDATES_ONLY_NO_TRAINING_ADMISSION"
+        },
+        "policy_sha256": "a1425d40265306353c3943c46ecbf2effdbf2e14a21cd7950df739998894f40e",
+        "runtime": {
+          "python": "3.12.13 (main, Jul 18 2026, 17:02:19) [Clang 22.1.3 ]",
+          "unicode_version": "15.0.0",
+          "pyahocorasick": "2.3.1",
+          "unicode_build": 1
+        },
+        "tranches": [
+          {
+            "index": 0,
+            "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1",
+            "rows": 47078,
+            "sources": 16,
+            "summary_sha256": "fe132378a3cc2848d3a6e9144d3c85fa51c7b33b59343170bd700b8849471a2b"
+          },
+          {
+            "index": 1,
+            "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2",
+            "rows": 133329,
+            "sources": 10,
+            "summary_sha256": "e3de95525f7e9b196e42e39d88a1107837e92e275e025a43cf721474f20ef561"
+          },
+          {
+            "index": 2,
+            "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v3",
+            "rows": 19000,
+            "sources": 2,
+            "summary_sha256": "2000496c5d4c5787e562316d547bdbf6ba1df2f2f37d13b068f98ebafd3d1830"
+          }
+        ],
+        "input_bindings": {
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/intake-summary.json": "fe132378a3cc2848d3a6e9144d3c85fa51c7b33b59343170bd700b8849471a2b",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/code_cpp.receipt.json": "e076c16f871ed2a4bc3483a55beb278a3309d80174a052daf99ebd344a7d7f51",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/code_cpp.jsonl.gz": "c153a2833cc94fba70b4e3679d721e8d9ec3df89840488a33fc4601989fa672f",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/code_java.receipt.json": "3a5fea42d962257aa9cf600daa9ebc40376c7b8fa240cc5e74eff5e818b22fe9",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/code_java.jsonl.gz": "e1b0656984646f658e781db3f00885e75131518b7472e8f3a8ff2f95ce900060",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/code_javascript.receipt.json": "278c0944c89ae87daebb31b9443d6ac45b1c7579521df8e0c7f98a68f3499857",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/code_javascript.jsonl.gz": "78103d75272d2a493287f84aa9f372449889778acc128e986bc362cc2e8da382",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/code_python.receipt.json": "e45de9f12ff828233c486d1f7a5811545e001a10e6fae7042b80ec52ec0797c6",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/code_python.jsonl.gz": "0fa98345a6d907173d03e2dce6376c7dd7919c339c60d76a1ba1ae4172456cdd",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/code_typescript.receipt.json": "aeec6fa268fea51128c25afa9376786dce0600e9fd746a505d52341490e7f09f",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/code_typescript.jsonl.gz": "d6e47424abe2b8bf1e70ab8f3f96ab73219895d30269c49e1aa6791ec386f83b",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/cosmopedia2.receipt.json": "d27335ea7565672bb0dff662d6afa14e53b48a057aa27afe93e171107aeb6297",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/cosmopedia2.jsonl.gz": "8f8a80a9a24fa2e4281ad830928de90916570798bd9ff66440a42c6c43065397",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/dclm.receipt.json": "d9bed0b3690e7c589a4fa55748f8db8b47780dde903a2faa0f23f2511d52e0e2",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/dclm.jsonl.gz": "fa08ad0dba01cd63be202ac658135fa8c4ac1f7326ff19268353ba90ebf4c435",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/finemath4.receipt.json": "5628fcdac75dbe3866456d0671047227bf11f80b997c0b2b402f14bbfc80daa8",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/finemath4.jsonl.gz": "fa2cfc741cd270e742906289eb4da9cb64bc641dedebe78e0c2c51635ab8ddad",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/infiwebmath4.receipt.json": "8ea4129cb6446a0afcf4caa225b60364787fbb626ac2f67039c29cf623cab563",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/infiwebmath4.jsonl.gz": "d36cea89a7123bcf2e5f193bb1c31a6bf8b67dfa3fa9255da9f82d90621b5ba2",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/multilingual_arb_Arab.receipt.json": "85895e3434caab4c7d82857cd25abf19e5a54781871c01c4b76dde4348e9c196",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/multilingual_arb_Arab.jsonl.gz": "0b9732a70a53f06bd1b0086bba492784b6c5d767896a5b7c60f7768632d0607b",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/multilingual_cmn_Hani.receipt.json": "cb0b5dc23233db7c31502836df13093c63adce98b9edcc368c2224d17755028d",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/multilingual_cmn_Hani.jsonl.gz": "f99c586e7630f5a5edc04ff693d2b6ad2ac02beba9611e6955f468510233c638",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/multilingual_deu_Latn.receipt.json": "957eb209b6df2f26e3a2b4e4e6020e2bceda249cf7f0f612e85b9387c1c91444",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/multilingual_deu_Latn.jsonl.gz": "9ccc669f268f78cce0a79158a51b0df3ab2a958498f16b79ef2a8c502731816b",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/multilingual_fra_Latn.receipt.json": "4819d6c005e282f895a4762b2065add6e4eee626bfa718be2ca1254640084e70",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/multilingual_fra_Latn.jsonl.gz": "6e96d355f2d53451a0f08cbcfa64e25cd0f6795141ab1c3f577d8c09b97f82b0",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/multilingual_jpn_Jpan.receipt.json": "77f1eb4e46f0f2d32f2320f12d6e0dac367966cc744e094b1bd265080bf6f751",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/multilingual_jpn_Jpan.jsonl.gz": "4e49a02dc704de4efc64b3230115fd7f29d014079ea97a18fa4076a94d41f451",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/multilingual_spa_Latn.receipt.json": "4994bb9773b04907153c8ef262e1d92b72afda90856f866088a738e056af316e",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/multilingual_spa_Latn.jsonl.gz": "955fb234baaf9aabb5c9b1783a6c33df82310bd7f5bd9aa47cfedba3ff53d844",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/pdf_en.receipt.json": "ec2c7c0b14a104f8dc350b12db824421d1910a6e689f0e667cc18291914b2742",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/pdf_en.jsonl.gz": "ee560c2e2a04192f861f3babc82cc0f18d3007e5c0f85bd2343b4c301daec55c",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2/intake-summary.json": "e3de95525f7e9b196e42e39d88a1107837e92e275e025a43cf721474f20ef561",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2/code_cpp.receipt.json": "86b8d1f34b39da617fa6ed21cfa3bdb396d5742eee1152b3eb445ed83510ca74",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2/code_cpp.jsonl.gz": "356edb05b34dbf64416166364210857ecfac617c68abfe7b10e9981a3f18bfc1",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2/code_java.receipt.json": "ae6b92e321fabcf8494f48e2180d37052cd814191d386aff8a35788f94cc9c64",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2/code_java.jsonl.gz": "1a7ccedb67397725e60ab6b79a1d75a5d2248558942a099836bc6f5bc3daf98e",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2/code_javascript.receipt.json": "bdf93ec70e877f8c7a6d98bc387a08080bc91590627923cbe2979c2ec5dbb459",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2/code_javascript.jsonl.gz": "5fe449431e4ce15c9a97d006fb88a7ce06cda022e181f5b1a5b8eb026193e122",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2/code_python.receipt.json": "e5c95b5e5b9721bd9eb5f56b7c2ba0cb7129f857029ded51fb71e2a3c54ca154",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2/code_python.jsonl.gz": "4ef0cf5e2e3d1e95e5e805dd5d22cb59026aa611e7d234122b7f2ef064f74658",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2/code_typescript.receipt.json": "8920b9e1bd11ac99a0b8474d67d652dd1da8acae5b79f35e3e8ef7ac73b49327",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2/code_typescript.jsonl.gz": "a460f321b8e270f0b5d7bc4c6318c2b1d1c24621b466e3a29bfd0482172ac0e5",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2/dclm.receipt.json": "ca5d3afd7d77ec76135f2e6d49263826fcb358f534d31294cf649aabf76fee9f",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2/dclm.jsonl.gz": "722e54a39e3e0b0c52f7ec1bbf40f7f58863938984af270f913439ae55df91fe",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2/finemath4.receipt.json": "69b7b33aacbe8eca19531072a80b17fb27dba5e2762457cc37aa8cd369ddd1cc",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2/finemath4.jsonl.gz": "28b83f4c716f8fb2047b7cb61538f97ed98269a44335f7619aeaee8ad853226f",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2/infiwebmath4.receipt.json": "e63d4ff90e927d1f9d985d6a1c6607360a827d72696bc4c6f3bc7f3116705874",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2/infiwebmath4.jsonl.gz": "135062ad1f9cc581bc66a15ced16bb3b446e6445ac99e8f6872c920ef0aa723a",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2/multilingual_cmn_Hani.receipt.json": "13b212ab695f6bf3b678a70cfd61a4d1aa44af013f7708814af450004940135f",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2/multilingual_cmn_Hani.jsonl.gz": "17c261bf6c25abc34fce89d765a2e59e45c73c137635d03d428091512d168f8a",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2/pdf_en.receipt.json": "33ce70a4deaf2dc4dffd5dc818470c9ab766a4ff75b08620296bab7fb106c129",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2/pdf_en.jsonl.gz": "97f1d6a969e96ee789a55aee783f6a4a3df62318fa1f12b1e5771115d5734483",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v3/intake-summary.json": "2000496c5d4c5787e562316d547bdbf6ba1df2f2f37d13b068f98ebafd3d1830",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v3/dclm.receipt.json": "45fd0ff5bf903cb26e256b7945342480ee6b73325f88affa5080a38026cb2878",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v3/dclm.jsonl.gz": "d8dbf396e4cd6703dfcdc06732a3f7cc4d1ed6ce27d98ab3a3175463af72e330",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v3/pdf_en.receipt.json": "737718f183c4a3a259ba444469d154e6e4804b0f556fcb0da13cfa7c94296cc2",
+          "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v3/pdf_en.jsonl.gz": "3239ff5ab584fab403484a6588920148d2ea23529bf6becc14a4bfecf70bf84a"
+        },
+        "sources": {
+          "0:code_cpp": {
+            "rows_scanned": 548,
+            "text_characters_scanned": 2062224
+          },
+          "0:code_java": {
+            "rows_scanned": 134,
+            "text_characters_scanned": 317921
+          },
+          "0:code_javascript": {
+            "rows_scanned": 720,
+            "text_characters_scanned": 2475505
+          },
+          "0:code_python": {
+            "rows_scanned": 629,
+            "text_characters_scanned": 2422036
+          },
+          "0:code_typescript": {
+            "rows_scanned": 1464,
+            "text_characters_scanned": 4052504
+          },
+          "0:cosmopedia2": {
+            "rows_scanned": 4000,
+            "text_characters_scanned": 15048360
+          },
+          "0:dclm": {
+            "rows_scanned": 4000,
+            "text_characters_scanned": 21825442
+          },
+          "0:finemath4": {
+            "rows_scanned": 4000,
+            "text_characters_scanned": 21580668
+          },
+          "0:infiwebmath4": {
+            "rows_scanned": 4000,
+            "text_characters_scanned": 19711499
+          },
+          "0:multilingual_arb_Arab": {
+            "rows_scanned": 3583,
+            "text_characters_scanned": 12357292
+          },
+          "0:multilingual_cmn_Hani": {
+            "rows_scanned": 4000,
+            "text_characters_scanned": 4800484
+          },
+          "0:multilingual_deu_Latn": {
+            "rows_scanned": 4000,
+            "text_characters_scanned": 18122446
+          },
+          "0:multilingual_fra_Latn": {
+            "rows_scanned": 4000,
+            "text_characters_scanned": 16485177
+          },
+          "0:multilingual_jpn_Jpan": {
+            "rows_scanned": 4000,
+            "text_characters_scanned": 4558419
+          },
+          "0:multilingual_spa_Latn": {
+            "rows_scanned": 4000,
+            "text_characters_scanned": 12792689
+          },
+          "0:pdf_en": {
+            "rows_scanned": 4000,
+            "text_characters_scanned": 53568932
+          },
+          "1:code_cpp": {
+            "rows_scanned": 3509,
+            "text_characters_scanned": 13474337
+          },
+          "1:code_java": {
+            "rows_scanned": 7515,
+            "text_characters_scanned": 19874298
+          },
+          "1:code_javascript": {
+            "rows_scanned": 9372,
+            "text_characters_scanned": 29895607
+          },
+          "1:code_python": {
+            "rows_scanned": 21299,
+            "text_characters_scanned": 79911508,
+            "candidate_exclusion_rows": 1,
+            "rows_with_truncated_saved_hits": 0
+          },
+          "1:code_typescript": {
+            "rows_scanned": 4796,
+            "text_characters_scanned": 13610062
+          },
+          "1:dclm": {
+            "rows_scanned": 33044,
+            "text_characters_scanned": 183585570
+          },
+          "1:finemath4": {
+            "rows_scanned": 30000,
+            "text_characters_scanned": 150602051,
+            "candidate_exclusion_rows": 1,
+            "rows_with_truncated_saved_hits": 0
+          },
+          "1:infiwebmath4": {
+            "rows_scanned": 8000,
+            "text_characters_scanned": 38929489
+          },
+          "1:multilingual_cmn_Hani": {
+            "rows_scanned": 7000,
+            "text_characters_scanned": 9700607
+          },
+          "1:pdf_en": {
+            "rows_scanned": 8794,
+            "text_characters_scanned": 192332399
+          },
+          "2:dclm": {
+            "rows_scanned": 14000,
+            "text_characters_scanned": 76215787,
+            "candidate_exclusion_rows": 1,
+            "rows_with_truncated_saved_hits": 0
+          },
+          "2:pdf_en": {
+            "rows_scanned": 5000,
+            "text_characters_scanned": 116643040
+          }
+        },
+        "counts": {
+          "rows_scanned": 199407,
+          "text_characters_scanned": 1136956353,
+          "candidate_exclusion_rows": 3,
+          "rows_with_truncated_saved_hits": 0
+        },
+        "reference_counts": {
+          "anchored_fields": 18516,
+          "skipped_short_or_low_diversity_fields": 31153,
+          "whole_document_only_fields": 3404,
+          "reference_records": 11830,
+          "unique_anchor_patterns": 31641
+        },
+        "references_sha256": "4a00a3aa9cfdd9f3a85d3b886a8de3b23687b1690c34b66f139ab451080a4e5c",
+        "candidates_sha256": "13a6daf12eddeb3fed05dec74b85717e1585acb7f27710f13dc6a2c2a9eed8eb",
+        "elapsed_seconds": 256.86528158187866,
+        "legacy_seven_task_audit_completed": false,
+        "old_fineweb_overlap_completed": false,
+        "limits": [
+          "Candidate rows are not removed by this audit and no corpus admission is issued.",
+          "The chosen fixed exact-span policy is not semantic, paraphrase, translation, identifier-renaming or approximate decontamination.",
+          "Short non-primary fields and low-diversity references are skipped; short primary fields only match a complete document.",
+          "192-character anchors use stride 96 and a final tail anchor; arbitrary long-field overlaps shorter than 287 normalized characters may miss all anchors.",
+          "Normalization collapses whitespace, including code indentation; matches are overlap evidence, not proof of program equivalence.",
+          "Prose casefolds; code and mathematics preserve case, digits, punctuation and operators. NFC does not perform compatibility folding.",
+          "Hit offsets refer to normalized text. Saved hits/owners are capped; reference hashes permit reconstruction.",
+          "Only the listed input tranches and supplemental benchmark bundle are scanned. Legacy seven-task, near-duplicate and old-FineWeb checks remain required."
+        ]
+      }
+    },
+    "legacy-screen-v1-three-tranche": {
+      "pid": 2279059,
+      "command": "/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python /ssd/scxi253/pretrain500m-20260912-v1/source/legacy-screen-v1/scan.py --input /ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1 --input /ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2 --input /ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v3 --database /ssd/scxi253/pretrain500m-20260912-v1/data/decontam-13word.sqlite --expected-database-sha256 661f939a8787d2c14a52b305ec6a6b5737aabe5146f557461473e89f22e3a256 --audit-source /ssd/scxi253/pretrain500m-20260912-v1/source/raw-audit-v2 --output /ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-three-tranche --workers 2 ",
+      "launch.json": {
+        "status": "SCANNING",
+        "workers": 2,
+        "database_sha256": "661f939a8787d2c14a52b305ec6a6b5737aabe5146f557461473e89f22e3a256",
+        "reference_hashes": 4890747,
+        "expected_rows": 199407,
+        "training_admitted": false
+      },
+      "file_progress": [
+        {
+          "source_id": "pdf_en",
+          "tranche": 0,
+          "rows": 4000,
+          "candidate_rows": 9,
+          "index": "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-three-tranche/0-pdf_en.index.jsonl.gz",
+          "index_sha256": "99b2c6c9fefc90dd0ad4f969d8523eb8385beac5cd01882e5aed0b94cfcd06b6",
+          "candidates": "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-three-tranche/0-pdf_en.candidates.jsonl",
+          "candidates_sha256": "56e4053eb0f97cf5249a0be4d97f7f84941761d5e1207b065f914ebce374e075",
+          "elapsed_seconds": 12.867369030136615,
+          "status": "COMPLETED"
+        },
+        {
+          "source_id": "code_javascript",
+          "tranche": 1,
+          "rows": 9372,
+          "candidate_rows": 0,
+          "index": "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-three-tranche/1-code_javascript.index.jsonl.gz",
+          "index_sha256": "b6b3cbbb2efb575fce292db97039a8805b8f0fe7fd5bf169cc3ebbf0a6b7d787",
+          "candidates": "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-three-tranche/1-code_javascript.candidates.jsonl",
+          "candidates_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "elapsed_seconds": 5.100034395698458,
+          "status": "COMPLETED"
+        },
+        {
+          "source_id": "code_python",
+          "tranche": 1,
+          "rows": 21299,
+          "candidate_rows": 0,
+          "index": "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-three-tranche/1-code_python.index.jsonl.gz",
+          "index_sha256": "1f9ef9f4eb0afb7a5dca5c8fb6c2e40382dc41abd333e4b8284293c3e3c761a3",
+          "candidates": "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-three-tranche/1-code_python.candidates.jsonl",
+          "candidates_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "elapsed_seconds": 15.404534608125687,
+          "status": "COMPLETED"
+        },
+        {
+          "source_id": "dclm",
+          "tranche": 1,
+          "rows": 33044,
+          "candidate_rows": 23,
+          "index": "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-three-tranche/1-dclm.index.jsonl.gz",
+          "index_sha256": "bb0f82af4623fd66c114fbe1f7c00b58c455adf498d576381e66a66284635143",
+          "candidates": "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-three-tranche/1-dclm.candidates.jsonl",
+          "candidates_sha256": "4b968bb07a60cec766ef80eaf8e643539d65df5292570e26d60d5d7c32615f54",
+          "elapsed_seconds": 48.53292751079425,
+          "status": "COMPLETED"
+        },
+        {
+          "source_id": "finemath4",
+          "tranche": 1,
+          "rows": 30000,
+          "candidate_rows": 56,
+          "index": "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-three-tranche/1-finemath4.index.jsonl.gz",
+          "index_sha256": "17de1cd8573ebe7396bab5632c56b6a484d3e9d35402aa3b553b0cdefbbd1147",
+          "candidates": "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-three-tranche/1-finemath4.candidates.jsonl",
+          "candidates_sha256": "c06e73c5c051c3e3781bbf6131384f053127c89a5d967ac26602ae277ccf37fb",
+          "elapsed_seconds": 43.53841151623055,
+          "status": "COMPLETED"
+        },
+        {
+          "status": "RUNNING",
+          "rows": 6000,
+          "candidates": 5,
+          "elapsed_seconds": 8.585689074825495
+        },
+        {
+          "source_id": "multilingual_cmn_Hani",
+          "tranche": 1,
+          "rows": 7000,
+          "candidate_rows": 0,
+          "index": "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-three-tranche/1-multilingual_cmn_Hani.index.jsonl.gz",
+          "index_sha256": "d1b64c2c53156d4d211d785edd66da4f744e6805aa53362ac0676e7d2b31fd27",
+          "candidates": "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-three-tranche/1-multilingual_cmn_Hani.candidates.jsonl",
+          "candidates_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "elapsed_seconds": 2.500209547113627,
+          "status": "COMPLETED"
+        },
+        {
+          "source_id": "pdf_en",
+          "tranche": 1,
+          "rows": 8794,
+          "candidate_rows": 33,
+          "index": "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-three-tranche/1-pdf_en.index.jsonl.gz",
+          "index_sha256": "1f3daac13a92e0eb255d2e1af05dbb4cadf8abfa1ab032facb1807e851c62a33",
+          "candidates": "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-three-tranche/1-pdf_en.candidates.jsonl",
+          "candidates_sha256": "0f33b0b65e51c0c8d3eabd47b4fe9af467716adb19612fe3702c67de2b42abff",
+          "elapsed_seconds": 48.00824232771993,
+          "status": "COMPLETED"
+        },
+        {
+          "source_id": "dclm",
+          "tranche": 2,
+          "rows": 14000,
+          "candidate_rows": 12,
+          "index": "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-three-tranche/2-dclm.index.jsonl.gz",
+          "index_sha256": "bb93a993245f2cbb71a769c120610cd2e79889bf0281f1ac9c4f695dad7a46b8",
+          "candidates": "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-three-tranche/2-dclm.candidates.jsonl",
+          "candidates_sha256": "d49c69ea2361546864222835ca2dce13d273cac032632656b64624332906afca",
+          "elapsed_seconds": 20.287781204096973,
+          "status": "COMPLETED"
+        },
+        {
+          "source_id": "pdf_en",
+          "tranche": 2,
+          "rows": 5000,
+          "candidate_rows": 15,
+          "index": "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-three-tranche/2-pdf_en.index.jsonl.gz",
+          "index_sha256": "332f4f7989f71745993c4b46de8fb26bbb7b9eb7bfc9687c29fa88058584fa94",
+          "candidates": "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-three-tranche/2-pdf_en.candidates.jsonl",
+          "candidates_sha256": "c3a86d27cad7b7d7703741fbbad9e010a54089a0c034f25ba19e749c089d07e0",
+          "elapsed_seconds": 27.23245584592223,
+          "status": "COMPLETED"
+        }
+      ],
+      "log_tail": ""
+    }
+  }
+}

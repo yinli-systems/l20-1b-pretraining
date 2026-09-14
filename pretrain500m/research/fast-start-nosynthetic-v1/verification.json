@@ -1,0 +1,11 @@
+{
+  "status": "PASS_SEPARATE_RECIPE_AND_QUOTA_INVARIANTS",
+  "original_protocol_sha256_unchanged": "614c653cad91ac76e146a99e9b4eaeb7d4b3aab0d164d8b985983f253c4791a9",
+  "recipes": 4,
+  "screen_seed_count": 2,
+  "screen_and_confirmation_quotas_verified": true,
+  "no_new_nonweb_leaf_requirement": true,
+  "synthetic_prediction_tokens": 0,
+  "training_admitted": false,
+  "training_started": false
+}

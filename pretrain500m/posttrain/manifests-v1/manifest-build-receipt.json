@@ -1,0 +1,66 @@
+{
+  "status": "F0_F1_F3_MANIFESTS_BUILT_F2_TOPUP_REQUIRED_NOT_ADMITTED",
+  "checked_utc": "2026-09-13T23:46:51.570637+00:00",
+  "manifests": {
+    "F0_existing_web_control": {
+      "path": "pretrain500m/posttrain/manifests-v1/F0_existing_web_control.json",
+      "sha256": "cdcb6e4428cbfdbd1ee38eabbbd6f41edeefafa9a481540b62e63c1ea10bd1b6",
+      "blocks": 262144,
+      "sources": {
+        "fineweb_edu": 262144
+      }
+    },
+    "F1_broad_english_no_synthetic": {
+      "path": "pretrain500m/posttrain/manifests-v1/F1_broad_english_no_synthetic.json",
+      "sha256": "89837d02e6048ee7f496f75023d67f1352a20dd779579c89991078c684a5434f",
+      "blocks": 262144,
+      "sources": {
+        "fineweb_edu": 91750,
+        "dclm": 52429,
+        "pdf_en": 52429,
+        "finemath4": 29492,
+        "infiwebmath4": 9830,
+        "code_python": 13107,
+        "code_javascript": 5243,
+        "code_typescript": 2621,
+        "code_cpp": 2622,
+        "code_java": 2621
+      }
+    },
+    "F3_broad_multilingual_no_synthetic": {
+      "path": "pretrain500m/posttrain/manifests-v1/F3_broad_multilingual_no_synthetic.json",
+      "sha256": "07d730fd6cbc150f1ea3073cf1b90e538d03f5aa86c655acf676e274f20515f5",
+      "blocks": 262144,
+      "sources": {
+        "fineweb_edu": 65536,
+        "dclm": 39322,
+        "pdf_en": 52429,
+        "finemath4": 29491,
+        "infiwebmath4": 9830,
+        "code_python": 19661,
+        "code_javascript": 7865,
+        "code_typescript": 3932,
+        "code_cpp": 3932,
+        "code_java": 3932,
+        "multilingual_cmn_Hani": 13107,
+        "multilingual_spa_Latn": 2621,
+        "multilingual_fra_Latn": 2621,
+        "multilingual_deu_Latn": 2622,
+        "multilingual_jpn_Jpan": 2621,
+        "multilingual_arb_Arab": 2622
+      }
+    }
+  },
+  "f2_shortages": {
+    "finemath4": {
+      "required_blocks": 39322,
+      "available_blocks": 19038,
+      "two_epoch_capacity_blocks": 38076,
+      "shortage_blocks": 1246,
+      "shortage_prediction_tokens": 2551808
+    }
+  },
+  "filtered_pack_sha256": "1d0fcd10e2e107c49402f0ba4601d4dc50b29d64e245dbfbf472702f61b49103",
+  "quota_plan_sha256": "0a6522258e1037dac86a5c6f8fd9d8cb65e6b40ecb3ff3cf9193f52b9999cf50",
+  "training_admitted": false
+}

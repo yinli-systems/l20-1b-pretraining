@@ -1,0 +1,37 @@
+{
+  "checked_utc": "2026-09-13T22:52:21.981636+00:00",
+  "free_bytes": 21313028096,
+  "owner": "pretrain500m 2026-09-12 isolated run; owner task 01a09290-b43f-7431-be8a-412ea5d37954\n",
+  "uid": 1256,
+  "quality-family-v1": {
+    "status": "QUALITY_AND_FAMILY_FEATURES_COMPLETE_NOT_ADMITTED",
+    "checked_utc": "2026-09-13T22:42:20.429751+00:00",
+    "rows": 199407,
+    "passed_rows_before_eligible_dedup_and_reserves": 180758,
+    "elapsed_seconds": 219.9067794540897,
+    "workers": 4,
+    "raw_report_sha256": "71240c265d14bc4ddb234503ca2a50724de4cbb9874637e8c9609a8e961319c8",
+    "exclusion_plan_sha256": "c622932c94ae2c56dfd0e14691e72975214381288c03979c4be759211acb00df",
+    "training_admitted": false,
+    "training_text_modified": false,
+    "report_sha256": "8e4d1446084cc9893f0d08250f1b79579dfd4630a0bb148ac84098d44ea055ba"
+  },
+  "old-source-overlap-v1": {
+    "status": "OLD_SOURCE_NORMALIZED_OVERLAP_COMPLETE_NOT_ADMITTED",
+    "training_admitted": false,
+    "checked_utc": "2026-09-13T22:10:54.749865+00:00",
+    "elapsed_seconds": 407.38540191110224,
+    "manifest_sha256": "8291e6c2a9af017904a3cc17b838cff231ff1a6da4cf7b9fe810b2dd6995a6e5",
+    "new_index_report_sha256": "a644aaa72d371e0da1db917a30d6a5d227e7585fcbc0e5e4a03e88d5ece021ce",
+    "new_rows": 199407,
+    "old_rows": 9672101,
+    "matched_old_rows": 20,
+    "scope": "NFKC/lower/whitespace full-document SHA256 equality against all fourteen original source shards.",
+    "report_sha256": "acdae1f0acec3ac54c2a96f1704867a6fcac270ed425b4f40caaccc29ab0e9b2"
+  },
+  "scheduler": {
+    "rc": 0,
+    "output": "1560103|biomm-lssd03-receipt|PENDING|gres/gpu:1|(Dependency)\n1560080|biomm-instr20-select|PENDING|gres/gpu:1|(Dependency)\n1560079|biomm-instr-paired|PENDING|gres/gpu:1|(Dependency)\n1560078|biomm-instr20-sqa|PENDING|gres/gpu:1|(DependencyNeverSatisfied)\n1560077|biomm-instr20-vqa|PENDING|gres/gpu:1|(DependencyNeverSatisfied)\n1560076|biomm-instr20-pmqa|PENDING|gres/gpu:1|(DependencyNeverSatisfied)\n1500015|abf-late-scale-analyze|PENDING|gres/gpu:1|(DependencyNeverSatisfied)\n1588406|lob-bt01|RUNNING|gres/gpu:1|wqd10nah04g5\n",
+    "error": ""
+  }
+}

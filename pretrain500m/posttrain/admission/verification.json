@@ -1,0 +1,21 @@
+{
+  "checked_utc": "2026-09-13T18:02:39.564051+00:00",
+  "status": "OFFLINE_PREPARATION_VERIFIED_CORPUS_NOT_ADMITTED",
+  "quota_parent_leaf_conservation": "PASS_ALL_8_OPTIONS",
+  "screen_parent_identity": "PASS",
+  "maximum_leaf_rounding_error": "LESS_THAN_ONE_BLOCK",
+  "canonical_url_behavior": "PASS_CASE_QUERY_AND_TRACKING_CHECKS",
+  "unicode_preserved": "PASS",
+  "inspection_source_hashes": "PASS",
+  "syntax": "PASS",
+  "code_sha256": {
+    "plan_subsources.py": "4236e64a5393a57a6b6334a07b1704e8ae20e08bf322c5cc2f2d075c1488bb42",
+    "audit_sample_families.py": "24f3eb430f33cb1e42e16bebfcb63b0cbc65aca3eb2b09458ab3cfe3204010a5"
+  },
+  "outputs_sha256": {
+    "sample-family-audit-v1.json": "383dddc2406731f3cdcd59b19869d6fe54060cf030576570f0de74737027dbea",
+    "subsource-quotas-v1.json": "a739b245be96eb708d1e2039a91723652c906582b3241f772768d92615e754d2"
+  },
+  "new_gpu_training_launched": false,
+  "training_admitted": false
+}

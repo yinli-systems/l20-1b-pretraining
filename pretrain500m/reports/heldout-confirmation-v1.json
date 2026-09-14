@@ -1,0 +1,95 @@
+{
+  "claim_boundary": "held-out language-model loss confirmation; not generative task accuracy or final promotion",
+  "gate": "both F3 seeds improve equal-domain loss versus base and no domain regresses by more than 0.5%",
+  "microbatch": 2,
+  "results": [
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/formal/run-v5/resume.pt",
+      "checkpoint_id": "base",
+      "checkpoint_sha256": "13aa21721e15c48cdfdafe30d8fdd41d9c95c90be766327661d96af1e90dd6cf",
+      "loss_by_domain": {
+        "code": 3.501598031398226,
+        "general_web": 3.3010137907042725,
+        "knowledge_reading": 2.9595147539855575,
+        "math": 2.9234946903400343,
+        "multilingual": 3.835462191171519
+      },
+      "loss_equal_domain": 3.304216691519922,
+      "loss_token_weighted": 3.2056666714616395,
+      "ppl_equal_domain": 27.22720593239604,
+      "target_tokens_by_domain": {
+        "code": 1141202,
+        "general_web": 1647291,
+        "knowledge_reading": 4221130,
+        "math": 1540023,
+        "multilingual": 1554169
+      }
+    },
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/screens-v2/F3_broad_multilingual_no_synthetic-1588454/train/model-final.pt",
+      "checkpoint_id": "f3_seed20260914",
+      "checkpoint_sha256": "4212f9aded17a8b5b0047efc83c7c2ba7d1198b51c2e4b63bc54e3daca6d7d4c",
+      "loss_by_domain": {
+        "code": 1.7534011959959341,
+        "general_web": 3.0746255270691196,
+        "knowledge_reading": 2.6594471284682033,
+        "math": 2.337857781085244,
+        "multilingual": 3.130015995266682
+      },
+      "loss_equal_domain": 2.591069525577037,
+      "loss_token_weighted": 2.6481669103326837,
+      "ppl_equal_domain": 13.34403576144278,
+      "relative_equal_domain_loss_reduction_vs_base": 0.215829418141109,
+      "relative_loss_change_vs_base_by_domain": {
+        "code": -0.49925685921870877,
+        "general_web": -0.06858143527684346,
+        "knowledge_reading": -0.10139081925956117,
+        "math": -0.20032083902525377,
+        "multilingual": -0.18392729760930393
+      },
+      "target_tokens_by_domain": {
+        "code": 1141202,
+        "general_web": 1647291,
+        "knowledge_reading": 4221130,
+        "math": 1540023,
+        "multilingual": 1554169
+      }
+    },
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/screens-v3/F3_broad_multilingual_no_synthetic-seed20260915-1588560/train/model-final.pt",
+      "checkpoint_id": "f3_seed20260915",
+      "checkpoint_sha256": "dcc9a4f935d8b5574dc449b6263c696d9d355e70d157c8914f647c7aed61324a",
+      "loss_by_domain": {
+        "code": 1.7526608849675773,
+        "general_web": 3.0739628247808306,
+        "knowledge_reading": 2.6590870936093327,
+        "math": 2.3381233486988635,
+        "multilingual": 3.131522748708537
+      },
+      "loss_equal_domain": 2.5910713801530285,
+      "loss_token_weighted": 2.6480970820388974,
+      "ppl_equal_domain": 13.344060508994081,
+      "relative_equal_domain_loss_reduction_vs_base": 0.21582885686557396,
+      "relative_loss_change_vs_base_by_domain": {
+        "code": -0.4994682801247403,
+        "general_web": -0.06878219247760264,
+        "knowledge_reading": -0.1015124726010036,
+        "math": -0.20022999992966828,
+        "multilingual": -0.18353444966380128
+      },
+      "target_tokens_by_domain": {
+        "code": 1141202,
+        "general_web": 1647291,
+        "knowledge_reading": 4221130,
+        "math": 1540023,
+        "multilingual": 1554169
+      }
+    }
+  ],
+  "schema_version": 1,
+  "status": "PASS_TWO_SEED_HELDOUT_CONFIRMATION",
+  "validation_manifest": "/ssd/scxi253/pretrain500m-20260912-v1/data/confirmation-masked-v1/confirmation-mixture.json",
+  "validation_manifest_sha256": "6b53a58bbfe8991ecbbd754e8e27c3d832410f353a69f44a6180eb1e78624ae2",
+  "validation_prediction_tokens": 16678912,
+  "world_size": 8
+}

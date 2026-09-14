@@ -1,0 +1,15 @@
+{
+  "checked_utc": "2026-09-13T17:44:28.895227+00:00",
+  "json_parse": "PASS",
+  "authored_python_syntax": "PASS",
+  "internal_markdown_links": "PASS",
+  "source_snapshot_sha256": "PASS_PREVIOUS_CHECK",
+  "downloaded_sample_sha256": "PASS_PREVIOUS_CHECK",
+  "exact_token_quota_and_design_identity": "PASS",
+  "code_content_identity": "14/14",
+  "python3_ast_parse_only": "14/14",
+  "gpu_mixture_training": "NOT_RUN",
+  "full_data_quality_audit": "NOT_RUN",
+  "v2_local_cpu_tests": "31_PASS; SYNTHETIC_DATA_AND_TINY_CPU_NETWORK",
+  "v2_receipt_sha256": "d3323202c0f2b6b077568ebd68cbfb118b83385e8819afb4e32d8ebf3df2a49e"
+}

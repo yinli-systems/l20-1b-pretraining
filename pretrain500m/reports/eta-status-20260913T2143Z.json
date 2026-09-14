@@ -1,0 +1,52 @@
+{
+  "checked_utc": "2026-09-13T21:43:59.323885+00:00",
+  "free_bytes": 21960466432,
+  "sources": {
+    "dclm": {
+      "status": "RAW_SEGMENT_READY",
+      "started_utc": "2026-09-13T21:38:25.865308+00:00",
+      "completed_utc": "2026-09-13T21:40:06.314296+00:00",
+      "updated_utc": "2026-09-13T21:40:06.216553+00:00",
+      "rows_written": 14000,
+      "uncompressed_output_bytes": 83747472,
+      "stop_reason": null,
+      "error_type": null,
+      "error": null,
+      "groups_read": 14
+    },
+    "pdf_en": {
+      "status": "RAW_SEGMENT_READY",
+      "started_utc": "2026-09-13T21:38:25.854231+00:00",
+      "completed_utc": "2026-09-13T21:39:16.156025+00:00",
+      "updated_utc": "2026-09-13T21:39:16.025266+00:00",
+      "rows_written": 5000,
+      "uncompressed_output_bytes": 121869540,
+      "stop_reason": null,
+      "error_type": null,
+      "error": null,
+      "groups_read": 5
+    }
+  },
+  "data_directories": [
+    "contamination-v1-combined",
+    "contamination-v1-first-tranche",
+    "diverse-audit-v1",
+    "diverse-audit-v2-combined",
+    "diverse-audit-v2-v1-validation",
+    "diverse-intake-v1",
+    "diverse-intake-v2",
+    "diverse-intake-v3",
+    "fineweb-edu-audit-fast-v1",
+    "fineweb-edu-audit-v1",
+    "fineweb-edu-audit-v2"
+  ],
+  "summary": {
+    "status": "RAW_INTAKE_FINISHED_NOT_ADMITTED",
+    "checked_utc": "2026-09-13T21:40:06.339022+00:00",
+    "sources_ready": 2,
+    "sources_blocked": 0,
+    "rows": 19000,
+    "training_admitted": false
+  },
+  "project_processes": []
+}

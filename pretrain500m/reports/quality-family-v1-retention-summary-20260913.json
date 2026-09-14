@@ -1,0 +1,137 @@
+{
+  "status": "DECLARED_FILTER_RESULTS_MEASURED_NOT_ADMITTED",
+  "rows": 199407,
+  "passed_rows_before_eligible_dedup_and_reserves": 180758,
+  "elapsed_seconds": 219.9067794540897,
+  "sources": {
+    "code_cpp": {
+      "rows": 4057,
+      "passed_rows": 3998,
+      "passed_encoded_tokens": 4806793,
+      "passed_raw_packed_prediction_token_upper_bound": 4802560,
+      "single_screen_shortage_lower_bound_before_eligible_dedup_and_reserves": 0
+    },
+    "code_java": {
+      "rows": 7649,
+      "passed_rows": 7573,
+      "passed_encoded_tokens": 5896230,
+      "passed_raw_packed_prediction_token_upper_bound": 5892096,
+      "single_screen_shortage_lower_bound_before_eligible_dedup_and_reserves": 0
+    },
+    "code_javascript": {
+      "rows": 10092,
+      "passed_rows": 9911,
+      "passed_encoded_tokens": 9954027,
+      "passed_raw_packed_prediction_token_upper_bound": 9947136,
+      "single_screen_shortage_lower_bound_before_eligible_dedup_and_reserves": 0
+    },
+    "code_python": {
+      "rows": 21928,
+      "passed_rows": 21441,
+      "passed_encoded_tokens": 25137243,
+      "passed_raw_packed_prediction_token_upper_bound": 25124864,
+      "single_screen_shortage_lower_bound_before_eligible_dedup_and_reserves": 0
+    },
+    "code_typescript": {
+      "rows": 6260,
+      "passed_rows": 6126,
+      "passed_encoded_tokens": 5110866,
+      "passed_raw_packed_prediction_token_upper_bound": 5107712,
+      "single_screen_shortage_lower_bound_before_eligible_dedup_and_reserves": 0
+    },
+    "cosmopedia2": {
+      "rows": 4000,
+      "passed_rows": 0,
+      "passed_encoded_tokens": 0,
+      "passed_raw_packed_prediction_token_upper_bound": 0,
+      "single_screen_shortage_lower_bound_before_eligible_dedup_and_reserves": 0
+    },
+    "dclm": {
+      "rows": 51044,
+      "passed_rows": 46002,
+      "passed_encoded_tokens": 62753814,
+      "passed_raw_packed_prediction_token_upper_bound": 62722048,
+      "single_screen_shortage_lower_bound_before_eligible_dedup_and_reserves": 0
+    },
+    "finemath4": {
+      "rows": 34000,
+      "passed_rows": 29259,
+      "passed_encoded_tokens": 41818395,
+      "passed_raw_packed_prediction_token_upper_bound": 41797632,
+      "single_screen_shortage_lower_bound_before_eligible_dedup_and_reserves": 0
+    },
+    "infiwebmath4": {
+      "rows": 12000,
+      "passed_rows": 11125,
+      "passed_encoded_tokens": 15404654,
+      "passed_raw_packed_prediction_token_upper_bound": 15396864,
+      "single_screen_shortage_lower_bound_before_eligible_dedup_and_reserves": 0
+    },
+    "multilingual_arb_Arab": {
+      "rows": 3583,
+      "passed_rows": 3148,
+      "passed_encoded_tokens": 7321424,
+      "passed_raw_packed_prediction_token_upper_bound": 7317504,
+      "single_screen_shortage_lower_bound_before_eligible_dedup_and_reserves": 0
+    },
+    "multilingual_cmn_Hani": {
+      "rows": 11000,
+      "passed_rows": 10906,
+      "passed_encoded_tokens": 18364169,
+      "passed_raw_packed_prediction_token_upper_bound": 18354176,
+      "single_screen_shortage_lower_bound_before_eligible_dedup_and_reserves": 0
+    },
+    "multilingual_deu_Latn": {
+      "rows": 4000,
+      "passed_rows": 3847,
+      "passed_encoded_tokens": 5931863,
+      "passed_raw_packed_prediction_token_upper_bound": 5928960,
+      "single_screen_shortage_lower_bound_before_eligible_dedup_and_reserves": 0
+    },
+    "multilingual_fra_Latn": {
+      "rows": 4000,
+      "passed_rows": 3606,
+      "passed_encoded_tokens": 5028186,
+      "passed_raw_packed_prediction_token_upper_bound": 5023744,
+      "single_screen_shortage_lower_bound_before_eligible_dedup_and_reserves": 0
+    },
+    "multilingual_jpn_Jpan": {
+      "rows": 4000,
+      "passed_rows": 3931,
+      "passed_encoded_tokens": 4671559,
+      "passed_raw_packed_prediction_token_upper_bound": 4667392,
+      "single_screen_shortage_lower_bound_before_eligible_dedup_and_reserves": 0
+    },
+    "multilingual_spa_Latn": {
+      "rows": 4000,
+      "passed_rows": 3551,
+      "passed_encoded_tokens": 3821564,
+      "passed_raw_packed_prediction_token_upper_bound": 3819520,
+      "single_screen_shortage_lower_bound_before_eligible_dedup_and_reserves": 0
+    },
+    "pdf_en": {
+      "rows": 17794,
+      "passed_rows": 16334,
+      "passed_encoded_tokens": 79880951,
+      "passed_raw_packed_prediction_token_upper_bound": 79841280,
+      "single_screen_shortage_lower_bound_before_eligible_dedup_and_reserves": 0
+    }
+  },
+  "flag_occurrences_not_unique_rows": {
+    "too_short": 6054,
+    "repeated_long_lines": 1088,
+    "dominant_character": 149,
+    "excluded_from_f_series": 4000,
+    "missing_family_identity": 4442,
+    "legacy_13word_hash_candidate_conservative_exclusion": 181,
+    "source_language_score": 4214,
+    "missing_registrable_domain": 557,
+    "language_windows": 4316,
+    "control_characters": 394,
+    "replacement_characters": 87,
+    "verified_supplemental_exact_span_exclusion": 3,
+    "old_source_normalized_overlap_conservative_exclusion": 19
+  },
+  "upper_bound_scope": "Reuses model-tokenizer counts. Exact/near-duplicate representative selection, family quarantine and reserves still pending.",
+  "training_admitted": false
+}

@@ -1,0 +1,146 @@
+{
+  "aggregate": {
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 20260912,
+    "confidence_interval": "10000 independent within-task nonparametric bootstrap resamples from logged per-example primary scores, seed 20260912; aggregate each resample by the same unweighted task mean",
+    "definition": "arithmetic mean of the seven primary task metrics; no task-size weighting",
+    "name": "seven_task_unweighted_mean"
+  },
+  "claim_limits": [
+    "A scheduler allocation or systems pilot is not a trained model result.",
+    "Validation loss on a training shard in the systems pilot is not held-out quality.",
+    "Upstream benchmark numbers with different prompts, implementations, token budgets, data, or post-training are not direct comparisons.",
+    "The corpus and generated model may reproduce web-source bias, private information, copyrighted text, or unsafe content; decontamination is not a privacy guarantee."
+  ],
+  "comparisons": {
+    "candidate_models": [
+      "allenai/DataDecide-dclm-baseline-qc-7p-fw3-530M",
+      "allenai/DataDecide-fineweb-edu-530M",
+      "HuggingFaceTB/SmolLM2-360M",
+      "facebook/MobileLLM-600M",
+      "apple/OpenELM-450M",
+      "Qwen/Qwen3-0.6B-Base",
+      "tiiuae/Falcon-H1-0.5B-Base"
+    ],
+    "matched_protocol_required_for_direct_claims": true,
+    "upstream_reported_scores_are_context_only_until_rerun": true
+  },
+  "decontamination": {
+    "boolq_note": "google/boolq validation passage content covers lm-eval super_glue/boolq passage-only decontamination query at the pinned revisions",
+    "database_sha256": "661f939a8787d2c14a52b305ec6a6b5737aabe5146f557461473e89f22e3a256",
+    "unique_13grams": 4890747
+  },
+  "evaluator": {
+    "apply_chat_template": false,
+    "batch_size": "auto",
+    "bootstrap_iters": 10000,
+    "device": "cuda",
+    "dtype": "bfloat16",
+    "limit": null,
+    "log_samples": true,
+    "max_length": 2048,
+    "model_backend": "hf",
+    "num_fewshot": 0,
+    "package": "lm-eval",
+    "seeds": {
+      "fewshot_random_seed": 1234,
+      "numpy_random_seed": 42,
+      "random_seed": 42,
+      "torch_random_seed": 42
+    },
+    "trust_remote_code": false,
+    "version": "0.4.9",
+    "wheel_sha256": "6be0bd9395fd08e71b876622c3f53db54345a74faf60c34bf617e74dde33ba8f"
+  },
+  "frozen_at_utc": "2026-09-11T23:38:50Z",
+  "model_scope": {
+    "base_model_only": true,
+    "context_length": 2048,
+    "from_scratch": true,
+    "language": "English",
+    "parameter_band": [
+      350000000,
+      700000000
+    ]
+  },
+  "protocol_id": "p500m-english-base-v1",
+  "status": "FROZEN_BEFORE_FORMAL_TRAINING",
+  "systems_gate": {
+    "bitwise_complete_state_resume_required": true,
+    "finite_loss_and_gradient_required": true,
+    "mfu_denominator": "sourced dense non-sparse BF16 Tensor TFLOP/s with FP32 accumulate per physical GPU",
+    "minimum_mfu_strictly_greater_than": 0.5,
+    "real_data_pilot_required": true
+  },
+  "task_yaml_sha256": {
+    "arc_challenge": "682621c26ae24b1065a2d732460a55a8ef2b9f2544574431666c9309a9efd7bd",
+    "arc_easy": "96da1d9efe1df88659481cedc13985cb347dc068554a2eae561303fa39bfab3f",
+    "boolq": "b6a50f0806b7a363ce6c0545d214d721742315567599ae213116a695ac333af9",
+    "hellaswag": "cabb0340cad5fb66c2d62f6cfab16b85df18070e606300f20e4f579e49fdc5e3",
+    "openbookqa": "6224b08e7b0f2f54c54d292994f67521213f49b50289be8f22321aa675b8c898",
+    "piqa": "a3a3987a05272b799632214d2f8852b19f62800f92f809cc47075bfc0e3e549c",
+    "winogrande": "68f42f3ac6358978973b4d891d889c544110b22d200fba6d0e52a588b2af4070"
+  },
+  "tasks": {
+    "arc_challenge": {
+      "dataset_repo": "allenai/ai2_arc",
+      "primary_metric": "acc_norm",
+      "revision": "210d026faf9955653af8916fad021475a3f00453",
+      "split": "test"
+    },
+    "arc_easy": {
+      "dataset_repo": "allenai/ai2_arc",
+      "primary_metric": "acc_norm",
+      "revision": "210d026faf9955653af8916fad021475a3f00453",
+      "split": "test"
+    },
+    "boolq": {
+      "dataset_repo": "aps/super_glue",
+      "primary_metric": "acc",
+      "revision": "3de24cf8022e94f4ee4b9d55a6f539891524d646",
+      "split": "validation"
+    },
+    "hellaswag": {
+      "dataset_repo": "Rowan/hellaswag",
+      "primary_metric": "acc_norm",
+      "revision": "218ec52e09a7e7462a5400043bb9a69a41d06b76",
+      "split": "validation"
+    },
+    "openbookqa": {
+      "dataset_repo": "allenai/openbookqa",
+      "primary_metric": "acc_norm",
+      "revision": "388097ea7776314e93a529163e0fea805b8a6454",
+      "split": "test"
+    },
+    "piqa": {
+      "dataset_repo": "baber/piqa",
+      "primary_metric": "acc_norm",
+      "revision": "142f6d7367fd9877f0fb3b5734ea6a545f54cdd1",
+      "split": "validation"
+    },
+    "winogrande": {
+      "dataset_repo": "allenai/winogrande",
+      "primary_metric": "acc",
+      "revision": "01e74176c63542e6b0bcb004dcdea22d94fb67b5",
+      "split": "validation"
+    }
+  },
+  "training_data": {
+    "benchmark_decontamination": "exact normalized 13-word match; whole source document is excluded on any match",
+    "config": "sample-10BT",
+    "dataset": "HuggingFaceFW/fineweb-edu",
+    "document_exact_dedup": true,
+    "license": "ODC-By-1.0",
+    "packed_block_tokens": 2049,
+    "planned_data_epochs": 1.7785540706121912,
+    "planned_effective_prediction_tokens": 15999172608,
+    "planned_raw_packed_train_tokens": 8999998914,
+    "planned_unique_prediction_tokens": 8995606528,
+    "revision": "87f09149ef4734204d70ed1d046ddc9ca3f2b8f9",
+    "selection": {
+      "int_score_min": 3,
+      "language": "en",
+      "language_score_min": 0.9
+    }
+  }
+}
