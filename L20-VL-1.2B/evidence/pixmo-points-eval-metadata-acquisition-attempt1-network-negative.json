@@ -1,0 +1,15 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "failed_before_source_acquisition",
+  "attempt": 1,
+  "protocol_sha256": "887d1aa5a3b5d8d5545dcf589fbe2fe5de98b0b3a5711bd13580cbe69e42d29c",
+  "failure_stage": "remote HTTPS connection before response or temporary-file creation",
+  "error_type": "requests.exceptions.ConnectionError",
+  "root_cause": "L20 host returned Errno 101 Network is unreachable when connecting to huggingface.co:443.",
+  "source_bytes_written": 0,
+  "receipt_written": false,
+  "model_under_test_accessed": false,
+  "training_started": false,
+  "model_evaluation_started": false,
+  "resolution": "Stage the pinned source from a networked host, then re-run with exact byte and SHA256 verification."
+}

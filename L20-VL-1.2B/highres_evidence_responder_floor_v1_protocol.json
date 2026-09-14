@@ -1,0 +1,90 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "experiment_id": "highres_evidence_responder_development_floor_v1",
+  "status": "authorized_highres_evidence_responder_development_floor_only_v1",
+  "purpose": "Measure, without parameter updates or sealed-test access, whether the frozen Stage-D responder can use an independently encoded source-resolution oracle crop to answer the synthetic local-evidence task.",
+  "parameter_update_authorized": false,
+  "sealed_test_access_authorized": false,
+  "prerequisites": {
+    "generation_receipt": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-search-pilot-v1-generation.json",
+      "sha256": "38018a5c16ae0c5a0f30f9d4ce2680d753bd29c26e6eec6bf5dae451e2d6d0f3"
+    },
+    "primary_visual_audit": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-search-pilot-v1-primary-visual-audit.json",
+      "sha256": "c247d81024367f7e872d36d99e5950079aca2b54bd5021521aabe05d63d82845"
+    },
+    "preprocessing_floor_receipt": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-preprocessing-floor-v1.json",
+      "sha256": "3990d1a73dba0977fa6447c3ff646ea39d6b055edece90cce0804b727013350d"
+    },
+    "manifest": {
+      "path": "/home/hhai/l20-vl-1.2b/data/highres-evidence-search-pilot-v1/manifest.jsonl",
+      "sha256": "ddff8c102a9b7533ae5f934f80d5777e67bcc0668651db41ec5781edf10710db"
+    }
+  },
+  "parents": {
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base",
+    "language_release_manifest_sha256": "83e9a0982f96cfec65b109034669a9cc913e8b870201d2323805aecdaeabb051",
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55",
+    "vision_artifacts": {
+      "config.json": "fe8b5fe6d5734360678fd71c11c21e1ea3364bd8598d34295d9206335973ffd7",
+      "model.safetensors": "612923381c76ec5a9bed335d1c48827e3f2e506ac31b044b63b2031fadee6a0b",
+      "preprocessor_config.json": "9b36b57ebaf20f09bf4c22100ccc21877ea6bfe5aead0c00c59f8af8ccefacfc"
+    },
+    "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20260930-v1/step-000700/bridge.safetensors",
+    "bridge_sha256": "d4b04aa98e5430a1fe5a11918da87a67007d283116b4e843c1d640fc7c31f6ce",
+    "language_adapter": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20260930-v1/step-000700/language_adapter",
+    "language_adapter_files": {
+      "adapter_config.json": "beb25b1266075702a22f78be2daa5f03625a0198514f0137a1284e974b06fc9b",
+      "adapter_model.safetensors": "b6b31eb6927d27ba2a0dbdc71f50adca68f95b849f39a05bdbba532cf61cbaa9"
+    }
+  },
+  "architecture": {
+    "visual_tokens": 196,
+    "vision_feature_layer": -1,
+    "compressor": "spatial_query",
+    "output_visual_tokens": 49,
+    "target_ratio": 4
+  },
+  "data": {
+    "root": "/home/hhai/l20-vl-1.2b/data/highres-evidence-search-pilot-v1",
+    "manifest": "/home/hhai/l20-vl-1.2b/data/highres-evidence-search-pilot-v1/manifest.jsonl",
+    "allowed_split": "development",
+    "blocked_split": "sealed_test",
+    "split_unit": "scene_family"
+  },
+  "evaluation": {
+    "conditions_all_tasks": ["global", "no_image"],
+    "conditions_local_task": ["crop", "global_crop", "global_mismatched_crop"],
+    "candidate_scoring": "mean non-EOS answer-token log probability",
+    "candidate_order_checks": ["normal", "reversed"],
+    "feature_batch_images": 32,
+    "batch_rows": 4,
+    "max_text_tokens": 64,
+    "precision": "bfloat16",
+    "checkpoint_selection": "none",
+    "hyperparameter_search": "none"
+  },
+  "statistics": {
+    "bootstrap_samples": 10000,
+    "seed": 20260914,
+    "cluster_unit": "scene_family"
+  },
+  "gate": {
+    "minimum_global_crop_local_accuracy": 0.5,
+    "minimum_global_crop_minus_global_ci95_low": 0.0,
+    "minimum_true_minus_mismatched_ci95_low": 0.0,
+    "candidate_order_invariance_required": true,
+    "rationale": "The existing responder is admitted only if the true crop gives a statistically positive family-clustered gain over both the global view and an equally sized wrong crop, while reaching useful absolute accuracy."
+  },
+  "source_code": {
+    "evaluator_sha256": "486c2fe177f4af9c2e3f94ca4f6638029ecf5c2ad7620b63d2f4c20da7dc1b72",
+    "test_sha256": "c45bdd34e003d0447da0b0dc1a0ce768d8076a89d606dfb2f47fbb3cb8fdd3e0"
+  },
+  "output": {
+    "receipt": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-responder-development-floor-v1.json",
+    "predictions": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-responder-development-floor-v1-predictions.jsonl"
+  },
+  "claim_boundary": "This is a development-only, finite-candidate, oracle-crop diagnostic on one deterministic synthetic rendering family. It tests whether the current frozen Stage-D responder changes correct answers when given answer-bearing versus mismatched crop evidence. It does not measure learned localization, free-form generation, natural-image OCR, router quality, sealed-test generalization, or superiority over another VLM."
+}

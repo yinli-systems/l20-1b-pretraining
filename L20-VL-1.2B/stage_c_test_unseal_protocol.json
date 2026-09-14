@@ -1,0 +1,69 @@
+{
+  "schema_version": "2026-09-13-v1",
+  "status": "authorized_one_time_stage_c_test_after_all_primary_arms_frozen",
+  "authorized_by_user": true,
+  "authorized_at": "2026-09-13",
+  "matrix_protocol": {
+    "path": "/home/hhai/l20-vl-1.2b/stage_c_matched_matrix_protocol.json",
+    "sha256": "6c619268257ce6a018abbeafae66573978cfad452ba0c8c8fd1da514726ac70c"
+  },
+  "selection_split": "development",
+  "test_split": "test",
+  "seed": 20260921,
+  "selected_arms": {
+    "answer_49": {
+      "step": 875,
+      "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-c-answer-49-seed20260921-v1/step-000875/bridge.safetensors",
+      "bridge_sha256": "69de178d68f20ac3899a85e1581e837caa0d775e655d66853644b610b29bb7a1",
+      "adapter_model_sha256": "b1557d320be068af9e2e49d7d6f6ed12a2a60c07a1ed4202498fafc919710f9f",
+      "adapter_config_sha256": "66a01ab16f04a1563674b9b603abd34e3dd69465a4ddce3e39cab004455a6883",
+      "selection_evidence": "/home/hhai/l20-vl-1.2b/evidence/stage-c-answer-49-seed20260921-selection-v1.json",
+      "selection_evidence_sha256": "195b59553ebf4d02a87a9fba0f80136258a807232541429ab782ee6ae5b119f2",
+      "development_evidence": "/home/hhai/l20-vl-1.2b/evidence/stage-c-answer-49-seed20260921-development-v1.json",
+      "development_evidence_sha256": "4e72daed1c6d609dc14be863529d3bb87ecc56a534b2e47f6f28c4def909f5ae"
+    },
+    "kd_49": {
+      "step": 875,
+      "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-c-kd-49-seed20260921-v1/step-000875/bridge.safetensors",
+      "bridge_sha256": "11f140444385aaf50f80b2a04a85e76ff00a2cee0ca520d62e79a2e1fe722df7",
+      "adapter_model_sha256": "0c9a61d9b225d05a93cc83a8cc9ade020c6dba6189e8fd7a2c24ab0497b7a9b5",
+      "adapter_config_sha256": "dd91c72421ee78178ca6107a03be834c1bf1e2c62ddec09660bab5fbe159026e",
+      "selection_evidence": "/home/hhai/l20-vl-1.2b/evidence/stage-c-kd-49-seed20260921-selection-v1.json",
+      "selection_evidence_sha256": "b8bce3a60b8ab0a26e353d1b485402f6c7c858e67efe4eaf155cf262c58e9614",
+      "development_evidence": "/home/hhai/l20-vl-1.2b/evidence/stage-c-kd-49-seed20260921-development-v1.json",
+      "development_evidence_sha256": "405f839b2a45778ac0661093816fe99e93898e34bd0ca819cb25dabf952632d8"
+    },
+    "strong_49": {
+      "step": 875,
+      "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-c-strong-49-seed20260921-v1/step-000875/bridge.safetensors",
+      "bridge_sha256": "316f78b85234f068ea2e484151c4a4fd0b82af96586d434dc1fa4a48620de1e0",
+      "adapter_model_sha256": "77690d8b3a1a5511c80823ff4c2f828d494b08ee57f542ed649e02e118b1be8a",
+      "adapter_config_sha256": "54476f571302b519f37d25d93162e9751e8d301378ec3e0b099bbf7f02ffa4e2",
+      "selection_evidence": "/home/hhai/l20-vl-1.2b/evidence/stage-c-strong-49-seed20260921-selection-v1.json",
+      "selection_evidence_sha256": "93567e7138ecb9251271ef991e296c97ed5a589fcb2e79b7c83d308a5cdc1980",
+      "development_evidence": "/home/hhai/l20-vl-1.2b/evidence/stage-c-strong-49-seed20260921-development-v1.json",
+      "development_evidence_sha256": "08e1fc1530b7f8a6d9bec43fdd9dd6c5d7adf919c81139cb1e76f55a2e9ddaa2"
+    },
+    "proposed_49": {
+      "step": 875,
+      "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-c-proposed-49-seed20260921-v1/step-000875/bridge.safetensors",
+      "bridge_sha256": "71921ef87715d72c8d2cac728e20497dc8bd278d1610f49e9f5aea4e71230c04",
+      "adapter_model_sha256": "e6c54982c4cedf43a08764bb4dfcde26f79038a6cfdfbcbf739a48b036f87623",
+      "adapter_config_sha256": "33ff52d3cbd96896977e060d6c6bbcb59f081884cd69695aac8661658beedb03",
+      "selection_evidence": "/home/hhai/l20-vl-1.2b/evidence/stage-c-proposed-49-seed20260921-selection-v1.json",
+      "selection_evidence_sha256": "f0b0514d834635e97b80171e347a153efa73c50f11cd61a58f77ba1cde84fb84",
+      "development_evidence": "/home/hhai/l20-vl-1.2b/evidence/stage-c-proposed-49-seed20260921-development-v1.json",
+      "development_evidence_sha256": "935cb7cd6576c0e0b7fdf2c3989c3507ffdc872b5e362f7ee70286c95229d2d6"
+    }
+  },
+  "test_execution": {
+    "each_selected_checkpoint_once": true,
+    "checkpoint_or_weight_changes_after_unseal_allowed": false,
+    "all_results_including_failures_reported": true,
+    "paired_cluster_bootstrap_resamples": 10000,
+    "primary_comparison": "proposed_49 minus strong_49",
+    "practical_effect_threshold_pp": 2.0,
+    "lower_95_ci_must_exceed_zero": true
+  },
+  "claim_boundary": "This is one training seed on a controlled synthetic test split; it is not multi-seed confirmation or natural-image evidence."
+}

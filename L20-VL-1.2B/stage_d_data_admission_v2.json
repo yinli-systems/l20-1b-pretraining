@@ -1,0 +1,27 @@
+{
+  "schema_version": "2026-09-13-v2",
+  "purpose": "authorize deterministic attribution-clean Stage-D v2 holdout generation without authorizing training or test inference",
+  "required_protocol_sha256": "0e776b0ac5cf466a3ffdc98768c41a843fffd1ffd9188d0fac53bea8b416a4fe",
+  "generator_authorized": true,
+  "formal_training_authorized": false,
+  "test_inference_authorized": false,
+  "development_families": 2000,
+  "iid_test_families": 3000,
+  "ood_binding_families": 2000,
+  "render_scale": 3,
+  "max_total_bytes": 2000000000,
+  "seed": 20260928,
+  "destination": "/home/hhai/l20-vl-1.2b/data/diagnostic/stage-d-v2",
+  "receipt": "/home/hhai/l20-vl-1.2b/evidence/stage-d-data-generation-v2.json",
+  "exclude_manifest": {
+    "path": "/home/hhai/l20-vl-1.2b/data/diagnostic/counterfactual-v3/manifest.jsonl",
+    "sha256": "6f21e01d31d8fc3035ca22219d0484a8fb029a30b2cddec34ab726585e5dfede"
+  },
+  "prohibited_uses": [
+    "training_on_stage_d_holdouts",
+    "using_iid_test_or_ood_binding_for_learning_rate_or_checkpoint_selection",
+    "claiming_natural_image_generalization",
+    "splitting_variants_of_one_family_across_partitions",
+    "rendering_clipped_or_overlapping_objects_in_binding_ood"
+  ]
+}

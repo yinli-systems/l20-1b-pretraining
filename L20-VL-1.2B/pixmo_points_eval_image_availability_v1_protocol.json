@@ -1,0 +1,51 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "experiment_id": "pixmo_points_eval_image_availability_preflight_v1",
+  "status": "authorized_pixmo_points_eval_image_availability_preflight_only_v1",
+  "purpose": "Test whether PixMo-Points-Eval's decentralized public image URLs are sufficiently complete and integrity-stable to justify a full benchmark acquisition attempt.",
+  "image_persistence_authorized": false,
+  "training_authorized": false,
+  "model_evaluation_authorized": false,
+  "prerequisites": {
+    "evaluation_parquet": {
+      "path": "/Users/alice/Documents/ChatGPT/Pretraining 2/L20-VL-1.2B/data/pixmo-points-eval-v1/sources/test-00000-of-00001.parquet",
+      "sha256": "5a7bf84b8b06ccde4deff7857923686cae3540ecc39212183c010b3a9275c3e0"
+    },
+    "metadata_acquisition_receipt": {
+      "path": "/Users/alice/Documents/ChatGPT/Pretraining 2/L20-VL-1.2B/evidence/pixmo-points-eval-metadata-acquisition-v1.json",
+      "sha256": "275856d6de9f0f51c74c5dfca97d8e48ac9e6a55d988654e992945c5576dd7a2"
+    },
+    "exact_project_overlap_receipt": {
+      "path": "/Users/alice/Documents/ChatGPT/Pretraining 2/L20-VL-1.2B/evidence/pixmo-points-eval-contamination-audit-v1.json",
+      "sha256": "02eecabd8666cc1873fe8fe375bc017cd412f07964e4710bc226b689f18b209b"
+    }
+  },
+  "sample": {
+    "unique_images": 32,
+    "selection": "First 32 unique image SHA256 values in lexical order; labels, point coordinates, masks, and model outputs are not consulted."
+  },
+  "network": {
+    "workers": 16,
+    "connect_timeout_seconds": 8,
+    "read_timeout_seconds": 20,
+    "maximum_image_bytes": 20971520,
+    "integrity_requirements": [
+      "HTTP request succeeds",
+      "payload is at most 20 MiB",
+      "payload SHA256 exactly matches pinned metadata",
+      "Pillow verify and full decode both succeed",
+      "decoded dimensions are positive"
+    ]
+  },
+  "gate": {
+    "minimum_verified_images": 30,
+    "maximum_sha256_mismatches": 0,
+    "rationale": "At least 93.75% of a deterministic model-blind sample must be directly recoverable, and no integrity mismatch is tolerated, before spending bandwidth on all 431 images. Passing this preflight would not itself authorize scoring or establish complete benchmark availability."
+  },
+  "source_code": {
+    "auditor_sha256": "769d3be964ad453c4a3290c8da0f8fbdaa0d399b63183ebdfb307de7ca74ec9a",
+    "test_sha256": "7dae740bb6e8a5b0e140e22fc0db4087b902b76228f4228ec65c27d918979ef3"
+  },
+  "output_receipt": "/Users/alice/Documents/ChatGPT/Pretraining 2/L20-VL-1.2B/evidence/pixmo-points-eval-image-availability-preflight-v1-negative.json",
+  "claim_boundary": "This is a time-specific network and integrity preflight over 32 of 431 unique images. A failure rejects available-only scoring because it would be selection-biased; it does not imply that the official metadata or annotations are invalid. A pass would justify only a separate full acquisition attempt, not model evaluation or an official benchmark score."
+}

@@ -1,0 +1,248 @@
+{
+  "protocol_version": "2026-09-12-v1",
+  "project": "L20-VL-1.2B",
+  "status": "stage_0_research_and_preflight_only",
+  "automatic_stage_advance": false,
+  "publication_authorized": false,
+  "formal_training_authorized": false,
+  "quality_gate_registry": "quality_gates.json",
+  "claim_policy": {
+    "sota_claim_allowed": false,
+    "scratch_multimodal_claim_allowed": false,
+    "required_description": "The 1.100B language backbone and tokenizer were pretrained from random initialization; the vision encoder is separately pretrained.",
+    "confidence_intervals": "sample-level intervals where the metric permits; training-seed uncertainty remains unmeasured until replicated"
+  },
+  "parents": {
+    "language": {
+      "name": "AliceYin/L20-1B-20B-Base",
+      "parameters": 1100048384,
+      "prediction_tokens": 19999703040,
+      "context_length": 2048,
+      "native_checkpoint_sha256": "7a3ebb609c2d79b1b6370531bed6fd173466d23f4847c1b8c589cc969790a933",
+      "source": "released_20B_base_not_continuation_A_or_B",
+      "frozen_stage_0_text_baseline": true
+    },
+    "vision_candidate": {
+      "repo": "google/siglip2-base-patch16-224",
+      "revision": "75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2",
+      "license": "apache-2.0",
+      "architecture": "SigLIP2 ViT-B/16 at 224px",
+      "paper_parameter_convention": "approximately 86M vision-backbone parameters",
+      "transformers_SiglipVisionModel_parameters": 92884224,
+      "hub_full_dual_encoder_parameters": 375187970,
+      "initially_frozen": true,
+      "weights_downloaded": true,
+      "weights_sha256": "612923381c76ec5a9bed335d1c48827e3f2e506ac31b044b63b2031fadee6a0b",
+      "weights_bytes": 1500800904,
+      "weights_receipt": "evidence/stage0-vision-acquisition.json",
+      "forward_smoke_receipt": "evidence/stage0-vision-smoke.json",
+      "forward_smoke_status": "pass",
+      "integrated_benchmark_receipt": "evidence/stage0-integrated-benchmark-v1.json",
+      "integrated_benchmark_status": "pass",
+      "real_image_forward_only_receipt": "evidence/stage0-real-image-forward-only.json",
+      "real_image_forward_only_status": "pass"
+    }
+  },
+  "architecture": {
+    "type": "decoder_only_visual_token_injection",
+    "vision_feature_layer": "pre_final_layernorm_patch_features_pending_pilot_confirmation",
+    "compressor": "spatial token compressor selected by bounded ablation",
+    "compression_ratios": [1, 4, 9, 16],
+    "projector": "two_layer_mlp_with_normalization",
+    "visual_positions": "causal prefix positions with visual loss masked",
+    "image_resolution_stage_1": 224,
+    "context_extension": "blocked_pending_separate_rope_and_text_retention_validation"
+  },
+  "hardware_preflight": {
+    "gpu": "NVIDIA L20",
+    "vram_mib": 46068,
+    "compute_capability": "8.9",
+    "bf16_supported": true,
+    "torch": "2.12.1+cu130",
+    "transformers": "4.56.2",
+    "siglip_api_import": "pass",
+    "flash_attn": "missing",
+    "xformers": "missing",
+    "remote_outbound_huggingface": "unavailable_at_preflight",
+    "verified_hash_checked_mirror_route": "available_for_public_artifacts",
+    "free_disk_bytes_at_preflight": 34406232064,
+    "free_disk_bytes_after_scoped_cleanup": 89434402816
+  },
+  "data_policy": {
+    "download_allowed_before_audit": false,
+    "source_registry": "source_registry.json",
+    "admitted_source_count": 0,
+    "required_fields": [
+      "source_dataset",
+      "immutable_revision",
+      "component_license",
+      "image_origin",
+      "text_origin",
+      "redistribution_constraints",
+      "sample_id",
+      "image_sha256",
+      "normalized_text_sha256",
+      "near_duplicate_family",
+      "benchmark_overlap_status",
+      "pii_status",
+      "integrity_status",
+      "rejection_reason"
+    ],
+    "required_checks": [
+      "exact_and_perceptual_image_deduplication",
+      "exact_and_normalized_text_deduplication",
+      "benchmark_prompt_answer_and_image_overlap",
+      "split_and_source_family_isolation",
+      "broken_or_mismatched_image_text_detection",
+      "pii_and_sensitive_document_screening",
+      "human_sample_audit_by_source_and_task"
+    ],
+    "candidates": {
+      "pixmo_cap": {
+        "repo": "allenai/pixmo-cap",
+        "revision": "edce6390d9d5be6c8db0d863fbe62718c88988a4",
+        "license": "odc-by-1.0",
+        "status": "blocked_pending_image_rights_terms_contamination_quality_and_pii_audit"
+      },
+      "pixmo_cap_qa": {
+        "repo": "allenai/pixmo-cap-qa",
+        "revision": "fd3ff4b2905455ab5edfd6d06039ea6027948521",
+        "license": "odc-by-1.0",
+        "status": "blocked_pending_image_rights_terms_grounding_contamination_and_quality_audit"
+      },
+      "llama_nemotron_vlm_dataset_v1": {
+        "repo": "nvidia/Llama-Nemotron-VLM-Dataset-v1",
+        "revision": "13b7986f8266a3cadee8a6eed1e05c438d0fe695",
+        "license": "component_specific_cc-by-4.0_or_cc-by-sa-4.0_plus_generator_terms",
+        "status": "blocked_pending_component_level_license_generator_terms_contamination_and_quality_audit"
+      },
+      "the_cauldron": {
+        "repo": "HuggingFaceM4/the_cauldron",
+        "revision": "847a98a779b1652d65111daf20c972dfcd333605",
+        "license": "component_specific; prompt rights CC-BY-4.0 where held",
+        "status": "blocked_pending_component_level_license_and_train_eval_overlap_audit"
+      },
+      "docmatix": {
+        "repo": "HuggingFaceM4/Docmatix",
+        "revision": "0725b65616e0e5f6024be10e38ddf8d8c48664fd",
+        "dataset_card_license": "mit",
+        "status": "blocked_pending_underlying_pdf_rights_pii_quality_and_benchmark_overlap_audit"
+      },
+      "doclingmatix": {
+        "repo": "HuggingFaceM4/DoclingMatix",
+        "revision": "b8713960364fbfc6319c7f0be3c4b76d2e118141",
+        "license": "cdla-permissive-2.0_with_parent_provenance_unresolved",
+        "status": "blocked_pending_parent_provenance_storage_contamination_and_quality_audit"
+      },
+      "finevisionmax": {
+        "repo": "HuggingFaceM4/FineVisionMax",
+        "revision": "b5b1081169033ebf64f5621316b650f2a0ef8214",
+        "license": "component_specific_no_global_hub_license",
+        "status": "blocked_pending_full_component_manifest_and_audit"
+      }
+    }
+  },
+  "stages": [
+    {
+      "id": "stage-0",
+      "status": "active",
+      "trainable": [],
+      "actions": [
+        "freeze_text_baselines_and_hashes",
+        "freeze_benchmark_revisions_and_splits",
+        "audit_data_provenance_licenses_pii_integrity_and_contamination",
+        "implement_model_and_forward_only_shape_tests",
+        "benchmark_memory_throughput_and_numerical_equivalence"
+      ],
+      "max_gpu_hours": 2,
+      "training_prediction_tokens": 0
+    },
+    {
+      "id": "stage-1-projector-compressor-pilots",
+      "status": "blocked_on_stage_0",
+      "trainable": ["compressor", "projector"],
+      "frozen": ["language_model", "vision_encoder"],
+      "arms": [1, 4, 9, 16],
+      "max_samples_per_arm": 25000,
+      "max_text_prediction_tokens_per_arm": 8000000,
+      "max_total_gpu_hours": 12,
+      "selection_metric": "largest lower 95% CI of true-vs-random-image macro gain per added training FLOP, with a fewer-visual-token tie break, subject to quality_gates.json",
+      "advance_gate": "predeclared multimodal validation improves over no-image and random-image controls; no artifact or contamination failure"
+    },
+    {
+      "id": "stage-2-lm-retention-pilots",
+      "status": "blocked_on_stage_1",
+      "trainable": ["compressor", "projector", "language_model"],
+      "frozen": ["vision_encoder"],
+      "text_replay_percent_arms": [0, 5, 10, 20],
+      "max_text_prediction_tokens_per_arm": 8000000,
+      "max_total_gpu_hours": 12,
+      "advance_gate": "selected arm has confirmed multimodal gain and passes all frozen text-retention gates in quality_gates.json"
+    },
+    {
+      "id": "stage-3-multimodal-instruction-tuning",
+      "status": "not_authorized_requires_new_budget",
+      "trainable": ["compressor", "projector", "language_model"],
+      "frozen": ["vision_encoder"]
+    },
+    {
+      "id": "stage-4-selective-vision-unfreeze",
+      "status": "not_authorized_requires_evidence_and_new_budget",
+      "candidate_trainable_vision_blocks": [2, 4]
+    }
+  ],
+  "stop_rules": [
+    "stop_on_nonfinite_loss_or_gradient",
+    "stop_on_oom_or_unbounded_host_memory_growth",
+    "stop_on_hash_revision_or_split_mismatch",
+    "stop_on_unresolved_license_or_provenance_gap",
+    "stop_on_benchmark_contamination_or_train_eval_family_overlap",
+    "stop_on_corrupt_image_or_image_text_mismatch_rate_above_frozen_source_threshold",
+    "stop_if_random_image_control_is_not_materially_worse_than_true_image_input",
+    "stop_if_text_retention_gate_fails",
+    "never_silently_rerun_charged_steps"
+  ],
+  "evaluation_registry": {
+    "MMMU": {
+      "repo": "MMMU-Benchmark/MMMU",
+      "revision": "268471d0d488258990025331c7528359c324aa25",
+      "protocol": "official 0-shot validation during development; official test pipeline only for final locked candidate",
+      "status": "revision_verified_protocol_pending_local_freeze"
+    },
+    "MMStar": {
+      "repo": "MMStar-Benchmark/MMStar",
+      "revision": "88f243ab4a39cb339530085c33aecb22819881a1",
+      "protocol": "official 1500-sample evaluation with multimodal-gain and leakage diagnostics",
+      "status": "revision_verified_protocol_pending_local_freeze"
+    },
+    "MathVista": {
+      "repo": "lupantech/MathVista",
+      "revision": "c5acd37d75a8c8f9756cb66c78fe2e54fa2c31fb",
+      "protocol": "official testmini pipeline; do not mix community parser scores with official scores",
+      "status": "revision_verified_protocol_pending_local_freeze"
+    },
+    "OCRBench_v2": {
+      "repo": "Yuliang-Liu/MultimodalOCR",
+      "revision": "6af7d948ab4d4bdf625af36c884fb7da19075d1a",
+      "protocol": "official eval.py and get_score.py",
+      "use_restriction": "research_only_noncommercial_dataset statement",
+      "status": "evaluation_only_candidate_pending_access_and_legal_review"
+    },
+    "ScienceQA": {
+      "repo": "lupantech/ScienceQA",
+      "revision": "2cbf8318e07b9ece895bb2ae605e71e38d623264",
+      "protocol": "official image-subset zero-shot test accuracy, separately reported from full ScienceQA",
+      "status": "revision_verified_protocol_pending_local_freeze"
+    },
+    "DocVQA": {"status": "blocked_pending_exact_challenge_version_split_metric_and_access_freeze"},
+    "TextVQA": {"status": "blocked_pending_exact_official_revision_split_and_metric_freeze"},
+    "ChartQA": {
+      "repo": "vis-nlp/ChartQA",
+      "revision": "044eabfc306abfe9340c5741f0093aefc5973d06",
+      "protocol": "official human and augmented test files reported separately with the repository's relaxed-accuracy rule",
+      "code_license": "GPL-3.0",
+      "status": "revision_verified_but_evaluation_only_pending_dataset_rights_artifact_hash_and_metric_freeze"
+    },
+    "AI2D": {"status": "blocked_pending_exact_official_revision_split_and_metric_freeze"}
+  }
+}

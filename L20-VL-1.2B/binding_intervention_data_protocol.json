@@ -1,0 +1,54 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "authorized_binding_intervention_data_generation_v1",
+  "authorized_by_user": true,
+  "authorized_at": "2026-09-14",
+  "purpose": "generate attribute-preserving binding interventions with affected and invariant questions before any new model training",
+  "seed": 20260914,
+  "generate_partitions": [
+    "train",
+    "mechanism_dev",
+    "selection_dev"
+  ],
+  "partitions": {
+    "train": {
+      "scene_pairs": 800,
+      "distribution": "grid",
+      "use": "answer-only and intervention-training development after separate training authorization"
+    },
+    "mechanism_dev": {
+      "scene_pairs": 160,
+      "distribution": "grid",
+      "use": "representation and intervention diagnosis only"
+    },
+    "selection_dev": {
+      "scene_pairs": 160,
+      "distribution": "jitter",
+      "use": "bounded model and hyperparameter selection only"
+    },
+    "final_test": {
+      "scene_pairs": 320,
+      "distribution": "boundary",
+      "use": "sealed until methods and checkpoints are frozen"
+    }
+  },
+  "challenges": {
+    "shape_color_swap": "swap colors across different shapes while preserving symbolic color and shape multisets; rendered RGB histogram mismatch is measured and reported",
+    "position_color_swap": "swap colors across identical target shapes at different positions; rendered RGB histogram must be exactly preserved"
+  },
+  "questions_per_scene_pair": 6,
+  "question_contract": {
+    "affected": "one yes-to-no and one no-to-yes question",
+    "invariant": "two yes-to-yes and two no-to-no questions",
+    "statistical_cluster": "scene_pair_id"
+  },
+  "render_scale": 2,
+  "max_total_image_bytes": 200000000,
+  "output": "/home/hhai/l20-vl-1.2b/data/diagnostic/binding-intervention-v1",
+  "receipt": "/home/hhai/l20-vl-1.2b/evidence/binding-intervention-data-generation-v1.json",
+  "external_downloads_authorized": false,
+  "model_inference_during_generation": false,
+  "model_training_authorized_by_this_protocol": false,
+  "final_test_unseal_authorized": false,
+  "claim_boundary": "Generated scenes are controlled synthetic mechanism data. They do not establish natural-image transfer, model improvement, or method novelty."
+}

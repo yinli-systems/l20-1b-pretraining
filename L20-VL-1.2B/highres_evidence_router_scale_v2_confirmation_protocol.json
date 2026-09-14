@@ -1,0 +1,136 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "experiment_id": "highres_evidence_router_scale_v2_confirmation",
+  "status": "authorized_highres_evidence_router_confirmation_once_v1",
+  "purpose": "Run exactly one confirmation of the already selected step-480 router on the untouched router_confirmation split, with no parameter, threshold, checkpoint, architecture, or data changes.",
+  "parameter_update_authorized": false,
+  "threshold_update_authorized": false,
+  "checkpoint_selection_authorized": false,
+  "prerequisites": {
+    "data_generation_protocol": {
+      "path": "/home/hhai/l20-vl-1.2b/highres_evidence_router_scale_v2_data_protocol.json",
+      "sha256": "6b2294ae1456cb00a17ec0ff75e1398ef0567e7bf1b18daf13158d3d2326eeb1"
+    },
+    "generation_receipt": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-router-scale-v2-generation.json",
+      "sha256": "59c630acbdaa4252e255e82035d7bc8d559391299eb40b904342adb07aa11da5"
+    },
+    "primary_visual_audit": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-router-scale-v2-primary-visual-audit.json",
+      "sha256": "303f34344bb29246837dbe3f8083df0d20a6e1c055c5d8fc81b69bbeb7d73fb7"
+    },
+    "router_training_protocol": {
+      "path": "/home/hhai/l20-vl-1.2b/highres_evidence_router_scale_v2_train_protocol.json",
+      "sha256": "ade893a95bb94cfd8320ef4dd4e30c8564f890df1edddbd2a39091762903f353"
+    },
+    "router_training_run": {
+      "path": "/home/hhai/l20-vl-1.2b/runs/highres-evidence-router-scale-v2/run.json",
+      "sha256": "fdaff5fa8683cfe35e1688e00d65ad9ee4413eae501a1ad231562da504d78a2d"
+    },
+    "router_teacher_targets": {
+      "path": "/home/hhai/l20-vl-1.2b/runs/highres-evidence-router-scale-v2/teacher_targets.jsonl",
+      "sha256": "6abe9afc92781fd7474b1a8172c45f77610315a00ce925c8bc20980dac7d2f79"
+    },
+    "development_protocol": {
+      "path": "/home/hhai/l20-vl-1.2b/highres_evidence_router_scale_v2_eval_protocol.json",
+      "sha256": "87cbaf6933603e73ddda882945cf6c646cda33dc3402fa22bd874f918d7dccc9"
+    },
+    "development_selection": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-router-scale-v2-development-selection.json",
+      "sha256": "9a3661e6e9a08a140816a2254f7f0b8255f64ac1d77d2013771c265296fbb0e7"
+    },
+    "manifest": {
+      "path": "/home/hhai/l20-vl-1.2b/data/highres-evidence-router-scale-v2/manifest.jsonl",
+      "sha256": "6ec1ecd34190f92f2e86d379e5d9c91c671495768f85bd694f0bd3550b63bb03"
+    }
+  },
+  "parents": {
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base",
+    "language_release_manifest_sha256": "83e9a0982f96cfec65b109034669a9cc913e8b870201d2323805aecdaeabb051",
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55",
+    "vision_artifacts": {
+      "config.json": "fe8b5fe6d5734360678fd71c11c21e1ea3364bd8598d34295d9206335973ffd7",
+      "model.safetensors": "612923381c76ec5a9bed335d1c48827e3f2e506ac31b044b63b2031fadee6a0b",
+      "preprocessor_config.json": "9b36b57ebaf20f09bf4c22100ccc21877ea6bfe5aead0c00c59f8af8ccefacfc"
+    },
+    "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20260930-v1/step-000700/bridge.safetensors",
+    "bridge_sha256": "d4b04aa98e5430a1fe5a11918da87a67007d283116b4e843c1d640fc7c31f6ce",
+    "crop_bridge": "/home/hhai/l20-vl-1.2b/runs/highres-evidence-crop-bridge-v1/step-000140/crop_bridge.safetensors",
+    "crop_bridge_sha256": "9ef26b80ab3b99e89139f757956cf972c5b4d0b04d254755dbc93d867efff46e",
+    "language_adapter": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20260930-v1/step-000700/language_adapter",
+    "language_adapter_files": {
+      "adapter_config.json": "beb25b1266075702a22f78be2daa5f03625a0198514f0137a1284e974b06fc9b",
+      "adapter_model.safetensors": "b6b31eb6927d27ba2a0dbdc71f50adca68f95b849f39a05bdbba532cf61cbaa9"
+    }
+  },
+  "architecture": {
+    "visual_tokens": 196,
+    "vision_feature_layer": -1,
+    "compressor": "spatial_query",
+    "output_visual_tokens": 49,
+    "target_ratio": 4
+  },
+  "checkpoint": {
+    "step": 480,
+    "path": "/home/hhai/l20-vl-1.2b/runs/highres-evidence-router-scale-v2/step-000480/router.safetensors",
+    "sha256": "df3f8ab31cbef9479930d6a3955e354b51a33e19c7606059b89bfd66ebf5d164",
+    "selection_source": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-router-scale-v2-development-selection.json"
+  },
+  "data": {
+    "root": "/home/hhai/l20-vl-1.2b/data/highres-evidence-router-scale-v2",
+    "manifest": "/home/hhai/l20-vl-1.2b/data/highres-evidence-router-scale-v2/manifest.jsonl",
+    "allowed_split": "router_confirmation",
+    "expected_rows": 512,
+    "expected_families": 256,
+    "expected_action_counts": {"POINT": 256, "STOP": 256},
+    "split_unit": "scene_family",
+    "prior_model_or_human_access": "metadata count only; no confirmation image, question, answer, prediction, metric, or model outcome was inspected before this protocol and checkpoint were frozen"
+  },
+  "teacher": {
+    "feature_batch_images": 32,
+    "responder_batch_rows": 8,
+    "max_text_tokens": 64
+  },
+  "router": {
+    "vision_dim": 768,
+    "language_dim": 2048,
+    "rank": 64,
+    "patch_count": 196,
+    "minimum_predicted_gain": 0.1,
+    "minimum_action_probability": 0.05,
+    "crop_expansion_cells": 1.0
+  },
+  "evaluation": {
+    "router_batch_rows": 64,
+    "feature_batch_images": 32,
+    "batch_rows": 4,
+    "max_text_tokens": 64,
+    "candidate_scoring": "mean non-EOS answer-token log probability",
+    "policy": "POINT uses one source-resolution crop centered on the predicted 14x14 patch with one-cell expansion; STOP uses only the global view"
+  },
+  "gate": {
+    "minimum_action_accuracy": 0.9,
+    "minimum_point_recall": 0.9,
+    "minimum_stop_accuracy": 0.9,
+    "minimum_exact_patch_accuracy": 0.5,
+    "minimum_within_one_patch_accuracy": 0.8,
+    "maximum_gain_mae": 1.0,
+    "minimum_local_policy_row_accuracy": 0.9,
+    "minimum_local_policy_family_accuracy": 0.9
+  },
+  "source_code": {
+    "evaluator_sha256": "e4ecf250575d2e6a18d92d9115098b3d3888bbd8b30694813b61f5e140384e8d",
+    "test_sha256": "3314395d46fc9fe2a30a96521cbc83852b1e94de4109babdcdf10d808d397323",
+    "development_evaluator_sha256": "7790be69a23b87b4fcebd88a954bfe0a890b759d55b31a39101a3a449f7cc37e",
+    "router_module_sha256": "98039416f24d9780412100115c60825f061be8ec9b5ef803933b884f3f541907",
+    "router_trainer_sha256": "f1eca2f8536d6bd593dbb0fb8243791fb63df582eb062739e5fca911e673f303",
+    "crop_evaluator_sha256": "71650cb8b0f765df1ca90eea237c38be2da00e705afc6807eb6bcd75a6428b8d",
+    "floor_evaluator_sha256": "486c2fe177f4af9c2e3f94ca4f6638029ecf5c2ad7620b63d2f4c20da7dc1b72",
+    "modeling_sha256": "7ee504253640c9c7ce7e121b212a31d16d9e57ef9e05f55ebcbd67573febeac9"
+  },
+  "output": {
+    "receipt": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-router-scale-v2-confirmation.json",
+    "predictions": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-router-scale-v2-confirmation-predictions.jsonl"
+  },
+  "claim_boundary": "This is a one-shot confirmation on 256 untouched synthetic scene families for one frozen router checkpoint and policy. It can confirm controlled POINT/STOP and coarse-localization transfer across a new seed and larger family split. It cannot establish natural-image evidence search, OCR or screen understanding, open-ended generation, deployment readiness, novelty, or superiority over another VLM."
+}

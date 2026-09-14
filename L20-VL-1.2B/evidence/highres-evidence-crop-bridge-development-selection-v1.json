@@ -1,0 +1,565 @@
+{
+  "baseline_metrics": {
+    "global_all_tasks": {
+      "families": 48,
+      "family_joint_accuracy": 0.020833333333333332,
+      "prediction_distribution": {
+        "0": 6,
+        "1": 33,
+        "2": 2,
+        "5": 3,
+        "__TIE__": 4,
+        "purple": 18,
+        "teal": 30
+      },
+      "row_accuracy": 0.21875,
+      "rows": 96
+    },
+    "no_image_all_tasks": {
+      "families": 48,
+      "family_joint_accuracy": 0.0,
+      "prediction_distribution": {
+        "1": 22,
+        "2": 2,
+        "3": 2,
+        "5": 8,
+        "__TIE__": 14,
+        "teal": 48
+      },
+      "row_accuracy": 0.14583333333333334,
+      "rows": 96
+    }
+  },
+  "checkpoint_results": [
+    {
+      "candidate_order_invariance": {
+        "crop": true,
+        "global": true,
+        "global_crop": true,
+        "global_mismatched_crop": true,
+        "no_image": true
+      },
+      "gate_passed": true,
+      "metrics": {
+        "crop": {
+          "families": 24,
+          "family_joint_accuracy": 0.16666666666666666,
+          "prediction_distribution": {
+            "0": 12,
+            "1": 25,
+            "5": 7,
+            "9": 3,
+            "__TIE__": 1
+          },
+          "row_accuracy": 0.4166666666666667,
+          "rows": 48
+        },
+        "global_crop": {
+          "families": 24,
+          "family_joint_accuracy": 0.9583333333333334,
+          "prediction_distribution": {
+            "0": 4,
+            "1": 9,
+            "2": 4,
+            "3": 2,
+            "4": 5,
+            "5": 6,
+            "6": 7,
+            "7": 2,
+            "8": 2,
+            "9": 7
+          },
+          "row_accuracy": 0.9791666666666666,
+          "rows": 48
+        },
+        "global_mismatched_crop": {
+          "families": 24,
+          "family_joint_accuracy": 0.0,
+          "prediction_distribution": {
+            "0": 4,
+            "1": 9,
+            "2": 4,
+            "3": 2,
+            "4": 5,
+            "5": 6,
+            "6": 6,
+            "7": 2,
+            "8": 3,
+            "9": 7
+          },
+          "row_accuracy": 0.10416666666666667,
+          "rows": 48
+        }
+      },
+      "paired_deltas": {
+        "crop_minus_global": {
+          "bootstrap_samples": 10000,
+          "ci95_high": 0.3958333333333333,
+          "ci95_low": 0.16666666666666666,
+          "clusters": 24,
+          "point_estimate": 0.2708333333333333
+        },
+        "global_crop_minus_global": {
+          "bootstrap_samples": 10000,
+          "ci95_high": 0.9166666666666666,
+          "ci95_low": 0.7291666666666666,
+          "clusters": 24,
+          "point_estimate": 0.8333333333333334
+        },
+        "global_crop_minus_mismatched_crop": {
+          "bootstrap_samples": 10000,
+          "ci95_high": 0.9583333333333334,
+          "ci95_low": 0.7916666666666666,
+          "clusters": 24,
+          "point_estimate": 0.875
+        }
+      },
+      "path": "/home/hhai/l20-vl-1.2b/runs/highres-evidence-crop-bridge-v1/step-000070/crop_bridge.safetensors",
+      "sha256": "2c8035009ef779c0af31627fd0c805ef9a21b00f810ae65c10b5f7b8953724b2",
+      "step": 70
+    },
+    {
+      "candidate_order_invariance": {
+        "crop": true,
+        "global": true,
+        "global_crop": true,
+        "global_mismatched_crop": true,
+        "no_image": true
+      },
+      "gate_passed": true,
+      "metrics": {
+        "crop": {
+          "families": 24,
+          "family_joint_accuracy": 0.6666666666666666,
+          "prediction_distribution": {
+            "0": 6,
+            "1": 12,
+            "2": 2,
+            "3": 2,
+            "4": 3,
+            "5": 6,
+            "6": 6,
+            "7": 1,
+            "9": 9,
+            "__TIE__": 1
+          },
+          "row_accuracy": 0.8125,
+          "rows": 48
+        },
+        "global_crop": {
+          "families": 24,
+          "family_joint_accuracy": 1.0,
+          "prediction_distribution": {
+            "0": 4,
+            "1": 9,
+            "2": 4,
+            "3": 2,
+            "4": 5,
+            "5": 6,
+            "6": 6,
+            "7": 2,
+            "8": 3,
+            "9": 7
+          },
+          "row_accuracy": 1.0,
+          "rows": 48
+        },
+        "global_mismatched_crop": {
+          "families": 24,
+          "family_joint_accuracy": 0.0,
+          "prediction_distribution": {
+            "0": 4,
+            "1": 9,
+            "2": 4,
+            "3": 2,
+            "4": 5,
+            "5": 6,
+            "6": 6,
+            "7": 2,
+            "8": 3,
+            "9": 7
+          },
+          "row_accuracy": 0.10416666666666667,
+          "rows": 48
+        }
+      },
+      "paired_deltas": {
+        "crop_minus_global": {
+          "bootstrap_samples": 10000,
+          "ci95_high": 0.7916666666666666,
+          "ci95_low": 0.5416666666666666,
+          "clusters": 24,
+          "point_estimate": 0.6666666666666666
+        },
+        "global_crop_minus_global": {
+          "bootstrap_samples": 10000,
+          "ci95_high": 0.9375,
+          "ci95_low": 0.75,
+          "clusters": 24,
+          "point_estimate": 0.8541666666666666
+        },
+        "global_crop_minus_mismatched_crop": {
+          "bootstrap_samples": 10000,
+          "ci95_high": 0.9791666666666666,
+          "ci95_low": 0.8125,
+          "clusters": 24,
+          "point_estimate": 0.8958333333333334
+        }
+      },
+      "path": "/home/hhai/l20-vl-1.2b/runs/highres-evidence-crop-bridge-v1/step-000140/crop_bridge.safetensors",
+      "sha256": "9ef26b80ab3b99e89139f757956cf972c5b4d0b04d254755dbc93d867efff46e",
+      "step": 140
+    },
+    {
+      "candidate_order_invariance": {
+        "crop": true,
+        "global": true,
+        "global_crop": true,
+        "global_mismatched_crop": true,
+        "no_image": true
+      },
+      "gate_passed": true,
+      "metrics": {
+        "crop": {
+          "families": 24,
+          "family_joint_accuracy": 0.7083333333333334,
+          "prediction_distribution": {
+            "0": 6,
+            "1": 11,
+            "2": 2,
+            "3": 2,
+            "4": 4,
+            "5": 6,
+            "6": 6,
+            "7": 1,
+            "9": 9,
+            "__TIE__": 1
+          },
+          "row_accuracy": 0.8333333333333334,
+          "rows": 48
+        },
+        "global_crop": {
+          "families": 24,
+          "family_joint_accuracy": 1.0,
+          "prediction_distribution": {
+            "0": 4,
+            "1": 9,
+            "2": 4,
+            "3": 2,
+            "4": 5,
+            "5": 6,
+            "6": 6,
+            "7": 2,
+            "8": 3,
+            "9": 7
+          },
+          "row_accuracy": 1.0,
+          "rows": 48
+        },
+        "global_mismatched_crop": {
+          "families": 24,
+          "family_joint_accuracy": 0.0,
+          "prediction_distribution": {
+            "0": 4,
+            "1": 9,
+            "2": 4,
+            "3": 2,
+            "4": 5,
+            "5": 6,
+            "6": 6,
+            "7": 2,
+            "8": 3,
+            "9": 7
+          },
+          "row_accuracy": 0.10416666666666667,
+          "rows": 48
+        }
+      },
+      "paired_deltas": {
+        "crop_minus_global": {
+          "bootstrap_samples": 10000,
+          "ci95_high": 0.8125,
+          "ci95_low": 0.5625,
+          "clusters": 24,
+          "point_estimate": 0.6875
+        },
+        "global_crop_minus_global": {
+          "bootstrap_samples": 10000,
+          "ci95_high": 0.9375,
+          "ci95_low": 0.75,
+          "clusters": 24,
+          "point_estimate": 0.8541666666666666
+        },
+        "global_crop_minus_mismatched_crop": {
+          "bootstrap_samples": 10000,
+          "ci95_high": 0.9791666666666666,
+          "ci95_low": 0.8125,
+          "clusters": 24,
+          "point_estimate": 0.8958333333333334
+        }
+      },
+      "path": "/home/hhai/l20-vl-1.2b/runs/highres-evidence-crop-bridge-v1/step-000210/crop_bridge.safetensors",
+      "sha256": "2e1aff42e189bf74efab026f21511df4f596e2e91dbfa6b5e1acc2aa76a0e185",
+      "step": 210
+    },
+    {
+      "candidate_order_invariance": {
+        "crop": true,
+        "global": true,
+        "global_crop": true,
+        "global_mismatched_crop": true,
+        "no_image": true
+      },
+      "gate_passed": true,
+      "metrics": {
+        "crop": {
+          "families": 24,
+          "family_joint_accuracy": 0.7083333333333334,
+          "prediction_distribution": {
+            "0": 6,
+            "1": 11,
+            "2": 2,
+            "3": 2,
+            "4": 5,
+            "5": 6,
+            "6": 6,
+            "7": 1,
+            "9": 9
+          },
+          "row_accuracy": 0.8541666666666666,
+          "rows": 48
+        },
+        "global_crop": {
+          "families": 24,
+          "family_joint_accuracy": 1.0,
+          "prediction_distribution": {
+            "0": 4,
+            "1": 9,
+            "2": 4,
+            "3": 2,
+            "4": 5,
+            "5": 6,
+            "6": 6,
+            "7": 2,
+            "8": 3,
+            "9": 7
+          },
+          "row_accuracy": 1.0,
+          "rows": 48
+        },
+        "global_mismatched_crop": {
+          "families": 24,
+          "family_joint_accuracy": 0.0,
+          "prediction_distribution": {
+            "0": 4,
+            "1": 9,
+            "2": 4,
+            "3": 2,
+            "4": 5,
+            "5": 6,
+            "6": 6,
+            "7": 2,
+            "8": 3,
+            "9": 7
+          },
+          "row_accuracy": 0.10416666666666667,
+          "rows": 48
+        }
+      },
+      "paired_deltas": {
+        "crop_minus_global": {
+          "bootstrap_samples": 10000,
+          "ci95_high": 0.8125,
+          "ci95_low": 0.5833333333333334,
+          "clusters": 24,
+          "point_estimate": 0.7083333333333334
+        },
+        "global_crop_minus_global": {
+          "bootstrap_samples": 10000,
+          "ci95_high": 0.9375,
+          "ci95_low": 0.75,
+          "clusters": 24,
+          "point_estimate": 0.8541666666666666
+        },
+        "global_crop_minus_mismatched_crop": {
+          "bootstrap_samples": 10000,
+          "ci95_high": 0.9791666666666666,
+          "ci95_low": 0.8125,
+          "clusters": 24,
+          "point_estimate": 0.8958333333333334
+        }
+      },
+      "path": "/home/hhai/l20-vl-1.2b/runs/highres-evidence-crop-bridge-v1/step-000280/crop_bridge.safetensors",
+      "sha256": "b1029e6e358d5117d4ea1e02db19225c0d72da1606ea62cbfd374d1be66e9333",
+      "step": 280
+    }
+  ],
+  "claim_boundary": "This is development-only model selection on 24 local-evidence scene families from one deterministic synthetic rendering family, using programmatic oracle crops and finite candidate scoring. A pass supports only the crop-responder mechanism. It does not establish learned localization, natural-image OCR, free-form generation, preservation of unrelated skills, sealed-test generalization, or superiority over another VLM.",
+  "completed_at": "2026-09-14T11:48:52.207567+00:00",
+  "decision": "select_crop_bridge_checkpoint",
+  "elapsed_seconds": 62.676470490172505,
+  "parameter_updates": 0,
+  "peak_cuda_memory_bytes": 4111967744,
+  "predictions": {
+    "bytes": 752896,
+    "path": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-crop-bridge-development-selection-v1-predictions.jsonl",
+    "sha256": "af10c5fc6b98b58505a5c52c8ffd38fa05d7dafdac95fbc34eea5fbc330fd04c"
+  },
+  "protocol": {
+    "path": "highres_evidence_crop_bridge_eval_v1_protocol.json",
+    "sha256": "b1245b4b8b07b11489bf7960925bbce09df915e6f79cd27e239653fa02ae070a"
+  },
+  "rows": {
+    "all_development": 96,
+    "local_digit": 48
+  },
+  "schema_version": "2026-09-14-v1",
+  "sealed_test_rows_accessed": 0,
+  "selected": {
+    "candidate_order_invariance": {
+      "crop": true,
+      "global": true,
+      "global_crop": true,
+      "global_mismatched_crop": true,
+      "no_image": true
+    },
+    "gate_passed": true,
+    "metrics": {
+      "crop": {
+        "families": 24,
+        "family_joint_accuracy": 0.6666666666666666,
+        "prediction_distribution": {
+          "0": 6,
+          "1": 12,
+          "2": 2,
+          "3": 2,
+          "4": 3,
+          "5": 6,
+          "6": 6,
+          "7": 1,
+          "9": 9,
+          "__TIE__": 1
+        },
+        "row_accuracy": 0.8125,
+        "rows": 48
+      },
+      "global_crop": {
+        "families": 24,
+        "family_joint_accuracy": 1.0,
+        "prediction_distribution": {
+          "0": 4,
+          "1": 9,
+          "2": 4,
+          "3": 2,
+          "4": 5,
+          "5": 6,
+          "6": 6,
+          "7": 2,
+          "8": 3,
+          "9": 7
+        },
+        "row_accuracy": 1.0,
+        "rows": 48
+      },
+      "global_mismatched_crop": {
+        "families": 24,
+        "family_joint_accuracy": 0.0,
+        "prediction_distribution": {
+          "0": 4,
+          "1": 9,
+          "2": 4,
+          "3": 2,
+          "4": 5,
+          "5": 6,
+          "6": 6,
+          "7": 2,
+          "8": 3,
+          "9": 7
+        },
+        "row_accuracy": 0.10416666666666667,
+        "rows": 48
+      }
+    },
+    "paired_deltas": {
+      "crop_minus_global": {
+        "bootstrap_samples": 10000,
+        "ci95_high": 0.7916666666666666,
+        "ci95_low": 0.5416666666666666,
+        "clusters": 24,
+        "point_estimate": 0.6666666666666666
+      },
+      "global_crop_minus_global": {
+        "bootstrap_samples": 10000,
+        "ci95_high": 0.9375,
+        "ci95_low": 0.75,
+        "clusters": 24,
+        "point_estimate": 0.8541666666666666
+      },
+      "global_crop_minus_mismatched_crop": {
+        "bootstrap_samples": 10000,
+        "ci95_high": 0.9791666666666666,
+        "ci95_low": 0.8125,
+        "clusters": 24,
+        "point_estimate": 0.8958333333333334
+      }
+    },
+    "path": "/home/hhai/l20-vl-1.2b/runs/highres-evidence-crop-bridge-v1/step-000140/crop_bridge.safetensors",
+    "sha256": "9ef26b80ab3b99e89139f757956cf972c5b4d0b04d254755dbc93d867efff46e",
+    "step": 140
+  },
+  "status": "complete_highres_evidence_crop_bridge_development_selection",
+  "verified_parent_records": {
+    "bridge_sha256": "d4b04aa98e5430a1fe5a11918da87a67007d283116b4e843c1d640fc7c31f6ce",
+    "language": {
+      "config.json": {
+        "bytes": 692,
+        "sha256": "03b9b24c54c1f271a05e317f3f7edc844bb3dce3b03ca3d3c96c7d16944dc9cb"
+      },
+      "generation_config.json": {
+        "bytes": 81,
+        "sha256": "1f5364a8fcd616f171b6633e64d2b3a7dd00f4b71953030a9d102365da57ae4e"
+      },
+      "model-00001-of-00003.safetensors": {
+        "bytes": 1625415432,
+        "sha256": "dd9578d156a9c5d70d9ea70b212bd180fb0d809d079a12fe8cc4ccbdd485ceac"
+      },
+      "model-00002-of-00003.safetensors": {
+        "bytes": 1585603608,
+        "sha256": "2d94a7301798a60bb06199190aaf8912bed7c4c4829f60e154ea3b2b5321f2e4"
+      },
+      "model-00003-of-00003.safetensors": {
+        "bytes": 1189197352,
+        "sha256": "a5a9754c5d8b94c7bef8da4b9211d27335f5013e0519a1106046c6c60a84e0ea"
+      },
+      "model.safetensors.index.json": {
+        "bytes": 16555,
+        "sha256": "382f6cc555a9876edbb7d13281774aca548c51528d79da21a0e631a88f6157c6"
+      },
+      "model_config.yaml": {
+        "bytes": 1162,
+        "sha256": "030d868464d4466007747b8f28c8fe5a43884b5aa4e28580d01b86df27b8ff8e"
+      },
+      "special_tokens_map.json": {
+        "bytes": 293,
+        "sha256": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193"
+      },
+      "tokenizer.json": {
+        "bytes": 2263083,
+        "sha256": "e755dfeeed1acab465839adc0988811983a3287db230a8d9bc0f74704208609c"
+      },
+      "tokenizer_config.json": {
+        "bytes": 665,
+        "sha256": "f5cb4892eb0751f37da45779eab1cab0b591ad2f4ec6261cc46292bb99e6b007"
+      }
+    },
+    "language_adapter_files": {
+      "adapter_config.json": "beb25b1266075702a22f78be2daa5f03625a0198514f0137a1284e974b06fc9b",
+      "adapter_model.safetensors": "b6b31eb6927d27ba2a0dbdc71f50adca68f95b849f39a05bdbba532cf61cbaa9"
+    },
+    "vision_artifacts": {
+      "config.json": "fe8b5fe6d5734360678fd71c11c21e1ea3364bd8598d34295d9206335973ffd7",
+      "model.safetensors": "612923381c76ec5a9bed335d1c48827e3f2e506ac31b044b63b2031fadee6a0b",
+      "preprocessor_config.json": "9b36b57ebaf20f09bf4c22100ccc21877ea6bfe5aead0c00c59f8af8ccefacfc"
+    }
+  }
+}

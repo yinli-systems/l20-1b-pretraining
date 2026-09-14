@@ -1,0 +1,88 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "experiment_id": "openimages_evidence_router_pilot_v1_data",
+  "status": "authorized_openimages_evidence_router_generation_only_v1",
+  "purpose": "Build a bounded, image-disjoint natural-image POINT/STOP router pilot from already acquired Open Images images, Localized Narratives captions, and official V6 visual-relationship boxes.",
+  "training_authorized": false,
+  "seed": 20261023,
+  "sources": {
+    "openimages_manifest": {
+      "path": "/home/hhai/l20-vl-1.2b/data/stage-a-v1/prepared/open-images-manifest.jsonl",
+      "sha256": "33b88611299e095eaefebe0fe0a0f95f5ff9ab6d241c255d6747a240bc9ab264"
+    },
+    "vrd_annotations": {
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-vrd-pilot-v1/sources/oidv6-train-annotations-vrd.csv",
+      "sha256": "0fc0ef90bfb283c86ab97fa5f94cbad8bd62406311744178bec75df34ab8041a"
+    },
+    "class_names": {
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-vrd-pilot-v1/sources/class-descriptions-boxable.csv",
+      "sha256": "2fa47fb1b87e71c90b9fbee2dc1184eb8c59601bb811ea4424b200653cedff8e"
+    },
+    "vrd_acquisition_receipt": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-vrd-acquisition-v1.json",
+      "sha256": "23f1cdaf0d9d5ee4683e05f41b8aef0ad5a3800da3e19ef0ecce91d6c839fcb4"
+    },
+    "stage_a_human_audit": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/stage-a-human-audit.json",
+      "sha256": "0842646754c16082be29bfb9f2d29c4b57e30d7bab1c6377e6a6e942fd674802"
+    }
+  },
+  "splits": {
+    "train": 1536,
+    "development": 192
+  },
+  "split_source": "The pre-existing Open Images manifest assigns each original image atomically to train or development; POINT and STOP variants remain in the same split.",
+  "selection": "After filtering, choose one subject box per image nearest the frozen preferred area, then select image IDs by seeded SHA256 order within each pre-existing split.",
+  "filters": {
+    "minimum_bbox_width": 0.08,
+    "minimum_bbox_height": 0.08,
+    "minimum_bbox_area": 0.01,
+    "maximum_bbox_area": 0.65,
+    "preferred_bbox_area": 0.15,
+    "required_label_namespace": "Open Images boxable class descriptions"
+  },
+  "tasks": {
+    "inspect_marked_object": {
+      "expected_action": "POINT",
+      "image": "source image with the official subject box rendered in red",
+      "question": "Inspect the object inside the red box. What object category is it? Answer briefly.",
+      "target": "center patch of the official subject box"
+    },
+    "describe_global_scene": {
+      "expected_action": "STOP",
+      "image": "unaltered source image",
+      "question": "Describe the overall image in one concise sentence.",
+      "answer": "the already admitted Localized Narratives caption"
+    }
+  },
+  "render": {
+    "pointer_grid_size": 14,
+    "crop_expansion_fraction": 0.15,
+    "box_line_fraction": 0.008,
+    "jpeg_quality": 92,
+    "font_path": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+    "font_sha256": "5c1247acef7f2b8522a31742c76d6adcb5569bacc0be7ceaa4dc39dd252ce895"
+  },
+  "audit": {
+    "seed": 20261024,
+    "items_per_sheet": 12,
+    "sheets_per_split": 2,
+    "required_review": "Primary agent must inspect all 48 marked-image/source-crop cells before any training protocol is allowed."
+  },
+  "source_code": {
+    "builder_sha256": "09cf06a68b79e50a2ceb26ecf16719f8d0cc9af8974385683b37b734a088e02a",
+    "test_sha256": "e9fea4aeb33b9463da56667edf27e0f69092b2faa62618476d1ce87a4dc1f5a5"
+  },
+  "output": {
+    "root": "/home/hhai/l20-vl-1.2b/data/openimages-evidence-router-pilot-v1",
+    "receipt": "/home/hhai/l20-vl-1.2b/evidence/openimages-evidence-router-pilot-v1-generation.json"
+  },
+  "required_before_training": [
+    "all 1,728 selected source images match their pre-existing SHA256 values",
+    "train and development source image IDs are disjoint",
+    "each family contains one marked POINT row and one unaltered STOP row",
+    "all four fixed audit sheets pass visual review",
+    "a separate protocol pins mixed synthetic replay, trainable parameters, budget, and development gates"
+  ],
+  "claim_boundary": "This generation pilot uses official boxes and pre-existing image-level splits, but its broad labels are not exhaustively human-audited and its red-box task is an instrumented grounding task. Passing an audit authorizes only bounded router training, not general VQA, unmarked referring-expression grounding, release, deployment, novelty, or superiority claims."
+}

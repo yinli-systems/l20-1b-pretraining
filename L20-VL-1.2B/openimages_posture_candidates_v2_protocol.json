@@ -1,0 +1,101 @@
+{
+  "schema_version": "2026-09-14-v2",
+  "status": "authorized_disjoint_posture_candidate_audit_only",
+  "training_authorized": false,
+  "automatic_training_start": false,
+  "purpose": "Construct a disjoint second posture candidate pool using stricter caption and box filters, then visually review every target before any pair is admitted.",
+  "seed": 20260915,
+  "base_protocol": {
+    "path": "/home/hhai/l20-vl-1.2b/openimages_posture_pilot_protocol_v2.json",
+    "sha256": "6ac6782e5a9a991ea1a043c86824fab49ffad1855d06b4de25658cdf7bcd991d"
+  },
+  "source_code": {
+    "builder_sha256": "78f31105b179c5fa6050295744c35d49e242dcbfdb05520904be3133c231cadd",
+    "test_sha256": "6c9d7c31e3fd5478120ba2427b12f358d3b6170c017592bdcd4c2a9bd69cdb14"
+  },
+  "prerequisites": {
+    "first_pilot_pairs": {
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-posture-pilot-v1/posture-pairs-v1.jsonl",
+      "sha256": "60e2a5ace1f84b3f0bd447f4ece94c7c3e065bbdd614eed79a190c5ebcbbea99"
+    },
+    "first_pilot_human_audit": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-pilot-human-audit-v1.json",
+      "sha256": "5baa09504f0e23c18b77be76eca1246750a7a56cede3fc2e64c6f199118ca601"
+    },
+    "pose_gate_calibration": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-vitpose-gate-calibration-v1.json",
+      "sha256": "6b870bf23265ce16521ad15c851b1773c3d997212b5951831a877525b028070f"
+    }
+  },
+  "strict_filters": {
+    "min_edge": 0.3,
+    "min_area": 0.08,
+    "sitting_requires_human_caption_support_context": true,
+    "sitting_support_terms": [
+      "chair",
+      "bench",
+      "seat",
+      "sofa",
+      "couch",
+      "stool",
+      "table",
+      "desk",
+      "wheelchair",
+      "wagon",
+      "bicycle",
+      "bike",
+      "motorcycle",
+      "horse",
+      "bed",
+      "rock",
+      "step",
+      "stair",
+      "ground",
+      "floor",
+      "lap",
+      "boat",
+      "kayak",
+      "rower"
+    ],
+    "reject_caption_posture_terms": [
+      "crouch",
+      "kneel",
+      "squat",
+      "crawl",
+      "lying",
+      "laying"
+    ],
+    "exclude_every_first_pilot_image": true,
+    "pose_model_role": "review-priority diagnostic only; explicitly not a hard gate"
+  },
+  "sampling": {
+    "strata": "Open Images class label x posture attribute; class labels are diversity strata only",
+    "strata_count": 8,
+    "download_candidates_per_stratum": 32,
+    "review_candidates_per_stratum": 24,
+    "download_candidates_total": 256,
+    "review_candidates_total": 192,
+    "minimum_human_accepted_per_stratum_for_finalization": 16
+  },
+  "limits": {
+    "minimum_free_bytes_before": 8000000000,
+    "maximum_downloaded_image_bytes": 800000000,
+    "maximum_single_image_bytes": 20000000,
+    "download_workers": 16
+  },
+  "human_audit": {
+    "scope": "all 192 target people, using both full image with target box and enlarged target crop",
+    "images_per_page": 8,
+    "acceptance_rule": "The target must be a real person and the sitting or standing posture must be visually decidable without using the caption. Reject squatting, crouching, kneeling, hidden posture, wrong target, label conflict, and secondary media.",
+    "pairing_allowed_before_audit": false,
+    "training_remains_blocked": true
+  },
+  "outputs": {
+    "root": "/home/hhai/l20-vl-1.2b/data/openimages-posture-candidates-v2",
+    "image_directory": "/home/hhai/l20-vl-1.2b/data/openimages-posture-candidates-v2/images",
+    "candidate_manifest": "/home/hhai/l20-vl-1.2b/data/openimages-posture-candidates-v2/posture-candidates-v2.jsonl",
+    "audit_directory": "/home/hhai/l20-vl-1.2b/evidence/human-audit/openimages-posture-candidates-v2",
+    "receipt": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-candidates-v2-build.json"
+  },
+  "claim_boundary": "This protocol authorizes acquisition, deterministic filtering, deduplication, rendering, and exhaustive target review only. It does not authorize pairing, parameter updates, model selection, benchmark access, release, or model-quality claims."
+}

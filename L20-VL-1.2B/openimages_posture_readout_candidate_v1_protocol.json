@@ -1,0 +1,116 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "authorized_openimages_posture_readout_all_development_fit_v1",
+  "experiment_id": "openimages_posture_readout_candidate_v1",
+  "authorized_by_user": true,
+  "model_parameter_updates_authorized": true,
+  "formal_test_present": false,
+  "confirmation_data_present": false,
+  "model_evaluation_authorized": false,
+  "development_benchmark_scoring_authorized": false,
+  "purpose": "Fit one fresh query-CE readout on all 77 audited development pairs after the pair-atomic cross-fit experiment selected that recipe. The resulting checkpoint is a deployable composition candidate, not confirmatory evidence.",
+  "selected_arm": "query_ce",
+  "selection_policy": {
+    "source": "frozen pair-atomic five-fold method-development analysis",
+    "selection_complete_before_this_fit": true,
+    "post_fit_hyperparameter_changes_allowed": false,
+    "post_fit_development_benchmark_selection_allowed": false,
+    "next_gate": "newly acquired disjoint sealed real-image confirmation set"
+  },
+  "data": {
+    "manifest": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-crossfit-v1.jsonl",
+      "sha256": "ad96b6716b4032ecaeb41450433f61beeb6ad94b0268974afedbddfad5d6bf16"
+    },
+    "selection_analysis": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-readout-crossfit-v1-analysis.json",
+      "sha256": "9a1f206470021edb752157f564558ef934a92298f82f8cfdcf317c255879d615"
+    },
+    "crossfit_run": {
+      "path": "/home/hhai/l20-vl-1.2b/runs/openimages-posture-readout-crossfit-v1/run.json",
+      "sha256": "0a8162b319c78033aeddd860424a6e641eb181ccdc856b95cf15dc646b39b6a4"
+    },
+    "pairs": 77,
+    "targets": 154,
+    "training_unit": "pair_id",
+    "training_view": "marked",
+    "rejected_targets_allowed": 0
+  },
+  "parents": {
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base",
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55",
+    "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20260930-v1/step-000700/bridge.safetensors",
+    "bridge_sha256": "d4b04aa98e5430a1fe5a11918da87a67007d283116b4e843c1d640fc7c31f6ce",
+    "language_adapter": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20260930-v1/step-000700/language_adapter",
+    "language_adapter_files": {
+      "adapter_config.json": "beb25b1266075702a22f78be2daa5f03625a0198514f0137a1284e974b06fc9b",
+      "adapter_model.safetensors": "b6b31eb6927d27ba2a0dbdc71f50adca68f95b849f39a05bdbba532cf61cbaa9"
+    }
+  },
+  "architecture": {
+    "compressor": "spatial_query",
+    "visual_tokens": 196,
+    "output_visual_tokens": 49,
+    "target_ratio": 4,
+    "vision_feature_layer": -1,
+    "query_readout_rank": 64,
+    "trainable": [
+      "fresh_query_readout_only"
+    ],
+    "frozen": [
+      "language_model",
+      "existing_language_lora",
+      "siglip2_vision_encoder",
+      "stage_d_compressor",
+      "stage_d_projector",
+      "image_start",
+      "image_end"
+    ]
+  },
+  "arms": {
+    "query_ce": {
+      "role": "frozen selected recipe",
+      "loss_weights": {
+        "answer": 1.0,
+        "address": 0.0,
+        "pair_rank": 0.0
+      }
+    }
+  },
+  "loss_weights": {
+    "answer": 1.0,
+    "address": 0.0,
+    "pair_rank": 0.0
+  },
+  "feature_cache": {
+    "views": [
+      "marked"
+    ],
+    "batch_images": 24,
+    "crop_padding_fraction": 0.1,
+    "dtype": "bfloat16",
+    "persistence": "process_memory_only"
+  },
+  "optimization": {
+    "seed": 20261005,
+    "training_view": "marked",
+    "epochs": 12,
+    "batch_pairs": 4,
+    "readout_learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.05,
+    "minimum_learning_rate_ratio": 0.1,
+    "gradient_clip_norm": 1.0,
+    "pair_margin": 1.0,
+    "max_text_tokens": 64,
+    "checkpoint_selection": "none; use the final prespecified epoch",
+    "hyperparameter_selection_on_this_dataset": "none"
+  },
+  "source_code": {
+    "trainer_sha256": "b675aeb6e22bf63a83ae101f5fd9de98bb45aa23bb04aab83866c56b550c4191",
+    "test_sha256": "be2bb2a4c8ebdb716b4a23ce9da97f2045fec74c9dc6a33485c665c16fbc3c8d",
+    "crossfit_trainer_sha256": "77d43fbccc5f3ffb54cf6da29359cde6770ab605adc6e697291fbeb25ff49b4b",
+    "modeling_sha256": "7ee504253640c9c7ce7e121b212a31d16d9e57ef9e05f55ebcbd67573febeac9"
+  },
+  "claim_boundary": "This fit creates one composition checkpoint from the frozen development-selected query-CE recipe. Optimization-batch losses and accuracies are engineering telemetry only. Because all 77 pairs are used for fitting, this run supplies no generalization estimate and must not be presented as a benchmark result. The checkpoint remains a development-selected candidate until it is evaluated exactly once on a newly acquired, disjoint, fully audited, sealed confirmation set. It does not establish broad multimodal quality, causal reasoning, global novelty, benchmark superiority, or release readiness."
+}

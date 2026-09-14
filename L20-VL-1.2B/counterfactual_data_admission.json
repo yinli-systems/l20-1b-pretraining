@@ -1,0 +1,27 @@
+{
+  "schema_version": "2026-09-13-v1",
+  "purpose": "deterministic paired-scene mechanism diagnosis",
+  "required_protocol_sha256": "6925154c61774971359b359a24f3a715649bd232c877f4e62c3f81e1a44aebb1",
+  "generator_authorized": true,
+  "external_downloads_authorized": false,
+  "formal_training_authorized": false,
+  "pair_count": 5000,
+  "variants_per_pair": 3,
+  "image_size": 256,
+  "render_scale": 3,
+  "max_total_bytes": 1000000000,
+  "destination": "/home/hhai/l20-vl-1.2b/data/diagnostic/counterfactual-v1",
+  "seed": 20260913,
+  "license": "project_generated_CC-BY-4.0_candidate_pending_publication_decision",
+  "allowed_uses": [
+    "generator_validation",
+    "mechanism_diagnosis_after_full_token_foundation_passes",
+    "contact_sheet_human_audit"
+  ],
+  "prohibited_uses": [
+    "formal_training_before_separate_stage_admission",
+    "claiming_real_image_generalization",
+    "splitting_variants_of_one_scene_across_train_dev_test"
+  ],
+  "decision": "Generate and audit the exact synthetic corpus now; do not use it for parameter updates yet."
+}

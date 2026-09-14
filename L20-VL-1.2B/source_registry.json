@@ -1,0 +1,191 @@
+{
+  "registry_version": "2026-09-12-v1",
+  "status": "metadata_only_all_sources_blocked",
+  "snapshot_date": "2026-09-12",
+  "download_authorized": false,
+  "training_admission_authorized": false,
+  "component_admission_registry": "component_admission.json",
+  "acquisition_only_component_exceptions": [
+    "nvidia/Llama-Nemotron-VLM-Dataset-v1:ocr_1",
+    "nvidia/Llama-Nemotron-VLM-Dataset-v1:ocr_3"
+  ],
+  "metadata_only_acquisition_exceptions": [
+    "allenai/pixmo-cap@edce6390d9d5be6c8db0d863fbe62718c88988a4"
+  ],
+  "pixmo_cap_metadata_admission_registry": "pixmo_cap_metadata_admission.json",
+  "image_audit_acquisition_exceptions": [
+    "allenai/pixmo-cap@edce6390d9d5be6c8db0d863fbe62718c88988a4:pixmo.s3:288"
+  ],
+  "pixmo_cap_image_audit_admission_registry": "pixmo_image_audit_admission.json",
+  "policy": {
+    "default_decision": "block",
+    "admission_unit": "individual_component_not_collection",
+    "required_before_download": [
+      "immutable_revision_verified",
+      "component_license_and_attribution_reviewed",
+      "image_origin_and_retrieval_rights_documented",
+      "text_and_synthetic_generator_terms_reviewed",
+      "expected_bytes_and_storage_destination_frozen"
+    ],
+    "required_before_training": [
+      "all_download_gates_pass",
+      "artifact_hash_manifest_complete",
+      "benchmark_image_prompt_answer_and_source_family_overlap_removed",
+      "exact_and_near_duplicate_filters_pass",
+      "pii_and_sensitive_document_screening_pass",
+      "image_text_integrity_checks_pass",
+      "stratified_human_audit_pass",
+      "source_specific_quality_thresholds_frozen"
+    ],
+    "prohibited_shortcuts": [
+      "collection_level_license_used_as_component_license",
+      "dataset_card_metadata_treated_as proof_of_underlying_image_rights",
+      "public_url_treated_as_redistribution_or_training_permission",
+      "benchmark_train_split_allowed_without_family_level_contamination_analysis",
+      "synthetic_label_treated_as_correct_without_audit"
+    ]
+  },
+  "sources": {
+    "pixmo_cap": {
+      "repo": "allenai/pixmo-cap",
+      "revision": "edce6390d9d5be6c8db0d863fbe62718c88988a4",
+      "card_license": "ODC-BY-1.0",
+      "declared_examples": 717042,
+      "modality": "image_url_dense_caption_and_annotator_transcripts",
+      "strengths_to_test": [
+        "dense_general_captioning",
+        "human_observation_coverage"
+      ],
+      "unresolved": [
+        "external_image_url_availability_and_origin_rights",
+        "Anthropic_terms_for_transformed_captions",
+        "benchmark_image_and_source_family_overlap",
+        "caption_factuality_and_hallucination_rate",
+        "pii_and_sensitive_content_rate"
+      ],
+      "download_status": "blocked_except_pinned_metadata_and_bounded_288_image_audit",
+      "metadata_acquisition_status": "authorized_by_pixmo_cap_metadata_admission_registry",
+      "image_audit_acquisition_status": "authorized_by_pixmo_cap_image_audit_admission_registry",
+      "training_status": "blocked_pending_image_rights_terms_contamination_quality_and_pii_audit"
+    },
+    "pixmo_cap_qa": {
+      "repo": "allenai/pixmo-cap-qa",
+      "revision": "fd3ff4b2905455ab5edfd6d06039ea6027948521",
+      "card_license": "ODC-BY-1.0",
+      "declared_examples": 271714,
+      "modality": "image_url_synthetic_visual_qa_from_dense_caption",
+      "strengths_to_test": [
+        "caption_grounded_question_answering"
+      ],
+      "unresolved": [
+        "external_image_url_availability_and_origin_rights",
+        "Claude_generated_labels_subject_to_Anthropic_terms",
+        "generator_did_not_view_images_so_visual_grounding_must_be_measured",
+        "benchmark_image_prompt_answer_and_source_family_overlap",
+        "answer_factuality_and_language_balance"
+      ],
+      "download_status": "blocked",
+      "training_status": "blocked_pending_image_rights_terms_grounding_contamination_and_quality_audit"
+    },
+    "llama_nemotron_vlm_dataset_v1": {
+      "repo": "nvidia/Llama-Nemotron-VLM-Dataset-v1",
+      "revision": "13b7986f8266a3cadee8a6eed1e05c438d0fe695",
+      "collection_card_license": "CC-BY-4.0",
+      "declared_examples_by_category": {
+        "vqa": 1917755,
+        "captioning": 131718,
+        "ocr": 814381
+      },
+      "modality": "componentized_caption_vqa_and_ocr_post_training_collection",
+      "strengths_to_test": [
+        "document_ocr",
+        "chart_and_table_reasoning",
+        "synthetic_ocr"
+      ],
+      "unresolved": [
+        "component_specific_CC-BY-4.0_versus_CC-BY-SA-4.0_terms",
+        "upstream_image_and_dataset_attribution_preservation",
+        "model_generated_annotation_terms_including_Qwen_and_Llama_components",
+        "direct_or_family_overlap_with_DocVQA_ChartQA_AI2D_and_other_evaluations",
+        "component_level_language_quality_and_answer_correctness"
+      ],
+      "download_status": "blocked",
+      "training_status": "blocked_pending_component_level_license_generator_terms_contamination_and_quality_audit"
+    },
+    "the_cauldron": {
+      "repo": "HuggingFaceM4/the_cauldron",
+      "revision": "847a98a779b1652d65111daf20c972dfcd333605",
+      "collection_license": "component_specific; publisher-held prompt rights CC-BY-4.0",
+      "modality": "multicomponent_visual_instruction_collection",
+      "strengths_to_test": [
+        "broad_task_coverage"
+      ],
+      "unresolved": [
+        "component_level_licenses",
+        "benchmark_train_and_source_family_overlap",
+        "image_origin_and_redistribution_constraints",
+        "component_level_quality_and_pii"
+      ],
+      "download_status": "blocked",
+      "training_status": "blocked_pending_component_level_license_and_train_eval_overlap_audit"
+    },
+    "docmatix": {
+      "repo": "HuggingFaceM4/Docmatix",
+      "revision": "0725b65616e0e5f6024be10e38ddf8d8c48664fd",
+      "card_license": "MIT",
+      "modality": "rendered_public_pdf_pages_and_synthetic_document_qa",
+      "strengths_to_test": [
+        "document_understanding",
+        "ocr_and_layout"
+      ],
+      "unresolved": [
+        "underlying_pdf_rights_and_attribution",
+        "document_pii_and_sensitive_content",
+        "page_order_render_and_image_text_alignment",
+        "benchmark_document_and_source_family_overlap",
+        "synthetic_answer_factuality"
+      ],
+      "download_status": "blocked",
+      "training_status": "blocked_pending_underlying_pdf_rights_pii_integrity_contamination_and_quality_audit"
+    },
+    "doclingmatix": {
+      "repo": "HuggingFaceM4/DoclingMatix",
+      "revision": "b8713960364fbfc6319c7f0be3c4b76d2e118141",
+      "card_license": "CDLA-Permissive-2.0",
+      "declared_size_bytes": 932000000000,
+      "modality": "Docmatix_derived_document_conversion_dataset",
+      "strengths_to_test": [
+        "document_conversion",
+        "structured_ocr"
+      ],
+      "unresolved": [
+        "inherits_Docmatix_underlying_pdf_rights_and_pii_questions",
+        "document_and_benchmark_family_overlap",
+        "932GB_source_exceeds_current_storage_plan",
+        "conversion_integrity_and_reading_order_quality"
+      ],
+      "download_status": "blocked",
+      "training_status": "blocked_pending_parent_provenance_storage_contamination_and_quality_audit"
+    },
+    "finevisionmax": {
+      "repo": "HuggingFaceM4/FineVisionMax",
+      "revision": "b5b1081169033ebf64f5621316b650f2a0ef8214",
+      "collection_license": "no_single_global_license_in_hub_metadata",
+      "modality": "large_multicomponent_image_text_collection",
+      "strengths_to_test": [
+        "broad_component_discovery_only"
+      ],
+      "unresolved": [
+        "component_level_license_and_origin",
+        "component_level_generator_terms",
+        "benchmark_and_source_family_overlap",
+        "quality_variance_and_duplicate_amplification",
+        "storage_and_streaming_plan"
+      ],
+      "download_status": "blocked",
+      "training_status": "blocked_pending_full_component_manifest_and_audit"
+    }
+  },
+  "admitted_sources": [],
+  "decision": "No dataset or component is admitted to training. The exact ocr_1 and ocr_3 audit files, four pinned PixMo-Cap metadata Parquet shards, and a deterministic 288-image AI2-hosted PixMo audit sample may be acquired under separate fail-closed registries; all other image acquisition remains blocked."
+}

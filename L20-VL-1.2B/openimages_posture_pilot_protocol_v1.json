@@ -1,0 +1,92 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "authorized_posture_data_pilot_only",
+  "training_authorized": false,
+  "automatic_training_start": false,
+  "purpose": "Test whether full-corpus balanced selection plus independent human-caption corroboration can produce a high-precision real-image sitting-versus-standing region-binding corpus.",
+  "claim_boundary": "This protocol authorizes a bounded 128-image acquisition, mechanical validation, and full human visual audit only. It does not authorize parameter updates, model selection, confirmation evaluation, release, novelty claims, or model-quality claims.",
+  "seed": 20260914,
+  "source_code": {
+    "builder_sha256": "ec50d369c46ab887f4b216cf5f36ae888a3197eafd27d50bfe5a84b2ba1a127f",
+    "test_sha256": "e21da4215d5e5f8ac02d62dc27e6a6d799e7618e5b606969fe0f76dd76cea438"
+  },
+  "prerequisite_negative_evidence": {
+    "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-attribute-routing-human-audit-v1.json",
+    "sha256": "4627bcad6b4839428dfda30d91ad753725ab9658d9b152a41b64095e8d2d0308",
+    "decision": "reject_openimages_attribute_routing_v1"
+  },
+  "sources": {
+    "image_metadata": {
+      "path": "/home/hhai/l20-vl-1.2b/data/stage-a-v1/sources/train-images-boxable-with-rotation.csv",
+      "bytes": 638407721,
+      "sha256": "05f3d68dbbb03728d1a37e51479f4f35c062b871e1a6cae8c4cefbe0e0c80ed0"
+    },
+    "localized_narratives": {
+      "path": "/home/hhai/l20-vl-1.2b/data/stage-a-v1/sources/open_images_train_v6_captions.jsonl",
+      "bytes": 138522519,
+      "sha256": "a3ad02e46a9916f3fa513a9bdf8eeb4e3d6e4d108688ac3a6d7440e80b917f92"
+    },
+    "visual_relationships": {
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-vrd-pilot-v1/sources/oidv6-train-annotations-vrd.csv",
+      "bytes": 356502404,
+      "sha256": "0fc0ef90bfb283c86ab97fa5f94cbad8bd62406311744178bec75df34ab8041a"
+    },
+    "attribute_names": {
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-vrd-pilot-v1/sources/oidv6-attributes-description.csv",
+      "bytes": 254,
+      "sha256": "e7ca340e76f61124afb20f3c17998473ee4dd86db8338906c3377afbc7c4f35f"
+    },
+    "class_names": {
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-vrd-pilot-v1/sources/class-descriptions-boxable.csv",
+      "bytes": 12011,
+      "sha256": "2fa47fb1b87e71c90b9fbee2dc1184eb8c59601bb811ea4424b200653cedff8e"
+    }
+  },
+  "required_image_license": "https://creativecommons.org/licenses/by/2.0/",
+  "image_url_template": "https://open-images-dataset.s3.amazonaws.com/train/{image_id}.jpg",
+  "quality_filters": {
+    "classes": ["Boy", "Girl", "Man", "Woman"],
+    "attributes": ["Sit", "Stand"],
+    "require_human_caption_class_corroboration": true,
+    "require_human_caption_attribute_corroboration": true,
+    "reject_secondary_media_terms_in_caption_and_title": true,
+    "require_identical_object_and_attribute_boxes": true,
+    "reject_same_box_sit_stand_conflict": true,
+    "min_edge": 0.15,
+    "min_area": 0.04,
+    "require_zero_rotation": true,
+    "require_author_and_landing_url": true,
+    "minimum_image_dimension": 224,
+    "maximum_aspect_ratio": 4.0,
+    "minimum_channel_stddev": 8.0,
+    "exact_and_dhash_lte_4_deduplication": true
+  },
+  "sampling": {
+    "strata": "class_x_attribute",
+    "strata_count": 8,
+    "download_candidates_per_stratum": 24,
+    "selected_images_per_stratum": 16,
+    "selected_images_total": 128,
+    "paired_examples_total": 64
+  },
+  "limits": {
+    "minimum_free_bytes_before": 8000000000,
+    "maximum_downloaded_image_bytes": 500000000,
+    "maximum_single_image_bytes": 20000000,
+    "download_workers": 16
+  },
+  "human_audit": {
+    "scope": "all_64_pairs_and_all_128_primary_images",
+    "pairs_per_sheet": 8,
+    "maximum_allowed_rejected_pair_fraction": 0.1,
+    "training_remains_blocked_until_pass": true
+  },
+  "outputs": {
+    "root": "/home/hhai/l20-vl-1.2b/data/openimages-posture-pilot-v1",
+    "image_directory": "/home/hhai/l20-vl-1.2b/data/openimages-posture-pilot-v1/images",
+    "image_manifest": "/home/hhai/l20-vl-1.2b/data/openimages-posture-pilot-v1/posture-images-v1.jsonl",
+    "pair_manifest": "/home/hhai/l20-vl-1.2b/data/openimages-posture-pilot-v1/posture-pairs-v1.jsonl",
+    "audit_directory": "/home/hhai/l20-vl-1.2b/evidence/human-audit/openimages-posture-pilot-v1",
+    "receipt": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-pilot-build-v1.json"
+  }
+}

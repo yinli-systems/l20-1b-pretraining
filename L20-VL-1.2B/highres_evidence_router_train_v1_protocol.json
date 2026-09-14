@@ -1,0 +1,128 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "experiment_id": "highres_evidence_router_train_v1",
+  "status": "authorized_highres_evidence_router_train_only_v1",
+  "purpose": "Train a 376K-parameter question-conditioned router to choose one of 196 global patches or STOP, with local gain targets computed from the independently confirmed frozen crop responder.",
+  "allowed_data_splits": ["train"],
+  "trainable_components": ["evidence_acquisition_router"],
+  "prerequisites": {
+    "generation_receipt": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-search-pilot-v1-generation.json",
+      "sha256": "38018a5c16ae0c5a0f30f9d4ce2680d753bd29c26e6eec6bf5dae451e2d6d0f3"
+    },
+    "primary_visual_audit": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-search-pilot-v1-primary-visual-audit.json",
+      "sha256": "c247d81024367f7e872d36d99e5950079aca2b54bd5021521aabe05d63d82845"
+    },
+    "crop_bridge_training_run": {
+      "path": "/home/hhai/l20-vl-1.2b/runs/highres-evidence-crop-bridge-v1/run.json",
+      "sha256": "cef86b07f154f39a9ce6bd01cd5ab4ca12d384d1c423e64392856aede70347bb"
+    },
+    "crop_bridge_selection": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-crop-bridge-development-selection-v1.json",
+      "sha256": "245b5c6f9b0bb41c518fe3e4de5a25fdebd047af52a62ca757d669f27dfe4334"
+    },
+    "crop_bridge_confirmation": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-crop-bridge-sealed-confirmation-v1.json",
+      "sha256": "13536a0f56cf54b8232cedad65126d69c8247484bdd05e2b2503c020c43a86ac"
+    },
+    "manifest": {
+      "path": "/home/hhai/l20-vl-1.2b/data/highres-evidence-search-pilot-v1/manifest.jsonl",
+      "sha256": "ddff8c102a9b7533ae5f934f80d5777e67bcc0668651db41ec5781edf10710db"
+    }
+  },
+  "parents": {
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base",
+    "language_release_manifest_sha256": "83e9a0982f96cfec65b109034669a9cc913e8b870201d2323805aecdaeabb051",
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55",
+    "vision_artifacts": {
+      "config.json": "fe8b5fe6d5734360678fd71c11c21e1ea3364bd8598d34295d9206335973ffd7",
+      "model.safetensors": "612923381c76ec5a9bed335d1c48827e3f2e506ac31b044b63b2031fadee6a0b",
+      "preprocessor_config.json": "9b36b57ebaf20f09bf4c22100ccc21877ea6bfe5aead0c00c59f8af8ccefacfc"
+    },
+    "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20260930-v1/step-000700/bridge.safetensors",
+    "bridge_sha256": "d4b04aa98e5430a1fe5a11918da87a67007d283116b4e843c1d640fc7c31f6ce",
+    "crop_bridge": "/home/hhai/l20-vl-1.2b/runs/highres-evidence-crop-bridge-v1/step-000140/crop_bridge.safetensors",
+    "crop_bridge_sha256": "9ef26b80ab3b99e89139f757956cf972c5b4d0b04d254755dbc93d867efff46e",
+    "language_adapter": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20260930-v1/step-000700/language_adapter",
+    "language_adapter_files": {
+      "adapter_config.json": "beb25b1266075702a22f78be2daa5f03625a0198514f0137a1284e974b06fc9b",
+      "adapter_model.safetensors": "b6b31eb6927d27ba2a0dbdc71f50adca68f95b849f39a05bdbba532cf61cbaa9"
+    }
+  },
+  "architecture": {
+    "visual_tokens": 196,
+    "vision_feature_layer": -1,
+    "compressor": "spatial_query",
+    "output_visual_tokens": 49,
+    "target_ratio": 4
+  },
+  "data": {
+    "root": "/home/hhai/l20-vl-1.2b/data/highres-evidence-search-pilot-v1",
+    "manifest": "/home/hhai/l20-vl-1.2b/data/highres-evidence-search-pilot-v1/manifest.jsonl",
+    "split": "train",
+    "train_rows": 448,
+    "action_counts": {"POINT": 224, "STOP": 224},
+    "development_access": false,
+    "sealed_test_access": false
+  },
+  "teacher": {
+    "local_observed_gain": "correct-answer mean-token NLL under frozen global view minus frozen global-plus-oracle-crop responder",
+    "stop_observed_gain": 0.0,
+    "minimum_observed_gain": 0.1,
+    "minimum_local_positive_gain_fraction": 0.9,
+    "gain_clip_min": 0.0,
+    "gain_clip_max": 10.0,
+    "feature_batch_images": 32,
+    "responder_batch_rows": 8,
+    "max_text_tokens": 64
+  },
+  "router": {
+    "module": "EvidenceAcquisitionRouter",
+    "vision_dim": 768,
+    "language_dim": 2048,
+    "rank": 64,
+    "patch_count": 196,
+    "actions": "196 patch centers plus STOP",
+    "crop_expansion_cells": 1.0
+  },
+  "objective": {
+    "pointer": "equal-weight average of exact POINT cross-entropy and STOP cross-entropy",
+    "gain": "Huber regression to frozen responder correct-answer NLL gain",
+    "balanced_batches": true
+  },
+  "optimization": {
+    "epochs": 60,
+    "batch_rows": 32,
+    "max_optimizer_steps": 840,
+    "max_wall_seconds": 1800,
+    "learning_rate": 0.0003,
+    "minimum_learning_rate_ratio": 0.1,
+    "warmup_ratio": 0.05,
+    "weight_decay": 0.01,
+    "gradient_clip_norm": 1.0,
+    "gain_loss_weight": 0.1,
+    "precision": "bfloat16",
+    "checkpoint_every_steps": 210,
+    "seed": 20260914
+  },
+  "budget": {
+    "single_l20_gpu_hours_cap": 0.5,
+    "smoke_override_max_optimizer_steps": 2,
+    "smoke_override_max_wall_seconds": 300
+  },
+  "source_code": {
+    "trainer_sha256": "f1eca2f8536d6bd593dbb0fb8243791fb63df582eb062739e5fca911e673f303",
+    "test_sha256": "65f0e3e5c1bb70d7b5efc5e0052d5f9f5cbfdd1416ff31e4ae54689ded6e8433",
+    "router_module_sha256": "98039416f24d9780412100115c60825f061be8ec9b5ef803933b884f3f541907",
+    "modeling_sha256": "7ee504253640c9c7ce7e121b212a31d16d9e57ef9e05f55ebcbd67573febeac9",
+    "crop_trainer_sha256": "63e7f909d5e75b706bcd160eb87a92413e6a9da5981b8a28b9d310c06cb5a2f9",
+    "floor_evaluator_sha256": "486c2fe177f4af9c2e3f94ca4f6638029ecf5c2ad7620b63d2f4c20da7dc1b72"
+  },
+  "outputs": {
+    "smoke": "/home/hhai/l20-vl-1.2b/runs/highres-evidence-router-v1-smoke",
+    "full": "/home/hhai/l20-vl-1.2b/runs/highres-evidence-router-v1"
+  },
+  "successor_gate": "Evaluate all four predeclared checkpoints on development for POINT/STOP action, exact and near-patch localization, gain calibration, acquisition rate, and end-to-end predicted-crop answer accuracy. The already opened crop-responder sealed split may not be reused as an independent router confirmation.",
+  "claim_boundary": "This train-only synthetic experiment can teach a small router the intended POINT/STOP and coarse localization mechanism. It cannot establish natural-image evidence search, end-to-end accuracy, calibrated utility under distribution shift, deployment readiness, or novelty."
+}

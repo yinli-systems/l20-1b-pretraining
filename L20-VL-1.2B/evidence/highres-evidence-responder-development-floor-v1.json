@@ -1,0 +1,197 @@
+{
+  "candidate_order_invariance": {
+    "crop": {
+      "passes": true,
+      "prediction_mismatches": 0,
+      "rows": 48
+    },
+    "global": {
+      "passes": true,
+      "prediction_mismatches": 0,
+      "rows": 96
+    },
+    "global_crop": {
+      "passes": true,
+      "prediction_mismatches": 0,
+      "rows": 48
+    },
+    "global_mismatched_crop": {
+      "passes": true,
+      "prediction_mismatches": 0,
+      "rows": 48
+    },
+    "no_image": {
+      "passes": true,
+      "prediction_mismatches": 0,
+      "rows": 96
+    }
+  },
+  "claim_boundary": "This is a development-only, finite-candidate, oracle-crop diagnostic on one deterministic synthetic rendering family. It tests whether the current frozen Stage-D responder changes correct answers when given answer-bearing versus mismatched crop evidence. It does not measure learned localization, free-form generation, natural-image OCR, router quality, sealed-test generalization, or superiority over another VLM.",
+  "completed_at": "2026-09-14T11:30:21.432775+00:00",
+  "decision": "existing_responder_requires_adaptation",
+  "elapsed_seconds": 21.80011050775647,
+  "gate_passed": false,
+  "metrics": {
+    "crop": {
+      "families": 24,
+      "family_joint_accuracy": 0.0,
+      "prediction_distribution": {
+        "1": 42,
+        "5": 5,
+        "__TIE__": 1
+      },
+      "row_accuracy": 0.16666666666666666,
+      "rows": 48
+    },
+    "global": {
+      "families": 48,
+      "family_joint_accuracy": 0.020833333333333332,
+      "prediction_distribution": {
+        "0": 6,
+        "1": 33,
+        "2": 2,
+        "5": 3,
+        "__TIE__": 4,
+        "purple": 18,
+        "teal": 30
+      },
+      "row_accuracy": 0.21875,
+      "rows": 96
+    },
+    "global_crop": {
+      "families": 24,
+      "family_joint_accuracy": 0.0,
+      "prediction_distribution": {
+        "0": 30,
+        "2": 13,
+        "5": 4,
+        "__TIE__": 1
+      },
+      "row_accuracy": 0.08333333333333333,
+      "rows": 48
+    },
+    "global_mismatched_crop": {
+      "families": 24,
+      "family_joint_accuracy": 0.0,
+      "prediction_distribution": {
+        "0": 25,
+        "1": 8,
+        "2": 13,
+        "5": 2
+      },
+      "row_accuracy": 0.10416666666666667,
+      "rows": 48
+    },
+    "no_image": {
+      "families": 48,
+      "family_joint_accuracy": 0.0,
+      "prediction_distribution": {
+        "1": 22,
+        "2": 2,
+        "3": 2,
+        "5": 8,
+        "__TIE__": 14,
+        "teal": 48
+      },
+      "row_accuracy": 0.14583333333333334,
+      "rows": 96
+    }
+  },
+  "next_allowed_step": "Freeze a bounded oracle-crop responder adaptation protocol; do not train the value router until the responder can use crop evidence.",
+  "paired_deltas": {
+    "crop_minus_global": {
+      "bootstrap_samples": 10000,
+      "ci95_high": 0.10416666666666667,
+      "ci95_low": -0.0625,
+      "clusters": 24,
+      "point_estimate": 0.020833333333333332
+    },
+    "global_crop_minus_global": {
+      "bootstrap_samples": 10000,
+      "ci95_high": 0.0,
+      "ci95_low": -0.14583333333333334,
+      "clusters": 24,
+      "point_estimate": -0.0625
+    },
+    "global_crop_minus_mismatched_crop": {
+      "bootstrap_samples": 10000,
+      "ci95_high": 0.041666666666666664,
+      "ci95_low": -0.08333333333333333,
+      "clusters": 24,
+      "point_estimate": -0.020833333333333332
+    }
+  },
+  "parameter_updates": 0,
+  "peak_cuda_memory_bytes": 4090964480,
+  "predictions": {
+    "bytes": 296972,
+    "path": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-responder-development-floor-v1-predictions.jsonl",
+    "sha256": "f8de6b33913c55f0c5bd8ececc3fc2204b223e375c28aae614a4d55ae201795d"
+  },
+  "protocol": {
+    "path": "highres_evidence_responder_floor_v1_protocol.json",
+    "sha256": "2d6ac1dc5bfb633e169245ff6bf657daaed1a38334bb41cda297a39da72fbf56"
+  },
+  "rows": {
+    "all_development": 96,
+    "global_border": 48,
+    "local_digit": 48
+  },
+  "schema_version": "2026-09-14-v1",
+  "sealed_test_rows_accessed": 0,
+  "status": "complete_highres_evidence_responder_development_floor",
+  "verified_parent_records": {
+    "bridge_sha256": "d4b04aa98e5430a1fe5a11918da87a67007d283116b4e843c1d640fc7c31f6ce",
+    "language": {
+      "config.json": {
+        "bytes": 692,
+        "sha256": "03b9b24c54c1f271a05e317f3f7edc844bb3dce3b03ca3d3c96c7d16944dc9cb"
+      },
+      "generation_config.json": {
+        "bytes": 81,
+        "sha256": "1f5364a8fcd616f171b6633e64d2b3a7dd00f4b71953030a9d102365da57ae4e"
+      },
+      "model-00001-of-00003.safetensors": {
+        "bytes": 1625415432,
+        "sha256": "dd9578d156a9c5d70d9ea70b212bd180fb0d809d079a12fe8cc4ccbdd485ceac"
+      },
+      "model-00002-of-00003.safetensors": {
+        "bytes": 1585603608,
+        "sha256": "2d94a7301798a60bb06199190aaf8912bed7c4c4829f60e154ea3b2b5321f2e4"
+      },
+      "model-00003-of-00003.safetensors": {
+        "bytes": 1189197352,
+        "sha256": "a5a9754c5d8b94c7bef8da4b9211d27335f5013e0519a1106046c6c60a84e0ea"
+      },
+      "model.safetensors.index.json": {
+        "bytes": 16555,
+        "sha256": "382f6cc555a9876edbb7d13281774aca548c51528d79da21a0e631a88f6157c6"
+      },
+      "model_config.yaml": {
+        "bytes": 1162,
+        "sha256": "030d868464d4466007747b8f28c8fe5a43884b5aa4e28580d01b86df27b8ff8e"
+      },
+      "special_tokens_map.json": {
+        "bytes": 293,
+        "sha256": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193"
+      },
+      "tokenizer.json": {
+        "bytes": 2263083,
+        "sha256": "e755dfeeed1acab465839adc0988811983a3287db230a8d9bc0f74704208609c"
+      },
+      "tokenizer_config.json": {
+        "bytes": 665,
+        "sha256": "f5cb4892eb0751f37da45779eab1cab0b591ad2f4ec6261cc46292bb99e6b007"
+      }
+    },
+    "language_adapter_files": {
+      "adapter_config.json": "beb25b1266075702a22f78be2daa5f03625a0198514f0137a1284e974b06fc9b",
+      "adapter_model.safetensors": "b6b31eb6927d27ba2a0dbdc71f50adca68f95b849f39a05bdbba532cf61cbaa9"
+    },
+    "vision_artifacts": {
+      "config.json": "fe8b5fe6d5734360678fd71c11c21e1ea3364bd8598d34295d9206335973ffd7",
+      "model.safetensors": "612923381c76ec5a9bed335d1c48827e3f2e506ac31b044b63b2031fadee6a0b",
+      "preprocessor_config.json": "9b36b57ebaf20f09bf4c22100ccc21877ea6bfe5aead0c00c59f8af8ccefacfc"
+    }
+  }
+}

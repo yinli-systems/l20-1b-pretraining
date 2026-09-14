@@ -1,0 +1,28 @@
+{
+  "protocol_version": "2026-09-13-v2",
+  "project": "Counterfactual Evidence-Preserving Visual Compression",
+  "status": "larger_unique_scene_foundation_recovery_preflight",
+  "formal_training_authorized": false,
+  "automatic_stage_advance": false,
+  "purpose": "freeze a larger independent controlled corpus before model updates to test whether unique-scene scaling repairs development generalization",
+  "parents": {
+    "language": "AliceYin/L20-1B-20B-Base",
+    "vision": "google/siglip2-base-patch16-224@75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2"
+  },
+  "diagnostic_data": {
+    "synthetic_pair_target": 20000,
+    "image_variants_per_pair": ["base", "answer_changing_edit", "answer_invariant_edit"],
+    "tasks": ["count", "color_binding", "shape_binding", "left_right_relation", "above_below_relation"],
+    "answers": ["yes", "no"],
+    "split": {
+      "train_percent": 70,
+      "development_percent": 15,
+      "test_percent": 15,
+      "atomic_unit": "scene_family_id",
+      "stratify_by": ["task", "base_answer"],
+      "cross_split_variant_overlap_allowed": false
+    }
+  },
+  "selection_rule": "all model selection uses only the v2 development split; the v2 test split remains sealed until a separately frozen gate passes",
+  "claim_boundary": "Programmatic scenes establish only controlled visual grounding and cannot establish natural-image VLM quality."
+}

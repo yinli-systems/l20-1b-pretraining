@@ -1,0 +1,103 @@
+{
+  "schema_version": "2026-09-13-v1",
+  "status": "authorized_stage_c_matched_compression_matrix",
+  "authorized_by_user": true,
+  "authorized_at": "2026-09-13",
+  "purpose": "fairly compare four primary 49-token objectives and a shuffled-link mechanism control",
+  "test_split_use_authorized": false,
+  "parents": {
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base",
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55",
+    "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-a-unique-scene-recovery-v1/step-000600/bridge.safetensors",
+    "bridge_sha256": "22cdd610fd52455ff43d378456fc097f0212f873ab2f1845cd4fd8f1198320bd",
+    "language_adapter": "/home/hhai/l20-vl-1.2b/runs/stage-a-unique-scene-recovery-v1/step-000600/language_adapter",
+    "language_adapter_files": {
+      "adapter_config.json": "4efcdcb96fae3737bfc84475bf914d3d470dc6a56b91334d0cde69fa7cab0182",
+      "adapter_model.safetensors": "1ea887b899ed5baf462b79389874603b30f7420bb8620dc5a5feb21a281013b4"
+    }
+  },
+  "teacher_cache": {
+    "path": "/home/hhai/l20-vl-1.2b/cache/full-token-teacher-v1.jsonl",
+    "sha256": "9f59cf8869b68adee8c7c87393d948c4f6bea21b2f6cd8d3ae9ce2a1cccf2ae3",
+    "receipt": "/home/hhai/l20-vl-1.2b/evidence/full-token-teacher-cache-v1.json",
+    "receipt_sha256": "1ef173aa5c083ceab120fa6453429623a0158c5b052b2360ea29508555fdaae2",
+    "teacher_pair_coverage_percent": 74.4,
+    "teacher_invariant_pair_coverage_percent": 84.12142857142857
+  },
+  "data": {
+    "manifest": "/home/hhai/l20-vl-1.2b/data/diagnostic/counterfactual-v3/manifest.jsonl",
+    "manifest_sha256": "6f21e01d31d8fc3035ca22219d0484a8fb029a30b2cddec34ab726585e5dfede",
+    "split": "train",
+    "scene_families": 14000,
+    "variants_per_family": 3,
+    "image_examples": 42000,
+    "epochs": 1
+  },
+  "architecture": {
+    "visual_tokens": 196,
+    "vision_feature_layer": -1,
+    "compressor": "spatial_query",
+    "target_ratio": 4,
+    "initialize_new_compressor": true,
+    "trainable": ["spatial_query_compressor", "projector", "image_start", "image_end", "language_lora"],
+    "frozen": ["language_parent_weights", "vision_encoder"]
+  },
+  "arms": {
+    "answer_49": {
+      "shuffle_pair_links": false,
+      "loss_weights": {"answer_supervision": 1.0, "ordinary_kd": 0.0, "invariance_delta": 0.0, "evidence_delta": 0.0}
+    },
+    "kd_49": {
+      "shuffle_pair_links": false,
+      "loss_weights": {"answer_supervision": 1.0, "ordinary_kd": 1.0, "invariance_delta": 0.0, "evidence_delta": 0.0}
+    },
+    "strong_49": {
+      "shuffle_pair_links": false,
+      "loss_weights": {"answer_supervision": 1.0, "ordinary_kd": 1.0, "invariance_delta": 0.25, "evidence_delta": 0.0}
+    },
+    "proposed_49": {
+      "shuffle_pair_links": false,
+      "loss_weights": {"answer_supervision": 1.0, "ordinary_kd": 1.0, "invariance_delta": 0.25, "evidence_delta": 0.25}
+    },
+    "shuffled_delta_49": {
+      "shuffle_pair_links": true,
+      "loss_weights": {"answer_supervision": 1.0, "ordinary_kd": 1.0, "invariance_delta": 0.25, "evidence_delta": 0.25}
+    }
+  },
+  "distillation_temperature": 2.0,
+  "preference_scale": 4.0,
+  "huber_beta": 1.0,
+  "optimization": {
+    "micro_batch_families": 8,
+    "gradient_accumulation_steps": 2,
+    "effective_batch_families": 16,
+    "image_examples_per_optimizer_step": 48,
+    "candidate_sequences_per_optimizer_step": 96,
+    "max_optimizer_steps": 875,
+    "max_wall_seconds": 7200,
+    "adapter_learning_rate": 0.00001,
+    "bridge_learning_rate": 0.00002,
+    "compressor_learning_rate": 0.0002,
+    "minimum_learning_rate_ratio": 0.1,
+    "warmup_ratio": 0.03,
+    "weight_decay": 0.02,
+    "gradient_clip_norm": 1.0,
+    "precision": "bfloat16",
+    "text_tokens_max": 96,
+    "checkpoint_every_steps": 100,
+    "seed": 20260921
+  },
+  "equalization": {
+    "same_family_order": true,
+    "same_initialization_seed": true,
+    "same_image_examples": true,
+    "same_prediction_token_budget": true,
+    "same_optimizer_and_schedule": true,
+    "same_backbone_and_49_visual_tokens": true,
+    "wall_clock_reported_not_equalized": true
+  },
+  "selection_rule": "select each arm from steps 100,300,500,700,875 on the same fixed 50-family-per-task development subset; freeze all selected checkpoints before any Stage-C test inference",
+  "confirmatory_rule": "on sealed test, proposed_49 minus strong_49 lower 95% cluster-bootstrap bound must exceed zero and point estimate must be at least 2.0 percentage points",
+  "ablation_rule": "if proposed gains, shuffled_delta_49 must not match the gain; otherwise reject the pairing mechanism",
+  "claim_boundary": "One seed is a mechanism pilot; the confirmatory claim additionally requires three independent seeds and mandatory controls."
+}

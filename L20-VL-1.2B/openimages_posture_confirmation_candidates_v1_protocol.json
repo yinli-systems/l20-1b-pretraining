@@ -1,0 +1,147 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "authorized_openimages_validation_posture_candidate_audit_only_v1",
+  "experiment_id": "openimages_posture_confirmation_candidates_v1",
+  "authorized_by_user": true,
+  "training_authorized": false,
+  "model_evaluation_authorized": false,
+  "pairing_authorized": false,
+  "automatic_training_start": false,
+  "automatic_evaluation_start": false,
+  "purpose": "Build a model-blind, source-split-disjoint Open Images validation posture pool and render every target for exhaustive visual review. Labels remain untrusted and evaluation remains blocked.",
+  "seed": 20261006,
+  "prerequisites": {
+    "acquisition_receipt": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-confirmation-acquisition-v1.json",
+      "sha256": "f30afe8e1f24c5009fb7fe43c7beee18528ef75b0c85dd16b804073856b24955"
+    },
+    "development_manifest": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-crossfit-v1.jsonl",
+      "sha256": "ad96b6716b4032ecaeb41450433f61beeb6ad94b0268974afedbddfad5d6bf16"
+    }
+  },
+  "sources": {
+    "visual_relationships": {
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-posture-confirmation-v1/sources/oidv6-validation-annotations-vrd.csv",
+      "sha256": "347d92ab753b4975f274732914e3fcd645942437dee496c2174f93dde570b82f"
+    },
+    "image_metadata": {
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-posture-confirmation-v1/sources/validation-images-with-rotation.csv",
+      "sha256": "ed93a0e121fe345effdfc7359b848dbc64a1ff6778c8c73563157cb500b33a17"
+    },
+    "class_names": {
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-vrd-pilot-v1/sources/class-descriptions-boxable.csv",
+      "sha256": "2fa47fb1b87e71c90b9fbee2dc1184eb8c59601bb811ea4424b200653cedff8e"
+    },
+    "attribute_names": {
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-vrd-pilot-v1/sources/oidv6-attributes-description.csv",
+      "sha256": "e7ca340e76f61124afb20f3c17998473ee4dd86db8338906c3377afbc7c4f35f"
+    }
+  },
+  "source_split": "Open Images V6 validation",
+  "development_source_split": "Open Images V6 train",
+  "test_split_policy": "untouched and not downloaded",
+  "required_image_license": "https://creativecommons.org/licenses/by/2.0/",
+  "image_url_template": "https://open-images-dataset.s3.amazonaws.com/validation/{image_id}.jpg",
+  "geometry_filters": {
+    "Sit": {
+      "min_width": 0.25,
+      "min_height": 0.25,
+      "min_area": 0.06,
+      "derivation": "Frozen from the development curation pipeline before validation annotation inspection."
+    },
+    "Stand": {
+      "min_width": 0.15,
+      "max_width": 0.65,
+      "min_height": 0.35,
+      "min_area": 0.04,
+      "min_bbox_height_to_width": 1.0,
+      "derivation": "Frozen from the successful development standing-supplement protocol before validation annotation inspection."
+    }
+  },
+  "deduplication": {
+    "within_confirmation_exact_sha256": true,
+    "within_confirmation_dhash_max_hamming": 4,
+    "development_image_id_overlap_rejected": true,
+    "development_exact_sha256_overlap_rejected": true,
+    "development_dhash_max_hamming": 4,
+    "one_target_per_source_image": true
+  },
+  "pose_model": {
+    "repository": "usyd-community/vitpose-base-simple",
+    "revision": "a93ac0c67e0b7e2c55287d21d4c460c8f3c54d45",
+    "license": "Apache-2.0",
+    "path": "/home/hhai/l20-vl-1.2b/models/vitpose-base-simple-a93ac0c",
+    "artifacts": {
+      "model": {
+        "path": "/home/hhai/l20-vl-1.2b/models/vitpose-base-simple-a93ac0c/model.safetensors",
+        "sha256": "85375373893ddd3641f3912821073e53f5435f9e966e1dca59d004454bfe4fdf"
+      },
+      "config": {
+        "path": "/home/hhai/l20-vl-1.2b/models/vitpose-base-simple-a93ac0c/config.json",
+        "sha256": "72fc2f0fc29eef43e87aa0ddd4c1269c5226ae157a99d0057019dd40129fed7c"
+      },
+      "preprocessor": {
+        "path": "/home/hhai/l20-vl-1.2b/models/vitpose-base-simple-a93ac0c/preprocessor_config.json",
+        "sha256": "9b11cadc98c30b968a70cc1658ce1fbd74b721b0f21402a2ff8bc1dc9d1474a0"
+      }
+    }
+  },
+  "pose_ranking": {
+    "feature": "curation_pose_features.mean_lower_body_score",
+    "applied_to": "standing candidates only",
+    "role": "soft review-pool ordering only; never an acceptance or label gate",
+    "device": "cuda",
+    "batch_size": 16,
+    "seed": 20260914,
+    "joint_score_threshold": 0.15,
+    "visible_to_human_reviewer": false
+  },
+  "sampling": {
+    "strata": "class label x posture attribute",
+    "strata_count": 8,
+    "download_candidates_per_stratum": {
+      "Sit": 64,
+      "Stand": 80
+    },
+    "review_candidates_per_stratum": {
+      "Sit": 40,
+      "Stand": 56
+    },
+    "download_candidates_total": 576,
+    "review_candidates_total": 384,
+    "minimum_human_accepted_per_stratum": 20,
+    "planned_final_pairs_per_class": 20,
+    "planned_final_pairs_total": 80
+  },
+  "limits": {
+    "minimum_free_bytes_before": 8000000000,
+    "maximum_downloaded_image_bytes": 1500000000,
+    "maximum_single_image_bytes": 20000000,
+    "download_workers": 16
+  },
+  "human_audit": {
+    "scope": "all 384 target people using both the full image with target box and an enlarged target crop",
+    "images_per_page": 8,
+    "acceptance_rule": "Accept only a real person whose requested sitting or standing posture is visually unambiguous without metadata or model scores. Reject lower-body or posture occlusion, crouching, kneeling, squatting, lying, dynamic ambiguity, wrong target, label conflict, and secondary media.",
+    "pose_score_hidden": true,
+    "pairing_allowed_before_audit": false,
+    "model_access_during_audit": false,
+    "evaluation_remains_blocked": true
+  },
+  "outputs": {
+    "root": "/home/hhai/l20-vl-1.2b/data/openimages-posture-confirmation-v1/candidate-pool",
+    "image_directory": "/home/hhai/l20-vl-1.2b/data/openimages-posture-confirmation-v1/candidate-pool/images",
+    "candidate_manifest": "/home/hhai/l20-vl-1.2b/data/openimages-posture-confirmation-v1/candidate-pool/posture-confirmation-candidates-v1.jsonl",
+    "audit_directory": "/home/hhai/l20-vl-1.2b/evidence/human-audit/openimages-posture-confirmation-v1",
+    "receipt": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-confirmation-candidates-v1-build.json"
+  },
+  "source_code": {
+    "builder_sha256": "c947b55371fbe1c228e93c1bf438c41c6518575e9bf4c5068a394f976f2c9941",
+    "test_sha256": "3ae23c5c23f2592f88bd1313b2ca3688ee8d8e603fc1057cd4dfd557dd84dfd6",
+    "download_dedup_sha256": "fb706ac1c45aeabeef84ba239d1a5af7df4db39033328b7be8f6b3cd668cb36a",
+    "pose_ranking_sha256": "5181a36cd2a907fcd4ff2335a8e8468482c41fd0e2679e13be13984b4b7edbda",
+    "audit_renderer_sha256": "4f0538495515febbb46352853b66435774df354af08e2582b327ccf444e1be0e"
+  },
+  "claim_boundary": "This protocol constructs an untrusted, model-blind audit pool from Open Images validation, while method development used Open Images train. The test split remains untouched. Validation annotations, geometry filters, external pose ordering, and exhaustive single-reviewer audit target clear marked-person posture questions rather than unfiltered natural-image prevalence. This phase cannot pair examples, access the candidate model, train parameters, evaluate model quality, establish inter-rater agreement, support broad VLM claims, or authorize release."
+}

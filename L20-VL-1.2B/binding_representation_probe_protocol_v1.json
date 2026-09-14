@@ -1,0 +1,107 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "authorized_binding_representation_probe_v1",
+  "authorized_by_user": true,
+  "authorized_at": "2026-09-14T00:15:37Z",
+  "purpose": "Localize target-color information loss across the frozen 196-token vision output, fixed 49-token compression, and language-space projection after E1 failed to repair binding.",
+  "test_split_use_authorized": false,
+  "formal_training": false,
+  "prerequisite": {
+    "evaluation_summary": "/home/hhai/l20-vl-1.2b/evidence/binding-e1-evaluation-v1/summary.json",
+    "evaluation_summary_sha256": "15a7a265415ac7c62f98a963616afb1ee5b1dd3f95b69a10d6bc48dec53263db",
+    "required_status": "complete_development_only",
+    "required_full_mechanism_visual_floor_passes_all": false
+  },
+  "parents": {
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55",
+    "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20260930-v1/step-000700/bridge.safetensors",
+    "bridge_sha256": "d4b04aa98e5430a1fe5a11918da87a67007d283116b4e843c1d640fc7c31f6ce"
+  },
+  "architecture": {
+    "compressor": "spatial_query",
+    "visual_tokens": 196,
+    "output_visual_tokens": 49,
+    "target_ratio": 4,
+    "vision_feature_layer": -1
+  },
+  "data": {
+    "manifest": "/home/hhai/l20-vl-1.2b/data/diagnostic/binding-intervention-v1/manifest.jsonl",
+    "manifest_sha256": "084110ebff7f7d9dc3d5249a967b2efdcecd27e56827cb98ee69c8309f4b3754",
+    "train_scene_pairs": 800,
+    "mechanism_dev_scene_pairs": 160,
+    "selection_dev_scene_pairs": 160,
+    "samples_per_scene_pair": 2,
+    "target": "target_object_color_before_and_after_swap",
+    "color_classes": 6,
+    "final_test": "sealed_and_absent",
+    "evidence": {
+      "generation_receipt": {
+        "path": "/home/hhai/l20-vl-1.2b/evidence/binding-intervention-data-generation-v1.json",
+        "sha256": "bf6b340c218724edc2a4da6a4051e432105904fa01b7909690a27a16478cff50"
+      },
+      "static_audit": {
+        "path": "/home/hhai/l20-vl-1.2b/evidence/binding-intervention-data-static-audit-v1.json",
+        "sha256": "36331491142a2d7934923f5c7f5d02680e9fc9bed66d001b44cf477c00a8ead8"
+      },
+      "human_audit": {
+        "path": "/home/hhai/l20-vl-1.2b/evidence/binding-intervention-data-human-audit-v1.json",
+        "sha256": "e821b7da7325fc3d8711b3309e8dda366b778fbbfa9e3f9b34f9e2990c437e36"
+      }
+    }
+  },
+  "representations": [
+    "vision_196_local",
+    "vision_196_global",
+    "compressed_49_local",
+    "compressed_49_global",
+    "projected_49_local",
+    "projected_49_global"
+  ],
+  "extraction": {
+    "batch_size": 64,
+    "precision": "bfloat16",
+    "frozen_vision": true,
+    "frozen_bridge": true
+  },
+  "probe": {
+    "type": "single_linear_classifier",
+    "seed": 20260914,
+    "optimizer": "AdamW",
+    "optimizer_steps": 500,
+    "batch_size": 256,
+    "learning_rate": 0.01,
+    "weight_decay": 0.0001,
+    "normalization": "train_split_featurewise_zscore",
+    "same_seed_and_minibatch_policy_for_all_representations": true
+  },
+  "statistics": {
+    "primary_split": "mechanism_dev",
+    "secondary_split": "selection_dev_reused_development_only",
+    "bootstrap_unit": "scene_pair_id",
+    "bootstrap_resamples": 10000,
+    "chance_accuracy_percent": 16.6666666667
+  },
+  "decision_rules": {
+    "minimum_accuracy_percent": 70.0,
+    "minimum_lower_95_ci_minus_chance_pp": 40.0,
+    "ordered_localization": [
+      "vision_encoder_or_linear_readout_limit",
+      "196_to_49_compression_bottleneck",
+      "vision_to_language_projection_bottleneck",
+      "downstream_query_binding_or_language_readout_bottleneck"
+    ]
+  },
+  "resource_cap": {
+    "gpu": "1x NVIDIA L20",
+    "maximum_gpu_minutes": 20,
+    "output": "/home/hhai/l20-vl-1.2b/evidence/binding-representation-probe-v1.json"
+  },
+  "source_code": {
+    "probe_sha256": "0aa7f7c63753d8ca3ea8bd6004d49b3f544fb86ecf7efe58ac7547fb2694a52b",
+    "probe_test_sha256": "157e9ecb03d4bd71fd97978705a405cd1d07c2bfbc14ad3229f0a14fb6221572",
+    "modeling_sha256": "20775f6219b337c6cae3c3e1078dd6d7c0902f53143271d54618ee864b2ea269",
+    "counterfactual_losses_sha256": "566c43764013a8bb98a6343b18b260924c2396b1ae1e6424cf2fd77aedcbac39",
+    "stage_a_utility_sha256": "e5263492be372008e50f4fde4420699d731cdb80f79fdad868027eb281e2f52d"
+  },
+  "claim_boundary": "This is an oracle-location, synthetic, one-probe-seed development diagnostic. It tests linear availability of target color, not language-conditioned object binding, causal sufficiency, natural-image transfer, novelty, or a general VLM improvement. selection_dev is reused and final test remains absent."
+}

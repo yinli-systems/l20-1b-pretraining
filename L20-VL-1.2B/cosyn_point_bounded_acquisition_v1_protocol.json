@@ -1,0 +1,60 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "experiment_id": "cosyn_point_bounded_acquisition_v1",
+  "status": "authorized_cosyn_point_bounded_acquisition_audit_v1",
+  "purpose": "Acquire and integrity-audit exactly two pinned CoSyn-point train shards for a bounded pointing pilot while leaving the official validation split untouched for possible one-shot confirmation.",
+  "training_authorized": false,
+  "full_dataset_acquisition_authorized": false,
+  "official_validation_acquisition_authorized": false,
+  "dataset_repository": {
+    "id": "allenai/CoSyn-point",
+    "commit": "40fe7c3a5036424fc7694e8128869faf79b45ad1",
+    "private": false,
+    "gated": false,
+    "license": "odc-by",
+    "dataset_card": "https://huggingface.co/datasets/allenai/CoSyn-point/blob/40fe7c3a5036424fc7694e8128869faf79b45ad1/README.md",
+    "reported_train_examples": 68051,
+    "reported_validation_examples": 1000,
+    "reported_download_bytes": 12415666518,
+    "terms_note": "Research and educational use under the Ai2 Responsible Use Guidelines; generated assets are also subject to the upstream terms identified by the official dataset card."
+  },
+  "sources": {
+    "pilot_train_shard": {
+      "repo_path": "data/train-00000-of-00025.parquet",
+      "url": "https://huggingface.co/datasets/allenai/CoSyn-point/resolve/40fe7c3a5036424fc7694e8128869faf79b45ad1/data/train-00000-of-00025.parquet?download=true",
+      "api_oid": "6d838bbf808c02ceeeebcd1cf7cfb92eea9b1ea7",
+      "expected_bytes": 489214142,
+      "destination": "/home/hhai/l20-vl-1.2b/data/cosyn-point-pilot-v1/sources/train-00000-of-00025.parquet",
+      "role": "candidate_train_only"
+    },
+    "pilot_development_shard": {
+      "repo_path": "data/train-00001-of-00025.parquet",
+      "url": "https://huggingface.co/datasets/allenai/CoSyn-point/resolve/40fe7c3a5036424fc7694e8128869faf79b45ad1/data/train-00001-of-00025.parquet?download=true",
+      "api_oid": "f865c0811587e72cb5481b20d96d26393fa47ce5",
+      "expected_bytes": 491081831,
+      "destination": "/home/hhai/l20-vl-1.2b/data/cosyn-point-pilot-v1/sources/train-00001-of-00025.parquet",
+      "role": "candidate_development_only"
+    }
+  },
+  "blocked_source": {
+    "repo_path": "data/validation-00000-of-00001.parquet",
+    "expected_bytes": 178674674,
+    "role": "untouched_possible_one_shot_confirmation",
+    "reason": "Do not download or inspect until a checkpoint and independent confirmation protocol are frozen. The dataset card calls this split unofficial, so any future result is internal confirmation rather than a standard benchmark claim."
+  },
+  "transfer": {
+    "route": "Download on the local workstation from the commit-pinned public HTTPS URLs, verify exact byte counts, transfer over the authenticated Tailscale SSH route, then compute SHA256 and inspect parquet metadata on the GPU host.",
+    "hf_token_required": false,
+    "resume_allowed": true,
+    "partial_files_are_not_admitted": true
+  },
+  "source_code": {
+    "auditor_sha256": "d557a114c19b0c79fa732f158db8a3280d37e7a836c667b28c5d74b4caaf4fd0",
+    "test_sha256": "15963921027137ea8cd2ac5d730c4ae541db3d4c3d5db338859384359d2863f5"
+  },
+  "output": {
+    "receipt": "/home/hhai/l20-vl-1.2b/evidence/cosyn-point-bounded-acquisition-v1.json"
+  },
+  "successor_gate": "After both source files pass byte-size, SHA256, exact-schema, within-shard uniqueness, and cross-shard ID-disjointness checks, build only a bounded manifest and fixed visual audit. No training is authorized by this protocol.",
+  "claim_boundary": "Successful acquisition establishes only source integrity and split disjointness for two shards. It does not establish question quality, point validity, training quality, natural-image transfer, standard benchmark performance, license suitability for a particular product, deployment readiness, novelty, or superiority."
+}

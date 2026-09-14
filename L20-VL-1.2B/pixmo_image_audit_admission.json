@@ -1,0 +1,42 @@
+{
+  "schema_version": "2026-09-13-v1",
+  "repo": "allenai/pixmo-cap",
+  "revision": "edce6390d9d5be6c8db0d863fbe62718c88988a4",
+  "required_metadata_audit_sha256": "d5ed597180955545b8ade2cb419d758497adbacb4a2d348456915e84e3ea663a",
+  "required_hosted_profile_sha256": "b4578d21ea35e10f1d413caf333f3818ed1c76061a5237a4573b24ade6f19555",
+  "purpose": "bounded deterministic image availability, integrity, duplicate, and human-alignment audit",
+  "host_allowlist": [
+    "pixmo.s3.us-west-2.amazonaws.com"
+  ],
+  "path_families": {
+    "ai-gen": 32,
+    "amateur_drawings": 32,
+    "birds": 32,
+    "compare": 32,
+    "egocentric": 32,
+    "flowers": 32,
+    "food101": 32,
+    "rtx_data_samples_4k": 32,
+    "stanford-dogs-2": 32
+  },
+  "selection": "lowest_sha256_url_per_family_after_conservative_metadata_filters",
+  "max_files": 288,
+  "max_total_bytes": 1500000000,
+  "max_single_file_bytes": 25000000,
+  "minimum_width": 128,
+  "minimum_height": 128,
+  "destination": "/home/hhai/l20-vl-1.2b/data/audit/pixmo-cap-images-v1",
+  "image_audit_acquisition_authorized": true,
+  "human_audit_status": "complete_with_family_specific_blockers",
+  "forward_only_system_test_authorized": true,
+  "formal_training_authorized": false,
+  "training_prediction_tokens": 0,
+  "known_limits": [
+    "URL_content_is_mutable_until_the_retrieved_image_hash_is_recorded",
+    "AI2_controlled_hosting_does_not_by_itself_establish_underlying_image_rights",
+    "frozen_metadata_has_no_row_level_creator_opt_out_field",
+    "caption_factuality_requires_visual_review",
+    "benchmark_pixel_overlap_is_not_resolved_by_URL_markers"
+  ],
+  "decision": "The exact 288-image audit sample may be used for forward-only systems validation. No image or family is admitted to training."
+}

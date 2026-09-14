@@ -1,0 +1,86 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "authorized_binding_answer_only_development_v1",
+  "experiment_id": "binding_tuned_plain_ce_evaluation_v1",
+  "authorized_by_user": true,
+  "authorized_at": "2026-09-14T00:52:00Z",
+  "purpose": "Select the strongest prespecified checkpoint from the tuned plain-CE run and evaluate it on the two development splits without opening final test.",
+  "test_split_use_authorized": false,
+  "formal_evaluation": false,
+  "training_protocol": {
+    "path": "/home/hhai/l20-vl-1.2b/binding_tuned_plain_ce_protocol_v1.json",
+    "sha256": "41ba0b583d19ecffcb093d7a730daf0f8e5ee06ab1773a9c526cfba58e55107b"
+  },
+  "parents": {
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base",
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55",
+    "selection_rule": "Use only checkpoints from the completed, preflighted tuned plain-CE run; each checkpoint is evaluated with its own language adapter and bridge."
+  },
+  "architecture": {
+    "compressor": "spatial_query",
+    "output_visual_tokens": 49,
+    "target_ratio": 4,
+    "vision_feature_layer": -1,
+    "visual_tokens": 196
+  },
+  "data": {
+    "manifest": "/home/hhai/l20-vl-1.2b/data/diagnostic/binding-intervention-v1/manifest.jsonl",
+    "manifest_sha256": "084110ebff7f7d9dc3d5249a967b2efdcecd27e56827cb98ee69c8309f4b3754",
+    "allowed_splits": [
+      "mechanism_dev",
+      "selection_dev"
+    ],
+    "final_test": "sealed_and_absent"
+  },
+  "checkpoint_selection": {
+    "split": "mechanism_dev",
+    "screen_scene_pairs": 40,
+    "screen_checkpoints": [
+      50,
+      100,
+      150,
+      200,
+      250,
+      300,
+      350,
+      400
+    ],
+    "primary_metric": "affected_question_joint_accuracy_percent",
+    "tie_breaker": "scene_pair_selective_all_six_correct_percent",
+    "final_tie_breaker": "earliest_step",
+    "do_not_tune_on_selection_dev": true
+  },
+  "scoring": {
+    "conditions": [
+      "true_image",
+      "random_image",
+      "no_image"
+    ],
+    "random_control": "within_task_answer_cluster_deranged",
+    "candidate_order": "manifest",
+    "precision": "bfloat16",
+    "batch_families": 24,
+    "text_tokens_max": 96,
+    "verify_image_hashes": true,
+    "statistical_unit": "scene_pair_id",
+    "bootstrap_resamples": 10000
+  },
+  "comparison": {
+    "e0_summary": "/home/hhai/l20-vl-1.2b/evidence/binding-e0-evaluation-v1/summary.json",
+    "e0_summary_sha256": "08adc26b54621f08b256ca3342551be48573311d6a4820afea89722da269865e",
+    "paired_metric": "affected_question_joint_accuracy_percent",
+    "paired_unit": "scene_pair_id"
+  },
+  "source_code": {
+    "orchestrator_sha256": "082399341bd92e8ed0b7fbe30c79ac51002a042248638a16ad50db1628c4e5c0",
+    "evaluator_sha256": "47956e076a4c36d61dc373643fae21ff4fdfd47ac285e3aca93eabde2a07b469",
+    "modeling_sha256": "20775f6219b337c6cae3c3e1078dd6d7c0902f53143271d54618ee864b2ea269",
+    "scoring_contract_sha256": "e8ba77148217fe08f31c029d839d4b6d7321e8d5b4310f1180c442841328f2f6"
+  },
+  "decision_rule": {
+    "sufficient_tuned_plain_ce_if": "full mechanism-development visual-floor gates all pass",
+    "cavr_allowed_only_if": "decision equals insufficient_tuned_plain_ce",
+    "do_not_generate_or_use_final_test_during_development": true
+  },
+  "claim_boundary": "This is a one-seed synthetic development evaluation with checkpoint selection on mechanism_dev and reuse of selection_dev. It can diagnose under-training and gate the next pilot, but cannot establish novelty, natural-image transfer, formal confirmation, or superiority over other VLMs."
+}

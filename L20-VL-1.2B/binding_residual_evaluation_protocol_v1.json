@@ -1,0 +1,75 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "authorized_binding_answer_only_development_v1",
+  "authorized_by_user": true,
+  "purpose": "Select one checkpoint per rank-16 residual arm on mechanism_dev, compare IIBR with its exact-capacity CE control, then evaluate only the selected arm on reused development validation.",
+  "test_split_use_authorized": false,
+  "training_protocol": {
+    "path": "/home/hhai/l20-vl-1.2b/binding_residual_development_protocol_v1.json",
+    "sha256": "2d72c1d554e9807a4558d064a2d4b520dfa64090783e5536bdf08a05cb8b61e8"
+  },
+  "parents": {
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base",
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55"
+  },
+  "architecture": {
+    "compressor": "spatial_query",
+    "visual_tokens": 196,
+    "output_visual_tokens": 49,
+    "target_ratio": 4,
+    "vision_feature_layer": -1,
+    "binding_residual_rank": 16
+  },
+  "data": {
+    "manifest": "/home/hhai/l20-vl-1.2b/data/diagnostic/binding-intervention-v1/manifest.jsonl",
+    "manifest_sha256": "084110ebff7f7d9dc3d5249a967b2efdcecd27e56827cb98ee69c8309f4b3754",
+    "allowed_splits": [
+      "mechanism_dev",
+      "selection_dev"
+    ],
+    "final_test": "sealed_and_absent"
+  },
+  "checkpoint_selection": {
+    "split": "mechanism_dev",
+    "screen_scene_pairs": 40,
+    "screen_checkpoints_per_arm": [
+      50,
+      100,
+      150,
+      200
+    ],
+    "select_checkpoint_by": "true_image_affected_question_joint_accuracy_percent",
+    "select_arm_by": "full_mechanism_true_image_affected_question_joint_accuracy_percent",
+    "tie_breakers": [
+      "scene_pair_selective_all_six_correct_percent",
+      "earlier_checkpoint",
+      "residual_ce"
+    ]
+  },
+  "scoring": {
+    "conditions": [
+      "true_image",
+      "random_image",
+      "no_image"
+    ],
+    "random_control": "within_task_answer_cluster_deranged",
+    "candidate_order": "manifest",
+    "precision": "bfloat16",
+    "primary_metric": "affected_question_joint_accuracy_percent",
+    "strict_metric": "scene_pair_selective_all_six_correct_percent",
+    "statistical_cluster": "scene_pair_id"
+  },
+  "validation_boundary": {
+    "selection_dev_was_previously_opened_for_plain_ce": true,
+    "selected_residual_arm_only": true,
+    "no_further_tuning_after_selection_dev": true,
+    "final_test_remains_the_only_unseen_confirmation_split": true
+  },
+  "source_code": {
+    "orchestrator_sha256": "a9f58a4e1550c74567a28d8361e9a56625072beff0896db659877bd3adf3e547",
+    "modeling_sha256": "20775f6219b337c6cae3c3e1078dd6d7c0902f53143271d54618ee864b2ea269",
+    "evaluator_sha256": "47956e076a4c36d61dc373643fae21ff4fdfd47ac285e3aca93eabde2a07b469",
+    "scoring_contract_sha256": "e8ba77148217fe08f31c029d839d4b6d7321e8d5b4310f1180c442841328f2f6"
+  },
+  "claim_boundary": "This is one-seed synthetic development evidence. selection_dev is no longer unseen because E0 already opened it; final-test data remain absent and sealed."
+}

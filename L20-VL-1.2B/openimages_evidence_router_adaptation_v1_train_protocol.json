@@ -1,0 +1,130 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "experiment_id": "openimages_evidence_router_adaptation_v1",
+  "status": "authorized_openimages_evidence_router_adaptation_train_only_v1",
+  "purpose": "Adapt the independently confirmed step-480 evidence router to real red-box localization and structural STOP decisions while replaying only synthetic train families and distilling the confirmed parent router.",
+  "allowed_data_splits": {
+    "natural": ["train"],
+    "synthetic_replay": ["train"]
+  },
+  "trainable_components": ["evidence_acquisition_router"],
+  "answer_supervision_authorized": false,
+  "prerequisites": {
+    "natural_data_protocol": {
+      "path": "/home/hhai/l20-vl-1.2b/openimages_evidence_router_pilot_v1_data_protocol.json",
+      "sha256": "61863bb2cb56a1c2b23f9b53bed10354fa75644e3a777a168325057ee1f405ba"
+    },
+    "natural_generation_receipt": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-evidence-router-pilot-v1-generation.json",
+      "sha256": "2537db4402de8f8bee1717c95a9f4d3772561481212bea5472a9d65fef71d46c"
+    },
+    "natural_primary_visual_audit": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-evidence-router-pilot-v1-primary-visual-audit.json",
+      "sha256": "d242e83b910d95d63ac378019d26a6a2b489914e7c77e2391e2e749ce1506e7f"
+    },
+    "natural_manifest": {
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-evidence-router-pilot-v1/manifest.jsonl",
+      "sha256": "478d88377e57b5543f1c962cd6df4db28f82471b42f7266528b3ea82d120c740"
+    },
+    "synthetic_router_confirmation": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-router-scale-v2-confirmation.json",
+      "sha256": "719faa4bb98f33683c5fba51395df28ce3b5ab8e48899c9687b9299d9c944d62"
+    },
+    "synthetic_replay_manifest": {
+      "path": "/home/hhai/l20-vl-1.2b/data/highres-evidence-router-scale-v2/manifest.jsonl",
+      "sha256": "6ec1ecd34190f92f2e86d379e5d9c91c671495768f85bd694f0bd3550b63bb03"
+    },
+    "natural_zero_shot_receipt": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-evidence-router-zero-shot-v1.json",
+      "sha256": "31f04cbf09add9dfbfd55ee9c3980d59c8293482d090fb4741db0b34c2544432"
+    }
+  },
+  "parents": {
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base",
+    "language_release_manifest_sha256": "83e9a0982f96cfec65b109034669a9cc913e8b870201d2323805aecdaeabb051",
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55",
+    "vision_artifacts": {
+      "config.json": "fe8b5fe6d5734360678fd71c11c21e1ea3364bd8598d34295d9206335973ffd7",
+      "model.safetensors": "612923381c76ec5a9bed335d1c48827e3f2e506ac31b044b63b2031fadee6a0b",
+      "preprocessor_config.json": "9b36b57ebaf20f09bf4c22100ccc21877ea6bfe5aead0c00c59f8af8ccefacfc"
+    },
+    "language_adapter": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20260930-v1/step-000700/language_adapter",
+    "language_adapter_files": {
+      "adapter_config.json": "beb25b1266075702a22f78be2daa5f03625a0198514f0137a1284e974b06fc9b",
+      "adapter_model.safetensors": "b6b31eb6927d27ba2a0dbdc71f50adca68f95b849f39a05bdbba532cf61cbaa9"
+    },
+    "router": "/home/hhai/l20-vl-1.2b/runs/highres-evidence-router-scale-v2/step-000480/router.safetensors",
+    "router_sha256": "df3f8ab31cbef9479930d6a3955e354b51a33e19c7606059b89bfd66ebf5d164"
+  },
+  "architecture": {
+    "visual_tokens": 196,
+    "vision_feature_layer": -1
+  },
+  "data": {
+    "natural_root": "/home/hhai/l20-vl-1.2b/data/openimages-evidence-router-pilot-v1",
+    "natural_manifest": "/home/hhai/l20-vl-1.2b/data/openimages-evidence-router-pilot-v1/manifest.jsonl",
+    "natural_train_rows": 3072,
+    "natural_train_families": 1536,
+    "natural_action_counts": {"POINT": 1536, "STOP": 1536},
+    "synthetic_replay_root": "/home/hhai/l20-vl-1.2b/data/highres-evidence-router-scale-v2",
+    "synthetic_replay_manifest": "/home/hhai/l20-vl-1.2b/data/highres-evidence-router-scale-v2/manifest.jsonl",
+    "synthetic_replay_seed": 20261025,
+    "synthetic_replay_families": 256,
+    "synthetic_replay_rows": 512,
+    "development_access": false,
+    "router_confirmation_access": false
+  },
+  "features": {
+    "batch_images": 32,
+    "router_batch_rows": 64,
+    "max_text_tokens": 64,
+    "prompt_tokens_only": true
+  },
+  "router": {
+    "vision_dim": 768,
+    "language_dim": 2048,
+    "rank": 64,
+    "patch_count": 196
+  },
+  "objective": {
+    "natural": "Balanced POINT-center versus STOP pointer cross-entropy. Response labels are masked out of the router query and are not answer supervision.",
+    "synthetic_replay": "Balanced pointer cross-entropy plus KL and predicted-gain distillation from the frozen confirmed step-480 parent.",
+    "reason": "Learn the real red-box spatial instrument while retaining the already confirmed synthetic POINT/STOP and gain behavior."
+  },
+  "optimization": {
+    "epochs": 20,
+    "natural_batch_rows": 64,
+    "replay_batch_rows": 32,
+    "max_optimizer_steps": 960,
+    "max_wall_seconds": 1800,
+    "learning_rate": 0.0001,
+    "minimum_learning_rate_ratio": 0.1,
+    "warmup_ratio": 0.05,
+    "weight_decay": 0.01,
+    "gradient_clip_norm": 1.0,
+    "replay_pointer_weight": 0.5,
+    "replay_kl_weight": 0.5,
+    "replay_gain_weight": 0.1,
+    "precision": "bfloat16",
+    "checkpoint_every_steps": 240,
+    "seed": 20261026
+  },
+  "budget": {
+    "single_l20_gpu_hours_cap": 1.0,
+    "smoke_families": 16,
+    "smoke_max_optimizer_steps": 2
+  },
+  "source_code": {
+    "trainer_sha256": "0986d0d9fd7c2c89752ae079b112f1399a1a20e8cd5a33e85553f66eb5719333",
+    "test_sha256": "36c70e750150298ffaec5478917f69a39bc524365571635f5181f4a0bb19160e",
+    "router_module_sha256": "98039416f24d9780412100115c60825f061be8ec9b5ef803933b884f3f541907",
+    "modeling_sha256": "7ee504253640c9c7ce7e121b212a31d16d9e57ef9e05f55ebcbd67573febeac9",
+    "synthetic_trainer_sha256": "f1eca2f8536d6bd593dbb0fb8243791fb63df582eb062739e5fca911e673f303"
+  },
+  "outputs": {
+    "smoke": "/home/hhai/l20-vl-1.2b/runs/openimages-evidence-router-adaptation-v1-smoke",
+    "full": "/home/hhai/l20-vl-1.2b/runs/openimages-evidence-router-adaptation-v1"
+  },
+  "successor_gate": "Evaluate the four predeclared checkpoints plus the frozen parent on natural development and the already-open synthetic v1 development split. Require natural POINT/STOP >= 90%, natural point-inside-box >= 80%, natural within-one-center >= 70%, and synthetic exact/within-one/STOP >= 90% before creating a separately acquired natural confirmation set.",
+  "claim_boundary": "This train-only adaptation can teach an instrumented red-box localization task and test synthetic retention. It does not train answer generation, does not use development or confirmation rows, and cannot establish natural-image VQA, unmarked grounding, OCR, deployment readiness, novelty, or superiority."
+}

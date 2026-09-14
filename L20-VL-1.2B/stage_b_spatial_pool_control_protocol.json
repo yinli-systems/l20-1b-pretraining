@@ -1,0 +1,34 @@
+{
+  "schema_version": "2026-09-13-v1",
+  "status": "authorized_stage_b_parameter_free_spatial_pool_control",
+  "authorized_by_user": true,
+  "authorized_at": "2026-09-13",
+  "purpose": "measure a parameter-free 196-to-49 two-dimensional pooling control before learned Stage-C arms",
+  "compression_experiment": true,
+  "test_split_use_authorized": false,
+  "parents": {
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base",
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55",
+    "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-a-unique-scene-recovery-v1/step-000600/bridge.safetensors",
+    "bridge_sha256": "22cdd610fd52455ff43d378456fc097f0212f873ab2f1845cd4fd8f1198320bd",
+    "language_adapter": "/home/hhai/l20-vl-1.2b/runs/stage-a-unique-scene-recovery-v1/step-000600/language_adapter",
+    "language_adapter_files": {
+      "adapter_config.json": "4efcdcb96fae3737bfc84475bf914d3d470dc6a56b91334d0cde69fa7cab0182",
+      "adapter_model.safetensors": "1ea887b899ed5baf462b79389874603b30f7420bb8620dc5a5feb21a281013b4"
+    }
+  },
+  "data": {
+    "manifest": "/home/hhai/l20-vl-1.2b/data/diagnostic/counterfactual-v3/manifest.jsonl",
+    "manifest_sha256": "6f21e01d31d8fc3035ca22219d0484a8fb029a30b2cddec34ab726585e5dfede"
+  },
+  "architecture": {
+    "visual_tokens": 196,
+    "vision_feature_layer": -1,
+    "compressor": "spatial_pool",
+    "target_ratio": 4,
+    "trainable": [],
+    "frozen": ["language_parent_weights", "language_adapter", "vision_encoder", "bridge"]
+  },
+  "selection_rule": "development only; test remains sealed until all primary Stage-C arms are frozen",
+  "claim_boundary": "This is a parameter-free controlled-domain architecture control, not a trained model or natural-image result."
+}

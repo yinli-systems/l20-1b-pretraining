@@ -1,0 +1,147 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "complete_research_result_summary",
+  "system": {
+    "language_parent": "L20-1B-20B-Base",
+    "language_parameters": 1100000000,
+    "gpu": "NVIDIA L20 46GB",
+    "trainable_component": "evidence_acquisition_router",
+    "trainable_parameters": 376706
+  },
+  "training": {
+    "protocol_sha256": "dab2b6c36627562defefc2b59d87ab0168e590c5e252534cc076e1a4b63ec130",
+    "trainer_sha256": "0986d0d9fd7c2c89752ae079b112f1399a1a20e8cd5a33e85553f66eb5719333",
+    "remote_run_receipt_sha256": "137cc6af2634c377c9cb8c625752b896a0ab14a13170061142b960374ba6b57e",
+    "optimizer_steps": 960,
+    "optimizer_phase_seconds": 15.320075150579214,
+    "cached_rows_per_second": 6015.636287300827,
+    "peak_allocated_gib": 2.411167621612549,
+    "natural_train_rows": 3072,
+    "synthetic_replay_rows": 512,
+    "development_rows_accessed": 0,
+    "confirmation_rows_accessed": 0,
+    "parents_verified_unchanged": true,
+    "throughput_boundary": "Optimizer-only throughput over cached frozen features and text embeddings; excludes image decoding, SigLIP2 feature caching, frozen 1.1B loading, and end-to-end inference."
+  },
+  "development_evaluation": {
+    "protocol_sha256": "2e45ccd7fb0c0b5d858ee94f6915fba6d805a1220e2da9c864a59d7458e1d477",
+    "remote_receipt_sha256": "c25a60c52c1acae5d000029a1ad3b67a0313d0fe5041445eaa4776a1500c80d9",
+    "remote_predictions_sha256": "d65f2d666409015a9f52987b437095e378286c8e1df0869f8309e9ebbc6047b0",
+    "natural_rows": 384,
+    "natural_point_rows": 192,
+    "natural_stop_rows": 192,
+    "synthetic_retention_rows": 96,
+    "confirmation_rows_accessed": 0,
+    "metrics_are_proportions": true,
+    "checkpoints": [
+      {
+        "name": "confirmed_synthetic_parent_step_480",
+        "step": 0,
+        "router_sha256": "df3f8ab31cbef9479930d6a3955e354b51a33e19c7606059b89bfd66ebf5d164",
+        "natural_action_accuracy": 0.9010416666666666,
+        "natural_point_recall": 0.9583333333333334,
+        "natural_stop_accuracy": 0.84375,
+        "natural_exact_center": 0.005208333333333333,
+        "natural_within_one_center": 0.09895833333333333,
+        "natural_inside_bbox": 0.3645833333333333,
+        "synthetic_exact_patch": 1.0,
+        "synthetic_within_one_patch": 1.0,
+        "synthetic_stop_accuracy": 1.0,
+        "gate_passed": false
+      },
+      {
+        "name": "natural_adaptation_step_240",
+        "step": 240,
+        "router_sha256": "fc499a321c4020afd974f53880fd746f1ed12d82facf80a0185d3075cc1cfe8e",
+        "natural_action_accuracy": 0.9713541666666666,
+        "natural_point_recall": 0.9427083333333334,
+        "natural_stop_accuracy": 1.0,
+        "natural_exact_center": 0.15625,
+        "natural_within_one_center": 0.5104166666666666,
+        "natural_inside_bbox": 0.7760416666666666,
+        "synthetic_exact_patch": 1.0,
+        "synthetic_within_one_patch": 1.0,
+        "synthetic_stop_accuracy": 1.0,
+        "gate_passed": false
+      },
+      {
+        "name": "natural_adaptation_step_480",
+        "step": 480,
+        "router_sha256": "758ebc01ab5f10d8f97e7d9a680645133daa81daa2c0948979329ef02bb10c0a",
+        "natural_action_accuracy": 0.9921875,
+        "natural_point_recall": 0.984375,
+        "natural_stop_accuracy": 1.0,
+        "natural_exact_center": 0.17708333333333334,
+        "natural_within_one_center": 0.5520833333333334,
+        "natural_inside_bbox": 0.8072916666666666,
+        "synthetic_exact_patch": 1.0,
+        "synthetic_within_one_patch": 1.0,
+        "synthetic_stop_accuracy": 1.0,
+        "gate_passed": false
+      },
+      {
+        "name": "natural_adaptation_step_720",
+        "step": 720,
+        "router_sha256": "f549041b9f1e1fa3050c69f11985e18bd4b99ecbac5329227b39280878ee6c07",
+        "natural_action_accuracy": 0.9895833333333334,
+        "natural_point_recall": 0.9791666666666666,
+        "natural_stop_accuracy": 1.0,
+        "natural_exact_center": 0.18229166666666666,
+        "natural_within_one_center": 0.5625,
+        "natural_inside_bbox": 0.8072916666666666,
+        "synthetic_exact_patch": 1.0,
+        "synthetic_within_one_patch": 1.0,
+        "synthetic_stop_accuracy": 1.0,
+        "gate_passed": false
+      },
+      {
+        "name": "natural_adaptation_step_960",
+        "step": 960,
+        "router_sha256": "2422b38b9a2d076ec0f90a8a3dbdf7427f66ba12dc05bcd5d71a6e7a12043b37",
+        "natural_action_accuracy": 0.9895833333333334,
+        "natural_point_recall": 0.9791666666666666,
+        "natural_stop_accuracy": 1.0,
+        "natural_exact_center": 0.18229166666666666,
+        "natural_within_one_center": 0.5625,
+        "natural_inside_bbox": 0.8020833333333334,
+        "synthetic_exact_patch": 1.0,
+        "synthetic_within_one_patch": 1.0,
+        "synthetic_stop_accuracy": 1.0,
+        "gate_passed": false
+      }
+    ],
+    "best_diagnostic_checkpoint": "natural_adaptation_step_720",
+    "selected_checkpoint": null,
+    "successor_status": "reject_adaptation_v1",
+    "failed_gate": {
+      "metric": "natural_within_one_center",
+      "required": 0.7,
+      "observed": 0.5625
+    }
+  },
+  "paired_development_deltas_step_720_minus_parent": {
+    "resampling_unit": "original image family",
+    "bootstrap_draws": 10000,
+    "seed": 20261027,
+    "inside_bbox_percentage_points": {
+      "estimate": 44.27083333333333,
+      "lower_95_ci": 34.89583333333333,
+      "upper_95_ci": 53.125
+    },
+    "within_one_center_percentage_points": {
+      "estimate": 46.35416666666667,
+      "lower_95_ci": 38.02083333333333,
+      "upper_95_ci": 54.6875
+    }
+  },
+  "unmarked_openimages_data_audit": {
+    "manifest_families": 1076,
+    "fixed_visual_audit_reviewed": 48,
+    "accepted": 32,
+    "rejected": 16,
+    "decision": "reject_openimages_unmarked_grounding_pilot_v1",
+    "training_authorized": false,
+    "audit_sha256": "9353f5501b097206626d67de69533f9083e38170d04a2ca92b61e5be8b6a3a69"
+  },
+  "claim_boundary": "The synthetic active-crop mechanism is independently confirmed. The Open Images result is development-only and formally failed its frozen center-localization gate. It does not establish unmarked natural grounding, answer quality, OCR, general VQA, independent natural confirmation, deployment readiness, novelty, or superiority over another VLM."
+}

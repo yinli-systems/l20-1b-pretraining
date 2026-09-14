@@ -1,0 +1,76 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "authorized_binding_answer_only_development_v1",
+  "authorized_by_user": true,
+  "authorized_at": "2026-09-13T23:27:56Z",
+  "purpose": "Select a plain-CE development checkpoint without touching the sealed final test and quantify image dependence with cluster-deranged controls.",
+  "test_split_use_authorized": false,
+  "training_protocol": {
+    "path": "/home/hhai/l20-vl-1.2b/binding_answer_only_development_protocol_v1.json",
+    "sha256": "c69b62c99b0a1d9f56eb32f2fd34b923fe23ed309c758502b9586523ef8dfef9"
+  },
+  "parents": {
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base",
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55"
+  },
+  "architecture": {
+    "compressor": "spatial_query",
+    "output_visual_tokens": 49,
+    "target_ratio": 4,
+    "vision_feature_layer": -1,
+    "visual_tokens": 196
+  },
+  "data": {
+    "manifest": "/home/hhai/l20-vl-1.2b/data/diagnostic/binding-intervention-v1/manifest.jsonl",
+    "manifest_sha256": "084110ebff7f7d9dc3d5249a967b2efdcecd27e56827cb98ee69c8309f4b3754",
+    "allowed_splits": [
+      "mechanism_dev",
+      "selection_dev"
+    ],
+    "final_test": "sealed_and_absent"
+  },
+  "checkpoint_selection": {
+    "split": "mechanism_dev",
+    "screen_scene_pairs": 40,
+    "screen_checkpoints": [
+      50,
+      100,
+      150,
+      200
+    ],
+    "screen_includes_frozen_parent": true,
+    "select_by": "true_image_affected_question_joint_accuracy_percent",
+    "tie_breakers": [
+      "scene_pair_selective_all_six_correct_percent",
+      "earlier_checkpoint"
+    ],
+    "best_checkpoint_full_mechanism_dev_once": true
+  },
+  "single_use_validation": {
+    "split": "selection_dev",
+    "scene_pairs": 160,
+    "use_once_after_checkpoint_freeze": true,
+    "no_tuning_after_use": true
+  },
+  "scoring": {
+    "conditions": [
+      "true_image",
+      "random_image",
+      "no_image"
+    ],
+    "random_control": "within_task_answer_cluster_deranged",
+    "candidate_order": "manifest",
+    "precision": "bfloat16",
+    "primary_metric": "affected_question_joint_accuracy_percent",
+    "strict_metric": "scene_pair_selective_all_six_correct_percent",
+    "confidence_interval": "10000-resample paired cluster bootstrap",
+    "statistical_cluster": "scene_pair_id"
+  },
+  "source_code": {
+    "orchestrator_sha256": "53d178904cea274d5ac1ac66ec27b97f7b0ff9be4ccf45186fdc3a49cb4f1512",
+    "evaluator_sha256": "47956e076a4c36d61dc373643fae21ff4fdfd47ac285e3aca93eabde2a07b469",
+    "scoring_contract_sha256": "e8ba77148217fe08f31c029d839d4b6d7321e8d5b4310f1180c442841328f2f6",
+    "test_sha256": "c65949f39e320466598de3d54e705a12214f8b910e61ec0060ed7ba885e63861"
+  },
+  "claim_boundary": "Checkpoint screening and selection_dev are synthetic development evidence. They do not establish natural-image transfer, formal confirmation, novelty, or a general VLM win."
+}

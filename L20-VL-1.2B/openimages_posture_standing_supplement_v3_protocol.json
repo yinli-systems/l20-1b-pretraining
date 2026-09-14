@@ -1,0 +1,110 @@
+{
+  "schema_version": "2026-09-14-v3",
+  "status": "authorized_disjoint_standing_supplement_audit_only",
+  "training_authorized": false,
+  "automatic_training_start": false,
+  "purpose": "Repair the three deficient standing strata with a new image-disjoint pool, using a frozen pretrained-pose score only to rank the review pool and exhaustive human review as the sole acceptance gate.",
+  "seed": 20260916,
+  "base_protocol": {
+    "path": "/home/hhai/l20-vl-1.2b/openimages_posture_pilot_protocol_v2.json",
+    "sha256": "6ac6782e5a9a991ea1a043c86824fab49ffad1855d06b4de25658cdf7bcd991d"
+  },
+  "source_code": {
+    "builder_sha256": "5181a36cd2a907fcd4ff2335a8e8468482c41fd0e2679e13be13984b4b7edbda",
+    "test_sha256": "ac9d94d3de0cbdd0b5110be1bf2d7f18b03f337c65d6d7d642b481f55be9fae4"
+  },
+  "prerequisites": {
+    "v1_pair_manifest": {
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-posture-pilot-v1/posture-pairs-v1.jsonl",
+      "sha256": "60e2a5ace1f84b3f0bd447f4ece94c7c3e065bbdd614eed79a190c5ebcbbea99"
+    },
+    "v2_candidate_manifest": {
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-posture-candidates-v2/posture-candidates-v2.jsonl",
+      "sha256": "0c2ce8c9be63f340285a99101601912d5c8bcf255d58467113a033a62eaf2421"
+    },
+    "v2_human_decisions": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-candidates-v2-human-decisions.jsonl",
+      "sha256": "6cb26d8ca20576c17db22819539119c1fee9cc672391d883ce4fb4f97bd28a78"
+    },
+    "v2_human_audit": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-candidates-v2-human-audit.json",
+      "sha256": "652785c01d76454ec25670aa9c0d2ad28000f8a94b2d5e3069bf9dea3ea1e604"
+    },
+    "v2_pose_ranking_calibration": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-v2-v3-ranking-calibration.json",
+      "sha256": "b8972c65a9d54847b994b5e41c9699ad6ec0619efc17ecca00430bc141814774"
+    }
+  },
+  "standing_filters": {
+    "classes": ["Boy", "Man", "Woman"],
+    "attribute": "Stand",
+    "min_width": 0.15,
+    "max_width": 0.65,
+    "min_height": 0.35,
+    "min_area": 0.04,
+    "min_bbox_height_to_width": 1.0,
+    "reject_ambiguous_posture_terms": true,
+    "reject_obvious_truncation_context_terms": ["portrait", "headshot", "selfie", "close-up", "podium"],
+    "exclude_every_v1_and_v2_image": true,
+    "derivation_note": "v2 showed that a shared minimum width of 0.30 selected close-ups. v3 restores narrow full-body eligibility, caps only extreme width, and delegates ordering—not acceptance—to the frozen pose score."
+  },
+  "pose_model": {
+    "repository": "usyd-community/vitpose-base-simple",
+    "revision": "a93ac0c67e0b7e2c55287d21d4c460c8f3c54d45",
+    "license": "Apache-2.0",
+    "path": "/home/hhai/l20-vl-1.2b/models/vitpose-base-simple-a93ac0c",
+    "artifacts": {
+      "model": {
+        "path": "/home/hhai/l20-vl-1.2b/models/vitpose-base-simple-a93ac0c/model.safetensors",
+        "sha256": "85375373893ddd3641f3912821073e53f5435f9e966e1dca59d004454bfe4fdf"
+      },
+      "config": {
+        "path": "/home/hhai/l20-vl-1.2b/models/vitpose-base-simple-a93ac0c/config.json",
+        "sha256": "72fc2f0fc29eef43e87aa0ddd4c1269c5226ae157a99d0057019dd40129fed7c"
+      },
+      "preprocessor": {
+        "path": "/home/hhai/l20-vl-1.2b/models/vitpose-base-simple-a93ac0c/preprocessor_config.json",
+        "sha256": "9b11cadc98c30b968a70cc1658ce1fbd74b721b0f21402a2ff8bc1dc9d1474a0"
+      }
+    }
+  },
+  "pose_ranking": {
+    "feature": "curation_pose_features.mean_lower_body_score",
+    "role": "soft rank only; no score threshold accepts or rejects a target",
+    "device": "cuda",
+    "batch_size": 16,
+    "seed": 20260914,
+    "joint_score_threshold": 0.15,
+    "development_auroc": 0.8882769472856019,
+    "stratified_bootstrap_95_ci": [0.8072383949645948, 0.955153422501967]
+  },
+  "sampling": {
+    "download_candidates_per_stratum": 64,
+    "review_candidates_per_stratum": 48,
+    "download_candidates_total": 192,
+    "review_candidates_total": 144,
+    "minimum_human_accepted_supplement_per_stratum": 20
+  },
+  "limits": {
+    "minimum_free_bytes_before": 8000000000,
+    "maximum_downloaded_image_bytes": 1000000000,
+    "maximum_single_image_bytes": 20000000,
+    "download_workers": 16
+  },
+  "human_audit": {
+    "scope": "all 144 selected standing targets, using both full image with target box and enlarged target crop",
+    "images_per_page": 8,
+    "acceptance_rule": "The target must be a real person and standing posture must be visually decidable without caption. Reject lower-body/posture occlusion, seated/crouched/kneeling/squatting targets, wrong target, label conflict, and secondary media.",
+    "pose_score_visibility": "review sheets are ordered by the frozen score within stratum, but reviewers must not use the score as evidence",
+    "pairing_allowed_before_audit": false,
+    "training_remains_blocked": true
+  },
+  "outputs": {
+    "root": "/home/hhai/l20-vl-1.2b/data/openimages-posture-standing-supplement-v3",
+    "image_directory": "/home/hhai/l20-vl-1.2b/data/openimages-posture-standing-supplement-v3/images",
+    "candidate_manifest": "/home/hhai/l20-vl-1.2b/data/openimages-posture-standing-supplement-v3/posture-standing-supplement-v3.jsonl",
+    "audit_directory": "/home/hhai/l20-vl-1.2b/evidence/human-audit/openimages-posture-standing-supplement-v3",
+    "receipt": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-standing-supplement-v3-build.json"
+  },
+  "claim_boundary": "This protocol authorizes source scanning, deterministic filtering, bounded acquisition, pretrained-pose soft ranking, deduplication, rendering, and exhaustive target review only. It does not authorize pairing, parameter updates, model selection, benchmark access, release, or model-quality claims."
+}

@@ -1,0 +1,78 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "experiment_id": "openimages_unmarked_grounding_pilot_v1_data",
+  "status": "authorized_openimages_unmarked_grounding_generation_only_v1",
+  "purpose": "Build an image-disjoint natural grounding pilot in which POINT and STOP use the identical unmarked source image and only the question changes. Admit POINT rows only when the requested Open Images class has one unique official subject box in that image.",
+  "training_authorized": false,
+  "answer_supervision_authorized": false,
+  "sources": {
+    "marked_pilot_manifest": {
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-evidence-router-pilot-v1/manifest.jsonl",
+      "sha256": "478d88377e57b5543f1c962cd6df4db28f82471b42f7266528b3ea82d120c740"
+    },
+    "marked_pilot_generation": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-evidence-router-pilot-v1-generation.json",
+      "sha256": "2537db4402de8f8bee1717c95a9f4d3772561481212bea5472a9d65fef71d46c"
+    },
+    "marked_pilot_visual_audit": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-evidence-router-pilot-v1-primary-visual-audit.json",
+      "sha256": "d242e83b910d95d63ac378019d26a6a2b489914e7c77e2391e2e749ce1506e7f"
+    },
+    "vrd_annotations": {
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-vrd-pilot-v1/sources/oidv6-train-annotations-vrd.csv",
+      "sha256": "0fc0ef90bfb283c86ab97fa5f94cbad8bd62406311744178bec75df34ab8041a"
+    },
+    "class_names": {
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-vrd-pilot-v1/sources/class-descriptions-boxable.csv",
+      "sha256": "2fa47fb1b87e71c90b9fbee2dc1184eb8c59601bb811ea4424b200653cedff8e"
+    },
+    "natural_adaptation_negative_development_receipt": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-evidence-router-adaptation-v1-development-selection.json",
+      "sha256": "c25a60c52c1acae5d000029a1ad3b67a0313d0fe5041445eaa4776a1500c80d9"
+    }
+  },
+  "selection": {
+    "source_pool": "The already admitted 1,728 Open Images families; no new image is introduced.",
+    "unique_instance_rule": "Deduplicate LabelName1 subject boxes by six-decimal coordinates and retain an image/class pair iff exactly one official subject box remains.",
+    "split_rule": "Preserve the pre-existing source-image split atomically. POINT and STOP variants stay in one family.",
+    "model_input_rule": "POINT and STOP both use the exact same unaltered source image bytes. No box, marker, crop, or target coordinate is rendered into model input.",
+    "expected_unique_families_by_split": {
+      "train": 951,
+      "development": 125
+    },
+    "pointer_grid_size": 14,
+    "crop_expansion_fraction": 0.15
+  },
+  "tasks": {
+    "point": {
+      "question": "Find the only {class} in the image. Inspect it closely.",
+      "expected_action": "POINT",
+      "target": "center patch of the sole official subject bbox"
+    },
+    "stop": {
+      "question": "Describe the overall image in one concise sentence.",
+      "expected_action": "STOP",
+      "target": "STOP"
+    }
+  },
+  "audit": {
+    "seed": 20261028,
+    "items_per_sheet": 12,
+    "sheets_per_split": 2,
+    "total_items": 48,
+    "font_path": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+    "font_sha256": "5c1247acef7f2b8522a31742c76d6adcb5569bacc0be7ceaa4dc39dd252ce895",
+    "required_review": "Primary agent must inspect every fixed audit item for image integrity, official-box alignment, category plausibility, and unique-instance ambiguity before any training protocol is created. Green boxes appear only in audit views, never model input."
+  },
+  "source_code": {
+    "builder_sha256": "26b882e815877d410c098ce6527f1f639587426907f1375601bd9e61611c3e59",
+    "test_sha256": "d1c02e506e98277278f29a26ebb1a1d40571dbdcb944ba2e6e033b0da7db2419",
+    "marked_builder_sha256": "09cf06a68b79e50a2ceb26ecf16719f8d0cc9af8974385683b37b734a088e02a"
+  },
+  "output": {
+    "root": "/home/hhai/l20-vl-1.2b/data/openimages-unmarked-grounding-pilot-v1",
+    "receipt": "/home/hhai/l20-vl-1.2b/evidence/openimages-unmarked-grounding-pilot-v1-generation.json"
+  },
+  "successor_gate": "Generate and visually audit only. Training remains forbidden until all 48 fixed items are reviewed and a separate protocol pins parent identity, mixed synthetic replay, trainable components, budget, development gates, and the prohibition on external confirmation access.",
+  "claim_boundary": "This generation-only pilot uses official Open Images boxes and image-disjoint splits, but it does not prove that each broad category is semantically perfect or that a 14x14 center is the best evidence point. It cannot establish training success, free-form answers, OCR, general VQA, independent confirmation, novelty, deployment readiness, or superiority."
+}

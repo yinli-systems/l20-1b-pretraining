@@ -1,0 +1,76 @@
+{
+  "admission_decision": "pending_primary_visual_audit_and_preprocessing_floor_test",
+  "audit_sheets": [
+    {
+      "bytes": 455180,
+      "path": "/home/hhai/l20-vl-1.2b/data/highres-evidence-router-scale-v2/audit/highres-evidence-search-sheet-00.png",
+      "sha256": "0a3efc218f9602d8f3189e684a98ea1615b73a998f89959c39263b8b7077f0c0"
+    },
+    {
+      "bytes": 455708,
+      "path": "/home/hhai/l20-vl-1.2b/data/highres-evidence-router-scale-v2/audit/highres-evidence-search-sheet-01.png",
+      "sha256": "98d170d1c89fb9d497ba9aea19f496d13c6aa9f89ff8bed55b3e101ee8fd9d6b"
+    },
+    {
+      "bytes": 339373,
+      "path": "/home/hhai/l20-vl-1.2b/data/highres-evidence-router-scale-v2/audit/highres-evidence-search-sheet-02.png",
+      "sha256": "45bb06d3ae86f1ddb10fe5df1c78ab73a06b1b0d66140f2540cb25940e23f773"
+    },
+    {
+      "bytes": 340701,
+      "path": "/home/hhai/l20-vl-1.2b/data/highres-evidence-router-scale-v2/audit/highres-evidence-search-sheet-03.png",
+      "sha256": "ec7f30446cbe031e286c121ea5ca4df6b3d7288377585f94fe484f440560301b"
+    }
+  ],
+  "builder_sha256": "95c48eaa25bbc1298b22088cf589bb731fbfa535bee817d0e0f53292b903eed8",
+  "claim_boundary": "This uses the same deterministic synthetic renderer already audited in v1 with a new seed and more scene permutations. It is intended only to test whether the v1 localization failure was coverage-limited. The frozen router-confirmation split remains synthetic and cannot establish natural-image evidence search.",
+  "completed_at": "2026-09-14T12:23:53.967163+00:00",
+  "counts": [
+    {
+      "expected_action": "STOP",
+      "rows": 256,
+      "split": "router_confirmation",
+      "task": "read_global_border"
+    },
+    {
+      "expected_action": "POINT",
+      "rows": 256,
+      "split": "router_confirmation",
+      "task": "read_local_digit"
+    },
+    {
+      "expected_action": "STOP",
+      "rows": 2048,
+      "split": "train",
+      "task": "read_global_border"
+    },
+    {
+      "expected_action": "POINT",
+      "rows": 2048,
+      "split": "train",
+      "task": "read_local_digit"
+    }
+  ],
+  "families": 2304,
+  "font": {
+    "path": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+    "sha256": "5c1247acef7f2b8522a31742c76d6adcb5569bacc0be7ceaa4dc39dd252ce895"
+  },
+  "manifest": {
+    "bytes": 4633658,
+    "path": "/home/hhai/l20-vl-1.2b/data/highres-evidence-router-scale-v2/manifest.jsonl",
+    "sha256": "6ec1ecd34190f92f2e86d379e5d9c91c671495768f85bd694f0bd3550b63bb03"
+  },
+  "model_evaluation_started": false,
+  "model_under_test_accessed": false,
+  "protocol": {
+    "path": "highres_evidence_router_scale_v2_data_protocol.json",
+    "sha256": "6b2294ae1456cb00a17ec0ff75e1398ef0567e7bf1b18daf13158d3d2326eeb1"
+  },
+  "rows": 4608,
+  "schema_version": "2026-09-14-v1",
+  "status": "complete_highres_evidence_search_pilot_generation",
+  "total_image_bytes": 157113591,
+  "training_started": false,
+  "unique_image_sha256": 4608
+}

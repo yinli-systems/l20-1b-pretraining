@@ -1,0 +1,76 @@
+{
+  "schema_version": "2026-09-13-v1",
+  "status": "authorized_stage_a_discriminative_recovery_after_generative_underfit",
+  "authorized_by_user": true,
+  "authorized_at": "2026-09-13",
+  "purpose": "continue the selected full-token bridge and language LoRA with an evaluator-aligned two-candidate objective after generative underfit",
+  "not_a_compression_experiment": true,
+  "proposed_delta_loss_used": false,
+  "test_split_use_authorized": false,
+  "parents": {
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base",
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55",
+    "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-a-lora-recovery-v1/step-000820/bridge.safetensors",
+    "bridge_sha256": "47132de25b86dd634a8362ca9861b2cb258add13369af832039811c78b80af6c",
+    "language_adapter": "/home/hhai/l20-vl-1.2b/runs/stage-a-lora-recovery-v1/step-000820/language_adapter",
+    "language_adapter_files": {
+      "adapter_config.json": "219202701f07cc01d23a9940831005adc8fb0db200b70ae6ec23c47ac98ed993",
+      "adapter_model.safetensors": "5a226845c039d339c2d944dd8b7ab4a8d008f77a5b750a21b53ef2c9b7af6292"
+    }
+  },
+  "failure_evidence": {
+    "path": "/home/hhai/l20-vl-1.2b/evidence/stage-a-lora-recovery-development-v1.json",
+    "sha256": "f2855f1336b53427f9a87937ced17fa88f433d9887935454f685232f4eb065a3",
+    "true_image_paired_joint_accuracy_percent": 41.06666666666667
+  },
+  "data": {
+    "manifest": "/home/hhai/l20-vl-1.2b/data/diagnostic/counterfactual-v1/manifest.jsonl",
+    "manifest_sha256": "df65dbef20fb41d8d08f76a14fb9d3bf5f778a82c2210e56287cb8c221508d7e",
+    "human_audit": "/home/hhai/l20-vl-1.2b/evidence/counterfactual-data-human-audit.json",
+    "human_audit_decision": "pass_for_controlled_mechanism_diagnosis_only",
+    "split": "train",
+    "scene_families": 3500,
+    "variants_per_family": 3,
+    "examples_per_epoch": 10500,
+    "epochs": 5,
+    "answer_balance": {"yes": 26250, "no": 26250}
+  },
+  "architecture": {
+    "visual_tokens": 196,
+    "compressor": "none",
+    "trainable": ["projector", "image_start", "image_end", "language_lora"],
+    "frozen": ["language_parent_weights", "vision_encoder"],
+    "lora": {
+      "rank": 16,
+      "alpha": 32,
+      "dropout": 0.0,
+      "bias": "none",
+      "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
+    },
+    "objective": "two_candidate_sequence_logprob_cross_entropy"
+  },
+  "optimization": {
+    "micro_batch_size": 16,
+    "gradient_accumulation_steps": 4,
+    "effective_batch_size": 64,
+    "max_optimizer_steps": 820,
+    "max_wall_seconds": 10800,
+    "adapter_learning_rate": 0.00005,
+    "bridge_learning_rate": 0.00001,
+    "candidate_temperature": 1.0,
+    "minimum_learning_rate_ratio": 0.1,
+    "warmup_ratio": 0.03,
+    "weight_decay": 0.01,
+    "gradient_clip_norm": 1.0,
+    "precision": "bfloat16",
+    "text_tokens_max": 96,
+    "checkpoint_every_steps": 100,
+    "seed": 20260914
+  },
+  "advance_only_if": {
+    "development_paired_joint_accuracy_percent_gte": 70.0,
+    "true_vs_no_image_lower_95_ci_pp_gt": 0.0,
+    "true_vs_random_image_lower_95_ci_pp_gt": 0.0
+  },
+  "claim_boundary": "Passing establishes controlled-domain full-token visual use only; it is not a compression, natural-image, release, or publication result."
+}

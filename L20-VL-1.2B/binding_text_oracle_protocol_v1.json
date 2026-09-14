@@ -1,0 +1,93 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "authorized_binding_text_oracle_diagnostic_v1",
+  "authorized_by_user": true,
+  "authorized_at": "2026-09-14T00:22:38Z",
+  "purpose": "Test whether the frozen language base and the Stage-D language adapter can perform the same object-attribute reasoning when exact scene records replace visual tokens.",
+  "test_split_use_authorized": false,
+  "formal_training": false,
+  "prerequisite": {
+    "representation_probe": "/home/hhai/l20-vl-1.2b/evidence/binding-representation-probe-v1.json",
+    "representation_probe_sha256": "af303c0843672ebd8e062f362b514bc4073a729db1db107dad57b140a98cb1a3",
+    "required_status": "complete_diagnostic_only",
+    "required_localization": "downstream_query_binding_or_language_readout_bottleneck"
+  },
+  "parents": {
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base"
+  },
+  "arms": {
+    "language_base": {
+      "language_adapter": null,
+      "role": "text_reasoning_capacity_control"
+    },
+    "stage_d_language_adapter": {
+      "language_adapter": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20260930-v1/step-000700/language_adapter",
+      "language_adapter_files": {
+        "README.md": "f407afe8f68f7c8ae6e5481746045d4c64b8a896aaaa8aa63fe4c8d881061873",
+        "adapter_config.json": "beb25b1266075702a22f78be2daa5f03625a0198514f0137a1284e974b06fc9b",
+        "adapter_model.safetensors": "b6b31eb6927d27ba2a0dbdc71f50adca68f95b849f39a05bdbba532cf61cbaa9"
+      },
+      "role": "current_multimodal_language_path_control"
+    }
+  },
+  "data": {
+    "manifest": "/home/hhai/l20-vl-1.2b/data/diagnostic/binding-intervention-v1/manifest.jsonl",
+    "manifest_sha256": "084110ebff7f7d9dc3d5249a967b2efdcecd27e56827cb98ee69c8309f4b3754",
+    "split": "mechanism_dev",
+    "scene_pairs": 160,
+    "rows": 960,
+    "final_test": "sealed_and_absent",
+    "evidence": {
+      "generation_receipt": {
+        "path": "/home/hhai/l20-vl-1.2b/evidence/binding-intervention-data-generation-v1.json",
+        "sha256": "bf6b340c218724edc2a4da6a4051e432105904fa01b7909690a27a16478cff50"
+      },
+      "static_audit": {
+        "path": "/home/hhai/l20-vl-1.2b/evidence/binding-intervention-data-static-audit-v1.json",
+        "sha256": "36331491142a2d7934923f5c7f5d02680e9fc9bed66d001b44cf477c00a8ead8"
+      },
+      "human_audit": {
+        "path": "/home/hhai/l20-vl-1.2b/evidence/binding-intervention-data-human-audit-v1.json",
+        "sha256": "e821b7da7325fc3d8711b3309e8dda366b778fbbfa9e3f9b34f9e2990c437e36"
+      }
+    }
+  },
+  "serialization": {
+    "format": "ordered_object_records",
+    "fields": [
+      "color",
+      "shape",
+      "x",
+      "y"
+    ],
+    "leftmost_rule_disclosed": true,
+    "answers": [
+      "yes",
+      "no"
+    ],
+    "privileged_oracle_input": true
+  },
+  "evaluation": {
+    "precision": "bfloat16",
+    "batch_families": 64,
+    "max_tokens": 192,
+    "candidate_order": "manifest",
+    "primary_metric": "affected_question_joint_accuracy_percent",
+    "strict_metric": "scene_pair_selective_all_six_correct_percent",
+    "statistical_cluster": "scene_pair_id"
+  },
+  "resource_cap": {
+    "gpu": "1x NVIDIA L20",
+    "maximum_gpu_minutes": 20,
+    "output": "/home/hhai/l20-vl-1.2b/evidence/binding-text-oracle-v1.json"
+  },
+  "source_code": {
+    "evaluator_sha256": "adb39cd24a28b2dac8324cd51ea2f3019e0ee27fa1fec803be8d06768b2dd12b",
+    "evaluator_test_sha256": "6dc32e3a06a1e640c76cfa13bfeac72df76df0105eba90ea6a27a9d9b3345504",
+    "visual_evaluator_sha256": "47956e076a4c36d61dc373643fae21ff4fdfd47ac285e3aca93eabde2a07b469",
+    "modeling_sha256": "20775f6219b337c6cae3c3e1078dd6d7c0902f53143271d54618ee864b2ea269",
+    "scoring_contract_sha256": "e8ba77148217fe08f31c029d839d4b6d7321e8d5b4310f1180c442841328f2f6",
+    "stage_a_utility_sha256": "e5263492be372008e50f4fde4420699d731cdb80f79fdad868027eb281e2f52d"
+  },
+  "claim_boundary": "This is a privileged symbolic-input, one-prompt-format development diagnostic. It is not a multimodal score, training result, natural-image result, or final-test confirmation."
+}

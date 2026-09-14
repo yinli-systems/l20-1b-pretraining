@@ -1,0 +1,139 @@
+{
+  "schema_version": "2026-09-13-v2",
+  "status": "authorized_stage_d_lr_microsearch",
+  "authorized_by_user": true,
+  "authorized_at": "2026-09-13",
+  "purpose": "select one learning-rate multiplier per matched Stage-D arm using only a fixed development subset before the two-arm five-seed replication",
+  "supersedes_protocol_sha256": "e583176abb8b04a649b00c7ecbf5ebc6449629687147c48dee0a8059d4cd2b1c",
+  "supersession_reason": "The v1 preflight selected a deterministic task-only prefix that was not exactly base-answer balanced. It was stopped before any development inference and replaced with exact task-by-base-answer selection.",
+  "test_split_use_authorized": false,
+  "prior_stage_c_test_role": "regression_only_not_used",
+  "new_iid_test_status": "sealed",
+  "new_ood_binding_test_status": "sealed",
+  "parents": {
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base",
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55",
+    "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-a-unique-scene-recovery-v1/step-000600/bridge.safetensors",
+    "bridge_sha256": "22cdd610fd52455ff43d378456fc097f0212f873ab2f1845cd4fd8f1198320bd",
+    "language_adapter": "/home/hhai/l20-vl-1.2b/runs/stage-a-unique-scene-recovery-v1/step-000600/language_adapter",
+    "language_adapter_files": {
+      "adapter_config.json": "4efcdcb96fae3737bfc84475bf914d3d470dc6a56b91334d0cde69fa7cab0182",
+      "adapter_model.safetensors": "1ea887b899ed5baf462b79389874603b30f7420bb8620dc5a5feb21a281013b4"
+    }
+  },
+  "data": {
+    "manifest": "/home/hhai/l20-vl-1.2b/data/diagnostic/counterfactual-v3/manifest.jsonl",
+    "manifest_sha256": "6f21e01d31d8fc3035ca22219d0484a8fb029a30b2cddec34ab726585e5dfede",
+    "split": "train",
+    "scene_families": 14000,
+    "variants_per_family": 3,
+    "image_examples": 42000,
+    "epochs": 1
+  },
+  "development": {
+    "manifest": "/home/hhai/l20-vl-1.2b/data/diagnostic/stage-d-v2/manifest.jsonl",
+    "manifest_sha256": "efd51701c19379ce77af83272acd732c93cc7e4428ca67c6cb147bea0572c6cb",
+    "split": "development",
+    "scene_families": 2000,
+    "families_per_task_for_screen": 50,
+    "selection_is_prefix_after_scene_family_sort": false,
+    "selection_stratified_by": ["task", "base_answer"],
+    "families_per_task_answer_stratum": 25
+  },
+  "arms": {
+    "F_matched_196": {
+      "role": "full-token answer-only continuation matched for data, updates, LR-search allowance, seed and checkpoint-selection opportunity",
+      "architecture": {
+        "visual_tokens": 196,
+        "vision_feature_layer": -1,
+        "compressor": "none",
+        "target_ratio": 1
+      },
+      "loss_weights": {
+        "answer_supervision": 1.0,
+        "ordinary_kd": 0.0,
+        "invariance_delta": 0.0,
+        "evidence_delta": 0.0
+      }
+    },
+    "A_spatial_49": {
+      "role": "current learned spatial-query 49-token answer-only continuation",
+      "architecture": {
+        "visual_tokens": 196,
+        "vision_feature_layer": -1,
+        "compressor": "spatial_query",
+        "output_visual_tokens": 49,
+        "target_ratio": 4
+      },
+      "loss_weights": {
+        "answer_supervision": 1.0,
+        "ordinary_kd": 0.0,
+        "invariance_delta": 0.0,
+        "evidence_delta": 0.0
+      }
+    }
+  },
+  "capacity_boundary": "F_matched_196 matches adaptation opportunity but has 4,726,274 fewer bridge parameters and no spatial-query compressor. D1 estimates the package-level effect; a later spatial_196 arm is required to isolate token count from compressor capacity and layout.",
+  "allowed_seeds": [
+    20260929
+  ],
+  "allowed_learning_rate_multipliers": [
+    0.5,
+    1.0,
+    2.0
+  ],
+  "screen_optimizer_steps": 150,
+  "screen_order": [
+    ["F_matched_196", 0.5],
+    ["A_spatial_49", 0.5],
+    ["A_spatial_49", 1.0],
+    ["F_matched_196", 1.0],
+    ["F_matched_196", 2.0],
+    ["A_spatial_49", 2.0]
+  ],
+  "selection_rule": "Within each arm, maximize development family-joint accuracy, then ordinary primary-query accuracy, then prefer the multiplier closest to 1.0, then the smaller multiplier.",
+  "distillation_temperature": 2.0,
+  "preference_scale": 4.0,
+  "huber_beta": 1.0,
+  "optimization": {
+    "micro_batch_families": 8,
+    "gradient_accumulation_steps": 2,
+    "effective_batch_families": 16,
+    "image_examples_per_optimizer_step": 48,
+    "candidate_sequences_per_optimizer_step": 96,
+    "max_optimizer_steps": 875,
+    "max_wall_seconds": 7200,
+    "adapter_learning_rate": 0.00001,
+    "bridge_learning_rate": 0.00002,
+    "compressor_learning_rate": 0.0002,
+    "minimum_learning_rate_ratio": 0.1,
+    "warmup_ratio": 0.03,
+    "weight_decay": 0.02,
+    "gradient_clip_norm": 1.0,
+    "precision": "bfloat16",
+    "text_tokens_max": 96,
+    "checkpoint_every_steps": 100,
+    "seed": 20260929
+  },
+  "budget": {
+    "lr_screen_training_gpu_hours_cap": 2.0,
+    "d0_d1_d2_total_l20_gpu_hours_cap": 24.0
+  },
+  "required_audits": {
+    "/home/hhai/l20-vl-1.2b/evidence/stage-d-d0-static-audit-v1.json": "6f58c55ed26a172320dc56b5d9ac570bc6ae3e33ecfe4fe5f65f9cfd7d154014",
+    "/home/hhai/l20-vl-1.2b/evidence/stage-d-d0-evaluator-audit-fp32-v2/audit.json": "83451584380db70431cc20ffc8bbb781438a374f9ecd444e39715c25ea30cec7",
+    "/home/hhai/l20-vl-1.2b/evidence/stage-d-data-generation-v2.json": "0d3776303b08d28a401f06705cf8cd38f834124ef91db18d366773aee885cfe2",
+    "/home/hhai/l20-vl-1.2b/evidence/stage-d-data-human-audit-v2.json": "318a04a9ed2858babc22ae1de8360553f8214c4372533b490f30ae02028589ac",
+    "/home/hhai/l20-vl-1.2b/stage_d_data_protocol_v2.json": "0e776b0ac5cf466a3ffdc98768c41a843fffd1ffd9188d0fac53bea8b416a4fe",
+    "/home/hhai/l20-vl-1.2b/stage_d_data_admission_v2.json": "dd33bd6fdd472b7b32cc56f9a70cb072c1158b03a7cfec6c2bdf645195b12d1c"
+  },
+  "training_smoke_receipt": "/home/hhai/l20-vl-1.2b/evidence/stage-d-training-smoke-v2.json",
+  "prohibited": [
+    "using the prior Stage-C test for selection",
+    "reading or scoring the new IID test during LR selection",
+    "reading or scoring the new OOD binding test during LR selection",
+    "interpreting a one-seed LR screen as efficacy evidence",
+    "interpreting F_matched_196 versus A_spatial_49 as a capacity-only or token-count-only contrast"
+  ],
+  "claim_boundary": "This protocol authorizes six bounded one-seed development-only LR trials. It does not authorize confirmatory test inference or a compression-induced-regularization claim."
+}

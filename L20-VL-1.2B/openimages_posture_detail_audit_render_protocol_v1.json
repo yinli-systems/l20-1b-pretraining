@@ -1,0 +1,22 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "authorized_posture_detail_audit_render_only",
+  "training_authorized": false,
+  "renderer_sha256": "4f0538495515febbb46352853b66435774df354af08e2582b327ccf444e1be0e",
+  "renderer_test_sha256": "71db1d0011e1631ab70f53d19845c4cf4af0352e98a3fdb3a04f1bcae382a4f3",
+  "pair_manifest": {
+    "path": "/home/hhai/l20-vl-1.2b/data/openimages-posture-pilot-v1/posture-pairs-v1.jsonl",
+    "sha256": "60e2a5ace1f84b3f0bd447f4ece94c7c3e065bbdd614eed79a190c5ebcbbea99",
+    "rows": 64
+  },
+  "pairs_per_page": 8,
+  "render_contract": {
+    "show_full_image_with_red_target_box": true,
+    "show_target_crop_with_12_percent_context": true,
+    "alter_source_labels": false,
+    "render_all_pairs": true
+  },
+  "output_directory": "/home/hhai/l20-vl-1.2b/evidence/human-audit/openimages-posture-pilot-v1-detail",
+  "receipt": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-detail-audit-render-v1.json",
+  "claim_boundary": "This protocol only improves visibility for human label review. It does not authorize training or alter the frozen pilot manifest."
+}

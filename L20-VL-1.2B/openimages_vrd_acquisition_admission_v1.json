@@ -1,0 +1,68 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "authorized_bounded_openimages_vrd_acquisition_for_audit",
+  "authorized_by_user": true,
+  "purpose": "Acquire the official Open Images V6 visual-relationship annotations needed to audit a real-image object-attribute routing pilot over the already admitted 25,000-image Stage-A subset.",
+  "automatic_training_start": false,
+  "training_authorized": false,
+  "new_image_download_authorized": false,
+  "limits": {
+    "maximum_new_bytes": 400000000,
+    "minimum_free_bytes_before_acquisition": 9000000000,
+    "destination": "/home/hhai/l20-vl-1.2b/data/openimages-vrd-pilot-v1/sources"
+  },
+  "source_code": {
+    "acquisition_script_sha256": "7731165a0382ff27cc0cb5721960f9d1e97c929e58ca2a1f72d47c72e0164e8d"
+  },
+  "existing_image_parent": {
+    "manifest": "/home/hhai/l20-vl-1.2b/data/stage-a-v1/prepared/open-images-manifest.jsonl",
+    "manifest_sha256": "33b88611299e095eaefebe0fe0a0f95f5ff9ab6d241c255d6747a240bc9ab264",
+    "images": 25000,
+    "image_license_required_by_parent_audit": "https://creativecommons.org/licenses/by/2.0/",
+    "human_audit": "/home/hhai/l20-vl-1.2b/evidence/stage-a-human-audit.json",
+    "human_audit_sha256": "0842646754c16082be29bfb9f2d29c4b57e30d7bab1c6377e6a6e942fd674802"
+  },
+  "sources": {
+    "visual_relationships": {
+      "url": "https://storage.googleapis.com/openimages/v6/oidv6-train-annotations-vrd.csv",
+      "expected_bytes": 356502404,
+      "expected_md5_hex": "20eab51cc300e490f56f543085430d6c",
+      "required_header_field": "RelationshipLabel"
+    },
+    "boxable_class_names": {
+      "url": "https://storage.googleapis.com/openimages/v5/class-descriptions-boxable.csv",
+      "expected_bytes": 12011,
+      "expected_md5_hex": "9846fd22fd2e68b45e3f3810a4c2a32a"
+    },
+    "attribute_names": {
+      "url": "https://storage.googleapis.com/openimages/v6/oidv6-attributes-description.csv",
+      "expected_bytes": 254,
+      "expected_md5_hex": "f1c6378f1f6805242719dd5764a50a6d"
+    }
+  },
+  "source_page": "https://storage.googleapis.com/openimages/web/factsfigures.html",
+  "annotation_license": "CC BY 4.0",
+  "pre_acquisition_read_only_scan": {
+    "selected_images": 25000,
+    "matched_vrd_rows": 7114,
+    "matched_vrd_images": 2144,
+    "attribute_rows": 5016,
+    "attribute_images": 1875,
+    "pairable_object_classes": 17,
+    "pairable_attribute_rows": 4528
+  },
+  "required_gates_before_any_training_protocol": [
+    "all source byte sizes and MD5 hashes match",
+    "source SHA-256 hashes are recorded after acquisition",
+    "existing image manifest and human-audit hashes match",
+    "image-atomic train, selection-development, and sealed-confirmation partitions are frozen",
+    "only RelationLabel-equivalent actual field RelationshipLabel equals is for attribute examples",
+    "all normalized boxes are valid and survive a minimum visible-area rule at 224 pixels",
+    "same-box conflicting labels within a mutually exclusive attribute family are excluded",
+    "source-target exchange pairs use the same object class and different attributes within one family",
+    "same-attribute no-op and random-source controls are generated",
+    "a train-only stratified contact sheet passes human review",
+    "NaturalBench examples and outcomes are not used for data filtering, prompt selection, checkpoint selection, or training"
+  ],
+  "claim_boundary": "This admission authorizes a bounded annotation download and audit only. It does not authorize parameter updates or establish data quality, method novelty, natural-image transfer, release rights, or model superiority."
+}

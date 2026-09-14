@@ -1,0 +1,68 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "authorized_query_ce_gpu_time_matched_evaluation_v1",
+  "experiment_id": "query_ce_gpu_time_matched_evaluation_v1",
+  "authorized_by_user": true,
+  "test_split_use_authorized": false,
+  "formal_evaluation": false,
+  "training_protocol": {
+    "path": "/home/hhai/l20-vl-1.2b/query_ce_gpu_time_matched_protocol_v1.json",
+    "sha256": "190bd371decce00db1b963941a59ff1465a07d7eca3a3fe882cfddd5563d2499"
+  },
+  "run": "/home/hhai/l20-vl-1.2b/runs/binding-query-ce-49-time-matched-seed20260930-v1",
+  "parents": {
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base",
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55"
+  },
+  "architecture": {
+    "compressor": "spatial_query",
+    "output_visual_tokens": 49,
+    "target_ratio": 4,
+    "vision_feature_layer": -1,
+    "visual_tokens": 196,
+    "query_readout_rank": 64
+  },
+  "data": {
+    "manifest": "/home/hhai/l20-vl-1.2b/data/diagnostic/binding-intervention-v1/manifest.jsonl",
+    "manifest_sha256": "084110ebff7f7d9dc3d5249a967b2efdcecd27e56827cb98ee69c8309f4b3754",
+    "allowed_splits": ["mechanism_dev", "selection_dev"],
+    "final_test": "sealed_and_absent"
+  },
+  "checkpoint_selection": {
+    "split": "mechanism_dev",
+    "screen_scene_pairs": 40,
+    "screen_checkpoints": [
+      50, 100, 150, 200, 250, 300, 350, 400,
+      450, 500, 550, 600, 650, 700, 750, 800
+    ],
+    "primary_metric": "affected_question_joint_accuracy_percent",
+    "tie_breakers": [
+      "scene_pair_selective_all_six_correct_percent",
+      "earlier_checkpoint"
+    ],
+    "do_not_tune_on_selection_dev": true
+  },
+  "comparison": {
+    "cavr_summary": "/home/hhai/l20-vl-1.2b/evidence/counterfactual-address-value-routing-evaluation-v2/summary.json",
+    "cavr_summary_sha256": "836aeb3ad7f8d206613963850cb7fe209f4f469c3ada7283eec674a048321c23",
+    "accepted_wall_time_ratio": [0.9, 1.1],
+    "paired_metric": "affected_question_joint_accuracy_percent",
+    "statistical_unit": "scene_pair_id",
+    "bootstrap_resamples": 10000
+  },
+  "decision_rule": {
+    "minimum_cavr_advantage_pp": 5.0,
+    "require_cavr_minus_control_lower_95_ci_gt_zero": true,
+    "require_wall_time_match": true
+  },
+  "source_code": {
+    "orchestrator_sha256": "995bb152994b6e575178c85e6192003b46b0cc24c75fde87137a7aa639d8e56f",
+    "orchestrator_test_sha256": "fc2a4ded2ec732bacc880b0893544f7a4b79eed516e1d3551e6b89dc2376f86b",
+    "evaluation_helpers_sha256": "082399341bd92e8ed0b7fbe30c79ac51002a042248638a16ad50db1628c4e5c0",
+    "cavr_orchestrator_sha256": "4aafa67e3731fda9531cf0a9040d85291a2c475861abe57162d1c4b3529a4b9d",
+    "evaluator_sha256": "383d2387adc95d591c3c895942543b12ef864c78cac6e2a4c594706b9e0c3dae",
+    "modeling_sha256": "7ee504253640c9c7ce7e121b212a31d16d9e57ef9e05f55ebcbd67573febeac9",
+    "scoring_contract_sha256": "e8ba77148217fe08f31c029d839d4b6d7321e8d5b4310f1180c442841328f2f6"
+  },
+  "claim_boundary": "One-seed synthetic development comparison with equal language-model forward passes and a pre-registered wall-time tolerance. Final test remains sealed; no real-image, multi-seed, global novelty, or general VLM superiority claim is authorized."
+}

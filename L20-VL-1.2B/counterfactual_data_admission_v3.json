@@ -1,0 +1,32 @@
+{
+  "schema_version": "2026-09-13-v3",
+  "purpose": "larger deterministic paired-scene foundation recovery corpus with cross-version exclusion",
+  "required_protocol_sha256": "f3914c0f3c173f346a0e74fc533f8da9ff652979778908844086da02d27a6b2e",
+  "generator_authorized": true,
+  "external_downloads_authorized": false,
+  "formal_training_authorized": false,
+  "pair_count": 20000,
+  "variants_per_pair": 3,
+  "image_size": 256,
+  "render_scale": 3,
+  "max_total_bytes": 4000000000,
+  "destination": "/home/hhai/l20-vl-1.2b/data/diagnostic/counterfactual-v3",
+  "seed": 20260917,
+  "exclude_manifest": {
+    "path": "/home/hhai/l20-vl-1.2b/data/diagnostic/counterfactual-v1/manifest.jsonl",
+    "sha256": "df65dbef20fb41d8d08f76a14fb9d3bf5f778a82c2210e56287cb8c221508d7e"
+  },
+  "license": "project_generated_CC-BY-4.0_candidate_pending_publication_decision",
+  "allowed_uses": [
+    "generator_validation",
+    "controlled_foundation_recovery_after_human_audit",
+    "contact_sheet_human_audit"
+  ],
+  "prohibited_uses": [
+    "formal_training_before_separate_stage_admission",
+    "claiming_real_image_generalization",
+    "splitting_variants_of_one_scene_across_train_dev_test",
+    "using_test_predictions_for_model_selection"
+  ],
+  "decision": "Generate and audit the frozen v3 corpus now; parameter updates require a separate protocol."
+}

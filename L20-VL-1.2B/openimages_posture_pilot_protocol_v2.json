@@ -1,0 +1,20 @@
+{
+  "schema_version": "2026-09-14-v2",
+  "status": "authorized_posture_data_pilot_only",
+  "base_protocol": {
+    "path": "/home/hhai/l20-vl-1.2b/openimages_posture_pilot_protocol_v1.json",
+    "sha256": "a343974d2af0709ce751d51f28dcb408b266d2de3df30190378b3583b0a921b6"
+  },
+  "engineering_fix": "Add the deterministic selection_sha256 field required by the already-tested exact/near-duplicate routine. Data sources, filters, sample selection formula, counts, limits, and outputs are unchanged.",
+  "attempt_001_negative_evidence": {
+    "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-pilot-build-attempt-001-negative.json",
+    "sha256": "c23b92660035cb5185ce0b57e23524a0cb825c65d4fe08116385df8e4386c083"
+  },
+  "source_code": {
+    "builder_sha256": "fb706ac1c45aeabeef84ba239d1a5af7df4db39033328b7be8f6b3cd668cb36a",
+    "test_sha256": "f6fb2811da05a650c7f871480ea6f2080bfcbd9094355ecaa64669fb6f0c7603"
+  },
+  "training_authorized": false,
+  "automatic_training_start": false,
+  "claim_boundary": "This retry fixes one missing deterministic ordering field and reuses the same frozen 192 image candidates. It authorizes data construction and full human audit only; no training or model claim is authorized."
+}

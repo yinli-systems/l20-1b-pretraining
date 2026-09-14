@@ -1,0 +1,83 @@
+{
+  "schema_version": "2026-09-13-v1",
+  "status": "authorized_stage_a_task_balanced_recovery_after_full_gate_failure",
+  "authorized_by_user": true,
+  "authorized_at": "2026-09-13",
+  "purpose": "repair controlled-domain task imbalance using train-only oversampling and a bridge-heavy learning-rate ratio",
+  "not_a_compression_experiment": true,
+  "proposed_delta_loss_used": false,
+  "test_split_use_authorized": false,
+  "parents": {
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base",
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55",
+    "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-a-discriminative-recovery-v1/step-000820/bridge.safetensors",
+    "bridge_sha256": "7267f760c72fb2f0ec26d750273007bb801e656203280efe68fb66c8f5f7660d",
+    "language_adapter": "/home/hhai/l20-vl-1.2b/runs/stage-a-discriminative-recovery-v1/step-000820/language_adapter",
+    "language_adapter_files": {
+      "adapter_config.json": "a5cdc001400a03711d48c57aa0e0e2793b05a155935dd459bbb5a70434cecfde",
+      "adapter_model.safetensors": "75ae6c32c7c1f67b6f2ee311868959745d24f79a32ef9601f8284de922b35831"
+    }
+  },
+  "failure_evidence": {
+    "path": "/home/hhai/l20-vl-1.2b/evidence/stage-a-discriminative-recovery-development-v1.json",
+    "sha256": "f224eac04b8694fd1dbdb428c6ead15091997f3bba3397a8857780dd381d1924",
+    "true_image_paired_joint_accuracy_percent": 59.333333333333336
+  },
+  "data": {
+    "manifest": "/home/hhai/l20-vl-1.2b/data/diagnostic/counterfactual-v1/manifest.jsonl",
+    "manifest_sha256": "df65dbef20fb41d8d08f76a14fb9d3bf5f778a82c2210e56287cb8c221508d7e",
+    "human_audit": "/home/hhai/l20-vl-1.2b/evidence/counterfactual-data-human-audit.json",
+    "human_audit_decision": "pass_for_controlled_mechanism_diagnosis_only",
+    "split": "train",
+    "scene_families": 3500,
+    "variants_per_family": 3,
+    "examples_per_epoch": 25200,
+    "epochs": 2,
+    "task_repeats": {
+      "above_below_relation": 1,
+      "color_binding": 5,
+      "count": 2,
+      "left_right_relation": 1,
+      "shape_binding": 3
+    },
+    "answer_balance": {"yes": 25200, "no": 25200}
+  },
+  "architecture": {
+    "visual_tokens": 196,
+    "compressor": "none",
+    "trainable": ["projector", "image_start", "image_end", "language_lora"],
+    "frozen": ["language_parent_weights", "vision_encoder"],
+    "lora": {
+      "rank": 16,
+      "alpha": 32,
+      "dropout": 0.0,
+      "bias": "none",
+      "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
+    },
+    "objective": "two_candidate_sequence_logprob_cross_entropy"
+  },
+  "optimization": {
+    "micro_batch_size": 16,
+    "gradient_accumulation_steps": 3,
+    "effective_batch_size": 48,
+    "max_optimizer_steps": 1050,
+    "max_wall_seconds": 10800,
+    "adapter_learning_rate": 0.00001,
+    "bridge_learning_rate": 0.00002,
+    "candidate_temperature": 1.0,
+    "minimum_learning_rate_ratio": 0.1,
+    "warmup_ratio": 0.03,
+    "weight_decay": 0.02,
+    "gradient_clip_norm": 1.0,
+    "precision": "bfloat16",
+    "text_tokens_max": 96,
+    "checkpoint_every_steps": 100,
+    "seed": 20260915
+  },
+  "advance_only_if": {
+    "development_paired_joint_accuracy_percent_gte": 70.0,
+    "true_vs_no_image_lower_95_ci_pp_gt": 0.0,
+    "true_vs_random_image_lower_95_ci_pp_gt": 0.0
+  },
+  "claim_boundary": "Passing establishes controlled-domain full-token visual use only; it is not a compression, natural-image, release, or publication result."
+}

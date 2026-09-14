@@ -1,0 +1,117 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "experiment_id": "highres_evidence_crop_bridge_one_shot_sealed_confirmation_v1",
+  "status": "authorized_highres_evidence_crop_bridge_one_shot_sealed_confirmation_v1",
+  "one_shot": true,
+  "purpose": "Run exactly one frozen evaluation of the development-selected step-140 crop branch on previously untouched sealed-test scene families.",
+  "parameter_update_authorized": false,
+  "prerequisites": {
+    "generation_receipt": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-search-pilot-v1-generation.json",
+      "sha256": "38018a5c16ae0c5a0f30f9d4ce2680d753bd29c26e6eec6bf5dae451e2d6d0f3"
+    },
+    "primary_visual_audit": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-search-pilot-v1-primary-visual-audit.json",
+      "sha256": "c247d81024367f7e872d36d99e5950079aca2b54bd5021521aabe05d63d82845"
+    },
+    "preprocessing_floor": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-preprocessing-floor-v1.json",
+      "sha256": "3990d1a73dba0977fa6447c3ff646ea39d6b055edece90cce0804b727013350d"
+    },
+    "training_protocol": {
+      "path": "/home/hhai/l20-vl-1.2b/highres_evidence_crop_bridge_train_v1_protocol.json",
+      "sha256": "8f9635ec1ea6f2ca7394e2f16dd5bc562afe42e7a59d1a4b0f02f67f2a68c0da"
+    },
+    "training_run": {
+      "path": "/home/hhai/l20-vl-1.2b/runs/highres-evidence-crop-bridge-v1/run.json",
+      "sha256": "cef86b07f154f39a9ce6bd01cd5ab4ca12d384d1c423e64392856aede70347bb"
+    },
+    "development_selection_protocol": {
+      "path": "/home/hhai/l20-vl-1.2b/highres_evidence_crop_bridge_eval_v1_protocol.json",
+      "sha256": "b1245b4b8b07b11489bf7960925bbce09df915e6f79cd27e239653fa02ae070a"
+    },
+    "development_selection_receipt": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-crop-bridge-development-selection-v1.json",
+      "sha256": "245b5c6f9b0bb41c518fe3e4de5a25fdebd047af52a62ca757d669f27dfe4334"
+    },
+    "manifest": {
+      "path": "/home/hhai/l20-vl-1.2b/data/highres-evidence-search-pilot-v1/manifest.jsonl",
+      "sha256": "ddff8c102a9b7533ae5f934f80d5777e67bcc0668651db41ec5781edf10710db"
+    }
+  },
+  "parents": {
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base",
+    "language_release_manifest_sha256": "83e9a0982f96cfec65b109034669a9cc913e8b870201d2323805aecdaeabb051",
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55",
+    "vision_artifacts": {
+      "config.json": "fe8b5fe6d5734360678fd71c11c21e1ea3364bd8598d34295d9206335973ffd7",
+      "model.safetensors": "612923381c76ec5a9bed335d1c48827e3f2e506ac31b044b63b2031fadee6a0b",
+      "preprocessor_config.json": "9b36b57ebaf20f09bf4c22100ccc21877ea6bfe5aead0c00c59f8af8ccefacfc"
+    },
+    "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20260930-v1/step-000700/bridge.safetensors",
+    "bridge_sha256": "d4b04aa98e5430a1fe5a11918da87a67007d283116b4e843c1d640fc7c31f6ce",
+    "language_adapter": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20260930-v1/step-000700/language_adapter",
+    "language_adapter_files": {
+      "adapter_config.json": "beb25b1266075702a22f78be2daa5f03625a0198514f0137a1284e974b06fc9b",
+      "adapter_model.safetensors": "b6b31eb6927d27ba2a0dbdc71f50adca68f95b849f39a05bdbba532cf61cbaa9"
+    }
+  },
+  "selected_checkpoint": {
+    "selection_rule": "development family-joint accuracy, row accuracy, true-minus-mismatched effect, then earliest step",
+    "step": 140,
+    "path": "/home/hhai/l20-vl-1.2b/runs/highres-evidence-crop-bridge-v1/step-000140/crop_bridge.safetensors",
+    "sha256": "9ef26b80ab3b99e89139f757956cf972c5b4d0b04d254755dbc93d867efff46e"
+  },
+  "architecture": {
+    "visual_tokens": 196,
+    "vision_feature_layer": -1,
+    "compressor": "spatial_query",
+    "output_visual_tokens": 49,
+    "target_ratio": 4
+  },
+  "data": {
+    "root": "/home/hhai/l20-vl-1.2b/data/highres-evidence-search-pilot-v1",
+    "manifest": "/home/hhai/l20-vl-1.2b/data/highres-evidence-search-pilot-v1/manifest.jsonl",
+    "allowed_split": "sealed_test",
+    "expected_families": 48,
+    "expected_rows": 96,
+    "split_unit": "scene_family"
+  },
+  "evaluation": {
+    "conditions_all_tasks": ["global", "no_image"],
+    "conditions_local_task": ["crop", "global_crop", "global_mismatched_crop"],
+    "candidate_scoring": "mean non-EOS answer-token log probability",
+    "candidate_order_checks": ["normal", "reversed"],
+    "feature_batch_images": 32,
+    "batch_rows": 4,
+    "max_text_tokens": 64,
+    "precision": "bfloat16",
+    "checkpoint_selection": "already frozen on development",
+    "hyperparameter_search": "none"
+  },
+  "statistics": {
+    "bootstrap_samples": 10000,
+    "seed": 20260914,
+    "cluster_unit": "scene_family"
+  },
+  "gate": {
+    "minimum_global_crop_row_accuracy": 0.8,
+    "minimum_global_crop_family_joint_accuracy": 0.65,
+    "minimum_global_crop_minus_global_ci95_low": 0.3,
+    "minimum_true_minus_mismatched_ci95_low": 0.3,
+    "candidate_order_invariance_required": true
+  },
+  "source_code": {
+    "confirmer_sha256": "2aee4273abb86feb5570aea5a46ba93b43ea161e2556959f14def2437afa24b2",
+    "test_sha256": "7339901f5359c448908c5d7a57986970c811c342232d7d93973174521cb1010d",
+    "shared_crop_evaluator_sha256": "71650cb8b0f765df1ca90eea237c38be2da00e705afc6807eb6bcd75a6428b8d",
+    "shared_floor_evaluator_sha256": "486c2fe177f4af9c2e3f94ca4f6638029ecf5c2ad7620b63d2f4c20da7dc1b72",
+    "shared_trainer_sha256": "63e7f909d5e75b706bcd160eb87a92413e6a9da5981b8a28b9d310c06cb5a2f9",
+    "modeling_sha256": "7ee504253640c9c7ce7e121b212a31d16d9e57ef9e05f55ebcbd67573febeac9"
+  },
+  "output": {
+    "receipt": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-crop-bridge-sealed-confirmation-v1.json",
+    "predictions": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-crop-bridge-sealed-confirmation-v1-predictions.jsonl"
+  },
+  "claim_boundary": "This one-shot confirmation tests the selected oracle-crop responder on 24 previously untouched local-evidence scene families from the same deterministic synthetic generator. It can support the crop-responder mechanism under this distribution. It does not establish learned localization, natural-image OCR, open-ended generation, unrelated-skill preservation, deployment readiness, or superiority over another VLM. The all-task oracle-policy metric is descriptive because the global-border responder was not adapted by this experiment."
+}

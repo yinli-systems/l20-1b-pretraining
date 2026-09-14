@@ -1,0 +1,18 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "failed_before_first_vision_forward",
+  "completed_at": "2026-09-14T11:14:00Z",
+  "experiment_id": "highres_evidence_preprocessing_floor_v1_attempt1",
+  "failure_type": "TypeError",
+  "failure_message": "cuda() got an unexpected keyword argument 'dtype'",
+  "failure_location": "probe_highres_evidence_preprocessing_floor_v1.py extract_features while moving the first processor batch to CUDA",
+  "root_cause": "The runtime's torch.Tensor.cuda method does not accept the dtype keyword used by the initial implementation.",
+  "repair": "Use Tensor.to(device='cuda', dtype=torch.bfloat16) and pin the slow image processor explicitly with use_fast=False.",
+  "model_weights_loaded": true,
+  "vision_forward_calls": 0,
+  "language_model_accessed": false,
+  "parameter_updates": 0,
+  "sealed_test_rows_accessed": 0,
+  "result_artifacts_created": 0,
+  "claim_boundary": "This is an engineering failure receipt, not model-quality evidence. No preprocessing-floor result was produced."
+}

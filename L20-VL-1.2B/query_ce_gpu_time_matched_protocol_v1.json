@@ -1,0 +1,116 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "authorized_counterfactual_address_value_routing_development_v1",
+  "experiment_id": "query_ce_gpu_time_matched_two_pass_v1",
+  "authorized_by_user": true,
+  "test_split_use_authorized": false,
+  "formal_training": false,
+  "purpose": "Use the CAVR wall-time budget productively in the strongest simple CE control by training for two exact passes over the same admitted training set.",
+  "prerequisite": {
+    "tuned_plain_ce_summary": "/home/hhai/l20-vl-1.2b/evidence/binding-tuned-plain-ce-evaluation-v1/summary.json",
+    "tuned_plain_ce_summary_sha256": "c7c2ed0e78604694314984dc35ef6d45067946d31273bc743780379460645792",
+    "required_decision": "insufficient_tuned_plain_ce"
+  },
+  "parents": {
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base",
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55",
+    "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20260930-v1/step-000700/bridge.safetensors",
+    "bridge_sha256": "d4b04aa98e5430a1fe5a11918da87a67007d283116b4e843c1d640fc7c31f6ce",
+    "language_adapter": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20260930-v1/step-000700/language_adapter",
+    "language_adapter_files": {
+      "adapter_config.json": "beb25b1266075702a22f78be2daa5f03625a0198514f0137a1284e974b06fc9b",
+      "adapter_model.safetensors": "b6b31eb6927d27ba2a0dbdc71f50adca68f95b849f39a05bdbba532cf61cbaa9"
+    }
+  },
+  "arms": {
+    "query_ce": {
+      "architecture": {
+        "compressor": "spatial_query",
+        "output_visual_tokens": 49,
+        "target_ratio": 4,
+        "vision_feature_layer": -1,
+        "visual_tokens": 196,
+        "query_readout_rank": 64
+      },
+      "loss_weights": {
+        "ordinary_answer": 1.0,
+        "address": 0.0,
+        "address_pair": 0.0,
+        "value_swap": 0.0
+      },
+      "language_forward_passes_per_batch": 1,
+      "full_run_output": "/home/hhai/l20-vl-1.2b/runs/binding-query-ce-49-time-matched-seed20260930-v1"
+    }
+  },
+  "data": {
+    "manifest": "/home/hhai/l20-vl-1.2b/data/diagnostic/binding-intervention-v1/time-matched-query-ce-manifest-v1.jsonl",
+    "manifest_sha256": "6f50ed2b52ad00e15b29f50149f136ce4938d01ae3e05e0f43e11cb3d809dc6f",
+    "split": "train",
+    "epochs": 1,
+    "semantic_passes": 2,
+    "scene_families": 9600,
+    "unique_scene_pairs": 1600,
+    "source_unique_scene_pairs": 800,
+    "questions_per_scene_pair": 6,
+    "variants_per_family": 3,
+    "batch_group_by": "scene_pair_id",
+    "deduplicate_images_within_batch": true,
+    "address_target": "7x7 cell containing the target object center",
+    "address_supervision_scope": "none_for_query_ce",
+    "evidence": {
+      "time_matched_manifest_receipt": {
+        "path": "/home/hhai/l20-vl-1.2b/evidence/binding-time-matched-query-ce-manifest-v1.json",
+        "sha256": "d5e2cabdd2c754d228db8c71a46db35fa10fcd4d56f53eba8d07c4046405ffd4"
+      },
+      "generation_receipt": {
+        "path": "/home/hhai/l20-vl-1.2b/evidence/binding-intervention-data-generation-v1.json",
+        "sha256": "bf6b340c218724edc2a4da6a4051e432105904fa01b7909690a27a16478cff50"
+      },
+      "static_audit": {
+        "path": "/home/hhai/l20-vl-1.2b/evidence/binding-intervention-data-static-audit-v1.json",
+        "sha256": "36331491142a2d7934923f5c7f5d02680e9fc9bed66d001b44cf477c00a8ead8"
+      },
+      "human_audit": {
+        "path": "/home/hhai/l20-vl-1.2b/evidence/binding-intervention-data-human-audit-v1.json",
+        "sha256": "e821b7da7325fc3d8711b3309e8dda366b778fbbfa9e3f9b34f9e2990c437e36"
+      }
+    }
+  },
+  "optimization": {
+    "seed": 20260930,
+    "micro_batch_families": 12,
+    "gradient_accumulation_steps": 1,
+    "effective_batch_families": 12,
+    "max_optimizer_steps": 800,
+    "max_wall_seconds": 1200,
+    "checkpoint_every_steps": 50,
+    "precision": "bfloat16",
+    "adapter_learning_rate": 0.0002,
+    "bridge_learning_rate": 0.0001,
+    "compressor_learning_rate": 0.0002,
+    "query_readout_learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.05,
+    "minimum_learning_rate_ratio": 0.1,
+    "gradient_clip_norm": 1.0,
+    "text_tokens_max": 96
+  },
+  "resource_match": {
+    "reference_arm": "cavr_v2",
+    "reference_wall_seconds": 546.8694271091372,
+    "reference_language_forward_passes": 800,
+    "control_language_forward_passes": 800,
+    "accept_wall_time_ratio_range": [0.9, 1.1]
+  },
+  "source_code": {
+    "trainer_sha256": "6f4365a7d6511c4e797ef64eed41c02fb5e8f2b4a2d727b359d6b46a1260b0b8",
+    "trainer_test_sha256": "6d274fef33dddc326730d1cb074d41faa4a824d7354f751f23fbaf29ab4aff5c",
+    "modeling_sha256": "7ee504253640c9c7ce7e121b212a31d16d9e57ef9e05f55ebcbd67573febeac9",
+    "modeling_test_sha256": "d0bae7f80bf4690b597211d9f80117b6b777a7bb7230ac74f6ff547ea7fa587a",
+    "stage_c_trainer_sha256": "a37f5a378e4662b3059d3e4e1604919a2d9e63568a6e5b75b85ede12b4da1f69",
+    "counterfactual_losses_sha256": "566c43764013a8bb98a6343b18b260924c2396b1ae1e6424cf2fd77aedcbac39",
+    "manifest_generator_sha256": "42a6e32ec10c116fb0f89734b06d072ebda310dc9348e26ce87bc7ac9881923f",
+    "manifest_generator_test_sha256": "5a3e739261237a1a577228c54cbd3149bfc51de91eb8be5ec06e5f608bb92a1c"
+  },
+  "claim_boundary": "One-seed synthetic development GPU-time-matched CE control. Repeated examples increase compute, not data diversity; final test remains sealed."
+}

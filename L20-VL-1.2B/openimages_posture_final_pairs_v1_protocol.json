@@ -1,0 +1,60 @@
+{
+  "schema_version": "2026-09-14-final-v1",
+  "status": "authorized_human_accepted_posture_pair_finalization_only",
+  "training_authorized": false,
+  "automatic_training_start": false,
+  "purpose": "Build a deterministic, balanced pair manifest exclusively from targets accepted by the exhaustive v2 and v3 human audits, with cross-pilot exact and perceptual deduplication.",
+  "seed": 20260917,
+  "source_code": {
+    "builder_sha256": "d30143a9f64f2533e13ea868b61da3b31a085edc4b99f3ba9eea166c560fb01d",
+    "test_sha256": "30526919665ec72390cd875acb312caf0dfd3a35631f95af49ac31aaa5e61b9f"
+  },
+  "inputs": {
+    "v2_candidate_manifest": {
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-posture-candidates-v2/posture-candidates-v2.jsonl",
+      "sha256": "0c2ce8c9be63f340285a99101601912d5c8bcf255d58467113a033a62eaf2421"
+    },
+    "v2_human_decisions": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-candidates-v2-human-decisions.jsonl",
+      "sha256": "6cb26d8ca20576c17db22819539119c1fee9cc672391d883ce4fb4f97bd28a78"
+    },
+    "v2_human_audit": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-candidates-v2-human-audit.json",
+      "sha256": "652785c01d76454ec25670aa9c0d2ad28000f8a94b2d5e3069bf9dea3ea1e604"
+    },
+    "v3_candidate_manifest": {
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-posture-standing-supplement-v3/posture-standing-supplement-v3.jsonl",
+      "sha256": "7f928d8d51dcbce64a231ba71dc9160b730fc88ba26a9f8a91202a2c3ff5bcfa"
+    },
+    "v3_human_decisions": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-standing-supplement-v3-human-decisions.jsonl",
+      "sha256": "233ff8933ffb10d8b69de5c821d60be7adddd7fee38930e34df05b39888f6d21"
+    },
+    "v3_human_audit": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-standing-supplement-v3-human-audit.json",
+      "sha256": "ebd09ab644fdfac072317af69013c310001bce2e1f623bcd69a484c53d342cec"
+    }
+  },
+  "pair_counts_by_class": {
+    "Boy": 18,
+    "Girl": 16,
+    "Man": 23,
+    "Woman": 20
+  },
+  "pair_count_total": 77,
+  "selection": {
+    "human_acceptance_required": true,
+    "balance": "equal sitting and standing targets within every class diversity stratum",
+    "exact_image_deduplication": true,
+    "dhash_hamming_threshold": 4,
+    "v1_images_allowed": false,
+    "v2_rejected_targets_allowed": false,
+    "v3_rejected_targets_allowed": false
+  },
+  "outputs": {
+    "target_manifest": "/home/hhai/l20-vl-1.2b/data/openimages-posture-final-v1/posture-targets-final-v1.jsonl",
+    "pair_manifest": "/home/hhai/l20-vl-1.2b/data/openimages-posture-final-v1/posture-pairs-final-v1.jsonl",
+    "receipt": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-final-pairs-v1-build.json"
+  },
+  "claim_boundary": "This protocol authorizes deterministic final data pairing only. It does not define train/evaluation splits, authorize parameter updates, benchmark access, model selection, model-quality claims, or release."
+}

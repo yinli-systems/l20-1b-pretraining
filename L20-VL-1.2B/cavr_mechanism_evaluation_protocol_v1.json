@@ -1,0 +1,43 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "authorized_cavr_mechanism_development_v1",
+  "experiment_id": "cavr_mechanism_evaluation_v1",
+  "authorized_by_user": true,
+  "test_split_use_authorized": false,
+  "training_protocol": {
+    "path": "/home/hhai/l20-vl-1.2b/counterfactual_address_value_routing_protocol_v2.json",
+    "sha256": "da29082f8f40362e90f343eb57e2f278da4b6383167f1b6b2025879d2472f626"
+  },
+  "arms": {
+    "query_ce": {
+      "run": "/home/hhai/l20-vl-1.2b/runs/binding-query-ce-49-seed20260930-v2"
+    },
+    "cavr": {
+      "run": "/home/hhai/l20-vl-1.2b/runs/binding-cavr-49-seed20260930-v2"
+    }
+  },
+  "parents": {
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base",
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55"
+  },
+  "data": {
+    "manifest": "/home/hhai/l20-vl-1.2b/data/diagnostic/binding-intervention-v1/manifest.jsonl",
+    "manifest_sha256": "084110ebff7f7d9dc3d5249a967b2efdcecd27e56827cb98ee69c8309f4b3754",
+    "allowed_splits": ["mechanism_dev", "selection_dev"],
+    "final_test": "sealed_and_absent"
+  },
+  "source_code": {
+    "mechanism_evaluator_sha256": "c03b177adc74e3e54a301779bd810b6c3eea0fa7c6b9d498fbce1cef9b1e16bd",
+    "mechanism_evaluator_test_sha256": "aa6b0055fefc8bdd0282696a7fbc1d8ab96e1b5693d0dc6840984350a2ff93af",
+    "modeling_sha256": "7ee504253640c9c7ce7e121b212a31d16d9e57ef9e05f55ebcbd67573febeac9",
+    "trainer_sha256": "6f4365a7d6511c4e797ef64eed41c02fb5e8f2b4a2d727b359d6b46a1260b0b8",
+    "counterfactual_losses_sha256": "566c43764013a8bb98a6343b18b260924c2396b1ae1e6424cf2fd77aedcbac39"
+  },
+  "primary_mechanism_metrics": [
+    "affected_address_all_variants_percent",
+    "affected_swapped_base_edit_joint_percent",
+    "affected_invariant_swapped_correct_percent",
+    "affected_causal_six_way_percent"
+  ],
+  "claim_boundary": "Held-out synthetic development evidence for address/value interchange only. This is not final-test, external real-image, multi-seed, or global-novelty evidence."
+}

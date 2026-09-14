@@ -1,0 +1,38 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "authorized_openimages_validation_caption_acquisition_only_v1",
+  "experiment_id": "openimages_posture_confirmation_captions_v1",
+  "authorized_by_user": true,
+  "download_authorized": true,
+  "training_authorized": false,
+  "model_evaluation_authorized": false,
+  "automatic_training_start": false,
+  "automatic_evaluation_start": false,
+  "purpose": "Acquire the official human-transcribed textual Localized Narratives for Open Images validation so a replacement sitting candidate pool can be filtered for class, posture, and support context before pixel-level review.",
+  "official_page": "https://google.github.io/localized-narratives/",
+  "license": "CC-BY-4.0",
+  "source": {
+    "url": "https://storage.googleapis.com/localized-narratives/annotations/open_images_validation_captions.jsonl",
+    "expected_bytes": 10125320,
+    "expected_md5_hex": "c88117f3cbaf514fd2c791343f19b810",
+    "expected_rows": 41691,
+    "expected_unique_image_ids": 41620,
+    "upstream_last_modified": "2021-01-25T19:56:04Z"
+  },
+  "prerequisites": {
+    "validation_annotation_acquisition": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-confirmation-acquisition-v1.json",
+      "sha256": "f30afe8e1f24c5009fb7fe43c7beee18528ef75b0c85dd16b804073856b24955"
+    }
+  },
+  "limits": {
+    "destination": "/home/hhai/l20-vl-1.2b/data/openimages-posture-confirmation-v1/sources",
+    "minimum_free_bytes_before": 8000000000,
+    "maximum_new_bytes": 11000000
+  },
+  "source_code": {
+    "acquirer_sha256": "5aea0cb73a5b6a0f5f931c44153721c87e32079772017e2572995a561e0c10eb",
+    "test_sha256": "c450ed510b00f9e2571f632607055e21b1e45424fd03cde4cdc4960bee62a979"
+  },
+  "claim_boundary": "This protocol authorizes a 10.13 MB official validation-caption download and schema/integrity verification only. Captions may later be used for model-blind candidate curation but must not be shown to the candidate model during confirmation. It does not authorize image selection, image download, model access, training, evaluation, pairing, release, or quality claims."
+}

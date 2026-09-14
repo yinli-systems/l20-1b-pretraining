@@ -1,0 +1,86 @@
+{
+  "schema_version": "2026-09-13-v3",
+  "status": "authorized_stage_a_unique_scene_recovery_after_dev_overfit_diagnosis",
+  "authorized_by_user": true,
+  "authorized_at": "2026-09-13",
+  "purpose": "repair development generalization using four times more unique controlled scenes with no train oversampling",
+  "not_a_compression_experiment": true,
+  "proposed_delta_loss_used": false,
+  "test_split_use_authorized": false,
+  "parents": {
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base",
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55",
+    "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-a-task-balanced-recovery-v1/step-000800/bridge.safetensors",
+    "bridge_sha256": "ccd86faaad670c74367ae358055af55f4cc1084aa6dced5d27255f3d8aa60e56",
+    "language_adapter": "/home/hhai/l20-vl-1.2b/runs/stage-a-task-balanced-recovery-v1/step-000800/language_adapter",
+    "language_adapter_files": {
+      "adapter_config.json": "e26b78c14f92629f1aa8df0c3866d4a0bf9b01a737759f9077cd15b4c2b4f5fc",
+      "adapter_model.safetensors": "818308f764cd6c16aacf51ba06cca8c748c9a5b5e1a822fae7526e549f82b035"
+    }
+  },
+  "failure_evidence": {
+    "path": "/home/hhai/l20-vl-1.2b/evidence/stage-a-task-balanced-recovery-development-v1.json",
+    "sha256": "a42073304704f046459719aeecf4f46738b76c7172cebe12f637bebd9829e31d",
+    "development_color_binding_percent": 28.0,
+    "development_shape_binding_percent": 48.666666666666664
+  },
+  "data": {
+    "manifest": "/home/hhai/l20-vl-1.2b/data/diagnostic/counterfactual-v3/manifest.jsonl",
+    "manifest_sha256": "6f21e01d31d8fc3035ca22219d0484a8fb029a30b2cddec34ab726585e5dfede",
+    "human_audit": "/home/hhai/l20-vl-1.2b/evidence/counterfactual-data-human-audit-v3.json",
+    "human_audit_decision": "pass_for_controlled_mechanism_diagnosis_only",
+    "split": "train",
+    "scene_families": 14000,
+    "variants_per_family": 3,
+    "examples_per_epoch": 42000,
+    "epochs": 1,
+    "task_repeats": {
+      "above_below_relation": 1,
+      "color_binding": 1,
+      "count": 1,
+      "left_right_relation": 1,
+      "shape_binding": 1
+    },
+    "answer_balance": {"yes": 21000, "no": 21000}
+  },
+  "architecture": {
+    "visual_tokens": 196,
+    "vision_feature_layer": -1,
+    "compressor": "none",
+    "trainable": ["projector", "image_start", "image_end", "language_lora"],
+    "frozen": ["language_parent_weights", "vision_encoder"],
+    "lora": {
+      "rank": 16,
+      "alpha": 32,
+      "dropout": 0.0,
+      "bias": "none",
+      "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
+    },
+    "objective": "two_candidate_sequence_logprob_cross_entropy"
+  },
+  "optimization": {
+    "micro_batch_size": 16,
+    "gradient_accumulation_steps": 3,
+    "effective_batch_size": 48,
+    "max_optimizer_steps": 875,
+    "max_wall_seconds": 7200,
+    "adapter_learning_rate": 0.00001,
+    "bridge_learning_rate": 0.00002,
+    "candidate_temperature": 1.0,
+    "minimum_learning_rate_ratio": 0.1,
+    "warmup_ratio": 0.03,
+    "weight_decay": 0.02,
+    "gradient_clip_norm": 1.0,
+    "precision": "bfloat16",
+    "text_tokens_max": 96,
+    "checkpoint_every_steps": 100,
+    "seed": 20260918
+  },
+  "advance_only_if": {
+    "development_paired_joint_accuracy_percent_gte": 70.0,
+    "true_vs_no_image_lower_95_ci_pp_gt": 0.0,
+    "true_vs_random_image_lower_95_ci_pp_gt": 0.0
+  },
+  "selection_rule": "select checkpoint on a fixed v3 development subset, then run the complete v3 development gate; v3 test remains sealed",
+  "claim_boundary": "Passing establishes controlled-domain full-token visual use only; it is not compression, natural-image, release, or publication evidence."
+}

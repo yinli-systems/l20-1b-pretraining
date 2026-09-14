@@ -1,0 +1,26 @@
+{
+  "schema_version": "2026-09-13-v1",
+  "purpose": "authorize deterministic Stage-D holdout generation without authorizing training or test inference",
+  "required_protocol_sha256": "33bb25b4fede9e3c4fe0f2b2b4c52ba0b7c1576b94199a3b970490dec2d81d3d",
+  "generator_authorized": true,
+  "formal_training_authorized": false,
+  "test_inference_authorized": false,
+  "development_families": 2000,
+  "iid_test_families": 3000,
+  "ood_binding_families": 2000,
+  "render_scale": 3,
+  "max_total_bytes": 2000000000,
+  "seed": 20260926,
+  "destination": "/home/hhai/l20-vl-1.2b/data/diagnostic/stage-d-v1",
+  "receipt": "/home/hhai/l20-vl-1.2b/evidence/stage-d-data-generation-v1.json",
+  "exclude_manifest": {
+    "path": "/home/hhai/l20-vl-1.2b/data/diagnostic/counterfactual-v3/manifest.jsonl",
+    "sha256": "6f21e01d31d8fc3035ca22219d0484a8fb029a30b2cddec34ab726585e5dfede"
+  },
+  "prohibited_uses": [
+    "training_on_stage_d_holdouts",
+    "using_iid_test_or_ood_binding_for_learning_rate_or_checkpoint_selection",
+    "claiming_natural_image_generalization",
+    "splitting_variants_of_one_family_across_partitions"
+  ]
+}

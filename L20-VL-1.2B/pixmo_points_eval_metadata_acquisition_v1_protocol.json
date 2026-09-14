@@ -1,0 +1,46 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "experiment_id": "pixmo_points_eval_metadata_acquisition_v1",
+  "status": "authorized_pixmo_points_eval_metadata_acquisition_only_v1",
+  "authorized_by_user": "User requested rigorous multimodal expansion and implementation on 2026-09-14.",
+  "purpose": "Pin and integrity-check the independent human-filtered PixMo-Points-Eval metadata before any image download, model access, or metric definition.",
+  "image_download_authorized": false,
+  "training_authorized": false,
+  "model_evaluation_authorized": false,
+  "dataset": {
+    "id": "allenai/pixmo-points-eval",
+    "revision": "e237f0491ca49bf8dec04e06fc0c3807a37ef157",
+    "split": "test",
+    "license": "ODC-BY-1.0",
+    "declared_provenance": "A human-filtered subset of PixMo-Points with segmentation-mask annotations, intended for pointing evaluation."
+  },
+  "source": {
+    "path_in_repository": "data/test-00000-of-00001.parquet",
+    "url": "https://huggingface.co/datasets/allenai/pixmo-points-eval/resolve/e237f0491ca49bf8dec04e06fc0c3807a37ef157/data/test-00000-of-00001.parquet",
+    "bytes": 3154059,
+    "sha256": "5a7bf84b8b06ccde4deff7857923686cae3540ecc39212183c010b3a9275c3e0"
+  },
+  "expected_profile": {
+    "rows": 436,
+    "unique_image_urls": 431,
+    "unique_image_sha256": 431,
+    "total_points": 600,
+    "rows_with_zero_points": 44,
+    "rows_with_multiple_points": 80,
+    "minimum_points_per_row": 0,
+    "maximum_points_per_row": 15,
+    "total_mask_instances": 644,
+    "minimum_masks_per_row": 1,
+    "maximum_masks_per_row": 15,
+    "rows_where_point_and_mask_counts_differ": 44
+  },
+  "output": {
+    "parquet": "/home/hhai/l20-vl-1.2b/data/pixmo-points-eval-v1/sources/test-00000-of-00001.parquet",
+    "receipt": "/home/hhai/l20-vl-1.2b/evidence/pixmo-points-eval-metadata-acquisition-v1.json"
+  },
+  "source_code": {
+    "acquirer_sha256": "386d35b80391703a6964dc6ac2b06e1bb928d0d6638cc0d1d21a9aa5fc02b2db",
+    "test_sha256": "b47b5bd9492997f10fc10e22891d025b63d52bf3c1b01dea46c58740b950d98a"
+  },
+  "claim_boundary": "This receipt can establish only the identity, schema, and aggregate profile of a pinned public evaluation parquet. It does not establish image availability or integrity, train/eval decontamination, metric correctness, model performance, benchmark independence from model-development decisions, or any multimodal capability."
+}

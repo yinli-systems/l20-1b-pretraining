@@ -1,0 +1,55 @@
+{
+  "claim_boundary": "This receipt can establish only the identity, schema, and aggregate profile of a pinned public evaluation parquet. It does not establish image availability or integrity, train/eval decontamination, metric correctness, model performance, benchmark independence from model-development decisions, or any multimodal capability.",
+  "completed_at": "2026-09-14T10:31:56.506457+00:00",
+  "dataset": {
+    "declared_provenance": "A human-filtered subset of PixMo-Points with segmentation-mask annotations, intended for pointing evaluation.",
+    "id": "allenai/pixmo-points-eval",
+    "license": "ODC-BY-1.0",
+    "revision": "e237f0491ca49bf8dec04e06fc0c3807a37ef157",
+    "split": "test"
+  },
+  "images_downloaded": 0,
+  "model_evaluation_started": false,
+  "model_under_test_accessed": false,
+  "next_allowed_step": "Freeze image acquisition, integrity, contamination, and human-audit protocol before downloading benchmark images.",
+  "parquet": {
+    "bytes": 3154059,
+    "path": "/home/hhai/l20-vl-1.2b/data/pixmo-points-eval-v1/sources/test-00000-of-00001.parquet",
+    "sha256": "5a7bf84b8b06ccde4deff7857923686cae3540ecc39212183c010b3a9275c3e0"
+  },
+  "profile": {
+    "maximum_masks_per_row": 15,
+    "maximum_points_per_row": 15,
+    "minimum_masks_per_row": 1,
+    "minimum_points_per_row": 0,
+    "rows": 436,
+    "rows_where_point_and_mask_counts_differ": 44,
+    "rows_with_multiple_points": 80,
+    "rows_with_zero_points": 44,
+    "stored_point_x_range": [
+      0.7142857313156128,
+      99.28571319580078
+    ],
+    "stored_point_y_range": [
+      0.8278145790100098,
+      99.27050018310547
+    ],
+    "total_mask_instances": 644,
+    "total_points": 600,
+    "unique_image_sha256": 431,
+    "unique_image_urls": 431
+  },
+  "protocol": {
+    "path": "pixmo_points_eval_metadata_acquisition_v1_protocol.json",
+    "sha256": "8b391fc49183fd0740e7be613b41c270df209ac361e8b6c0121b99bb8701e2fe"
+  },
+  "schema_version": "2026-09-14-v1",
+  "source": {
+    "bytes": 3154059,
+    "path_in_repository": "data/test-00000-of-00001.parquet",
+    "sha256": "5a7bf84b8b06ccde4deff7857923686cae3540ecc39212183c010b3a9275c3e0",
+    "url": "https://huggingface.co/datasets/allenai/pixmo-points-eval/resolve/e237f0491ca49bf8dec04e06fc0c3807a37ef157/data/test-00000-of-00001.parquet"
+  },
+  "status": "complete_verified_pixmo_points_eval_metadata_acquisition_only",
+  "training_started": false
+}

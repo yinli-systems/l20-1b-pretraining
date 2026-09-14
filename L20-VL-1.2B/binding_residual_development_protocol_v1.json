@@ -1,0 +1,140 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "authorized_binding_residual_development_v1",
+  "authorized_by_user": true,
+  "authorized_at": "2026-09-13T23:27:56Z",
+  "purpose": "Test whether a tiny fixed-budget spatial residual becomes binding-selective only when trained with a localized interchange objective.",
+  "test_split_use_authorized": false,
+  "formal_training": false,
+  "prerequisite": {
+    "plain_ce_summary": "/home/hhai/l20-vl-1.2b/evidence/binding-e0-evaluation-v1/summary.json",
+    "plain_ce_summary_sha256": "08adc26b54621f08b256ca3342551be48573311d6a4820afea89722da269865e",
+    "required_decision": "insufficient_binding_repair"
+  },
+  "parents": {
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base",
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55",
+    "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20260930-v1/step-000700/bridge.safetensors",
+    "bridge_sha256": "d4b04aa98e5430a1fe5a11918da87a67007d283116b4e843c1d640fc7c31f6ce",
+    "language_adapter": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20260930-v1/step-000700/language_adapter",
+    "language_adapter_files": {
+      "adapter_config.json": "beb25b1266075702a22f78be2daa5f03625a0198514f0137a1284e974b06fc9b",
+      "adapter_model.safetensors": "b6b31eb6927d27ba2a0dbdc71f50adca68f95b849f39a05bdbba532cf61cbaa9"
+    }
+  },
+  "arms": {
+    "residual_ce": {
+      "architecture": {
+        "compressor": "spatial_query",
+        "visual_tokens": 196,
+        "output_visual_tokens": 49,
+        "target_ratio": 4,
+        "vision_feature_layer": -1,
+        "binding_residual_rank": 16
+      },
+      "loss_weights": {
+        "ordinary_answer": 1.0,
+        "interchange_answer": 0.0
+      },
+      "trainable_parameters": 143360,
+      "role": "capacity_and_data_control"
+    },
+    "iibr": {
+      "architecture": {
+        "compressor": "spatial_query",
+        "visual_tokens": 196,
+        "output_visual_tokens": 49,
+        "target_ratio": 4,
+        "vision_feature_layer": -1,
+        "binding_residual_rank": 16
+      },
+      "loss_weights": {
+        "ordinary_answer": 1.0,
+        "interchange_answer": 1.0
+      },
+      "trainable_parameters": 143360,
+      "role": "intervention_identified_binding_residual_candidate"
+    }
+  },
+  "data": {
+    "manifest": "/home/hhai/l20-vl-1.2b/data/diagnostic/binding-intervention-v1/manifest.jsonl",
+    "manifest_sha256": "084110ebff7f7d9dc3d5249a967b2efdcecd27e56827cb98ee69c8309f4b3754",
+    "split": "train",
+    "epochs": 1,
+    "scene_families": 4800,
+    "unique_scene_pairs": 800,
+    "questions_per_scene_pair": 6,
+    "variants_per_family": 3,
+    "deduplicate_images_within_batch": true,
+    "evidence": {
+      "generation_receipt": {
+        "path": "/home/hhai/l20-vl-1.2b/evidence/binding-intervention-data-generation-v1.json",
+        "sha256": "bf6b340c218724edc2a4da6a4051e432105904fa01b7909690a27a16478cff50"
+      },
+      "static_audit": {
+        "path": "/home/hhai/l20-vl-1.2b/evidence/binding-intervention-data-static-audit-v1.json",
+        "sha256": "36331491142a2d7934923f5c7f5d02680e9fc9bed66d001b44cf477c00a8ead8"
+      },
+      "human_audit": {
+        "path": "/home/hhai/l20-vl-1.2b/evidence/binding-intervention-data-human-audit-v1.json",
+        "sha256": "e821b7da7325fc3d8711b3309e8dda366b778fbbfa9e3f9b34f9e2990c437e36"
+      }
+    }
+  },
+  "optimization": {
+    "seed": 20260930,
+    "micro_batch_families": 24,
+    "max_optimizer_steps": 200,
+    "max_wall_seconds": 3600,
+    "checkpoint_every_steps": 50,
+    "precision": "bfloat16",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0,
+    "warmup_ratio": 0.05,
+    "minimum_learning_rate_ratio": 0.1,
+    "gradient_clip_norm": 1.0,
+    "text_tokens_max": 96
+  },
+  "resource_cap": {
+    "gpu": "1x NVIDIA L20",
+    "gpu_hours_per_arm_max": 1.0,
+    "smoke_steps_per_arm": 2,
+    "smoke_must_pass_before_full_run": true,
+    "execution_order": [
+      "residual_ce",
+      "iibr"
+    ],
+    "output_roots": {
+      "residual_ce": "/home/hhai/l20-vl-1.2b/runs/binding-e1-residual-ce-r16-seed20260930-v1",
+      "iibr": "/home/hhai/l20-vl-1.2b/runs/binding-e1-iibr-r16-seed20260930-v1"
+    }
+  },
+  "evaluation": {
+    "checkpoint_selection_split": "mechanism_dev",
+    "screen_scene_pairs": 40,
+    "screen_checkpoints": [
+      50,
+      100,
+      150,
+      200
+    ],
+    "single_use_selection_dev_after_arm_and_checkpoint_freeze": true,
+    "primary_metric": "affected_question_joint_accuracy_percent",
+    "strict_metric": "scene_pair_selective_all_six_correct_percent",
+    "random_control": "within_task_answer_cluster_deranged",
+    "statistical_unit": "scene_pair_id",
+    "final_test": "sealed_and_absent"
+  },
+  "comparison_contract": {
+    "residual_ce_vs_iibr": "same parent, data, rank, trainable parameters, sample exposure, seed, optimizer, and steps",
+    "compute_boundary": "IIBR performs an extra language-model pass and is not GPU-time matched in this first development screen.",
+    "required_followup_if_iibr_wins": "Run a GPU-time-matched residual-CE control before attributing gain to the interchange objective."
+  },
+  "source_code": {
+    "modeling_sha256": "20775f6219b337c6cae3c3e1078dd6d7c0902f53143271d54618ee864b2ea269",
+    "trainer_sha256": "99f6ffb5f8d4ee16d0a7a3ca365f4f1f972601f469f3d569d9078ddb54da162e",
+    "modeling_test_sha256": "f79af7a21b6bc2fa11678fde030bbf2ac6f8e4b2286c552c6697104a424deac9",
+    "training_test_sha256": "78cd6f162e2ce06282130d535ca3bac99a3e5a37b963b2e47628c48786d25a1a"
+  },
+  "claim_boundary": "This one-seed synthetic development screen tests a mechanism candidate. It cannot establish novelty, natural-image transfer, formal confirmation, or a general VLM win."
+}

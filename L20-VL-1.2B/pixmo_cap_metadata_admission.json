@@ -1,0 +1,46 @@
+{
+  "schema_version": "2026-09-13-v1",
+  "repo": "allenai/pixmo-cap",
+  "revision": "edce6390d9d5be6c8db0d863fbe62718c88988a4",
+  "revision_last_modified": "2024-11-27T22:44:36.000Z",
+  "license": "ODC-BY-1.0",
+  "declared_examples": 717042,
+  "purpose": "metadata-only quality, provenance, contamination, and storage audit",
+  "destination": "/home/hhai/l20-vl-1.2b/data/audit/pixmo-cap-metadata",
+  "max_bytes": 1101527794,
+  "download_base_urls": [
+    "https://huggingface.co/datasets",
+    "https://hf-mirror.com/datasets"
+  ],
+  "mirror_acceptance_rule": "A mirror-delivered file is accepted only when its byte size and SHA-256 exactly match the frozen official Hugging Face LFS metadata.",
+  "image_download_authorized": false,
+  "training_authorized": false,
+  "caption_training_authorized": false,
+  "transcript_training_authorized": false,
+  "files": {
+    "data/train-00000-of-00004.parquet": {
+      "bytes": 275029179,
+      "sha256": "6bb4157ea05b975cb6b647f06d2619a65b5bb5dc2f0551b4c051544a2b4827ba"
+    },
+    "data/train-00001-of-00004.parquet": {
+      "bytes": 275609806,
+      "sha256": "8118662306519a363d626502e692850105862ef44dceaf0fb0583e5f5780f4b3"
+    },
+    "data/train-00002-of-00004.parquet": {
+      "bytes": 275218776,
+      "sha256": "a23c6e905f796c2fc84c26e1e84540fb5660e88ca57da93ffffc682cc7a41280"
+    },
+    "data/train-00003-of-00004.parquet": {
+      "bytes": 275670033,
+      "sha256": "770ea81518743d753e7bd81f23808b6d3995fa90428bc9168d9160b29712d67e"
+    }
+  },
+  "known_risks": [
+    "images_are_external_urls_and_are_not_covered_by_metadata_integrity_alone",
+    "dataset_card_reports_Claude_generated_caption_output_subject_to_Anthropic_terms",
+    "current_dataset_page_reports_some_creator_opt_out_signals_without_row_level_flags_in_the_frozen_schema",
+    "benchmark_and_source_family_overlap_is_not_yet_removed",
+    "caption_factuality_and_personal_information_are_not_yet_audited"
+  ],
+  "decision": "Acquire only the four pinned Parquet metadata shards. Do not fetch images and do not train."
+}

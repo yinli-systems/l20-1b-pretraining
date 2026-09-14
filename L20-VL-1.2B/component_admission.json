@@ -1,0 +1,82 @@
+{
+  "registry_version": "2026-09-13-v1",
+  "parent_repo": "nvidia/Llama-Nemotron-VLM-Dataset-v1",
+  "parent_revision": "13b7986f8266a3cadee8a6eed1e05c438d0fe695",
+  "collection_download_authorized": false,
+  "formal_training_authorized": false,
+  "acquisition_budget": {
+    "max_bytes": 13000000000,
+    "destination": "/home/hhai/l20-vl-1.2b/data/audit/nvidia-ocr13",
+    "archive_extraction_before_hash_verification": false
+  },
+  "components": {
+    "ocr_1": {
+      "purpose": "synthetic ASCII and English-word OCR",
+      "declared_samples": 14533,
+      "declared_size_gb": 5.76,
+      "image_origin": "fully synthetic rendered characters and words with randomized backgrounds and fonts",
+      "license": "CC-BY-4.0",
+      "acquisition_status": "authorized_for_integrity_and_quality_audit_only",
+      "training_status": "rejected_for_formal_training_after_integrity_and_human_quality_audit",
+      "files": {
+        "ocr_1.jsonl": {
+          "bytes": 20244801,
+          "sha256": "4bcaaf945b8053676721bedebd5eef63a72c91fe0b9427c61cd90f9cad10fde6"
+        },
+        "ocr_1_images/shard_000000.tar": {
+          "bytes": 4295321600,
+          "sha256": "96df878f562e8e1e397bca142a44c7b65d201f7ff3e77de0dcf3f63b6d051393"
+        },
+        "ocr_1_images/shard_000001.tar": {
+          "bytes": 1891481600,
+          "sha256": "c2b14a8bed15684808fa9d91b5eddd14bff6f9a00d0fb8a7c34b829d5b1f6f6f"
+        }
+      }
+    },
+    "ocr_3": {
+      "purpose": "synthetic English-character and English-word OCR",
+      "declared_samples": 14525,
+      "declared_size_gb": 5.65,
+      "image_origin": "fully synthetic rendered English characters and words with randomized backgrounds and fonts",
+      "license": "CC-BY-4.0",
+      "acquisition_status": "authorized_for_integrity_and_quality_audit_only",
+      "training_status": "rejected_for_formal_training_after_integrity_and_human_quality_audit",
+      "files": {
+        "ocr_3.jsonl": {
+          "bytes": 20416765,
+          "sha256": "11a090ff4d5bb79b90d0773e05f51027396cdc8b53bb9e6b074639cda4f61d9e"
+        },
+        "ocr_3_images/shard_000000.tar": {
+          "bytes": 4295628800,
+          "sha256": "777ae67ffb537ccd3864be9ffda83065e7f05a487dc8516944b91c382f1d9bff"
+        },
+        "ocr_3_images/shard_000001.tar": {
+          "bytes": 1775861760,
+          "sha256": "221ace608bbeea1c7219aa925fca100f18f4dbb96c3aded3a6c3f91b7fa8c503"
+        }
+      }
+    }
+  },
+  "explicitly_excluded_from_this_acquisition": {
+    "ocr_2": "Chinese component does not match the English-model scope",
+    "captioning_1_and_2": "TextVQA and OpenImages source family; blocked from TextVQA-family evaluation claims",
+    "vqa_1_and_2": "large OpenImages-derived components require a separate image-license and quality audit",
+    "vqa_3": "TextVQA source family; direct contamination risk",
+    "vqa_4_7_8": "ChartQA source family; direct contamination risk",
+    "vqa_5_6": "upstream Llama-generated annotation terms require separate review",
+    "vqa_9": "CC-BY-SA-4.0 open-textbook component requires separate share-alike and source-family review",
+    "ocr_4_5_7": "CC-BY-SA-4.0 components excluded from this bounded acquisition",
+    "ocr_6_8_9_10": "public-source OCR components require separate provenance and benchmark-family audits"
+  },
+  "post_acquisition_gates": [
+    "all_file_sizes_and_sha256_match",
+    "tar_members_are_safe_relative_paths_with_no_links_or_devices",
+    "jsonl_schema_and_image_reference_coverage_pass",
+    "all_images_decode_or_fail_below_a_predeclared_threshold",
+    "exact_and_perceptual_duplicate_rates_measured",
+    "label_character_distribution_and_language_scope_measured",
+    "stratified_human_audit_completed",
+    "no_component_enters_training_automatically"
+  ],
+  "decision": "The bounded ocr_1 and ocr_3 acquisition completed and passed automated integrity checks, but both components were rejected for formal training after deterministic human quality review. No component is admitted to training."
+}

@@ -1,0 +1,79 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "complete_openimages_evidence_router_pilot_v1_primary_visual_audit",
+  "auditor": "primary_agent_exhaustive_fixed_sheet_review",
+  "generation_receipt": {
+    "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-evidence-router-pilot-v1-generation.json",
+    "sha256": "2537db4402de8f8bee1717c95a9f4d3772561481212bea5472a9d65fef71d46c"
+  },
+  "manifest": {
+    "path": "/home/hhai/l20-vl-1.2b/data/openimages-evidence-router-pilot-v1/manifest.jsonl",
+    "sha256": "478d88377e57b5543f1c962cd6df4db28f82471b42f7266528b3ea82d120c740"
+  },
+  "official_sheets": [
+    {
+      "split": "train",
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-evidence-router-pilot-v1/audit/openimages-evidence-router-train-00.png",
+      "sha256": "6bada4fa42f167a4cd07e5731b46351daad6a3c922534f49affd0f23edc9d4f7",
+      "items": 12
+    },
+    {
+      "split": "train",
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-evidence-router-pilot-v1/audit/openimages-evidence-router-train-01.png",
+      "sha256": "99631328bea5a72a8101107c1b45b58e1bbdce39dec1d1a4d15fd7daced82e54",
+      "items": 12
+    },
+    {
+      "split": "development",
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-evidence-router-pilot-v1/audit/openimages-evidence-router-development-00.png",
+      "sha256": "35d6fe4e79bcd3ee9945ed41c0afbe596ddf7214f7008dcb1781bdd82c8fa08c",
+      "items": 12
+    },
+    {
+      "split": "development",
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-evidence-router-pilot-v1/audit/openimages-evidence-router-development-01.png",
+      "sha256": "485fbc7b411f519f5e4af78d029026a2badf94edd0e93130750ec61a5262eb62",
+      "items": 12
+    }
+  ],
+  "review_previews": [
+    {
+      "path": "evidence/human-audit/openimages-evidence-router-pilot-v1/openimages-evidence-router-train-00-preview.jpg",
+      "sha256": "7c814619d53bb8018138246599b2c8f0736c4483ddd61edb7f05fb4cd4b85810"
+    },
+    {
+      "path": "evidence/human-audit/openimages-evidence-router-pilot-v1/openimages-evidence-router-train-01-preview.jpg",
+      "sha256": "a5ea52cd4d25a18510b8e84edf272e11ae6e579d68f6b0811a6764c672760435"
+    },
+    {
+      "path": "evidence/human-audit/openimages-evidence-router-pilot-v1/openimages-evidence-router-development-00-preview.jpg",
+      "sha256": "9024146fbbab6c6689aa8746a188d821e3f0deb1cce76239624c89cc661c707c"
+    },
+    {
+      "path": "evidence/human-audit/openimages-evidence-router-pilot-v1/openimages-evidence-router-development-01-preview.jpg",
+      "sha256": "6e6072abcdb6397ca3b10acc86c1d4d2427a929b213df7bc14d3f394bf98a15f"
+    }
+  ],
+  "checks": {
+    "fixed_items_reviewed": 48,
+    "red_rectangle_visible": 48,
+    "source_crop_intersects_and_contains_the_marked_target": 48,
+    "gross_box_or_crop_coordinate_mismatches": 0,
+    "unreadable_or_corrupt_images": 0,
+    "train_items": 24,
+    "development_items": 24,
+    "semantic_category_labels_exhaustively_validated": false
+  },
+  "static_integrity": {
+    "families": 1728,
+    "rows": 3456,
+    "train_development_source_image_overlap": 0,
+    "valid_point_stop_family_pairs": 1728,
+    "marked_image_hashes_verified": 1728,
+    "class_names": 37
+  },
+  "decision": "pass_for_bounded_localization_router_training_only",
+  "answer_supervision_admitted": false,
+  "development_model_accessed": false,
+  "claim_boundary": "The review admits red-box localization supervision and structural STOP examples only. It does not admit the broad class labels as high-quality answer supervision, does not constitute an independent multi-rater audit, and does not establish natural-image VQA or unmarked referring-expression grounding."
+}

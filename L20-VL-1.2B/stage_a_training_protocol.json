@@ -1,0 +1,51 @@
+{
+  "schema_version": "2026-09-13-v1",
+  "status": "blocked_pending_stage_a_human_data_audit",
+  "training_authorized_after_human_audit_pass": true,
+  "automatic_start": false,
+  "hardware": "single NVIDIA L20 46068 MiB",
+  "parents": {
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base",
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55"
+  },
+  "architecture": {
+    "visual_tokens": 196,
+    "compressor": "none",
+    "trainable": ["projector", "image_start", "image_end"],
+    "frozen": ["language_model", "vision_encoder"],
+    "objective": "answer_only_causal_cross_entropy"
+  },
+  "data": {
+    "open_images_localized_narratives_train_examples": 12500,
+    "clevr_train_examples": 12500,
+    "total_examples": 25000,
+    "selection": "smallest frozen selection_sha256 within source and train split",
+    "source_balance": "one_to_one_by_example"
+  },
+  "optimization": {
+    "micro_batch_size": 4,
+    "gradient_accumulation_steps": 8,
+    "effective_batch_size": 32,
+    "epochs": 1,
+    "max_optimizer_steps": 781,
+    "max_wall_seconds": 43200,
+    "learning_rate": 0.0001,
+    "minimum_learning_rate_ratio": 0.1,
+    "warmup_ratio": 0.05,
+    "weight_decay": 0.05,
+    "gradient_clip_norm": 1.0,
+    "precision": "bfloat16",
+    "text_tokens_max": 160,
+    "checkpoint_every_steps": 100,
+    "seed": 20260913
+  },
+  "stop_rules": [
+    "stop_on_nonfinite_loss_or_gradient",
+    "stop_on_oom",
+    "stop_on_parent_or_manifest_hash_mismatch",
+    "stop_at_12_gpu_hours",
+    "stop_if_gpu_memory_or_host_memory_grows_without_bound",
+    "do_not_advance_to_compression_experiments_without_visual_floor"
+  ],
+  "claim_boundary": "This trains only a conventional full-token bridge foundation. It does not test or validate the proposed compression objective."
+}

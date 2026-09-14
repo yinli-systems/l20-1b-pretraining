@@ -1,0 +1,168 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "authorized_counterfactual_address_value_routing_development_v1",
+  "experiment_id": "counterfactual_address_value_routing_v1",
+  "authorized_by_user": true,
+  "authorized_at": "2026-09-14T01:00:00Z",
+  "purpose": "Test whether explicit question-to-location addressing plus counterfactual value exchange repairs a measured visual-to-answer routing bottleneck better than the same query reader trained with answer CE alone.",
+  "test_split_use_authorized": false,
+  "formal_training": false,
+  "prerequisite": {
+    "tuned_plain_ce_summary": "/home/hhai/l20-vl-1.2b/evidence/binding-tuned-plain-ce-evaluation-v1/summary.json",
+    "tuned_plain_ce_summary_sha256": "c7c2ed0e78604694314984dc35ef6d45067946d31273bc743780379460645792",
+    "required_decision": "insufficient_tuned_plain_ce"
+  },
+  "parents": {
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base",
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55",
+    "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20260930-v1/step-000700/bridge.safetensors",
+    "bridge_sha256": "d4b04aa98e5430a1fe5a11918da87a67007d283116b4e843c1d640fc7c31f6ce",
+    "language_adapter": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20260930-v1/step-000700/language_adapter",
+    "language_adapter_files": {
+      "adapter_config.json": "beb25b1266075702a22f78be2daa5f03625a0198514f0137a1284e974b06fc9b",
+      "adapter_model.safetensors": "b6b31eb6927d27ba2a0dbdc71f50adca68f95b849f39a05bdbba532cf61cbaa9"
+    },
+    "selection_rule": "Same frozen Stage-D A49 parent and language adapter used by E0 and tuned plain CE."
+  },
+  "arms": {
+    "query_ce": {
+      "description": "Capacity-matched query-conditioned reader trained with ordinary answer supervision only.",
+      "architecture": {
+        "compressor": "spatial_query",
+        "output_visual_tokens": 49,
+        "target_ratio": 4,
+        "vision_feature_layer": -1,
+        "visual_tokens": 196,
+        "query_readout_rank": 64
+      },
+      "loss_weights": {
+        "ordinary_answer": 1.0,
+        "address": 0.0,
+        "address_pair": 0.0,
+        "value_swap": 0.0
+      },
+      "language_forward_passes_per_batch": 1,
+      "smoke_output": "/home/hhai/l20-vl-1.2b/runs/binding-query-ce-49-smoke-v1",
+      "full_run_output": "/home/hhai/l20-vl-1.2b/runs/binding-query-ce-49-seed20260930-v1"
+    },
+    "cavr": {
+      "description": "Same reader with supervised spatial address, paired address invariance, and base/edit value-source interchange supervision.",
+      "architecture": {
+        "compressor": "spatial_query",
+        "output_visual_tokens": 49,
+        "target_ratio": 4,
+        "vision_feature_layer": -1,
+        "visual_tokens": 196,
+        "query_readout_rank": 64
+      },
+      "loss_weights": {
+        "ordinary_answer": 1.0,
+        "address": 0.25,
+        "address_pair": 0.5,
+        "value_swap": 1.0
+      },
+      "language_forward_passes_per_batch": 2,
+      "smoke_output": "/home/hhai/l20-vl-1.2b/runs/binding-cavr-49-smoke-v1",
+      "full_run_output": "/home/hhai/l20-vl-1.2b/runs/binding-cavr-49-seed20260930-v1"
+    }
+  },
+  "data": {
+    "manifest": "/home/hhai/l20-vl-1.2b/data/diagnostic/binding-intervention-v1/manifest.jsonl",
+    "manifest_sha256": "084110ebff7f7d9dc3d5249a967b2efdcecd27e56827cb98ee69c8309f4b3754",
+    "split": "train",
+    "epochs": 1,
+    "scene_families": 4800,
+    "unique_scene_pairs": 800,
+    "questions_per_scene_pair": 6,
+    "variants_per_family": 3,
+    "batch_group_by": "scene_pair_id",
+    "deduplicate_images_within_batch": true,
+    "address_target": "7x7 cell containing the target object center",
+    "address_supervision_scope": "affected questions only",
+    "evidence": {
+      "generation_receipt": {
+        "path": "/home/hhai/l20-vl-1.2b/evidence/binding-intervention-data-generation-v1.json",
+        "sha256": "bf6b340c218724edc2a4da6a4051e432105904fa01b7909690a27a16478cff50"
+      },
+      "static_audit": {
+        "path": "/home/hhai/l20-vl-1.2b/evidence/binding-intervention-data-static-audit-v1.json",
+        "sha256": "36331491142a2d7934923f5c7f5d02680e9fc9bed66d001b44cf477c00a8ead8"
+      },
+      "human_audit": {
+        "path": "/home/hhai/l20-vl-1.2b/evidence/binding-intervention-data-human-audit-v1.json",
+        "sha256": "e821b7da7325fc3d8711b3309e8dda366b778fbbfa9e3f9b34f9e2990c437e36"
+      }
+    }
+  },
+  "optimization": {
+    "seed": 20260930,
+    "micro_batch_families": 12,
+    "gradient_accumulation_steps": 1,
+    "effective_batch_families": 12,
+    "candidate_sequences_per_optimizer_step": 72,
+    "unique_images_per_optimizer_step": 6,
+    "max_optimizer_steps": 400,
+    "max_wall_seconds": 3600,
+    "checkpoint_every_steps": 50,
+    "precision": "bfloat16",
+    "adapter_learning_rate": 0.0002,
+    "bridge_learning_rate": 0.0001,
+    "compressor_learning_rate": 0.0002,
+    "query_readout_learning_rate": 0.0005,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.05,
+    "minimum_learning_rate_ratio": 0.1,
+    "gradient_clip_norm": 1.0,
+    "text_tokens_max": 96
+  },
+  "resource_cap": {
+    "gpu": "1x NVIDIA L20",
+    "smoke_steps_per_arm": 2,
+    "smoke_must_pass_before_full_run": true,
+    "full_training_gpu_hours_max_per_arm": 1.0,
+    "execution_order": [
+      "query_ce_smoke",
+      "cavr_smoke",
+      "query_ce_full",
+      "cavr_full"
+    ]
+  },
+  "evaluation": {
+    "checkpoint_selection_split": "mechanism_dev",
+    "screen_scene_pairs": 40,
+    "screen_checkpoints": [
+      50,
+      100,
+      150,
+      200,
+      250,
+      300,
+      350,
+      400
+    ],
+    "single_use_validation_split": "selection_dev",
+    "primary_metric": "affected_question_joint_accuracy_percent",
+    "strict_metric": "scene_pair_selective_all_six_correct_percent",
+    "statistical_unit": "scene_pair_id",
+    "final_test": "sealed_and_absent"
+  },
+  "decision_rule": {
+    "minimum_mechanism_affected_joint_percent": 70.0,
+    "require_true_minus_random_lower_95_ci_gt_zero": true,
+    "require_strict_metric_gt_zero": true,
+    "minimum_cavr_minus_query_ce_pp": 5.0,
+    "require_cavr_minus_query_ce_lower_95_ci_gt_zero": true,
+    "do_not_tune_on_selection_dev": true,
+    "do_not_generate_or_use_final_test_during_development": true
+  },
+  "source_code": {
+    "trainer_sha256": "5bdf336f5658e4f84f8a2ec210e5582ffbd417e81a7a2572b2f00024a7d516ff",
+    "trainer_test_sha256": "6d274fef33dddc326730d1cb074d41faa4a824d7354f751f23fbaf29ab4aff5c",
+    "modeling_sha256": "66c50d879cfd6d4b6c70210b90b510046d96465e7f82d3e61c06520eac7ff7d2",
+    "modeling_test_sha256": "d4a1b3dfb7026f41f769ab8a3a11933dab4826cb2d7efddcf124616c316226bb",
+    "stage_c_trainer_sha256": "a37f5a378e4662b3059d3e4e1604919a2d9e63568a6e5b75b85ede12b4da1f69",
+    "counterfactual_losses_sha256": "566c43764013a8bb98a6343b18b260924c2396b1ae1e6424cf2fd77aedcbac39"
+  },
+  "novelty_boundary": "Question-conditioned readout, grounding supervision, counterfactual augmentation, and interchange intervention training all have prior art. The only candidate contribution is the fixed-token address/value factorization and its causal value-source exchange test in a small decoder-only VLM; this protocol does not establish novelty.",
+  "claim_boundary": "This is a one-seed synthetic development experiment. A positive result must beat the capacity-matched query-CE arm with paired confidence intervals and later transfer to an external real-image benchmark; it cannot by itself support claims of novelty, general VLM superiority, or natural-image robustness."
+}

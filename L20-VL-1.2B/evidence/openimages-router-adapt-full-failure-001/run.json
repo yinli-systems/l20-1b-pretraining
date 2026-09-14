@@ -1,0 +1,24 @@
+{
+  "confirmation_rows_accessed": 0,
+  "development_rows_accessed": 0,
+  "device": "NVIDIA L20",
+  "error": "ValueError: router requires at least one prompt token per sample",
+  "failed_at": "2026-09-14T13:26:02.877333+00:00",
+  "max_optimizer_steps": 960,
+  "natural_manifest_sha256": "478d88377e57b5543f1c962cd6df4db28f82471b42f7266528b3ea82d120c740",
+  "natural_rows": 3072,
+  "optimizer_step": 0,
+  "protocol_sha256": "aa6177e901acba7b192367334561306dbed1cfebeb35c39dee9c41171644ba54",
+  "replay_rows": 512,
+  "schema_version": "2026-09-14-v1",
+  "smoke": false,
+  "started_at": "2026-09-14T13:26:02.858989+00:00",
+  "status": "failed",
+  "synthetic_replay_manifest_sha256": "6ec1ecd34190f92f2e86d379e5d9c91c671495768f85bd694f0bd3550b63bb03",
+  "trainable_components": [
+    "evidence_acquisition_router"
+  ],
+  "trainable_parameters": 376706,
+  "trainer_sha256": "41f25bebfc1467dec5b542c66d752e245eb6a9e9b765dcbf01b0760c189cbbdb",
+  "wall_seconds": 0.0076296646147966385
+}

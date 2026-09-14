@@ -1,0 +1,63 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "authorized_posture_candidates_v2_pose_feature_replay_only",
+  "training_authorized": false,
+  "automatic_training_start": false,
+  "purpose": "Replay independently pretrained pose features on all 192 human-audited v2 targets to test whether pose visibility can improve review ordering for a disjoint standing supplement.",
+  "source_code": {
+    "audit_sha256": "005c2cca16bf7108e1dec9f6187e95762dffc71fcf881908ff0d556aba6dea3a",
+    "test_sha256": "ceecca14b9bb0ee82cc3b3f629217d8f55d8f7cb67aa378ec45af342b94ab1ba"
+  },
+  "inputs": {
+    "candidate_manifest": {
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-posture-candidates-v2/posture-candidates-v2.jsonl",
+      "sha256": "0c2ce8c9be63f340285a99101601912d5c8bcf255d58467113a033a62eaf2421"
+    },
+    "human_decisions": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-candidates-v2-human-decisions.jsonl",
+      "sha256": "6cb26d8ca20576c17db22819539119c1fee9cc672391d883ce4fb4f97bd28a78"
+    },
+    "human_audit": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-candidates-v2-human-audit.json",
+      "sha256": "652785c01d76454ec25670aa9c0d2ad28000f8a94b2d5e3069bf9dea3ea1e604"
+    }
+  },
+  "model": {
+    "repository": "usyd-community/vitpose-base-simple",
+    "revision": "a93ac0c67e0b7e2c55287d21d4c460c8f3c54d45",
+    "license": "Apache-2.0",
+    "path": "/home/hhai/l20-vl-1.2b/models/vitpose-base-simple-a93ac0c",
+    "artifacts": {
+      "model": {
+        "path": "/home/hhai/l20-vl-1.2b/models/vitpose-base-simple-a93ac0c/model.safetensors",
+        "sha256": "85375373893ddd3641f3912821073e53f5435f9e966e1dca59d004454bfe4fdf"
+      },
+      "config": {
+        "path": "/home/hhai/l20-vl-1.2b/models/vitpose-base-simple-a93ac0c/config.json",
+        "sha256": "72fc2f0fc29eef43e87aa0ddd4c1269c5226ae157a99d0057019dd40129fed7c"
+      },
+      "preprocessor": {
+        "path": "/home/hhai/l20-vl-1.2b/models/vitpose-base-simple-a93ac0c/preprocessor_config.json",
+        "sha256": "9b11cadc98c30b968a70cc1658ce1fbd74b721b0f21402a2ff8bc1dc9d1474a0"
+      }
+    }
+  },
+  "inference": {
+    "device": "cuda",
+    "batch_size": 16,
+    "seed": 20260914,
+    "floating_point": "float32",
+    "target_boxes": "frozen Open Images person boxes; no detector substitution"
+  },
+  "feature_extraction": {
+    "joint_score_threshold": 0.15,
+    "keypoint_schema": "COCO-17",
+    "threshold_role": "feature visibility only; no accept/reject gate is authorized"
+  },
+  "outputs": {
+    "feature_manifest": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-candidates-v2-vitpose-features.jsonl",
+    "receipt": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-candidates-v2-vitpose-replay.json"
+  },
+  "analysis_boundary": "The v2 census is a development set. Any ranking rule derived from it must be frozen before application to disjoint v3 images, and every v3 target must still pass visual review.",
+  "claim_boundary": "This protocol produces retrospective curation features only. It does not validate data, authorize training, or support multimodal model-quality or novelty claims."
+}

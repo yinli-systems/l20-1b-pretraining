@@ -1,0 +1,88 @@
+{
+  "admission_decision": "pending_primary_visual_audit_and_preprocessing_floor_test",
+  "audit_sheets": [
+    {
+      "bytes": 432614,
+      "path": "/home/hhai/l20-vl-1.2b/data/highres-evidence-search-pilot-v1/audit/highres-evidence-search-sheet-00.png",
+      "sha256": "9340e462bd1c36bd7dac0f58a59174a2736f8a41512a5c448ce43bdde9cc5e4a"
+    },
+    {
+      "bytes": 433874,
+      "path": "/home/hhai/l20-vl-1.2b/data/highres-evidence-search-pilot-v1/audit/highres-evidence-search-sheet-01.png",
+      "sha256": "3bf98384a95e50c050e6352d540a97089ac9656b0f5716937613bfef6615b4a0"
+    },
+    {
+      "bytes": 331062,
+      "path": "/home/hhai/l20-vl-1.2b/data/highres-evidence-search-pilot-v1/audit/highres-evidence-search-sheet-02.png",
+      "sha256": "f98ee7f98b22292e20c0a710e7743f238d5429d032ce7c38c952fb3894acf499"
+    },
+    {
+      "bytes": 335014,
+      "path": "/home/hhai/l20-vl-1.2b/data/highres-evidence-search-pilot-v1/audit/highres-evidence-search-sheet-03.png",
+      "sha256": "eab5755bba17c931d24bc474ffc5f4492b60de7999d7189446a7e298a4ff0908"
+    }
+  ],
+  "builder_sha256": "95c48eaa25bbc1298b22088cf589bb731fbfa535bee817d0e0f53292b903eed8",
+  "claim_boundary": "This programmatic corpus can diagnose one bounded evidence-acquisition mechanism. Passing generation, visual audit, or a future model test cannot establish natural-image, document, GUI, or general multimodal capability. The STOP task is intentionally simple and must not be treated as a broad abstention benchmark.",
+  "completed_at": "2026-09-14T11:07:06.404610+00:00",
+  "counts": [
+    {
+      "expected_action": "STOP",
+      "rows": 48,
+      "split": "development",
+      "task": "read_global_border"
+    },
+    {
+      "expected_action": "POINT",
+      "rows": 48,
+      "split": "development",
+      "task": "read_local_digit"
+    },
+    {
+      "expected_action": "STOP",
+      "rows": 48,
+      "split": "sealed_test",
+      "task": "read_global_border"
+    },
+    {
+      "expected_action": "POINT",
+      "rows": 48,
+      "split": "sealed_test",
+      "task": "read_local_digit"
+    },
+    {
+      "expected_action": "STOP",
+      "rows": 224,
+      "split": "train",
+      "task": "read_global_border"
+    },
+    {
+      "expected_action": "POINT",
+      "rows": 224,
+      "split": "train",
+      "task": "read_local_digit"
+    }
+  ],
+  "families": 320,
+  "font": {
+    "path": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+    "sha256": "5c1247acef7f2b8522a31742c76d6adcb5569bacc0be7ceaa4dc39dd252ce895"
+  },
+  "manifest": {
+    "bytes": 644158,
+    "path": "/home/hhai/l20-vl-1.2b/data/highres-evidence-search-pilot-v1/manifest.jsonl",
+    "sha256": "ddff8c102a9b7533ae5f934f80d5777e67bcc0668651db41ec5781edf10710db"
+  },
+  "model_evaluation_started": false,
+  "model_under_test_accessed": false,
+  "protocol": {
+    "path": "highres_evidence_search_pilot_v1_protocol.json",
+    "sha256": "4f3397c5e52196ba59a0241de405cf55bfe257fd6c8f8621fcdd32a1300a26ce"
+  },
+  "rows": 640,
+  "schema_version": "2026-09-14-v1",
+  "status": "complete_highres_evidence_search_pilot_generation",
+  "total_image_bytes": 21835020,
+  "training_started": false,
+  "unique_image_sha256": 640
+}

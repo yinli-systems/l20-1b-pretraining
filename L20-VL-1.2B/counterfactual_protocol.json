@@ -1,0 +1,197 @@
+{
+  "protocol_version": "2026-09-13-v1",
+  "project": "Counterfactual Evidence-Preserving Visual Compression",
+  "status": "implementation_and_diagnostic_data_preflight",
+  "formal_training_authorized": false,
+  "automatic_stage_advance": false,
+  "primary_question": "At the same 49-token visual budget, training data, prediction-token budget, and backbone state, does cross-image preference-delta preservation improve joint correctness on answer-changing visual interventions over ordinary KD plus counterfactual supervision plus invariance?",
+  "novelty_boundary": {
+    "not_claimed_as_novel": [
+      "small VLM construction",
+      "visual token compression",
+      "counterfactual image training",
+      "sensitivity and invariance supervision",
+      "full-token teacher distillation",
+      "relational knowledge distillation"
+    ],
+    "hypothesis_under_test": "A capacity-limited visual bottleneck benefits when the student explicitly preserves the full-token model's cross-image answer-preference difference for answer-changing image pairs.",
+    "claim_status": "unproven_until_strong_baseline_and_ablations_pass"
+  },
+  "parents": {
+    "language": {
+      "name": "AliceYin/L20-1B-20B-Base",
+      "parameters": 1100048384,
+      "source": "released_20B_base_not_continuation_A_or_B"
+    },
+    "vision": {
+      "name": "google/siglip2-base-patch16-224",
+      "revision": "75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2",
+      "resolution": 224,
+      "patch_size": 16,
+      "input_visual_tokens": 196,
+      "weights_sha256": "612923381c76ec5a9bed335d1c48827e3f2e506ac31b044b63b2031fadee6a0b",
+      "initially_frozen": true
+    }
+  },
+  "resolution_decision": {
+    "primary": "keep_verified_224_encoder_to_avoid_confounding_backbone_and_compression_changes",
+    "full_tokens": 196,
+    "primary_compressed_tokens": 49,
+    "compression_ratio": 4.0,
+    "deferred_control": "siglip2-base-patch16-256_with_256_to_64_tokens_only_if_full_token_224_is_resolution_limited"
+  },
+  "required_foundation": {
+    "full_token_vlm_checkpoint_status": "not_yet_trained",
+    "requirement": "A conventionally aligned full-token VLM must meet the frozen visual floor before any compression-induced failure claim.",
+    "visual_floor": {
+      "paired_synthetic_joint_accuracy_percent_gte": 70.0,
+      "true_vs_no_image_lower_95_ci_pp_gt": 0.0,
+      "true_vs_random_image_lower_95_ci_pp_gt": 0.0
+    },
+    "failure_action": "improve_basic_visual_alignment_without_adding_the_proposed_delta_loss"
+  },
+  "diagnostic_data": {
+    "synthetic_pair_target": 5000,
+    "image_variants_per_pair": ["base", "answer_changing_edit", "answer_invariant_edit"],
+    "tasks": [
+      "count",
+      "color_binding",
+      "shape_binding",
+      "left_right_relation",
+      "above_below_relation"
+    ],
+    "answers": ["yes", "no"],
+    "split": {
+      "train_percent": 70,
+      "development_percent": 15,
+      "test_percent": 15,
+      "atomic_unit": "scene_family_id",
+      "stratify_by": ["task", "base_answer"],
+      "cross_split_variant_overlap_allowed": false
+    },
+    "required_manifest_fields": [
+      "pair_id",
+      "scene_family_id",
+      "split",
+      "task",
+      "question",
+      "candidate_answers",
+      "base_answer",
+      "edited_answer",
+      "invariant_answer",
+      "base_image_sha256",
+      "edited_image_sha256",
+      "invariant_image_sha256",
+      "relevant_edit",
+      "invariant_edit",
+      "oracle_query",
+      "scene_state",
+      "render_seeds"
+    ],
+    "status": "generator_implementation_authorized_but_training_use_not_authorized"
+  },
+  "experiment_matrix": {
+    "reference_and_architecture_controls": [
+      "full_token_196_reference",
+      "parameter_free_2d_adaptive_pool_49_deco_style",
+      "learned_query_compressor_49_answer_supervision"
+    ],
+    "primary_49_token_sequence": [
+      "answer_supervision",
+      "answer_supervision_plus_ordinary_full_token_kd",
+      "answer_supervision_plus_kd_plus_counterfactual_supervision_plus_invariance",
+      "strong_combination_plus_cross_image_preference_delta"
+    ],
+    "mandatory_ablations": [
+      "shuffle_pair_links_with_data_labels_and_compute_unchanged",
+      "apply_delta_objective_to_full_token_branch"
+    ],
+    "primary_comparison": "strong_combination_plus_cross_image_preference_delta_vs_answer_supervision_plus_kd_plus_counterfactual_supervision_plus_invariance",
+    "equalization": [
+      "same_training_examples",
+      "same_prediction_token_budget",
+      "same_optimizer_and_schedule",
+      "same_backbone_checkpoint",
+      "same_49_visual_tokens",
+      "report_but_do_not_equalize_wall_clock"
+    ]
+  },
+  "loss": {
+    "student_preference": "log_p_correct_answer_minus_log_p_alternative_answer",
+    "delta": "student_preference_base_minus_student_preference_answer_changing_edit",
+    "target": "stop_gradient_full_token_preference_base_minus_full_token_preference_answer_changing_edit",
+    "penalty": "smooth_l1_huber",
+    "teacher_reliability": "use_delta_distillation_only_when_full_token_reference_is_correct_on_both_images",
+    "teacher_coverage_must_be_reported": true,
+    "weights": "selected_on_development_only_and_frozen_before_test"
+  },
+  "metrics": {
+    "primary": "paired_joint_accuracy_base_and_answer_changing_edit_both_correct",
+    "secondary": [
+      "compression_induced_failure_rate_conditioned_on_full_token_pair_correct",
+      "base_and_invariant_edit_joint_accuracy",
+      "teacher_pair_coverage",
+      "ordinary_single_image_accuracy",
+      "per_task_accuracy",
+      "true_vs_no_image_gain",
+      "true_vs_random_image_gain"
+    ],
+    "efficiency": [
+      "time_to_first_token",
+      "language_prefill_seconds",
+      "peak_vram_gib",
+      "fixed_output_length_latency",
+      "training_gpu_hours",
+      "teacher_cache_gpu_hours",
+      "feature_cache_gpu_hours",
+      "data_filtering_compute"
+    ]
+  },
+  "statistics": {
+    "method": "paired_cluster_bootstrap",
+    "cluster": "scene_family_id_or_original_real_image_family",
+    "resamples": 10000,
+    "confidence_level": 0.95,
+    "seed": 20260913,
+    "confirmatory_training_seeds": 3,
+    "primary_practical_effect_pp": 2.0,
+    "primary_significance_rule": "proposed_minus_strong_baseline_lower_95_ci_pp_gt_0",
+    "equivalence_claim_rule": "requires_a_separately_predeclared_equivalence_margin_not_merely_a_ci_that_crosses_zero"
+  },
+  "real_image_transfer": {
+    "candidates": ["GQA", "MMVP"],
+    "status": "blocked_until_exact_revisions_splits_licenses_and_artifact_hashes_are_frozen",
+    "purpose": "test_transfer_beyond_programmatic_scenes_not_train_on_evaluation_images"
+  },
+  "stage_gates": [
+    {
+      "id": "A-full-token-foundation",
+      "status": "blocked_on_training_data_admission",
+      "advance_when": "full-token visual floor passes"
+    },
+    {
+      "id": "B-5000-pair-diagnosis",
+      "status": "generator_implementation_active_but_model_diagnosis_blocked_on_A",
+      "advance_when": "full-token pair accuracy passes and full-token-minus-49-token gap is at least 2 percentage points"
+    },
+    {
+      "id": "C-four-primary-49-token-experiments",
+      "status": "blocked_on_B",
+      "advance_when": "proposed method beats the strong combination baseline under the frozen CI rule and mandatory ablations support the mechanism"
+    },
+    {
+      "id": "D-real-transfer-and-second-backbone",
+      "status": "blocked_on_C_and_new_budget",
+      "advance_when": "real-image transfer and second-backbone replication both support the claim"
+    }
+  ],
+  "stop_rules": [
+    "stop_compression_research_if_full_token_reference_misses_the_visual_floor",
+    "stop_if_full_token_minus_49_token_pair_joint_gap_is_less_than_2_percentage_points",
+    "reject_delta_mechanism_if_shuffled_pairs_match_the_proposed_gain",
+    "reframe_as_general_grounding_if_full_token_and_compressed_models_gain_equally",
+    "do_not_claim_efficiency_if_end_to_end_latency_or_memory_does_not_improve",
+    "preserve_negative_results_and_never_auto_promote"
+  ],
+  "decision": "Implement the generator, metrics, losses, and baselines now. Do not start formal training until a full-token data mixture and Stage A are separately admitted."
+}

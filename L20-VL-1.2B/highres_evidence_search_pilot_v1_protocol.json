@@ -1,0 +1,53 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "experiment_id": "highres_evidence_search_pilot_v1",
+  "status": "authorized_highres_evidence_search_pilot_generation_only_v1",
+  "purpose": "Generate a bounded, fully programmatic 1024-pixel corpus that separates questions requiring one local high-resolution crop from questions answerable using a global view, before any router or responder training.",
+  "training_authorized": false,
+  "model_evaluation_authorized": false,
+  "seed": 20260914,
+  "splits": {
+    "train": 224,
+    "development": 48,
+    "sealed_test": 48
+  },
+  "split_unit": "scene family; base and answer-changing variants remain in the same split",
+  "tasks": {
+    "read_local_digit": {
+      "expected_action": "POINT",
+      "description": "Identify a globally visible color-shape address, then read a small digit that is intended to be lost in the 1024-to-224 global resize but preserved by a source-resolution panel crop."
+    },
+    "read_global_border": {
+      "expected_action": "STOP",
+      "description": "Read a prominent outer-border color without purchasing a crop."
+    }
+  },
+  "render": {
+    "image_size": 1024,
+    "pointer_grid_size": 14,
+    "panel_font_pixels": 18,
+    "digit_font_pixels": 14,
+    "png_compress_level": 9
+  },
+  "font": {
+    "path": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+    "sha256": "5c1247acef7f2b8522a31742c76d6adcb5569bacc0be7ceaa4dc39dd252ce895"
+  },
+  "source_code": {
+    "builder_sha256": "95c48eaa25bbc1298b22088cf589bb731fbfa535bee817d0e0f53292b903eed8",
+    "test_sha256": "3dea2a614cf6d87c74fe652d9f9d153f6c3326b51f5369e4bf5ee731a15081d9"
+  },
+  "output": {
+    "root": "/home/hhai/l20-vl-1.2b/data/highres-evidence-search-pilot-v1",
+    "receipt": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-search-pilot-v1-generation.json"
+  },
+  "required_before_training": [
+    "all 640 rendered images have unique SHA256 values",
+    "manifest and audit-sheet hashes are recorded",
+    "all 48 frozen audit-sheet items are visually inspected for target identity, answer, counterfactual change, and crop legibility",
+    "a preprocessing-floor test confirms local digits are materially harder in the 224-pixel global view than in the oracle crop",
+    "sealed_test remains inaccessible to checkpoint, threshold, prompt, or architecture selection",
+    "a separate training protocol pins parent checkpoints, losses, baselines, budget, and stop rules"
+  ],
+  "claim_boundary": "This programmatic corpus can diagnose one bounded evidence-acquisition mechanism. Passing generation, visual audit, or a future model test cannot establish natural-image, document, GUI, or general multimodal capability. The STOP task is intentionally simple and must not be treated as a broad abstention benchmark."
+}

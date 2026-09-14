@@ -1,0 +1,248 @@
+{
+  "candidate_order_invariance": {
+    "crop": {
+      "passes": true,
+      "prediction_mismatches": 0,
+      "rows": 48
+    },
+    "global": {
+      "passes": true,
+      "prediction_mismatches": 0,
+      "rows": 96
+    },
+    "global_crop": {
+      "passes": true,
+      "prediction_mismatches": 0,
+      "rows": 48
+    },
+    "global_mismatched_crop": {
+      "passes": true,
+      "prediction_mismatches": 0,
+      "rows": 48
+    },
+    "no_image": {
+      "passes": true,
+      "prediction_mismatches": 0,
+      "rows": 96
+    }
+  },
+  "claim_boundary": "This one-shot confirmation tests the selected oracle-crop responder on 24 previously untouched local-evidence scene families from the same deterministic synthetic generator. It can support the crop-responder mechanism under this distribution. It does not establish learned localization, natural-image OCR, open-ended generation, unrelated-skill preservation, deployment readiness, or superiority over another VLM. The all-task oracle-policy metric is descriptive because the global-border responder was not adapted by this experiment.",
+  "completed_at": "2026-09-14T11:56:28.996249+00:00",
+  "decision": "confirm_crop_responder_mechanism",
+  "elapsed_seconds": 21.683790882118046,
+  "gate_passed": true,
+  "metrics": {
+    "crop": {
+      "families": 24,
+      "family_joint_accuracy": 0.4583333333333333,
+      "prediction_distribution": {
+        "0": 7,
+        "1": 5,
+        "2": 5,
+        "3": 1,
+        "4": 4,
+        "5": 8,
+        "6": 1,
+        "9": 16,
+        "__TIE__": 1
+      },
+      "row_accuracy": 0.6875,
+      "rows": 48
+    },
+    "global": {
+      "families": 48,
+      "family_joint_accuracy": 0.0625,
+      "prediction_distribution": {
+        "0": 10,
+        "1": 33,
+        "5": 2,
+        "__TIE__": 3,
+        "purple": 18,
+        "teal": 30
+      },
+      "row_accuracy": 0.23958333333333334,
+      "rows": 96
+    },
+    "global_crop": {
+      "families": 24,
+      "family_joint_accuracy": 1.0,
+      "prediction_distribution": {
+        "0": 6,
+        "1": 1,
+        "2": 7,
+        "3": 3,
+        "4": 7,
+        "5": 5,
+        "6": 1,
+        "7": 3,
+        "8": 5,
+        "9": 10
+      },
+      "row_accuracy": 1.0,
+      "rows": 48
+    },
+    "global_mismatched_crop": {
+      "families": 24,
+      "family_joint_accuracy": 0.041666666666666664,
+      "prediction_distribution": {
+        "0": 6,
+        "1": 1,
+        "2": 7,
+        "3": 3,
+        "4": 7,
+        "5": 5,
+        "6": 1,
+        "7": 3,
+        "8": 5,
+        "9": 10
+      },
+      "row_accuracy": 0.16666666666666666,
+      "rows": 48
+    },
+    "global_task_only": {
+      "families": 24,
+      "family_joint_accuracy": 0.125,
+      "prediction_distribution": {
+        "purple": 18,
+        "teal": 30
+      },
+      "row_accuracy": 0.3958333333333333,
+      "rows": 48
+    },
+    "no_image": {
+      "families": 48,
+      "family_joint_accuracy": 0.0,
+      "prediction_distribution": {
+        "1": 30,
+        "2": 4,
+        "5": 2,
+        "__TIE__": 12,
+        "teal": 48
+      },
+      "row_accuracy": 0.13541666666666666,
+      "rows": 96
+    },
+    "oracle_action_policy_all_tasks": {
+      "families": 48,
+      "family_joint_accuracy": 0.5625,
+      "prediction_distribution": {
+        "0": 6,
+        "1": 1,
+        "2": 7,
+        "3": 3,
+        "4": 7,
+        "5": 5,
+        "6": 1,
+        "7": 3,
+        "8": 5,
+        "9": 10,
+        "purple": 18,
+        "teal": 30
+      },
+      "row_accuracy": 0.6979166666666666,
+      "rows": 96
+    }
+  },
+  "paired_deltas": {
+    "crop_minus_global": {
+      "bootstrap_samples": 10000,
+      "ci95_high": 0.7291666666666666,
+      "ci95_low": 0.4791666666666667,
+      "clusters": 24,
+      "point_estimate": 0.6041666666666666
+    },
+    "global_crop_minus_global": {
+      "bootstrap_samples": 10000,
+      "ci95_high": 0.9791666666666666,
+      "ci95_low": 0.8333333333333334,
+      "clusters": 24,
+      "point_estimate": 0.9166666666666666
+    },
+    "global_crop_minus_mismatched_crop": {
+      "bootstrap_samples": 10000,
+      "ci95_high": 0.9375,
+      "ci95_low": 0.7083333333333334,
+      "clusters": 24,
+      "point_estimate": 0.8333333333333334
+    }
+  },
+  "parameter_updates": 0,
+  "peak_cuda_memory_bytes": 4111967744,
+  "predictions": {
+    "bytes": 314048,
+    "path": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-crop-bridge-sealed-confirmation-v1-predictions.jsonl",
+    "sha256": "d2d6f788d3b2f9f255e5546885c07141213abfabdc711bef08e84939fc8ef2f8"
+  },
+  "protocol": {
+    "path": "highres_evidence_crop_bridge_confirmation_v1_protocol.json",
+    "sha256": "062467ff81e552cdbdbd1e35b3453573f54956f3ebc64a002dab93d7ef4200e4"
+  },
+  "rows": {
+    "all_sealed_test": 96,
+    "global_border": 48,
+    "local_digit": 48
+  },
+  "schema_version": "2026-09-14-v1",
+  "sealed_test_access_count": 1,
+  "selected_checkpoint": {
+    "path": "/home/hhai/l20-vl-1.2b/runs/highres-evidence-crop-bridge-v1/step-000140/crop_bridge.safetensors",
+    "selection_rule": "development family-joint accuracy, row accuracy, true-minus-mismatched effect, then earliest step",
+    "sha256": "9ef26b80ab3b99e89139f757956cf972c5b4d0b04d254755dbc93d867efff46e",
+    "step": 140
+  },
+  "status": "complete_highres_evidence_crop_bridge_one_shot_sealed_confirmation",
+  "verified_parent_records": {
+    "bridge_sha256": "d4b04aa98e5430a1fe5a11918da87a67007d283116b4e843c1d640fc7c31f6ce",
+    "language": {
+      "config.json": {
+        "bytes": 692,
+        "sha256": "03b9b24c54c1f271a05e317f3f7edc844bb3dce3b03ca3d3c96c7d16944dc9cb"
+      },
+      "generation_config.json": {
+        "bytes": 81,
+        "sha256": "1f5364a8fcd616f171b6633e64d2b3a7dd00f4b71953030a9d102365da57ae4e"
+      },
+      "model-00001-of-00003.safetensors": {
+        "bytes": 1625415432,
+        "sha256": "dd9578d156a9c5d70d9ea70b212bd180fb0d809d079a12fe8cc4ccbdd485ceac"
+      },
+      "model-00002-of-00003.safetensors": {
+        "bytes": 1585603608,
+        "sha256": "2d94a7301798a60bb06199190aaf8912bed7c4c4829f60e154ea3b2b5321f2e4"
+      },
+      "model-00003-of-00003.safetensors": {
+        "bytes": 1189197352,
+        "sha256": "a5a9754c5d8b94c7bef8da4b9211d27335f5013e0519a1106046c6c60a84e0ea"
+      },
+      "model.safetensors.index.json": {
+        "bytes": 16555,
+        "sha256": "382f6cc555a9876edbb7d13281774aca548c51528d79da21a0e631a88f6157c6"
+      },
+      "model_config.yaml": {
+        "bytes": 1162,
+        "sha256": "030d868464d4466007747b8f28c8fe5a43884b5aa4e28580d01b86df27b8ff8e"
+      },
+      "special_tokens_map.json": {
+        "bytes": 293,
+        "sha256": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193"
+      },
+      "tokenizer.json": {
+        "bytes": 2263083,
+        "sha256": "e755dfeeed1acab465839adc0988811983a3287db230a8d9bc0f74704208609c"
+      },
+      "tokenizer_config.json": {
+        "bytes": 665,
+        "sha256": "f5cb4892eb0751f37da45779eab1cab0b591ad2f4ec6261cc46292bb99e6b007"
+      }
+    },
+    "language_adapter_files": {
+      "adapter_config.json": "beb25b1266075702a22f78be2daa5f03625a0198514f0137a1284e974b06fc9b",
+      "adapter_model.safetensors": "b6b31eb6927d27ba2a0dbdc71f50adca68f95b849f39a05bdbba532cf61cbaa9"
+    },
+    "vision_artifacts": {
+      "config.json": "fe8b5fe6d5734360678fd71c11c21e1ea3364bd8598d34295d9206335973ffd7",
+      "model.safetensors": "612923381c76ec5a9bed335d1c48827e3f2e506ac31b044b63b2031fadee6a0b",
+      "preprocessor_config.json": "9b36b57ebaf20f09bf4c22100ccc21877ea6bfe5aead0c00c59f8af8ccefacfc"
+    }
+  }
+}

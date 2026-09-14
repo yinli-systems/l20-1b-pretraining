@@ -1,0 +1,59 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "authorized_posture_pose_feature_audit_only",
+  "training_authorized": false,
+  "automatic_training_start": false,
+  "purpose": "Use an independently pretrained pose estimator to extract target-box keypoint visibility and leg-geometry features on the fully human-audited first posture pilot, solely to design a frozen gate for an independent second pilot.",
+  "source_code": {
+    "audit_sha256": "47cfc6c16a677afceb6b92fff8084174a7ad6bdcc1c8de5e6e6f9cb5db2f3f0a",
+    "test_sha256": "a36a02e7766e385a0f10b9fb63704156b46d8cc75f75f3c2fbd0b47c2e103109"
+  },
+  "inputs": {
+    "pair_manifest": {
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-posture-pilot-v1/posture-pairs-v1.jsonl",
+      "sha256": "60e2a5ace1f84b3f0bd447f4ece94c7c3e065bbdd614eed79a190c5ebcbbea99"
+    },
+    "human_audit": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-pilot-human-audit-v1.json",
+      "sha256": "5baa09504f0e23c18b77be76eca1246750a7a56cede3fc2e64c6f199118ca601"
+    }
+  },
+  "model": {
+    "repository": "usyd-community/vitpose-base-simple",
+    "revision": "a93ac0c67e0b7e2c55287d21d4c460c8f3c54d45",
+    "license": "Apache-2.0",
+    "path": "/home/hhai/l20-vl-1.2b/models/vitpose-base-simple-a93ac0c",
+    "artifacts": {
+      "model": {
+        "path": "/home/hhai/l20-vl-1.2b/models/vitpose-base-simple-a93ac0c/model.safetensors",
+        "sha256": "85375373893ddd3641f3912821073e53f5435f9e966e1dca59d004454bfe4fdf"
+      },
+      "config": {
+        "path": "/home/hhai/l20-vl-1.2b/models/vitpose-base-simple-a93ac0c/config.json",
+        "sha256": "72fc2f0fc29eef43e87aa0ddd4c1269c5226ae157a99d0057019dd40129fed7c"
+      },
+      "preprocessor": {
+        "path": "/home/hhai/l20-vl-1.2b/models/vitpose-base-simple-a93ac0c/preprocessor_config.json",
+        "sha256": "9b11cadc98c30b968a70cc1658ce1fbd74b721b0f21402a2ff8bc1dc9d1474a0"
+      }
+    }
+  },
+  "inference": {
+    "device": "cuda",
+    "batch_size": 16,
+    "seed": 20260914,
+    "floating_point": "float32",
+    "target_boxes": "frozen Open Images person boxes; no detector substitution"
+  },
+  "feature_extraction": {
+    "joint_score_threshold": 0.15,
+    "keypoint_schema": "COCO-17",
+    "threshold_role": "feature visibility only; no accept/reject gate is authorized in this protocol"
+  },
+  "outputs": {
+    "feature_manifest": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-vitpose-features-v1.jsonl",
+    "receipt": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-vitpose-feature-audit-v1.json"
+  },
+  "analysis_boundary": "The first pilot is a development set. Any gate chosen after this feature extraction must be frozen before it is applied to a disjoint second pilot, whose human audit alone determines whether data construction can proceed.",
+  "claim_boundary": "This protocol produces curation features only. It does not validate the data, authorize training, or support multimodal model-quality or novelty claims."
+}

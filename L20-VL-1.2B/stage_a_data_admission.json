@@ -1,0 +1,62 @@
+{
+  "schema_version": "2026-09-13-v2",
+  "supersedes_admission_sha256": "4cc739d8ff8c823be00405d83995935116ce605739cba3387ea09b0a560cacc7",
+  "source_acquisition_admission_sha256": "4cc739d8ff8c823be00405d83995935116ce605739cba3387ea09b0a560cacc7",
+  "amendment": "The user explicitly approved up to 20GB for the Open Images pixel subset after the v1 8GB component cap stopped the first content-audit attempt. The overall 50GB acquisition cap is unchanged.",
+  "authorized_by_user": true,
+  "authorized_at": "2026-09-13",
+  "purpose": "bounded Stage-A full-token visual foundation and controlled visual-use validation",
+  "download_authorized": true,
+  "audit_authorized": true,
+  "stage_a_training_authorized_after_all_gates_pass": true,
+  "formal_release_authorized": false,
+  "automatic_training_start": false,
+  "limits": {
+    "download_bytes_max": 50000000000,
+    "stage_a_gpu_hours_max": 12.0,
+    "destination": "/home/hhai/l20-vl-1.2b/data/stage-a-v1",
+    "minimum_free_bytes_before_download": 70000000000,
+    "minimum_free_bytes_after_preparation": 20000000000
+  },
+  "sources": {
+    "clevr_v1_0": {
+      "official_page": "https://cs.stanford.edu/people/jcjohns/clevr/",
+      "artifact_url": "https://dl.fbaipublicfiles.com/clevr/CLEVR_v1.0.zip",
+      "expected_bytes": 19021600724,
+      "version": "CLEVR_v1.0",
+      "license": "CC-BY-4.0",
+      "allowed_splits": ["train", "val"],
+      "prohibited_split": "test",
+      "use": "programmatically generated visual reasoning questions with scene and functional-program supervision"
+    },
+    "open_images_localized_narratives": {
+      "official_page": "https://google.github.io/localized-narratives/",
+      "captions_url": "https://storage.googleapis.com/localized-narratives/annotations/open_images_train_v6_captions.jsonl",
+      "captions_expected_bytes": 138522519,
+      "caption_license": "CC-BY-4.0",
+      "image_metadata_url": "https://storage.googleapis.com/openimages/2018_04/train/train-images-boxable-with-rotation.csv",
+      "image_metadata_expected_bytes": 638407721,
+      "required_image_license": "https://creativecommons.org/licenses/by/2.0/",
+      "image_url_template": "https://open-images-dataset.s3.amazonaws.com/train/{image_id}.jpg",
+      "target_images": 25000,
+      "maximum_image_bytes": 20000000000,
+      "maximum_single_image_bytes": 20000000,
+      "use": "human-authored natural-image captions with per-image attribution and license metadata"
+    }
+  },
+  "quality_gates": {
+    "all_artifact_sizes_and_hashes_recorded": true,
+    "archive_path_traversal_check": true,
+    "all_images_decode_and_are_at_least_224_by_224": true,
+    "exact_image_duplicates_removed": true,
+    "dhash_hamming_distance_lte_4_duplicates_removed": true,
+    "exact_normalized_caption_duplicates_removed": true,
+    "email_phone_url_and_high_risk_caption_filters": true,
+    "open_images_license_author_landing_url_and_attribution_preserved": true,
+    "scene_or_image_atomic_split": true,
+    "controlled_diagnostic_hash_overlap_zero": true,
+    "stratified_human_audit_required": true,
+    "training_manifest_hash_frozen": true
+  },
+  "claim_boundary": "Passing these gates admits a bounded Stage-A research pilot only. It does not establish exhaustive rights, privacy, factuality, benchmark cleanliness, model quality, or release readiness."
+}

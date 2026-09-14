@@ -1,0 +1,66 @@
+{
+  "claim_boundary": "This train/development-only linear probe uses programmatic oracle locations and one deterministic synthetic rendering family. It can reject or admit the intended preprocessing information gap for mechanism development. It cannot establish free-form OCR, learned localization, natural-image transfer, language-model use of the crop, router quality, or superiority over another VLM.",
+  "completed_at": "2026-09-14T11:17:13.208075+00:00",
+  "crop_minus_global_row_accuracy": {
+    "bootstrap_samples": 10000,
+    "ci95_high": 0.6875,
+    "ci95_low": 0.3541666666666667,
+    "cluster_unit": "scene_family",
+    "point_estimate": 0.5208333333333334
+  },
+  "decision": "pass_crop_information_floor",
+  "development_predictions": {
+    "bytes": 6168,
+    "path": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-preprocessing-floor-v1-development-predictions.jsonl",
+    "sha256": "78ce7884603c7a9c584322303148c7e38ee246f1f4011073d316d87d03f15b16"
+  },
+  "development_rows": 48,
+  "feature_cache": {
+    "bytes": 773840,
+    "path": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-preprocessing-floor-v1-features.npz",
+    "sha256": "f774744e33630e68b4a54c47f0bca7f0b5c995fb5ee4b2c7a422cef3fd75322f"
+  },
+  "gate": {
+    "maximum_global_row_accuracy": 0.5,
+    "minimum_crop_family_joint_accuracy": 0.5,
+    "minimum_crop_minus_global_ci95_low": 0.2,
+    "minimum_crop_row_accuracy": 0.7,
+    "rationale": "The synthetic task is useful only if the same frozen encoder makes the oracle crop reliably readable while the globally resized oracle location remains substantially less informative."
+  },
+  "gate_passed": true,
+  "global_224_oracle_digit_patch": {
+    "families": 24,
+    "family_joint_accuracy": 0.2916666666666667,
+    "row_accuracy": 0.4791666666666667,
+    "rows": 48
+  },
+  "language_model_accessed": false,
+  "next_allowed_step": "Freeze an oracle-crop responder pilot and non-value baselines on train/development only.",
+  "parameter_updates": 0,
+  "peak_cuda_memory_bytes": 705602048,
+  "probe_sha256": "b0788b6d7217bdae93c7d1cf2b6d209e1177113194d6765d69b5afa848f084bb",
+  "protocol": {
+    "path": "highres_evidence_preprocessing_floor_v1_protocol.json",
+    "sha256": "9c9d00af5731be936bab610796b1d917907b760f488d46c0df3d1ce62a3121b4"
+  },
+  "rows_profiled": 272,
+  "schema_version": "2026-09-14-v1",
+  "sealed_test_rows_accessed": 0,
+  "source_crop_224_oracle_digit_patch": {
+    "families": 24,
+    "family_joint_accuracy": 1.0,
+    "row_accuracy": 1.0,
+    "rows": 48
+  },
+  "status": "complete_highres_evidence_preprocessing_floor_probe",
+  "train_rows": 224,
+  "vision_forward_seconds": 5.866396308876574,
+  "vision_model": {
+    "dtype": "bfloat16",
+    "feature_layer": -1,
+    "frozen": true,
+    "id": "google/siglip2-base-patch16-224",
+    "path": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55",
+    "revision": "75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2"
+  }
+}

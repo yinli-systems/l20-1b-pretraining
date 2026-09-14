@@ -1,0 +1,87 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "experiment_id": "highres_evidence_preprocessing_floor_v1",
+  "status": "authorized_highres_evidence_preprocessing_floor_probe_only_v1",
+  "purpose": "Test whether the pinned frozen SigLIP2 representation contains substantially more answer-bearing digit information in a source-resolution oracle crop than in the corresponding oracle patch after the complete image is resized to 224 pixels.",
+  "language_model_access_authorized": false,
+  "parameter_update_authorized": false,
+  "sealed_test_access_authorized": false,
+  "prerequisites": {
+    "generation_receipt": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-search-pilot-v1-generation.json",
+      "sha256": "38018a5c16ae0c5a0f30f9d4ce2680d753bd29c26e6eec6bf5dae451e2d6d0f3"
+    },
+    "primary_visual_audit": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-search-pilot-v1-primary-visual-audit.json",
+      "sha256": "c247d81024367f7e872d36d99e5950079aca2b54bd5021521aabe05d63d82845"
+    },
+    "manifest": {
+      "path": "/home/hhai/l20-vl-1.2b/data/highres-evidence-search-pilot-v1/manifest.jsonl",
+      "sha256": "ddff8c102a9b7533ae5f934f80d5777e67bcc0668651db41ec5781edf10710db"
+    }
+  },
+  "vision_artifacts": {
+    "model_weights": {
+      "path": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55/model.safetensors",
+      "sha256": "612923381c76ec5a9bed335d1c48827e3f2e506ac31b044b63b2031fadee6a0b"
+    },
+    "model_config": {
+      "path": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55/config.json",
+      "sha256": "fe8b5fe6d5734360678fd71c11c21e1ea3364bd8598d34295d9206335973ffd7"
+    },
+    "processor_config": {
+      "path": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55/preprocessor_config.json",
+      "sha256": "9b36b57ebaf20f09bf4c22100ccc21877ea6bfe5aead0c00c59f8af8ccefacfc"
+    }
+  },
+  "vision_model": {
+    "id": "google/siglip2-base-patch16-224",
+    "revision": "75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2",
+    "path": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55",
+    "dtype": "bfloat16",
+    "feature_layer": -1,
+    "frozen": true
+  },
+  "data": {
+    "root": "/home/hhai/l20-vl-1.2b/data/highres-evidence-search-pilot-v1",
+    "manifest": "/home/hhai/l20-vl-1.2b/data/highres-evidence-search-pilot-v1/manifest.jsonl",
+    "image_size": 1024,
+    "allowed_splits": ["train", "development"],
+    "blocked_split": "sealed_test",
+    "task": "read_local_digit",
+    "split_unit": "scene_family"
+  },
+  "probe": {
+    "representation": "one frozen final-layer patch feature at the programmatically known digit location",
+    "global_arm": "complete 1024-pixel image processed by the pinned 224-pixel processor, then oracle patch selected",
+    "crop_arm": "programmatic target panel cropped from the original 1024-pixel image, processed independently at 224 pixels, then oracle digit patch selected",
+    "classifier": "StandardScaler plus multinomial LogisticRegression with fixed C=1.0 and random_state=20260914",
+    "vision_patch_grid": 14,
+    "batch_size": 64,
+    "checkpoint_selection": "none",
+    "hyperparameter_search": "none"
+  },
+  "statistics": {
+    "primary_delta": "source_crop_224 row accuracy minus global_224 row accuracy",
+    "bootstrap_samples": 10000,
+    "seed": 20260914,
+    "cluster_unit": "scene_family"
+  },
+  "gate": {
+    "minimum_crop_row_accuracy": 0.7,
+    "minimum_crop_family_joint_accuracy": 0.5,
+    "maximum_global_row_accuracy": 0.5,
+    "minimum_crop_minus_global_ci95_low": 0.2,
+    "rationale": "The synthetic task is useful only if the same frozen encoder makes the oracle crop reliably readable while the globally resized oracle location remains substantially less informative."
+  },
+  "source_code": {
+    "probe_sha256": "b0788b6d7217bdae93c7d1cf2b6d209e1177113194d6765d69b5afa848f084bb",
+    "test_sha256": "56b01a67565b9be7ef1194552663662a2181aa5a6dc90133057499837a29df3a"
+  },
+  "output": {
+    "feature_cache": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-preprocessing-floor-v1-features.npz",
+    "development_predictions": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-preprocessing-floor-v1-development-predictions.jsonl",
+    "receipt": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-preprocessing-floor-v1.json"
+  },
+  "claim_boundary": "This train/development-only linear probe uses programmatic oracle locations and one deterministic synthetic rendering family. It can reject or admit the intended preprocessing information gap for mechanism development. It cannot establish free-form OCR, learned localization, natural-image transfer, language-model use of the crop, router quality, or superiority over another VLM."
+}

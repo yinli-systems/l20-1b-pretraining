@@ -1,0 +1,86 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "experiment_id": "openimages_evidence_router_zero_shot_v1",
+  "status": "authorized_openimages_evidence_router_zero_shot_diagnostic_v1",
+  "purpose": "Measure whether the frozen synthetic evidence router zero-shot localizes a red-boxed target in 154 exhaustively audited real OpenImages posture examples before authorizing any natural-image router training.",
+  "parameter_update_authorized": false,
+  "prerequisites": {
+    "target_manifest": {
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-posture-final-v1/posture-targets-final-v1.jsonl",
+      "sha256": "73c358fe687661b54cea6756d8a299be7e7477c4ac81a47f20c722c3b051526c"
+    },
+    "balanced_pair_build": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-final-pairs-v1-build.json",
+      "sha256": "d2580724291c3f54c1bab8b334cb492331e1a8b663923e142dcd9f35a7207881"
+    },
+    "candidate_human_audit": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-candidates-v2-human-audit.json",
+      "sha256": "652785c01d76454ec25670aa9c0d2ad28000f8a94b2d5e3069bf9dea3ea1e604"
+    },
+    "standing_supplement_human_audit": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-standing-supplement-v3-human-audit.json",
+      "sha256": "ebd09ab644fdfac072317af69013c310001bce2e1f623bcd69a484c53d342cec"
+    },
+    "synthetic_router_confirmation": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-router-scale-v2-confirmation.json",
+      "sha256": "719faa4bb98f33683c5fba51395df28ce3b5ab8e48899c9687b9299d9c944d62"
+    }
+  },
+  "parents": {
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base",
+    "language_release_manifest_sha256": "83e9a0982f96cfec65b109034669a9cc913e8b870201d2323805aecdaeabb051",
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55",
+    "vision_artifacts": {
+      "config.json": "fe8b5fe6d5734360678fd71c11c21e1ea3364bd8598d34295d9206335973ffd7",
+      "model.safetensors": "612923381c76ec5a9bed335d1c48827e3f2e506ac31b044b63b2031fadee6a0b",
+      "preprocessor_config.json": "9b36b57ebaf20f09bf4c22100ccc21877ea6bfe5aead0c00c59f8af8ccefacfc"
+    }
+  },
+  "checkpoint": {
+    "step": 480,
+    "path": "/home/hhai/l20-vl-1.2b/runs/highres-evidence-router-scale-v2/step-000480/router.safetensors",
+    "sha256": "df3f8ab31cbef9479930d6a3955e354b51a33e19c7606059b89bfd66ebf5d164",
+    "selection_and_confirmation": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-router-scale-v2-confirmation.json"
+  },
+  "architecture": {
+    "visual_tokens": 196,
+    "vision_feature_layer": -1
+  },
+  "data": {
+    "manifest": "/home/hhai/l20-vl-1.2b/data/openimages-posture-final-v1/posture-targets-final-v1.jsonl",
+    "expected_rows": 154,
+    "expected_unique_images": 154,
+    "human_audit": "exhaustive single-reviewer visual target census",
+    "training_use": false
+  },
+  "router": {
+    "vision_dim": 768,
+    "language_dim": 2048,
+    "rank": 64,
+    "patch_count": 196,
+    "minimum_predicted_gain": 0.1,
+    "minimum_action_probability": 0.05
+  },
+  "evaluation": {
+    "batch_rows": 32,
+    "max_text_tokens": 64,
+    "box_padding_fraction": 0.15,
+    "grid_size": 14,
+    "views": ["red_box_marked_full_image"],
+    "metrics": ["raw exact center", "raw within one center patch", "raw point inside box", "deployed acquisition rate"],
+    "confidence_interval": "Wilson 95% interval over unique images"
+  },
+  "source_code": {
+    "evaluator_sha256": "1402b97b6d83667254d7ff99e9f1ab3fec4fec183f852f67fca4b6c8c22d966b",
+    "test_sha256": "2333c3bc8ef69d5460f39d5dbeb779f2b9d4f9224c5a94734ca406b0ae6c066a",
+    "posture_evaluator_sha256": "657c1f0d4ea3b0465a564d20145cfb484ba5bda22c9c291e996d26eaa271e38e",
+    "router_module_sha256": "98039416f24d9780412100115c60825f061be8ec9b5ef803933b884f3f541907",
+    "modeling_sha256": "7ee504253640c9c7ce7e121b212a31d16d9e57ef9e05f55ebcbd67573febeac9",
+    "router_trainer_sha256": "f1eca2f8536d6bd593dbb0fb8243791fb63df582eb062739e5fca911e673f303"
+  },
+  "output": {
+    "receipt": "/home/hhai/l20-vl-1.2b/evidence/openimages-evidence-router-zero-shot-v1.json",
+    "predictions": "/home/hhai/l20-vl-1.2b/evidence/openimages-evidence-router-zero-shot-v1-predictions.jsonl"
+  },
+  "claim_boundary": "This is a no-update zero-shot diagnostic on one narrow, human-audited real-image posture set whose red boxes are rendered at evaluation time. It may falsify direct synthetic-to-real localization transfer. It cannot establish general grounding, natural-image training quality, open-ended VQA, OCR, deployment readiness, novelty, or superiority."
+}

@@ -1,0 +1,156 @@
+{
+  "schema_version": "2026-09-14-v2",
+  "status": "authorized_naturalbench_external_zero_shot_v2",
+  "experiment_id": "naturalbench_external_zero_shot_v2",
+  "authorized_by_user": true,
+  "training_allowed": false,
+  "formal_evaluation": true,
+  "purpose": "Test whether the synthetic address-value routing gain transfers without tuning to paired natural-image question answering.",
+  "rerun_reason": "The v1 process was OOM-killed before model loading, GPU allocation, predictions, or metrics. V2 changes dataset access only: benchmark images are decoded lazily per frozen batch.",
+  "dataset": {
+    "name": "BaiqiL/NaturalBench",
+    "root": "/home/hhai/l20-vl-1.2b/external/NaturalBench-source",
+    "revision": "c8180c14e7408287a385bd7851ef8816965f638d",
+    "expected_groups": 1900,
+    "expected_image_question_pairs": 7600,
+    "files": {
+      "README.md": "18b4c4da8dbc6866ee726614aba02a8b4ac6bb59fef9a335e11adc4a930cdcaa",
+      "data/train-00000-of-00003.parquet": "5209bf02d5b960032d52051fcd83361371f166399f13fa191ba18f62ab18945f",
+      "data/train-00001-of-00003.parquet": "6b059d8ad76122985f48cf548678394b53f1f44db49be5c3daf858011a463956",
+      "data/train-00002-of-00003.parquet": "760a59ad5458bfbb79d70ec52083b3390a4dbb3f26b6419010999f855562aa4e"
+    },
+    "official_code_revision": "53e684f83822341e71b4515d711156b619fe065b",
+    "official_metric_source": {
+      "url": "https://github.com/Baiqi-Li/NaturalBench/blob/53e684f83822341e71b4515d711156b619fe065b/naturalbench_vqa.py",
+      "sha256": "3b6e62aac73da8cf464778a5e212bb33dcfa9ac879ad554d5816778b1ea83d71"
+    },
+    "license": "Apache-2.0",
+    "use": "one-shot external evaluation only; no examples may be used for training, prompt tuning, checkpoint selection, or architecture selection"
+  },
+  "parents": {
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base",
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55"
+  },
+  "arms": {
+    "stage_d_parent": {
+      "role": "frozen pre-CAVR multimodal parent",
+      "checkpoint": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20260930-v1/step-000700/bridge.safetensors",
+      "checkpoint_sha256": "d4b04aa98e5430a1fe5a11918da87a67007d283116b4e843c1d640fc7c31f6ce",
+      "language_adapter": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20260930-v1/step-000700/language_adapter",
+      "language_adapter_files": {
+        "adapter_config.json": "beb25b1266075702a22f78be2daa5f03625a0198514f0137a1284e974b06fc9b",
+        "adapter_model.safetensors": "b6b31eb6927d27ba2a0dbdc71f50adca68f95b849f39a05bdbba532cf61cbaa9"
+      },
+      "architecture": {
+        "compressor": "spatial_query",
+        "output_visual_tokens": 49,
+        "target_ratio": 4,
+        "vision_feature_layer": -1,
+        "visual_tokens": 196
+      }
+    },
+    "query_ce": {
+      "role": "step-matched question-conditioned reader trained with answer CE only",
+      "checkpoint": "/home/hhai/l20-vl-1.2b/runs/binding-query-ce-49-seed20260930-v2/step-000300/bridge.safetensors",
+      "checkpoint_sha256": "1728da61416e4d7dde330a977957924f8d6cbf1ba706bc168a1f96cf34184655",
+      "language_adapter": "/home/hhai/l20-vl-1.2b/runs/binding-query-ce-49-seed20260930-v2/step-000300/language_adapter",
+      "language_adapter_files": {
+        "adapter_config.json": "f35e9ea3626afd6ac369cee773e516d0ab66abbc5e119f7b953956f6a6249c35",
+        "adapter_model.safetensors": "f658ac349713769628e6100143b90678538cded8b0d00ed97aee5543617a3d97"
+      },
+      "architecture": {
+        "compressor": "spatial_query",
+        "output_visual_tokens": 49,
+        "target_ratio": 4,
+        "vision_feature_layer": -1,
+        "visual_tokens": 196,
+        "query_readout_rank": 64
+      }
+    },
+    "query_ce_time_matched": {
+      "role": "GPU-time-matched question-conditioned reader trained with answer CE only",
+      "checkpoint": "/home/hhai/l20-vl-1.2b/runs/binding-query-ce-49-time-matched-seed20260930-v1/step-000800/bridge.safetensors",
+      "checkpoint_sha256": "5eee683b88407755ca8d25c6c1708366693f3205e1cf77c08534233b737fffcb",
+      "language_adapter": "/home/hhai/l20-vl-1.2b/runs/binding-query-ce-49-time-matched-seed20260930-v1/step-000800/language_adapter",
+      "language_adapter_files": {
+        "adapter_config.json": "891e6fb97cef4c145d872afc72a2b9e53767c92e1cc9305d93a47d2869252db6",
+        "adapter_model.safetensors": "c84700463369fdf9d419096cff25d431893f4bbdb7c9909b37c9126175c8ff07"
+      },
+      "architecture": {
+        "compressor": "spatial_query",
+        "output_visual_tokens": 49,
+        "target_ratio": 4,
+        "vision_feature_layer": -1,
+        "visual_tokens": 196,
+        "query_readout_rank": 64
+      }
+    },
+    "cavr": {
+      "role": "CAVR with address supervision, address consistency, and paired value-source interchange",
+      "checkpoint": "/home/hhai/l20-vl-1.2b/runs/binding-cavr-49-seed20260930-v2/step-000300/bridge.safetensors",
+      "checkpoint_sha256": "2e51c5ec7d6d26f32a3ffb584998553cf6360e2bf8613c8ebb1ab519e74433dd",
+      "language_adapter": "/home/hhai/l20-vl-1.2b/runs/binding-cavr-49-seed20260930-v2/step-000300/language_adapter",
+      "language_adapter_files": {
+        "adapter_config.json": "5b0e525bf46ce347c51bef8d8810d1bdbe002d191683061cdea37b1bbd090644",
+        "adapter_model.safetensors": "411760ba9137d41725b686edb5bc467d30d5e8a5535ebd3548ff026be0f838ba"
+      },
+      "architecture": {
+        "compressor": "spatial_query",
+        "output_visual_tokens": 49,
+        "target_ratio": 4,
+        "vision_feature_layer": -1,
+        "visual_tokens": 196,
+        "query_readout_rank": 64
+      }
+    }
+  },
+  "evaluation": {
+    "arm_order": [
+      "stage_d_parent",
+      "query_ce",
+      "query_ce_time_matched",
+      "cavr"
+    ],
+    "prompt": "Use each benchmark question exactly as stored, including its official Yes/No or A/B suffix; do not use a chat template beyond the project's frozen User/Assistant wrapper.",
+    "candidate_scoring": "sum of teacher-forced answer-token log probabilities excluding EOS",
+    "candidate_order": {
+      "yes_no": ["Yes", "No"],
+      "multiple_choice": ["A", "B"]
+    },
+    "tie_policy": "a score tie is counted incorrect and fails the tie-integrity gate",
+    "batch_groups": 4,
+    "max_text_tokens": 128,
+    "precision": "bfloat16",
+    "dataset_access": "lazy_rows_image_decode_false",
+    "official_metrics": ["Q_Acc", "I_Acc", "Acc", "G_Acc"],
+    "primary_metric": "G_Acc",
+    "secondary_bias_diagnostic": "NaturalBench Section-5-style sample-balanced candidate-likelihood ranking: Balanced_Q_Acc, Balanced_I_Acc, and Balanced_G_Acc. It is reported separately and cannot replace the raw official primary metric.",
+    "descriptive_subgroups": ["Source", "Question Type"],
+    "do_not_rerun_to_select_a_favorable_prompt_or_checkpoint": true
+  },
+  "statistics": {
+    "unit": "NaturalBench paired two-image two-question group",
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20260914,
+    "paired_comparisons": [
+      {"left": "cavr", "right": "query_ce_time_matched"},
+      {"left": "cavr", "right": "query_ce"},
+      {"left": "cavr", "right": "stage_d_parent"}
+    ]
+  },
+  "decision_rule": {
+    "primary_comparison": "cavr_minus_query_ce_time_matched",
+    "minimum_g_acc_advantage_pp": 2.0,
+    "require_lower_95_ci_gt_zero": true,
+    "require_zero_candidate_score_ties": true
+  },
+  "source_code": {
+    "evaluator_sha256": "bbc78ccc71019ec4f34d2afc3467aaf2976334594a44cd76fb0f52bcce785a47",
+    "evaluator_test_sha256": "29a0f495e01cca77ba9d91155406c9d123be4757276df5a24007c85453deb649",
+    "launcher_filename": "run_naturalbench_v2_when_ready.sh",
+    "launcher_sha256": "c461c8a3108fcc058c50d93a7287f00a3890fae19e0b073a51139839c642a0fd",
+    "modeling_sha256": "7ee504253640c9c7ce7e121b212a31d16d9e57ef9e05f55ebcbd67573febeac9",
+    "prompt_encoder_sha256": "e5263492be372008e50f4fde4420699d731cdb80f79fdad868027eb281e2f52d"
+  },
+  "claim_boundary": "A single one-shot zero-shot NaturalBench comparison can support or refute transfer to this benchmark only. It cannot establish global VLM superiority, broad natural-image generalization, pretraining quality, or global novelty; the CAVR adaptation and synthetic development remain one-seed. V2 is an engineering-only rerun after v1 was OOM-killed before any predictions or metrics."
+}

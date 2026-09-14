@@ -1,0 +1,115 @@
+{
+  "audit_sheets": [
+    {
+      "family_ids": [
+        "oi-er-train-e7d5c2bc64243b67",
+        "oi-er-train-bb8f2eb96011848e",
+        "oi-er-train-1de610132cf73ca7",
+        "oi-er-train-6156fd329e016a88",
+        "oi-er-train-e45f618ac9da8fa9",
+        "oi-er-train-97d8a60040492d84",
+        "oi-er-train-d946e00bc2cce843",
+        "oi-er-train-e5105d4516ffabdf",
+        "oi-er-train-e00ebd1d8deb8c73",
+        "oi-er-train-652a1d0d153fa6db",
+        "oi-er-train-3f8f8a0c62d20d8e",
+        "oi-er-train-3cb529518ca6fb2a"
+      ],
+      "items": 12,
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-evidence-router-pilot-v1/audit/openimages-evidence-router-train-00.png",
+      "sha256": "6bada4fa42f167a4cd07e5731b46351daad6a3c922534f49affd0f23edc9d4f7",
+      "split": "train"
+    },
+    {
+      "family_ids": [
+        "oi-er-train-a9dcc3d252c30b32",
+        "oi-er-train-52cd3d82868cddcc",
+        "oi-er-train-f9304f0da2d7e968",
+        "oi-er-train-01b6e1dea609de6a",
+        "oi-er-train-89c103adcb9dd0e8",
+        "oi-er-train-b56d9603cdf389f9",
+        "oi-er-train-922a9505320d6e3e",
+        "oi-er-train-08f848fce0d43c94",
+        "oi-er-train-c687a8ea7490b1da",
+        "oi-er-train-ecff7585c03a861f",
+        "oi-er-train-173f7c81a520b45a",
+        "oi-er-train-75be36d3509a25d3"
+      ],
+      "items": 12,
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-evidence-router-pilot-v1/audit/openimages-evidence-router-train-01.png",
+      "sha256": "99631328bea5a72a8101107c1b45b58e1bbdce39dec1d1a4d15fd7daced82e54",
+      "split": "train"
+    },
+    {
+      "family_ids": [
+        "oi-er-development-77f758d2e057b84a",
+        "oi-er-development-fe171f8c87a60ad9",
+        "oi-er-development-c3362df4fa1a5e91",
+        "oi-er-development-908379d17e67e31b",
+        "oi-er-development-6b53532e3974b38e",
+        "oi-er-development-56a4c683992318d5",
+        "oi-er-development-d1fbf03b2638b7d5",
+        "oi-er-development-01ee494507c99ca3",
+        "oi-er-development-6773df4aeb54e2f5",
+        "oi-er-development-4c97a04e77fbb839",
+        "oi-er-development-ddb78eb934b84abe",
+        "oi-er-development-428a5f59b5667722"
+      ],
+      "items": 12,
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-evidence-router-pilot-v1/audit/openimages-evidence-router-development-00.png",
+      "sha256": "35d6fe4e79bcd3ee9945ed41c0afbe596ddf7214f7008dcb1781bdd82c8fa08c",
+      "split": "development"
+    },
+    {
+      "family_ids": [
+        "oi-er-development-fe307f5d00ba7c38",
+        "oi-er-development-b9e46632f95fb6f9",
+        "oi-er-development-5fcfcf4464f1cc86",
+        "oi-er-development-14c8ae99ed47cb01",
+        "oi-er-development-78413afd7971d13e",
+        "oi-er-development-cefbc480fd5243f6",
+        "oi-er-development-de44f2aff1588e51",
+        "oi-er-development-96557a0059ecd336",
+        "oi-er-development-8cceb7c6994b4d4c",
+        "oi-er-development-bb0f9476b8439841",
+        "oi-er-development-39ffbece2c18c9d2",
+        "oi-er-development-af9b9d12a2471b02"
+      ],
+      "items": 12,
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-evidence-router-pilot-v1/audit/openimages-evidence-router-development-01.png",
+      "sha256": "485fbc7b411f519f5e4af78d029026a2badf94edd0e93130750ec61a5262eb62",
+      "split": "development"
+    }
+  ],
+  "claim_boundary": "This generation pilot uses official boxes and pre-existing image-level splits, but its broad labels are not exhaustively human-audited and its red-box task is an instrumented grounding task. Passing an audit authorizes only bounded router training, not general VQA, unmarked referring-expression grounding, release, deployment, novelty, or superiority claims.",
+  "completed_at": "2026-09-14T13:05:46.039727+00:00",
+  "development_model_access": false,
+  "manifest": {
+    "path": "/home/hhai/l20-vl-1.2b/data/openimages-evidence-router-pilot-v1/manifest.jsonl",
+    "rows": 3456,
+    "sha256": "478d88377e57b5543f1c962cd6df4db28f82471b42f7266528b3ea82d120c740"
+  },
+  "marked_images": 1728,
+  "protocol": {
+    "path": "openimages_evidence_router_pilot_v1_data_protocol.json",
+    "sha256": "61863bb2cb56a1c2b23f9b53bed10354fa75644e3a777a168325057ee1f405ba"
+  },
+  "schema_version": "2026-09-14-v1",
+  "split_counts": {
+    "development": {
+      "POINT": 192,
+      "STOP": 192,
+      "families": 192,
+      "rows": 384
+    },
+    "train": {
+      "POINT": 1536,
+      "STOP": 1536,
+      "families": 1536,
+      "rows": 3072
+    }
+  },
+  "status": "complete_openimages_evidence_router_generation",
+  "training_started": false,
+  "unique_source_images": 1728
+}

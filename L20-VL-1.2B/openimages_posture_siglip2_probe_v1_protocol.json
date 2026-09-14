@@ -1,0 +1,73 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "authorized_frozen_siglip2_posture_probe_v1",
+  "experiment_id": "openimages_posture_siglip2_probe_v1",
+  "authorized_by_user": true,
+  "model_parameter_updates_authorized": false,
+  "probe_training_authorized": true,
+  "vision_parent": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55",
+  "vision_parent_files": {
+    "config.json": "fe8b5fe6d5734360678fd71c11c21e1ea3364bd8598d34295d9206335973ffd7",
+    "model.safetensors": "612923381c76ec5a9bed335d1c48827e3f2e506ac31b044b63b2031fadee6a0b",
+    "preprocessor_config.json": "9b36b57ebaf20f09bf4c22100ccc21877ea6bfe5aead0c00c59f8af8ccefacfc"
+  },
+  "data": {
+    "manifest": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-crossfit-v1.jsonl",
+    "manifest_sha256": "ad96b6716b4032ecaeb41450433f61beeb6ad94b0268974afedbddfad5d6bf16",
+    "fold_count": 5,
+    "pairs": 77,
+    "targets": 154,
+    "split_unit": "pair_id",
+    "formal_test": "absent"
+  },
+  "feature_extraction": {
+    "dtype": "bfloat16",
+    "vision_feature_layer": -1,
+    "batch_images": 24,
+    "crop_padding_fraction": 0.1,
+    "representations": {
+      "full_global": "mean of all 14x14 patch features from the original full image",
+      "full_roi": "mean of full-image patch features whose centers lie inside the audited bbox, with center-patch fallback",
+      "marked_global": "mean of all patch features after drawing the frozen red bbox marker",
+      "crop_global": "mean of all patch features from the square-padded audited target crop"
+    }
+  },
+  "probe": {
+    "type": "standard_scaler_plus_l2_logistic_regression",
+    "logistic_c": 0.01,
+    "solver": "liblinear",
+    "max_iter": 5000,
+    "random_state": 20261005,
+    "hyperparameter_selection": "none",
+    "outer_fold_use": "Each pair is scored exactly once by a probe fitted on the other four folds."
+  },
+  "statistics": {
+    "cluster": "pair_id",
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20261005,
+    "confidence": 0.95,
+    "primary_diagnostic": "within_pair_standing_score_gt_sitting_percent"
+  },
+  "comparisons": [
+    [
+      "crop_global",
+      "full_global"
+    ],
+    [
+      "full_roi",
+      "full_global"
+    ],
+    [
+      "marked_global",
+      "full_global"
+    ]
+  ],
+  "source_code": {
+    "probe_sha256": "df277daa4066f1c2f312690204cb1aac4bd578812257eadaf48c480c6e1e1eb5",
+    "test_sha256": "29cba08fa666b974abaad4ae0326b87ec844067ba363fbdebb93ce97d0ca47e7",
+    "view_renderer_sha256": "657c1f0d4ea3b0465a564d20145cfb484ba5bda22c9c291e996d26eaa271e38e",
+    "modeling_sha256": "7ee504253640c9c7ce7e121b212a31d16d9e57ef9e05f55ebcbd67573febeac9",
+    "statistics_sha256": "566c43764013a8bb98a6343b18b260924c2396b1ae1e6424cf2fd77aedcbac39"
+  },
+  "claim_boundary": "This is a fixed-hyperparameter, pair-atomic out-of-fold linear probe on a small real-image method-development set. It can localize whether posture is linearly available in frozen SigLIP2 features. It cannot establish causal use by the VLM, end-to-end model quality, general real-image transfer, architecture superiority, or a final benchmark claim. Different-scene pairs may retain background correlations."
+}

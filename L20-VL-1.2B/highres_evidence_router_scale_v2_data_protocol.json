@@ -1,0 +1,51 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "experiment_id": "highres_evidence_router_scale_v2",
+  "status": "authorized_highres_evidence_search_pilot_generation_only_v1",
+  "purpose": "Increase object-layout coverage for router training while freezing a new untouched router-confirmation split before the scaled router is trained.",
+  "training_authorized": false,
+  "model_evaluation_authorized": false,
+  "seed": 20261017,
+  "splits": {
+    "train": 2048,
+    "router_confirmation": 256
+  },
+  "split_unit": "scene family; base and answer-changing variants remain in the same split",
+  "tasks": {
+    "read_local_digit": {
+      "expected_action": "POINT",
+      "description": "Identify a globally visible color-shape address, then acquire one local panel crop."
+    },
+    "read_global_border": {
+      "expected_action": "STOP",
+      "description": "Recognize that the global border question requires no additional crop."
+    }
+  },
+  "render": {
+    "image_size": 1024,
+    "pointer_grid_size": 14,
+    "panel_font_pixels": 18,
+    "digit_font_pixels": 14,
+    "png_compress_level": 9
+  },
+  "font": {
+    "path": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+    "sha256": "5c1247acef7f2b8522a31742c76d6adcb5569bacc0be7ceaa4dc39dd252ce895"
+  },
+  "source_code": {
+    "builder_sha256": "95c48eaa25bbc1298b22088cf589bb731fbfa535bee817d0e0f53292b903eed8",
+    "test_sha256": "3dea2a614cf6d87c74fe652d9f9d153f6c3326b51f5369e4bf5ee731a15081d9"
+  },
+  "output": {
+    "root": "/home/hhai/l20-vl-1.2b/data/highres-evidence-router-scale-v2",
+    "receipt": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-router-scale-v2-generation.json"
+  },
+  "required_before_training": [
+    "all generated images have unique SHA256 values",
+    "the unchanged renderer and font hashes match the previously audited pilot",
+    "the four fixed train-only audit sheets are inspected for renderer regressions",
+    "router_confirmation is not read by training, checkpoint selection, threshold selection, or architecture selection",
+    "a separate train-only protocol pins the scaled router budget"
+  ],
+  "claim_boundary": "This uses the same deterministic synthetic renderer already audited in v1 with a new seed and more scene permutations. It is intended only to test whether the v1 localization failure was coverage-limited. The frozen router-confirmation split remains synthetic and cannot establish natural-image evidence search."
+}

@@ -1,0 +1,84 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "authorized_posture_crossfit_split_only",
+  "experiment_id": "openimages_posture_crossfit_v1",
+  "authorized_by_user": true,
+  "training_authorized": false,
+  "model_evaluation_authorized": false,
+  "inputs": {
+    "pair_manifest": {
+      "path": "evidence/openimages-posture-pairs-final-v1.jsonl",
+      "sha256": "959514828d1be086c46c48176f77c6a68b80947fb0b1d89f6f08448d05394b10"
+    },
+    "finalization_receipt": {
+      "path": "evidence/openimages-posture-final-pairs-v1-build.json",
+      "sha256": "d2580724291c3f54c1bab8b334cb492331e1a8b663923e142dcd9f35a7207881"
+    }
+  },
+  "data": {
+    "expected_pairs": 77,
+    "expected_images": 154,
+    "classes": [
+      "Boy",
+      "Girl",
+      "Man",
+      "Woman"
+    ],
+    "answers": [
+      "sitting",
+      "standing"
+    ],
+    "pair_semantics": "Each pair contains different real scenes with the same person class and opposite audited posture labels. It is a same-class hard-negative pair, not a minimally edited causal counterfactual."
+  },
+  "crossfit": {
+    "fold_count": 5,
+    "seed": 20261005,
+    "assignment_unit": "pair_id",
+    "stratify_by": "class_name",
+    "balance_constraints": {
+      "maximum_total_pair_difference_between_folds": 1,
+      "maximum_within_class_pair_difference_between_folds": 1
+    },
+    "development_use": "For outer fold k, train only on the other four folds and score fold k exactly once with a schedule frozen before any fold is run.",
+    "checkpoint_selection": "No checkpoint or hyperparameter selection may use an outer held-out fold.",
+    "formal_test": "absent_and_must_be_acquired_after_method_selection"
+  },
+  "statistical_plan": {
+    "status": "development_only",
+    "out_of_fold_unit": "pair_id",
+    "paired_comparison_unit": "pair_id",
+    "primary_future_metric": "pair_joint_posture_accuracy_percent",
+    "required_diagnostics": [
+      "per_image_posture_accuracy_percent",
+      "correct_minus_incorrect_candidate_logprob_margin",
+      "same_pair_answer_flip_consistency_percent",
+      "true_minus_blank_image_accuracy_pp",
+      "true_minus_same_class_random_image_accuracy_pp",
+      "bbox_center_address_top1_percent",
+      "bbox_region_attention_mass_percent"
+    ],
+    "required_controls": [
+      "frozen_stage_d_parent",
+      "synthetic_query_ce_step_300",
+      "synthetic_cavr_step_300",
+      "real_image_plain_ce_crossfit",
+      "real_image_address_supervised_crossfit"
+    ],
+    "interval": {
+      "method": "pair_clustered_paired_bootstrap",
+      "confidence": 0.95,
+      "resamples": 10000,
+      "seed": 20261005
+    },
+    "interpretation": "All five-fold results are method-development evidence because the protocol and task were designed after inspecting this dataset. A separate sealed image source is required for confirmation."
+  },
+  "source_code": {
+    "splitter_sha256": "b4c8dff3f01cabe11a23905ff280939d092ce9e1ea3dd56e1aa2de6a79d6afa9",
+    "test_sha256": "2982673e908961abf95cd0fc24254c95bfce79b78a309e9190d2e3dc139b798b"
+  },
+  "outputs": {
+    "fold_manifest": "evidence/openimages-posture-crossfit-v1.jsonl",
+    "receipt": "evidence/openimages-posture-crossfit-v1-build.json"
+  },
+  "claim_boundary": "This protocol only creates pair-atomic development folds from exhaustively human-audited real images. It does not authorize parameter updates, model evaluation, checkpoint selection, benchmark comparison, a causal-counterfactual claim, general real-image transfer, or release."
+}

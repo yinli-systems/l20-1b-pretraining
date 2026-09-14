@@ -1,0 +1,66 @@
+{
+  "schema_version": "2026-09-14-v2",
+  "status": "authorized_counterfactual_address_value_routing_evaluation_v2",
+  "experiment_id": "counterfactual_address_value_routing_evaluation_v2",
+  "authorized_by_user": true,
+  "test_split_use_authorized": false,
+  "formal_evaluation": false,
+  "training_protocol": {
+    "path": "/home/hhai/l20-vl-1.2b/counterfactual_address_value_routing_protocol_v2.json",
+    "sha256": "da29082f8f40362e90f343eb57e2f278da4b6383167f1b6b2025879d2472f626"
+  },
+  "execution_order": ["query_ce", "cavr"],
+  "arms": {
+    "query_ce": {
+      "run": "/home/hhai/l20-vl-1.2b/runs/binding-query-ce-49-seed20260930-v2",
+      "evaluation_protocol": "/home/hhai/l20-vl-1.2b/binding_query_ce_evaluation_protocol_v2.json",
+      "evaluation_protocol_sha256": "f33fa3b54ad11a3ad71d616423026cfca92b6deb96e58c0d3bbfe1de9af48e46"
+    },
+    "cavr": {
+      "run": "/home/hhai/l20-vl-1.2b/runs/binding-cavr-49-seed20260930-v2",
+      "evaluation_protocol": "/home/hhai/l20-vl-1.2b/binding_cavr_evaluation_protocol_v2.json",
+      "evaluation_protocol_sha256": "ac7f12b1ae779f94a871ba95608d508db6f09f6d4226ce173ca02c3da91a3348"
+    }
+  },
+  "data": {
+    "manifest": "/home/hhai/l20-vl-1.2b/data/diagnostic/binding-intervention-v1/manifest.jsonl",
+    "manifest_sha256": "084110ebff7f7d9dc3d5249a967b2efdcecd27e56827cb98ee69c8309f4b3754",
+    "final_test": "sealed_and_absent"
+  },
+  "checkpoint_selection": {
+    "split": "mechanism_dev",
+    "screen_scene_pairs": 40,
+    "screen_checkpoints": [50, 100, 150, 200, 250, 300, 350, 400],
+    "primary_metric": "affected_question_joint_accuracy_percent",
+    "tie_breakers": [
+      "scene_pair_selective_all_six_correct_percent",
+      "earlier_checkpoint"
+    ],
+    "do_not_tune_on_selection_dev": true
+  },
+  "comparison": {
+    "tuned_plain_ce_summary": "/home/hhai/l20-vl-1.2b/evidence/binding-tuned-plain-ce-evaluation-v1/summary.json",
+    "tuned_plain_ce_summary_sha256": "c7c2ed0e78604694314984dc35ef6d45067946d31273bc743780379460645792",
+    "paired_metric": "affected_question_joint_accuracy_percent",
+    "statistical_unit": "scene_pair_id",
+    "bootstrap_resamples": 10000
+  },
+  "decision_rule": {
+    "minimum_mechanism_affected_joint_percent": 70.0,
+    "require_visual_floor_passes_all": true,
+    "require_strict_metric_gt_zero": true,
+    "minimum_cavr_minus_query_ce_pp": 5.0,
+    "require_cavr_minus_query_ce_lower_95_ci_gt_zero": true,
+    "gpu_time_matched_query_ce_required_before_confirmation": true
+  },
+  "source_code": {
+    "orchestrator_sha256": "4aafa67e3731fda9531cf0a9040d85291a2c475861abe57162d1c4b3529a4b9d",
+    "orchestrator_test_sha256": "badc6e55f5ea92c844c0e02f39131253ec8db1b0b17d24beee13390882cb62c5",
+    "evaluation_helpers_sha256": "082399341bd92e8ed0b7fbe30c79ac51002a042248638a16ad50db1628c4e5c0",
+    "evaluator_sha256": "c2110dcdd25f5ae0e78ddec31d7656391d6f8b5b4461df04833b1c75ad409954",
+    "modeling_sha256": "7ee504253640c9c7ce7e121b212a31d16d9e57ef9e05f55ebcbd67573febeac9",
+    "scoring_contract_sha256": "e8ba77148217fe08f31c029d839d4b6d7321e8d5b4310f1180c442841328f2f6"
+  },
+  "novelty_boundary": "The evaluation tests a narrowly defined candidate combination; it cannot establish novelty from retrieval alone.",
+  "claim_boundary": "Checkpoint selection and selection_dev are reused synthetic development evidence. A positive result remains one-seed and step-matched, requires a GPU-time-matched CE control and external real-image transfer, and does not establish general VLM superiority."
+}

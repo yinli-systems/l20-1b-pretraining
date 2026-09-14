@@ -1,0 +1,194 @@
+{
+  "auditor_sha256": "80049143f52d867f11a862b68ca83606d43bc562da450a55e853e96281a70376",
+  "blocking_manifest_count": 0,
+  "claim_boundary": "A zero result establishes only zero exact SHA256 overlap against the explicitly listed project manifests. It does not detect transformed or perceptual near-duplicates, semantic overlap, benchmark memorization through text, or overlap with the unauditable upstream SigLIP2 pretraining corpus.",
+  "completed_at": "2026-09-14T10:40:04.957647+00:00",
+  "decision": "pass_zero_known_project_train_or_development_exact_overlap",
+  "evaluation_unique_image_sha256": 431,
+  "image_download_started": false,
+  "known_project_exact_overlap_sha256": [],
+  "manifests": [
+    {
+      "evidence_class": "model_training",
+      "name": "stage_a_open_images_all_splits",
+      "overlap_count": 0,
+      "overlap_sha256": [],
+      "path": "/home/hhai/l20-vl-1.2b/data/stage-a-v1/prepared/open-images-manifest.jsonl",
+      "rows": 25000,
+      "sha256": "33b88611299e095eaefebe0fe0a0f95f5ff9ab6d241c255d6747a240bc9ab264",
+      "unique_image_hashes": 25000
+    },
+    {
+      "evidence_class": "model_training",
+      "name": "stage_a_clevr_all_splits",
+      "overlap_count": 0,
+      "overlap_sha256": [],
+      "path": "/home/hhai/l20-vl-1.2b/data/stage-a-v1/prepared/clevr-manifest.jsonl",
+      "rows": 27500,
+      "sha256": "fad00defb9388199645abc3a6f222899b866d3c0c550a311c5bd6e0f4bde0771",
+      "unique_image_hashes": 27500
+    },
+    {
+      "evidence_class": "model_training",
+      "name": "counterfactual_v1",
+      "overlap_count": 0,
+      "overlap_sha256": [],
+      "path": "/home/hhai/l20-vl-1.2b/data/diagnostic/counterfactual-v1/manifest.jsonl",
+      "rows": 5000,
+      "sha256": "df65dbef20fb41d8d08f76a14fb9d3bf5f778a82c2210e56287cb8c221508d7e",
+      "unique_image_hashes": 15000
+    },
+    {
+      "evidence_class": "model_training",
+      "name": "counterfactual_v2",
+      "overlap_count": 0,
+      "overlap_sha256": [],
+      "path": "/home/hhai/l20-vl-1.2b/data/diagnostic/counterfactual-v2/manifest.jsonl",
+      "rows": 20000,
+      "sha256": "a3104ead587e2ae1293af224e7da2717efe2d68610b062a4463ffbe09eed7bee",
+      "unique_image_hashes": 60000
+    },
+    {
+      "evidence_class": "model_training",
+      "name": "counterfactual_v3",
+      "overlap_count": 0,
+      "overlap_sha256": [],
+      "path": "/home/hhai/l20-vl-1.2b/data/diagnostic/counterfactual-v3/manifest.jsonl",
+      "rows": 20000,
+      "sha256": "6f21e01d31d8fc3035ca22219d0484a8fb029a30b2cddec34ab726585e5dfede",
+      "unique_image_hashes": 60000
+    },
+    {
+      "evidence_class": "model_training",
+      "name": "stage_d_v2",
+      "overlap_count": 0,
+      "overlap_sha256": [],
+      "path": "/home/hhai/l20-vl-1.2b/data/diagnostic/stage-d-v2/manifest.jsonl",
+      "rows": 7000,
+      "sha256": "efd51701c19379ce77af83272acd732c93cc7e4428ca67c6cb147bea0572c6cb",
+      "unique_image_hashes": 21000
+    },
+    {
+      "evidence_class": "model_training",
+      "name": "binding_intervention_v1",
+      "overlap_count": 0,
+      "overlap_sha256": [],
+      "path": "/home/hhai/l20-vl-1.2b/data/diagnostic/binding-intervention-v1/manifest.jsonl",
+      "rows": 6720,
+      "sha256": "084110ebff7f7d9dc3d5249a967b2efdcecd27e56827cb98ee69c8309f4b3754",
+      "unique_image_hashes": 3360
+    },
+    {
+      "evidence_class": "model_training",
+      "name": "binding_time_matched_query_ce_v1",
+      "overlap_count": 0,
+      "overlap_sha256": [],
+      "path": "/home/hhai/l20-vl-1.2b/data/diagnostic/binding-intervention-v1/time-matched-query-ce-manifest-v1.jsonl",
+      "rows": 11520,
+      "sha256": "6f50ed2b52ad00e15b29f50149f136ce4938d01ae3e05e0f43e11cb3d809dc6f",
+      "unique_image_hashes": 3360
+    },
+    {
+      "evidence_class": "model_training",
+      "name": "openimages_attribute_routing_v1",
+      "overlap_count": 0,
+      "overlap_sha256": [],
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-vrd-pilot-v1/prepared/attribute-routing-pairs-v1.jsonl",
+      "rows": 230,
+      "sha256": "f79f8821525b81435618775f9daee8906685578f658238998cb7b9396f8080ee",
+      "unique_image_hashes": 604
+    },
+    {
+      "evidence_class": "model_training",
+      "name": "openimages_caption_replay_v1",
+      "overlap_count": 0,
+      "overlap_sha256": [],
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-vrd-pilot-v1/prepared/caption-replay-train-v1.jsonl",
+      "rows": 4096,
+      "sha256": "c3409c313435c0d37b16dc1e1a5563506925fa5da477e9a30f71e988ad4ba399",
+      "unique_image_hashes": 4096
+    },
+    {
+      "evidence_class": "model_development",
+      "name": "openimages_posture_crossfit_targets_v1",
+      "overlap_count": 0,
+      "overlap_sha256": [],
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-posture-final-v1/posture-targets-final-v1.jsonl",
+      "rows": 154,
+      "sha256": "73c358fe687661b54cea6756d8a299be7e7477c4ac81a47f20c722c3b051526c",
+      "unique_image_hashes": 154
+    },
+    {
+      "evidence_class": "model_development",
+      "name": "openimages_posture_pilot_v1",
+      "overlap_count": 0,
+      "overlap_sha256": [],
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-posture-pilot-v1/posture-images-v1.jsonl",
+      "rows": 128,
+      "sha256": "5e3b6175149fc02a194265b61d8fd1c18684a385dc9483b2c853e01dc3b6c7ae",
+      "unique_image_hashes": 128
+    },
+    {
+      "evidence_class": "model_development",
+      "name": "openimages_posture_candidates_v2",
+      "overlap_count": 0,
+      "overlap_sha256": [],
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-posture-candidates-v2/posture-candidates-v2.jsonl",
+      "rows": 192,
+      "sha256": "0c2ce8c9be63f340285a99101601912d5c8bcf255d58467113a033a62eaf2421",
+      "unique_image_hashes": 192
+    },
+    {
+      "evidence_class": "model_development",
+      "name": "openimages_posture_standing_supplement_v3",
+      "overlap_count": 0,
+      "overlap_sha256": [],
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-posture-standing-supplement-v3/posture-standing-supplement-v3.jsonl",
+      "rows": 144,
+      "sha256": "7f928d8d51dcbce64a231ba71dc9160b730fc88ba26a9f8a91202a2c3ff5bcfa",
+      "unique_image_hashes": 144
+    },
+    {
+      "evidence_class": "untrained_audit_only",
+      "name": "counterfactual_failed_occlusion_v1",
+      "overlap_count": 0,
+      "overlap_sha256": [],
+      "path": "/home/hhai/l20-vl-1.2b/data/diagnostic/counterfactual-v1-failed-002-occlusion/manifest.jsonl",
+      "rows": 5000,
+      "sha256": "bdd932fe5112daf69010bafbc557ab212c9fa88802361bc54b84fc28d5d5aac1",
+      "unique_image_hashes": 15000
+    },
+    {
+      "evidence_class": "untrained_audit_only",
+      "name": "openimages_confirmation_candidates_v1",
+      "overlap_count": 0,
+      "overlap_sha256": [],
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-posture-confirmation-v1/candidate-pool/posture-confirmation-candidates-v1.jsonl",
+      "rows": 384,
+      "sha256": "2577a2067de18b086ca8317b8208c34b32582f818ebcfae085d08851b18b035e",
+      "unique_image_hashes": 384
+    },
+    {
+      "evidence_class": "untrained_audit_only",
+      "name": "openimages_confirmation_sitting_v2",
+      "overlap_count": 0,
+      "overlap_sha256": [],
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-posture-confirmation-v1/sitting-supplement-v2/sitting-supplement-candidates-v2.jsonl",
+      "rows": 148,
+      "sha256": "f064e28225520937985f2ef45e5da6d5a7a5ea8dd8bbdcae5158bcaf222e22f3",
+      "unique_image_hashes": 148
+    }
+  ],
+  "manifests_with_any_overlap": 0,
+  "model_evaluation_started": false,
+  "model_under_test_accessed": false,
+  "next_allowed_step": "Freeze image acquisition and metric protocols; retain the upstream vision-pretraining contamination caveat.",
+  "protocol": {
+    "path": "pixmo_points_eval_contamination_audit_v1_protocol.json",
+    "sha256": "d6187a3921d090976aec4bdca216041a4848e964eae8bb993f875b8d79d60a4e"
+  },
+  "schema_version": "2026-09-14-v1",
+  "status": "complete_pixmo_points_eval_exact_project_overlap_audit",
+  "training_started": false,
+  "upstream_vision_pretraining_overlap_auditable": false
+}

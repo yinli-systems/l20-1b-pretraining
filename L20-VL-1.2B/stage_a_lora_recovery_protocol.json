@@ -1,0 +1,70 @@
+{
+  "schema_version": "2026-09-13-v1",
+  "status": "authorized_stage_a_lora_recovery_after_frozen_language_failure",
+  "authorized_by_user": true,
+  "authorized_at": "2026-09-13",
+  "purpose": "teach the language backbone to consume full-token visual prefixes while preserving the immutable released parent",
+  "not_a_compression_experiment": true,
+  "proposed_delta_loss_used": false,
+  "test_split_use_authorized": false,
+  "parents": {
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base",
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55",
+    "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-a-recovery-v1/step-000500/bridge.safetensors",
+    "bridge_sha256": "2d490c5b332b5f39484cb4a35357b13fb7f0f0d0c936c9d3575fd0d36ced2b29"
+  },
+  "failure_evidence": {
+    "path": "/home/hhai/l20-vl-1.2b/evidence/stage-a-recovery-development-v1.json",
+    "sha256": "748cdce341e88418f1cae0469da9d9735ef9357ed4317e686acd3367b44014af",
+    "true_image_paired_joint_accuracy_percent": 18.133333333333333
+  },
+  "data": {
+    "manifest": "/home/hhai/l20-vl-1.2b/data/diagnostic/counterfactual-v1/manifest.jsonl",
+    "manifest_sha256": "df65dbef20fb41d8d08f76a14fb9d3bf5f778a82c2210e56287cb8c221508d7e",
+    "human_audit": "/home/hhai/l20-vl-1.2b/evidence/counterfactual-data-human-audit.json",
+    "human_audit_decision": "pass_for_controlled_mechanism_diagnosis_only",
+    "split": "train",
+    "scene_families": 3500,
+    "variants_per_family": 3,
+    "examples_per_epoch": 10500,
+    "epochs": 5,
+    "answer_balance": {"yes": 26250, "no": 26250}
+  },
+  "architecture": {
+    "visual_tokens": 196,
+    "compressor": "none",
+    "trainable": ["projector", "image_start", "image_end", "language_lora"],
+    "frozen": ["language_parent_weights", "vision_encoder"],
+    "lora": {
+      "rank": 16,
+      "alpha": 32,
+      "dropout": 0.0,
+      "bias": "none",
+      "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
+    },
+    "objective": "answer_only_causal_cross_entropy"
+  },
+  "optimization": {
+    "micro_batch_size": 8,
+    "gradient_accumulation_steps": 8,
+    "effective_batch_size": 64,
+    "max_optimizer_steps": 820,
+    "max_wall_seconds": 10800,
+    "adapter_learning_rate": 0.0001,
+    "bridge_learning_rate": 0.00002,
+    "minimum_learning_rate_ratio": 0.1,
+    "warmup_ratio": 0.05,
+    "weight_decay": 0.01,
+    "gradient_clip_norm": 1.0,
+    "precision": "bfloat16",
+    "text_tokens_max": 96,
+    "checkpoint_every_steps": 100,
+    "seed": 20260913
+  },
+  "advance_only_if": {
+    "development_paired_joint_accuracy_percent_gte": 70.0,
+    "true_vs_no_image_lower_95_ci_pp_gt": 0.0,
+    "true_vs_random_image_lower_95_ci_pp_gt": 0.0
+  },
+  "claim_boundary": "Passing establishes controlled-domain full-token visual use only; it is not a compression, natural-image, release, or publication result."
+}

@@ -1,0 +1,119 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "authorized_binding_answer_only_development_v1",
+  "authorized_by_user": true,
+  "authorized_at": "2026-09-13T23:27:56Z",
+  "purpose": "Cheapest falsification of whether ordinary same-data answer supervision repairs attribute-object binding before introducing a new objective.",
+  "arm": "answer_49_swap_v1",
+  "test_split_use_authorized": false,
+  "formal_training": false,
+  "allowed_seeds": [
+    20260930
+  ],
+  "parents": {
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base",
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55",
+    "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20260930-v1/step-000700/bridge.safetensors",
+    "bridge_sha256": "d4b04aa98e5430a1fe5a11918da87a67007d283116b4e843c1d640fc7c31f6ce",
+    "language_adapter": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20260930-v1/step-000700/language_adapter",
+    "language_adapter_files": {
+      "adapter_config.json": "beb25b1266075702a22f78be2daa5f03625a0198514f0137a1284e974b06fc9b",
+      "adapter_model.safetensors": "b6b31eb6927d27ba2a0dbdc71f50adca68f95b849f39a05bdbba532cf61cbaa9"
+    },
+    "selection_rule": "Prespecified first Stage-D A49 seed; it was not selected using the new binding-intervention outcomes."
+  },
+  "architecture": {
+    "compressor": "spatial_query",
+    "output_visual_tokens": 49,
+    "target_ratio": 4,
+    "vision_feature_layer": -1,
+    "visual_tokens": 196
+  },
+  "loss_weights": {
+    "answer_supervision": 1.0,
+    "ordinary_kd": 0.0,
+    "invariance_delta": 0.0,
+    "evidence_delta": 0.0
+  },
+  "preference_scale": 1.0,
+  "distillation_temperature": 1.0,
+  "huber_beta": 1.0,
+  "data": {
+    "manifest": "/home/hhai/l20-vl-1.2b/data/diagnostic/binding-intervention-v1/manifest.jsonl",
+    "manifest_sha256": "084110ebff7f7d9dc3d5249a967b2efdcecd27e56827cb98ee69c8309f4b3754",
+    "split": "train",
+    "epochs": 1,
+    "scene_families": 4800,
+    "unique_scene_pairs": 800,
+    "questions_per_scene_pair": 6,
+    "variants_per_family": 3,
+    "batch_group_by": "scene_pair_id",
+    "deduplicate_images_within_batch": true,
+    "evidence": {
+      "generation_receipt": {
+        "path": "/home/hhai/l20-vl-1.2b/evidence/binding-intervention-data-generation-v1.json",
+        "sha256": "bf6b340c218724edc2a4da6a4051e432105904fa01b7909690a27a16478cff50"
+      },
+      "static_audit": {
+        "path": "/home/hhai/l20-vl-1.2b/evidence/binding-intervention-data-static-audit-v1.json",
+        "sha256": "36331491142a2d7934923f5c7f5d02680e9fc9bed66d001b44cf477c00a8ead8"
+      },
+      "human_audit": {
+        "path": "/home/hhai/l20-vl-1.2b/evidence/binding-intervention-data-human-audit-v1.json",
+        "sha256": "e821b7da7325fc3d8711b3309e8dda366b778fbbfa9e3f9b34f9e2990c437e36"
+      }
+    }
+  },
+  "optimization": {
+    "seed": 20260930,
+    "micro_batch_families": 24,
+    "gradient_accumulation_steps": 1,
+    "effective_batch_families": 24,
+    "candidate_sequences_per_optimizer_step": 144,
+    "logical_image_examples_per_optimizer_step": 72,
+    "unique_images_per_optimizer_step": 12,
+    "max_optimizer_steps": 200,
+    "max_wall_seconds": 3600,
+    "checkpoint_every_steps": 50,
+    "precision": "bfloat16",
+    "adapter_learning_rate": 0.00001,
+    "bridge_learning_rate": 0.00002,
+    "compressor_learning_rate": 0.0002,
+    "weight_decay": 0.02,
+    "warmup_ratio": 0.03,
+    "minimum_learning_rate_ratio": 0.1,
+    "gradient_clip_norm": 1.0,
+    "text_tokens_max": 96
+  },
+  "resource_cap": {
+    "gpu": "1x NVIDIA L20",
+    "training_gpu_hours_max": 1.0,
+    "smoke_steps": 2,
+    "smoke_must_pass_before_full_run": true,
+    "full_run_output": "/home/hhai/l20-vl-1.2b/runs/binding-e0-answer-49-seed20260930-v1"
+  },
+  "evaluation": {
+    "checkpoint_selection_split": "mechanism_dev",
+    "single_use_validation_split": "selection_dev",
+    "allowed_conditions": [
+      "true_image",
+      "random_image",
+      "no_image"
+    ],
+    "primary_metric": "affected_question_joint_accuracy_percent",
+    "strict_metric": "scene_pair_selective_all_six_correct_percent",
+    "statistical_unit": "scene_pair_id",
+    "final_test": "sealed_and_absent"
+  },
+  "source_code": {
+    "trainer_sha256": "a37f5a378e4662b3059d3e4e1604919a2d9e63568a6e5b75b85ede12b4da1f69",
+    "evaluator_sha256": "8147c415c9f562376ae4935208302c9e9623fd35c0835c3cce28bf67d94c2d37"
+  },
+  "decision_rule": {
+    "plain_ce_first": true,
+    "new_objective_allowed_only_if_plain_ce_is_insufficient": true,
+    "do_not_tune_on_selection_dev": true,
+    "do_not_generate_or_use_final_test_during_development": true
+  },
+  "claim_boundary": "A one-seed synthetic development run can establish only whether same-data plain CE is promising. It cannot establish novelty, natural-image transfer, a general VLM win, or formal confirmation."
+}

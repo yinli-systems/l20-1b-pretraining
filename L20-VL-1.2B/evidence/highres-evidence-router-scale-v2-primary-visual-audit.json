@@ -1,0 +1,49 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "complete_highres_evidence_router_scale_v2_primary_visual_audit",
+  "audited_at": "2026-09-14T12:25:00+00:00",
+  "auditor": "primary_agent_exhaustive_sheet_review",
+  "generation_receipt": {
+    "path": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-router-scale-v2-generation.json",
+    "sha256": "59c630acbdaa4252e255e82035d7bc8d559391299eb40b904342adb07aa11da5"
+  },
+  "sheets": [
+    {
+      "path": "data/highres-evidence-router-scale-v2/audit/highres-evidence-search-sheet-00.png",
+      "sha256": "0a3efc218f9602d8f3189e684a98ea1615b73a998f89959c39263b8b7077f0c0",
+      "items": 12,
+      "result": "pass"
+    },
+    {
+      "path": "data/highres-evidence-router-scale-v2/audit/highres-evidence-search-sheet-01.png",
+      "sha256": "98d170d1c89fb9d497ba9aea19f496d13c6aa9f89ff8bed55b3e101ee8fd9d6b",
+      "items": 12,
+      "result": "pass"
+    },
+    {
+      "path": "data/highres-evidence-router-scale-v2/audit/highres-evidence-search-sheet-02.png",
+      "sha256": "45bb06d3ae86f1ddb10fe5df1c78ab73a06b1b0d66140f2540cb25940e23f773",
+      "items": 12,
+      "result": "pass"
+    },
+    {
+      "path": "data/highres-evidence-router-scale-v2/audit/highres-evidence-search-sheet-03.png",
+      "sha256": "ec7f30446cbe031e286c121ea5ca4df6b3d7288377585f94fe484f440560301b",
+      "items": 12,
+      "result": "pass"
+    }
+  ],
+  "checks": {
+    "items_reviewed": 48,
+    "global_scene_visible": 48,
+    "question_target_present": 48,
+    "displayed_answer_matches_visible_crop_or_border": 48,
+    "point_crop_contains_named_object_and_digit": 24,
+    "stop_examples_need_no_crop": 24,
+    "clipping_or_corruption_failures": 0
+  },
+  "decision": "pass_renderer_regression_audit_for_train_only_use",
+  "router_confirmation_accessed": false,
+  "training_admission": "requires a separate hash-pinned train-only protocol",
+  "claim_boundary": "This primary-agent visual review checks 48 fixed train audit items for renderer regressions. It is not an independent human audit, inter-rater study, natural-image validation, or permission to inspect the frozen router-confirmation split."
+}

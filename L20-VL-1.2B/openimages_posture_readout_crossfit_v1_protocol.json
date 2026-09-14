@@ -1,0 +1,140 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "authorized_openimages_posture_readout_crossfit_development_v1",
+  "experiment_id": "openimages_posture_readout_crossfit_v1",
+  "authorized_by_user": true,
+  "model_parameter_updates_authorized": true,
+  "formal_test_present": false,
+  "purpose": "Determine whether the frozen Stage-D 49-token VLM can recover real-image posture evidence by training only a fresh query-conditioned readout, and whether audited region supervision improves that readout over answer CE alone.",
+  "data": {
+    "manifest": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-crossfit-v1.jsonl",
+      "sha256": "ad96b6716b4032ecaeb41450433f61beeb6ad94b0268974afedbddfad5d6bf16"
+    },
+    "probe_receipt": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-siglip2-probe-v1.json",
+      "sha256": "6c31a97f7788092d7f79f2084a51bd045c2431e811ce60f86bea9819f8fa4b85"
+    },
+    "zero_shot_receipt": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-zero-shot-v1.json",
+      "sha256": "e135fbf6ff02747d3cc4a1f5a9cfb27e6ab52c777900394d511903e44f473a81"
+    },
+    "pairs": 77,
+    "targets": 154,
+    "fold_count": 5,
+    "split_unit": "pair_id",
+    "rejected_targets_allowed": 0,
+    "negative_type": "different-scene same-class opposite-posture hard negative; not a causal image edit"
+  },
+  "parents": {
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base",
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55",
+    "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20260930-v1/step-000700/bridge.safetensors",
+    "bridge_sha256": "d4b04aa98e5430a1fe5a11918da87a67007d283116b4e843c1d640fc7c31f6ce",
+    "language_adapter": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20260930-v1/step-000700/language_adapter",
+    "language_adapter_files": {
+      "adapter_config.json": "beb25b1266075702a22f78be2daa5f03625a0198514f0137a1284e974b06fc9b",
+      "adapter_model.safetensors": "b6b31eb6927d27ba2a0dbdc71f50adca68f95b849f39a05bdbba532cf61cbaa9"
+    }
+  },
+  "architecture": {
+    "compressor": "spatial_query",
+    "visual_tokens": 196,
+    "output_visual_tokens": 49,
+    "target_ratio": 4,
+    "vision_feature_layer": -1,
+    "query_readout_rank": 64,
+    "trainable": [
+      "fresh_query_readout_only"
+    ],
+    "frozen": [
+      "language_model",
+      "existing_language_lora",
+      "siglip2_vision_encoder",
+      "stage_d_compressor",
+      "stage_d_projector",
+      "image_start",
+      "image_end"
+    ]
+  },
+  "arms": {
+    "query_ce": {
+      "role": "same-capacity answer-CE-only control",
+      "loss_weights": {
+        "answer": 1.0,
+        "address": 0.0,
+        "pair_rank": 0.0
+      }
+    },
+    "grounded_query": {
+      "role": "same-capacity query readout with audited region attention and within-pair posture ranking",
+      "loss_weights": {
+        "answer": 1.0,
+        "address": 0.25,
+        "pair_rank": 0.25
+      }
+    }
+  },
+  "execution_order": [
+    "query_ce",
+    "grounded_query"
+  ],
+  "feature_cache": {
+    "views": [
+      "full",
+      "marked",
+      "crop"
+    ],
+    "batch_images": 24,
+    "crop_padding_fraction": 0.1,
+    "dtype": "bfloat16",
+    "persistence": "process_memory_only"
+  },
+  "optimization": {
+    "seed": 20261005,
+    "training_view": "marked",
+    "epochs": 12,
+    "batch_pairs": 4,
+    "readout_learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.05,
+    "minimum_learning_rate_ratio": 0.1,
+    "gradient_clip_norm": 1.0,
+    "pair_margin": 1.0,
+    "max_text_tokens": 64,
+    "checkpoint_selection": "none; use the final prespecified epoch in every fold",
+    "hyperparameter_selection_on_this_dataset": "none"
+  },
+  "evaluation": {
+    "batch_targets": 8,
+    "primary_view": "marked",
+    "secondary_views": [
+      "full",
+      "crop"
+    ],
+    "conditions": [
+      "true_image",
+      "paired_swap",
+      "blank"
+    ],
+    "primary_metric": "pair_joint_accuracy_percent",
+    "causal_use_diagnostic": "true_image minus paired_swap accuracy and strict bidirectional answer flip",
+    "comparison": "grounded_query minus query_ce with pair-clustered 95 percent bootstrap CI",
+    "interpretation": "Report effect estimates and uncertainty without converting this small method-development set into a formal pass/fail benchmark."
+  },
+  "statistics": {
+    "cluster": "pair_id",
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 20261005,
+    "confidence": 0.95
+  },
+  "source_code": {
+    "trainer_sha256": "77d43fbccc5f3ffb54cf6da29359cde6770ab605adc6e697291fbeb25ff49b4b",
+    "test_sha256": "1670d877f567a2d50717f93f896f9832052ca9c989e848f02db612da75f29298",
+    "modeling_sha256": "7ee504253640c9c7ce7e121b212a31d16d9e57ef9e05f55ebcbd67573febeac9",
+    "losses_sha256": "566c43764013a8bb98a6343b18b260924c2396b1ae1e6424cf2fd77aedcbac39",
+    "candidate_scoring_sha256": "bbc78ccc71019ec4f34d2afc3467aaf2976334594a44cd76fb0f52bcce785a47",
+    "posture_evaluator_sha256": "657c1f0d4ea3b0465a564d20145cfb484ba5bda22c9c291e996d26eaa271e38e"
+  },
+  "claim_boundary": "This is a one-seed, 5-fold pair-atomic method-development experiment on 77 audited Open Images pairs. It may show that a frozen 49-token VLM can learn to route posture evidence, and estimate whether region supervision helps an equal-capacity readout. It cannot establish broad multimodal quality, causal counterfactual reasoning, global novelty, benchmark superiority, or readiness of a released model. The marked-view primary task assumes an external target box; full-image and crop transfer are secondary. A separate, newly acquired and sealed confirmation set is required before any confirmatory claim."
+}

@@ -1,0 +1,135 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "authorized_real_image_attribute_data_build_only",
+  "training_authorized": false,
+  "confirmation_use_authorized": false,
+  "claim_boundary": "This protocol authorizes deterministic data construction, integrity checks, and train-only human audit sheets. It does not authorize parameter updates, confirmation-set evaluation, release, novelty claims, natural-image transfer claims, or model superiority claims.",
+  "research_hypothesis": "At a fixed 49-token visual budget, explicit query-conditioned address supervision plus region-aligned value-source exchange may improve object-attribute binding beyond same-data query CE and address-only controls.",
+  "seed": 20260914,
+  "source_code": {
+    "builder_sha256": "4f0707fd674fa60c2f6d33a4cffa57fe57891c3e515a0db5b1fd7c0a4c2955c5",
+    "candidate_audit_script_sha256": "2c788f074d379f34784e1af02f664d632a3cb06b8e667734f3203970527ea996"
+  },
+  "evidence": {
+    "acquisition_receipt": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-vrd-acquisition-v1.json",
+      "sha256": "23f1cdaf0d9d5ee4683e05f41b8aef0ad5a3800da3e19ef0ecce91d6c839fcb4"
+    },
+    "candidate_audit": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-attribute-candidate-audit-v1.json",
+      "sha256": "324c8400ba7fd39b84c7432542410d4e65938bb8124025546fc72355e636f11d"
+    },
+    "stage_a_human_audit": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/stage-a-human-audit.json",
+      "sha256": "0842646754c16082be29bfb9f2d29c4b57e30d7bab1c6377e6a6e942fd674802"
+    }
+  },
+  "parent_manifest": {
+    "path": "/home/hhai/l20-vl-1.2b/data/stage-a-v1/prepared/open-images-manifest.jsonl",
+    "sha256": "33b88611299e095eaefebe0fe0a0f95f5ff9ab6d241c255d6747a240bc9ab264",
+    "rows": 25000,
+    "train_rows": 22500,
+    "development_rows": 2500
+  },
+  "quality_filters": {
+    "relationship_label": "is",
+    "require_identical_object_and_attribute_boxes": true,
+    "min_edge": 0.1,
+    "min_area": 0.02,
+    "reject_multi_attribute_same_box_within_family": true,
+    "keep_largest_box_per_image_class_family_attribute": true,
+    "transparent_excluded": true
+  },
+  "allowed_contrasts": [
+    {
+      "family": "material",
+      "class_name": "Chair",
+      "attribute_pairs": [
+        ["(made of)Leather", "Wooden"],
+        ["Plastic", "Wooden"]
+      ]
+    },
+    {
+      "family": "material",
+      "class_name": "Table",
+      "attribute_pairs": [
+        ["Plastic", "Wooden"]
+      ]
+    },
+    {
+      "family": "material",
+      "class_name": "Handbag",
+      "attribute_pairs": [
+        ["(made of)Leather", "(made of)Textile"]
+      ]
+    },
+    {
+      "family": "posture",
+      "class_name": "Boy",
+      "attribute_pairs": [
+        ["Sit", "Stand"]
+      ]
+    },
+    {
+      "family": "posture",
+      "class_name": "Girl",
+      "attribute_pairs": [
+        ["Sit", "Stand"]
+      ]
+    },
+    {
+      "family": "posture",
+      "class_name": "Man",
+      "attribute_pairs": [
+        ["Sit", "Stand"]
+      ]
+    },
+    {
+      "family": "posture",
+      "class_name": "Woman",
+      "attribute_pairs": [
+        ["Sit", "Stand"]
+      ]
+    }
+  ],
+  "split_policy": {
+    "seed": 20260914,
+    "parent_development_assignment": "sealed_confirmation",
+    "parent_train_assignment": "sha256_image_atomic",
+    "bucket_count": 20,
+    "selection_buckets": [0, 1, 2]
+  },
+  "pair_caps": {
+    "train": 64,
+    "selection_dev": 16,
+    "sealed_confirmation": 16
+  },
+  "minimum_pairs": {
+    "train": 200,
+    "selection_dev": 25,
+    "sealed_confirmation": 30
+  },
+  "controls": {
+    "same_class_same_attribute_no_op_required": true,
+    "different_family_random_source_required": true,
+    "random_source_is_diagnostic_only": true
+  },
+  "caption_replay": {
+    "source": "parent_train_only",
+    "examples": 4096,
+    "purpose": "mitigate catastrophic forgetting of broad natural-image alignment"
+  },
+  "human_audit": {
+    "split": "train_only",
+    "examples_per_contrast": 4,
+    "maximum_examples": 40,
+    "examples_per_sheet": 16,
+    "sealed_confirmation_examples": 0
+  },
+  "outputs": {
+    "pair_manifest": "/home/hhai/l20-vl-1.2b/data/openimages-vrd-pilot-v1/prepared/attribute-routing-pairs-v1.jsonl",
+    "caption_replay_manifest": "/home/hhai/l20-vl-1.2b/data/openimages-vrd-pilot-v1/prepared/caption-replay-train-v1.jsonl",
+    "human_audit_directory": "/home/hhai/l20-vl-1.2b/evidence/human-audit/openimages-attribute-routing-v1",
+    "build_receipt": "/home/hhai/l20-vl-1.2b/evidence/openimages-attribute-routing-build-v1.json"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "allowed_seeds": [
+    20260930,
+    20261001,
+    20261002,
+    20261003,
+    20261004
+  ],
+  "arms": {
+    "A_spatial_49": {
+      "architecture": {
+        "compressor": "spatial_query",
+        "output_visual_tokens": 49,
+        "target_ratio": 4,
+        "vision_feature_layer": -1,
+        "visual_tokens": 196
+      },
+      "loss_weights": {
+        "answer_supervision": 1.0,
+        "evidence_delta": 0.0,
+        "invariance_delta": 0.0,
+        "ordinary_kd": 0.0
+      },
+      "role": "current learned spatial-query 49-token answer-only continuation",
+      "selected_learning_rate_multiplier": 1.0
+    },
+    "F_matched_196": {
+      "architecture": {
+        "compressor": "none",
+        "target_ratio": 1,
+        "vision_feature_layer": -1,
+        "visual_tokens": 196
+      },
+      "loss_weights": {
+        "answer_supervision": 1.0,
+        "evidence_delta": 0.0,
+        "invariance_delta": 0.0,
+        "ordinary_kd": 0.0
+      },
+      "role": "full-token answer-only continuation matched for data, updates, LR-search allowance, seed and checkpoint-selection opportunity",
+      "selected_learning_rate_multiplier": 0.5
+    }
+  },
+  "authorized_by_user": true,
+  "budget": {
+    "d0_d1_d2_total_l20_gpu_hours_cap": 24.0,
+    "d1_total_gpu_hours_cap": 10.0,
+    "d1_training_gpu_hours_cap": 10.0
+  },
+  "capacity_boundary": "F_matched_196 matches adaptation opportunity but has 4,726,274 fewer bridge parameters and no spatial-query compressor. D1 estimates the package-level effect; a later spatial_196 arm is required to isolate token count from compressor capacity and layout.",
+  "claim_boundary": "D1 training and development selection estimate adaptation stability while keeping all tests sealed. They do not authorize a compression-caused gain or final efficacy claim.",
+  "data": {
+    "epochs": 1,
+    "image_examples": 42000,
+    "manifest": "/home/hhai/l20-vl-1.2b/data/diagnostic/counterfactual-v3/manifest.jsonl",
+    "manifest_sha256": "6f21e01d31d8fc3035ca22219d0484a8fb029a30b2cddec34ab726585e5dfede",
+    "scene_families": 14000,
+    "split": "train",
+    "variants_per_family": 3
+  },
+  "development": {
+    "families_per_task_answer_stratum": 25,
+    "families_per_task_for_screen": 50,
+    "manifest": "/home/hhai/l20-vl-1.2b/data/diagnostic/stage-d-v2/manifest.jsonl",
+    "manifest_sha256": "efd51701c19379ce77af83272acd732c93cc7e4428ca67c6cb147bea0572c6cb",
+    "scene_families": 2000,
+    "selection_is_prefix_after_scene_family_sort": false,
+    "selection_stratified_by": [
+      "task",
+      "base_answer"
+    ],
+    "split": "development"
+  },
+  "distillation_temperature": 2.0,
+  "equalization": {
+    "same_14000_training_families": true,
+    "same_875_optimizer_updates": true,
+    "same_answer_only_objective": true,
+    "same_development_subset_and_checkpoint_candidates": true,
+    "same_lr_search_allowance": true,
+    "same_paired_seed_for_each_arm": true,
+    "same_parent_bridge_and_language_adapter": true,
+    "wall_clock_reported_not_equalized": true
+  },
+  "frozen_at": "2026-09-13T11:03:12.209881+00:00",
+  "huber_beta": 1.0,
+  "lr_selection_seed": 20260929,
+  "new_iid_test_status": "sealed",
+  "new_ood_binding_test_status": "sealed",
+  "optimization": {
+    "adapter_learning_rate": 1e-05,
+    "bridge_learning_rate": 2e-05,
+    "candidate_sequences_per_optimizer_step": 96,
+    "checkpoint_every_steps": 100,
+    "compressor_learning_rate": 0.0002,
+    "effective_batch_families": 16,
+    "gradient_accumulation_steps": 2,
+    "gradient_clip_norm": 1.0,
+    "image_examples_per_optimizer_step": 48,
+    "max_optimizer_steps": 875,
+    "max_wall_seconds": 7200,
+    "micro_batch_families": 8,
+    "minimum_learning_rate_ratio": 0.1,
+    "precision": "bfloat16",
+    "seed": 20260929,
+    "text_tokens_max": 96,
+    "warmup_ratio": 0.03,
+    "weight_decay": 0.02
+  },
+  "parents": {
+    "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-a-unique-scene-recovery-v1/step-000600/bridge.safetensors",
+    "bridge_sha256": "22cdd610fd52455ff43d378456fc097f0212f873ab2f1845cd4fd8f1198320bd",
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base",
+    "language_adapter": "/home/hhai/l20-vl-1.2b/runs/stage-a-unique-scene-recovery-v1/step-000600/language_adapter",
+    "language_adapter_files": {
+      "adapter_config.json": "4efcdcb96fae3737bfc84475bf914d3d470dc6a56b91334d0cde69fa7cab0182",
+      "adapter_model.safetensors": "1ea887b899ed5baf462b79389874603b30f7420bb8620dc5a5feb21a281013b4"
+    },
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55"
+  },
+  "post_d1_gate": "freeze all ten selected checkpoints and a separately hashed test-unseal protocol before exactly one evaluation per arm/seed on new IID and OOD tests",
+  "preference_scale": 4.0,
+  "prior_stage_c_test_role": "regression_only_not_used",
+  "prohibited": [
+    "using any test split for training, LR selection or checkpoint selection",
+    "calling development scores confirmatory efficacy",
+    "calling the two-arm contrast a token-count-only or capacity-only effect",
+    "claiming natural-image generalization",
+    "claiming seed robustness before all ten runs and confirmation tests complete"
+  ],
+  "purpose": "estimate the package-level 49-token versus matched full-token effect across five paired training seeds before any confirmation-test inference",
+  "required_audits": {
+    "/home/hhai/l20-vl-1.2b/evidence/stage-d-d0-evaluator-audit-fp32-v2/audit.json": "83451584380db70431cc20ffc8bbb781438a374f9ecd444e39715c25ea30cec7",
+    "/home/hhai/l20-vl-1.2b/evidence/stage-d-d0-static-audit-v1.json": "6f58c55ed26a172320dc56b5d9ac570bc6ae3e33ecfe4fe5f65f9cfd7d154014",
+    "/home/hhai/l20-vl-1.2b/evidence/stage-d-data-generation-v2.json": "0d3776303b08d28a401f06705cf8cd38f834124ef91db18d366773aee885cfe2",
+    "/home/hhai/l20-vl-1.2b/evidence/stage-d-data-human-audit-v2.json": "318a04a9ed2858babc22ae1de8360553f8214c4372533b490f30ae02028589ac",
+    "/home/hhai/l20-vl-1.2b/evidence/stage-d-lr-screen-audit-v1.json": "997aa30b18f60192a4a642dacde00306973e68bd253cb5257ed90949b2a2ef9d",
+    "/home/hhai/l20-vl-1.2b/evidence/stage-d-lr-screen-summary-v1.json": "a69087907e9649c264dc7f2e4f7618a4f369f98455e39e2478402f24664017c8",
+    "/home/hhai/l20-vl-1.2b/evidence/stage-d-training-smoke-v2.json": "b1356dfb7149ee5db7d77eded04a40f92654b3c53d7138e4038cbd27348f6352",
+    "/home/hhai/l20-vl-1.2b/stage_d_data_admission_v2.json": "dd33bd6fdd472b7b32cc56f9a70cb072c1158b03a7cfec6c2bdf645195b12d1c",
+    "/home/hhai/l20-vl-1.2b/stage_d_data_protocol_v2.json": "0e776b0ac5cf466a3ffdc98768c41a843fffd1ffd9188d0fac53bea8b416a4fe",
+    "/home/hhai/l20-vl-1.2b/stage_d_lr_screen_protocol.json": "2fec2dfc6dc6c98bc6f805a6ef62649061ea22a383594a4acf08b2cc5d2a93dd"
+  },
+  "schema_version": "2026-09-13-v1",
+  "seed_boundary": "Each paired seed changes deterministic data order and stochastic adaptation. A_spatial_49 also initializes its new compressor from that seed; F_matched_196 has no new compressor. This is adaptation-seed evidence, not parent-pretraining-seed evidence.",
+  "selection": {
+    "candidate_steps": [
+      100,
+      300,
+      500,
+      700,
+      875
+    ],
+    "families_per_task": 50,
+    "families_per_task_answer_stratum": 25,
+    "rule": "maximize family-joint accuracy, then binding-task macro, then ordinary primary-query accuracy, then prefer the earlier optimizer step",
+    "split": "development"
+  },
+  "status": "authorized_stage_d_two_arm_five_seed_replication",
+  "test_split_use_authorized": false
+}

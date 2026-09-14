@@ -1,0 +1,435 @@
+{
+  "auditor_sha256": "769d3be964ad453c4a3290c8da0f8fbdaa0d399b63183ebdfb307de7ca74ec9a",
+  "claim_boundary": "This is a time-specific network and integrity preflight over 32 of 431 unique images. A failure rejects available-only scoring because it would be selection-biased; it does not imply that the official metadata or annotations are invalid. A pass would justify only a separate full acquisition attempt, not model evaluation or an official benchmark score.",
+  "completed_at": "2026-09-14T10:50:28.369324+00:00",
+  "decision": "reject_direct_urls_as_incomplete_or_integrity_unsafe",
+  "downloaded_images_persisted": 0,
+  "gate": {
+    "maximum_sha256_mismatches": 0,
+    "minimum_verified_images": 30,
+    "rationale": "At least 93.75% of a deterministic model-blind sample must be directly recoverable, and no integrity mismatch is tolerated, before spending bandwidth on all 431 images. Passing this preflight would not itself authorize scoring or establish complete benchmark availability."
+  },
+  "gate_passed": false,
+  "model_evaluation_started": false,
+  "model_under_test_accessed": false,
+  "network_settings": {
+    "connect_timeout_seconds": 8,
+    "integrity_requirements": [
+      "HTTP request succeeds",
+      "payload is at most 20 MiB",
+      "payload SHA256 exactly matches pinned metadata",
+      "Pillow verify and full decode both succeed",
+      "decoded dimensions are positive"
+    ],
+    "maximum_image_bytes": 20971520,
+    "read_timeout_seconds": 20,
+    "workers": 16
+  },
+  "next_allowed_step": "Do not score an available-only subset; seek an integrity-verifiable archival source or use a different benchmark.",
+  "protocol": {
+    "path": "pixmo_points_eval_image_availability_v1_protocol.json",
+    "sha256": "352c19db5257833060f45db373c1bff4baaa8b651d075aa36fd3dea443c86e39"
+  },
+  "results": [
+    {
+      "bytes": 333472,
+      "format": "JPEG",
+      "height": 1293,
+      "image_sha256": "003e9db7b069da6cba19a4541889d6159e8672c9b6b2598689500f791b53eb36",
+      "image_url": "https://i.servimg.com/u/f58/19/97/72/55/287a_m10.jpg",
+      "status": "verified",
+      "width": 1024
+    },
+    {
+      "error_type": "ConnectionError",
+      "image_sha256": "0040099b144a849a33d0c4b4e87c50b28165446671ff9bb08a38e240a0063e11",
+      "image_url": "https://s28490.pcdn.co/wp-content/uploads/2019/05/riveting-01.jpg",
+      "status": "request_failure"
+    },
+    {
+      "bytes": 117513,
+      "format": "JPEG",
+      "height": 600,
+      "image_sha256": "028875edb0da34be9caa0cfabae4ab19c458bda72050137c1717ee91b951256a",
+      "image_url": "https://fe01.museumoflondon.org.uk/imagestore/209/media-209684/original.jpg",
+      "status": "verified",
+      "width": 902
+    },
+    {
+      "bytes": 130437,
+      "format": "JPEG",
+      "height": 720,
+      "image_sha256": "02ae2944eb3f0650ab9003c2be51254df5ca68cf0ccb09bc026e539b6ea9002c",
+      "image_url": "https://i.ytimg.com/vi/6VgFUOdBq5g/maxresdefault.jpg",
+      "status": "verified",
+      "width": 1280
+    },
+    {
+      "error_type": "HTTPError",
+      "image_sha256": "02bf2c6cc6afff99ba45c61fbcd38adfc74f9e4fc47111bdbd4aacdb4661ffaa",
+      "image_url": "https://cdn-akbcd.nitrocdn.com/uAzHNABcNZTqTDDLuOdKkQlOQcZsAuFo/assets/static/source/rev-d7561ce/wp-content/uploads/2020/10/word-image-69.jpeg",
+      "status": "request_failure"
+    },
+    {
+      "bytes": 590502,
+      "image_sha256": "0355a8614732f18e6bb2befcae6de172ad81651c9b3b42927c156bf13186bdcf",
+      "image_url": "https://cdn.jetphotos.com/full/6/79913_1523779940.jpg",
+      "observed_sha256": "9bf746914b77ce82d1fee210ffeac2c74ba7a64e0ff17299666f06935940ed3e",
+      "status": "sha256_mismatch"
+    },
+    {
+      "bytes": 73375,
+      "format": "JPEG",
+      "height": 600,
+      "image_sha256": "03e2381f371ec308199cdd1e39ffb789a0b8a5ddc7a77bcc08c658498679b963",
+      "image_url": "https://blog-batiment.com/wp-content/uploads/2023/01/construction-en-terre-crue.jpg",
+      "status": "verified",
+      "width": 900
+    },
+    {
+      "bytes": 35734,
+      "format": "JPEG",
+      "height": 995,
+      "image_sha256": "04328fce9d2092912e9a44665138c17b653533ed4eeb4cd26cccb9428b64b7db",
+      "image_url": "https://fabrx.co/wp-content/uploads/2020/10/m-ecommerce.jpg",
+      "status": "verified",
+      "width": 690
+    },
+    {
+      "bytes": 186287,
+      "format": "JPEG",
+      "height": 675,
+      "image_sha256": "04d49d2ea9f527dd168141c1898cdc1f794136636067eba9b27bd843b944e82c",
+      "image_url": "https://ricedigital.co.uk/wp-content/uploads/2021/01/Shiren-the-Wanderer-5-Limited-Run-Games-e1610636776748.jpg",
+      "status": "verified",
+      "width": 1200
+    },
+    {
+      "bytes": 41630,
+      "format": "JPEG",
+      "height": 547,
+      "image_sha256": "061af2f3665092c9b58617e2a32588f6eaa46cf37915c400b01605f6649a1317",
+      "image_url": "https://www.boredpanda.com/blog/wp-content/uploads/2023/07/wednesday-netflix-memes-47-64abcdda5746a__700.jpg",
+      "status": "verified",
+      "width": 700
+    },
+    {
+      "bytes": 328987,
+      "format": "PNG",
+      "height": 783,
+      "image_sha256": "0734aa42cb2d0eb7432213ae8998b4a45f32c28390fdcaa33d571c049b3d5f5f",
+      "image_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/b376c2110008889.5fe1778120c45.png",
+      "status": "verified",
+      "width": 1400
+    },
+    {
+      "bytes": 136457,
+      "format": "JPEG",
+      "height": 1334,
+      "image_sha256": "0898351c860667ee927832ae409a9c0018e6effd924a033d9eb62346b8e2ba0f",
+      "image_url": "https://i.redd.it/gvjtihxnq4lz.jpg",
+      "status": "verified",
+      "width": 750
+    },
+    {
+      "bytes": 96444,
+      "format": "WEBP",
+      "height": 640,
+      "image_sha256": "08cee8e52c60d8c7d78f9d3b65f0be8703374bb479638e34fa4c0041a318d49d",
+      "image_url": "https://ae01.alicdn.com/kf/HTB1g6A3di0TMKJjSZFNq6y_1FXaV/Flower-Hard-Plastic-Phone-Case-For-Samsung-Galaxy-A3-A5-A7-J5-J7-2015-A510-A710.jpg_640x640.jpg",
+      "status": "verified",
+      "width": 640
+    },
+    {
+      "bytes": 167331,
+      "format": "PNG",
+      "height": 323,
+      "image_sha256": "08e64a9dc856a64275900471df1719f9dda9742b1cd15f9cf39425806bee7c6c",
+      "image_url": "https://tuigarden.co.nz/media/3108/adding_newspaper.png",
+      "status": "verified",
+      "width": 297
+    },
+    {
+      "bytes": 289076,
+      "format": "JPEG",
+      "height": 1191,
+      "image_sha256": "094bea7009efbeaf9e17ce5ec79f89f8c8887dd7c657305c75fec79e1e0af60b",
+      "image_url": "http://mcsc-rally.net/highland-masters/wp-content/uploads/2017/09/Map_all_Ver2a.jpg",
+      "status": "verified",
+      "width": 842
+    },
+    {
+      "bytes": 395246,
+      "image_sha256": "097813f7f9ee59e23b8ccd354def938421837beb24645c8469701693958638f8",
+      "image_url": "https://extendthemes.com/knowledge-base/highlight/wp-content/uploads/sites/5/2019/01/mobile-image-background-1024x700.png",
+      "observed_sha256": "034e4102e1502df5ea68d7fe69bc9da3f2ec745554aac92434615b9fcd272439",
+      "status": "sha256_mismatch"
+    },
+    {
+      "error_type": "HTTPError",
+      "image_sha256": "0a2300384804b860b87a4319bc31e0a95a16a61f017fde82360e83f5c6eaadf3",
+      "image_url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/92f5325f-c286-480e-bc9e-7e40fe050fc8/dh97h9n-b0b2c8bd-533a-4993-87b2-2daa63ebcd9e.jpg/v1/fill/w_201,h_350,q_70,strp/__video_de_danang_au_vietnam___pas_peur_du_tout_by_sophiecolle_dh97h9n-350t.jpg",
+      "status": "request_failure"
+    },
+    {
+      "bytes": 499416,
+      "format": "JPEG",
+      "height": 864,
+      "image_sha256": "0b64bbd90ac19db221983e0a0dea8d670211821c9b23bea38e72a27fd815d8c8",
+      "image_url": "https://npplan.com/wp-content/uploads/2022/08/Gettysburg-040-1536x864.jpg",
+      "status": "verified",
+      "width": 1536
+    },
+    {
+      "bytes": 131879,
+      "format": "JPEG",
+      "height": 1152,
+      "image_sha256": "0bd4a60bedc14b0852487af62169138251d11d86267dea5960f6a7f6d9bd0d1a",
+      "image_url": "https://tellloveandparty.com/wp-content/uploads/2018/12/stencil-gift-wrap-3-WORDS--768x1152.jpg",
+      "status": "verified",
+      "width": 768
+    },
+    {
+      "bytes": 601672,
+      "image_sha256": "0cc7ba99413c27ad925d2f47472c5c556efd5b379b07cc8cfd9b079db99e3d45",
+      "image_url": "https://leanpub.com/site_images/manual/images----GH37.png",
+      "observed_sha256": "9881f5454a870cb74f35faacd9eb1e0127bad345c60f22d528da9664ef2f6a91",
+      "status": "sha256_mismatch"
+    },
+    {
+      "error_type": "HTTPError",
+      "image_sha256": "0cf45219b41a840507baec0bfb4b93d2a68ebb3a22108c6f97ff4b66e4d90286",
+      "image_url": "https://surveydetails.com/wp-content/uploads/2018/10/Sephora-step-1.jpg",
+      "status": "request_failure"
+    },
+    {
+      "bytes": 284225,
+      "image_sha256": "0d21151076d4c4eb4294b57ca4eaa910952054ac0b78f47127a8ea3cd5e550ea",
+      "image_url": "http://qatarbarzan.net/real/wp-content/uploads/2019/02/WhatsApp-Image-2019-01-14-at-2.29.39-PM-1.jpeg",
+      "observed_sha256": "34149d7c70335aefca4d52eeda79ac5a3f1c08f73aeecc5d44032d91c4fb4d54",
+      "status": "sha256_mismatch"
+    },
+    {
+      "bytes": 303338,
+      "image_sha256": "0e07309545d48a20a62842f8636be72d79e38d0b8a24c976f11e13bcf178ff2e",
+      "image_url": "https://warptheme.com/wp-content/uploads/2016/02/solid-forum.png",
+      "observed_sha256": "190a8285022bb200d0eebe98e9468330f450ed075cd3f6f885c201ea3f801bc0",
+      "status": "sha256_mismatch"
+    },
+    {
+      "bytes": 124673,
+      "format": "JPEG",
+      "height": 1000,
+      "image_sha256": "0ed3555117a2c7ccca05352df087081bac7917224993e46a75f249443bb92b7f",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/xFG_FcfPxqpRHLlMP28lEQ/o.jpg",
+      "status": "verified",
+      "width": 804
+    },
+    {
+      "bytes": 43065,
+      "format": "JPEG",
+      "height": 297,
+      "image_sha256": "0f0f5f247f7d417c970881e54245a2c8fe4b04f821b38bb7032c276815c066c2",
+      "image_url": "https://ruinmyweek.com/wp-content/uploads/2019/02/201902older-people-are-confessing-which-young-trends-they-actually-like-and-its-adorable-370x297.jpg",
+      "status": "verified",
+      "width": 370
+    },
+    {
+      "bytes": 104405,
+      "format": "JPEG",
+      "height": 1124,
+      "image_sha256": "100913f156f364991513a7b60dce5090a4b083c1686c02ec7c2f29879398ce4d",
+      "image_url": "https://images-cdn.9gag.com/photo/armVbw5_700b.jpg",
+      "status": "verified",
+      "width": 605
+    },
+    {
+      "bytes": 350624,
+      "image_sha256": "10594776999b89ab0c380d58dd3e6cfc3da70bad25e94d150172f206d8bd637c",
+      "image_url": "http://www.anchorfoods.net/retail-food/images/TROPICISLE.jpg",
+      "observed_sha256": "e8dc82e49bc9ee98a455860b21a6ecd47b6c817a4150b8d59af6a76a3f0e6644",
+      "status": "sha256_mismatch"
+    },
+    {
+      "bytes": 72161,
+      "format": "PNG",
+      "height": 584,
+      "image_sha256": "109ddfb3d33b3936c8ba6e13509ed4a8f99ff633be65b391efbd38f82cbe9cdc",
+      "image_url": "https://media.zenobuilder.com/upload/1ly92eod7l/my-deliveries-location-50324342.png",
+      "status": "verified",
+      "width": 1080
+    },
+    {
+      "bytes": 1339164,
+      "format": "PNG",
+      "height": 680,
+      "image_sha256": "10ba2c6e68a031df58aabdedae6683ba612ef308c90cc3d6d66568a97d8dfee4",
+      "image_url": "https://d1pu3shgeul9br.cloudfront.net/2022/01/Shell-Building-3-Industrial-Site-City-of-Shelby-_-Featured-Image.png",
+      "status": "verified",
+      "width": 1200
+    },
+    {
+      "bytes": 22045,
+      "format": "JPEG",
+      "height": 397,
+      "image_sha256": "1218c43900437f890799cdd74eb4b43fda9d3f4952e734d800bd2122019a1fef",
+      "image_url": "https://usmenuguide.com/wp-content/uploads/2019/03/oyshirainbownew4.jpg",
+      "status": "verified",
+      "width": 600
+    },
+    {
+      "bytes": 88378,
+      "image_sha256": "12c53f8022a6e57871d6298f4fa0ae84dd1fefaaeef7b1cc53a170d6ef062219",
+      "image_url": "http://brbgoingtodisney.com/wp-content/uploads/2022/01/remy_ratatouille_adventure_epcot_walt_disney_world_2022-4-604x1024.jpg",
+      "observed_sha256": "a147d0f01623090bc9e0365981c56618567ac68ec5ea8d276e8d21f161c1795e",
+      "status": "sha256_mismatch"
+    },
+    {
+      "error_type": "ConnectionError",
+      "image_sha256": "12c9e57d1360c1ece0a23929bdb43d18e1a1064eb4c48b9951577c683ead1a57",
+      "image_url": "https://www.jisilu.cn/uploads/answer/20231222/081384e32a4f1c6a44e8136faf9401d2.jpeg",
+      "status": "request_failure"
+    }
+  ],
+  "sample": [
+    {
+      "image_sha256": "003e9db7b069da6cba19a4541889d6159e8672c9b6b2598689500f791b53eb36",
+      "image_url": "https://i.servimg.com/u/f58/19/97/72/55/287a_m10.jpg"
+    },
+    {
+      "image_sha256": "0040099b144a849a33d0c4b4e87c50b28165446671ff9bb08a38e240a0063e11",
+      "image_url": "https://s28490.pcdn.co/wp-content/uploads/2019/05/riveting-01.jpg"
+    },
+    {
+      "image_sha256": "028875edb0da34be9caa0cfabae4ab19c458bda72050137c1717ee91b951256a",
+      "image_url": "https://fe01.museumoflondon.org.uk/imagestore/209/media-209684/original.jpg"
+    },
+    {
+      "image_sha256": "02ae2944eb3f0650ab9003c2be51254df5ca68cf0ccb09bc026e539b6ea9002c",
+      "image_url": "https://i.ytimg.com/vi/6VgFUOdBq5g/maxresdefault.jpg"
+    },
+    {
+      "image_sha256": "02bf2c6cc6afff99ba45c61fbcd38adfc74f9e4fc47111bdbd4aacdb4661ffaa",
+      "image_url": "https://cdn-akbcd.nitrocdn.com/uAzHNABcNZTqTDDLuOdKkQlOQcZsAuFo/assets/static/source/rev-d7561ce/wp-content/uploads/2020/10/word-image-69.jpeg"
+    },
+    {
+      "image_sha256": "0355a8614732f18e6bb2befcae6de172ad81651c9b3b42927c156bf13186bdcf",
+      "image_url": "https://cdn.jetphotos.com/full/6/79913_1523779940.jpg"
+    },
+    {
+      "image_sha256": "03e2381f371ec308199cdd1e39ffb789a0b8a5ddc7a77bcc08c658498679b963",
+      "image_url": "https://blog-batiment.com/wp-content/uploads/2023/01/construction-en-terre-crue.jpg"
+    },
+    {
+      "image_sha256": "04328fce9d2092912e9a44665138c17b653533ed4eeb4cd26cccb9428b64b7db",
+      "image_url": "https://fabrx.co/wp-content/uploads/2020/10/m-ecommerce.jpg"
+    },
+    {
+      "image_sha256": "04d49d2ea9f527dd168141c1898cdc1f794136636067eba9b27bd843b944e82c",
+      "image_url": "https://ricedigital.co.uk/wp-content/uploads/2021/01/Shiren-the-Wanderer-5-Limited-Run-Games-e1610636776748.jpg"
+    },
+    {
+      "image_sha256": "061af2f3665092c9b58617e2a32588f6eaa46cf37915c400b01605f6649a1317",
+      "image_url": "https://www.boredpanda.com/blog/wp-content/uploads/2023/07/wednesday-netflix-memes-47-64abcdda5746a__700.jpg"
+    },
+    {
+      "image_sha256": "0734aa42cb2d0eb7432213ae8998b4a45f32c28390fdcaa33d571c049b3d5f5f",
+      "image_url": "https://mir-s3-cdn-cf.behance.net/project_modules/1400/b376c2110008889.5fe1778120c45.png"
+    },
+    {
+      "image_sha256": "0898351c860667ee927832ae409a9c0018e6effd924a033d9eb62346b8e2ba0f",
+      "image_url": "https://i.redd.it/gvjtihxnq4lz.jpg"
+    },
+    {
+      "image_sha256": "08cee8e52c60d8c7d78f9d3b65f0be8703374bb479638e34fa4c0041a318d49d",
+      "image_url": "https://ae01.alicdn.com/kf/HTB1g6A3di0TMKJjSZFNq6y_1FXaV/Flower-Hard-Plastic-Phone-Case-For-Samsung-Galaxy-A3-A5-A7-J5-J7-2015-A510-A710.jpg_640x640.jpg"
+    },
+    {
+      "image_sha256": "08e64a9dc856a64275900471df1719f9dda9742b1cd15f9cf39425806bee7c6c",
+      "image_url": "https://tuigarden.co.nz/media/3108/adding_newspaper.png"
+    },
+    {
+      "image_sha256": "094bea7009efbeaf9e17ce5ec79f89f8c8887dd7c657305c75fec79e1e0af60b",
+      "image_url": "http://mcsc-rally.net/highland-masters/wp-content/uploads/2017/09/Map_all_Ver2a.jpg"
+    },
+    {
+      "image_sha256": "097813f7f9ee59e23b8ccd354def938421837beb24645c8469701693958638f8",
+      "image_url": "https://extendthemes.com/knowledge-base/highlight/wp-content/uploads/sites/5/2019/01/mobile-image-background-1024x700.png"
+    },
+    {
+      "image_sha256": "0a2300384804b860b87a4319bc31e0a95a16a61f017fde82360e83f5c6eaadf3",
+      "image_url": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/92f5325f-c286-480e-bc9e-7e40fe050fc8/dh97h9n-b0b2c8bd-533a-4993-87b2-2daa63ebcd9e.jpg/v1/fill/w_201,h_350,q_70,strp/__video_de_danang_au_vietnam___pas_peur_du_tout_by_sophiecolle_dh97h9n-350t.jpg"
+    },
+    {
+      "image_sha256": "0b64bbd90ac19db221983e0a0dea8d670211821c9b23bea38e72a27fd815d8c8",
+      "image_url": "https://npplan.com/wp-content/uploads/2022/08/Gettysburg-040-1536x864.jpg"
+    },
+    {
+      "image_sha256": "0bd4a60bedc14b0852487af62169138251d11d86267dea5960f6a7f6d9bd0d1a",
+      "image_url": "https://tellloveandparty.com/wp-content/uploads/2018/12/stencil-gift-wrap-3-WORDS--768x1152.jpg"
+    },
+    {
+      "image_sha256": "0cc7ba99413c27ad925d2f47472c5c556efd5b379b07cc8cfd9b079db99e3d45",
+      "image_url": "https://leanpub.com/site_images/manual/images----GH37.png"
+    },
+    {
+      "image_sha256": "0cf45219b41a840507baec0bfb4b93d2a68ebb3a22108c6f97ff4b66e4d90286",
+      "image_url": "https://surveydetails.com/wp-content/uploads/2018/10/Sephora-step-1.jpg"
+    },
+    {
+      "image_sha256": "0d21151076d4c4eb4294b57ca4eaa910952054ac0b78f47127a8ea3cd5e550ea",
+      "image_url": "http://qatarbarzan.net/real/wp-content/uploads/2019/02/WhatsApp-Image-2019-01-14-at-2.29.39-PM-1.jpeg"
+    },
+    {
+      "image_sha256": "0e07309545d48a20a62842f8636be72d79e38d0b8a24c976f11e13bcf178ff2e",
+      "image_url": "https://warptheme.com/wp-content/uploads/2016/02/solid-forum.png"
+    },
+    {
+      "image_sha256": "0ed3555117a2c7ccca05352df087081bac7917224993e46a75f249443bb92b7f",
+      "image_url": "https://s3-media0.fl.yelpcdn.com/bphoto/xFG_FcfPxqpRHLlMP28lEQ/o.jpg"
+    },
+    {
+      "image_sha256": "0f0f5f247f7d417c970881e54245a2c8fe4b04f821b38bb7032c276815c066c2",
+      "image_url": "https://ruinmyweek.com/wp-content/uploads/2019/02/201902older-people-are-confessing-which-young-trends-they-actually-like-and-its-adorable-370x297.jpg"
+    },
+    {
+      "image_sha256": "100913f156f364991513a7b60dce5090a4b083c1686c02ec7c2f29879398ce4d",
+      "image_url": "https://images-cdn.9gag.com/photo/armVbw5_700b.jpg"
+    },
+    {
+      "image_sha256": "10594776999b89ab0c380d58dd3e6cfc3da70bad25e94d150172f206d8bd637c",
+      "image_url": "http://www.anchorfoods.net/retail-food/images/TROPICISLE.jpg"
+    },
+    {
+      "image_sha256": "109ddfb3d33b3936c8ba6e13509ed4a8f99ff633be65b391efbd38f82cbe9cdc",
+      "image_url": "https://media.zenobuilder.com/upload/1ly92eod7l/my-deliveries-location-50324342.png"
+    },
+    {
+      "image_sha256": "10ba2c6e68a031df58aabdedae6683ba612ef308c90cc3d6d66568a97d8dfee4",
+      "image_url": "https://d1pu3shgeul9br.cloudfront.net/2022/01/Shell-Building-3-Industrial-Site-City-of-Shelby-_-Featured-Image.png"
+    },
+    {
+      "image_sha256": "1218c43900437f890799cdd74eb4b43fda9d3f4952e734d800bd2122019a1fef",
+      "image_url": "https://usmenuguide.com/wp-content/uploads/2019/03/oyshirainbownew4.jpg"
+    },
+    {
+      "image_sha256": "12c53f8022a6e57871d6298f4fa0ae84dd1fefaaeef7b1cc53a170d6ef062219",
+      "image_url": "http://brbgoingtodisney.com/wp-content/uploads/2022/01/remy_ratatouille_adventure_epcot_walt_disney_world_2022-4-604x1024.jpg"
+    },
+    {
+      "image_sha256": "12c9e57d1360c1ece0a23929bdb43d18e1a1064eb4c48b9951577c683ead1a57",
+      "image_url": "https://www.jisilu.cn/uploads/answer/20231222/081384e32a4f1c6a44e8136faf9401d2.jpeg"
+    }
+  ],
+  "schema_version": "2026-09-14-v1",
+  "sha256_mismatches": 7,
+  "status": "complete_pixmo_points_eval_image_availability_preflight",
+  "status_counts": {
+    "request_failure": 5,
+    "sha256_mismatch": 7,
+    "verified": 20
+  },
+  "training_started": false,
+  "verified_fraction": 0.625,
+  "verified_images": 20
+}

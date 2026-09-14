@@ -1,0 +1,90 @@
+{
+  "schema_version": "2026-09-13-v1",
+  "status": "authorized_stage_b_answer_supervision_compression_gap_pilot",
+  "authorized_by_user": true,
+  "authorized_at": "2026-09-13",
+  "purpose": "measure the controlled-domain capability gap caused by compressing 196 SigLIP2 patch tokens to 49 learned query tokens",
+  "compression_experiment": true,
+  "not_a_compression_experiment": false,
+  "proposed_delta_loss_used": false,
+  "test_split_use_authorized": false,
+  "parents": {
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base",
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55",
+    "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-a-unique-scene-recovery-v1/step-000600/bridge.safetensors",
+    "bridge_sha256": "22cdd610fd52455ff43d378456fc097f0212f873ab2f1845cd4fd8f1198320bd",
+    "language_adapter": "/home/hhai/l20-vl-1.2b/runs/stage-a-unique-scene-recovery-v1/step-000600/language_adapter",
+    "language_adapter_files": {
+      "adapter_config.json": "4efcdcb96fae3737bfc84475bf914d3d470dc6a56b91334d0cde69fa7cab0182",
+      "adapter_model.safetensors": "1ea887b899ed5baf462b79389874603b30f7420bb8620dc5a5feb21a281013b4"
+    }
+  },
+  "failure_evidence": {
+    "path": "/home/hhai/l20-vl-1.2b/evidence/stage-a-unique-scene-recovery-development-v1.json",
+    "sha256": "7c5cef29bd44388bd971d40a391ac235d161bb4b1477d5fa98514b7b018af361",
+    "full_token_development_paired_joint_accuracy_percent": 73.16666666666667,
+    "role": "frozen full-token reference for the Stage-B gap decision"
+  },
+  "data": {
+    "manifest": "/home/hhai/l20-vl-1.2b/data/diagnostic/counterfactual-v3/manifest.jsonl",
+    "manifest_sha256": "6f21e01d31d8fc3035ca22219d0484a8fb029a30b2cddec34ab726585e5dfede",
+    "human_audit": "/home/hhai/l20-vl-1.2b/evidence/counterfactual-data-human-audit-v3.json",
+    "human_audit_decision": "pass_for_controlled_mechanism_diagnosis_only",
+    "split": "train",
+    "scene_families": 14000,
+    "variants_per_family": 3,
+    "examples_per_epoch": 42000,
+    "epochs": 1,
+    "task_repeats": {
+      "above_below_relation": 1,
+      "color_binding": 1,
+      "count": 1,
+      "left_right_relation": 1,
+      "shape_binding": 1
+    },
+    "answer_balance": {"yes": 21000, "no": 21000}
+  },
+  "architecture": {
+    "visual_tokens": 196,
+    "vision_feature_layer": -1,
+    "compressor": "learned_query",
+    "target_ratio": 4,
+    "initialize_new_compressor": true,
+    "trainable": ["learned_query_compressor", "projector", "image_start", "image_end", "language_lora"],
+    "frozen": ["language_parent_weights", "vision_encoder"],
+    "lora": {
+      "rank": 16,
+      "alpha": 32,
+      "dropout": 0.0,
+      "bias": "none",
+      "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
+    },
+    "objective": "two_candidate_sequence_logprob_cross_entropy"
+  },
+  "optimization": {
+    "micro_batch_size": 16,
+    "gradient_accumulation_steps": 3,
+    "effective_batch_size": 48,
+    "max_optimizer_steps": 875,
+    "max_wall_seconds": 7200,
+    "adapter_learning_rate": 0.00001,
+    "bridge_learning_rate": 0.00002,
+    "compressor_learning_rate": 0.0002,
+    "candidate_temperature": 1.0,
+    "minimum_learning_rate_ratio": 0.1,
+    "warmup_ratio": 0.03,
+    "weight_decay": 0.02,
+    "gradient_clip_norm": 1.0,
+    "precision": "bfloat16",
+    "text_tokens_max": 96,
+    "checkpoint_every_steps": 100,
+    "seed": 20260919
+  },
+  "advance_only_if": {
+    "full_token_minus_compressed_development_paired_joint_accuracy_percent_gte": 2.0,
+    "compressed_true_vs_no_image_lower_95_ci_pp_gt": 0.0,
+    "compressed_true_vs_random_image_lower_95_ci_pp_gt": 0.0
+  },
+  "selection_rule": "select one compressed checkpoint on the frozen v3 development subset, then evaluate the complete v3 development split; keep v3 test sealed until all Stage-C arms and weights are frozen",
+  "claim_boundary": "This answer-supervision arm is a compression-gap diagnostic, not evidence for the proposed delta objective, natural-image transfer, release quality, or publication claims."
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": "2026-09-13-v1",
+  "status": "authorized_stage_a_recovery_after_visual_floor_failure",
+  "authorized_by_user": true,
+  "authorized_at": "2026-09-13",
+  "purpose": "repair basic full-token visual grounding on the controlled training domain before any compression experiment",
+  "not_a_compression_experiment": true,
+  "proposed_delta_loss_used": false,
+  "test_split_use_authorized": false,
+  "parents": {
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base",
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55",
+    "stage_a_bridge": "/home/hhai/l20-vl-1.2b/runs/stage-a-full-v1/step-000781/bridge.safetensors",
+    "stage_a_bridge_sha256": "7cbe9208a9d4e1efce67c704d01f6439f5fa92df16b7625a941d5368cc1eb3d1"
+  },
+  "failure_evidence": {
+    "path": "/home/hhai/l20-vl-1.2b/evidence/stage-a-visual-floor-development.json",
+    "sha256": "b07c9bb5cff6ae852d330058df17cd012c2102a28bfd1c12c8feae1428912cd9",
+    "finding": "The first Stage-A bridge was almost constant-yes on controlled development pairs and failed every visual-use gate."
+  },
+  "data": {
+    "manifest": "/home/hhai/l20-vl-1.2b/data/diagnostic/counterfactual-v1/manifest.jsonl",
+    "manifest_sha256": "df65dbef20fb41d8d08f76a14fb9d3bf5f778a82c2210e56287cb8c221508d7e",
+    "human_audit": "/home/hhai/l20-vl-1.2b/evidence/counterfactual-data-human-audit.json",
+    "human_audit_decision": "pass_for_controlled_mechanism_diagnosis_only",
+    "split": "train",
+    "scene_families": 3500,
+    "variants_per_family": 3,
+    "examples_per_epoch": 10500,
+    "epochs": 5,
+    "answer_balance": {"yes": 26250, "no": 26250}
+  },
+  "architecture": {
+    "visual_tokens": 196,
+    "compressor": "none",
+    "trainable": ["projector", "image_start", "image_end"],
+    "frozen": ["language_model", "vision_encoder"],
+    "objective": "answer_only_causal_cross_entropy"
+  },
+  "optimization": {
+    "micro_batch_size": 16,
+    "gradient_accumulation_steps": 4,
+    "effective_batch_size": 64,
+    "max_optimizer_steps": 820,
+    "max_wall_seconds": 7200,
+    "learning_rate": 0.00005,
+    "minimum_learning_rate_ratio": 0.1,
+    "warmup_ratio": 0.05,
+    "weight_decay": 0.05,
+    "gradient_clip_norm": 1.0,
+    "precision": "bfloat16",
+    "text_tokens_max": 96,
+    "checkpoint_every_steps": 100,
+    "seed": 20260913
+  },
+  "advance_only_if": {
+    "development_paired_joint_accuracy_percent_gte": 70.0,
+    "true_vs_no_image_lower_95_ci_pp_gt": 0.0,
+    "true_vs_random_image_lower_95_ci_pp_gt": 0.0
+  },
+  "claim_boundary": "Passing this recovery gate establishes controlled-domain full-token visual use only. It does not establish natural-image transfer, compression benefit, publication significance, or release readiness."
+}

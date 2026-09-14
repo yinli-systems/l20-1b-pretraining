@@ -1,0 +1,144 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "experiment_id": "openimages_evidence_router_adaptation_v1_development_selection",
+  "status": "authorized_openimages_evidence_router_adaptation_development_selection_v1",
+  "purpose": "Evaluate the frozen parent and all four predeclared natural-adaptation checkpoints on the already-open natural and synthetic development splits, select once by frozen gates, and do not access any natural confirmation rows.",
+  "parameter_update_authorized": false,
+  "confirmation_access_authorized": false,
+  "allowed_splits": {
+    "natural": "development",
+    "synthetic": "development"
+  },
+  "prerequisites": {
+    "natural_data_protocol": {
+      "path": "/home/hhai/l20-vl-1.2b/openimages_evidence_router_pilot_v1_data_protocol.json",
+      "sha256": "61863bb2cb56a1c2b23f9b53bed10354fa75644e3a777a168325057ee1f405ba"
+    },
+    "natural_generation_receipt": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-evidence-router-pilot-v1-generation.json",
+      "sha256": "2537db4402de8f8bee1717c95a9f4d3772561481212bea5472a9d65fef71d46c"
+    },
+    "natural_visual_audit": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-evidence-router-pilot-v1-primary-visual-audit.json",
+      "sha256": "d242e83b910d95d63ac378019d26a6a2b489914e7c77e2391e2e749ce1506e7f"
+    },
+    "natural_manifest": {
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-evidence-router-pilot-v1/manifest.jsonl",
+      "sha256": "478d88377e57b5543f1c962cd6df4db28f82471b42f7266528b3ea82d120c740"
+    },
+    "adaptation_train_protocol": {
+      "path": "/home/hhai/l20-vl-1.2b/openimages_evidence_router_adaptation_v1_train_protocol.json",
+      "sha256": "dab2b6c36627562defefc2b59d87ab0168e590c5e252534cc076e1a4b63ec130"
+    },
+    "adaptation_train_run": {
+      "path": "/home/hhai/l20-vl-1.2b/runs/openimages-evidence-router-adaptation-v1/run.json",
+      "sha256": "137cc6af2634c377c9cb8c625752b896a0ab14a13170061142b960374ba6b57e"
+    },
+    "synthetic_manifest": {
+      "path": "/home/hhai/l20-vl-1.2b/data/highres-evidence-search-pilot-v1/manifest.jsonl",
+      "sha256": "ddff8c102a9b7533ae5f934f80d5777e67bcc0668651db41ec5781edf10710db"
+    }
+  },
+  "parents": {
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base",
+    "language_release_manifest_sha256": "83e9a0982f96cfec65b109034669a9cc913e8b870201d2323805aecdaeabb051",
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55",
+    "vision_artifacts": {
+      "config.json": "fe8b5fe6d5734360678fd71c11c21e1ea3364bd8598d34295d9206335973ffd7",
+      "model.safetensors": "612923381c76ec5a9bed335d1c48827e3f2e506ac31b044b63b2031fadee6a0b",
+      "preprocessor_config.json": "9b36b57ebaf20f09bf4c22100ccc21877ea6bfe5aead0c00c59f8af8ccefacfc"
+    },
+    "language_adapter": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20260930-v1/step-000700/language_adapter",
+    "language_adapter_files": {
+      "adapter_config.json": "beb25b1266075702a22f78be2daa5f03625a0198514f0137a1284e974b06fc9b",
+      "adapter_model.safetensors": "b6b31eb6927d27ba2a0dbdc71f50adca68f95b849f39a05bdbba532cf61cbaa9"
+    }
+  },
+  "parent_router": {
+    "name": "confirmed_synthetic_parent_step_480",
+    "step": 0,
+    "path": "/home/hhai/l20-vl-1.2b/runs/highres-evidence-router-scale-v2/step-000480/router.safetensors",
+    "sha256": "df3f8ab31cbef9479930d6a3955e354b51a33e19c7606059b89bfd66ebf5d164"
+  },
+  "checkpoints": [
+    {
+      "name": "natural_adaptation_step_240",
+      "step": 240,
+      "path": "/home/hhai/l20-vl-1.2b/runs/openimages-evidence-router-adaptation-v1/step-000240/router.safetensors",
+      "sha256": "fc499a321c4020afd974f53880fd746f1ed12d82facf80a0185d3075cc1cfe8e"
+    },
+    {
+      "name": "natural_adaptation_step_480",
+      "step": 480,
+      "path": "/home/hhai/l20-vl-1.2b/runs/openimages-evidence-router-adaptation-v1/step-000480/router.safetensors",
+      "sha256": "758ebc01ab5f10d8f97e7d9a680645133daa81daa2c0948979329ef02bb10c0a"
+    },
+    {
+      "name": "natural_adaptation_step_720",
+      "step": 720,
+      "path": "/home/hhai/l20-vl-1.2b/runs/openimages-evidence-router-adaptation-v1/step-000720/router.safetensors",
+      "sha256": "f549041b9f1e1fa3050c69f11985e18bd4b99ecbac5329227b39280878ee6c07"
+    },
+    {
+      "name": "natural_adaptation_step_960",
+      "step": 960,
+      "path": "/home/hhai/l20-vl-1.2b/runs/openimages-evidence-router-adaptation-v1/step-000960/router.safetensors",
+      "sha256": "2422b38b9a2d076ec0f90a8a3dbdf7427f66ba12dc05bcd5d71a6e7a12043b37"
+    }
+  ],
+  "architecture": {
+    "vision_feature_layer": -1
+  },
+  "data": {
+    "natural_root": "/home/hhai/l20-vl-1.2b/data/openimages-evidence-router-pilot-v1",
+    "natural_manifest": "/home/hhai/l20-vl-1.2b/data/openimages-evidence-router-pilot-v1/manifest.jsonl",
+    "natural_expected_rows": 384,
+    "natural_expected_families": 192,
+    "synthetic_root": "/home/hhai/l20-vl-1.2b/data/highres-evidence-search-pilot-v1",
+    "synthetic_manifest": "/home/hhai/l20-vl-1.2b/data/highres-evidence-search-pilot-v1/manifest.jsonl",
+    "synthetic_expected_rows": 96,
+    "synthetic_expected_families": 48
+  },
+  "features": {
+    "batch_images": 32,
+    "max_text_tokens": 64,
+    "prompt_tokens_only": true
+  },
+  "router": {
+    "vision_dim": 768,
+    "language_dim": 2048,
+    "rank": 64,
+    "patch_count": 196,
+    "minimum_predicted_gain": 0.1,
+    "minimum_action_probability": 0.05
+  },
+  "evaluation": {
+    "router_batch_rows": 64,
+    "natural_localization_target": "official Open Images subject bbox rendered in red on POINT rows",
+    "synthetic_retention_target": "original v1 development POINT/STOP target",
+    "checkpoint_policy": "evaluate parent and every predeclared checkpoint exactly once with no updates"
+  },
+  "gate": {
+    "natural_minimum_action_accuracy": 0.9,
+    "natural_minimum_point_recall": 0.9,
+    "natural_minimum_stop_accuracy": 0.9,
+    "natural_minimum_inside_bbox": 0.8,
+    "natural_minimum_within_one_center": 0.7,
+    "synthetic_minimum_exact_patch": 0.9,
+    "synthetic_minimum_within_one_patch": 0.9,
+    "synthetic_minimum_stop_accuracy": 0.9
+  },
+  "selection_rule": "Among checkpoints passing every gate, maximize natural inside-bbox accuracy, natural within-one-center accuracy, natural action accuracy, and synthetic exact-patch retention in that order, then select the earliest step.",
+  "source_code": {
+    "evaluator_sha256": "dd922000443e6849e6efbc632a30a02d6767b0447050a5c6cf4e750d4f85cf13",
+    "test_sha256": "092470e0d0bbd5fb313d33601ba8f4bde85ed066eb5bb62eb41915d5fa560a9a",
+    "trainer_sha256": "0986d0d9fd7c2c89752ae079b112f1399a1a20e8cd5a33e85553f66eb5719333",
+    "router_module_sha256": "98039416f24d9780412100115c60825f061be8ec9b5ef803933b884f3f541907",
+    "modeling_sha256": "7ee504253640c9c7ce7e121b212a31d16d9e57ef9e05f55ebcbd67573febeac9"
+  },
+  "output": {
+    "receipt": "/home/hhai/l20-vl-1.2b/evidence/openimages-evidence-router-adaptation-v1-development-selection.json",
+    "predictions": "/home/hhai/l20-vl-1.2b/evidence/openimages-evidence-router-adaptation-v1-development-selection-predictions.jsonl"
+  },
+  "claim_boundary": "This is development-only selection on an instrumented red-box Open Images task plus synthetic retention. It does not establish unmarked natural grounding, answer quality, OCR, general VQA, independent confirmation, deployment readiness, novelty, or superiority over another VLM."
+}

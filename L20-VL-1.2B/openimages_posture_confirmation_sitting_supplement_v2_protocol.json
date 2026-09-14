@@ -1,0 +1,192 @@
+{
+  "schema_version": "2026-09-14-v2",
+  "status": "authorized_openimages_validation_sitting_supplement_audit_only_v2",
+  "experiment_id": "openimages_posture_confirmation_sitting_supplement_v2",
+  "authorized_by_user": true,
+  "training_authorized": false,
+  "model_evaluation_authorized": false,
+  "pairing_authorized": false,
+  "automatic_training_start": false,
+  "automatic_evaluation_start": false,
+  "purpose": "Replace the failed validation-split sitting pool with a model-blind, caption-corroborated, pose-visibility-ranked pool. Every selected target remains untrusted until pixel review.",
+  "seed": 20261007,
+  "prerequisites": {
+    "caption_acquisition_receipt": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-confirmation-captions-v1-acquisition.json",
+      "sha256": "ccd47d7fba7263c3a3fc2da469179211a9fc7c9e48f3c37a817ab8d46a899cc7"
+    },
+    "v1_build_receipt": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-confirmation-candidates-v1-build.json",
+      "sha256": "e2e254e288b9aaea473295f65047242c794ef6a600cdfb438d53c6dbebb58820"
+    },
+    "v1_negative_audit": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-confirmation-candidates-v1-early-audit-negative.json",
+      "sha256": "eae28a963dc03989dc191b98e357af1bfcac032f9400a9a51856db0fd2402bf4"
+    },
+    "v1_candidate_manifest": {
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-posture-confirmation-v1/candidate-pool/posture-confirmation-candidates-v1.jsonl",
+      "sha256": "2577a2067de18b086ca8317b8208c34b32582f818ebcfae085d08851b18b035e"
+    },
+    "development_manifest": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-crossfit-v1.jsonl",
+      "sha256": "ad96b6716b4032ecaeb41450433f61beeb6ad94b0268974afedbddfad5d6bf16"
+    }
+  },
+  "sources": {
+    "visual_relationships": {
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-posture-confirmation-v1/sources/oidv6-validation-annotations-vrd.csv",
+      "sha256": "347d92ab753b4975f274732914e3fcd645942437dee496c2174f93dde570b82f"
+    },
+    "image_metadata": {
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-posture-confirmation-v1/sources/validation-images-with-rotation.csv",
+      "sha256": "ed93a0e121fe345effdfc7359b848dbc64a1ff6778c8c73563157cb500b33a17"
+    },
+    "class_names": {
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-vrd-pilot-v1/sources/class-descriptions-boxable.csv",
+      "sha256": "2fa47fb1b87e71c90b9fbee2dc1184eb8c59601bb811ea4424b200653cedff8e"
+    },
+    "attribute_names": {
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-vrd-pilot-v1/sources/oidv6-attributes-description.csv",
+      "sha256": "e7ca340e76f61124afb20f3c17998473ee4dd86db8338906c3377afbc7c4f35f"
+    },
+    "captions": {
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-posture-confirmation-v1/sources/open_images_validation_captions.jsonl",
+      "sha256": "01c5eb64af111c546c8b0fec7ea1fee7f74ea9c0449c493e49c0bb749c2d618a",
+      "license": "CC-BY-4.0"
+    }
+  },
+  "source_split": "Open Images V6 validation",
+  "required_image_license": "https://creativecommons.org/licenses/by/2.0/",
+  "image_url_template": "https://open-images-dataset.s3.amazonaws.com/validation/{image_id}.jpg",
+  "geometry_filters": {
+    "Sit": {
+      "min_width": 0.2,
+      "max_width": 0.75,
+      "min_height": 0.35,
+      "min_area": 0.06
+    },
+    "Stand": {
+      "min_width": 0.15,
+      "max_width": 0.65,
+      "min_height": 0.35,
+      "min_area": 0.04,
+      "min_bbox_height_to_width": 1.0
+    }
+  },
+  "caption_gate": {
+    "all_classes_require_class_term": true,
+    "boy_girl_neutral_child_terms_allowed_only_with_matching_box_class": true,
+    "man_woman_require_gendered_adult_term": true,
+    "man_woman_also_require_sitting_or_support_term": true,
+    "ambiguous_posture_terms_rejected": true,
+    "caption_never_shown_to_model_under_test": true,
+    "caption_never_shown_on_review_sheet": true,
+    "ranking_tiers": [
+      "sitting_and_support",
+      "sitting_only",
+      "support_only",
+      "class_only_for_boy_or_girl"
+    ]
+  },
+  "scarcity_assignment": {
+    "one_target_per_image": true,
+    "multi_class_conflict_rule": "assign to the class with the fewest eligible image-class candidates; break ties by class name and frozen hash",
+    "profiled_eligible_before_assignment": {
+      "Boy": 48,
+      "Girl": 41,
+      "Man": 96,
+      "Woman": 75
+    },
+    "profiled_eligible_after_assignment": {
+      "Boy": 41,
+      "Girl": 41,
+      "Man": 88,
+      "Woman": 71
+    }
+  },
+  "deduplication": {
+    "within_supplement_exact_and_dhash": true,
+    "development_image_id_sha256_and_dhash_overlap_rejected": true,
+    "v1_candidate_pool_image_id_sha256_and_dhash_overlap_rejected": true,
+    "max_dhash_hamming": 4
+  },
+  "pose_model": {
+    "repository": "usyd-community/vitpose-base-simple",
+    "revision": "a93ac0c67e0b7e2c55287d21d4c460c8f3c54d45",
+    "license": "Apache-2.0",
+    "path": "/home/hhai/l20-vl-1.2b/models/vitpose-base-simple-a93ac0c",
+    "artifacts": {
+      "model": {
+        "path": "/home/hhai/l20-vl-1.2b/models/vitpose-base-simple-a93ac0c/model.safetensors",
+        "sha256": "85375373893ddd3641f3912821073e53f5435f9e966e1dca59d004454bfe4fdf"
+      },
+      "config": {
+        "path": "/home/hhai/l20-vl-1.2b/models/vitpose-base-simple-a93ac0c/config.json",
+        "sha256": "72fc2f0fc29eef43e87aa0ddd4c1269c5226ae157a99d0057019dd40129fed7c"
+      },
+      "preprocessor": {
+        "path": "/home/hhai/l20-vl-1.2b/models/vitpose-base-simple-a93ac0c/preprocessor_config.json",
+        "sha256": "9b11cadc98c30b968a70cc1658ce1fbd74b721b0f21402a2ff8bc1dc9d1474a0"
+      }
+    }
+  },
+  "pose_ranking": {
+    "feature": "curation_pose_features.mean_lower_body_score",
+    "role": "soft visibility rank after caption tier; never an acceptance or label gate",
+    "device": "cuda",
+    "batch_size": 16,
+    "seed": 20260914,
+    "joint_score_threshold": 0.15,
+    "visible_to_reviewer": false
+  },
+  "sampling": {
+    "download_candidates_per_class": {
+      "Boy": 39,
+      "Girl": 39,
+      "Man": 64,
+      "Woman": 64
+    },
+    "review_candidates_per_class": {
+      "Boy": 36,
+      "Girl": 32,
+      "Man": 40,
+      "Woman": 40
+    },
+    "download_candidates_total": 206,
+    "review_candidates_total": 148,
+    "minimum_primary_agent_accepted_per_class": 20,
+    "independent_human_review_required_for_positive_publication_claim": true
+  },
+  "limits": {
+    "minimum_free_bytes_before": 8000000000,
+    "maximum_downloaded_image_bytes": 700000000,
+    "maximum_single_image_bytes": 20000000,
+    "download_workers": 16
+  },
+  "human_audit": {
+    "scope": "all 148 targets using full image with target box and enlarged crop",
+    "images_per_page": 8,
+    "acceptance_rule": "Accept only when the boxed target matches the requested age/gender class and sitting is visually unambiguous. Reject held targets, posture occlusion, crouching, kneeling, squatting, crawling, lying, wrong class or target, and secondary media.",
+    "primary_agent_visual_review_can_admit_internal_diagnostic": true,
+    "independent_human_or_inter_rater_review_required_for_public_confirmatory_claim": true,
+    "caption_and_pose_score_hidden": true,
+    "model_access_during_review": false,
+    "pairing_blocked_until_review": true
+  },
+  "outputs": {
+    "root": "/home/hhai/l20-vl-1.2b/data/openimages-posture-confirmation-v1/sitting-supplement-v2",
+    "image_directory": "/home/hhai/l20-vl-1.2b/data/openimages-posture-confirmation-v1/sitting-supplement-v2/images",
+    "candidate_manifest": "/home/hhai/l20-vl-1.2b/data/openimages-posture-confirmation-v1/sitting-supplement-v2/sitting-supplement-candidates-v2.jsonl",
+    "audit_directory": "/home/hhai/l20-vl-1.2b/evidence/human-audit/openimages-posture-confirmation-sitting-v2",
+    "receipt": "/home/hhai/l20-vl-1.2b/evidence/openimages-posture-confirmation-sitting-v2-build.json"
+  },
+  "source_code": {
+    "builder_sha256": "1c26a8a279b7a3b7d06e07a95963877d19fbd3e3783c410991c4dc732302ffba",
+    "test_sha256": "ff6f89c00bc42d9b94b98a15ec45930452cee7e9343e646cce97354e65a55def",
+    "confirmation_v1_builder_sha256": "c947b55371fbe1c228e93c1bf438c41c6518575e9bf4c5068a394f976f2c9941",
+    "download_dedup_sha256": "fb706ac1c45aeabeef84ba239d1a5af7df4db39033328b7be8f6b3cd668cb36a",
+    "pose_ranker_sha256": "5181a36cd2a907fcd4ff2335a8e8468482c41fd0e2679e13be13984b4b7edbda",
+    "audit_renderer_sha256": "4f0538495515febbb46352853b66435774df354af08e2582b327ccf444e1be0e"
+  },
+  "claim_boundary": "This supplement is a model-blind repair of a failed validation-split candidate pool. Captions and an external pose model are curation signals only and are hidden from both the model under test and visual reviewer. Pixel review is the sole acceptance gate. A primary-agent review may support an internal diagnostic evaluation but is not independent human validation; public confirmatory claims require independent human or inter-rater review. This protocol does not authorize pairing, model access, training, evaluation, release, or broad VLM claims."
+}

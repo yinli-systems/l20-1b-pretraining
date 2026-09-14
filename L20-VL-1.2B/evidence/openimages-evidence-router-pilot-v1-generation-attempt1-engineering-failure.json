@@ -1,0 +1,20 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "failed_engineering_attempt_cleaned",
+  "failure": "NameError: Python receipt construction used JSON literal false instead of False",
+  "failure_stage": "after image, manifest, and audit-sheet generation; before a valid generation receipt was written",
+  "partial_output": {
+    "path": "/home/hhai/l20-vl-1.2b/data/openimages-evidence-router-pilot-v1",
+    "observed_size": "397M",
+    "valid_receipt_present": false
+  },
+  "cleanup": {
+    "active_builder_processes": 0,
+    "exact_path_verified": true,
+    "partial_output_removed": true,
+    "absence_verified": true,
+    "other_project_data_removed": false
+  },
+  "recovery": "The literal was corrected, source and protocol hashes were updated, unit tests were rerun, and generation was restarted from an absent output path.",
+  "claim_boundary": "This records a provenance-preserving engineering failure. No failed-attempt artifact is admitted for training or evaluation."
+}

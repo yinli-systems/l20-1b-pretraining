@@ -1,0 +1,17 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "authorized_binding_e0_summary_recovery_v1",
+  "authorized_by_user": true,
+  "scope": "CPU-only validation and serialization of already-completed development evaluations; no model scoring or training.",
+  "evaluation_protocol": {
+    "path": "/home/hhai/l20-vl-1.2b/binding_evaluation_protocol_v1.json",
+    "sha256": "c0c0cf46972b25a58eb34b7c41caaa8af58401a8aa53aca872a6ed9ed65b24d1"
+  },
+  "evaluation_output_dir": "/home/hhai/l20-vl-1.2b/evidence/binding-e0-evaluation-v1",
+  "failed_orchestrator_sha256": "53d178904cea274d5ac1ac66ec27b97f7b0ff9be4ccf45186fdc3a49cb4f1512",
+  "failure": "NameError at final summary serialization after every declared GPU evaluation had completed.",
+  "finalizer_sha256": "7fb20b9f4164473fa2da98b95d49087406bd81b7e0dda8496fb8c871d1ed35a8",
+  "rerun_gpu_evaluations": false,
+  "overwrite_existing_evaluations": false,
+  "final_test_use_authorized": false
+}

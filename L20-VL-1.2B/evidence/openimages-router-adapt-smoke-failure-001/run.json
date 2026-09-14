@@ -1,0 +1,21 @@
+{
+  "confirmation_rows_accessed": 0,
+  "development_rows_accessed": 0,
+  "device": "NVIDIA L20",
+  "max_optimizer_steps": 2,
+  "natural_manifest_sha256": "478d88377e57b5543f1c962cd6df4db28f82471b42f7266528b3ea82d120c740",
+  "natural_rows": 32,
+  "optimizer_step": 0,
+  "protocol_sha256": "004c024fb0038899473384b54ccbb9ff41e61aa112653ea58fb6da51f012f040",
+  "replay_rows": 32,
+  "schema_version": "2026-09-14-v1",
+  "smoke": true,
+  "started_at": "2026-09-14T13:20:55.101275+00:00",
+  "status": "running",
+  "synthetic_replay_manifest_sha256": "6ec1ecd34190f92f2e86d379e5d9c91c671495768f85bd694f0bd3550b63bb03",
+  "trainable_components": [
+    "evidence_acquisition_router"
+  ],
+  "trainable_parameters": 376706,
+  "trainer_sha256": "e6b656e57293c94dfdef5c777b2ef0146bb955b070c5ad68471465970e1b2c5f"
+}

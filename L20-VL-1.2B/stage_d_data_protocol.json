@@ -1,0 +1,41 @@
+{
+  "schema_version": "2026-09-13-v1",
+  "status": "frozen_stage_d_holdout_generation_protocol",
+  "authorized_by_user": true,
+  "authorized_at": "2026-09-13",
+  "purpose": "freeze independent Stage-D development, IID confirmation, and binding-centric OOD families before D1 model selection",
+  "old_stage_c_test_role": "regression_only_not_for_stage_d_tuning_or_selection",
+  "partitions": {
+    "development": {
+      "scene_families": 2000,
+      "tasks": ["count", "color_binding", "shape_binding", "left_right_relation", "above_below_relation"],
+      "use": "learning-rate screening and checkpoint selection only"
+    },
+    "iid_test": {
+      "scene_families": 3000,
+      "tasks": ["count", "color_binding", "shape_binding", "left_right_relation", "above_below_relation"],
+      "use": "single untouched confirmatory evaluation after all five-seed checkpoints are frozen",
+      "initial_status": "sealed"
+    },
+    "ood_binding": {
+      "scene_families": 2000,
+      "tasks": ["color_binding", "shape_binding"],
+      "intervention": "swap color-to-shape assignments while preserving color and shape multisets; use continuous edge and pooling-boundary-adjacent geometry",
+      "use": "secondary untouched binding and geometry stress test",
+      "initial_status": "sealed"
+    }
+  },
+  "stratification": ["partition", "task", "base_answer"],
+  "atomic_unit": "scene_family_id_with_all_three_variants",
+  "exact_exclusion": {
+    "manifest": "/home/hhai/l20-vl-1.2b/data/diagnostic/counterfactual-v3/manifest.jsonl",
+    "manifest_sha256": "6f21e01d31d8fc3035ca22219d0484a8fb029a30b2cddec34ab726585e5dfede",
+    "exclude_scene_family_ids": true,
+    "exclude_rendered_image_sha256": true
+  },
+  "model_inference_during_generation": false,
+  "training_authorized_by_this_protocol": false,
+  "iid_test_unseal_authorized": false,
+  "ood_test_unseal_authorized": false,
+  "claim_boundary": "Synthetic controlled tests isolate binding and geometry interventions; they do not establish natural-image or broad VLM quality."
+}

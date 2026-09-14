@@ -1,0 +1,53 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "authorized_openimages_validation_annotation_acquisition_only_v1",
+  "experiment_id": "openimages_posture_confirmation_v1",
+  "authorized_by_user": true,
+  "download_authorized": true,
+  "training_authorized": false,
+  "model_evaluation_authorized": false,
+  "automatic_training_start": false,
+  "automatic_evaluation_start": false,
+  "purpose": "Acquire and hash only the official Open Images V6 validation VRD annotations and validation image metadata needed to construct a disjoint posture confirmation set. No examples are selected and no model is opened in this phase.",
+  "official_dataset_page": "https://storage.googleapis.com/openimages/web/download.html",
+  "split": {
+    "name": "validation",
+    "official_image_count": 41620,
+    "development_train_split_excluded": true,
+    "test_split_untouched": true
+  },
+  "sources": {
+    "validation_visual_relationships": {
+      "url": "https://storage.googleapis.com/openimages/v6/oidv6-validation-annotations-vrd.csv",
+      "expected_bytes": 3065339,
+      "expected_md5_hex": "1b2861c792a62de654746d0310849394",
+      "upstream_last_modified": "2020-02-03T15:14:29Z"
+    },
+    "validation_image_metadata": {
+      "url": "https://storage.googleapis.com/openimages/2018_04/validation/validation-images-with-rotation.csv",
+      "expected_bytes": 15245485,
+      "expected_md5_hex": "643a54e43b0bab8acce8817b4a569780",
+      "upstream_last_modified": "2018-05-17T14:33:38Z"
+    }
+  },
+  "reused_ontology": {
+    "boxable_class_names": {
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-vrd-pilot-v1/sources/class-descriptions-boxable.csv",
+      "sha256": "2fa47fb1b87e71c90b9fbee2dc1184eb8c59601bb811ea4424b200653cedff8e"
+    },
+    "attribute_names": {
+      "path": "/home/hhai/l20-vl-1.2b/data/openimages-vrd-pilot-v1/sources/oidv6-attributes-description.csv",
+      "sha256": "e7ca340e76f61124afb20f3c17998473ee4dd86db8338906c3377afbc7c4f35f"
+    }
+  },
+  "limits": {
+    "destination": "/home/hhai/l20-vl-1.2b/data/openimages-posture-confirmation-v1/sources",
+    "minimum_free_bytes_before": 8000000000,
+    "maximum_annotation_bytes": 20000000
+  },
+  "source_code": {
+    "acquirer_sha256": "f72e25a620293c78405dc76fb58d902f9aefffe89bb83ff1690abc132c9a686b",
+    "test_sha256": "438a5462da7b50ede94fb01dd9d6c80747328627384ee80dfe533475997307ed"
+  },
+  "claim_boundary": "This protocol authorizes an 18.31 MB validation-annotation download and integrity verification only. It does not authorize candidate selection, image download, human audit, pairing, model access, parameter updates, benchmark evaluation, release, or model-quality claims. The Open Images train split used for method development and the test split are not accessed here."
+}

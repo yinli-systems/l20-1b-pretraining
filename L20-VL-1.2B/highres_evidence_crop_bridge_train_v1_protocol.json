@@ -1,0 +1,109 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "experiment_id": "highres_evidence_crop_bridge_train_v1",
+  "status": "authorized_highres_evidence_crop_bridge_train_only_v1",
+  "purpose": "Test the minimum viable responder adaptation: train a separate crop-only bridge on train families while freezing the language model, its Stage-D LoRA, the vision tower, and the global-view bridge.",
+  "sealed_test_access_authorized": false,
+  "trainable_components": ["isolated_crop_bridge"],
+  "prerequisites": {
+    "generation_receipt": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-search-pilot-v1-generation.json",
+      "sha256": "38018a5c16ae0c5a0f30f9d4ce2680d753bd29c26e6eec6bf5dae451e2d6d0f3"
+    },
+    "primary_visual_audit": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-search-pilot-v1-primary-visual-audit.json",
+      "sha256": "c247d81024367f7e872d36d99e5950079aca2b54bd5021521aabe05d63d82845"
+    },
+    "preprocessing_floor": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-preprocessing-floor-v1.json",
+      "sha256": "3990d1a73dba0977fa6447c3ff646ea39d6b055edece90cce0804b727013350d"
+    },
+    "frozen_responder_floor": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-responder-development-floor-v1.json",
+      "sha256": "323f236a1c7104210d5d1e82be6d43501cd70873a7849e3b16d72b6fb083c7c0"
+    },
+    "manifest": {
+      "path": "/home/hhai/l20-vl-1.2b/data/highres-evidence-search-pilot-v1/manifest.jsonl",
+      "sha256": "ddff8c102a9b7533ae5f934f80d5777e67bcc0668651db41ec5781edf10710db"
+    }
+  },
+  "parents": {
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base",
+    "language_release_manifest_sha256": "83e9a0982f96cfec65b109034669a9cc913e8b870201d2323805aecdaeabb051",
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55",
+    "vision_artifacts": {
+      "config.json": "fe8b5fe6d5734360678fd71c11c21e1ea3364bd8598d34295d9206335973ffd7",
+      "model.safetensors": "612923381c76ec5a9bed335d1c48827e3f2e506ac31b044b63b2031fadee6a0b",
+      "preprocessor_config.json": "9b36b57ebaf20f09bf4c22100ccc21877ea6bfe5aead0c00c59f8af8ccefacfc"
+    },
+    "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20260930-v1/step-000700/bridge.safetensors",
+    "bridge_sha256": "d4b04aa98e5430a1fe5a11918da87a67007d283116b4e843c1d640fc7c31f6ce",
+    "language_adapter": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20260930-v1/step-000700/language_adapter",
+    "language_adapter_files": {
+      "adapter_config.json": "beb25b1266075702a22f78be2daa5f03625a0198514f0137a1284e974b06fc9b",
+      "adapter_model.safetensors": "b6b31eb6927d27ba2a0dbdc71f50adca68f95b849f39a05bdbba532cf61cbaa9"
+    }
+  },
+  "architecture": {
+    "visual_tokens": 196,
+    "vision_feature_layer": -1,
+    "compressor": "spatial_query",
+    "output_visual_tokens": 49,
+    "target_ratio": 4,
+    "global_branch": "immutable Stage-D bridge",
+    "crop_branch": "independent copy initialized from the Stage-D bridge"
+  },
+  "data": {
+    "root": "/home/hhai/l20-vl-1.2b/data/highres-evidence-search-pilot-v1",
+    "manifest": "/home/hhai/l20-vl-1.2b/data/highres-evidence-search-pilot-v1/manifest.jsonl",
+    "split": "train",
+    "task": "read_local_digit",
+    "train_rows": 224,
+    "train_families": 112,
+    "variants_per_family": 2,
+    "family_atomic_ordering": true,
+    "development_access_during_training": false,
+    "sealed_test_access": false
+  },
+  "objective": {
+    "name": "ten_candidate_mean_answer_token_logprob_cross_entropy",
+    "candidates": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"],
+    "views": ["frozen_global", "trainable_true_crop"],
+    "answer_length_normalization": "mean over non-EOS answer tokens"
+  },
+  "optimization": {
+    "epochs": 10,
+    "micro_batch_rows": 2,
+    "gradient_accumulation_steps": 4,
+    "effective_batch_rows": 8,
+    "candidate_sequences_per_micro_batch": 20,
+    "max_optimizer_steps": 280,
+    "max_wall_seconds": 3600,
+    "learning_rate": 0.0001,
+    "minimum_learning_rate_ratio": 0.1,
+    "warmup_ratio": 0.05,
+    "weight_decay": 0.01,
+    "gradient_clip_norm": 1.0,
+    "precision": "bfloat16",
+    "text_tokens_max": 64,
+    "feature_batch_images": 32,
+    "checkpoint_every_steps": 70,
+    "seed": 20260914
+  },
+  "budget": {
+    "single_l20_gpu_hours_cap": 1.0,
+    "smoke_override_max_optimizer_steps": 2,
+    "smoke_override_max_wall_seconds": 300
+  },
+  "source_code": {
+    "trainer_sha256": "63e7f909d5e75b706bcd160eb87a92413e6a9da5981b8a28b9d310c06cb5a2f9",
+    "test_sha256": "f4a35c6d9bb41927e87d09c118442d99719168310bffff8cfe6e48fdea5ae403",
+    "modeling_sha256": "7ee504253640c9c7ce7e121b212a31d16d9e57ef9e05f55ebcbd67573febeac9"
+  },
+  "outputs": {
+    "smoke": "/home/hhai/l20-vl-1.2b/runs/highres-evidence-crop-bridge-v1-smoke",
+    "full": "/home/hhai/l20-vl-1.2b/runs/highres-evidence-crop-bridge-v1"
+  },
+  "successor_gate": "No router or sealed-test run is authorized by this protocol. First evaluate every frozen checkpoint on development with the predeclared true-crop, global-only, and mismatched-crop contrasts, select once, and then freeze an independent confirmation protocol.",
+  "claim_boundary": "Training success would show only that an isolated 49-token crop branch can teach the frozen current responder to exploit oracle crops on this synthetic training distribution. It cannot establish learned evidence search, natural-image transfer, OCR quality, preservation of unrelated multimodal skills, or a novel state of the art."
+}

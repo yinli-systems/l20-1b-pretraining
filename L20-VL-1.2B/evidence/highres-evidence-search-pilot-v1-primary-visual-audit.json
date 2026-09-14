@@ -1,0 +1,66 @@
+{
+  "schema_version": "2026-09-14-v1",
+  "status": "complete_primary_agent_visual_audit",
+  "completed_at": "2026-09-14T11:09:29Z",
+  "auditor": "primary_agent",
+  "independent_human_review": false,
+  "protocol": {
+    "path": "highres_evidence_search_pilot_v1_protocol.json",
+    "sha256": "4f3397c5e52196ba59a0241de405cf55bfe257fd6c8f8621fcdd32a1300a26ce"
+  },
+  "generation_receipt": {
+    "path": "evidence/highres-evidence-search-pilot-v1-generation.json",
+    "sha256": "38018a5c16ae0c5a0f30f9d4ce2680d753bd29c26e6eec6bf5dae451e2d6d0f3"
+  },
+  "sheets": [
+    {
+      "path": "evidence/human-audit/highres-evidence-search-sheet-00.png",
+      "sha256": "9340e462bd1c36bd7dac0f58a59174a2736f8a41512a5c448ce43bdde9cc5e4a",
+      "items": 12,
+      "task": "read_local_digit",
+      "variant": "base",
+      "decision": "pass"
+    },
+    {
+      "path": "evidence/human-audit/highres-evidence-search-sheet-01.png",
+      "sha256": "3bf98384a95e50c050e6352d540a97089ac9656b0f5716937613bfef6615b4a0",
+      "items": 12,
+      "task": "read_local_digit",
+      "variant": "answer_change",
+      "decision": "pass"
+    },
+    {
+      "path": "evidence/human-audit/highres-evidence-search-sheet-02.png",
+      "sha256": "f98ee7f98b22292e20c0a710e7743f238d5429d032ce7c38c952fb3894acf499",
+      "items": 12,
+      "task": "read_global_border",
+      "variant": "base",
+      "decision": "pass"
+    },
+    {
+      "path": "evidence/human-audit/highres-evidence-search-sheet-03.png",
+      "sha256": "eab5755bba17c931d24bc474ffc5f4492b60de7999d7189446a7e298a4ff0908",
+      "items": 12,
+      "task": "read_global_border",
+      "variant": "answer_change",
+      "decision": "pass"
+    }
+  ],
+  "items_reviewed": 48,
+  "items_accepted": 48,
+  "items_rejected": 0,
+  "checks": {
+    "question_target_identity_matches": "48/48",
+    "displayed_answer_matches_visible_source": "48/48",
+    "expected_point_or_stop_action_is_valid": "48/48",
+    "oracle_crop_contains_target_and_is_legible": "24/24 POINT items",
+    "global_border_answer_is_visually_unambiguous": "24/24 STOP items",
+    "counterfactual_variant_changes_declared_answer": "24/24 paired families represented",
+    "visible_clipping_or_target_occlusion": "0/48"
+  },
+  "decision": "pass_visual_content_only_preprocessing_floor_still_required",
+  "training_admitted": false,
+  "model_access_authorized_by_this_receipt": false,
+  "next_required_step": "Run a frozen train/development-only preprocessing and frozen-vision floor test. The full-image thumbnails still expose some tiny glyph structure to a human, so crop usefulness must be demonstrated quantitatively before any responder or router training.",
+  "claim_boundary": "This is an exhaustive primary-agent review of 48 frozen contact-sheet items, not an independent human or inter-rater audit. It verifies visible rendering and label consistency for the sampled items only. It does not establish that global 224-pixel inputs lose the digit, that the frozen vision encoder can read the crop, that the full corpus is correct, or that any model will learn the intended behavior."
+}

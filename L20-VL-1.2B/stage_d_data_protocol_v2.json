@@ -1,0 +1,51 @@
+{
+  "schema_version": "2026-09-13-v2",
+  "status": "frozen_stage_d_holdout_generation_protocol",
+  "authorized_by_user": true,
+  "authorized_at": "2026-09-13",
+  "purpose": "freeze independent Stage-D development, IID confirmation, and attribution-clean binding/OOD families before D1 model selection",
+  "supersedes_protocol_sha256": "33bb25b4fede9e3c4fe0f2b2b4c52ba0b7c1576b94199a3b970490dec2d81d3d",
+  "supersession_reason": "v1 human audit found combined binding/geometry interventions and sampled clipping/overlap; v2 separates factors and forbids those rendering confounds",
+  "old_stage_c_test_role": "regression_only_not_for_stage_d_tuning_or_selection",
+  "partitions": {
+    "development": {
+      "scene_families": 2000,
+      "tasks": ["count", "color_binding", "shape_binding", "left_right_relation", "above_below_relation"],
+      "use": "learning-rate screening and checkpoint selection only"
+    },
+    "iid_test": {
+      "scene_families": 3000,
+      "tasks": ["count", "color_binding", "shape_binding", "left_right_relation", "above_below_relation"],
+      "use": "single untouched confirmatory evaluation after all five-seed checkpoints are frozen",
+      "initial_status": "sealed"
+    },
+    "ood_binding": {
+      "scene_families": 2000,
+      "tasks": ["color_binding", "shape_binding"],
+      "subtests": {
+        "binding_swap_only": "swap color-to-shape assignments while preserving attribute multisets and IID grid geometry",
+        "binding_swap_plus_boundary_geometry": "apply the same binding swap with visible, non-overlapping continuous edge and pooling-boundary-adjacent geometry"
+      },
+      "use": "secondary untouched binding and geometry stress test with separately reportable single-factor and combined strata",
+      "initial_status": "sealed"
+    }
+  },
+  "stratification": ["partition", "challenge", "task", "base_answer"],
+  "atomic_unit": "scene_family_id_with_all_three_variants",
+  "render_gates": {
+    "all_objects_fully_inside_image": true,
+    "object_overlap_allowed": false,
+    "base_and_edited_attribute_multisets_equal_for_binding_tests": true
+  },
+  "exact_exclusion": {
+    "manifest": "/home/hhai/l20-vl-1.2b/data/diagnostic/counterfactual-v3/manifest.jsonl",
+    "manifest_sha256": "6f21e01d31d8fc3035ca22219d0484a8fb029a30b2cddec34ab726585e5dfede",
+    "exclude_scene_family_ids": true,
+    "exclude_rendered_image_sha256": true
+  },
+  "model_inference_during_generation": false,
+  "training_authorized_by_this_protocol": false,
+  "iid_test_unseal_authorized": false,
+  "ood_test_unseal_authorized": false,
+  "claim_boundary": "Synthetic controlled tests isolate binding and geometry interventions; they do not establish natural-image or broad VLM quality."
+}

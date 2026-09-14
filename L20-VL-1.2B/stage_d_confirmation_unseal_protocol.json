@@ -1,0 +1,413 @@
+{
+  "arms": [
+    "A_spatial_49",
+    "F_matched_196"
+  ],
+  "authorization_scope": "one evaluation per frozen arm/seed/split on iid_test and ood_binding",
+  "authorized_at": "2026-09-13T18:32:18.750114+00:00",
+  "authorized_by_user": true,
+  "budget": {
+    "confirmation_l20_gpu_hours_cap": 4.0,
+    "observed_d1_eval_seconds_per_family_max": {
+      "A_spatial_49": 0.16326434463541956,
+      "F_matched_196": 0.33493331337114796
+    },
+    "projected_raw_gpu_hours": 3.459705958378941,
+    "projected_with_margin_gpu_hours": 3.8056765542168356,
+    "projection_safety_factor": 1.1
+  },
+  "candidate_order": "manifest",
+  "checkpoints": {
+    "A_spatial_49": {
+      "20260930": {
+        "adapter": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20260930-v1/step-000700/language_adapter",
+        "adapter_config_sha256": "beb25b1266075702a22f78be2daa5f03625a0198514f0137a1284e974b06fc9b",
+        "adapter_model_sha256": "b6b31eb6927d27ba2a0dbdc71f50adca68f95b849f39a05bdbba532cf61cbaa9",
+        "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20260930-v1/step-000700/bridge.safetensors",
+        "bridge_sha256": "d4b04aa98e5430a1fe5a11918da87a67007d283116b4e843c1d640fc7c31f6ce",
+        "checkpoint": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20260930-v1/step-000700",
+        "development_evidence": "/home/hhai/l20-vl-1.2b/evidence/stage-d-d1-A_spatial_49-seed20260930-development-v1.json",
+        "development_evidence_sha256": "dd43bd2f43e18f0223ddbe59c16dd56857cd4f9ee964c81cb16ef6e651725986",
+        "prune_receipt": "/home/hhai/l20-vl-1.2b/evidence/stage-d-d1-A_spatial_49-seed20260930-prune-v1.json",
+        "prune_receipt_sha256": "7a756f10bd3c46b2271f7cf6e0829dd24b65fdc413dfb6420bc83e9128ab6a06",
+        "selection_evidence": "/home/hhai/l20-vl-1.2b/evidence/stage-d-d1-A_spatial_49-seed20260930-selection-v1.json",
+        "selection_evidence_sha256": "52d98152ae27e9d4dc669a7a4fb4057ebdb80d27e0398bdae6dd13f015d3e56b",
+        "step": 700
+      },
+      "20261001": {
+        "adapter": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20261001-v1/step-000700/language_adapter",
+        "adapter_config_sha256": "115f96d9c189c19b5c424b6738d24098270ce43508e8093adeb1ceba495ddc27",
+        "adapter_model_sha256": "70b27783515628ff35c1b5ac06fb708c8e840b64a287f4d1a635d3531c424ba6",
+        "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20261001-v1/step-000700/bridge.safetensors",
+        "bridge_sha256": "5bc5fefaaa26076c725e3f6e2fefd90fab8790fa9eac48dee8f172fc556d7560",
+        "checkpoint": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20261001-v1/step-000700",
+        "development_evidence": "/home/hhai/l20-vl-1.2b/evidence/stage-d-d1-A_spatial_49-seed20261001-development-v1.json",
+        "development_evidence_sha256": "c4249c4dbdc268870d73ae5d0ba1a911e5313ba914f1d0d6dced9d0432ff1975",
+        "prune_receipt": "/home/hhai/l20-vl-1.2b/evidence/stage-d-d1-A_spatial_49-seed20261001-prune-v1.json",
+        "prune_receipt_sha256": "907c383c9febb7f9bfd3c9396a3a62654ae54af91904ad007c95118fabe868de",
+        "selection_evidence": "/home/hhai/l20-vl-1.2b/evidence/stage-d-d1-A_spatial_49-seed20261001-selection-v1.json",
+        "selection_evidence_sha256": "7b5447aec46273e5297b117ef1b71c8f8b276b3312830dbbf094fd43d377a9b3",
+        "step": 700
+      },
+      "20261002": {
+        "adapter": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20261002-v1/step-000875/language_adapter",
+        "adapter_config_sha256": "516d976f32c7c026ab403df008c17eef9d5965bf0c8a7ce6664dd3995a23be26",
+        "adapter_model_sha256": "f0255c52fbf3c45549147702d9b46206c41f4f11daae29a52b53cf9e06e6de0e",
+        "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20261002-v1/step-000875/bridge.safetensors",
+        "bridge_sha256": "6cf770abbe2a188773b12bb67a83764f77513f8e0d45e1865647d1e06963fbb7",
+        "checkpoint": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20261002-v1/step-000875",
+        "development_evidence": "/home/hhai/l20-vl-1.2b/evidence/stage-d-d1-A_spatial_49-seed20261002-development-v1.json",
+        "development_evidence_sha256": "fdfe52481421cb020c5f984f369777e4f6020bb4af6f10f41432280c5e64a7f1",
+        "prune_receipt": "/home/hhai/l20-vl-1.2b/evidence/stage-d-d1-A_spatial_49-seed20261002-prune-v1.json",
+        "prune_receipt_sha256": "f178dfdf85175d8cfaeed104b571487937e934848059d6bdfe4190671ffec425",
+        "selection_evidence": "/home/hhai/l20-vl-1.2b/evidence/stage-d-d1-A_spatial_49-seed20261002-selection-v1.json",
+        "selection_evidence_sha256": "7fdc9c6101558b6059e624775d36244e36613c3b5c5e8bd894297acf88f10da0",
+        "step": 875
+      },
+      "20261003": {
+        "adapter": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20261003-v1/step-000875/language_adapter",
+        "adapter_config_sha256": "778cba61b389089680f8d637a6129f9b65938fc5890874453086c3cb2c825f57",
+        "adapter_model_sha256": "d5bc574299d97fb8eadf00fdcc45ddad3f93bc1b3787fa5453cc619a5e233676",
+        "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20261003-v1/step-000875/bridge.safetensors",
+        "bridge_sha256": "ade8b15b8783b6c455ad9a48cf0dda7b6c52f11b28be810742c88eaff5a3a1c9",
+        "checkpoint": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20261003-v1/step-000875",
+        "development_evidence": "/home/hhai/l20-vl-1.2b/evidence/stage-d-d1-A_spatial_49-seed20261003-development-v1.json",
+        "development_evidence_sha256": "0c28bbd516f7618e1a7aa2ec56fa3e2d425599a51deb80a9e572f589fbcc175d",
+        "prune_receipt": "/home/hhai/l20-vl-1.2b/evidence/stage-d-d1-A_spatial_49-seed20261003-prune-v1.json",
+        "prune_receipt_sha256": "4db0d5fae0ca414668056ebfcc1eeaa740fc00d3306a56a26144a02a1d95fc91",
+        "selection_evidence": "/home/hhai/l20-vl-1.2b/evidence/stage-d-d1-A_spatial_49-seed20261003-selection-v1.json",
+        "selection_evidence_sha256": "2c4b6d73cc18ac4d38064d0d429d45ad26194d8fd99a15a9c8c84557c8c0f60b",
+        "step": 875
+      },
+      "20261004": {
+        "adapter": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20261004-v1/step-000875/language_adapter",
+        "adapter_config_sha256": "f282d92e6d8094efa24489b633714c3f3b06977bcafcd0c83b9f5c12fa071b9f",
+        "adapter_model_sha256": "3c1ce904788ed7a183692d4dffbc9b878b3283c4879c4fb7f49bc4be064c824c",
+        "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20261004-v1/step-000875/bridge.safetensors",
+        "bridge_sha256": "7449fb3dbcb6fe67cfce10b129260c9d461e409dd9a5677e408bd40fa54bbb9f",
+        "checkpoint": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-A_spatial_49-seed20261004-v1/step-000875",
+        "development_evidence": "/home/hhai/l20-vl-1.2b/evidence/stage-d-d1-A_spatial_49-seed20261004-development-v1.json",
+        "development_evidence_sha256": "d545506f7854736e6b69c686500777f0e3e580c7fd86108487a3d12609b72d55",
+        "prune_receipt": "/home/hhai/l20-vl-1.2b/evidence/stage-d-d1-A_spatial_49-seed20261004-prune-v1.json",
+        "prune_receipt_sha256": "97ee8a06ed8c971046b6f7a96bb4df49091d60f06f3f224a69a5a09602841ed7",
+        "selection_evidence": "/home/hhai/l20-vl-1.2b/evidence/stage-d-d1-A_spatial_49-seed20261004-selection-v1.json",
+        "selection_evidence_sha256": "41c11b8239f67550c944815d3b1e49e23b3b29592c02b328bb4ad75062a305a4",
+        "step": 875
+      }
+    },
+    "F_matched_196": {
+      "20260930": {
+        "adapter": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-F_matched_196-seed20260930-v1/step-000875/language_adapter",
+        "adapter_config_sha256": "8cf77ee3c3e4a5b1cf19d64ad82e073be3d43892b3da3eb003b2d46e5436f8c4",
+        "adapter_model_sha256": "6d96756ffcb0024d087f2259385d8bab444154f84d0ea56e479f3dde622948a6",
+        "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-F_matched_196-seed20260930-v1/step-000875/bridge.safetensors",
+        "bridge_sha256": "e1b974ad197c53ba42e1171a174a871607913f928a9558eec5508331df8daaa0",
+        "checkpoint": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-F_matched_196-seed20260930-v1/step-000875",
+        "development_evidence": "/home/hhai/l20-vl-1.2b/evidence/stage-d-d1-F_matched_196-seed20260930-development-v1.json",
+        "development_evidence_sha256": "843df02c6e5e7f5150f2cdebcb8a19f54e5620dac465e214a563021207f3115a",
+        "prune_receipt": "/home/hhai/l20-vl-1.2b/evidence/stage-d-d1-F_matched_196-seed20260930-prune-v1.json",
+        "prune_receipt_sha256": "9037db653a975bb686cd110b1ff0ac3d87a4f8b31f72b0b620e5b467d5297ee3",
+        "selection_evidence": "/home/hhai/l20-vl-1.2b/evidence/stage-d-d1-F_matched_196-seed20260930-selection-v1.json",
+        "selection_evidence_sha256": "f7ace1cd8c041d9cc87a6282a5913e0c6a59a8501daeee343fc4876339c3a87c",
+        "step": 875
+      },
+      "20261001": {
+        "adapter": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-F_matched_196-seed20261001-v1/step-000700/language_adapter",
+        "adapter_config_sha256": "2ea0520c3439e4f52c114d55767c5790909d1de0231d4ba544903598c9becf14",
+        "adapter_model_sha256": "e2ca21d9f6ec2966bbaba07440f327dfb3c8a72467212ef06279016b10260bb4",
+        "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-F_matched_196-seed20261001-v1/step-000700/bridge.safetensors",
+        "bridge_sha256": "84872fc5a5c04ade2317b73b24cfd1a9f4bfde40473b893ec6e98f23958db24b",
+        "checkpoint": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-F_matched_196-seed20261001-v1/step-000700",
+        "development_evidence": "/home/hhai/l20-vl-1.2b/evidence/stage-d-d1-F_matched_196-seed20261001-development-v1.json",
+        "development_evidence_sha256": "0c94d744818df5a9b218cd3294ea5a791be03a7a346891e8dcf579b3226ab7cf",
+        "prune_receipt": "/home/hhai/l20-vl-1.2b/evidence/stage-d-d1-F_matched_196-seed20261001-prune-v1.json",
+        "prune_receipt_sha256": "71b80d8aae33c1a1d6e93bb1f522e4e9238066bcddc3dcf5d556dcbd381fa98c",
+        "selection_evidence": "/home/hhai/l20-vl-1.2b/evidence/stage-d-d1-F_matched_196-seed20261001-selection-v1.json",
+        "selection_evidence_sha256": "048e6c8d00acda3a9703b8c80cdcb12b4dfb4622c7673fc92a63640a1074430e",
+        "step": 700
+      },
+      "20261002": {
+        "adapter": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-F_matched_196-seed20261002-v1/step-000875/language_adapter",
+        "adapter_config_sha256": "d76e7cb3c52fc65e52df55407f585604e976f04c2bb3f25a7d71ed8363be7d7a",
+        "adapter_model_sha256": "38e85fe17cbb523eb7d6a4a71843a3239c465fd863eceb5013d4e7db361cbbe1",
+        "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-F_matched_196-seed20261002-v1/step-000875/bridge.safetensors",
+        "bridge_sha256": "213c3d9f01ff1ac06eb267e7ab9b5061645145c3cb928738598a42068abf0bf9",
+        "checkpoint": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-F_matched_196-seed20261002-v1/step-000875",
+        "development_evidence": "/home/hhai/l20-vl-1.2b/evidence/stage-d-d1-F_matched_196-seed20261002-development-v1.json",
+        "development_evidence_sha256": "3871776500efc4ceab0301f08fce815594d93e3d0b354241a0d9b1f4779bb401",
+        "prune_receipt": "/home/hhai/l20-vl-1.2b/evidence/stage-d-d1-F_matched_196-seed20261002-prune-v1.json",
+        "prune_receipt_sha256": "6abf4e2fa7fc20035b899bb4ad6297c6a9600c3d3337abe8190e8aaf5378e0c6",
+        "selection_evidence": "/home/hhai/l20-vl-1.2b/evidence/stage-d-d1-F_matched_196-seed20261002-selection-v1.json",
+        "selection_evidence_sha256": "b5b58062ff9dc7a517583f96db873c18f742b2f5c376c49d234aaa032f603458",
+        "step": 875
+      },
+      "20261003": {
+        "adapter": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-F_matched_196-seed20261003-v1/step-000500/language_adapter",
+        "adapter_config_sha256": "31571335d83caeab3ee86fe23769069dc9077140c4ba3126b4ea4ea3f878bb4d",
+        "adapter_model_sha256": "09bbb950c72f66005b09095b5ec9787bd5638b90a3d7aa760dffa8a734de6eac",
+        "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-F_matched_196-seed20261003-v1/step-000500/bridge.safetensors",
+        "bridge_sha256": "d2b58534052ab8233fbde22730d8877523cdc65f281aab57b1332811e1f6a900",
+        "checkpoint": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-F_matched_196-seed20261003-v1/step-000500",
+        "development_evidence": "/home/hhai/l20-vl-1.2b/evidence/stage-d-d1-F_matched_196-seed20261003-development-v1.json",
+        "development_evidence_sha256": "b1805693f42375ea7498cbdced98f7d552ebfa49b9819b1d9c176481f71baca9",
+        "prune_receipt": "/home/hhai/l20-vl-1.2b/evidence/stage-d-d1-F_matched_196-seed20261003-prune-v1.json",
+        "prune_receipt_sha256": "492a57a5430e2943babad74c7525b2e40c222ff61144e9b81b8c1a82967e8e36",
+        "selection_evidence": "/home/hhai/l20-vl-1.2b/evidence/stage-d-d1-F_matched_196-seed20261003-selection-v1.json",
+        "selection_evidence_sha256": "b8db209d3c322b5466e090b15d39fb776a823d22b1a703d3b37dfae76c94c103",
+        "step": 500
+      },
+      "20261004": {
+        "adapter": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-F_matched_196-seed20261004-v1/step-000875/language_adapter",
+        "adapter_config_sha256": "1c4caab5ffe9c6874659fd7fca11051540f446fbe63fbfb1e3f9d2db69b0c82c",
+        "adapter_model_sha256": "401c8c1cadeb4c9febeb2334e56e8494cdd0038eba4decf57d23bb1ca58baf60",
+        "bridge": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-F_matched_196-seed20261004-v1/step-000875/bridge.safetensors",
+        "bridge_sha256": "8169fdf1e80310bb4049a701be1041b80ff45475147dd14311ee0492bbb7a63d",
+        "checkpoint": "/home/hhai/l20-vl-1.2b/runs/stage-d-d1-F_matched_196-seed20261004-v1/step-000875",
+        "development_evidence": "/home/hhai/l20-vl-1.2b/evidence/stage-d-d1-F_matched_196-seed20261004-development-v1.json",
+        "development_evidence_sha256": "4f2d6ba0eb841a1ad09e956a4bbcd7a1a6e288c8b99e4ff453b30766e20cd0da",
+        "prune_receipt": "/home/hhai/l20-vl-1.2b/evidence/stage-d-d1-F_matched_196-seed20261004-prune-v1.json",
+        "prune_receipt_sha256": "15e774490ac643be495d505c8da4465fa9906ad8c6df55d2668999e367494a27",
+        "selection_evidence": "/home/hhai/l20-vl-1.2b/evidence/stage-d-d1-F_matched_196-seed20261004-selection-v1.json",
+        "selection_evidence_sha256": "181a50049442d43379521f009af19d4a1d495618c18c57301f372e317ab159ef",
+        "step": 875
+      }
+    }
+  },
+  "claim_boundary": "The primary result is controlled synthetic new-IID confirmation across five paired adaptation seeds. OOD binding is prespecified secondary evidence. Neither is natural-image or second-backbone evidence, and this two-arm comparison is a package-level compressor effect rather than a token-count-only effect.",
+  "conditions": [
+    "true_image",
+    "random_image",
+    "no_image"
+  ],
+  "execution_order": [
+    {
+      "arm": "A_spatial_49",
+      "seed": 20260930,
+      "split": "iid_test"
+    },
+    {
+      "arm": "F_matched_196",
+      "seed": 20260930,
+      "split": "iid_test"
+    },
+    {
+      "arm": "F_matched_196",
+      "seed": 20260930,
+      "split": "ood_binding"
+    },
+    {
+      "arm": "A_spatial_49",
+      "seed": 20260930,
+      "split": "ood_binding"
+    },
+    {
+      "arm": "F_matched_196",
+      "seed": 20261001,
+      "split": "ood_binding"
+    },
+    {
+      "arm": "A_spatial_49",
+      "seed": 20261001,
+      "split": "ood_binding"
+    },
+    {
+      "arm": "A_spatial_49",
+      "seed": 20261001,
+      "split": "iid_test"
+    },
+    {
+      "arm": "F_matched_196",
+      "seed": 20261001,
+      "split": "iid_test"
+    },
+    {
+      "arm": "A_spatial_49",
+      "seed": 20261002,
+      "split": "iid_test"
+    },
+    {
+      "arm": "F_matched_196",
+      "seed": 20261002,
+      "split": "iid_test"
+    },
+    {
+      "arm": "F_matched_196",
+      "seed": 20261002,
+      "split": "ood_binding"
+    },
+    {
+      "arm": "A_spatial_49",
+      "seed": 20261002,
+      "split": "ood_binding"
+    },
+    {
+      "arm": "F_matched_196",
+      "seed": 20261003,
+      "split": "ood_binding"
+    },
+    {
+      "arm": "A_spatial_49",
+      "seed": 20261003,
+      "split": "ood_binding"
+    },
+    {
+      "arm": "A_spatial_49",
+      "seed": 20261003,
+      "split": "iid_test"
+    },
+    {
+      "arm": "F_matched_196",
+      "seed": 20261003,
+      "split": "iid_test"
+    },
+    {
+      "arm": "A_spatial_49",
+      "seed": 20261004,
+      "split": "iid_test"
+    },
+    {
+      "arm": "F_matched_196",
+      "seed": 20261004,
+      "split": "iid_test"
+    },
+    {
+      "arm": "F_matched_196",
+      "seed": 20261004,
+      "split": "ood_binding"
+    },
+    {
+      "arm": "A_spatial_49",
+      "seed": 20261004,
+      "split": "ood_binding"
+    }
+  ],
+  "expected_evaluations": 20,
+  "manifest": {
+    "path": "/home/hhai/l20-vl-1.2b/data/diagnostic/stage-d-v2/manifest.jsonl",
+    "sha256": "efd51701c19379ce77af83272acd732c93cc7e4428ca67c6cb147bea0572c6cb"
+  },
+  "random_control": "within_task_answer_matched",
+  "schema_version": "2026-09-13-v1",
+  "scorer_files": {
+    "analyze_stage_d_confirmation.py": {
+      "path": "/home/hhai/l20-vl-1.2b/analyze_stage_d_confirmation.py",
+      "sha256": "69ac755b1b624d90caebb44e1de0432ea4da9593abb461988512cb08b5c637b5"
+    },
+    "counterfactual_losses.py": {
+      "path": "/home/hhai/l20-vl-1.2b/counterfactual_losses.py",
+      "sha256": "566c43764013a8bb98a6343b18b260924c2396b1ae1e6424cf2fd77aedcbac39"
+    },
+    "evaluate_stage_a_visual_floor.py": {
+      "path": "/home/hhai/l20-vl-1.2b/evaluate_stage_a_visual_floor.py",
+      "sha256": "b9013d5767ab8ff5ec797c453fcb835a76dff7bb7be1ceea04ce9e457e84e876"
+    },
+    "modeling.py": {
+      "path": "/home/hhai/l20-vl-1.2b/modeling.py",
+      "sha256": "1b3e53cf9c331e019f78838a04dd32c3c7203e189c8530b7467c317a18565c66"
+    },
+    "run_stage_d_confirmation.py": {
+      "path": "/home/hhai/l20-vl-1.2b/run_stage_d_confirmation.py",
+      "sha256": "0a72623a380879de0d4faf9fbd99e591fa5ae2b22fea36a28d5f3d31f76ae608"
+    },
+    "scoring_contract.py": {
+      "path": "/home/hhai/l20-vl-1.2b/scoring_contract.py",
+      "sha256": "505328cad5a86bba366e776fb2828140abbf8f09bb72cb4a84df6dba7b11085a"
+    },
+    "stage_d_confirmation_contract.py": {
+      "path": "/home/hhai/l20-vl-1.2b/stage_d_confirmation_contract.py",
+      "sha256": "3f46c4be66f129f43e5b2c9c89646a18d4c3f9aa678935117514cf25cf9d5242"
+    },
+    "train_stage_a_full_token.py": {
+      "path": "/home/hhai/l20-vl-1.2b/train_stage_a_full_token.py",
+      "sha256": "e5263492be372008e50f4fde4420699d731cdb80f79fdad868027eb281e2f52d"
+    },
+    "validate_stage_d_confirmation_protocol.py": {
+      "path": "/home/hhai/l20-vl-1.2b/validate_stage_d_confirmation_protocol.py",
+      "sha256": "d7d8f06815bc9f49885ce8304a6c56c1fee6c96010d838131fa347b7a6ee72c0"
+    }
+  },
+  "scoring_precision": "float32",
+  "seeds": [
+    20260930,
+    20261001,
+    20261002,
+    20261003,
+    20261004
+  ],
+  "source_files": {
+    "data_admission": {
+      "path": "/home/hhai/l20-vl-1.2b/stage_d_data_admission_v2.json",
+      "sha256": "dd33bd6fdd472b7b32cc56f9a70cb072c1158b03a7cfec6c2bdf645195b12d1c"
+    },
+    "data_protocol": {
+      "path": "/home/hhai/l20-vl-1.2b/stage_d_data_protocol_v2.json",
+      "sha256": "0e776b0ac5cf466a3ffdc98768c41a843fffd1ffd9188d0fac53bea8b416a4fe"
+    },
+    "human_audit": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/stage-d-data-human-audit-v2.json",
+      "sha256": "318a04a9ed2858babc22ae1de8360553f8214c4372533b490f30ae02028589ac"
+    },
+    "replication_protocol": {
+      "path": "/home/hhai/l20-vl-1.2b/stage_d_replication_protocol.json",
+      "sha256": "dd04741069c4be356156b61dfba9105bccbcdb7efe78030a08a996b546f86d5e"
+    },
+    "replication_summary": {
+      "path": "/home/hhai/l20-vl-1.2b/evidence/stage-d-d1-replication-summary-v1.json",
+      "sha256": "d2d38c07aa9b719c5e0f8bfc53d1dcffb19c8f45939eeaf575041ed324746562"
+    }
+  },
+  "splits": {
+    "iid_test": {
+      "base_answers": {
+        "no": 1500,
+        "yes": 1500
+      },
+      "family_id_sha256": "fc3557abb6ccc66100b3c420b0fe8e3846edbd80d2461c5ef70f9e3097e37c5a",
+      "scene_families": 3000,
+      "tasks": {
+        "above_below_relation": 600,
+        "color_binding": 600,
+        "count": 600,
+        "left_right_relation": 600,
+        "shape_binding": 600
+      }
+    },
+    "ood_binding": {
+      "base_answers": {
+        "no": 1000,
+        "yes": 1000
+      },
+      "family_id_sha256": "414242f235026b72b8ac9b7c57d315cc13ff76906508851911dd6a0d1766f935",
+      "scene_families": 2000,
+      "tasks": {
+        "color_binding": 1000,
+        "shape_binding": 1000
+      }
+    }
+  },
+  "statistics": {
+    "crossed_bootstrap_resamples": 10000,
+    "crossed_bootstrap_seed": 20260913,
+    "margin_disclosure": "The -1pp engineering margin was frozen after D1 development and before any Stage-D test inference.",
+    "noninferiority_margin_pp": -1.0,
+    "noninferiority_requires_both_lower_95_ci_gt_margin": true,
+    "paired_training_seeds": true,
+    "primary_comparison": "A_spatial_49_minus_F_matched_196",
+    "primary_inference_rule": "report crossed bootstrap and paired-t intervals; superiority or noninferiority requires the corresponding lower bound from both intervals to pass",
+    "primary_metric": "true_image_base_and_edited_family_joint_accuracy",
+    "primary_split": "iid_test",
+    "primary_unit": "scene_family",
+    "secondary_results": "report OOD, tasks and controls with intervals; no multiplicity-adjusted superiority claims",
+    "superiority_point_threshold_pp": 2.0,
+    "superiority_requires_both_lower_95_ci_gt_zero": true
+  },
+  "status": "authorized_one_time_stage_d_iid_ood_confirmation_after_all_checkpoints_frozen",
+  "test_execution": {
+    "all_results_including_failures_reported": true,
+    "checkpoint_or_weight_changes_after_unseal_allowed": false,
+    "each_frozen_arm_seed_split_once": true,
+    "resume_may_adopt_only_a_complete_hash_valid_existing_result": true
+  },
+  "tf32_enabled": false,
+  "verify_image_hashes": true
+}

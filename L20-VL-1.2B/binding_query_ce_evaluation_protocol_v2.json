@@ -1,0 +1,37 @@
+{
+  "schema_version": "2026-09-14-v2",
+  "status": "authorized_binding_answer_only_development_v2",
+  "experiment_id": "binding_query_ce_evaluation_v2",
+  "authorized_by_user": true,
+  "test_split_use_authorized": false,
+  "training_protocol": {
+    "path": "/home/hhai/l20-vl-1.2b/counterfactual_address_value_routing_protocol_v2.json",
+    "sha256": "da29082f8f40362e90f343eb57e2f278da4b6383167f1b6b2025879d2472f626",
+    "arm": "query_ce",
+    "run": "/home/hhai/l20-vl-1.2b/runs/binding-query-ce-49-seed20260930-v2"
+  },
+  "parents": {
+    "language": "/home/hhai/pretrain/publish/L20-1B-20B-Base",
+    "vision": "/home/hhai/l20-vl-1.2b/models/siglip2-base-patch16-224-75de2d55"
+  },
+  "architecture": {
+    "compressor": "spatial_query",
+    "output_visual_tokens": 49,
+    "target_ratio": 4,
+    "vision_feature_layer": -1,
+    "visual_tokens": 196,
+    "query_readout_rank": 64
+  },
+  "data": {
+    "manifest": "/home/hhai/l20-vl-1.2b/data/diagnostic/binding-intervention-v1/manifest.jsonl",
+    "manifest_sha256": "084110ebff7f7d9dc3d5249a967b2efdcecd27e56827cb98ee69c8309f4b3754",
+    "allowed_splits": ["mechanism_dev", "selection_dev"],
+    "final_test": "sealed_and_absent"
+  },
+  "source_code": {
+    "evaluator_sha256": "c2110dcdd25f5ae0e78ddec31d7656391d6f8b5b4461df04833b1c75ad409954",
+    "modeling_sha256": "7ee504253640c9c7ce7e121b212a31d16d9e57ef9e05f55ebcbd67573febeac9",
+    "scoring_contract_sha256": "e8ba77148217fe08f31c029d839d4b6d7321e8d5b4310f1180c442841328f2f6"
+  },
+  "claim_boundary": "One-seed synthetic development evidence for the capacity-matched query-reader CE control; final test remains sealed."
+}

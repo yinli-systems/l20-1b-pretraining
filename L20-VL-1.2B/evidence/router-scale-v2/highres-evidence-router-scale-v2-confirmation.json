@@ -1,0 +1,161 @@
+{
+  "action_counts": {
+    "POINT": 256,
+    "STOP": 256
+  },
+  "checkpoint": {
+    "path": "/home/hhai/l20-vl-1.2b/runs/highres-evidence-router-scale-v2/step-000480/router.safetensors",
+    "selection_source": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-router-scale-v2-development-selection.json",
+    "sha256": "df3f8ab31cbef9479930d6a3955e354b51a33e19c7606059b89bfd66ebf5d164",
+    "step": 480
+  },
+  "checkpoint_selections": 0,
+  "claim_boundary": "This is a one-shot confirmation on 256 untouched synthetic scene families for one frozen router checkpoint and policy. It can confirm controlled POINT/STOP and coarse-localization transfer across a new seed and larger family split. It cannot establish natural-image evidence search, OCR or screen understanding, open-ended generation, deployment readiness, novelty, or superiority over another VLM.",
+  "completed_at": "2026-09-14T12:43:27.973439+00:00",
+  "confirmation_runs": 1,
+  "decision": "confirm_router_checkpoint",
+  "elapsed_seconds": 38.035758471116424,
+  "families": 256,
+  "gate_passed": true,
+  "parameter_updates": 0,
+  "peak_cuda_memory_bytes": 4128848384,
+  "predicted_crop_policy": {
+    "acquired_rows": 256,
+    "all_tasks": {
+      "families": 256,
+      "family_joint_accuracy": 0.515625,
+      "prediction_distribution": {
+        "0": 27,
+        "1": 25,
+        "2": 26,
+        "3": 29,
+        "4": 21,
+        "5": 24,
+        "6": 29,
+        "7": 26,
+        "8": 23,
+        "9": 26,
+        "purple": 104,
+        "teal": 152
+      },
+      "row_accuracy": 0.66796875,
+      "rows": 512
+    },
+    "candidate_order_invariance": {
+      "POINT_ACTION": true,
+      "STOP_ACTION": true
+    },
+    "global_stop": {
+      "families": 128,
+      "family_joint_accuracy": 0.078125,
+      "prediction_distribution": {
+        "purple": 104,
+        "teal": 152
+      },
+      "row_accuracy": 0.37109375,
+      "rows": 256
+    },
+    "local_evidence": {
+      "families": 128,
+      "family_joint_accuracy": 0.953125,
+      "prediction_distribution": {
+        "0": 27,
+        "1": 25,
+        "2": 26,
+        "3": 29,
+        "4": 21,
+        "5": 24,
+        "6": 29,
+        "7": 26,
+        "8": 23,
+        "9": 26
+      },
+      "row_accuracy": 0.96484375,
+      "rows": 256
+    },
+    "stopped_rows": 256
+  },
+  "predictions": {
+    "bytes": 600913,
+    "path": "/home/hhai/l20-vl-1.2b/evidence/highres-evidence-router-scale-v2-confirmation-predictions.jsonl",
+    "sha256": "b0c36a9afa159f0ebec0cf0c183b5f62cbb18e15cc9ce5b001692f6d0e7f668d"
+  },
+  "protocol": {
+    "path": "highres_evidence_router_scale_v2_confirmation_protocol.json",
+    "sha256": "2cd042290466883265d8ab05584e1f1d761b062f67523fd4e4838a36f1a1a751"
+  },
+  "router_metrics": {
+    "acquisition_rate": 0.5,
+    "action_accuracy": 1.0,
+    "exact_patch_accuracy": 0.9609375,
+    "gain_mae": 0.5010915994644165,
+    "mean_chebyshev_patch_error": 0.24609375,
+    "point_gain_mae": 0.9762766361236572,
+    "point_recall": 1.0,
+    "point_rows": 256,
+    "rows": 512,
+    "stop_accuracy": 1.0,
+    "stop_gain_mae": 0.02590646594762802,
+    "stop_rows": 256,
+    "within_one_patch_accuracy": 0.9609375
+  },
+  "rows": 512,
+  "schema_version": "2026-09-14-v1",
+  "status": "complete_highres_evidence_router_confirmation",
+  "threshold_updates": 0,
+  "verified_parent_records": {
+    "bridge_sha256": "d4b04aa98e5430a1fe5a11918da87a67007d283116b4e843c1d640fc7c31f6ce",
+    "crop_bridge_sha256": "9ef26b80ab3b99e89139f757956cf972c5b4d0b04d254755dbc93d867efff46e",
+    "language": {
+      "config.json": {
+        "bytes": 692,
+        "sha256": "03b9b24c54c1f271a05e317f3f7edc844bb3dce3b03ca3d3c96c7d16944dc9cb"
+      },
+      "generation_config.json": {
+        "bytes": 81,
+        "sha256": "1f5364a8fcd616f171b6633e64d2b3a7dd00f4b71953030a9d102365da57ae4e"
+      },
+      "model-00001-of-00003.safetensors": {
+        "bytes": 1625415432,
+        "sha256": "dd9578d156a9c5d70d9ea70b212bd180fb0d809d079a12fe8cc4ccbdd485ceac"
+      },
+      "model-00002-of-00003.safetensors": {
+        "bytes": 1585603608,
+        "sha256": "2d94a7301798a60bb06199190aaf8912bed7c4c4829f60e154ea3b2b5321f2e4"
+      },
+      "model-00003-of-00003.safetensors": {
+        "bytes": 1189197352,
+        "sha256": "a5a9754c5d8b94c7bef8da4b9211d27335f5013e0519a1106046c6c60a84e0ea"
+      },
+      "model.safetensors.index.json": {
+        "bytes": 16555,
+        "sha256": "382f6cc555a9876edbb7d13281774aca548c51528d79da21a0e631a88f6157c6"
+      },
+      "model_config.yaml": {
+        "bytes": 1162,
+        "sha256": "030d868464d4466007747b8f28c8fe5a43884b5aa4e28580d01b86df27b8ff8e"
+      },
+      "special_tokens_map.json": {
+        "bytes": 293,
+        "sha256": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193"
+      },
+      "tokenizer.json": {
+        "bytes": 2263083,
+        "sha256": "e755dfeeed1acab465839adc0988811983a3287db230a8d9bc0f74704208609c"
+      },
+      "tokenizer_config.json": {
+        "bytes": 665,
+        "sha256": "f5cb4892eb0751f37da45779eab1cab0b591ad2f4ec6261cc46292bb99e6b007"
+      }
+    },
+    "language_adapter_files": {
+      "adapter_config.json": "beb25b1266075702a22f78be2daa5f03625a0198514f0137a1284e974b06fc9b",
+      "adapter_model.safetensors": "b6b31eb6927d27ba2a0dbdc71f50adca68f95b849f39a05bdbba532cf61cbaa9"
+    },
+    "vision_artifacts": {
+      "config.json": "fe8b5fe6d5734360678fd71c11c21e1ea3364bd8598d34295d9206335973ffd7",
+      "model.safetensors": "612923381c76ec5a9bed335d1c48827e3f2e506ac31b044b63b2031fadee6a0b",
+      "preprocessor_config.json": "9b36b57ebaf20f09bf4c22100ccc21877ea6bfe5aead0c00c59f8af8ccefacfc"
+    }
+  }
+}
