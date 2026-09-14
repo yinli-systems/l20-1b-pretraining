@@ -1,0 +1,192 @@
+{
+  "campaign": {
+    "data_scope": "reweighted current admitted corpus; not the proposed fresh-corpus program",
+    "jobs": [
+      {
+        "arm_id": "r0-lr6e5",
+        "job_id": 1590963,
+        "job_name": "p529m-p1-r0-l6e5",
+        "peak_learning_rate": "0.00006",
+        "recipe": "R0_F2_current_control",
+        "seed": 20260916,
+        "submit_attempt": 1
+      },
+      {
+        "arm_id": "r1-lr6e5",
+        "job_id": 1590964,
+        "job_name": "p529m-p1-r1-l6e5",
+        "peak_learning_rate": "0.00006",
+        "recipe": "R1_F1_current_reconsider",
+        "seed": 20260916,
+        "submit_attempt": 1
+      },
+      {
+        "arm_id": "r2-lr6e5",
+        "job_id": 1590965,
+        "job_name": "p529m-p1-r2-l6e5",
+        "peak_learning_rate": "0.00006",
+        "recipe": "R2_current_retention_repair",
+        "seed": 20260916,
+        "submit_attempt": 1
+      },
+      {
+        "arm_id": "r3-lr6e5",
+        "job_id": 1590966,
+        "job_name": "p529m-p1-r3-l6e5",
+        "peak_learning_rate": "0.00006",
+        "recipe": "R3_current_balanced",
+        "seed": 20260916,
+        "submit_attempt": 1
+      },
+      {
+        "arm_id": "r4-lr6e5",
+        "job_id": 1590967,
+        "job_name": "p529m-p1-r4-l6e5",
+        "peak_learning_rate": "0.00006",
+        "recipe": "R4_current_code_guard",
+        "seed": 20260916,
+        "submit_attempt": 1
+      },
+      {
+        "arm_id": "r3-lr3e5",
+        "job_id": 1590968,
+        "job_name": "p529m-p1-r3-l3e5",
+        "peak_learning_rate": "0.00003",
+        "recipe": "R3_current_balanced",
+        "seed": 20260916,
+        "submit_attempt": 1
+      },
+      {
+        "arm_id": "r3-lr1e4",
+        "job_id": 1590969,
+        "job_name": "p529m-p1-r3-l1e4",
+        "peak_learning_rate": "0.0001",
+        "recipe": "R3_current_balanced",
+        "seed": 20260916,
+        "submit_attempt": 1
+      }
+    ],
+    "submitted_gpu_total": 28,
+    "target_prediction_tokens_per_run": 536870912
+  },
+  "captured_utc": "2026-09-14T23:21:23.177276+00:00",
+  "claim_boundary": "One job has a real four-RTX-5090 allocation and passed its first complete MFU window. Six jobs are submitted but were pending in this snapshot. Completion, capability gains, selection, promotion and superiority are not yet established.",
+  "evidence_sha256": {
+    "gpu_csv_snapshot": "264a86e9ac3d440b9fbe048e2ae8e5ff6ca7b1e2351dd72b2467503ea1ff08cd",
+    "metrics_jsonl_snapshot": "6b6124028994bb268a9ad6be8b7628b4ba82760dad68da524a4f43b385c12568",
+    "remote_build_receipt": "8c61ddb49378ca7359cec8b623439ef62ed8840acea17a0eea4b5121243dced7",
+    "remote_submission_receipt": "5547f0e62e0d8a549db4a06bb2a668a169cf3c403948ded3f60744e50a0dfa62",
+    "run_manifest": "1dad127c68665c37ad4920cfbe5418bd9d0e5614098716f69984ce0ac8384efd"
+  },
+  "git_commit": "80166bf",
+  "live_run": {
+    "arm_id": "r0-lr6e5",
+    "first_complete_post_grace_window_median": 0.7711801275625021,
+    "first_complete_post_grace_window_mfu": [
+      0.7710344844438012,
+      0.771001136575466,
+      0.7710805635460818,
+      0.7712111604216332,
+      0.7712340763652616,
+      0.771242573384937,
+      0.7712693847177288,
+      0.7711636594997602,
+      0.7711479880820293,
+      0.771196595625244
+    ],
+    "first_complete_post_grace_window_steps": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "gpu_count": 4,
+    "gpu_names": [
+      "NVIDIA GeForce RTX 5090",
+      "NVIDIA GeForce RTX 5090",
+      "NVIDIA GeForce RTX 5090",
+      "NVIDIA GeForce RTX 5090"
+    ],
+    "job_id": 1590963,
+    "latest_mfu": 0.771196595625244,
+    "latest_prediction_tokens": 54525952,
+    "latest_step": 26,
+    "latest_tokens_per_second": 161971.62655282038,
+    "mfu_minimum_strictly_greater_than": 0.7,
+    "run_fingerprint_sha256": "12d2d014b9df817b4eb62130c5551bc9b79d9be76bcf5abe1fc2dfd2ae24c509",
+    "scheduler_state": {
+      "elapsed": "8:12",
+      "gres": "gres/gpu:4",
+      "job_name": "p529m-p1-r0-l6e5",
+      "nodes": 1,
+      "reason_or_node": "wqd10nbj03g1",
+      "state": "RUNNING"
+    }
+  },
+  "scheduler_snapshot": {
+    "1590963": {
+      "elapsed": "8:12",
+      "gres": "gres/gpu:4",
+      "job_name": "p529m-p1-r0-l6e5",
+      "nodes": 1,
+      "reason_or_node": "wqd10nbj03g1",
+      "state": "RUNNING"
+    },
+    "1590964": {
+      "elapsed": "0:00",
+      "gres": "gres/gpu:4",
+      "job_name": "p529m-p1-r1-l6e5",
+      "nodes": 1,
+      "reason_or_node": "(Priority)",
+      "state": "PENDING"
+    },
+    "1590965": {
+      "elapsed": "0:00",
+      "gres": "gres/gpu:4",
+      "job_name": "p529m-p1-r2-l6e5",
+      "nodes": 1,
+      "reason_or_node": "(Priority)",
+      "state": "PENDING"
+    },
+    "1590966": {
+      "elapsed": "0:00",
+      "gres": "gres/gpu:4",
+      "job_name": "p529m-p1-r3-l6e5",
+      "nodes": 1,
+      "reason_or_node": "(Priority)",
+      "state": "PENDING"
+    },
+    "1590967": {
+      "elapsed": "0:00",
+      "gres": "gres/gpu:4",
+      "job_name": "p529m-p1-r4-l6e5",
+      "nodes": 1,
+      "reason_or_node": "(Priority)",
+      "state": "PENDING"
+    },
+    "1590968": {
+      "elapsed": "0:00",
+      "gres": "gres/gpu:4",
+      "job_name": "p529m-p1-r3-l3e5",
+      "nodes": 1,
+      "reason_or_node": "(Priority)",
+      "state": "PENDING"
+    },
+    "1590969": {
+      "elapsed": "0:00",
+      "gres": "gres/gpu:4",
+      "job_name": "p529m-p1-r3-l1e4",
+      "nodes": 1,
+      "reason_or_node": "(Priority)",
+      "state": "PENDING"
+    }
+  },
+  "schema": "p529m-current-corpus-mixture-pilot-launch-validation-v1",
+  "status": "PASS_ONE_LIVE_4X5090_RUN_MFU_GT_0_70_SIX_PENDING"
+}
