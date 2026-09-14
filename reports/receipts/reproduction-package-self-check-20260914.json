@@ -21,11 +21,20 @@
   "offline_recomputation": {
     "working_tree_status": "passed",
     "clean_selected_file_copy_status": "passed",
-    "clean_selected_file_count": 47,
+    "clean_selected_file_count": 49,
     "time_weighted_mfu": 0.7105589798862281,
     "step_weighted_mfu": 0.7108576208479678,
     "aggregate_tokens_per_second": 12824.189835783383,
     "energy_kwh": null
+  },
+  "confidence_interval_replay": {
+    "numpy": "2.5.2",
+    "bootstrap_seed": 20260912,
+    "bootstrap_repetitions": 10000,
+    "all_seven_task_intervals_exact_match": true,
+    "seven_task_macro_paired_95_ci_pp": [0.1583640571808928, 1.885984268946491],
+    "six_task_without_boolq_paired_95_ci_pp": [0.2789790267226128, 2.2227792867373015],
+    "boundary": "Exact replay of statistical aggregation from paired sufficient counts; model predictions were not regenerated."
   },
   "tamper_test": {
     "target": "reports/metrics/validation-loss.csv",
@@ -45,5 +54,5 @@
     "status": "pending",
     "template": "reproducibility/independent-verification-template.md"
   },
-  "claim_boundary": "These are author-side reproducibility checks, including an isolated clean-directory run. They are not an independent person's sign-off and do not replay item-level bootstrap confidence intervals."
+  "claim_boundary": "These are author-side reproducibility checks, including an isolated clean-directory run and exact statistical CI replay. They are not an independent person's sign-off and do not regenerate item-level model predictions."
 }

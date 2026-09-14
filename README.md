@@ -149,9 +149,10 @@ number fails closed.
 The checked-in source snapshot is explicitly described as reconstructed, not
 pre-registered: six operational files were corrected after the earlier
 environment receipt. Raw item-level evaluation responses are not in the
-portable Git bundle, so exact bootstrap replay requires an independent
-`--log_samples` evaluation; compact scores, task fingerprints, and paired
-outcome counts remain inspectable.
+portable Git bundle. The published bootstrap aggregation can nevertheless be
+replayed exactly from retained paired sufficient counts with NumPy 2.5.2;
+independent verification of the model outputs still requires a fresh
+`--log_samples` evaluation.
 
 ## Operations
 

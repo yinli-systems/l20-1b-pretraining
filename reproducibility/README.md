@@ -29,7 +29,7 @@ itself.
 ```bash
 git clone https://github.com/yinli-systems/l20-1b-pretraining.git
 cd l20-1b-pretraining
-git checkout l20-1b-repro-v1.0.1
+git checkout l20-1b-repro-v1.1
 python3 reproducibility/recompute.py
 ```
 
@@ -50,11 +50,22 @@ Expected headline output includes:
 ```
 
 The checked-in evaluation files are compact results, not all raw model
-responses. Task fingerprints and paired outcome counts are retained for the
-frozen comparison; the reported bootstrap CI is hash-bound but cannot be
-independently replayed exactly without the original item-level outcome files.
-An independent evaluator should therefore regenerate raw predictions with
-`--log_samples` before treating the CI as independently reproduced.
+responses. Task fingerprints and paired `-1/0/+1` outcome counts are retained
+for the frozen binary-accuracy comparison. Because the published bootstrap
+samples those sufficient statistics, its statistical aggregation can be
+replayed exactly with the original NumPy version:
+
+```bash
+python3 -m venv .venv-ci
+. .venv-ci/bin/activate
+python -m pip install --requirement reproducibility/requirements-ci-replay.txt
+python reproducibility/recompute_efficiency_ci.py
+```
+
+An exact CI replay confirms the computation from the retained counts; it does
+not independently prove that model inference produced those counts. An
+independent evaluator should regenerate raw predictions with `--log_samples`
+before treating the model outputs themselves as independently reproduced.
 
 ## 2. Re-export the full-run telemetry
 

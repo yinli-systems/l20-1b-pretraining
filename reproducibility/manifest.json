@@ -3,17 +3,19 @@
   "created_utc": "2026-09-14T15:26:04Z",
   "repository": "https://github.com/yinli-systems/l20-1b-pretraining",
   "repository_parent_commit": "dd9833f1ed82109903a74b816bf8ccd5d682c25e",
-  "commit_boundary": "The immutable l20-1b-repro-v1.0.1 Git tag identifies the corrected published package commit. The parent commit identifies repository state immediately before this package was added; a manifest cannot include its own eventual commit hash. The earlier l20-1b-repro-v1 tag is superseded because it omitted two manifest-bound files from Git.",
+  "commit_boundary": "The immutable l20-1b-repro-v1.1 Git tag identifies the complete published package commit. The parent commit identifies repository state immediately before this package was added; a manifest cannot include its own eventual commit hash. The earlier l20-1b-repro-v1 tag is invalid because it omitted two manifest-bound files; v1.0.1 is valid but superseded by v1.1, which adds exact statistical CI replay.",
   "model_release": {
     "repository": "AliceYin/L20-1B-20B-Base",
     "revision": "7fc9ab0f50e7faf34c2487fefdf46aa99f4a50b8"
   },
   "bound_files": {
-    "reproducibility/README.md": "4aaf8116593599fcc09c0328902a16d880aab6c8f929bd20e83b4869aa557de8",
+    "reproducibility/README.md": "6bbddcddd23dec4e4f5f05f3ecc78b9ddd62d35a8155d865c270e15780dc929f",
     "reproducibility/independent-verification-template.md": "e97272fc84b6b5c956dd2ce082186ea95dce4302d53ad9ec52f45b39fb0a4dea",
     "reproducibility/requirements-event-export.txt": "dda3848e5ddfb0bf5a416dd867e9b7c47f29d2729a26e36fc9286c70f4dbfb9d",
     "reproducibility/export_training_telemetry.py": "28490daf7337c09b15a0b4887b80a4e85cd58647f25d5527077a7b618f7a3fff",
-    "reproducibility/recompute.py": "eee2c2948095ea1ddd5368bf5f86ae7f1348c91aabdaa2a7540156d78de5ad61",
+    "reproducibility/recompute.py": "f4c7d867ec2de1cb0271e24811e317c4f707e1bc129df7282ca638a5692d39dc",
+    "reproducibility/recompute_efficiency_ci.py": "a6bbe03c6de1fcd7a193175118ddefecec34c1d907715eb99469f73f8e4f2576",
+    "reproducibility/requirements-ci-replay.txt": "479c30179f7e62d697ca3c8af0d8943454ebc276052024d61824e0453c54bf16",
     "reproducibility/training-source-manifest.json": "9ac0a9aaf278b8067aa5336f8dd962ea34fe15ba3f23e4b7d23efe9a35d7295d",
     "reproducibility/training-snapshot/hf_config.py": "8fd5948a99c3750a41e47f75ae1a4bad1843c975aac855b45f88f9d6fab13e29",
     "reproducibility/training-snapshot/pipeline_config.json": "f3066ee47d9de2d1083592393416959b9e17edc17ed3ed13250cbe1458282ac6",
@@ -31,7 +33,7 @@
     "reports/receipts/final-evaluation-receipt.json": "14543f285ffedfa521971875adc9fd360655338bc98c224b0bfed28bac45e536",
     "reports/receipts/base-release-verification-20260913.json": "bcb91e71a7b3a3d60ac847889f1581d228987a55fee8a8495e5a6c2bc1dbc042",
     "reports/receipts/environment-receipt.json": "9d6591b57436e446344488414c9c71b3211148ad76cf80580dfa3e978cd369e4",
-    "reports/receipts/reproduction-package-self-check-20260914.json": "c2ff786c970630898299a974ab1433fcb8899ac02ef70553a4a4d42088335cf9",
+    "reports/receipts/reproduction-package-self-check-20260914.json": "1ef163d972e46a95679b1d5242b7915a3bf63a318af2b49991e35cc4851bcb65",
     "reports/final-efficiency-20260912/efficiency-evaluation-plan-20260912-v5.json": "a06e5c3476a05a0c8853b0f2f7720a75afcdebe1740854b428b9cd33745aea75",
     "reports/final-efficiency-20260912/final-verification-20260912.json": "e2bf406f1ff43b20dfdc2fa09f74ca9618e43008ef3bb31b75f523728cd79fc3",
     "reports/final-efficiency-20260912/results/tinyllama_1t-summary.json": "b646c5f138db67f5fdc84670afc81ae0629bc8ddcdcae90839f556701a9e86e4",
@@ -40,5 +42,5 @@
     "evaluate_comparison.py": "6893ade3e5e623443f84906870bfc60a68ab7709396e66c24898e0d899c58ea9",
     "verify_hf_release.py": "15244dc7c7e54c24f016327cb33b0ccda7e9f9f302c5b4bb674dca72ad8476e0"
   },
-  "claim_boundary": "This bundle independently recomputes compact training, data, validation, telemetry, and selected aggregate evaluation claims. It binds but does not exactly replay the published bootstrap confidence interval because item-level outcomes are not included. It does not establish cloud billing, full host utilization, CPU-hours, network cost, or full-run energy."
+  "claim_boundary": "This bundle independently recomputes compact training, data, validation, telemetry, and selected aggregate evaluation claims. The optional NumPy-2.5.2 verifier exactly replays the published bootstrap aggregation from paired sufficient counts, but independent prediction verification still requires raw or regenerated item outputs. The bundle does not establish cloud billing, full host utilization, CPU-hours, network cost, or full-run energy."
 }

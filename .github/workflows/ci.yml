@@ -23,5 +23,7 @@ jobs:
         run: python -m compileall -q .
       - name: Verify independent reproduction bundle
         run: python reproducibility/recompute.py
+      - name: Replay paired confidence intervals
+        run: python reproducibility/recompute_efficiency_ci.py
       - name: Run tests
         run: python -m pytest -q

@@ -328,7 +328,7 @@ def verify_efficiency_result(root: Path) -> dict[str, Any]:
         "baseline_macro": baseline_macro,
         "difference_percentage_points": macro["ours_minus_baseline_pp"],
         "reported_paired_95_ci_percentage_points": macro["paired_95_ci_pp"],
-        "ci_boundary": "CI is hash-bound reported evidence; exact bootstrap replay requires raw item outcomes.",
+        "ci_boundary": "Use recompute_efficiency_ci.py with NumPy 2.5.2 for exact statistical replay. Independent prediction verification still requires raw or regenerated item outputs.",
     }
 
 
