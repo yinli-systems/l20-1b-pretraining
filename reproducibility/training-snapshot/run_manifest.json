@@ -1,0 +1,13 @@
+{
+  "from_scratch": true,
+  "global_batch_size": 510,
+  "initial_checkpoint": null,
+  "max_tokens": 19999703040,
+  "micro_batch_size": 6,
+  "model_name": "tiny-llama-1.1b",
+  "optimizer_steps": 19148,
+  "precision": "bf16-mixed",
+  "requested_max_tokens": 20000000000,
+  "seed": 42,
+  "sequence_length": 2048
+}

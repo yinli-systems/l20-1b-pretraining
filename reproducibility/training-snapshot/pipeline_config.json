@@ -1,0 +1,48 @@
+{
+  "from_scratch": true,
+  "pretrained_model_weights": false,
+  "pretrained_tokenizer": false,
+  "tokenizer": {
+    "algorithm": "byte_level_bpe",
+    "vocab_size": 32000,
+    "training_characters": 200000000,
+    "source_character_mix": {
+      "web": 130000000,
+      "synthetic": 10000000,
+      "math": 40000000,
+      "code": 20000000
+    }
+  },
+  "model": {
+    "architecture": "TinyLlama-class decoder-only transformer",
+    "layers": 22,
+    "hidden_size": 2048,
+    "attention_heads": 32,
+    "query_groups": 4,
+    "intermediate_size": 5632,
+    "context_length": 2048,
+    "parameters": 1100048384
+  },
+  "train_token_mix": {
+    "web": 12000000000,
+    "synthetic": 1000000000,
+    "math": 4000000000,
+    "code": 3000000000
+  },
+  "dataset_revisions": {
+    "HuggingFaceTB/smollm-corpus": "3ba9d605774198c5868892d7a8deda78031a781f",
+    "HuggingFaceTB/finemath": "e92b25a616738fe95dc186b64dfb19f9c8525594",
+    "HuggingFaceTB/stack-edu": "eeec5caac5cc3758a18f1d3ba4416837a9ba814c"
+  },
+  "quality_gates": {
+    "fineweb_edu_int_score_min": 4,
+    "language_score_min": 0.9,
+    "synthetic_seed_allowlist": ["stanford", "openstax", "khanacademy"],
+    "finemath_subset": "finemath-4plus",
+    "code_int_score_min": 4,
+    "code_license_type": "permissive",
+    "global_exact_document_dedup": true,
+    "benchmark_decontamination_ngram": 13,
+    "validation_hash_holdout_modulus": 1000
+  }
+}

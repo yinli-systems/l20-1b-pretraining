@@ -110,6 +110,14 @@ average. A separate 60-step preflight at the selected micro-batch measured
 12,586 tokens/s and 36.13 GiB peak allocated memory; micro-batch 8 was rejected
 after an out-of-memory failure.
 
+A later full-run reconstruction covers 19,144/19,148 optimizer steps (99.979%)
+and reports 71.06% time-weighted MFU, 71.09% step-weighted MFU, and 12,824
+aggregate tokens/s over the covered logger intervals. Successful-supervisor
+elapsed time was 433.24 hours on one L20. These aggregates do not turn GPU busy
+utilization into MFU. No run-spanning power series was preserved, so full-run
+energy is unavailable and neither the 348.3 W snapshot nor the short gate trace
+is extrapolated to kWh.
+
 ## Evaluation
 
 Final held-out validation loss was **2.4247** (perplexity **11.2990**). External
@@ -175,3 +183,8 @@ release manifest records file hashes, source checkpoint hash, parameter count,
 and storage dtype. Training code, compact receipts, derived metrics, confidence
 intervals, and plotting scripts are maintained in the public
 [GitHub evidence repository](https://github.com/yinli-systems/l20-1b-pretraining).
+The repository's
+[independent reproduction package](https://github.com/yinli-systems/l20-1b-pretraining/tree/main/reproducibility)
+binds the exact model revision and compact evidence, recomputes timing, MFU,
+throughput, loss/perplexity, data totals, and selected benchmark aggregates,
+and documents the reconstructed-source and raw-prediction boundaries.

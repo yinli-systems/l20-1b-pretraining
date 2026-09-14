@@ -121,12 +121,37 @@ snapshot at step 10,595 measured 12,845 tokens/s, 93.948 TFLOP/s of model FLOPs,
 132 TFLOP/s as the BF16 peak denominator, `model_FLOP/s / 132e12`, this is
 71.17% standard MFU. It is point-in-time telemetry, not a full-run average.
 
+The independent full-run accounting covers 19,144 of 19,148 optimizer steps
+(99.979%). It recomputes **71.06% time-weighted MFU**, **71.09% step-weighted
+MFU**, and **12,824 aggregate tokens/s** over the covered logger intervals. The
+successful supervisor elapsed time was 433.24 hours on one L20. Full-run energy
+is not reported because no run-spanning power time series was preserved; the
+348.3 W snapshot is not extrapolated. See the
+[independent reproduction package](reproducibility/README.md) for the fixed
+hashes, accounting boundaries, and fail-closed recomputation command.
+
 The packed reservoir contains at least 20.2B unique-source tokens (1% above the
 nominal mixture; a resumed source may retain a larger verified reservoir).
 Training is still capped at 19,999,703,040 effective prediction tokens,
 exactly 19,148 complete optimizer steps. The reserve absorbs the 2049-input vs.
 2048-target boundary and seeded weighted-sampling variance without cycling an
 exhausted source.
+
+## Independent reproduction
+
+Run `python3 reproducibility/recompute.py` to verify the hash-bound compact
+evidence using only the Python standard library. The package binds the exact
+Hugging Face revision, reconstructed execution sources, data and timing
+receipts, validation results, benchmark summaries, and a deterministic export
+of the original TensorBoard telemetry. Any changed input or inconsistent
+number fails closed.
+
+The checked-in source snapshot is explicitly described as reconstructed, not
+pre-registered: six operational files were corrected after the earlier
+environment receipt. Raw item-level evaluation responses are not in the
+portable Git bundle, so exact bootstrap replay requires an independent
+`--log_samples` evaluation; compact scores, task fingerprints, and paired
+outcome counts remain inspectable.
 
 ## Operations
 

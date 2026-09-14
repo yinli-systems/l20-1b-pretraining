@@ -1,0 +1,49 @@
+{
+  "schema_version": "reproduction-package-self-check-v1",
+  "status": "author_side_checks_passed_external_signoff_pending",
+  "created_utc": "2026-09-14T15:31:43Z",
+  "repository_parent_commit": "dd9833f1ed82109903a74b816bf8ccd5d682c25e",
+  "local_environment": {
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "python": "3.9.6"
+  },
+  "source_event": {
+    "remote_path": "/home/hhai/pretrain/checkpoints/full/logs/tensorboard/version_0/events.out.tfevents.1787553807.hhai-zijun.2957779.0",
+    "bytes": 16473400,
+    "sha256": "295a8a4cfa71709450b559029cf13830781dc7fa9d505e93d6f1ed227a333407",
+    "remote_hash_rechecked": true
+  },
+  "event_export": {
+    "tensorboard_version": "2.16.2",
+    "output_sha256": "d656e87efa759f34036bf59bcf6eb950adf5f22abbfc9375178d1111da9070c3",
+    "matches_checked_in_export": true
+  },
+  "offline_recomputation": {
+    "working_tree_status": "passed",
+    "clean_selected_file_copy_status": "passed",
+    "clean_selected_file_count": 47,
+    "time_weighted_mfu": 0.7105589798862281,
+    "step_weighted_mfu": 0.7108576208479678,
+    "aggregate_tokens_per_second": 12824.189835783383,
+    "energy_kwh": null
+  },
+  "tamper_test": {
+    "target": "reports/metrics/validation-loss.csv",
+    "mutation": "append one line in an isolated temporary copy",
+    "exit_code": 1,
+    "observed_error": "SHA-256 mismatch for reports/metrics/validation-loss.csv",
+    "fail_closed": true
+  },
+  "tests": {
+    "scope": "all Git-tracked tests plus tests/test_reproducibility_package.py",
+    "passed": 139,
+    "skipped": 1,
+    "failed": 0,
+    "skip_boundary": "The existing continuation-checkpoint GPU serialization contract requires the target host."
+  },
+  "independent_external_verification": {
+    "status": "pending",
+    "template": "reproducibility/independent-verification-template.md"
+  },
+  "claim_boundary": "These are author-side reproducibility checks, including an isolated clean-directory run. They are not an independent person's sign-off and do not replay item-level bootstrap confidence intervals."
+}

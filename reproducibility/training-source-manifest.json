@@ -1,0 +1,61 @@
+{
+  "schema_version": "training-source-reconstruction-v1",
+  "status": "reconstructed_from_surviving_execution_host",
+  "reconstructed_utc": "2026-09-14T15:14:30Z",
+  "repository_parent_commit": "dd9833f1ed82109903a74b816bf8ccd5d682c25e",
+  "successful_training_start_unix": 1787553802.1731873,
+  "successful_evaluation_start_unix": 1789114259.781956,
+  "tracked_execution_files": {
+    "benchmark_model.py": "3c08090b48ed873e3626d141958cf78b92778f9e00da862ef9c54fd3e569b5dd",
+    "build_data.py": "dfefea9a17b9e55d9d6179d021fe18b0767bfbf89877357a132624daf09a2ff7",
+    "build_decontam.py": "2373429a1b03d5d27b5b800cec4ae62f4838238d12afad2d3a06983357f94eb2",
+    "capture_environment.py": "7af0482d464862ebcab8e76f483f2f54593ef798b091760d09861ff6dc20f072",
+    "convert_litdata.py": "4e94445feb870de1c819e41b213e23184628d23361037a8be11a2d64568759ae",
+    "data_module.py": "aef4ab86cc4749a39cdcba3299bb94078b4c5d71bfa22d9c25549b58aaa42579",
+    "evaluate_final.py": "8ff0586d1a4b35f539a6561e17cfc3677a87466e44b614e04d679cee7897fac0",
+    "evaluation_watcher.py": "75812fcb730554d56978f6aa550310fb408b5dcdf14b3289b92fd72669e3bd79",
+    "pack_data.py": "e6ce3b9ce6602bd3ef3aff4c3c1514ab71ff2df9120afb8e29cad43d9ea9d415",
+    "production_supervisor.py": "1b789838a52337b25947143b8ecca54117994ae03fd7abdfe10c5457b8d9e711",
+    "prune_checkpoints.py": "c0c6d3d78c98fa6cae027ee0d149ee8fb29ceb35836ad29f89301668d3631d20",
+    "run_gate.py": "6cd6c98267eb5d9941a3859077d4b83b38eedd99345907ac553fb65ea51cedbe",
+    "run_pretrain.py": "7139d5dadc46eef84085fb7a986f5a46ff7b8edc48264b638f77e9af63a417a4",
+    "sample_tokenizer.py": "47ae5aaeb6391f88cf275b44aafc3d6388ecffc7270145190067b9586e7a026f",
+    "source_docs.py": "f53a3bc8df592985de8cbf10a3604cd7e10cc56a82c99c902ce776cd3a71ea58",
+    "train_tokenizer.py": "0ad9b1ff4c78cba0e84dd29edbd29cbc70e4bdc98bc056fe50eb7aab73dd03d3"
+  },
+  "snapshot_files": {
+    "reproducibility/training-snapshot/hf_config.py": "8fd5948a99c3750a41e47f75ae1a4bad1843c975aac855b45f88f9d6fab13e29",
+    "reproducibility/training-snapshot/pipeline_config.json": "f3066ee47d9de2d1083592393416959b9e17edc17ed3ed13250cbe1458282ac6",
+    "reproducibility/training-snapshot/run_manifest.json": "1ec1f81e940e4236b530e71d13eba77ad465a9b7bf76357c79ca078d5aa248f9",
+    "reproducibility/training-snapshot/model_config.yaml": "030d868464d4466007747b8f28c8fe5a43884b5aa4e28580d01b86df27b8ff8e",
+    "reproducibility/training-snapshot/hyperparameters.yaml": "5bae7be3b59070d379df5f28c54ff7d0ba609bff312fee833843c0b639bc42b0"
+  },
+  "stage_timing_evidence": {
+    "run_pretrain.py": {
+      "host_mtime_unix": 1787553761,
+      "seconds_before_successful_training_start": 41.173187255859375
+    },
+    "evaluate_final.py": {
+      "host_mtime_unix": 1789114065,
+      "seconds_before_successful_evaluation_start": 194.78195595741272
+    },
+    "source_docs.py": {
+      "host_mtime_unix": 1787512104,
+      "seconds_before_final_data_attempt_start": 98.7490599155426
+    },
+    "pack_data.py": {
+      "host_mtime_unix": 1787512106,
+      "seconds_before_final_data_attempt_start": 96.7490599155426
+    }
+  },
+  "pre_run_environment_receipt_mismatches": [
+    "build_data.py",
+    "data_module.py",
+    "pack_data.py",
+    "production_supervisor.py",
+    "run_pretrain.py",
+    "source_docs.py"
+  ],
+  "pipeline_config_boundary": "The surviving pipeline_config.json is a pre-final planning snapshot. Actual packed source counts are authoritative only in reports/receipts/data-full-receipt.json.",
+  "claim_boundary": "File hashes and host mtimes reconstruct the surviving executed state, but the corrected source tree was not cryptographically committed before the run. This package must not call the reconstruction a pre-registered code snapshot."
+}

@@ -1,0 +1,113 @@
+{
+  "schema_version": "full-training-accounting-v1",
+  "status": "complete_with_explicit_energy_gap",
+  "created_utc": "2026-09-14T15:14:30Z",
+  "hardware": {
+    "accelerators": 1,
+    "gpu": "NVIDIA L20",
+    "memory_mib": 46068,
+    "peak_memory_boundary": "Training log final summary; not a sampled maximum from an independent profiler.",
+    "peak_memory_gb_reported": 44.77
+  },
+  "training": {
+    "optimizer_steps": 19148,
+    "prediction_tokens": 19999703040,
+    "tokens_per_step": 1044480,
+    "successful_supervisor_start_utc": "2026-08-24T06:43:22.173187Z",
+    "training_complete_utc": "2026-09-11T07:57:43.288594Z",
+    "successful_supervisor_elapsed_seconds": 1559661.1154072285,
+    "successful_supervisor_elapsed_hours": 433.2391987242301,
+    "first_step_utc": "2026-08-24T06:45:41.111358Z",
+    "final_validation_utc": "2026-09-11T07:57:00.127251Z",
+    "first_step_to_final_validation_seconds": 1559479.015893221,
+    "first_step_to_final_validation_hours": 433.1886155258947,
+    "single_l20_elapsed_gpu_hours": 433.2391987242301,
+    "gpu_hours_boundary": "One dedicated L20 multiplied by successful-supervisor elapsed time. This is not a cloud billing receipt and does not include data preparation.",
+    "final_validation_loss": 2.4247145652770996,
+    "final_validation_perplexity": 11.299003601074219
+  },
+  "full_run_telemetry": {
+    "source_event_sha256": "295a8a4cfa71709450b559029cf13830781dc7fa9d505e93d6f1ed227a333407",
+    "source_event_bytes": 16473400,
+    "optimizer_steps_total": 19148,
+    "model_flops_samples": 19144,
+    "sample_coverage": 0.9997911008982662,
+    "uncovered_steps": [1, 2, 3, 4],
+    "mean_model_flops_per_second_step_weighted": 93833205951931.75,
+    "mean_mfu_step_weighted": 0.7108576208479678,
+    "aggregate_model_flops_per_second_time_weighted": 93793785344982.12,
+    "aggregate_mfu_time_weighted": 0.7105589798862282,
+    "aggregate_tokens_per_second_over_covered_logger_intervals": 12824.189835783382,
+    "covered_logger_seconds": 1559203.768506796,
+    "mfu_formula": "model_FLOP_per_second / 132000000000000",
+    "peak_denominator_flops_per_second": 132000000000000,
+    "denominator_boundary": "Repository-selected dense BF16 peak denominator for one L20; no sparsity multiplier.",
+    "aggregation_boundary": "Time-weighted MFU is the harmonic aggregate of per-step model-FLOP/s samples. Step-weighted MFU is also reported. Both cover 19,144 of 19,148 optimizer steps and are not equivalent to GPU busy utilization.",
+    "source_export": "reports/metrics/full-training-telemetry-500-step.csv"
+  },
+  "point_in_time_snapshot": {
+    "optimizer_step": 10595,
+    "model_flops_per_second": 93948000000000,
+    "mfu": 0.7117272727272727,
+    "gpu_utilization_percent": 100,
+    "power_watts": 348.3,
+    "claim_boundary": "A single representative observation. It is not the complete-run MFU, mean utilization, or an energy measurement."
+  },
+  "data_preparation": {
+    "first_full_data_supervisor_attempt_utc": "2026-08-23T07:20:31.563412Z",
+    "final_admitted_attempt_start_utc": "2026-08-23T19:10:02.749060Z",
+    "full_data_receipt_utc": "2026-08-24T06:19:01.201397Z",
+    "first_attempt_to_receipt_calendar_hours": 22.974899440407754,
+    "final_admitted_attempt_calendar_hours": 11.149570093750954,
+    "prior_attempt_and_wait_calendar_hours": 11.8253293466568,
+    "total_train_reservoir_tokens": 20701139205,
+    "total_validation_tokens": 20612940,
+    "cost_boundary": "Calendar durations are measured from supervisor and receipt timestamps. CPU-hours, network transfer cost, host energy, and per-source worker occupancy were not logged and are unavailable."
+  },
+  "fault_and_recovery": {
+    "data_preparation": {
+      "observed_failed_supervisor_attempts": 6,
+      "lost_compute": "Not reconstructable from current receipts.",
+      "calendar_overhead_before_final_admitted_attempt_hours": 11.8253293466568
+    },
+    "training_launch": {
+      "failure": "KeyError: iterations",
+      "failed_before_first_optimizer_step": true,
+      "completed_optimizer_updates_lost": 0,
+      "failed_status_to_successful_relaunch_seconds": 1453.5248744487762,
+      "failed_status_to_successful_relaunch_minutes": 24.22541457414627
+    },
+    "successful_training": {
+      "logged_restart_or_resume_markers": 0,
+      "completed_optimizer_updates_lost": 0,
+      "boundary": "No restart or resume marker appears in the surviving successful train log and one TensorBoard stream covers the run. This does not prove the host never paused between logged steps."
+    },
+    "final_evaluation": {
+      "initial_attempt_failed": true,
+      "failed_status_to_successful_attempt_seconds": 587.009895324707,
+      "successful_attempt_seconds": 1579.9220917224884,
+      "retraining_required": false
+    }
+  },
+  "energy": {
+    "status": "not_measured_for_full_training",
+    "full_training_power_time_series_available": false,
+    "full_training_energy_kwh": null,
+    "reason": "No power time series spanning the successful 20B-token run was preserved.",
+    "gate_only_reference": {
+      "samples": 1006,
+      "mean_active_power_watts": 345.7040258449304,
+      "gate_wall_seconds": 1225.2467776173726
+    },
+    "claim_boundary": "The gate power trace and the 348.3 W snapshot must not be extrapolated to production-run energy."
+  },
+  "provenance": {
+    "environment_receipt": "reports/receipts/environment-receipt.json",
+    "data_receipt": "reports/receipts/data-full-receipt.json",
+    "gate_receipt": "reports/receipts/training-gate-receipt.json",
+    "loss_receipt": "reports/receipts/loss-curve-final-en.json",
+    "evaluation_receipt": "reports/receipts/final-evaluation-receipt.json",
+    "source_reconstruction": "reproducibility/training-source-manifest.json"
+  },
+  "claim_boundary": "This receipt supports full-run timing and near-complete logger-derived MFU/throughput accounting. It does not provide cloud billing, complete host utilization, CPU-hours, network cost, or full-run energy."
+}
