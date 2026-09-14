@@ -1,0 +1,78 @@
+{
+  "claim_boundary": "This proves exact release retrieval, structural consistency, and one finite local CPU forward pass. It is not a task-quality or GPU-training result.",
+  "created_unix": 1789311795.5431628,
+  "forward_smoke": {
+    "execution_device": "cpu",
+    "forward_seconds": 0.0754828329999988,
+    "input_tokens": 5,
+    "load_seconds": 4.0546267920000005,
+    "loaded_dtype": "torch.float16",
+    "logits_finite": true,
+    "logits_shape": [
+      1,
+      5,
+      32000
+    ],
+    "next_token_id": 7382,
+    "next_token_text": " Paris",
+    "parameter_count": 1100048384,
+    "prompt_sha256": "bbaff4d2ecd5892d4a442b0f53131641bf6e6f284761dd20fc0664bc97145762"
+  },
+  "hub": {
+    "byte_exact_manifest_match": true,
+    "local_manifest_sha256": "83e9a0982f96cfec65b109034669a9cc913e8b870201d2323805aecdaeabb051",
+    "manifest_url": "https://huggingface.co/AliceYin/L20-1B-20B-Base/resolve/7fc9ab0f50e7faf34c2487fefdf46aa99f4a50b8/release-manifest.json",
+    "remote_manifest_sha256": "83e9a0982f96cfec65b109034669a9cc913e8b870201d2323805aecdaeabb051",
+    "repository": "AliceYin/L20-1B-20B-Base",
+    "revision": "7fc9ab0f50e7faf34c2487fefdf46aa99f4a50b8"
+  },
+  "runtime": {
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "python": "3.9.6",
+    "torch": "2.8.0",
+    "transformers": "4.57.6"
+  },
+  "schema_version": "base-release-verification-v1",
+  "structural_verification": {
+    "managed_bytes": 4402498923,
+    "managed_file_count": 10,
+    "parameter_count": 1100048384,
+    "release_dir": "/Users/alice/Documents/ChatGPT/Pretraining 2/hf-release/L20-1B-20B-Base",
+    "shard_count": 3,
+    "shards": [
+      {
+        "file": "model-00001-of-00003.safetensors",
+        "parameter_count": 406351872,
+        "stored_dtypes": [
+          "F32"
+        ],
+        "tensor_bytes": 1625407488,
+        "tensor_count": 70
+      },
+      {
+        "file": "model-00002-of-00003.safetensors",
+        "parameter_count": 396398592,
+        "stored_dtypes": [
+          "F32"
+        ],
+        "tensor_bytes": 1585594368,
+        "tensor_count": 81
+      },
+      {
+        "file": "model-00003-of-00003.safetensors",
+        "parameter_count": 297297920,
+        "stored_dtypes": [
+          "F32"
+        ],
+        "tensor_bytes": 1189191680,
+        "tensor_count": 50
+      }
+    ],
+    "stored_dtypes": [
+      "F32"
+    ],
+    "tensor_bytes": 4400193536,
+    "tensor_count": 201,
+    "valid": true
+  }
+}

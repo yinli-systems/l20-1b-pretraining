@@ -29,7 +29,7 @@ itself.
 ```bash
 git clone https://github.com/yinli-systems/l20-1b-pretraining.git
 cd l20-1b-pretraining
-git checkout l20-1b-repro-v1
+git checkout l20-1b-repro-v1.0.1
 python3 reproducibility/recompute.py
 ```
 
