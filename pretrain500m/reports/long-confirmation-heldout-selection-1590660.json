@@ -1,0 +1,94 @@
+{
+  "base_loss_equal_domain": 3.304216691519922,
+  "claim_boundary": "selection by frozen held-out language-model loss only; generative capability and market superiority remain unverified",
+  "evaluation": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/long-confirmation-eval-v1/1590660/result.json",
+  "evaluation_sha256": "32d19eae4cf49b522a954bd9ab083466058f5386ed177ddf009c96da0bb070ef",
+  "formal_promotion": false,
+  "protocol": "/ssd/scxi253/pretrain500m-20260912-v1/source/confirmation-inputs-expansion-v1/confirmation-protocol.json",
+  "protocol_sha256": "d0c0fbb59bda58de814ab9f297ff4c8f00e9349b8e3f565ce0bb7e0fea4873f5",
+  "ranked_recipes": [
+    {
+      "mean_two_seed_loss_equal_domain": 2.4026083686775186,
+      "rank": 1,
+      "recipe": "F3_broad_multilingual_no_synthetic",
+      "seeds": [
+        {
+          "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F3_broad_multilingual_no_synthetic-seed20260914-1590005/train/model-final.pt",
+          "checkpoint_id": "F3_broad_multilingual_no_synthetic_seed20260914",
+          "checkpoint_sha256": "194e1da1ba1e74a77e28ae207d1dd74a4baa6889408e41c6dce36d551f1e222e",
+          "loss_by_domain": {
+            "code": 1.483875476252943,
+            "general_web": 2.999494214467864,
+            "knowledge_reading": 2.611099941287343,
+            "math": 2.182829423999548,
+            "multilingual": 2.7297330922682597
+          },
+          "loss_equal_domain": 2.4014064296551916,
+          "seed": 20260914
+        },
+        {
+          "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F3_broad_multilingual_no_synthetic-seed20260915-1589570/train/model-final.pt",
+          "checkpoint_id": "F3_broad_multilingual_no_synthetic_seed20260915",
+          "checkpoint_sha256": "8ee551307118a52bc79e9268ce3a08be20c6776234051fc48e3192d5d3e09a21",
+          "loss_by_domain": {
+            "code": 1.487528273270999,
+            "general_web": 2.9994030501994455,
+            "knowledge_reading": 2.611441433939647,
+            "math": 2.1884655169063203,
+            "multilingual": 2.732213264182817
+          },
+          "loss_equal_domain": 2.403810307699846,
+          "seed": 20260915
+        }
+      ],
+      "worst_seed_loss_equal_domain": 2.403810307699846
+    },
+    {
+      "mean_two_seed_loss_equal_domain": 2.567941431401632,
+      "rank": 2,
+      "recipe": "F2_reasoning_no_synthetic",
+      "seeds": [
+        {
+          "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260914-1589567/train/model-final.pt",
+          "checkpoint_id": "F2_reasoning_no_synthetic_seed20260914",
+          "checkpoint_sha256": "69d9d8d3358f23815f2455f7e075645056f90fe01ed40a11525130a0e58ca085",
+          "loss_by_domain": {
+            "code": 1.4832415508474497,
+            "general_web": 2.996570993187094,
+            "knowledge_reading": 2.586755933157753,
+            "math": 2.1561599853922586,
+            "multilingual": 3.606971277630349
+          },
+          "loss_equal_domain": 2.565939948042981,
+          "seed": 20260914
+        },
+        {
+          "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260915-1590004/train/model-final.pt",
+          "checkpoint_id": "F2_reasoning_no_synthetic_seed20260915",
+          "checkpoint_sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc",
+          "loss_by_domain": {
+            "code": 1.48549573095285,
+            "general_web": 2.9945526817846355,
+            "knowledge_reading": 2.6090501491460465,
+            "math": 2.155770492502748,
+            "multilingual": 3.604845519415131
+          },
+          "loss_equal_domain": 2.569942914760283,
+          "seed": 20260915
+        }
+      ],
+      "worst_seed_loss_equal_domain": 2.569942914760283
+    }
+  ],
+  "schema": "p529m-long-confirmation-selection-v1",
+  "selected_recipe": "F3_broad_multilingual_no_synthetic",
+  "selection_rule": "lower worst-seed equal-domain loss, then lower two-seed mean, then recipe id",
+  "status": "PASS_FROZEN_TWO_RECIPE_SELECTION",
+  "target_tokens_by_domain": {
+    "code": 1141202,
+    "general_web": 1647291,
+    "knowledge_reading": 4221130,
+    "math": 1540023,
+    "multilingual": 1554169
+  }
+}

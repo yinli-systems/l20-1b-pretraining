@@ -1,0 +1,61 @@
+{
+  "base": {
+    "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/formal/run-v5/resume.pt",
+    "checkpoint_sha256": "13aa21721e15c48cdfdafe30d8fdd41d9c95c90be766327661d96af1e90dd6cf",
+    "expected_step": 7629,
+    "hf_export": "/ssd/scxi253/pretrain500m-20260912-v1/formal/hf-v5",
+    "hf_export_receipt": "/ssd/scxi253/pretrain500m-20260912-v1/formal/hf-v5/export-receipt.json",
+    "hf_export_receipt_sha256": "736705f36daad6a405e7a604191673ce43077ede464841f37888e985c891d0e4",
+    "id": "base"
+  },
+  "candidates": [
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260914-1589567/train/model-final.pt",
+      "checkpoint_sha256": "69d9d8d3358f23815f2455f7e075645056f90fe01ed40a11525130a0e58ca085",
+      "expected_step": 1024,
+      "id": "F2_reasoning_no_synthetic_seed20260914",
+      "recipe": "F2_reasoning_no_synthetic",
+      "seed": 20260914
+    },
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260915-1590004/train/model-final.pt",
+      "checkpoint_sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc",
+      "expected_step": 1024,
+      "id": "F2_reasoning_no_synthetic_seed20260915",
+      "recipe": "F2_reasoning_no_synthetic",
+      "seed": 20260915
+    },
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F3_broad_multilingual_no_synthetic-seed20260914-1590005/train/model-final.pt",
+      "checkpoint_sha256": "194e1da1ba1e74a77e28ae207d1dd74a4baa6889408e41c6dce36d551f1e222e",
+      "expected_step": 1024,
+      "id": "F3_broad_multilingual_no_synthetic_seed20260914",
+      "recipe": "F3_broad_multilingual_no_synthetic",
+      "seed": 20260914
+    },
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F3_broad_multilingual_no_synthetic-seed20260915-1589570/train/model-final.pt",
+      "checkpoint_sha256": "8ee551307118a52bc79e9268ce3a08be20c6776234051fc48e3192d5d3e09a21",
+      "expected_step": 1024,
+      "id": "F3_broad_multilingual_no_synthetic_seed20260915",
+      "recipe": "F3_broad_multilingual_no_synthetic",
+      "seed": 20260915
+    }
+  ],
+  "claim_boundary": "matched two-GPU seven-task base-model accuracy and retention evaluation only; no automatic promotion",
+  "eval_cache_manifest": "/ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/eval-cache-manifest.json",
+  "eval_cache_manifest_sha256": "699558cb80318870306eccf77fb1d200413bfdc03b6548fe41c9d39ed0044620",
+  "execution": {
+    "batch_size": "auto",
+    "dtype": "bfloat16",
+    "gpu_model": "NVIDIA GeForce RTX 5090",
+    "world_size": 2
+  },
+  "protocol": "/ssd/scxi253/pretrain500m-20260912-v1/source/protocol-v5.json",
+  "protocol_id": "p500m-english-base-v5",
+  "protocol_sha256": "a71ce3c8cc85cac6fe6751cb46f7e50dfb78d266602d6377cb2e65249f11c761",
+  "reference_base_aggregate": "/ssd/scxi253/pretrain500m-20260912-v1/formal/eval-v5/seven-task-aggregate.json",
+  "reference_base_aggregate_sha256": "34265389f4f85d54a1cdb4945b06016849f58b55b6c47e686ecc7c2423fd8c09",
+  "schema": "p529m-seven-task-confirmation-2gpu-plan-v1",
+  "status": "FROZEN_BEFORE_MATCHED_TWO_GPU_EVALUATION"
+}

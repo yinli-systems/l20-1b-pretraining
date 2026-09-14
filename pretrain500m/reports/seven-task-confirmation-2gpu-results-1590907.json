@@ -1,0 +1,228 @@
+{
+  "base": {
+    "aggregate_score": 0.479952415150124,
+    "tasks": {
+      "arc_challenge": 0.2832764505119454,
+      "arc_easy": 0.5526094276094277,
+      "boolq": 0.5629969418960244,
+      "hellaswag": 0.42342162915753834,
+      "openbookqa": 0.332,
+      "piqa": 0.6686615886833515,
+      "winogrande": 0.5367008681925809
+    }
+  },
+  "candidates": [
+    {
+      "aggregate_delta_vs_base": 0.0052388239255697355,
+      "aggregate_score": 0.4851912390756937,
+      "aggregate_sha256": "f7c5094819d011f5a1517ca1f7ccb4d99c8b5de0ec510ea2ba921f821c60f115",
+      "checkpoint_sha256": "69d9d8d3358f23815f2455f7e075645056f90fe01ed40a11525130a0e58ca085",
+      "export_receipt_sha256": "089a290e7614c60379154a9ffacb0567760b256d055b4d993b4b76bf8dcacea2",
+      "id": "F2_reasoning_no_synthetic_seed20260914",
+      "recipe": "F2_reasoning_no_synthetic",
+      "seed": 20260914,
+      "task_delta_vs_base": {
+        "arc_challenge": 0.013651877133105783,
+        "arc_easy": -0.009680134680134733,
+        "boolq": 0.03149847094801228,
+        "hellaswag": 0.004879506074487172,
+        "openbookqa": 0.0040000000000000036,
+        "piqa": 0.006528835690968404,
+        "winogrande": -0.01420678768745065
+      },
+      "tasks": {
+        "arc_challenge": 0.29692832764505117,
+        "arc_easy": 0.5429292929292929,
+        "boolq": 0.5944954128440367,
+        "hellaswag": 0.4283011352320255,
+        "openbookqa": 0.336,
+        "piqa": 0.6751904243743199,
+        "winogrande": 0.5224940805051302
+      }
+    },
+    {
+      "aggregate_delta_vs_base": 0.005479299343469746,
+      "aggregate_score": 0.48543171449359374,
+      "aggregate_sha256": "1aa05953aab4ea0b82b30a63114912b63aacd0a3811348c5b041bac57223ee7f",
+      "checkpoint_sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc",
+      "export_receipt_sha256": "14ed94adbef18e4ee898806bd9ad96ab79306283676fb22270aafe2e73c78d33",
+      "id": "F2_reasoning_no_synthetic_seed20260915",
+      "recipe": "F2_reasoning_no_synthetic",
+      "seed": 20260915,
+      "task_delta_vs_base": {
+        "arc_challenge": 0.009385665529010268,
+        "arc_easy": -0.010521885521885599,
+        "boolq": 0.03700305810397553,
+        "hellaswag": 0.006970722963553055,
+        "openbookqa": 0.006000000000000005,
+        "piqa": 0.009249183895538637,
+        "winogrande": -0.019731649565903675
+      },
+      "tasks": {
+        "arc_challenge": 0.29266211604095566,
+        "arc_easy": 0.5420875420875421,
+        "boolq": 0.6,
+        "hellaswag": 0.4303923521210914,
+        "openbookqa": 0.338,
+        "piqa": 0.6779107725788901,
+        "winogrande": 0.5169692186266772
+      }
+    },
+    {
+      "aggregate_delta_vs_base": 0.003008744516526385,
+      "aggregate_score": 0.4829611596666504,
+      "aggregate_sha256": "a9cd878f4b320ecaa2dc7a0aa2f32b5d0fa7c4eec3814deeaa9fca24018907b1",
+      "checkpoint_sha256": "194e1da1ba1e74a77e28ae207d1dd74a4baa6889408e41c6dce36d551f1e222e",
+      "export_receipt_sha256": "8725adf8dacb14fab5ff0804150a82851b370f9402a74ba0633cb74230ab56ea",
+      "id": "F3_broad_multilingual_no_synthetic_seed20260914",
+      "recipe": "F3_broad_multilingual_no_synthetic",
+      "seed": 20260914,
+      "task_delta_vs_base": {
+        "arc_challenge": 0.007679180887372017,
+        "arc_easy": -0.009680134680134733,
+        "boolq": 0.04067278287461773,
+        "hellaswag": 0.0046803425612427785,
+        "openbookqa": -0.0040000000000000036,
+        "piqa": 0.003808487486398282,
+        "winogrande": -0.022099447513812098
+      },
+      "tasks": {
+        "arc_challenge": 0.2909556313993174,
+        "arc_easy": 0.5429292929292929,
+        "boolq": 0.6036697247706422,
+        "hellaswag": 0.4281019717187811,
+        "openbookqa": 0.328,
+        "piqa": 0.6724700761697497,
+        "winogrande": 0.5146014206787688
+      }
+    },
+    {
+      "aggregate_delta_vs_base": 0.004678823808007326,
+      "aggregate_score": 0.4846312389581313,
+      "aggregate_sha256": "a5b4175b8d191f3607a64bff4684654028b8b45a42ee92d679be0dd8baabe06f",
+      "checkpoint_sha256": "8ee551307118a52bc79e9268ce3a08be20c6776234051fc48e3192d5d3e09a21",
+      "export_receipt_sha256": "38bfb02605f063db515aa9d5fa4e2246a246af89165dac4e5683ab52d5f1efce",
+      "id": "F3_broad_multilingual_no_synthetic_seed20260915",
+      "recipe": "F3_broad_multilingual_no_synthetic",
+      "seed": 20260915,
+      "task_delta_vs_base": {
+        "arc_challenge": 0.01621160409556316,
+        "arc_easy": -0.00462962962962965,
+        "boolq": 0.027217125382263063,
+        "hellaswag": 0.0046803425612427785,
+        "openbookqa": 0.008000000000000007,
+        "piqa": 0.006528835690968404,
+        "winogrande": -0.0252565114443567
+      },
+      "tasks": {
+        "arc_challenge": 0.29948805460750855,
+        "arc_easy": 0.547979797979798,
+        "boolq": 0.5902140672782875,
+        "hellaswag": 0.4281019717187811,
+        "openbookqa": 0.34,
+        "piqa": 0.6751904243743199,
+        "winogrande": 0.5114443567482242
+      }
+    }
+  ],
+  "claim_boundary": "matched two-GPU English base-model multiple-choice accuracy and retention only; instruction following, multilingual generation, safety and market superiority remain unverified",
+  "formal_promotion": false,
+  "input_sha256": {
+    "F2_reasoning_no_synthetic_seed20260914_aggregate": "f7c5094819d011f5a1517ca1f7ccb4d99c8b5de0ec510ea2ba921f821c60f115",
+    "F2_reasoning_no_synthetic_seed20260914_export_receipt": "089a290e7614c60379154a9ffacb0567760b256d055b4d993b4b76bf8dcacea2",
+    "F2_reasoning_no_synthetic_seed20260915_aggregate": "1aa05953aab4ea0b82b30a63114912b63aacd0a3811348c5b041bac57223ee7f",
+    "F2_reasoning_no_synthetic_seed20260915_export_receipt": "14ed94adbef18e4ee898806bd9ad96ab79306283676fb22270aafe2e73c78d33",
+    "F3_broad_multilingual_no_synthetic_seed20260914_aggregate": "a9cd878f4b320ecaa2dc7a0aa2f32b5d0fa7c4eec3814deeaa9fca24018907b1",
+    "F3_broad_multilingual_no_synthetic_seed20260914_export_receipt": "8725adf8dacb14fab5ff0804150a82851b370f9402a74ba0633cb74230ab56ea",
+    "F3_broad_multilingual_no_synthetic_seed20260915_aggregate": "a5b4175b8d191f3607a64bff4684654028b8b45a42ee92d679be0dd8baabe06f",
+    "F3_broad_multilingual_no_synthetic_seed20260915_export_receipt": "38bfb02605f063db515aa9d5fa4e2246a246af89165dac4e5683ab52d5f1efce",
+    "matched_two_gpu_base_aggregate": "c87aa54ec060154d594c6a7ca44b79b28cec27497cc867b0845ad492397535c1",
+    "matched_two_gpu_base_export_receipt": "736705f36daad6a405e7a604191673ce43077ede464841f37888e985c891d0e4",
+    "plan": "a2953d7305fd8f9ccd9694bef7b41aea90e7075e927be535f00ff92c832ef63b",
+    "reference_four_gpu_base_aggregate": "34265389f4f85d54a1cdb4945b06016849f58b55b6c47e686ecc7c2423fd8c09"
+  },
+  "protocol_id": "p500m-english-base-v5",
+  "protocol_sha256": "a71ce3c8cc85cac6fe6751cb46f7e50dfb78d266602d6377cb2e65249f11c761",
+  "recipes": [
+    {
+      "aggregate_delta_vs_base": 0.005359061634519713,
+      "mean_tasks": {
+        "arc_challenge": 0.29479522184300344,
+        "arc_easy": 0.5425084175084175,
+        "boolq": 0.5972477064220183,
+        "hellaswag": 0.42934674367655845,
+        "openbookqa": 0.337,
+        "piqa": 0.6765505984766049,
+        "winogrande": 0.5197316495659037
+      },
+      "mean_two_seed_aggregate": 0.4853114767846437,
+      "rank": 1,
+      "recipe": "F2_reasoning_no_synthetic",
+      "seed_spread": 0.00024047541790001015,
+      "task_delta_vs_base": {
+        "arc_challenge": 0.011518771331058053,
+        "arc_easy": -0.010101010101010166,
+        "boolq": 0.03425076452599385,
+        "hellaswag": 0.005925114519020114,
+        "openbookqa": 0.0050000000000000044,
+        "piqa": 0.007889009793253465,
+        "winogrande": -0.016969218626677218
+      },
+      "worst_seed_aggregate": 0.4851912390756937
+    },
+    {
+      "aggregate_delta_vs_base": 0.003843784162266828,
+      "mean_tasks": {
+        "arc_challenge": 0.295221843003413,
+        "arc_easy": 0.5454545454545454,
+        "boolq": 0.5969418960244648,
+        "hellaswag": 0.4281019717187811,
+        "openbookqa": 0.334,
+        "piqa": 0.6738302502720348,
+        "winogrande": 0.5130228887134964
+      },
+      "mean_two_seed_aggregate": 0.4837961993123908,
+      "rank": 2,
+      "recipe": "F3_broad_multilingual_no_synthetic",
+      "seed_spread": 0.0016700792914809415,
+      "task_delta_vs_base": {
+        "arc_challenge": 0.011945392491467588,
+        "arc_easy": -0.007154882154882247,
+        "boolq": 0.03394495412844034,
+        "hellaswag": 0.0046803425612427785,
+        "openbookqa": 0.0020000000000000018,
+        "piqa": 0.005168661588683343,
+        "winogrande": -0.023677979479084454
+      },
+      "worst_seed_aggregate": 0.4829611596666504
+    }
+  ],
+  "reference_four_gpu_base": {
+    "aggregate_score": 0.4795681745464077,
+    "tasks": {
+      "arc_challenge": 0.2832764505119454,
+      "arc_easy": 0.5526094276094277,
+      "boolq": 0.5629969418960244,
+      "hellaswag": 0.4235212109141605,
+      "openbookqa": 0.33,
+      "piqa": 0.6686615886833515,
+      "winogrande": 0.5359116022099447
+    }
+  },
+  "schema": "p529m-seven-task-confirmation-2gpu-summary-v1",
+  "selected_recipe_by_seven_task_accuracy": "F2_reasoning_no_synthetic",
+  "selection_rule": "higher worst-seed seven-task unweighted mean, then higher two-seed mean, then recipe id",
+  "status": "PASS_MATCHED_TWO_GPU_BASE_AND_FOUR_CANDIDATE_SEVEN_TASK_EVALUATION",
+  "two_gpu_base_delta_vs_reference": {
+    "aggregate": 0.00038424060371627933,
+    "tasks": {
+      "arc_challenge": 0.0,
+      "arc_easy": 0.0,
+      "boolq": 0.0,
+      "hellaswag": -9.958175662216906e-05,
+      "openbookqa": 0.0020000000000000018,
+      "piqa": 0.0,
+      "winogrande": 0.0007892659826361781
+    }
+  }
+}

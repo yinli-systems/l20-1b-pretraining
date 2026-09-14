@@ -1,6 +1,6 @@
 # 529M experiment results
 
-Status date: 2026-09-14 UTC.
+Status date: 2026-09-15 UTC.
 
 ## Immutable parent
 
@@ -79,15 +79,63 @@ total 8,589,934,592 prediction tokens.
 The full machine-readable receipt is
 [long-confirmation-training-20260914.json](reports/long-confirmation-training-20260914.json).
 
+## Frozen held-out loss confirmation
+
+Slurm job 1590660 evaluated the immutable Base and the exact F2/F3 two-seed
+grid on 16,678,912 prediction tokens from the five frozen domains. The result
+and selection receipts have SHA-256 values
+`32d19eae4cf49b522a954bd9ab083466058f5386ed177ddf009c96da0bb070ef`
+and `478086a7661899be25c7ff1843f1feb91700c6fb40be26d89ff8750a888409bc`.
+
+| Model family | Two-seed mean equal-domain loss | Relative reduction versus Base |
+| --- | ---: | ---: |
+| Base | 3.304217 | -- |
+| F2 reasoning | 2.567941 | 22.28% |
+| F3 broad multilingual | **2.402608** | **27.29%** |
+
+F3's mean loss was 6.44% below F2. F2 was slightly better on code, general
+web, knowledge/reading, and math; F3's multilingual loss was about 24.26%
+below F2. The frozen loss rule therefore selected F3. These results are in
+[long-confirmation-heldout-results-1590660.json](reports/long-confirmation-heldout-results-1590660.json)
+and [long-confirmation-heldout-selection-1590660.json](reports/long-confirmation-heldout-selection-1590660.json).
+
+## Matched seven-task confirmation
+
+Slurm job 1590907 reran Base and evaluated both F2 and both F3 checkpoints
+with two distinct RTX 5090 GPUs under the same frozen zero-shot, BF16,
+2,048-context lm-eval protocol. It completed in 28m38s with exit code `0:0`.
+The two-GPU Base differed from the earlier four-GPU Base by only +0.0384
+percentage points in the unweighted mean.
+
+| Task | Matched Base | F2 two-seed mean | F2 delta | F3 two-seed mean | F3 delta |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| HellaSwag | 42.3422% | 42.9347% | +0.5925 pp | 42.8102% | +0.4680 pp |
+| PIQA | 66.8662% | 67.6551% | +0.7889 pp | 67.3830% | +0.5169 pp |
+| WinoGrande | 53.6701% | 51.9732% | -1.6969 pp | 51.3023% | -2.3678 pp |
+| OpenBookQA | 33.2000% | 33.7000% | +0.5000 pp | 33.4000% | +0.2000 pp |
+| ARC-Easy | 55.2609% | 54.2508% | -1.0101 pp | 54.5455% | -0.7155 pp |
+| ARC-Challenge | 28.3276% | 29.4795% | +1.1519 pp | 29.5222% | +1.1945 pp |
+| BoolQ | 56.2997% | 59.7248% | +3.4251 pp | 59.6942% | +3.3945 pp |
+| **Unweighted mean** | **47.9952%** | **48.5311%** | **+0.5359 pp** | **48.3796%** | **+0.3844 pp** |
+
+F2 ranked first by the frozen higher-worst-seed rule. Its two seed scores were
+48.5191% and 48.5432%, a spread of 0.0240 percentage points. F3's spread was
+0.1670 points. The bound summary is
+[seven-task-confirmation-2gpu-results-1590907.json](reports/seven-task-confirmation-2gpu-results-1590907.json),
+with SHA-256
+`7eddae38ce9b1b002ede388dc73c55e078ccbeb38269c5e893609d997e31ab99`.
+
 ## Current gate
 
-The four checkpoints passed exact plan construction and were submitted to a
-frozen five-domain held-out loss evaluation as Slurm job 1590660. At the last
-captured scheduler observation, the evaluation was pending allocation due to
-priority. Recipe selection and model promotion therefore remain pending.
+F2 provides a stable positive direction and is about 1.47 percentage points
+short of a 50% seven-task mean. F3 remains the held-out loss winner. Neither is
+formally promoted because the accuracy gains are small relative to sampling
+uncertainty and both recipes regress on WinoGrande and ARC-Easy. Future recipe
+selection must use new contamination-screened development proxies because the
+seven final task results have now been inspected.
 
 The present evidence supports reproducible training, checkpoint integrity,
-measured MFU, and development-loss comparisons. It does not establish
-generative task accuracy, instruction following, safety, post-training quality,
-or superiority over public models. SFT, preference optimization, and RLVR have
-not started.
+measured MFU, held-out loss improvement, and matched base-model multiple-choice
+accuracy. It does not establish instruction following, safety, calibrated
+generation, tool use, domain mastery, or superiority over current public
+models. SFT, preference optimization, and RLVR have not started.

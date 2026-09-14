@@ -1,0 +1,13 @@
+{
+  "checked_utc": "2026-09-14T20:51:53Z",
+  "claim_boundary": "evaluation submitted; allocation, completion and seven-task candidate scores remain unverified",
+  "job_id": 1590900,
+  "plan_sha256": "afb030b1a2b6dd7c9712bd1e23b931633182e16f19cd9b351d7a2bd2b7bfb329",
+  "requested_gpus": 4,
+  "requested_gpu_type": "NVIDIA GeForce RTX 5090",
+  "scheduler_estimated_start_dubai": "2026-09-15T03:39:21+04:00",
+  "scheduler_estimate_is_stable": false,
+  "schema": "p529m-seven-task-confirmation-submission-v1",
+  "source_archive_sha256": "c067e504ef01059c84433c52af6a7ce48d3d56b9f34f6536873a93955e6950d1",
+  "status": "SUBMITTED_PENDING_PRIORITY"
+}
