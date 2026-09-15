@@ -1,0 +1,67 @@
+{
+  "claim_boundary": "raw upper bounds precede quality, family/decontamination, packing and independent test exclusions; only raw audit, not training admission",
+  "created_utc": "2026-09-15T07:26:06.974588+00:00",
+  "f2_capacity_audit_sha256": "1c88227a7df407b9ecc4e529b5406baed05e20a4976393861aa66b5f6c446178",
+  "purpose": "incremental F2 continuation raw token-capacity audit against the bound F2 long-run lineage",
+  "raw_intake_plan_sha256": "e916977e894b85baeb5fe7f2c3c5167a03e2cecdf309d80d5e323413284564d4",
+  "schema_version": 1,
+  "source_repeat_cap": 2.0,
+  "sources": [
+    {
+      "f2_continuation_quota_blocks": 3932,
+      "f2_long_exposure_blocks": 15728,
+      "source_id": "code_cpp",
+      "unique_prediction_tokens_required_at_two_epoch_cap": 20131840
+    },
+    {
+      "f2_continuation_quota_blocks": 3932,
+      "f2_long_exposure_blocks": 15728,
+      "source_id": "code_java",
+      "unique_prediction_tokens_required_at_two_epoch_cap": 20131840
+    },
+    {
+      "f2_continuation_quota_blocks": 7865,
+      "f2_long_exposure_blocks": 31460,
+      "source_id": "code_javascript",
+      "unique_prediction_tokens_required_at_two_epoch_cap": 40269824
+    },
+    {
+      "f2_continuation_quota_blocks": 19661,
+      "f2_long_exposure_blocks": 78644,
+      "source_id": "code_python",
+      "unique_prediction_tokens_required_at_two_epoch_cap": 100665344
+    },
+    {
+      "f2_continuation_quota_blocks": 3932,
+      "f2_long_exposure_blocks": 15728,
+      "source_id": "code_typescript",
+      "unique_prediction_tokens_required_at_two_epoch_cap": 20131840
+    },
+    {
+      "f2_continuation_quota_blocks": 39321,
+      "f2_long_exposure_blocks": 157284,
+      "source_id": "dclm",
+      "unique_prediction_tokens_required_at_two_epoch_cap": 201324544
+    },
+    {
+      "f2_continuation_quota_blocks": 39322,
+      "f2_long_exposure_blocks": 157288,
+      "source_id": "finemath4",
+      "unique_prediction_tokens_required_at_two_epoch_cap": 201328640
+    },
+    {
+      "f2_continuation_quota_blocks": 13107,
+      "f2_long_exposure_blocks": 52428,
+      "source_id": "infiwebmath4",
+      "unique_prediction_tokens_required_at_two_epoch_cap": 67108864
+    },
+    {
+      "f2_continuation_quota_blocks": 65536,
+      "f2_long_exposure_blocks": 262144,
+      "source_id": "pdf_en",
+      "unique_prediction_tokens_required_at_two_epoch_cap": 335544320
+    }
+  ],
+  "status": "FROZEN_UNIQUE_DATA_EXPANSION_PLAN_NOT_ADMITTED",
+  "training_admitted": false
+}
