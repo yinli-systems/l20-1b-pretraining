@@ -1,0 +1,659 @@
+{
+  "excluded_from_git_reason": "large model binaries or benchmark per-example sample outputs",
+  "items": [
+    {
+      "bytes": 2178452,
+      "kind": "per_example_benchmark_output",
+      "path": "formal/eval-v5/__ssd__scxi253__pretrain500m-20260912-v1__formal__hf-v5/samples_arc_challenge_2026-09-13T22-24-17.766168.jsonl"
+    },
+    {
+      "bytes": 4081547,
+      "kind": "per_example_benchmark_output",
+      "path": "formal/eval-v5/__ssd__scxi253__pretrain500m-20260912-v1__formal__hf-v5/samples_arc_easy_2026-09-13T22-24-17.766168.jsonl"
+    },
+    {
+      "bytes": 8337809,
+      "kind": "per_example_benchmark_output",
+      "path": "formal/eval-v5/__ssd__scxi253__pretrain500m-20260912-v1__formal__hf-v5/samples_boolq_2026-09-13T22-24-17.766168.jsonl"
+    },
+    {
+      "bytes": 42643660,
+      "kind": "per_example_benchmark_output",
+      "path": "formal/eval-v5/__ssd__scxi253__pretrain500m-20260912-v1__formal__hf-v5/samples_hellaswag_2026-09-13T22-24-17.766168.jsonl"
+    },
+    {
+      "bytes": 647498,
+      "kind": "per_example_benchmark_output",
+      "path": "formal/eval-v5/__ssd__scxi253__pretrain500m-20260912-v1__formal__hf-v5/samples_openbookqa_2026-09-13T22-24-17.766168.jsonl"
+    },
+    {
+      "bytes": 2153238,
+      "kind": "per_example_benchmark_output",
+      "path": "formal/eval-v5/__ssd__scxi253__pretrain500m-20260912-v1__formal__hf-v5/samples_piqa_2026-09-13T22-24-17.766168.jsonl"
+    },
+    {
+      "bytes": 1220973,
+      "kind": "per_example_benchmark_output",
+      "path": "formal/eval-v5/__ssd__scxi253__pretrain500m-20260912-v1__formal__hf-v5/samples_winogrande_2026-09-13T22-24-17.766168.jsonl"
+    },
+    {
+      "bytes": 1057524496,
+      "kind": "model_shard",
+      "path": "formal/hf-v5/model.safetensors"
+    },
+    {
+      "bytes": 6345504179,
+      "checksum_from_remote_sidecar": "13aa21721e15c48cdfdafe30d8fdd41d9c95c90be766327661d96af1e90dd6cf",
+      "kind": "checkpoint",
+      "path": "formal/run-v5/resume.pt",
+      "sidecar_path": "formal/run-v5/resume.sha256"
+    },
+    {
+      "bytes": 19076,
+      "kind": "per_example_benchmark_output",
+      "path": "pilots/eval-dist-smoke-v2-1583812/__ssd__scxi253__pretrain500m-20260912-v1__pilots__export-smoke-v2-1583806/samples_arc_challenge_2026-09-12T10-04-31.204762.jsonl"
+    },
+    {
+      "bytes": 13129,
+      "kind": "per_example_benchmark_output",
+      "path": "pilots/eval-dist-smoke-v2-1583812/__ssd__scxi253__pretrain500m-20260912-v1__pilots__export-smoke-v2-1583806/samples_arc_easy_2026-09-12T10-04-31.204762.jsonl"
+    },
+    {
+      "bytes": 22743,
+      "kind": "per_example_benchmark_output",
+      "path": "pilots/eval-dist-smoke-v2-1583812/__ssd__scxi253__pretrain500m-20260912-v1__pilots__export-smoke-v2-1583806/samples_boolq_2026-09-12T10-04-31.204762.jsonl"
+    },
+    {
+      "bytes": 17131,
+      "kind": "per_example_benchmark_output",
+      "path": "pilots/eval-dist-smoke-v2-1583812/__ssd__scxi253__pretrain500m-20260912-v1__pilots__export-smoke-v2-1583806/samples_hellaswag_2026-09-12T10-04-31.204762.jsonl"
+    },
+    {
+      "bytes": 11195,
+      "kind": "per_example_benchmark_output",
+      "path": "pilots/eval-dist-smoke-v2-1583812/__ssd__scxi253__pretrain500m-20260912-v1__pilots__export-smoke-v2-1583806/samples_openbookqa_2026-09-12T10-04-31.204762.jsonl"
+    },
+    {
+      "bytes": 9037,
+      "kind": "per_example_benchmark_output",
+      "path": "pilots/eval-dist-smoke-v2-1583812/__ssd__scxi253__pretrain500m-20260912-v1__pilots__export-smoke-v2-1583806/samples_piqa_2026-09-12T10-04-31.204762.jsonl"
+    },
+    {
+      "bytes": 7378,
+      "kind": "per_example_benchmark_output",
+      "path": "pilots/eval-dist-smoke-v2-1583812/__ssd__scxi253__pretrain500m-20260912-v1__pilots__export-smoke-v2-1583806/samples_winogrande_2026-09-12T10-04-31.204762.jsonl"
+    },
+    {
+      "bytes": 4534,
+      "kind": "per_example_benchmark_output",
+      "path": "pilots/eval-smoke-1583755/__ssd__scxi253__pretrain500m-20260912-v1__pilots__eval-smoke-model/samples_arc_challenge_2026-09-12T09-31-52.569017.jsonl"
+    },
+    {
+      "bytes": 3343,
+      "kind": "per_example_benchmark_output",
+      "path": "pilots/eval-smoke-1583755/__ssd__scxi253__pretrain500m-20260912-v1__pilots__eval-smoke-model/samples_arc_easy_2026-09-12T09-31-52.569017.jsonl"
+    },
+    {
+      "bytes": 9407,
+      "kind": "per_example_benchmark_output",
+      "path": "pilots/eval-smoke-1583755/__ssd__scxi253__pretrain500m-20260912-v1__pilots__eval-smoke-model/samples_boolq_2026-09-12T09-31-52.569017.jsonl"
+    },
+    {
+      "bytes": 3702,
+      "kind": "per_example_benchmark_output",
+      "path": "pilots/eval-smoke-1583755/__ssd__scxi253__pretrain500m-20260912-v1__pilots__eval-smoke-model/samples_hellaswag_2026-09-12T09-31-52.569017.jsonl"
+    },
+    {
+      "bytes": 3182,
+      "kind": "per_example_benchmark_output",
+      "path": "pilots/eval-smoke-1583755/__ssd__scxi253__pretrain500m-20260912-v1__pilots__eval-smoke-model/samples_openbookqa_2026-09-12T09-31-52.569017.jsonl"
+    },
+    {
+      "bytes": 2313,
+      "kind": "per_example_benchmark_output",
+      "path": "pilots/eval-smoke-1583755/__ssd__scxi253__pretrain500m-20260912-v1__pilots__eval-smoke-model/samples_piqa_2026-09-12T09-31-52.569017.jsonl"
+    },
+    {
+      "bytes": 1764,
+      "kind": "per_example_benchmark_output",
+      "path": "pilots/eval-smoke-1583755/__ssd__scxi253__pretrain500m-20260912-v1__pilots__eval-smoke-model/samples_winogrande_2026-09-12T09-31-52.569017.jsonl"
+    },
+    {
+      "bytes": 4534,
+      "kind": "per_example_benchmark_output",
+      "path": "pilots/eval-smoke-1583777/__ssd__scxi253__pretrain500m-20260912-v1__pilots__eval-smoke-model/samples_arc_challenge_2026-09-12T09-44-54.049514.jsonl"
+    },
+    {
+      "bytes": 3343,
+      "kind": "per_example_benchmark_output",
+      "path": "pilots/eval-smoke-1583777/__ssd__scxi253__pretrain500m-20260912-v1__pilots__eval-smoke-model/samples_arc_easy_2026-09-12T09-44-54.049514.jsonl"
+    },
+    {
+      "bytes": 9407,
+      "kind": "per_example_benchmark_output",
+      "path": "pilots/eval-smoke-1583777/__ssd__scxi253__pretrain500m-20260912-v1__pilots__eval-smoke-model/samples_boolq_2026-09-12T09-44-54.049514.jsonl"
+    },
+    {
+      "bytes": 3702,
+      "kind": "per_example_benchmark_output",
+      "path": "pilots/eval-smoke-1583777/__ssd__scxi253__pretrain500m-20260912-v1__pilots__eval-smoke-model/samples_hellaswag_2026-09-12T09-44-54.049514.jsonl"
+    },
+    {
+      "bytes": 3182,
+      "kind": "per_example_benchmark_output",
+      "path": "pilots/eval-smoke-1583777/__ssd__scxi253__pretrain500m-20260912-v1__pilots__eval-smoke-model/samples_openbookqa_2026-09-12T09-44-54.049514.jsonl"
+    },
+    {
+      "bytes": 2313,
+      "kind": "per_example_benchmark_output",
+      "path": "pilots/eval-smoke-1583777/__ssd__scxi253__pretrain500m-20260912-v1__pilots__eval-smoke-model/samples_piqa_2026-09-12T09-44-54.049514.jsonl"
+    },
+    {
+      "bytes": 1764,
+      "kind": "per_example_benchmark_output",
+      "path": "pilots/eval-smoke-1583777/__ssd__scxi253__pretrain500m-20260912-v1__pilots__eval-smoke-model/samples_winogrande_2026-09-12T09-44-54.049514.jsonl"
+    },
+    {
+      "bytes": 4534,
+      "kind": "per_example_benchmark_output",
+      "path": "pilots/eval-smoke-1583788/__ssd__scxi253__pretrain500m-20260912-v1__pilots__eval-smoke-model/samples_arc_challenge_2026-09-12T09-48-38.027953.jsonl"
+    },
+    {
+      "bytes": 3343,
+      "kind": "per_example_benchmark_output",
+      "path": "pilots/eval-smoke-1583788/__ssd__scxi253__pretrain500m-20260912-v1__pilots__eval-smoke-model/samples_arc_easy_2026-09-12T09-48-38.027953.jsonl"
+    },
+    {
+      "bytes": 9407,
+      "kind": "per_example_benchmark_output",
+      "path": "pilots/eval-smoke-1583788/__ssd__scxi253__pretrain500m-20260912-v1__pilots__eval-smoke-model/samples_boolq_2026-09-12T09-48-38.027953.jsonl"
+    },
+    {
+      "bytes": 3702,
+      "kind": "per_example_benchmark_output",
+      "path": "pilots/eval-smoke-1583788/__ssd__scxi253__pretrain500m-20260912-v1__pilots__eval-smoke-model/samples_hellaswag_2026-09-12T09-48-38.027953.jsonl"
+    },
+    {
+      "bytes": 3182,
+      "kind": "per_example_benchmark_output",
+      "path": "pilots/eval-smoke-1583788/__ssd__scxi253__pretrain500m-20260912-v1__pilots__eval-smoke-model/samples_openbookqa_2026-09-12T09-48-38.027953.jsonl"
+    },
+    {
+      "bytes": 2313,
+      "kind": "per_example_benchmark_output",
+      "path": "pilots/eval-smoke-1583788/__ssd__scxi253__pretrain500m-20260912-v1__pilots__eval-smoke-model/samples_piqa_2026-09-12T09-48-38.027953.jsonl"
+    },
+    {
+      "bytes": 1764,
+      "kind": "per_example_benchmark_output",
+      "path": "pilots/eval-smoke-1583788/__ssd__scxi253__pretrain500m-20260912-v1__pilots__eval-smoke-model/samples_winogrande_2026-09-12T09-48-38.027953.jsonl"
+    },
+    {
+      "bytes": 6610640,
+      "kind": "model_shard",
+      "path": "pilots/eval-smoke-model/model.safetensors"
+    },
+    {
+      "bytes": 0,
+      "kind": "model_shard",
+      "path": "pilots/export-smoke-v2-1583806/model.safetensors"
+    },
+    {
+      "bytes": 2372504677,
+      "checksum_from_remote_sidecar": "69d9d8d3358f23815f2455f7e075645056f90fe01ed40a11525130a0e58ca085",
+      "kind": "checkpoint",
+      "path": "posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260914-1589567/train/model-final.pt",
+      "sidecar_path": "posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260914-1589567/train/model-final.sha256"
+    },
+    {
+      "bytes": 2372504677,
+      "checksum_from_remote_sidecar": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc",
+      "kind": "checkpoint",
+      "path": "posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260915-1590004/train/model-final.pt",
+      "sidecar_path": "posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260915-1590004/train/model-final.sha256"
+    },
+    {
+      "bytes": 2372504677,
+      "checksum_from_remote_sidecar": "194e1da1ba1e74a77e28ae207d1dd74a4baa6889408e41c6dce36d551f1e222e",
+      "kind": "checkpoint",
+      "path": "posttrain/confirmations-v1/F3_broad_multilingual_no_synthetic-seed20260914-1590005/train/model-final.pt",
+      "sidecar_path": "posttrain/confirmations-v1/F3_broad_multilingual_no_synthetic-seed20260914-1590005/train/model-final.sha256"
+    },
+    {
+      "bytes": 2372504677,
+      "checksum_from_remote_sidecar": "8ee551307118a52bc79e9268ce3a08be20c6776234051fc48e3192d5d3e09a21",
+      "kind": "checkpoint",
+      "path": "posttrain/confirmations-v1/F3_broad_multilingual_no_synthetic-seed20260915-1589570/train/model-final.pt",
+      "sidecar_path": "posttrain/confirmations-v1/F3_broad_multilingual_no_synthetic-seed20260915-1589570/train/model-final.sha256"
+    },
+    {
+      "bytes": 2177955,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-extension-eval-v1/r4-lr6e5-t1b-seed20260916-1591852/lm-eval/__tmp__p529m-extension-eval-r4-lr6e5-t1b-seed20260916-1591852__export/samples_arc_challenge_2026-09-15T13-33-38.510338.jsonl"
+    },
+    {
+      "bytes": 4081929,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-extension-eval-v1/r4-lr6e5-t1b-seed20260916-1591852/lm-eval/__tmp__p529m-extension-eval-r4-lr6e5-t1b-seed20260916-1591852__export/samples_arc_easy_2026-09-15T13-33-38.510338.jsonl"
+    },
+    {
+      "bytes": 8339545,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-extension-eval-v1/r4-lr6e5-t1b-seed20260916-1591852/lm-eval/__tmp__p529m-extension-eval-r4-lr6e5-t1b-seed20260916-1591852__export/samples_boolq_2026-09-15T13-33-38.510338.jsonl"
+    },
+    {
+      "bytes": 42642914,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-extension-eval-v1/r4-lr6e5-t1b-seed20260916-1591852/lm-eval/__tmp__p529m-extension-eval-r4-lr6e5-t1b-seed20260916-1591852__export/samples_hellaswag_2026-09-15T13-33-38.510338.jsonl"
+    },
+    {
+      "bytes": 647658,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-extension-eval-v1/r4-lr6e5-t1b-seed20260916-1591852/lm-eval/__tmp__p529m-extension-eval-r4-lr6e5-t1b-seed20260916-1591852__export/samples_openbookqa_2026-09-15T13-33-38.510338.jsonl"
+    },
+    {
+      "bytes": 2153300,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-extension-eval-v1/r4-lr6e5-t1b-seed20260916-1591852/lm-eval/__tmp__p529m-extension-eval-r4-lr6e5-t1b-seed20260916-1591852__export/samples_piqa_2026-09-15T13-33-38.510338.jsonl"
+    },
+    {
+      "bytes": 1220979,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-extension-eval-v1/r4-lr6e5-t1b-seed20260916-1591852/lm-eval/__tmp__p529m-extension-eval-r4-lr6e5-t1b-seed20260916-1591852__export/samples_winogrande_2026-09-15T13-33-38.510338.jsonl"
+    },
+    {
+      "bytes": 2177815,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-extension-eval-v1/r4-lr6e5-t1b-seed20260917-1591853/lm-eval/__tmp__p529m-extension-eval-r4-lr6e5-t1b-seed20260917-1591853__export/samples_arc_challenge_2026-09-15T13-33-38.118201.jsonl"
+    },
+    {
+      "bytes": 4081693,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-extension-eval-v1/r4-lr6e5-t1b-seed20260917-1591853/lm-eval/__tmp__p529m-extension-eval-r4-lr6e5-t1b-seed20260917-1591853__export/samples_arc_easy_2026-09-15T13-33-38.118201.jsonl"
+    },
+    {
+      "bytes": 8339925,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-extension-eval-v1/r4-lr6e5-t1b-seed20260917-1591853/lm-eval/__tmp__p529m-extension-eval-r4-lr6e5-t1b-seed20260917-1591853__export/samples_boolq_2026-09-15T13-33-38.118201.jsonl"
+    },
+    {
+      "bytes": 42643038,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-extension-eval-v1/r4-lr6e5-t1b-seed20260917-1591853/lm-eval/__tmp__p529m-extension-eval-r4-lr6e5-t1b-seed20260917-1591853__export/samples_hellaswag_2026-09-15T13-33-38.118201.jsonl"
+    },
+    {
+      "bytes": 647632,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-extension-eval-v1/r4-lr6e5-t1b-seed20260917-1591853/lm-eval/__tmp__p529m-extension-eval-r4-lr6e5-t1b-seed20260917-1591853__export/samples_openbookqa_2026-09-15T13-33-38.118201.jsonl"
+    },
+    {
+      "bytes": 2153242,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-extension-eval-v1/r4-lr6e5-t1b-seed20260917-1591853/lm-eval/__tmp__p529m-extension-eval-r4-lr6e5-t1b-seed20260917-1591853__export/samples_piqa_2026-09-15T13-33-38.118201.jsonl"
+    },
+    {
+      "bytes": 1221135,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-extension-eval-v1/r4-lr6e5-t1b-seed20260917-1591853/lm-eval/__tmp__p529m-extension-eval-r4-lr6e5-t1b-seed20260917-1591853__export/samples_winogrande_2026-09-15T13-33-38.118201.jsonl"
+    },
+    {
+      "bytes": 2372504677,
+      "checksum_from_remote_sidecar": "455d89cbb6d723334587546a0824605c6f57704264d4a1db0239f445d57a98aa",
+      "kind": "checkpoint",
+      "path": "posttrain/mixture-extension-v1/r4-lr6e5-t1b-seed20260916-1591570/train/model-final.pt",
+      "sidecar_path": "posttrain/mixture-extension-v1/r4-lr6e5-t1b-seed20260916-1591570/train/model-final.sha256"
+    },
+    {
+      "bytes": 2372504677,
+      "checksum_from_remote_sidecar": "fa2d820153dfb7ea989fe6d9f30bee17ff484a84cc96ce0c334152839cc6c52b",
+      "kind": "checkpoint",
+      "path": "posttrain/mixture-extension-v1/r4-lr6e5-t1b-seed20260917-1591571/train/model-final.pt",
+      "sidecar_path": "posttrain/mixture-extension-v1/r4-lr6e5-t1b-seed20260917-1591571/train/model-final.sha256"
+    },
+    {
+      "bytes": 2178010,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-pilot-eval-v1/r0-lr6e5-seed20260916-1591423/lm-eval/__tmp__p529m-mixture-eval-r0-lr6e5-seed20260916-1591423__export/samples_arc_challenge_2026-09-15T10-56-35.691546.jsonl"
+    },
+    {
+      "bytes": 4081695,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-pilot-eval-v1/r0-lr6e5-seed20260916-1591423/lm-eval/__tmp__p529m-mixture-eval-r0-lr6e5-seed20260916-1591423__export/samples_arc_easy_2026-09-15T10-56-35.691546.jsonl"
+    },
+    {
+      "bytes": 8339669,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-pilot-eval-v1/r0-lr6e5-seed20260916-1591423/lm-eval/__tmp__p529m-mixture-eval-r0-lr6e5-seed20260916-1591423__export/samples_boolq_2026-09-15T10-56-35.691546.jsonl"
+    },
+    {
+      "bytes": 42642966,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-pilot-eval-v1/r0-lr6e5-seed20260916-1591423/lm-eval/__tmp__p529m-mixture-eval-r0-lr6e5-seed20260916-1591423__export/samples_hellaswag_2026-09-15T10-56-35.691546.jsonl"
+    },
+    {
+      "bytes": 647556,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-pilot-eval-v1/r0-lr6e5-seed20260916-1591423/lm-eval/__tmp__p529m-mixture-eval-r0-lr6e5-seed20260916-1591423__export/samples_openbookqa_2026-09-15T10-56-35.691546.jsonl"
+    },
+    {
+      "bytes": 2153352,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-pilot-eval-v1/r0-lr6e5-seed20260916-1591423/lm-eval/__tmp__p529m-mixture-eval-r0-lr6e5-seed20260916-1591423__export/samples_piqa_2026-09-15T10-56-35.691546.jsonl"
+    },
+    {
+      "bytes": 1221033,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-pilot-eval-v1/r0-lr6e5-seed20260916-1591423/lm-eval/__tmp__p529m-mixture-eval-r0-lr6e5-seed20260916-1591423__export/samples_winogrande_2026-09-15T10-56-35.691546.jsonl"
+    },
+    {
+      "bytes": 2177810,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-pilot-eval-v1/r3-lr1e4-seed20260916-1591422/lm-eval/__tmp__p529m-mixture-eval-r3-lr1e4-seed20260916-1591422__export/samples_arc_challenge_2026-09-15T10-56-24.305700.jsonl"
+    },
+    {
+      "bytes": 4081885,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-pilot-eval-v1/r3-lr1e4-seed20260916-1591422/lm-eval/__tmp__p529m-mixture-eval-r3-lr1e4-seed20260916-1591422__export/samples_arc_easy_2026-09-15T10-56-24.305700.jsonl"
+    },
+    {
+      "bytes": 8340343,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-pilot-eval-v1/r3-lr1e4-seed20260916-1591422/lm-eval/__tmp__p529m-mixture-eval-r3-lr1e4-seed20260916-1591422__export/samples_boolq_2026-09-15T10-56-24.305700.jsonl"
+    },
+    {
+      "bytes": 42642664,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-pilot-eval-v1/r3-lr1e4-seed20260916-1591422/lm-eval/__tmp__p529m-mixture-eval-r3-lr1e4-seed20260916-1591422__export/samples_hellaswag_2026-09-15T10-56-24.305700.jsonl"
+    },
+    {
+      "bytes": 647576,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-pilot-eval-v1/r3-lr1e4-seed20260916-1591422/lm-eval/__tmp__p529m-mixture-eval-r3-lr1e4-seed20260916-1591422__export/samples_openbookqa_2026-09-15T10-56-24.305700.jsonl"
+    },
+    {
+      "bytes": 2153290,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-pilot-eval-v1/r3-lr1e4-seed20260916-1591422/lm-eval/__tmp__p529m-mixture-eval-r3-lr1e4-seed20260916-1591422__export/samples_piqa_2026-09-15T10-56-24.305700.jsonl"
+    },
+    {
+      "bytes": 1220957,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-pilot-eval-v1/r3-lr1e4-seed20260916-1591422/lm-eval/__tmp__p529m-mixture-eval-r3-lr1e4-seed20260916-1591422__export/samples_winogrande_2026-09-15T10-56-24.305700.jsonl"
+    },
+    {
+      "bytes": 2177865,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-pilot-eval-v1/r4-lr6e5-seed20260916-1591424/lm-eval/__tmp__p529m-mixture-eval-r4-lr6e5-seed20260916-1591424__export/samples_arc_challenge_2026-09-15T10-56-30.328282.jsonl"
+    },
+    {
+      "bytes": 4081665,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-pilot-eval-v1/r4-lr6e5-seed20260916-1591424/lm-eval/__tmp__p529m-mixture-eval-r4-lr6e5-seed20260916-1591424__export/samples_arc_easy_2026-09-15T10-56-30.328282.jsonl"
+    },
+    {
+      "bytes": 8339441,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-pilot-eval-v1/r4-lr6e5-seed20260916-1591424/lm-eval/__tmp__p529m-mixture-eval-r4-lr6e5-seed20260916-1591424__export/samples_boolq_2026-09-15T10-56-30.328282.jsonl"
+    },
+    {
+      "bytes": 42642556,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-pilot-eval-v1/r4-lr6e5-seed20260916-1591424/lm-eval/__tmp__p529m-mixture-eval-r4-lr6e5-seed20260916-1591424__export/samples_hellaswag_2026-09-15T10-56-30.328282.jsonl"
+    },
+    {
+      "bytes": 647660,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-pilot-eval-v1/r4-lr6e5-seed20260916-1591424/lm-eval/__tmp__p529m-mixture-eval-r4-lr6e5-seed20260916-1591424__export/samples_openbookqa_2026-09-15T10-56-30.328282.jsonl"
+    },
+    {
+      "bytes": 2153388,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-pilot-eval-v1/r4-lr6e5-seed20260916-1591424/lm-eval/__tmp__p529m-mixture-eval-r4-lr6e5-seed20260916-1591424__export/samples_piqa_2026-09-15T10-56-30.328282.jsonl"
+    },
+    {
+      "bytes": 1221183,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/mixture-pilot-eval-v1/r4-lr6e5-seed20260916-1591424/lm-eval/__tmp__p529m-mixture-eval-r4-lr6e5-seed20260916-1591424__export/samples_winogrande_2026-09-15T10-56-30.328282.jsonl"
+    },
+    {
+      "bytes": 2372504677,
+      "checksum_from_remote_sidecar": "b5328a6943085953f16a849e7f1537831ccdc9197b63d8a76a6c91757afefbb6",
+      "kind": "checkpoint",
+      "path": "posttrain/mixture-pilots-v1/r0-lr6e5-seed20260916-1590963/train/model-final.pt",
+      "sidecar_path": "posttrain/mixture-pilots-v1/r0-lr6e5-seed20260916-1590963/train/model-final.sha256"
+    },
+    {
+      "bytes": 2372504677,
+      "checksum_from_remote_sidecar": "b7ad368302f08540918b8a44f552229de81bf844523e092f016b760eba9e2342",
+      "kind": "checkpoint",
+      "path": "posttrain/mixture-pilots-v1/r1-lr6e5-seed20260916-1590964/train/model-final.pt",
+      "sidecar_path": "posttrain/mixture-pilots-v1/r1-lr6e5-seed20260916-1590964/train/model-final.sha256"
+    },
+    {
+      "bytes": 2372504677,
+      "checksum_from_remote_sidecar": "af96fc30adfa10e5b8ecf57a69cc407e12d5c26d41802112437353e38a1f939e",
+      "kind": "checkpoint",
+      "path": "posttrain/mixture-pilots-v1/r2-lr6e5-seed20260916-1590965/train/model-final.pt",
+      "sidecar_path": "posttrain/mixture-pilots-v1/r2-lr6e5-seed20260916-1590965/train/model-final.sha256"
+    },
+    {
+      "bytes": 2372504677,
+      "checksum_from_remote_sidecar": "d8a69b7b5a7076e6c082aeea8c3b0badefb1c9f8889ceb5db129eb7004658f0b",
+      "kind": "checkpoint",
+      "path": "posttrain/mixture-pilots-v1/r3-lr1e4-seed20260916-1590969/train/model-final.pt",
+      "sidecar_path": "posttrain/mixture-pilots-v1/r3-lr1e4-seed20260916-1590969/train/model-final.sha256"
+    },
+    {
+      "bytes": 2372504677,
+      "checksum_from_remote_sidecar": "d5f8b02fdbd12331892f2fc38fe2438d6db027f75fb9e2176f2f88214e452da8",
+      "kind": "checkpoint",
+      "path": "posttrain/mixture-pilots-v1/r3-lr3e5-seed20260916-1590968/train/model-final.pt",
+      "sidecar_path": "posttrain/mixture-pilots-v1/r3-lr3e5-seed20260916-1590968/train/model-final.sha256"
+    },
+    {
+      "bytes": 2372504677,
+      "checksum_from_remote_sidecar": "223cd66c158967deb4cd291bc20f037362427b747f16bc731c43fd457610e92f",
+      "kind": "checkpoint",
+      "path": "posttrain/mixture-pilots-v1/r3-lr6e5-seed20260916-1590966/train/model-final.pt",
+      "sidecar_path": "posttrain/mixture-pilots-v1/r3-lr6e5-seed20260916-1590966/train/model-final.sha256"
+    },
+    {
+      "bytes": 2372504677,
+      "checksum_from_remote_sidecar": "121997e8d876c88582368f67cf1fcb163ea6adff72b5eea00964dcb1060fbbbf",
+      "kind": "checkpoint",
+      "path": "posttrain/mixture-pilots-v1/r4-lr6e5-seed20260916-1590967/train/model-final.pt",
+      "sidecar_path": "posttrain/mixture-pilots-v1/r4-lr6e5-seed20260916-1590967/train/model-final.sha256"
+    },
+    {
+      "bytes": 2372504677,
+      "checksum_from_remote_sidecar": "4212f9aded17a8b5b0047efc83c7c2ba7d1198b51c2e4b63bc54e3daca6d7d4c",
+      "kind": "checkpoint",
+      "path": "posttrain/screens-v2/F3_broad_multilingual_no_synthetic-1588454/train/model-final.pt",
+      "sidecar_path": "posttrain/screens-v2/F3_broad_multilingual_no_synthetic-1588454/train/model-final.sha256"
+    },
+    {
+      "bytes": 2372504677,
+      "checksum_from_remote_sidecar": "dcc9a4f935d8b5574dc449b6263c696d9d355e70d157c8914f647c7aed61324a",
+      "kind": "checkpoint",
+      "path": "posttrain/screens-v3/F3_broad_multilingual_no_synthetic-seed20260915-1588560/train/model-final.pt",
+      "sidecar_path": "posttrain/screens-v3/F3_broad_multilingual_no_synthetic-seed20260915-1588560/train/model-final.sha256"
+    },
+    {
+      "bytes": 2177894,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/F2_reasoning_no_synthetic_seed20260914/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F2_reasoning_no_synthetic_seed20260914/samples_arc_challenge_2026-09-15T05-12-16.805847.jsonl"
+    },
+    {
+      "bytes": 4081311,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/F2_reasoning_no_synthetic_seed20260914/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F2_reasoning_no_synthetic_seed20260914/samples_arc_easy_2026-09-15T05-12-16.805847.jsonl"
+    },
+    {
+      "bytes": 8339573,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/F2_reasoning_no_synthetic_seed20260914/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F2_reasoning_no_synthetic_seed20260914/samples_boolq_2026-09-15T05-12-16.805847.jsonl"
+    },
+    {
+      "bytes": 42642818,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/F2_reasoning_no_synthetic_seed20260914/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F2_reasoning_no_synthetic_seed20260914/samples_hellaswag_2026-09-15T05-12-16.805847.jsonl"
+    },
+    {
+      "bytes": 647526,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/F2_reasoning_no_synthetic_seed20260914/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F2_reasoning_no_synthetic_seed20260914/samples_openbookqa_2026-09-15T05-12-16.805847.jsonl"
+    },
+    {
+      "bytes": 2153306,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/F2_reasoning_no_synthetic_seed20260914/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F2_reasoning_no_synthetic_seed20260914/samples_piqa_2026-09-15T05-12-16.805847.jsonl"
+    },
+    {
+      "bytes": 1220973,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/F2_reasoning_no_synthetic_seed20260914/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F2_reasoning_no_synthetic_seed20260914/samples_winogrande_2026-09-15T05-12-16.805847.jsonl"
+    },
+    {
+      "bytes": 2177738,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/F2_reasoning_no_synthetic_seed20260915/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F2_reasoning_no_synthetic_seed20260915/samples_arc_challenge_2026-09-15T05-17-57.270434.jsonl"
+    },
+    {
+      "bytes": 4081283,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/F2_reasoning_no_synthetic_seed20260915/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F2_reasoning_no_synthetic_seed20260915/samples_arc_easy_2026-09-15T05-17-57.270434.jsonl"
+    },
+    {
+      "bytes": 8339795,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/F2_reasoning_no_synthetic_seed20260915/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F2_reasoning_no_synthetic_seed20260915/samples_boolq_2026-09-15T05-17-57.270434.jsonl"
+    },
+    {
+      "bytes": 42642784,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/F2_reasoning_no_synthetic_seed20260915/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F2_reasoning_no_synthetic_seed20260915/samples_hellaswag_2026-09-15T05-17-57.270434.jsonl"
+    },
+    {
+      "bytes": 647452,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/F2_reasoning_no_synthetic_seed20260915/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F2_reasoning_no_synthetic_seed20260915/samples_openbookqa_2026-09-15T05-17-57.270434.jsonl"
+    },
+    {
+      "bytes": 2153354,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/F2_reasoning_no_synthetic_seed20260915/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F2_reasoning_no_synthetic_seed20260915/samples_piqa_2026-09-15T05-17-57.270434.jsonl"
+    },
+    {
+      "bytes": 1220957,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/F2_reasoning_no_synthetic_seed20260915/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F2_reasoning_no_synthetic_seed20260915/samples_winogrande_2026-09-15T05-17-57.270434.jsonl"
+    },
+    {
+      "bytes": 2178011,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/F3_broad_multilingual_no_synthetic_seed20260914/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F3_broad_multilingual_no_synthetic_seed20260914/samples_arc_challenge_2026-09-15T05-23-34.896678.jsonl"
+    },
+    {
+      "bytes": 4081415,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/F3_broad_multilingual_no_synthetic_seed20260914/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F3_broad_multilingual_no_synthetic_seed20260914/samples_arc_easy_2026-09-15T05-23-34.896678.jsonl"
+    },
+    {
+      "bytes": 8340071,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/F3_broad_multilingual_no_synthetic_seed20260914/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F3_broad_multilingual_no_synthetic_seed20260914/samples_boolq_2026-09-15T05-23-34.896678.jsonl"
+    },
+    {
+      "bytes": 42642630,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/F3_broad_multilingual_no_synthetic_seed20260914/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F3_broad_multilingual_no_synthetic_seed20260914/samples_hellaswag_2026-09-15T05-23-34.896678.jsonl"
+    },
+    {
+      "bytes": 647606,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/F3_broad_multilingual_no_synthetic_seed20260914/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F3_broad_multilingual_no_synthetic_seed20260914/samples_openbookqa_2026-09-15T05-23-34.896678.jsonl"
+    },
+    {
+      "bytes": 2153164,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/F3_broad_multilingual_no_synthetic_seed20260914/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F3_broad_multilingual_no_synthetic_seed20260914/samples_piqa_2026-09-15T05-23-34.896678.jsonl"
+    },
+    {
+      "bytes": 1220957,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/F3_broad_multilingual_no_synthetic_seed20260914/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F3_broad_multilingual_no_synthetic_seed20260914/samples_winogrande_2026-09-15T05-23-34.896678.jsonl"
+    },
+    {
+      "bytes": 2177788,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/F3_broad_multilingual_no_synthetic_seed20260915/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F3_broad_multilingual_no_synthetic_seed20260915/samples_arc_challenge_2026-09-15T05-29-11.934964.jsonl"
+    },
+    {
+      "bytes": 4081605,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/F3_broad_multilingual_no_synthetic_seed20260915/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F3_broad_multilingual_no_synthetic_seed20260915/samples_arc_easy_2026-09-15T05-29-11.934964.jsonl"
+    },
+    {
+      "bytes": 8339741,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/F3_broad_multilingual_no_synthetic_seed20260915/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F3_broad_multilingual_no_synthetic_seed20260915/samples_boolq_2026-09-15T05-29-11.934964.jsonl"
+    },
+    {
+      "bytes": 42642670,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/F3_broad_multilingual_no_synthetic_seed20260915/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F3_broad_multilingual_no_synthetic_seed20260915/samples_hellaswag_2026-09-15T05-29-11.934964.jsonl"
+    },
+    {
+      "bytes": 647550,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/F3_broad_multilingual_no_synthetic_seed20260915/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F3_broad_multilingual_no_synthetic_seed20260915/samples_openbookqa_2026-09-15T05-29-11.934964.jsonl"
+    },
+    {
+      "bytes": 2153304,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/F3_broad_multilingual_no_synthetic_seed20260915/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F3_broad_multilingual_no_synthetic_seed20260915/samples_piqa_2026-09-15T05-29-11.934964.jsonl"
+    },
+    {
+      "bytes": 1221025,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/F3_broad_multilingual_no_synthetic_seed20260915/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F3_broad_multilingual_no_synthetic_seed20260915/samples_winogrande_2026-09-15T05-29-11.934964.jsonl"
+    },
+    {
+      "bytes": 2177897,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/base/lm-eval/__ssd__scxi253__pretrain500m-20260912-v1__formal__hf-v5/samples_arc_challenge_2026-09-15T05-06-34.304822.jsonl"
+    },
+    {
+      "bytes": 4081569,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/base/lm-eval/__ssd__scxi253__pretrain500m-20260912-v1__formal__hf-v5/samples_arc_easy_2026-09-15T05-06-34.304822.jsonl"
+    },
+    {
+      "bytes": 8337807,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/base/lm-eval/__ssd__scxi253__pretrain500m-20260912-v1__formal__hf-v5/samples_boolq_2026-09-15T05-06-34.304822.jsonl"
+    },
+    {
+      "bytes": 42643694,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/base/lm-eval/__ssd__scxi253__pretrain500m-20260912-v1__formal__hf-v5/samples_hellaswag_2026-09-15T05-06-34.304822.jsonl"
+    },
+    {
+      "bytes": 647560,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/base/lm-eval/__ssd__scxi253__pretrain500m-20260912-v1__formal__hf-v5/samples_openbookqa_2026-09-15T05-06-34.304822.jsonl"
+    },
+    {
+      "bytes": 2153248,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/base/lm-eval/__ssd__scxi253__pretrain500m-20260912-v1__formal__hf-v5/samples_piqa_2026-09-15T05-06-34.304822.jsonl"
+    },
+    {
+      "bytes": 1220961,
+      "kind": "per_example_benchmark_output",
+      "path": "posttrain/seven-task-confirmation-2gpu-v1/1590907/base/lm-eval/__ssd__scxi253__pretrain500m-20260912-v1__formal__hf-v5/samples_winogrande_2026-09-15T05-06-34.304822.jsonl"
+    }
+  ],
+  "snapshot_date_utc": "2026-09-15",
+  "source_root": "/ssd/scxi253/pretrain500m-20260912-v1"
+}

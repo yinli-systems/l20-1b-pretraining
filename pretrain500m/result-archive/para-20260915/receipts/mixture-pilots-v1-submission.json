@@ -1,0 +1,96 @@
+{
+  "artifacts": {
+    "R0_F2_current_control_admission": "b8a2726a74b0ac8f8c7f04c3389c10e8a81b29b868623dae2a38af02a22365ea",
+    "R0_F2_current_control_manifest": "d3791462c69af901f302ae5c8c71ee24c544e2c27c8bfc8574cbec19318fd828",
+    "R1_F1_current_reconsider_admission": "8538fda35c8744061c26aee26b4aff5993464397310fa366bba5461c0a80d41b",
+    "R1_F1_current_reconsider_manifest": "712926f4a8b91758c6b7e6380964b5751a909b55643d46bf296674357cf667df",
+    "R2_current_retention_repair_admission": "768ee1fc8d5a0970d1d28ed038c86f40f98a3671ec03f1a009f7845e96c6a229",
+    "R2_current_retention_repair_manifest": "d060e1e738edfc1a9bf38d3561be80410c04814035a68f7196e5d2d1927c6e84",
+    "R3_current_balanced_admission": "9cc6e1d829c82e8d1131751fff615fa970bd8a596aba99143c98e460ab7cee96",
+    "R3_current_balanced_manifest": "549776b22614d8152b3a6ccf5839ccb5ca147acf3e7fe47991d8310b6c0fbc1a",
+    "R4_current_code_guard_admission": "4cea8abc46218f679eac02f31a0b8603a8e6b56bfdf331b7d0ded23bcb08e70e",
+    "R4_current_code_guard_manifest": "16fe10c43470a95e5bc8eff2e41875abec7c5a58991ca768ca27ec3f424b3bb0",
+    "build_receipt": "8c61ddb49378ca7359cec8b623439ef62ed8840acea17a0eea4b5121243dced7",
+    "protocol": "a6a878c647c636cfa272fe359b1c8767d6567345ea0f642f25ef1e2a2d880668",
+    "runner": "1f5033ec8e93b05442a4a3cbf59f69b22ca8e4d9ba6fd225766b85b88c272293"
+  },
+  "capacity_snapshot": "\u516c\u5171partition\uff1a\nPartition      \u53ef\u7528GPU\u6570\u91cf  \u603b\u5361\u6570\ngpu_4090             0     248\ngpu_5090            33     248\nhp_4090              0     272\nhp_5090             49     408\n\n\u53ef\u8fd0\u884c\u4f5c\u4e1a\u6570\u91cf\uff08\u6309GPU\u89c4\u6a21\uff09\uff1a\nPartition      1\u5361GPU 2\u5361GPU 3\u5361GPU 4\u5361GPU 5\u5361GPU 6\u5361GPU 7\u5361GPU 8\u5361GPU\ngpu_4090        0      0      0      0      0      0      0      0\ngpu_5090       33     13      5      1      1      0      0      0\nhp_4090         0      0      0      0      0      0      0      0\nhp_5090        49     21      9      5      3      2      2      2\n",
+  "checked_utc": "2026-09-14T23:12:50.758007+00:00",
+  "claim_boundary": "submitted current-corpus exploratory pilots; allocation, MFU, completion, capability and superiority remain unverified",
+  "free_bytes_before_submit": 151091294208,
+  "jobs": [
+    {
+      "arm_id": "r0-lr6e5",
+      "job_id": 1590963,
+      "job_name": "p529m-p1-r0-l6e5",
+      "peak_learning_rate": "0.00006",
+      "recipe": "R0_F2_current_control",
+      "seed": 20260916,
+      "submit_attempt": 1
+    },
+    {
+      "arm_id": "r1-lr6e5",
+      "job_id": 1590964,
+      "job_name": "p529m-p1-r1-l6e5",
+      "peak_learning_rate": "0.00006",
+      "recipe": "R1_F1_current_reconsider",
+      "seed": 20260916,
+      "submit_attempt": 1
+    },
+    {
+      "arm_id": "r2-lr6e5",
+      "job_id": 1590965,
+      "job_name": "p529m-p1-r2-l6e5",
+      "peak_learning_rate": "0.00006",
+      "recipe": "R2_current_retention_repair",
+      "seed": 20260916,
+      "submit_attempt": 1
+    },
+    {
+      "arm_id": "r3-lr6e5",
+      "job_id": 1590966,
+      "job_name": "p529m-p1-r3-l6e5",
+      "peak_learning_rate": "0.00006",
+      "recipe": "R3_current_balanced",
+      "seed": 20260916,
+      "submit_attempt": 1
+    },
+    {
+      "arm_id": "r4-lr6e5",
+      "job_id": 1590967,
+      "job_name": "p529m-p1-r4-l6e5",
+      "peak_learning_rate": "0.00006",
+      "recipe": "R4_current_code_guard",
+      "seed": 20260916,
+      "submit_attempt": 1
+    },
+    {
+      "arm_id": "r3-lr3e5",
+      "job_id": 1590968,
+      "job_name": "p529m-p1-r3-l3e5",
+      "peak_learning_rate": "0.00003",
+      "recipe": "R3_current_balanced",
+      "seed": 20260916,
+      "submit_attempt": 1
+    },
+    {
+      "arm_id": "r3-lr1e4",
+      "job_id": 1590969,
+      "job_name": "p529m-p1-r3-l1e4",
+      "peak_learning_rate": "0.0001",
+      "recipe": "R3_current_balanced",
+      "seed": 20260916,
+      "submit_attempt": 1
+    }
+  ],
+  "mfu_rule": "after five-step grace, every checked rolling ten-step median must be strictly greater than 0.70",
+  "owner": "pretrain500m current-corpus P1 pilots; Codex task 44ca",
+  "schema": "p529m-current-corpus-mixture-pilot-submission-v1",
+  "status": "SUBMITTED_PENDING_ALLOCATION",
+  "storage_gate_bytes": 53687091200,
+  "storage_gate_passed": true,
+  "submitted_gpu_total": 28,
+  "target_prediction_tokens_per_run": 536870912,
+  "training_started": false,
+  "world_size_per_job": 4
+}

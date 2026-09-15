@@ -1,0 +1,12 @@
+{
+  "checked_utc": "2026-09-13T20:23:50.397427+00:00",
+  "status": "PASS_CPU_FIXTURE_TESTS",
+  "returncode": 0,
+  "stdout": "..............                                                           [100%]\n14 passed in 0.20s\n",
+  "stderr": "",
+  "source": "/ssd/scxi253/pretrain500m-20260912-v1/source/raw-audit-v2",
+  "archive_sha256": "ac7d8f60912139558be80445f2eeb62eb4050a03c9495ca1a58893e9d2d446bc",
+  "junit_sha256": "562163975aa986130a66cdf2ac056e6f6e361b76cce63524cbb6832861231b53",
+  "real_combined_audit_launched": false,
+  "training_admitted": false
+}

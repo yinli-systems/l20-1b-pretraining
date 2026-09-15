@@ -1,0 +1,22 @@
+{
+  "mismatch": "root.model.model.embed_tokens.weight: tensor mismatch",
+  "owner_marker": "pretrain500m 2026-09-12 isolated run; owner task 01a09290-b43f-7431-be8a-412ea5d37954",
+  "reason": "rejected nondeterministic 16-GPU BF16-reduction resume experiment cleanup after bitwise checkpoint mismatch",
+  "removed": [
+    {
+      "bytes": 6345504179,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/pilots/resume-det-v4-1584102/continuous/resume.pt",
+      "sha256": "feb65e6452fd91d83a31d5c66915fa6c2734e6d4386c8c4ec758ab1587cdfdfc"
+    },
+    {
+      "bytes": 6345504179,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/pilots/resume-det-v4-1584102/split/resume.pt",
+      "sha256": "626b3bdf9aad158742fd5aacd7c3c9a3fc187ed499a492059ea5230f09111806"
+    }
+  ],
+  "source_job": "1584102",
+  "source_job_state": "FAILED",
+  "status": "VERIFIED_ABSENT",
+  "unix": 1789186916.820435,
+  "verified_absent": true
+}

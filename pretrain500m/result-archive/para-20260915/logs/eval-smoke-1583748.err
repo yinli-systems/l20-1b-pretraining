@@ -1,0 +1,59 @@
+2026-09-12:09:28:23 WARNING  [__main__:368]  --limit SHOULD ONLY BE USED FOR TESTING.REAL METRICS SHOULD NOT BE COMPUTED USING LIMIT.
+2026-09-12:09:28:23 INFO     [__main__:440] Selected Tasks: ['arc_challenge', 'arc_easy', 'boolq', 'hellaswag', 'openbookqa', 'piqa', 'winogrande']
+2026-09-12:09:28:23 INFO     [evaluator:189] Setting random seed to 42 | Setting numpy seed to 42 | Setting torch manual seed to 42 | Setting fewshot manual seed to 1234
+2026-09-12:09:28:23 INFO     [evaluator:227] Initializing hf model, with arguments: {'pretrained': '/ssd/scxi253/pretrain500m-20260912-v1/pilots/eval-smoke-model', 'dtype': 'bfloat16', 'trust_remote_code': False, 'max_length': 2048}
+2026-09-12:09:28:23 INFO     [models.huggingface:137] Using device 'cuda'
+2026-09-12:09:28:24 INFO     [models.huggingface:382] Model parallel was set to False, max memory was not set, and device map was set to {'': 'cuda'}
+`torch_dtype` is deprecated! Use `dtype` instead!
+Using the latest cached version of the dataset since allenai/ai2_arc couldn't be found on the Hugging Face Hub (offline mode is enabled).
+2026-09-12:09:28:24 WARNING  [datasets.load:1645] Using the latest cached version of the dataset since allenai/ai2_arc couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'ARC-Challenge' at /ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/datasets/allenai___ai2_arc/ARC-Challenge/0.0.0/210d026faf9955653af8916fad021475a3f00453 (last modified on Sat Sep 12 09:14:54 2026).
+2026-09-12:09:28:24 WARNING  [datasets.packaged_modules.cache.cache:95] Found the latest cached dataset configuration 'ARC-Challenge' at /ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/datasets/allenai___ai2_arc/ARC-Challenge/0.0.0/210d026faf9955653af8916fad021475a3f00453 (last modified on Sat Sep 12 09:14:54 2026).
+Using the latest cached version of the dataset since allenai/ai2_arc couldn't be found on the Hugging Face Hub (offline mode is enabled).
+2026-09-12:09:28:24 WARNING  [datasets.load:1645] Using the latest cached version of the dataset since allenai/ai2_arc couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'ARC-Easy' at /ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/datasets/allenai___ai2_arc/ARC-Easy/0.0.0/210d026faf9955653af8916fad021475a3f00453 (last modified on Sat Sep 12 09:14:34 2026).
+2026-09-12:09:28:24 WARNING  [datasets.packaged_modules.cache.cache:95] Found the latest cached dataset configuration 'ARC-Easy' at /ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/datasets/allenai___ai2_arc/ARC-Easy/0.0.0/210d026faf9955653af8916fad021475a3f00453 (last modified on Sat Sep 12 09:14:34 2026).
+2026-09-12:09:28:24 WARNING  [api.task:844] [Task: boolq] metric acc is defined, but aggregation is not. using default aggregation=mean
+2026-09-12:09:28:24 WARNING  [api.task:856] [Task: boolq] metric acc is defined, but higher_is_better is not. using default higher_is_better=True
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/lm_eval/__main__.py", line 530, in <module>
+    cli_evaluate()
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/lm_eval/__main__.py", line 449, in cli_evaluate
+    results = evaluator.simple_evaluate(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/lm_eval/utils.py", line 439, in _wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/lm_eval/evaluator.py", line 268, in simple_evaluate
+    task_dict = get_task_dict(
+                ^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/lm_eval/tasks/__init__.py", line 635, in get_task_dict
+    task_name_from_string_dict = task_manager.load_task_or_group(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/lm_eval/tasks/__init__.py", line 426, in load_task_or_group
+    collections.ChainMap(
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/lm_eval/tasks/__init__.py", line 428, in <lambda>
+    lambda task: self._load_individual_task_or_group(task),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/lm_eval/tasks/__init__.py", line 326, in _load_individual_task_or_group
+    return _load_task(task_config, task=name_or_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/lm_eval/tasks/__init__.py", line 286, in _load_task
+    task_object = ConfigurableTask(config=config)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/lm_eval/api/task.py", line 863, in __init__
+    self.download(self.config.dataset_kwargs)
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/lm_eval/api/task.py", line 991, in download
+    self.dataset = datasets.load_dataset(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/datasets/load.py", line 2606, in load_dataset
+    builder_instance = load_dataset_builder(
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/datasets/load.py", line 2277, in load_dataset_builder
+    dataset_module = dataset_module_factory(
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/datasets/load.py", line 1915, in dataset_module_factory
+    raise ConnectionError(f"Couldn't reach the Hugging Face Hub for dataset '{path}': {e1}") from None
+ConnectionError: Couldn't reach the Hugging Face Hub for dataset 'super_glue': Offline mode is enabled.

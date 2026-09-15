@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="4" skipped="0" tests="31" time="7.117" timestamp="2026-09-14T03:48:25.104023+08:00" hostname="ln01"><testcase classname="test_v2" name="test_exact_quotas_and_every_prefix_cursor[1]" time="0.010" /><testcase classname="test_v2" name="test_exact_quotas_and_every_prefix_cursor[3]" time="0.004" /><testcase classname="test_v2" name="test_exact_quotas_and_every_prefix_cursor[19]" time="0.013" /><testcase classname="test_v2" name="test_exact_quotas_and_every_prefix_cursor[20]" time="0.004" /><testcase classname="test_v2" name="test_exact_quotas_and_every_prefix_cursor[21]" time="0.004" /><testcase classname="test_v2" name="test_exact_quotas_and_every_prefix_cursor[37]" time="0.004" /><testcase classname="test_v2" name="test_exact_quotas_and_every_prefix_cursor[100]" time="0.004" /><testcase classname="test_v2" name="test_exact_quotas_and_every_prefix_cursor[1024]" time="0.011" /><testcase classname="test_v2" name="test_disjoint_ranks_equal_the_global_stream_and_resume" time="0.201" /><testcase classname="test_v2" name="test_order_independent_and_seed_changes_stream" time="0.009" /><testcase classname="test_v2" name="test_cache_is_bounded_and_eviction_does_not_change_stream" time="0.378" /><testcase classname="test_v2" name="test_rejects_invalid_data_and_never_renormalizes[missing]" time="0.003" /><testcase classname="test_v2" name="test_rejects_invalid_data_and_never_renormalizes[duplicate_id]" time="0.002" /><testcase classname="test_v2" name="test_rejects_invalid_data_and_never_renormalizes[duplicate_content]" time="0.003" /><testcase classname="test_v2" name="test_rejects_invalid_data_and_never_renormalizes[dtype]" time="0.003" /><testcase classname="test_v2" name="test_rejects_invalid_data_and_never_renormalizes[partial]" time="0.003" /><testcase classname="test_v2" name="test_rejects_invalid_data_and_never_renormalizes[cap]" time="0.003" /><testcase classname="test_v2" name="test_rejects_invalid_data_and_never_renormalizes[prior]" time="0.003" /><testcase classname="test_v2" name="test_rejects_invalid_data_and_never_renormalizes[revision]" time="0.002" /><testcase classname="test_v2" name="test_manifest_and_shard_hash_drift_rejected" time="0.003" /><testcase classname="test_v2" name="test_invalid_weight_inputs[weights0]" time="0.001" /><testcase classname="test_v2" name="test_invalid_weight_inputs[weights1]" time="0.001" /><testcase classname="test_v2" name="test_invalid_weight_inputs[weights2]" time="0.001" /><testcase classname="test_v2" name="test_invalid_weight_inputs[weights3]" time="0.001" /><testcase classname="test_v2" name="test_single_source_epoch_traversal_and_declared_replay" time="0.002" /><testcase classname="test_v2" name="test_input_boundaries" time="0.004" /><testcase classname="test_v2" name="test_real_screen_quotas_match_the_research_plan[M0_existing_web_control]" time="0.002"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/ssd/scxi253/pretrain500m-20260912-v1/research/data-mixture-v1/experiment-design.json'">tmp_path = PosixPath('/tmp/pytest-of-scxi253/pytest-3/test_real_screen_quotas_match_0')
+recipe = 'M0_existing_web_control'
+
+    @pytest.mark.parametrize('recipe', ['M0_existing_web_control', 'M1_broad_english', 'M2_reasoning', 'M3_broad_multilingual'])
+    def test_real_screen_quotas_match_the_research_plan(tmp_path, recipe):
+        root = Path(__file__).resolve().parents[2] / 'research' / 'data-mixture-v1'
+&gt;       design = json.loads((root / 'experiment-design.json').read_text())
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+/ssd/scxi253/pretrain500m-20260912-v1/source/cpt-v3/test_v2.py:172: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/ssd/scxi253/pretraining2/runtime/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/ssd/scxi253/pretrain500m-20260912-v1/research/data-mixture-v1/experiment-design.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/ssd/scxi253/pretrain500m-20260912-v1/research/data-mixture-v1/experiment-design.json'
+
+/ssd/scxi253/pretraining2/runtime/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="test_v2" name="test_real_screen_quotas_match_the_research_plan[M1_broad_english]" time="0.002"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/ssd/scxi253/pretrain500m-20260912-v1/research/data-mixture-v1/experiment-design.json'">tmp_path = PosixPath('/tmp/pytest-of-scxi253/pytest-3/test_real_screen_quotas_match_1')
+recipe = 'M1_broad_english'
+
+    @pytest.mark.parametrize('recipe', ['M0_existing_web_control', 'M1_broad_english', 'M2_reasoning', 'M3_broad_multilingual'])
+    def test_real_screen_quotas_match_the_research_plan(tmp_path, recipe):
+        root = Path(__file__).resolve().parents[2] / 'research' / 'data-mixture-v1'
+&gt;       design = json.loads((root / 'experiment-design.json').read_text())
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+/ssd/scxi253/pretrain500m-20260912-v1/source/cpt-v3/test_v2.py:172: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/ssd/scxi253/pretraining2/runtime/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/ssd/scxi253/pretrain500m-20260912-v1/research/data-mixture-v1/experiment-design.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/ssd/scxi253/pretrain500m-20260912-v1/research/data-mixture-v1/experiment-design.json'
+
+/ssd/scxi253/pretraining2/runtime/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="test_v2" name="test_real_screen_quotas_match_the_research_plan[M2_reasoning]" time="0.002"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/ssd/scxi253/pretrain500m-20260912-v1/research/data-mixture-v1/experiment-design.json'">tmp_path = PosixPath('/tmp/pytest-of-scxi253/pytest-3/test_real_screen_quotas_match_2')
+recipe = 'M2_reasoning'
+
+    @pytest.mark.parametrize('recipe', ['M0_existing_web_control', 'M1_broad_english', 'M2_reasoning', 'M3_broad_multilingual'])
+    def test_real_screen_quotas_match_the_research_plan(tmp_path, recipe):
+        root = Path(__file__).resolve().parents[2] / 'research' / 'data-mixture-v1'
+&gt;       design = json.loads((root / 'experiment-design.json').read_text())
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+/ssd/scxi253/pretrain500m-20260912-v1/source/cpt-v3/test_v2.py:172: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/ssd/scxi253/pretraining2/runtime/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/ssd/scxi253/pretrain500m-20260912-v1/research/data-mixture-v1/experiment-design.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/ssd/scxi253/pretrain500m-20260912-v1/research/data-mixture-v1/experiment-design.json'
+
+/ssd/scxi253/pretraining2/runtime/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="test_v2" name="test_real_screen_quotas_match_the_research_plan[M3_broad_multilingual]" time="0.003"><failure message="FileNotFoundError: [Errno 2] No such file or directory: '/ssd/scxi253/pretrain500m-20260912-v1/research/data-mixture-v1/experiment-design.json'">tmp_path = PosixPath('/tmp/pytest-of-scxi253/pytest-3/test_real_screen_quotas_match_3')
+recipe = 'M3_broad_multilingual'
+
+    @pytest.mark.parametrize('recipe', ['M0_existing_web_control', 'M1_broad_english', 'M2_reasoning', 'M3_broad_multilingual'])
+    def test_real_screen_quotas_match_the_research_plan(tmp_path, recipe):
+        root = Path(__file__).resolve().parents[2] / 'research' / 'data-mixture-v1'
+&gt;       design = json.loads((root / 'experiment-design.json').read_text())
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+/ssd/scxi253/pretrain500m-20260912-v1/source/cpt-v3/test_v2.py:172: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/ssd/scxi253/pretraining2/runtime/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/pathlib.py:1027: in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/ssd/scxi253/pretrain500m-20260912-v1/research/data-mixture-v1/experiment-design.json')
+mode = 'r', buffering = -1, encoding = 'locale', errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+&gt;       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/ssd/scxi253/pretrain500m-20260912-v1/research/data-mixture-v1/experiment-design.json'
+
+/ssd/scxi253/pretraining2/runtime/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/pathlib.py:1013: FileNotFoundError</failure></testcase><testcase classname="test_v2" name="test_cpu_optimizer_and_rng_resume_are_bit_exact" time="2.875" /></testsuite></testsuites>

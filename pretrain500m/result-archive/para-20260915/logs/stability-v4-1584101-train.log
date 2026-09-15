@@ -1,0 +1,225 @@
+{"step": 1, "prediction_tokens": 2097152, "loss": 11.037814140319824, "lr": 3e-05, "grad_norm": 15.550969123840332, "step_seconds": 38.93593834200874, "tokens_per_second": 53861.60162826593, "mfu": 0.0641129015844882, "elapsed_seconds": 38.93595972203184, "unix": 1789186151.1972828}
+{"step": 2, "prediction_tokens": 4194304, "loss": 9.931142807006836, "lr": 6e-05, "grad_norm": 19.8930721282959, "step_seconds": 5.647199196973816, "tokens_per_second": 371361.43543932505, "mfu": 0.44204142548373465, "elapsed_seconds": 44.60035360802431, "unix": 1789186156.8616834}
+{"step": 3, "prediction_tokens": 6291456, "loss": 9.543365478515625, "lr": 9e-05, "grad_norm": 10.97889232635498, "step_seconds": 5.647977218031883, "tokens_per_second": 371310.27959967265, "mfu": 0.44198053332282666, "elapsed_seconds": 50.25900851003826, "unix": 1789186162.5203295}
+{"step": 4, "prediction_tokens": 8388608, "loss": 9.987859725952148, "lr": 0.00012, "grad_norm": 6.637265205383301, "step_seconds": 5.65018475195393, "tokens_per_second": 371165.2082305396, "mfu": 0.4418078510012695, "elapsed_seconds": 55.92113279399928, "unix": 1789186168.1824498}
+{"step": 5, "prediction_tokens": 10485760, "loss": 9.47765827178955, "lr": 0.00015, "grad_norm": 4.378654479980469, "step_seconds": 5.650025188922882, "tokens_per_second": 371175.69035117875, "mfu": 0.44182032814915634, "elapsed_seconds": 61.58057007298339, "unix": 1789186173.841885}
+{"step": 6, "prediction_tokens": 12582912, "loss": 9.11274242401123, "lr": 0.00018, "grad_norm": 2.915787696838379, "step_seconds": 5.661962068988942, "tokens_per_second": 370393.15602029266, "mfu": 0.44088885665506966, "elapsed_seconds": 67.25205428700428, "unix": 1789186179.5133698}
+{"step": 7, "prediction_tokens": 14680064, "loss": 8.888327598571777, "lr": 0.00021, "grad_norm": 3.4455854892730713, "step_seconds": 5.66264739097096, "tokens_per_second": 370348.32918325264, "mfu": 0.4408354980748454, "elapsed_seconds": 72.92764153098688, "unix": 1789186185.188961}
+{"step": 8, "prediction_tokens": 16777216, "loss": 8.586433410644531, "lr": 0.00024, "grad_norm": 1.936522364616394, "step_seconds": 5.665824243915267, "tokens_per_second": 370140.67322194244, "mfu": 0.44058831964330153, "elapsed_seconds": 78.60711314796936, "unix": 1789186190.8684454}
+{"step": 9, "prediction_tokens": 18874368, "loss": 13.199214935302734, "lr": 0.00027, "grad_norm": 45.13618087768555, "step_seconds": 5.675498049007729, "tokens_per_second": 369509.773748694, "mfu": 0.43983734316626977, "elapsed_seconds": 84.2940684990026, "unix": 1789186196.5553877}
+{"step": 10, "prediction_tokens": 20971520, "loss": 8.46102237701416, "lr": 0.0003, "grad_norm": 6.719257354736328, "step_seconds": 5.67247441993095, "tokens_per_second": 369706.73550001276, "mfu": 0.4400717919943117, "elapsed_seconds": 89.97923856496345, "unix": 1789186202.240559}
+{"step": 11, "prediction_tokens": 23068672, "loss": 8.229564666748047, "lr": 0.00033, "grad_norm": 2.551687479019165, "step_seconds": 5.67499750899151, "tokens_per_second": 369542.36485165963, "mfu": 0.4398761372257444, "elapsed_seconds": 95.6661063330248, "unix": 1789186207.9274225}
+{"step": 12, "prediction_tokens": 25165824, "loss": 8.06299114227295, "lr": 0.00036, "grad_norm": 1.8085918426513672, "step_seconds": 5.676648207008839, "tokens_per_second": 369434.90657227807, "mfu": 0.43974822676853265, "elapsed_seconds": 101.35623491101433, "unix": 1789186213.6175494}
+{"step": 13, "prediction_tokens": 27262976, "loss": 7.925152778625488, "lr": 0.00039, "grad_norm": 1.864999771118164, "step_seconds": 5.6776797369821, "tokens_per_second": 369367.7870451205, "mfu": 0.43966833260443505, "elapsed_seconds": 107.04336123401299, "unix": 1789186219.304681}
+{"step": 14, "prediction_tokens": 29360128, "loss": 7.786068439483643, "lr": 0.00042, "grad_norm": 2.009929895401001, "step_seconds": 5.684957899036817, "tokens_per_second": 368894.9042798212, "mfu": 0.4391054476311682, "elapsed_seconds": 112.73974548000842, "unix": 1789186225.0010602}
+{"step": 15, "prediction_tokens": 31457280, "loss": 7.7015581130981445, "lr": 0.00045, "grad_norm": 1.3712939023971558, "step_seconds": 5.6852318599121645, "tokens_per_second": 368877.1279123171, "mfu": 0.43908428794660875, "elapsed_seconds": 118.43438237498049, "unix": 1789186230.6957}
+W0912 12:10:50.234000 3425495 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 3425522 closing signal SIGTERM
+W0912 12:10:50.245000 3425495 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 3425523 closing signal SIGTERM
+W0912 12:10:50.403000 3566401 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 3566463 closing signal SIGTERM
+W0912 12:10:50.410000 3566401 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 3566464 closing signal SIGTERM
+W0912 12:10:50.410000 3566401 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 3566465 closing signal SIGTERM
+W0912 12:10:50.420000 593634 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 593713 closing signal SIGTERM
+W0912 12:10:50.427000 593634 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 593714 closing signal SIGTERM
+W0912 12:10:50.427000 593634 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 593715 closing signal SIGTERM
+E0912 12:10:50.509000 3425495 torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 65) local_rank: 0 (pid: 3425521) of binary: /ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 994, in <module>
+    main()
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 990, in main
+    run(args)
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_v3.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-09-12_12:10:50
+  host      : wqd10nbl11g5
+  rank      : 15 (local_rank: 3)
+  exitcode  : 65 (pid: 3425524)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-09-12_12:10:50
+  host      : wqd10nbl11g5
+  rank      : 13 (local_rank: 1)
+  exitcode  : -15 (pid: 3425522)
+  error_file: <N/A>
+  traceback : Signal 15 (SIGTERM) received by PID 3425522
+[3]:
+  time      : 2026-09-12_12:10:50
+  host      : wqd10nbl11g5
+  rank      : 14 (local_rank: 2)
+  exitcode  : 65 (pid: 3425523)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-09-12_12:10:50
+  host      : wqd10nbl11g5
+  rank      : 12 (local_rank: 0)
+  exitcode  : 65 (pid: 3425521)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+E0912 12:10:50.804000 593634 torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 65) local_rank: 3 (pid: 593716) of binary: /ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 994, in <module>
+    main()
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 990, in main
+    run(args)
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_v3.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-09-12_12:10:50
+  host      : wqd10nbj06g2
+  rank      : 4 (local_rank: 0)
+  exitcode  : 65 (pid: 593713)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-09-12_12:10:50
+  host      : wqd10nbj06g2
+  rank      : 5 (local_rank: 1)
+  exitcode  : 65 (pid: 593714)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-09-12_12:10:50
+  host      : wqd10nbj06g2
+  rank      : 6 (local_rank: 2)
+  exitcode  : 65 (pid: 593715)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-09-12_12:10:50
+  host      : wqd10nbj06g2
+  rank      : 7 (local_rank: 3)
+  exitcode  : 65 (pid: 593716)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: wqd10nbl11g5: task 3: Exited with exit code 1
+srun: Terminating StepId=1584101.0
+slurmstepd: error: *** STEP 1584101.0 ON wqd10nbj02g1 CANCELLED AT 2026-09-12T12:10:50 ***
+W0912 12:10:50.842000 3566401 torch/distributed/elastic/agent/server/api.py:739] Received 15 death signal, shutting down workers
+W0912 12:10:50.842000 2985265 torch/distributed/elastic/agent/server/api.py:739] Received 15 death signal, shutting down workers
+W0912 12:10:50.849000 2985265 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 2985399 closing signal SIGTERM
+W0912 12:10:50.850000 2985265 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 2985400 closing signal SIGTERM
+W0912 12:10:50.850000 2985265 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 2985401 closing signal SIGTERM
+W0912 12:10:50.850000 2985265 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 2985402 closing signal SIGTERM
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 994, in <module>
+    main()
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 990, in main
+    run(args)
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 308, in launch_agent
+    result = agent.run()
+             ^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/metrics/api.py", line 134, in wrapper
+    result = f(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/agent/server/api.py", line 731, in run
+    result = self._invoke_run(role)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/agent/server/api.py", line 909, in _invoke_run
+    run_result = self._monitor_workers(self._worker_group)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/metrics/api.py", line 134, in wrapper
+    result = f(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/agent/server/local_elastic_agent.py", line 436, in _monitor_workers
+    result = self._pcontext.wait(0)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/api.py", line 622, in wait
+    return self._poll()
+           ^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/api.py", line 974, in _poll
+    self.close()  # terminate all running procs
+    ^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/api.py", line 661, in close
+    self._close(death_sig=death_sig, timeout=timeout)
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/api.py", line 1024, in _close
+    handler.proc.wait(time_to_wait)
+  File "/ssd/scxi253/pretraining2/runtime/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/subprocess.py", line 1264, in wait
+    return self._wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/subprocess.py", line 2047, in _wait
+    time.sleep(delay)
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/api.py", line 86, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 3566401 got signal: 15
+srun: error: wqd10nbj06g2: task 1: Terminated
+srun: error: wqd10nbj06g4: task 2: Exited with exit code 1
+{"status": "CHECKPOINTED_STOP", "reason": "mfu_below_minimum", "step": 15, "tokens": 31457280, "checkpoint_sha256": "13a5da6e21be6cfaa750eb9336b79d9380bf8ba5fa6e21a8338670c0f58c9469", "unix": 1789186254.4221387}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 994, in <module>
+    main()
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 990, in main
+    run(args)
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 308, in launch_agent
+    result = agent.run()
+             ^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/metrics/api.py", line 134, in wrapper
+    result = f(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/agent/server/api.py", line 731, in run
+    result = self._invoke_run(role)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/agent/server/api.py", line 908, in _invoke_run
+    time.sleep(monitor_interval)
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/api.py", line 86, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 2985265 got signal: 15
+srun: error: wqd10nbj02g1: task 0: Exited with exit code 1
+srun: Force Terminated StepId=1584101.0

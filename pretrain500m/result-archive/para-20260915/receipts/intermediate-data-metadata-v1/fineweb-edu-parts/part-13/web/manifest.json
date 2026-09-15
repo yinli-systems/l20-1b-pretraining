@@ -1,0 +1,50 @@
+{
+  "batch_docs": 2048,
+  "block_size": 2049,
+  "counters": {
+    "accepted": 160588,
+    "contaminated": 272,
+    "duplicate": 82,
+    "seen": 160942,
+    "too_long": 0
+  },
+  "dataset_revisions": {
+    "web": {
+      "config": "sample-10BT",
+      "repo": "HuggingFaceFW/fineweb-edu",
+      "revision": "87f09149ef4734204d70ed1d046ddc9ca3f2b8f9"
+    }
+  },
+  "decontamination_enabled": true,
+  "delete_completed_raw": false,
+  "eos_id": 50279,
+  "holdout_modulus": 1000,
+  "partition_label": "part-13",
+  "resumed_tokens": {
+    "train": 0,
+    "validation": 0
+  },
+  "seed": 42,
+  "source": "web",
+  "source_exhausted": true,
+  "source_state_db": null,
+  "targets_complete": false,
+  "train_shards": [
+    {
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-parts/part-13/web/train-npy/train-00000.npy",
+      "sha256": "833f45a6ceca0d481dea3857aa91a483e7c546b50116b5bb0752077e6f65cf44",
+      "tokens": 166778355
+    }
+  ],
+  "train_tokens": 166778355,
+  "validation_shards": [
+    {
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-parts/part-13/web/val-npy/val-00000.npy",
+      "sha256": "154cde7a61fc199b5f2f198a9ebd4889cca47c19a8e0e87135186e521aacb811",
+      "tokens": 172116
+    }
+  ],
+  "validation_tokens": 172116,
+  "vocab_size": 50280,
+  "workers": 20
+}

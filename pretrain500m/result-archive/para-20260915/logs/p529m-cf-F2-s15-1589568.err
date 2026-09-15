@@ -1,0 +1,63 @@
+[rank0]:[W914 15:17:04.513612067 reducer.cpp:1502] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[rank2]:[W914 15:17:05.691976260 reducer.cpp:1502] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[rank1]:[W914 15:17:05.894742427 reducer.cpp:1502] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+[rank3]:[W914 15:17:13.765154963 reducer.cpp:1502] Warning: find_unused_parameters=True was specified in DDP constructor, but did not find any unused parameters in the forward pass. This flag results in an extra traversal of the autograd graph every iteration,  which can adversely affect performance. If your model indeed never has any unused parameters in the forward pass, consider turning this flag off. Note that this warning may be a false positive if your model has flow control causing later iterations to have unused parameters. (function operator())
+W0914 15:22:14.407000 3859589 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 3859749 closing signal SIGTERM
+W0914 15:22:14.421000 3859589 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 3859751 closing signal SIGTERM
+W0914 15:22:14.421000 3859589 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 3859752 closing signal SIGTERM
+E0914 15:22:14.599000 3859589 torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 65) local_rank: 1 (pid: 3859750) of binary: /ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 994, in <module>
+    main()
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 990, in main
+    run(args)
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/ssd/scxi253/pretrain500m-20260912-v1/source/cpt-confirmation-v1/train_cpt.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-09-14_15:22:14
+  host      : wqd10nbl11g5
+  rank      : 0 (local_rank: 0)
+  exitcode  : 65 (pid: 3859749)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-09-14_15:22:14
+  host      : wqd10nbl11g5
+  rank      : 2 (local_rank: 2)
+  exitcode  : 65 (pid: 3859751)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-09-14_15:22:14
+  host      : wqd10nbl11g5
+  rank      : 3 (local_rank: 3)
+  exitcode  : 65 (pid: 3859752)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-09-14_15:22:14
+  host      : wqd10nbl11g5
+  rank      : 1 (local_rank: 1)
+  exitcode  : 65 (pid: 3859750)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: wqd10nbl11g5: task 0: Exited with exit code 1
+srun: Terminating StepId=1589568.0

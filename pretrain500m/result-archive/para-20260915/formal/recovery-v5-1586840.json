@@ -1,0 +1,13 @@
+{
+  "cleanup": "removed corrupted resume.pt.next and reclaimed current-project intermediate/pilot blocks; 22G free verified",
+  "created_utc": "2026-09-13T07:45:00.161922+00:00",
+  "failed_job_id": "1585239",
+  "last_durable_checkpoint_sha256": "c9bf6c56f2d6e53b688e2d5ca9a1f9c3be727a698da8f279a1cc7088782bfb5e",
+  "last_durable_checkpoint_step": 4000,
+  "last_observed_step_before_failure": 4500,
+  "recovery_eval_job_id": "1586842",
+  "recovery_export_job_id": "1586841",
+  "recovery_train_job_id": "1586840",
+  "root_cause": "checkpoint atomic_save failed because user /ssd quota had zero free space",
+  "status": "RECOVERY_SUBMITTED"
+}

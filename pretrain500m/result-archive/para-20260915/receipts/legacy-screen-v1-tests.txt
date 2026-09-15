@@ -1,0 +1,10 @@
+test_changed_row_count_fails_before_completion (test_scan.LegacyCompatibility.test_changed_row_count_fails_before_completion) ... ok
+test_legacy_matching_parity_and_offsets (test_scan.LegacyCompatibility.test_legacy_matching_parity_and_offsets) ... ok
+test_old_normalization_parity_without_casefold (test_scan.LegacyCompatibility.test_old_normalization_parity_without_casefold) ... ok
+test_parallel_file_scan_preserves_each_row_and_candidate (test_scan.LegacyCompatibility.test_parallel_file_scan_preserves_each_row_and_candidate) ... ok
+test_thirteen_word_boundary_and_empty_reference (test_scan.LegacyCompatibility.test_thirteen_word_boundary_and_empty_reference) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.063s
+
+OK

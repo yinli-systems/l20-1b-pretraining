@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/pack-v2/pack_data.py", line 367, in main
+    dedup.commit()
+sqlite3.OperationalError: disk I/O error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/pack-v2/pack_data.py", line 461, in <module>
+    main()
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/pack-v2/pack_data.py", line 390, in main
+    train_writer.flush()
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/pack-v2/pack_data.py", line 170, in flush
+    with temporary.open("wb") as stream:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 122] Disk quota exceeded: '/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-parts/part-10/web/train-npy/train-00002.npy.tmp'

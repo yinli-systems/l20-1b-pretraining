@@ -1,0 +1,7 @@
+evaluate.py: OK
+mixture.py: OK
+test_evaluate.py: OK
+run.sbatch: OK
+README.md: OK
+{"losses": {"base": 3.304216691519922, "f3_seed20260914": 2.591069525577037, "f3_seed20260915": 2.5910713801530285}, "status": "PASS_TWO_SEED_HELDOUT_CONFIRMATION"}
+6cea6aaf33f45cc35b1e2f7119f30b0a9cccf464bdf01ebee636396019889446  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmation-eval-v1/1588770/result.json

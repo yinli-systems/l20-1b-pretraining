@@ -1,0 +1,132 @@
+2026-09-12:09:31:36 WARNING  [__main__:368]  --limit SHOULD ONLY BE USED FOR TESTING.REAL METRICS SHOULD NOT BE COMPUTED USING LIMIT.
+2026-09-12:09:31:36 INFO     [__main__:440] Selected Tasks: ['arc_challenge', 'arc_easy', 'boolq', 'hellaswag', 'openbookqa', 'piqa', 'winogrande']
+2026-09-12:09:31:36 INFO     [evaluator:189] Setting random seed to 42 | Setting numpy seed to 42 | Setting torch manual seed to 42 | Setting fewshot manual seed to 1234
+2026-09-12:09:31:36 INFO     [evaluator:227] Initializing hf model, with arguments: {'pretrained': '/ssd/scxi253/pretrain500m-20260912-v1/pilots/eval-smoke-model', 'dtype': 'bfloat16', 'trust_remote_code': False, 'max_length': 2048}
+2026-09-12:09:31:36 INFO     [models.huggingface:137] Using device 'cuda'
+2026-09-12:09:31:36 INFO     [models.huggingface:382] Model parallel was set to False, max memory was not set, and device map was set to {'': 'cuda'}
+`torch_dtype` is deprecated! Use `dtype` instead!
+Using the latest cached version of the dataset since allenai/ai2_arc couldn't be found on the Hugging Face Hub (offline mode is enabled).
+2026-09-12:09:31:37 WARNING  [datasets.load:1645] Using the latest cached version of the dataset since allenai/ai2_arc couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'ARC-Challenge' at /ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/datasets/allenai___ai2_arc/ARC-Challenge/0.0.0/210d026faf9955653af8916fad021475a3f00453 (last modified on Sat Sep 12 09:14:54 2026).
+2026-09-12:09:31:37 WARNING  [datasets.packaged_modules.cache.cache:95] Found the latest cached dataset configuration 'ARC-Challenge' at /ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/datasets/allenai___ai2_arc/ARC-Challenge/0.0.0/210d026faf9955653af8916fad021475a3f00453 (last modified on Sat Sep 12 09:14:54 2026).
+Using the latest cached version of the dataset since allenai/ai2_arc couldn't be found on the Hugging Face Hub (offline mode is enabled).
+2026-09-12:09:31:37 WARNING  [datasets.load:1645] Using the latest cached version of the dataset since allenai/ai2_arc couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'ARC-Easy' at /ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/datasets/allenai___ai2_arc/ARC-Easy/0.0.0/210d026faf9955653af8916fad021475a3f00453 (last modified on Sat Sep 12 09:14:34 2026).
+2026-09-12:09:31:37 WARNING  [datasets.packaged_modules.cache.cache:95] Found the latest cached dataset configuration 'ARC-Easy' at /ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/datasets/allenai___ai2_arc/ARC-Easy/0.0.0/210d026faf9955653af8916fad021475a3f00453 (last modified on Sat Sep 12 09:14:34 2026).
+2026-09-12:09:31:37 WARNING  [api.task:844] [Task: boolq] metric acc is defined, but aggregation is not. using default aggregation=mean
+2026-09-12:09:31:37 WARNING  [api.task:856] [Task: boolq] metric acc is defined, but higher_is_better is not. using default higher_is_better=True
+Using the latest cached version of the dataset since super_glue couldn't be found on the Hugging Face Hub (offline mode is enabled).
+2026-09-12:09:31:37 WARNING  [datasets.load:1645] Using the latest cached version of the dataset since super_glue couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'boolq' at /ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/datasets/super_glue/boolq/0.0.0/3de24cf8022e94f4ee4b9d55a6f539891524d646 (last modified on Sat Sep 12 09:15:22 2026).
+2026-09-12:09:31:37 WARNING  [datasets.packaged_modules.cache.cache:95] Found the latest cached dataset configuration 'boolq' at /ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/datasets/super_glue/boolq/0.0.0/3de24cf8022e94f4ee4b9d55a6f539891524d646 (last modified on Sat Sep 12 09:15:22 2026).
+Using the latest cached version of the dataset since hellaswag couldn't be found on the Hugging Face Hub (offline mode is enabled).
+2026-09-12:09:31:37 WARNING  [datasets.load:1645] Using the latest cached version of the dataset since hellaswag couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/datasets/hellaswag/default/0.0.0/218ec52e09a7e7462a5400043bb9a69a41d06b76 (last modified on Sat Sep 12 09:14:20 2026).
+2026-09-12:09:31:37 WARNING  [datasets.packaged_modules.cache.cache:95] Found the latest cached dataset configuration 'default' at /ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/datasets/hellaswag/default/0.0.0/218ec52e09a7e7462a5400043bb9a69a41d06b76 (last modified on Sat Sep 12 09:14:20 2026).
+Map:   0%|          | 0/39905 [00:00<?, ? examples/s]Map:   3%|▎         | 1000/39905 [00:00<00:17, 2238.54 examples/s]Map:   5%|▌         | 2131/39905 [00:00<00:08, 4435.84 examples/s]Map:   8%|▊         | 3281/39905 [00:00<00:05, 6248.99 examples/s]Map:  11%|█         | 4426/39905 [00:00<00:04, 7643.54 examples/s]Map:  14%|█▍        | 5660/39905 [00:00<00:03, 8782.66 examples/s]Map:  17%|█▋        | 6849/39905 [00:01<00:04, 6802.22 examples/s]Map:  20%|██        | 7985/39905 [00:01<00:04, 7803.27 examples/s]Map:  23%|██▎       | 9000/39905 [00:01<00:03, 8221.20 examples/s]Map:  25%|██▌       | 10117/39905 [00:01<00:03, 8959.86 examples/s]Map:  28%|██▊       | 11251/39905 [00:01<00:02, 9587.17 examples/s]Map:  31%|███       | 12383/39905 [00:01<00:02, 10059.29 examples/s]Map:  34%|███▍      | 13659/39905 [00:01<00:02, 10454.27 examples/s]Map:  37%|███▋      | 14761/39905 [00:01<00:02, 10608.56 examples/s]Map:  41%|████      | 16165/39905 [00:01<00:02, 10138.52 examples/s]Map:  45%|████▍     | 17791/39905 [00:02<00:02, 10381.64 examples/s]Map:  48%|████▊     | 19171/39905 [00:02<00:02, 9987.01 examples/s] Map:  52%|█████▏    | 20596/39905 [00:02<00:02, 8580.86 examples/s]Map:  54%|█████▍    | 21588/39905 [00:02<00:02, 8728.99 examples/s]Map:  57%|█████▋    | 22580/39905 [00:02<00:01, 8991.70 examples/s]Map:  59%|█████▉    | 23598/39905 [00:02<00:01, 9262.55 examples/s]Map:  62%|██████▏   | 24614/39905 [00:02<00:01, 9491.05 examples/s]Map:  64%|██████▍   | 25624/39905 [00:03<00:01, 9653.46 examples/s]Map:  67%|██████▋   | 26635/39905 [00:03<00:01, 9778.19 examples/s]Map:  69%|██████▉   | 27635/39905 [00:03<00:01, 9839.80 examples/s]Map:  72%|███████▏  | 28641/39905 [00:03<00:01, 9902.73 examples/s]Map:  74%|███████▍  | 29652/39905 [00:03<00:01, 9961.73 examples/s]Map:  78%|███████▊  | 31047/39905 [00:03<00:00, 9704.98 examples/s]Map:  80%|████████  | 32053/39905 [00:03<00:00, 9799.56 examples/s]Map:  83%|████████▎ | 33068/39905 [00:03<00:00, 9895.58 examples/s]Map:  87%|████████▋ | 34554/39905 [00:03<00:00, 7949.47 examples/s]Map:  89%|████████▉ | 35595/39905 [00:04<00:00, 8422.81 examples/s]Map:  92%|█████████▏| 36609/39905 [00:04<00:00, 8814.15 examples/s]Map:  94%|█████████▍| 37616/39905 [00:04<00:00, 9131.95 examples/s]Map:  97%|█████████▋| 38618/39905 [00:04<00:00, 9367.21 examples/s]Map:  99%|█████████▉| 39611/39905 [00:04<00:00, 9505.27 examples/s]Map: 100%|██████████| 39905/39905 [00:04<00:00, 8548.58 examples/s]
+Map:   0%|          | 0/10042 [00:00<?, ? examples/s]Map:  10%|▉         | 1000/10042 [00:00<00:00, 9653.26 examples/s]Map:  21%|██        | 2127/10042 [00:00<00:00, 10587.43 examples/s]Map:  32%|███▏      | 3252/10042 [00:00<00:00, 10884.16 examples/s]Map:  49%|████▊     | 4871/10042 [00:00<00:00, 10833.06 examples/s]Map:  63%|██████▎   | 6287/10042 [00:00<00:00, 10254.75 examples/s]Map:  79%|███████▉  | 7927/10042 [00:00<00:00, 10503.80 examples/s]Map:  93%|█████████▎| 9347/10042 [00:00<00:00, 10141.22 examples/s]Map: 100%|██████████| 10042/10042 [00:01<00:00, 8130.77 examples/s]
+Using the latest cached version of the dataset since openbookqa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+2026-09-12:09:31:47 WARNING  [datasets.load:1645] Using the latest cached version of the dataset since openbookqa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'main' at /ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/datasets/openbookqa/main/0.0.0/388097ea7776314e93a529163e0fea805b8a6454 (last modified on Sat Sep 12 09:15:51 2026).
+2026-09-12:09:31:47 WARNING  [datasets.packaged_modules.cache.cache:95] Found the latest cached dataset configuration 'main' at /ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/datasets/openbookqa/main/0.0.0/388097ea7776314e93a529163e0fea805b8a6454 (last modified on Sat Sep 12 09:15:51 2026).
+Using the latest cached version of the dataset since baber/piqa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+2026-09-12:09:31:47 WARNING  [datasets.load:1645] Using the latest cached version of the dataset since baber/piqa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/datasets/baber___piqa/default/0.0.0/142f6d7367fd9877f0fb3b5734ea6a545f54cdd1 (last modified on Sat Sep 12 09:14:27 2026).
+2026-09-12:09:31:47 WARNING  [datasets.packaged_modules.cache.cache:95] Found the latest cached dataset configuration 'default' at /ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/datasets/baber___piqa/default/0.0.0/142f6d7367fd9877f0fb3b5734ea6a545f54cdd1 (last modified on Sat Sep 12 09:14:27 2026).
+Using the latest cached version of the dataset since winogrande couldn't be found on the Hugging Face Hub (offline mode is enabled).
+2026-09-12:09:31:47 WARNING  [datasets.load:1645] Using the latest cached version of the dataset since winogrande couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'winogrande_xl' at /ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/datasets/winogrande/winogrande_xl/0.0.0/01e74176c63542e6b0bcb004dcdea22d94fb67b5 (last modified on Sat Sep 12 09:15:37 2026).
+2026-09-12:09:31:47 WARNING  [datasets.packaged_modules.cache.cache:95] Found the latest cached dataset configuration 'winogrande_xl' at /ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/datasets/winogrande/winogrande_xl/0.0.0/01e74176c63542e6b0bcb004dcdea22d94fb67b5 (last modified on Sat Sep 12 09:15:37 2026).
+2026-09-12:09:31:49 WARNING  [evaluator:309] Overwriting default num_fewshot of winogrande from None to 0
+2026-09-12:09:31:49 WARNING  [evaluator:309] Overwriting default num_fewshot of piqa from None to 0
+2026-09-12:09:31:49 WARNING  [evaluator:309] Overwriting default num_fewshot of openbookqa from None to 0
+2026-09-12:09:31:49 WARNING  [evaluator:309] Overwriting default num_fewshot of hellaswag from None to 0
+2026-09-12:09:31:49 WARNING  [evaluator:309] Overwriting default num_fewshot of boolq from None to 0
+2026-09-12:09:31:49 WARNING  [evaluator:309] Overwriting default num_fewshot of arc_easy from None to 0
+2026-09-12:09:31:49 WARNING  [evaluator:309] Overwriting default num_fewshot of arc_challenge from None to 0
+2026-09-12:09:31:49 INFO     [api.task:434] Building contexts for winogrande on rank 0...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 24528.09it/s]
+2026-09-12:09:31:49 INFO     [api.task:434] Building contexts for piqa on rank 0...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 1090.00it/s]
+2026-09-12:09:31:49 INFO     [api.task:434] Building contexts for openbookqa on rank 0...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 2325.65it/s]
+2026-09-12:09:31:49 INFO     [api.task:434] Building contexts for hellaswag on rank 0...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 2573.19it/s]
+2026-09-12:09:31:49 INFO     [api.task:434] Building contexts for boolq on rank 0...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 2132.88it/s]
+2026-09-12:09:31:49 INFO     [api.task:434] Building contexts for arc_easy on rank 0...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 1346.27it/s]
+2026-09-12:09:31:49 INFO     [api.task:434] Building contexts for arc_challenge on rank 0...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 1349.74it/s]
+2026-09-12:09:31:49 INFO     [evaluator:559] Running loglikelihood requests
+Running loglikelihood requests:   0%|          | 0/44 [00:00<?, ?it/s]Running loglikelihood requests:   2%|▏         | 1/44 [00:00<00:40,  1.05it/s]Running loglikelihood requests:  55%|█████▍    | 24/44 [00:01<00:00, 30.96it/s]Running loglikelihood requests: 100%|██████████| 44/44 [00:01<00:00, 38.41it/s]
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-09-12:09:31:52 INFO     [loggers.evaluation_tracker:209] Saving results aggregated
+2026-09-12:09:31:52 INFO     [loggers.evaluation_tracker:298] Saving per-sample results for: arc_challenge
+2026-09-12:09:31:52 INFO     [loggers.evaluation_tracker:298] Saving per-sample results for: arc_easy
+2026-09-12:09:31:52 INFO     [loggers.evaluation_tracker:298] Saving per-sample results for: boolq
+2026-09-12:09:31:52 INFO     [loggers.evaluation_tracker:298] Saving per-sample results for: hellaswag
+2026-09-12:09:31:52 INFO     [loggers.evaluation_tracker:298] Saving per-sample results for: openbookqa
+2026-09-12:09:31:52 INFO     [loggers.evaluation_tracker:298] Saving per-sample results for: piqa
+2026-09-12:09:31:52 INFO     [loggers.evaluation_tracker:298] Saving per-sample results for: winogrande
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/lm_eval/__main__.py", line 530, in <module>
+    cli_evaluate()
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/lm_eval/__main__.py", line 520, in cli_evaluate
+    print(make_table(results))
+          ^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/lm_eval/utils.py", line 355, in make_table
+    from pytablewriter import LatexTableWriter, MarkdownTableWriter
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/pytablewriter/__init__.py", line 8, in <module>
+    from ._factory import TableWriterFactory
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/pytablewriter/_factory.py", line 12, in <module>
+    from ._table_format import FormatAttr, TableFormat
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/pytablewriter/_table_format.py", line 9, in <module>
+    from .writer import (
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/pytablewriter/writer/__init__.py", line 33, in <module>
+    from .text.sourcecode import (
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/pytablewriter/writer/text/sourcecode/__init__.py", line 1, in <module>
+    from ._javascript import JavaScriptTableWriter
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/pytablewriter/writer/text/sourcecode/_javascript.py", line 23, in <module>
+    class JavaScriptTableWriter(SourceCodeTableWriter):
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/pytablewriter/writer/text/sourcecode/_javascript.py", line 63, in JavaScriptTableWriter
+    __NONE_VALUE_DP: Final = DataProperty("null")
+                             ^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/dataproperty/_dataproperty.py", line 93, in __init__
+    self.__set_data(data, type_hint, float_type, strict_level_map)
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/dataproperty/_dataproperty.py", line 354, in __set_data
+    if self.__try_convert_type(data, type_class, strict_level, float_type):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/dataproperty/_dataproperty.py", line 376, in __try_convert_type
+    self.__data = type_obj.convert()
+                  ^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/typepy/type/_base.py", line 113, in convert
+    if self.is_type():
+       ^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/typepy/type/_base.py", line 71, in is_type
+    self.__is_type_result = self.__is_type()
+                            ^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/typepy/type/_base.py", line 83, in __is_type
+    self._converted_value = self.__converter.force_convert()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/typepy/converter/_string.py", line 20, in force_convert
+    return super().force_convert()
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/typepy/converter/_string.py", line 13, in force_convert
+    return MultiByteStrDecoder(self._value).unicode_str
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/mbstrdecoder/_mbstrdecoder.py", line 151, in __init__
+    self.__unicode_str = self.__to_unicode()
+                         ^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/mbstrdecoder/_mbstrdecoder.py", line 229, in __to_unicode
+    for codec in self.__get_codec_candidate_list(encoded_str):
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/mbstrdecoder/_mbstrdecoder.py", line 204, in __get_codec_candidate_list
+    detect_encoding = self.__detect_encoding_helper(encoded_str)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/mbstrdecoder/_mbstrdecoder.py", line 186, in __detect_encoding_helper
+    import chardet
+ModuleNotFoundError: No module named 'chardet'

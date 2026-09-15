@@ -1,0 +1,1 @@
+{"accumulation": 16, "global_prediction_tokens_per_step": 2097152, "gpus": 16, "maximum_mfu": 0.5589144496325249, "median_mfu": 0.5574425708758708, "median_tokens_per_second": 468310.57308466744, "microbatch": 4, "minimum_mfu": 0.5286628461552305, "nodes": 4, "samples": 10, "status": "PASS_MFU_STRICTLY_GREATER_THAN_0.50", "unix": 1789183056.5021188}

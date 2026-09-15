@@ -1,0 +1,549 @@
+{
+  "checked_utc": "2026-09-13T20:27:52.242445+00:00",
+  "status": "PASS_REAL_SINGLE_TRANCHE_REGRESSION",
+  "differences": [],
+  "report": {
+    "status": "COMBINED_RAW_INTAKE_MEASURED_NOT_ADMITTED",
+    "training_admitted": false,
+    "checked_utc": "2026-09-13T20:27:14.412110+00:00",
+    "tokenizer_sha256": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+    "quota_plan_sha256": "a739b245be96eb708d1e2039a91723652c906582b3241f772768d92615e754d2",
+    "physical_group_disjointness": "PASS",
+    "input_hashes_stable": "PASS",
+    "tranches": [
+      {
+        "index": 0,
+        "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1",
+        "rows": 47078,
+        "sources": 16,
+        "summary_sha256": "fe132378a3cc2848d3a6e9144d3c85fa51c7b33b59343170bd700b8849471a2b"
+      }
+    ],
+    "input_bindings": {
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/intake-summary.json": "fe132378a3cc2848d3a6e9144d3c85fa51c7b33b59343170bd700b8849471a2b",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/code_cpp.receipt.json": "e076c16f871ed2a4bc3483a55beb278a3309d80174a052daf99ebd344a7d7f51",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/code_cpp.jsonl.gz": "c153a2833cc94fba70b4e3679d721e8d9ec3df89840488a33fc4601989fa672f",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/code_java.receipt.json": "3a5fea42d962257aa9cf600daa9ebc40376c7b8fa240cc5e74eff5e818b22fe9",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/code_java.jsonl.gz": "e1b0656984646f658e781db3f00885e75131518b7472e8f3a8ff2f95ce900060",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/code_javascript.receipt.json": "278c0944c89ae87daebb31b9443d6ac45b1c7579521df8e0c7f98a68f3499857",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/code_javascript.jsonl.gz": "78103d75272d2a493287f84aa9f372449889778acc128e986bc362cc2e8da382",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/code_python.receipt.json": "e45de9f12ff828233c486d1f7a5811545e001a10e6fae7042b80ec52ec0797c6",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/code_python.jsonl.gz": "0fa98345a6d907173d03e2dce6376c7dd7919c339c60d76a1ba1ae4172456cdd",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/code_typescript.receipt.json": "aeec6fa268fea51128c25afa9376786dce0600e9fd746a505d52341490e7f09f",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/code_typescript.jsonl.gz": "d6e47424abe2b8bf1e70ab8f3f96ab73219895d30269c49e1aa6791ec386f83b",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/cosmopedia2.receipt.json": "d27335ea7565672bb0dff662d6afa14e53b48a057aa27afe93e171107aeb6297",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/cosmopedia2.jsonl.gz": "8f8a80a9a24fa2e4281ad830928de90916570798bd9ff66440a42c6c43065397",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/dclm.receipt.json": "d9bed0b3690e7c589a4fa55748f8db8b47780dde903a2faa0f23f2511d52e0e2",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/dclm.jsonl.gz": "fa08ad0dba01cd63be202ac658135fa8c4ac1f7326ff19268353ba90ebf4c435",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/finemath4.receipt.json": "5628fcdac75dbe3866456d0671047227bf11f80b997c0b2b402f14bbfc80daa8",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/finemath4.jsonl.gz": "fa2cfc741cd270e742906289eb4da9cb64bc641dedebe78e0c2c51635ab8ddad",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/infiwebmath4.receipt.json": "8ea4129cb6446a0afcf4caa225b60364787fbb626ac2f67039c29cf623cab563",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/infiwebmath4.jsonl.gz": "d36cea89a7123bcf2e5f193bb1c31a6bf8b67dfa3fa9255da9f82d90621b5ba2",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/multilingual_arb_Arab.receipt.json": "85895e3434caab4c7d82857cd25abf19e5a54781871c01c4b76dde4348e9c196",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/multilingual_arb_Arab.jsonl.gz": "0b9732a70a53f06bd1b0086bba492784b6c5d767896a5b7c60f7768632d0607b",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/multilingual_cmn_Hani.receipt.json": "cb0b5dc23233db7c31502836df13093c63adce98b9edcc368c2224d17755028d",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/multilingual_cmn_Hani.jsonl.gz": "f99c586e7630f5a5edc04ff693d2b6ad2ac02beba9611e6955f468510233c638",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/multilingual_deu_Latn.receipt.json": "957eb209b6df2f26e3a2b4e4e6020e2bceda249cf7f0f612e85b9387c1c91444",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/multilingual_deu_Latn.jsonl.gz": "9ccc669f268f78cce0a79158a51b0df3ab2a958498f16b79ef2a8c502731816b",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/multilingual_fra_Latn.receipt.json": "4819d6c005e282f895a4762b2065add6e4eee626bfa718be2ca1254640084e70",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/multilingual_fra_Latn.jsonl.gz": "6e96d355f2d53451a0f08cbcfa64e25cd0f6795141ab1c3f577d8c09b97f82b0",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/multilingual_jpn_Jpan.receipt.json": "77f1eb4e46f0f2d32f2320f12d6e0dac367966cc744e094b1bd265080bf6f751",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/multilingual_jpn_Jpan.jsonl.gz": "4e49a02dc704de4efc64b3230115fd7f29d014079ea97a18fa4076a94d41f451",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/multilingual_spa_Latn.receipt.json": "4994bb9773b04907153c8ef262e1d92b72afda90856f866088a738e056af316e",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/multilingual_spa_Latn.jsonl.gz": "955fb234baaf9aabb5c9b1783a6c33df82310bd7f5bd9aa47cfedba3ff53d844",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/pdf_en.receipt.json": "ec2c7c0b14a104f8dc350b12db824421d1910a6e689f0e667cc18291914b2742",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1/pdf_en.jsonl.gz": "ee560c2e2a04192f861f3babc82cc0f18d3007e5c0f85bd2343b4c301daec55c",
+      "/ssd/scxi253/pretrain500m-20260912-v1/formal/hf-v5/tokenizer.json": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+      "/ssd/scxi253/pretrain500m-20260912-v1/source/raw-audit-v2/subsource-quotas-v1.json": "a739b245be96eb708d1e2039a91723652c906582b3241f772768d92615e754d2"
+    },
+    "files": [
+      {
+        "source_id": "code_cpp",
+        "tranche": 0,
+        "rows": 548,
+        "raw_file_sha256": "c153a2833cc94fba70b4e3679d721e8d9ec3df89840488a33fc4601989fa672f"
+      },
+      {
+        "source_id": "code_java",
+        "tranche": 0,
+        "rows": 134,
+        "raw_file_sha256": "e1b0656984646f658e781db3f00885e75131518b7472e8f3a8ff2f95ce900060"
+      },
+      {
+        "source_id": "code_javascript",
+        "tranche": 0,
+        "rows": 720,
+        "raw_file_sha256": "78103d75272d2a493287f84aa9f372449889778acc128e986bc362cc2e8da382"
+      },
+      {
+        "source_id": "code_python",
+        "tranche": 0,
+        "rows": 629,
+        "raw_file_sha256": "0fa98345a6d907173d03e2dce6376c7dd7919c339c60d76a1ba1ae4172456cdd"
+      },
+      {
+        "source_id": "code_typescript",
+        "tranche": 0,
+        "rows": 1464,
+        "raw_file_sha256": "d6e47424abe2b8bf1e70ab8f3f96ab73219895d30269c49e1aa6791ec386f83b"
+      },
+      {
+        "source_id": "cosmopedia2",
+        "tranche": 0,
+        "rows": 4000,
+        "raw_file_sha256": "8f8a80a9a24fa2e4281ad830928de90916570798bd9ff66440a42c6c43065397"
+      },
+      {
+        "source_id": "dclm",
+        "tranche": 0,
+        "rows": 4000,
+        "raw_file_sha256": "fa08ad0dba01cd63be202ac658135fa8c4ac1f7326ff19268353ba90ebf4c435"
+      },
+      {
+        "source_id": "finemath4",
+        "tranche": 0,
+        "rows": 4000,
+        "raw_file_sha256": "fa2cfc741cd270e742906289eb4da9cb64bc641dedebe78e0c2c51635ab8ddad"
+      },
+      {
+        "source_id": "infiwebmath4",
+        "tranche": 0,
+        "rows": 4000,
+        "raw_file_sha256": "d36cea89a7123bcf2e5f193bb1c31a6bf8b67dfa3fa9255da9f82d90621b5ba2"
+      },
+      {
+        "source_id": "multilingual_arb_Arab",
+        "tranche": 0,
+        "rows": 3583,
+        "raw_file_sha256": "0b9732a70a53f06bd1b0086bba492784b6c5d767896a5b7c60f7768632d0607b"
+      },
+      {
+        "source_id": "multilingual_cmn_Hani",
+        "tranche": 0,
+        "rows": 4000,
+        "raw_file_sha256": "f99c586e7630f5a5edc04ff693d2b6ad2ac02beba9611e6955f468510233c638"
+      },
+      {
+        "source_id": "multilingual_deu_Latn",
+        "tranche": 0,
+        "rows": 4000,
+        "raw_file_sha256": "9ccc669f268f78cce0a79158a51b0df3ab2a958498f16b79ef2a8c502731816b"
+      },
+      {
+        "source_id": "multilingual_fra_Latn",
+        "tranche": 0,
+        "rows": 4000,
+        "raw_file_sha256": "6e96d355f2d53451a0f08cbcfa64e25cd0f6795141ab1c3f577d8c09b97f82b0"
+      },
+      {
+        "source_id": "multilingual_jpn_Jpan",
+        "tranche": 0,
+        "rows": 4000,
+        "raw_file_sha256": "4e49a02dc704de4efc64b3230115fd7f29d014079ea97a18fa4076a94d41f451"
+      },
+      {
+        "source_id": "multilingual_spa_Latn",
+        "tranche": 0,
+        "rows": 4000,
+        "raw_file_sha256": "955fb234baaf9aabb5c9b1783a6c33df82310bd7f5bd9aa47cfedba3ff53d844"
+      },
+      {
+        "source_id": "pdf_en",
+        "tranche": 0,
+        "rows": 4000,
+        "raw_file_sha256": "ee560c2e2a04192f861f3babc82cc0f18d3007e5c0f85bd2343b4c301daec55c"
+      }
+    ],
+    "sources": {
+      "code_cpp": {
+        "rows": 548,
+        "encoded_tokens_including_one_eos": 698785,
+        "source_unique_encoded_tokens_including_one_eos": 698785,
+        "globally_unique_documents_assigned": 548,
+        "globally_unique_encoded_tokens_including_one_eos_assigned": 698785,
+        "byte_identical_unique_documents": 548,
+        "provisional_family_candidates": 544,
+        "family_status": {
+          "repository_aliases_unresolved": 548
+        },
+        "token_length_histogram": {
+          "128_to_2048": 456,
+          "2049_to_8192": 67,
+          "lt128": 14,
+          "8193_to_32768": 11
+        },
+        "packed_prediction_tokens_upper_bound_before_filtering": 698368,
+        "globally_deduplicated_assigned_prediction_tokens_upper_bound": 698368,
+        "min_unique_prediction_tokens_for_largest_single_screen_at_two_epochs": 4026368,
+        "shortage_lower_bound_before_validation_and_quality_filters": 3328000
+      },
+      "code_java": {
+        "rows": 134,
+        "encoded_tokens_including_one_eos": 96037,
+        "source_unique_encoded_tokens_including_one_eos": 96037,
+        "globally_unique_documents_assigned": 134,
+        "globally_unique_encoded_tokens_including_one_eos_assigned": 96037,
+        "byte_identical_unique_documents": 134,
+        "provisional_family_candidates": 134,
+        "family_status": {
+          "repository_aliases_unresolved": 134
+        },
+        "token_length_histogram": {
+          "128_to_2048": 124,
+          "2049_to_8192": 6,
+          "lt128": 4
+        },
+        "packed_prediction_tokens_upper_bound_before_filtering": 94208,
+        "globally_deduplicated_assigned_prediction_tokens_upper_bound": 94208,
+        "min_unique_prediction_tokens_for_largest_single_screen_at_two_epochs": 4026368,
+        "shortage_lower_bound_before_validation_and_quality_filters": 3932160
+      },
+      "code_javascript": {
+        "rows": 720,
+        "encoded_tokens_including_one_eos": 772370,
+        "source_unique_encoded_tokens_including_one_eos": 772370,
+        "globally_unique_documents_assigned": 720,
+        "globally_unique_encoded_tokens_including_one_eos_assigned": 772370,
+        "byte_identical_unique_documents": 720,
+        "provisional_family_candidates": 719,
+        "family_status": {
+          "repository_aliases_unresolved": 720
+        },
+        "token_length_histogram": {
+          "128_to_2048": 619,
+          "2049_to_8192": 56,
+          "lt128": 37,
+          "8193_to_32768": 8
+        },
+        "packed_prediction_tokens_upper_bound_before_filtering": 770048,
+        "globally_deduplicated_assigned_prediction_tokens_upper_bound": 770048,
+        "min_unique_prediction_tokens_for_largest_single_screen_at_two_epochs": 8053760,
+        "shortage_lower_bound_before_validation_and_quality_filters": 7283712
+      },
+      "code_python": {
+        "rows": 629,
+        "encoded_tokens_including_one_eos": 748879,
+        "source_unique_encoded_tokens_including_one_eos": 748879,
+        "globally_unique_documents_assigned": 629,
+        "globally_unique_encoded_tokens_including_one_eos_assigned": 748879,
+        "byte_identical_unique_documents": 629,
+        "provisional_family_candidates": 625,
+        "family_status": {
+          "repository_aliases_unresolved": 629
+        },
+        "token_length_histogram": {
+          "128_to_2048": 493,
+          "2049_to_8192": 86,
+          "lt128": 45,
+          "8193_to_32768": 4,
+          "gt32768": 1
+        },
+        "packed_prediction_tokens_upper_bound_before_filtering": 747520,
+        "globally_deduplicated_assigned_prediction_tokens_upper_bound": 747520,
+        "min_unique_prediction_tokens_for_largest_single_screen_at_two_epochs": 20132864,
+        "shortage_lower_bound_before_validation_and_quality_filters": 19385344
+      },
+      "code_typescript": {
+        "rows": 1464,
+        "encoded_tokens_including_one_eos": 1209812,
+        "source_unique_encoded_tokens_including_one_eos": 1209812,
+        "globally_unique_documents_assigned": 1464,
+        "globally_unique_encoded_tokens_including_one_eos_assigned": 1209812,
+        "byte_identical_unique_documents": 1464,
+        "provisional_family_candidates": 1423,
+        "family_status": {
+          "repository_aliases_unresolved": 1464
+        },
+        "token_length_histogram": {
+          "128_to_2048": 1228,
+          "2049_to_8192": 114,
+          "lt128": 113,
+          "8193_to_32768": 9
+        },
+        "packed_prediction_tokens_upper_bound_before_filtering": 1208320,
+        "globally_deduplicated_assigned_prediction_tokens_upper_bound": 1208320,
+        "min_unique_prediction_tokens_for_largest_single_screen_at_two_epochs": 4026368,
+        "shortage_lower_bound_before_validation_and_quality_filters": 2818048
+      },
+      "cosmopedia2": {
+        "rows": 4000,
+        "encoded_tokens_including_one_eos": 2960875,
+        "source_unique_encoded_tokens_including_one_eos": 2960875,
+        "globally_unique_documents_assigned": 4000,
+        "globally_unique_encoded_tokens_including_one_eos_assigned": 2960875,
+        "missing_family_rows": 4000,
+        "byte_identical_unique_documents": 4000,
+        "provisional_family_candidates": 0,
+        "family_status": {
+          "seed_source_label_is_not_parent_document_identity": 4000
+        },
+        "token_length_histogram": {
+          "128_to_2048": 3992,
+          "lt128": 8
+        },
+        "packed_prediction_tokens_upper_bound_before_filtering": 2959360,
+        "globally_deduplicated_assigned_prediction_tokens_upper_bound": 2959360,
+        "min_unique_prediction_tokens_for_largest_single_screen_at_two_epochs": 13421568,
+        "shortage_lower_bound_before_validation_and_quality_filters": 10462208
+      },
+      "dclm": {
+        "rows": 4000,
+        "encoded_tokens_including_one_eos": 5058752,
+        "source_unique_encoded_tokens_including_one_eos": 5058288,
+        "globally_unique_documents_assigned": 3999,
+        "globally_unique_encoded_tokens_including_one_eos_assigned": 5058288,
+        "within_source_byte_identical_duplicates_across_all_tranches": 1,
+        "byte_identical_unique_documents": 3999,
+        "provisional_family_candidates": 3761,
+        "family_status": {
+          "host_only_registrable_domain_and_aliases_unresolved": 4000
+        },
+        "token_length_histogram": {
+          "128_to_2048": 3215,
+          "lt128": 249,
+          "2049_to_8192": 473,
+          "8193_to_32768": 58,
+          "gt32768": 5
+        },
+        "packed_prediction_tokens_upper_bound_before_filtering": 5054464,
+        "globally_deduplicated_assigned_prediction_tokens_upper_bound": 5054464,
+        "min_unique_prediction_tokens_for_largest_single_screen_at_two_epochs": 53687296,
+        "shortage_lower_bound_before_validation_and_quality_filters": 48632832
+      },
+      "finemath4": {
+        "rows": 4000,
+        "encoded_tokens_including_one_eos": 6323057,
+        "source_unique_encoded_tokens_including_one_eos": 6323057,
+        "globally_unique_documents_assigned": 4000,
+        "globally_unique_encoded_tokens_including_one_eos_assigned": 6323057,
+        "missing_family_rows": 60,
+        "byte_identical_unique_documents": 4000,
+        "provisional_family_candidates": 1695,
+        "family_status": {
+          "host_only_registrable_domain_and_aliases_unresolved": 3940,
+          "missing_url_host": 60
+        },
+        "token_length_histogram": {
+          "128_to_2048": 3307,
+          "lt128": 66,
+          "2049_to_8192": 549,
+          "8193_to_32768": 68,
+          "gt32768": 10
+        },
+        "packed_prediction_tokens_upper_bound_before_filtering": 6318080,
+        "globally_deduplicated_assigned_prediction_tokens_upper_bound": 6318080,
+        "min_unique_prediction_tokens_for_largest_single_screen_at_two_epochs": 40265728,
+        "shortage_lower_bound_before_validation_and_quality_filters": 33947648
+      },
+      "infiwebmath4": {
+        "rows": 4000,
+        "encoded_tokens_including_one_eos": 5567856,
+        "source_unique_encoded_tokens_including_one_eos": 5567226,
+        "globally_unique_documents_assigned": 3998,
+        "globally_unique_encoded_tokens_including_one_eos_assigned": 5567226,
+        "within_source_byte_identical_duplicates_across_all_tranches": 2,
+        "byte_identical_unique_documents": 3998,
+        "provisional_family_candidates": 1903,
+        "family_status": {
+          "host_only_registrable_domain_and_aliases_unresolved": 4000
+        },
+        "token_length_histogram": {
+          "128_to_2048": 3306,
+          "2049_to_8192": 577,
+          "8193_to_32768": 62,
+          "lt128": 53,
+          "gt32768": 2
+        },
+        "packed_prediction_tokens_upper_bound_before_filtering": 5564416,
+        "globally_deduplicated_assigned_prediction_tokens_upper_bound": 5564416,
+        "min_unique_prediction_tokens_for_largest_single_screen_at_two_epochs": 13421568,
+        "shortage_lower_bound_before_validation_and_quality_filters": 7857152
+      },
+      "multilingual_arb_Arab": {
+        "rows": 3583,
+        "encoded_tokens_including_one_eos": 9111455,
+        "source_unique_encoded_tokens_including_one_eos": 9111455,
+        "globally_unique_documents_assigned": 3583,
+        "globally_unique_encoded_tokens_including_one_eos_assigned": 9111455,
+        "byte_identical_unique_documents": 3583,
+        "provisional_family_candidates": 2407,
+        "family_status": {
+          "host_only_registrable_domain_and_aliases_unresolved": 3583
+        },
+        "token_length_histogram": {
+          "128_to_2048": 2609,
+          "2049_to_8192": 818,
+          "8193_to_32768": 136,
+          "gt32768": 20
+        },
+        "packed_prediction_tokens_upper_bound_before_filtering": 9105408,
+        "globally_deduplicated_assigned_prediction_tokens_upper_bound": 9105408,
+        "min_unique_prediction_tokens_for_largest_single_screen_at_two_epochs": 2684928,
+        "shortage_lower_bound_before_validation_and_quality_filters": 0
+      },
+      "multilingual_cmn_Hani": {
+        "rows": 4000,
+        "encoded_tokens_including_one_eos": 6153800,
+        "source_unique_encoded_tokens_including_one_eos": 6153800,
+        "globally_unique_documents_assigned": 4000,
+        "globally_unique_encoded_tokens_including_one_eos_assigned": 6153800,
+        "byte_identical_unique_documents": 4000,
+        "provisional_family_candidates": 3522,
+        "family_status": {
+          "host_only_registrable_domain_and_aliases_unresolved": 4000
+        },
+        "token_length_histogram": {
+          "2049_to_8192": 723,
+          "128_to_2048": 3212,
+          "8193_to_32768": 57,
+          "lt128": 4,
+          "gt32768": 4
+        },
+        "packed_prediction_tokens_upper_bound_before_filtering": 6150144,
+        "globally_deduplicated_assigned_prediction_tokens_upper_bound": 6150144,
+        "min_unique_prediction_tokens_for_largest_single_screen_at_two_epochs": 13421568,
+        "shortage_lower_bound_before_validation_and_quality_filters": 7271424
+      },
+      "multilingual_deu_Latn": {
+        "rows": 4000,
+        "encoded_tokens_including_one_eos": 5959319,
+        "source_unique_encoded_tokens_including_one_eos": 5959319,
+        "globally_unique_documents_assigned": 4000,
+        "globally_unique_encoded_tokens_including_one_eos_assigned": 5959319,
+        "byte_identical_unique_documents": 4000,
+        "provisional_family_candidates": 3177,
+        "family_status": {
+          "host_only_registrable_domain_and_aliases_unresolved": 4000
+        },
+        "token_length_histogram": {
+          "128_to_2048": 3158,
+          "2049_to_8192": 598,
+          "8193_to_32768": 87,
+          "lt128": 150,
+          "gt32768": 7
+        },
+        "packed_prediction_tokens_upper_bound_before_filtering": 5955584,
+        "globally_deduplicated_assigned_prediction_tokens_upper_bound": 5955584,
+        "min_unique_prediction_tokens_for_largest_single_screen_at_two_epochs": 2684928,
+        "shortage_lower_bound_before_validation_and_quality_filters": 0
+      },
+      "multilingual_fra_Latn": {
+        "rows": 4000,
+        "encoded_tokens_including_one_eos": 5082856,
+        "source_unique_encoded_tokens_including_one_eos": 5082856,
+        "globally_unique_documents_assigned": 4000,
+        "globally_unique_encoded_tokens_including_one_eos_assigned": 5082856,
+        "byte_identical_unique_documents": 4000,
+        "provisional_family_candidates": 2947,
+        "family_status": {
+          "host_only_registrable_domain_and_aliases_unresolved": 4000
+        },
+        "token_length_histogram": {
+          "128_to_2048": 3093,
+          "lt128": 385,
+          "8193_to_32768": 90,
+          "2049_to_8192": 427,
+          "gt32768": 5
+        },
+        "packed_prediction_tokens_upper_bound_before_filtering": 5079040,
+        "globally_deduplicated_assigned_prediction_tokens_upper_bound": 5079040,
+        "min_unique_prediction_tokens_for_largest_single_screen_at_two_epochs": 2683904,
+        "shortage_lower_bound_before_validation_and_quality_filters": 0
+      },
+      "multilingual_jpn_Jpan": {
+        "rows": 4000,
+        "encoded_tokens_including_one_eos": 4681767,
+        "source_unique_encoded_tokens_including_one_eos": 4681767,
+        "globally_unique_documents_assigned": 4000,
+        "globally_unique_encoded_tokens_including_one_eos_assigned": 4681767,
+        "byte_identical_unique_documents": 4000,
+        "provisional_family_candidates": 3154,
+        "family_status": {
+          "host_only_registrable_domain_and_aliases_unresolved": 4000
+        },
+        "token_length_histogram": {
+          "128_to_2048": 3386,
+          "2049_to_8192": 503,
+          "lt128": 68,
+          "8193_to_32768": 38,
+          "gt32768": 5
+        },
+        "packed_prediction_tokens_upper_bound_before_filtering": 4677632,
+        "globally_deduplicated_assigned_prediction_tokens_upper_bound": 4677632,
+        "min_unique_prediction_tokens_for_largest_single_screen_at_two_epochs": 2683904,
+        "shortage_lower_bound_before_validation_and_quality_filters": 0
+      },
+      "multilingual_spa_Latn": {
+        "rows": 4000,
+        "encoded_tokens_including_one_eos": 3891983,
+        "source_unique_encoded_tokens_including_one_eos": 3891983,
+        "globally_unique_documents_assigned": 4000,
+        "globally_unique_encoded_tokens_including_one_eos_assigned": 3891983,
+        "byte_identical_unique_documents": 4000,
+        "provisional_family_candidates": 2973,
+        "family_status": {
+          "host_only_registrable_domain_and_aliases_unresolved": 4000
+        },
+        "token_length_histogram": {
+          "128_to_2048": 3189,
+          "2049_to_8192": 332,
+          "lt128": 441,
+          "8193_to_32768": 32,
+          "gt32768": 6
+        },
+        "packed_prediction_tokens_upper_bound_before_filtering": 3889152,
+        "globally_deduplicated_assigned_prediction_tokens_upper_bound": 3889152,
+        "min_unique_prediction_tokens_for_largest_single_screen_at_two_epochs": 2683904,
+        "shortage_lower_bound_before_validation_and_quality_filters": 0
+      },
+      "pdf_en": {
+        "rows": 4000,
+        "encoded_tokens_including_one_eos": 12555088,
+        "source_unique_encoded_tokens_including_one_eos": 12555088,
+        "globally_unique_documents_assigned": 4000,
+        "globally_unique_encoded_tokens_including_one_eos_assigned": 12555088,
+        "byte_identical_unique_documents": 4000,
+        "provisional_family_candidates": 3491,
+        "family_status": {
+          "host_only_registrable_domain_and_aliases_unresolved": 4000
+        },
+        "token_length_histogram": {
+          "128_to_2048": 2473,
+          "8193_to_32768": 327,
+          "gt32768": 23,
+          "2049_to_8192": 1076,
+          "lt128": 101
+        },
+        "packed_prediction_tokens_upper_bound_before_filtering": 12548096,
+        "globally_deduplicated_assigned_prediction_tokens_upper_bound": 12548096,
+        "min_unique_prediction_tokens_for_largest_single_screen_at_two_epochs": 67108864,
+        "shortage_lower_bound_before_validation_and_quality_filters": 54560768
+      }
+    },
+    "rows": 47078,
+    "globally_byte_identical_unique_documents": 47075,
+    "byte_identical_overlap_rows": {
+      "within_file": 3
+    },
+    "normalized_nonidentical_candidates": {},
+    "row_index_sha256": "915df72b45daac8d024090396ebf52681eabc82c3deaac49e841a29335eb703b",
+    "elapsed_seconds": 145.78746485710144,
+    "limits": [
+      "Raw upper bounds include one EOS per document, before filtering and held-out reserves.",
+      "Exact global ownership is source ID then tranche input order then row; it is not quality ranking.",
+      "Families are provisional: registrable domains, repository aliases/forks and synthetic parents are unresolved.",
+      "No near-duplicate removal, old-FineWeb overlap, benchmark decontamination or quality admission is performed.",
+      "Normalized nonidentical candidates are retained; normalization may alter code and mathematics.",
+      "Two-epoch shortages cover one largest screen run, not cumulative screening and confirmation."
+    ]
+  },
+  "compared_fields": [
+    "rows",
+    "byte_identical_unique_documents",
+    "provisional_family_candidates",
+    "packed_prediction_tokens_upper_bound_before_filtering",
+    "shortage_lower_bound_before_validation_and_quality_filters"
+  ],
+  "combined_audit": false,
+  "training_admitted": false
+}

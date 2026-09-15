@@ -1,0 +1,16 @@
+{
+  "artifacts": {
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/contamination-expansion-v1/report.json": "fd861262cdf154d65c74e8a2266d42bb70aec4f126ad6107d510e8ff081b888c",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-audit-expansion-v1/report.json": "c9583d32b2ab65661bd5dfc0c49c2c4743de3f96d0267f48822b13b8244ac877",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/family-split-expansion-v1/report.json": "bc257f70123b37652057115e3bc2f0d510ef15e2e7531afd40d823392616304d",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-expansion-v1/report.json": "ccb1437ce80bbed0204c796422d9f78f53f8d11ce54013dcda1c4cfaf8cf3de5",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-expansion-v1/report.json": "2050e8c0318604b46c0cdaffde3129decae2b44cd05c5ca13ddc4657f10ee0b5",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/quality-family-expansion-v1/report.json": "4d7194517154ff424243fa2fb599eb2b83c0589a71f79e1ad7dbe38d75344ada",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-expansion-v1/report.json": "9c03634cf2ac12adf0198d63f2024f2236afb358fc904a350baf8a3f7e68b700",
+    "/ssd/scxi253/pretrain500m-20260912-v1/receipts/exclusion-union-expansion-v1.json": "23443d5eac9138662d0b5077648d22e9dc10be189657af3e206b33a31932cd76"
+  },
+  "checked_utc": "2026-09-14T06:27:27.793269+00:00",
+  "status": "EXPANSION_FILTER_AND_PACK_COMPLETE_NOT_TRAINING_ADMITTED",
+  "training_admitted": false,
+  "training_launched": false
+}

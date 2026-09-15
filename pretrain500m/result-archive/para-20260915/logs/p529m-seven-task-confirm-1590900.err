@@ -1,0 +1,6 @@
+The following values were not passed to `accelerate launch` and had defaults used instead:
+	`--num_machines` was set to a value of `1`
+	`--mixed_precision` was set to a value of `'no'`
+	`--dynamo_backend` was set to a value of `'no'`
+To avoid this warning pass in values for each of the problematic parameters or run `accelerate config`.
+slurmstepd: error: *** JOB 1590900 ON wqd10nbj03g1 CANCELLED AT 2026-09-15T05:03:03 ***

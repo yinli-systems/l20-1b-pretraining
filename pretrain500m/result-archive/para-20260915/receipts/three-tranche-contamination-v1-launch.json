@@ -1,0 +1,26 @@
+{
+  "key": "active_contamination_audit",
+  "name": "three-tranche-contamination-v1",
+  "command": [
+    "/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python",
+    "/ssd/scxi253/pretrain500m-20260912-v1/source/contamination-v1/scan.py",
+    "--input",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1",
+    "--input",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2",
+    "--input",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v3",
+    "--bundle",
+    "/ssd/scxi253/pretrain500m-20260912-v1/evaluation/benchmark-reservation-v1/data",
+    "--output",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/contamination-v1-three-tranche"
+  ],
+  "output": "/ssd/scxi253/pretrain500m-20260912-v1/data/contamination-v1-three-tranche",
+  "log": "/ssd/scxi253/pretrain500m-20260912-v1/logs/three-tranche-contamination-v1.log",
+  "overlay": "overlay-contamination-v1",
+  "pid": 2141256,
+  "status": "LAUNCHED",
+  "checked_utc": "2026-09-13T21:44:58.873193+00:00",
+  "training_admitted": false,
+  "combined_raw_rows_expected": 199407
+}

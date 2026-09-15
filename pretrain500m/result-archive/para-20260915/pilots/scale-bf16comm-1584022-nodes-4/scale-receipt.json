@@ -1,0 +1,15 @@
+{
+  "accumulation": 16,
+  "ddp_gradient_reduction": "bfloat16_compress_hook",
+  "global_prediction_tokens_per_step": 2097152,
+  "gpus": 16,
+  "maximum_mfu": 0.6550273133425556,
+  "median_mfu": 0.6387216593077283,
+  "median_tokens_per_second": 536593.5828008351,
+  "microbatch": 4,
+  "minimum_mfu": 0.6089895647046898,
+  "nodes": 4,
+  "samples": 10,
+  "status": "FAIL_MFU_NOT_GREATER_THAN_0.65",
+  "unix": 1789183718.6175907
+}

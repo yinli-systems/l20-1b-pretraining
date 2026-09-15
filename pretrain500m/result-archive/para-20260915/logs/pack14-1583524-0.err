@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/pack-v2/pack_data.py", line 461, in <module>
+    main()
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/pack-v2/pack_data.py", line 450, in main
+    _atomic_write_json(path, manifest)
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/pack-v2/pack_data.py", line 197, in _atomic_write_json
+    with temporary.open("w") as stream:
+         ^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 122] Disk quota exceeded: '/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-parts/part-00/web/manifest.json.tmp'

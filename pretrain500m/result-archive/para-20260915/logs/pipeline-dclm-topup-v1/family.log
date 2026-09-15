@@ -1,0 +1,1 @@
+{"status": "FAMILY_CLOSURE_AND_RESERVED_ASSIGNMENTS_COMPLETE_NOT_ADMITTED", "elapsed_seconds": 371.77074361406267, "rows": 741824, "selected_unique_eligible_documents": 679879, "partition_counts": {"train": 669252, "excluded": 61945, "confirmation": 5387, "development": 5240}, "lsh_candidate_pairs": 258522, "verified_near_edges": 4189, "quarantined_families": 1536}

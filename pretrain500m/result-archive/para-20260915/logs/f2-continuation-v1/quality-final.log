@@ -1,0 +1,5 @@
+Warning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.
+Warning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.
+Warning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.
+Warning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.
+{"status": "QUALITY_AND_FAMILY_FEATURES_COMPLETE_NOT_ADMITTED", "rows": 778365, "passed_rows_before_eligible_dedup_and_reserves": 716266, "elapsed_seconds": 146.1158031676896}

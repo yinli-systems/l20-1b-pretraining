@@ -1,0 +1,13 @@
+{
+  "checked_utc": "2026-09-14T00:55:49.093760+00:00",
+  "free_bytes_after_removal": 19605315584,
+  "logical_bytes_removed": 127817767,
+  "open_file_descriptors_before_removal": [],
+  "preserved_extracted_source": "/ssd/scxi253/pretrain500m-20260912-v1/source/quality-family-v1",
+  "reason": "Deployment archive was redundant after verified immutable extraction; source, dependency receipts, and test receipts remain.",
+  "schema_version": 1,
+  "sha256_before_removal": "1442fc0c86d2d74f2b2d7f73f92bbe1f5b647fc21d92199f63f263f125594fd6",
+  "status": "VERIFIED_ABSENT",
+  "target": "/ssd/scxi253/pretrain500m-20260912-v1/vendor/quality-family-v1-20260913.tar.gz",
+  "text_references_preserved": []
+}

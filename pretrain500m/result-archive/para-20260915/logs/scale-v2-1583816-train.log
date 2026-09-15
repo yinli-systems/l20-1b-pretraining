@@ -1,0 +1,121 @@
+/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python: can't open file '/data/home/scxi253/train.py': [Errno 2] No such file or directory
+/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python: can't open file '/data/home/scxi253/train.py': [Errno 2] No such file or directory
+/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python: can't open file '/data/home/scxi253/train.py': [Errno 2] No such file or directory
+/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python: can't open file '/data/home/scxi253/train.py': [Errno 2] No such file or directory
+/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python: can't open file '/data/home/scxi253/train.py': [Errno 2] No such file or directory
+/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python: can't open file '/data/home/scxi253/train.py': [Errno 2] No such file or directory
+/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python: can't open file '/data/home/scxi253/train.py': [Errno 2] No such file or directory
+/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python: can't open file '/data/home/scxi253/train.py': [Errno 2] No such file or directory
+E0912 10:09:50.123000 2924454 torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 2) local_rank: 0 (pid: 2924519) of binary: /ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 994, in <module>
+E0912 10:09:50.124000 2795607 torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 2) local_rank: 0 (pid: 2795731) of binary: /ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 994, in <module>
+    main()
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 990, in main
+    run(args)
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    main()
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 990, in main
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    run(args)
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 981, in run
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+train.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-09-12_10:09:50
+  host      : wqd10nbj01g1
+  rank      : 1 (local_rank: 1)
+  exitcode  : 2 (pid: 2924520)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-09-12_10:09:50
+  host      : wqd10nbj01g1
+  rank      : 2 (local_rank: 2)
+  exitcode  : 2 (pid: 2924521)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-09-12_10:09:50
+  host      : wqd10nbj01g1
+  rank      : 3 (local_rank: 3)
+  exitcode  : 2 (pid: 2924522)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-09-12_10:09:50
+  host      : wqd10nbj01g1
+  rank      : 0 (local_rank: 0)
+  exitcode  : 2 (pid: 2924519)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+    elastic_launch(
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+train.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-09-12_10:09:50
+  host      : wqd10nbj02g1
+  rank      : 5 (local_rank: 1)
+  exitcode  : 2 (pid: 2795732)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-09-12_10:09:50
+  host      : wqd10nbj02g1
+  rank      : 6 (local_rank: 2)
+  exitcode  : 2 (pid: 2795733)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-09-12_10:09:50
+  host      : wqd10nbj02g1
+  rank      : 7 (local_rank: 3)
+  exitcode  : 2 (pid: 2795734)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-09-12_10:09:50
+  host      : wqd10nbj02g1
+  rank      : 4 (local_rank: 0)
+  exitcode  : 2 (pid: 2795731)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: wqd10nbj02g1: task 1: Exited with exit code 1
+srun: Terminating StepId=1583816.0
+slurmstepd: error: *** STEP 1583816.0 ON wqd10nbj01g1 CANCELLED AT 2026-09-12T10:09:50 ***
+srun: error: wqd10nbj01g1: task 0: Terminated
+srun: Force Terminated StepId=1583816.0

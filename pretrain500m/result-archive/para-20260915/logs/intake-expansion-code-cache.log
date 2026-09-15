@@ -1,0 +1,6 @@
+{"segment_id": "code_javascript_extra", "status": "VERIFIED_CACHE_READY", "bytes": 429038200}
+{"segment_id": "code_java_extra", "status": "VERIFIED_CACHE_READY", "bytes": 481089004}
+{"segment_id": "code_typescript_extra", "status": "VERIFIED_CACHE_READY", "bytes": 425942502}
+{"segment_id": "code_cpp_extra", "status": "VERIFIED_CACHE_READY", "bytes": 408220495}
+{"segment_id": "code_python_extra", "status": "VERIFIED_CACHE_READY", "bytes": 500201312}
+{"bytes": 2244491513, "completed_utc": "2026-09-14T03:16:57.588786+00:00", "files": 5, "receipts": {"code_cpp_extra": "fb36a5d6367626b1ca7f926bbd532a0b8f06f2f1c795cab18e4a3bd803f946bd", "code_java_extra": "34c6b2fc9d66c71d2a8c762374992260539be12053fcd9bbefc82bea29626e1e", "code_javascript_extra": "49f04f3036093b04de00f370b6ba617881e23ec46943e605c1ed4081fe059535", "code_python_extra": "7c22ccf8257da6120094c392810c3bc9eaf9de1f838c1ac5740272d4b5850201", "code_typescript_extra": "cb432a57681e69654ebdcee60203a3fbe4619de3914ef05100fae93154457cf1"}, "schema_version": 1, "status": "VERIFIED_CODE_CACHE_COMPLETE", "training_admitted": false}

@@ -1,0 +1,528 @@
+README.md: OK
+build_plan.py: OK
+run.sbatch: OK
+submit.py: OK
+summarize_candidate.py: OK
+test_build_plan.py: OK
+test_summarize_candidate.py: OK
+/ssd/scxi253/pretrain500m-20260912-v1/source/mixture-extension-eval-inputs-v1/candidates.json: OK
+/ssd/scxi253/pretrain500m-20260912-v1/source/protocol-v5.json: OK
+/ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/eval-cache-manifest.json: OK
+/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/base/seven-task-aggregate.json: OK
+/ssd/scxi253/pretrain500m-20260912-v1/posttrain/mixture-extension-v1/r4-lr6e5-t1b-seed20260916-1591570/train/model-final.pt: OK
+{"aliases": 4, "bytes": 140809940, "files": 83, "status": "PASS_FROZEN_OFFLINE_EVAL_CACHE"}
+{"argmax_agreement": 0.984375, "argmax_matches": 252, "argmax_total": 256, "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/mixture-extension-v1/r4-lr6e5-t1b-seed20260916-1591570/train/model-final.pt", "checkpoint_sha256": "455d89cbb6d723334587546a0824605c6f57704264d4a1db0239f445d57a98aa", "checkpoint_step": 512, "dtype": "bfloat16", "files": [{"bytes": 696, "path": "config.json", "sha256": "880d4cdad66bf97a2d0830ae36ac999c844b2c16e6c4b8b00eea18013141a6a0"}, {"bytes": 115, "path": "generation_config.json", "sha256": "000cfff4d7f7c400a45cd02b275313ed128cf94fec5ecec7a5eee5dbb1833b9e"}, {"bytes": 1057524496, "path": "model.safetensors", "sha256": "f1a2058c85045f6d6d8a6a074432ed41be33548abb35bbf2afa101ed162979c2"}, {"bytes": 293, "path": "special_tokens_map.json", "sha256": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193"}, {"bytes": 3565402, "path": "tokenizer.json", "sha256": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6"}, {"bytes": 5307, "path": "tokenizer_config.json", "sha256": "65fb76dbcacdc8505ec00c53fa3cecac07b1124bf08c88a70bdf3b14d617bc87"}], "functional_limits": {"max_abs_logit_difference": 0.5, "mean_abs_logit_difference": 0.025, "minimum_argmax_agreement": 0.97}, "logit_difference_quantiles": {"0.5": 0.015625, "0.9": 0.03515625, "0.99": 0.0625, "0.999": 0.1015625, "0.9999": 0.140625}, "logit_parity_attention": "eager", "max_abs_logit_difference": 0.234375, "mean_abs_logit_difference": 0.017960786819458008, "parameters_total": 528748800, "sample_shape": [2, 128], "state_tensor_count": 237, "state_tensor_parity": "bitwise_exact", "status": "PASS_HF_EXPORT_BITWISE_STATE_AND_BOUNDED_BF16_LOGIT_DRIFT", "tokenizer_adapter": {"eos_token_id": 50279, "export_class": "PreTrainedTokenizerFast", "original_class": "OLMoTokenizer", "pad_token_id": 1, "token_id_equivalence_samples": 3, "vocab_size": 50280}, "tokenizer_files_copied": ["special_tokens_map.json", "tokenizer.json", "tokenizer_config.json"]}
+Passed argument batch_size = auto:1. Detecting largest batch size
+Passed argument batch_size = auto:1. Detecting largest batch size
+Determined largest batch size: 64
+Determined largest batch size: 64
+{
+  "results": {
+    "arc_challenge": {
+      "alias": "arc_challenge",
+      "acc,none": 0.25341296928327645,
+      "acc_stderr,none": 0.012710896778378677,
+      "acc_norm,none": 0.2935153583617747,
+      "acc_norm_stderr,none": 0.013307250444941061
+    },
+    "arc_easy": {
+      "alias": "arc_easy",
+      "acc,none": 0.5955387205387206,
+      "acc_stderr,none": 0.010070746648278901,
+      "acc_norm,none": 0.5462962962962963,
+      "acc_norm_stderr,none": 0.010215708295494234
+    },
+    "boolq": {
+      "alias": "boolq",
+      "acc,none": 0.5764525993883792,
+      "acc_stderr,none": 0.008642220663071498
+    },
+    "hellaswag": {
+      "alias": "hellaswag",
+      "acc,none": 0.3489344752041426,
+      "acc_stderr,none": 0.004756590961576855,
+      "acc_norm,none": 0.427504481179048,
+      "acc_norm_stderr,none": 0.004937054233711737
+    },
+    "openbookqa": {
+      "alias": "openbookqa",
+      "acc,none": 0.214,
+      "acc_stderr,none": 0.01835979750238704,
+      "acc_norm,none": 0.328,
+      "acc_norm_stderr,none": 0.021017027165175464
+    },
+    "piqa": {
+      "alias": "piqa",
+      "acc,none": 0.6789989118607181,
+      "acc_stderr,none": 0.01089264157470797,
+      "acc_norm,none": 0.6741022850924918,
+      "acc_norm_stderr,none": 0.010935760218904009
+    },
+    "winogrande": {
+      "alias": "winogrande",
+      "acc,none": 0.5288082083662194,
+      "acc_stderr,none": 0.014029141615909664
+    }
+  },
+  "group_subtasks": {
+    "arc_challenge": [],
+    "arc_easy": [],
+    "boolq": [],
+    "hellaswag": [],
+    "openbookqa": [],
+    "piqa": [],
+    "winogrande": []
+  },
+  "configs": {
+    "arc_challenge": {
+      "task": "arc_challenge",
+      "tag": [
+        "ai2_arc"
+      ],
+      "dataset_path": "allenai/ai2_arc",
+      "dataset_name": "ARC-Challenge",
+      "training_split": "train",
+      "validation_split": "validation",
+      "test_split": "test",
+      "doc_to_text": "Question: {{question}}\nAnswer:",
+      "doc_to_target": "{{choices.label.index(answerKey)}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices.text}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "Question: {{question}}\nAnswer:",
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/tmp/p529m-extension-eval-r4-lr6e5-t1b-seed20260916-1591852/export",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "r4-lr6e5-t1b-seed20260916",
+        "checkpoint_sha256": "455d89cbb6d723334587546a0824605c6f57704264d4a1db0239f445d57a98aa",
+        "world_size": 2,
+        "evaluation_scope": "adaptive_r4_two_seed_extension"
+      }
+    },
+    "arc_easy": {
+      "task": "arc_easy",
+      "tag": [
+        "ai2_arc"
+      ],
+      "dataset_path": "allenai/ai2_arc",
+      "dataset_name": "ARC-Easy",
+      "training_split": "train",
+      "validation_split": "validation",
+      "test_split": "test",
+      "doc_to_text": "Question: {{question}}\nAnswer:",
+      "doc_to_target": "{{choices.label.index(answerKey)}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices.text}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "Question: {{question}}\nAnswer:",
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/tmp/p529m-extension-eval-r4-lr6e5-t1b-seed20260916-1591852/export",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "r4-lr6e5-t1b-seed20260916",
+        "checkpoint_sha256": "455d89cbb6d723334587546a0824605c6f57704264d4a1db0239f445d57a98aa",
+        "world_size": 2,
+        "evaluation_scope": "adaptive_r4_two_seed_extension"
+      }
+    },
+    "boolq": {
+      "task": "boolq",
+      "tag": [
+        "super-glue-lm-eval-v1"
+      ],
+      "dataset_path": "super_glue",
+      "dataset_name": "boolq",
+      "training_split": "train",
+      "validation_split": "validation",
+      "doc_to_text": "{{passage}}\nQuestion: {{question}}?\nAnswer:",
+      "doc_to_target": "label",
+      "unsafe_code": false,
+      "doc_to_choice": [
+        "no",
+        "yes"
+      ],
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc"
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "passage",
+      "metadata": {
+        "version": 2.0,
+        "pretrained": "/tmp/p529m-extension-eval-r4-lr6e5-t1b-seed20260916-1591852/export",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "r4-lr6e5-t1b-seed20260916",
+        "checkpoint_sha256": "455d89cbb6d723334587546a0824605c6f57704264d4a1db0239f445d57a98aa",
+        "world_size": 2,
+        "evaluation_scope": "adaptive_r4_two_seed_extension"
+      }
+    },
+    "hellaswag": {
+      "task": "hellaswag",
+      "tag": [
+        "multiple_choice"
+      ],
+      "dataset_path": "hellaswag",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "validation_split": "validation",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc):\n        ctx = doc[\"ctx_a\"] + \" \" + doc[\"ctx_b\"].capitalize()\n        out_doc = {\n            \"query\": preprocess(doc[\"activity_label\"] + \": \" + ctx),\n            \"choices\": [preprocess(ending) for ending in doc[\"endings\"]],\n            \"gold\": int(doc[\"label\"]),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "{{query}}",
+      "doc_to_target": "{{label}}",
+      "unsafe_code": false,
+      "doc_to_choice": "choices",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/tmp/p529m-extension-eval-r4-lr6e5-t1b-seed20260916-1591852/export",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "r4-lr6e5-t1b-seed20260916",
+        "checkpoint_sha256": "455d89cbb6d723334587546a0824605c6f57704264d4a1db0239f445d57a98aa",
+        "world_size": 2,
+        "evaluation_scope": "adaptive_r4_two_seed_extension"
+      }
+    },
+    "openbookqa": {
+      "task": "openbookqa",
+      "dataset_path": "openbookqa",
+      "dataset_name": "main",
+      "training_split": "train",
+      "validation_split": "validation",
+      "test_split": "test",
+      "doc_to_text": "question_stem",
+      "doc_to_target": "{{choices.label.index(answerKey.lstrip())}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices.text}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "question_stem",
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/tmp/p529m-extension-eval-r4-lr6e5-t1b-seed20260916-1591852/export",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "r4-lr6e5-t1b-seed20260916",
+        "checkpoint_sha256": "455d89cbb6d723334587546a0824605c6f57704264d4a1db0239f445d57a98aa",
+        "world_size": 2,
+        "evaluation_scope": "adaptive_r4_two_seed_extension"
+      }
+    },
+    "piqa": {
+      "task": "piqa",
+      "dataset_path": "baber/piqa",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "validation_split": "validation",
+      "doc_to_text": "Question: {{goal}}\nAnswer:",
+      "doc_to_target": "label",
+      "unsafe_code": false,
+      "doc_to_choice": "{{[sol1, sol2]}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "goal",
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/tmp/p529m-extension-eval-r4-lr6e5-t1b-seed20260916-1591852/export",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "r4-lr6e5-t1b-seed20260916",
+        "checkpoint_sha256": "455d89cbb6d723334587546a0824605c6f57704264d4a1db0239f445d57a98aa",
+        "world_size": 2,
+        "evaluation_scope": "adaptive_r4_two_seed_extension"
+      }
+    },
+    "winogrande": {
+      "task": "winogrande",
+      "dataset_path": "winogrande",
+      "dataset_name": "winogrande_xl",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "validation_split": "validation",
+      "doc_to_text": "def doc_to_text(doc):\n    answer_to_num = {\"1\": 0, \"2\": 1}\n    return answer_to_num[doc[\"answer\"]]\n",
+      "doc_to_target": "def doc_to_target(doc):\n    idx = doc[\"sentence\"].index(\"_\") + 1\n    return doc[\"sentence\"][idx:].strip()\n",
+      "unsafe_code": false,
+      "doc_to_choice": "def doc_to_choice(doc):\n    idx = doc[\"sentence\"].index(\"_\")\n    options = [doc[\"option1\"], doc[\"option2\"]]\n    return [doc[\"sentence\"][:idx] + opt for opt in options]\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "sentence",
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/tmp/p529m-extension-eval-r4-lr6e5-t1b-seed20260916-1591852/export",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "r4-lr6e5-t1b-seed20260916",
+        "checkpoint_sha256": "455d89cbb6d723334587546a0824605c6f57704264d4a1db0239f445d57a98aa",
+        "world_size": 2,
+        "evaluation_scope": "adaptive_r4_two_seed_extension"
+      }
+    }
+  },
+  "versions": {
+    "arc_challenge": 1.0,
+    "arc_easy": 1.0,
+    "boolq": 2.0,
+    "hellaswag": 1.0,
+    "openbookqa": 1.0,
+    "piqa": 1.0,
+    "winogrande": 1.0
+  },
+  "n-shot": {
+    "arc_challenge": 0,
+    "arc_easy": 0,
+    "boolq": 0,
+    "hellaswag": 0,
+    "openbookqa": 0,
+    "piqa": 0,
+    "winogrande": 0
+  },
+  "higher_is_better": {
+    "arc_challenge": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "arc_easy": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "boolq": {
+      "acc": true
+    },
+    "hellaswag": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "openbookqa": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "piqa": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "winogrande": {
+      "acc": true
+    }
+  },
+  "n-samples": {
+    "winogrande": {
+      "original": 1267,
+      "effective": 1267
+    },
+    "piqa": {
+      "original": 1838,
+      "effective": 1838
+    },
+    "openbookqa": {
+      "original": 500,
+      "effective": 500
+    },
+    "hellaswag": {
+      "original": 10042,
+      "effective": 10042
+    },
+    "boolq": {
+      "original": 3270,
+      "effective": 3270
+    },
+    "arc_easy": {
+      "original": 2376,
+      "effective": 2376
+    },
+    "arc_challenge": {
+      "original": 1172,
+      "effective": 1172
+    }
+  },
+  "config": {
+    "model": "hf",
+    "model_args": "pretrained=/tmp/p529m-extension-eval-r4-lr6e5-t1b-seed20260916-1591852/export,dtype=bfloat16,trust_remote_code=False,max_length=2048",
+    "model_num_parameters": 528748800,
+    "model_dtype": "torch.bfloat16",
+    "model_revision": "main",
+    "model_sha": "",
+    "batch_size": "auto",
+    "batch_sizes": [
+      64
+    ],
+    "device": "cuda",
+    "use_cache": null,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "gen_kwargs": null,
+    "random_seed": 42,
+    "numpy_seed": 42,
+    "torch_seed": 42,
+    "fewshot_seed": 1234
+  },
+  "git_hash": null,
+  "date": 1789450367.7008724,
+  "pretty_env_info": "PyTorch version: 2.11.0+cu128\nIs debug build: False\nCUDA used to build PyTorch: 12.8\nROCM used to build PyTorch: N/A\n\nOS: Ubuntu 22.04.5 LTS (x86_64)\nGCC version: (Ubuntu 11.4.0-1ubuntu1~22.04.2) 11.4.0\nClang version: Could not collect\nCMake version: Could not collect\nLibc version: glibc-2.35\n\nPython version: 3.12.13 (main, Jul 18 2026, 17:02:19) [Clang 22.1.3 ] (64-bit runtime)\nPython platform: Linux-5.15.0-119-generic-x86_64-with-glibc2.35\nIs CUDA available: True\nCUDA runtime version: Could not collect\nCUDA_MODULE_LOADING set to: \nGPU models and configuration: \nGPU 0: NVIDIA GeForce RTX 5090\nGPU 1: NVIDIA GeForce RTX 5090\n\nNvidia driver version: 580.82.07\ncuDNN version: Could not collect\nIs XPU available: False\nHIP runtime version: N/A\nMIOpen runtime version: N/A\nIs XNNPACK available: True\nCaching allocator config: N/A\n\nCPU:\nArchitecture:                         x86_64\nCPU op-mode(s):                       32-bit, 64-bit\nAddress sizes:                        52 bits physical, 57 bits virtual\nByte Order:                           Little Endian\nCPU(s):                               128\nOn-line CPU(s) list:                  0-127\nVendor ID:                            GenuineIntel\nModel name:                           INTEL(R) XEON(R) GOLD 6530\nCPU family:                           6\nModel:                                207\nThread(s) per core:                   2\nCore(s) per socket:                   32\nSocket(s):                            2\nStepping:                             2\nFrequency boost:                      enabled\nCPU max MHz:                          4001.0000\nCPU min MHz:                          4000.0000\nBogoMIPS:                             4200.00\nFlags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cat_l2 cdp_l3 invpcid_single intel_ppin cdp_l2 ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local split_lock_detect avx_vnni avx512_bf16 wbnoinvd dtherm ida arat pln pts avx512vbmi umip pku ospke waitpkg avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg tme avx512_vpopcntdq la57 rdpid bus_lock_detect cldemote movdiri movdir64b enqcmd fsrm md_clear serialize tsxldtrk pconfig arch_lbr amx_bf16 avx512_fp16 amx_tile amx_int8 flush_l1d arch_capabilities\nVirtualization:                       VT-x\nL1d cache:                            3 MiB (64 instances)\nL1i cache:                            2 MiB (64 instances)\nL2 cache:                             128 MiB (64 instances)\nL3 cache:                             320 MiB (2 instances)\nNUMA node(s):                         2\nNUMA node0 CPU(s):                    0-31,64-95\nNUMA node1 CPU(s):                    32-63,96-127\nVulnerability Gather data sampling:   Not affected\nVulnerability Itlb multihit:          Not affected\nVulnerability L1tf:                   Not affected\nVulnerability Mds:                    Not affected\nVulnerability Meltdown:               Not affected\nVulnerability Mmio stale data:        Not affected\nVulnerability Reg file data sampling: Not affected\nVulnerability Retbleed:               Not affected\nVulnerability Spec rstack overflow:   Not affected\nVulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl and seccomp\nVulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI BHI_DIS_S\nVulnerability Srbds:                  Not affected\nVulnerability Tsx async abort:        Not affected\n\nVersions of relevant libraries:\n[pip3] numpy==1.26.4\n[pip3] nvidia-cublas-cu12==12.8.4.1\n[pip3] nvidia-cuda-cupti-cu12==12.8.90\n[pip3] nvidia-cuda-nvrtc-cu12==12.8.93\n[pip3] nvidia-cuda-runtime-cu12==12.8.90\n[pip3] nvidia-cudnn-cu12==9.19.0.56\n[pip3] nvidia-cufft-cu12==11.3.3.83\n[pip3] nvidia-curand-cu12==10.3.9.90\n[pip3] nvidia-cusolver-cu12==11.7.3.90\n[pip3] nvidia-cusparse-cu12==12.5.8.93\n[pip3] nvidia-cusparselt-cu12==0.7.1\n[pip3] nvidia-nccl-cu12==2.28.9\n[pip3] nvidia-nvjitlink-cu12==12.8.93\n[pip3] nvidia-nvtx-cu12==12.8.90\n[pip3] torch==2.11.0+cu128\n[pip3] triton==3.6.0\n[conda] Could not collect",
+  "transformers_version": "4.57.6",
+  "lm_eval_version": "0.4.9",
+  "upper_git_hash": null,
+  "tokenizer_pad_token": [
+    "<|padding|>",
+    "1"
+  ],
+  "tokenizer_eos_token": [
+    "<|endoftext|>",
+    "50279"
+  ],
+  "tokenizer_bos_token": [
+    null,
+    "None"
+  ],
+  "eot_token_id": 50279,
+  "max_length": 2048
+}
+hf (pretrained=/tmp/p529m-extension-eval-r4-lr6e5-t1b-seed20260916-1591852/export,dtype=bfloat16,trust_remote_code=False,max_length=2048), gen_kwargs: (None), limit: None, num_fewshot: 0, batch_size: auto (64)
+|    Tasks    |Version|Filter|n-shot| Metric |   |Value |   |Stderr|
+|-------------|------:|------|-----:|--------|---|-----:|---|-----:|
+|arc_challenge|      1|none  |     0|acc     |↑  |0.2534|±  |0.0127|
+|             |       |none  |     0|acc_norm|↑  |0.2935|±  |0.0133|
+|arc_easy     |      1|none  |     0|acc     |↑  |0.5955|±  |0.0101|
+|             |       |none  |     0|acc_norm|↑  |0.5463|±  |0.0102|
+|boolq        |      2|none  |     0|acc     |↑  |0.5765|±  |0.0086|
+|hellaswag    |      1|none  |     0|acc     |↑  |0.3489|±  |0.0048|
+|             |       |none  |     0|acc_norm|↑  |0.4275|±  |0.0049|
+|openbookqa   |      1|none  |     0|acc     |↑  |0.2140|±  |0.0184|
+|             |       |none  |     0|acc_norm|↑  |0.3280|±  |0.0210|
+|piqa         |      1|none  |     0|acc     |↑  |0.6790|±  |0.0109|
+|             |       |none  |     0|acc_norm|↑  |0.6741|±  |0.0109|
+|winogrande   |      1|none  |     0|acc     |↑  |0.5288|±  |0.0140|
+
+{"aggregate": {"bootstrap_ci_95": [0.4727343710141394, 0.4917503746021016], "bootstrap_replicates": 10000, "bootstrap_seed": 20260912, "name": "seven_task_unweighted_mean", "percentile_method": "linear", "score": 0.48209703266917275, "task_weighting": "unweighted"}, "input_sha256": {"protocol": "a71ce3c8cc85cac6fe6751cb46f7e50dfb78d266602d6377cb2e65249f11c761", "results": "76d639042161a74e8dc0126df4e7f2839d8e689c3c74586a6814db85b14e55be", "samples_arc_challenge": "92ee84ffc84790d367ec5873ea1543d618e60ce54388a4fe0266285990245f13", "samples_arc_easy": "e0ab0d777e34501cf148151bd4c65fc42956be98975f405262ceb59c513e2294", "samples_boolq": "a6118efa823373e72047077ac71414c3fb38b41755ca81a2d9d2be2ee71f2771", "samples_hellaswag": "b3a147594202adbc5f03b850242b51a7b3f683a067ee3cf7f91760b62e65c0f2", "samples_openbookqa": "3f179016e33ec21b418cf60a8840d39f196c0a13bdd8630ee2565098957ee8b2", "samples_piqa": "8b2bd0ba1eb7a620749207aeebd292ccc7c7b0f52faf9fe7b4b9868f210e6ef9", "samples_winogrande": "6777fc3ce4c1f678f2dd624a739f6a40132fb3b383159be97a00624a774aa2a0"}, "protocol_id": "p500m-english-base-v5", "protocol_sha256": "a71ce3c8cc85cac6fe6751cb46f7e50dfb78d266602d6377cb2e65249f11c761", "status": "PASS_FROZEN_EVALUATION_AGGREGATE", "tasks": {"arc_challenge": {"bootstrap_ci_95": [0.26791808873720135, 0.31913395904436825], "primary_metric": "acc_norm", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/mixture-extension-eval-v1/r4-lr6e5-t1b-seed20260916-1591852/lm-eval/__tmp__p529m-extension-eval-r4-lr6e5-t1b-seed20260916-1591852__export/samples_arc_challenge_2026-09-15T13-33-38.510338.jsonl", "sample_log_sha256": "92ee84ffc84790d367ec5873ea1543d618e60ce54388a4fe0266285990245f13", "samples": 1172, "score": 0.2935153583617747}, "arc_easy": {"bootstrap_ci_95": [0.5269360269360269, 0.5664983164983165], "primary_metric": "acc_norm", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/mixture-extension-eval-v1/r4-lr6e5-t1b-seed20260916-1591852/lm-eval/__tmp__p529m-extension-eval-r4-lr6e5-t1b-seed20260916-1591852__export/samples_arc_easy_2026-09-15T13-33-38.510338.jsonl", "sample_log_sha256": "e0ab0d777e34501cf148151bd4c65fc42956be98975f405262ceb59c513e2294", "samples": 2376, "score": 0.5462962962962963}, "boolq": {"bootstrap_ci_95": [0.5596330275229358, 0.5929663608562691], "primary_metric": "acc", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/mixture-extension-eval-v1/r4-lr6e5-t1b-seed20260916-1591852/lm-eval/__tmp__p529m-extension-eval-r4-lr6e5-t1b-seed20260916-1591852__export/samples_boolq_2026-09-15T13-33-38.510338.jsonl", "sample_log_sha256": "a6118efa823373e72047077ac71414c3fb38b41755ca81a2d9d2be2ee71f2771", "samples": 3270, "score": 0.5764525993883792}, "hellaswag": {"bootstrap_ci_95": [0.4177454690300737, 0.43706432981477794], "primary_metric": "acc_norm", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/mixture-extension-eval-v1/r4-lr6e5-t1b-seed20260916-1591852/lm-eval/__tmp__p529m-extension-eval-r4-lr6e5-t1b-seed20260916-1591852__export/samples_hellaswag_2026-09-15T13-33-38.510338.jsonl", "sample_log_sha256": "b3a147594202adbc5f03b850242b51a7b3f683a067ee3cf7f91760b62e65c0f2", "samples": 10042, "score": 0.427504481179048}, "openbookqa": {"bootstrap_ci_95": [0.288, 0.368], "primary_metric": "acc_norm", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/mixture-extension-eval-v1/r4-lr6e5-t1b-seed20260916-1591852/lm-eval/__tmp__p529m-extension-eval-r4-lr6e5-t1b-seed20260916-1591852__export/samples_openbookqa_2026-09-15T13-33-38.510338.jsonl", "sample_log_sha256": "3f179016e33ec21b418cf60a8840d39f196c0a13bdd8630ee2565098957ee8b2", "samples": 500, "score": 0.328}, "piqa": {"bootstrap_ci_95": [0.6523394994559304, 0.6953346028291619], "primary_metric": "acc_norm", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/mixture-extension-eval-v1/r4-lr6e5-t1b-seed20260916-1591852/lm-eval/__tmp__p529m-extension-eval-r4-lr6e5-t1b-seed20260916-1591852__export/samples_piqa_2026-09-15T13-33-38.510338.jsonl", "sample_log_sha256": "8b2bd0ba1eb7a620749207aeebd292ccc7c7b0f52faf9fe7b4b9868f210e6ef9", "samples": 1838, "score": 0.6741022850924918}, "winogrande": {"bootstrap_ci_95": [0.5011838989739542, 0.5564325177584846], "primary_metric": "acc", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/mixture-extension-eval-v1/r4-lr6e5-t1b-seed20260916-1591852/lm-eval/__tmp__p529m-extension-eval-r4-lr6e5-t1b-seed20260916-1591852__export/samples_winogrande_2026-09-15T13-33-38.510338.jsonl", "sample_log_sha256": "6777fc3ce4c1f678f2dd624a739f6a40132fb3b383159be97a00624a774aa2a0", "samples": 1267, "score": 0.5288082083662194}}}
+{"aggregate_delta_vs_base": 0.0021446175190487637, "base_aggregate_score": 0.479952415150124, "base_tasks": {"arc_challenge": 0.2832764505119454, "arc_easy": 0.5526094276094277, "boolq": 0.5629969418960244, "hellaswag": 0.42342162915753834, "openbookqa": 0.332, "piqa": 0.6686615886833515, "winogrande": 0.5367008681925809}, "candidate": {"checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/mixture-extension-v1/r4-lr6e5-t1b-seed20260916-1591570/train/model-final.pt", "checkpoint_sha256": "455d89cbb6d723334587546a0824605c6f57704264d4a1db0239f445d57a98aa", "expected_step": 512, "id": "r4-lr6e5-t1b-seed20260916", "recipe": "R4_current_code_guard", "run_manifest_sha256": "ad5423fd3c180d7f470118d72de6b25f10139e4b87ea4077f11afa1006cdb07f", "seed": 20260916, "training_status_sha256": "585d2c1108bfd46730e1c33d2b50833b06a94fbab377228d4761f61363f8f706"}, "candidate_aggregate_score": 0.48209703266917275, "candidate_tasks": {"arc_challenge": 0.2935153583617747, "arc_easy": 0.5462962962962963, "boolq": 0.5764525993883792, "hellaswag": 0.427504481179048, "openbookqa": 0.328, "piqa": 0.6741022850924918, "winogrande": 0.5288082083662194}, "claim_boundary": "adaptive two-seed seven-task capability and retention screen; no automatic promotion or market-superiority claim", "formal_promotion": false, "input_sha256": {"base_aggregate": "c87aa54ec060154d594c6a7ca44b79b28cec27497cc867b0845ad492397535c1", "candidate_aggregate": "8591f0b63194b8269d354e8a07e83305d051337fefb4067f70b99058800adbc2", "export_receipt": "d0084b9490e7e467f08a4d6a528f5f602a2fb457f7977c6a95be1cbc6bc7fa24", "plan": "ec14774679e3b86cf74393db5020778e9bc05f4527993c141f45834eb8207f26"}, "protocol_id": "p500m-english-base-v5", "protocol_sha256": "a71ce3c8cc85cac6fe6751cb46f7e50dfb78d266602d6377cb2e65249f11c761", "schema": "p529m-r4-extension-capability-result-v1", "status": "PASS_ADAPTIVE_R4_EXTENSION_SEVEN_TASK_SCREEN", "task_delta_vs_base": {"arc_challenge": 0.010238907849829337, "arc_easy": -0.0063131313131313815, "boolq": 0.013455657492354778, "hellaswag": 0.004082852021509653, "openbookqa": -0.0040000000000000036, "piqa": 0.005440696409140355, "winogrande": -0.007892659826361448}}
+R4_EXTENSION_CAPABILITY_SCREEN_COMPLETED candidate=r4-lr6e5-t1b-seed20260916 result_sha256=bb7745bd4c2c7905ec928725389e8689d3dc06f66a55941f2214d68c11b0be14

@@ -1,0 +1,24 @@
+{
+  "status": "LAUNCHED_REVIEW_FILTERED_PACK_RETRY_NOT_ADMITTED",
+  "supersedes_failed_receipt": "/ssd/scxi253/pretrain500m-20260912-v1/receipts/filter-packed-v1-launch.json",
+  "pid": 18792,
+  "command": [
+    "/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python",
+    "/ssd/scxi253/pretrain500m-20260912-v1/source/filter-packed-v1/filter_pack.py",
+    "--parent-report",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/report.json",
+    "--expected-parent-sha256",
+    "b706b08e036e148ab53f70cf55997065596c426bf9b532abbc9431bb6cf3b927",
+    "--decisions",
+    "/ssd/scxi253/pretrain500m-20260912-v1/vendor/quality-review-exclusions-v1.json",
+    "--expected-decisions-sha256",
+    "31837495a2f874aa70fc7d3d60d9b3a046d1faf2772fb2d568126dbca2e88ef0",
+    "--output",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-quality-v1-r1",
+    "--workers",
+    "4"
+  ],
+  "free_bytes_before": 20599066624,
+  "training_admitted": false,
+  "launched_unix": 1789342894.2203224
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "p529m-superseded-artifact-cleanup-v1",
+  "status": "VERIFIED_ABSENT",
+  "checked_utc": "2026-09-14T00:33:08.753084+00:00",
+  "inventory": [
+    {
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-quality-v1",
+      "bytes": 0,
+      "files": 0
+    },
+    {
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-quality-v1-r1",
+      "bytes": 567238587,
+      "files": 62,
+      "preserved_report": "/ssd/scxi253/pretrain500m-20260912-v1/receipts/superseded-screen-inputs-v1/selected-packs-quality-v1-r1-report.json",
+      "preserved_report_sha256": "1d0fcd10e2e107c49402f0ba4601d4dc50b29d64e245dbfbf472702f61b49103"
+    },
+    {
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/development-masked-v1",
+      "bytes": 48556155,
+      "files": 18,
+      "preserved_report": "/ssd/scxi253/pretrain500m-20260912-v1/receipts/superseded-screen-inputs-v1/development-masked-v1-report.json",
+      "preserved_report_sha256": "e24bf826de013f3c6f5f6287a8042fa86996d6f0bf6fc27eea3cddc3113dc1fa"
+    },
+    {
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/development-masked-v1-r1",
+      "bytes": 48587278,
+      "files": 18,
+      "preserved_report": "/ssd/scxi253/pretrain500m-20260912-v1/receipts/superseded-screen-inputs-v1/development-masked-v1-r1-report.json",
+      "preserved_report_sha256": "e511f134cd217edb6db26649161ceae8d948ae87ef9035a5a0d98566bb0fef7e"
+    }
+  ],
+  "active_run_reference_check": "PASS",
+  "owner_check": "PASS",
+  "single_writer": "PASS",
+  "bytes_removed": 664382020,
+  "preserved_reports": true,
+  "scope": "Only failed or superseded pre-admission packs; active v2 packs and all raw/family evidence preserved."
+}

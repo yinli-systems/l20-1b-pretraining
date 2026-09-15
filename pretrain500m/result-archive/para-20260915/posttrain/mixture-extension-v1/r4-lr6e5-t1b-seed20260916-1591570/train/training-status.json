@@ -1,0 +1,10 @@
+{
+  "formal_promotion": false,
+  "mfu_window_passed": true,
+  "model_checkpoint_resumable": false,
+  "model_checkpoint_sha256": "455d89cbb6d723334587546a0824605c6f57704264d4a1db0239f445d57a98aa",
+  "status": "QUALIFICATION_COMPLETED",
+  "step": 512,
+  "tokens": 1073741824,
+  "unix": 1789450037.5296273
+}

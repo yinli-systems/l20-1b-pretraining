@@ -1,0 +1,2 @@
+{"status": "PASS_BITWISE_COMPLETE_STATE_RESUME", "step": 4, "tensors_compared": 961, "tensor_elements_compared": 1650645612, "left": "/ssd/scxi253/pretrain500m-20260912-v1/pilots/1583851/continuous/resume.pt", "right": "/ssd/scxi253/pretrain500m-20260912-v1/pilots/1583851/split/resume.pt"}
+DETERMINISTIC_RESUME_V2_PILOT_COMPLETED

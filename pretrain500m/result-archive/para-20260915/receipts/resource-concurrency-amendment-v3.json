@@ -1,0 +1,23 @@
+{
+  "amended_max_simultaneous_project_runs": 6,
+  "evidence_at_freeze": {
+    "active_full_screen_runs": 4,
+    "active_no_checkpoint_benchmarks": 1,
+    "four_full_writers_plus_two_no_checkpoint_gates_bytes": 21344882688,
+    "free_storage_bytes": 31549825024,
+    "gpu_5090_four_gpu_jobs_immediately_runnable": 0,
+    "gpu_5090_free_but_fragmented": 24,
+    "prior_8gpu_median_mfu": 0.7423019208385349,
+    "prior_8gpu_tokens_per_second": 311805.96541410557,
+    "storage_gate_passed": true
+  },
+  "frozen_unix": 1789350729.9096673,
+  "launch_policy": "The sixth job may start only when Slurm can allocate two four-GPU nodes; every run retains its own strict MFU gate.",
+  "prior_max_simultaneous_project_runs": 5,
+  "reason": "Prepare the fastest validated multi-node path while maintaining strict MFU above 0.50.",
+  "schema_version": 1,
+  "scientific_boundary": "Prospective multi-node integration and throughput qualification only.",
+  "scope": "Resource scheduling and exact validation batching only; active screen recipes and outcomes are unchanged.",
+  "sixth_run": "CPT v6 8-GPU scale qualification job 1588586; 20 steps, metrics-only, no checkpoint",
+  "status": "FROZEN_PROSPECTIVE"
+}

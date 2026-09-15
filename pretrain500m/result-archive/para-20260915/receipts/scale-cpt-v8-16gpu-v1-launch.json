@@ -1,0 +1,48 @@
+{
+  "claim_boundary": "scheduler acceptance and satisfied dependency only; no allocation or measured 16-GPU MFU yet",
+  "ddp_policy": {
+    "bucket_cap_mb": 25,
+    "find_unused_parameters": true,
+    "gradient_as_bucket_view": true,
+    "static_graph": false
+  },
+  "dependency": {
+    "job_id": 1588621,
+    "satisfied": true,
+    "type": "afterok"
+  },
+  "eligible_at": "2026-09-14T10:18:36+08:00",
+  "global_prediction_tokens_per_step": 2097152,
+  "job_id": 1588636,
+  "kind": "cpt_v8_16gpu_scale_qualification_launch",
+  "mfu_gate": {
+    "grace_steps": 5,
+    "strictly_greater_than": 0.5,
+    "window": 10
+  },
+  "owner": "pretrain500m 2026-09-12 isolated run; owner task 01a09290-b43f-7431-be8a-412ea5d37954",
+  "pending_reason": "Resources",
+  "request": {
+    "gpus_per_node": 4,
+    "gpus_total": 16,
+    "nodes": 4,
+    "partition": "gpu_5090",
+    "qos": "gpugpu",
+    "time_limit": "00:30:00"
+  },
+  "sbatch_sha256": "07b9bc548c8bb7ff8031d383cbf993e57f647aa98bcea24df63fe5e70e51eccf",
+  "scheduler_state": "PENDING",
+  "schema_version": 1,
+  "submitted_at": "2026-09-14T10:18:07+08:00",
+  "training": {
+    "accumulation": 16,
+    "checkpoint_mode": "none",
+    "microbatch": 4,
+    "pilot_steps": 20
+  },
+  "validation": {
+    "blocks": 7824,
+    "microbatch": 1,
+    "prediction_tokens": 16023552
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "status": "STARTED",
+  "pid": 3478612,
+  "checked_utc": "2026-09-13T19:14:35.996173+00:00",
+  "command": [
+    "/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python",
+    "/ssd/scxi253/pretrain500m-20260912-v1/source/raw-audit-v1/audit_raw_intake_v1.py",
+    "--input",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1",
+    "--tokenizer",
+    "/ssd/scxi253/pretrain500m-20260912-v1/formal/hf-v5/tokenizer.json",
+    "--expected-tokenizer-sha256",
+    "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+    "--quotas",
+    "/ssd/scxi253/pretrain500m-20260912-v1/source/raw-audit-v1/subsource-quotas-v1.json",
+    "--output",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-audit-v1"
+  ],
+  "source_archive_sha256": "c9fc3bff62b580de3cde5ef6a632a1bd2bc6196a7fb4f6d3d5daddfa2890f901",
+  "training_admitted": false
+}

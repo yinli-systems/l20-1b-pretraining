@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/confirmation-manifests-expansion-v1/build.py", line 218, in <module>
+    result = run(args.root, args.output)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/confirmation-manifests-expansion-v1/build.py", line 116, in run
+    raise ValueError('post-filter unique-token shortage: ' + sid)
+ValueError: post-filter unique-token shortage: dclm

@@ -1,0 +1,18 @@
+{
+  "adoption_gates": {
+    "all_final_mfu10_strictly_greater_than": 0.5,
+    "fixed_bucket_rebuilds": 0,
+    "minimum_B_over_A_speedup_strictly_greater_than": 1.005,
+    "numerical_max_abs_difference": 1e-12
+  },
+  "claim_boundary": "prospective systems qualification only; active screens unchanged",
+  "cpt_v7_train_sha256": "21f49aaf65ac4e43aee83cac0963430433f4c0490d74f40c10e9459577927f4e",
+  "design": "same-allocation BAAB, 4x RTX 5090, 20 steps per segment, no checkpoint",
+  "first_segment": "B candidate for fail-fast fixed-bucket check",
+  "job_id": 1588605,
+  "schema_version": 1,
+  "status": "SUBMITTED",
+  "submitted_unix": 1789351228.7153206,
+  "variant_A": "find_unused_parameters=true, static_graph=false",
+  "variant_B": "find_unused_parameters=false, static_graph=true"
+}

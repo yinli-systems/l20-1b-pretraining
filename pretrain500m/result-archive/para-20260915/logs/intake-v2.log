@@ -1,0 +1,1613 @@
+<unknown>:37: SyntaxWarning: invalid escape sequence '\o'
+<unknown>:42: SyntaxWarning: invalid escape sequence '\,'
+<unknown>:43: SyntaxWarning: invalid escape sequence '\,'
+<unknown>:77: SyntaxWarning: invalid escape sequence '\o'
+<unknown>:87: SyntaxWarning: invalid escape sequence '\,'
+{"source": "code_javascript", "rows": 167, "network_bytes": 5170302, "code_attempts": 168}
+{"source": "code_python", "rows": 161, "network_bytes": 5847273, "code_attempts": 177}
+{"source": "code_python", "rows": 310, "network_bytes": 5939912, "code_attempts": 338}
+{"source": "code_javascript", "rows": 365, "network_bytes": 5261301, "code_attempts": 366}
+<unknown>:51: SyntaxWarning: invalid escape sequence '\|'
+<unknown>:56: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_python", "rows": 455, "network_bytes": 6032086, "code_attempts": 494}
+{"source": "code_javascript", "rows": 550, "network_bytes": 5351949, "code_attempts": 551}
+<unknown>:23: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:17: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:11: SyntaxWarning: invalid escape sequence '\p'
+<unknown>:12: SyntaxWarning: invalid escape sequence '\S'
+<unknown>:13: SyntaxWarning: invalid escape sequence '\S'
+<unknown>:14: SyntaxWarning: invalid escape sequence '\S'
+<unknown>:215: SyntaxWarning: invalid escape sequence '\c'
+<unknown>:236: SyntaxWarning: invalid escape sequence '\['
+{"source": "code_python", "rows": 608, "network_bytes": 6125374, "code_attempts": 658}
+{"source": "code_javascript", "rows": 740, "network_bytes": 5442377, "code_attempts": 742}
+<unknown>:10: SyntaxWarning: invalid escape sequence '\/'
+<unknown>:35: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:51: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:54: SyntaxWarning: invalid escape sequence '\/'
+<unknown>:10: SyntaxWarning: invalid escape sequence '\('
+<unknown>:50: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:68: SyntaxWarning: invalid escape sequence '\*'
+{"source": "code_python", "rows": 765, "network_bytes": 6217743, "code_attempts": 822}
+{"source": "code_javascript", "rows": 925, "network_bytes": 5533179, "code_attempts": 928}
+<unknown>:7: SyntaxWarning: invalid escape sequence '\g'
+<unknown>:87: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:89: SyntaxWarning: invalid escape sequence '\l'
+<unknown>:93: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:27: SyntaxWarning: invalid escape sequence '\<'
+<unknown>:31: SyntaxWarning: invalid escape sequence '\m'
+{"source": "code_python", "rows": 909, "network_bytes": 6309785, "code_attempts": 980}
+{"source": "code_javascript", "rows": 1125, "network_bytes": 5627011, "code_attempts": 1128}
+<unknown>:44: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:152: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:34: SyntaxWarning: invalid escape sequence '\w'
+<unknown>:36: SyntaxWarning: invalid escape sequence '\w'
+{"source": "code_python", "rows": 1078, "network_bytes": 6402295, "code_attempts": 1157}
+{"source": "code_javascript", "rows": 1329, "network_bytes": 5718018, "code_attempts": 1332}
+<unknown>:170: SyntaxWarning: invalid escape sequence '\W'
+<unknown>:14: SyntaxWarning: invalid escape sequence '\('
+<unknown>:41: SyntaxWarning: invalid escape sequence '\w'
+<unknown>:104: SyntaxWarning: invalid escape sequence '\['
+<unknown>:105: SyntaxWarning: invalid escape sequence '\('
+<unknown>:106: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:107: SyntaxWarning: invalid escape sequence '\('
+<unknown>:108: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:109: SyntaxWarning: invalid escape sequence '\('
+<unknown>:110: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:111: SyntaxWarning: invalid escape sequence '\('
+<unknown>:91: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:115: SyntaxWarning: invalid escape sequence '\d'
+{"source": "code_python", "rows": 1223, "network_bytes": 6495036, "code_attempts": 1317}
+{"source": "code_javascript", "rows": 1499, "network_bytes": 5808695, "code_attempts": 1502}
+<unknown>:159: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:33: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:41: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:55: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:62: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:132: SyntaxWarning: invalid escape sequence '\Y'
+<unknown>:133: SyntaxWarning: invalid escape sequence '\Y'
+<unknown>:77: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:126: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:267: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:400: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_python", "rows": 1379, "network_bytes": 6587548, "code_attempts": 1489}
+{"source": "code_javascript", "rows": 1661, "network_bytes": 5898894, "code_attempts": 1664}
+<unknown>:39: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:71: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:133: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:212: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:312: SyntaxWarning: invalid escape sequence '\_'
+<unknown>:367: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:424: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:497: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:12: SyntaxWarning: invalid escape sequence '\B'
+<unknown>:17: SyntaxWarning: invalid escape sequence '\D'
+{"source": "code_python", "rows": 1519, "network_bytes": 6681163, "code_attempts": 1651}
+{"source": "code_javascript", "rows": 1846, "network_bytes": 5988975, "code_attempts": 1850}
+<unknown>:62: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:77: SyntaxWarning: invalid escape sequence '\|'
+{"source": "code_python", "rows": 1662, "network_bytes": 6773735, "code_attempts": 1803}
+{"source": "code_javascript", "rows": 2037, "network_bytes": 6079918, "code_attempts": 2041}
+<unknown>:170: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:32: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:41: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:94: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:98: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:31: SyntaxWarning: invalid escape sequence '\_'
+<unknown>:90: SyntaxWarning: invalid escape sequence '\d'
+{"source": "code_python", "rows": 1811, "network_bytes": 6866861, "code_attempts": 1961}
+<unknown>:267: SyntaxWarning: invalid escape sequence '\l'
+<unknown>:438: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:143: SyntaxWarning: invalid escape sequence '\$'
+<unknown>:9: SyntaxWarning: invalid escape sequence '\-'
+<unknown>:23: SyntaxWarning: invalid escape sequence '\m'
+{"source": "code_python", "rows": 1969, "network_bytes": 6959319, "code_attempts": 2129}
+{"source": "code_javascript", "rows": 2191, "network_bytes": 6170580, "code_attempts": 2195}
+<unknown>:66: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:75: SyntaxWarning: invalid escape sequence '\['
+<unknown>:206: SyntaxWarning: invalid escape sequence '\d'
+{"source": "code_python", "rows": 2134, "network_bytes": 7052056, "code_attempts": 2314}
+{"source": "code_javascript", "rows": 2359, "network_bytes": 6261092, "code_attempts": 2364}
+<unknown>:115: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:262: SyntaxWarning: invalid escape sequence '\|'
+<unknown>:263: SyntaxWarning: invalid escape sequence '\|'
+<unknown>:264: SyntaxWarning: invalid escape sequence '\|'
+<unknown>:25: SyntaxWarning: invalid escape sequence '\i'
+<unknown>:135: SyntaxWarning: invalid escape sequence '\['
+{"source": "code_python", "rows": 2280, "network_bytes": 7143971, "code_attempts": 2479}
+{"source": "code_javascript", "rows": 2532, "network_bytes": 6352353, "code_attempts": 2538}
+<unknown>:37: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:40: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:45: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:93: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:104: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:124: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:153: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:165: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:186: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:192: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:204: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:245: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:252: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:265: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:282: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:303: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:318: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:333: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:345: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:358: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:366: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:401: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:407: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:11: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:12: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:13: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:17: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:18: SyntaxWarning: invalid escape sequence '\k'
+<unknown>:26: SyntaxWarning: invalid escape sequence '\k'
+<unknown>:36: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:40: SyntaxWarning: invalid escape sequence '\A'
+<unknown>:41: SyntaxWarning: invalid escape sequence '\g'
+{"source": "code_python", "rows": 2438, "network_bytes": 7236114, "code_attempts": 2649}
+{"source": "code_javascript", "rows": 2721, "network_bytes": 6443992, "code_attempts": 2727}
+<unknown>:4: SyntaxWarning: invalid escape sequence '\c'
+<unknown>:19: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:20: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:21: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:22: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:628: SyntaxWarning: invalid escape sequence '\S'
+<unknown>:685: SyntaxWarning: invalid escape sequence '\w'
+<unknown>:690: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:72: SyntaxWarning: invalid escape sequence '\p'
+{"source": "code_python", "rows": 2589, "network_bytes": 7329023, "code_attempts": 2810}
+{"source": "code_javascript", "rows": 2907, "network_bytes": 6535108, "code_attempts": 2913}
+<unknown>:22: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:23: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:24: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:25: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:15: SyntaxWarning: invalid escape sequence '\p'
+<unknown>:39: SyntaxWarning: invalid escape sequence '\c'
+<unknown>:42: SyntaxWarning: invalid escape sequence '\l'
+<unknown>:45: SyntaxWarning: invalid escape sequence '\c'
+<unknown>:4: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:45: SyntaxWarning: invalid escape sequence '\D'
+<unknown>:57: SyntaxWarning: invalid escape sequence '\D'
+<unknown>:92: SyntaxWarning: invalid escape sequence '\D'
+<unknown>:171: SyntaxWarning: invalid escape sequence '\p'
+{"source": "code_python", "rows": 2725, "network_bytes": 7421714, "code_attempts": 2958}
+<unknown>:27: SyntaxWarning: invalid escape sequence '\|'
+<unknown>:28: SyntaxWarning: invalid escape sequence '\|'
+<unknown>:77: SyntaxWarning: invalid escape sequence '\/'
+<unknown>:7: SyntaxWarning: invalid escape sequence '\S'
+{"source": "code_javascript", "rows": 3120, "network_bytes": 6630179, "code_attempts": 3126}
+<unknown>:16: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:18: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:434: SyntaxWarning: invalid escape sequence '\d'
+{"source": "code_python", "rows": 2887, "network_bytes": 7514423, "code_attempts": 3131}
+<unknown>:88: SyntaxWarning: invalid escape sequence '\-'
+{"source": "code_javascript", "rows": 3296, "network_bytes": 6720697, "code_attempts": 3302}
+<unknown>:25: SyntaxWarning: invalid escape sequence '\p'
+<unknown>:64: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:14: SyntaxWarning: invalid escape sequence '\*'
+{"source": "code_python", "rows": 3056, "network_bytes": 7607949, "code_attempts": 3313}
+<unknown>:273: SyntaxWarning: invalid escape sequence '\w'
+{"source": "code_javascript", "rows": 3482, "network_bytes": 6811070, "code_attempts": 3488}
+<unknown>:13: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:39: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_python", "rows": 3208, "network_bytes": 7700245, "code_attempts": 3481}
+<unknown>:5: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:5: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:7: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:143: SyntaxWarning: invalid escape sequence '\c'
+<unknown>:11: SyntaxWarning: invalid escape sequence '\/'
+{"source": "code_javascript", "rows": 3668, "network_bytes": 6901812, "code_attempts": 3674}
+{"source": "code_python", "rows": 3359, "network_bytes": 7792497, "code_attempts": 3644}
+<unknown>:50: SyntaxWarning: invalid escape sequence '\i'
+<unknown>:80: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:21: SyntaxWarning: invalid escape sequence '\('
+<unknown>:135: SyntaxWarning: invalid escape sequence '\i'
+<unknown>:22: SyntaxWarning: invalid escape sequence '\e'
+<unknown>:37: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:195: SyntaxWarning: invalid escape sequence '\d'
+{"source": "code_javascript", "rows": 3863, "network_bytes": 6993079, "code_attempts": 3870}
+{"source": "code_python", "rows": 3520, "network_bytes": 7885251, "code_attempts": 3821}
+<unknown>:21: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:134: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:150: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:166: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:34: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:34: SyntaxWarning: invalid escape sequence '\g'
+<unknown>:32: SyntaxWarning: invalid escape sequence '\{'
+<unknown>:10: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:141: SyntaxWarning: invalid escape sequence '\('
+{"source": "code_javascript", "rows": 4046, "network_bytes": 7083469, "code_attempts": 4053}
+{"source": "code_python", "rows": 3668, "network_bytes": 7977439, "code_attempts": 3985}
+<unknown>:7: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:24: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:146: SyntaxWarning: invalid escape sequence '\d'
+{"source": "code_python", "rows": 3796, "network_bytes": 8069814, "code_attempts": 4121}
+{"source": "code_javascript", "rows": 4232, "network_bytes": 7173841, "code_attempts": 4240}
+<unknown>:37: SyntaxWarning: invalid escape sequence '\/'
+<unknown>:17: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:11: SyntaxWarning: invalid escape sequence '\P'
+<unknown>:29: SyntaxWarning: invalid escape sequence '\m'
+{"source": "code_python", "rows": 3938, "network_bytes": 8161137, "code_attempts": 4271}
+{"source": "code_javascript", "rows": 4420, "network_bytes": 7264707, "code_attempts": 4428}
+<unknown>:158: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:68: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:210: SyntaxWarning: invalid escape sequence '\_'
+{"source": "code_python", "rows": 4107, "network_bytes": 8253906, "code_attempts": 4456}
+{"source": "code_javascript", "rows": 4593, "network_bytes": 7355644, "code_attempts": 4601}
+<unknown>:15: SyntaxWarning: invalid escape sequence '\W'
+{"source": "code_python", "rows": 4253, "network_bytes": 8346711, "code_attempts": 4612}
+{"source": "code_javascript", "rows": 4772, "network_bytes": 7448318, "code_attempts": 4781}
+<unknown>:58: SyntaxWarning: invalid escape sequence '\l'
+<unknown>:59: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:140: SyntaxWarning: invalid escape sequence '\['
+<unknown>:111: SyntaxWarning: invalid escape sequence '\p'
+<unknown>:90: SyntaxWarning: invalid imaginary literal
+{"source": "code_python", "rows": 4408, "network_bytes": 8438912, "code_attempts": 4776}
+{"source": "code_javascript", "rows": 4953, "network_bytes": 7538696, "code_attempts": 4962}
+<unknown>:27: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:31: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:33: SyntaxWarning: invalid escape sequence '\/'
+<unknown>:35: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:37: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:39: SyntaxWarning: invalid escape sequence '\_'
+<unknown>:53: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:63: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:77: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:79: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:105: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:106: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:107: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:109: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:122: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:131: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:135: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:139: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:141: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:147: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:150: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:153: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:160: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:162: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:167: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:169: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:172: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:175: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:180: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:184: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:188: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:403: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:39: SyntaxWarning: invalid escape sequence '\p'
+<unknown>:147: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:160: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:200: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:241: SyntaxWarning: invalid escape sequence '\*'
+{"source": "code_python", "rows": 4580, "network_bytes": 8531936, "code_attempts": 4968}
+{"source": "code_javascript", "rows": 5146, "network_bytes": 7629162, "code_attempts": 5155}
+<unknown>:7: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:232: SyntaxWarning: invalid escape sequence '\p'
+<unknown>:118: SyntaxWarning: invalid escape sequence '\]'
+<unknown>:12: SyntaxWarning: invalid escape sequence '\='
+<unknown>:69: SyntaxWarning: invalid escape sequence '\.'
+{"source": "code_python", "rows": 4736, "network_bytes": 8624162, "code_attempts": 5136}
+{"source": "code_javascript", "rows": 5336, "network_bytes": 7720295, "code_attempts": 5345}
+<unknown>:149: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:150: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:360: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:361: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:15: SyntaxWarning: invalid escape sequence '\S'
+{"source": "code_python", "rows": 4908, "network_bytes": 8718001, "code_attempts": 5318}
+{"source": "code_javascript", "rows": 5514, "network_bytes": 7810361, "code_attempts": 5524}
+<unknown>:85: SyntaxWarning: invalid escape sequence '\]'
+<unknown>:88: SyntaxWarning: invalid escape sequence '\]'
+{"source": "code_python", "rows": 5045, "network_bytes": 8810330, "code_attempts": 5472}
+<unknown>:332: SyntaxWarning: invalid escape sequence '\('
+<unknown>:148: SyntaxWarning: invalid escape sequence '\|'
+<unknown>:278: SyntaxWarning: invalid escape sequence '\d'
+{"source": "code_javascript", "rows": 5704, "network_bytes": 7901699, "code_attempts": 5714}
+<unknown>:24: SyntaxWarning: invalid escape sequence '\D'
+<unknown>:120: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:61: SyntaxWarning: invalid escape sequence '\ '
+{"source": "code_python", "rows": 5192, "network_bytes": 8902926, "code_attempts": 5630}
+{"source": "code_javascript", "rows": 5900, "network_bytes": 7992696, "code_attempts": 5910}
+<unknown>:67: SyntaxWarning: invalid escape sequence '\W'
+<unknown>:30: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:55: SyntaxWarning: invalid escape sequence '\)'
+<unknown>:55: SyntaxWarning: invalid escape sequence '\)'
+<unknown>:58: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:64: SyntaxWarning: invalid escape sequence '\ '
+{"source": "code_python", "rows": 5349, "network_bytes": 8994676, "code_attempts": 5797}
+<unknown>:223: SyntaxWarning: invalid escape sequence '\c'
+<unknown>:234: SyntaxWarning: invalid escape sequence '\c'
+<unknown>:247: SyntaxWarning: invalid escape sequence '\c'
+<unknown>:62: SyntaxWarning: invalid escape sequence '\w'
+<unknown>:103: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_javascript", "rows": 6080, "network_bytes": 8083283, "code_attempts": 6090}
+<unknown>:5: SyntaxWarning: invalid escape sequence '\ '
+{"source": "code_python", "rows": 5495, "network_bytes": 9087255, "code_attempts": 5951}
+<unknown>:14: SyntaxWarning: invalid escape sequence '\R'
+<unknown>:53: SyntaxWarning: invalid escape sequence '\d'
+{"source": "code_javascript", "rows": 6236, "network_bytes": 8173980, "code_attempts": 6246}
+<unknown>:37: SyntaxWarning: invalid escape sequence '\<'
+<unknown>:37: SyntaxWarning: invalid escape sequence '\<'
+<unknown>:70: SyntaxWarning: invalid escape sequence '\<'
+<unknown>:74: SyntaxWarning: invalid escape sequence '\<'
+<unknown>:75: SyntaxWarning: invalid escape sequence '\<'
+<unknown>:76: SyntaxWarning: invalid escape sequence '\<'
+{"source": "code_python", "rows": 5655, "network_bytes": 9183110, "code_attempts": 6118}
+<unknown>:151: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:165: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:55: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:61: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:74: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:8: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:253: SyntaxWarning: invalid escape sequence '\`'
+{"source": "code_javascript", "rows": 6416, "network_bytes": 8265055, "code_attempts": 6426}
+<unknown>:24: SyntaxWarning: invalid escape sequence '\W'
+{"source": "code_python", "rows": 5806, "network_bytes": 9276419, "code_attempts": 6281}
+<unknown>:16: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:17: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:18: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:227: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:229: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:231: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:233: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:235: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:237: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:239: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:1261: SyntaxWarning: invalid escape sequence '\C'
+<unknown>:304: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:102: SyntaxWarning: invalid escape sequence '\['
+{"source": "code_javascript", "rows": 6604, "network_bytes": 8356235, "code_attempts": 6614}
+{"source": "code_python", "rows": 5960, "network_bytes": 9369425, "code_attempts": 6441}
+<unknown>:298: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:44: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:49: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:50: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:51: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:253: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:253: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:45: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:81: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:127: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:158: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:197: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:234: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:311: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:396: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:477: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_python", "rows": 6111, "network_bytes": 9462796, "code_attempts": 6607}
+{"source": "code_javascript", "rows": 6780, "network_bytes": 8446201, "code_attempts": 6791}
+<unknown>:88: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:88: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:167: SyntaxWarning: invalid escape sequence '\p'
+<unknown>:4: SyntaxWarning: invalid escape sequence '\d'
+{"source": "code_python", "rows": 6273, "network_bytes": 9554518, "code_attempts": 6775}
+{"source": "code_javascript", "rows": 6957, "network_bytes": 8537041, "code_attempts": 6968}
+<unknown>:397: SyntaxWarning: invalid escape sequence '\S'
+<unknown>:459: SyntaxWarning: invalid escape sequence '\S'
+<unknown>:710: SyntaxWarning: invalid escape sequence '\S'
+<unknown>:994: SyntaxWarning: invalid escape sequence '\S'
+<unknown>:1017: SyntaxWarning: invalid escape sequence '\S'
+<unknown>:1039: SyntaxWarning: invalid escape sequence '\S'
+<unknown>:1060: SyntaxWarning: invalid escape sequence '\S'
+<unknown>:1092: SyntaxWarning: invalid escape sequence '\S'
+<unknown>:1216: SyntaxWarning: invalid escape sequence '\S'
+<unknown>:1362: SyntaxWarning: invalid escape sequence '\S'
+<unknown>:1377: SyntaxWarning: invalid escape sequence '\S'
+<unknown>:1428: SyntaxWarning: invalid escape sequence '\S'
+<unknown>:33: SyntaxWarning: invalid escape sequence '\['
+<unknown>:34: SyntaxWarning: invalid escape sequence '\{'
+<unknown>:66: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:68: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:69: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:80: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:82: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:83: SyntaxWarning: invalid escape sequence '\ '
+{"source": "code_python", "rows": 6432, "network_bytes": 9647372, "code_attempts": 6947}
+{"source": "code_javascript", "rows": 7141, "network_bytes": 8627863, "code_attempts": 7153}
+<unknown>:18: SyntaxWarning: invalid escape sequence '\w'
+<unknown>:152: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:23: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:24: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:25: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:26: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:27: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:28: SyntaxWarning: invalid escape sequence '\d'
+{"source": "code_javascript", "rows": 7285, "network_bytes": 8718464, "code_attempts": 7297}
+{"source": "code_python", "rows": 6592, "network_bytes": 9739692, "code_attempts": 7115}
+<unknown>:28: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:87: SyntaxWarning: invalid escape sequence '\['
+<unknown>:87: SyntaxWarning: invalid escape sequence '\g'
+<unknown>:88: SyntaxWarning: invalid escape sequence '\{'
+<unknown>:88: SyntaxWarning: invalid escape sequence '\g'
+<unknown>:91: SyntaxWarning: invalid escape sequence '\['
+<unknown>:159: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:161: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:162: SyntaxWarning: invalid escape sequence '\{'
+<unknown>:171: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:179: SyntaxWarning: invalid escape sequence '\{'
+<unknown>:7: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:74: SyntaxWarning: invalid escape sequence '\.'
+{"source": "code_python", "rows": 6725, "network_bytes": 9831707, "code_attempts": 7256}
+{"source": "code_javascript", "rows": 7444, "network_bytes": 8809381, "code_attempts": 7456}
+<unknown>:100: SyntaxWarning: invalid escape sequence '\h'
+<unknown>:36: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:9: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:111: SyntaxWarning: invalid escape sequence '\S'
+<unknown>:611: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:613: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:621: SyntaxWarning: invalid escape sequence '\.'
+{"source": "code_python", "rows": 6865, "network_bytes": 9924889, "code_attempts": 7408}
+{"source": "code_javascript", "rows": 7613, "network_bytes": 8899873, "code_attempts": 7625}
+<unknown>:58: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:59: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:60: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:208: SyntaxWarning: invalid escape sequence '\['
+<unknown>:7: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:11: SyntaxWarning: invalid escape sequence '\W'
+<unknown>:20: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:42: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:110: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:111: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:115: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:116: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:116: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:116: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:116: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:123: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:162: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:202: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:203: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:208: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:209: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:209: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:209: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:209: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:216: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:248: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:21: SyntaxWarning: invalid escape sequence '\['
+<unknown>:16: SyntaxWarning: invalid escape sequence '\i'
+{"source": "code_python", "rows": 7029, "network_bytes": 10017188, "code_attempts": 7587}
+{"source": "code_javascript", "rows": 7793, "network_bytes": 8991749, "code_attempts": 7806}
+<unknown>:34: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:67: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:95: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:98: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:113: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:60: SyntaxWarning: invalid escape sequence '\.'
+{"source": "code_python", "rows": 7179, "network_bytes": 10109380, "code_attempts": 7748}
+{"source": "code_javascript", "rows": 7958, "network_bytes": 9084222, "code_attempts": 7971}
+<unknown>:44: SyntaxWarning: invalid escape sequence '\d'
+{"source": "code_python", "rows": 7345, "network_bytes": 10201835, "code_attempts": 7927}
+{"source": "code_javascript", "rows": 8122, "network_bytes": 9174775, "code_attempts": 8135}
+<unknown>:6: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:9: SyntaxWarning: invalid escape sequence '\P'
+<unknown>:3: SyntaxWarning: invalid escape sequence '\P'
+<unknown>:91: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:33: SyntaxWarning: invalid escape sequence '\/'
+<unknown>:41: SyntaxWarning: invalid escape sequence '\d'
+{"source": "code_python", "rows": 7478, "network_bytes": 10294507, "code_attempts": 8074}
+{"source": "code_javascript", "rows": 8315, "network_bytes": 9269027, "code_attempts": 8328}
+<unknown>:612: SyntaxWarning: invalid escape sequence '\o'
+<unknown>:13: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:9: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:16: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:89: SyntaxWarning: invalid escape sequence '\-'
+{"source": "code_python", "rows": 7633, "network_bytes": 10386878, "code_attempts": 8241}
+{"source": "code_javascript", "rows": 8495, "network_bytes": 9358940, "code_attempts": 8509}
+<unknown>:38: SyntaxWarning: invalid escape sequence '\-'
+<unknown>:3: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:52: SyntaxWarning: invalid escape sequence '\$'
+{"source": "code_python", "rows": 7787, "network_bytes": 10480074, "code_attempts": 8411}
+{"source": "code_javascript", "rows": 8670, "network_bytes": 9448848, "code_attempts": 8684}
+<unknown>:14: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:54: SyntaxWarning: invalid escape sequence '\w'
+<unknown>:54: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:66: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:67: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:545: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:71: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:71: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:72: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:72: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:73: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:73: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:92: SyntaxWarning: invalid escape sequence '\-'
+{"source": "code_python", "rows": 7950, "network_bytes": 10572969, "code_attempts": 8590}
+{"source": "code_javascript", "rows": 8828, "network_bytes": 9539899, "code_attempts": 8842}
+<unknown>:31: SyntaxWarning: invalid escape sequence '\|'
+<unknown>:27: SyntaxWarning: invalid escape sequence '\h'
+<unknown>:59: SyntaxWarning: invalid escape sequence '\p'
+<unknown>:60: SyntaxWarning: invalid escape sequence '\p'
+<unknown>:61: SyntaxWarning: invalid escape sequence '\p'
+<unknown>:62: SyntaxWarning: invalid escape sequence '\p'
+<unknown>:82: SyntaxWarning: invalid escape sequence '\p'
+<unknown>:156: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:157: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:296: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:297: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:325: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:327: SyntaxWarning: invalid escape sequence '\m'
+{"source": "code_python", "rows": 8090, "network_bytes": 10665549, "code_attempts": 8741}
+{"source": "code_javascript", "rows": 9009, "network_bytes": 9630457, "code_attempts": 9023}
+<unknown>:94: SyntaxWarning: invalid escape sequence '\c'
+<unknown>:12: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:56: SyntaxWarning: invalid escape sequence '\,'
+<unknown>:40: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:6: SyntaxWarning: invalid escape sequence '\L'
+<unknown>:15: SyntaxWarning: invalid escape sequence '\>'
+{"source": "code_python", "rows": 8254, "network_bytes": 10757173, "code_attempts": 8919}
+{"source": "code_javascript", "rows": 9194, "network_bytes": 9721464, "code_attempts": 9208}
+<unknown>:140: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:170: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:10: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:27: SyntaxWarning: invalid escape sequence '\?'
+<unknown>:155: SyntaxWarning: invalid escape sequence '\i'
+<unknown>:174: SyntaxWarning: invalid escape sequence '\i'
+<unknown>:247: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:319: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:42: SyntaxWarning: invalid escape sequence '\W'
+{"source": "code_python", "rows": 8433, "network_bytes": 10849260, "code_attempts": 9113}
+{"source": "code_javascript", "rows": 9372, "network_bytes": 9811214, "code_attempts": 9386}
+{"id": "code_javascript", "status": "RAW_SEGMENT_READY", "rows_written": 9372, "output_bytes": 10227358, "error_type": null, "stop_reason": null}
+<unknown>:17: SyntaxWarning: invalid escape sequence '\D'
+<unknown>:18: SyntaxWarning: invalid escape sequence '\D'
+<unknown>:19: SyntaxWarning: invalid escape sequence '\D'
+<unknown>:120: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:13: SyntaxWarning: invalid escape sequence '\L'
+{"source": "code_python", "rows": 8582, "network_bytes": 10942400, "code_attempts": 9272}
+{"source": "code_java", "rows": 41, "network_bytes": 5008288, "code_attempts": 41}
+<unknown>:68: SyntaxWarning: invalid escape sequence '\,'
+<unknown>:69: SyntaxWarning: invalid escape sequence '\,'
+<unknown>:12: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_java", "rows": 71, "network_bytes": 5120044, "code_attempts": 71}
+<unknown>:48: SyntaxWarning: invalid escape sequence '\('
+{"source": "code_python", "rows": 8719, "network_bytes": 11035149, "code_attempts": 9419}
+{"source": "code_java", "rows": 110, "network_bytes": 5235706, "code_attempts": 111}
+<unknown>:55: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:59: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:41: SyntaxWarning: invalid escape sequence '\c'
+<unknown>:52: SyntaxWarning: invalid escape sequence '\c'
+<unknown>:53: SyntaxWarning: invalid escape sequence '\c'
+<unknown>:57: SyntaxWarning: invalid escape sequence '\c'
+<unknown>:75: SyntaxWarning: invalid escape sequence '\c'
+<unknown>:93: SyntaxWarning: invalid escape sequence '\c'
+<unknown>:27: SyntaxWarning: invalid escape sequence '\/'
+<unknown>:28: SyntaxWarning: invalid escape sequence '\/'
+<unknown>:29: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_java", "rows": 143, "network_bytes": 5347567, "code_attempts": 145}
+<unknown>:12: SyntaxWarning: invalid escape sequence '\W'
+{"source": "code_python", "rows": 8867, "network_bytes": 11128520, "code_attempts": 9585}
+{"source": "code_java", "rows": 176, "network_bytes": 5458596, "code_attempts": 178}
+<unknown>:88: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:121: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:156: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:213: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:145: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:12: SyntaxWarning: invalid escape sequence '\D'
+<unknown>:75: SyntaxWarning: invalid escape sequence '\{'
+{"source": "code_java", "rows": 209, "network_bytes": 5569741, "code_attempts": 212}
+{"source": "code_python", "rows": 9020, "network_bytes": 11220791, "code_attempts": 9750}
+{"source": "code_java", "rows": 244, "network_bytes": 5680947, "code_attempts": 247}
+<unknown>:40: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:73: SyntaxWarning: invalid escape sequence '\d'
+{"source": "code_java", "rows": 274, "network_bytes": 5791719, "code_attempts": 277}
+<unknown>:406: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:55: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:63: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:73: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:77: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:83: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:34: SyntaxWarning: invalid escape sequence '\]'
+{"source": "code_python", "rows": 9189, "network_bytes": 11312906, "code_attempts": 9932}
+{"source": "code_java", "rows": 320, "network_bytes": 5902127, "code_attempts": 323}
+<unknown>:24: SyntaxWarning: invalid escape sequence '\e'
+<unknown>:21: SyntaxWarning: invalid escape sequence '\D'
+<unknown>:122: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:203: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:235: SyntaxWarning: invalid escape sequence '\h'
+<unknown>:80: SyntaxWarning: invalid escape sequence '\p'
+{"source": "code_java", "rows": 362, "network_bytes": 6012613, "code_attempts": 365}
+<unknown>:168: SyntaxWarning: invalid escape sequence '\:'
+<unknown>:269: SyntaxWarning: invalid escape sequence '\d'
+{"source": "code_python", "rows": 9358, "network_bytes": 11405359, "code_attempts": 10113}
+{"source": "code_java", "rows": 387, "network_bytes": 6124410, "code_attempts": 390}
+<unknown>:116: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:120: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:132: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:14: SyntaxWarning: invalid escape sequence '\.'
+{"source": "code_java", "rows": 427, "network_bytes": 6233715, "code_attempts": 430}
+<unknown>:36: SyntaxWarning: invalid escape sequence '\*'
+{"source": "code_python", "rows": 9528, "network_bytes": 11498102, "code_attempts": 10298}
+{"source": "code_java", "rows": 458, "network_bytes": 6344274, "code_attempts": 462}
+<unknown>:39: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:277: SyntaxWarning: invalid escape sequence '\D'
+<unknown>:245: SyntaxWarning: invalid escape sequence '\_'
+<unknown>:247: SyntaxWarning: invalid escape sequence '\_'
+<unknown>:249: SyntaxWarning: invalid escape sequence '\_'
+<unknown>:72: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:272: SyntaxWarning: invalid escape sequence '\p'
+{"source": "code_java", "rows": 494, "network_bytes": 6455963, "code_attempts": 498}
+{"source": "code_python", "rows": 9676, "network_bytes": 11590424, "code_attempts": 10457}
+{"source": "code_java", "rows": 529, "network_bytes": 6565545, "code_attempts": 533}
+{"source": "code_java", "rows": 563, "network_bytes": 6677275, "code_attempts": 568}
+<unknown>:8: SyntaxWarning: invalid escape sequence '\_'
+<unknown>:36: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_python", "rows": 9836, "network_bytes": 11683810, "code_attempts": 10625}
+{"source": "code_java", "rows": 599, "network_bytes": 6788631, "code_attempts": 606}
+<unknown>:175: SyntaxWarning: invalid decimal literal
+<unknown>:176: SyntaxWarning: invalid decimal literal
+<unknown>:83: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:102: SyntaxWarning: invalid escape sequence '\.'
+{"source": "code_java", "rows": 629, "network_bytes": 6899753, "code_attempts": 636}
+<unknown>:14: SyntaxWarning: invalid escape sequence '\.'
+{"source": "code_python", "rows": 9972, "network_bytes": 11776794, "code_attempts": 10775}
+{"source": "code_java", "rows": 659, "network_bytes": 7009460, "code_attempts": 666}
+<unknown>:8: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:19: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_java", "rows": 696, "network_bytes": 7119131, "code_attempts": 703}
+<unknown>:106: SyntaxWarning: invalid escape sequence '\ '
+{"source": "code_python", "rows": 10123, "network_bytes": 11869694, "code_attempts": 10935}
+{"source": "code_java", "rows": 728, "network_bytes": 7229912, "code_attempts": 736}
+<unknown>:95: SyntaxWarning: invalid escape sequence '\c'
+<unknown>:65: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_java", "rows": 754, "network_bytes": 7340348, "code_attempts": 765}
+<unknown>:11: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:33: SyntaxWarning: invalid escape sequence '\w'
+{"source": "code_python", "rows": 10286, "network_bytes": 11961712, "code_attempts": 11114}
+{"source": "code_java", "rows": 781, "network_bytes": 7452747, "code_attempts": 792}
+{"source": "code_java", "rows": 801, "network_bytes": 7562542, "code_attempts": 814}
+{"source": "code_java", "rows": 835, "network_bytes": 7674330, "code_attempts": 848}
+<unknown>:145: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:173: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:173: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:173: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:173: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:173: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:173: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:174: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:177: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:177: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:177: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:177: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:177: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:178: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:178: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:178: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_java", "rows": 872, "network_bytes": 7784198, "code_attempts": 886}
+<unknown>:64: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:45: SyntaxWarning: invalid escape sequence '\='
+<unknown>:11: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:348: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:9: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_java", "rows": 898, "network_bytes": 7895591, "code_attempts": 912}
+{"source": "code_python", "rows": 10442, "network_bytes": 12054009, "code_attempts": 11285}
+{"source": "code_java", "rows": 932, "network_bytes": 8006056, "code_attempts": 946}
+<unknown>:208: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:269: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:317: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:20: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:59: SyntaxWarning: invalid escape sequence '\P'
+<unknown>:77: SyntaxWarning: invalid escape sequence '\i'
+<unknown>:85: SyntaxWarning: invalid escape sequence '\i'
+<unknown>:118: SyntaxWarning: invalid escape sequence '\i'
+{"source": "code_java", "rows": 968, "network_bytes": 8117507, "code_attempts": 982}
+{"source": "code_python", "rows": 10588, "network_bytes": 12145903, "code_attempts": 11442}
+{"source": "code_java", "rows": 1009, "network_bytes": 8228917, "code_attempts": 1023}
+<unknown>:190: SyntaxWarning: invalid escape sequence '\-'
+<unknown>:4: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:11: SyntaxWarning: invalid escape sequence '\{'
+{"source": "code_java", "rows": 1044, "network_bytes": 8339856, "code_attempts": 1058}
+{"source": "code_python", "rows": 10735, "network_bytes": 12240165, "code_attempts": 11599}
+{"source": "code_java", "rows": 1080, "network_bytes": 8450873, "code_attempts": 1094}
+<unknown>:24: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:96: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:320: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:79: SyntaxWarning: invalid escape sequence '\d'
+{"source": "code_java", "rows": 1113, "network_bytes": 8562139, "code_attempts": 1128}
+<unknown>:25: SyntaxWarning: invalid escape sequence '\('
+<unknown>:26: SyntaxWarning: invalid escape sequence '\)'
+{"source": "code_python", "rows": 10899, "network_bytes": 12332745, "code_attempts": 11772}
+<unknown>:11: SyntaxWarning: invalid escape sequence '\c'
+{"source": "code_java", "rows": 1149, "network_bytes": 8672732, "code_attempts": 1164}
+<unknown>:42: SyntaxWarning: invalid escape sequence '\;'
+<unknown>:33: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:138: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:71: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:80: SyntaxWarning: invalid escape sequence '\{'
+<unknown>:8: SyntaxWarning: invalid escape sequence '\W'
+<unknown>:1122: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:35: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_java", "rows": 1182, "network_bytes": 8783377, "code_attempts": 1198}
+<unknown>:30: SyntaxWarning: invalid escape sequence '\w'
+<unknown>:34: SyntaxWarning: invalid escape sequence '\w'
+{"source": "code_python", "rows": 11058, "network_bytes": 12424103, "code_attempts": 11951}
+{"source": "code_java", "rows": 1214, "network_bytes": 8893791, "code_attempts": 1230}
+<unknown>:189: SyntaxWarning: invalid escape sequence '\%'
+<unknown>:254: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:1191: SyntaxWarning: invalid escape sequence '\i'
+<unknown>:132: SyntaxWarning: invalid decimal literal
+<unknown>:142: SyntaxWarning: invalid escape sequence '\D'
+{"source": "code_java", "rows": 1240, "network_bytes": 9004477, "code_attempts": 1257}
+<unknown>:10: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_python", "rows": 11192, "network_bytes": 12516084, "code_attempts": 12099}
+{"source": "code_java", "rows": 1273, "network_bytes": 9116921, "code_attempts": 1290}
+<unknown>:28: SyntaxWarning: invalid escape sequence '\i'
+<unknown>:63: SyntaxWarning: invalid escape sequence '\i'
+<unknown>:47: SyntaxWarning: invalid escape sequence '\R'
+<unknown>:57: SyntaxWarning: invalid escape sequence '\I'
+<unknown>:100: SyntaxWarning: invalid escape sequence '\I'
+<unknown>:144: SyntaxWarning: invalid escape sequence '\I'
+<unknown>:179: SyntaxWarning: invalid escape sequence '\I'
+<unknown>:207: SyntaxWarning: invalid escape sequence '\I'
+<unknown>:237: SyntaxWarning: invalid escape sequence '\I'
+<unknown>:371: SyntaxWarning: invalid escape sequence '\I'
+<unknown>:101: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:697: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:21: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:46: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:66: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:86: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:109: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:132: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:157: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:176: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:197: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:222: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:242: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:262: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:282: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:345: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:369: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:388: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:405: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:427: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:452: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:489: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:560: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:584: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:603: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:34: SyntaxWarning: invalid escape sequence '\w'
+<unknown>:35: SyntaxWarning: invalid escape sequence '\-'
+{"source": "code_java", "rows": 1310, "network_bytes": 9229165, "code_attempts": 1327}
+<unknown>:58: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:68: SyntaxWarning: invalid escape sequence '\('
+<unknown>:64: SyntaxWarning: invalid escape sequence '\/'
+<unknown>:65: SyntaxWarning: invalid escape sequence '\/'
+<unknown>:67: SyntaxWarning: invalid escape sequence '\/'
+<unknown>:69: SyntaxWarning: invalid escape sequence '\/'
+{"source": "code_python", "rows": 11353, "network_bytes": 12609106, "code_attempts": 12269}
+{"source": "code_java", "rows": 1351, "network_bytes": 9339306, "code_attempts": 1368}
+<unknown>:534: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:551: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:15: SyntaxWarning: invalid escape sequence '\w'
+<unknown>:73: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:78: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_java", "rows": 1394, "network_bytes": 9450782, "code_attempts": 1411}
+<unknown>:44: SyntaxWarning: invalid escape sequence '\('
+<unknown>:6: SyntaxWarning: invalid escape sequence '\['
+{"source": "code_python", "rows": 11503, "network_bytes": 12702253, "code_attempts": 12438}
+{"source": "code_java", "rows": 1431, "network_bytes": 9561288, "code_attempts": 1448}
+<unknown>:23: SyntaxWarning: invalid escape sequence '\S'
+<unknown>:25: SyntaxWarning: invalid escape sequence '\S'
+<unknown>:29: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:35: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:43: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:52: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:62: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:147: SyntaxWarning: invalid escape sequence '\w'
+{"source": "code_java", "rows": 1474, "network_bytes": 9671621, "code_attempts": 1491}
+{"source": "code_python", "rows": 11653, "network_bytes": 12795933, "code_attempts": 12604}
+{"source": "code_java", "rows": 1500, "network_bytes": 9783255, "code_attempts": 1517}
+<unknown>:15: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:9: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:16: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_java", "rows": 1530, "network_bytes": 9892979, "code_attempts": 1547}
+{"source": "code_python", "rows": 11802, "network_bytes": 12888973, "code_attempts": 12766}
+{"source": "code_java", "rows": 1569, "network_bytes": 10005770, "code_attempts": 1586}
+<unknown>:114: SyntaxWarning: invalid escape sequence '\-'
+<unknown>:118: SyntaxWarning: invalid escape sequence '\-'
+<unknown>:130: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:159: SyntaxWarning: invalid escape sequence '\_'
+<unknown>:160: SyntaxWarning: invalid escape sequence '\_'
+<unknown>:11: SyntaxWarning: invalid escape sequence '\W'
+<unknown>:18: SyntaxWarning: invalid escape sequence '\W'
+<unknown>:24: SyntaxWarning: invalid escape sequence '\:'
+<unknown>:25: SyntaxWarning: invalid escape sequence '\('
+<unknown>:26: SyntaxWarning: invalid escape sequence '\)'
+<unknown>:28: SyntaxWarning: invalid escape sequence '\+'
+<unknown>:30: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:39: SyntaxWarning: invalid escape sequence '\&'
+<unknown>:40: SyntaxWarning: invalid escape sequence '\|'
+<unknown>:44: SyntaxWarning: invalid escape sequence '\['
+<unknown>:45: SyntaxWarning: invalid escape sequence '\]'
+<unknown>:46: SyntaxWarning: invalid escape sequence '\{'
+<unknown>:47: SyntaxWarning: invalid escape sequence '\}'
+<unknown>:48: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:71: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:72: SyntaxWarning: invalid escape sequence '\w'
+<unknown>:358: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:396: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_python", "rows": 11944, "network_bytes": 12981643, "code_attempts": 12918}
+{"source": "code_java", "rows": 1604, "network_bytes": 10117050, "code_attempts": 1623}
+{"source": "code_java", "rows": 1635, "network_bytes": 10227668, "code_attempts": 1655}
+<unknown>:19: SyntaxWarning: invalid escape sequence '\]'
+<unknown>:11: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:37: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:48: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_java", "rows": 1665, "network_bytes": 10337932, "code_attempts": 1685}
+{"source": "code_python", "rows": 12097, "network_bytes": 13074564, "code_attempts": 13083}
+<unknown>:129: SyntaxWarning: invalid escape sequence '\+'
+{"source": "code_java", "rows": 1695, "network_bytes": 10447759, "code_attempts": 1715}
+{"source": "code_python", "rows": 12238, "network_bytes": 13167288, "code_attempts": 13239}
+{"source": "code_java", "rows": 1730, "network_bytes": 10558618, "code_attempts": 1752}
+<unknown>:35: SyntaxWarning: invalid escape sequence '\d'
+{"source": "code_java", "rows": 1761, "network_bytes": 10669789, "code_attempts": 1783}
+<unknown>:16: SyntaxWarning: invalid escape sequence '\A'
+<unknown>:4: SyntaxWarning: invalid escape sequence '\ '
+{"source": "code_python", "rows": 12382, "network_bytes": 13260480, "code_attempts": 13394}
+{"source": "code_java", "rows": 1793, "network_bytes": 10780931, "code_attempts": 1815}
+<unknown>:34: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:39: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:44: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:54: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:64: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:69: SyntaxWarning: invalid escape sequence '\d'
+{"source": "code_java", "rows": 1825, "network_bytes": 10891954, "code_attempts": 1849}
+<unknown>:44: SyntaxWarning: invalid escape sequence '\w'
+{"source": "code_python", "rows": 12518, "network_bytes": 13353926, "code_attempts": 13546}
+{"source": "code_java", "rows": 1870, "network_bytes": 11002614, "code_attempts": 1894}
+{"source": "code_java", "rows": 1905, "network_bytes": 11114930, "code_attempts": 1930}
+<unknown>:44: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:57: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:70: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:85: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:100: SyntaxWarning: invalid escape sequence '\c'
+{"source": "code_python", "rows": 12647, "network_bytes": 13446721, "code_attempts": 13692}
+{"source": "code_java", "rows": 1940, "network_bytes": 11224839, "code_attempts": 1966}
+<unknown>:13: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:15: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:26: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:28: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:105: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:115: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:125: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:127: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:135: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:137: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:115: SyntaxWarning: invalid escape sequence '\P'
+<unknown>:77: SyntaxWarning: invalid escape sequence '\P'
+<unknown>:163: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:408: SyntaxWarning: invalid escape sequence '\p'
+<unknown>:33: SyntaxWarning: invalid escape sequence '\c'
+{"source": "code_java", "rows": 1987, "network_bytes": 11336742, "code_attempts": 2014}
+<unknown>:22: SyntaxWarning: invalid escape sequence '\R'
+<unknown>:35: SyntaxWarning: invalid escape sequence '\R'
+<unknown>:48: SyntaxWarning: invalid escape sequence '\R'
+<unknown>:51: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:141: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_python", "rows": 12797, "network_bytes": 13538974, "code_attempts": 13850}
+{"source": "code_java", "rows": 2017, "network_bytes": 11446279, "code_attempts": 2045}
+<unknown>:84: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:122: SyntaxWarning: invalid escape sequence '\S'
+{"source": "code_java", "rows": 2050, "network_bytes": 11557179, "code_attempts": 2080}
+{"source": "code_python", "rows": 12956, "network_bytes": 13632375, "code_attempts": 14024}
+{"source": "code_java", "rows": 2081, "network_bytes": 11667563, "code_attempts": 2111}
+<unknown>:51: SyntaxWarning: invalid escape sequence '\S'
+<unknown>:22: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:33: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:45: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:46: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:47: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:48: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:56: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:67: SyntaxWarning: invalid escape sequence '\('
+<unknown>:74: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:81: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:84: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:276: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:102: SyntaxWarning: invalid escape sequence '\['
+<unknown>:137: SyntaxWarning: invalid escape sequence '\{'
+<unknown>:83: SyntaxWarning: invalid escape sequence '\p'
+<unknown>:5: SyntaxWarning: invalid escape sequence '\i'
+{"source": "code_java", "rows": 2112, "network_bytes": 11778074, "code_attempts": 2142}
+{"source": "code_python", "rows": 13095, "network_bytes": 13724733, "code_attempts": 14180}
+<unknown>:63: SyntaxWarning: invalid escape sequence '\R'
+<unknown>:74: SyntaxWarning: invalid escape sequence '\d'
+{"source": "code_java", "rows": 2150, "network_bytes": 11888321, "code_attempts": 2180}
+<unknown>:449: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:28: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:20: SyntaxWarning: invalid escape sequence '\w'
+<unknown>:23: SyntaxWarning: invalid escape sequence '\|'
+{"source": "code_python", "rows": 13250, "network_bytes": 13817475, "code_attempts": 14343}
+{"source": "code_java", "rows": 2190, "network_bytes": 11998551, "code_attempts": 2221}
+{"source": "code_java", "rows": 2219, "network_bytes": 12109697, "code_attempts": 2251}
+<unknown>:256: SyntaxWarning: invalid escape sequence '\p'
+<unknown>:178: SyntaxWarning: invalid escape sequence '\,'
+<unknown>:9: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:9: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:9: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_python", "rows": 13403, "network_bytes": 13910077, "code_attempts": 14509}
+{"source": "code_java", "rows": 2254, "network_bytes": 12223051, "code_attempts": 2286}
+<unknown>:27: SyntaxWarning: invalid escape sequence '\&'
+<unknown>:28: SyntaxWarning: invalid escape sequence '\%'
+<unknown>:29: SyntaxWarning: invalid escape sequence '\$'
+<unknown>:30: SyntaxWarning: invalid escape sequence '\#'
+<unknown>:31: SyntaxWarning: invalid escape sequence '\_'
+<unknown>:32: SyntaxWarning: invalid escape sequence '\{'
+<unknown>:33: SyntaxWarning: invalid escape sequence '\}'
+<unknown>:41: SyntaxWarning: invalid escape sequence '\_'
+<unknown>:101: SyntaxWarning: invalid escape sequence '\h'
+<unknown>:205: SyntaxWarning: invalid escape sequence '\%'
+<unknown>:206: SyntaxWarning: invalid escape sequence '\%'
+{"source": "code_java", "rows": 2282, "network_bytes": 12334772, "code_attempts": 2316}
+<unknown>:49: SyntaxWarning: invalid escape sequence '\;'
+<unknown>:66: SyntaxWarning: invalid escape sequence '\g'
+<unknown>:72: SyntaxWarning: invalid escape sequence '\d'
+{"source": "code_python", "rows": 13542, "network_bytes": 14002221, "code_attempts": 14660}
+{"source": "code_java", "rows": 2316, "network_bytes": 12446927, "code_attempts": 2351}
+<unknown>:40: SyntaxWarning: invalid escape sequence '\|'
+{"source": "code_java", "rows": 2346, "network_bytes": 12557426, "code_attempts": 2381}
+{"source": "code_python", "rows": 13706, "network_bytes": 14095222, "code_attempts": 14836}
+{"source": "code_java", "rows": 2376, "network_bytes": 12667735, "code_attempts": 2411}
+<unknown>:100: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:24: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:103: SyntaxWarning: invalid escape sequence '\p'
+<unknown>:28: SyntaxWarning: invalid escape sequence '\*'
+{"source": "code_java", "rows": 2405, "network_bytes": 12778543, "code_attempts": 2441}
+<unknown>:16: SyntaxWarning: invalid escape sequence '\>'
+{"source": "code_python", "rows": 13855, "network_bytes": 14187556, "code_attempts": 14999}
+{"source": "code_java", "rows": 2435, "network_bytes": 12889253, "code_attempts": 2471}
+<unknown>:61: SyntaxWarning: invalid escape sequence '\d'
+{"source": "code_java", "rows": 2463, "network_bytes": 12999232, "code_attempts": 2499}
+<unknown>:67: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:114: SyntaxWarning: invalid escape sequence '\_'
+<unknown>:144: SyntaxWarning: invalid escape sequence '\/'
+{"source": "code_python", "rows": 14004, "network_bytes": 14281652, "code_attempts": 15163}
+{"source": "code_java", "rows": 2491, "network_bytes": 13111070, "code_attempts": 2528}
+<unknown>:12: SyntaxWarning: invalid escape sequence '\ '
+{"source": "code_java", "rows": 2521, "network_bytes": 13221089, "code_attempts": 2559}
+<unknown>:27: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:28: SyntaxWarning: invalid escape sequence '\/'
+{"source": "code_java", "rows": 2557, "network_bytes": 13331479, "code_attempts": 2595}
+{"source": "code_python", "rows": 14165, "network_bytes": 14374916, "code_attempts": 15342}
+{"source": "code_java", "rows": 2590, "network_bytes": 13442586, "code_attempts": 2628}
+{"source": "code_python", "rows": 14300, "network_bytes": 14467153, "code_attempts": 15490}
+{"source": "code_java", "rows": 2627, "network_bytes": 13552939, "code_attempts": 2665}
+<unknown>:92: SyntaxWarning: invalid escape sequence '\c'
+<unknown>:14: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:15: SyntaxWarning: invalid escape sequence '\('
+{"source": "code_java", "rows": 2646, "network_bytes": 13664082, "code_attempts": 2685}
+<unknown>:20: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:48: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:51: SyntaxWarning: invalid escape sequence '\h'
+<unknown>:52: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:55: SyntaxWarning: invalid escape sequence '\h'
+<unknown>:56: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:59: SyntaxWarning: invalid escape sequence '\h'
+<unknown>:60: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:65: SyntaxWarning: invalid escape sequence '\h'
+{"source": "code_python", "rows": 14446, "network_bytes": 14559406, "code_attempts": 15648}
+{"source": "code_java", "rows": 2691, "network_bytes": 13774702, "code_attempts": 2730}
+<unknown>:19: SyntaxWarning: invalid escape sequence '\{'
+<unknown>:19: SyntaxWarning: invalid escape sequence '\}'
+<unknown>:19: SyntaxWarning: invalid escape sequence '\['
+<unknown>:19: SyntaxWarning: invalid escape sequence '\]'
+<unknown>:19: SyntaxWarning: invalid escape sequence '\('
+<unknown>:19: SyntaxWarning: invalid escape sequence '\)'
+<unknown>:19: SyntaxWarning: invalid escape sequence '\+'
+<unknown>:64: SyntaxWarning: invalid escape sequence '\d'
+{"source": "code_java", "rows": 2724, "network_bytes": 13884400, "code_attempts": 2764}
+{"source": "code_python", "rows": 14605, "network_bytes": 14652526, "code_attempts": 15818}
+{"source": "code_java", "rows": 2749, "network_bytes": 13997212, "code_attempts": 2789}
+{"source": "code_java", "rows": 2780, "network_bytes": 14108235, "code_attempts": 2820}
+<unknown>:128: SyntaxWarning: invalid escape sequence '\-'
+<unknown>:136: SyntaxWarning: invalid escape sequence '\-'
+<unknown>:21: SyntaxWarning: invalid escape sequence '\{'
+{"source": "code_java", "rows": 2804, "network_bytes": 14218396, "code_attempts": 2844}
+{"source": "code_python", "rows": 14755, "network_bytes": 14744969, "code_attempts": 15982}
+{"source": "code_java", "rows": 2830, "network_bytes": 14330064, "code_attempts": 2871}
+<unknown>:67: SyntaxWarning: invalid escape sequence '\['
+<unknown>:82: SyntaxWarning: invalid escape sequence '\['
+<unknown>:301: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:269: SyntaxWarning: invalid escape sequence '\G'
+<unknown>:29: SyntaxWarning: invalid escape sequence '\w'
+{"source": "code_java", "rows": 2868, "network_bytes": 14440940, "code_attempts": 2910}
+<unknown>:20: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:21: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:119: SyntaxWarning: invalid escape sequence '\['
+<unknown>:294: SyntaxWarning: invalid escape sequence '\['
+<unknown>:686: SyntaxWarning: invalid escape sequence '\['
+{"source": "code_python", "rows": 14915, "network_bytes": 14837406, "code_attempts": 16150}
+{"source": "code_java", "rows": 2893, "network_bytes": 14552742, "code_attempts": 2935}
+<unknown>:30: SyntaxWarning: invalid escape sequence '\p'
+<unknown>:21: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:32: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:355: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:80: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:44: SyntaxWarning: invalid escape sequence '\='
+<unknown>:16: SyntaxWarning: invalid escape sequence '\.'
+{"source": "code_python", "rows": 15053, "network_bytes": 14929410, "code_attempts": 16296}
+{"source": "code_java", "rows": 2927, "network_bytes": 14663904, "code_attempts": 2969}
+{"source": "code_java", "rows": 2954, "network_bytes": 14774739, "code_attempts": 2997}
+<unknown>:15: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:46: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:47: SyntaxWarning: invalid escape sequence '\W'
+<unknown>:48: SyntaxWarning: invalid escape sequence '\w'
+{"source": "code_python", "rows": 15201, "network_bytes": 15022242, "code_attempts": 16454}
+{"source": "code_java", "rows": 2979, "network_bytes": 14884898, "code_attempts": 3023}
+{"source": "code_java", "rows": 3006, "network_bytes": 14995851, "code_attempts": 3050}
+<unknown>:111: SyntaxWarning: invalid escape sequence '\%'
+<unknown>:29: SyntaxWarning: invalid escape sequence '\='
+<unknown>:31: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:33: SyntaxWarning: invalid escape sequence '\['
+<unknown>:33: SyntaxWarning: invalid escape sequence '\['
+{"source": "code_java", "rows": 3045, "network_bytes": 15107958, "code_attempts": 3089}
+{"source": "code_python", "rows": 15355, "network_bytes": 15114977, "code_attempts": 16625}
+<unknown>:10: SyntaxWarning: invalid escape sequence '\S'
+{"source": "code_java", "rows": 3074, "network_bytes": 15218653, "code_attempts": 3118}
+<unknown>:9: SyntaxWarning: invalid escape sequence '\?'
+<unknown>:6: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:7: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:8: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:9: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:9: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:10: SyntaxWarning: invalid escape sequence '\#'
+<unknown>:12: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:32: SyntaxWarning: invalid escape sequence '\('
+<unknown>:37: SyntaxWarning: invalid escape sequence '\/'
+<unknown>:40: SyntaxWarning: invalid escape sequence '\/'
+<unknown>:41: SyntaxWarning: invalid escape sequence '\/'
+<unknown>:23: SyntaxWarning: invalid escape sequence '\d'
+{"source": "code_java", "rows": 3112, "network_bytes": 15329692, "code_attempts": 3157}
+{"source": "code_python", "rows": 15532, "network_bytes": 15207291, "code_attempts": 16815}
+{"source": "code_java", "rows": 3147, "network_bytes": 15440215, "code_attempts": 3193}
+<unknown>:27: SyntaxWarning: invalid escape sequence '\W'
+<unknown>:5: SyntaxWarning: invalid escape sequence '\('
+<unknown>:6: SyntaxWarning: invalid escape sequence '\)'
+<unknown>:4: SyntaxWarning: invalid escape sequence '\c'
+{"source": "code_java", "rows": 3188, "network_bytes": 15551392, "code_attempts": 3235}
+{"source": "code_python", "rows": 15681, "network_bytes": 15299288, "code_attempts": 16975}
+<unknown>:78: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:28: SyntaxWarning: invalid escape sequence '\_'
+<unknown>:195: SyntaxWarning: invalid escape sequence '\+'
+<unknown>:196: SyntaxWarning: invalid escape sequence '\+'
+<unknown>:201: SyntaxWarning: invalid escape sequence '\+'
+<unknown>:202: SyntaxWarning: invalid escape sequence '\+'
+{"source": "code_java", "rows": 3227, "network_bytes": 15663251, "code_attempts": 3275}
+<unknown>:3: SyntaxWarning: invalid escape sequence '\h'
+{"source": "code_python", "rows": 15829, "network_bytes": 15392106, "code_attempts": 17139}
+{"source": "code_java", "rows": 3262, "network_bytes": 15773310, "code_attempts": 3310}
+<unknown>:53: SyntaxWarning: invalid escape sequence '\+'
+<unknown>:74: SyntaxWarning: invalid escape sequence '\+'
+<unknown>:93: SyntaxWarning: invalid escape sequence '\+'
+{"source": "code_java", "rows": 3297, "network_bytes": 15883957, "code_attempts": 3347}
+<unknown>:21: SyntaxWarning: invalid escape sequence '\W'
+{"source": "code_python", "rows": 15992, "network_bytes": 15485408, "code_attempts": 17311}
+{"source": "code_java", "rows": 3327, "network_bytes": 15995020, "code_attempts": 3377}
+<unknown>:23: SyntaxWarning: invalid escape sequence '\['
+{"source": "code_java", "rows": 3353, "network_bytes": 16105333, "code_attempts": 3404}
+<unknown>:51: SyntaxWarning: invalid escape sequence '\{'
+{"source": "code_python", "rows": 16140, "network_bytes": 15578204, "code_attempts": 17471}
+{"source": "code_java", "rows": 3381, "network_bytes": 16215671, "code_attempts": 3432}
+<unknown>:17: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:18: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:25: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:26: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:27: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_java", "rows": 3423, "network_bytes": 16325237, "code_attempts": 3474}
+{"source": "code_python", "rows": 16298, "network_bytes": 15670827, "code_attempts": 17639}
+{"source": "code_java", "rows": 3461, "network_bytes": 16435949, "code_attempts": 3513}
+{"source": "code_java", "rows": 3493, "network_bytes": 16548298, "code_attempts": 3545}
+<unknown>:16: SyntaxWarning: invalid escape sequence '\d'
+{"source": "code_python", "rows": 16434, "network_bytes": 15763023, "code_attempts": 17789}
+{"source": "code_java", "rows": 3526, "network_bytes": 16659299, "code_attempts": 3579}
+<unknown>:61: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:243: SyntaxWarning: invalid escape sequence '\c'
+<unknown>:244: SyntaxWarning: invalid escape sequence '\c'
+<unknown>:249: SyntaxWarning: invalid escape sequence '\c'
+<unknown>:276: SyntaxWarning: invalid escape sequence '\c'
+<unknown>:277: SyntaxWarning: invalid escape sequence '\c'
+<unknown>:282: SyntaxWarning: invalid escape sequence '\c'
+<unknown>:17: SyntaxWarning: invalid escape sequence '\ '
+{"source": "code_java", "rows": 3553, "network_bytes": 16770889, "code_attempts": 3606}
+{"source": "code_python", "rows": 16572, "network_bytes": 15855664, "code_attempts": 17939}
+{"source": "code_java", "rows": 3585, "network_bytes": 16880519, "code_attempts": 3639}
+<unknown>:21: SyntaxWarning: invalid escape sequence '\:'
+<unknown>:122: SyntaxWarning: invalid escape sequence '\$'
+{"source": "code_java", "rows": 3618, "network_bytes": 16990330, "code_attempts": 3673}
+{"source": "code_python", "rows": 16709, "network_bytes": 15947844, "code_attempts": 18089}
+{"source": "code_java", "rows": 3660, "network_bytes": 17101384, "code_attempts": 3715}
+<unknown>:9: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:55: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:23: SyntaxWarning: invalid escape sequence '\ '
+{"source": "code_python", "rows": 16850, "network_bytes": 16040769, "code_attempts": 18242}
+{"source": "code_java", "rows": 3701, "network_bytes": 17212652, "code_attempts": 3756}
+<unknown>:165: SyntaxWarning: invalid escape sequence '\{'
+<unknown>:399: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:400: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:401: SyntaxWarning: invalid escape sequence '\{'
+<unknown>:402: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:403: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:404: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:405: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:407: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:408: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:409: SyntaxWarning: invalid escape sequence '\{'
+<unknown>:410: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:411: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:412: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:453: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:455: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:466: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:472: SyntaxWarning: invalid escape sequence '\{'
+{"source": "code_java", "rows": 3730, "network_bytes": 17323117, "code_attempts": 3787}
+<unknown>:481: SyntaxWarning: invalid escape sequence '\m'
+{"source": "code_python", "rows": 16989, "network_bytes": 16134337, "code_attempts": 18396}
+{"source": "code_java", "rows": 3763, "network_bytes": 17434343, "code_attempts": 3820}
+<unknown>:19: SyntaxWarning: invalid escape sequence '\?'
+{"source": "code_java", "rows": 3800, "network_bytes": 17544876, "code_attempts": 3857}
+<unknown>:19: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:25: SyntaxWarning: invalid escape sequence '\['
+{"source": "code_python", "rows": 17138, "network_bytes": 16226972, "code_attempts": 18561}
+{"source": "code_java", "rows": 3828, "network_bytes": 17656111, "code_attempts": 3885}
+{"source": "code_java", "rows": 3857, "network_bytes": 17768318, "code_attempts": 3914}
+<unknown>:93: SyntaxWarning: invalid escape sequence '\d'
+{"source": "code_python", "rows": 17282, "network_bytes": 16319686, "code_attempts": 18719}
+{"source": "code_java", "rows": 3898, "network_bytes": 17879904, "code_attempts": 3955}
+<unknown>:20: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:24: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:27: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:31: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:32: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:33: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:35: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:38: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:40: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:43: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:45: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:48: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:49: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:51: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:54: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:56: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:57: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:93: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:91: SyntaxWarning: invalid escape sequence '\d'
+{"source": "code_java", "rows": 3935, "network_bytes": 17990072, "code_attempts": 3992}
+<unknown>:21: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_python", "rows": 17432, "network_bytes": 16411671, "code_attempts": 18887}
+{"source": "code_java", "rows": 3974, "network_bytes": 18100610, "code_attempts": 4032}
+{"source": "code_java", "rows": 4000, "network_bytes": 18213001, "code_attempts": 4060}
+{"source": "code_python", "rows": 17593, "network_bytes": 16504236, "code_attempts": 19061}
+{"source": "code_java", "rows": 4027, "network_bytes": 18325517, "code_attempts": 4088}
+<unknown>:38: SyntaxWarning: invalid escape sequence '\*'
+{"source": "code_java", "rows": 4057, "network_bytes": 18437458, "code_attempts": 4118}
+{"source": "code_python", "rows": 17755, "network_bytes": 16597347, "code_attempts": 19233}
+{"source": "code_java", "rows": 4087, "network_bytes": 18548501, "code_attempts": 4148}
+<unknown>:67: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:108: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:8: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_java", "rows": 4118, "network_bytes": 18658830, "code_attempts": 4179}
+{"source": "code_python", "rows": 17910, "network_bytes": 16691731, "code_attempts": 19404}
+{"source": "code_java", "rows": 4145, "network_bytes": 18770028, "code_attempts": 4207}
+<unknown>:54: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_java", "rows": 4177, "network_bytes": 18881261, "code_attempts": 4241}
+<unknown>:64: SyntaxWarning: invalid escape sequence '\w'
+{"source": "code_python", "rows": 18070, "network_bytes": 16783660, "code_attempts": 19580}
+{"source": "code_java", "rows": 4217, "network_bytes": 18992195, "code_attempts": 4282}
+<unknown>:49: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_java", "rows": 4256, "network_bytes": 19102375, "code_attempts": 4322}
+<unknown>:21: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:5: SyntaxWarning: invalid escape sequence '\d'
+{"source": "code_python", "rows": 18221, "network_bytes": 16876007, "code_attempts": 19743}
+{"source": "code_java", "rows": 4290, "network_bytes": 19214825, "code_attempts": 4356}
+{"source": "code_java", "rows": 4311, "network_bytes": 19326521, "code_attempts": 4380}
+<unknown>:49: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:67: SyntaxWarning: invalid escape sequence '\p'
+{"source": "code_java", "rows": 4357, "network_bytes": 19437005, "code_attempts": 4426}
+{"source": "code_python", "rows": 18369, "network_bytes": 16968932, "code_attempts": 19905}
+{"source": "code_java", "rows": 4394, "network_bytes": 19548244, "code_attempts": 4463}
+<unknown>:2: SyntaxWarning: invalid escape sequence '\c'
+<unknown>:7: SyntaxWarning: invalid escape sequence '\w'
+<unknown>:9: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:41: SyntaxWarning: invalid escape sequence '\]'
+<unknown>:49: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:92: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:93: SyntaxWarning: invalid escape sequence '\|'
+<unknown>:161: SyntaxWarning: invalid escape sequence '\$'
+{"source": "code_java", "rows": 4420, "network_bytes": 19659380, "code_attempts": 4489}
+<unknown>:22: SyntaxWarning: invalid escape sequence '\/'
+<unknown>:32: SyntaxWarning: invalid escape sequence '\.'
+{"source": "code_python", "rows": 18532, "network_bytes": 17061493, "code_attempts": 20082}
+{"source": "code_java", "rows": 4460, "network_bytes": 19770515, "code_attempts": 4530}
+<unknown>:42: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:181: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:18: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:35: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:28: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:92: SyntaxWarning: invalid escape sequence '\_'
+{"source": "code_java", "rows": 4489, "network_bytes": 19882031, "code_attempts": 4559}
+{"source": "code_python", "rows": 18666, "network_bytes": 17154462, "code_attempts": 20228}
+<unknown>:217: SyntaxWarning: invalid escape sequence '\('
+{"source": "code_java", "rows": 4526, "network_bytes": 19993762, "code_attempts": 4597}
+<unknown>:6: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:347: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:414: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:655: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:8: SyntaxWarning: invalid escape sequence '\P'
+{"source": "code_python", "rows": 18809, "network_bytes": 17246324, "code_attempts": 20386}
+{"source": "code_java", "rows": 4561, "network_bytes": 20104519, "code_attempts": 4632}
+<unknown>:20: SyntaxWarning: invalid escape sequence '\i'
+{"source": "code_java", "rows": 4587, "network_bytes": 20215331, "code_attempts": 4658}
+<unknown>:7: SyntaxWarning: invalid escape sequence '\w'
+{"source": "code_python", "rows": 18964, "network_bytes": 17339814, "code_attempts": 20558}
+{"source": "code_java", "rows": 4627, "network_bytes": 20326806, "code_attempts": 4698}
+{"source": "code_java", "rows": 4653, "network_bytes": 20436845, "code_attempts": 4724}
+<unknown>:7: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:25: SyntaxWarning: invalid escape sequence '\m'
+{"source": "code_python", "rows": 19105, "network_bytes": 17431404, "code_attempts": 20706}
+{"source": "code_java", "rows": 4688, "network_bytes": 20547707, "code_attempts": 4761}
+<unknown>:1369: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:1370: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:1371: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_java", "rows": 4721, "network_bytes": 20659854, "code_attempts": 4795}
+<unknown>:144: SyntaxWarning: invalid escape sequence '\D'
+<unknown>:230: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:84: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:91: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:5: SyntaxWarning: invalid escape sequence '\ '
+{"source": "code_python", "rows": 19236, "network_bytes": 17523503, "code_attempts": 20854}
+{"source": "code_java", "rows": 4757, "network_bytes": 20770694, "code_attempts": 4835}
+<unknown>:15: SyntaxWarning: invalid escape sequence '\E'
+{"source": "code_java", "rows": 4793, "network_bytes": 20881745, "code_attempts": 4873}
+<unknown>:79: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:107: SyntaxWarning: invalid escape sequence '\('
+<unknown>:4: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:6: SyntaxWarning: invalid escape sequence '\_'
+<unknown>:94: SyntaxWarning: invalid escape sequence '\/'
+<unknown>:95: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:96: SyntaxWarning: invalid escape sequence '\/'
+<unknown>:97: SyntaxWarning: invalid escape sequence '\/'
+<unknown>:159: SyntaxWarning: invalid escape sequence '\/'
+<unknown>:160: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:161: SyntaxWarning: invalid escape sequence '\/'
+<unknown>:162: SyntaxWarning: invalid escape sequence '\/'
+<unknown>:619: SyntaxWarning: invalid escape sequence '\>'
+<unknown>:161: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:187: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:207: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:282: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:306: SyntaxWarning: invalid escape sequence '\*'
+{"source": "code_python", "rows": 19384, "network_bytes": 17616208, "code_attempts": 21022}
+{"source": "code_java", "rows": 4839, "network_bytes": 20994439, "code_attempts": 4920}
+<unknown>:18: SyntaxWarning: invalid escape sequence '\W'
+<unknown>:63: SyntaxWarning: invalid escape sequence '\Z'
+{"source": "code_java", "rows": 4870, "network_bytes": 21105565, "code_attempts": 4952}
+<unknown>:4: SyntaxWarning: invalid escape sequence '\/'
+<unknown>:32: SyntaxWarning: invalid escape sequence '\-'
+{"source": "code_python", "rows": 19534, "network_bytes": 17709236, "code_attempts": 21184}
+{"source": "code_java", "rows": 4899, "network_bytes": 21216244, "code_attempts": 4981}
+<unknown>:21: SyntaxWarning: invalid escape sequence '\D'
+{"source": "code_java", "rows": 4939, "network_bytes": 21325978, "code_attempts": 5021}
+<unknown>:90: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:309: SyntaxWarning: invalid escape sequence '\ '
+{"source": "code_python", "rows": 19688, "network_bytes": 17801470, "code_attempts": 21345}
+{"source": "code_java", "rows": 4971, "network_bytes": 21436305, "code_attempts": 5053}
+<unknown>:20: SyntaxWarning: invalid escape sequence '\?'
+<unknown>:20: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:31: SyntaxWarning: invalid escape sequence '\?'
+<unknown>:31: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:217: SyntaxWarning: invalid escape sequence '\i'
+<unknown>:217: SyntaxWarning: invalid escape sequence '\i'
+<unknown>:238: SyntaxWarning: invalid escape sequence '\i'
+<unknown>:238: SyntaxWarning: invalid escape sequence '\i'
+<unknown>:13: SyntaxWarning: invalid escape sequence '\i'
+<unknown>:33: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:35: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:43: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:57: SyntaxWarning: invalid escape sequence '\d'
+{"source": "code_java", "rows": 5000, "network_bytes": 21548455, "code_attempts": 5082}
+{"source": "code_python", "rows": 19843, "network_bytes": 17894136, "code_attempts": 21514}
+{"source": "code_java", "rows": 5039, "network_bytes": 21659722, "code_attempts": 5122}
+<unknown>:19: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:19: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:20: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:21: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:27: SyntaxWarning: invalid escape sequence '\l'
+<unknown>:23: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:27: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:31: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:35: SyntaxWarning: invalid escape sequence '\ '
+{"source": "code_python", "rows": 19965, "network_bytes": 17986082, "code_attempts": 21642}
+{"source": "code_java", "rows": 5078, "network_bytes": 21770648, "code_attempts": 5161}
+{"source": "code_java", "rows": 5109, "network_bytes": 21881476, "code_attempts": 5194}
+<unknown>:38: SyntaxWarning: invalid escape sequence '\{'
+<unknown>:62: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:50: SyntaxWarning: invalid escape sequence '\]'
+<unknown>:51: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_python", "rows": 20116, "network_bytes": 18078497, "code_attempts": 21804}
+{"source": "code_java", "rows": 5148, "network_bytes": 21993425, "code_attempts": 5235}
+<unknown>:23: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:23: SyntaxWarning: invalid escape sequence '\p'
+<unknown>:31: SyntaxWarning: invalid escape sequence '\('
+<unknown>:12: SyntaxWarning: invalid escape sequence '\('
+<unknown>:15: SyntaxWarning: invalid escape sequence '\('
+<unknown>:15: SyntaxWarning: invalid escape sequence '\)'
+{"source": "code_java", "rows": 5170, "network_bytes": 22104069, "code_attempts": 5257}
+<unknown>:78: SyntaxWarning: invalid escape sequence '\V'
+<unknown>:80: SyntaxWarning: invalid escape sequence '\V'
+<unknown>:6: SyntaxWarning: invalid escape sequence '\`'
+{"source": "code_python", "rows": 20269, "network_bytes": 18170603, "code_attempts": 21968}
+{"source": "code_java", "rows": 5200, "network_bytes": 22214459, "code_attempts": 5289}
+<unknown>:76: SyntaxWarning: invalid escape sequence '\$'
+<unknown>:77: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_java", "rows": 5241, "network_bytes": 22325038, "code_attempts": 5332}
+<unknown>:156: SyntaxWarning: invalid escape sequence '\H'
+<unknown>:163: SyntaxWarning: invalid escape sequence '\H'
+<unknown>:118: SyntaxWarning: invalid escape sequence '\l'
+<unknown>:5: SyntaxWarning: invalid escape sequence '\]'
+{"source": "code_python", "rows": 20423, "network_bytes": 18264104, "code_attempts": 22137}
+{"source": "code_java", "rows": 5275, "network_bytes": 22436721, "code_attempts": 5366}
+<unknown>:312: SyntaxWarning: invalid escape sequence '\('
+<unknown>:313: SyntaxWarning: invalid escape sequence '\('
+<unknown>:314: SyntaxWarning: invalid escape sequence '\('
+<unknown>:315: SyntaxWarning: invalid escape sequence '\('
+<unknown>:316: SyntaxWarning: invalid escape sequence '\('
+<unknown>:317: SyntaxWarning: invalid escape sequence '\('
+<unknown>:318: SyntaxWarning: invalid escape sequence '\('
+<unknown>:319: SyntaxWarning: invalid escape sequence '\('
+<unknown>:320: SyntaxWarning: invalid escape sequence '\('
+<unknown>:321: SyntaxWarning: invalid escape sequence '\('
+<unknown>:322: SyntaxWarning: invalid escape sequence '\('
+<unknown>:323: SyntaxWarning: invalid escape sequence '\('
+<unknown>:324: SyntaxWarning: invalid escape sequence '\('
+{"source": "code_java", "rows": 5309, "network_bytes": 22549010, "code_attempts": 5400}
+<unknown>:21: SyntaxWarning: invalid escape sequence '\/'
+<unknown>:34: SyntaxWarning: invalid escape sequence '\/'
+{"source": "code_python", "rows": 20568, "network_bytes": 18356417, "code_attempts": 22296}
+{"source": "code_java", "rows": 5345, "network_bytes": 22660821, "code_attempts": 5437}
+<unknown>:81: SyntaxWarning: invalid escape sequence '\c'
+<unknown>:84: SyntaxWarning: invalid escape sequence '\c'
+<unknown>:29: SyntaxWarning: invalid escape sequence '\P'
+<unknown>:36: SyntaxWarning: invalid escape sequence '\P'
+<unknown>:46: SyntaxWarning: invalid escape sequence '\T'
+<unknown>:74: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:484: SyntaxWarning: invalid escape sequence '\i'
+<unknown>:519: SyntaxWarning: invalid escape sequence '\i'
+{"source": "code_java", "rows": 5386, "network_bytes": 22773738, "code_attempts": 5481}
+{"source": "code_python", "rows": 20728, "network_bytes": 18449307, "code_attempts": 22469}
+{"source": "code_java", "rows": 5423, "network_bytes": 22884543, "code_attempts": 5518}
+<unknown>:74: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:76: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:25: SyntaxWarning: invalid escape sequence '\D'
+{"source": "code_java", "rows": 5461, "network_bytes": 22996166, "code_attempts": 5558}
+<unknown>:103: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:135: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_python", "rows": 20878, "network_bytes": 18543400, "code_attempts": 22627}
+{"source": "code_java", "rows": 5492, "network_bytes": 23109093, "code_attempts": 5589}
+<unknown>:11: SyntaxWarning: invalid escape sequence '\e'
+<unknown>:68: SyntaxWarning: invalid escape sequence '\/'
+<unknown>:21: SyntaxWarning: invalid escape sequence '\d'
+{"source": "code_java", "rows": 5527, "network_bytes": 23221950, "code_attempts": 5625}
+<unknown>:52: SyntaxWarning: invalid escape sequence '\`'
+<unknown>:109: SyntaxWarning: invalid escape sequence '\`'
+<unknown>:139: SyntaxWarning: invalid escape sequence '\`'
+<unknown>:186: SyntaxWarning: invalid escape sequence '\`'
+<unknown>:237: SyntaxWarning: invalid escape sequence '\`'
+<unknown>:248: SyntaxWarning: invalid escape sequence '\`'
+<unknown>:299: SyntaxWarning: invalid escape sequence '\`'
+<unknown>:339: SyntaxWarning: invalid escape sequence '\`'
+<unknown>:11: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_python", "rows": 21031, "network_bytes": 18635707, "code_attempts": 22792}
+{"source": "code_java", "rows": 5553, "network_bytes": 23333049, "code_attempts": 5652}
+<unknown>:13: SyntaxWarning: invalid escape sequence '\ '
+{"source": "code_java", "rows": 5587, "network_bytes": 23444160, "code_attempts": 5689}
+{"source": "code_python", "rows": 21153, "network_bytes": 18728911, "code_attempts": 22927}
+{"source": "code_java", "rows": 5618, "network_bytes": 23555263, "code_attempts": 5721}
+<unknown>:26: SyntaxWarning: invalid escape sequence '\D'
+<unknown>:28: SyntaxWarning: invalid escape sequence '\D'
+<unknown>:63: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_java", "rows": 5642, "network_bytes": 23665754, "code_attempts": 5745}
+<unknown>:4: SyntaxWarning: invalid escape sequence '\g'
+<unknown>:233: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:28: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_python", "rows": 21299, "network_bytes": 18826865, "code_attempts": 23098}
+{"id": "code_python", "status": "RAW_SEGMENT_READY", "rows_written": 21299, "output_bytes": 27044790, "error_type": null, "stop_reason": null}
+{"source": "code_java", "rows": 5674, "network_bytes": 23777500, "code_attempts": 5778}
+{"source": "code_java", "rows": 5713, "network_bytes": 23888307, "code_attempts": 5817}
+{"source": "code_java", "rows": 5743, "network_bytes": 24001122, "code_attempts": 5849}
+{"source": "code_cpp", "rows": 137, "network_bytes": 4718261, "code_attempts": 140}
+{"source": "code_java", "rows": 5777, "network_bytes": 24112398, "code_attempts": 5884}
+{"source": "code_java", "rows": 5813, "network_bytes": 24223991, "code_attempts": 5921}
+{"source": "code_cpp", "rows": 273, "network_bytes": 4812542, "code_attempts": 283}
+{"source": "code_java", "rows": 5844, "network_bytes": 24334326, "code_attempts": 5952}
+{"source": "code_java", "rows": 5872, "network_bytes": 24444792, "code_attempts": 5980}
+{"source": "code_cpp", "rows": 404, "network_bytes": 4906226, "code_attempts": 418}
+{"source": "code_java", "rows": 5911, "network_bytes": 24555429, "code_attempts": 6019}
+{"source": "code_java", "rows": 5943, "network_bytes": 24666275, "code_attempts": 6051}
+{"source": "code_cpp", "rows": 550, "network_bytes": 4999666, "code_attempts": 566}
+{"source": "code_java", "rows": 5972, "network_bytes": 24777058, "code_attempts": 6081}
+{"source": "code_cpp", "rows": 692, "network_bytes": 5092974, "code_attempts": 710}
+{"source": "code_java", "rows": 6015, "network_bytes": 24888970, "code_attempts": 6124}
+{"source": "code_java", "rows": 6053, "network_bytes": 24999007, "code_attempts": 6163}
+{"source": "code_cpp", "rows": 830, "network_bytes": 5186279, "code_attempts": 852}
+{"source": "code_java", "rows": 6084, "network_bytes": 25110277, "code_attempts": 6195}
+{"source": "code_java", "rows": 6121, "network_bytes": 25220694, "code_attempts": 6232}
+{"source": "code_cpp", "rows": 959, "network_bytes": 5280474, "code_attempts": 986}
+{"source": "code_java", "rows": 6150, "network_bytes": 25332478, "code_attempts": 6262}
+{"source": "code_java", "rows": 6172, "network_bytes": 25443072, "code_attempts": 6284}
+{"source": "code_cpp", "rows": 1089, "network_bytes": 5373967, "code_attempts": 1118}
+{"source": "code_java", "rows": 6219, "network_bytes": 25553408, "code_attempts": 6331}
+{"source": "code_java", "rows": 6246, "network_bytes": 25664247, "code_attempts": 6358}
+{"source": "code_cpp", "rows": 1240, "network_bytes": 5468417, "code_attempts": 1272}
+{"source": "code_java", "rows": 6277, "network_bytes": 25775465, "code_attempts": 6390}
+{"source": "code_java", "rows": 6312, "network_bytes": 25885673, "code_attempts": 6427}
+{"source": "code_cpp", "rows": 1362, "network_bytes": 5562721, "code_attempts": 1397}
+{"source": "code_java", "rows": 6353, "network_bytes": 25995663, "code_attempts": 6470}
+{"source": "code_cpp", "rows": 1481, "network_bytes": 5656739, "code_attempts": 1520}
+{"source": "code_java", "rows": 6383, "network_bytes": 26106937, "code_attempts": 6500}
+{"source": "code_java", "rows": 6416, "network_bytes": 26222703, "code_attempts": 6533}
+{"source": "code_cpp", "rows": 1609, "network_bytes": 5750104, "code_attempts": 1652}
+{"source": "code_java", "rows": 6456, "network_bytes": 26332351, "code_attempts": 6573}
+{"source": "code_java", "rows": 6487, "network_bytes": 26444376, "code_attempts": 6606}
+{"source": "code_cpp", "rows": 1770, "network_bytes": 5844335, "code_attempts": 1819}
+{"source": "code_java", "rows": 6511, "network_bytes": 26556081, "code_attempts": 6630}
+{"source": "code_java", "rows": 6536, "network_bytes": 26667122, "code_attempts": 6656}
+{"source": "code_cpp", "rows": 1889, "network_bytes": 5937997, "code_attempts": 1940}
+{"source": "code_java", "rows": 6570, "network_bytes": 26777954, "code_attempts": 6692}
+{"source": "code_java", "rows": 6611, "network_bytes": 26889604, "code_attempts": 6733}
+{"source": "code_cpp", "rows": 2022, "network_bytes": 6031545, "code_attempts": 2078}
+{"source": "code_java", "rows": 6630, "network_bytes": 27004021, "code_attempts": 6752}
+{"source": "code_cpp", "rows": 2162, "network_bytes": 6126002, "code_attempts": 2223}
+{"source": "code_java", "rows": 6663, "network_bytes": 27115731, "code_attempts": 6786}
+{"source": "code_java", "rows": 6697, "network_bytes": 27226577, "code_attempts": 6820}
+{"source": "code_cpp", "rows": 2305, "network_bytes": 6220295, "code_attempts": 2370}
+{"source": "code_java", "rows": 6738, "network_bytes": 27338411, "code_attempts": 6861}
+{"source": "code_java", "rows": 6781, "network_bytes": 27449588, "code_attempts": 6905}
+{"source": "code_cpp", "rows": 2446, "network_bytes": 6314602, "code_attempts": 2515}
+{"source": "code_java", "rows": 6817, "network_bytes": 27560324, "code_attempts": 6941}
+{"source": "code_cpp", "rows": 2581, "network_bytes": 6409716, "code_attempts": 2651}
+{"source": "code_java", "rows": 6852, "network_bytes": 27671617, "code_attempts": 6978}
+{"source": "code_java", "rows": 6878, "network_bytes": 27783083, "code_attempts": 7004}
+{"source": "code_cpp", "rows": 2709, "network_bytes": 6504777, "code_attempts": 2788}
+{"source": "code_java", "rows": 6922, "network_bytes": 27894942, "code_attempts": 7049}
+{"source": "code_java", "rows": 6953, "network_bytes": 28006155, "code_attempts": 7080}
+{"source": "code_cpp", "rows": 2851, "network_bytes": 6599219, "code_attempts": 2933}
+{"source": "code_java", "rows": 6990, "network_bytes": 28116708, "code_attempts": 7117}
+{"source": "code_java", "rows": 7027, "network_bytes": 28230664, "code_attempts": 7154}
+{"source": "code_cpp", "rows": 2977, "network_bytes": 6692489, "code_attempts": 3062}
+{"source": "code_java", "rows": 7049, "network_bytes": 28340693, "code_attempts": 7177}
+{"source": "code_java", "rows": 7067, "network_bytes": 28450941, "code_attempts": 7195}
+{"source": "code_cpp", "rows": 3113, "network_bytes": 6785928, "code_attempts": 3203}
+{"source": "code_java", "rows": 7098, "network_bytes": 28561868, "code_attempts": 7227}
+{"source": "code_java", "rows": 7126, "network_bytes": 28673711, "code_attempts": 7255}
+{"source": "code_cpp", "rows": 3250, "network_bytes": 6880168, "code_attempts": 3341}
+{"source": "code_java", "rows": 7160, "network_bytes": 28785209, "code_attempts": 7289}
+{"source": "code_cpp", "rows": 3386, "network_bytes": 6973811, "code_attempts": 3480}
+{"source": "code_java", "rows": 7195, "network_bytes": 28895903, "code_attempts": 7324}
+{"source": "code_java", "rows": 7229, "network_bytes": 29006841, "code_attempts": 7358}
+{"source": "code_cpp", "rows": 3509, "network_bytes": 7066977, "code_attempts": 3606}
+{"id": "code_cpp", "status": "RAW_SEGMENT_READY", "rows_written": 3509, "output_bytes": 4218471, "error_type": null, "stop_reason": null}
+{"source": "code_java", "rows": 7248, "network_bytes": 29118423, "code_attempts": 7377}
+{"source": "code_java", "rows": 7278, "network_bytes": 29229960, "code_attempts": 7408}
+{"source": "code_java", "rows": 7320, "network_bytes": 29340352, "code_attempts": 7450}
+{"source": "code_java", "rows": 7352, "network_bytes": 29451527, "code_attempts": 7483}
+{"source": "code_typescript", "rows": 378, "network_bytes": 5020158, "code_attempts": 378}
+{"source": "code_java", "rows": 7390, "network_bytes": 29562632, "code_attempts": 7521}
+{"source": "code_java", "rows": 7424, "network_bytes": 29673625, "code_attempts": 7557}
+{"source": "code_java", "rows": 7452, "network_bytes": 29784249, "code_attempts": 7585}
+{"source": "code_java", "rows": 7483, "network_bytes": 29894949, "code_attempts": 7616}
+{"source": "code_typescript", "rows": 755, "network_bytes": 5113509, "code_attempts": 755}
+{"source": "code_java", "rows": 7515, "network_bytes": 30005275, "code_attempts": 7648}
+{"id": "code_java", "status": "RAW_SEGMENT_READY", "rows_written": 7515, "output_bytes": 6881464, "error_type": null, "stop_reason": null}
+{"source": "pdf_en", "rows": 1000, "network_bytes": 7231473, "code_attempts": 0}
+{"source": "pdf_en", "rows": 1591, "network_bytes": 17965777, "code_attempts": 0}
+{"source": "pdf_en", "rows": 2591, "network_bytes": 25712620, "code_attempts": 0}
+{"source": "pdf_en", "rows": 3591, "network_bytes": 44545413, "code_attempts": 0}
+{"source": "pdf_en", "rows": 4591, "network_bytes": 51184805, "code_attempts": 0}
+{"source": "pdf_en", "rows": 5591, "network_bytes": 58562058, "code_attempts": 0}
+{"source": "pdf_en", "rows": 6591, "network_bytes": 65613301, "code_attempts": 0}
+{"source": "code_typescript", "rows": 1118, "network_bytes": 5207427, "code_attempts": 1118}
+{"source": "pdf_en", "rows": 7591, "network_bytes": 89929380, "code_attempts": 0}
+{"source": "pdf_en", "rows": 8591, "network_bytes": 102386746, "code_attempts": 0}
+{"source": "pdf_en", "rows": 8794, "network_bytes": 124612799, "code_attempts": 0}
+{"id": "pdf_en", "status": "RAW_SEGMENT_READY", "rows_written": 8794, "output_bytes": 72291961, "error_type": null, "stop_reason": "OUTPUT_CAP"}
+{"source": "code_typescript", "rows": 1498, "network_bytes": 5299404, "code_attempts": 1498}
+{"source": "dclm", "rows": 1000, "network_bytes": 6207612, "code_attempts": 0}
+{"source": "dclm", "rows": 2000, "network_bytes": 10141580, "code_attempts": 0}
+{"source": "dclm", "rows": 3000, "network_bytes": 13884880, "code_attempts": 0}
+{"source": "dclm", "rows": 4000, "network_bytes": 17297391, "code_attempts": 0}
+{"source": "dclm", "rows": 5000, "network_bytes": 20840987, "code_attempts": 0}
+{"source": "dclm", "rows": 6000, "network_bytes": 24227216, "code_attempts": 0}
+{"source": "dclm", "rows": 7000, "network_bytes": 27612447, "code_attempts": 0}
+{"source": "code_typescript", "rows": 1896, "network_bytes": 5392035, "code_attempts": 1897}
+{"source": "dclm", "rows": 8000, "network_bytes": 30786219, "code_attempts": 0}
+{"source": "dclm", "rows": 9000, "network_bytes": 34237262, "code_attempts": 0}
+{"source": "dclm", "rows": 10000, "network_bytes": 37447565, "code_attempts": 0}
+{"source": "dclm", "rows": 11000, "network_bytes": 41181726, "code_attempts": 0}
+{"source": "dclm", "rows": 12000, "network_bytes": 45152666, "code_attempts": 0}
+{"source": "dclm", "rows": 13000, "network_bytes": 48693039, "code_attempts": 0}
+{"source": "code_typescript", "rows": 2244, "network_bytes": 5484519, "code_attempts": 2245}
+{"source": "dclm", "rows": 14000, "network_bytes": 52251329, "code_attempts": 0}
+{"source": "dclm", "rows": 15000, "network_bytes": 55807563, "code_attempts": 0}
+{"source": "dclm", "rows": 16000, "network_bytes": 59104319, "code_attempts": 0}
+{"source": "dclm", "rows": 17000, "network_bytes": 62219519, "code_attempts": 0}
+{"source": "dclm", "rows": 18000, "network_bytes": 66123530, "code_attempts": 0}
+{"source": "code_typescript", "rows": 2617, "network_bytes": 5576849, "code_attempts": 2618}
+{"source": "dclm", "rows": 19000, "network_bytes": 69480706, "code_attempts": 0}
+{"source": "dclm", "rows": 20000, "network_bytes": 73082503, "code_attempts": 0}
+{"source": "dclm", "rows": 21000, "network_bytes": 76569718, "code_attempts": 0}
+{"source": "dclm", "rows": 22000, "network_bytes": 80121976, "code_attempts": 0}
+{"source": "dclm", "rows": 23000, "network_bytes": 84267773, "code_attempts": 0}
+{"source": "dclm", "rows": 24000, "network_bytes": 87454295, "code_attempts": 0}
+{"source": "code_typescript", "rows": 2957, "network_bytes": 5670244, "code_attempts": 2958}
+{"source": "dclm", "rows": 25000, "network_bytes": 90450697, "code_attempts": 0}
+{"source": "dclm", "rows": 26000, "network_bytes": 93900595, "code_attempts": 0}
+{"source": "dclm", "rows": 27000, "network_bytes": 97336916, "code_attempts": 0}
+{"source": "dclm", "rows": 28000, "network_bytes": 101139705, "code_attempts": 0}
+{"source": "dclm", "rows": 29000, "network_bytes": 104500725, "code_attempts": 0}
+{"source": "dclm", "rows": 30000, "network_bytes": 107415624, "code_attempts": 0}
+{"source": "code_typescript", "rows": 3326, "network_bytes": 5763427, "code_attempts": 3327}
+{"source": "dclm", "rows": 31000, "network_bytes": 111013227, "code_attempts": 0}
+{"source": "dclm", "rows": 32000, "network_bytes": 114576304, "code_attempts": 0}
+{"source": "dclm", "rows": 33000, "network_bytes": 118106264, "code_attempts": 0}
+{"source": "dclm", "rows": 33044, "network_bytes": 122396175, "code_attempts": 0}
+{"id": "dclm", "status": "RAW_SEGMENT_READY", "rows_written": 33044, "output_bytes": 82179604, "error_type": null, "stop_reason": "OUTPUT_CAP"}
+{"source": "finemath4", "rows": 1000, "network_bytes": 3567187, "code_attempts": 0}
+{"source": "finemath4", "rows": 2000, "network_bytes": 6226958, "code_attempts": 0}
+{"source": "code_typescript", "rows": 3689, "network_bytes": 5856336, "code_attempts": 3690}
+{"source": "finemath4", "rows": 3000, "network_bytes": 8758788, "code_attempts": 0}
+{"source": "finemath4", "rows": 4000, "network_bytes": 12113699, "code_attempts": 0}
+{"source": "finemath4", "rows": 5000, "network_bytes": 15014712, "code_attempts": 0}
+{"source": "finemath4", "rows": 6000, "network_bytes": 17717830, "code_attempts": 0}
+{"source": "finemath4", "rows": 7000, "network_bytes": 20339966, "code_attempts": 0}
+{"source": "code_typescript", "rows": 4050, "network_bytes": 5949892, "code_attempts": 4051}
+{"source": "finemath4", "rows": 8000, "network_bytes": 22764868, "code_attempts": 0}
+{"source": "finemath4", "rows": 9000, "network_bytes": 25292182, "code_attempts": 0}
+{"source": "finemath4", "rows": 10000, "network_bytes": 27820862, "code_attempts": 0}
+{"source": "finemath4", "rows": 11000, "network_bytes": 30365186, "code_attempts": 0}
+{"source": "finemath4", "rows": 12000, "network_bytes": 33051501, "code_attempts": 0}
+{"source": "code_typescript", "rows": 4426, "network_bytes": 6042873, "code_attempts": 4427}
+{"source": "finemath4", "rows": 13000, "network_bytes": 35477437, "code_attempts": 0}
+{"source": "finemath4", "rows": 14000, "network_bytes": 38068344, "code_attempts": 0}
+{"source": "finemath4", "rows": 15000, "network_bytes": 40607308, "code_attempts": 0}
+{"source": "finemath4", "rows": 16000, "network_bytes": 43434737, "code_attempts": 0}
+{"source": "finemath4", "rows": 17000, "network_bytes": 45909376, "code_attempts": 0}
+{"source": "code_typescript", "rows": 4796, "network_bytes": 6136033, "code_attempts": 4797}
+{"id": "code_typescript", "status": "RAW_SEGMENT_READY", "rows_written": 4796, "output_bytes": 4533662, "error_type": null, "stop_reason": null}
+{"source": "finemath4", "rows": 18000, "network_bytes": 48478875, "code_attempts": 0}
+{"source": "infiwebmath4", "rows": 1000, "network_bytes": 4139792, "code_attempts": 0}
+{"source": "finemath4", "rows": 19000, "network_bytes": 51107828, "code_attempts": 0}
+{"source": "infiwebmath4", "rows": 2000, "network_bytes": 7114337, "code_attempts": 0}
+{"source": "finemath4", "rows": 20000, "network_bytes": 54383102, "code_attempts": 0}
+{"source": "infiwebmath4", "rows": 3000, "network_bytes": 10126839, "code_attempts": 0}
+{"source": "finemath4", "rows": 21000, "network_bytes": 57193227, "code_attempts": 0}
+{"source": "infiwebmath4", "rows": 4000, "network_bytes": 13267190, "code_attempts": 0}
+{"source": "finemath4", "rows": 22000, "network_bytes": 59695056, "code_attempts": 0}
+{"source": "infiwebmath4", "rows": 5000, "network_bytes": 16256198, "code_attempts": 0}
+{"source": "finemath4", "rows": 23000, "network_bytes": 62168041, "code_attempts": 0}
+{"source": "infiwebmath4", "rows": 6000, "network_bytes": 19389036, "code_attempts": 0}
+{"source": "finemath4", "rows": 24000, "network_bytes": 64656386, "code_attempts": 0}
+{"source": "infiwebmath4", "rows": 7000, "network_bytes": 22669807, "code_attempts": 0}
+{"source": "infiwebmath4", "rows": 8000, "network_bytes": 25668645, "code_attempts": 0}
+{"id": "infiwebmath4", "status": "RAW_SEGMENT_READY", "rows_written": 8000, "output_bytes": 18248902, "error_type": null, "stop_reason": null}
+{"source": "finemath4", "rows": 25000, "network_bytes": 67089139, "code_attempts": 0}
+{"source": "finemath4", "rows": 26000, "network_bytes": 69540670, "code_attempts": 0}
+{"source": "multilingual_cmn_Hani", "rows": 1000, "network_bytes": 3690749, "code_attempts": 0}
+{"source": "finemath4", "rows": 27000, "network_bytes": 71958601, "code_attempts": 0}
+{"source": "multilingual_cmn_Hani", "rows": 2000, "network_bytes": 7127097, "code_attempts": 0}
+{"source": "finemath4", "rows": 28000, "network_bytes": 74737313, "code_attempts": 0}
+{"source": "multilingual_cmn_Hani", "rows": 3000, "network_bytes": 11569819, "code_attempts": 0}
+{"source": "finemath4", "rows": 29000, "network_bytes": 77442663, "code_attempts": 0}
+{"source": "multilingual_cmn_Hani", "rows": 4000, "network_bytes": 14906493, "code_attempts": 0}
+{"source": "finemath4", "rows": 30000, "network_bytes": 80176953, "code_attempts": 0}
+{"id": "finemath4", "status": "RAW_SEGMENT_READY", "rows_written": 30000, "output_bytes": 59417494, "error_type": null, "stop_reason": null}
+{"source": "multilingual_cmn_Hani", "rows": 5000, "network_bytes": 20808055, "code_attempts": 0}
+{"source": "multilingual_cmn_Hani", "rows": 6000, "network_bytes": 24344695, "code_attempts": 0}
+{"source": "multilingual_cmn_Hani", "rows": 7000, "network_bytes": 27632969, "code_attempts": 0}
+{"id": "multilingual_cmn_Hani", "status": "RAW_SEGMENT_READY", "rows_written": 7000, "output_bytes": 13273483, "error_type": null, "stop_reason": null}

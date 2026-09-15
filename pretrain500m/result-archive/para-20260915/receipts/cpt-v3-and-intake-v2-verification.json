@@ -1,0 +1,11 @@
+{
+  "status": "PASS_CPU_REGRESSION_AND_INTAKE_EXCLUSION",
+  "checked_utc": "2026-09-13T19:51:31.210193+00:00",
+  "intake_exclusion_cases_passed": 3,
+  "cpu_tests_stdout": "...............................                                          [100%]\n31 passed in 6.83s\n",
+  "initial_test_environment_failure": "Four plan-quota cases lacked the two unchanged research fixtures on the remote host; fixtures copied by content hash, original failure JUnit preserved, full suite rerun.",
+  "junit_sha256": "f269ff77fc4fa8bc4348c7afd9a91b3a72c67f061084109a4777fa79ed158208",
+  "formal_mixture_gpu_qualified": false,
+  "recovery_policy_actual_gpu_evidence": "recovery-v2-1588249/comparison.json",
+  "test_fixture_archive_sha256": "b77e9ba0aabec01c74c4f578d83561fab107f55eaa02b9b8d772924f9965a07e"
+}

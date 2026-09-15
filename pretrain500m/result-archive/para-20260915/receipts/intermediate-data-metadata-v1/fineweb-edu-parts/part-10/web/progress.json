@@ -1,0 +1,16 @@
+{
+  "accepted": 628061,
+  "contaminated": 982,
+  "duplicate": 1741,
+  "resumed_tokens": {
+    "train": 0,
+    "validation": 0
+  },
+  "seen": 630784,
+  "source": "web",
+  "too_long": 0,
+  "train_target": 1999998165,
+  "train_tokens": 648015556,
+  "val_tokens": 661286,
+  "validation_target": 99999396
+}

@@ -1,0 +1,144 @@
+{
+  "absence_verified": true,
+  "active_jobs_before_cleanup": [
+    "1560103|biomm-lssd03-receipt|PENDING",
+    "1560080|biomm-instr20-select|PENDING",
+    "1560079|biomm-instr-paired|PENDING",
+    "1560078|biomm-instr20-sqa|PENDING",
+    "1560077|biomm-instr20-vqa|PENDING",
+    "1560076|biomm-instr20-pmqa|PENDING",
+    "1500015|abf-late-scale-analyze|PENDING",
+    "1583672|p529m-scale-v2|PENDING"
+  ],
+  "bytes_removed": 80701330505,
+  "deleted_files": [
+    {
+      "bytes": 6345397363,
+      "checkpoint_sha256_from_preserved_sidecar": "2b398344cfe05b1eadac474c0ecc238ebd07974639bdf9f273bf64c0b31d4fef",
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/pilots/1583433/continuous/resume.pt"
+    },
+    {
+      "bytes": 6345397363,
+      "checkpoint_sha256_from_preserved_sidecar": "353643a314a0cb96788fe33dd4b980d50f9c9383420955919a3aacbeff0c108c",
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/pilots/1583433/split/resume.pt"
+    },
+    {
+      "bytes": 6345397363,
+      "checkpoint_sha256_from_preserved_sidecar": "9f144aa43d365b2a49aa4f3cea427755ccc9d009efd1d67d83412662b68ac549",
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/pilots/1583508/continuous/resume.pt"
+    },
+    {
+      "bytes": 6345397363,
+      "checkpoint_sha256_from_preserved_sidecar": "c8cc9a7a42b1571fbe393a9336bd914bd9137b9f5bb7110ba813519edce93d1e",
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/pilots/1583508/split/resume.pt"
+    },
+    {
+      "bytes": 6345397491,
+      "checkpoint_sha256_from_preserved_sidecar": "223c16dfd3b9bae8e1dc836d3d4419829cd1402d0756851163839885dbf0b3f2",
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/pilots/1583555/continuous/resume.pt"
+    },
+    {
+      "bytes": 6345397491,
+      "checkpoint_sha256_from_preserved_sidecar": "e4b97416a6e88909fd7d66f38d6f730ac31160be02f958a4f65561066b4172db",
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/pilots/1583555/split/resume.pt"
+    },
+    {
+      "bytes": 6345397363,
+      "checkpoint_sha256_from_preserved_sidecar": "4165eee6eb3c564dc1608b115fedf70565e7894184c6400fc2e1074ed220bc1d",
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/pilots/lr-1583515/lr-0.0015/resume.pt"
+    },
+    {
+      "bytes": 6345397491,
+      "checkpoint_sha256_from_preserved_sidecar": "223c16dfd3b9bae8e1dc836d3d4419829cd1402d0756851163839885dbf0b3f2",
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/pilots/1583820/continuous/resume.pt"
+    },
+    {
+      "bytes": 6345397491,
+      "checkpoint_sha256_from_preserved_sidecar": "084f62acc320c3772412878ed3b02ba828ee6e1ea8b03b342f3a857a51a5ab96",
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/pilots/1583820/split/resume.pt"
+    },
+    {
+      "bytes": 6345397491,
+      "checkpoint_sha256_from_preserved_sidecar": "52f66d6646238665aeb85e19477a2f3ae688168401de413e57376d1f638c2b94",
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/pilots/1583831/continuous/resume.pt"
+    },
+    {
+      "bytes": 3489660928,
+      "checkpoint_sha256_from_preserved_sidecar": null,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/pilots/1583831/continuous/resume.pt.next"
+    },
+    {
+      "bytes": 1057524496,
+      "checkpoint_sha256_from_preserved_sidecar": null,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/pilots/export-smoke-v2-1583801/model.safetensors"
+    },
+    {
+      "bytes": 1057524496,
+      "checkpoint_sha256_from_preserved_sidecar": null,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/pilots/export-smoke-v2-1583804/model.safetensors"
+    }
+  ],
+  "deleted_incomplete_directories": [
+    {
+      "bytes": 1388802029,
+      "files": 12,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-parts/part-00"
+    },
+    {
+      "bytes": 1137606722,
+      "files": 8,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-parts/part-02"
+    },
+    {
+      "bytes": 1136026626,
+      "files": 8,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-parts/part-04"
+    },
+    {
+      "bytes": 1135768050,
+      "files": 8,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-parts/part-05"
+    },
+    {
+      "bytes": 1134203858,
+      "files": 8,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-parts/part-06"
+    },
+    {
+      "bytes": 576925943,
+      "files": 6,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-parts/part-07"
+    },
+    {
+      "bytes": 1133158922,
+      "files": 8,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-parts/part-08"
+    },
+    {
+      "bytes": 1135337850,
+      "files": 8,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-parts/part-09"
+    },
+    {
+      "bytes": 1134457138,
+      "files": 8,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-parts/part-10"
+    },
+    {
+      "bytes": 1139319090,
+      "files": 8,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-parts/part-11"
+    },
+    {
+      "bytes": 591040087,
+      "files": 6,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-parts/part-12"
+    }
+  ],
+  "owner_marker": "pretrain500m 2026-09-12 isolated run; owner task 01a09290-b43f-7431-be8a-412ea5d37954",
+  "preserved": "logs, metrics, manifests, comparison receipts, export receipts, and checkpoint SHA-256 sidecars",
+  "reason": "quota failure; remove superseded pilot binaries and restart incomplete pack partitions from scratch",
+  "root": "/ssd/scxi253/pretrain500m-20260912-v1",
+  "status": "VERIFIED_EXACT_TARGETS_ABSENT",
+  "timestamp_utc": "2026-09-12T02:29:39.711239+00:00"
+}

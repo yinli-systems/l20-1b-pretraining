@@ -1,0 +1,60 @@
+{
+  "batch_docs": 2048,
+  "block_size": 2049,
+  "counters": {
+    "accepted": 642036,
+    "contaminated": 985,
+    "duplicate": 1505,
+    "seen": 644526,
+    "too_long": 0
+  },
+  "dataset_revisions": {
+    "web": {
+      "config": "sample-10BT",
+      "repo": "HuggingFaceFW/fineweb-edu",
+      "revision": "87f09149ef4734204d70ed1d046ddc9ca3f2b8f9"
+    }
+  },
+  "decontamination_enabled": true,
+  "delete_completed_raw": false,
+  "eos_id": 50279,
+  "holdout_modulus": 1000,
+  "partition_label": "part-12",
+  "resumed_tokens": {
+    "train": 0,
+    "validation": 0
+  },
+  "seed": 42,
+  "source": "web",
+  "source_exhausted": true,
+  "source_state_db": null,
+  "targets_complete": false,
+  "train_shards": [
+    {
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-parts/part-12/web/train-npy/train-00000.npy",
+      "sha256": "2cd152c5eb8d6cf82240062da16103168b68d31de875ca72b7de6c09c31f17d0",
+      "tokens": 268566528
+    },
+    {
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-parts/part-12/web/train-npy/train-00001.npy",
+      "sha256": "9cdeed2cf829306054f7ef553db383827e478ad5d61eb2d97815b858e89edf46",
+      "tokens": 268566528
+    },
+    {
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-parts/part-12/web/train-npy/train-00002.npy",
+      "sha256": "aa3391019ae54b56b25c8991db778f527eb9abb846fe49b623d9822a01b837ff",
+      "tokens": 123829266
+    }
+  ],
+  "train_tokens": 660962322,
+  "validation_shards": [
+    {
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-parts/part-12/web/val-npy/val-00000.npy",
+      "sha256": "7fcdd5cf8639769b6426c1b1b2fcaafe114680b1d899d08a23336a34dd4fe3f7",
+      "tokens": 657729
+    }
+  ],
+  "validation_tokens": 657729,
+  "vocab_size": 50280,
+  "workers": 20
+}

@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/raw-audit-v2/audit_raw_intake_v2.py", line 249, in <module>
+    main()
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/raw-audit-v2/audit_raw_intake_v2.py", line 243, in main
+    report = audit(args.input, args.tokenizer, args.expected_tokenizer_sha256, args.quotas, args.output)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/raw-audit-v2/audit_raw_intake_v2.py", line 95, in audit
+    require(sha(tokenizer_path) == expected_tokenizer_sha256, 'tokenizer hash mismatch')
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/raw-audit-v2/audit_raw_intake_v2.py", line 19, in require
+    raise ValueError(message)
+ValueError: tokenizer hash mismatch

@@ -1,0 +1,44 @@
+{
+  "schema": "p529m-screen-v3-launch",
+  "status": "RUNNING_MFU_GATE_PASS",
+  "submitted_utc": "2026-09-14T00:27:56.090634+00:00",
+  "resource_amendment_sha256": "f389003daebf58b16feaf2a6bc54cda96d8c11b90f524557f9083de00306b22b",
+  "recipe": "F1_broad_english_no_synthetic",
+  "jobs": {
+    "seed_20260914": "1588467",
+    "seed_20260915": "1588468"
+  },
+  "world_size_per_job": 4,
+  "concurrent_project_jobs_after_submit": 4,
+  "free_bytes_before_submit": 19305766912,
+  "four_job_aggregate_gate_bytes": 17049915392,
+  "training_manifest_sha256": "db8faa104e832a37d2e4044a678e159c5ffc98b9b3af28078d1e3e779df1c615",
+  "validation_manifest_sha256": "429c1ab33bdb8a92214ffdd2327462a05275b29fbd60abecc1d98b9fad634af3",
+  "training_started": true,
+  "allocation_verified": true,
+  "checked_utc": "2026-09-14T00:39:21.667921+00:00",
+  "nodes": {
+    "seed_20260914": "wqd10nah09g4",
+    "seed_20260915": "wqd10nbj01g3"
+  },
+  "gpus_verified": {
+    "seed_20260914": {
+      "count": 4,
+      "model": "NVIDIA GeForce RTX 5090"
+    },
+    "seed_20260915": {
+      "count": 4,
+      "model": "NVIDIA GeForce RTX 5090"
+    }
+  },
+  "baseline_equal_domain_loss": 3.322205684833928,
+  "mfu_gate": {
+    "window_steps": 10,
+    "grace_steps": 5,
+    "seed_20260914_step": 39,
+    "seed_20260914_median": 0.7749921268625363,
+    "seed_20260915_step": 37,
+    "seed_20260915_median": 0.7438097763196663,
+    "strictly_above_0_50": true
+  }
+}

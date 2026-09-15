@@ -1,0 +1,23 @@
+{
+  "accumulation": 32,
+  "claim_boundary": "multi-node throughput qualification only; no quality or promotion claim",
+  "created_unix": 1789352754.3176477,
+  "distinct_gpu_uuids": 16,
+  "final_mfu10_median": 0.5308622985026885,
+  "finite_training_metrics": true,
+  "global_prediction_tokens_per_step": 2097152,
+  "gpu_model": "NVIDIA GeForce RTX 5090",
+  "gpus_per_node": 4,
+  "median_tokens_per_second": 467715.7272670797,
+  "microbatch": 4,
+  "nodes": 4,
+  "run_fingerprint_sha256": "052f8d433ec73f4ed7335c21de80fe9679b58c005831a0c3de9923f4b4f4e97d",
+  "schema_version": 1,
+  "status": "PASS_MFU_AND_INTEGRITY",
+  "steady_mfu_median": 0.5567345100271764,
+  "steady_steps": "6..20",
+  "steps": 20,
+  "val_loss_equal_domain": 2.9616529398440647,
+  "validation_microbatch": 1,
+  "world_size": 16
+}

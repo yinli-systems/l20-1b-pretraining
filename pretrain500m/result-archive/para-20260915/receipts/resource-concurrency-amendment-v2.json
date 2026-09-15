@@ -1,0 +1,22 @@
+{
+  "amended_max_simultaneous_project_runs": 5,
+  "evidence_at_freeze": {
+    "active_full-screen_runs": 4,
+    "all_active_screen_mfu_gates_passed": true,
+    "benchmark_result_available": false,
+    "four_full_writer_gate_plus_benchmark_bytes": 19197399040,
+    "four_gpu_jobs_scheduler_reported_runnable": 4,
+    "free_storage_bytes": 31550148608,
+    "gpu_5090_scheduler_free": 41,
+    "storage_gate_passed": true
+  },
+  "fifth_run": "DDP same-allocation ABBA benchmark job 1588569; metrics-only and no checkpoint",
+  "frozen_unix": 1789350264.9674325,
+  "launch_policy": "At most five project GPU runs while this benchmark is active; every training segment retains rolling ten-step median MFU strictly above 0.50.",
+  "prior_max_simultaneous_project_runs": 4,
+  "reason": "User requested maximum safe speed and authorized many GPUs while retaining every run MFU strictly above 0.50.",
+  "schema_version": 1,
+  "scientific_boundary": "The benchmark launch is prospective and cannot change current screen outcomes.",
+  "scope": "Resource scheduling only; active screen recipes, data, checkpoints, optimizer, token budgets, learning rates, seeds, MFU rule, and evaluations are unchanged.",
+  "status": "FROZEN_PROSPECTIVE"
+}

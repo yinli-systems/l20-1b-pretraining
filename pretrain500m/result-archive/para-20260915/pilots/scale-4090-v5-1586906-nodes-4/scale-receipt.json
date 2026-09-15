@@ -1,0 +1,16 @@
+{
+  "formal_checkpoint_touched": false,
+  "gpu_inventory_sha256": "f17814a4f359acb594f065ed4bc431c86232622c2be003ce4b1fb70404996f37",
+  "gpu_model": "NVIDIA GeForce RTX 4090",
+  "gpus": 16,
+  "metrics_rows": 0,
+  "nodes": 4,
+  "observed_stage": "host_parameter_initialization_before_first_training_step",
+  "pilot_script_sha256": "a17c2c3d5c9d7a4ddda847443fc060220bfafffa8ca09a6d4995aaa49c9d9867",
+  "protocol_sha256": "a71ce3c8cc85cac6fe6751cb46f7e50dfb78d266602d6377cb2e65249f11c761",
+  "slurm_job_id": "1586906",
+  "status": "FAIL_NO_TRAINING_STEP_BEFORE_30M_TIMEOUT",
+  "time_limit_seconds": 1800,
+  "train_code_sha256": "3d9469d6bd3cc844ee690f37730b08051a8a38c4b2cf2d1d1b6c8377cf9655cc",
+  "unix": 1789289448.8821824
+}

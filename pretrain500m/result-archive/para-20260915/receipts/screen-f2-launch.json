@@ -1,0 +1,31 @@
+{
+  "admission_sha256": "b59ceaf95112a7385efbff0629c103873c2b6e65b208a511f662d7ed0f78c02a",
+  "all_allocations_verified_four_rtx5090": true,
+  "checked_utc": "2026-09-14T01:20:55.947497+00:00",
+  "jobs": [
+    {
+      "dependency": "afterok:1588453",
+      "job_id": 1588523,
+      "mfu_window_median": 0.759038813594914,
+      "mfu_window_passed": true,
+      "node": "wqd10naf02g3",
+      "seed": 20260914,
+      "step": 16
+    },
+    {
+      "dependency": "afterok:1588454",
+      "job_id": 1588524,
+      "mfu_window_median": 0.7733732236352637,
+      "mfu_window_passed": true,
+      "node": "wqd10nah10g5",
+      "seed": 20260915,
+      "step": 19
+    }
+  ],
+  "manifest_sha256": "a6120a304a16d5b569787cc542b5917cb8bf13ba49e97e2083cbf0ff3235591c",
+  "maximum_concurrent_project_runs": 4,
+  "recipe": "F2_reasoning_no_synthetic",
+  "schema_version": 1,
+  "status": "RUNNING_MFU_GATE_PASS",
+  "training_started": true
+}

@@ -1,0 +1,42 @@
+{
+  "active_reference_scan": "no active project job command referenced recovery-v1-1588191 or recovery-v2-1588249",
+  "created_unix": 1789349658.8982751,
+  "deleted_bytes": 19036026181,
+  "free_bytes_after": 25205116928,
+  "free_bytes_before": 12514430976,
+  "items": [
+    {
+      "bytes": 6345342039,
+      "job_id": 1588191,
+      "job_state": "FAILED|1:0",
+      "open_process": false,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/recovery-v1-1588191/continuous/resume.pt",
+      "retained_evidence": "v1 comparison FAIL retained",
+      "sha256": "53799d5f6d27f79a420293b27482c0ed32f64ca51d1c5a58ed1083a866dc5a36"
+    },
+    {
+      "bytes": 6345342103,
+      "job_id": 1588191,
+      "job_state": "FAILED|1:0",
+      "open_process": false,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/recovery-v1-1588191/split/resume.pt",
+      "retained_evidence": "v1 comparison FAIL retained",
+      "sha256": "38c34ba53e81bf7fbdf251d5bbd9b8994ac9a7093bf940ddba6e01a452ab6660"
+    },
+    {
+      "bytes": 6345342039,
+      "job_id": 1588249,
+      "job_state": "COMPLETED|0:0",
+      "open_process": false,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/recovery-v2-1588249/continuous/resume.pt",
+      "retained_evidence": "v2 PASS_GPU_RECOVERY_EXACT retained",
+      "sha256": "c8e45b0bb0da2e4d36eec83af5160835547ae42325880896ae3b61169b4476a6"
+    }
+  ],
+  "operation": "delete superseded qualification-only recovery checkpoints while retaining logs, metrics, hashes, manifests, and comparison receipts",
+  "owner_task": "01a09290-b43f-7431-be8a-412ea5d37954",
+  "owner_uid": 1256,
+  "schema_version": 1,
+  "single_writer_lock": "/ssd/scxi253/pretrain500m-20260912-v1/receipts/.cleanup-superseded-recovery-checkpoints-v1.lock",
+  "status": "VERIFIED_ABSENT"
+}

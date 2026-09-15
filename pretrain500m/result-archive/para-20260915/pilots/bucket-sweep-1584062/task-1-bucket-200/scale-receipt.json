@@ -1,0 +1,22 @@
+{
+  "accumulation": 16,
+  "ddp_bucket_cap_mb": 200.0,
+  "ddp_gradient_reduction": "bf16",
+  "global_prediction_tokens_per_step": 2097152,
+  "gpus": 16,
+  "manifest_sha256": "00f9a83bf18ac3d59c562b18cf0001f68d8fd76dccd37048eb624802d50ed8eb",
+  "maximum_mfu": 0.657873267919412,
+  "median_mfu": 0.6556620527597967,
+  "median_tokens_per_second": 550825.3006141209,
+  "metrics_sha256": "03385706d69f1a3b01f06bc61ae7e32393b4ad2d7add7601ffc02aa014cba19e",
+  "microbatch": 4,
+  "minimum_mfu": 0.6504719867061379,
+  "nccl_algo": "Ring",
+  "nccl_proto": "Simple",
+  "nodes": 4,
+  "protocol_sha256": "1b44371442a5c418c64f012ec5d9864718448d7bc9f81e56e7e04f34d551b4f3",
+  "samples": 10,
+  "status": "PASS_MFU_STRICTLY_GREATER_THAN_0.65",
+  "train_sha256": "27b5f998d5a48223db4a6eb6b245c133e5c13a02a5bac8a19d2b7078a794e29e",
+  "unix": 1789184997.2751715
+}

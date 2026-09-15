@@ -1,0 +1,488 @@
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py", line 202, in <module>
+[rank3]:     if __name__=='__main__':main()
+[rank3]:                             ^^^^^^
+[rank3]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py", line 147, in main
+[rank3]:     loss.backward();loss_sum+=loss.detach().float()
+[rank3]:     ^^^^^^^^^^^^^^^
+[rank3]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/_tensor.py", line 631, in backward
+[rank3]:     torch.autograd.backward(
+[rank3]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/__init__.py", line 381, in backward
+[rank3]:     _engine_run_backward(
+[rank3]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/graph.py", line 869, in _engine_run_backward
+[rank3]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]: RuntimeError: expect_autograd_hooks_ INTERNAL ASSERT FAILED at "/pytorch/torch/csrc/distributed/c10d/reducer.cpp":1705, please report a bug to PyTorch. 
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py", line 202, in <module>
+[rank2]:     if __name__=='__main__':main()
+[rank2]:                             ^^^^^^
+[rank2]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py", line 147, in main
+[rank2]:     loss.backward();loss_sum+=loss.detach().float()
+[rank2]:     ^^^^^^^^^^^^^^^
+[rank2]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/_tensor.py", line 631, in backward
+[rank2]:     torch.autograd.backward(
+[rank5]: Traceback (most recent call last):
+[rank5]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py", line 202, in <module>
+[rank5]:     if __name__=='__main__':main()
+[rank5]:                             ^^^^^^
+[rank5]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py", line 147, in main
+[rank5]:     loss.backward();loss_sum+=loss.detach().float()
+[rank5]:     ^^^^^^^^^^^^^^^
+[rank5]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/_tensor.py", line 631, in backward
+[rank5]:     torch.autograd.backward(
+[rank5]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/__init__.py", line 381, in backward
+[rank5]:     _engine_run_backward(
+[rank5]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/graph.py", line 869, in _engine_run_backward
+[rank2]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/__init__.py", line 381, in backward
+[rank2]:     _engine_run_backward(
+[rank2]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/graph.py", line 869, in _engine_run_backward
+[rank2]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]: RuntimeError: expect_autograd_hooks_ INTERNAL ASSERT FAILED at "/pytorch/torch/csrc/distributed/c10d/reducer.cpp":1705, please report a bug to PyTorch. 
+[rank5]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank5]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank5]: RuntimeError: expect_autograd_hooks_ INTERNAL ASSERT FAILED at "/pytorch/torch/csrc/distributed/c10d/reducer.cpp":1705, please report a bug to PyTorch. 
+[rank6]: Traceback (most recent call last):
+[rank6]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py", line 202, in <module>
+[rank6]:     if __name__=='__main__':main()
+[rank6]:                             ^^^^^^
+[rank6]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py", line 147, in main
+[rank6]:     loss.backward();loss_sum+=loss.detach().float()
+[rank6]:     ^^^^^^^^^^^^^^^
+[rank6]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/_tensor.py", line 631, in backward
+[rank6]:     torch.autograd.backward(
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py", line 202, in <module>
+[rank0]:     if __name__=='__main__':main()
+[rank0]:                             ^^^^^^
+[rank0]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py", line 147, in main
+[rank0]:     loss.backward();loss_sum+=loss.detach().float()
+[rank0]:     ^^^^^^^^^^^^^^^
+[rank0]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/_tensor.py", line 631, in backward
+[rank0]:     torch.autograd.backward(
+[rank0]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/__init__.py", line 381, in backward
+[rank0]:     _engine_run_backward(
+[rank0]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/graph.py", line 869, in _engine_run_backward
+[rank6]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/__init__.py", line 381, in backward
+[rank6]:     _engine_run_backward(
+[rank6]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/graph.py", line 869, in _engine_run_backward
+[rank6]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank6]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank6]: RuntimeError: expect_autograd_hooks_ INTERNAL ASSERT FAILED at "/pytorch/torch/csrc/distributed/c10d/reducer.cpp":1705, please report a bug to PyTorch. 
+[rank0]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: RuntimeError: expect_autograd_hooks_ INTERNAL ASSERT FAILED at "/pytorch/torch/csrc/distributed/c10d/reducer.cpp":1705, please report a bug to PyTorch. 
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py", line 202, in <module>
+[rank4]:     if __name__=='__main__':main()
+[rank4]:                             ^^^^^^
+[rank4]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py", line 147, in main
+[rank4]:     loss.backward();loss_sum+=loss.detach().float()
+[rank4]:     ^^^^^^^^^^^^^^^
+[rank4]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/_tensor.py", line 631, in backward
+[rank4]:     torch.autograd.backward(
+[rank4]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/__init__.py", line 381, in backward
+[rank4]:     _engine_run_backward(
+[rank4]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/graph.py", line 869, in _engine_run_backward
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py", line 202, in <module>
+[rank1]:     if __name__=='__main__':main()
+[rank1]:                             ^^^^^^
+[rank1]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py", line 147, in main
+[rank1]:     loss.backward();loss_sum+=loss.detach().float()
+[rank1]:     ^^^^^^^^^^^^^^^
+[rank1]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/_tensor.py", line 631, in backward
+[rank1]:     torch.autograd.backward(
+[rank1]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/__init__.py", line 381, in backward
+[rank1]:     _engine_run_backward(
+[rank1]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/graph.py", line 869, in _engine_run_backward
+[rank4]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank4]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank4]: RuntimeError: expect_autograd_hooks_ INTERNAL ASSERT FAILED at "/pytorch/torch/csrc/distributed/c10d/reducer.cpp":1705, please report a bug to PyTorch. 
+[rank1]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]: RuntimeError: expect_autograd_hooks_ INTERNAL ASSERT FAILED at "/pytorch/torch/csrc/distributed/c10d/reducer.cpp":1705, please report a bug to PyTorch. 
+[rank7]: Traceback (most recent call last):
+[rank7]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py", line 202, in <module>
+[rank7]:     if __name__=='__main__':main()
+[rank7]:                             ^^^^^^
+[rank7]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py", line 147, in main
+[rank7]:     loss.backward();loss_sum+=loss.detach().float()
+[rank7]:     ^^^^^^^^^^^^^^^
+[rank7]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/_tensor.py", line 631, in backward
+[rank7]:     torch.autograd.backward(
+[rank7]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/__init__.py", line 381, in backward
+[rank7]:     _engine_run_backward(
+[rank7]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/graph.py", line 869, in _engine_run_backward
+[rank7]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank7]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank7]: RuntimeError: expect_autograd_hooks_ INTERNAL ASSERT FAILED at "/pytorch/torch/csrc/distributed/c10d/reducer.cpp":1705, please report a bug to PyTorch. 
+[rank9]: Traceback (most recent call last):
+[rank9]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py", line 202, in <module>
+[rank9]:     if __name__=='__main__':main()
+[rank9]:                             ^^^^^^
+[rank9]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py", line 147, in main
+[rank9]:     loss.backward();loss_sum+=loss.detach().float()
+[rank9]:     ^^^^^^^^^^^^^^^
+[rank9]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/_tensor.py", line 631, in backward
+[rank9]:     torch.autograd.backward(
+[rank9]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/__init__.py", line 381, in backward
+[rank9]:     _engine_run_backward(
+[rank9]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/graph.py", line 869, in _engine_run_backward
+[rank9]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank9]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank9]: RuntimeError: expect_autograd_hooks_ INTERNAL ASSERT FAILED at "/pytorch/torch/csrc/distributed/c10d/reducer.cpp":1705, please report a bug to PyTorch. 
+[rank8]: Traceback (most recent call last):
+[rank8]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py", line 202, in <module>
+[rank8]:     if __name__=='__main__':main()
+[rank8]:                             ^^^^^^
+[rank8]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py", line 147, in main
+[rank8]:     loss.backward();loss_sum+=loss.detach().float()
+[rank8]:     ^^^^^^^^^^^^^^^
+[rank8]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/_tensor.py", line 631, in backward
+[rank8]:     torch.autograd.backward(
+[rank8]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/__init__.py", line 381, in backward
+[rank8]:     _engine_run_backward(
+[rank8]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/graph.py", line 869, in _engine_run_backward
+[rank8]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank8]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank8]: RuntimeError: expect_autograd_hooks_ INTERNAL ASSERT FAILED at "/pytorch/torch/csrc/distributed/c10d/reducer.cpp":1705, please report a bug to PyTorch. 
+[rank10]: Traceback (most recent call last):
+[rank10]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py", line 202, in <module>
+[rank10]:     if __name__=='__main__':main()
+[rank10]:                             ^^^^^^
+[rank10]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py", line 147, in main
+[rank10]:     loss.backward();loss_sum+=loss.detach().float()
+[rank10]:     ^^^^^^^^^^^^^^^
+[rank10]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/_tensor.py", line 631, in backward
+[rank10]:     torch.autograd.backward(
+[rank10]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/__init__.py", line 381, in backward
+[rank10]:     _engine_run_backward(
+[rank10]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/graph.py", line 869, in _engine_run_backward
+[rank10]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank10]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank10]: RuntimeError: expect_autograd_hooks_ INTERNAL ASSERT FAILED at "/pytorch/torch/csrc/distributed/c10d/reducer.cpp":1705, please report a bug to PyTorch. 
+[rank11]: Traceback (most recent call last):
+[rank11]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py", line 202, in <module>
+[rank11]:     if __name__=='__main__':main()
+[rank11]:                             ^^^^^^
+[rank11]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py", line 147, in main
+[rank11]:     loss.backward();loss_sum+=loss.detach().float()
+[rank11]:     ^^^^^^^^^^^^^^^
+[rank11]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/_tensor.py", line 631, in backward
+[rank11]:     torch.autograd.backward(
+[rank11]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/__init__.py", line 381, in backward
+[rank11]:     _engine_run_backward(
+[rank11]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/graph.py", line 869, in _engine_run_backward
+[rank11]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank11]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank11]: RuntimeError: expect_autograd_hooks_ INTERNAL ASSERT FAILED at "/pytorch/torch/csrc/distributed/c10d/reducer.cpp":1705, please report a bug to PyTorch. 
+[rank12]: Traceback (most recent call last):
+[rank12]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py", line 202, in <module>
+[rank12]:     if __name__=='__main__':main()
+[rank12]:                             ^^^^^^
+[rank12]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py", line 147, in main
+[rank12]:     loss.backward();loss_sum+=loss.detach().float()
+[rank12]:     ^^^^^^^^^^^^^^^
+[rank12]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/_tensor.py", line 631, in backward
+[rank12]:     torch.autograd.backward(
+[rank12]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/__init__.py", line 381, in backward
+[rank12]:     _engine_run_backward(
+[rank12]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/graph.py", line 869, in _engine_run_backward
+[rank12]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank12]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank12]: RuntimeError: expect_autograd_hooks_ INTERNAL ASSERT FAILED at "/pytorch/torch/csrc/distributed/c10d/reducer.cpp":1705, please report a bug to PyTorch. 
+[rank14]: Traceback (most recent call last):
+[rank14]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py", line 202, in <module>
+[rank14]:     if __name__=='__main__':main()
+[rank14]:                             ^^^^^^
+[rank14]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py", line 147, in main
+[rank14]:     loss.backward();loss_sum+=loss.detach().float()
+[rank14]:     ^^^^^^^^^^^^^^^
+[rank14]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/_tensor.py", line 631, in backward
+[rank14]:     torch.autograd.backward(
+[rank14]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/__init__.py", line 381, in backward
+[rank14]:     _engine_run_backward(
+[rank14]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/graph.py", line 869, in _engine_run_backward
+[rank14]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank14]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank14]: RuntimeError: expect_autograd_hooks_ INTERNAL ASSERT FAILED at "/pytorch/torch/csrc/distributed/c10d/reducer.cpp":1705, please report a bug to PyTorch. 
+[rank13]: Traceback (most recent call last):
+[rank13]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py", line 202, in <module>
+[rank13]:     if __name__=='__main__':main()
+[rank13]:                             ^^^^^^
+[rank13]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py", line 147, in main
+[rank13]:     loss.backward();loss_sum+=loss.detach().float()
+[rank13]:     ^^^^^^^^^^^^^^^
+[rank13]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/_tensor.py", line 631, in backward
+[rank13]:     torch.autograd.backward(
+[rank13]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/__init__.py", line 381, in backward
+[rank13]:     _engine_run_backward(
+[rank13]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/graph.py", line 869, in _engine_run_backward
+[rank13]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank13]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank13]: RuntimeError: expect_autograd_hooks_ INTERNAL ASSERT FAILED at "/pytorch/torch/csrc/distributed/c10d/reducer.cpp":1705, please report a bug to PyTorch. 
+[rank15]: Traceback (most recent call last):
+[rank15]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py", line 202, in <module>
+[rank15]:     if __name__=='__main__':main()
+[rank15]:                             ^^^^^^
+[rank15]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py", line 147, in main
+[rank15]:     loss.backward();loss_sum+=loss.detach().float()
+[rank15]:     ^^^^^^^^^^^^^^^
+[rank15]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/_tensor.py", line 631, in backward
+[rank15]:     torch.autograd.backward(
+[rank15]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/__init__.py", line 381, in backward
+[rank15]:     _engine_run_backward(
+[rank15]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/graph.py", line 869, in _engine_run_backward
+[rank15]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank15]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank15]: RuntimeError: expect_autograd_hooks_ INTERNAL ASSERT FAILED at "/pytorch/torch/csrc/distributed/c10d/reducer.cpp":1705, please report a bug to PyTorch. 
+[rank12]:[W912 11:37:34.374043438 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+[rank8]:[W912 11:37:34.576864650 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+[rank4]:[W912 11:37:34.844176327 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+[rank0]:[W912 11:37:34.852388761 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+W0912 11:37:34.694000 3528234 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 3528283 closing signal SIGTERM
+W0912 11:37:34.704000 3528234 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 3528284 closing signal SIGTERM
+W0912 11:37:34.704000 3528234 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 3528285 closing signal SIGTERM
+W0912 11:37:34.704000 2929088 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 2929432 closing signal SIGTERM
+W0912 11:37:34.710000 2929088 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 2929433 closing signal SIGTERM
+W0912 11:37:34.710000 2929088 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 2929435 closing signal SIGTERM
+W0912 11:37:34.916000 3009227 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 3009284 closing signal SIGTERM
+W0912 11:37:34.922000 3009227 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 3009286 closing signal SIGTERM
+W0912 11:37:34.923000 3009227 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 3009287 closing signal SIGTERM
+W0912 11:37:34.927000 554081 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 554128 closing signal SIGTERM
+W0912 11:37:34.934000 554081 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 554130 closing signal SIGTERM
+W0912 11:37:34.934000 554081 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 554131 closing signal SIGTERM
+E0912 11:37:34.981000 3528234 torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 1) local_rank: 3 (pid: 3528286) of binary: /ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 994, in <module>
+    main()
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 990, in main
+    run(args)
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-09-12_11:37:34
+  host      : wqd10nbj06g4
+  rank      : 12 (local_rank: 0)
+  exitcode  : 1 (pid: 3528283)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-09-12_11:37:34
+  host      : wqd10nbj06g4
+  rank      : 13 (local_rank: 1)
+  exitcode  : -15 (pid: 3528284)
+  error_file: <N/A>
+  traceback : Signal 15 (SIGTERM) received by PID 3528284
+[3]:
+  time      : 2026-09-12_11:37:34
+  host      : wqd10nbj06g4
+  rank      : 14 (local_rank: 2)
+  exitcode  : 1 (pid: 3528285)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-09-12_11:37:34
+  host      : wqd10nbj06g4
+  rank      : 15 (local_rank: 3)
+  exitcode  : 1 (pid: 3528286)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+E0912 11:37:35.038000 2929088 torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 1) local_rank: 2 (pid: 2929434) of binary: /ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 994, in <module>
+    main()
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 990, in main
+    run(args)
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-09-12_11:37:35
+  host      : wqd10nbj02g1
+  rank      : 4 (local_rank: 0)
+  exitcode  : -15 (pid: 2929432)
+  error_file: <N/A>
+  traceback : Signal 15 (SIGTERM) received by PID 2929432
+[2]:
+  time      : 2026-09-12_11:37:35
+  host      : wqd10nbj02g1
+  rank      : 5 (local_rank: 1)
+  exitcode  : 1 (pid: 2929433)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-09-12_11:37:35
+  host      : wqd10nbj02g1
+  rank      : 7 (local_rank: 3)
+  exitcode  : -15 (pid: 2929435)
+  error_file: <N/A>
+  traceback : Signal 15 (SIGTERM) received by PID 2929435
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-09-12_11:37:34
+  host      : wqd10nbj02g1
+  rank      : 6 (local_rank: 2)
+  exitcode  : 1 (pid: 2929434)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+E0912 11:37:35.325000 554081 torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 1) local_rank: 1 (pid: 554129) of binary: /ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 994, in <module>
+    main()
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 990, in main
+    run(args)
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-09-12_11:37:35
+  host      : wqd10nbj06g2
+  rank      : 8 (local_rank: 0)
+  exitcode  : 1 (pid: 554128)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-09-12_11:37:35
+  host      : wqd10nbj06g2
+  rank      : 10 (local_rank: 2)
+  exitcode  : 1 (pid: 554130)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-09-12_11:37:35
+  host      : wqd10nbj06g2
+  rank      : 11 (local_rank: 3)
+  exitcode  : -15 (pid: 554131)
+  error_file: <N/A>
+  traceback : Signal 15 (SIGTERM) received by PID 554131
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-09-12_11:37:34
+  host      : wqd10nbj06g2
+  rank      : 9 (local_rank: 1)
+  exitcode  : 1 (pid: 554129)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+E0912 11:37:35.337000 3009227 torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 1) local_rank: 1 (pid: 3009285) of binary: /ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 994, in <module>
+srun: error: wqd10nbj06g4: task 3: Exited with exit code 1
+srun: Terminating StepId=1584046.0
+    main()
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 990, in main
+    run(args)
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 981, in run
+slurmstepd: error: *** STEP 1584046.0 ON wqd10nbj01g1 CANCELLED AT 2026-09-12T11:37:35 ***
+    elastic_launch(
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+Traceback (most recent call last):
+  File "/ssd/scxi253/pretraining2/runtime/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/weakref.py", line 666, in _exitfunc
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_bf16_comm_bucket.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-09-12_11:37:35
+  host      : wqd10nbj01g1
+  rank      : 0 (local_rank: 0)
+  exitcode  : -15 (pid: 3009284)
+  error_file: <N/A>
+  traceback : Signal 15 (SIGTERM) received by PID 3009284
+[2]:
+  time      : 2026-09-12_11:37:35
+  host      : wqd10nbj01g1
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 3009286)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-09-12_11:37:35
+  host      : wqd10nbj01g1
+  rank      : 3 (local_rank: 3)
+  exitcode  : -15 (pid: 3009287)
+  error_file: <N/A>
+  traceback : Signal 15 (SIGTERM) received by PID 3009287
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-09-12_11:37:34
+  host      : wqd10nbj01g1
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 3009285)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+    f()
+  File "/ssd/scxi253/pretraining2/runtime/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/weakref.py", line 590, in __call__
+    return info.func(*info.args, **(info.kwargs or {}))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/library.py", line 453, in _del_library
+    def _del_library(
+    
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/api.py", line 86, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 554081 got signal: 15
+srun: error: wqd10nbj02g1: task 1: Exited with exit code 1
+srun: error: wqd10nbj01g1: task 0: Exited with exit code 1
+srun: error: wqd10nbj06g2: task 2: Exited with exit code 1

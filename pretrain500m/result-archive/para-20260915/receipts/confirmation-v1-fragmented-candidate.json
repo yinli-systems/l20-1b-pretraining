@@ -1,0 +1,22 @@
+{
+  "admission": "requires four distinct RTX 5090 UUIDs and post-grace rolling ten-step median MFU strictly above 0.50",
+  "checked_utc": "2026-09-14T07:37:45Z",
+  "claim_boundary": "submission only; allocation, topology, MFU and completion remain unverified",
+  "coordination": "keep both pending; whichever allocates first owns the seed and the other must be cancelled before duplicate training",
+  "excluded_nodes": [
+    "wqd10nbl11g5"
+  ],
+  "job_id": 1589654,
+  "paired_single_node_job_id": 1589570,
+  "recipe": "F3_broad_multilingual_no_synthetic",
+  "runner_sha256": "e6ed2717fd63f39efb40514efaef91fe49ad52efb40b34c046e592b5b11fe589",
+  "schema": "p529m-fragmented-four-node-candidate-v1",
+  "seed": 20260915,
+  "status": "SUBMITTED_PENDING_ALLOCATION",
+  "topology": {
+    "cpus_per_task": 6,
+    "gpus_per_node": 1,
+    "nodes": 4,
+    "world_size": 4
+  }
+}

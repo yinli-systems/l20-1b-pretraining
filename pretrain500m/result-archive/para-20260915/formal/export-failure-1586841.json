@@ -1,0 +1,26 @@
+{
+  "checkpoint_sha256": "13aa21721e15c48cdfdafe30d8fdd41d9c95c90be766327661d96af1e90dd6cf",
+  "diagnostic": {
+    "argmax_matches": 251,
+    "argmax_total": 256,
+    "job_id": 1587757,
+    "max_abs_logit_difference": 0.265625,
+    "mean_abs_logit_difference": 0.019861329346895218,
+    "output_sha256": "9cca68065e9708b660eae9524fdf21d35708816e414932731db23fe74bb82e59",
+    "state_tensor_parity_observed_before_failure": "bitwise_exact"
+  },
+  "failed_export_job": 1586841,
+  "failed_export_script_sha256": "2b4f897191edf75383e12e2c28c15ed9a8bc44bb1113a4cd361c47a8686d89a5",
+  "failure": "BF16 CUDA save-reload functional check exceeded the old absolute tolerance of 0.125 while the exported state tensors remained bitwise exact",
+  "failure_log_sha256": "fbe91a4e89cdf28cf066fbe373893667378a29adb8d317e212b3b3ef1b9bdfc5",
+  "partial_export_inventory": [
+    {"bytes": 696, "path": "config.json"},
+    {"bytes": 115, "path": "generation_config.json"},
+    {"bytes": 1057524496, "path": "model.safetensors"},
+    {"bytes": 293, "path": "special_tokens_map.json"},
+    {"bytes": 3565402, "path": "tokenizer.json"},
+    {"bytes": 5307, "path": "tokenizer_config.json"}
+  ],
+  "status": "FAILED_EXPORT_PRESERVED_BEFORE_SCOPED_RETRY",
+  "unix": 1789308957
+}

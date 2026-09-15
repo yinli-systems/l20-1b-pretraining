@@ -1,0 +1,13 @@
+{
+  "status": "SUBMITTED",
+  "checked_utc": "2026-09-13T19:10:11.228124+00:00",
+  "source": "/ssd/scxi253/pretrain500m-20260912-v1/source/recovery-v2",
+  "free_bytes": 28912545792,
+  "required_headroom_bytes": 21183996185,
+  "cpu_validation": {
+    "status": "PASS_TRACE_CONTENT_HASH_CONTRACTS",
+    "torch": "2.11.0+cu128"
+  },
+  "job_id": "1588249",
+  "remote_output": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/recovery-v2-1588249"
+}

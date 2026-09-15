@@ -1,0 +1,40 @@
+{
+  "created_at_utc": "2026-09-12T08:30:27.736793+00:00",
+  "data_finalize_job": "1584773",
+  "dedup_audit_job": "1584768",
+  "formal_dispatch_job": "1584843",
+  "owner_task": "01a09290-b43f-7431-be8a-412ea5d37954",
+  "packing_jobs": [
+    "1584572_1",
+    "1584572_2",
+    "1584572_3",
+    "1584572_4",
+    "1584606_5",
+    "1584694_6",
+    "1584694_7",
+    "1584761_8",
+    "1584761_9",
+    "1584761_10",
+    "1584761_11",
+    "1584656_12",
+    "1584656_13"
+  ],
+  "protocol": {
+    "minimum_mfu_strictly_greater_than": 0.5,
+    "path": "/ssd/scxi253/pretrain500m-20260912-v1/source/protocol-v3.json",
+    "sha256": "38a8adbbba3ca19d2cd59718412fb6671925b6b123350d25a8755eed8661b893",
+    "supersedes_protocol_sha256": "1b44371442a5c418c64f012ec5d9864718448d7bc9f81e56e7e04f34d551b4f3"
+  },
+  "reason": "User relaxed the sustained MFU threshold to strictly greater than 0.50 and authorized more GPUs before formal training began.",
+  "selected_scale_pilot": {
+    "gpus": 16,
+    "job": "1583999",
+    "median_mfu": 0.5574425708758708,
+    "median_tokens_per_second": 468310.57308466744,
+    "minimum_mfu": 0.5286628461552305,
+    "train_sha256": "3d9469d6bd3cc844ee690f37730b08051a8a38c4b2cf2d1d1b6c8377cf9655cc"
+  },
+  "status": "AUTHORITATIVE_PIPELINE",
+  "superseded_formal_dispatch_job": "1584788",
+  "superseded_formal_dispatch_state": "CANCELLED"
+}

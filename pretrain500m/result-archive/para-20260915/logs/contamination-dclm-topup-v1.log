@@ -1,0 +1,1 @@
+{"status": "SUPPLEMENTAL_EXACT_SPAN_AUDIT_COMPLETE_ADMISSION_PENDING", "counts": {"rows_scanned": 10000, "text_characters_scanned": 53756546}, "reference_counts": {"anchored_fields": 18516, "skipped_short_or_low_diversity_fields": 31153, "whole_document_only_fields": 3404, "reference_records": 11830, "unique_anchor_patterns": 31641}, "elapsed_seconds": 18.991815090179443}

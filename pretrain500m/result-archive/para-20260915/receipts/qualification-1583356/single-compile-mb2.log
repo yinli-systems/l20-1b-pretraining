@@ -1,0 +1,26 @@
+{"step": 0, "seconds": 35.59504677262157, "loss": 10.72077465057373, "grad_norm": 15.015576362609863}
+{"step": 1, "seconds": 0.41413053032010794, "loss": 10.248922348022461, "grad_norm": 31.152647018432617}
+{"step": 2, "seconds": 0.4139848165214062, "loss": 11.985490798950195, "grad_norm": 18.263893127441406}
+{"step": 3, "seconds": 0.413995242677629, "loss": 10.14669418334961, "grad_norm": 4.555093288421631}
+{"step": 4, "seconds": 0.4140696469694376, "loss": 9.054319381713867, "grad_norm": 1.502693772315979}
+{"step": 5, "seconds": 0.4139503603801131, "loss": 8.315053939819336, "grad_norm": 0.48805639147758484}
+{"step": 6, "seconds": 0.41407908219844103, "loss": 8.55064582824707, "grad_norm": 13.333635330200195}
+{"step": 7, "seconds": 0.4141196310520172, "loss": 7.849699974060059, "grad_norm": 0.28249332308769226}
+{"step": 8, "seconds": 0.4141236115247011, "loss": 7.745648384094238, "grad_norm": 0.20260897278785706}
+{"step": 9, "seconds": 0.41409194841980934, "loss": 7.698529243469238, "grad_norm": 0.20818349719047546}
+{"step": 10, "seconds": 0.41407583840191364, "loss": 7.675964832305908, "grad_norm": 0.22147852182388306}
+{"step": 11, "seconds": 0.41421035397797823, "loss": 7.651729106903076, "grad_norm": 0.20537711679935455}
+{"step": 12, "seconds": 0.4141261698678136, "loss": 7.631218910217285, "grad_norm": 0.18071210384368896}
+{"step": 13, "seconds": 0.41406235191971064, "loss": 7.620686054229736, "grad_norm": 0.16757752001285553}
+{"step": 14, "seconds": 0.4145934637635946, "loss": 7.615743637084961, "grad_norm": 0.16441550850868225}
+{"step": 15, "seconds": 0.41402239445596933, "loss": 7.610329627990723, "grad_norm": 0.1562650203704834}
+{"step": 16, "seconds": 0.4153266968205571, "loss": 7.605956077575684, "grad_norm": 0.1476615071296692}
+{"step": 17, "seconds": 0.4153140261769295, "loss": 7.601916313171387, "grad_norm": 0.14163385331630707}
+{"step": 18, "seconds": 0.41523719392716885, "loss": 7.59787654876709, "grad_norm": 0.13684074580669403}
+{"step": 19, "seconds": 0.4152799053117633, "loss": 7.593454360961914, "grad_norm": 0.12932242453098297}
+{"step": 20, "seconds": 0.4154489217326045, "loss": 7.589015007019043, "grad_norm": 0.1221998929977417}
+{"step": 21, "seconds": 0.4149229694157839, "loss": 8.428974151611328, "grad_norm": 1.1821345090866089}
+{"step": 22, "seconds": 0.4153578579425812, "loss": 7.602947235107422, "grad_norm": 0.18772651255130768}
+{"step": 23, "seconds": 0.41533993650227785, "loss": 7.610455513000488, "grad_norm": 0.19811592996120453}
+{"step": 24, "seconds": 0.4153475947678089, "loss": 7.592160701751709, "grad_norm": 0.14201627671718597}
+{"evidence_class": "synthetic_throughput_only", "job_id": "1583356", "hostname": "wqd10naf02g1", "world_size": 1, "config": {"vocab_size": 32768, "hidden_size": 1536, "intermediate_size": 4096, "num_hidden_layers": 18, "num_attention_heads": 12, "num_key_value_heads": 4, "max_position_embeddings": 2048, "rms_norm_eps": 1e-05, "rope_theta": 10000.0, "initializer_range": 0.02, "tie_word_embeddings": true, "model_type": "llama", "architectures": ["LlamaForCausalLM"], "hidden_act": "silu", "attention_bias": false, "mlp_bias": false, "attention_dropout": 0.0, "head_dim": 128, "use_cache": true, "bos_token_id": null, "eos_token_id": 0, "pad_token_id": 1}, "parameters": 503373312, "torch": "2.11.0+cu128", "cuda": "12.8", "gpu": "NVIDIA GeForce RTX 5090", "capability": [12, 0], "gpu_memory_bytes": 33668988928, "compile": true, "microbatch": 2, "accumulation": 4, "warmup_steps": 5, "measurement_steps": 20, "seconds": [0.4139503538608551, 0.41407907009124756, 0.4141196310520172, 0.41412362456321716, 0.41409194469451904, 0.4140758514404297, 0.41421034932136536, 0.4141261577606201, 0.41406235098838806, 0.4145934581756592, 0.41402238607406616, 0.41532668471336365, 0.4153140187263489, 0.4152371883392334, 0.41527989506721497, 0.415448933839798, 0.4149229824542999, 0.4153578579425812, 0.41533994674682617, 0.4153476059436798], "losses": [8.315053939819336, 8.55064582824707, 7.849699974060059, 7.745648384094238, 7.698529243469238, 7.675964832305908, 7.651729106903076, 7.631218910217285, 7.620686054229736, 7.615743637084961, 7.610329627990723, 7.605956077575684, 7.601916313171387, 7.59787654876709, 7.593454360961914, 7.589015007019043, 8.428974151611328, 7.602947235107422, 7.610455513000488, 7.592160701751709], "tokens_per_optimizer_step": 16384, "tokens_per_second": 39512.69782822002, "tokens_per_second_p10": 39445.50388707204, "tokens_per_second_p50": 39536.50635420739, "tokens_per_second_p90": 39568.91990032552, "total_elapsed_seconds": 45.5577349178493, "peak_allocated_bytes": 13268400128, "peak_reserved_bytes": 14050918400, "estimated_model_flops_per_token": 3699376128, "dense_bf16_peak_flops_per_gpu": null, "mfu": null, "limitations": ["No corpus I/O, validation or checkpoint overhead included in steady-state throughput.", "Synthetic repeated random batch does not establish language learning or quality.", "MFU stays unset until exact device precision peak is sourced."]}

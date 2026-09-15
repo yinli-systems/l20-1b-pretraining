@@ -1,0 +1,13 @@
+{
+  "checked_utc": "2026-09-14T07:40:22Z",
+  "decision": "retain earlier single-node job and release duplicate future reservation",
+  "job_id": 1589654,
+  "observed_start_estimates": {
+    "fragmented_4x1": "2026-09-14T20:50:16+08:00",
+    "single_node_4gpu": "2026-09-14T19:39:38+08:00"
+  },
+  "schema": "p529m-fragmented-candidate-decision-v1",
+  "single_node_job_id": 1589570,
+  "status": "CANCELLED_BEFORE_ALLOCATION_NO_TRAINING",
+  "training_launched": false
+}

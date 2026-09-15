@@ -1,0 +1,5 @@
+name, uuid, memory.total [MiB], driver_version, power.limit [W], clocks.max.sm [MHz]
+NVIDIA GeForce RTX 5090, GPU-488cd833-3daf-9ae7-cdff-d8ffca597456, 32607 MiB, 580.82.07, 575.00 W, 3090 MHz
+NVIDIA GeForce RTX 5090, GPU-08010139-a2ac-d781-c3c6-662a39cb2eef, 32607 MiB, 580.82.07, 575.00 W, 3090 MHz
+NVIDIA GeForce RTX 5090, GPU-753c4dc5-8590-5033-bfdb-c837e57aa6b6, 32607 MiB, 580.82.07, 600.00 W, 3150 MHz
+NVIDIA GeForce RTX 5090, GPU-9fc9ab50-1466-3b27-b858-6a0d85053aef, 32607 MiB, 580.82.07, 575.00 W, 3090 MHz

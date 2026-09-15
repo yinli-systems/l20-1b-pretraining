@@ -1,0 +1,79 @@
+{
+  "aggregate": {
+    "mean_domains": {
+      "code": 1.7481176253665276,
+      "general_web": 3.111118825810376,
+      "knowledge_reading": 2.6157758892912204,
+      "math": 2.21498116446021,
+      "multilingual": 3.757558858756442
+    },
+    "mean_equal_domain_loss": 2.689510472736955,
+    "relative_loss_reduction_vs_initial": 0.19044432287418722,
+    "seed_spread": 5.915759676344834e-05,
+    "worst_seed_equal_domain_loss": 2.689540051535337
+  },
+  "claim_boundary": "two-seed directional CPT screen; final recipe selection waits for every prescribed candidate and control seed",
+  "initial_equal_domain_loss": 3.322205684833928,
+  "integrity": {
+    "all_256_steps": true,
+    "all_jobs_completed_zero_exit": true,
+    "all_metrics_finite": true,
+    "all_mfu10_strictly_above_0_50": true,
+    "any_bucket_rebuild": false,
+    "checkpoint_digest_computed_by_runner_after_atomic_save": true,
+    "independent_checkpoint_reread": false,
+    "status_checkpoint_hash_matches_sha_file": true
+  },
+  "kind": "two_seed_cpt_screen_completion",
+  "owner": "pretrain500m 2026-09-12 isolated run; owner task 01a09290-b43f-7431-be8a-412ea5d37954",
+  "recipe": "F2_reasoning_no_synthetic",
+  "runs": [
+    {
+      "checkpoint_bytes": 2372504677,
+      "checkpoint_sha256": "52e7944d7d604df4dbf8875f3f76e026b30af22191254dfb682cb7b9f084be1f",
+      "domains": {
+        "code": 1.7493945703837075,
+        "general_web": 3.111382465982588,
+        "knowledge_reading": 2.616040917170649,
+        "math": 2.215937238707306,
+        "multilingual": 3.7546492774486167
+      },
+      "elapsed_seconds": 3564,
+      "job_id": 1588523,
+      "loss": 2.6894808939385735,
+      "manifest_sha256": "0af8c28443313d24b357c0fe11a22167efcc4e27e56895d541441476275a3255",
+      "metrics_sha256": "48fbee3c013ea298daa905a571b84b22f88eae73fe4baf44bfc8e18cfcce8ca1",
+      "mfu10": 0.759147599224308,
+      "run_fingerprint": "8bd8c9483134aa6aac36073852b4f189600f4ddd40b14f57f3dde0d3df61f693",
+      "seed": 20260914,
+      "status_sha256": "a3146394840566230897a322a5eed12f0b77d4bc0b494b19e5570f942ed039cb",
+      "steps": 256,
+      "tokens": 536870912
+    },
+    {
+      "checkpoint_bytes": 2372504677,
+      "checkpoint_sha256": "5c6c93b36484316324af1aa9bb82a6abca895c486ec7bf2f107ed26cac639522",
+      "domains": {
+        "code": 1.7468406803493477,
+        "general_web": 3.1108551856381643,
+        "knowledge_reading": 2.6155108614117917,
+        "math": 2.214025090213114,
+        "multilingual": 3.760468440064267
+      },
+      "elapsed_seconds": 3496,
+      "job_id": 1588524,
+      "loss": 2.689540051535337,
+      "manifest_sha256": "6babe1d864d97789a770a951a5fbd813321730879e7d813260f7162a0eb3426c",
+      "metrics_sha256": "b6903b88a2d96273496dc7a0bcbd29c842de047644f4aaecd7da72c2c23675b1",
+      "mfu10": 0.7731097753560855,
+      "run_fingerprint": "71e23593fa11ede44fdbc42280cd13fa062ae2a60a2dfed18969f6adbf5f62d6",
+      "seed": 20260915,
+      "status_sha256": "ea0dc7fce3864599db777e92da975525fab9de9b382a907074905328e8e70ea4",
+      "steps": 256,
+      "tokens": 536870912
+    }
+  ],
+  "schema_version": 1,
+  "selection_status": "ELIGIBLE_PENDING_F3_AND_CONTROL_COMPLETION",
+  "status": "PASS_TWO_SEEDS"
+}

@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/quality-family-expansion-v1/scan.py", line 229, in <module>
+    run(p.parse_args())
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/quality-family-expansion-v1/scan.py", line 179, in run
+    reused_by_key=reusable_results(work,args.reuse_output,args.expected_reuse_report_sha256,report,exclusions) if args.reuse_output else {}
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/quality-family-expansion-v1/scan.py", line 77, in reusable_results
+    raise ValueError('reused quality shard/report mismatch')
+ValueError: reused quality shard/report mismatch

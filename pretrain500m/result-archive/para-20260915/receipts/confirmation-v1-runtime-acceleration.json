@@ -1,0 +1,15 @@
+{
+  "checked_utc": "2026-09-14T07:25:58Z",
+  "evidence": {
+    "mfu_window_median": 0.7666684775270219,
+    "mfu_window_steps": "6-15",
+    "projected_training_seconds_approx": 13338,
+    "steady_tokens_per_second_approx": 161000
+  },
+  "job_id": 1589567,
+  "new_time_limit": "04:30:00",
+  "old_time_limit": "06:00:00",
+  "policy": "reduce each job only after its ten-step post-grace MFU window proves enough runtime margin",
+  "schema": "p529m-confirmation-runtime-acceleration-v1",
+  "status": "HEALTHY_RUNNING_JOB_TIMELIMIT_REDUCED"
+}

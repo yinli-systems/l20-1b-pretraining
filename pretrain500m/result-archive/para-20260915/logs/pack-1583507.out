@@ -1,0 +1,7 @@
+Fri Sep 11 23:44:41 UTC 2026
+wqd10nba07g8
+{"source": "web", "seen": 10240, "accepted": 0, "duplicate": 10226, "contaminated": 14, "too_long": 0, "resumed_tokens": {"train": 57394539, "validation": 45078}, "train_tokens": 57394539, "val_tokens": 45078, "train_target": 8999998914, "validation_target": 4999560}
+{"source": "web", "seen": 20480, "accepted": 0, "duplicate": 20454, "contaminated": 26, "too_long": 0, "resumed_tokens": {"train": 57394539, "validation": 45078}, "train_tokens": 57394539, "val_tokens": 45078, "train_target": 8999998914, "validation_target": 4999560}
+{"source": "web", "seen": 30720, "accepted": 0, "duplicate": 30678, "contaminated": 42, "too_long": 0, "resumed_tokens": {"train": 57394539, "validation": 45078}, "train_tokens": 57394539, "val_tokens": 45078, "train_target": 8999998914, "validation_target": 4999560}
+{"source": "web", "seen": 40960, "accepted": 0, "duplicate": 40895, "contaminated": 65, "too_long": 0, "resumed_tokens": {"train": 57394539, "validation": 45078}, "train_tokens": 57394539, "val_tokens": 45078, "train_target": 8999998914, "validation_target": 4999560}
+{"source": "web", "seen": 49152, "accepted": 0, "duplicate": 49072, "contaminated": 80, "too_long": 0, "resumed_tokens": {"train": 57394539, "validation": 45078}, "train_tokens": 57394539, "val_tokens": 45078, "train_target": 8999998914, "validation_target": 4999560, "checkpointed_stop": true}

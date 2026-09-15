@@ -1,0 +1,18 @@
+srun: Job step aborted: Waiting up to 62 seconds for job step to finish.
+slurmstepd: error: *** STEP 1586995.1 ON wqd10nba06g4 CANCELLED AT 2026-09-13T16:56:31 ***
+W0913 16:56:31.813000 1184271 torch/distributed/elastic/agent/server/api.py:739] Received 15 death signal, shutting down workers
+W0913 16:56:31.821000 1184271 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 1184582 closing signal SIGTERM
+W0913 16:56:31.822000 1184271 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 1184583 closing signal SIGTERM
+W0913 16:56:31.822000 1184271 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 1184584 closing signal SIGTERM
+W0913 16:56:31.813000 460187 torch/distributed/elastic/agent/server/api.py:739] Received 15 death signal, shutting down workers
+W0913 16:56:31.823000 1184271 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 1184585 closing signal SIGTERM
+W0913 16:56:31.822000 460187 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 460232 closing signal SIGTERM
+W0913 16:56:31.823000 460187 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 460233 closing signal SIGTERM
+W0913 16:56:31.824000 460187 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 460234 closing signal SIGTERM
+W0913 16:56:31.814000 1699968 torch/distributed/elastic/agent/server/api.py:739] Received 15 death signal, shutting down workers
+W0913 16:56:31.824000 460187 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 460235 closing signal SIGTERM
+W0913 16:56:31.824000 1699968 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 1700162 closing signal SIGTERM
+W0913 16:56:31.826000 1699968 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 1700163 closing signal SIGTERM
+W0913 16:56:31.827000 1699968 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 1700164 closing signal SIGTERM
+W0913 16:56:31.827000 1699968 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 1700165 closing signal SIGTERM
+W0913 16:56:31.814000 412361 torch/distributed/elastic/agent/server/api.py:739] Received 15 death signal, shutting down workers

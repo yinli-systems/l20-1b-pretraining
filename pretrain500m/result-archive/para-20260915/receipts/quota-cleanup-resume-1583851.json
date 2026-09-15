@@ -1,0 +1,51 @@
+{
+  "absence_verified": true,
+  "active_jobs_before_cleanup": [
+    "1583850|p500m-dedup-audit-v1|PENDING",
+    "1560103|biomm-lssd03-receipt|PENDING",
+    "1560080|biomm-instr20-select|PENDING",
+    "1560079|biomm-instr-paired|PENDING",
+    "1560078|biomm-instr20-sqa|PENDING",
+    "1560077|biomm-instr20-vqa|PENDING",
+    "1560076|biomm-instr20-pmqa|PENDING",
+    "1500015|abf-late-scale-analyze|PENDING",
+    "1583872|clipcache-abba-main|RUNNING",
+    "1583848_6|p500m-pack14-v1|RUNNING",
+    "1583848_7|p500m-pack14-v1|RUNNING",
+    "1583848_8|p500m-pack14-v1|RUNNING",
+    "1583848_9|p500m-pack14-v1|RUNNING",
+    "1583848_10|p500m-pack14-v1|RUNNING",
+    "1583848_11|p500m-pack14-v1|RUNNING",
+    "1583848_12|p500m-pack14-v1|RUNNING",
+    "1583848_0|p500m-pack14-v1|RUNNING",
+    "1583848_2|p500m-pack14-v1|RUNNING",
+    "1583848_4|p500m-pack14-v1|RUNNING",
+    "1583848_5|p500m-pack14-v1|RUNNING",
+    "1583672|p529m-scale-v2|PENDING",
+    "1583849_[0-1]|p529m-lr-long-v2|PENDING"
+  ],
+  "bytes_removed": 12690794982,
+  "deleted_files": [
+    {
+      "bytes": 6345397491,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/pilots/1583851/continuous/resume.pt",
+      "sha256_from_preserved_sidecar": "c0aff67909674442a34564d78c643ce8d2f36e7a49153faa755591047116e849"
+    },
+    {
+      "bytes": 6345397491,
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/pilots/1583851/split/resume.pt",
+      "sha256_from_preserved_sidecar": "ff93e5ffed046c805bcb691de79e4d4f93245b2b8f646f93e7ee82e3b71e7e29"
+    }
+  ],
+  "owner_marker": "pretrain500m 2026-09-12 isolated run; owner task 01a09290-b43f-7431-be8a-412ea5d37954",
+  "preserved_comparison": {
+    "left": "/ssd/scxi253/pretrain500m-20260912-v1/pilots/1583851/continuous/resume.pt",
+    "right": "/ssd/scxi253/pretrain500m-20260912-v1/pilots/1583851/split/resume.pt",
+    "status": "PASS_BITWISE_COMPLETE_STATE_RESUME",
+    "step": 4,
+    "tensor_elements_compared": 1650645612,
+    "tensors_compared": 961
+  },
+  "status": "VERIFIED_EXACT_TARGETS_ABSENT",
+  "timestamp_utc": "2026-09-12T02:39:12.254484+00:00"
+}

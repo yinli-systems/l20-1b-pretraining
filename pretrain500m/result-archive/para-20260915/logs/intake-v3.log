@@ -1,0 +1,21 @@
+{"source": "dclm", "rows": 1000, "network_bytes": 6276378, "code_attempts": 0}
+{"source": "pdf_en", "rows": 1000, "network_bytes": 7492142, "code_attempts": 0}
+{"source": "dclm", "rows": 2000, "network_bytes": 9763835, "code_attempts": 0}
+{"source": "pdf_en", "rows": 2000, "network_bytes": 15097267, "code_attempts": 0}
+{"source": "dclm", "rows": 3000, "network_bytes": 13057913, "code_attempts": 0}
+{"source": "pdf_en", "rows": 3000, "network_bytes": 36042233, "code_attempts": 0}
+{"source": "dclm", "rows": 4000, "network_bytes": 16582416, "code_attempts": 0}
+{"source": "dclm", "rows": 5000, "network_bytes": 20191349, "code_attempts": 0}
+{"source": "pdf_en", "rows": 4000, "network_bytes": 43269254, "code_attempts": 0}
+{"source": "dclm", "rows": 6000, "network_bytes": 23816324, "code_attempts": 0}
+{"source": "pdf_en", "rows": 5000, "network_bytes": 62158876, "code_attempts": 0}
+{"id": "pdf_en", "status": "RAW_SEGMENT_READY", "rows_written": 5000, "output_bytes": 42986499, "error_type": null, "stop_reason": null}
+{"source": "dclm", "rows": 7000, "network_bytes": 27244021, "code_attempts": 0}
+{"source": "dclm", "rows": 8000, "network_bytes": 30594371, "code_attempts": 0}
+{"source": "dclm", "rows": 9000, "network_bytes": 33931504, "code_attempts": 0}
+{"source": "dclm", "rows": 10000, "network_bytes": 37261080, "code_attempts": 0}
+{"source": "dclm", "rows": 11000, "network_bytes": 40897386, "code_attempts": 0}
+{"source": "dclm", "rows": 12000, "network_bytes": 44203441, "code_attempts": 0}
+{"source": "dclm", "rows": 13000, "network_bytes": 47532187, "code_attempts": 0}
+{"source": "dclm", "rows": 14000, "network_bytes": 50876311, "code_attempts": 0}
+{"id": "dclm", "status": "RAW_SEGMENT_READY", "rows_written": 14000, "output_bytes": 34114792, "error_type": null, "stop_reason": null}

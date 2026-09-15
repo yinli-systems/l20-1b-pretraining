@@ -1,0 +1,118 @@
+{"segment": "dclm_extra", "groups": 1, "rows": 1000, "code_attempts": 0, "code_payload_bytes": 0}
+<unknown>:16: SyntaxWarning: invalid escape sequence '\$'
+{"segment": "code_java_extra", "groups": 1, "rows": 34, "code_attempts": 34, "code_payload_bytes": 25407}
+{"segment": "code_python_extra", "groups": 1, "rows": 138, "code_attempts": 150, "code_payload_bytes": 143743}
+{"segment": "dclm_extra", "groups": 2, "rows": 2000, "code_attempts": 0, "code_payload_bytes": 0}
+{"segment": "code_javascript_extra", "groups": 1, "rows": 175, "code_attempts": 175, "code_payload_bytes": 164775}
+{"segment": "code_typescript_extra", "groups": 1, "rows": 374, "code_attempts": 374, "code_payload_bytes": 335034}
+{"segment": "code_cpp_extra", "groups": 1, "rows": 123, "code_attempts": 128, "code_payload_bytes": 131159}
+{"segment": "dclm_extra", "groups": 3, "rows": 3000, "code_attempts": 0, "code_payload_bytes": 0}
+{"segment": "code_java_extra", "groups": 2, "rows": 71, "code_attempts": 72, "code_payload_bytes": 53170}
+<unknown>:44: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:45: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:58: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:90: SyntaxWarning: invalid escape sequence '\/'
+{"segment": "code_python_extra", "groups": 2, "rows": 279, "code_attempts": 310, "code_payload_bytes": 342580}
+{"segment": "code_javascript_extra", "groups": 2, "rows": 358, "code_attempts": 358, "code_payload_bytes": 338408}
+{"segment": "dclm_extra", "groups": 4, "rows": 4000, "code_attempts": 0, "code_payload_bytes": 0}
+{"segment": "code_cpp_extra", "groups": 2, "rows": 244, "code_attempts": 251, "code_payload_bytes": 238128}
+{"segment": "code_typescript_extra", "groups": 2, "rows": 725, "code_attempts": 725, "code_payload_bytes": 632350}
+{"segment": "code_java_extra", "groups": 3, "rows": 99, "code_attempts": 100, "code_payload_bytes": 75496}
+<unknown>:185: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:191: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:48: SyntaxWarning: invalid escape sequence '\d'
+{"segment": "dclm_extra", "groups": 5, "rows": 5000, "code_attempts": 0, "code_payload_bytes": 0}
+<unknown>:80: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:16: SyntaxWarning: invalid escape sequence '\-'
+{"segment": "code_python_extra", "groups": 3, "rows": 437, "code_attempts": 473, "code_payload_bytes": 523128}
+{"segment": "code_javascript_extra", "groups": 3, "rows": 522, "code_attempts": 523, "code_payload_bytes": 488300}
+{"segment": "code_cpp_extra", "groups": 3, "rows": 374, "code_attempts": 382, "code_payload_bytes": 371925}
+{"segment": "code_java_extra", "groups": 4, "rows": 146, "code_attempts": 147, "code_payload_bytes": 104760}
+{"segment": "dclm_extra", "groups": 6, "rows": 6000, "code_attempts": 0, "code_payload_bytes": 0}
+{"segment": "code_typescript_extra", "groups": 3, "rows": 1116, "code_attempts": 1116, "code_payload_bytes": 920294}
+{"segment": "code_cpp_extra", "groups": 4, "rows": 510, "code_attempts": 520, "code_payload_bytes": 504566}
+{"segment": "dclm_extra", "groups": 7, "rows": 7000, "code_attempts": 0, "code_payload_bytes": 0}
+<unknown>:24: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:25: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:26: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:27: SyntaxWarning: invalid escape sequence '\/'
+{"segment": "code_javascript_extra", "groups": 4, "rows": 721, "code_attempts": 724, "code_payload_bytes": 670924}
+<unknown>:30: SyntaxWarning: invalid escape sequence '\w'
+<unknown>:478: SyntaxWarning: invalid escape sequence '\*'
+{"segment": "code_python_extra", "groups": 4, "rows": 589, "code_attempts": 637, "code_payload_bytes": 710469}
+{"segment": "code_java_extra", "groups": 5, "rows": 179, "code_attempts": 180, "code_payload_bytes": 133247}
+{"segment": "dclm_extra", "groups": 8, "rows": 8000, "code_attempts": 0, "code_payload_bytes": 0}
+{"segment": "code_typescript_extra", "groups": 4, "rows": 1476, "code_attempts": 1476, "code_payload_bytes": 1216909}
+<unknown>:103: SyntaxWarning: invalid escape sequence '\D'
+<unknown>:135: SyntaxWarning: invalid escape sequence '\m'
+{"segment": "code_cpp_extra", "groups": 5, "rows": 660, "code_attempts": 671, "code_payload_bytes": 674883}
+<unknown>:55: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:42: SyntaxWarning: invalid escape sequence '\/'
+<unknown>:50: SyntaxWarning: invalid escape sequence '\/'
+<unknown>:71: SyntaxWarning: invalid escape sequence '\/'
+<unknown>:104: SyntaxWarning: invalid escape sequence '\/'
+<unknown>:12: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:72: SyntaxWarning: invalid escape sequence '\G'
+{"segment": "code_python_extra", "groups": 5, "rows": 741, "code_attempts": 798, "code_payload_bytes": 900210}
+{"segment": "dclm_extra", "groups": 9, "rows": 9000, "code_attempts": 0, "code_payload_bytes": 0}
+{"segment": "code_javascript_extra", "groups": 5, "rows": 917, "code_attempts": 920, "code_payload_bytes": 841262}
+{"segment": "code_java_extra", "groups": 6, "rows": 205, "code_attempts": 207, "code_payload_bytes": 152547}
+{"segment": "code_cpp_extra", "groups": 6, "rows": 802, "code_attempts": 818, "code_payload_bytes": 802180}
+<unknown>:19: SyntaxWarning: invalid escape sequence '\P'
+<unknown>:8: SyntaxWarning: invalid escape sequence '\_'
+<unknown>:34: SyntaxWarning: invalid escape sequence '\%'
+{"segment": "dclm_extra", "groups": 10, "rows": 10000, "code_attempts": 0, "code_payload_bytes": 0}
+<unknown>:24: SyntaxWarning: invalid escape sequence '\.'
+{"segment": "code_java_extra", "groups": 7, "rows": 238, "code_attempts": 240, "code_payload_bytes": 177267}
+{"segment": "code_python_extra", "groups": 6, "rows": 889, "code_attempts": 960, "code_payload_bytes": 1079376}
+{"segment": "code_typescript_extra", "groups": 5, "rows": 1824, "code_attempts": 1824, "code_payload_bytes": 1483749}
+{"segment": "code_javascript_extra", "groups": 6, "rows": 1083, "code_attempts": 1087, "code_payload_bytes": 1016582}
+{"segment": "dclm_extra", "groups": 11, "rows": 11000, "code_attempts": 0, "code_payload_bytes": 0}
+{"segment": "code_cpp_extra", "groups": 7, "rows": 956, "code_attempts": 977, "code_payload_bytes": 952944}
+{"segment": "code_java_extra", "groups": 8, "rows": 271, "code_attempts": 274, "code_payload_bytes": 197591}
+<unknown>:19: SyntaxWarning: invalid escape sequence '\s'
+{"segment": "code_python_extra", "groups": 7, "rows": 1048, "code_attempts": 1136, "code_payload_bytes": 1269499}
+{"segment": "dclm_extra", "groups": 12, "rows": 12000, "code_attempts": 0, "code_payload_bytes": 0}
+{"segment": "code_typescript_extra", "groups": 6, "rows": 2186, "code_attempts": 2186, "code_payload_bytes": 1751453}
+{"segment": "code_java_extra", "groups": 9, "rows": 313, "code_attempts": 317, "code_payload_bytes": 229199}
+{"segment": "code_cpp_extra", "groups": 8, "rows": 1085, "code_attempts": 1109, "code_payload_bytes": 1080641}
+{"segment": "dclm_extra", "groups": 13, "rows": 13000, "code_attempts": 0, "code_payload_bytes": 0}
+<unknown>:10: SyntaxWarning: invalid escape sequence '\ '
+{"segment": "code_python_extra", "groups": 8, "rows": 1222, "code_attempts": 1321, "code_payload_bytes": 1482312}
+{"segment": "dclm_extra", "groups": 14, "rows": 14000, "code_attempts": 0, "code_payload_bytes": 0}
+{"segment": "code_java_extra", "groups": 10, "rows": 339, "code_attempts": 343, "code_payload_bytes": 248343}
+{"segment": "code_typescript_extra", "groups": 7, "rows": 2556, "code_attempts": 2556, "code_payload_bytes": 2016766}
+{"segment": "code_cpp_extra", "groups": 9, "rows": 1214, "code_attempts": 1240, "code_payload_bytes": 1202476}
+{"segment": "dclm_extra", "groups": 15, "rows": 15000, "code_attempts": 0, "code_payload_bytes": 0}
+<unknown>:26: SyntaxWarning: invalid escape sequence '\D'
+{"segment": "code_javascript_extra", "groups": 7, "rows": 1281, "code_attempts": 1285, "code_payload_bytes": 1233787}
+{"segment": "code_python_extra", "groups": 9, "rows": 1370, "code_attempts": 1477, "code_payload_bytes": 1656982}
+{"segment": "code_java_extra", "groups": 11, "rows": 385, "code_attempts": 389, "code_payload_bytes": 294818}
+{"segment": "dclm_extra", "groups": 16, "rows": 16000, "code_attempts": 0, "code_payload_bytes": 0}
+{"segment": "code_typescript_extra", "groups": 8, "rows": 2886, "code_attempts": 2886, "code_payload_bytes": 2277516}
+{"segment": "code_cpp_extra", "groups": 10, "rows": 1368, "code_attempts": 1396, "code_payload_bytes": 1338957}
+<unknown>:172: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:179: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:24: SyntaxWarning: invalid escape sequence '\w'
+{"segment": "code_javascript_extra", "groups": 8, "rows": 1462, "code_attempts": 1466, "code_payload_bytes": 1400842}
+<unknown>:48: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:59: SyntaxWarning: invalid escape sequence '\^'
+{"segment": "dclm_extra", "groups": 17, "rows": 17000, "code_attempts": 0, "code_payload_bytes": 0}
+<unknown>:52: SyntaxWarning: invalid escape sequence '\e'
+<unknown>:52: SyntaxWarning: invalid escape sequence '\e'
+<unknown>:57: SyntaxWarning: invalid escape sequence '\e'
+<unknown>:57: SyntaxWarning: invalid escape sequence '\e'
+<unknown>:91: SyntaxWarning: invalid escape sequence '\e'
+<unknown>:91: SyntaxWarning: invalid escape sequence '\e'
+<unknown>:91: SyntaxWarning: invalid escape sequence '\e'
+<unknown>:110: SyntaxWarning: invalid escape sequence '\e'
+<unknown>:110: SyntaxWarning: invalid escape sequence '\e'
+<unknown>:110: SyntaxWarning: invalid escape sequence '\e'
+<unknown>:64: SyntaxWarning: invalid escape sequence '\i'
+<unknown>:42: SyntaxWarning: invalid escape sequence '\*'
+<unknown>:29: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:29: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:7: SyntaxWarning: invalid escape sequence '\l'
+{"segment": "code_python_extra", "groups": 10, "rows": 1531, "code_attempts": 1648, "code_payload_bytes": 1843068}
+{"segment": "code_java_extra", "groups": 12, "rows": 428, "code_attempts": 433, "code_payload_bytes": 331028}
+{"segment": "dclm_extra", "groups": 18, "rows": 18000, "code_attempts": 0, "code_payload_bytes": 0}

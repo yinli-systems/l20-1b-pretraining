@@ -1,0 +1,6 @@
+{
+  "status": "FAIL",
+  "formal_quality_gain": false,
+  "scope": "same-allocation 4-GPU recovery with frozen FineWeb data",
+  "error": "tensor mismatch: root/model/model.embed_tokens.weight"
+}

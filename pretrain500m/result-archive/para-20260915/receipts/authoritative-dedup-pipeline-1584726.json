@@ -1,0 +1,107 @@
+{
+  "code_sha256": {
+    "audit_partitions.py": "c3b1209ad3d0e0c1012219ba60fcc00725290ff72bf68f9e71ca4e0a53cfef37",
+    "audit_partitions_v2.sbatch": "5eb787da3f56f7399da09205304494362d95ad0fd35933fb2042a0ad2039aa3f",
+    "dispatch_formal.sbatch": "448c05c9e5c41a5e43365f585f3e0c468ddb5c510eb4464b15f0093646730cff",
+    "pack_array_dedup.sbatch": "b2a50074bf64d4f4c77a30404df0e274001ae40a2cfff65099f291640909380a"
+  },
+  "dedup_audit_dependency": "afterok:1584572_1:1584572_2:1584572_3:1584572_4:1584606_5:1584694:1584721:1584656_9:1584656_10:1584656_11:1584656_12:1584656_13",
+  "dedup_audit_job": "1584723",
+  "finalize_job": "1584724",
+  "formal_dispatch_job": "1584726",
+  "lr_selection": {
+    "job": "1584117",
+    "selected_peak_lr": 0.0015,
+    "sha256": "e78a63c6636b004b9a8f848b4fea325fe0cc88f486e0f36d15b412d1e51f5969"
+  },
+  "pack_groups": [
+    {
+      "cpus_per_task": 24,
+      "gpus_per_task": 4,
+      "job": "1584572",
+      "qos": "gpugpu",
+      "tasks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "workers": 20
+    },
+    {
+      "cpus_per_task": 24,
+      "gpus_per_task": 3,
+      "job": "1584606",
+      "qos": "gpugpu",
+      "tasks": [
+        5
+      ],
+      "workers": 20
+    },
+    {
+      "cpus_per_task": 16,
+      "gpus_per_task": 2,
+      "job": "1584694",
+      "qos": "normal",
+      "tasks": [
+        6,
+        7
+      ],
+      "workers": 15
+    },
+    {
+      "cpus_per_task": 16,
+      "gpus_per_task": 2,
+      "job": "1584721",
+      "qos": "normal",
+      "tasks": [
+        8
+      ],
+      "workers": 15
+    },
+    {
+      "cpus_per_task": 24,
+      "gpus_per_task": 3,
+      "job": "1584656",
+      "qos": "gpugpu",
+      "tasks": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "workers": 20
+    }
+  ],
+  "protocol_sha256": "1b44371442a5c418c64f012ec5d9864718448d7bc9f81e56e7e04f34d551b4f3",
+  "rerun_plan_sha256": "9160710017f9b94081ede9567383ee2459aa9f8fdde43564d5c48b7fd5648a3f",
+  "source_audit": {
+    "cross_part_duplicates": 340186,
+    "job": "1584444",
+    "receipt": "data/fineweb-edu-audit-fast-v1/cross-part-dedup.json",
+    "receipt_sha256": "5aabe21905e011e214b693aed7855b18cc0394fe03dfd584c4ed417147f6912f"
+  },
+  "status": "AUTHORITATIVE_DEDUP_PIPELINE_DISPATCHED",
+  "superseded_zero_runtime_jobs": [
+    "1584524",
+    "1584525",
+    "1584526",
+    "1584538",
+    "1584573",
+    "1584574",
+    "1584575",
+    "1584609",
+    "1584611",
+    "1584612",
+    "1584651",
+    "1584663",
+    "1584668",
+    "1584682",
+    "1584702",
+    "1584705",
+    "1584707"
+  ],
+  "supersedes_receipt": "receipts/authoritative-dedup-pipeline-1584707.json",
+  "unix": 1789200046.3100924
+}

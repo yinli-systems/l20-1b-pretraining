@@ -1,0 +1,29 @@
+{
+  "checked_utc": "2026-09-13T20:55:25.070687+00:00",
+  "status": "PASS_FIXTURE_TESTS",
+  "stdout": "...........                                                              [100%]\n11 passed in 0.09s\n",
+  "stderr": "",
+  "returncode": 0,
+  "source": "/ssd/scxi253/pretrain500m-20260912-v1/source/contamination-v1",
+  "archive_sha256": "f1979b66385a3eaa1d1703dfd618848ebfb4b6829818cd36089db57a13478f7f",
+  "overlay": "/ssd/scxi253/pretrain500m-20260912-v1/overlay-contamination-v1",
+  "junit_sha256": "70a29ae6729d1d29f9331b50a3d0d445c24bdd3cf002d47e466190863e6a3117",
+  "training_admitted": false,
+  "raw_scan": {
+    "pid": 1243476,
+    "status": "FIRST_TRANCHE_SUPPLEMENTAL_SCAN_RUNNING",
+    "command": [
+      "/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python",
+      "/ssd/scxi253/pretrain500m-20260912-v1/source/contamination-v1/scan.py",
+      "--input",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1",
+      "--bundle",
+      "/ssd/scxi253/pretrain500m-20260912-v1/evaluation/benchmark-reservation-v1/data",
+      "--output",
+      "/ssd/scxi253/pretrain500m-20260912-v1/data/contamination-v1-first-tranche"
+    ],
+    "output": "/ssd/scxi253/pretrain500m-20260912-v1/data/contamination-v1-first-tranche",
+    "log": "/ssd/scxi253/pretrain500m-20260912-v1/logs/contamination-v1-first-tranche.log",
+    "combined_scan": false
+  }
+}

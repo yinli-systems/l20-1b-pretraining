@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v1/compare_checkpoints.py", line 40, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v1/compare_checkpoints.py", line 34, in main
+    tensors,elements=equal(left,right)
+                     ^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v1/compare_checkpoints.py", line 20, in equal
+    counts=[equal(a[k],b[k],f'{path}.{k}') for k in a]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v1/compare_checkpoints.py", line 20, in equal
+    counts=[equal(a[k],b[k],f'{path}.{k}') for k in a]
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v1/compare_checkpoints.py", line 13, in equal
+    if not torch.equal(a,b):raise AssertionError(f'{path}: tensor mismatch')
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: root.model.model.embed_tokens.weight: tensor mismatch

@@ -1,0 +1,11 @@
+{
+  "launched_utc": "2026-09-14T03:15:42.206869+00:00",
+  "log": "/ssd/scxi253/pretrain500m-20260912-v1/logs/intake-expansion-code-cache.log",
+  "pid": 4031195,
+  "schema_version": 1,
+  "source": "/ssd/scxi253/pretrain500m-20260912-v1/source/intake-expansion-v1/cache_code.py",
+  "source_sha256": "a8b4882db9748b3a5f8a455eb6ef05cef16f480836280f48cb59f5860221dd63",
+  "status": "CODE_CACHE_RUNNING",
+  "tmpfs_free_bytes_before": 189812523008,
+  "training_admitted": false
+}

@@ -1,0 +1,26 @@
+{
+  "status": "VERIFIED_REDUNDANT_SERIALIZATION_ABSENT",
+  "checked_utc": "2026-09-13T19:40:37.253130+00:00",
+  "target": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/recovery-v2-1588249/split/resume.pt",
+  "target_sha256": "1c416747d77e17947f0abbaf4b22888c9b5d83b8e94397ada76165c3a623ef2d",
+  "retained_equivalent": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/recovery-v2-1588249/continuous/resume.pt",
+  "retained_sha256": "c8e45b0bb0da2e4d36eec83af5160835547ae42325880896ae3b61169b4476a6",
+  "byte_count": 6345342103,
+  "inode": 286110802,
+  "mode": 33204,
+  "uid": 1256,
+  "mtime_ns": 1789327795271279078,
+  "comparison_reverified": "EXACT_MODEL_OPTIMIZER_READER_ORIGIN_FINGERPRINT_ALL_RANK_RNG",
+  "accounting": "1588249|COMPLETED|0:0\n1588249.batch|COMPLETED|0:0\n1588249.extern|COMPLETED|0:0\n1588249.0|COMPLETED|0:0\n1588249.1|COMPLETED|0:0\n1588249.2|COMPLETED|0:0\n1588249.3|COMPLETED|0:0\n",
+  "active_reference_pids": [],
+  "protected_paths": [
+    "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/recovery-v2-1588249/continuous/resume.pt",
+    "/ssd/scxi253/pretrain500m-20260912-v1/formal/run-v5/resume.pt",
+    "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/recovery-v1-1588191/continuous/resume.pt",
+    "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/recovery-v1-1588191/split/resume.pt",
+    "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/recovery-v2-1588249/comparison.json"
+  ],
+  "free_bytes_before": 16190599168,
+  "completed_utc": "2026-09-13T19:40:38.232701+00:00",
+  "free_bytes_after": 16190599168
+}

@@ -1,0 +1,26 @@
+{"step": 0, "seconds": 1.709813023917377, "loss": 10.720794677734375, "grad_norm": 15.01724624633789}
+{"step": 1, "seconds": 0.4935208838433027, "loss": 10.266937255859375, "grad_norm": 30.662694931030273}
+{"step": 2, "seconds": 0.4921427872031927, "loss": 11.945931434631348, "grad_norm": 17.447649002075195}
+{"step": 3, "seconds": 0.49208357743918896, "loss": 10.565576553344727, "grad_norm": 6.350505828857422}
+{"step": 4, "seconds": 0.4919687742367387, "loss": 9.098552703857422, "grad_norm": 0.6785770654678345}
+{"step": 5, "seconds": 0.49188133236020803, "loss": 8.89859390258789, "grad_norm": 0.8135378956794739}
+{"step": 6, "seconds": 0.49190637562423944, "loss": 8.468489646911621, "grad_norm": 0.7015799283981323}
+{"step": 7, "seconds": 0.4921119511127472, "loss": 8.06274127960205, "grad_norm": 0.2969816029071808}
+{"step": 8, "seconds": 0.4919235883280635, "loss": 7.926546573638916, "grad_norm": 0.2637971341609955}
+{"step": 9, "seconds": 0.49189089238643646, "loss": 7.8472442626953125, "grad_norm": 0.2867318093776703}
+{"step": 10, "seconds": 0.4921053806319833, "loss": 7.772130012512207, "grad_norm": 0.29267391562461853}
+{"step": 11, "seconds": 0.49190173856914043, "loss": 7.72151517868042, "grad_norm": 0.2533416450023651}
+{"step": 12, "seconds": 0.4919058922678232, "loss": 7.707888126373291, "grad_norm": 3.7201812267303467}
+{"step": 13, "seconds": 0.4919549496844411, "loss": 7.68716287612915, "grad_norm": 0.26298829913139343}
+{"step": 14, "seconds": 0.491814854554832, "loss": 7.640443801879883, "grad_norm": 0.24039769172668457}
+{"step": 15, "seconds": 0.49182502180337906, "loss": 7.592111587524414, "grad_norm": 0.19482189416885376}
+{"step": 16, "seconds": 0.49167300760746, "loss": 7.559756755828857, "grad_norm": 0.20883606374263763}
+{"step": 17, "seconds": 0.49168049916625023, "loss": 7.5279035568237305, "grad_norm": 0.40485963225364685}
+{"step": 18, "seconds": 0.4916948666796088, "loss": 7.637385368347168, "grad_norm": 0.30839109420776367}
+{"step": 19, "seconds": 0.49168881960213184, "loss": 7.573357105255127, "grad_norm": 0.2685389220714569}
+{"step": 20, "seconds": 0.49177619628608227, "loss": 7.532546043395996, "grad_norm": 0.4393012225627899}
+{"step": 21, "seconds": 0.49183470848947763, "loss": 7.4038519859313965, "grad_norm": 0.21912790834903717}
+{"step": 22, "seconds": 0.4926798800006509, "loss": 7.36044979095459, "grad_norm": 0.32896688580513}
+{"step": 23, "seconds": 0.49176318757236004, "loss": 7.3418450355529785, "grad_norm": 0.5698281526565552}
+{"step": 24, "seconds": 0.4928338695317507, "loss": 7.311373710632324, "grad_norm": 0.6497998237609863}
+{"evidence_class": "synthetic_throughput_only", "job_id": "1583356", "hostname": "wqd10naf02g1", "world_size": 1, "config": {"vocab_size": 32768, "hidden_size": 1536, "intermediate_size": 4096, "num_hidden_layers": 18, "num_attention_heads": 12, "num_key_value_heads": 4, "max_position_embeddings": 2048, "rms_norm_eps": 1e-05, "rope_theta": 10000.0, "initializer_range": 0.02, "tie_word_embeddings": true, "model_type": "llama", "architectures": ["LlamaForCausalLM"], "hidden_act": "silu", "attention_bias": false, "mlp_bias": false, "attention_dropout": 0.0, "head_dim": 128, "use_cache": true, "bos_token_id": null, "eos_token_id": 0, "pad_token_id": 1}, "parameters": 503373312, "torch": "2.11.0+cu128", "cuda": "12.8", "gpu": "NVIDIA GeForce RTX 5090", "capability": [12, 0], "gpu_memory_bytes": 33668988928, "compile": false, "microbatch": 2, "accumulation": 4, "warmup_steps": 5, "measurement_steps": 20, "seconds": [0.4918813407421112, 0.49190637469291687, 0.4921119511127472, 0.49192360043525696, 0.49189090728759766, 0.4921053946018219, 0.4919017255306244, 0.49190589785575867, 0.4919549524784088, 0.49181485176086426, 0.49182501435279846, 0.49167299270629883, 0.4916805028915405, 0.4916948676109314, 0.4916888177394867, 0.4917761981487274, 0.49183470010757446, 0.4926798939704895, 0.491763174533844, 0.4928338825702667], "losses": [8.89859390258789, 8.468489646911621, 8.06274127960205, 7.926546573638916, 7.8472442626953125, 7.772130012512207, 7.72151517868042, 7.707888126373291, 7.68716287612915, 7.640443801879883, 7.592111587524414, 7.559756755828857, 7.5279035568237305, 7.637385368347168, 7.573357105255127, 7.532546043395996, 7.4038519859313965, 7.36044979095459, 7.3418450355529785, 7.311373710632324], "tokens_per_optimizer_step": 16384, "tokens_per_second": 33304.71534217118, "tokens_per_second_p10": 33254.85817568469, "tokens_per_second_p50": 33308.52244381372, "tokens_per_second_p90": 33321.88857848054, "total_elapsed_seconds": 13.552320601418614, "peak_allocated_bytes": 16761206272, "peak_reserved_bytes": 17584619520, "estimated_model_flops_per_token": 3699376128, "dense_bf16_peak_flops_per_gpu": null, "mfu": null, "limitations": ["No corpus I/O, validation or checkpoint overhead included in steady-state throughput.", "Synthetic repeated random batch does not establish language learning or quality.", "MFU stays unset until exact device precision peak is sourced."]}

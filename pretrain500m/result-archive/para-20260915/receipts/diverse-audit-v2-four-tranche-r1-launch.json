@@ -1,0 +1,15 @@
+{
+  "schema": "p529m-four-tranche-raw-audit-launch",
+  "status": "RUNNING",
+  "launched_utc": "2026-09-14T00:38:36.615686+00:00",
+  "pid": 1038004,
+  "inputs": [
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v3",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v4-finemath"
+  ],
+  "output": "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-audit-v2-four-tranche-r1",
+  "tokenizer_sha256": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+  "training_admitted": false
+}

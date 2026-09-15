@@ -1,0 +1,19 @@
+{
+  "cache_summary": "/dev/shm/p529m-intake-expansion-v1/summary.json",
+  "cache_summary_sha256": "26763e966c7908aa1bd7500260dcc17d5c60062b31616e35c395c7749b3028f2",
+  "correct_free_bytes_before": 32689410048,
+  "launched_utc": "2026-09-14T03:19:18.799231+00:00",
+  "log": "/ssd/scxi253/pretrain500m-20260912-v1/logs/intake-expansion-v1-local-code-cache.log",
+  "pid": 4110760,
+  "schema_version": 1,
+  "source_sha256": {
+    "SHA256SUMS": "c2f938cbf20f433978e17e895f1600a43bcae4fc5786e401e4402daf38526ddf",
+    "http_ranges.py": "c99ffe8765dd9a487ccf394a7a5262c9ed6a2b1ce655fe32a24c78cef114fffa",
+    "intake.py": "0c8662c6fd6254f94ec729702bbf23cb136cabcd1542b6be8200c05f0134fdcf",
+    "plan.json": "ca16deedb115a04a33b7b49889317866fb806f64014b2161a04b7803e224d0a6"
+  },
+  "status": "RAW_INTAKE_LOCAL_CODE_CACHE_RUNNING_NOT_ADMITTED",
+  "supersede_reason": "five Stack-Edu shards are now fully cached in tmpfs and verified against their pinned LFS SHA-256",
+  "supersedes_pid": 3986451,
+  "training_admitted": false
+}

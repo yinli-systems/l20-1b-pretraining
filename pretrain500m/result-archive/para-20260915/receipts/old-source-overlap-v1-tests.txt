@@ -1,0 +1,8 @@
+test_actual_parquet_matches_and_filter_scope (test_scan.OldSnapshotComparison.test_actual_parquet_matches_and_filter_scope) ... ok
+test_changed_old_file_fails_before_scan (test_scan.OldSnapshotComparison.test_changed_old_file_fails_before_scan) ... ok
+test_normalization_retains_legacy_lower_semantics (test_scan.OldSnapshotComparison.test_normalization_retains_legacy_lower_semantics) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.013s
+
+OK

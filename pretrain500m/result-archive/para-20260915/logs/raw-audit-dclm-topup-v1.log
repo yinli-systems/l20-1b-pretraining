@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/raw-audit-expansion-v1/audit_incremental.py", line 318, in <module>
+    main()
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/raw-audit-expansion-v1/audit_incremental.py", line 310, in main
+    report = audit(args.input, args.prior_report, args.tokenizer,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/raw-audit-expansion-v1/audit_incremental.py", line 136, in audit
+    require(key not in old_key_to_file, 'multiple historical files share a legacy key')
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/raw-audit-expansion-v1/audit_raw_intake_v2.py", line 19, in require
+    raise ValueError(message)
+ValueError: multiple historical files share a legacy key

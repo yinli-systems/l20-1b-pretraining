@@ -1,0 +1,23 @@
+{
+  "status": "LAUNCHED_RAW_INTAKE_NOT_ADMITTED",
+  "checked_utc": "2026-09-13T21:38:25.290437+00:00",
+  "pid": 2026051,
+  "command": [
+    "/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python",
+    "/ssd/scxi253/pretrain500m-20260912-v1/source/intake-v3/intake.py"
+  ],
+  "source": "/ssd/scxi253/pretrain500m-20260912-v1/source/intake-v3",
+  "output": "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v3",
+  "log": "/ssd/scxi253/pretrain500m-20260912-v1/logs/intake-v3.log",
+  "archive_sha256": "eebdb4296180d57040be2d8ff6d31584e8d6ceba8220b2f2f91181697cf67ec8",
+  "tests_passed": 7,
+  "test_receipt": "/ssd/scxi253/pretrain500m-20260912-v1/receipts/intake-v3-tests.xml",
+  "free_bytes": 22037614592,
+  "planned_sources": 2,
+  "source_workers": 2,
+  "max_network_bytes_per_source": 134217728,
+  "max_uncompressed_output_bytes_per_source": 201326592,
+  "min_free_bytes": 19327352832,
+  "training_admitted": false,
+  "formal_training_started": false
+}

@@ -1,0 +1,12 @@
+{
+  "checked_utc": "2026-09-14T00:54:13.113950+00:00",
+  "exclusion_union_sha256": "ea04a8e58767365c527c18484fcfd5bc1bf085bc7c015b6917c59fbb2ad625de",
+  "free_bytes_at_launch": 19634937856,
+  "output": "/ssd/scxi253/pretrain500m-20260912-v1/data/quality-family-v2-four-tranche",
+  "pid": 1311946,
+  "raw_report_sha256": "a8c1968c9c26060c5f896a86824234499ccd99bcb008f722e1c982a6567952bf",
+  "schema_version": 1,
+  "status": "RUNNING_QUALITY_FAMILY_FEATURES_NOT_ADMITTED",
+  "training_admitted": false,
+  "workers": 4
+}

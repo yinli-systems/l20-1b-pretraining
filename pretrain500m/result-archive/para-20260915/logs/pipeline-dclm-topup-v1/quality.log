@@ -1,0 +1,2 @@
+Warning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.
+{"status": "QUALITY_AND_FAMILY_FEATURES_COMPLETE_NOT_ADMITTED", "rows": 741824, "passed_rows_before_eligible_dedup_and_reserves": 683132, "elapsed_seconds": 51.20207326114178}

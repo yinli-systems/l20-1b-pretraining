@@ -1,0 +1,18 @@
+test_code_license_and_syntax_gates (test_features.FeatureTests.test_code_license_and_syntax_gates) ... ok
+test_language_windows_include_tail (test_features.FeatureTests.test_language_windows_include_tail) ... ok
+test_minhash_chunk_invariance_unicode_and_case_policy (test_features.FeatureTests.test_minhash_chunk_invariance_unicode_and_case_policy) ... ok
+test_minhash_matches_scalar_unsigned_arithmetic (test_features.FeatureTests.test_minhash_matches_scalar_unsigned_arithmetic) ... ok
+test_native_fasttext_adapter_when_remote_package_is_available (test_features.FeatureTests.test_native_fasttext_adapter_when_remote_package_is_available) ... Warning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.
+ok
+test_preserves_math_symbols_and_numeric_template (test_features.FeatureTests.test_preserves_math_symbols_and_numeric_template) ... ok
+test_repository_case_and_git_suffix (test_features.FeatureTests.test_repository_case_and_git_suffix) ... ok
+test_suffix_wildcards_exceptions_private_and_idna (test_features.FeatureTests.test_suffix_wildcards_exceptions_private_and_idna) ... ok
+test_url_aliases_and_sensitive_path_separation (test_features.FeatureTests.test_url_aliases_and_sensitive_path_separation) ... ok
+test_wrong_language_garbled_and_repeated_prose_rejected (test_features.FeatureTests.test_wrong_language_garbled_and_repeated_prose_rejected) ... ok
+test_bound_raw_identity_and_exclusions (test_scan.ScannerTests.test_bound_raw_identity_and_exclusions) ... ok
+test_changed_text_fails (test_scan.ScannerTests.test_changed_text_fails) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.385s
+
+OK

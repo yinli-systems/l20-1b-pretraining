@@ -1,0 +1,57 @@
+{
+  "allocation": {
+    "gpus": 4,
+    "nodes": [
+      "wqd10nbj04g5"
+    ],
+    "partition": "gpu_5090"
+  },
+  "candidate": {
+    "compiled_inner_module": true,
+    "find_unused_parameters": false,
+    "gradient_accumulation_steps": 64,
+    "static_graph": true,
+    "uses_no_sync": true
+  },
+  "decision": "REJECT_CANDIDATE_DO_NOT_RETRY",
+  "elapsed_seconds": 93,
+  "ended_at": "2026-09-14T10:02:01+08:00",
+  "evidence": {
+    "stderr": "/ssd/scxi253/pretrain500m-20260912-v1/logs/p529m-ddp-static-1588605.err",
+    "stderr_sha256": "b39251127e101bddcf17e97a3a060e22c3aadcd4fc67ef371fd782c03fe576b8",
+    "stdout": "/ssd/scxi253/pretrain500m-20260912-v1/logs/p529m-ddp-static-1588605.out",
+    "stdout_sha256": "d3f595c525dde1313a1eac9d554861e18791cc6f9536406eca620cdde8a3e1be"
+  },
+  "exit_code": "1:0",
+  "formal_screen_jobs_unaffected": [
+    1588523,
+    1588524,
+    1588560,
+    1588561
+  ],
+  "job_id": 1588605,
+  "job_name": "p529m-ddp-static",
+  "kind": "ddp_speed_benchmark_failure",
+  "outcome": {
+    "affected_ranks": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "error": "expect_autograd_hooks_ INTERNAL ASSERT FAILED at /pytorch/torch/csrc/distributed/c10d/reducer.cpp:1705",
+    "metrics_rows": 0,
+    "site": "train_cpt.py:363 loss.backward()",
+    "status": "FAIL_PYTORCH_INTERNAL_ASSERT",
+    "steps_completed": 0
+  },
+  "owner": "pretrain500m 2026-09-12 isolated run; owner task 01a09290-b43f-7431-be8a-412ea5d37954",
+  "safe_policy": {
+    "find_unused_parameters": true,
+    "static_graph": false
+  },
+  "schema_version": 1,
+  "started_at": "2026-09-14T10:00:28+08:00",
+  "state": "FAILED",
+  "submitted_at": "2026-09-14T10:00:28+08:00"
+}

@@ -1,0 +1,20 @@
+{
+  "accumulation": 32,
+  "checkpoint_mode": "none",
+  "claim_boundary": "throughput and integration qualification only",
+  "cpt_v6_train_sha256": "ae509dc2b54c8171338c646d18bb534f070e8a87717fd3b203da536e1546eceb",
+  "global_prediction_tokens_per_step": 2097152,
+  "gpus": 8,
+  "job_id": 1588586,
+  "minimum_mfu_strictly_greater_than": 0.5,
+  "nodes": 2,
+  "partition": "gpu_5090",
+  "pilot_steps": 20,
+  "qos": "gpugpu",
+  "runner": "source/cpt-v6",
+  "schema_version": 1,
+  "status": "SUBMITTED",
+  "submitted_unix": 1789350729.9342637,
+  "training_microbatch": 4,
+  "validation_microbatch": 2
+}

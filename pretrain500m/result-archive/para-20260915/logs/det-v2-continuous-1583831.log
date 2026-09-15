@@ -1,0 +1,32 @@
+{"step": 1, "prediction_tokens": 2097152, "loss": 11.037820816040039, "lr": 3e-05, "grad_norm": 15.551499366760254, "step_seconds": 48.55847016349435, "tokens_per_second": 43188.18103080629, "mfu": 0.102816088505918, "elapsed_seconds": 48.55852586776018, "unix": 1789179597.1013653}
+{"step": 2, "prediction_tokens": 4194304, "loss": 9.93112850189209, "lr": 6e-05, "grad_norm": 19.891014099121094, "step_seconds": 6.696795031428337, "tokens_per_second": 313157.5612151751, "mfu": 0.7455196019306807, "elapsed_seconds": 55.267935425043106, "unix": 1789179603.810748}
+{"step": 3, "prediction_tokens": 6291456, "loss": 9.543310165405273, "lr": 9e-05, "grad_norm": 10.976439476013184, "step_seconds": 6.701852899044752, "tokens_per_second": 312921.22217408224, "mfu": 0.7449569605971854, "elapsed_seconds": 78.46981442719698, "unix": 1789179627.0126295}
+{"step": 4, "prediction_tokens": 8388608, "loss": 9.987926483154297, "lr": 0.00012, "grad_norm": 6.638975620269775, "step_seconds": 6.705033950507641, "tokens_per_second": 312772.7637890967, "mfu": 0.744603532643384, "elapsed_seconds": 85.18488971889019, "unix": 1789179633.7277064}
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/serialization.py", line 1004, in save
+[rank0]:     _save(
+[rank0]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/serialization.py", line 1313, in _save
+[rank0]:     zip_file.write_record(name, storage, num_bytes)
+[rank0]: RuntimeError: basic_ios::clear: iostream error
+
+[rank0]: During handling of the above exception, another exception occurred:
+
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train.py", line 200, in <module>
+[rank0]:     if __name__=='__main__':main()
+[rank0]:                             ^^^^^^
+[rank0]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train.py", line 180, in main
+[rank0]:     atomic_save(state,resume_path)
+[rank0]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train.py", line 37, in atomic_save
+[rank0]:     torch.save(value,tmp);os.replace(tmp,path)
+[rank0]:     ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/serialization.py", line 1003, in save
+[rank0]:     with _open_zipfile_writer(f) as opened_zipfile:
+[rank0]:          ^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/serialization.py", line 835, in __exit__
+[rank0]:     self.file_like.write_end_of_file()
+[rank0]: RuntimeError: [enforce fail at inline_container.cc:672] . unexpected pos 3575249536 vs 3575249424
+[rank0]:[W912 10:20:39.334056231 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+W0912 10:20:41.018000 2934123 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 2934158 closing signal SIGTERM
+W0912 10:20:41.024000 2934123 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 2934159 closing signal SIGTERM
+W0912 10:20:41.024000 2934123 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 2934160 closing signal SIGTERM

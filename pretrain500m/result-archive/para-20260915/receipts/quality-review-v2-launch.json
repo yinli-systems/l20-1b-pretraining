@@ -1,0 +1,25 @@
+{
+  "status": "LAUNCHED_READ_ONLY_QUALITY_REVIEW_NOT_ADMITTED",
+  "pid": 3991192,
+  "archive_sha256": "30fcbe107ee7035a721a2385b48f07144a367cd919e8112272a41c5586821d82",
+  "source_sha256s": {
+    "audit.py": "34677cbee9890d36e42e09396c3559cc5fe64f4752be7f64152d4b9685dfa1dd",
+    "test_audit.py": "1bf51db90676d02c55762efc524218df3ad5d653a44776f2f36673d0b1a09fca",
+    "README.md": "b79c94bdc72add7d3f5774ef87caeb39184c3ec3ca6463435feffc4abba93718"
+  },
+  "tests": "...                                                                      [100%]\n3 passed in 0.12s",
+  "command": [
+    "/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python",
+    "/ssd/scxi253/pretrain500m-20260912-v1/source/quality-review-v2/audit.py",
+    "--family-report",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/family-split-v1/report.json",
+    "--expected-family-sha256",
+    "aa6f8d733135f410f318e9bf4944033670103eaf118a1cdb0c43663609680a4c",
+    "--output",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/quality-review-v2/report.json",
+    "--workers",
+    "4"
+  ],
+  "training_admitted": false,
+  "launched_unix": 1789342173.9971635
+}

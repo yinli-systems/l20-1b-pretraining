@@ -1,0 +1,19 @@
+{
+  "correct_free_bytes_before": 33815707648,
+  "disk_path": "/ssd/scxi253/pretrain500m-20260912-v1/data/intake-expansion-v1",
+  "launched_utc": "2026-09-14T03:11:04.257722+00:00",
+  "log": "/ssd/scxi253/pretrain500m-20260912-v1/logs/intake-expansion-v1-fast.log",
+  "pid": 3937712,
+  "schema_version": 1,
+  "source": "/ssd/scxi253/pretrain500m-20260912-v1/source/intake-expansion-v1",
+  "source_sha256": {
+    "SHA256SUMS": "1d6db297c798e7c9e7666d4ee8c1652e9aa29aca35ef744069326049827b085c",
+    "http_ranges.py": "76a11d887760e82870bf402ca9da6466a09b9013306da9f20cb7bd8f49a922b6",
+    "intake.py": "480311e506f8f85031e075a4a7f9a56c8e0f989b8e9cd51bc66708e6df3c580e",
+    "plan.json": "ca16deedb115a04a33b7b49889317866fb806f64014b2161a04b7803e224d0a6"
+  },
+  "status": "RAW_INTAKE_FAST_RUNNING_NOT_ADMITTED",
+  "supersede_reason": "measured small-object latency; increase source workers 6 to 10 and per-code workers 16 to 64",
+  "supersedes_pid": 3875433,
+  "training_admitted": false
+}

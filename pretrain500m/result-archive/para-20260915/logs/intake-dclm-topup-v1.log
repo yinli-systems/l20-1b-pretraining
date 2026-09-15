@@ -1,0 +1,11 @@
+{"segment": "dclm_topup", "groups": 1, "rows": 1000, "code_attempts": 0, "code_payload_bytes": 0}
+{"segment": "dclm_topup", "groups": 2, "rows": 2000, "code_attempts": 0, "code_payload_bytes": 0}
+{"segment": "dclm_topup", "groups": 3, "rows": 3000, "code_attempts": 0, "code_payload_bytes": 0}
+{"segment": "dclm_topup", "groups": 4, "rows": 4000, "code_attempts": 0, "code_payload_bytes": 0}
+{"segment": "dclm_topup", "groups": 5, "rows": 5000, "code_attempts": 0, "code_payload_bytes": 0}
+{"segment": "dclm_topup", "groups": 6, "rows": 6000, "code_attempts": 0, "code_payload_bytes": 0}
+{"segment": "dclm_topup", "groups": 7, "rows": 7000, "code_attempts": 0, "code_payload_bytes": 0}
+{"segment": "dclm_topup", "groups": 8, "rows": 8000, "code_attempts": 0, "code_payload_bytes": 0}
+{"segment": "dclm_topup", "groups": 9, "rows": 9000, "code_attempts": 0, "code_payload_bytes": 0}
+{"segment": "dclm_topup", "groups": 10, "rows": 10000, "code_attempts": 0, "code_payload_bytes": 0}
+{"segment_id": "dclm_topup", "logical_source_id": "dclm", "status": "RAW_SEGMENT_READY", "rows_written": 10000, "output_bytes": 24051927, "error_type": null, "stop_reason": null}

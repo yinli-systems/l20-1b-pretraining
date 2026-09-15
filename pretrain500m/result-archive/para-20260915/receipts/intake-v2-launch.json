@@ -1,0 +1,13 @@
+{
+  "status": "STARTED",
+  "pid": 11401,
+  "checked_utc": "2026-09-13T19:51:31.247274+00:00",
+  "command": [
+    "/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python",
+    "/ssd/scxi253/pretrain500m-20260912-v1/source/intake-v2/intake.py"
+  ],
+  "source_archive_sha256": "29fd21788a30822ccebd953567eeb503942ecb85f3d1b82e9a153e0bc997f9ff",
+  "sources": 10,
+  "free_bytes_at_launch": 22535700480,
+  "training_admitted": false
+}

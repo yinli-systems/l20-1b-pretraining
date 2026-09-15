@@ -1,0 +1,23 @@
+{
+  "status": "LAUNCHED_DOCUMENT_MASKED_DEVELOPMENT_NOT_ADMITTED",
+  "pid": 78326,
+  "archive_sha256": "817af5fffc3535a3b67bc2456d79e74511e63ebbd1c32bb158eaa31f00218913",
+  "tests": "...                                                                      [100%]\n3 passed in 0.29s",
+  "command": [
+    "/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python",
+    "/ssd/scxi253/pretrain500m-20260912-v1/source/validation-pack-v1/pack.py",
+    "--parent-report",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-v1/report.json",
+    "--expected-parent-sha256",
+    "b706b08e036e148ab53f70cf55997065596c426bf9b532abbc9431bb6cf3b927",
+    "--output",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/development-masked-v1",
+    "--partition",
+    "development",
+    "--workers",
+    "4"
+  ],
+  "free_bytes_before": 20031504384,
+  "training_admitted": false,
+  "launched_unix": 1789343089.6717434
+}

@@ -1,0 +1,10 @@
+{
+  "index_report_sha256": "3d0f35fbcb309be5ed8be583fc2a53b6e8d34aa480d549a8b6b20dbfa679abfd",
+  "launched_at": "2026-09-14T00:45:47.318300+00:00",
+  "manifest_sha256": "8291e6c2a9af017904a3cc17b838cff231ff1a6da4cf7b9fe810b2dd6995a6e5",
+  "output": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1-four-tranche",
+  "pid": 1163685,
+  "schema_version": 1,
+  "status": "RUNNING",
+  "workers": 4
+}

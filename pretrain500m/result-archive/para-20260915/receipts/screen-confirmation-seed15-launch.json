@@ -1,0 +1,42 @@
+{
+  "allocation_verified": true,
+  "checked_unix": 1789350205.266772,
+  "claim_boundary": "second-seed confirmation; no promotion or market-superiority claim",
+  "four_run_conservative_gate_bytes": 17049915392,
+  "free_bytes_before_submit": 31550459904,
+  "jobs": {
+    "F0_existing_web_control_seed20260915": 1588561,
+    "F3_broad_multilingual_no_synthetic_seed20260915": 1588560
+  },
+  "maximum_concurrent_project_runs": 4,
+  "mfu_rule": "rolling ten-step median after five-step grace must be strictly >0.50",
+  "owner_task": "01a09290-b43f-7431-be8a-412ea5d37954",
+  "runner": "source/screen-v3/run.sbatch",
+  "runs": {
+    "F0_existing_web_control_seed20260915": {
+      "distinct_gpu_uuids": true,
+      "gpu_count": 4,
+      "gpu_model": "NVIDIA GeForce RTX 5090",
+      "job_id": 1588561,
+      "mfu_window_median": 0.757946284179581,
+      "mfu_window_passed": true,
+      "node": "(null)",
+      "step": 24
+    },
+    "F3_broad_multilingual_no_synthetic_seed20260915": {
+      "distinct_gpu_uuids": true,
+      "gpu_count": 4,
+      "gpu_model": "NVIDIA GeForce RTX 5090",
+      "job_id": 1588560,
+      "mfu_window_median": 0.774920466173003,
+      "mfu_window_passed": true,
+      "node": "(null)",
+      "step": 30
+    }
+  },
+  "schema_version": 1,
+  "status": "RUNNING_MFU_GATE_PASS",
+  "storage_gate_passed": true,
+  "submitted_unix": 1789349686.2735846,
+  "world_size_per_job": 4
+}

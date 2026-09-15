@@ -1,0 +1,34 @@
+{
+  "checked_utc": "2026-09-14T07:24:04Z",
+  "claim_boundary": "replacement jobs submitted; allocation and MFU remain unverified",
+  "evidence": {
+    "cancelled_early_job_id": 1589569,
+    "failed_job_id": 1589568,
+    "failed_mfu_window_median": 0.4685238502477556,
+    "failed_step": 15,
+    "failure_reason": "mfu_below_minimum"
+  },
+  "excluded_node": "wqd10nbl11g5",
+  "jobs": [
+    {
+      "job_id": 1589615,
+      "recipe": "F2_reasoning_no_synthetic",
+      "replaces": 1589568,
+      "seed": 20260915
+    },
+    {
+      "job_id": 1589616,
+      "recipe": "F3_broad_multilingual_no_synthetic",
+      "replaces": 1589569,
+      "seed": 20260914
+    },
+    {
+      "job_id": 1589570,
+      "recipe": "F3_broad_multilingual_no_synthetic",
+      "seed": 20260915,
+      "updated_exclude_node": true
+    }
+  ],
+  "schema": "p529m-confirmation-node-recovery-v1",
+  "status": "BAD_NODE_EXCLUDED_AND_REPLACEMENTS_SUBMITTED"
+}

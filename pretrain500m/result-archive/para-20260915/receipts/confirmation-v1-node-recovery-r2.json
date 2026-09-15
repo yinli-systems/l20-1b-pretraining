@@ -1,0 +1,40 @@
+{
+  "checked_utc": "2026-09-14T10:32:08.675626+00:00",
+  "claim_boundary": "replacement jobs submitted; allocation, hardware identity, MFU and completion remain unverified",
+  "evidence": {
+    "job_1589615": {
+      "hardware_error": "GPU1 device handle unknown error",
+      "node": "wqd10nah08g5",
+      "root_cause": "rank1 CUDA unspecified launch failure",
+      "state": "FAILED",
+      "step": 6
+    },
+    "job_1589616": {
+      "hardware_error": "Unable to determine device handle for GPU1: Unknown Error",
+      "node": "wqd10nah08g5",
+      "state": "FAILED",
+      "step": 0
+    }
+  },
+  "excluded_nodes": [
+    "wqd10nbl11g5",
+    "wqd10nah08g5"
+  ],
+  "failed_node": "wqd10nah08g5",
+  "jobs": [
+    {
+      "job_id": 1590004,
+      "recipe": "F2_reasoning_no_synthetic",
+      "replaces": 1589615,
+      "seed": 20260915
+    },
+    {
+      "job_id": 1590005,
+      "recipe": "F3_broad_multilingual_no_synthetic",
+      "replaces": 1589616,
+      "seed": 20260914
+    }
+  ],
+  "schema": "p529m-confirmation-node-recovery-v2",
+  "status": "SECOND_BAD_NODE_EXCLUDED_AND_EXACT_REPLACEMENTS_SUBMITTED"
+}

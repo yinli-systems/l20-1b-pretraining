@@ -1,0 +1,19 @@
+{
+  "dedup_audit_job": "1584525",
+  "dedup_pack_job": "1584524",
+  "failed_dispatch_exit_code": "1:0",
+  "failed_dispatch_job": "1584516",
+  "failed_dispatch_stderr": "sbatch: error: Batch job submission failed: Job dependency problem",
+  "finalize_job": "1584526",
+  "formal_dispatch_dependency": "afterok:1584526",
+  "formal_dispatch_job": "1584538",
+  "lr_selector_job": "1584117",
+  "lr_selector_state": "COMPLETED",
+  "rerun_plan": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-audit-fast-v1/rerun-plan.json",
+  "rerun_plan_sha256": "9160710017f9b94081ede9567383ee2459aa9f8fdde43564d5c48b7fd5648a3f",
+  "source_audit_receipt": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-audit-fast-v1/cross-part-dedup.json",
+  "source_audit_receipt_sha256": "5aabe21905e011e214b693aed7855b18cc0394fe03dfd584c4ed417147f6912f",
+  "source_audit_status": "RERUN_WITH_EXCLUSIONS_REQUIRED",
+  "status": "DISPATCHED_RECOVERED_AFTER_DEPENDENCY_ERROR",
+  "unix": 1789196221.7406206
+}

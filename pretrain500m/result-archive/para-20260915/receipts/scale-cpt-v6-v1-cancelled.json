@@ -1,0 +1,10 @@
+{
+  "created_unix": 1789351065.999716,
+  "gpu_allocation_observed": false,
+  "job_id": 1588586,
+  "output_receipt_observed": false,
+  "reason": "cpt-v6 inherited find_unused_parameters=false with static_graph=false and would trigger the fixed-bucket invariant observed in job 1588569",
+  "replacement_required": "cpt-v7 static-graph qualification",
+  "schema_version": 1,
+  "status": "CANCELLED_BEFORE_ALLOCATION"
+}

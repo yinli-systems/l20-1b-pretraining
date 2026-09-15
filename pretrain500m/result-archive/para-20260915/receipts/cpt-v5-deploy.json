@@ -1,0 +1,18 @@
+{
+  "changes": [
+    "DDP find_unused_parameters defaults false with explicit A/B switch",
+    "metrics-only no-checkpoint benchmark mode"
+  ],
+  "created_unix": 1789349924.1787243,
+  "evidence": [
+    "local py_compile and test_v2 passed",
+    "remote SHA256SUMS, py_compile, and test_v2 passed"
+  ],
+  "qualification_boundary": "not admitted for longer training until paired real-GPU benchmark passes",
+  "research_basis": "official PyTorch DDP default is false; completed v4 runs warned every rank that no parameters were unused",
+  "schema_version": 1,
+  "sha256sums_sha256": "cb5e34bd26fa574fdcb48f249af49e94fcbb5231864c4b4bd1a1c94fb52d3f99",
+  "source": "/ssd/scxi253/pretrain500m-20260912-v1/source/cpt-v5",
+  "status": "DEPLOYED_TESTED_NOT_YET_GPU_BENCHMARKED",
+  "train_cpt_sha256": "ee317d432a8a464aa8ee75662f2f89d19fa68847d4386b920d975dddad9fd3e0"
+}

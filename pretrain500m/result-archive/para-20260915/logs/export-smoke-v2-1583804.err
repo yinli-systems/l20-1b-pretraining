@@ -1,0 +1,13 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Traceback (most recent call last):
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/export_hf.py", line 160, in <module>
+    main()
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/export_hf.py", line 125, in main
+    torch.testing.assert_close(actual, expected, rtol=0, atol=0)
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/testing/_comparison.py", line 1600, in assert_close
+    raise error_metas[0].to_error(msg)
+AssertionError: Tensor-likes are not equal!
+
+Mismatched elements: 8298510 / 12871680 (64.5%)
+Greatest absolute difference: 0.0625 at index (0, 1, 15)
+Greatest relative difference: 83181.3046875 at index (0, 28, 49715)

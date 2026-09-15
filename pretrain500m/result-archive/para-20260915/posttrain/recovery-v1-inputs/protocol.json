@@ -1,0 +1,14 @@
+{
+  "protocol_id": "p529m-gpu-recovery-v1",
+  "status": "ENGINEERING_ONLY",
+  "base_sha256": "13aa21721e15c48cdfdafe30d8fdd41d9c95c90be766327661d96af1e90dd6cf",
+  "total_steps": 32,
+  "split_at_step": 16,
+  "prediction_tokens_per_branch": 67108864,
+  "world_size": 4,
+  "microbatch": 4,
+  "accumulation": 64,
+  "lr": 0.0001,
+  "minimum_rolling_mfu_strict": 0.5,
+  "claim": "GPU resume equivalence; no model-quality or diverse-corpus admission claim"
+}

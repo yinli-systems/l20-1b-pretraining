@@ -1,0 +1,27 @@
+{
+  "created_unix": 1789350868.4259267,
+  "deleted_vast_files": [
+    "OWNER",
+    "checkpoints/posttrain/screens-v2/F0_existing_web_control-1588453/train/model-final.pt",
+    "compute-mount-probe-1588549.err",
+    "compute-mount-probe-1588549.out",
+    "compute-mount-probe.sbatch"
+  ],
+  "deleted_vast_path": "/vast/scxi253/pretrain500m-20260912-v1-artifacts",
+  "evidence_files": {
+    "OWNER": "5ac058f962b1ea998b74e5c093a8dbffe354a33579492786e1514f522a012c3f",
+    "compute-mount-probe-1588549.err": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "compute-mount-probe-1588549.out": "30ea9dc4f312bdcf077c3892d209f397e4bc6a8729bd3387d18b51713a1c72c4",
+    "compute-mount-probe.sbatch": "182c978a442f3dde582720a08d62a002873cae9ed4e2c079dc25dbed958a7cd8"
+  },
+  "open_process_preflight": false,
+  "owner_uid": 1256,
+  "reason": "avoid leaving account over its 1 GiB /vast quota after /ssd cleanup restored sufficient headroom",
+  "restored_bytes": 2372504677,
+  "schema_version": 1,
+  "sha256": "8784c17737488c9b30d273aaeb3d65e58a3d290405e6ddacca5094393cd04e3d",
+  "source_path": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/screens-v2/F0_existing_web_control-1588453/train/model-final.pt",
+  "source_regular_file": true,
+  "status": "RESTORED_AND_VAST_TASK_PATH_VERIFIED_ABSENT",
+  "vast_probe_evidence_path": "/ssd/scxi253/pretrain500m-20260912-v1/receipts/vast-probe-v1"
+}

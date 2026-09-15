@@ -1,0 +1,54 @@
+{
+  "aggregate_delta_vs_base": 0.0021446175190487637,
+  "base_aggregate_score": 0.479952415150124,
+  "base_tasks": {
+    "arc_challenge": 0.2832764505119454,
+    "arc_easy": 0.5526094276094277,
+    "boolq": 0.5629969418960244,
+    "hellaswag": 0.42342162915753834,
+    "openbookqa": 0.332,
+    "piqa": 0.6686615886833515,
+    "winogrande": 0.5367008681925809
+  },
+  "candidate": {
+    "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/mixture-extension-v1/r4-lr6e5-t1b-seed20260916-1591570/train/model-final.pt",
+    "checkpoint_sha256": "455d89cbb6d723334587546a0824605c6f57704264d4a1db0239f445d57a98aa",
+    "expected_step": 512,
+    "id": "r4-lr6e5-t1b-seed20260916",
+    "recipe": "R4_current_code_guard",
+    "run_manifest_sha256": "ad5423fd3c180d7f470118d72de6b25f10139e4b87ea4077f11afa1006cdb07f",
+    "seed": 20260916,
+    "training_status_sha256": "585d2c1108bfd46730e1c33d2b50833b06a94fbab377228d4761f61363f8f706"
+  },
+  "candidate_aggregate_score": 0.48209703266917275,
+  "candidate_tasks": {
+    "arc_challenge": 0.2935153583617747,
+    "arc_easy": 0.5462962962962963,
+    "boolq": 0.5764525993883792,
+    "hellaswag": 0.427504481179048,
+    "openbookqa": 0.328,
+    "piqa": 0.6741022850924918,
+    "winogrande": 0.5288082083662194
+  },
+  "claim_boundary": "adaptive two-seed seven-task capability and retention screen; no automatic promotion or market-superiority claim",
+  "formal_promotion": false,
+  "input_sha256": {
+    "base_aggregate": "c87aa54ec060154d594c6a7ca44b79b28cec27497cc867b0845ad492397535c1",
+    "candidate_aggregate": "8591f0b63194b8269d354e8a07e83305d051337fefb4067f70b99058800adbc2",
+    "export_receipt": "d0084b9490e7e467f08a4d6a528f5f602a2fb457f7977c6a95be1cbc6bc7fa24",
+    "plan": "ec14774679e3b86cf74393db5020778e9bc05f4527993c141f45834eb8207f26"
+  },
+  "protocol_id": "p500m-english-base-v5",
+  "protocol_sha256": "a71ce3c8cc85cac6fe6751cb46f7e50dfb78d266602d6377cb2e65249f11c761",
+  "schema": "p529m-r4-extension-capability-result-v1",
+  "status": "PASS_ADAPTIVE_R4_EXTENSION_SEVEN_TASK_SCREEN",
+  "task_delta_vs_base": {
+    "arc_challenge": 0.010238907849829337,
+    "arc_easy": -0.0063131313131313815,
+    "boolq": 0.013455657492354778,
+    "hellaswag": 0.004082852021509653,
+    "openbookqa": -0.0040000000000000036,
+    "piqa": 0.005440696409140355,
+    "winogrande": -0.007892659826361448
+  }
+}

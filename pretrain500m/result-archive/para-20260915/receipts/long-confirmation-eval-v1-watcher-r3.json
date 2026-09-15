@@ -1,0 +1,14 @@
+{
+  "checked_utc": "2026-09-14T10:34:28.255998+00:00",
+  "claim_boundary": "watcher prepared; evaluation remains unsubmitted until all four training runs complete",
+  "excluded_nodes": [
+    "wqd10nbl11g5",
+    "wqd10nah08g5"
+  ],
+  "new_pid": 671720,
+  "old_pid": 1766370,
+  "schema": "p529m-long-confirmation-eval-watcher-update-v3",
+  "status": "PASS_RESTARTED_SINGLE_WATCHER_WITH_SECOND_BAD_NODE_EXCLUDED",
+  "tests": "7/7 passed",
+  "watcher_sha256": "76e96027b21df0b6ea9b7141c794ac32eeedbdb4a20e934ba01de5cd5605e8a6"
+}

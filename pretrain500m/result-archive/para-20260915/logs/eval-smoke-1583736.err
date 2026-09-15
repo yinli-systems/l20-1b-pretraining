@@ -1,0 +1,30 @@
+2026-09-12:09:24:24 WARNING  [__main__:368]  --limit SHOULD ONLY BE USED FOR TESTING.REAL METRICS SHOULD NOT BE COMPUTED USING LIMIT.
+2026-09-12:09:24:24 INFO     [__main__:440] Selected Tasks: ['arc_challenge', 'arc_easy', 'boolq', 'hellaswag', 'openbookqa', 'piqa', 'winogrande']
+2026-09-12:09:24:24 INFO     [evaluator:189] Setting random seed to 42 | Setting numpy seed to 42 | Setting torch manual seed to 42 | Setting fewshot manual seed to 1234
+2026-09-12:09:24:24 INFO     [evaluator:227] Initializing hf model, with arguments: {'pretrained': '/ssd/scxi253/pretrain500m-20260912-v1/pilots/eval-smoke-model', 'dtype': 'bfloat16', 'trust_remote_code': False, 'max_length': 2048}
+2026-09-12:09:24:25 INFO     [models.huggingface:137] Using device 'cuda'
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/lm_eval/__main__.py", line 530, in <module>
+    cli_evaluate()
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/lm_eval/__main__.py", line 449, in cli_evaluate
+    results = evaluator.simple_evaluate(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/lm_eval/utils.py", line 439, in _wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/lm_eval/evaluator.py", line 230, in simple_evaluate
+    lm = lm_eval.api.registry.get_model(model).create_from_arg_string(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/lm_eval/api/model.py", line 151, in create_from_arg_string
+    return cls(**args, **args2)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/lm_eval/models/huggingface.py", line 181, in __init__
+    self._create_tokenizer(
+  File "/ssd/scxi253/pretrain500m-20260912-v1/runtime/eval/lm_eval/models/huggingface.py", line 738, in _create_tokenizer
+    self.tokenizer = transformers.AutoTokenizer.from_pretrained(
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/protrek-venv/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py", line 1153, in from_pretrained
+    raise ValueError(
+ValueError: Tokenizer class OLMoTokenizer does not exist or is not currently imported.

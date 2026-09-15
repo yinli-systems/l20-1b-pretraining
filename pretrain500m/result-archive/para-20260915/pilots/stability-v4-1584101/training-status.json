@@ -1,0 +1,8 @@
+{
+  "checkpoint_sha256": "13a5da6e21be6cfaa750eb9336b79d9380bf8ba5fa6e21a8338670c0f58c9469",
+  "reason": "mfu_below_minimum",
+  "status": "CHECKPOINTED_STOP",
+  "step": 15,
+  "tokens": 31457280,
+  "unix": 1789186254.4221387
+}

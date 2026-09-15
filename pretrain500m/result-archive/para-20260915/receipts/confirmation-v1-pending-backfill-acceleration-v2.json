@@ -1,0 +1,19 @@
+{
+  "checked_utc": "2026-09-14T08:15:08Z",
+  "jobs": [
+    1589570,
+    1589615,
+    1589616
+  ],
+  "new_time_limit": "04:10:00",
+  "old_time_limit": "04:30:00",
+  "reference": {
+    "job_id": 1589567,
+    "observed_steps_at_least": 282,
+    "projected_total_runtime_hours": 3.74,
+    "rolling_mfu_approximately": 0.7666
+  },
+  "runtime_policy": "after allocation verify MFU and ETA; extend before expiry if the measured node lacks at least 20 minutes of margin",
+  "schema": "p529m-confirmation-pending-backfill-v2",
+  "status": "PENDING_JOB_TIME_LIMITS_REDUCED_AFTER_SUSTAINED_REFERENCE"
+}

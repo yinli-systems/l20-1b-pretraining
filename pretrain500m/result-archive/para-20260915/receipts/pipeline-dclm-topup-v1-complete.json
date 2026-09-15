@@ -1,0 +1,16 @@
+{
+  "artifacts": {
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/contamination-dclm-topup-v1/report.json": "dfa181d03bff973ece7a5543ff06928f4efeb135abb680c4c1d32979926190b3",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-audit-dclm-topup-v1/report.json": "d776d956d79f14acd562f73321ec32030520a9397331c70fd256bda7da68cb28",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/family-split-dclm-topup-v1/report.json": "541cb6418e9e1ee1e75c27abf3835b854f1ef7d5796391f54fecc7a5cac1a72a",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-dclm-topup-v1/report.json": "4fc6fbc188202f9b23f65e23714b0efb1b544e362238faded0adaa60a3fdd526",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-dclm-topup-v1/report.json": "a4049239090378386a97da02ead40c5f81006f0e0e3958ad3322da5459be8068",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/quality-family-dclm-topup-v1/report.json": "636bc502d84c9ca370488f8898f8f2a4c077d46f9b6b98e843c1b00a68411448",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-dclm-topup-v1/report.json": "5ef7ff6e0bda80bd7be8f94dba837f559d4bbe7db341ebf78549bcfb4f6677f2",
+    "/ssd/scxi253/pretrain500m-20260912-v1/receipts/exclusion-union-dclm-topup-v1.json": "7b45f883fb22abe2f135cf715b4ed508d77fac16b16b10e3871468f1af9ec0ad"
+  },
+  "checked_utc": "2026-09-14T07:09:14.862043+00:00",
+  "status": "DCLM_TOPUP_FILTER_AND_PACK_COMPLETE_NOT_TRAINING_ADMITTED",
+  "training_admitted": false,
+  "training_launched": false
+}

@@ -1,0 +1,55 @@
+{
+  "artifacts": {
+    "F2_reasoning_no_synthetic_admission": "9aa303d6a6e5bf5cfbae5c377562fb141fb4a3fb1331fc3527fdc96720270176",
+    "F2_reasoning_no_synthetic_manifest": "1c9cce946fcb853e95ce42e5bb7446768101c5c5aae28973351f6f153c8ebca9",
+    "F3_broad_multilingual_no_synthetic_admission": "6ec1b0116d1563e4bbe07049cd2fcf5ef936dc65d4a21ca3fb85d6bdf058228b",
+    "F3_broad_multilingual_no_synthetic_manifest": "8ad6380276775d62d98c6a7a7fd9c2cfcc1b4ac5ef8fed9417474555c002c794",
+    "build_receipt": "1f2ee8a9a28c886877886fd34bb56f39beb46938047adbb1d9df4150715c71f5",
+    "protocol": "d0c0fbb59bda58de814ab9f297ff4c8f00e9349b8e3f565ce0bb7e0fea4873f5",
+    "runner": "a023954cc2b401b78e61ae5ac1bc3f84e6b4b9c1777567d110e131e089a4b3c6"
+  },
+  "capacity_snapshot": "\u516c\u5171partition\uff1a\nPartition      \u53ef\u7528GPU\u6570\u91cf  \u603b\u5361\u6570\ngpu_4090             5     248\ngpu_5090            10     248\nhp_4090              5     272\nhp_5090             26     408\n\n\u53ef\u8fd0\u884c\u4f5c\u4e1a\u6570\u91cf\uff08\u6309GPU\u89c4\u6a21\uff09\uff1a\nPartition      1\u5361GPU 2\u5361GPU 3\u5361GPU 4\u5361GPU 5\u5361GPU 6\u5361GPU 7\u5361GPU 8\u5361GPU\ngpu_4090        5      1      0      0      0      0      0      0\ngpu_5090       10      3      2      1      1      1      0      0\nhp_4090         5      1      0      0      0      0      0      0\nhp_5090        26     11      6      5      3      3      2      2\n",
+  "checked_utc": "2026-09-14T07:09:31.581006+00:00",
+  "claim_boundary": "submitted confirmation jobs; allocation, MFU, completion, held-out selection and promotion remain unverified",
+  "free_bytes_before_submit": 26397974528,
+  "jobs": [
+    {
+      "job_id": 1589567,
+      "job_name": "p529m-cf-F2-s14",
+      "recipe": "F2_reasoning_no_synthetic",
+      "seed": 20260914,
+      "submit_attempt": 1
+    },
+    {
+      "job_id": 1589568,
+      "job_name": "p529m-cf-F2-s15",
+      "recipe": "F2_reasoning_no_synthetic",
+      "seed": 20260915,
+      "submit_attempt": 1
+    },
+    {
+      "job_id": 1589569,
+      "job_name": "p529m-cf-F3-s14",
+      "recipe": "F3_broad_multilingual_no_synthetic",
+      "seed": 20260914,
+      "submit_attempt": 1
+    },
+    {
+      "job_id": 1589570,
+      "job_name": "p529m-cf-F3-s15",
+      "recipe": "F3_broad_multilingual_no_synthetic",
+      "seed": 20260915,
+      "submit_attempt": 1
+    }
+  ],
+  "mfu_rule": "rolling ten-step median after five-step grace must be strictly greater than 0.50",
+  "owner": "pretrain500m 2026-09-12 isolated run; owner task 01a09290-b43f-7431-be8a-412ea5d37954",
+  "schema": "p529m-long-confirmation-submission-v1",
+  "status": "SUBMITTED_PENDING_ALLOCATION",
+  "storage_gate_bytes": 17049915392,
+  "storage_gate_passed": true,
+  "submitted_gpu_total": 16,
+  "target_prediction_tokens_per_run": 2147483648,
+  "training_started": false,
+  "world_size_per_job": 4
+}

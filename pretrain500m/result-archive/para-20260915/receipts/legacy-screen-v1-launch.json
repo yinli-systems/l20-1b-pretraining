@@ -1,0 +1,33 @@
+{
+  "status": "LAUNCHED_LEGACY_SCAN_NOT_ADMITTED",
+  "pid": 2279059,
+  "checked_utc": "2026-09-13T21:52:41.825491+00:00",
+  "command": [
+    "/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python",
+    "/ssd/scxi253/pretrain500m-20260912-v1/source/legacy-screen-v1/scan.py",
+    "--input",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1",
+    "--input",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2",
+    "--input",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v3",
+    "--database",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/decontam-13word.sqlite",
+    "--expected-database-sha256",
+    "661f939a8787d2c14a52b305ec6a6b5737aabe5146f557461473e89f22e3a256",
+    "--audit-source",
+    "/ssd/scxi253/pretrain500m-20260912-v1/source/raw-audit-v2",
+    "--output",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-three-tranche",
+    "--workers",
+    "2"
+  ],
+  "output": "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-three-tranche",
+  "log": "/ssd/scxi253/pretrain500m-20260912-v1/logs/legacy-screen-v1.log",
+  "source": "/ssd/scxi253/pretrain500m-20260912-v1/source/legacy-screen-v1",
+  "archive_sha256": "f3d94e84517fc27ff65bc50dc5a56b0f0da91cbed2f10ed92852e3e7f5a55f08",
+  "workers": 2,
+  "local_and_remote_tests_passed": 5,
+  "training_admitted": false,
+  "free_bytes": 21846310912
+}

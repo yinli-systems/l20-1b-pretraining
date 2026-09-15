@@ -1,0 +1,19 @@
+{
+  "basis": {
+    "healthy_job_id": 1589567,
+    "healthy_mfu_rolling_median": 0.7667,
+    "healthy_projected_runtime_hours": 3.71,
+    "same_frozen_model_data_batch_and_four_gpu_configuration": true
+  },
+  "checked_utc": "2026-09-14T07:31:33Z",
+  "jobs": [
+    1589570,
+    1589615,
+    1589616
+  ],
+  "new_time_limit": "04:30:00",
+  "old_time_limit": "06:00:00",
+  "runtime_policy": "monitor each allocation; extend within partition limit if measured healthy MFU implies insufficient margin; fail closed at MFU <= 0.50",
+  "schema": "p529m-confirmation-pending-backfill-v1",
+  "status": "PENDING_JOB_TIME_LIMITS_REDUCED"
+}

@@ -1,0 +1,2314 @@
+{
+  "active_jobs": [
+    "1560103|PENDING|biomm-lssd03-receipt|(Dependency)",
+    "1560080|PENDING|biomm-instr20-select|(Dependency)",
+    "1560079|PENDING|biomm-instr-paired|(Dependency)",
+    "1560078|PENDING|biomm-instr20-sqa|(DependencyNeverSatisfied)",
+    "1560077|PENDING|biomm-instr20-vqa|(DependencyNeverSatisfied)",
+    "1560076|PENDING|biomm-instr20-pmqa|(DependencyNeverSatisfied)",
+    "1500015|PENDING|abf-late-scale-analyze|(DependencyNeverSatisfied)",
+    "1586842|PENDING|p529m-eval-v5|(Dependency)",
+    "1586841|PENDING|p529m-export-v5|(Dependency)",
+    "1586840|RUNNING|p529m-formal-v5|wqd10nbh12g5,wqd10nbj01g3,wqd10nbj02g1,wqd10nbl09g4"
+  ],
+  "after_final_data": {
+    "manifest_sha256": "29f75eca421f26653dd520e650d50e6a7802e9a499944b3b8382688fa3806e1a",
+    "train_bytes": 16761472604,
+    "train_files": 40,
+    "val_bytes": 17479762,
+    "val_files": 14
+  },
+  "before_final_data": {
+    "manifest_sha256": "29f75eca421f26653dd520e650d50e6a7802e9a499944b3b8382688fa3806e1a",
+    "train_bytes": 16761472604,
+    "train_files": 40,
+    "val_bytes": 17479762,
+    "val_files": 14
+  },
+  "checkpoint_after": {
+    "mtime_ns": 1789294046212976786,
+    "size": 6345504179
+  },
+  "checkpoint_before": {
+    "mtime_ns": 1789294046212976786,
+    "size": 6345504179
+  },
+  "completed_unix": 1789295346.5621495,
+  "created_unix": 1789295345.4293454,
+  "expected_freed_bytes": 1457001984,
+  "filesystem_free_bytes_after": 25208041472,
+  "inventory": [
+    {
+      "blocks_bytes": 57196544,
+      "inode": 286149789,
+      "mtime_ns": 1789190266491025668,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts/part-00/dedup.sqlite",
+      "size": 57196544
+    },
+    {
+      "blocks_bytes": 57729024,
+      "inode": 286134682,
+      "mtime_ns": 1789179231160247005,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-01/dedup.sqlite",
+      "size": 57729024
+    },
+    {
+      "blocks_bytes": 57638912,
+      "inode": 286059670,
+      "mtime_ns": 1789190438389571247,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-02/dedup.sqlite",
+      "size": 57638912
+    },
+    {
+      "blocks_bytes": 58355712,
+      "inode": 286062933,
+      "mtime_ns": 1789178737160235930,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-03/dedup.sqlite",
+      "size": 58355712
+    },
+    {
+      "blocks_bytes": 58871808,
+      "inode": 286063016,
+      "mtime_ns": 1789188581074995257,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-04/dedup.sqlite",
+      "size": 58871808
+    },
+    {
+      "blocks_bytes": 58109952,
+      "inode": 286103495,
+      "mtime_ns": 1789190138964596061,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-05/dedup.sqlite",
+      "size": 58109952
+    },
+    {
+      "blocks_bytes": 57434112,
+      "inode": 286103753,
+      "mtime_ns": 1789190284261088611,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-06/dedup.sqlite",
+      "size": 57434112
+    },
+    {
+      "blocks_bytes": 57044992,
+      "inode": 284471106,
+      "mtime_ns": 1789189673439821282,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-07/dedup.sqlite",
+      "size": 57044992
+    },
+    {
+      "blocks_bytes": 32768,
+      "inode": 286103886,
+      "mtime_ns": 1789194674765373573,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-07/dedup.sqlite-shm",
+      "size": 32768
+    },
+    {
+      "blocks_bytes": 0,
+      "inode": 286103885,
+      "mtime_ns": 1789194673828893671,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-07/dedup.sqlite-wal",
+      "size": 0
+    },
+    {
+      "blocks_bytes": 57040896,
+      "inode": 286121033,
+      "mtime_ns": 1789190285505661124,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-08/dedup.sqlite",
+      "size": 57040896
+    },
+    {
+      "blocks_bytes": 56348672,
+      "inode": 281837380,
+      "mtime_ns": 1789189461281402971,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-09/dedup.sqlite",
+      "size": 56348672
+    },
+    {
+      "blocks_bytes": 57585664,
+      "inode": 286060786,
+      "mtime_ns": 1789190004106025968,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-10/dedup.sqlite",
+      "size": 57585664
+    },
+    {
+      "blocks_bytes": 58179584,
+      "inode": 286132928,
+      "mtime_ns": 1789191375537588802,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-11/dedup.sqlite",
+      "size": 58179584
+    },
+    {
+      "blocks_bytes": 58187776,
+      "inode": 285988641,
+      "mtime_ns": 1789190699441578096,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-12/dedup.sqlite",
+      "size": 58187776
+    },
+    {
+      "blocks_bytes": 14475264,
+      "inode": 285744651,
+      "mtime_ns": 1789173024605085409,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-13/dedup.sqlite",
+      "size": 14475264
+    },
+    {
+      "blocks_bytes": 2048,
+      "inode": 286149864,
+      "mtime_ns": 1789190269426489792,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts/part-00/web/manifest.json",
+      "sha256": "28b3c9dc94e506e74cb63f0c805b21a55eb4a9b98de9a4e32f16b87ef0ff1fde",
+      "size": 1790
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286149859,
+      "mtime_ns": 1789190192330120371,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts/part-00/web/progress.json",
+      "sha256": "d8e4e146e4d59ccf1e3c9aba213edf4620b9405467a47b55e99d236ad9f2c9fd",
+      "size": 302
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286149819,
+      "mtime_ns": 1789183239737569066,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts/part-00/web/train-npy/train-00000.npy.sha256.json",
+      "sha256": "79d6ace99479a362911db6b7986d45f58475d4af48774798b123d5cbdb70d29c",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286149847,
+      "mtime_ns": 1789187837796871773,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts/part-00/web/train-npy/train-00001.npy.sha256.json",
+      "sha256": "e1161a1c48754928ea57e13f898904c331b3c289fce864313162aae01735fc62",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286149861,
+      "mtime_ns": 1789190256301397322,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts/part-00/web/train-npy/train-00002.npy.sha256.json",
+      "sha256": "d7dca13763dac0db622a68aae9e663b989754afa7327f8c3ed05d2372f68b648",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 1332224,
+      "inode": 286149862,
+      "mtime_ns": 1789190256323094595,
+      "nlink": 3,
+      "path": "data/fineweb-edu-parts/part-00/web/val-npy/val-00000.npy",
+      "size": 1331978
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286149863,
+      "mtime_ns": 1789190256352301452,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts/part-00/web/val-npy/val-00000.npy.sha256.json",
+      "sha256": "8f73042e6c325071f034529cdf897a4acaeb17390ef9ab4415ffdbbe93d8a802",
+      "size": 211
+    },
+    {
+      "blocks_bytes": 2048,
+      "inode": 286135272,
+      "mtime_ns": 1789179233523928346,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-01/web/manifest.json",
+      "sha256": "87da2527ca6c530974b32912a2d5f052f2c2fe44ac66af1ed519b6c53eade707",
+      "size": 1790
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286135234,
+      "mtime_ns": 1789179083371880767,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-01/web/progress.json",
+      "sha256": "60abe13b3a37aa496c95d3bb7d868195fcbd82ec5dbff76e50ec3aac6ccefbc2",
+      "size": 302
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286134713,
+      "mtime_ns": 1789173509610992139,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-01/web/train-npy/train-00000.npy.sha256.json",
+      "sha256": "ec8d967f18914fb0ba9473f22ffb9ccb976f5d74bc26931c527c9b0cbb86bd27",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286134902,
+      "mtime_ns": 1789177256836489749,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-01/web/train-npy/train-00001.npy.sha256.json",
+      "sha256": "890f66445bee36c166864303f88981bf1f599241e3e1e76e6ce313a9a47bf583",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286135265,
+      "mtime_ns": 1789179219416133956,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-01/web/train-npy/train-00002.npy.sha256.json",
+      "sha256": "d1fb60043e49c7a6995e2c5bd6dae4b3aafb46ee098a876f52e396964b2c3bb2",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 1377280,
+      "inode": 286135266,
+      "mtime_ns": 1789179219462414993,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-01/web/val-npy/val-00000.npy",
+      "size": 1377056
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286135267,
+      "mtime_ns": 1789179219508108139,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-01/web/val-npy/val-00000.npy.sha256.json",
+      "sha256": "01b9f7b52206130f0d3aeeb05faa882bb4afb4959574712c8d1cedbbbdbfd76a",
+      "size": 211
+    },
+    {
+      "blocks_bytes": 2048,
+      "inode": 286060237,
+      "mtime_ns": 1789190439116885704,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-02/web/manifest.json",
+      "sha256": "f82851c41fc2a4028c6e2df28a2297faef7a3a5aaff90c93a399c01049774997",
+      "size": 1790
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286060232,
+      "mtime_ns": 1789190259430963783,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-02/web/progress.json",
+      "sha256": "7fee98a5cfb12a7d70e60aac28e407c8e57ec0bdb527ac65cf1c5ec16a13a399",
+      "size": 302
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286060193,
+      "mtime_ns": 1789183318482239904,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-02/web/train-npy/train-00000.npy.sha256.json",
+      "sha256": "4e2148739d61b8cb676e723c6a366a2e10c0e4e2b21ff94ba5fd927920926628",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286060220,
+      "mtime_ns": 1789188109379767862,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-02/web/train-npy/train-00001.npy.sha256.json",
+      "sha256": "ba2f7f53ae760a831571b25936a8b14628280997ebbe0367ca33f43dd626ed8b",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286060234,
+      "mtime_ns": 1789190438193995917,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-02/web/train-npy/train-00002.npy.sha256.json",
+      "sha256": "7900f6416cb206e29ad6f94977a62d8db1605049d2bbe7b77d3835584df112ba",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 1463296,
+      "inode": 286060235,
+      "mtime_ns": 1789190438212143175,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-02/web/val-npy/val-00000.npy",
+      "size": 1463114
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286060236,
+      "mtime_ns": 1789190438255393381,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-02/web/val-npy/val-00000.npy.sha256.json",
+      "sha256": "a3ac3dce8384dfa3010655f1c5e13de7afbea30204388ba2ba0cecce7c8bd738",
+      "size": 211
+    },
+    {
+      "blocks_bytes": 2048,
+      "inode": 286063009,
+      "mtime_ns": 1789178739272456403,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-03/web/manifest.json",
+      "sha256": "13b18589b7ae588835158e8704ca7ad58359ab2447137b2e9c180260ef5ca76b",
+      "size": 1790
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286063004,
+      "mtime_ns": 1789178652990858720,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-03/web/progress.json",
+      "sha256": "bce80e46b240ce085dc426c0fa33e9246b4a495c3ec82c381562d50f35d51c9c",
+      "size": 302
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286062964,
+      "mtime_ns": 1789173431981298486,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-03/web/train-npy/train-00000.npy.sha256.json",
+      "sha256": "c319063f3c3077e90e9a384d332c9631fdaf188cfff0079b6f673c5109c26220",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286062992,
+      "mtime_ns": 1789176980482384999,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-03/web/train-npy/train-00001.npy.sha256.json",
+      "sha256": "2403ae95b8664f7709d5f289c92151eba19b9cf13ade0e0c409da54eff6c845a",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286063006,
+      "mtime_ns": 1789178728416569487,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-03/web/train-npy/train-00002.npy.sha256.json",
+      "sha256": "e4d51ae4779e63ff59a0a3e08341e21847eebe476d5b8795a49bd67e007cc7fb",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 1500160,
+      "inode": 286063007,
+      "mtime_ns": 1789178728433860883,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-03/web/val-npy/val-00000.npy",
+      "size": 1499996
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286063008,
+      "mtime_ns": 1789178728460170621,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-03/web/val-npy/val-00000.npy.sha256.json",
+      "sha256": "5e2535b8f0efe1371cf842b9cd9b7cb10606be79b6311961af7c601ab589b8e8",
+      "size": 211
+    },
+    {
+      "blocks_bytes": 2048,
+      "inode": 286063093,
+      "mtime_ns": 1789188582998247154,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-04/web/manifest.json",
+      "sha256": "a3cd09ce931f861546aeb70805729d96777a6b020d922b85b966475b51adfa40",
+      "size": 1790
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286063088,
+      "mtime_ns": 1789188553797777064,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-04/web/progress.json",
+      "sha256": "0d78e4219f6a387d416cf991a9eb316fcef26cf2bf1b86203ffe6734e41d525a",
+      "size": 302
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286063047,
+      "mtime_ns": 1789182877343721043,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-04/web/train-npy/train-00000.npy.sha256.json",
+      "sha256": "4b9c1fabd49bc40a224ad1c6408de6ca59ed53e2985648e45bd7a5881c0980ac",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286063076,
+      "mtime_ns": 1789186780386529811,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-04/web/train-npy/train-00001.npy.sha256.json",
+      "sha256": "9c22673076cff60ef88d5d4aad3ef05ae8b1b00cd7425a8c7d81a1242a74b3a5",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286063090,
+      "mtime_ns": 1789188572778542739,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-04/web/train-npy/train-00002.npy.sha256.json",
+      "sha256": "6556a31bcf8ed0236e45f64663d4a48fd423dce5810ee343b8f2bfbc2c21544d",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 1381376,
+      "inode": 286063091,
+      "mtime_ns": 1789188572798755702,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-04/web/val-npy/val-00000.npy",
+      "size": 1381154
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286063092,
+      "mtime_ns": 1789188572830417351,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-04/web/val-npy/val-00000.npy.sha256.json",
+      "sha256": "41bc802e3cd1c15cba5ea2e9724c2e0bfb41e2f53c11a763563e5431b5f337c9",
+      "size": 211
+    },
+    {
+      "blocks_bytes": 2048,
+      "inode": 286174227,
+      "mtime_ns": 1789190140438634427,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-05/web/manifest.json",
+      "sha256": "e1073f5d9555d822164feb8ae8ca277a1fe38b7cb7d56812e68130e8ab507523",
+      "size": 1791
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286174222,
+      "mtime_ns": 1789190077507191629,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-05/web/progress.json",
+      "sha256": "d3a148e12c777dbcb4c74942e76418ad2fb0a6fc923759e4f33cee3b4540188d",
+      "size": 303
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286103526,
+      "mtime_ns": 1789183160377892262,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-05/web/train-npy/train-00000.npy.sha256.json",
+      "sha256": "a309d2d824601ad61a377402a93a67e027bbf3548a2d7af1e0487bcd8228b25f",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286174210,
+      "mtime_ns": 1789187892463392619,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-05/web/train-npy/train-00001.npy.sha256.json",
+      "sha256": "411b43248c50bdd2242e09305b332abfb9178f8c6b900fe248d62b597aee6cfe",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286174224,
+      "mtime_ns": 1789190138053605570,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-05/web/train-npy/train-00002.npy.sha256.json",
+      "sha256": "92ab69af3955e1ccb08dc27e7629749ad0de56b39f93a19091866756d82e8f97",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 1258496,
+      "inode": 286174225,
+      "mtime_ns": 1789190138079778347,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-05/web/val-npy/val-00000.npy",
+      "size": 1258214
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286174226,
+      "mtime_ns": 1789190138109740640,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-05/web/val-npy/val-00000.npy.sha256.json",
+      "sha256": "f149cf1dd4ff069e8786689330de55ee7888b4747cd30c26972eb8850469d443",
+      "size": 211
+    },
+    {
+      "blocks_bytes": 2048,
+      "inode": 286103828,
+      "mtime_ns": 1789190285644066336,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-06/web/manifest.json",
+      "sha256": "29d40f8b161f4b5d0e5a71e16cae5a3816d2e36b86d305c40d377780cdaf48ea",
+      "size": 1791
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286103823,
+      "mtime_ns": 1789190154361603649,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-06/web/progress.json",
+      "sha256": "9cb9d26ab9f09930e36658e33d6e5812a1833634fc1fd508cba9438b0cffa854",
+      "size": 303
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286103784,
+      "mtime_ns": 1789183215665475474,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-06/web/train-npy/train-00000.npy.sha256.json",
+      "sha256": "8616eada2477f63b80ab2c451d06d15b76c866d7bf9d0c98f2e4661d3c9fa55f",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286103812,
+      "mtime_ns": 1789187961618887614,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-06/web/train-npy/train-00001.npy.sha256.json",
+      "sha256": "e99054cdefacea7903be7dbd29d5660ea3a2e320b67d2fbe82dc0e45dbaac315",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286103825,
+      "mtime_ns": 1789190284044364197,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-06/web/train-npy/train-00002.npy.sha256.json",
+      "sha256": "f815ae45c77080673735d2f754543d7a654621b90cca8b9e2d6233d34cb730dd",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 1233920,
+      "inode": 286103826,
+      "mtime_ns": 1789190284062269244,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-06/web/val-npy/val-00000.npy",
+      "size": 1233626
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286103827,
+      "mtime_ns": 1789190284088707015,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-06/web/val-npy/val-00000.npy.sha256.json",
+      "sha256": "176366b240f8d1f3b20a4590fbe9e0856e966f40b67254fa99c8f94491aec9c3",
+      "size": 211
+    },
+    {
+      "blocks_bytes": 2048,
+      "inode": 284471185,
+      "mtime_ns": 1789189675721423665,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-07/web/manifest.json",
+      "sha256": "b90de92844e4cf6858cfbd28ac55147a6c4cb42f948607f54a34e96cd32b410e",
+      "size": 1790
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 284471180,
+      "mtime_ns": 1789189618511023473,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-07/web/progress.json",
+      "sha256": "3427323dbaaef4faff0863cc286f9ac94ea8d0e0afffcbdf8f22b51d0f104dfa",
+      "size": 302
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 284471141,
+      "mtime_ns": 1789183031855277466,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-07/web/train-npy/train-00000.npy.sha256.json",
+      "sha256": "28ec02badb3561630d6f6cd080e8fdf8941c2a4f452307d394c3d046f36170d0",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 284471168,
+      "mtime_ns": 1789187528409216933,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-07/web/train-npy/train-00001.npy.sha256.json",
+      "sha256": "3e54cda245f7205af4188eb06ebe899836a30d4e6b998e55fdf52cbc571a3123",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 284471182,
+      "mtime_ns": 1789189659725667616,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-07/web/train-npy/train-00002.npy.sha256.json",
+      "sha256": "031bc30419578bf3a5c7396b351267c86b00e73f2377cc09841b104016102ad1",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 1373184,
+      "inode": 284471183,
+      "mtime_ns": 1789189659741741124,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-07/web/val-npy/val-00000.npy",
+      "size": 1372958
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 284471184,
+      "mtime_ns": 1789189659770238960,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-07/web/val-npy/val-00000.npy.sha256.json",
+      "sha256": "a57507217573fe59dacd4ecb2babbfc12aca323d5a87e25a633db5de308a6449",
+      "size": 211
+    },
+    {
+      "blocks_bytes": 2048,
+      "inode": 286121108,
+      "mtime_ns": 1789190286834864437,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-08/web/manifest.json",
+      "sha256": "7f0a1f4cebd048acea1a2ea60851cbdd7de6d3039da7d0902598338b9fa0306d",
+      "size": 1790
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286121103,
+      "mtime_ns": 1789190245724088907,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-08/web/progress.json",
+      "sha256": "a4a3a0e605f2a44301df67f3d50d93a194de4ae97961bbab5b0df79a759077ef",
+      "size": 302
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286121063,
+      "mtime_ns": 1789183601849040115,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-08/web/train-npy/train-00000.npy.sha256.json",
+      "sha256": "9f03afb1ac99bc9a2e98c53b3a88b5244663c44df588654cc2e11461b8caf601",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286121091,
+      "mtime_ns": 1789188111662821101,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-08/web/train-npy/train-00001.npy.sha256.json",
+      "sha256": "54b1b9df248b0b3dab55632eab55f979ababf1ae7c9fee6de849be718b55af71",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286121105,
+      "mtime_ns": 1789190285363129176,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-08/web/train-npy/train-00002.npy.sha256.json",
+      "sha256": "bb5362cf2835e5ae9af7df8d7a9c4d128b2ce14437aed3be48be81d4833b78ab",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 1377280,
+      "inode": 286121106,
+      "mtime_ns": 1789190285382526121,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-08/web/val-npy/val-00000.npy",
+      "size": 1377056
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286121107,
+      "mtime_ns": 1789190285421889431,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-08/web/val-npy/val-00000.npy.sha256.json",
+      "sha256": "4f5803595c6a47be99b57ffaf714b78cec68fb87f10b295245a7249fb836f38e",
+      "size": 211
+    },
+    {
+      "blocks_bytes": 2048,
+      "inode": 281837454,
+      "mtime_ns": 1789189463385651298,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-09/web/manifest.json",
+      "sha256": "0e2d47e0efa6fdcf850afc9596bd84f4019271f2be712cc18d092afbe17047c6",
+      "size": 1790
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 281837449,
+      "mtime_ns": 1789189370875125989,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-09/web/progress.json",
+      "sha256": "b718dce3a4cb3f3e32d0638668b19b13c45e5ac1d3bf119b794e9d01d20aacf5",
+      "size": 302
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 281837410,
+      "mtime_ns": 1789182901835499578,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-09/web/train-npy/train-00000.npy.sha256.json",
+      "sha256": "30d6da55decbe07053081c04141ad723fbc289f78b68f50df50118674ff1cfa9",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 281837437,
+      "mtime_ns": 1789187303896440398,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-09/web/train-npy/train-00001.npy.sha256.json",
+      "sha256": "ad5afa226d6fa7709dc8d675afa81327cdbd063cd9ca545099e15cd9c565c89d",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 281837451,
+      "mtime_ns": 1789189450531671386,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-09/web/train-npy/train-00002.npy.sha256.json",
+      "sha256": "eaa178fc0d0c2aa3078b64d7fb9cc858b8d71ac427245a1c5771f8f5c575bb2e",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 1377280,
+      "inode": 281837452,
+      "mtime_ns": 1789189450547878914,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-09/web/val-npy/val-00000.npy",
+      "size": 1377056
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 281837453,
+      "mtime_ns": 1789189450576290049,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-09/web/val-npy/val-00000.npy.sha256.json",
+      "sha256": "7127c6c9e427905689ac2ad058eb350280cd984af7b9b94b6603b79aa312cec3",
+      "size": 211
+    },
+    {
+      "blocks_bytes": 2048,
+      "inode": 286060861,
+      "mtime_ns": 1789190005624566299,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-10/web/manifest.json",
+      "sha256": "f9fc7e16ae7fa5f5d2538c4f8725a7069129b16930b0dcfde92be34063248ad1",
+      "size": 1791
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286060856,
+      "mtime_ns": 1789189862726743118,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-10/web/progress.json",
+      "sha256": "53bcf5eb007986526d4e39111459d120b75141a361e043bd368865b6b1af9e32",
+      "size": 302
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286060817,
+      "mtime_ns": 1789183159589560940,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-10/web/train-npy/train-00000.npy.sha256.json",
+      "sha256": "687ffb83c9b3ab4996caa20518d1fdcee99324c3861f36189405f684a3371497",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286060845,
+      "mtime_ns": 1789187798362534356,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-10/web/train-npy/train-00001.npy.sha256.json",
+      "sha256": "adf23ee300699d6135abe42df5f552a46390aae22df03cc2897820f315df8985",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286060858,
+      "mtime_ns": 1789189996576805720,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-10/web/train-npy/train-00002.npy.sha256.json",
+      "sha256": "b754c47f948ea48467b507c99adfc4e257033bfe9ed357cdb629bc8da8011272",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 1328128,
+      "inode": 286060859,
+      "mtime_ns": 1789189996594210099,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-10/web/val-npy/val-00000.npy",
+      "size": 1327880
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286060860,
+      "mtime_ns": 1789189996665246946,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-10/web/val-npy/val-00000.npy.sha256.json",
+      "sha256": "72e3f1384e71e235b6f29d12c6cea8732d76be9013eae306c5f642150218ebac",
+      "size": 211
+    },
+    {
+      "blocks_bytes": 2048,
+      "inode": 286133004,
+      "mtime_ns": 1789191377947173920,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-11/web/manifest.json",
+      "sha256": "617a6050fd495b061aeae0229c65fc2ba8391beb548a36c83b50dacb1050abef",
+      "size": 1790
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286132999,
+      "mtime_ns": 1789191272797680442,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-11/web/progress.json",
+      "sha256": "66156e26b240dc002f013c3de897f9679a88a17103cb42167bbdf87a829b6365",
+      "size": 302
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286132959,
+      "mtime_ns": 1789183575667632730,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-11/web/train-npy/train-00000.npy.sha256.json",
+      "sha256": "e35012066a1e5d416937d20ec141f7cee98d9b6362d9056a48abd7ecb558cdaa",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286132987,
+      "mtime_ns": 1789188835400051192,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-11/web/train-npy/train-00001.npy.sha256.json",
+      "sha256": "ea1d806bee70225106306cf04104ec73447d0b4e614ee1d970184368a9e5ea9f",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286133001,
+      "mtime_ns": 1789191363681225251,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-11/web/train-npy/train-00002.npy.sha256.json",
+      "sha256": "c39987b923c5499573d15e4770ed526f98e39ab9f8b532d0a6f98c10f1187b6d",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 1508352,
+      "inode": 286133002,
+      "mtime_ns": 1789191363699414042,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-11/web/val-npy/val-00000.npy",
+      "size": 1508192
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286133003,
+      "mtime_ns": 1789191363733659210,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-11/web/val-npy/val-00000.npy.sha256.json",
+      "sha256": "0d834c4569c3ad0793bbe3d143371b2a776ffa518799a6ba000d18c4e1afe325",
+      "size": 211
+    },
+    {
+      "blocks_bytes": 2048,
+      "inode": 285988717,
+      "mtime_ns": 1789190699757801207,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-12/web/manifest.json",
+      "sha256": "0089c8cae57157531f79a406c8c56a086da13b411cb006ab8e77b8cfa2f11449",
+      "size": 1790
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 285988712,
+      "mtime_ns": 1789190616698562798,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-12/web/progress.json",
+      "sha256": "2bad9b5854a3eb6069a3139ebbcc25fbbd32f0824e060522aa7219b5fa2f3720",
+      "size": 302
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 285988672,
+      "mtime_ns": 1789183440814733410,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-12/web/train-npy/train-00000.npy.sha256.json",
+      "sha256": "60a1454c1bde88e0e0600a27a31cd91514037e2f219bf2b50f4ef859859d3bdd",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 285988700,
+      "mtime_ns": 1789188240161870779,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-12/web/train-npy/train-00001.npy.sha256.json",
+      "sha256": "82da73ad7d62d098f6e3c045278e7e3c71e7155772944a1bbc28ebd5fe8e5839",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 285988714,
+      "mtime_ns": 1789190699252116712,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-12/web/train-npy/train-00002.npy.sha256.json",
+      "sha256": "e53b0003f494f0cbed06bf6abf6cc92f8436356d72801749e754e26a7d0c0153",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 1315840,
+      "inode": 285988715,
+      "mtime_ns": 1789190699274736669,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-12/web/val-npy/val-00000.npy",
+      "size": 1315586
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 285988716,
+      "mtime_ns": 1789190699314727619,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-12/web/val-npy/val-00000.npy.sha256.json",
+      "sha256": "e5c7f9fbc4a4a9bd8c96102287980673863547fa8c3c99323df67a02810a920e",
+      "size": 211
+    },
+    {
+      "blocks_bytes": 1536,
+      "inode": 285744675,
+      "mtime_ns": 1789173026352068217,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-13/web/manifest.json",
+      "sha256": "d1cbdb0f579449f4feb1d2dd1049515d928afbc767fad277a8d94a9e390a3a09",
+      "size": 1310
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 285744670,
+      "mtime_ns": 1789173012177403991,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-13/web/progress.json",
+      "sha256": "dbc0601741b93d01abca86b730e4064447631287e9fb9ef4b94ea39fdb7779a0",
+      "size": 300
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 285744672,
+      "mtime_ns": 1789173018074588587,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-13/web/train-npy/train-00000.npy.sha256.json",
+      "sha256": "4582b3cfe94b1cc10efa5d7fe45795b4f7c24f354eb45dc2d67f72658657956b",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 344576,
+      "inode": 285744673,
+      "mtime_ns": 1789173018122289526,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-13/web/val-npy/val-00000.npy",
+      "size": 344360
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 285744674,
+      "mtime_ns": 1789173018141318434,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts/part-13/web/val-npy/val-00000.npy.sha256.json",
+      "sha256": "c5cf3f308ae3445864103d2b4ba934ff4a5ac9787e4cf088e9965ef6d4ccb2a1",
+      "size": 211
+    },
+    {
+      "blocks_bytes": 57196544,
+      "inode": 286149789,
+      "mtime_ns": 1789190266491025668,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-00/dedup.sqlite",
+      "size": 57196544
+    },
+    {
+      "blocks_bytes": 57294848,
+      "inode": 283314477,
+      "mtime_ns": 1789204019510502900,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-01/dedup.sqlite",
+      "size": 57294848
+    },
+    {
+      "blocks_bytes": 56901632,
+      "inode": 283590913,
+      "mtime_ns": 1789206027682484816,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-02/dedup.sqlite",
+      "size": 56901632
+    },
+    {
+      "blocks_bytes": 57163776,
+      "inode": 283456435,
+      "mtime_ns": 1789204031865809398,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-03/dedup.sqlite",
+      "size": 57163776
+    },
+    {
+      "blocks_bytes": 57192448,
+      "inode": 283934526,
+      "mtime_ns": 1789204016308077262,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-04/dedup.sqlite",
+      "size": 57192448
+    },
+    {
+      "blocks_bytes": 55775232,
+      "inode": 286120021,
+      "mtime_ns": 1789204570558824945,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-05/dedup.sqlite",
+      "size": 55775232
+    },
+    {
+      "blocks_bytes": 54804480,
+      "inode": 286039153,
+      "mtime_ns": 1789205805934875930,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-06/dedup.sqlite",
+      "size": 54804480
+    },
+    {
+      "blocks_bytes": 54083584,
+      "inode": 285980838,
+      "mtime_ns": 1789206000927755509,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-07/dedup.sqlite",
+      "size": 54083584
+    },
+    {
+      "blocks_bytes": 53645312,
+      "inode": 286060871,
+      "mtime_ns": 1789209379184098185,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-08/dedup.sqlite",
+      "size": 53645312
+    },
+    {
+      "blocks_bytes": 52736000,
+      "inode": 286133011,
+      "mtime_ns": 1789209928683378655,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-09/dedup.sqlite",
+      "size": 52736000
+    },
+    {
+      "blocks_bytes": 54013952,
+      "inode": 286174242,
+      "mtime_ns": 1789209248454044430,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-10/dedup.sqlite",
+      "size": 54013952
+    },
+    {
+      "blocks_bytes": 54489088,
+      "inode": 286149947,
+      "mtime_ns": 1789212251284627222,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-11/dedup.sqlite",
+      "size": 54489088
+    },
+    {
+      "blocks_bytes": 54202368,
+      "inode": 283934610,
+      "mtime_ns": 1789211947183087958,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-12/dedup.sqlite",
+      "size": 54202368
+    },
+    {
+      "blocks_bytes": 13500416,
+      "inode": 283314559,
+      "mtime_ns": 1789205061860016664,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-13/dedup.sqlite",
+      "size": 13500416
+    },
+    {
+      "blocks_bytes": 2048,
+      "inode": 286149864,
+      "mtime_ns": 1789190269426489792,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-00/web/manifest.json",
+      "sha256": "28b3c9dc94e506e74cb63f0c805b21a55eb4a9b98de9a4e32f16b87ef0ff1fde",
+      "size": 1790
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286149859,
+      "mtime_ns": 1789190192330120371,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-00/web/progress.json",
+      "sha256": "d8e4e146e4d59ccf1e3c9aba213edf4620b9405467a47b55e99d236ad9f2c9fd",
+      "size": 302
+    },
+    {
+      "blocks_bytes": 537133568,
+      "inode": 286149818,
+      "mtime_ns": 1789183237553594221,
+      "nlink": 3,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-00/web/train-npy/train-00000.npy",
+      "size": 537133184
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286149819,
+      "mtime_ns": 1789183239737569066,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-00/web/train-npy/train-00000.npy.sha256.json",
+      "sha256": "79d6ace99479a362911db6b7986d45f58475d4af48774798b123d5cbdb70d29c",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 537133568,
+      "inode": 286149846,
+      "mtime_ns": 1789187836656697448,
+      "nlink": 3,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-00/web/train-npy/train-00001.npy",
+      "size": 537133184
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286149847,
+      "mtime_ns": 1789187837796871773,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-00/web/train-npy/train-00001.npy.sha256.json",
+      "sha256": "e1161a1c48754928ea57e13f898904c331b3c289fce864313162aae01735fc62",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 247642624,
+      "inode": 286149860,
+      "mtime_ns": 1789190254936824930,
+      "nlink": 3,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-00/web/train-npy/train-00002.npy",
+      "size": 247642268
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286149861,
+      "mtime_ns": 1789190256301397322,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-00/web/train-npy/train-00002.npy.sha256.json",
+      "sha256": "d7dca13763dac0db622a68aae9e663b989754afa7327f8c3ed05d2372f68b648",
+      "size": 218
+    },
+    {
+      "blocks_bytes": 1332224,
+      "inode": 286149862,
+      "mtime_ns": 1789190256323094595,
+      "nlink": 3,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-00/web/val-npy/val-00000.npy",
+      "size": 1331978
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286149863,
+      "mtime_ns": 1789190256352301452,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-00/web/val-npy/val-00000.npy.sha256.json",
+      "sha256": "8f73042e6c325071f034529cdf897a4acaeb17390ef9ab4415ffdbbe93d8a802",
+      "size": 211
+    },
+    {
+      "blocks_bytes": 2560,
+      "inode": 283314552,
+      "mtime_ns": 1789204020907370615,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-01/web/manifest.json",
+      "sha256": "23343a2d5e5ba47a483682cc36ea540388f560968bd9416f30a4254b5e651003",
+      "size": 2148
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 283314547,
+      "mtime_ns": 1789203901999173011,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-01/web/progress.json",
+      "sha256": "b7363af25ec3f636e2e93232955b52613e81bd5d47aaaba3ef18d86333d86749",
+      "size": 339
+    },
+    {
+      "blocks_bytes": 537133568,
+      "inode": 283314507,
+      "mtime_ns": 1789199308279689852,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-01/web/train-npy/train-00000.npy",
+      "size": 537133184
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 283314508,
+      "mtime_ns": 1789199309670603732,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-01/web/train-npy/train-00000.npy.sha256.json",
+      "sha256": "9489682ee0a30198fb23f34becc8c1163f7231d95345e5e8c65f74676164d701",
+      "size": 227
+    },
+    {
+      "blocks_bytes": 537133568,
+      "inode": 283314535,
+      "mtime_ns": 1789202477638952084,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-01/web/train-npy/train-00001.npy",
+      "size": 537133184
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 283314536,
+      "mtime_ns": 1789202478605233736,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-01/web/train-npy/train-00001.npy.sha256.json",
+      "sha256": "7da1661be5da22995a09de778d84112d77b14430d1270c3e43844b2079ca521d",
+      "size": 227
+    },
+    {
+      "blocks_bytes": 240675840,
+      "inode": 283314548,
+      "mtime_ns": 1789204012047841960,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-01/web/train-npy/train-00002.npy",
+      "size": 240675668
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 283314549,
+      "mtime_ns": 1789204012655472214,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-01/web/train-npy/train-00002.npy.sha256.json",
+      "sha256": "bf08ad1f8c39b4e5b5f304a3609a69f886a7f939b998e362a51de0bf75346431",
+      "size": 227
+    },
+    {
+      "blocks_bytes": 1364992,
+      "inode": 283314550,
+      "mtime_ns": 1789204012678971457,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-01/web/val-npy/val-00000.npy",
+      "size": 1364762
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 283314551,
+      "mtime_ns": 1789204012701192152,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-01/web/val-npy/val-00000.npy.sha256.json",
+      "sha256": "475eb5ce875d87269e96025233346470fa13216c469837a5907de31395d3d9cd",
+      "size": 220
+    },
+    {
+      "blocks_bytes": 2560,
+      "inode": 283590988,
+      "mtime_ns": 1789206030212476571,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-02/web/manifest.json",
+      "sha256": "726e595dc1b7514e900cd2b39e7db040147eaa1bbf9cd1a8bae6cdb49242e103",
+      "size": 2148
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 283590983,
+      "mtime_ns": 1789205888648911808,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-02/web/progress.json",
+      "sha256": "02c089b149dcc7dd8315cb846da9025801852fc1ee3a00f810e75feb7f920758",
+      "size": 339
+    },
+    {
+      "blocks_bytes": 537133568,
+      "inode": 283590943,
+      "mtime_ns": 1789199937316327582,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-02/web/train-npy/train-00000.npy",
+      "size": 537133184
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 283590944,
+      "mtime_ns": 1789199938297725603,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-02/web/train-npy/train-00000.npy.sha256.json",
+      "sha256": "4ab427b5b43bb58a1d7496dc24bdb46affbd04994994ff3623b0f779e783b559",
+      "size": 227
+    },
+    {
+      "blocks_bytes": 537133568,
+      "inode": 283590971,
+      "mtime_ns": 1789204138193419855,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-02/web/train-npy/train-00001.npy",
+      "size": 537133184
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 283590972,
+      "mtime_ns": 1789204140012267402,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-02/web/train-npy/train-00001.npy.sha256.json",
+      "sha256": "c45704a1c50cd28c7483cee76b93b9b0091c4cdd9cd004e2ed8beef37646bdea",
+      "size": 227
+    },
+    {
+      "blocks_bytes": 227423232,
+      "inode": 283590984,
+      "mtime_ns": 1789206013913357877,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-02/web/train-npy/train-00002.npy",
+      "size": 227422736
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 283590985,
+      "mtime_ns": 1789206014694742759,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-02/web/train-npy/train-00002.npy.sha256.json",
+      "sha256": "bab3feb390199d26391a6f421ab802381ae7b03297ae9355d76e34d315402ed1",
+      "size": 227
+    },
+    {
+      "blocks_bytes": 1459200,
+      "inode": 283590986,
+      "mtime_ns": 1789206014729799464,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-02/web/val-npy/val-00000.npy",
+      "size": 1459016
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 283590987,
+      "mtime_ns": 1789206014769322770,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-02/web/val-npy/val-00000.npy.sha256.json",
+      "sha256": "1855deac3a651b145b0d5eb12d4fd0c7da67ee49f6822f0c8c11f4dd22034f5c",
+      "size": 220
+    },
+    {
+      "blocks_bytes": 2560,
+      "inode": 283456511,
+      "mtime_ns": 1789204032560382570,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-03/web/manifest.json",
+      "sha256": "b403370dd9c97bf78d847461b7b8a08eae1d2c769460fc8e3214710c863fbc18",
+      "size": 2149
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 283456506,
+      "mtime_ns": 1789203962803246290,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-03/web/progress.json",
+      "sha256": "0abeb07c10acd3fba2571be9e2dcf6968959effe661f3d4bb3f3e6b32f59a2b0",
+      "size": 340
+    },
+    {
+      "blocks_bytes": 537133568,
+      "inode": 283456465,
+      "mtime_ns": 1789199362742879078,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-03/web/train-npy/train-00000.npy",
+      "size": 537133184
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 283456466,
+      "mtime_ns": 1789199364115060762,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-03/web/train-npy/train-00000.npy.sha256.json",
+      "sha256": "d671fb5876e0b97a4951b7dbea21cbfa9c850a9503d2e79f3e9cc08ed81bd9c7",
+      "size": 227
+    },
+    {
+      "blocks_bytes": 537133568,
+      "inode": 283456494,
+      "mtime_ns": 1789202608878596339,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-03/web/train-npy/train-00001.npy",
+      "size": 537133184
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 283456495,
+      "mtime_ns": 1789202610233811702,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-03/web/train-npy/train-00001.npy.sha256.json",
+      "sha256": "3d9397211586e8b2424773ffb7f1cf3d131a7e60fcdf365d5f9379d2c01269b6",
+      "size": 227
+    },
+    {
+      "blocks_bytes": 223861760,
+      "inode": 283456507,
+      "mtime_ns": 1789204031191501130,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-03/web/train-npy/train-00002.npy",
+      "size": 223861574
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 283456508,
+      "mtime_ns": 1789204031745316290,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-03/web/train-npy/train-00002.npy.sha256.json",
+      "sha256": "e74d9a37c7e2360c548d16003c47d597a4da667dd47ade85a209be5acb6f9c4a",
+      "size": 227
+    },
+    {
+      "blocks_bytes": 1446912,
+      "inode": 283456509,
+      "mtime_ns": 1789204031770906753,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-03/web/val-npy/val-00000.npy",
+      "size": 1446722
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 283456510,
+      "mtime_ns": 1789204031797605953,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-03/web/val-npy/val-00000.npy.sha256.json",
+      "sha256": "2556c84acddd28672939014310af467e91b20ed9c0c166cafcb83e722b218942",
+      "size": 220
+    },
+    {
+      "blocks_bytes": 2560,
+      "inode": 283934603,
+      "mtime_ns": 1789204016830463131,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-04/web/manifest.json",
+      "sha256": "44522ad803c0bc21f4918eb5419bfdcaaf28977db56b77d1afc447cc78a14cf2",
+      "size": 2149
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 283934598,
+      "mtime_ns": 1789203988619128767,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-04/web/progress.json",
+      "sha256": "9dd3a166c7dd2351eae0a835e0aa8e83e8b60d84191c9ba7d96de2c82183ccce",
+      "size": 340
+    },
+    {
+      "blocks_bytes": 537133568,
+      "inode": 283934557,
+      "mtime_ns": 1789199347631411525,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-04/web/train-npy/train-00000.npy",
+      "size": 537133184
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 283934558,
+      "mtime_ns": 1789199348597453330,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-04/web/train-npy/train-00000.npy.sha256.json",
+      "sha256": "518aae39a827b0326fa519ef6b169bc6dc4aa1a747311eb7656468bd101376ab",
+      "size": 227
+    },
+    {
+      "blocks_bytes": 537133568,
+      "inode": 283934586,
+      "mtime_ns": 1789202666387126568,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-04/web/train-npy/train-00001.npy",
+      "size": 537133184
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 283934587,
+      "mtime_ns": 1789202667671768897,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-04/web/train-npy/train-00001.npy.sha256.json",
+      "sha256": "3a86dd873763a67a9010cd4cbf976ea929fd07658382adba34a7b2065da17cf8",
+      "size": 227
+    },
+    {
+      "blocks_bytes": 202929152,
+      "inode": 283934599,
+      "mtime_ns": 1789204015696327601,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-04/web/train-npy/train-00002.npy",
+      "size": 202928990
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 283934600,
+      "mtime_ns": 1789204016203408249,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-04/web/train-npy/train-00002.npy.sha256.json",
+      "sha256": "b609c9cd296b53f9cdf65a3fd3199e1950a88ff7fddc4a932d6229e3e5047308",
+      "size": 227
+    },
+    {
+      "blocks_bytes": 1344512,
+      "inode": 283934601,
+      "mtime_ns": 1789204016222742557,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-04/web/val-npy/val-00000.npy",
+      "size": 1344272
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 283934602,
+      "mtime_ns": 1789204016247435206,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-04/web/val-npy/val-00000.npy.sha256.json",
+      "sha256": "1e9c82fedda8f2c9eb2845b7efdfaa57fe23b59c661a8f08b06edc93a90c7421",
+      "size": 220
+    },
+    {
+      "blocks_bytes": 2560,
+      "inode": 286120097,
+      "mtime_ns": 1789204570807548192,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-05/web/manifest.json",
+      "sha256": "c93f555986c5e5b4f6b4aa66860415e914bf004bee00f53e787ba5e2e46d72b2",
+      "size": 2149
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286120092,
+      "mtime_ns": 1789204522404212953,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-05/web/progress.json",
+      "sha256": "bd6f7206349d465ccadf72ab2b28182447a0feecd3815b51596da77231da906b",
+      "size": 341
+    },
+    {
+      "blocks_bytes": 537133568,
+      "inode": 286120052,
+      "mtime_ns": 1789200017761816684,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-05/web/train-npy/train-00000.npy",
+      "size": 537133184
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286120053,
+      "mtime_ns": 1789200019038612199,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-05/web/train-npy/train-00000.npy.sha256.json",
+      "sha256": "b553320540d9fd28aa7ba7e2be582a7b721e5ed393c9ed5dbc55614961589210",
+      "size": 227
+    },
+    {
+      "blocks_bytes": 537133568,
+      "inode": 286120081,
+      "mtime_ns": 1789203374568844931,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-05/web/train-npy/train-00001.npy",
+      "size": 537133184
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286120082,
+      "mtime_ns": 1789203375939853226,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-05/web/train-npy/train-00001.npy.sha256.json",
+      "sha256": "ea296b5e1dd6db2ae1b156b80e0b2161b823074ffcd11b28c88f5c8dcbcb93de",
+      "size": 227
+    },
+    {
+      "blocks_bytes": 185102848,
+      "inode": 286120093,
+      "mtime_ns": 1789204569946395082,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-05/web/train-npy/train-00002.npy",
+      "size": 185102690
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286120094,
+      "mtime_ns": 1789204570435595215,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-05/web/train-npy/train-00002.npy.sha256.json",
+      "sha256": "c930f9c8c447b4d5186a27214644536a5b4c4a37fad4929c3deb8bd5a74731f0",
+      "size": 226
+    },
+    {
+      "blocks_bytes": 1225728,
+      "inode": 286120095,
+      "mtime_ns": 1789204570459612709,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-05/web/val-npy/val-00000.npy",
+      "size": 1225430
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286120096,
+      "mtime_ns": 1789204570486525700,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-05/web/val-npy/val-00000.npy.sha256.json",
+      "sha256": "61c95d3358a0312f2613fa78a28fb98e995feada1517cfcdbfbb1dc4921c643f",
+      "size": 220
+    },
+    {
+      "blocks_bytes": 2560,
+      "inode": 286039228,
+      "mtime_ns": 1789205806254673916,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-06/web/manifest.json",
+      "sha256": "f2993790ac2bed21e7bfadd6214e2b0ad91e53e3db4bce91c6c5451a92585f87",
+      "size": 2149
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286039223,
+      "mtime_ns": 1789205723306618917,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-06/web/progress.json",
+      "sha256": "eb2e30a7753a4047829209dc87f379b96a12f422675254a63c373627116f3d61",
+      "size": 341
+    },
+    {
+      "blocks_bytes": 537133568,
+      "inode": 286039184,
+      "mtime_ns": 1789201326895335467,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-06/web/train-npy/train-00000.npy",
+      "size": 537133184
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286039185,
+      "mtime_ns": 1789201328214625900,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-06/web/train-npy/train-00000.npy.sha256.json",
+      "sha256": "b07c5f07d4ed9e7a7da902c4c597948206384e4ff4028eb959f4f1472695b65f",
+      "size": 227
+    },
+    {
+      "blocks_bytes": 537133568,
+      "inode": 286039213,
+      "mtime_ns": 1789204612125318025,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-06/web/train-npy/train-00001.npy",
+      "size": 537133184
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286039214,
+      "mtime_ns": 1789204613538291637,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-06/web/train-npy/train-00001.npy.sha256.json",
+      "sha256": "874e069f2a666f60111704a960b822ab0215330b8f392aa2f8ef2fc0a333d8f9",
+      "size": 227
+    },
+    {
+      "blocks_bytes": 178693632,
+      "inode": 286039224,
+      "mtime_ns": 1789205805407571678,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-06/web/train-npy/train-00002.npy",
+      "size": 178693418
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286039225,
+      "mtime_ns": 1789205805802128694,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-06/web/train-npy/train-00002.npy.sha256.json",
+      "sha256": "c5ff2f828cb3c6b8e3f5ee2badf361a2d608f0e5d255a24eaf668efcc6e2b48b",
+      "size": 226
+    },
+    {
+      "blocks_bytes": 1176576,
+      "inode": 286039226,
+      "mtime_ns": 1789205805831204840,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-06/web/val-npy/val-00000.npy",
+      "size": 1176254
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286039227,
+      "mtime_ns": 1789205805854513538,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-06/web/val-npy/val-00000.npy.sha256.json",
+      "sha256": "6f1ee557e65782f57c98abf8a2d1f956ef989079c9fe02b9af9ef506c5b8f1e6",
+      "size": 220
+    },
+    {
+      "blocks_bytes": 2560,
+      "inode": 285980913,
+      "mtime_ns": 1789206002923427008,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-07/web/manifest.json",
+      "sha256": "35a4125f7939a6636fe7ac8b6bdb90baf27b5ad3f3d89931b5211b052c339dd7",
+      "size": 2148
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 285980908,
+      "mtime_ns": 1789205963603429971,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-07/web/progress.json",
+      "sha256": "9d9c81d77e73041d7e122094f13a3793419768b8087a505b35bc5dbb8f2276e8",
+      "size": 340
+    },
+    {
+      "blocks_bytes": 537133568,
+      "inode": 285980869,
+      "mtime_ns": 1789201695617879514,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-07/web/train-npy/train-00000.npy",
+      "size": 537133184
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 285980870,
+      "mtime_ns": 1789201696940939492,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-07/web/train-npy/train-00000.npy.sha256.json",
+      "sha256": "dcf729975a7c1d5882631b08dc00855438c01b7dd26917cc221d073be91018f9",
+      "size": 227
+    },
+    {
+      "blocks_bytes": 537133568,
+      "inode": 285980898,
+      "mtime_ns": 1789204915448530530,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-07/web/train-npy/train-00001.npy",
+      "size": 537133184
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 285980899,
+      "mtime_ns": 1789204916413462032,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-07/web/train-npy/train-00001.npy.sha256.json",
+      "sha256": "aa6a78352f3f7420ab5adc27b677e9f19328e2bed7ff604d43d6ae668517a064",
+      "size": 227
+    },
+    {
+      "blocks_bytes": 171685888,
+      "inode": 285980909,
+      "mtime_ns": 1789205991026330475,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-07/web/train-npy/train-00002.npy",
+      "size": 171685838
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 285980910,
+      "mtime_ns": 1789205991385990299,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-07/web/train-npy/train-00002.npy.sha256.json",
+      "sha256": "d4d402a786e51a3f78888d52771c1639fd7b45be6cfc6cac37ee5afed798641f",
+      "size": 226
+    },
+    {
+      "blocks_bytes": 1311744,
+      "inode": 285980911,
+      "mtime_ns": 1789205991400305407,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-07/web/val-npy/val-00000.npy",
+      "size": 1311488
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 285980912,
+      "mtime_ns": 1789205991423508501,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-07/web/val-npy/val-00000.npy.sha256.json",
+      "sha256": "7fe4338baca8749fd2d9cbd21ca4b0f091ef05f103467cd7cfa34387afdc9ccd",
+      "size": 220
+    },
+    {
+      "blocks_bytes": 2560,
+      "inode": 286060946,
+      "mtime_ns": 1789209380285581729,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-08/web/manifest.json",
+      "sha256": "a957f4579db6ad5ea0c8cf92b6d2333a19423f5d927f16babcec61407e465a60",
+      "size": 2148
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286060941,
+      "mtime_ns": 1789209334423996207,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-08/web/progress.json",
+      "sha256": "82ea15e84a5c7cbd2ec7977aa3ad5d40cb28ae05971dff1eb6720a32c88b8e8e",
+      "size": 340
+    },
+    {
+      "blocks_bytes": 537133568,
+      "inode": 286060902,
+      "mtime_ns": 1789203182555325904,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-08/web/train-npy/train-00000.npy",
+      "size": 537133184
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286060903,
+      "mtime_ns": 1789203187238608313,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-08/web/train-npy/train-00000.npy.sha256.json",
+      "sha256": "06228d89848275fce1eb565454f70e1ee6eb6ee4170f147b1f9f672608aa1532",
+      "size": 227
+    },
+    {
+      "blocks_bytes": 537133568,
+      "inode": 286060931,
+      "mtime_ns": 1789207817270736153,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-08/web/train-npy/train-00001.npy",
+      "size": 537133184
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286060932,
+      "mtime_ns": 1789207818528976536,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-08/web/train-npy/train-00001.npy.sha256.json",
+      "sha256": "3d15dd24e4f064643b8a701acb2c05e2eceb775922655732d0f5d6a5044413b8",
+      "size": 227
+    },
+    {
+      "blocks_bytes": 164600832,
+      "inode": 286060942,
+      "mtime_ns": 1789209376526832054,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-08/web/train-npy/train-00002.npy",
+      "size": 164600396
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286060943,
+      "mtime_ns": 1789209378922409805,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-08/web/train-npy/train-00002.npy.sha256.json",
+      "sha256": "ff273082e4cf9bbc8f613a2f4205c96ffb05e11c5faf5cc5d56221100c69f202",
+      "size": 226
+    },
+    {
+      "blocks_bytes": 1319936,
+      "inode": 286060944,
+      "mtime_ns": 1789209378938467610,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-08/web/val-npy/val-00000.npy",
+      "size": 1319684
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286060945,
+      "mtime_ns": 1789209378967472150,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-08/web/val-npy/val-00000.npy.sha256.json",
+      "sha256": "f3011ee18ecb4fff1f94d5b572cfbfc9d63b53f85ef91eab176f2805ba4dd453",
+      "size": 220
+    },
+    {
+      "blocks_bytes": 2560,
+      "inode": 286133085,
+      "mtime_ns": 1789209931533985701,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-09/web/manifest.json",
+      "sha256": "b289d0a66a2b4d8be7f026ec357320560c630ed6ed1eebd7f40d83aea3df699b",
+      "size": 2148
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286133080,
+      "mtime_ns": 1789209828631442170,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-09/web/progress.json",
+      "sha256": "a1cb12d4c0abfaee30db497586045df63a412e81510e1d705a9827ced74c4a27",
+      "size": 340
+    },
+    {
+      "blocks_bytes": 537133568,
+      "inode": 286133042,
+      "mtime_ns": 1789203340109729298,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-09/web/train-npy/train-00000.npy",
+      "size": 537133184
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286133043,
+      "mtime_ns": 1789203342356812043,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-09/web/train-npy/train-00000.npy.sha256.json",
+      "sha256": "a2d4c14fd29a0b70f7a5bf93f3c19bad3578fd03ad2e6a9e1b6431be3b981e82",
+      "size": 227
+    },
+    {
+      "blocks_bytes": 537133568,
+      "inode": 286133071,
+      "mtime_ns": 1789208298255741287,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-09/web/train-npy/train-00001.npy",
+      "size": 537133184
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286133072,
+      "mtime_ns": 1789208300126263956,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-09/web/train-npy/train-00001.npy.sha256.json",
+      "sha256": "d0068c5e2c8bf194df6dc0278b6914b7f9f4ed0171c2b47b6d872604e8f7ef8e",
+      "size": 227
+    },
+    {
+      "blocks_bytes": 160035328,
+      "inode": 286133081,
+      "mtime_ns": 1789209914047052337,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-09/web/train-npy/train-00002.npy",
+      "size": 160035224
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286133082,
+      "mtime_ns": 1789209915416238702,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-09/web/train-npy/train-00002.npy.sha256.json",
+      "sha256": "0bb376dbef88df6d45cfdcce07767fca2c54d810dbc85c02bf77f4d5141ef2f5",
+      "size": 226
+    },
+    {
+      "blocks_bytes": 1291264,
+      "inode": 286133083,
+      "mtime_ns": 1789209915436270393,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-09/web/val-npy/val-00000.npy",
+      "size": 1290998
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286133084,
+      "mtime_ns": 1789209915468384537,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-09/web/val-npy/val-00000.npy.sha256.json",
+      "sha256": "2e76c68ba675a7aad5b37d2820206efb1b2e99382125bf1cb38734ecc0b5180b",
+      "size": 220
+    },
+    {
+      "blocks_bytes": 2560,
+      "inode": 286174317,
+      "mtime_ns": 1789209251511372672,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-10/web/manifest.json",
+      "sha256": "d87d418feb90256e267afafbd9fbbaea885b749d94d0bd62e9eb0327a5cc8f23",
+      "size": 2149
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286174312,
+      "mtime_ns": 1789209099338964453,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-10/web/progress.json",
+      "sha256": "335034fbd4ee5cdb15333850cd8d00be097bcbf196d2a52f949459753fa1c3e5",
+      "size": 340
+    },
+    {
+      "blocks_bytes": 537133568,
+      "inode": 286174273,
+      "mtime_ns": 1789203208834416677,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-10/web/train-npy/train-00000.npy",
+      "size": 537133184
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286174274,
+      "mtime_ns": 1789203210000463757,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-10/web/train-npy/train-00000.npy.sha256.json",
+      "sha256": "b7dc83cfd960588b3cd6b87eab39993ff36f427e109a5797c7e14224dfc79b18",
+      "size": 227
+    },
+    {
+      "blocks_bytes": 537133568,
+      "inode": 286174303,
+      "mtime_ns": 1789207884328931429,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-10/web/train-npy/train-00001.npy",
+      "size": 537133184
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286174304,
+      "mtime_ns": 1789207885693904747,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-10/web/train-npy/train-00001.npy.sha256.json",
+      "sha256": "b26940d16afda0af7f6ecb5d010b80b91b4a56f8bf186922b624d684fe393b6c",
+      "size": 227
+    },
+    {
+      "blocks_bytes": 156331008,
+      "inode": 286174313,
+      "mtime_ns": 1789209235533816241,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-10/web/train-npy/train-00002.npy",
+      "size": 156330632
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286174314,
+      "mtime_ns": 1789209236057125876,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-10/web/train-npy/train-00002.npy.sha256.json",
+      "sha256": "107ca1b7dbccd139f91668f8c508cda7091e4f47dd9acc91a7d7bfbc2d09a7fa",
+      "size": 226
+    },
+    {
+      "blocks_bytes": 1287168,
+      "inode": 286174315,
+      "mtime_ns": 1789209236073490755,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-10/web/val-npy/val-00000.npy",
+      "size": 1286900
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286174316,
+      "mtime_ns": 1789209236106671625,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-10/web/val-npy/val-00000.npy.sha256.json",
+      "sha256": "03f83834c5592e399ac187ea8330c1606c7eb053a426493e79fc3cd8434195d3",
+      "size": 220
+    },
+    {
+      "blocks_bytes": 2560,
+      "inode": 286150023,
+      "mtime_ns": 1789212253913967017,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-11/web/manifest.json",
+      "sha256": "3354e9eb34fefecb2973ce2e14721a5f490ca336336c0931155cae1bf4bd71ba",
+      "size": 2148
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286150018,
+      "mtime_ns": 1789212129388873624,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-11/web/progress.json",
+      "sha256": "4f487890d0632f4cbb5cdcc34574050df34175bf314dc1683d32d857ed39138d",
+      "size": 340
+    },
+    {
+      "blocks_bytes": 537133568,
+      "inode": 286149978,
+      "mtime_ns": 1789203882209920914,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-11/web/train-npy/train-00000.npy",
+      "size": 537133184
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286149979,
+      "mtime_ns": 1789203883391990949,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-11/web/train-npy/train-00000.npy.sha256.json",
+      "sha256": "7c57c3df01d6696adf478d3ba78a60ee51cf5ee174efd8c6772b9f101c4bb382",
+      "size": 227
+    },
+    {
+      "blocks_bytes": 537133568,
+      "inode": 286150008,
+      "mtime_ns": 1789210154812555173,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-11/web/train-npy/train-00001.npy",
+      "size": 537133184
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286150009,
+      "mtime_ns": 1789210156613318711,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-11/web/train-npy/train-00001.npy.sha256.json",
+      "sha256": "0d7b1189c8600c09b9eb6fe2c99cd0657d24dfd37370ce2ceafcc0c70f056145",
+      "size": 227
+    },
+    {
+      "blocks_bytes": 162289152,
+      "inode": 286150019,
+      "mtime_ns": 1789212236690430364,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-11/web/train-npy/train-00002.npy",
+      "size": 162289124
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286150020,
+      "mtime_ns": 1789212237966515669,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-11/web/train-npy/train-00002.npy.sha256.json",
+      "sha256": "36a2048402b1d84cf0fa1c94ba6370788efce0a2eb440f9bee843ec69e42366f",
+      "size": 226
+    },
+    {
+      "blocks_bytes": 1401856,
+      "inode": 286150021,
+      "mtime_ns": 1789212238003128801,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-11/web/val-npy/val-00000.npy",
+      "size": 1401644
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 286150022,
+      "mtime_ns": 1789212238075868850,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-11/web/val-npy/val-00000.npy.sha256.json",
+      "sha256": "8989ef5eef752b902b9eedb799d1a2f45b34a7d052ff5fd79d5d7dca3ac3e54f",
+      "size": 220
+    },
+    {
+      "blocks_bytes": 2560,
+      "inode": 283934686,
+      "mtime_ns": 1789211949355166299,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-12/web/manifest.json",
+      "sha256": "1230d99e3d6c6b6a964a3f61d9fd29f62038ea79f0591917a2027fe6e5305b4d",
+      "size": 2148
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 283934681,
+      "mtime_ns": 1789211877606946231,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-12/web/progress.json",
+      "sha256": "b6471d9074983b98120e881994aaeefdf6193883daeaa91bfc87569a5d679b29",
+      "size": 340
+    },
+    {
+      "blocks_bytes": 537133568,
+      "inode": 283934641,
+      "mtime_ns": 1789206448506229561,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-12/web/train-npy/train-00000.npy",
+      "size": 537133184
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 283934642,
+      "mtime_ns": 1789206449513010640,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-12/web/train-npy/train-00000.npy.sha256.json",
+      "sha256": "b5e0ead32c965a6aee7340119da35e44df0fa638a50a31aa96616e0cdd951e5b",
+      "size": 227
+    },
+    {
+      "blocks_bytes": 537133568,
+      "inode": 283934671,
+      "mtime_ns": 1789210605753621170,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-12/web/train-npy/train-00001.npy",
+      "size": 537133184
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 283934672,
+      "mtime_ns": 1789210607138175569,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-12/web/train-npy/train-00001.npy.sha256.json",
+      "sha256": "e008585520fa8252106d5c2e0c47f64d5e84ed3ed73261f5d0559790132925b0",
+      "size": 227
+    },
+    {
+      "blocks_bytes": 163227648,
+      "inode": 283934682,
+      "mtime_ns": 1789211936561367903,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-12/web/train-npy/train-00002.npy",
+      "size": 163227566
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 283934683,
+      "mtime_ns": 1789211936994953207,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-12/web/train-npy/train-00002.npy.sha256.json",
+      "sha256": "ccf3527d84d17847edc58b1d3e32423fca8fd67029f5f492be8de94545ed8149",
+      "size": 226
+    },
+    {
+      "blocks_bytes": 1205248,
+      "inode": 283934684,
+      "mtime_ns": 1789211937008442195,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-12/web/val-npy/val-00000.npy",
+      "size": 1204940
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 283934685,
+      "mtime_ns": 1789211937033126287,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-12/web/val-npy/val-00000.npy.sha256.json",
+      "sha256": "9ea4ce4e2d15042100f549c2e69cd3c35dabee42bd3b337a76d1cc43ae6b61f1",
+      "size": 220
+    },
+    {
+      "blocks_bytes": 2048,
+      "inode": 283314583,
+      "mtime_ns": 1789205062294466052,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-13/web/manifest.json",
+      "sha256": "a1028e8fcf407291a6af823515c8017630ec8ace446e3444a4e7ee6019b68b4e",
+      "size": 1651
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 283314578,
+      "mtime_ns": 1789205055617866497,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-13/web/progress.json",
+      "sha256": "c65e59e3ee5021f0f5f93de0719526a664e3323f73f893c16af48686f36b462b",
+      "size": 338
+    },
+    {
+      "blocks_bytes": 311514112,
+      "inode": 283314579,
+      "mtime_ns": 1789205060813009004,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-13/web/train-npy/train-00000.npy",
+      "size": 311513696
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 283314580,
+      "mtime_ns": 1789205061631212229,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-13/web/train-npy/train-00000.npy.sha256.json",
+      "sha256": "ed5c1f112f2532b47621b91d07fad592210f65584b99ca36504c27cf1689b7a3",
+      "size": 227
+    },
+    {
+      "blocks_bytes": 315904,
+      "inode": 283314581,
+      "mtime_ns": 1789205061654660145,
+      "nlink": 2,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-13/web/val-npy/val-00000.npy",
+      "size": 315674
+    },
+    {
+      "blocks_bytes": 512,
+      "inode": 283314582,
+      "mtime_ns": 1789205061670713387,
+      "nlink": 1,
+      "path": "data/fineweb-edu-parts-dedup-v2/part-13/web/val-npy/val-00000.npy.sha256.json",
+      "sha256": "e8455308839348c62c0ae29d6ebcccfc63688fe5093c42fd824697ee50707cdf",
+      "size": 220
+    }
+  ],
+  "metadata_copy": "/ssd/scxi253/pretrain500m-20260912-v1/receipts/intermediate-data-metadata-v1",
+  "owner_uid": 1256,
+  "reason": "superseded construction intermediates; active formal training uses only fineweb-edu-formal-v1",
+  "status": "VERIFIED_ABSENT",
+  "targets": [
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-parts",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-parts-dedup-v2"
+  ],
+  "targets_absent": [
+    true,
+    true
+  ]
+}

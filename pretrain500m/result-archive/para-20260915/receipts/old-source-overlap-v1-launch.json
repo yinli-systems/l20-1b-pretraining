@@ -1,0 +1,29 @@
+{
+  "status": "LAUNCHED_OLD_SOURCE_OVERLAP_NOT_ADMITTED",
+  "checked_utc": "2026-09-13T22:04:06.980963+00:00",
+  "pid": 2487833,
+  "command": [
+    "/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python",
+    "/ssd/scxi253/pretrain500m-20260912-v1/source/old-source-overlap-v1/scan.py",
+    "--manifest",
+    "/ssd/scxi253/pretrain500m-20260912-v1/source/old-source-overlap-v1/old-source-manifest.json",
+    "--expected-manifest-sha256",
+    "8291e6c2a9af017904a3cc17b838cff231ff1a6da4cf7b9fe810b2dd6995a6e5",
+    "--index-report",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-three-tranche/report.json",
+    "--expected-index-report-sha256",
+    "a644aaa72d371e0da1db917a30d6a5d227e7585fcbc0e5e4a03e88d5ece021ce",
+    "--output",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1",
+    "--workers",
+    "4"
+  ],
+  "source": "/ssd/scxi253/pretrain500m-20260912-v1/source/old-source-overlap-v1",
+  "output": "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1",
+  "log": "/ssd/scxi253/pretrain500m-20260912-v1/logs/old-source-overlap-v1.log",
+  "workers": 4,
+  "archive_sha256": "1bc462765517780c9ea505929e79ba0782f06af6b519ba773f1541722fcdbf61",
+  "local_and_remote_tests_passed": 3,
+  "free_bytes": 21799608320,
+  "training_admitted": false
+}

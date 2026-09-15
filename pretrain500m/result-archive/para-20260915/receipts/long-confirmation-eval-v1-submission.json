@@ -1,0 +1,9 @@
+{
+  "checked_utc": "2026-09-14T15:48:17Z",
+  "checkpoint_plan": "/ssd/scxi253/pretrain500m-20260912-v1/source/long-confirmation-eval-v1/checkpoint-plan.json",
+  "checkpoint_plan_sha256": "1c109069ff6d8a86d667d11c470e0169cb2699c057dcacb03112ddbb58cd3ce3",
+  "claim_boundary": "evaluation submitted; allocation, completion, selection and promotion remain unverified",
+  "job_id": 1590660,
+  "schema": "p529m-long-confirmation-eval-submission-v1",
+  "status": "SUBMITTED_PENDING_ALLOCATION"
+}

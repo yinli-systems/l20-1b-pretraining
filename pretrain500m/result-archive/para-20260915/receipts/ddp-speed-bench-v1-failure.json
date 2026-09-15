@@ -1,0 +1,28 @@
+{
+  "active_screen_jobs_affected": false,
+  "adopt_find_unused_false_static_false": false,
+  "claim_boundary": "negative systems result; no quality claim",
+  "completed_variant": {
+    "final_mfu10_median": 0.7762427855573213,
+    "find_unused_parameters": true,
+    "label": "A_true_1",
+    "static_graph": false,
+    "steady_mfu_median": 0.7763345337272697,
+    "steps": 20
+  },
+  "created_unix": 1789351065.97804,
+  "exit_code": "1:0",
+  "failed_variant": {
+    "completed_steps": 1,
+    "find_unused_parameters": false,
+    "label": "B_false_1",
+    "observed_next_iteration": "DDP _has_rebuilt_buckets became true before step 2 record",
+    "static_graph": false
+  },
+  "job_id": 1588569,
+  "next_test": "find_unused_parameters=false plus static_graph=true under a new immutable runner",
+  "root_error": "RuntimeError: fixed-reduction policy unexpectedly rebuilt buckets",
+  "schema_version": 1,
+  "slurm_state": "FAILED",
+  "status": "FAIL_FIXED_BUCKET_INVARIANT"
+}

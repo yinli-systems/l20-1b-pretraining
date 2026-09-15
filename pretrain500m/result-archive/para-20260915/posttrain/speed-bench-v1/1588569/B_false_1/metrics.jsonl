@@ -1,0 +1,1 @@
+{"step": 1, "prediction_tokens": 2097152, "loss": 3.081422805786133, "lr": 1.25e-05, "grad_norm": 0.5464538335800171, "step_seconds": 36.51241829700302, "tokens_per_second": 57436.677651453625, "mfu": 0.2734736398685272, "elapsed_seconds": 36.51245498296339, "unix": 1789350804.5031369, "ddp_buckets_rebuilt": false}

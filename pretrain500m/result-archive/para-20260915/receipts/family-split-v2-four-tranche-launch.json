@@ -1,0 +1,12 @@
+{
+  "checked_utc": "2026-09-14T01:00:39.903912+00:00",
+  "design_sha256": "3d58055a1d2398b90c963c9ed4be7e99e1d1644281b95599c4ad5339d805d105",
+  "features_report_sha256": "83e1fc9bf238efb28a1dc3b1c94b44ec6e6eb75d77745d46ddfc22d3f9349a6e",
+  "free_bytes_at_launch": 19663536128,
+  "output": "/ssd/scxi253/pretrain500m-20260912-v1/data/family-split-v2-four-tranche",
+  "pid": 1426085,
+  "schema_version": 1,
+  "status": "RUNNING_FAMILY_CLOSURE_NOT_ADMITTED",
+  "training_admitted": false,
+  "workers": 4
+}

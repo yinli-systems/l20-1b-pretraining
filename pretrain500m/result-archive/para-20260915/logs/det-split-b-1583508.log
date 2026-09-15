@@ -1,0 +1,3 @@
+{"step": 3, "prediction_tokens": 6291456, "loss": 9.602519035339355, "lr": 3.6e-05, "grad_norm": 19.334070205688477, "step_seconds": 28.92157229501754, "tokens_per_second": 72511.68707592314, "mfu": 0.17262519185037228, "elapsed_seconds": 28.921605781652033, "unix": 1789170656.113046}
+{"step": 4, "prediction_tokens": 8388608, "loss": 9.753705024719238, "lr": 4.7999999999999994e-05, "grad_norm": 8.3853178024292, "step_seconds": 7.110942739062011, "tokens_per_second": 294918.9828909564, "mfu": 0.7020998690674839, "elapsed_seconds": 36.05483870394528, "unix": 1789170663.246274}
+{"status": "CHECKPOINTED_STOP", "reason": "mfu_below_minimum", "step": 4, "tokens": 8388608}

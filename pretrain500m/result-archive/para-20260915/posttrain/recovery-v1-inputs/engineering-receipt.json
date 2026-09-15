@@ -1,0 +1,10 @@
+{
+  "schema": "p529m-frozen-data-engineering-v1",
+  "status": "CONTENT_VERIFIED_FOR_ENGINEERING_ONLY",
+  "frozen_manifest": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-formal-v1/manifest.json",
+  "frozen_manifest_sha256": "29f75eca421f26653dd520e650d50e6a7802e9a499944b3b8382688fa3806e1a",
+  "training_manifest_sha256": "7fea43a5d46ae70519ca3cef075f62d302ae9eebe0b65d7beff56fe9d792c5e4",
+  "validation_manifest_sha256": "cb042850ffc6d186176db4bb350c7315ae94f805003362a46632a08985642a8d",
+  "protocol_sha256": "b4103d9e7d955e8fd76b174f6d876e7f09132ebc63a58b527979be6f05851526",
+  "corpus_admission_for_new_mixture": false
+}

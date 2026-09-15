@@ -1,0 +1,12 @@
+srun: Job step aborted: Waiting up to 62 seconds for job step to finish.
+slurmstepd: error: *** STEP 1583820.2 ON wqd10nah09g1 CANCELLED AT 2026-09-12T10:18:19 ***
+W0912 10:18:19.976000 3819073 torch/distributed/elastic/agent/server/api.py:739] Received 15 death signal, shutting down workers
+W0912 10:18:19.976000 2054480 torch/distributed/elastic/agent/server/api.py:739] Received 15 death signal, shutting down workers
+W0912 10:18:19.979000 3819073 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 3819120 closing signal SIGTERM
+W0912 10:18:19.979000 2054480 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 2054513 closing signal SIGTERM
+W0912 10:18:19.980000 3819073 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 3819121 closing signal SIGTERM
+W0912 10:18:19.981000 3819073 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 3819122 closing signal SIGTERM
+W0912 10:18:19.981000 3819073 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 3819123 closing signal SIGTERM
+W0912 10:18:19.981000 2054480 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 2054514 closing signal SIGTERM
+W0912 10:18:19.982000 2054480 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 2054515 closing signal SIGTERM
+W0912 10:18:19.982000 2054480 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 2054516 closing signal SIGTERM

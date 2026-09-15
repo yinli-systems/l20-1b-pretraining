@@ -1,0 +1,8 @@
+slurmstepd: error: *** STEP 1583519.0 ON wqd10nba06g6 CANCELLED AT 2026-09-12T08:07:44 ***
+W0912 08:07:44.987000 159230 torch/distributed/elastic/agent/server/api.py:739] Received 15 death signal, shutting down workers
+W0912 08:07:45.000000 159230 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 159440 closing signal SIGTERM
+W0912 08:07:44.988000 3241653 torch/distributed/elastic/agent/server/api.py:739] Received 15 death signal, shutting down workers
+W0912 08:07:45.004000 3241653 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 3242056 closing signal SIGTERM
+W0912 08:07:45.007000 159230 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 159441 closing signal SIGTERM
+W0912 08:07:45.007000 159230 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 159442 closing signal SIGTERM
+W0912 08:07:45.008000 159230 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 159443 closing signal SIGTERM

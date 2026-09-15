@@ -1,0 +1,17 @@
+{
+  "correct_free_bytes_before": 33634938880,
+  "launched_utc": "2026-09-14T03:13:25.690549+00:00",
+  "log": "/ssd/scxi253/pretrain500m-20260912-v1/logs/intake-expansion-v1-keepalive.log",
+  "pid": 3986451,
+  "schema_version": 1,
+  "source_sha256": {
+    "SHA256SUMS": "968fdba32dc81d956e12e89f4e98a60c69598a63a3391784d548e0dfdbe099d0",
+    "http_ranges.py": "c99ffe8765dd9a487ccf394a7a5262c9ed6a2b1ce655fe32a24c78cef114fffa",
+    "intake.py": "480311e506f8f85031e075a4a7f9a56c8e0f989b8e9cd51bc66708e6df3c580e",
+    "plan.json": "ca16deedb115a04a33b7b49889317866fb806f64014b2161a04b7803e224d0a6"
+  },
+  "status": "RAW_INTAKE_KEEPALIVE_RUNNING_NOT_ADMITTED",
+  "supersede_reason": "measured Parquet range requests were TLS-latency bound; reuse one retrying HTTPS session per source",
+  "supersedes_pid": 3937712,
+  "training_admitted": false
+}

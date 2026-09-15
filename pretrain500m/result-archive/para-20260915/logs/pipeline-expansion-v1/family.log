@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/family-split-expansion-v1/scan.py", line 183, in <module>
+    try: run(args)
+         ^^^^^^^^^
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/family-split-expansion-v1/scan.py", line 107, in run
+    inputs[item['tranche']]/(item['source_id']+'.jsonl.gz'))
+    ~~~~~~^^^^^^^^^^^^^^^^^
+IndexError: list index out of range

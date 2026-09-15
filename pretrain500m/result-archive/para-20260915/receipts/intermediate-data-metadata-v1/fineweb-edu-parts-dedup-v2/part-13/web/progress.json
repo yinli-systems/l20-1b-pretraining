@@ -1,0 +1,17 @@
+{
+  "accepted": 149241,
+  "contaminated": 272,
+  "cross_partition_duplicate": 11360,
+  "duplicate": 69,
+  "resumed_tokens": {
+    "train": 0,
+    "validation": 0
+  },
+  "seen": 160942,
+  "source": "web",
+  "too_long": 0,
+  "train_target": 1999998165,
+  "train_tokens": 155758103,
+  "val_tokens": 159205,
+  "validation_target": 99999396
+}

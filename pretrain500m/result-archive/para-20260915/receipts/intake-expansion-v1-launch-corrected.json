@@ -1,0 +1,14 @@
+{
+  "checked_utc": "2026-09-14T03:08:38.143731+00:00",
+  "correct_free_bytes": 33861107712,
+  "correction": "original free_bytes_before measured /ssd parent rather than the nested JuiceFS path; do not use that field",
+  "disk_path": "/ssd/scxi253/pretrain500m-20260912-v1/data/intake-expansion-v1",
+  "original_receipt": "/ssd/scxi253/pretrain500m-20260912-v1/receipts/intake-expansion-v1-launch.json",
+  "original_receipt_sha256": "d9bd5729496c0a8bb828b531ea47c65efac81d282d5fd32eb6eb9fd15d4d7703",
+  "pid": 3875433,
+  "plan_sha256": "ca16deedb115a04a33b7b49889317866fb806f64014b2161a04b7803e224d0a6",
+  "process_alive": true,
+  "schema_version": 1,
+  "status": "RAW_INTAKE_RUNNING_NOT_ADMITTED",
+  "training_admitted": false
+}

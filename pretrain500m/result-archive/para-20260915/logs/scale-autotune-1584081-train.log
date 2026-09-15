@@ -1,0 +1,258 @@
+[rank13]: Traceback (most recent call last):
+[rank13]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_v3_autotune.py", line 206, in <module>
+[rank13]:     if __name__=='__main__':main()
+[rank13]:                             ^^^^^^
+[rank13]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_v3_autotune.py", line 151, in main
+[rank13]:     loss.backward();loss_sum+=loss.detach().float()
+[rank13]:     ^^^^^^^^^^^^^^^
+[rank13]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/_tensor.py", line 631, in backward
+[rank13]:     torch.autograd.backward(
+[rank13]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/__init__.py", line 381, in backward
+[rank13]:     _engine_run_backward(
+[rank13]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/graph.py", line 869, in _engine_run_backward
+[rank13]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank13]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank13]: RuntimeError: Error: accessing tensor output of CUDAGraphs that has been overwritten by a subsequent run. Stack trace: File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/model.py", line 142, in forward
+[rank13]:     x = layer(x,self.cos[:,:,:s],self.sin[:,:,:s])
+[rank13]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/model.py", line 107, in forward
+[rank13]:     return x + self.mlp(self.post_attention_layernorm(x))
+[rank13]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/model.py", line 94, in forward
+[rank13]:     return self.down_proj(F.silu(self.gate_proj(x))*self.up_proj(x)). To prevent overwriting, clone the tensor outside of torch.compile() or call torch.compiler.cudagraph_mark_step_begin() before each model invocation.
+[rank15]: Traceback (most recent call last):
+[rank15]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_v3_autotune.py", line 206, in <module>
+[rank15]:     if __name__=='__main__':main()
+[rank15]:                             ^^^^^^
+[rank15]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_v3_autotune.py", line 151, in main
+[rank15]:     loss.backward();loss_sum+=loss.detach().float()
+[rank15]:     ^^^^^^^^^^^^^^^
+[rank15]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/_tensor.py", line 631, in backward
+[rank15]:     torch.autograd.backward(
+[rank15]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/__init__.py", line 381, in backward
+[rank15]:     _engine_run_backward(
+[rank15]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/graph.py", line 869, in _engine_run_backward
+[rank15]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank15]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank15]: RuntimeError: Error: accessing tensor output of CUDAGraphs that has been overwritten by a subsequent run. Stack trace: File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/model.py", line 142, in forward
+[rank15]:     x = layer(x,self.cos[:,:,:s],self.sin[:,:,:s])
+[rank15]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/model.py", line 107, in forward
+[rank15]:     return x + self.mlp(self.post_attention_layernorm(x))
+[rank15]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/model.py", line 94, in forward
+[rank15]:     return self.down_proj(F.silu(self.gate_proj(x))*self.up_proj(x)). To prevent overwriting, clone the tensor outside of torch.compile() or call torch.compiler.cudagraph_mark_step_begin() before each model invocation.
+[rank14]: Traceback (most recent call last):
+[rank14]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_v3_autotune.py", line 206, in <module>
+[rank14]:     if __name__=='__main__':main()
+[rank14]:                             ^^^^^^
+[rank14]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_v3_autotune.py", line 151, in main
+[rank14]:     loss.backward();loss_sum+=loss.detach().float()
+[rank14]:     ^^^^^^^^^^^^^^^
+[rank14]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/_tensor.py", line 631, in backward
+[rank14]:     torch.autograd.backward(
+[rank14]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/__init__.py", line 381, in backward
+[rank14]:     _engine_run_backward(
+[rank14]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/graph.py", line 869, in _engine_run_backward
+[rank14]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank14]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank14]: RuntimeError: Error: accessing tensor output of CUDAGraphs that has been overwritten by a subsequent run. Stack trace: File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/model.py", line 142, in forward
+[rank14]:     x = layer(x,self.cos[:,:,:s],self.sin[:,:,:s])
+[rank14]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/model.py", line 107, in forward
+[rank14]:     return x + self.mlp(self.post_attention_layernorm(x))
+[rank14]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/model.py", line 94, in forward
+[rank14]:     return self.down_proj(F.silu(self.gate_proj(x))*self.up_proj(x)). To prevent overwriting, clone the tensor outside of torch.compile() or call torch.compiler.cudagraph_mark_step_begin() before each model invocation.
+[rank12]: Traceback (most recent call last):
+[rank12]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_v3_autotune.py", line 206, in <module>
+[rank12]:     if __name__=='__main__':main()
+[rank12]:                             ^^^^^^
+[rank12]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_v3_autotune.py", line 151, in main
+[rank12]:     loss.backward();loss_sum+=loss.detach().float()
+[rank12]:     ^^^^^^^^^^^^^^^
+[rank12]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/_tensor.py", line 631, in backward
+[rank12]:     torch.autograd.backward(
+[rank12]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/__init__.py", line 381, in backward
+[rank12]:     _engine_run_backward(
+[rank12]:   File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/autograd/graph.py", line 869, in _engine_run_backward
+[rank12]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank12]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank12]: RuntimeError: Error: accessing tensor output of CUDAGraphs that has been overwritten by a subsequent run. Stack trace: File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/model.py", line 142, in forward
+[rank12]:     x = layer(x,self.cos[:,:,:s],self.sin[:,:,:s])
+[rank12]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/model.py", line 107, in forward
+[rank12]:     return x + self.mlp(self.post_attention_layernorm(x))
+[rank12]:   File "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/model.py", line 94, in forward
+[rank12]:     return self.down_proj(F.silu(self.gate_proj(x))*self.up_proj(x)). To prevent overwriting, clone the tensor outside of torch.compile() or call torch.compiler.cudagraph_mark_step_begin() before each model invocation.
+W0912 11:55:52.133000 3420158 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 3420196 closing signal SIGTERM
+W0912 11:55:52.137000 3420158 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 3420198 closing signal SIGTERM
+W0912 11:55:52.137000 3420158 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 3420199 closing signal SIGTERM
+[rank12]:[W912 11:55:52.665229068 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+E0912 11:55:54.118000 3420158 torch/distributed/elastic/multiprocessing/api.py:986] failed (exitcode: 1) local_rank: 1 (pid: 3420197) of binary: /ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 994, in <module>
+    main()
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 990, in main
+    run(args)
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 317, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2/train_v3_autotune.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-09-12_11:55:54
+  host      : wqd10nbl11g5
+  rank      : 12 (local_rank: 0)
+  exitcode  : 1 (pid: 3420196)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-09-12_11:55:54
+  host      : wqd10nbl11g5
+  rank      : 14 (local_rank: 2)
+  exitcode  : 1 (pid: 3420198)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-09-12_11:55:54
+  host      : wqd10nbl11g5
+  rank      : 15 (local_rank: 3)
+  exitcode  : -15 (pid: 3420199)
+  error_file: <N/A>
+  traceback : Signal 15 (SIGTERM) received by PID 3420199
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-09-12_11:55:52
+  host      : wqd10nbl11g5
+  rank      : 13 (local_rank: 1)
+  exitcode  : 1 (pid: 3420197)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: wqd10nbl11g5: task 3: Exited with exit code 1
+srun: Terminating StepId=1584081.0
+slurmstepd: error: *** STEP 1584081.0 ON wqd10nbj02g1 CANCELLED AT 2026-09-12T11:55:54 ***
+W0912 11:55:54.479000 2960980 torch/distributed/elastic/agent/server/api.py:739] Received 15 death signal, shutting down workers
+W0912 11:55:54.479000 3549922 torch/distributed/elastic/agent/server/api.py:739] Received 15 death signal, shutting down workers
+W0912 11:55:54.482000 2960980 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 2961370 closing signal SIGTERM
+W0912 11:55:54.482000 3549922 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 3549993 closing signal SIGTERM
+W0912 11:55:54.484000 2960980 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 2961371 closing signal SIGTERM
+W0912 11:55:54.484000 3549922 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 3549994 closing signal SIGTERM
+W0912 11:55:54.484000 3549922 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 3549995 closing signal SIGTERM
+W0912 11:55:54.485000 3549922 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 3549996 closing signal SIGTERM
+W0912 11:55:54.484000 2960980 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 2961372 closing signal SIGTERM
+W0912 11:55:54.484000 2960980 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 2961373 closing signal SIGTERM
+W0912 11:55:54.479000 576966 torch/distributed/elastic/agent/server/api.py:739] Received 15 death signal, shutting down workers
+W0912 11:55:54.490000 576966 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 577026 closing signal SIGTERM
+W0912 11:55:54.492000 576966 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 577027 closing signal SIGTERM
+W0912 11:55:54.493000 576966 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 577028 closing signal SIGTERM
+W0912 11:55:54.548000 576966 torch/distributed/elastic/multiprocessing/api.py:1012] Sending process 577029 closing signal SIGTERM
+W0912 11:56:24.530000 2960980 torch/distributed/elastic/multiprocessing/api.py:1031] Unable to shutdown process 2961370 via 15, forcefully exiting via 9
+W0912 11:56:24.545000 3549922 torch/distributed/elastic/multiprocessing/api.py:1031] Unable to shutdown process 3549993 via 15, forcefully exiting via 9
+W0912 11:56:24.548000 576966 torch/distributed/elastic/multiprocessing/api.py:1031] Unable to shutdown process 577026 via 15, forcefully exiting via 9
+W0912 11:56:25.080000 3549922 torch/distributed/elastic/multiprocessing/api.py:1031] Unable to shutdown process 3549994 via 15, forcefully exiting via 9
+W0912 11:56:25.130000 576966 torch/distributed/elastic/multiprocessing/api.py:1031] Unable to shutdown process 577027 via 15, forcefully exiting via 9
+W0912 11:56:25.137000 2960980 torch/distributed/elastic/multiprocessing/api.py:1031] Unable to shutdown process 2961371 via 15, forcefully exiting via 9
+W0912 11:56:25.592000 3549922 torch/distributed/elastic/multiprocessing/api.py:1031] Unable to shutdown process 3549995 via 15, forcefully exiting via 9
+W0912 11:56:25.649000 576966 torch/distributed/elastic/multiprocessing/api.py:1031] Unable to shutdown process 577028 via 15, forcefully exiting via 9
+W0912 11:56:25.723000 2960980 torch/distributed/elastic/multiprocessing/api.py:1031] Unable to shutdown process 2961372 via 15, forcefully exiting via 9
+W0912 11:56:26.137000 3549922 torch/distributed/elastic/multiprocessing/api.py:1031] Unable to shutdown process 3549996 via 15, forcefully exiting via 9
+W0912 11:56:26.200000 576966 torch/distributed/elastic/multiprocessing/api.py:1031] Unable to shutdown process 577029 via 15, forcefully exiting via 9
+W0912 11:56:26.295000 2960980 torch/distributed/elastic/multiprocessing/api.py:1031] Unable to shutdown process 2961373 via 15, forcefully exiting via 9
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 994, in <module>
+    main()
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 990, in main
+    run(args)
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 308, in launch_agent
+    result = agent.run()
+             ^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/metrics/api.py", line 134, in wrapper
+    result = f(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/agent/server/api.py", line 731, in run
+    result = self._invoke_run(role)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/agent/server/api.py", line 908, in _invoke_run
+    time.sleep(monitor_interval)
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/api.py", line 86, in _terminate_process_handler
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 994, in <module>
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 3549922 got signal: 15
+    main()
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 990, in main
+    run(args)
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 308, in launch_agent
+    result = agent.run()
+             ^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/metrics/api.py", line 134, in wrapper
+    result = f(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/agent/server/api.py", line 731, in run
+    result = self._invoke_run(role)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/agent/server/api.py", line 908, in _invoke_run
+    time.sleep(monitor_interval)
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/api.py", line 86, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 576966 got signal: 15
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 994, in <module>
+    main()
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 362, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 990, in main
+    run(args)
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/run.py", line 981, in run
+    elastic_launch(
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 170, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 308, in launch_agent
+    result = agent.run()
+             ^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/metrics/api.py", line 134, in wrapper
+    result = f(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/agent/server/api.py", line 731, in run
+    result = self._invoke_run(role)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/agent/server/api.py", line 908, in _invoke_run
+    time.sleep(monitor_interval)
+  File "/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/api.py", line 86, in _terminate_process_handler
+    raise SignalException(f"Process {os.getpid()} got signal: {sigval}", sigval=sigval)
+torch.distributed.elastic.multiprocessing.api.SignalException: Process 2960980 got signal: 15
+srun: error: wqd10nbj06g4: task 2: Exited with exit code 1
+srun: error: wqd10nbj06g2: task 1: Exited with exit code 1
+srun: error: wqd10nbj02g1: task 0: Exited with exit code 1

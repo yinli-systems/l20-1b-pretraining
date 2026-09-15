@@ -1,0 +1,13 @@
+{
+  "status": "PASS_REMOTE_REFERENCE_BUNDLE_INTEGRITY",
+  "checked_utc": "2026-09-13T20:50:13.267899+00:00",
+  "remote_output": "/ssd/scxi253/pretrain500m-20260912-v1/evaluation/benchmark-reservation-v1",
+  "archive_sha256": "105e9d4744fdf54657fb38d614b9b1535037629e0d2304c1f0a648c0db289c0c",
+  "source_files": 32,
+  "reference_records": 11830,
+  "reference_fields": 53073,
+  "references_sha256": "4a00a3aa9cfdd9f3a85d3b886a8de3b23687b1690c34b66f139ab451080a4e5c",
+  "training_admitted": false,
+  "matcher_implemented": false,
+  "corpus_scan_completed": false
+}

@@ -1,0 +1,20 @@
+/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+{"step": 0, "seconds": 65.36115839146078, "loss": 11.111312866210938, "grad_norm": 3.7483322620391846}
+{"step": 1, "seconds": 2.6301648132503033, "loss": 10.863664627075195, "grad_norm": 2.9205894470214844}
+{"step": 2, "seconds": 2.5679910853505135, "loss": 11.154626846313477, "grad_norm": 1.3650386333465576}
+{"step": 3, "seconds": 2.508734891191125, "loss": 10.902055740356445, "grad_norm": 0.7672751545906067}
+{"step": 4, "seconds": 2.490751961246133, "loss": 10.707372665405273, "grad_norm": 0.7682216167449951}
+{"step": 5, "seconds": 2.4881303776055574, "loss": 10.83845329284668, "grad_norm": 0.6177279949188232}
+{"step": 6, "seconds": 2.50220930762589, "loss": 10.460565567016602, "grad_norm": 0.5807110667228699}
+{"step": 7, "seconds": 2.519102642312646, "loss": 10.278617858886719, "grad_norm": 0.4056020975112915}
+{"step": 8, "seconds": 2.5059975162148476, "loss": 10.227766990661621, "grad_norm": 0.3587513864040375}
+{"step": 9, "seconds": 2.5091839972883463, "loss": 10.139578819274902, "grad_norm": 0.34457236528396606}
+{"step": 10, "seconds": 2.501020669937134, "loss": 9.925402641296387, "grad_norm": 0.32141023874282837}
+{"step": 11, "seconds": 2.494621040299535, "loss": 9.931506156921387, "grad_norm": 0.5255925059318542}
+{"step": 12, "seconds": 2.497284622862935, "loss": 9.625368118286133, "grad_norm": 0.24913279712200165}
+{"step": 13, "seconds": 2.486624425277114, "loss": 9.436312675476074, "grad_norm": 0.306771457195282}
+{"step": 14, "seconds": 2.4981865976005793, "loss": 9.276467323303223, "grad_norm": 0.27305102348327637}
+{"step": 15, "seconds": 2.4989794678986073, "loss": 9.212728500366211, "grad_norm": 0.45148295164108276}
+{"step": 16, "seconds": 2.50332242064178, "loss": 8.997095108032227, "grad_norm": 0.36821654438972473}
+{"evidence_class": "synthetic_throughput_only", "job_id": "1583421", "hostname": "wqd10nae09g3", "world_size": 8, "config": {"vocab_size": 50280, "hidden_size": 1536, "intermediate_size": 4096, "num_hidden_layers": 18, "num_attention_heads": 12, "num_key_value_heads": 4, "max_position_embeddings": 2048, "rms_norm_eps": 1e-05, "rope_theta": 10000.0, "initializer_range": 0.02, "tie_word_embeddings": true, "eos_token_id": 50279, "pad_token_id": 1, "model_type": "llama", "architectures": ["LlamaForCausalLM"], "hidden_act": "silu", "attention_bias": false, "mlp_bias": false, "attention_dropout": 0.0, "head_dim": 128, "use_cache": true, "bos_token_id": null}, "parameters": 530271744, "torch": "2.11.0+cu128", "cuda": "12.8", "gpu": "NVIDIA GeForce RTX 4090", "capability": [8, 9], "gpu_memory_bytes": 23649648640, "compile": true, "microbatch": 4, "accumulation": 4, "warmup_steps": 5, "measurement_steps": 12, "seconds": [2.488701343536377, 2.503155469894409, 2.519284248352051, 2.5060675144195557, 2.51023268699646, 2.5014517307281494, 2.495434522628784, 2.4978206157684326, 2.48691987991333, 2.499007225036621, 2.499871015548706, 2.5035669803619385], "losses": [10.83845329284668, 10.460565567016602, 10.278617858886719, 10.227766990661621, 10.139578819274902, 9.925402641296387, 9.931506156921387, 9.625368118286133, 9.436312675476074, 9.276467323303223, 9.212728500366211, 8.997095108032227], "tokens_per_optimizer_step": 262144, "tokens_per_second": 104817.37377113177, "tokens_per_second_p10": 104430.15954575119, "tokens_per_second_p50": 104829.87780848498, "tokens_per_second_p90": 105049.44033708714, "total_elapsed_seconds": 105.5692224688828, "peak_allocated_bytes": 20027333120, "peak_reserved_bytes": 20401094656, "estimated_model_flops_per_token": 3860766720, "dense_bf16_peak_flops_per_gpu": null, "mfu": null, "limitations": ["No corpus I/O, validation or checkpoint overhead included in steady-state throughput.", "Synthetic repeated random batch does not establish language learning or quality.", "MFU stays unset until exact device precision peak is sourced."]}

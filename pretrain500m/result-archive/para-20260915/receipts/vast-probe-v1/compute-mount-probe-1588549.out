@@ -1,0 +1,6 @@
+HOST=wqd10nah09g4
+2026-09-14T09:27:13+08:00
+/vast  main.vast1.bz1.paratera.com:/hpc1/fs1/slurm-vast nfs    rw,relatime,vers=3,rsize=1048576,wsize=1048576,namlen=255,hard,proto=tcp,nconnect=16,timeo=600,retrans=2,sec=sys,mountaddr=100.127.8.23,mountvers=3,mountport=20048,mountproto=udp,local_lock=none,addr=100.127.8.23
+main.vast1.bz1.paratera.com:/hpc1/fs1/slurm-vast 109951162777600 11713638301696 98237524475904  11% /vast
+a9ccaa033b1578fa502f49de0e034d74d68418004354bcf3fdbb7edb573ef0eb  /vast/scxi253/pretrain500m-20260912-v1-artifacts/.compute-probe-1588549
+COMPUTE_VAST_PROBE=PASS_REMOVED

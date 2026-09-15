@@ -1,0 +1,26 @@
+{
+  "capacity_snapshot": "\u516c\u5171partition\uff1a\nPartition      \u53ef\u7528GPU\u6570\u91cf  \u603b\u5361\u6570\ngpu_4090             0     248\ngpu_5090             6     248\nhp_4090              0     272\nhp_5090             22     408\n\n\u53ef\u8fd0\u884c\u4f5c\u4e1a\u6570\u91cf\uff08\u6309GPU\u89c4\u6a21\uff09\uff1a\nPartition      1\u5361GPU 2\u5361GPU 3\u5361GPU 4\u5361GPU 5\u5361GPU 6\u5361GPU 7\u5361GPU 8\u5361GPU\ngpu_4090        0      0      0      0      0      0      0      0\ngpu_5090        6      2      1      1      0      0      0      0\nhp_4090         0      0      0      0      0      0      0      0\nhp_5090        22     10      5      5      2      2      2      2\n",
+  "checked_utc": "2026-09-15T05:30:37.939511+00:00",
+  "claim_boundary": "submitted adaptive R4 two-seed seven-task capability screens; allocation, completion and candidate quality remain unverified",
+  "formal_promotion": false,
+  "free_bytes_before_submit": 114649272320,
+  "jobs": [
+    {
+      "candidate_id": "r4-lr6e5-t1b-seed20260916",
+      "job_id": 1591852,
+      "job_name": "p529m-r4eval-s20260916"
+    },
+    {
+      "candidate_id": "r4-lr6e5-t1b-seed20260917",
+      "job_id": 1591853,
+      "job_name": "p529m-r4eval-s20260917"
+    }
+  ],
+  "plan_sha256": "ec14774679e3b86cf74393db5020778e9bc05f4527993c141f45834eb8207f26",
+  "runner_sha256": "ac2b72169c8beff51b795f16858933c6aa0c9243cd5f22bf4d50d9636e4de14f",
+  "schema": "p529m-r4-extension-capability-submission-v1",
+  "status": "SUBMITTED_PENDING_ALLOCATION",
+  "storage_gate_bytes": 10737418240,
+  "submitted_gpu_total": 4,
+  "world_size_per_job": 2
+}

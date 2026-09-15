@@ -1,0 +1,70 @@
+2026-09-12:09:48:29 WARNING  [__main__:368]  --limit SHOULD ONLY BE USED FOR TESTING.REAL METRICS SHOULD NOT BE COMPUTED USING LIMIT.
+2026-09-12:09:48:29 INFO     [__main__:440] Selected Tasks: ['arc_challenge', 'arc_easy', 'boolq', 'hellaswag', 'openbookqa', 'piqa', 'winogrande']
+2026-09-12:09:48:29 INFO     [evaluator:189] Setting random seed to 42 | Setting numpy seed to 42 | Setting torch manual seed to 42 | Setting fewshot manual seed to 1234
+2026-09-12:09:48:29 INFO     [evaluator:227] Initializing hf model, with arguments: {'pretrained': '/ssd/scxi253/pretrain500m-20260912-v1/pilots/eval-smoke-model', 'dtype': 'bfloat16', 'trust_remote_code': False, 'max_length': 2048}
+2026-09-12:09:48:29 INFO     [models.huggingface:137] Using device 'cuda'
+2026-09-12:09:48:29 INFO     [models.huggingface:382] Model parallel was set to False, max memory was not set, and device map was set to {'': 'cuda'}
+`torch_dtype` is deprecated! Use `dtype` instead!
+Using the latest cached version of the dataset since allenai/ai2_arc couldn't be found on the Hugging Face Hub (offline mode is enabled).
+2026-09-12:09:48:30 WARNING  [datasets.load:1645] Using the latest cached version of the dataset since allenai/ai2_arc couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'ARC-Challenge' at /ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/datasets/allenai___ai2_arc/ARC-Challenge/0.0.0/210d026faf9955653af8916fad021475a3f00453 (last modified on Sat Sep 12 09:14:54 2026).
+2026-09-12:09:48:30 WARNING  [datasets.packaged_modules.cache.cache:95] Found the latest cached dataset configuration 'ARC-Challenge' at /ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/datasets/allenai___ai2_arc/ARC-Challenge/0.0.0/210d026faf9955653af8916fad021475a3f00453 (last modified on Sat Sep 12 09:14:54 2026).
+Using the latest cached version of the dataset since allenai/ai2_arc couldn't be found on the Hugging Face Hub (offline mode is enabled).
+2026-09-12:09:48:30 WARNING  [datasets.load:1645] Using the latest cached version of the dataset since allenai/ai2_arc couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'ARC-Easy' at /ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/datasets/allenai___ai2_arc/ARC-Easy/0.0.0/210d026faf9955653af8916fad021475a3f00453 (last modified on Sat Sep 12 09:14:34 2026).
+2026-09-12:09:48:30 WARNING  [datasets.packaged_modules.cache.cache:95] Found the latest cached dataset configuration 'ARC-Easy' at /ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/datasets/allenai___ai2_arc/ARC-Easy/0.0.0/210d026faf9955653af8916fad021475a3f00453 (last modified on Sat Sep 12 09:14:34 2026).
+2026-09-12:09:48:30 WARNING  [api.task:844] [Task: boolq] metric acc is defined, but aggregation is not. using default aggregation=mean
+2026-09-12:09:48:30 WARNING  [api.task:856] [Task: boolq] metric acc is defined, but higher_is_better is not. using default higher_is_better=True
+Using the latest cached version of the dataset since super_glue couldn't be found on the Hugging Face Hub (offline mode is enabled).
+2026-09-12:09:48:30 WARNING  [datasets.load:1645] Using the latest cached version of the dataset since super_glue couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'boolq' at /ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/datasets/super_glue/boolq/0.0.0/3de24cf8022e94f4ee4b9d55a6f539891524d646 (last modified on Sat Sep 12 09:15:22 2026).
+2026-09-12:09:48:30 WARNING  [datasets.packaged_modules.cache.cache:95] Found the latest cached dataset configuration 'boolq' at /ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/datasets/super_glue/boolq/0.0.0/3de24cf8022e94f4ee4b9d55a6f539891524d646 (last modified on Sat Sep 12 09:15:22 2026).
+Using the latest cached version of the dataset since hellaswag couldn't be found on the Hugging Face Hub (offline mode is enabled).
+2026-09-12:09:48:30 WARNING  [datasets.load:1645] Using the latest cached version of the dataset since hellaswag couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/datasets/hellaswag/default/0.0.0/218ec52e09a7e7462a5400043bb9a69a41d06b76 (last modified on Sat Sep 12 09:31:47 2026).
+2026-09-12:09:48:30 WARNING  [datasets.packaged_modules.cache.cache:95] Found the latest cached dataset configuration 'default' at /ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/datasets/hellaswag/default/0.0.0/218ec52e09a7e7462a5400043bb9a69a41d06b76 (last modified on Sat Sep 12 09:31:47 2026).
+Using the latest cached version of the dataset since openbookqa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+2026-09-12:09:48:33 WARNING  [datasets.load:1645] Using the latest cached version of the dataset since openbookqa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'main' at /ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/datasets/openbookqa/main/0.0.0/388097ea7776314e93a529163e0fea805b8a6454 (last modified on Sat Sep 12 09:15:51 2026).
+2026-09-12:09:48:33 WARNING  [datasets.packaged_modules.cache.cache:95] Found the latest cached dataset configuration 'main' at /ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/datasets/openbookqa/main/0.0.0/388097ea7776314e93a529163e0fea805b8a6454 (last modified on Sat Sep 12 09:15:51 2026).
+Using the latest cached version of the dataset since baber/piqa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+2026-09-12:09:48:33 WARNING  [datasets.load:1645] Using the latest cached version of the dataset since baber/piqa couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'default' at /ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/datasets/baber___piqa/default/0.0.0/142f6d7367fd9877f0fb3b5734ea6a545f54cdd1 (last modified on Sat Sep 12 09:14:27 2026).
+2026-09-12:09:48:33 WARNING  [datasets.packaged_modules.cache.cache:95] Found the latest cached dataset configuration 'default' at /ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/datasets/baber___piqa/default/0.0.0/142f6d7367fd9877f0fb3b5734ea6a545f54cdd1 (last modified on Sat Sep 12 09:14:27 2026).
+Using the latest cached version of the dataset since winogrande couldn't be found on the Hugging Face Hub (offline mode is enabled).
+2026-09-12:09:48:33 WARNING  [datasets.load:1645] Using the latest cached version of the dataset since winogrande couldn't be found on the Hugging Face Hub (offline mode is enabled).
+Found the latest cached dataset configuration 'winogrande_xl' at /ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/datasets/winogrande/winogrande_xl/0.0.0/01e74176c63542e6b0bcb004dcdea22d94fb67b5 (last modified on Sat Sep 12 09:15:37 2026).
+2026-09-12:09:48:33 WARNING  [datasets.packaged_modules.cache.cache:95] Found the latest cached dataset configuration 'winogrande_xl' at /ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/datasets/winogrande/winogrande_xl/0.0.0/01e74176c63542e6b0bcb004dcdea22d94fb67b5 (last modified on Sat Sep 12 09:15:37 2026).
+2026-09-12:09:48:34 WARNING  [evaluator:309] Overwriting default num_fewshot of winogrande from None to 0
+2026-09-12:09:48:34 WARNING  [evaluator:309] Overwriting default num_fewshot of piqa from None to 0
+2026-09-12:09:48:34 WARNING  [evaluator:309] Overwriting default num_fewshot of openbookqa from None to 0
+2026-09-12:09:48:34 WARNING  [evaluator:309] Overwriting default num_fewshot of hellaswag from None to 0
+2026-09-12:09:48:34 WARNING  [evaluator:309] Overwriting default num_fewshot of boolq from None to 0
+2026-09-12:09:48:34 WARNING  [evaluator:309] Overwriting default num_fewshot of arc_easy from None to 0
+2026-09-12:09:48:34 WARNING  [evaluator:309] Overwriting default num_fewshot of arc_challenge from None to 0
+2026-09-12:09:48:34 INFO     [api.task:434] Building contexts for winogrande on rank 0...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 27869.13it/s]
+2026-09-12:09:48:34 INFO     [api.task:434] Building contexts for piqa on rank 0...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 1312.98it/s]
+2026-09-12:09:48:34 INFO     [api.task:434] Building contexts for openbookqa on rank 0...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 3271.69it/s]
+2026-09-12:09:48:34 INFO     [api.task:434] Building contexts for hellaswag on rank 0...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 3348.75it/s]
+2026-09-12:09:48:34 INFO     [api.task:434] Building contexts for boolq on rank 0...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 3049.29it/s]
+2026-09-12:09:48:34 INFO     [api.task:434] Building contexts for arc_easy on rank 0...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 1948.57it/s]
+2026-09-12:09:48:34 INFO     [api.task:434] Building contexts for arc_challenge on rank 0...
+  0%|          | 0/2 [00:00<?, ?it/s]100%|██████████| 2/2 [00:00<00:00, 2014.07it/s]
+2026-09-12:09:48:34 INFO     [evaluator:559] Running loglikelihood requests
+Running loglikelihood requests:   0%|          | 0/44 [00:00<?, ?it/s]Running loglikelihood requests:   2%|▏         | 1/44 [00:00<00:15,  2.77it/s]Running loglikelihood requests: 100%|██████████| 44/44 [00:00<00:00, 97.75it/s]
+fatal: not a git repository (or any parent up to mount point /)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-09-12:09:48:38 INFO     [loggers.evaluation_tracker:209] Saving results aggregated
+2026-09-12:09:48:38 INFO     [loggers.evaluation_tracker:298] Saving per-sample results for: arc_challenge
+2026-09-12:09:48:38 INFO     [loggers.evaluation_tracker:298] Saving per-sample results for: arc_easy
+2026-09-12:09:48:38 INFO     [loggers.evaluation_tracker:298] Saving per-sample results for: boolq
+2026-09-12:09:48:38 INFO     [loggers.evaluation_tracker:298] Saving per-sample results for: hellaswag
+2026-09-12:09:48:38 INFO     [loggers.evaluation_tracker:298] Saving per-sample results for: openbookqa
+2026-09-12:09:48:38 INFO     [loggers.evaluation_tracker:298] Saving per-sample results for: piqa
+2026-09-12:09:48:38 INFO     [loggers.evaluation_tracker:298] Saving per-sample results for: winogrande

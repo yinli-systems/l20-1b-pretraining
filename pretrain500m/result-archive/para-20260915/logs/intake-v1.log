@@ -1,0 +1,118 @@
+{"source": "infiwebmath4", "rows": 1000, "network_bytes": 4366302, "code_attempts": 0}
+{"source": "finemath4", "rows": 1000, "network_bytes": 3675066, "code_attempts": 0}
+{"source": "infiwebmath4", "rows": 2000, "network_bytes": 7447000, "code_attempts": 0}
+{"source": "finemath4", "rows": 2000, "network_bytes": 6379670, "code_attempts": 0}
+{"source": "infiwebmath4", "rows": 3000, "network_bytes": 10481142, "code_attempts": 0}
+{"source": "finemath4", "rows": 3000, "network_bytes": 9081230, "code_attempts": 0}
+{"source": "infiwebmath4", "rows": 4000, "network_bytes": 13548644, "code_attempts": 0}
+{"id": "infiwebmath4", "status": "RAW_SEGMENT_READY", "rows_written": 4000, "output_bytes": 9160835, "error_type": null, "stop_reason": null}
+{"source": "finemath4", "rows": 4000, "network_bytes": 11955509, "code_attempts": 0}
+{"id": "finemath4", "status": "RAW_SEGMENT_READY", "rows_written": 4000, "output_bytes": 8419734, "error_type": null, "stop_reason": null}
+{"source": "code_java", "rows": 35, "network_bytes": 5007648, "code_attempts": 35}
+{"source": "code_cpp", "rows": 144, "network_bytes": 4716380, "code_attempts": 147}
+{"source": "code_java", "rows": 63, "network_bytes": 5118135, "code_attempts": 63}
+{"source": "code_java", "rows": 96, "network_bytes": 5228780, "code_attempts": 96}
+{"source": "code_cpp", "rows": 269, "network_bytes": 4810278, "code_attempts": 274}
+{"source": "code_java", "rows": 134, "network_bytes": 5338883, "code_attempts": 134}
+{"id": "code_java", "status": "RAW_SEGMENT_READY", "rows_written": 134, "output_bytes": 116458, "error_type": null, "stop_reason": null}
+{"source": "code_cpp", "rows": 414, "network_bytes": 4904548, "code_attempts": 423}
+{"source": "code_javascript", "rows": 172, "network_bytes": 5169786, "code_attempts": 173}
+{"source": "code_cpp", "rows": 548, "network_bytes": 4998191, "code_attempts": 565}
+{"id": "code_cpp", "status": "RAW_SEGMENT_READY", "rows_written": 548, "output_bytes": 642770, "error_type": null, "stop_reason": null}
+<unknown>:43: SyntaxWarning: invalid escape sequence '\_'
+<unknown>:161: SyntaxWarning: invalid escape sequence '\p'
+<unknown>:60: SyntaxWarning: invalid escape sequence '\ '
+<unknown>:62: SyntaxWarning: invalid escape sequence '\d'
+{"source": "code_javascript", "rows": 355, "network_bytes": 5260623, "code_attempts": 358}
+<unknown>:107: SyntaxWarning: invalid escape sequence '\l'
+<unknown>:34: SyntaxWarning: invalid escape sequence '\.'
+<unknown>:9: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_python", "rows": 147, "network_bytes": 5845444, "code_attempts": 162}
+<unknown>:13: SyntaxWarning: invalid escape sequence '\w'
+<unknown>:24: SyntaxWarning: invalid escape sequence '\w'
+<unknown>:35: SyntaxWarning: invalid escape sequence '\w'
+<unknown>:168: SyntaxWarning: invalid escape sequence '\p'
+<unknown>:406: SyntaxWarning: invalid escape sequence '\p'
+<unknown>:21: SyntaxWarning: invalid escape sequence '\)'
+{"source": "code_javascript", "rows": 529, "network_bytes": 5351602, "code_attempts": 532}
+<unknown>:37: SyntaxWarning: invalid escape sequence '\<'
+<unknown>:56: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:61: SyntaxWarning: invalid escape sequence '\m'
+<unknown>:284: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:293: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:294: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:44: SyntaxWarning: invalid escape sequence '\d'
+{"source": "code_python", "rows": 303, "network_bytes": 5937830, "code_attempts": 332}
+<unknown>:48: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:50: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:52: SyntaxWarning: invalid escape sequence '\w'
+<unknown>:66: SyntaxWarning: invalid escape sequence '\d'
+<unknown>:67: SyntaxWarning: invalid escape sequence '\w'
+<unknown>:49: SyntaxWarning: invalid escape sequence '\s'
+<unknown>:54: SyntaxWarning: invalid escape sequence '\s'
+{"source": "code_javascript", "rows": 720, "network_bytes": 5442544, "code_attempts": 723}
+{"id": "code_javascript", "status": "RAW_SEGMENT_READY", "rows_written": 720, "output_bytes": 829119, "error_type": null, "stop_reason": null}
+<unknown>:214: SyntaxWarning: invalid escape sequence '\/'
+<unknown>:227: SyntaxWarning: invalid escape sequence '\{'
+<unknown>:228: SyntaxWarning: invalid escape sequence '\{'
+{"source": "code_python", "rows": 467, "network_bytes": 6031057, "code_attempts": 508}
+<unknown>:7: SyntaxWarning: invalid escape sequence '\/'
+<unknown>:787: SyntaxWarning: invalid escape sequence '\E'
+<unknown>:788: SyntaxWarning: invalid escape sequence '\E'
+<unknown>:799: SyntaxWarning: invalid escape sequence '\E'
+<unknown>:800: SyntaxWarning: invalid escape sequence '\E'
+<unknown>:801: SyntaxWarning: invalid escape sequence '\P'
+<unknown>:803: SyntaxWarning: invalid escape sequence '\Y'
+<unknown>:804: SyntaxWarning: invalid escape sequence '\Y'
+{"source": "code_python", "rows": 629, "network_bytes": 6123323, "code_attempts": 679}
+{"id": "code_python", "status": "RAW_SEGMENT_READY", "rows_written": 629, "output_bytes": 817159, "error_type": null, "stop_reason": null}
+{"source": "cosmopedia2", "rows": 1000, "network_bytes": 6141801, "code_attempts": 0}
+{"source": "code_typescript", "rows": 349, "network_bytes": 5022129, "code_attempts": 350}
+{"source": "cosmopedia2", "rows": 2000, "network_bytes": 9216763, "code_attempts": 0}
+{"source": "cosmopedia2", "rows": 3000, "network_bytes": 12352392, "code_attempts": 0}
+{"source": "cosmopedia2", "rows": 4000, "network_bytes": 15458921, "code_attempts": 0}
+{"id": "cosmopedia2", "status": "RAW_SEGMENT_READY", "rows_written": 4000, "output_bytes": 8632162, "error_type": null, "stop_reason": null}
+{"source": "dclm", "rows": 1000, "network_bytes": 6429290, "code_attempts": 0}
+{"source": "dclm", "rows": 2000, "network_bytes": 10175166, "code_attempts": 0}
+{"source": "code_typescript", "rows": 710, "network_bytes": 5114749, "code_attempts": 711}
+{"source": "dclm", "rows": 3000, "network_bytes": 13692489, "code_attempts": 0}
+{"source": "dclm", "rows": 4000, "network_bytes": 16728112, "code_attempts": 0}
+{"id": "dclm", "status": "RAW_SEGMENT_READY", "rows_written": 4000, "output_bytes": 9747208, "error_type": null, "stop_reason": null}
+{"source": "multilingual_arb_Arab", "rows": 1000, "network_bytes": 6735725, "code_attempts": 0}
+{"source": "multilingual_arb_Arab", "rows": 1583, "network_bytes": 9784341, "code_attempts": 0}
+{"source": "multilingual_arb_Arab", "rows": 2583, "network_bytes": 15329211, "code_attempts": 0}
+{"source": "code_typescript", "rows": 1081, "network_bytes": 5208354, "code_attempts": 1082}
+{"source": "multilingual_arb_Arab", "rows": 3583, "network_bytes": 23265223, "code_attempts": 0}
+{"id": "multilingual_arb_Arab", "status": "RAW_SEGMENT_READY", "rows_written": 3583, "output_bytes": 7897772, "error_type": null, "stop_reason": null}
+{"source": "multilingual_cmn_Hani", "rows": 1000, "network_bytes": 3838071, "code_attempts": 0}
+{"source": "multilingual_cmn_Hani", "rows": 2000, "network_bytes": 7130322, "code_attempts": 0}
+{"source": "multilingual_cmn_Hani", "rows": 3000, "network_bytes": 10835426, "code_attempts": 0}
+{"source": "code_typescript", "rows": 1464, "network_bytes": 5301061, "code_attempts": 1465}
+{"id": "code_typescript", "status": "RAW_SEGMENT_READY", "rows_written": 1464, "output_bytes": 1349968, "error_type": null, "stop_reason": null}
+{"source": "multilingual_cmn_Hani", "rows": 4000, "network_bytes": 14051800, "code_attempts": 0}
+{"id": "multilingual_cmn_Hani", "status": "RAW_SEGMENT_READY", "rows_written": 4000, "output_bytes": 6791761, "error_type": null, "stop_reason": null}
+{"source": "multilingual_deu_Latn", "rows": 1000, "network_bytes": 4930592, "code_attempts": 0}
+{"source": "multilingual_fra_Latn", "rows": 1000, "network_bytes": 4569725, "code_attempts": 0}
+{"source": "multilingual_deu_Latn", "rows": 2000, "network_bytes": 10893921, "code_attempts": 0}
+{"source": "multilingual_fra_Latn", "rows": 2000, "network_bytes": 9646209, "code_attempts": 0}
+{"source": "multilingual_deu_Latn", "rows": 3000, "network_bytes": 15015546, "code_attempts": 0}
+{"source": "multilingual_fra_Latn", "rows": 3000, "network_bytes": 13646482, "code_attempts": 0}
+{"source": "multilingual_deu_Latn", "rows": 4000, "network_bytes": 19365401, "code_attempts": 0}
+{"id": "multilingual_deu_Latn", "status": "RAW_SEGMENT_READY", "rows_written": 4000, "output_bytes": 8189127, "error_type": null, "stop_reason": null}
+{"source": "multilingual_fra_Latn", "rows": 4000, "network_bytes": 18219167, "code_attempts": 0}
+{"id": "multilingual_fra_Latn", "status": "RAW_SEGMENT_READY", "rows_written": 4000, "output_bytes": 7429735, "error_type": null, "stop_reason": null}
+{"source": "multilingual_jpn_Jpan", "rows": 1000, "network_bytes": 3636715, "code_attempts": 0}
+{"source": "multilingual_spa_Latn", "rows": 1000, "network_bytes": 2976405, "code_attempts": 0}
+{"source": "multilingual_jpn_Jpan", "rows": 2000, "network_bytes": 6933956, "code_attempts": 0}
+{"source": "multilingual_spa_Latn", "rows": 2000, "network_bytes": 7233751, "code_attempts": 0}
+{"source": "multilingual_jpn_Jpan", "rows": 3000, "network_bytes": 9634071, "code_attempts": 0}
+{"source": "multilingual_spa_Latn", "rows": 3000, "network_bytes": 10290209, "code_attempts": 0}
+{"source": "multilingual_jpn_Jpan", "rows": 4000, "network_bytes": 13670642, "code_attempts": 0}
+{"id": "multilingual_jpn_Jpan", "status": "RAW_SEGMENT_READY", "rows_written": 4000, "output_bytes": 5592067, "error_type": null, "stop_reason": null}
+{"source": "multilingual_spa_Latn", "rows": 4000, "network_bytes": 14163692, "code_attempts": 0}
+{"id": "multilingual_spa_Latn", "status": "RAW_SEGMENT_READY", "rows_written": 4000, "output_bytes": 5764647, "error_type": null, "stop_reason": null}
+{"source": "pdf_en", "rows": 1000, "network_bytes": 7732583, "code_attempts": 0}
+{"source": "pdf_en", "rows": 2000, "network_bytes": 14851176, "code_attempts": 0}
+{"source": "pdf_en", "rows": 3000, "network_bytes": 22221576, "code_attempts": 0}
+{"source": "pdf_en", "rows": 4000, "network_bytes": 30346369, "code_attempts": 0}
+{"id": "pdf_en", "status": "RAW_SEGMENT_READY", "rows_written": 4000, "output_bytes": 20712618, "error_type": null, "stop_reason": null}

@@ -1,0 +1,7 @@
+{
+  "job_id": "1588191",
+  "source": "/ssd/scxi253/pretrain500m-20260912-v1/source/recovery-v1",
+  "archive_sha256": "a653d8549f467aee7e2dd2f6b2772ea31cd9138e522678ade4edf2a9aff5b88a",
+  "purpose": "4-GPU actual continuation and resume equivalence qualification only",
+  "new_mixture_training": false
+}

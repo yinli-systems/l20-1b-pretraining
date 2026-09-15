@@ -1,0 +1,8 @@
+test_documents_across_blocks_and_retained_tail (test_pack.PackingTest.test_documents_across_blocks_and_retained_tail) ... ok
+test_reject_overflow_before_write (test_pack.PackingTest.test_reject_overflow_before_write) ... ok
+test_reserved_stream_retains_last_document (test_pack.PackingTest.test_reserved_stream_retains_last_document) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.000s
+
+OK

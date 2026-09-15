@@ -1,0 +1,46 @@
+{
+  "schema": "p529m-screen-v2-launch",
+  "status": "RUNNING_MFU_GATE_PASS",
+  "submitted_utc": "2026-09-14T00:14:14.985504+00:00",
+  "jobs": {
+    "F0_existing_web_control": "1588453",
+    "F3_broad_multilingual_no_synthetic": "1588454"
+  },
+  "world_size_per_job": 4,
+  "max_simultaneous_jobs": 2,
+  "target_prediction_tokens_per_job": 536870912,
+  "mfu_minimum_strictly_greater_than": 0.5,
+  "free_bytes_before_submit": 19306618880,
+  "aggregate_required_bytes": 8524957696,
+  "validation_manifest_sha256": "429c1ab33bdb8a92214ffdd2327462a05275b29fbd60abecc1d98b9fad634af3",
+  "training_manifest_sha256": {
+    "F0_existing_web_control": "980933a08910d2d2aa8ede107bea2460da1f223c7184784cbf25755d693645e2",
+    "F3_broad_multilingual_no_synthetic": "4cf466475ef56cff66fcd90e6077532f7657de0e5e127126dce91e30aa72b6cb"
+  },
+  "training_started": true,
+  "allocation_verified": true,
+  "checked_utc": "2026-09-14T00:24:15.704593+00:00",
+  "nodes": {
+    "F0_existing_web_control": "wqd10naf02g3",
+    "F3_broad_multilingual_no_synthetic": "wqd10nah10g5"
+  },
+  "gpus_verified": {
+    "F0_existing_web_control": {
+      "count": 4,
+      "model": "NVIDIA GeForce RTX 5090"
+    },
+    "F3_broad_multilingual_no_synthetic": {
+      "count": 4,
+      "model": "NVIDIA GeForce RTX 5090"
+    }
+  },
+  "baseline_equal_domain_loss": 3.322205684833928,
+  "mfu_gate": {
+    "evaluated_at_step": 16,
+    "window_steps": 10,
+    "grace_steps": 5,
+    "F0_existing_web_control_median": 0.759167,
+    "F3_broad_multilingual_no_synthetic_median": 0.773765,
+    "strictly_above_0_50": true
+  }
+}

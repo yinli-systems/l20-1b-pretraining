@@ -1,0 +1,9 @@
+{
+  "pid": 2559932,
+  "source": "/ssd/scxi253/pretrain500m-20260912-v1/source/intake-v1",
+  "started_unix": 1789324308.1149547,
+  "purpose": "bounded raw diverse corpus acquisition; not admitted for training",
+  "max_network_bytes_per_parquet_source": 134217728,
+  "max_uncompressed_output_bytes_per_source": 201326592,
+  "sources": 16
+}

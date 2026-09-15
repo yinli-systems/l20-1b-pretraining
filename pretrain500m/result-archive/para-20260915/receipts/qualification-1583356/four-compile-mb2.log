@@ -1,0 +1,28 @@
+/ssd/scxi253/pretraining2/runtime/venv/lib/python3.12/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+{"step": 0, "seconds": 28.92724426276982, "loss": 10.720874786376953, "grad_norm": 7.496140956878662}
+{"step": 1, "seconds": 0.459770736284554, "loss": 10.344263076782227, "grad_norm": 7.385227203369141}
+{"step": 2, "seconds": 0.4494367828592658, "loss": 10.654312133789062, "grad_norm": 4.915053367614746}
+{"step": 3, "seconds": 0.4483640640974045, "loss": 10.123374938964844, "grad_norm": 1.2626179456710815}
+{"step": 4, "seconds": 0.44869178626686335, "loss": 9.738142013549805, "grad_norm": 0.3143317997455597}
+{"step": 5, "seconds": 0.44833001866936684, "loss": 9.43341064453125, "grad_norm": 0.20949628949165344}
+{"step": 6, "seconds": 0.4491356983780861, "loss": 9.390569686889648, "grad_norm": 0.20226553082466125}
+{"step": 7, "seconds": 0.448662718757987, "loss": 9.48709487915039, "grad_norm": 0.21541474759578705}
+{"step": 8, "seconds": 0.4480247441679239, "loss": 9.450267791748047, "grad_norm": 0.2562554180622101}
+{"step": 9, "seconds": 0.4479971891269088, "loss": 9.378725051879883, "grad_norm": 0.34038662910461426}
+{"step": 10, "seconds": 0.44853968266397715, "loss": 9.919928550720215, "grad_norm": 3.5603339672088623}
+{"step": 11, "seconds": 0.4487248081713915, "loss": 9.26632308959961, "grad_norm": 0.524111270904541}
+{"step": 12, "seconds": 0.4487291816622019, "loss": 9.56964111328125, "grad_norm": 0.3572222888469696}
+{"step": 13, "seconds": 0.4488490102812648, "loss": 9.337363243103027, "grad_norm": 0.2059139609336853}
+{"step": 14, "seconds": 0.4482939261943102, "loss": 9.136603355407715, "grad_norm": 0.1748269647359848}
+{"step": 15, "seconds": 0.4488623682409525, "loss": 9.102771759033203, "grad_norm": 0.20269258320331573}
+{"step": 16, "seconds": 0.4486607490107417, "loss": 9.084085464477539, "grad_norm": 0.1679762452840805}
+{"step": 17, "seconds": 0.44854148011654615, "loss": 9.04153060913086, "grad_norm": 0.1563749760389328}
+{"step": 18, "seconds": 0.4482261138036847, "loss": 8.976988792419434, "grad_norm": 0.17527101933956146}
+{"step": 19, "seconds": 0.44892602786421776, "loss": 8.816557884216309, "grad_norm": 0.19091404974460602}
+{"step": 20, "seconds": 0.44874210376292467, "loss": 8.729944229125977, "grad_norm": 0.46724972128868103}
+{"step": 21, "seconds": 0.44851644057780504, "loss": 9.003009796142578, "grad_norm": 0.5270254611968994}
+{"step": 22, "seconds": 0.44873529206961393, "loss": 8.471270561218262, "grad_norm": 0.2144305258989334}
+{"step": 23, "seconds": 0.4484173469245434, "loss": 8.319183349609375, "grad_norm": 0.3437442481517792}
+{"step": 24, "seconds": 0.44861980993300676, "loss": 8.186033248901367, "grad_norm": 1.4515758752822876}
+{"evidence_class": "synthetic_throughput_only", "job_id": "1583356", "hostname": "wqd10naf02g1", "world_size": 4, "config": {"vocab_size": 32768, "hidden_size": 1536, "intermediate_size": 4096, "num_hidden_layers": 18, "num_attention_heads": 12, "num_key_value_heads": 4, "max_position_embeddings": 2048, "rms_norm_eps": 1e-05, "rope_theta": 10000.0, "initializer_range": 0.02, "tie_word_embeddings": true, "model_type": "llama", "architectures": ["LlamaForCausalLM"], "hidden_act": "silu", "attention_bias": false, "mlp_bias": false, "attention_dropout": 0.0, "head_dim": 128, "use_cache": true, "bos_token_id": null, "eos_token_id": 0, "pad_token_id": 1}, "parameters": 503373312, "torch": "2.11.0+cu128", "cuda": "12.8", "gpu": "NVIDIA GeForce RTX 5090", "capability": [12, 0], "gpu_memory_bytes": 33668988928, "compile": true, "microbatch": 2, "accumulation": 4, "warmup_steps": 5, "measurement_steps": 20, "seconds": [0.44938287138938904, 0.45007941126823425, 0.44953495264053345, 0.4488871395587921, 0.4489123523235321, 0.4494067132472992, 0.4497210383415222, 0.44984716176986694, 0.44975024461746216, 0.44949871301651, 0.4498808979988098, 0.4496648609638214, 0.4495965838432312, 0.44925418496131897, 0.4499152898788452, 0.44957756996154785, 0.44948601722717285, 0.44988787174224854, 0.4494630992412567, 0.44958892464637756], "losses": [9.43341064453125, 9.390569686889648, 9.48709487915039, 9.450267791748047, 9.378725051879883, 9.919928550720215, 9.26632308959961, 9.56964111328125, 9.337363243103027, 9.136603355407715, 9.102771759033203, 9.084085464477539, 9.04153060913086, 8.976988792419434, 8.816557884216309, 8.729944229125977, 9.003009796142578, 8.471270561218262, 8.319183349609375, 8.186033248901367], "tokens_per_optimizer_step": 65536, "tokens_per_second": 145775.89078821757, "tokens_per_second_p10": 145662.97584073606, "tokens_per_second_p50": 145770.55618387397, "tokens_per_second_p90": 145877.3277885941, "total_elapsed_seconds": 39.73100504092872, "peak_allocated_bytes": 15145812480, "peak_reserved_bytes": 15558770688, "estimated_model_flops_per_token": 3699376128, "dense_bf16_peak_flops_per_gpu": null, "mfu": null, "limitations": ["No corpus I/O, validation or checkpoint overhead included in steady-state throughput.", "Synthetic repeated random batch does not establish language learning or quality.", "MFU stays unset until exact device precision peak is sourced."]}

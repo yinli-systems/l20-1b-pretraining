@@ -1,0 +1,3 @@
+Filesystem                   Size  Used Avail Use% Mounted on
+/dev/sda2                    875G  746G   86G  90% /tmp
+JuiceFS:juicefs-shared-nvme   10T   10T   88G 100% /ssd

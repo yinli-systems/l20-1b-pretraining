@@ -1,0 +1,16 @@
+{
+  "checked_utc": "2026-09-14T01:02:40.956776+00:00",
+  "completed_utc": "2026-09-14T01:03:00.677502+00:00",
+  "expanded_family_sha256": "a982eab88d388cb08250497cc83ccf29fb958af40a9c560e07de8c47f16045c4",
+  "minimum_blocks": 624,
+  "output": "/ssd/scxi253/pretrain500m-20260912-v1/data/finemath-topup-v1",
+  "prior_family_sha256": "aa6f8d733135f410f318e9bf4944033670103eaf118a1cdb0c43663609680a4c",
+  "quality_decisions_sha256": "31837495a2f874aa70fc7d3d60d9b3a046d1faf2772fb2d568126dbca2e88ef0",
+  "raw_report_sha256": "a8c1968c9c26060c5f896a86824234499ccd99bcb008f722e1c982a6567952bf",
+  "report_sha256": "d435c29cd00eddc178b5fff9e0598490b2dcb761f8adc7c59d1f8ae5004c3bdb",
+  "schema_version": 1,
+  "source_sha256": "31b3bec2767f68923e5562588012b6e118741609f0d12ff451801d77345175cf",
+  "status": "FINEMATH_TOPUP_PACK_COMPLETE_NOT_ADMITTED",
+  "tokenizer_sha256": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+  "training_admitted": false
+}

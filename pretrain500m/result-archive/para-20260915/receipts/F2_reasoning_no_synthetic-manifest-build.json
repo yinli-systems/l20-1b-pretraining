@@ -1,0 +1,88 @@
+{
+  "admission": "/ssd/scxi253/pretrain500m-20260912-v1/source/screen-inputs-v2/admission-v1/F2_reasoning_no_synthetic.admission.json",
+  "admission_sha256": "b59ceaf95112a7385efbff0629c103873c2b6e65b208a511f662d7ed0f78c02a",
+  "capacity": {
+    "code_cpp": {
+      "available_unique_blocks": 2264,
+      "effective_cumulative_epochs": "1.736749116607773851590106007",
+      "max_cumulative_epochs": "2.0",
+      "quota_blocks": 3932
+    },
+    "code_java": {
+      "available_unique_blocks": 2745,
+      "effective_cumulative_epochs": "1.432422586520947176684881603",
+      "max_cumulative_epochs": "2.0",
+      "quota_blocks": 3932
+    },
+    "code_javascript": {
+      "available_unique_blocks": 4679,
+      "effective_cumulative_epochs": "1.680914725368668518914297927",
+      "max_cumulative_epochs": "2.0",
+      "quota_blocks": 7865
+    },
+    "code_python": {
+      "available_unique_blocks": 11647,
+      "effective_cumulative_epochs": "1.688074182192839357774534215",
+      "max_cumulative_epochs": "2.0",
+      "quota_blocks": 19661
+    },
+    "code_typescript": {
+      "available_unique_blocks": 2384,
+      "effective_cumulative_epochs": "1.649328859060402684563758389",
+      "max_cumulative_epochs": "2.0",
+      "quota_blocks": 3932
+    },
+    "dclm": {
+      "available_unique_blocks": 29209,
+      "effective_cumulative_epochs": "1.346194666027594234653702626",
+      "max_cumulative_epochs": "2.0",
+      "quota_blocks": 39321
+    },
+    "finemath4": {
+      "available_unique_blocks": 21389,
+      "effective_cumulative_epochs": "1.838421618588994342886530460",
+      "max_cumulative_epochs": "2.0",
+      "quota_blocks": 39322
+    },
+    "fineweb_edu": {
+      "available_unique_blocks": 4090158,
+      "effective_cumulative_epochs": "1.925996990825293301627956671",
+      "max_cumulative_epochs": "2.2",
+      "quota_blocks": 65536
+    },
+    "infiwebmath4": {
+      "available_unique_blocks": 6960,
+      "effective_cumulative_epochs": "1.883189655172413793103448276",
+      "max_cumulative_epochs": "2.0",
+      "quota_blocks": 13107
+    },
+    "pdf_en": {
+      "available_unique_blocks": 34595,
+      "effective_cumulative_epochs": "1.894377800260153201329671918",
+      "max_cumulative_epochs": "2.0",
+      "quota_blocks": 65536
+    }
+  },
+  "checked_utc": "2026-09-14T01:06:01.970025+00:00",
+  "finemath_total_unique_blocks": 21389,
+  "manifest": "/ssd/scxi253/pretrain500m-20260912-v1/source/screen-inputs-v2/manifests-v2/F2_reasoning_no_synthetic.json",
+  "manifest_sha256": "a6120a304a16d5b569787cc542b5917cb8bf13ba49e97e2083cbf0ff3235591c",
+  "quota_blocks": {
+    "code_cpp": 3932,
+    "code_java": 3932,
+    "code_javascript": 7865,
+    "code_python": 19661,
+    "code_typescript": 3932,
+    "dclm": 39321,
+    "finemath4": 39322,
+    "fineweb_edu": 65536,
+    "infiwebmath4": 13107,
+    "pdf_en": 65536
+  },
+  "schema": "p529m-f2-manifest-build-v1",
+  "status": "PASS",
+  "target_blocks": 262144,
+  "topup_blocks": 2352,
+  "training_admitted": true,
+  "training_launched": false
+}

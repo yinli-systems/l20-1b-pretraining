@@ -1,0 +1,7 @@
+test_extends_prior_and_binds_all_candidates (test_build.BuildTest.test_extends_prior_and_binds_all_candidates) ... ok
+test_rejects_changed_candidate_file (test_build.BuildTest.test_rejects_changed_candidate_file) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.004s
+
+OK

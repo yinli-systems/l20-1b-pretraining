@@ -1,0 +1,445 @@
+{
+  "status": "FIXED_BUCKET_PROBE_PASS",
+  "default_reducer_recreation_divergence_reproduced": true,
+  "scope": "Synthetic FP32 reducer recreation in one process per GPU; full-model process-restart qualification still required",
+  "formal_quality_gain": false,
+  "full_model_recovery_qualified": false,
+  "results": {
+    "default_rebuilding": [
+      {
+        "rank": 0,
+        "model_optimizer_exact": false,
+        "gradient_exact_by_step": [
+          true,
+          true,
+          false,
+          false
+        ],
+        "continuous_buckets": [
+          {
+            "step": 1,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "8388608"
+          },
+          {
+            "step": 2,
+            "buckets_rebuilt": true,
+            "bucket_sizes": "8388608"
+          },
+          {
+            "step": 3,
+            "buckets_rebuilt": true,
+            "bucket_sizes": "8388608"
+          },
+          {
+            "step": 4,
+            "buckets_rebuilt": true,
+            "bucket_sizes": "8388608"
+          }
+        ],
+        "split_buckets": [
+          {
+            "step": 1,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "8388608"
+          },
+          {
+            "step": 2,
+            "buckets_rebuilt": true,
+            "bucket_sizes": "8388608"
+          },
+          {
+            "step": 3,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "8388608"
+          },
+          {
+            "step": 4,
+            "buckets_rebuilt": true,
+            "bucket_sizes": "8388608"
+          }
+        ]
+      },
+      {
+        "rank": 1,
+        "model_optimizer_exact": false,
+        "gradient_exact_by_step": [
+          true,
+          true,
+          false,
+          false
+        ],
+        "continuous_buckets": [
+          {
+            "step": 1,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "8388608"
+          },
+          {
+            "step": 2,
+            "buckets_rebuilt": true,
+            "bucket_sizes": "8388608"
+          },
+          {
+            "step": 3,
+            "buckets_rebuilt": true,
+            "bucket_sizes": "8388608"
+          },
+          {
+            "step": 4,
+            "buckets_rebuilt": true,
+            "bucket_sizes": "8388608"
+          }
+        ],
+        "split_buckets": [
+          {
+            "step": 1,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "8388608"
+          },
+          {
+            "step": 2,
+            "buckets_rebuilt": true,
+            "bucket_sizes": "8388608"
+          },
+          {
+            "step": 3,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "8388608"
+          },
+          {
+            "step": 4,
+            "buckets_rebuilt": true,
+            "bucket_sizes": "8388608"
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "model_optimizer_exact": false,
+        "gradient_exact_by_step": [
+          true,
+          true,
+          false,
+          false
+        ],
+        "continuous_buckets": [
+          {
+            "step": 1,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "8388608"
+          },
+          {
+            "step": 2,
+            "buckets_rebuilt": true,
+            "bucket_sizes": "8388608"
+          },
+          {
+            "step": 3,
+            "buckets_rebuilt": true,
+            "bucket_sizes": "8388608"
+          },
+          {
+            "step": 4,
+            "buckets_rebuilt": true,
+            "bucket_sizes": "8388608"
+          }
+        ],
+        "split_buckets": [
+          {
+            "step": 1,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "8388608"
+          },
+          {
+            "step": 2,
+            "buckets_rebuilt": true,
+            "bucket_sizes": "8388608"
+          },
+          {
+            "step": 3,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "8388608"
+          },
+          {
+            "step": 4,
+            "buckets_rebuilt": true,
+            "bucket_sizes": "8388608"
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "model_optimizer_exact": false,
+        "gradient_exact_by_step": [
+          true,
+          true,
+          false,
+          false
+        ],
+        "continuous_buckets": [
+          {
+            "step": 1,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "8388608"
+          },
+          {
+            "step": 2,
+            "buckets_rebuilt": true,
+            "bucket_sizes": "8388608"
+          },
+          {
+            "step": 3,
+            "buckets_rebuilt": true,
+            "bucket_sizes": "8388608"
+          },
+          {
+            "step": 4,
+            "buckets_rebuilt": true,
+            "bucket_sizes": "8388608"
+          }
+        ],
+        "split_buckets": [
+          {
+            "step": 1,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "8388608"
+          },
+          {
+            "step": 2,
+            "buckets_rebuilt": true,
+            "bucket_sizes": "8388608"
+          },
+          {
+            "step": 3,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "8388608"
+          },
+          {
+            "step": 4,
+            "buckets_rebuilt": true,
+            "bucket_sizes": "8388608"
+          }
+        ]
+      }
+    ],
+    "fixed_buckets": [
+      {
+        "rank": 0,
+        "model_optimizer_exact": true,
+        "gradient_exact_by_step": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "continuous_buckets": [
+          {
+            "step": 1,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576"
+          },
+          {
+            "step": 2,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576"
+          },
+          {
+            "step": 3,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576"
+          },
+          {
+            "step": 4,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576"
+          }
+        ],
+        "split_buckets": [
+          {
+            "step": 1,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576"
+          },
+          {
+            "step": 2,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576"
+          },
+          {
+            "step": 3,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576"
+          },
+          {
+            "step": 4,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576"
+          }
+        ]
+      },
+      {
+        "rank": 1,
+        "model_optimizer_exact": true,
+        "gradient_exact_by_step": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "continuous_buckets": [
+          {
+            "step": 1,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576"
+          },
+          {
+            "step": 2,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576"
+          },
+          {
+            "step": 3,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576"
+          },
+          {
+            "step": 4,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576"
+          }
+        ],
+        "split_buckets": [
+          {
+            "step": 1,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576"
+          },
+          {
+            "step": 2,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576"
+          },
+          {
+            "step": 3,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576"
+          },
+          {
+            "step": 4,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576"
+          }
+        ]
+      },
+      {
+        "rank": 2,
+        "model_optimizer_exact": true,
+        "gradient_exact_by_step": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "continuous_buckets": [
+          {
+            "step": 1,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576"
+          },
+          {
+            "step": 2,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576"
+          },
+          {
+            "step": 3,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576"
+          },
+          {
+            "step": 4,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576"
+          }
+        ],
+        "split_buckets": [
+          {
+            "step": 1,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576"
+          },
+          {
+            "step": 2,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576"
+          },
+          {
+            "step": 3,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576"
+          },
+          {
+            "step": 4,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576"
+          }
+        ]
+      },
+      {
+        "rank": 3,
+        "model_optimizer_exact": true,
+        "gradient_exact_by_step": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "continuous_buckets": [
+          {
+            "step": 1,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576"
+          },
+          {
+            "step": 2,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576"
+          },
+          {
+            "step": 3,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576"
+          },
+          {
+            "step": 4,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576"
+          }
+        ],
+        "split_buckets": [
+          {
+            "step": 1,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576"
+          },
+          {
+            "step": 2,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576"
+          },
+          {
+            "step": 3,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576"
+          },
+          {
+            "step": 4,
+            "buckets_rebuilt": false,
+            "bucket_sizes": "1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576, 1048576"
+          }
+        ]
+      }
+    ]
+  }
+}

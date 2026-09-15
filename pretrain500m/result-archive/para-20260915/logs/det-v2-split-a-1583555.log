@@ -1,0 +1,3 @@
+{"step": 1, "prediction_tokens": 2097152, "loss": 11.037820816040039, "lr": 3e-05, "grad_norm": 15.551499366760254, "step_seconds": 28.007103983312845, "tokens_per_second": 74879.28781388901, "mfu": 0.1782616285145545, "elapsed_seconds": 28.007136043161154, "unix": 1789172355.3666632}
+{"step": 2, "prediction_tokens": 4194304, "loss": 9.93112850189209, "lr": 6e-05, "grad_norm": 19.891014099121094, "step_seconds": 7.293029293417931, "tokens_per_second": 287555.68031143263, "mfu": 0.6845703980028853, "elapsed_seconds": 35.320452228188515, "unix": 1789172362.6799865}
+{"status": "COMPLETED", "step": 2, "tokens": 4194304, "unix": 1789172388.4688277, "checkpoint_sha256": "084f62acc320c3772412878ed3b02ba828ee6e1ea8b03b342f3a857a51a5ab96"}

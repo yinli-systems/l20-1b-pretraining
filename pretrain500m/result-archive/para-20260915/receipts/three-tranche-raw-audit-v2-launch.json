@@ -1,0 +1,30 @@
+{
+  "key": "active_data_audit",
+  "name": "three-tranche-raw-audit-v2",
+  "command": [
+    "/ssd/scxi253/pretraining2/runtime/protrek-venv/bin/python",
+    "/ssd/scxi253/pretrain500m-20260912-v1/source/raw-audit-v2/audit_raw_intake_v2.py",
+    "--input",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v1",
+    "--input",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v2",
+    "--input",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-intake-v3",
+    "--tokenizer",
+    "/ssd/scxi253/pretrain500m-20260912-v1/formal/hf-v5/tokenizer.json",
+    "--expected-tokenizer-sha256",
+    "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+    "--quotas",
+    "/ssd/scxi253/pretrain500m-20260912-v1/source/raw-audit-v2/subsource-quotas-v1.json",
+    "--output",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-audit-v2-three-tranche"
+  ],
+  "output": "/ssd/scxi253/pretrain500m-20260912-v1/data/diverse-audit-v2-three-tranche",
+  "log": "/ssd/scxi253/pretrain500m-20260912-v1/logs/three-tranche-raw-audit-v2.log",
+  "overlay": "overlay",
+  "pid": 2141186,
+  "status": "LAUNCHED",
+  "checked_utc": "2026-09-13T21:44:58.852878+00:00",
+  "training_admitted": false,
+  "combined_raw_rows_expected": 199407
+}

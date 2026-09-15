@@ -1,0 +1,64 @@
+{
+  "batch_docs": 2048,
+  "block_size": 2049,
+  "counters": {
+    "accepted": 605085,
+    "contaminated": 1053,
+    "cross_partition_duplicate": 28349,
+    "duplicate": 2100,
+    "seen": 636587,
+    "too_long": 0
+  },
+  "cross_partition_exclusion_db": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-audit-fast-v1/exclude-part-06.sqlite",
+  "cross_partition_exclusion_db_sha256": "b77065a1fc5194fa6c3674feaa0d46ad5416abe733bbbb230fc96f850aa9ab83",
+  "cross_partition_exclusion_enabled": true,
+  "dataset_revisions": {
+    "web": {
+      "config": "sample-10BT",
+      "repo": "HuggingFaceFW/fineweb-edu",
+      "revision": "87f09149ef4734204d70ed1d046ddc9ca3f2b8f9"
+    }
+  },
+  "decontamination_enabled": true,
+  "delete_completed_raw": false,
+  "eos_id": 50279,
+  "holdout_modulus": 1000,
+  "partition_label": "part-06",
+  "resumed_tokens": {
+    "train": 0,
+    "validation": 0
+  },
+  "seed": 42,
+  "source": "web",
+  "source_exhausted": true,
+  "source_state_db": null,
+  "targets_complete": false,
+  "train_shards": [
+    {
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-parts-dedup-v2/part-06/web/train-npy/train-00000.npy",
+      "sha256": "a15a3b7c42933f600af8eb004b1bfeb037f1cb07cfed26739d1b7286a06fb9e6",
+      "tokens": 268566528
+    },
+    {
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-parts-dedup-v2/part-06/web/train-npy/train-00001.npy",
+      "sha256": "51136e3ffa5dad4e61fabcbae53c5f7258c8656819f350d2c63a6f0e6b94e27f",
+      "tokens": 268566528
+    },
+    {
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-parts-dedup-v2/part-06/web/train-npy/train-00002.npy",
+      "sha256": "a0d2cf896ede984cda9816ba9225a3f9967db96a49106ca1aa0a8da2206437a0",
+      "tokens": 89346645
+    }
+  ],
+  "train_tokens": 626479701,
+  "validation_shards": [
+    {
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/fineweb-edu-parts-dedup-v2/part-06/web/val-npy/val-00000.npy",
+      "sha256": "d6ef231f48c5fc59a625eb2d057aab64cbf1565e983903847f8e4d2684d98328",
+      "tokens": 588063
+    }
+  ],
+  "validation_tokens": 588063,
+  "vocab_size": 50280,
+  "workers": 15
+}

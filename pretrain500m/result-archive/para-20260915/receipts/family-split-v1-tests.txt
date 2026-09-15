@@ -1,0 +1,17 @@
+{"status": "FAMILY_CLOSURE_AND_RESERVED_ASSIGNMENTS_COMPLETE_NOT_ADMITTED", "elapsed_seconds": 0.0340179237537086, "rows": 4, "selected_unique_eligible_documents": 2, "partition_counts": {"excluded": 2, "confirmation": 1, "development": 1}, "lsh_candidate_pairs": 0, "verified_near_edges": 0, "quarantined_families": 1}
+test_candidate_budget_fails_instead_of_truncation (test_families.FamiliesTest.test_candidate_budget_fails_instead_of_truncation) ... ok
+test_candidate_collision_does_not_certify_edge (test_families.FamiliesTest.test_candidate_collision_does_not_certify_edge) ... ok
+test_code_casefold_legacy_key_groups_but_does_not_dedup (test_families.FamiliesTest.test_code_casefold_legacy_key_groups_but_does_not_dedup) ... ok
+test_eligible_duplicate_owner_after_filters (test_families.FamiliesTest.test_eligible_duplicate_owner_after_filters) ... ok
+test_global_family_split_and_both_reserves (test_families.FamiliesTest.test_global_family_split_and_both_reserves) ... ok
+test_hot_bucket_is_explicit_quarantine (test_families.FamiliesTest.test_hot_bucket_is_explicit_quarantine) ... ok
+test_insufficient_families_reported (test_families.FamiliesTest.test_insufficient_families_reported) ... ok
+test_near_threshold_and_unicode_preservation (test_families.FamiliesTest.test_near_threshold_and_unicode_preservation) ... ok
+test_transitive_contamination_and_quality_failure_scope (test_families.FamiliesTest.test_transitive_contamination_and_quality_failure_scope) ... ok
+test_bound_pipeline_emits_quarantine_and_explicit_deficits (test_scan.IntegrationTest.test_bound_pipeline_emits_quarantine_and_explicit_deficits) ... ok
+test_tampered_upstream_report_fails_before_output (test_scan.IntegrationTest.test_tampered_upstream_report_fails_before_output) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.042s
+
+OK

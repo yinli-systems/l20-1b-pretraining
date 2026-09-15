@@ -1,0 +1,716 @@
+{
+  "checked_utc": "2026-09-14T00:54:12.926249+00:00",
+  "exclude_text_sha256_reasons": {
+    "0231621028850c0340ffb294665f6926c5732d54f3ae69eec4d11745806939f3": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "03810f82e1977de4fc9301a4b7b688d17a56d8273cd39bbd3c0d49b31210b50f": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "03cde1d7d8f68ff2ffb282d82fe0d6113a1e0b39a9b223116aeb6ed07006f47f": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "03feb563497904d0ff1caee7ebd64c293de9b0b20833b1642035a096d2cbc7fa": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "049c5efdcd1ded04190a3de19fb08a7923cf7964a9500b9925a965c995c41047": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "04d1fe76253060b31adf9d6e6543363bd40af411d76899101943b11fb632ef9f": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "04ee02c8d76e6e90f9656ecb72f738c3aeed459bfb092fe03e00cbe85519f02a": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "055af8b4a3b5fe3d7ef96a89126bc187551cc55fe946a2273972550ad8fa9a69": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "06984a9ac088149a709e60affd053ead64151c8fc8f85efe3ae5432cd268d9dd": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "069a665bfdc3b760bde37c9c7eef7dc959df90a515655f332d4206395ea8e3b9": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "083b2708be132b9103dee3397a2af04f24b1e60f4354697baa01294ef4bfc0c6": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "0a8a288c35f56446c0a3c6aeb74926764ce88c37934e6b59f4690f750409aea3": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "0b73a3d3f9ff05ee4467eea76c1456a6f2bb0458fab266a1e0752b3f48241dc9": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "0b9bd8dd18e1d30efc0b04a78c28198b2b5edbb8beb87c6034b05a57f402b7ac": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "0ba772b3f7b4100f0a8cf8b298d6b52850e4f3c0057ea80908775728e460b0fd": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "0cdb38125d9d1e48195304c4cd0b3f485905aa2eca0e43f628bd14f0d09d7508": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "0d1a464833ed186571872257a4cf4f2d7451e58ded8247721814976378039e47": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "0efa3bf58f1b4db4cced50caf62952deac42db6cb4013455481883a752ce3de6": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "0f5acb9821f9c51d1dd3741f3116331a06c2c83531fd2ddd0e98e1af0295fc15": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "0f87ee2e658dac597ca7ee795041998b3b75d80f40437035b8927bb3bf785f62": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "0fbd92833a70b870474f681dddbb55ea7b3bb65cc50b356746b16dad0d595e22": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "1031c9a31f35f8a8b2cdd611160639be7f6505a1555eedaf3af69eb7e6dca7c3": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "10f02d2617998c30b98d85c2ba635cb5d8de547a288f860a62ff9cd3f1d0869a": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "11766033477299e6044838cb4ef257d8eaf92e7065675e579a9d2fbc0ade9bd6": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "120902c12cdb8f838c3c98b7da00affdb0cb00eb788bdbff34173cd632bf5e6d": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "13205d338448d3c59beb61a923a8de85b284a35c4b3f192a1f6c5b911966c6a1": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "14ff5737634ff342e7c7d47ab2433c9b4b00cf826d1c689cf5994c4730b4c736": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "1633935e900f6016d189f8e1a76bdf65c4a3308847d45cfb3aa3817354901e21": [
+      "old_source_normalized_overlap_conservative_exclusion"
+    ],
+    "1a630e0abe10f305dcba311310be46d5dbe546dc99376037c8f931a77022b6ff": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "1ac354728803e873d74a35a3fa4e80e258afe6fbf4456434f85b1e38977a0e25": [
+      "old_source_normalized_overlap_conservative_exclusion"
+    ],
+    "1c6a433687e06b12d99a48fa55acc8f5f5208c8259da0667d871bde8cff95526": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "20b0f7e115696607ccaf816e72a1c881c8e9b39623bbe033dc1bae0516a4a7ad": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "20c1699f959f34ededb13b20792a4565da79248b027ba9fda81fe42b4ce0cb1d": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "222b6a59f51e8fecc25be6d671ffb09b8a5dbe8e61d27dcd87b88203aa7e0756": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "245d3cc24f6fd0a4d5a281c271b7cdd82af3580bd352d418c8b57983e9e929c5": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "250d0604842a7ac575123d90a84bbc2279832cedbe076f55ff1ddb6a9df4c616": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "25a1cdd8dd7628d720ff085d3d100f38a3d01031aed615aa112cc5bed10f5735": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "25edfbe9f4f6eda08125f485378c31761b0ec0f75725f895c4c7c5e2d9da65a8": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "284e01ad500c99f277f6b31428c57497755ae668978b002d9ee54809f7f7da05": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "289706674da45113d07e91da1dbd813a3d9999c4c29eec3f1e76804c09f8ee29": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "2962fa905d683ef4f60226647f3f8da02e4bcb92799b49e57fda85711ac8e07f": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "2a306de74d534e775aebc5bcfdc273ce64be340c968d62a9ec0b87cd3155e4f1": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "2b2fdd35e6858e67a6c930d5127a58b38abd37dd9bda5090df2d79fcc725cc54": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "2b5ab323a1f9f19b8be145ba28b033bddf17e20e0c333ae28a78ec5d47a18c85": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "2ea9db5ee0af421eddd5f81cb1418eddee2561c790f69dfbffc81274ee0b9533": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "2efec58d2781f1cb79a13ec2ed49467eae5a698b81af35b5da04f5028c3ed507": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "319ad996cb9a472fb812d7266d336c4e9ab702eee5e52598cae3bfef00d8dd0e": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "332e81076daa152d3345260a9ab140a22dcd2bfeed51cd0499ef381cf090b8a5": [
+      "old_source_normalized_overlap_conservative_exclusion"
+    ],
+    "36a61c58b1b01205fdffa07926969264d4ffa61c8915cc0f620615dbab51ea02": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "3763e59a610ef256d53bdc7766a49081951786fc98edb930995942deea6be2f0": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "37c74dba184eb3af45f28fbf1f1df11ee75d25298075a5bf3414f9e43e1a0a46": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "38a2c3aa9dbad21503053a44fa9586d9c0d09ec2563c5e419cb615b83feb74cb": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "39ce6624708aea530975f4d24da62f975c02074fd0149a9a45984b2549f17d88": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "39e22f436475ca4819098e90da873f4634077c79bbd1bd56261d3830a2600f2c": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "3a6a971933745980bdf0fbbe4fdfaeb1e04f19e036d4aeec3f399e3b6825a402": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "3b000c1a940027e216db28e02dc5f79f4663d7a519784cc16c4878daf541e814": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "3b7febb4e41d5d92616d9c535212e0a10a65f9c4e0d9a999f9e41d7a617cff3b": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "3bb2420bcf9fdf4aa3a5d6f63e733b3eb2f0eb9b31b446c0118354483bf91141": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "3c37f5c8c0d50ef68b12a45dd494bea319c82a0f1ba79d45f948c69f6733ca30": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "3d93d4685ff5bd9d09876e12082984e6f0e95e78cc2d9884a6969e8f5411b871": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "3d94c3f7dc466793d8bb42bc48983b8ae2f532f570269776ccd41f83677ebb0d": [
+      "old_source_normalized_overlap_conservative_exclusion"
+    ],
+    "4104d10d10b6be0da203e3bbb93c1b49b5c667e0653df5f93537b268ee1d44b1": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "4161dc425e726e6c69cd78852a72ab79b4ba48390dbbb0e05001f9ce61f37737": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "41cb423d06aa3fa5d12cfd1a5e92256a98763c2cb33d5579f908007c9b7c7cfd": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "442753db8f13af866c7230c1a82b00178d23e526cbead44bd181d4db4f9fefec": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "44b8147de92795a65893dc379f050873bd5e6ca61082a546bca05cea00ee5d9e": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "45dfd1a2c67317e564ce81ed55bb824844b548b9ce166e8f873e41759745d8db": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "4623b4febbd86b80e8a6a01cae21c085d374f1cfe78a02183b55c2f8e6da995a": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "4646b076711131fed8014d7a1acc0ba2cb4cb39c2628d7f0b8b7ea2fa2861c2b": [
+      "old_source_normalized_overlap_conservative_exclusion"
+    ],
+    "48b8863464975d353f9bf00c1eba324574d9ef41258bbc0c8da3a4464422ceec": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "4b9a48d75fc7b441589a2e50982e857c1421a049f1d9ab8aac9c487ed49e8283": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "4bc745dc83800d3c6dfa8c91ece508cae32f76043b3b8a1a1631bf95c59e9f30": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "4cf8e980532c99264199427a97ce3ca26b1d4a50263544098e8ae708f0dbf15f": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "4e4af1b455c95ac1cfb11df7b1f209a9f38cefe4c91ca57171885cbe10db27fd": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "4ea342336b148200a3819d5616ce04616f7ae0de316fa2a371874d0563618e8a": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "5131956ed83030e46d68964c5e265fc1e0fe2c04ea231430d9c996d2ca49e6ce": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "51e792fd1fc3b230e1444f8194962836068c843f7937f886afb5184f701ac573": [
+      "verified_supplemental_exact_span_exclusion"
+    ],
+    "5214a3edb6187ba7866ddaaa81f518f0d4efe06b4b1598bba4bb0d0cc148541b": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "52673f94f59aa5a6aba145945e2d9c85326e1630849aebd632f81de7deed8224": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "53b6f5fcde1627cbe7f2093fd18e62df5bdd864beb9220b3e6a33cc0560106a2": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "5604efa2723586813b97d1bc05fb328713491336606b1dfacc619cc01c26aaf3": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "5695299a41e70391125f75a1f64cf2af4bb69eb0921d8d4b2b802aaf948fff7e": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "5843f061de5d8ec4584b120dc1e6292bfbd1f3204d0350b638dbd8159e6bae38": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "594cee8588fe7dbbec70bc13b6c233fa25c863ddb3963a8c18fd42d31efd5d64": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "59b1fd5ffb04d30627662ae2a4fe7b179a26d6be3ec762548ff0c46865701ac7": [
+      "old_source_normalized_overlap_conservative_exclusion"
+    ],
+    "59febce896d9e78f1535deebd956087a49098cd3e581baac31dc48c489cd8704": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "5a1465c4dc5c551665194e392710d20e09d697738968440292129e1c7c7e561a": [
+      "verified_supplemental_exact_span_exclusion"
+    ],
+    "5a8e120bd24dc9ca3249dea2b5ca7faddfad555afdb8b9432f4400f5530cf2ad": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "5c45ebd30f33c48a6ab8c43d86f7aeb9bbcbde154da5647a78d1db383a36273c": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "5ec50e1d870fde3ec443771b9f63bd0ead785a917ddfd0f9e7e6a721a492b6d0": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "601f22915cc1557471b08e6e3d93e2db62c5a62f80f779a4e3d13038ab91142a": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "609069f20b95b34571e99d2e6370256f108fb0648157b01d2cb73affc2c30eaf": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "61be95923a4281adfe1fb22c02ab8424e98111ba3f74f9bd512ef43aa4b44420": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "627eedfb818312b84580cd5cfd72668cd9d091563d22ecb49d32532cf511154d": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "62c3650e8a2bb9501b9e9cf944113a9bd1f04b9b2ada6b6e181ff3e2ab546e0d": [
+      "old_source_normalized_overlap_conservative_exclusion"
+    ],
+    "64b451e5124ab37136d10cb3799f2a6dd1808c1b21b2a100cb0641a297a8f8d0": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "655beae4ece3d9545470a63e22a244290bd6a05435e04da3c816285194a13342": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "661a2f3d64b92dd66604a4ab0fa96c19251e0c3673d67ab65fc448d3d92d3132": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "6645dfcf3a5872fbcaa16a2ba7c4d5a93142a6f9a589f9f13e2432ef6c2c0790": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "678e852c52cf9c2479d8f19979a3866fb7efbccaca421879e7518e9ad5c7560f": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "69bf35e31bbc67994a931ff644d5855f6aa932565f8e2130b1200f790241b4ff": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "69fab6ef5a517c2f1d185af747d2e058a2b7b0655d90c3011362fb433de17839": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "6a413f1d4cf840e0bd0091e2d9dfc13673b4867342beb4edb474fedd215c3ce0": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "6d84c4924816bc5e1b5fd37dac6da5438f105a96c3c131023a3708a1670f60c0": [
+      "old_source_normalized_overlap_conservative_exclusion"
+    ],
+    "7200583429b228526105cdc50f08fb0d322177ba1765d3416bcbc48eaa9cdf53": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "72e3f7010984b0a12084af3f556fc713fc6816f8418f0388643bd6a8616a4e80": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "73ba7d1811be40974c870820476a2da37bda90e25573ffdb4e13288f7b37acd9": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "75b59ebee977cee428e53a6be182643daf547c9418672ebb5372aeaa901238af": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "76a35cbe88b4451bc58a49053b8b24c82414f4481920ac4b2a82f988ed01dcaf": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "78b30971f45715688ebca9235772d2a5f3debf57fec84aace399c86ad8899c7c": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "7a9a5aa2c3bf7ca9b6bd2242a4699aeec1ce51beb942bd8c3785cf92f776dca9": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "7bacc51198bf498f617541a9955bc79fc902ea965684dd15a2abf106bc0ba9ac": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "7c64fa8f807270797a14b0d6d63427b565b56c964e36a6d8558dd705bc18a5e0": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "7d63eb687f898f5cf084da51078f257262b2c531f0cf03a9644d8cf38c525727": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "7e0822a8c0736cbe4fad1d48f2e93cde7335e511c226e9bdc844a7649d4b3cd1": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "7fef0f54d7e1125088e8e7ee1c78b6b89c5f224d4ae0831263fc2b6d6a0bf558": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "7fef98a1ffdfc240837ad0418d7c5045d2bee76822fbbde830c87dda0e032df0": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "804eb764fe5adfc13d68c6ae7a17e04a25537d94aad468ff71015a2c13a368d1": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "852566277cfe28fd0253eedde66cfdb4a7e16ac7be19536d62a6e2d4798c6971": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "86175e2dddef987fa80eaff0ca3726c04dc029a21b6a2bb6b0c28a4161138760": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "88280009d0df87518461a9e671bb7982d532d7f3d3b46d673fc28669b4e22d80": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "89a5fb044ba20f1d6d96a889ec45cd15b2241d81f69017fa0541f64f70cf4587": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "8d7eef1ea8355abeafeae1d00d4799ea85030f5e5d9d5b4f1cdf0e606a466697": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "8e3ae60319facf05066d1c77c34ea691424d9af226fde47fe5e7c9cbfb6a50f3": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "8f9ac5057a418340ed4ef85fc6594c4103854cc52f21c934d5fc3205b62f9a7e": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "909acb2f93d392c85cc6432d06bbf57e9ba4e666b4a54f55346efad42b5ce849": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "90ce5202ab6f7789712244204c8a95b74e956bdbdcd591cda1abc9ce3bc402c2": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "91fd77c5950037f7bcbf97a42412e7f843d12fa094149d062dc026637b912d8e": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "920926d2325fff5960883a0efc47ded6d7c2ef66f3d35014c3aea2998a1ea03b": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "92b946da2b65f78610986b248781ad013d5ff753af7e4dc0e87e8a24feaa632d": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "9ad7fd23c6d86aeb2fbf41dde6afe75d42f5fa7c84014175296b7271e7847951": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "9b112624f5511fdff6e4ef34c582deb1422bcbcf06065627edcaf5764c2c7ad4": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "9b3fd5956f8fb5e57d61800b55f69ad278133a5cfa76b4cc58b8f8f2c3f999a4": [
+      "old_source_normalized_overlap_conservative_exclusion"
+    ],
+    "9b8061ad436ed08a20a93df454c805518b11272803404892a327ced8aa4b1f80": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "a084802b0b464a4596bf9cac959760728684d4f7efa99145c8d43678137cabc4": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "a0a8e2f95eee0fa150c68233985ef8d337591005699b191101fe7c7851d6aacf": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "a2821c8a4854bcbcb1c41dc694d4da3289a721ee4992468e517efd89a500deee": [
+      "verified_supplemental_exact_span_exclusion"
+    ],
+    "a2ebbe2e8705a541c8b924e188643e8dc94fd129f97a4007066c5235ab9c10e3": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "a2fa5ca50e50e0f9bccace00349908914b97b1b94be7393ab96ef903ec252e7e": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "a49d71a4290165276fcecda8d5d5c648d9ff154db187e644e86b95759cef8401": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "a54bb558b17137e16999c96ef11ce73612fe9444955d572ef604d9b2b675071c": [
+      "old_source_normalized_overlap_conservative_exclusion"
+    ],
+    "a6d816abab5883764b0640ad45c35cbce27308006883757c6755fb6415bc975a": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "a7ce056ee1e835350f438c63f40fe062e0f538e4db6f3390d3379d147228daef": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "abcbde0024ae0c100cf242aa648eae206c359f01fb959953d503966107ca9582": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "ac95e0625649ba583effe1e53fae7f9372d1bc70b8a77c00edf426baabe6ec10": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "ae39dfe742aac266d265248d32d6bf6f720cd87ab3099cb24c2153b541af12f8": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "af6c5fe44773728ada228bef3c42e4c3c89836cfdc7ec0d89326eb1cdae0248b": [
+      "verified_supplemental_exact_span_exclusion"
+    ],
+    "b1cbf42a5faf0931d962404ccb4ffaec64dc6e6aa5b483f33a54be5d8ede110d": [
+      "old_source_normalized_overlap_conservative_exclusion"
+    ],
+    "b28287cfb22359381caeece7af066a68381d8b3eea0dc7374b5ee3416c95311b": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "b3294a586044dfddf35f5b0080c9ae36c93439d7bf35cc02531c7cb1080b7c15": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "b4f3cb40bedb36bd43305ad6ec69872475e855e4173053aeca266a4a7747f0fa": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "b5be3d50e30d57f582088932630214c7ed7d8dd62c2d527b9d82647e9e2711a8": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "b7d24eb9fea9d6bf84a4ee3a49ba0e95a20ad213f3e55ba797d6881766837524": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "b87c08b385d92a799ae679ee5556ab93d912b5ab8049876017229d82d81e75f9": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "b91ce3a5bb5d4f5208f00c56bf1660ec6f4e5a74efda7f480da8309d4d206493": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "bb2659d4fa6c65c8bfce89988782fb3f106b1c8fc372ab14d5f7f0fb5fc8a4dc": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "bcdc5dd0a0de7e1e0322ef6bb57baf6274d1126ac1f2e08efa3fa59de458f5fb": [
+      "old_source_normalized_overlap_conservative_exclusion"
+    ],
+    "bd5e4e8335c2fa7a05ea7546de39ee12c3b03d72d26b926e1e569919eda98e36": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "bea115dbe0692f2998987615381421d10a86a31cf12151bfce418bb405128dc7": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "bfc209057086d4d167e8598961af7b9506372c3a2f255de0ca1208c9c5194664": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "c0f75e8f939e78802ab1601cb8df0abac1908e46b03a66e05ce9a3e70c9690bc": [
+      "old_source_normalized_overlap_conservative_exclusion"
+    ],
+    "c14e9c7212e474a7a956e4c52bf9e577c907d94125266b4d4440bc10c84d4604": [
+      "old_source_normalized_overlap_conservative_exclusion"
+    ],
+    "c275bd67bca0af425ed5862e7dc20a08300ef8565f96660a87ef298b0dc4ea95": [
+      "old_source_normalized_overlap_conservative_exclusion"
+    ],
+    "c3c6564e662c3864e83c7aaf9e2b41982f518db9f9c44d9f11788d67517f11b4": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "c4ee1b80b6c2f29368b2f80a1a6532f0378af18a527ce8fee900e80fa8a198ea": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "c67779fd0cee4fda23716dbb9a35cf7f7c593169216a4b287a069ec6a60a9beb": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "c754e8b50e95148df790ce967a7f96a5c53b2881cf72d338dbc5f908474791c1": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "c7cb555da294be09fcba8a612c09c0c220c23330458d2161925be3e07f01dd18": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "c9b4aab8a5bd5a08d2a0b2bdc77219b87bff0b4edf83a0482be478aaab39da15": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "ca89c376fef373576ed305ed0094f1c7028d77930ebd216684999e2cc7b041f1": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "cb420aa3ac0976e90d4ad213e25d6ae1076c811f96bf551b1098d24d99935843": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "cc1b9ac6f8662b06350e2b62ec40c5a833268b2b83b5f6e2b921bec90609470f": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "cce55fda7dd51fb385cfc8a389fbe170e4da526d7c5840fdf5965dcdc0baff77": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "cf26abfb4b0a19d8c15256409a1578a036c41dbf4f7d120e8277bc488f0da9df": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "cf8ee88fa8e6bc05d6f50039a40f4bfcc719d95a9a9f9a43343d1c5539b0e977": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "d3b17c88d1aad8cefc125ec867bebb15dccd64e69e176d8846961fa46dcc7259": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "d3c1e2e761ff44e7f59fe333093d417ef5dbf658a30dbdefc1f5214727a17408": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "d40afa2d25fc7b90e169aaf88c19fe9949d942bb8de5e464eb558840a5e1b829": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "d454c50f8f557024016db8763d68e1902c4fcf7cd071fe7fa9585ce0394cd22a": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "d55c1e01da8c33b9e2d85844460088073cb98de5c688a09a0676e4bf9673ccea": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "d68eca4e5614d60a84d8251529c18c02f06a8c6c603788e38a61ff64b033d278": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "d6f85b36cc89b0d48022f948e0c2ce153881b83eb0d4ec92c860fd66ef94c78e": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "d741eb2e9c097f25dfef38a80cb123f8994550b062c139cc470953ea6100ffd8": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "d784147d9b37de1667e9e11d3ef33ee21fde0e8ac260c117a441465eaaa1af7f": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "d7f907f8b2edfa273bf50b72e46dd523a4b77dd1ff08d4f9b35bd8406099d83e": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "d8d12e7b9c98ded7c75f0c25923ccd3515f0608a8e526a93636d9654daed45fa": [
+      "old_source_normalized_overlap_conservative_exclusion"
+    ],
+    "db0136a43206f2d9292445bd01c3682cd97ebbf480dd76f3b7a31751842e9bfb": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "dc5ab8a6a02f8e0367d99960ba955e74ba64497f32a0e6f2fb21418cf51e6d06": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "dd2eec49c49556433f92e1fa7b9992d2c09f38c696a156b43eece71d2cb61ad4": [
+      "old_source_normalized_overlap_conservative_exclusion"
+    ],
+    "df03917cb2c42e7f138ecea24f5ecdcc5691fdecd58e2a4d61292a6031aeef58": [
+      "old_source_normalized_overlap_conservative_exclusion"
+    ],
+    "df68a709588863af3773c0a7ccae8361948fd1b607c185b1322784d8c0d7b9fb": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "e0324f05ef0c6bf480e56100f84a679ac7ba6a75a3c48e95bd18399782616ac5": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "e267a8b250b88514061a0fe981f643cd446a99f3346454605c8d1fc8e1e9fe25": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "e26caf1070e584a5f7ce48b761defa2ceed66ddbaf96791879526665e54b7742": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "e5d247ede3f69162695e23e4c025bd580907fc240439b3f36f1e5ae253430898": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "e5ff8ea7635abaebf4d791d2c1b4d8270726de2f7d4c2bfadb9b622b321c1144": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "e828b877333916c7c719624392b20b15fc93459627475fa7ee939d19948e12b9": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "e8d24c7ff139fa275eb921f75d7cf72c8b69db2e5c2e82c7c6911b2139fce54d": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "e8fbab396439036f6872630b196bf20bcde6698d750a349d18763bcc7298d3c6": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "ead69d97fbf831f6b2cf689544888a888a07d5909e1dc9964de7a5255d51eacc": [
+      "old_source_normalized_overlap_conservative_exclusion"
+    ],
+    "eb6c4d931c8438b223b8027dbeeb5ce7a48e7f58eaae67d276a5abff9143dc38": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "ee3a8de08873a70447f8b6fe7db0ad13ecb48ec98cf774e26a2b73db83614f2f": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "ee75a534d448f0b5c31923b21c812edd7e4f54baf061dbb4a4577a02d21edbca": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "eedaeba4ecbc3a23b8cf951663edc302d871dad1080ed066102f76b15e2bfb34": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "f0b84d1cca697a7b232d162a69afda2b9e969a42501329aed65500d3e8ec641b": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "f367b2ae99c1aefc2ac2c418bb74d8ba452e9df2a4fb7c5bfe70a806702be822": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "f3c0fe4d9c00c52a2bc58b276c02f9ecbd0b2f3e2b8251b3e7110fbc7e1dff57": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "f430b749697a02af7c00080791e56458746af27994bd76e264939a227aa07b8c": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "f6f90c14e2dd3b104b533c524252a2fe937166e059e13beb1c3ee30fcf5c8f70": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "f796c83f80fb9af73ad7b3b2e9eef9aec1db12fbe59ce653bf7bc189e4c7e6a2": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "f8834057dce48af7a7084ee2f7291d1fc95902f3227518e5a23a56c2b86a7392": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "faad5003017e98075e8155abe8581fd0354272a47783b6d053148841834fff72": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "fc22cb5bec97d2a2a6b6b674c1cbecaba3033ccadd18ed0b57ad1a0c53aac03b": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ],
+    "fc6d9fbdef4e2b17330265cd0c7fcce809f27b588816486b37c8ab7f87451040": [
+      "legacy_13word_hash_candidate_conservative_exclusion"
+    ]
+  },
+  "family_expansion_completed": false,
+  "input_bindings": {
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/contamination-v1-four-tranche/candidate-exclusions.jsonl": "cbd5fda8422e7c6c692d31484ba3a4457288fa4d477014d4e6262cae6e6d4208",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/contamination-v1-four-tranche/report.json": "26a90421c4963061813239dd1705b7395f877beaf823654ea620bbd78fc38e0b",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-four-tranche/0-code_cpp.candidates.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-four-tranche/0-code_java.candidates.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-four-tranche/0-code_javascript.candidates.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-four-tranche/0-code_python.candidates.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-four-tranche/0-code_typescript.candidates.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-four-tranche/0-cosmopedia2.candidates.jsonl": "f2e605c0eef93a46299194cbc1a64169f80079e474dba3fc4d1bf5f6bf560e1f",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-four-tranche/0-dclm.candidates.jsonl": "45eff5532c8fcbde41e5ba9018ced651499d6d39af155cd3655d99e60484138c",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-four-tranche/0-finemath4.candidates.jsonl": "6e9dd206d4c045b80e800b6024f0e9d734df83e447d687d43d44d03223ac8937",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-four-tranche/0-infiwebmath4.candidates.jsonl": "ea283dfc060711995fbd50a8323b88cd4d245ede8999763e8696c58053a5f20e",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-four-tranche/0-multilingual_arb_Arab.candidates.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-four-tranche/0-multilingual_cmn_Hani.candidates.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-four-tranche/0-multilingual_deu_Latn.candidates.jsonl": "3d9230018acfe78fa8ef1c12bffe9d6e535eea8e5a4d4626f378034e44a4b202",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-four-tranche/0-multilingual_fra_Latn.candidates.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-four-tranche/0-multilingual_jpn_Jpan.candidates.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-four-tranche/0-multilingual_spa_Latn.candidates.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-four-tranche/0-pdf_en.candidates.jsonl": "56e4053eb0f97cf5249a0be4d97f7f84941761d5e1207b065f914ebce374e075",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-four-tranche/1-code_cpp.candidates.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-four-tranche/1-code_java.candidates.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-four-tranche/1-code_javascript.candidates.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-four-tranche/1-code_python.candidates.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-four-tranche/1-code_typescript.candidates.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-four-tranche/1-dclm.candidates.jsonl": "4b968bb07a60cec766ef80eaf8e643539d65df5292570e26d60d5d7c32615f54",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-four-tranche/1-finemath4.candidates.jsonl": "c06e73c5c051c3e3781bbf6131384f053127c89a5d967ac26602ae277ccf37fb",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-four-tranche/1-infiwebmath4.candidates.jsonl": "b723f2c2a7e9200225abaa9fe8cf8f5e326524f46ece3fd238d97ad7705d5ffd",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-four-tranche/1-multilingual_cmn_Hani.candidates.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-four-tranche/1-pdf_en.candidates.jsonl": "0f33b0b65e51c0c8d3eabd47b4fe9af467716adb19612fe3702c67de2b42abff",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-four-tranche/2-dclm.candidates.jsonl": "d49c69ea2361546864222835ca2dce13d273cac032632656b64624332906afca",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-four-tranche/2-pdf_en.candidates.jsonl": "c3a86d27cad7b7d7703741fbbad9e010a54089a0c034f25ba19e749c089d07e0",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-four-tranche/3-finemath4.candidates.jsonl": "c47ab4001df1d8d61d2946f89ae60976b09ed7b5962c44f7702e082cf9967fd8",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-four-tranche/report.json": "3d0f35fbcb309be5ed8be583fc2a53b6e8d34aa480d549a8b6b20dbfa679abfd",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1-four-tranche/000_00000.parquet.matches.jsonl.gz": "a8c7dd15a0b64cdaff2f6cc3431d03be92fac21443657f943f30812887fd9053",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1-four-tranche/001_00000.parquet.matches.jsonl.gz": "5ccf495940b21767738b459703daa15f4d21fc03026a1511a332c9e59c494b72",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1-four-tranche/002_00000.parquet.matches.jsonl.gz": "778be0cfc9de495099f1d2374a7396f6915ad79cfad7bfadfaa15824b46d8f1a",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1-four-tranche/003_00000.parquet.matches.jsonl.gz": "5d1974b79b39c9d32c64526e779e8039bd5699a6e04a7d550148b71234cc04e8",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1-four-tranche/004_00000.parquet.matches.jsonl.gz": "975fd0e8d1551cb9cb7a74a051c93ac0994a4185a1bfab7cd1148372a1d7ee98",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1-four-tranche/005_00000.parquet.matches.jsonl.gz": "814e79087a42df5c884ca7c872613b6e822497cc017da9495de8333d576994b5",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1-four-tranche/006_00000.parquet.matches.jsonl.gz": "be336b9ecc67bcd0e3dcd759a2602937e1636b0907c8478064a23dc547a6f055",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1-four-tranche/007_00000.parquet.matches.jsonl.gz": "f95c62fa69faf76f7ea2e1696bcf920c5d1fcfa515387ceca168968e495705fe",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1-four-tranche/008_00000.parquet.matches.jsonl.gz": "ae45ef59c6f23aa3c12def0dcb98a46316768c2352d43cff95bb9798413743ef",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1-four-tranche/009_00000.parquet.matches.jsonl.gz": "30a22c83f67fb93ab74955b88f072771104f7f8094ae3f4805cd86df1d654eb0",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1-four-tranche/010_00000.parquet.matches.jsonl.gz": "a37a5bcdc521d874728728ae5a6d587c920c66f7ba4f24a6991ab9f84a07a7a6",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1-four-tranche/011_00000.parquet.matches.jsonl.gz": "8979773f459e9e0a1f45077a20b9fcdca75430692eb01e3960716419b9ffe50c",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1-four-tranche/012_00000.parquet.matches.jsonl.gz": "263b16441990899bd55e7c27eed68041c77d1767607bbca62f7558b629cc79f7",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1-four-tranche/013_00000.parquet.matches.jsonl.gz": "646489216ac9fcdcc535f4defab4c610c3925f3aeb1f5f631d7fd4d12b67a9c9",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/old-source-overlap-v1-four-tranche/report.json": "e1c2e4d50021fda75315999c0c94421ce97595f42de3d2c7018984299ad4e10a",
+    "/ssd/scxi253/pretrain500m-20260912-v1/receipts/exclusion-union-v1.json": "c622932c94ae2c56dfd0e14691e72975214381288c03979c4be759211acb00df"
+  },
+  "input_counts": {
+    "legacy_candidate_rows": 191,
+    "old_source_new_document_references": 20,
+    "supplemental_candidate_rows": 4
+  },
+  "packing_has_consumed_plan": false,
+  "prior_union_sha256": "c622932c94ae2c56dfd0e14691e72975214381288c03979c4be759211acb00df",
+  "raw_files_modified": false,
+  "reason_unique_text_counts": {
+    "legacy_13word_hash_candidate_conservative_exclusion": 191,
+    "old_source_normalized_overlap_conservative_exclusion": 19,
+    "verified_supplemental_exact_span_exclusion": 4
+  },
+  "schema": "p529m-exclusion-union-v2",
+  "scope": "Conservative union of the frozen three-tranche exclusions and all identity-bound four-tranche supplemental, legacy-hash, and old-source candidates.",
+  "status": "POLICY_EXCLUSIONS_BOUND_NOT_APPLIED_TO_PACK",
+  "training_admitted": false,
+  "unique_excluded_text_hashes": 214
+}

@@ -1,0 +1,8 @@
+{
+  "status": "PASS_GPU_RECOVERY_EXACT",
+  "formal_quality_gain": false,
+  "scope": "same-allocation 4-GPU recovery with frozen FineWeb data",
+  "steps": 32,
+  "run_fingerprint": "8974785d72cb0968c632c4cf8be16bd06cc705d3055b8c8497a74ea6407f0e5f",
+  "compared": "model, optimizer, reader cursor, origin, fingerprint and all-rank RNG state"
+}

@@ -1,0 +1,89 @@
+{
+  "status": "DOCUMENT_MASKED_FIVE_DOMAIN_DEVELOPMENT_COMPLETE_NOT_ADMITTED",
+  "checked_utc": "2026-09-13T23:44:53.303371+00:00",
+  "elapsed_seconds": 3.331812716089189,
+  "parent_pack_sha256": "b706b08e036e148ab53f70cf55997065596c426bf9b532abbc9431bb6cf3b927",
+  "partition": "development",
+  "domains": [
+    {
+      "domain": "general_web",
+      "documents": 1000,
+      "distinct_families": 1000,
+      "blocks": 1246,
+      "valid_target_tokens": 1240415,
+      "token_path": "/ssd/scxi253/pretrain500m-20260912-v1/data/development-masked-v1/development-general_web.blocks.npy",
+      "token_sha256": "903514f30cb1444dc35f871f76671300bc0bf242877565be46db7b5fa50ecd3f",
+      "mask_path": "/ssd/scxi253/pretrain500m-20260912-v1/data/development-masked-v1/development-general_web.loss-mask.npy",
+      "mask_sha256": "92edae5565a7371cb4ca394fae1a2db3940f3168fce412500d285ec36ccf1d6f",
+      "document_index": "/ssd/scxi253/pretrain500m-20260912-v1/data/development-masked-v1/development-general_web.documents.jsonl.gz",
+      "document_index_sha256": "6c5b8db6fcacbc3ce52bd1b0599869a7dea5c46c2d6fefc5aeb9a91e181c13e4",
+      "elapsed_seconds": 0.8617039280943573
+    },
+    {
+      "domain": "knowledge_reading",
+      "documents": 1000,
+      "distinct_families": 1000,
+      "blocks": 2679,
+      "valid_target_tokens": 4298370,
+      "token_path": "/ssd/scxi253/pretrain500m-20260912-v1/data/development-masked-v1/development-knowledge_reading.blocks.npy",
+      "token_sha256": "308eb9514cb71effc383005c073f8f212deade8a75826f1608563dc7bd09e22b",
+      "mask_path": "/ssd/scxi253/pretrain500m-20260912-v1/data/development-masked-v1/development-knowledge_reading.loss-mask.npy",
+      "mask_sha256": "3e63456c8c3f62a9e324a61b3bc87a2575a43bee9bc7ea91ec8fa1f33f7e5d3b",
+      "document_index": "/ssd/scxi253/pretrain500m-20260912-v1/data/development-masked-v1/development-knowledge_reading.documents.jsonl.gz",
+      "document_index_sha256": "2008c617e46683b0ba27ab9012187e26a922a6005c5af6947bb3dca581df2020",
+      "elapsed_seconds": 0.9559604478999972
+    },
+    {
+      "domain": "math",
+      "documents": 1009,
+      "distinct_families": 1000,
+      "blocks": 1243,
+      "valid_target_tokens": 1281152,
+      "token_path": "/ssd/scxi253/pretrain500m-20260912-v1/data/development-masked-v1/development-math.blocks.npy",
+      "token_sha256": "91d1e551fdf6fadc83553cba4a16d9d3f605fdc94bf58e30cd2730d2036e9d6c",
+      "mask_path": "/ssd/scxi253/pretrain500m-20260912-v1/data/development-masked-v1/development-math.loss-mask.npy",
+      "mask_sha256": "e02a466ad75013a515f1dd9d9ef62314444741f27d4b78c01b862a3fd33bdaac",
+      "document_index": "/ssd/scxi253/pretrain500m-20260912-v1/data/development-masked-v1/development-math.documents.jsonl.gz",
+      "document_index_sha256": "9967df5aff62b87a99b74e50ee433bfa01274508899fd2df80c53791e78883aa",
+      "elapsed_seconds": 0.8790484871715307
+    },
+    {
+      "domain": "code",
+      "documents": 1072,
+      "distinct_families": 1000,
+      "blocks": 1297,
+      "valid_target_tokens": 1155811,
+      "token_path": "/ssd/scxi253/pretrain500m-20260912-v1/data/development-masked-v1/development-code.blocks.npy",
+      "token_sha256": "759fb9faa4cf603ae09b62843c5a011775bcf3bdd71ebbb0114bbf32d1062eff",
+      "mask_path": "/ssd/scxi253/pretrain500m-20260912-v1/data/development-masked-v1/development-code.loss-mask.npy",
+      "mask_sha256": "30a2b39f013560662da9d709428cbea38fa63bf5e89ec12333a7ec7657f00482",
+      "document_index": "/ssd/scxi253/pretrain500m-20260912-v1/data/development-masked-v1/development-code.documents.jsonl.gz",
+      "document_index_sha256": "bf71220278057b02e9366e667011a60c465e0aabda1d3b1a500168c8a17bc404",
+      "elapsed_seconds": 0.8709244620986283
+    },
+    {
+      "domain": "multilingual",
+      "documents": 1000,
+      "distinct_families": 1000,
+      "blocks": 1354,
+      "valid_target_tokens": 1477990,
+      "token_path": "/ssd/scxi253/pretrain500m-20260912-v1/data/development-masked-v1/development-multilingual.blocks.npy",
+      "token_sha256": "dcbe51f992bdc7fac7b36f459e1b6d019977301d13c79deb008ff7e4d4dda9d7",
+      "mask_path": "/ssd/scxi253/pretrain500m-20260912-v1/data/development-masked-v1/development-multilingual.loss-mask.npy",
+      "mask_sha256": "7b9c2c2da644e2583f6e866fa9d58be99c4f06512423fa310647dd7337131af1",
+      "document_index": "/ssd/scxi253/pretrain500m-20260912-v1/data/development-masked-v1/development-multilingual.documents.jsonl.gz",
+      "document_index_sha256": "b667a9d9925c90989120be59ff68ec1ce6daf5aec7cc66e157184122bf23f06e",
+      "elapsed_seconds": 1.3886323408223689
+    }
+  ],
+  "manifest": "/ssd/scxi253/pretrain500m-20260912-v1/data/development-masked-v1/development-mixture.json",
+  "manifest_sha256": "a33d6fa5fc5a263385a8d348fb9ce693a05d57cdd0a870c572d95e843ae366cf",
+  "padded_prediction_tokens": 16013312,
+  "valid_target_tokens": 9453738,
+  "training_admitted": false,
+  "limitations": [
+    "Every document is packed independently; first document tokens and padding have no loss target.",
+    "Development data supports selection only and is not a sealed final test.",
+    "Family separation is bounded by the parent observed-family audit."
+  ]
+}

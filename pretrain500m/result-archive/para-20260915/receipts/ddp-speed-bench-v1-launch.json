@@ -1,0 +1,18 @@
+{
+  "adoption_gates": {
+    "all_final_mfu10_strictly_greater_than": 0.5,
+    "minimum_B_over_A_speedup_strictly_greater_than": 1.005,
+    "numerical_max_abs_difference": 1e-12
+  },
+  "claim_boundary": "prospective qualification only; no active job mutation or quality claim",
+  "cpt_v5_train_sha256": "ee317d432a8a464aa8ee75662f2f89d19fa68847d4386b920d975dddad9fd3e0",
+  "dependency": "afterany:1588523",
+  "design": "same-allocation ABBA, 4x RTX 5090, 20 steps per segment, no checkpoint",
+  "job_id": 1588569,
+  "schema_version": 1,
+  "speed_bench_sha256sums_sha256": "4fd0d755a1b1f9ef367f1a206f8bd7db3f159efe681411b13ae1b963c2830601",
+  "status": "SUBMITTED_DEPENDENT",
+  "submitted_unix": 1789350116.0135498,
+  "variant_A": "find_unused_parameters=true",
+  "variant_B": "find_unused_parameters=false"
+}

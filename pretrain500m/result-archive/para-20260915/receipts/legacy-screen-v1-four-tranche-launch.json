@@ -1,0 +1,8 @@
+{
+  "schema": "p529m-parallel-audit-launch-v1",
+  "status": "RUNNING",
+  "launched_utc": "2026-09-14T00:41:45.164193+00:00",
+  "pid": 1094679,
+  "output": "/ssd/scxi253/pretrain500m-20260912-v1/data/legacy-screen-v1-four-tranche",
+  "training_admitted": false
+}

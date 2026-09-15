@@ -1,0 +1,29 @@
+{
+  "schema": "p529m-f2-continuation-live-status-v1",
+  "checked_utc": "2026-09-15T22:12:33Z",
+  "source": "source-bound SSH to ParaCloud ln01; scontrol ping, sacct, scoped file search, df",
+  "controller_ping_timeout_seconds": 8,
+  "controller_rpc_responded": false,
+  "public_gpu_5090_capacity": "UNKNOWN",
+  "jobs": [
+    {
+      "job_id": 1592301,
+      "accounting_state": "PENDING",
+      "accounting_elapsed": "00:00:00",
+      "accounting_start": "Unknown",
+      "accounting_alloc_tres": "",
+      "accounting_node_list": "None assigned"
+    },
+    {
+      "job_id": 1592302,
+      "accounting_state": "PENDING",
+      "accounting_elapsed": "00:00:00",
+      "accounting_start": "Unknown",
+      "accounting_alloc_tres": "",
+      "accounting_node_list": "None assigned"
+    }
+  ],
+  "job_id_named_files_found_under_project_maxdepth5": 0,
+  "project_filesystem_available_bytes": 111650500608,
+  "claim_boundary": "Accounting DB still shows pending zero-runtime records; live scheduler availability and GPU capacity are unknown while controller RPC times out. This is not evidence of a new training result."
+}

@@ -1,0 +1,16 @@
+{
+  "bytes_note": "stat succeeded before deletion, but the value was lost when receipt serialization failed after deletion",
+  "bytes_removed": null,
+  "owner_marker": "owner task 01a09290-b43f-7431-be8a-412ea5d37954",
+  "pre_delete_sha256_matched_sidecar": true,
+  "reason": "rejected 16-GPU stability pilot terminal checkpoint cleanup after MFU gate failure",
+  "receipt_recovery_note": "Initial receipt Python heredoc lost JSON quoting through nested SSH; this recovery receipt records the verified facts without inventing the lost byte count.",
+  "sha256": "13a5da6e21be6cfaa750eb9336b79d9380bf8ba5fa6e21a8338670c0f58c9469",
+  "source_job": "1584101",
+  "source_job_state": "FAILED",
+  "source_reason": "mfu_below_minimum",
+  "status": "VERIFIED_ABSENT_WITH_SIZE_CAPTURE_LOST",
+  "target": "/ssd/scxi253/pretrain500m-20260912-v1/pilots/stability-v4-1584101/resume.pt",
+  "unix": 1789186518.525527,
+  "verified_absent": true
+}

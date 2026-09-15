@@ -1,0 +1,2547 @@
+README.md: OK
+candidates.json: OK
+run.sbatch: OK
+summarize.py: OK
+test_summarize.py: OK
+/ssd/scxi253/pretrain500m-20260912-v1/source/seven-task-confirmation-2gpu-v1/candidates.json: OK
+/ssd/scxi253/pretrain500m-20260912-v1/source/protocol-v5.json: OK
+/ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/eval-cache-manifest.json: OK
+/ssd/scxi253/pretrain500m-20260912-v1/formal/eval-v5/seven-task-aggregate.json: OK
+{"aliases": 4, "bytes": 140809940, "files": 83, "status": "PASS_FROZEN_OFFLINE_EVAL_CACHE"}
+/ssd/scxi253/pretrain500m-20260912-v1/formal/run-v5/resume.pt: OK
+/ssd/scxi253/pretrain500m-20260912-v1/formal/hf-v5/export-receipt.json: OK
+Passed argument batch_size = auto:1. Detecting largest batch size
+Passed argument batch_size = auto:1. Detecting largest batch size
+Determined largest batch size: 64
+Determined largest batch size: 64
+{
+  "results": {
+    "arc_challenge": {
+      "alias": "arc_challenge",
+      "acc,none": 0.26706484641638223,
+      "acc_stderr,none": 0.01292893319649643,
+      "acc_norm,none": 0.2832764505119454,
+      "acc_norm_stderr,none": 0.013167478735134564
+    },
+    "arc_easy": {
+      "alias": "arc_easy",
+      "acc,none": 0.6039562289562289,
+      "acc_stderr,none": 0.010035580962097864,
+      "acc_norm,none": 0.5526094276094277,
+      "acc_norm_stderr,none": 0.010202832385415715
+    },
+    "boolq": {
+      "alias": "boolq",
+      "acc,none": 0.5629969418960244,
+      "acc_stderr,none": 0.008675365793227294
+    },
+    "hellaswag": {
+      "alias": "hellaswag",
+      "acc,none": 0.3488348934475204,
+      "acc_stderr,none": 0.004756275875018258,
+      "acc_norm,none": 0.42342162915753834,
+      "acc_norm_stderr,none": 0.0049309115150848225
+    },
+    "openbookqa": {
+      "alias": "openbookqa",
+      "acc,none": 0.224,
+      "acc_stderr,none": 0.01866399446471086,
+      "acc_norm,none": 0.332,
+      "acc_norm_stderr,none": 0.021081766571222797
+    },
+    "piqa": {
+      "alias": "piqa",
+      "acc,none": 0.6828073993471164,
+      "acc_stderr,none": 0.010858155454380783,
+      "acc_norm,none": 0.6686615886833515,
+      "acc_norm_stderr,none": 0.010982077458957339
+    },
+    "winogrande": {
+      "alias": "winogrande",
+      "acc,none": 0.5367008681925809,
+      "acc_stderr,none": 0.014014578458843366
+    }
+  },
+  "group_subtasks": {
+    "arc_challenge": [],
+    "arc_easy": [],
+    "boolq": [],
+    "hellaswag": [],
+    "openbookqa": [],
+    "piqa": [],
+    "winogrande": []
+  },
+  "configs": {
+    "arc_challenge": {
+      "task": "arc_challenge",
+      "tag": [
+        "ai2_arc"
+      ],
+      "dataset_path": "allenai/ai2_arc",
+      "dataset_name": "ARC-Challenge",
+      "training_split": "train",
+      "validation_split": "validation",
+      "test_split": "test",
+      "doc_to_text": "Question: {{question}}\nAnswer:",
+      "doc_to_target": "{{choices.label.index(answerKey)}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices.text}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "Question: {{question}}\nAnswer:",
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/ssd/scxi253/pretrain500m-20260912-v1/formal/hf-v5",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "base",
+        "checkpoint_sha256": "13aa21721e15c48cdfdafe30d8fdd41d9c95c90be766327661d96af1e90dd6cf",
+        "world_size": 2
+      }
+    },
+    "arc_easy": {
+      "task": "arc_easy",
+      "tag": [
+        "ai2_arc"
+      ],
+      "dataset_path": "allenai/ai2_arc",
+      "dataset_name": "ARC-Easy",
+      "training_split": "train",
+      "validation_split": "validation",
+      "test_split": "test",
+      "doc_to_text": "Question: {{question}}\nAnswer:",
+      "doc_to_target": "{{choices.label.index(answerKey)}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices.text}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "Question: {{question}}\nAnswer:",
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/ssd/scxi253/pretrain500m-20260912-v1/formal/hf-v5",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "base",
+        "checkpoint_sha256": "13aa21721e15c48cdfdafe30d8fdd41d9c95c90be766327661d96af1e90dd6cf",
+        "world_size": 2
+      }
+    },
+    "boolq": {
+      "task": "boolq",
+      "tag": [
+        "super-glue-lm-eval-v1"
+      ],
+      "dataset_path": "super_glue",
+      "dataset_name": "boolq",
+      "training_split": "train",
+      "validation_split": "validation",
+      "doc_to_text": "{{passage}}\nQuestion: {{question}}?\nAnswer:",
+      "doc_to_target": "label",
+      "unsafe_code": false,
+      "doc_to_choice": [
+        "no",
+        "yes"
+      ],
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc"
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "passage",
+      "metadata": {
+        "version": 2.0,
+        "pretrained": "/ssd/scxi253/pretrain500m-20260912-v1/formal/hf-v5",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "base",
+        "checkpoint_sha256": "13aa21721e15c48cdfdafe30d8fdd41d9c95c90be766327661d96af1e90dd6cf",
+        "world_size": 2
+      }
+    },
+    "hellaswag": {
+      "task": "hellaswag",
+      "tag": [
+        "multiple_choice"
+      ],
+      "dataset_path": "hellaswag",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "validation_split": "validation",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc):\n        ctx = doc[\"ctx_a\"] + \" \" + doc[\"ctx_b\"].capitalize()\n        out_doc = {\n            \"query\": preprocess(doc[\"activity_label\"] + \": \" + ctx),\n            \"choices\": [preprocess(ending) for ending in doc[\"endings\"]],\n            \"gold\": int(doc[\"label\"]),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "{{query}}",
+      "doc_to_target": "{{label}}",
+      "unsafe_code": false,
+      "doc_to_choice": "choices",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/ssd/scxi253/pretrain500m-20260912-v1/formal/hf-v5",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "base",
+        "checkpoint_sha256": "13aa21721e15c48cdfdafe30d8fdd41d9c95c90be766327661d96af1e90dd6cf",
+        "world_size": 2
+      }
+    },
+    "openbookqa": {
+      "task": "openbookqa",
+      "dataset_path": "openbookqa",
+      "dataset_name": "main",
+      "training_split": "train",
+      "validation_split": "validation",
+      "test_split": "test",
+      "doc_to_text": "question_stem",
+      "doc_to_target": "{{choices.label.index(answerKey.lstrip())}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices.text}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "question_stem",
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/ssd/scxi253/pretrain500m-20260912-v1/formal/hf-v5",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "base",
+        "checkpoint_sha256": "13aa21721e15c48cdfdafe30d8fdd41d9c95c90be766327661d96af1e90dd6cf",
+        "world_size": 2
+      }
+    },
+    "piqa": {
+      "task": "piqa",
+      "dataset_path": "baber/piqa",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "validation_split": "validation",
+      "doc_to_text": "Question: {{goal}}\nAnswer:",
+      "doc_to_target": "label",
+      "unsafe_code": false,
+      "doc_to_choice": "{{[sol1, sol2]}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "goal",
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/ssd/scxi253/pretrain500m-20260912-v1/formal/hf-v5",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "base",
+        "checkpoint_sha256": "13aa21721e15c48cdfdafe30d8fdd41d9c95c90be766327661d96af1e90dd6cf",
+        "world_size": 2
+      }
+    },
+    "winogrande": {
+      "task": "winogrande",
+      "dataset_path": "winogrande",
+      "dataset_name": "winogrande_xl",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "validation_split": "validation",
+      "doc_to_text": "def doc_to_text(doc):\n    answer_to_num = {\"1\": 0, \"2\": 1}\n    return answer_to_num[doc[\"answer\"]]\n",
+      "doc_to_target": "def doc_to_target(doc):\n    idx = doc[\"sentence\"].index(\"_\") + 1\n    return doc[\"sentence\"][idx:].strip()\n",
+      "unsafe_code": false,
+      "doc_to_choice": "def doc_to_choice(doc):\n    idx = doc[\"sentence\"].index(\"_\")\n    options = [doc[\"option1\"], doc[\"option2\"]]\n    return [doc[\"sentence\"][:idx] + opt for opt in options]\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "sentence",
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/ssd/scxi253/pretrain500m-20260912-v1/formal/hf-v5",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "base",
+        "checkpoint_sha256": "13aa21721e15c48cdfdafe30d8fdd41d9c95c90be766327661d96af1e90dd6cf",
+        "world_size": 2
+      }
+    }
+  },
+  "versions": {
+    "arc_challenge": 1.0,
+    "arc_easy": 1.0,
+    "boolq": 2.0,
+    "hellaswag": 1.0,
+    "openbookqa": 1.0,
+    "piqa": 1.0,
+    "winogrande": 1.0
+  },
+  "n-shot": {
+    "arc_challenge": 0,
+    "arc_easy": 0,
+    "boolq": 0,
+    "hellaswag": 0,
+    "openbookqa": 0,
+    "piqa": 0,
+    "winogrande": 0
+  },
+  "higher_is_better": {
+    "arc_challenge": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "arc_easy": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "boolq": {
+      "acc": true
+    },
+    "hellaswag": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "openbookqa": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "piqa": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "winogrande": {
+      "acc": true
+    }
+  },
+  "n-samples": {
+    "winogrande": {
+      "original": 1267,
+      "effective": 1267
+    },
+    "piqa": {
+      "original": 1838,
+      "effective": 1838
+    },
+    "openbookqa": {
+      "original": 500,
+      "effective": 500
+    },
+    "hellaswag": {
+      "original": 10042,
+      "effective": 10042
+    },
+    "boolq": {
+      "original": 3270,
+      "effective": 3270
+    },
+    "arc_easy": {
+      "original": 2376,
+      "effective": 2376
+    },
+    "arc_challenge": {
+      "original": 1172,
+      "effective": 1172
+    }
+  },
+  "config": {
+    "model": "hf",
+    "model_args": "pretrained=/ssd/scxi253/pretrain500m-20260912-v1/formal/hf-v5,dtype=bfloat16,trust_remote_code=False,max_length=2048",
+    "model_num_parameters": 528748800,
+    "model_dtype": "torch.bfloat16",
+    "model_revision": "main",
+    "model_sha": "",
+    "batch_size": "auto",
+    "batch_sizes": [
+      64
+    ],
+    "device": "cuda",
+    "use_cache": null,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "gen_kwargs": null,
+    "random_seed": 42,
+    "numpy_seed": 42,
+    "torch_seed": 42,
+    "fewshot_seed": 1234
+  },
+  "git_hash": null,
+  "date": 1789419933.640182,
+  "pretty_env_info": "PyTorch version: 2.11.0+cu128\nIs debug build: False\nCUDA used to build PyTorch: 12.8\nROCM used to build PyTorch: N/A\n\nOS: Ubuntu 22.04.5 LTS (x86_64)\nGCC version: (Ubuntu 11.4.0-1ubuntu1~22.04.2) 11.4.0\nClang version: Could not collect\nCMake version: Could not collect\nLibc version: glibc-2.35\n\nPython version: 3.12.13 (main, Jul 18 2026, 17:02:19) [Clang 22.1.3 ] (64-bit runtime)\nPython platform: Linux-5.15.0-119-generic-x86_64-with-glibc2.35\nIs CUDA available: True\nCUDA runtime version: Could not collect\nCUDA_MODULE_LOADING set to: \nGPU models and configuration: \nGPU 0: NVIDIA GeForce RTX 5090\nGPU 1: NVIDIA GeForce RTX 5090\n\nNvidia driver version: 580.82.07\ncuDNN version: Could not collect\nIs XPU available: False\nHIP runtime version: N/A\nMIOpen runtime version: N/A\nIs XNNPACK available: True\nCaching allocator config: N/A\n\nCPU:\nArchitecture:                         x86_64\nCPU op-mode(s):                       32-bit, 64-bit\nAddress sizes:                        52 bits physical, 57 bits virtual\nByte Order:                           Little Endian\nCPU(s):                               128\nOn-line CPU(s) list:                  0-127\nVendor ID:                            GenuineIntel\nModel name:                           INTEL(R) XEON(R) GOLD 6530\nCPU family:                           6\nModel:                                207\nThread(s) per core:                   2\nCore(s) per socket:                   32\nSocket(s):                            2\nStepping:                             2\nCPU max MHz:                          4000.0000\nCPU min MHz:                          800.0000\nBogoMIPS:                             4200.00\nFlags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cat_l2 cdp_l3 invpcid_single intel_ppin cdp_l2 ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local split_lock_detect avx_vnni avx512_bf16 wbnoinvd dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req avx512vbmi umip pku ospke waitpkg avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg tme avx512_vpopcntdq la57 rdpid bus_lock_detect cldemote movdiri movdir64b enqcmd fsrm md_clear serialize tsxldtrk pconfig arch_lbr amx_bf16 avx512_fp16 amx_tile amx_int8 flush_l1d arch_capabilities\nVirtualization:                       VT-x\nL1d cache:                            3 MiB (64 instances)\nL1i cache:                            2 MiB (64 instances)\nL2 cache:                             128 MiB (64 instances)\nL3 cache:                             320 MiB (2 instances)\nNUMA node(s):                         2\nNUMA node0 CPU(s):                    0-31,64-95\nNUMA node1 CPU(s):                    32-63,96-127\nVulnerability Gather data sampling:   Not affected\nVulnerability Itlb multihit:          Not affected\nVulnerability L1tf:                   Not affected\nVulnerability Mds:                    Not affected\nVulnerability Meltdown:               Not affected\nVulnerability Mmio stale data:        Not affected\nVulnerability Reg file data sampling: Not affected\nVulnerability Retbleed:               Not affected\nVulnerability Spec rstack overflow:   Not affected\nVulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl and seccomp\nVulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI BHI_DIS_S\nVulnerability Srbds:                  Not affected\nVulnerability Tsx async abort:        Not affected\n\nVersions of relevant libraries:\n[pip3] numpy==1.26.4\n[pip3] nvidia-cublas-cu12==12.8.4.1\n[pip3] nvidia-cuda-cupti-cu12==12.8.90\n[pip3] nvidia-cuda-nvrtc-cu12==12.8.93\n[pip3] nvidia-cuda-runtime-cu12==12.8.90\n[pip3] nvidia-cudnn-cu12==9.19.0.56\n[pip3] nvidia-cufft-cu12==11.3.3.83\n[pip3] nvidia-curand-cu12==10.3.9.90\n[pip3] nvidia-cusolver-cu12==11.7.3.90\n[pip3] nvidia-cusparse-cu12==12.5.8.93\n[pip3] nvidia-cusparselt-cu12==0.7.1\n[pip3] nvidia-nccl-cu12==2.28.9\n[pip3] nvidia-nvjitlink-cu12==12.8.93\n[pip3] nvidia-nvtx-cu12==12.8.90\n[pip3] torch==2.11.0+cu128\n[pip3] triton==3.6.0\n[conda] Could not collect",
+  "transformers_version": "4.57.6",
+  "lm_eval_version": "0.4.9",
+  "upper_git_hash": null,
+  "tokenizer_pad_token": [
+    "<|padding|>",
+    "1"
+  ],
+  "tokenizer_eos_token": [
+    "<|endoftext|>",
+    "50279"
+  ],
+  "tokenizer_bos_token": [
+    null,
+    "None"
+  ],
+  "eot_token_id": 50279,
+  "max_length": 2048
+}
+hf (pretrained=/ssd/scxi253/pretrain500m-20260912-v1/formal/hf-v5,dtype=bfloat16,trust_remote_code=False,max_length=2048), gen_kwargs: (None), limit: None, num_fewshot: 0, batch_size: auto (64)
+|    Tasks    |Version|Filter|n-shot| Metric |   |Value |   |Stderr|
+|-------------|------:|------|-----:|--------|---|-----:|---|-----:|
+|arc_challenge|      1|none  |     0|acc     |↑  |0.2671|±  |0.0129|
+|             |       |none  |     0|acc_norm|↑  |0.2833|±  |0.0132|
+|arc_easy     |      1|none  |     0|acc     |↑  |0.6040|±  |0.0100|
+|             |       |none  |     0|acc_norm|↑  |0.5526|±  |0.0102|
+|boolq        |      2|none  |     0|acc     |↑  |0.5630|±  |0.0087|
+|hellaswag    |      1|none  |     0|acc     |↑  |0.3488|±  |0.0048|
+|             |       |none  |     0|acc_norm|↑  |0.4234|±  |0.0049|
+|openbookqa   |      1|none  |     0|acc     |↑  |0.2240|±  |0.0187|
+|             |       |none  |     0|acc_norm|↑  |0.3320|±  |0.0211|
+|piqa         |      1|none  |     0|acc     |↑  |0.6828|±  |0.0109|
+|             |       |none  |     0|acc_norm|↑  |0.6687|±  |0.0110|
+|winogrande   |      1|none  |     0|acc     |↑  |0.5367|±  |0.0140|
+
+{"aggregate": {"bootstrap_ci_95": [0.4705536287820702, 0.4895537238314399], "bootstrap_replicates": 10000, "bootstrap_seed": 20260912, "name": "seven_task_unweighted_mean", "percentile_method": "linear", "score": 0.479952415150124, "task_weighting": "unweighted"}, "input_sha256": {"protocol": "a71ce3c8cc85cac6fe6751cb46f7e50dfb78d266602d6377cb2e65249f11c761", "results": "59395e468a8293e90deafdc0b94a1930fc7d9c502f52a8ce52f3259ee6b9b855", "samples_arc_challenge": "7f2dfb812007d9295efadf36d4dc90b0c18e68005e8fef1e84476a3422059ccc", "samples_arc_easy": "5cb9fda989975035ee0eb15b558656edce43bbe2585ea81aaf3765e9f05ef764", "samples_boolq": "378a67c044b88e71917e0b4a9c7c5b84f7e26aba14846c1eb858d2a05ce862ff", "samples_hellaswag": "a862f64dc9d46fe37def7b97f03eda7ad0623f44fa23cc1e51284e4c0545d7b7", "samples_openbookqa": "8bd600d8698ba263323c3382661102e4960c97eab80df3edb0fa6594bce3e835", "samples_piqa": "f1009eae9de826bb1b26dcd3bf24d54474e1f058b4b8f87597f3674e03de5f6a", "samples_winogrande": "ca2162c9c4c893637c7cccd0a3cc8336255eee6dc6e567c99a22dfb014a0a871"}, "protocol_id": "p500m-english-base-v5", "protocol_sha256": "a71ce3c8cc85cac6fe6751cb46f7e50dfb78d266602d6377cb2e65249f11c761", "status": "PASS_FROZEN_EVALUATION_AGGREGATE", "tasks": {"arc_challenge": {"bootstrap_ci_95": [0.257679180887372, 0.30887372013651876], "primary_metric": "acc_norm", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/base/lm-eval/__ssd__scxi253__pretrain500m-20260912-v1__formal__hf-v5/samples_arc_challenge_2026-09-15T05-06-34.304822.jsonl", "sample_log_sha256": "7f2dfb812007d9295efadf36d4dc90b0c18e68005e8fef1e84476a3422059ccc", "samples": 1172, "score": 0.2832764505119454}, "arc_easy": {"bootstrap_ci_95": [0.5324074074074074, 0.5728114478114478], "primary_metric": "acc_norm", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/base/lm-eval/__ssd__scxi253__pretrain500m-20260912-v1__formal__hf-v5/samples_arc_easy_2026-09-15T05-06-34.304822.jsonl", "sample_log_sha256": "5cb9fda989975035ee0eb15b558656edce43bbe2585ea81aaf3765e9f05ef764", "samples": 2376, "score": 0.5526094276094277}, "boolq": {"bootstrap_ci_95": [0.5461773700305811, 0.5798165137614679], "primary_metric": "acc", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/base/lm-eval/__ssd__scxi253__pretrain500m-20260912-v1__formal__hf-v5/samples_boolq_2026-09-15T05-06-34.304822.jsonl", "sample_log_sha256": "378a67c044b88e71917e0b4a9c7c5b84f7e26aba14846c1eb858d2a05ce862ff", "samples": 3270, "score": 0.5629969418960244}, "hellaswag": {"bootstrap_ci_95": [0.4137621987651862, 0.43308105954989046], "primary_metric": "acc_norm", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/base/lm-eval/__ssd__scxi253__pretrain500m-20260912-v1__formal__hf-v5/samples_hellaswag_2026-09-15T05-06-34.304822.jsonl", "sample_log_sha256": "a862f64dc9d46fe37def7b97f03eda7ad0623f44fa23cc1e51284e4c0545d7b7", "samples": 10042, "score": 0.42342162915753834}, "openbookqa": {"bootstrap_ci_95": [0.29, 0.374], "primary_metric": "acc_norm", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/base/lm-eval/__ssd__scxi253__pretrain500m-20260912-v1__formal__hf-v5/samples_openbookqa_2026-09-15T05-06-34.304822.jsonl", "sample_log_sha256": "8bd600d8698ba263323c3382661102e4960c97eab80df3edb0fa6594bce3e835", "samples": 500, "score": 0.332}, "piqa": {"bootstrap_ci_95": [0.6468852013057672, 0.6898803046789989], "primary_metric": "acc_norm", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/base/lm-eval/__ssd__scxi253__pretrain500m-20260912-v1__formal__hf-v5/samples_piqa_2026-09-15T05-06-34.304822.jsonl", "sample_log_sha256": "f1009eae9de826bb1b26dcd3bf24d54474e1f058b4b8f87597f3674e03de5f6a", "samples": 1838, "score": 0.6686615886833515}, "winogrande": {"bootstrap_ci_95": [0.5090765588003157, 0.5643251775848461], "primary_metric": "acc", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/base/lm-eval/__ssd__scxi253__pretrain500m-20260912-v1__formal__hf-v5/samples_winogrande_2026-09-15T05-06-34.304822.jsonl", "sample_log_sha256": "ca2162c9c4c893637c7cccd0a3cc8336255eee6dc6e567c99a22dfb014a0a871", "samples": 1267, "score": 0.5367008681925809}}}
+/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260914-1589567/train/model-final.pt: OK
+{"argmax_agreement": 0.98828125, "argmax_matches": 253, "argmax_total": 256, "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260914-1589567/train/model-final.pt", "checkpoint_sha256": "69d9d8d3358f23815f2455f7e075645056f90fe01ed40a11525130a0e58ca085", "checkpoint_step": 1024, "dtype": "bfloat16", "files": [{"bytes": 696, "path": "config.json", "sha256": "880d4cdad66bf97a2d0830ae36ac999c844b2c16e6c4b8b00eea18013141a6a0"}, {"bytes": 115, "path": "generation_config.json", "sha256": "000cfff4d7f7c400a45cd02b275313ed128cf94fec5ecec7a5eee5dbb1833b9e"}, {"bytes": 1057524496, "path": "model.safetensors", "sha256": "8c5a3476a78293aa5534c76641df2ae562594a2effa93a4e0973b8f7cd0380cf"}, {"bytes": 293, "path": "special_tokens_map.json", "sha256": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193"}, {"bytes": 3565402, "path": "tokenizer.json", "sha256": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6"}, {"bytes": 5307, "path": "tokenizer_config.json", "sha256": "65fb76dbcacdc8505ec00c53fa3cecac07b1124bf08c88a70bdf3b14d617bc87"}], "functional_limits": {"max_abs_logit_difference": 0.5, "mean_abs_logit_difference": 0.025, "minimum_argmax_agreement": 0.97}, "logit_difference_quantiles": {"0.5": 0.015625, "0.9": 0.03125, "0.99": 0.0625, "0.999": 0.09375, "0.9999": 0.125}, "logit_parity_attention": "eager", "max_abs_logit_difference": 0.21875, "mean_abs_logit_difference": 0.01726427674293518, "parameters_total": 528748800, "sample_shape": [2, 128], "state_tensor_count": 237, "state_tensor_parity": "bitwise_exact", "status": "PASS_HF_EXPORT_BITWISE_STATE_AND_BOUNDED_BF16_LOGIT_DRIFT", "tokenizer_adapter": {"eos_token_id": 50279, "export_class": "PreTrainedTokenizerFast", "original_class": "OLMoTokenizer", "pad_token_id": 1, "token_id_equivalence_samples": 3, "vocab_size": 50280}, "tokenizer_files_copied": ["special_tokens_map.json", "tokenizer.json", "tokenizer_config.json"]}
+Passed argument batch_size = auto:1. Detecting largest batch size
+Passed argument batch_size = auto:1. Detecting largest batch size
+Determined largest batch size: 64
+Determined largest batch size: 64
+{
+  "results": {
+    "arc_challenge": {
+      "alias": "arc_challenge",
+      "acc,none": 0.24914675767918087,
+      "acc_stderr,none": 0.012639407111926505,
+      "acc_norm,none": 0.29692832764505117,
+      "acc_norm_stderr,none": 0.013352025976725267
+    },
+    "arc_easy": {
+      "alias": "arc_easy",
+      "acc,none": 0.5968013468013468,
+      "acc_stderr,none": 0.010065668576794674,
+      "acc_norm,none": 0.5429292929292929,
+      "acc_norm_stderr,none": 0.01022189756425604
+    },
+    "boolq": {
+      "alias": "boolq",
+      "acc,none": 0.5944954128440367,
+      "acc_stderr,none": 0.008587459055441725
+    },
+    "hellaswag": {
+      "alias": "hellaswag",
+      "acc,none": 0.3482374029077873,
+      "acc_stderr,none": 0.0047543805549295475,
+      "acc_norm,none": 0.4283011352320255,
+      "acc_norm_stderr,none": 0.004938212723748129
+    },
+    "openbookqa": {
+      "alias": "openbookqa",
+      "acc,none": 0.212,
+      "acc_stderr,none": 0.01829703700401386,
+      "acc_norm,none": 0.336,
+      "acc_norm_stderr,none": 0.021144791425048808
+    },
+    "piqa": {
+      "alias": "piqa",
+      "acc,none": 0.6838955386289445,
+      "acc_stderr,none": 0.010848148455700339,
+      "acc_norm,none": 0.6751904243743199,
+      "acc_norm_stderr,none": 0.010926296238294114
+    },
+    "winogrande": {
+      "alias": "winogrande",
+      "acc,none": 0.5224940805051302,
+      "acc_stderr,none": 0.014038257824059859
+    }
+  },
+  "group_subtasks": {
+    "arc_challenge": [],
+    "arc_easy": [],
+    "boolq": [],
+    "hellaswag": [],
+    "openbookqa": [],
+    "piqa": [],
+    "winogrande": []
+  },
+  "configs": {
+    "arc_challenge": {
+      "task": "arc_challenge",
+      "tag": [
+        "ai2_arc"
+      ],
+      "dataset_path": "allenai/ai2_arc",
+      "dataset_name": "ARC-Challenge",
+      "training_split": "train",
+      "validation_split": "validation",
+      "test_split": "test",
+      "doc_to_text": "Question: {{question}}\nAnswer:",
+      "doc_to_target": "{{choices.label.index(answerKey)}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices.text}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "Question: {{question}}\nAnswer:",
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/tmp/p529m-seven-task-2gpu-1590907/F2_reasoning_no_synthetic_seed20260914",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "F2_reasoning_no_synthetic_seed20260914",
+        "checkpoint_sha256": "69d9d8d3358f23815f2455f7e075645056f90fe01ed40a11525130a0e58ca085",
+        "world_size": 2
+      }
+    },
+    "arc_easy": {
+      "task": "arc_easy",
+      "tag": [
+        "ai2_arc"
+      ],
+      "dataset_path": "allenai/ai2_arc",
+      "dataset_name": "ARC-Easy",
+      "training_split": "train",
+      "validation_split": "validation",
+      "test_split": "test",
+      "doc_to_text": "Question: {{question}}\nAnswer:",
+      "doc_to_target": "{{choices.label.index(answerKey)}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices.text}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "Question: {{question}}\nAnswer:",
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/tmp/p529m-seven-task-2gpu-1590907/F2_reasoning_no_synthetic_seed20260914",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "F2_reasoning_no_synthetic_seed20260914",
+        "checkpoint_sha256": "69d9d8d3358f23815f2455f7e075645056f90fe01ed40a11525130a0e58ca085",
+        "world_size": 2
+      }
+    },
+    "boolq": {
+      "task": "boolq",
+      "tag": [
+        "super-glue-lm-eval-v1"
+      ],
+      "dataset_path": "super_glue",
+      "dataset_name": "boolq",
+      "training_split": "train",
+      "validation_split": "validation",
+      "doc_to_text": "{{passage}}\nQuestion: {{question}}?\nAnswer:",
+      "doc_to_target": "label",
+      "unsafe_code": false,
+      "doc_to_choice": [
+        "no",
+        "yes"
+      ],
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc"
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "passage",
+      "metadata": {
+        "version": 2.0,
+        "pretrained": "/tmp/p529m-seven-task-2gpu-1590907/F2_reasoning_no_synthetic_seed20260914",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "F2_reasoning_no_synthetic_seed20260914",
+        "checkpoint_sha256": "69d9d8d3358f23815f2455f7e075645056f90fe01ed40a11525130a0e58ca085",
+        "world_size": 2
+      }
+    },
+    "hellaswag": {
+      "task": "hellaswag",
+      "tag": [
+        "multiple_choice"
+      ],
+      "dataset_path": "hellaswag",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "validation_split": "validation",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc):\n        ctx = doc[\"ctx_a\"] + \" \" + doc[\"ctx_b\"].capitalize()\n        out_doc = {\n            \"query\": preprocess(doc[\"activity_label\"] + \": \" + ctx),\n            \"choices\": [preprocess(ending) for ending in doc[\"endings\"]],\n            \"gold\": int(doc[\"label\"]),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "{{query}}",
+      "doc_to_target": "{{label}}",
+      "unsafe_code": false,
+      "doc_to_choice": "choices",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/tmp/p529m-seven-task-2gpu-1590907/F2_reasoning_no_synthetic_seed20260914",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "F2_reasoning_no_synthetic_seed20260914",
+        "checkpoint_sha256": "69d9d8d3358f23815f2455f7e075645056f90fe01ed40a11525130a0e58ca085",
+        "world_size": 2
+      }
+    },
+    "openbookqa": {
+      "task": "openbookqa",
+      "dataset_path": "openbookqa",
+      "dataset_name": "main",
+      "training_split": "train",
+      "validation_split": "validation",
+      "test_split": "test",
+      "doc_to_text": "question_stem",
+      "doc_to_target": "{{choices.label.index(answerKey.lstrip())}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices.text}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "question_stem",
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/tmp/p529m-seven-task-2gpu-1590907/F2_reasoning_no_synthetic_seed20260914",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "F2_reasoning_no_synthetic_seed20260914",
+        "checkpoint_sha256": "69d9d8d3358f23815f2455f7e075645056f90fe01ed40a11525130a0e58ca085",
+        "world_size": 2
+      }
+    },
+    "piqa": {
+      "task": "piqa",
+      "dataset_path": "baber/piqa",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "validation_split": "validation",
+      "doc_to_text": "Question: {{goal}}\nAnswer:",
+      "doc_to_target": "label",
+      "unsafe_code": false,
+      "doc_to_choice": "{{[sol1, sol2]}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "goal",
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/tmp/p529m-seven-task-2gpu-1590907/F2_reasoning_no_synthetic_seed20260914",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "F2_reasoning_no_synthetic_seed20260914",
+        "checkpoint_sha256": "69d9d8d3358f23815f2455f7e075645056f90fe01ed40a11525130a0e58ca085",
+        "world_size": 2
+      }
+    },
+    "winogrande": {
+      "task": "winogrande",
+      "dataset_path": "winogrande",
+      "dataset_name": "winogrande_xl",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "validation_split": "validation",
+      "doc_to_text": "def doc_to_text(doc):\n    answer_to_num = {\"1\": 0, \"2\": 1}\n    return answer_to_num[doc[\"answer\"]]\n",
+      "doc_to_target": "def doc_to_target(doc):\n    idx = doc[\"sentence\"].index(\"_\") + 1\n    return doc[\"sentence\"][idx:].strip()\n",
+      "unsafe_code": false,
+      "doc_to_choice": "def doc_to_choice(doc):\n    idx = doc[\"sentence\"].index(\"_\")\n    options = [doc[\"option1\"], doc[\"option2\"]]\n    return [doc[\"sentence\"][:idx] + opt for opt in options]\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "sentence",
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/tmp/p529m-seven-task-2gpu-1590907/F2_reasoning_no_synthetic_seed20260914",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "F2_reasoning_no_synthetic_seed20260914",
+        "checkpoint_sha256": "69d9d8d3358f23815f2455f7e075645056f90fe01ed40a11525130a0e58ca085",
+        "world_size": 2
+      }
+    }
+  },
+  "versions": {
+    "arc_challenge": 1.0,
+    "arc_easy": 1.0,
+    "boolq": 2.0,
+    "hellaswag": 1.0,
+    "openbookqa": 1.0,
+    "piqa": 1.0,
+    "winogrande": 1.0
+  },
+  "n-shot": {
+    "arc_challenge": 0,
+    "arc_easy": 0,
+    "boolq": 0,
+    "hellaswag": 0,
+    "openbookqa": 0,
+    "piqa": 0,
+    "winogrande": 0
+  },
+  "higher_is_better": {
+    "arc_challenge": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "arc_easy": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "boolq": {
+      "acc": true
+    },
+    "hellaswag": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "openbookqa": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "piqa": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "winogrande": {
+      "acc": true
+    }
+  },
+  "n-samples": {
+    "winogrande": {
+      "original": 1267,
+      "effective": 1267
+    },
+    "piqa": {
+      "original": 1838,
+      "effective": 1838
+    },
+    "openbookqa": {
+      "original": 500,
+      "effective": 500
+    },
+    "hellaswag": {
+      "original": 10042,
+      "effective": 10042
+    },
+    "boolq": {
+      "original": 3270,
+      "effective": 3270
+    },
+    "arc_easy": {
+      "original": 2376,
+      "effective": 2376
+    },
+    "arc_challenge": {
+      "original": 1172,
+      "effective": 1172
+    }
+  },
+  "config": {
+    "model": "hf",
+    "model_args": "pretrained=/tmp/p529m-seven-task-2gpu-1590907/F2_reasoning_no_synthetic_seed20260914,dtype=bfloat16,trust_remote_code=False,max_length=2048",
+    "model_num_parameters": 528748800,
+    "model_dtype": "torch.bfloat16",
+    "model_revision": "main",
+    "model_sha": "",
+    "batch_size": "auto",
+    "batch_sizes": [
+      64
+    ],
+    "device": "cuda",
+    "use_cache": null,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "gen_kwargs": null,
+    "random_seed": 42,
+    "numpy_seed": 42,
+    "torch_seed": 42,
+    "fewshot_seed": 1234
+  },
+  "git_hash": null,
+  "date": 1789420276.9534147,
+  "pretty_env_info": "PyTorch version: 2.11.0+cu128\nIs debug build: False\nCUDA used to build PyTorch: 12.8\nROCM used to build PyTorch: N/A\n\nOS: Ubuntu 22.04.5 LTS (x86_64)\nGCC version: (Ubuntu 11.4.0-1ubuntu1~22.04.2) 11.4.0\nClang version: Could not collect\nCMake version: Could not collect\nLibc version: glibc-2.35\n\nPython version: 3.12.13 (main, Jul 18 2026, 17:02:19) [Clang 22.1.3 ] (64-bit runtime)\nPython platform: Linux-5.15.0-119-generic-x86_64-with-glibc2.35\nIs CUDA available: True\nCUDA runtime version: Could not collect\nCUDA_MODULE_LOADING set to: \nGPU models and configuration: \nGPU 0: NVIDIA GeForce RTX 5090\nGPU 1: NVIDIA GeForce RTX 5090\n\nNvidia driver version: 580.82.07\ncuDNN version: Could not collect\nIs XPU available: False\nHIP runtime version: N/A\nMIOpen runtime version: N/A\nIs XNNPACK available: True\nCaching allocator config: N/A\n\nCPU:\nArchitecture:                         x86_64\nCPU op-mode(s):                       32-bit, 64-bit\nAddress sizes:                        52 bits physical, 57 bits virtual\nByte Order:                           Little Endian\nCPU(s):                               128\nOn-line CPU(s) list:                  0-127\nVendor ID:                            GenuineIntel\nModel name:                           INTEL(R) XEON(R) GOLD 6530\nCPU family:                           6\nModel:                                207\nThread(s) per core:                   2\nCore(s) per socket:                   32\nSocket(s):                            2\nStepping:                             2\nCPU max MHz:                          4000.0000\nCPU min MHz:                          800.0000\nBogoMIPS:                             4200.00\nFlags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cat_l2 cdp_l3 invpcid_single intel_ppin cdp_l2 ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local split_lock_detect avx_vnni avx512_bf16 wbnoinvd dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req avx512vbmi umip pku ospke waitpkg avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg tme avx512_vpopcntdq la57 rdpid bus_lock_detect cldemote movdiri movdir64b enqcmd fsrm md_clear serialize tsxldtrk pconfig arch_lbr amx_bf16 avx512_fp16 amx_tile amx_int8 flush_l1d arch_capabilities\nVirtualization:                       VT-x\nL1d cache:                            3 MiB (64 instances)\nL1i cache:                            2 MiB (64 instances)\nL2 cache:                             128 MiB (64 instances)\nL3 cache:                             320 MiB (2 instances)\nNUMA node(s):                         2\nNUMA node0 CPU(s):                    0-31,64-95\nNUMA node1 CPU(s):                    32-63,96-127\nVulnerability Gather data sampling:   Not affected\nVulnerability Itlb multihit:          Not affected\nVulnerability L1tf:                   Not affected\nVulnerability Mds:                    Not affected\nVulnerability Meltdown:               Not affected\nVulnerability Mmio stale data:        Not affected\nVulnerability Reg file data sampling: Not affected\nVulnerability Retbleed:               Not affected\nVulnerability Spec rstack overflow:   Not affected\nVulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl and seccomp\nVulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI BHI_DIS_S\nVulnerability Srbds:                  Not affected\nVulnerability Tsx async abort:        Not affected\n\nVersions of relevant libraries:\n[pip3] numpy==1.26.4\n[pip3] nvidia-cublas-cu12==12.8.4.1\n[pip3] nvidia-cuda-cupti-cu12==12.8.90\n[pip3] nvidia-cuda-nvrtc-cu12==12.8.93\n[pip3] nvidia-cuda-runtime-cu12==12.8.90\n[pip3] nvidia-cudnn-cu12==9.19.0.56\n[pip3] nvidia-cufft-cu12==11.3.3.83\n[pip3] nvidia-curand-cu12==10.3.9.90\n[pip3] nvidia-cusolver-cu12==11.7.3.90\n[pip3] nvidia-cusparse-cu12==12.5.8.93\n[pip3] nvidia-cusparselt-cu12==0.7.1\n[pip3] nvidia-nccl-cu12==2.28.9\n[pip3] nvidia-nvjitlink-cu12==12.8.93\n[pip3] nvidia-nvtx-cu12==12.8.90\n[pip3] torch==2.11.0+cu128\n[pip3] triton==3.6.0\n[conda] Could not collect",
+  "transformers_version": "4.57.6",
+  "lm_eval_version": "0.4.9",
+  "upper_git_hash": null,
+  "tokenizer_pad_token": [
+    "<|padding|>",
+    "1"
+  ],
+  "tokenizer_eos_token": [
+    "<|endoftext|>",
+    "50279"
+  ],
+  "tokenizer_bos_token": [
+    null,
+    "None"
+  ],
+  "eot_token_id": 50279,
+  "max_length": 2048
+}
+hf (pretrained=/tmp/p529m-seven-task-2gpu-1590907/F2_reasoning_no_synthetic_seed20260914,dtype=bfloat16,trust_remote_code=False,max_length=2048), gen_kwargs: (None), limit: None, num_fewshot: 0, batch_size: auto (64)
+|    Tasks    |Version|Filter|n-shot| Metric |   |Value |   |Stderr|
+|-------------|------:|------|-----:|--------|---|-----:|---|-----:|
+|arc_challenge|      1|none  |     0|acc     |↑  |0.2491|±  |0.0126|
+|             |       |none  |     0|acc_norm|↑  |0.2969|±  |0.0134|
+|arc_easy     |      1|none  |     0|acc     |↑  |0.5968|±  |0.0101|
+|             |       |none  |     0|acc_norm|↑  |0.5429|±  |0.0102|
+|boolq        |      2|none  |     0|acc     |↑  |0.5945|±  |0.0086|
+|hellaswag    |      1|none  |     0|acc     |↑  |0.3482|±  |0.0048|
+|             |       |none  |     0|acc_norm|↑  |0.4283|±  |0.0049|
+|openbookqa   |      1|none  |     0|acc     |↑  |0.2120|±  |0.0183|
+|             |       |none  |     0|acc_norm|↑  |0.3360|±  |0.0211|
+|piqa         |      1|none  |     0|acc     |↑  |0.6839|±  |0.0108|
+|             |       |none  |     0|acc_norm|↑  |0.6752|±  |0.0109|
+|winogrande   |      1|none  |     0|acc     |↑  |0.5225|±  |0.0140|
+
+{"aggregate": {"bootstrap_ci_95": [0.4757488585585863, 0.49486111981350434], "bootstrap_replicates": 10000, "bootstrap_seed": 20260912, "name": "seven_task_unweighted_mean", "percentile_method": "linear", "score": 0.4851912390756937, "task_weighting": "unweighted"}, "input_sha256": {"protocol": "a71ce3c8cc85cac6fe6751cb46f7e50dfb78d266602d6377cb2e65249f11c761", "results": "752bb5e2d8eea6dd3c4adc7241168200b4d8229c59e19e4129b96ad00b83d2d4", "samples_arc_challenge": "fd6660b2edd3db2a5695f85bc0c21e8943a557145f298489c1d8ea488b9b4d46", "samples_arc_easy": "d3c31671b012a1b0eea725117e7366760289a55bef8cb89999560499d49185be", "samples_boolq": "fbf0f23468123e4dcfa7c35d3cfa33c9636c6e4ce6a56d17f4939b4a6a1149c3", "samples_hellaswag": "cb18264eaa1fc8f28ff45a46cf5fd2e74ee13758a7dd01e136fdf9670527da1b", "samples_openbookqa": "a458197ea839bc306357f83585680f7db852f64171c132b82f286eaba836cf34", "samples_piqa": "da377adb4cea5183dcc9f2976762e66e6948a2b7befc26dee4fa569bf3f8d711", "samples_winogrande": "7e9b94f9e48da0a125f70f4b06f828e429726e789efe98bf9b31e976be880565"}, "protocol_id": "p500m-english-base-v5", "protocol_sha256": "a71ce3c8cc85cac6fe6751cb46f7e50dfb78d266602d6377cb2e65249f11c761", "status": "PASS_FROZEN_EVALUATION_AGGREGATE", "tasks": {"arc_challenge": {"bootstrap_ci_95": [0.2713310580204778, 0.32337883959044367], "primary_metric": "acc_norm", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/F2_reasoning_no_synthetic_seed20260914/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F2_reasoning_no_synthetic_seed20260914/samples_arc_challenge_2026-09-15T05-12-16.805847.jsonl", "sample_log_sha256": "fd6660b2edd3db2a5695f85bc0c21e8943a557145f298489c1d8ea488b9b4d46", "samples": 1172, "score": 0.29692832764505117}, "arc_easy": {"bootstrap_ci_95": [0.5235690235690236, 0.5627104377104377], "primary_metric": "acc_norm", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/F2_reasoning_no_synthetic_seed20260914/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F2_reasoning_no_synthetic_seed20260914/samples_arc_easy_2026-09-15T05-12-16.805847.jsonl", "sample_log_sha256": "d3c31671b012a1b0eea725117e7366760289a55bef8cb89999560499d49185be", "samples": 2376, "score": 0.5429292929292929}, "boolq": {"bootstrap_ci_95": [0.5779816513761468, 0.6110091743119266], "primary_metric": "acc", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/F2_reasoning_no_synthetic_seed20260914/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F2_reasoning_no_synthetic_seed20260914/samples_boolq_2026-09-15T05-12-16.805847.jsonl", "sample_log_sha256": "fbf0f23468123e4dcfa7c35d3cfa33c9636c6e4ce6a56d17f4939b4a6a1149c3", "samples": 3270, "score": 0.5944954128440367}, "hellaswag": {"bootstrap_ci_95": [0.4186417048396734, 0.43796056562437763], "primary_metric": "acc_norm", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/F2_reasoning_no_synthetic_seed20260914/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F2_reasoning_no_synthetic_seed20260914/samples_hellaswag_2026-09-15T05-12-16.805847.jsonl", "sample_log_sha256": "cb18264eaa1fc8f28ff45a46cf5fd2e74ee13758a7dd01e136fdf9670527da1b", "samples": 10042, "score": 0.4283011352320255}, "openbookqa": {"bootstrap_ci_95": [0.294, 0.378], "primary_metric": "acc_norm", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/F2_reasoning_no_synthetic_seed20260914/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F2_reasoning_no_synthetic_seed20260914/samples_openbookqa_2026-09-15T05-12-16.805847.jsonl", "sample_log_sha256": "a458197ea839bc306357f83585680f7db852f64171c132b82f286eaba836cf34", "samples": 500, "score": 0.336}, "piqa": {"bootstrap_ci_95": [0.6539717083786725, 0.6969532100108814], "primary_metric": "acc_norm", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/F2_reasoning_no_synthetic_seed20260914/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F2_reasoning_no_synthetic_seed20260914/samples_piqa_2026-09-15T05-12-16.805847.jsonl", "sample_log_sha256": "da377adb4cea5183dcc9f2976762e66e6948a2b7befc26dee4fa569bf3f8d711", "samples": 1838, "score": 0.6751904243743199}, "winogrande": {"bootstrap_ci_95": [0.494869771112865, 0.5493291239147593], "primary_metric": "acc", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/F2_reasoning_no_synthetic_seed20260914/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F2_reasoning_no_synthetic_seed20260914/samples_winogrande_2026-09-15T05-12-16.805847.jsonl", "sample_log_sha256": "7e9b94f9e48da0a125f70f4b06f828e429726e789efe98bf9b31e976be880565", "samples": 1267, "score": 0.5224940805051302}}}
+/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260915-1590004/train/model-final.pt: OK
+{"argmax_agreement": 0.984375, "argmax_matches": 252, "argmax_total": 256, "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260915-1590004/train/model-final.pt", "checkpoint_sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc", "checkpoint_step": 1024, "dtype": "bfloat16", "files": [{"bytes": 696, "path": "config.json", "sha256": "880d4cdad66bf97a2d0830ae36ac999c844b2c16e6c4b8b00eea18013141a6a0"}, {"bytes": 115, "path": "generation_config.json", "sha256": "000cfff4d7f7c400a45cd02b275313ed128cf94fec5ecec7a5eee5dbb1833b9e"}, {"bytes": 1057524496, "path": "model.safetensors", "sha256": "eff69f11a24eeebf248958ecbc870c6a5ae5e54c02e453b1e8fc0082a8aab9b5"}, {"bytes": 293, "path": "special_tokens_map.json", "sha256": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193"}, {"bytes": 3565402, "path": "tokenizer.json", "sha256": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6"}, {"bytes": 5307, "path": "tokenizer_config.json", "sha256": "65fb76dbcacdc8505ec00c53fa3cecac07b1124bf08c88a70bdf3b14d617bc87"}], "functional_limits": {"max_abs_logit_difference": 0.5, "mean_abs_logit_difference": 0.025, "minimum_argmax_agreement": 0.97}, "logit_difference_quantiles": {"0.5": 0.015625, "0.9": 0.0390625, "0.99": 0.0625, "0.999": 0.09375, "0.9999": 0.125}, "logit_parity_attention": "eager", "max_abs_logit_difference": 0.21875, "mean_abs_logit_difference": 0.01838623359799385, "parameters_total": 528748800, "sample_shape": [2, 128], "state_tensor_count": 237, "state_tensor_parity": "bitwise_exact", "status": "PASS_HF_EXPORT_BITWISE_STATE_AND_BOUNDED_BF16_LOGIT_DRIFT", "tokenizer_adapter": {"eos_token_id": 50279, "export_class": "PreTrainedTokenizerFast", "original_class": "OLMoTokenizer", "pad_token_id": 1, "token_id_equivalence_samples": 3, "vocab_size": 50280}, "tokenizer_files_copied": ["special_tokens_map.json", "tokenizer.json", "tokenizer_config.json"]}
+Passed argument batch_size = auto:1. Detecting largest batch size
+Passed argument batch_size = auto:1. Detecting largest batch size
+Determined largest batch size: 64
+Determined largest batch size: 64
+{
+  "results": {
+    "arc_challenge": {
+      "alias": "arc_challenge",
+      "acc,none": 0.25426621160409557,
+      "acc_stderr,none": 0.012724999945157845,
+      "acc_norm,none": 0.29266211604095566,
+      "acc_norm_stderr,none": 0.013295916103619498
+    },
+    "arc_easy": {
+      "alias": "arc_easy",
+      "acc,none": 0.5984848484848485,
+      "acc_stderr,none": 0.01005879002075543,
+      "acc_norm,none": 0.5420875420875421,
+      "acc_norm_stderr,none": 0.010223371342195949
+    },
+    "boolq": {
+      "alias": "boolq",
+      "acc,none": 0.6,
+      "acc_stderr,none": 0.00856836898590492
+    },
+    "hellaswag": {
+      "alias": "hellaswag",
+      "acc,none": 0.345947022505477,
+      "acc_stderr,none": 0.004747038768172681,
+      "acc_norm,none": 0.4303923521210914,
+      "acc_norm_stderr,none": 0.0049411916073175775
+    },
+    "openbookqa": {
+      "alias": "openbookqa",
+      "acc,none": 0.204,
+      "acc_stderr,none": 0.01803936910413861,
+      "acc_norm,none": 0.338,
+      "acc_norm_stderr,none": 0.021175665695209452
+    },
+    "piqa": {
+      "alias": "piqa",
+      "acc,none": 0.6773667029379761,
+      "acc_stderr,none": 0.010907166359856488,
+      "acc_norm,none": 0.6779107725788901,
+      "acc_norm_stderr,none": 0.010902341695103377
+    },
+    "winogrande": {
+      "alias": "winogrande",
+      "acc,none": 0.5169692186266772,
+      "acc_stderr,none": 0.014044390401613116
+    }
+  },
+  "group_subtasks": {
+    "arc_challenge": [],
+    "arc_easy": [],
+    "boolq": [],
+    "hellaswag": [],
+    "openbookqa": [],
+    "piqa": [],
+    "winogrande": []
+  },
+  "configs": {
+    "arc_challenge": {
+      "task": "arc_challenge",
+      "tag": [
+        "ai2_arc"
+      ],
+      "dataset_path": "allenai/ai2_arc",
+      "dataset_name": "ARC-Challenge",
+      "training_split": "train",
+      "validation_split": "validation",
+      "test_split": "test",
+      "doc_to_text": "Question: {{question}}\nAnswer:",
+      "doc_to_target": "{{choices.label.index(answerKey)}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices.text}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "Question: {{question}}\nAnswer:",
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/tmp/p529m-seven-task-2gpu-1590907/F2_reasoning_no_synthetic_seed20260915",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "F2_reasoning_no_synthetic_seed20260915",
+        "checkpoint_sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc",
+        "world_size": 2
+      }
+    },
+    "arc_easy": {
+      "task": "arc_easy",
+      "tag": [
+        "ai2_arc"
+      ],
+      "dataset_path": "allenai/ai2_arc",
+      "dataset_name": "ARC-Easy",
+      "training_split": "train",
+      "validation_split": "validation",
+      "test_split": "test",
+      "doc_to_text": "Question: {{question}}\nAnswer:",
+      "doc_to_target": "{{choices.label.index(answerKey)}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices.text}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "Question: {{question}}\nAnswer:",
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/tmp/p529m-seven-task-2gpu-1590907/F2_reasoning_no_synthetic_seed20260915",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "F2_reasoning_no_synthetic_seed20260915",
+        "checkpoint_sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc",
+        "world_size": 2
+      }
+    },
+    "boolq": {
+      "task": "boolq",
+      "tag": [
+        "super-glue-lm-eval-v1"
+      ],
+      "dataset_path": "super_glue",
+      "dataset_name": "boolq",
+      "training_split": "train",
+      "validation_split": "validation",
+      "doc_to_text": "{{passage}}\nQuestion: {{question}}?\nAnswer:",
+      "doc_to_target": "label",
+      "unsafe_code": false,
+      "doc_to_choice": [
+        "no",
+        "yes"
+      ],
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc"
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "passage",
+      "metadata": {
+        "version": 2.0,
+        "pretrained": "/tmp/p529m-seven-task-2gpu-1590907/F2_reasoning_no_synthetic_seed20260915",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "F2_reasoning_no_synthetic_seed20260915",
+        "checkpoint_sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc",
+        "world_size": 2
+      }
+    },
+    "hellaswag": {
+      "task": "hellaswag",
+      "tag": [
+        "multiple_choice"
+      ],
+      "dataset_path": "hellaswag",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "validation_split": "validation",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc):\n        ctx = doc[\"ctx_a\"] + \" \" + doc[\"ctx_b\"].capitalize()\n        out_doc = {\n            \"query\": preprocess(doc[\"activity_label\"] + \": \" + ctx),\n            \"choices\": [preprocess(ending) for ending in doc[\"endings\"]],\n            \"gold\": int(doc[\"label\"]),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "{{query}}",
+      "doc_to_target": "{{label}}",
+      "unsafe_code": false,
+      "doc_to_choice": "choices",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/tmp/p529m-seven-task-2gpu-1590907/F2_reasoning_no_synthetic_seed20260915",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "F2_reasoning_no_synthetic_seed20260915",
+        "checkpoint_sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc",
+        "world_size": 2
+      }
+    },
+    "openbookqa": {
+      "task": "openbookqa",
+      "dataset_path": "openbookqa",
+      "dataset_name": "main",
+      "training_split": "train",
+      "validation_split": "validation",
+      "test_split": "test",
+      "doc_to_text": "question_stem",
+      "doc_to_target": "{{choices.label.index(answerKey.lstrip())}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices.text}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "question_stem",
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/tmp/p529m-seven-task-2gpu-1590907/F2_reasoning_no_synthetic_seed20260915",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "F2_reasoning_no_synthetic_seed20260915",
+        "checkpoint_sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc",
+        "world_size": 2
+      }
+    },
+    "piqa": {
+      "task": "piqa",
+      "dataset_path": "baber/piqa",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "validation_split": "validation",
+      "doc_to_text": "Question: {{goal}}\nAnswer:",
+      "doc_to_target": "label",
+      "unsafe_code": false,
+      "doc_to_choice": "{{[sol1, sol2]}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "goal",
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/tmp/p529m-seven-task-2gpu-1590907/F2_reasoning_no_synthetic_seed20260915",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "F2_reasoning_no_synthetic_seed20260915",
+        "checkpoint_sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc",
+        "world_size": 2
+      }
+    },
+    "winogrande": {
+      "task": "winogrande",
+      "dataset_path": "winogrande",
+      "dataset_name": "winogrande_xl",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "validation_split": "validation",
+      "doc_to_text": "def doc_to_text(doc):\n    answer_to_num = {\"1\": 0, \"2\": 1}\n    return answer_to_num[doc[\"answer\"]]\n",
+      "doc_to_target": "def doc_to_target(doc):\n    idx = doc[\"sentence\"].index(\"_\") + 1\n    return doc[\"sentence\"][idx:].strip()\n",
+      "unsafe_code": false,
+      "doc_to_choice": "def doc_to_choice(doc):\n    idx = doc[\"sentence\"].index(\"_\")\n    options = [doc[\"option1\"], doc[\"option2\"]]\n    return [doc[\"sentence\"][:idx] + opt for opt in options]\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "sentence",
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/tmp/p529m-seven-task-2gpu-1590907/F2_reasoning_no_synthetic_seed20260915",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "F2_reasoning_no_synthetic_seed20260915",
+        "checkpoint_sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc",
+        "world_size": 2
+      }
+    }
+  },
+  "versions": {
+    "arc_challenge": 1.0,
+    "arc_easy": 1.0,
+    "boolq": 2.0,
+    "hellaswag": 1.0,
+    "openbookqa": 1.0,
+    "piqa": 1.0,
+    "winogrande": 1.0
+  },
+  "n-shot": {
+    "arc_challenge": 0,
+    "arc_easy": 0,
+    "boolq": 0,
+    "hellaswag": 0,
+    "openbookqa": 0,
+    "piqa": 0,
+    "winogrande": 0
+  },
+  "higher_is_better": {
+    "arc_challenge": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "arc_easy": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "boolq": {
+      "acc": true
+    },
+    "hellaswag": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "openbookqa": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "piqa": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "winogrande": {
+      "acc": true
+    }
+  },
+  "n-samples": {
+    "winogrande": {
+      "original": 1267,
+      "effective": 1267
+    },
+    "piqa": {
+      "original": 1838,
+      "effective": 1838
+    },
+    "openbookqa": {
+      "original": 500,
+      "effective": 500
+    },
+    "hellaswag": {
+      "original": 10042,
+      "effective": 10042
+    },
+    "boolq": {
+      "original": 3270,
+      "effective": 3270
+    },
+    "arc_easy": {
+      "original": 2376,
+      "effective": 2376
+    },
+    "arc_challenge": {
+      "original": 1172,
+      "effective": 1172
+    }
+  },
+  "config": {
+    "model": "hf",
+    "model_args": "pretrained=/tmp/p529m-seven-task-2gpu-1590907/F2_reasoning_no_synthetic_seed20260915,dtype=bfloat16,trust_remote_code=False,max_length=2048",
+    "model_num_parameters": 528748800,
+    "model_dtype": "torch.bfloat16",
+    "model_revision": "main",
+    "model_sha": "",
+    "batch_size": "auto",
+    "batch_sizes": [
+      64
+    ],
+    "device": "cuda",
+    "use_cache": null,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "gen_kwargs": null,
+    "random_seed": 42,
+    "numpy_seed": 42,
+    "torch_seed": 42,
+    "fewshot_seed": 1234
+  },
+  "git_hash": null,
+  "date": 1789420616.6654243,
+  "pretty_env_info": "PyTorch version: 2.11.0+cu128\nIs debug build: False\nCUDA used to build PyTorch: 12.8\nROCM used to build PyTorch: N/A\n\nOS: Ubuntu 22.04.5 LTS (x86_64)\nGCC version: (Ubuntu 11.4.0-1ubuntu1~22.04.2) 11.4.0\nClang version: Could not collect\nCMake version: Could not collect\nLibc version: glibc-2.35\n\nPython version: 3.12.13 (main, Jul 18 2026, 17:02:19) [Clang 22.1.3 ] (64-bit runtime)\nPython platform: Linux-5.15.0-119-generic-x86_64-with-glibc2.35\nIs CUDA available: True\nCUDA runtime version: Could not collect\nCUDA_MODULE_LOADING set to: \nGPU models and configuration: \nGPU 0: NVIDIA GeForce RTX 5090\nGPU 1: NVIDIA GeForce RTX 5090\n\nNvidia driver version: 580.82.07\ncuDNN version: Could not collect\nIs XPU available: False\nHIP runtime version: N/A\nMIOpen runtime version: N/A\nIs XNNPACK available: True\nCaching allocator config: N/A\n\nCPU:\nArchitecture:                         x86_64\nCPU op-mode(s):                       32-bit, 64-bit\nAddress sizes:                        52 bits physical, 57 bits virtual\nByte Order:                           Little Endian\nCPU(s):                               128\nOn-line CPU(s) list:                  0-127\nVendor ID:                            GenuineIntel\nModel name:                           INTEL(R) XEON(R) GOLD 6530\nCPU family:                           6\nModel:                                207\nThread(s) per core:                   2\nCore(s) per socket:                   32\nSocket(s):                            2\nStepping:                             2\nCPU max MHz:                          4000.0000\nCPU min MHz:                          800.0000\nBogoMIPS:                             4200.00\nFlags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cat_l2 cdp_l3 invpcid_single intel_ppin cdp_l2 ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local split_lock_detect avx_vnni avx512_bf16 wbnoinvd dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req avx512vbmi umip pku ospke waitpkg avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg tme avx512_vpopcntdq la57 rdpid bus_lock_detect cldemote movdiri movdir64b enqcmd fsrm md_clear serialize tsxldtrk pconfig arch_lbr amx_bf16 avx512_fp16 amx_tile amx_int8 flush_l1d arch_capabilities\nVirtualization:                       VT-x\nL1d cache:                            3 MiB (64 instances)\nL1i cache:                            2 MiB (64 instances)\nL2 cache:                             128 MiB (64 instances)\nL3 cache:                             320 MiB (2 instances)\nNUMA node(s):                         2\nNUMA node0 CPU(s):                    0-31,64-95\nNUMA node1 CPU(s):                    32-63,96-127\nVulnerability Gather data sampling:   Not affected\nVulnerability Itlb multihit:          Not affected\nVulnerability L1tf:                   Not affected\nVulnerability Mds:                    Not affected\nVulnerability Meltdown:               Not affected\nVulnerability Mmio stale data:        Not affected\nVulnerability Reg file data sampling: Not affected\nVulnerability Retbleed:               Not affected\nVulnerability Spec rstack overflow:   Not affected\nVulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl and seccomp\nVulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI BHI_DIS_S\nVulnerability Srbds:                  Not affected\nVulnerability Tsx async abort:        Not affected\n\nVersions of relevant libraries:\n[pip3] numpy==1.26.4\n[pip3] nvidia-cublas-cu12==12.8.4.1\n[pip3] nvidia-cuda-cupti-cu12==12.8.90\n[pip3] nvidia-cuda-nvrtc-cu12==12.8.93\n[pip3] nvidia-cuda-runtime-cu12==12.8.90\n[pip3] nvidia-cudnn-cu12==9.19.0.56\n[pip3] nvidia-cufft-cu12==11.3.3.83\n[pip3] nvidia-curand-cu12==10.3.9.90\n[pip3] nvidia-cusolver-cu12==11.7.3.90\n[pip3] nvidia-cusparse-cu12==12.5.8.93\n[pip3] nvidia-cusparselt-cu12==0.7.1\n[pip3] nvidia-nccl-cu12==2.28.9\n[pip3] nvidia-nvjitlink-cu12==12.8.93\n[pip3] nvidia-nvtx-cu12==12.8.90\n[pip3] torch==2.11.0+cu128\n[pip3] triton==3.6.0\n[conda] Could not collect",
+  "transformers_version": "4.57.6",
+  "lm_eval_version": "0.4.9",
+  "upper_git_hash": null,
+  "tokenizer_pad_token": [
+    "<|padding|>",
+    "1"
+  ],
+  "tokenizer_eos_token": [
+    "<|endoftext|>",
+    "50279"
+  ],
+  "tokenizer_bos_token": [
+    null,
+    "None"
+  ],
+  "eot_token_id": 50279,
+  "max_length": 2048
+}
+hf (pretrained=/tmp/p529m-seven-task-2gpu-1590907/F2_reasoning_no_synthetic_seed20260915,dtype=bfloat16,trust_remote_code=False,max_length=2048), gen_kwargs: (None), limit: None, num_fewshot: 0, batch_size: auto (64)
+|    Tasks    |Version|Filter|n-shot| Metric |   |Value |   |Stderr|
+|-------------|------:|------|-----:|--------|---|-----:|---|-----:|
+|arc_challenge|      1|none  |     0|acc     |↑  |0.2543|±  |0.0127|
+|             |       |none  |     0|acc_norm|↑  |0.2927|±  |0.0133|
+|arc_easy     |      1|none  |     0|acc     |↑  |0.5985|±  |0.0101|
+|             |       |none  |     0|acc_norm|↑  |0.5421|±  |0.0102|
+|boolq        |      2|none  |     0|acc     |↑  |0.6000|±  |0.0086|
+|hellaswag    |      1|none  |     0|acc     |↑  |0.3459|±  |0.0047|
+|             |       |none  |     0|acc_norm|↑  |0.4304|±  |0.0049|
+|openbookqa   |      1|none  |     0|acc     |↑  |0.2040|±  |0.0180|
+|             |       |none  |     0|acc_norm|↑  |0.3380|±  |0.0212|
+|piqa         |      1|none  |     0|acc     |↑  |0.6774|±  |0.0109|
+|             |       |none  |     0|acc_norm|↑  |0.6779|±  |0.0109|
+|winogrande   |      1|none  |     0|acc     |↑  |0.5170|±  |0.0140|
+
+{"aggregate": {"bootstrap_ci_95": [0.4760752683432013, 0.4949743381133154], "bootstrap_replicates": 10000, "bootstrap_seed": 20260912, "name": "seven_task_unweighted_mean", "percentile_method": "linear", "score": 0.48543171449359374, "task_weighting": "unweighted"}, "input_sha256": {"protocol": "a71ce3c8cc85cac6fe6751cb46f7e50dfb78d266602d6377cb2e65249f11c761", "results": "6b1a9602481d1300e5d958476b9add22ff9b26497199403a3dbc5a87bae46ab7", "samples_arc_challenge": "a445f2b9b0ebdac77fdbc7f69128bcf44b9e0b40d1f591a8f1d5113b2cb68df5", "samples_arc_easy": "774c163a24b3e7091d72962b84191bb002dde74884700bdeea837d41bd9eaf96", "samples_boolq": "82cdcc054e33792e06c7c6a1624671a4d489fc0c6525d5cca8c5ac925addadd7", "samples_hellaswag": "9f876be8c581bd8239be9ef174646acdbb1268a19dfef03094fd327cdf243a8f", "samples_openbookqa": "41c1f36d24bb5f222f78609265995a0c1f9b146db08ad585c96649456cfe5d94", "samples_piqa": "199b400a4de0c2f8c142c4b9097fcf757746a96caf296b9b05646f244644b4a5", "samples_winogrande": "c87322861fb1b764caafdb7f6f05440104a614e0e46308467d5c5d7af5dc604a"}, "protocol_id": "p500m-english-base-v5", "protocol_sha256": "a71ce3c8cc85cac6fe6751cb46f7e50dfb78d266602d6377cb2e65249f11c761", "status": "PASS_FROZEN_EVALUATION_AGGREGATE", "tasks": {"arc_challenge": {"bootstrap_ci_95": [0.26706484641638223, 0.3191126279863481], "primary_metric": "acc_norm", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/F2_reasoning_no_synthetic_seed20260915/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F2_reasoning_no_synthetic_seed20260915/samples_arc_challenge_2026-09-15T05-17-57.270434.jsonl", "sample_log_sha256": "a445f2b9b0ebdac77fdbc7f69128bcf44b9e0b40d1f591a8f1d5113b2cb68df5", "samples": 1172, "score": 0.29266211604095566}, "arc_easy": {"bootstrap_ci_95": [0.5218855218855218, 0.5618792087542086], "primary_metric": "acc_norm", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/F2_reasoning_no_synthetic_seed20260915/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F2_reasoning_no_synthetic_seed20260915/samples_arc_easy_2026-09-15T05-17-57.270434.jsonl", "sample_log_sha256": "774c163a24b3e7091d72962b84191bb002dde74884700bdeea837d41bd9eaf96", "samples": 2376, "score": 0.5420875420875421}, "boolq": {"bootstrap_ci_95": [0.5834862385321101, 0.6165137614678899], "primary_metric": "acc", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/F2_reasoning_no_synthetic_seed20260915/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F2_reasoning_no_synthetic_seed20260915/samples_boolq_2026-09-15T05-17-57.270434.jsonl", "sample_log_sha256": "82cdcc054e33792e06c7c6a1624671a4d489fc0c6525d5cca8c5ac925addadd7", "samples": 3270, "score": 0.6}, "hellaswag": {"bootstrap_ci_95": [0.4207304321848237, 0.4400517825134435], "primary_metric": "acc_norm", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/F2_reasoning_no_synthetic_seed20260915/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F2_reasoning_no_synthetic_seed20260915/samples_hellaswag_2026-09-15T05-17-57.270434.jsonl", "sample_log_sha256": "9f876be8c581bd8239be9ef174646acdbb1268a19dfef03094fd327cdf243a8f", "samples": 10042, "score": 0.4303923521210914}, "openbookqa": {"bootstrap_ci_95": [0.296, 0.38], "primary_metric": "acc_norm", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/F2_reasoning_no_synthetic_seed20260915/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F2_reasoning_no_synthetic_seed20260915/samples_openbookqa_2026-09-15T05-17-57.270434.jsonl", "sample_log_sha256": "41c1f36d24bb5f222f78609265995a0c1f9b146db08ad585c96649456cfe5d94", "samples": 500, "score": 0.338}, "piqa": {"bootstrap_ci_95": [0.6561479869423286, 0.6991294885745375], "primary_metric": "acc_norm", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/F2_reasoning_no_synthetic_seed20260915/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F2_reasoning_no_synthetic_seed20260915/samples_piqa_2026-09-15T05-17-57.270434.jsonl", "sample_log_sha256": "199b400a4de0c2f8c142c4b9097fcf757746a96caf296b9b05646f244644b4a5", "samples": 1838, "score": 0.6779107725788901}, "winogrande": {"bootstrap_ci_95": [0.489344909234412, 0.5445935280189423], "primary_metric": "acc", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/F2_reasoning_no_synthetic_seed20260915/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F2_reasoning_no_synthetic_seed20260915/samples_winogrande_2026-09-15T05-17-57.270434.jsonl", "sample_log_sha256": "c87322861fb1b764caafdb7f6f05440104a614e0e46308467d5c5d7af5dc604a", "samples": 1267, "score": 0.5169692186266772}}}
+/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F3_broad_multilingual_no_synthetic-seed20260914-1590005/train/model-final.pt: OK
+{"argmax_agreement": 0.99609375, "argmax_matches": 255, "argmax_total": 256, "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F3_broad_multilingual_no_synthetic-seed20260914-1590005/train/model-final.pt", "checkpoint_sha256": "194e1da1ba1e74a77e28ae207d1dd74a4baa6889408e41c6dce36d551f1e222e", "checkpoint_step": 1024, "dtype": "bfloat16", "files": [{"bytes": 696, "path": "config.json", "sha256": "880d4cdad66bf97a2d0830ae36ac999c844b2c16e6c4b8b00eea18013141a6a0"}, {"bytes": 115, "path": "generation_config.json", "sha256": "000cfff4d7f7c400a45cd02b275313ed128cf94fec5ecec7a5eee5dbb1833b9e"}, {"bytes": 1057524496, "path": "model.safetensors", "sha256": "0f132b07bd2e7b06c38ffb0135a3dde0d8844b461e8214c81f7d2d6fbf3479ab"}, {"bytes": 293, "path": "special_tokens_map.json", "sha256": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193"}, {"bytes": 3565402, "path": "tokenizer.json", "sha256": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6"}, {"bytes": 5307, "path": "tokenizer_config.json", "sha256": "65fb76dbcacdc8505ec00c53fa3cecac07b1124bf08c88a70bdf3b14d617bc87"}], "functional_limits": {"max_abs_logit_difference": 0.5, "mean_abs_logit_difference": 0.025, "minimum_argmax_agreement": 0.97}, "logit_difference_quantiles": {"0.5": 0.015625, "0.9": 0.03125, "0.99": 0.0625, "0.999": 0.109375, "0.9999": 0.1640625}, "logit_parity_attention": "eager", "max_abs_logit_difference": 0.3125, "mean_abs_logit_difference": 0.017597505822777748, "parameters_total": 528748800, "sample_shape": [2, 128], "state_tensor_count": 237, "state_tensor_parity": "bitwise_exact", "status": "PASS_HF_EXPORT_BITWISE_STATE_AND_BOUNDED_BF16_LOGIT_DRIFT", "tokenizer_adapter": {"eos_token_id": 50279, "export_class": "PreTrainedTokenizerFast", "original_class": "OLMoTokenizer", "pad_token_id": 1, "token_id_equivalence_samples": 3, "vocab_size": 50280}, "tokenizer_files_copied": ["special_tokens_map.json", "tokenizer.json", "tokenizer_config.json"]}
+Passed argument batch_size = auto:1. Detecting largest batch size
+Passed argument batch_size = auto:1. Detecting largest batch size
+Determined largest batch size: 64
+Determined largest batch size: 64
+{
+  "results": {
+    "arc_challenge": {
+      "alias": "arc_challenge",
+      "acc,none": 0.26023890784982934,
+      "acc_stderr,none": 0.012821930225112672,
+      "acc_norm,none": 0.2909556313993174,
+      "acc_norm_stderr,none": 0.013273077865907774
+    },
+    "arc_easy": {
+      "alias": "arc_easy",
+      "acc,none": 0.5968013468013468,
+      "acc_stderr,none": 0.010065668576794674,
+      "acc_norm,none": 0.5429292929292929,
+      "acc_norm_stderr,none": 0.01022189756425604
+    },
+    "boolq": {
+      "alias": "boolq",
+      "acc,none": 0.6036697247706422,
+      "acc_stderr,none": 0.008555016706540264
+    },
+    "hellaswag": {
+      "alias": "hellaswag",
+      "acc,none": 0.34933280223063135,
+      "acc_stderr,none": 0.004757849023411874,
+      "acc_norm,none": 0.4281019717187811,
+      "acc_norm_stderr,none": 0.004937924326742472
+    },
+    "openbookqa": {
+      "alias": "openbookqa",
+      "acc,none": 0.202,
+      "acc_stderr,none": 0.017973260031288275,
+      "acc_norm,none": 0.328,
+      "acc_norm_stderr,none": 0.021017027165175464
+    },
+    "piqa": {
+      "alias": "piqa",
+      "acc,none": 0.6817192600652884,
+      "acc_stderr,none": 0.010868093932082195,
+      "acc_norm,none": 0.6724700761697497,
+      "acc_norm_stderr,none": 0.010949830482825447
+    },
+    "winogrande": {
+      "alias": "winogrande",
+      "acc,none": 0.5146014206787688,
+      "acc_stderr,none": 0.014046492383275955
+    }
+  },
+  "group_subtasks": {
+    "arc_challenge": [],
+    "arc_easy": [],
+    "boolq": [],
+    "hellaswag": [],
+    "openbookqa": [],
+    "piqa": [],
+    "winogrande": []
+  },
+  "configs": {
+    "arc_challenge": {
+      "task": "arc_challenge",
+      "tag": [
+        "ai2_arc"
+      ],
+      "dataset_path": "allenai/ai2_arc",
+      "dataset_name": "ARC-Challenge",
+      "training_split": "train",
+      "validation_split": "validation",
+      "test_split": "test",
+      "doc_to_text": "Question: {{question}}\nAnswer:",
+      "doc_to_target": "{{choices.label.index(answerKey)}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices.text}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "Question: {{question}}\nAnswer:",
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/tmp/p529m-seven-task-2gpu-1590907/F3_broad_multilingual_no_synthetic_seed20260914",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "F3_broad_multilingual_no_synthetic_seed20260914",
+        "checkpoint_sha256": "194e1da1ba1e74a77e28ae207d1dd74a4baa6889408e41c6dce36d551f1e222e",
+        "world_size": 2
+      }
+    },
+    "arc_easy": {
+      "task": "arc_easy",
+      "tag": [
+        "ai2_arc"
+      ],
+      "dataset_path": "allenai/ai2_arc",
+      "dataset_name": "ARC-Easy",
+      "training_split": "train",
+      "validation_split": "validation",
+      "test_split": "test",
+      "doc_to_text": "Question: {{question}}\nAnswer:",
+      "doc_to_target": "{{choices.label.index(answerKey)}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices.text}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "Question: {{question}}\nAnswer:",
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/tmp/p529m-seven-task-2gpu-1590907/F3_broad_multilingual_no_synthetic_seed20260914",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "F3_broad_multilingual_no_synthetic_seed20260914",
+        "checkpoint_sha256": "194e1da1ba1e74a77e28ae207d1dd74a4baa6889408e41c6dce36d551f1e222e",
+        "world_size": 2
+      }
+    },
+    "boolq": {
+      "task": "boolq",
+      "tag": [
+        "super-glue-lm-eval-v1"
+      ],
+      "dataset_path": "super_glue",
+      "dataset_name": "boolq",
+      "training_split": "train",
+      "validation_split": "validation",
+      "doc_to_text": "{{passage}}\nQuestion: {{question}}?\nAnswer:",
+      "doc_to_target": "label",
+      "unsafe_code": false,
+      "doc_to_choice": [
+        "no",
+        "yes"
+      ],
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc"
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "passage",
+      "metadata": {
+        "version": 2.0,
+        "pretrained": "/tmp/p529m-seven-task-2gpu-1590907/F3_broad_multilingual_no_synthetic_seed20260914",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "F3_broad_multilingual_no_synthetic_seed20260914",
+        "checkpoint_sha256": "194e1da1ba1e74a77e28ae207d1dd74a4baa6889408e41c6dce36d551f1e222e",
+        "world_size": 2
+      }
+    },
+    "hellaswag": {
+      "task": "hellaswag",
+      "tag": [
+        "multiple_choice"
+      ],
+      "dataset_path": "hellaswag",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "validation_split": "validation",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc):\n        ctx = doc[\"ctx_a\"] + \" \" + doc[\"ctx_b\"].capitalize()\n        out_doc = {\n            \"query\": preprocess(doc[\"activity_label\"] + \": \" + ctx),\n            \"choices\": [preprocess(ending) for ending in doc[\"endings\"]],\n            \"gold\": int(doc[\"label\"]),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "{{query}}",
+      "doc_to_target": "{{label}}",
+      "unsafe_code": false,
+      "doc_to_choice": "choices",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/tmp/p529m-seven-task-2gpu-1590907/F3_broad_multilingual_no_synthetic_seed20260914",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "F3_broad_multilingual_no_synthetic_seed20260914",
+        "checkpoint_sha256": "194e1da1ba1e74a77e28ae207d1dd74a4baa6889408e41c6dce36d551f1e222e",
+        "world_size": 2
+      }
+    },
+    "openbookqa": {
+      "task": "openbookqa",
+      "dataset_path": "openbookqa",
+      "dataset_name": "main",
+      "training_split": "train",
+      "validation_split": "validation",
+      "test_split": "test",
+      "doc_to_text": "question_stem",
+      "doc_to_target": "{{choices.label.index(answerKey.lstrip())}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices.text}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "question_stem",
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/tmp/p529m-seven-task-2gpu-1590907/F3_broad_multilingual_no_synthetic_seed20260914",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "F3_broad_multilingual_no_synthetic_seed20260914",
+        "checkpoint_sha256": "194e1da1ba1e74a77e28ae207d1dd74a4baa6889408e41c6dce36d551f1e222e",
+        "world_size": 2
+      }
+    },
+    "piqa": {
+      "task": "piqa",
+      "dataset_path": "baber/piqa",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "validation_split": "validation",
+      "doc_to_text": "Question: {{goal}}\nAnswer:",
+      "doc_to_target": "label",
+      "unsafe_code": false,
+      "doc_to_choice": "{{[sol1, sol2]}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "goal",
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/tmp/p529m-seven-task-2gpu-1590907/F3_broad_multilingual_no_synthetic_seed20260914",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "F3_broad_multilingual_no_synthetic_seed20260914",
+        "checkpoint_sha256": "194e1da1ba1e74a77e28ae207d1dd74a4baa6889408e41c6dce36d551f1e222e",
+        "world_size": 2
+      }
+    },
+    "winogrande": {
+      "task": "winogrande",
+      "dataset_path": "winogrande",
+      "dataset_name": "winogrande_xl",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "validation_split": "validation",
+      "doc_to_text": "def doc_to_text(doc):\n    answer_to_num = {\"1\": 0, \"2\": 1}\n    return answer_to_num[doc[\"answer\"]]\n",
+      "doc_to_target": "def doc_to_target(doc):\n    idx = doc[\"sentence\"].index(\"_\") + 1\n    return doc[\"sentence\"][idx:].strip()\n",
+      "unsafe_code": false,
+      "doc_to_choice": "def doc_to_choice(doc):\n    idx = doc[\"sentence\"].index(\"_\")\n    options = [doc[\"option1\"], doc[\"option2\"]]\n    return [doc[\"sentence\"][:idx] + opt for opt in options]\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "sentence",
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/tmp/p529m-seven-task-2gpu-1590907/F3_broad_multilingual_no_synthetic_seed20260914",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "F3_broad_multilingual_no_synthetic_seed20260914",
+        "checkpoint_sha256": "194e1da1ba1e74a77e28ae207d1dd74a4baa6889408e41c6dce36d551f1e222e",
+        "world_size": 2
+      }
+    }
+  },
+  "versions": {
+    "arc_challenge": 1.0,
+    "arc_easy": 1.0,
+    "boolq": 2.0,
+    "hellaswag": 1.0,
+    "openbookqa": 1.0,
+    "piqa": 1.0,
+    "winogrande": 1.0
+  },
+  "n-shot": {
+    "arc_challenge": 0,
+    "arc_easy": 0,
+    "boolq": 0,
+    "hellaswag": 0,
+    "openbookqa": 0,
+    "piqa": 0,
+    "winogrande": 0
+  },
+  "higher_is_better": {
+    "arc_challenge": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "arc_easy": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "boolq": {
+      "acc": true
+    },
+    "hellaswag": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "openbookqa": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "piqa": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "winogrande": {
+      "acc": true
+    }
+  },
+  "n-samples": {
+    "winogrande": {
+      "original": 1267,
+      "effective": 1267
+    },
+    "piqa": {
+      "original": 1838,
+      "effective": 1838
+    },
+    "openbookqa": {
+      "original": 500,
+      "effective": 500
+    },
+    "hellaswag": {
+      "original": 10042,
+      "effective": 10042
+    },
+    "boolq": {
+      "original": 3270,
+      "effective": 3270
+    },
+    "arc_easy": {
+      "original": 2376,
+      "effective": 2376
+    },
+    "arc_challenge": {
+      "original": 1172,
+      "effective": 1172
+    }
+  },
+  "config": {
+    "model": "hf",
+    "model_args": "pretrained=/tmp/p529m-seven-task-2gpu-1590907/F3_broad_multilingual_no_synthetic_seed20260914,dtype=bfloat16,trust_remote_code=False,max_length=2048",
+    "model_num_parameters": 528748800,
+    "model_dtype": "torch.bfloat16",
+    "model_revision": "main",
+    "model_sha": "",
+    "batch_size": "auto",
+    "batch_sizes": [
+      64
+    ],
+    "device": "cuda",
+    "use_cache": null,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "gen_kwargs": null,
+    "random_seed": 42,
+    "numpy_seed": 42,
+    "torch_seed": 42,
+    "fewshot_seed": 1234
+  },
+  "git_hash": null,
+  "date": 1789420955.3037086,
+  "pretty_env_info": "PyTorch version: 2.11.0+cu128\nIs debug build: False\nCUDA used to build PyTorch: 12.8\nROCM used to build PyTorch: N/A\n\nOS: Ubuntu 22.04.5 LTS (x86_64)\nGCC version: (Ubuntu 11.4.0-1ubuntu1~22.04.2) 11.4.0\nClang version: Could not collect\nCMake version: Could not collect\nLibc version: glibc-2.35\n\nPython version: 3.12.13 (main, Jul 18 2026, 17:02:19) [Clang 22.1.3 ] (64-bit runtime)\nPython platform: Linux-5.15.0-119-generic-x86_64-with-glibc2.35\nIs CUDA available: True\nCUDA runtime version: Could not collect\nCUDA_MODULE_LOADING set to: \nGPU models and configuration: \nGPU 0: NVIDIA GeForce RTX 5090\nGPU 1: NVIDIA GeForce RTX 5090\n\nNvidia driver version: 580.82.07\ncuDNN version: Could not collect\nIs XPU available: False\nHIP runtime version: N/A\nMIOpen runtime version: N/A\nIs XNNPACK available: True\nCaching allocator config: N/A\n\nCPU:\nArchitecture:                         x86_64\nCPU op-mode(s):                       32-bit, 64-bit\nAddress sizes:                        52 bits physical, 57 bits virtual\nByte Order:                           Little Endian\nCPU(s):                               128\nOn-line CPU(s) list:                  0-127\nVendor ID:                            GenuineIntel\nModel name:                           INTEL(R) XEON(R) GOLD 6530\nCPU family:                           6\nModel:                                207\nThread(s) per core:                   2\nCore(s) per socket:                   32\nSocket(s):                            2\nStepping:                             2\nCPU max MHz:                          4000.0000\nCPU min MHz:                          800.0000\nBogoMIPS:                             4200.00\nFlags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cat_l2 cdp_l3 invpcid_single intel_ppin cdp_l2 ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local split_lock_detect avx_vnni avx512_bf16 wbnoinvd dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req avx512vbmi umip pku ospke waitpkg avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg tme avx512_vpopcntdq la57 rdpid bus_lock_detect cldemote movdiri movdir64b enqcmd fsrm md_clear serialize tsxldtrk pconfig arch_lbr amx_bf16 avx512_fp16 amx_tile amx_int8 flush_l1d arch_capabilities\nVirtualization:                       VT-x\nL1d cache:                            3 MiB (64 instances)\nL1i cache:                            2 MiB (64 instances)\nL2 cache:                             128 MiB (64 instances)\nL3 cache:                             320 MiB (2 instances)\nNUMA node(s):                         2\nNUMA node0 CPU(s):                    0-31,64-95\nNUMA node1 CPU(s):                    32-63,96-127\nVulnerability Gather data sampling:   Not affected\nVulnerability Itlb multihit:          Not affected\nVulnerability L1tf:                   Not affected\nVulnerability Mds:                    Not affected\nVulnerability Meltdown:               Not affected\nVulnerability Mmio stale data:        Not affected\nVulnerability Reg file data sampling: Not affected\nVulnerability Retbleed:               Not affected\nVulnerability Spec rstack overflow:   Not affected\nVulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl and seccomp\nVulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI BHI_DIS_S\nVulnerability Srbds:                  Not affected\nVulnerability Tsx async abort:        Not affected\n\nVersions of relevant libraries:\n[pip3] numpy==1.26.4\n[pip3] nvidia-cublas-cu12==12.8.4.1\n[pip3] nvidia-cuda-cupti-cu12==12.8.90\n[pip3] nvidia-cuda-nvrtc-cu12==12.8.93\n[pip3] nvidia-cuda-runtime-cu12==12.8.90\n[pip3] nvidia-cudnn-cu12==9.19.0.56\n[pip3] nvidia-cufft-cu12==11.3.3.83\n[pip3] nvidia-curand-cu12==10.3.9.90\n[pip3] nvidia-cusolver-cu12==11.7.3.90\n[pip3] nvidia-cusparse-cu12==12.5.8.93\n[pip3] nvidia-cusparselt-cu12==0.7.1\n[pip3] nvidia-nccl-cu12==2.28.9\n[pip3] nvidia-nvjitlink-cu12==12.8.93\n[pip3] nvidia-nvtx-cu12==12.8.90\n[pip3] torch==2.11.0+cu128\n[pip3] triton==3.6.0\n[conda] Could not collect",
+  "transformers_version": "4.57.6",
+  "lm_eval_version": "0.4.9",
+  "upper_git_hash": null,
+  "tokenizer_pad_token": [
+    "<|padding|>",
+    "1"
+  ],
+  "tokenizer_eos_token": [
+    "<|endoftext|>",
+    "50279"
+  ],
+  "tokenizer_bos_token": [
+    null,
+    "None"
+  ],
+  "eot_token_id": 50279,
+  "max_length": 2048
+}
+hf (pretrained=/tmp/p529m-seven-task-2gpu-1590907/F3_broad_multilingual_no_synthetic_seed20260914,dtype=bfloat16,trust_remote_code=False,max_length=2048), gen_kwargs: (None), limit: None, num_fewshot: 0, batch_size: auto (64)
+|    Tasks    |Version|Filter|n-shot| Metric |   |Value |   |Stderr|
+|-------------|------:|------|-----:|--------|---|-----:|---|-----:|
+|arc_challenge|      1|none  |     0|acc     |↑  |0.2602|±  |0.0128|
+|             |       |none  |     0|acc_norm|↑  |0.2910|±  |0.0133|
+|arc_easy     |      1|none  |     0|acc     |↑  |0.5968|±  |0.0101|
+|             |       |none  |     0|acc_norm|↑  |0.5429|±  |0.0102|
+|boolq        |      2|none  |     0|acc     |↑  |0.6037|±  |0.0086|
+|hellaswag    |      1|none  |     0|acc     |↑  |0.3493|±  |0.0048|
+|             |       |none  |     0|acc_norm|↑  |0.4281|±  |0.0049|
+|openbookqa   |      1|none  |     0|acc     |↑  |0.2020|±  |0.0180|
+|             |       |none  |     0|acc_norm|↑  |0.3280|±  |0.0210|
+|piqa         |      1|none  |     0|acc     |↑  |0.6817|±  |0.0109|
+|             |       |none  |     0|acc_norm|↑  |0.6725|±  |0.0109|
+|winogrande   |      1|none  |     0|acc     |↑  |0.5146|±  |0.0140|
+
+{"aggregate": {"bootstrap_ci_95": [0.4735170449440533, 0.4925712061996965], "bootstrap_replicates": 10000, "bootstrap_seed": 20260912, "name": "seven_task_unweighted_mean", "percentile_method": "linear", "score": 0.4829611596666504, "task_weighting": "unweighted"}, "input_sha256": {"protocol": "a71ce3c8cc85cac6fe6751cb46f7e50dfb78d266602d6377cb2e65249f11c761", "results": "603043b613fa887b80e710babc6ebf9fa4c6564f4073864e8fd12936dcc5186b", "samples_arc_challenge": "9bb815bba34eaf9edf56fc20b93dea972d802a044330099efcbff5c1f4ba438f", "samples_arc_easy": "945ad6d755d88e471d55c30b341458584aff9013584080be97aa17078e118c92", "samples_boolq": "938938c8dd8b1382b8ba1cf807c1463c829742baf12f3d17457e8af633e3860e", "samples_hellaswag": "5876c06ad32ee256d1c19f1e05ae366883cf5d0f7e35c3c02a2fc249c730a495", "samples_openbookqa": "fd6fb072dd0a4542c86878e6b6c76c29b62d90b4997f6b42f7453ed6353b9d7e", "samples_piqa": "ede707bfeec8f4b1fdb943245e774ee11b51319e955dd52408b1fb5a35e26e6a", "samples_winogrande": "999970c2745a0c9dc602b221346285a1999a5c09c7c825c9ce511495200f552e"}, "protocol_id": "p500m-english-base-v5", "protocol_sha256": "a71ce3c8cc85cac6fe6751cb46f7e50dfb78d266602d6377cb2e65249f11c761", "status": "PASS_FROZEN_EVALUATION_AGGREGATE", "tasks": {"arc_challenge": {"bootstrap_ci_95": [0.26535836177474403, 0.3174061433447099], "primary_metric": "acc_norm", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/F3_broad_multilingual_no_synthetic_seed20260914/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F3_broad_multilingual_no_synthetic_seed20260914/samples_arc_challenge_2026-09-15T05-23-34.896678.jsonl", "sample_log_sha256": "9bb815bba34eaf9edf56fc20b93dea972d802a044330099efcbff5c1f4ba438f", "samples": 1172, "score": 0.2909556313993174}, "arc_easy": {"bootstrap_ci_95": [0.5231481481481481, 0.5627104377104377], "primary_metric": "acc_norm", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/F3_broad_multilingual_no_synthetic_seed20260914/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F3_broad_multilingual_no_synthetic_seed20260914/samples_arc_easy_2026-09-15T05-23-34.896678.jsonl", "sample_log_sha256": "945ad6d755d88e471d55c30b341458584aff9013584080be97aa17078e118c92", "samples": 2376, "score": 0.5429292929292929}, "boolq": {"bootstrap_ci_95": [0.5865443425076453, 0.6198853211009173], "primary_metric": "acc", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/F3_broad_multilingual_no_synthetic_seed20260914/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F3_broad_multilingual_no_synthetic_seed20260914/samples_boolq_2026-09-15T05-23-34.896678.jsonl", "sample_log_sha256": "938938c8dd8b1382b8ba1cf807c1463c829742baf12f3d17457e8af633e3860e", "samples": 3270, "score": 0.6036697247706422}, "hellaswag": {"bootstrap_ci_95": [0.418442541326429, 0.43776140211113324], "primary_metric": "acc_norm", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/F3_broad_multilingual_no_synthetic_seed20260914/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F3_broad_multilingual_no_synthetic_seed20260914/samples_hellaswag_2026-09-15T05-23-34.896678.jsonl", "sample_log_sha256": "5876c06ad32ee256d1c19f1e05ae366883cf5d0f7e35c3c02a2fc249c730a495", "samples": 10042, "score": 0.4281019717187811}, "openbookqa": {"bootstrap_ci_95": [0.286, 0.37], "primary_metric": "acc_norm", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/F3_broad_multilingual_no_synthetic_seed20260914/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F3_broad_multilingual_no_synthetic_seed20260914/samples_openbookqa_2026-09-15T05-23-34.896678.jsonl", "sample_log_sha256": "fd6fb072dd0a4542c86878e6b6c76c29b62d90b4997f6b42f7453ed6353b9d7e", "samples": 500, "score": 0.328}, "piqa": {"bootstrap_ci_95": [0.6507072905331882, 0.6942328618063112], "primary_metric": "acc_norm", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/F3_broad_multilingual_no_synthetic_seed20260914/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F3_broad_multilingual_no_synthetic_seed20260914/samples_piqa_2026-09-15T05-23-34.896678.jsonl", "sample_log_sha256": "ede707bfeec8f4b1fdb943245e774ee11b51319e955dd52408b1fb5a35e26e6a", "samples": 1838, "score": 0.6724700761697497}, "winogrande": {"bootstrap_ci_95": [0.48697711128650356, 0.5422257300710339], "primary_metric": "acc", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/F3_broad_multilingual_no_synthetic_seed20260914/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F3_broad_multilingual_no_synthetic_seed20260914/samples_winogrande_2026-09-15T05-23-34.896678.jsonl", "sample_log_sha256": "999970c2745a0c9dc602b221346285a1999a5c09c7c825c9ce511495200f552e", "samples": 1267, "score": 0.5146014206787688}}}
+/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F3_broad_multilingual_no_synthetic-seed20260915-1589570/train/model-final.pt: OK
+{"argmax_agreement": 0.98046875, "argmax_matches": 251, "argmax_total": 256, "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F3_broad_multilingual_no_synthetic-seed20260915-1589570/train/model-final.pt", "checkpoint_sha256": "8ee551307118a52bc79e9268ce3a08be20c6776234051fc48e3192d5d3e09a21", "checkpoint_step": 1024, "dtype": "bfloat16", "files": [{"bytes": 696, "path": "config.json", "sha256": "880d4cdad66bf97a2d0830ae36ac999c844b2c16e6c4b8b00eea18013141a6a0"}, {"bytes": 115, "path": "generation_config.json", "sha256": "000cfff4d7f7c400a45cd02b275313ed128cf94fec5ecec7a5eee5dbb1833b9e"}, {"bytes": 1057524496, "path": "model.safetensors", "sha256": "150873147d8880a5036c8e02fd2a8e56ede5c524286a40ece8055b38bbe5a805"}, {"bytes": 293, "path": "special_tokens_map.json", "sha256": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193"}, {"bytes": 3565402, "path": "tokenizer.json", "sha256": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6"}, {"bytes": 5307, "path": "tokenizer_config.json", "sha256": "65fb76dbcacdc8505ec00c53fa3cecac07b1124bf08c88a70bdf3b14d617bc87"}], "functional_limits": {"max_abs_logit_difference": 0.5, "mean_abs_logit_difference": 0.025, "minimum_argmax_agreement": 0.97}, "logit_difference_quantiles": {"0.5": 0.015625, "0.9": 0.0390625, "0.99": 0.0703125, "0.999": 0.1015625, "0.9999": 0.13671875}, "logit_parity_attention": "eager", "max_abs_logit_difference": 0.244140625, "mean_abs_logit_difference": 0.01821850799024105, "parameters_total": 528748800, "sample_shape": [2, 128], "state_tensor_count": 237, "state_tensor_parity": "bitwise_exact", "status": "PASS_HF_EXPORT_BITWISE_STATE_AND_BOUNDED_BF16_LOGIT_DRIFT", "tokenizer_adapter": {"eos_token_id": 50279, "export_class": "PreTrainedTokenizerFast", "original_class": "OLMoTokenizer", "pad_token_id": 1, "token_id_equivalence_samples": 3, "vocab_size": 50280}, "tokenizer_files_copied": ["special_tokens_map.json", "tokenizer.json", "tokenizer_config.json"]}
+Passed argument batch_size = auto:1. Detecting largest batch size
+Passed argument batch_size = auto:1. Detecting largest batch size
+Determined largest batch size: 64
+Determined largest batch size: 64
+{
+  "results": {
+    "arc_challenge": {
+      "alias": "arc_challenge",
+      "acc,none": 0.26109215017064846,
+      "acc_stderr,none": 0.012835523909473708,
+      "acc_norm,none": 0.29948805460750855,
+      "acc_norm_stderr,none": 0.013385021637313725
+    },
+    "arc_easy": {
+      "alias": "arc_easy",
+      "acc,none": 0.6022727272727273,
+      "acc_stderr,none": 0.010042861602178163,
+      "acc_norm,none": 0.547979797979798,
+      "acc_norm_stderr,none": 0.010212436978834194
+    },
+    "boolq": {
+      "alias": "boolq",
+      "acc,none": 0.5902140672782875,
+      "acc_stderr,none": 0.008601532621213792
+    },
+    "hellaswag": {
+      "alias": "hellaswag",
+      "acc,none": 0.3481378211511651,
+      "acc_stderr,none": 0.004754063867699923,
+      "acc_norm,none": 0.4281019717187811,
+      "acc_norm_stderr,none": 0.004937924326742472
+    },
+    "openbookqa": {
+      "alias": "openbookqa",
+      "acc,none": 0.198,
+      "acc_stderr,none": 0.017838958963847292,
+      "acc_norm,none": 0.34,
+      "acc_norm_stderr,none": 0.021206117013673084
+    },
+    "piqa": {
+      "alias": "piqa",
+      "acc,none": 0.6811751904243744,
+      "acc_stderr,none": 0.010873037534333363,
+      "acc_norm,none": 0.6751904243743199,
+      "acc_norm_stderr,none": 0.010926296238294114
+    },
+    "winogrande": {
+      "alias": "winogrande",
+      "acc,none": 0.5114443567482242,
+      "acc_stderr,none": 0.014048804199859391
+    }
+  },
+  "group_subtasks": {
+    "arc_challenge": [],
+    "arc_easy": [],
+    "boolq": [],
+    "hellaswag": [],
+    "openbookqa": [],
+    "piqa": [],
+    "winogrande": []
+  },
+  "configs": {
+    "arc_challenge": {
+      "task": "arc_challenge",
+      "tag": [
+        "ai2_arc"
+      ],
+      "dataset_path": "allenai/ai2_arc",
+      "dataset_name": "ARC-Challenge",
+      "training_split": "train",
+      "validation_split": "validation",
+      "test_split": "test",
+      "doc_to_text": "Question: {{question}}\nAnswer:",
+      "doc_to_target": "{{choices.label.index(answerKey)}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices.text}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "Question: {{question}}\nAnswer:",
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/tmp/p529m-seven-task-2gpu-1590907/F3_broad_multilingual_no_synthetic_seed20260915",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "F3_broad_multilingual_no_synthetic_seed20260915",
+        "checkpoint_sha256": "8ee551307118a52bc79e9268ce3a08be20c6776234051fc48e3192d5d3e09a21",
+        "world_size": 2
+      }
+    },
+    "arc_easy": {
+      "task": "arc_easy",
+      "tag": [
+        "ai2_arc"
+      ],
+      "dataset_path": "allenai/ai2_arc",
+      "dataset_name": "ARC-Easy",
+      "training_split": "train",
+      "validation_split": "validation",
+      "test_split": "test",
+      "doc_to_text": "Question: {{question}}\nAnswer:",
+      "doc_to_target": "{{choices.label.index(answerKey)}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices.text}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "Question: {{question}}\nAnswer:",
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/tmp/p529m-seven-task-2gpu-1590907/F3_broad_multilingual_no_synthetic_seed20260915",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "F3_broad_multilingual_no_synthetic_seed20260915",
+        "checkpoint_sha256": "8ee551307118a52bc79e9268ce3a08be20c6776234051fc48e3192d5d3e09a21",
+        "world_size": 2
+      }
+    },
+    "boolq": {
+      "task": "boolq",
+      "tag": [
+        "super-glue-lm-eval-v1"
+      ],
+      "dataset_path": "super_glue",
+      "dataset_name": "boolq",
+      "training_split": "train",
+      "validation_split": "validation",
+      "doc_to_text": "{{passage}}\nQuestion: {{question}}?\nAnswer:",
+      "doc_to_target": "label",
+      "unsafe_code": false,
+      "doc_to_choice": [
+        "no",
+        "yes"
+      ],
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc"
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "passage",
+      "metadata": {
+        "version": 2.0,
+        "pretrained": "/tmp/p529m-seven-task-2gpu-1590907/F3_broad_multilingual_no_synthetic_seed20260915",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "F3_broad_multilingual_no_synthetic_seed20260915",
+        "checkpoint_sha256": "8ee551307118a52bc79e9268ce3a08be20c6776234051fc48e3192d5d3e09a21",
+        "world_size": 2
+      }
+    },
+    "hellaswag": {
+      "task": "hellaswag",
+      "tag": [
+        "multiple_choice"
+      ],
+      "dataset_path": "hellaswag",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "validation_split": "validation",
+      "process_docs": "def process_docs(dataset: datasets.Dataset) -> datasets.Dataset:\n    def _process_doc(doc):\n        ctx = doc[\"ctx_a\"] + \" \" + doc[\"ctx_b\"].capitalize()\n        out_doc = {\n            \"query\": preprocess(doc[\"activity_label\"] + \": \" + ctx),\n            \"choices\": [preprocess(ending) for ending in doc[\"endings\"]],\n            \"gold\": int(doc[\"label\"]),\n        }\n        return out_doc\n\n    return dataset.map(_process_doc)\n",
+      "doc_to_text": "{{query}}",
+      "doc_to_target": "{{label}}",
+      "unsafe_code": false,
+      "doc_to_choice": "choices",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": false,
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/tmp/p529m-seven-task-2gpu-1590907/F3_broad_multilingual_no_synthetic_seed20260915",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "F3_broad_multilingual_no_synthetic_seed20260915",
+        "checkpoint_sha256": "8ee551307118a52bc79e9268ce3a08be20c6776234051fc48e3192d5d3e09a21",
+        "world_size": 2
+      }
+    },
+    "openbookqa": {
+      "task": "openbookqa",
+      "dataset_path": "openbookqa",
+      "dataset_name": "main",
+      "training_split": "train",
+      "validation_split": "validation",
+      "test_split": "test",
+      "doc_to_text": "question_stem",
+      "doc_to_target": "{{choices.label.index(answerKey.lstrip())}}",
+      "unsafe_code": false,
+      "doc_to_choice": "{{choices.text}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "question_stem",
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/tmp/p529m-seven-task-2gpu-1590907/F3_broad_multilingual_no_synthetic_seed20260915",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "F3_broad_multilingual_no_synthetic_seed20260915",
+        "checkpoint_sha256": "8ee551307118a52bc79e9268ce3a08be20c6776234051fc48e3192d5d3e09a21",
+        "world_size": 2
+      }
+    },
+    "piqa": {
+      "task": "piqa",
+      "dataset_path": "baber/piqa",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "validation_split": "validation",
+      "doc_to_text": "Question: {{goal}}\nAnswer:",
+      "doc_to_target": "label",
+      "unsafe_code": false,
+      "doc_to_choice": "{{[sol1, sol2]}}",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        },
+        {
+          "metric": "acc_norm",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "goal",
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/tmp/p529m-seven-task-2gpu-1590907/F3_broad_multilingual_no_synthetic_seed20260915",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "F3_broad_multilingual_no_synthetic_seed20260915",
+        "checkpoint_sha256": "8ee551307118a52bc79e9268ce3a08be20c6776234051fc48e3192d5d3e09a21",
+        "world_size": 2
+      }
+    },
+    "winogrande": {
+      "task": "winogrande",
+      "dataset_path": "winogrande",
+      "dataset_name": "winogrande_xl",
+      "dataset_kwargs": {
+        "trust_remote_code": true
+      },
+      "training_split": "train",
+      "validation_split": "validation",
+      "doc_to_text": "def doc_to_text(doc):\n    answer_to_num = {\"1\": 0, \"2\": 1}\n    return answer_to_num[doc[\"answer\"]]\n",
+      "doc_to_target": "def doc_to_target(doc):\n    idx = doc[\"sentence\"].index(\"_\") + 1\n    return doc[\"sentence\"][idx:].strip()\n",
+      "unsafe_code": false,
+      "doc_to_choice": "def doc_to_choice(doc):\n    idx = doc[\"sentence\"].index(\"_\")\n    options = [doc[\"option1\"], doc[\"option2\"]]\n    return [doc[\"sentence\"][:idx] + opt for opt in options]\n",
+      "description": "",
+      "target_delimiter": " ",
+      "fewshot_delimiter": "\n\n",
+      "num_fewshot": 0,
+      "metric_list": [
+        {
+          "metric": "acc",
+          "aggregation": "mean",
+          "higher_is_better": true
+        }
+      ],
+      "output_type": "multiple_choice",
+      "repeats": 1,
+      "should_decontaminate": true,
+      "doc_to_decontamination_query": "sentence",
+      "metadata": {
+        "version": 1.0,
+        "pretrained": "/tmp/p529m-seven-task-2gpu-1590907/F3_broad_multilingual_no_synthetic_seed20260915",
+        "dtype": "bfloat16",
+        "trust_remote_code": false,
+        "max_length": 2048,
+        "protocol_id": "p500m-english-base-v5",
+        "candidate_id": "F3_broad_multilingual_no_synthetic_seed20260915",
+        "checkpoint_sha256": "8ee551307118a52bc79e9268ce3a08be20c6776234051fc48e3192d5d3e09a21",
+        "world_size": 2
+      }
+    }
+  },
+  "versions": {
+    "arc_challenge": 1.0,
+    "arc_easy": 1.0,
+    "boolq": 2.0,
+    "hellaswag": 1.0,
+    "openbookqa": 1.0,
+    "piqa": 1.0,
+    "winogrande": 1.0
+  },
+  "n-shot": {
+    "arc_challenge": 0,
+    "arc_easy": 0,
+    "boolq": 0,
+    "hellaswag": 0,
+    "openbookqa": 0,
+    "piqa": 0,
+    "winogrande": 0
+  },
+  "higher_is_better": {
+    "arc_challenge": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "arc_easy": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "boolq": {
+      "acc": true
+    },
+    "hellaswag": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "openbookqa": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "piqa": {
+      "acc": true,
+      "acc_norm": true
+    },
+    "winogrande": {
+      "acc": true
+    }
+  },
+  "n-samples": {
+    "winogrande": {
+      "original": 1267,
+      "effective": 1267
+    },
+    "piqa": {
+      "original": 1838,
+      "effective": 1838
+    },
+    "openbookqa": {
+      "original": 500,
+      "effective": 500
+    },
+    "hellaswag": {
+      "original": 10042,
+      "effective": 10042
+    },
+    "boolq": {
+      "original": 3270,
+      "effective": 3270
+    },
+    "arc_easy": {
+      "original": 2376,
+      "effective": 2376
+    },
+    "arc_challenge": {
+      "original": 1172,
+      "effective": 1172
+    }
+  },
+  "config": {
+    "model": "hf",
+    "model_args": "pretrained=/tmp/p529m-seven-task-2gpu-1590907/F3_broad_multilingual_no_synthetic_seed20260915,dtype=bfloat16,trust_remote_code=False,max_length=2048",
+    "model_num_parameters": 528748800,
+    "model_dtype": "torch.bfloat16",
+    "model_revision": "main",
+    "model_sha": "",
+    "batch_size": "auto",
+    "batch_sizes": [
+      64
+    ],
+    "device": "cuda",
+    "use_cache": null,
+    "limit": null,
+    "bootstrap_iters": 100000,
+    "gen_kwargs": null,
+    "random_seed": 42,
+    "numpy_seed": 42,
+    "torch_seed": 42,
+    "fewshot_seed": 1234
+  },
+  "git_hash": null,
+  "date": 1789421292.2582314,
+  "pretty_env_info": "PyTorch version: 2.11.0+cu128\nIs debug build: False\nCUDA used to build PyTorch: 12.8\nROCM used to build PyTorch: N/A\n\nOS: Ubuntu 22.04.5 LTS (x86_64)\nGCC version: (Ubuntu 11.4.0-1ubuntu1~22.04.2) 11.4.0\nClang version: Could not collect\nCMake version: Could not collect\nLibc version: glibc-2.35\n\nPython version: 3.12.13 (main, Jul 18 2026, 17:02:19) [Clang 22.1.3 ] (64-bit runtime)\nPython platform: Linux-5.15.0-119-generic-x86_64-with-glibc2.35\nIs CUDA available: True\nCUDA runtime version: Could not collect\nCUDA_MODULE_LOADING set to: \nGPU models and configuration: \nGPU 0: NVIDIA GeForce RTX 5090\nGPU 1: NVIDIA GeForce RTX 5090\n\nNvidia driver version: 580.82.07\ncuDNN version: Could not collect\nIs XPU available: False\nHIP runtime version: N/A\nMIOpen runtime version: N/A\nIs XNNPACK available: True\nCaching allocator config: N/A\n\nCPU:\nArchitecture:                         x86_64\nCPU op-mode(s):                       32-bit, 64-bit\nAddress sizes:                        52 bits physical, 57 bits virtual\nByte Order:                           Little Endian\nCPU(s):                               128\nOn-line CPU(s) list:                  0-127\nVendor ID:                            GenuineIntel\nModel name:                           INTEL(R) XEON(R) GOLD 6530\nCPU family:                           6\nModel:                                207\nThread(s) per core:                   2\nCore(s) per socket:                   32\nSocket(s):                            2\nStepping:                             2\nCPU max MHz:                          4000.0000\nCPU min MHz:                          800.0000\nBogoMIPS:                             4200.00\nFlags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cat_l2 cdp_l3 invpcid_single intel_ppin cdp_l2 ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local split_lock_detect avx_vnni avx512_bf16 wbnoinvd dtherm ida arat pln pts hwp hwp_act_window hwp_epp hwp_pkg_req avx512vbmi umip pku ospke waitpkg avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg tme avx512_vpopcntdq la57 rdpid bus_lock_detect cldemote movdiri movdir64b enqcmd fsrm md_clear serialize tsxldtrk pconfig arch_lbr amx_bf16 avx512_fp16 amx_tile amx_int8 flush_l1d arch_capabilities\nVirtualization:                       VT-x\nL1d cache:                            3 MiB (64 instances)\nL1i cache:                            2 MiB (64 instances)\nL2 cache:                             128 MiB (64 instances)\nL3 cache:                             320 MiB (2 instances)\nNUMA node(s):                         2\nNUMA node0 CPU(s):                    0-31,64-95\nNUMA node1 CPU(s):                    32-63,96-127\nVulnerability Gather data sampling:   Not affected\nVulnerability Itlb multihit:          Not affected\nVulnerability L1tf:                   Not affected\nVulnerability Mds:                    Not affected\nVulnerability Meltdown:               Not affected\nVulnerability Mmio stale data:        Not affected\nVulnerability Reg file data sampling: Not affected\nVulnerability Retbleed:               Not affected\nVulnerability Spec rstack overflow:   Not affected\nVulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl and seccomp\nVulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI BHI_DIS_S\nVulnerability Srbds:                  Not affected\nVulnerability Tsx async abort:        Not affected\n\nVersions of relevant libraries:\n[pip3] numpy==1.26.4\n[pip3] nvidia-cublas-cu12==12.8.4.1\n[pip3] nvidia-cuda-cupti-cu12==12.8.90\n[pip3] nvidia-cuda-nvrtc-cu12==12.8.93\n[pip3] nvidia-cuda-runtime-cu12==12.8.90\n[pip3] nvidia-cudnn-cu12==9.19.0.56\n[pip3] nvidia-cufft-cu12==11.3.3.83\n[pip3] nvidia-curand-cu12==10.3.9.90\n[pip3] nvidia-cusolver-cu12==11.7.3.90\n[pip3] nvidia-cusparse-cu12==12.5.8.93\n[pip3] nvidia-cusparselt-cu12==0.7.1\n[pip3] nvidia-nccl-cu12==2.28.9\n[pip3] nvidia-nvjitlink-cu12==12.8.93\n[pip3] nvidia-nvtx-cu12==12.8.90\n[pip3] torch==2.11.0+cu128\n[pip3] triton==3.6.0\n[conda] Could not collect",
+  "transformers_version": "4.57.6",
+  "lm_eval_version": "0.4.9",
+  "upper_git_hash": null,
+  "tokenizer_pad_token": [
+    "<|padding|>",
+    "1"
+  ],
+  "tokenizer_eos_token": [
+    "<|endoftext|>",
+    "50279"
+  ],
+  "tokenizer_bos_token": [
+    null,
+    "None"
+  ],
+  "eot_token_id": 50279,
+  "max_length": 2048
+}
+hf (pretrained=/tmp/p529m-seven-task-2gpu-1590907/F3_broad_multilingual_no_synthetic_seed20260915,dtype=bfloat16,trust_remote_code=False,max_length=2048), gen_kwargs: (None), limit: None, num_fewshot: 0, batch_size: auto (64)
+|    Tasks    |Version|Filter|n-shot| Metric |   |Value |   |Stderr|
+|-------------|------:|------|-----:|--------|---|-----:|---|-----:|
+|arc_challenge|      1|none  |     0|acc     |↑  |0.2611|±  |0.0128|
+|             |       |none  |     0|acc_norm|↑  |0.2995|±  |0.0134|
+|arc_easy     |      1|none  |     0|acc     |↑  |0.6023|±  |0.0100|
+|             |       |none  |     0|acc_norm|↑  |0.5480|±  |0.0102|
+|boolq        |      2|none  |     0|acc     |↑  |0.5902|±  |0.0086|
+|hellaswag    |      1|none  |     0|acc     |↑  |0.3481|±  |0.0048|
+|             |       |none  |     0|acc_norm|↑  |0.4281|±  |0.0049|
+|openbookqa   |      1|none  |     0|acc     |↑  |0.1980|±  |0.0178|
+|             |       |none  |     0|acc_norm|↑  |0.3400|±  |0.0212|
+|piqa         |      1|none  |     0|acc     |↑  |0.6812|±  |0.0109|
+|             |       |none  |     0|acc_norm|↑  |0.6752|±  |0.0109|
+|winogrande   |      1|none  |     0|acc     |↑  |0.5114|±  |0.0140|
+
+{"aggregate": {"bootstrap_ci_95": [0.4752476750567884, 0.4941118722361738], "bootstrap_replicates": 10000, "bootstrap_seed": 20260912, "name": "seven_task_unweighted_mean", "percentile_method": "linear", "score": 0.4846312389581313, "task_weighting": "unweighted"}, "input_sha256": {"protocol": "a71ce3c8cc85cac6fe6751cb46f7e50dfb78d266602d6377cb2e65249f11c761", "results": "3a4ea5d453be35f7d12294401743f74b28339a98aca30a059c5e49ddaa899b46", "samples_arc_challenge": "e85a84a0397076b94833436b278f29732ae48cb39a9b1e24a09c3a182b93255b", "samples_arc_easy": "7229c2349158c111077ff911c557591cc697fd2703981e812108caec527c97d3", "samples_boolq": "9eb8f9335c7acd34caddf0b93b002f7efe4157fa86161778c3de2d89b2855f95", "samples_hellaswag": "0cc258e0c1384bbfce244af171f02025c97e99fdf6cdce3b0b1e04c1ea28b35a", "samples_openbookqa": "780bd1cce4d2552428546a4ea7a70f64f880efabfda468369ae874d308fe7ed5", "samples_piqa": "9ad1909ab279f31026d23c11ca088031a0a62a70884f2fd70aac3ad4bb1cecc9", "samples_winogrande": "9fbfa32c1196c538933a0211009f4d971371f477792848b3440b96c61e174dd7"}, "protocol_id": "p500m-english-base-v5", "protocol_sha256": "a71ce3c8cc85cac6fe6751cb46f7e50dfb78d266602d6377cb2e65249f11c761", "status": "PASS_FROZEN_EVALUATION_AGGREGATE", "tasks": {"arc_challenge": {"bootstrap_ci_95": [0.2738907849829352, 0.3267918088737201], "primary_metric": "acc_norm", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/F3_broad_multilingual_no_synthetic_seed20260915/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F3_broad_multilingual_no_synthetic_seed20260915/samples_arc_challenge_2026-09-15T05-29-11.934964.jsonl", "sample_log_sha256": "e85a84a0397076b94833436b278f29732ae48cb39a9b1e24a09c3a182b93255b", "samples": 1172, "score": 0.29948805460750855}, "arc_easy": {"bootstrap_ci_95": [0.5277777777777778, 0.5681818181818182], "primary_metric": "acc_norm", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/F3_broad_multilingual_no_synthetic_seed20260915/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F3_broad_multilingual_no_synthetic_seed20260915/samples_arc_easy_2026-09-15T05-29-11.934964.jsonl", "sample_log_sha256": "7229c2349158c111077ff911c557591cc697fd2703981e812108caec527c97d3", "samples": 2376, "score": 0.547979797979798}, "boolq": {"bootstrap_ci_95": [0.5736926605504588, 0.6067278287461774], "primary_metric": "acc", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/F3_broad_multilingual_no_synthetic_seed20260915/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F3_broad_multilingual_no_synthetic_seed20260915/samples_boolq_2026-09-15T05-29-11.934964.jsonl", "sample_log_sha256": "9eb8f9335c7acd34caddf0b93b002f7efe4157fa86161778c3de2d89b2855f95", "samples": 3270, "score": 0.5902140672782875}, "hellaswag": {"bootstrap_ci_95": [0.418442541326429, 0.43776140211113324], "primary_metric": "acc_norm", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/F3_broad_multilingual_no_synthetic_seed20260915/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F3_broad_multilingual_no_synthetic_seed20260915/samples_hellaswag_2026-09-15T05-29-11.934964.jsonl", "sample_log_sha256": "0cc258e0c1384bbfce244af171f02025c97e99fdf6cdce3b0b1e04c1ea28b35a", "samples": 10042, "score": 0.4281019717187811}, "openbookqa": {"bootstrap_ci_95": [0.298, 0.38], "primary_metric": "acc_norm", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/F3_broad_multilingual_no_synthetic_seed20260915/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F3_broad_multilingual_no_synthetic_seed20260915/samples_openbookqa_2026-09-15T05-29-11.934964.jsonl", "sample_log_sha256": "780bd1cce4d2552428546a4ea7a70f64f880efabfda468369ae874d308fe7ed5", "samples": 500, "score": 0.34}, "piqa": {"bootstrap_ci_95": [0.6534276387377584, 0.6969532100108814], "primary_metric": "acc_norm", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/F3_broad_multilingual_no_synthetic_seed20260915/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F3_broad_multilingual_no_synthetic_seed20260915/samples_piqa_2026-09-15T05-29-11.934964.jsonl", "sample_log_sha256": "9ad1909ab279f31026d23c11ca088031a0a62a70884f2fd70aac3ad4bb1cecc9", "samples": 1838, "score": 0.6751904243743199}, "winogrande": {"bootstrap_ci_95": [0.48382004735595896, 0.5382794001578532], "primary_metric": "acc", "sample_log": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/F3_broad_multilingual_no_synthetic_seed20260915/lm-eval/__tmp__p529m-seven-task-2gpu-1590907__F3_broad_multilingual_no_synthetic_seed20260915/samples_winogrande_2026-09-15T05-29-11.934964.jsonl", "sample_log_sha256": "9fbfa32c1196c538933a0211009f4d971371f477792848b3440b96c61e174dd7", "samples": 1267, "score": 0.5114443567482242}}}
+{"base": {"aggregate_score": 0.479952415150124, "tasks": {"arc_challenge": 0.2832764505119454, "arc_easy": 0.5526094276094277, "boolq": 0.5629969418960244, "hellaswag": 0.42342162915753834, "openbookqa": 0.332, "piqa": 0.6686615886833515, "winogrande": 0.5367008681925809}}, "candidates": [{"aggregate_delta_vs_base": 0.0052388239255697355, "aggregate_score": 0.4851912390756937, "aggregate_sha256": "f7c5094819d011f5a1517ca1f7ccb4d99c8b5de0ec510ea2ba921f821c60f115", "checkpoint_sha256": "69d9d8d3358f23815f2455f7e075645056f90fe01ed40a11525130a0e58ca085", "export_receipt_sha256": "089a290e7614c60379154a9ffacb0567760b256d055b4d993b4b76bf8dcacea2", "id": "F2_reasoning_no_synthetic_seed20260914", "recipe": "F2_reasoning_no_synthetic", "seed": 20260914, "task_delta_vs_base": {"arc_challenge": 0.013651877133105783, "arc_easy": -0.009680134680134733, "boolq": 0.03149847094801228, "hellaswag": 0.004879506074487172, "openbookqa": 0.0040000000000000036, "piqa": 0.006528835690968404, "winogrande": -0.01420678768745065}, "tasks": {"arc_challenge": 0.29692832764505117, "arc_easy": 0.5429292929292929, "boolq": 0.5944954128440367, "hellaswag": 0.4283011352320255, "openbookqa": 0.336, "piqa": 0.6751904243743199, "winogrande": 0.5224940805051302}}, {"aggregate_delta_vs_base": 0.005479299343469746, "aggregate_score": 0.48543171449359374, "aggregate_sha256": "1aa05953aab4ea0b82b30a63114912b63aacd0a3811348c5b041bac57223ee7f", "checkpoint_sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc", "export_receipt_sha256": "14ed94adbef18e4ee898806bd9ad96ab79306283676fb22270aafe2e73c78d33", "id": "F2_reasoning_no_synthetic_seed20260915", "recipe": "F2_reasoning_no_synthetic", "seed": 20260915, "task_delta_vs_base": {"arc_challenge": 0.009385665529010268, "arc_easy": -0.010521885521885599, "boolq": 0.03700305810397553, "hellaswag": 0.006970722963553055, "openbookqa": 0.006000000000000005, "piqa": 0.009249183895538637, "winogrande": -0.019731649565903675}, "tasks": {"arc_challenge": 0.29266211604095566, "arc_easy": 0.5420875420875421, "boolq": 0.6, "hellaswag": 0.4303923521210914, "openbookqa": 0.338, "piqa": 0.6779107725788901, "winogrande": 0.5169692186266772}}, {"aggregate_delta_vs_base": 0.003008744516526385, "aggregate_score": 0.4829611596666504, "aggregate_sha256": "a9cd878f4b320ecaa2dc7a0aa2f32b5d0fa7c4eec3814deeaa9fca24018907b1", "checkpoint_sha256": "194e1da1ba1e74a77e28ae207d1dd74a4baa6889408e41c6dce36d551f1e222e", "export_receipt_sha256": "8725adf8dacb14fab5ff0804150a82851b370f9402a74ba0633cb74230ab56ea", "id": "F3_broad_multilingual_no_synthetic_seed20260914", "recipe": "F3_broad_multilingual_no_synthetic", "seed": 20260914, "task_delta_vs_base": {"arc_challenge": 0.007679180887372017, "arc_easy": -0.009680134680134733, "boolq": 0.04067278287461773, "hellaswag": 0.0046803425612427785, "openbookqa": -0.0040000000000000036, "piqa": 0.003808487486398282, "winogrande": -0.022099447513812098}, "tasks": {"arc_challenge": 0.2909556313993174, "arc_easy": 0.5429292929292929, "boolq": 0.6036697247706422, "hellaswag": 0.4281019717187811, "openbookqa": 0.328, "piqa": 0.6724700761697497, "winogrande": 0.5146014206787688}}, {"aggregate_delta_vs_base": 0.004678823808007326, "aggregate_score": 0.4846312389581313, "aggregate_sha256": "a5b4175b8d191f3607a64bff4684654028b8b45a42ee92d679be0dd8baabe06f", "checkpoint_sha256": "8ee551307118a52bc79e9268ce3a08be20c6776234051fc48e3192d5d3e09a21", "export_receipt_sha256": "38bfb02605f063db515aa9d5fa4e2246a246af89165dac4e5683ab52d5f1efce", "id": "F3_broad_multilingual_no_synthetic_seed20260915", "recipe": "F3_broad_multilingual_no_synthetic", "seed": 20260915, "task_delta_vs_base": {"arc_challenge": 0.01621160409556316, "arc_easy": -0.00462962962962965, "boolq": 0.027217125382263063, "hellaswag": 0.0046803425612427785, "openbookqa": 0.008000000000000007, "piqa": 0.006528835690968404, "winogrande": -0.0252565114443567}, "tasks": {"arc_challenge": 0.29948805460750855, "arc_easy": 0.547979797979798, "boolq": 0.5902140672782875, "hellaswag": 0.4281019717187811, "openbookqa": 0.34, "piqa": 0.6751904243743199, "winogrande": 0.5114443567482242}}], "claim_boundary": "matched two-GPU English base-model multiple-choice accuracy and retention only; instruction following, multilingual generation, safety and market superiority remain unverified", "formal_promotion": false, "input_sha256": {"F2_reasoning_no_synthetic_seed20260914_aggregate": "f7c5094819d011f5a1517ca1f7ccb4d99c8b5de0ec510ea2ba921f821c60f115", "F2_reasoning_no_synthetic_seed20260914_export_receipt": "089a290e7614c60379154a9ffacb0567760b256d055b4d993b4b76bf8dcacea2", "F2_reasoning_no_synthetic_seed20260915_aggregate": "1aa05953aab4ea0b82b30a63114912b63aacd0a3811348c5b041bac57223ee7f", "F2_reasoning_no_synthetic_seed20260915_export_receipt": "14ed94adbef18e4ee898806bd9ad96ab79306283676fb22270aafe2e73c78d33", "F3_broad_multilingual_no_synthetic_seed20260914_aggregate": "a9cd878f4b320ecaa2dc7a0aa2f32b5d0fa7c4eec3814deeaa9fca24018907b1", "F3_broad_multilingual_no_synthetic_seed20260914_export_receipt": "8725adf8dacb14fab5ff0804150a82851b370f9402a74ba0633cb74230ab56ea", "F3_broad_multilingual_no_synthetic_seed20260915_aggregate": "a5b4175b8d191f3607a64bff4684654028b8b45a42ee92d679be0dd8baabe06f", "F3_broad_multilingual_no_synthetic_seed20260915_export_receipt": "38bfb02605f063db515aa9d5fa4e2246a246af89165dac4e5683ab52d5f1efce", "matched_two_gpu_base_aggregate": "c87aa54ec060154d594c6a7ca44b79b28cec27497cc867b0845ad492397535c1", "matched_two_gpu_base_export_receipt": "736705f36daad6a405e7a604191673ce43077ede464841f37888e985c891d0e4", "plan": "a2953d7305fd8f9ccd9694bef7b41aea90e7075e927be535f00ff92c832ef63b", "reference_four_gpu_base_aggregate": "34265389f4f85d54a1cdb4945b06016849f58b55b6c47e686ecc7c2423fd8c09"}, "protocol_id": "p500m-english-base-v5", "protocol_sha256": "a71ce3c8cc85cac6fe6751cb46f7e50dfb78d266602d6377cb2e65249f11c761", "recipes": [{"aggregate_delta_vs_base": 0.005359061634519713, "mean_tasks": {"arc_challenge": 0.29479522184300344, "arc_easy": 0.5425084175084175, "boolq": 0.5972477064220183, "hellaswag": 0.42934674367655845, "openbookqa": 0.337, "piqa": 0.6765505984766049, "winogrande": 0.5197316495659037}, "mean_two_seed_aggregate": 0.4853114767846437, "rank": 1, "recipe": "F2_reasoning_no_synthetic", "seed_spread": 0.00024047541790001015, "task_delta_vs_base": {"arc_challenge": 0.011518771331058053, "arc_easy": -0.010101010101010166, "boolq": 0.03425076452599385, "hellaswag": 0.005925114519020114, "openbookqa": 0.0050000000000000044, "piqa": 0.007889009793253465, "winogrande": -0.016969218626677218}, "worst_seed_aggregate": 0.4851912390756937}, {"aggregate_delta_vs_base": 0.003843784162266828, "mean_tasks": {"arc_challenge": 0.295221843003413, "arc_easy": 0.5454545454545454, "boolq": 0.5969418960244648, "hellaswag": 0.4281019717187811, "openbookqa": 0.334, "piqa": 0.6738302502720348, "winogrande": 0.5130228887134964}, "mean_two_seed_aggregate": 0.4837961993123908, "rank": 2, "recipe": "F3_broad_multilingual_no_synthetic", "seed_spread": 0.0016700792914809415, "task_delta_vs_base": {"arc_challenge": 0.011945392491467588, "arc_easy": -0.007154882154882247, "boolq": 0.03394495412844034, "hellaswag": 0.0046803425612427785, "openbookqa": 0.0020000000000000018, "piqa": 0.005168661588683343, "winogrande": -0.023677979479084454}, "worst_seed_aggregate": 0.4829611596666504}], "reference_four_gpu_base": {"aggregate_score": 0.4795681745464077, "tasks": {"arc_challenge": 0.2832764505119454, "arc_easy": 0.5526094276094277, "boolq": 0.5629969418960244, "hellaswag": 0.4235212109141605, "openbookqa": 0.33, "piqa": 0.6686615886833515, "winogrande": 0.5359116022099447}}, "schema": "p529m-seven-task-confirmation-2gpu-summary-v1", "selected_recipe_by_seven_task_accuracy": "F2_reasoning_no_synthetic", "selection_rule": "higher worst-seed seven-task unweighted mean, then higher two-seed mean, then recipe id", "status": "PASS_MATCHED_TWO_GPU_BASE_AND_FOUR_CANDIDATE_SEVEN_TASK_EVALUATION", "two_gpu_base_delta_vs_reference": {"aggregate": 0.00038424060371627933, "tasks": {"arc_challenge": 0.0, "arc_easy": 0.0, "boolq": 0.0, "hellaswag": -9.958175662216906e-05, "openbookqa": 0.0020000000000000018, "piqa": 0.0, "winogrande": 0.0007892659826361781}}}
+SEVEN_TASK_2GPU_CONFIRMATION_COMPLETED summary_sha256=7eddae38ce9b1b002ede388dc73c55e078ccbeb38269c5e893609d997e31ab99

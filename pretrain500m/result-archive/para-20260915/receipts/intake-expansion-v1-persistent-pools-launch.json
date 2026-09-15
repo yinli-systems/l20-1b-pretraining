@@ -1,0 +1,18 @@
+{
+  "cache_summary_sha256": "26763e966c7908aa1bd7500260dcc17d5c60062b31616e35c395c7749b3028f2",
+  "correct_free_bytes_before": 32281788416,
+  "launched_utc": "2026-09-14T03:21:44.109490+00:00",
+  "log": "/ssd/scxi253/pretrain500m-20260912-v1/logs/intake-expansion-v1-persistent-pools.log",
+  "pid": 4167022,
+  "schema_version": 1,
+  "source_sha256": {
+    "SHA256SUMS": "699f37b4ab9f006199fdadec303fbd853740f84eaecc5ef3c3da52e31c0f92f9",
+    "http_ranges.py": "c99ffe8765dd9a487ccf394a7a5262c9ed6a2b1ce655fe32a24c78cef114fffa",
+    "intake.py": "b47a949cf6c96d827a38f878fc1732f933960d776f6a1ad9174d33254e63d0a2",
+    "plan.json": "ca16deedb115a04a33b7b49889317866fb806f64014b2161a04b7803e224d0a6"
+  },
+  "status": "RAW_INTAKE_PERSISTENT_POOLS_RUNNING_NOT_ADMITTED",
+  "supersede_reason": "reuse each 64-worker code pool and its thread-local HTTPS sessions across all row groups",
+  "supersedes_pid": 4110760,
+  "training_admitted": false
+}

@@ -1,0 +1,7 @@
+compare.py: OK
+mixture.py: OK
+prepare.py: OK
+resume.py: OK
+run.sbatch: OK
+train_cpt.py: OK
+{"status": "FAIL", "formal_quality_gain": false, "scope": "same-allocation 4-GPU recovery with frozen FineWeb data", "error": "tensor mismatch: root/model/model.embed_tokens.weight"}

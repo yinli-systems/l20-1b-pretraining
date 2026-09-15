@@ -1,0 +1,51 @@
+{
+  "code_sha256": {
+    "dispatch_formal_v5.py": "5cd1a0d814ca98daf5b8b09f1a439c60f6a2249ad2d5b222d4a9accd84aef5d3",
+    "dispatch_formal_v5.sbatch": "b27d2d14e35441e1d429c8b9593c9169b940910e47a3199e4b43b40f21933175",
+    "evaluate_4gpu_v5.sbatch": "621adc74ef1c7a482396946e0c8e655899adcee8514ae1bc92063c1034d7f5c6",
+    "export_hf_v5.sbatch": "c51a8602b5d51b7625f47835fbb95a4189d87688601b55845ea58f973932cf7b",
+    "finalize_packed_data.py": "abca7de58e7be1f1b174e5c57b4877f747c3d903f10f71c1538b17ac85f2e875",
+    "finalize_packed_data_all.sbatch": "8bead35ea4ba07e7b6c8eddf63f80af31fb0c17c70b54dbc72f05f2026badd83",
+    "train_ngpu_v5.sbatch": "a8ebab8e5aa5bf6c6f3d779722efb7a95a6e62cd076531a29b45caa98e0bc498"
+  },
+  "created_at_utc": "2026-09-12T09:00:53.491429+00:00",
+  "data_finalize_job": "1584895",
+  "dedup_audit_job": "1584768",
+  "formal": {
+    "base_protocol_v3_sha256": "38a8adbbba3ca19d2cd59718412fb6671925b6b123350d25a8755eed8661b893",
+    "expected_steps": 7629,
+    "gpus": 16,
+    "median_mfu": 0.5574425708758708,
+    "median_tokens_per_second": 468310.57308466744,
+    "minimum_mfu": 0.5286628461552305,
+    "minimum_mfu_strictly_greater_than": 0.5,
+    "optimizer_prediction_tokens": 15999172608,
+    "selected_peak_lr": 0.0015,
+    "selected_scale_pilot": "1583999",
+    "train_sha256": "3d9469d6bd3cc844ee690f37730b08051a8a38c4b2cf2d1d1b6c8377cf9655cc"
+  },
+  "formal_dispatch_job": "1584896",
+  "owner_task": "01a09290-b43f-7431-be8a-412ea5d37954",
+  "packing_jobs": [
+    "1584572_1",
+    "1584572_2",
+    "1584572_3",
+    "1584572_4",
+    "1584606_5",
+    "1584694_6",
+    "1584694_7",
+    "1584761_8",
+    "1584761_9",
+    "1584761_10",
+    "1584761_11",
+    "1584656_12",
+    "1584656_13"
+  ],
+  "reason": "Correct the impossible fixed 9B raw-token assumption before formal training. Finalize every verified deduplicated block, freeze protocol v5 from the exact manifest, and retain the 15,999,172,608 optimizer prediction-token target.",
+  "status": "AUTHORITATIVE_PIPELINE",
+  "superseded_jobs": [
+    "1584773",
+    "1584788",
+    "1584843"
+  ]
+}

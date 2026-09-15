@@ -1,0 +1,11 @@
+README.md: OK
+build_plan.py: OK
+evaluate.py: OK
+mixture.py: OK
+run.sbatch: OK
+select_long.py: OK
+test_long_eval.py: OK
+watch-and-submit.sh: OK
+/ssd/scxi253/pretrain500m-20260912-v1/source/long-confirmation-eval-v1/checkpoint-plan.json: OK
+{"losses": {"F2_reasoning_no_synthetic_seed20260914": 2.565939948042981, "F2_reasoning_no_synthetic_seed20260915": 2.569942914760283, "F3_broad_multilingual_no_synthetic_seed20260914": 2.4014064296551916, "F3_broad_multilingual_no_synthetic_seed20260915": 2.403810307699846, "base": 3.304216691519922}, "status": "PASS_FOUR_RUN_HELDOUT_EVALUATION"}
+{"selected_recipe": "F3_broad_multilingual_no_synthetic", "status": "PASS_FROZEN_TWO_RECIPE_SELECTION"}

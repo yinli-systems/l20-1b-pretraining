@@ -1,0 +1,14 @@
+README.md: OK
+mixture.py: OK
+resume.py: OK
+test_v2.py: OK
+train_cpt.py: OK
+......................................                                   [100%]
+38 passed in 8.14s
+README.md: OK
+run.sbatch: OK
+README.md: OK
+build.py: OK
+test_build.py: OK
+..                                                                       [100%]
+2 passed in 0.35s

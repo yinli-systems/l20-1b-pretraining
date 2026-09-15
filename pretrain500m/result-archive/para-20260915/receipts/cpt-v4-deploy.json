@@ -1,0 +1,76 @@
+{
+  "status": "CPT_V4_DEPLOYED_CPU_AND_REAL_MANIFEST_STRUCTURE_PASS_GPU_PENDING",
+  "archive_sha256": "8b6996f521415fe04a286e3047fb9aba9739ee99bc56f26713625d337bf6b2ff",
+  "source_sha256s": {
+    "mixture.py": "d12801d3b123f65b05b06ddcb8b7838c1f5fc545b1d78f9e6cfe6fc77c94793f",
+    "resume.py": "31442c090c47151bfde5b8ce5d19b930a66e96c134676bd744ea1e6f5c29f811",
+    "train_cpt.py": "6d163fdd0cd60eaf4c82019678795f86e25174979ea1bb33656e227dc587d26c",
+    "test_v2.py": "5782946acab6df767dba0faef46ccc25fc6e947ee97a45a4e97fb7e5dd061993",
+    "README.md": "3d76e69c17e99330e4a835889ad3a12bda1897cecc2f48953e57f96783733247"
+  },
+  "manifest_sha256s": {
+    "F0_existing_web_control.json": "cdcb6e4428cbfdbd1ee38eabbbd6f41edeefafa9a481540b62e63c1ea10bd1b6",
+    "F1_broad_english_no_synthetic.json": "89837d02e6048ee7f496f75023d67f1352a20dd779579c89991078c684a5434f",
+    "F3_broad_multilingual_no_synthetic.json": "07d730fd6cbc150f1ea3073cf1b90e538d03f5aa86c655acf676e274f20515f5",
+    "manifest-build-receipt.json": "f75ab44f32a5ff5e700e686ea28db7475ce2c1a826a4d0037de6ea585b7aab86"
+  },
+  "cpu_tests": "......................................                                   [100%]\n38 passed in 7.00s",
+  "real_manifest_structural_preflight": {
+    "F0_existing_web_control": {
+      "blocks": 262144,
+      "sources": {
+        "fineweb_edu": 262144
+      }
+    },
+    "F1_broad_english_no_synthetic": {
+      "blocks": 262144,
+      "sources": {
+        "code_cpp": 2622,
+        "code_java": 2621,
+        "code_javascript": 5243,
+        "code_python": 13107,
+        "code_typescript": 2621,
+        "dclm": 52429,
+        "finemath4": 29492,
+        "fineweb_edu": 91750,
+        "infiwebmath4": 9830,
+        "pdf_en": 52429
+      }
+    },
+    "F3_broad_multilingual_no_synthetic": {
+      "blocks": 262144,
+      "sources": {
+        "code_cpp": 3932,
+        "code_java": 3932,
+        "code_javascript": 7865,
+        "code_python": 19661,
+        "code_typescript": 3932,
+        "dclm": 39322,
+        "finemath4": 29491,
+        "fineweb_edu": 65536,
+        "infiwebmath4": 9830,
+        "multilingual_arb_Arab": 2622,
+        "multilingual_cmn_Hani": 13107,
+        "multilingual_deu_Latn": 2622,
+        "multilingual_fra_Latn": 2621,
+        "multilingual_jpn_Jpan": 2621,
+        "multilingual_spa_Latn": 2621,
+        "pdf_en": 52429
+      }
+    },
+    "development": {
+      "blocks": 7824,
+      "masked": true,
+      "sources": {
+        "code": 1297,
+        "general_web": 1251,
+        "knowledge_reading": 2679,
+        "math": 1243,
+        "multilingual": 1354
+      }
+    }
+  },
+  "model_source": "/ssd/scxi253/pretrain500m-20260912-v1/source/train-v2",
+  "model_source_sha256": "581a9e0ccd00d940d6ae27ff011d3d430dae8825a257b9ebc91f24b1a9637998",
+  "training_admitted": false
+}

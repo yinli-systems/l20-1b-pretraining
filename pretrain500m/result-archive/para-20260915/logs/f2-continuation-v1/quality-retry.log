@@ -1,0 +1,19 @@
+Warning : `load_model` does not return WordVectorModel or SupervisedModel any more, but a `FastText` object which is very similar.
+Traceback (most recent call last):
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/quality-family-f2-continuation-v1/run.py", line 100, in <module>
+    main()
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/quality-family-f2-continuation-v1/run.py", line 96, in main
+    load_scanner().run(args)
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/quality-family-expansion-v1/scan.py", line 192, in run
+    results=reused+list(pool.imap_unordered(process_one,pending,chunksize=1))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/pool.py", line 873, in next
+    raise value
+  File "/ssd/scxi253/pretraining2/runtime/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/pool.py", line 540, in _handle_tasks
+    put(task)
+  File "/ssd/scxi253/pretraining2/runtime/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/connection.py", line 206, in send
+    self._send_bytes(_ForkingPickler.dumps(obj))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/ssd/scxi253/pretraining2/runtime/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/multiprocessing/reduction.py", line 51, in dumps
+    cls(buf, protocol).dump(obj)
+_pickle.PicklingError: Can't pickle <function process_one at 0x147237bcc0e0>: import of module 'p529m_f2_quality' failed

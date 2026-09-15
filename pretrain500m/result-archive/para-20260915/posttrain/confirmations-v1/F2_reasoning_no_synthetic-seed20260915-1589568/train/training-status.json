@@ -1,0 +1,8 @@
+{
+  "checkpoint_mode": "model-only-final",
+  "reason": "mfu_below_minimum",
+  "status": "STOPPED_WITHOUT_RESUMABLE_CHECKPOINT",
+  "step": 15,
+  "tokens": 31457280,
+  "unix": 1789370532.1630003
+}

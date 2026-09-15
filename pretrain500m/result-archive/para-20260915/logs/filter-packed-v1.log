@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/filter-packed-v1/filter_pack.py", line 183, in <module>
+    run(parser.parse_args())
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/filter-packed-v1/filter_pack.py", line 136, in run
+    args.output.mkdir(exist_ok=False)
+  File "/ssd/scxi253/pretraining2/runtime/python/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: '/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-quality-v1'
