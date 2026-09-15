@@ -1,0 +1,151 @@
+{
+  "all_nine_f2_sources_above_required_upper_bound": true,
+  "checked_utc": "2026-09-15T08:31:14.341637+00:00",
+  "family_output_files_sha256_verified_independently": {
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/family-split-f2-continuation-v1/policy.json": "89d17cfb4e9bdb4924a5577c7235c366717ff0eeacf7be5ebee9aad8eb87b9f1",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/family-split-f2-continuation-v1/row-assignments.jsonl.gz": "476e3397d9f8cf6858a247c91a3235e114b40016335aeae8b31b63fadf6a495f",
+    "/ssd/scxi253/pretrain500m-20260912-v1/data/family-split-f2-continuation-v1/verified-near-edges.jsonl.gz": "01b4d1901f247f069ffca253cc87999f9845550565d79838167e60ec28ff7af8"
+  },
+  "family_report_path": "/ssd/scxi253/pretrain500m-20260912-v1/data/family-split-f2-continuation-v1/report.json",
+  "family_report_sha256": "d02fe6a46088f19b85aa85061eabb878c9252c76751ef4ccf75006bb002ddda0",
+  "family_status": "FAMILY_CLOSURE_AND_RESERVED_ASSIGNMENTS_COMPLETE_NOT_ADMITTED",
+  "frozen_audit_plan_sha256": "22539a83b664c5d397c2b3f48920d07cc117e7fb7bef1c330d0299fc8f9bc0d8",
+  "limits": [
+    "Train prediction token values are upper bounds before actual tokenizer packing and complete admission.",
+    "LSH family closure has finite recall; observed near edges and joins do not prove exhaustive semantic decontamination.",
+    "License, cross-source benchmark screening, repeat-cap pack verification, and independent paired capability/retention evaluations remain."
+  ],
+  "partition_counts": {
+    "confirmation": 5395,
+    "development": 5217,
+    "excluded": 65373,
+    "train": 702380
+  },
+  "quarantined_families": 1587,
+  "reserved_partition_deficits": {
+    "confirmation": {
+      "code": {
+        "families": 0,
+        "prediction_tokens": 0
+      },
+      "general_web": {
+        "families": 0,
+        "prediction_tokens": 0
+      },
+      "knowledge_reading": {
+        "families": 0,
+        "prediction_tokens": 0
+      },
+      "math": {
+        "families": 0,
+        "prediction_tokens": 0
+      },
+      "multilingual": {
+        "families": 0,
+        "prediction_tokens": 0
+      }
+    },
+    "development": {
+      "code": {
+        "families": 0,
+        "prediction_tokens": 0
+      },
+      "general_web": {
+        "families": 0,
+        "prediction_tokens": 0
+      },
+      "knowledge_reading": {
+        "families": 0,
+        "prediction_tokens": 0
+      },
+      "math": {
+        "families": 0,
+        "prediction_tokens": 0
+      },
+      "multilingual": {
+        "families": 0,
+        "prediction_tokens": 0
+      }
+    }
+  },
+  "selected_unique_eligible_documents": 712992,
+  "source_repeat_cap": 2.0,
+  "sources": {
+    "code_cpp": {
+      "documents": 17835,
+      "encoded_tokens": 20375290,
+      "f2_lineage_unique_prediction_tokens_required": 20131840,
+      "post_family_train_prediction_tokens_upper_bound": 20365312,
+      "upper_bound_surplus": 233472,
+      "upper_bound_surplus_percent_of_requirement": 1.16
+    },
+    "code_java": {
+      "documents": 26239,
+      "encoded_tokens": 20579967,
+      "f2_lineage_unique_prediction_tokens_required": 20131840,
+      "post_family_train_prediction_tokens_upper_bound": 20568064,
+      "upper_bound_surplus": 436224,
+      "upper_bound_surplus_percent_of_requirement": 2.167
+    },
+    "code_javascript": {
+      "documents": 41101,
+      "encoded_tokens": 41920698,
+      "f2_lineage_unique_prediction_tokens_required": 40269824,
+      "post_family_train_prediction_tokens_upper_bound": 41900032,
+      "upper_bound_surplus": 1630208,
+      "upper_bound_surplus_percent_of_requirement": 4.048
+    },
+    "code_python": {
+      "documents": 89452,
+      "encoded_tokens": 105643647,
+      "f2_lineage_unique_prediction_tokens_required": 100665344,
+      "post_family_train_prediction_tokens_upper_bound": 105590784,
+      "upper_bound_surplus": 4925440,
+      "upper_bound_surplus_percent_of_requirement": 4.893
+    },
+    "code_typescript": {
+      "documents": 24705,
+      "encoded_tokens": 20723872,
+      "f2_lineage_unique_prediction_tokens_required": 20131840,
+      "post_family_train_prediction_tokens_upper_bound": 20713472,
+      "upper_bound_surplus": 581632,
+      "upper_bound_surplus_percent_of_requirement": 2.889
+    },
+    "dclm": {
+      "documents": 146726,
+      "encoded_tokens": 205232292,
+      "f2_lineage_unique_prediction_tokens_required": 201324544,
+      "post_family_train_prediction_tokens_upper_bound": 205131776,
+      "upper_bound_surplus": 3807232,
+      "upper_bound_surplus_percent_of_requirement": 1.891
+    },
+    "finemath4": {
+      "documents": 148158,
+      "encoded_tokens": 210690272,
+      "f2_lineage_unique_prediction_tokens_required": 201328640,
+      "post_family_train_prediction_tokens_upper_bound": 210585600,
+      "upper_bound_surplus": 9256960,
+      "upper_bound_surplus_percent_of_requirement": 4.598
+    },
+    "infiwebmath4": {
+      "documents": 50434,
+      "encoded_tokens": 68897279,
+      "f2_lineage_unique_prediction_tokens_required": 67108864,
+      "post_family_train_prediction_tokens_upper_bound": 68861952,
+      "upper_bound_surplus": 1753088,
+      "upper_bound_surplus_percent_of_requirement": 2.612
+    },
+    "pdf_en": {
+      "documents": 63537,
+      "encoded_tokens": 341191858,
+      "f2_lineage_unique_prediction_tokens_required": 335544320,
+      "post_family_train_prediction_tokens_upper_bound": 341024768,
+      "upper_bound_surplus": 5480448,
+      "upper_bound_surplus_percent_of_requirement": 1.633
+    }
+  },
+  "status": "F2_CONTINUATION_POST_FAMILY_CAPACITY_PASS_UPPER_BOUND_NOT_ADMITTED",
+  "training_admitted": false,
+  "training_launched": false,
+  "verified_near_edges": 4529
+}
