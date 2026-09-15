@@ -1,0 +1,115 @@
+{
+  "checked_utc": "2026-09-15T08:13:33.804599+00:00",
+  "claim_boundary": "quality prediction-token values are structural-filter upper bounds with EOS conversion; global eligible dedup, connected-family quarantine, benchmark exclusions, development/confirmation reserves, rights and exact packing may still reduce capacity. The DCLM 3.34% and C++ 2.34% margins are especially fragile; no capability improvement or training admission follows.",
+  "decision": {
+    "launch_f2_training": false,
+    "next": "run family closure and reserved assignments; compare source-specific eligible distinct train blocks to F2 lineage repeat caps, then exact pack and independent evaluation"
+  },
+  "nested_reuse_repair": {
+    "failed_attempt_log_sha256": {
+      "fork_pickle": "22644cc4c92c35072056d8ca7a8aa6e7d6d9fb6239b6555ffd52d7b561809af6",
+      "nested_reuse": "e0ec06d1df6c0e02ba53e931fb027cf3f0faaeae625cb0607cc654b47bac0241"
+    },
+    "failed_output_receipts_archived": true,
+    "fork_process_function_pickle_identity_passed": true,
+    "historical_prefix_feature_records_sha_verified": 46,
+    "historical_prefix_rows": 741824,
+    "tampered_input_binding_rejected": true,
+    "wrapper_sha256": "e52c7e3bdf9c6d1fcdf9799e0e9eb1ebbb97e6477dd5f6b0d28a94440398ddac"
+  },
+  "new_feature_files_sha_verified": [
+    {
+      "feature_sha256": "81141378e6ba0ee9d14b4bf1d8a41ed9cf9886f3d41b274db389d87751626971",
+      "passed_rows": 534,
+      "sha_matches_progress": true,
+      "source_id": "code_cpp"
+    },
+    {
+      "feature_sha256": "467110b0658e97b770d1230f6c4412e903a8b9cc7f8592c9a21742782ebed6d3",
+      "passed_rows": 28012,
+      "sha_matches_progress": true,
+      "source_id": "dclm"
+    },
+    {
+      "feature_sha256": "ceb4773bc00401c8f2e9c6661044a089f74a2f5146634afca50b0b1c55b41108",
+      "passed_rows": 4588,
+      "sha_matches_progress": true,
+      "source_id": "pdf_en"
+    }
+  ],
+  "passed_rows_before_eligible_dedup_and_reserves": 716266,
+  "prefix_exclusion_union_sha256": "43525be7a62ca52e0c8f51bb791d674f6835f7d356ce8401236c0bfdfd28b19b",
+  "raw_report_sha256": "53b3e9b83c7bad3527bf6b5b01503a590fecbc954fbe72777b8d9606041ca3ea",
+  "reused_completed_files_verified": 46,
+  "rows": 778365,
+  "schema": "p529m-f2-continuation-quality-upper-bound-summary-v1",
+  "source_quality_capacity": {
+    "code_cpp": {
+      "passed_rows_before_dedup": 18053,
+      "quality_prediction_token_upper_bound": 20602880,
+      "two_epoch_requirement": 20131840,
+      "upper_bound_surplus_before_family_and_reserves": 471040,
+      "upper_bound_surplus_fraction_of_requirement": 0.023397761953204477
+    },
+    "code_java": {
+      "passed_rows_before_dedup": 26550,
+      "quality_prediction_token_upper_bound": 20785152,
+      "two_epoch_requirement": 20131840,
+      "upper_bound_surplus_before_family_and_reserves": 653312,
+      "upper_bound_surplus_fraction_of_requirement": 0.032451678535096645
+    },
+    "code_javascript": {
+      "passed_rows_before_dedup": 41678,
+      "quality_prediction_token_upper_bound": 42395648,
+      "two_epoch_requirement": 40269824,
+      "upper_bound_surplus_before_family_and_reserves": 2125824,
+      "upper_bound_surplus_fraction_of_requirement": 0.052789503127701774
+    },
+    "code_python": {
+      "passed_rows_before_dedup": 90656,
+      "quality_prediction_token_upper_bound": 106913792,
+      "two_epoch_requirement": 100665344,
+      "upper_bound_surplus_before_family_and_reserves": 6248448,
+      "upper_bound_surplus_fraction_of_requirement": 0.062071491058531526
+    },
+    "code_typescript": {
+      "passed_rows_before_dedup": 25012,
+      "quality_prediction_token_upper_bound": 20981760,
+      "two_epoch_requirement": 20131840,
+      "upper_bound_surplus_before_family_and_reserves": 849920,
+      "upper_bound_surplus_fraction_of_requirement": 0.0422177009155646
+    },
+    "dclm": {
+      "passed_rows_before_dedup": 148796,
+      "quality_prediction_token_upper_bound": 208041984,
+      "two_epoch_requirement": 201324544,
+      "upper_bound_surplus_before_family_and_reserves": 6717440,
+      "upper_bound_surplus_fraction_of_requirement": 0.03336622483545772
+    },
+    "finemath4": {
+      "passed_rows_before_dedup": 151231,
+      "quality_prediction_token_upper_bound": 215068672,
+      "two_epoch_requirement": 201328640,
+      "upper_bound_surplus_before_family_and_reserves": 13740032,
+      "upper_bound_surplus_fraction_of_requirement": 0.06824678297136463
+    },
+    "infiwebmath4": {
+      "passed_rows_before_dedup": 52556,
+      "quality_prediction_token_upper_bound": 72173568,
+      "two_epoch_requirement": 67108864,
+      "upper_bound_surplus_before_family_and_reserves": 5064704,
+      "upper_bound_surplus_fraction_of_requirement": 0.075469970703125
+    },
+    "pdf_en": {
+      "passed_rows_before_dedup": 65540,
+      "quality_prediction_token_upper_bound": 352417792,
+      "two_epoch_requirement": 335544320,
+      "upper_bound_surplus_before_family_and_reserves": 16873472,
+      "upper_bound_surplus_fraction_of_requirement": 0.050286865234375
+    }
+  },
+  "source_report_sha256": "8876d4d764ceb9ea0b51df303121aceb4e7d4d2309da660aeebe33d3a8329388",
+  "status": "QUALITY_FEATURES_COMPLETE_NINE_UPPER_BOUNDS_PASS_NOT_ADMITTED",
+  "training_admitted": false,
+  "training_launched": false
+}
