@@ -1,0 +1,153 @@
+{
+  "checked_utc": "2026-09-15T06:43:09.445469+00:00",
+  "claim_boundary": "minimum distinct gaps enforce only the arithmetic repeat cap; they do not prove novel exposure, data legality, capability improvement, sealed evaluation, or market superiority",
+  "dclm_topup_identity": {
+    "interpretation": "the 81,130-block DCLM topup was included in the admitted F2 confirmation input and is not new to a continuation from F2",
+    "same_as_f2_long_dclm_shard": true,
+    "sha256": "c3f49cbd1f4ee75a0dd526f7f6dd3d60470d5bd9230ab6dfaf81aa41c8592c55"
+  },
+  "decision": {
+    "minimum_explainable_pilot_prediction_tokens_per_seed": 536870912,
+    "pilot_seed_count": 2,
+    "preserve_f2_mixture": true,
+    "reason": "source-repeat cap fails on unchanged F2 long-run pool for DCLM/PDF/C++ and public four-GPU 5090 geometry is unavailable",
+    "submit_now": false
+  },
+  "evaluation_gate": "paired seven-task and independent retention/contamination checks against F2 incumbent before scaling",
+  "existing_f2_evidence": {
+    "checkpoint_mode": "model-only-final; new optimizer initialization required, not bit-exact resume",
+    "f2_long_manifest_sha256": "1c9cce946fcb853e95ce42e5bb7446768101c5c5aae28973351f6f153c8ebca9",
+    "long_prediction_tokens_per_seed": 2147483648,
+    "long_run_four_gpu_final_mfu_10_medians": [
+      0.7664356275252712,
+      0.7665330073793669
+    ],
+    "recipe": "F2_reasoning_no_synthetic",
+    "seed20260914_checkpoint_sha256_verified": "69d9d8d3358f23815f2455f7e075645056f90fe01ed40a11525130a0e58ca085",
+    "seed20260915_checkpoint_sha256_verified": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc",
+    "seven_task_two_seed_mean": 0.4853114767846437
+  },
+  "fresh_data_admission": "not established for a new F2 continuation; exact family dedup, rights, tokenizer block inventory, lineage cap, and protocol must pass",
+  "gpu_gate": "public gpu_5090 four-GPU runnable jobs=0 at last live scheduler check; hp_5090 inaccessible to account",
+  "mfu_gate": "new pilot must require strict rolling ten-step median >0.70 after five-step grace",
+  "repeat_cap_minimum_distinct_shortfalls": {
+    "code_cpp": 378880,
+    "dclm": 35170304,
+    "pdf_en": 16470016
+  },
+  "schema": "p529m-f2-continuation-capacity-audit-v1",
+  "source_capacity_by_lineage": {
+    "code_cpp": {
+      "existing_unique_blocks": 9645,
+      "f2_536m_continuation_quota_blocks": 3932,
+      "f2_long_exposure_blocks": 15728,
+      "max_cumulative_epochs": "2.0",
+      "minimum_additional_distinct_blocks_for_repeat_cap": 185,
+      "minimum_additional_distinct_prediction_tokens": 378880,
+      "parent_prior_prediction_tokens": 0,
+      "projected_cumulative_epochs_on_unchanged_pool": 2.0383618455158112,
+      "source_revision": "eeec5caac5cc3758a18f1d3ba4416837a9ba814c"
+    },
+    "code_java": {
+      "existing_unique_blocks": 10043,
+      "f2_536m_continuation_quota_blocks": 3932,
+      "f2_long_exposure_blocks": 15728,
+      "max_cumulative_epochs": "2.0",
+      "minimum_additional_distinct_blocks_for_repeat_cap": 0,
+      "minimum_additional_distinct_prediction_tokens": 0,
+      "parent_prior_prediction_tokens": 0,
+      "projected_cumulative_epochs_on_unchanged_pool": 1.9575823956984966,
+      "source_revision": "eeec5caac5cc3758a18f1d3ba4416837a9ba814c"
+    },
+    "code_javascript": {
+      "existing_unique_blocks": 20459,
+      "f2_536m_continuation_quota_blocks": 7865,
+      "f2_long_exposure_blocks": 31460,
+      "max_cumulative_epochs": "2.0",
+      "minimum_additional_distinct_blocks_for_repeat_cap": 0,
+      "minimum_additional_distinct_prediction_tokens": 0,
+      "parent_prior_prediction_tokens": 0,
+      "projected_cumulative_epochs_on_unchanged_pool": 1.9221369568405102,
+      "source_revision": "eeec5caac5cc3758a18f1d3ba4416837a9ba814c"
+    },
+    "code_python": {
+      "existing_unique_blocks": 51553,
+      "f2_536m_continuation_quota_blocks": 19661,
+      "f2_long_exposure_blocks": 78644,
+      "max_cumulative_epochs": "2.0",
+      "minimum_additional_distinct_blocks_for_repeat_cap": 0,
+      "minimum_additional_distinct_prediction_tokens": 0,
+      "parent_prior_prediction_tokens": 0,
+      "projected_cumulative_epochs_on_unchanged_pool": 1.906872538940508,
+      "source_revision": "eeec5caac5cc3758a18f1d3ba4416837a9ba814c"
+    },
+    "code_typescript": {
+      "existing_unique_blocks": 10113,
+      "f2_536m_continuation_quota_blocks": 3932,
+      "f2_long_exposure_blocks": 15728,
+      "max_cumulative_epochs": "2.0",
+      "minimum_additional_distinct_blocks_for_repeat_cap": 0,
+      "minimum_additional_distinct_prediction_tokens": 0,
+      "parent_prior_prediction_tokens": 0,
+      "projected_cumulative_epochs_on_unchanged_pool": 1.9440324335014338,
+      "source_revision": "eeec5caac5cc3758a18f1d3ba4416837a9ba814c"
+    },
+    "dclm": {
+      "existing_unique_blocks": 81130,
+      "f2_536m_continuation_quota_blocks": 39321,
+      "f2_long_exposure_blocks": 157284,
+      "max_cumulative_epochs": "2.0",
+      "minimum_additional_distinct_blocks_for_repeat_cap": 17173,
+      "minimum_additional_distinct_prediction_tokens": 35170304,
+      "parent_prior_prediction_tokens": 0,
+      "projected_cumulative_epochs_on_unchanged_pool": 2.42333292247011,
+      "source_revision": "01022d378d944de6deeb1c79d08fecb4d27b2c6f"
+    },
+    "finemath4": {
+      "existing_unique_blocks": 102825,
+      "f2_536m_continuation_quota_blocks": 39322,
+      "f2_long_exposure_blocks": 157288,
+      "max_cumulative_epochs": "2.0",
+      "minimum_additional_distinct_blocks_for_repeat_cap": 0,
+      "minimum_additional_distinct_prediction_tokens": 0,
+      "parent_prior_prediction_tokens": 0,
+      "projected_cumulative_epochs_on_unchanged_pool": 1.912083637247751,
+      "source_revision": "e92b25a616738fe95dc186b64dfb19f9c8525594"
+    },
+    "fineweb_edu": {
+      "existing_unique_blocks": 4090158,
+      "f2_536m_continuation_quota_blocks": 65536,
+      "f2_long_exposure_blocks": 262144,
+      "max_cumulative_epochs": "2.2",
+      "minimum_additional_distinct_blocks_for_repeat_cap": 0,
+      "minimum_additional_distinct_prediction_tokens": 0,
+      "parent_prior_prediction_tokens": 15999172608,
+      "projected_cumulative_epochs_on_unchanged_pool": 1.9900884024529126,
+      "source_revision": "87f09149ef4734204d70ed1d046ddc9ca3f2b8f9"
+    },
+    "infiwebmath4": {
+      "existing_unique_blocks": 33624,
+      "f2_536m_continuation_quota_blocks": 13107,
+      "f2_long_exposure_blocks": 52428,
+      "max_cumulative_epochs": "2.0",
+      "minimum_additional_distinct_blocks_for_repeat_cap": 0,
+      "minimum_additional_distinct_prediction_tokens": 0,
+      "parent_prior_prediction_tokens": 0,
+      "projected_cumulative_epochs_on_unchanged_pool": 1.9490542469664525,
+      "source_revision": "e92b25a616738fe95dc186b64dfb19f9c8525594"
+    },
+    "pdf_en": {
+      "existing_unique_blocks": 155798,
+      "f2_536m_continuation_quota_blocks": 65536,
+      "f2_long_exposure_blocks": 262144,
+      "max_cumulative_epochs": "2.0",
+      "minimum_additional_distinct_blocks_for_repeat_cap": 8042,
+      "minimum_additional_distinct_prediction_tokens": 16470016,
+      "parent_prior_prediction_tokens": 0,
+      "projected_cumulative_epochs_on_unchanged_pool": 2.1032362418002797,
+      "source_revision": "9cfabe2127faca99b3d5c4dc6d1fcb397399ebde"
+    }
+  },
+  "status": "F2_RECIPE_CONTINUATION_STAGED_NOT_ADMITTED_NOT_SUBMITTED",
+  "sum_minimum_additional_distinct_prediction_tokens_for_repeat_cap": 52019200
+}
