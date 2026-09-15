@@ -1,0 +1,42 @@
+{
+  "admission_sha256": "0d3ad34bea4c58f5566811675494fb68cab1ba91bf23a49c0336294ee9ffe8c9",
+  "builder_receipt_sha256": "5ce43e94d85aafc4400414be6de9aee24b0a1e214e5382a5796abc390a0bd20c",
+  "checked_utc": "2026-09-15T09:17:56.194420+00:00",
+  "claim_boundary": "Slurm submission and test-only acceptance are not allocation, running hardware, measured MFU, loss or capability improvement. Predicted StartTime is an unreliable scheduler estimate.",
+  "full_content_train_and_masked_reader_pass": true,
+  "jobs": [
+    {
+      "allocated_tres": "(null)",
+      "job_id": 1592301,
+      "job_name": "f2cpt-20260914",
+      "partition": "gpu_5090",
+      "reason": "Priority",
+      "requested_single_node_gpus": 4,
+      "scheduler_predicted_start_cluster_local": "2026-09-21T21:22:54",
+      "seed": 20260914,
+      "state": "PENDING",
+      "submit_time_cluster_local": "2026-09-15T17:15:01"
+    },
+    {
+      "allocated_tres": "(null)",
+      "job_id": 1592302,
+      "job_name": "f2cpt-20260915",
+      "partition": "gpu_5090",
+      "reason": "Priority",
+      "requested_single_node_gpus": 4,
+      "scheduler_predicted_start_cluster_local": "2026-09-21T21:22:54",
+      "seed": 20260915,
+      "state": "PENDING",
+      "submit_time_cluster_local": "2026-09-15T17:15:21"
+    }
+  ],
+  "manifest_sha256": "c87df8089acf908280e6e974d1ae7a13b1faa02175ad531191f7cfab773e1819",
+  "project_root_disk_free_bytes": 111919501312,
+  "protocol_sha256": "0f4f7bd4a97fb3b4be4f9c095a012b33beb004af36c747fc7e2cb217b82a01f7",
+  "scheduler_controller_up": true,
+  "scheduler_test_only_accepted": true,
+  "schema": "p529m-f2-continuation-submission-v1",
+  "script_sha256": "3bb07361ecb0048fd7f0a8bb73876d08c9e0b1156800153d84f259e1922dea68",
+  "status": "PAIRED_F2_JOBS_SUBMITTED_PENDING_NO_GPU_ALLOCATION",
+  "training_launched": false
+}

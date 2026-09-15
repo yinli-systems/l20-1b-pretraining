@@ -1,0 +1,37 @@
+{
+  "admission_sha256": "0d3ad34bea4c58f5566811675494fb68cab1ba91bf23a49c0336294ee9ffe8c9",
+  "checked_utc": "2026-09-15T09:09:14.335002+00:00",
+  "confirmation_manifest_sha256": "8d2f6add7a651401428da8684b5a3846facaec21fc3fa1705dc04065302e63bd",
+  "formal_promotion": false,
+  "manifest_sha256": "c87df8089acf908280e6e974d1ae7a13b1faa02175ad531191f7cfab773e1819",
+  "parents": {
+    "20260914": {
+      "checkpoint_semantics": "model-only-final; fresh optimizer required",
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260914-1589567/train/model-final.pt",
+      "sha256": "69d9d8d3358f23815f2455f7e075645056f90fe01ed40a11525130a0e58ca085"
+    },
+    "20260915": {
+      "checkpoint_semantics": "model-only-final; fresh optimizer required",
+      "path": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260915-1590004/train/model-final.pt",
+      "sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc"
+    }
+  },
+  "protocol_sha256": "0f4f7bd4a97fb3b4be4f9c095a012b33beb004af36c747fc7e2cb217b82a01f7",
+  "schema": "p529m-f2-continuation-inputs-v1",
+  "source_block_quotas": {
+    "code_cpp": 3932,
+    "code_java": 3932,
+    "code_javascript": 7865,
+    "code_python": 19661,
+    "code_typescript": 3932,
+    "dclm": 39321,
+    "finemath4": 39322,
+    "fineweb_edu": 65536,
+    "infiwebmath4": 13107,
+    "pdf_en": 65536
+  },
+  "status": "PASS_F2_CONTINUATION_INPUTS_ADMITTED_NOT_TRAINED",
+  "target_prediction_tokens_per_seed": 536870912,
+  "training_launched": false,
+  "validation_manifest_sha256": "b9791aff2b537689c165f504f3c0fb262952c9d87762e8c2aa3388c6b9e3aa3b"
+}
