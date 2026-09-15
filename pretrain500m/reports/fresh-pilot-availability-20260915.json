@@ -1,0 +1,112 @@
+{
+  "candidate_train_topups_prediction_tokens": {
+    "dclm": 166154240,
+    "math_finemath4_topup_only": 4816896
+  },
+  "cap_assumption": "ideal two-epoch arithmetic with zero ancestor consumption; actual repeat caps require exact lineage receipts",
+  "checked_utc": "2026-09-15T06:03:39.844094+00:00",
+  "claim_boundary": "research recipes are quota plans, not admitted packed manifests; only DCLM and one FineMath4 topup were inventoried, and other fresh source capacity/provenance remains unknown",
+  "formal_training_admitted": false,
+  "hashed_topup_inventory_sha256": "8a46f0ecb4fc181f01818daa1f900f83fb61dde3add75a703075270d47b3f203",
+  "pilot_prediction_tokens": 536870912,
+  "recipes": {
+    "R0_F2_fresh_control": {
+      "consumed_prediction_token_quotas": {
+        "code": 80531456,
+        "dclm": 80529408,
+        "finepdfs_english": 134217728,
+        "fineweb_edu_fresh": 134217728,
+        "math": 107374592
+      },
+      "dclm_topup_candidate_vs_ideal_min_unique": 125889536,
+      "finemath4_topup_only_vs_ideal_full_math_min_unique": -48870400,
+      "ideal_min_unique_at_two_epoch_cap_with_zero_prior": {
+        "code": 40265728,
+        "dclm": 40264704,
+        "finepdfs_english": 67108864,
+        "fineweb_edu_fresh": 67108864,
+        "math": 53687296
+      },
+      "other_new_source_admission": "not established by current DCLM/FineMath topup receipts"
+    },
+    "R1_F1_reconsider": {
+      "consumed_prediction_token_quotas": {
+        "code": 53686272,
+        "dclm": 107374592,
+        "finepdfs_english": 107374592,
+        "fineweb_edu_fresh": 187904000,
+        "math": 80531456
+      },
+      "dclm_topup_candidate_vs_ideal_min_unique": 112466944,
+      "finemath4_topup_only_vs_ideal_full_math_min_unique": -35448832,
+      "ideal_min_unique_at_two_epoch_cap_with_zero_prior": {
+        "code": 26843136,
+        "dclm": 53687296,
+        "finepdfs_english": 53687296,
+        "fineweb_edu_fresh": 93952000,
+        "math": 40265728
+      },
+      "other_new_source_admission": "not established by current DCLM/FineMath topup receipts"
+    },
+    "R2_retention_repair": {
+      "consumed_prediction_token_quotas": {
+        "code": 53688320,
+        "dclm": 134217728,
+        "finepdfs_english": 107374592,
+        "fineweb_edu_fresh": 187904000,
+        "math": 53686272
+      },
+      "dclm_topup_candidate_vs_ideal_min_unique": 99045376,
+      "finemath4_topup_only_vs_ideal_full_math_min_unique": -22026240,
+      "ideal_min_unique_at_two_epoch_cap_with_zero_prior": {
+        "code": 26844160,
+        "dclm": 67108864,
+        "finepdfs_english": 53687296,
+        "fineweb_edu_fresh": 93952000,
+        "math": 26843136
+      },
+      "other_new_source_admission": "not established by current DCLM/FineMath topup receipts"
+    },
+    "R3_balanced_recommended_hypothesis": {
+      "consumed_prediction_token_quotas": {
+        "code": 53686272,
+        "dclm": 134217728,
+        "finepdfs_english": 107374592,
+        "fineweb_edu_fresh": 161060864,
+        "math": 80531456
+      },
+      "dclm_topup_candidate_vs_ideal_min_unique": 99045376,
+      "finemath4_topup_only_vs_ideal_full_math_min_unique": -35448832,
+      "ideal_min_unique_at_two_epoch_cap_with_zero_prior": {
+        "code": 26843136,
+        "dclm": 67108864,
+        "finepdfs_english": 53687296,
+        "fineweb_edu_fresh": 80530432,
+        "math": 40265728
+      },
+      "other_new_source_admission": "not established by current DCLM/FineMath topup receipts"
+    },
+    "R4_code_retention_guard": {
+      "consumed_prediction_token_quotas": {
+        "code": 80531456,
+        "dclm": 107374592,
+        "finepdfs_english": 107374592,
+        "fineweb_edu_fresh": 161060864,
+        "math": 80529408
+      },
+      "dclm_topup_candidate_vs_ideal_min_unique": 112466944,
+      "finemath4_topup_only_vs_ideal_full_math_min_unique": -35447808,
+      "ideal_min_unique_at_two_epoch_cap_with_zero_prior": {
+        "code": 40265728,
+        "dclm": 53687296,
+        "finepdfs_english": 53687296,
+        "fineweb_edu_fresh": 80530432,
+        "math": 40264704
+      },
+      "other_new_source_admission": "not established by current DCLM/FineMath topup receipts"
+    }
+  },
+  "research_plan_sha256": "58d56059111eb92dea1c0f9213a1e7ebbacabe7dea55c24cf31e366401dcc1a7",
+  "schema": "p529m-fresh-pilot-availability-v1",
+  "status": "PILOT_NOT_ADMITTED_CAPACITY_ONLY"
+}
