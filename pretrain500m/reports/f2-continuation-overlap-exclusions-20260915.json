@@ -1,0 +1,38 @@
+{
+  "checked_utc": "2026-09-15T08:10:56.307712+00:00",
+  "claim_boundary": "18 normalized matches against the old source snapshot are conservative exclusions; they do not prove actual membership in the old final train pack. The 848-hash union preserves all 797 frozen prefix exclusions and is still not a packed manifest or training admission.",
+  "exclusion_union": {
+    "current_unique_text_hashes": 848,
+    "input_counts": {
+      "legacy_candidate_rows": 36,
+      "old_source_new_document_references": 18
+    },
+    "prior_reason_pairs_preserved": true,
+    "prior_sha256": "7b45f883fb22abe2f135cf715b4ed508d77fac16b16b10e3871468f1af9ec0ad",
+    "prior_sha256_matches_receipt": true,
+    "prior_unique_text_hashes": 797,
+    "reason_unique_text_counts": {
+      "legacy_13word_hash_candidate_conservative_exclusion": 757,
+      "old_source_normalized_overlap_conservative_exclusion": 76,
+      "verified_supplemental_exact_span_exclusion": 15
+    },
+    "sha256": "43525be7a62ca52e0c8f51bb791d674f6835f7d356ce8401236c0bfdfd28b19b",
+    "status": "POLICY_EXCLUSIONS_BOUND_NOT_APPLIED_TO_PACK",
+    "training_admitted": false
+  },
+  "new_unique_excluded_text_hashes": 51,
+  "next": "apply exclusions in identity-bound quality/family eligibility, then enforce family closure, exact packed-token source caps and independent evaluation before F2 training",
+  "old_source_overlap": {
+    "manifest_sha256": "8291e6c2a9af017904a3cc17b838cff231ff1a6da4cf7b9fe810b2dd6995a6e5",
+    "matched_old_rows": 18,
+    "new_rows": 36541,
+    "old_rows": 9672101,
+    "report_sha256": "7cdf0e863a16545502a1b6f6deeea94a4015db177b297921268ca711845c50cb",
+    "status": "OLD_SOURCE_NORMALIZED_OVERLAP_COMPLETE_NOT_ADMITTED",
+    "training_admitted": false
+  },
+  "schema": "p529m-f2-continuation-prefix-preserving-exclusion-v1",
+  "status": "BOUND_CONSERVATIVE_EXCLUSION_UNION_NOT_TRAINING_ADMITTED",
+  "training_admitted": false,
+  "training_launched": false
+}
