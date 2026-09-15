@@ -1,0 +1,44 @@
+{
+  "base": {
+    "aggregate": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/base/seven-task-aggregate.json",
+    "aggregate_sha256": "c87aa54ec060154d594c6a7ca44b79b28cec27497cc867b0845ad492397535c1",
+    "checkpoint_sha256": "13aa21721e15c48cdfdafe30d8fdd41d9c95c90be766327661d96af1e90dd6cf"
+  },
+  "candidates": [
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/mixture-extension-v1/r4-lr6e5-t1b-seed20260916-1591570/train/model-final.pt",
+      "checkpoint_sha256": "455d89cbb6d723334587546a0824605c6f57704264d4a1db0239f445d57a98aa",
+      "expected_step": 512,
+      "id": "r4-lr6e5-t1b-seed20260916",
+      "recipe": "R4_current_code_guard",
+      "run_manifest_sha256": "ad5423fd3c180d7f470118d72de6b25f10139e4b87ea4077f11afa1006cdb07f",
+      "seed": 20260916,
+      "training_status_sha256": "585d2c1108bfd46730e1c33d2b50833b06a94fbab377228d4761f61363f8f706"
+    },
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/mixture-extension-v1/r4-lr6e5-t1b-seed20260917-1591571/train/model-final.pt",
+      "checkpoint_sha256": "fa2d820153dfb7ea989fe6d9f30bee17ff484a84cc96ce0c334152839cc6c52b",
+      "expected_step": 512,
+      "id": "r4-lr6e5-t1b-seed20260917",
+      "recipe": "R4_current_code_guard",
+      "run_manifest_sha256": "d3288484335356bea3d6350409b394343886f812e5e138de63674aa6efd43e9a",
+      "seed": 20260917,
+      "training_status_sha256": "29497b36c3e0512704262ee5f68809a35d80b740753b12126057a775419a9f9f"
+    }
+  ],
+  "checked_utc": "2026-09-15T05:30:16.504929+00:00",
+  "claim_boundary": "adaptive two-seed seven-task capability and retention screen; no automatic promotion or market-superiority claim",
+  "eval_cache_manifest": "/ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/eval-cache-manifest.json",
+  "eval_cache_manifest_sha256": "699558cb80318870306eccf77fb1d200413bfdc03b6548fe41c9d39ed0044620",
+  "execution": {
+    "batch_size": "auto",
+    "dtype": "bfloat16",
+    "gpu_model": "NVIDIA GeForce RTX 5090",
+    "world_size": 2
+  },
+  "protocol": "/ssd/scxi253/pretrain500m-20260912-v1/source/protocol-v5.json",
+  "protocol_id": "p500m-english-base-v5",
+  "protocol_sha256": "a71ce3c8cc85cac6fe6751cb46f7e50dfb78d266602d6377cb2e65249f11c761",
+  "schema": "p529m-r4-extension-capability-screen-v1",
+  "status": "FROZEN_BEFORE_EXTENSION_CAPABILITY_SCREEN"
+}

@@ -1,0 +1,23 @@
+{
+  "checked_utc": "2026-09-15T05:30:16.521487+00:00",
+  "checkpoint_sha256": {
+    "r4-lr6e5-t1b-seed20260916": "455d89cbb6d723334587546a0824605c6f57704264d4a1db0239f445d57a98aa",
+    "r4-lr6e5-t1b-seed20260917": "fa2d820153dfb7ea989fe6d9f30bee17ff484a84cc96ce0c334152839cc6c52b"
+  },
+  "claim_boundary": "adaptive two-seed seven-task capability and retention screen; no automatic promotion or market-superiority claim",
+  "evaluation_launched": false,
+  "formal_promotion": false,
+  "plan_sha256": "ec14774679e3b86cf74393db5020778e9bc05f4527993c141f45834eb8207f26",
+  "schema": "p529m-r4-extension-capability-plan-build-v1",
+  "slurm_states": {
+    "1591570": [
+      "COMPLETED",
+      "0:0"
+    ],
+    "1591571": [
+      "COMPLETED",
+      "0:0"
+    ]
+  },
+  "status": "PASS_TWO_VERIFIED_EXTENSION_CHECKPOINTS_FROZEN_FOR_EVALUATION"
+}
