@@ -1,0 +1,31 @@
+{
+  "checked_utc": "2026-09-15T07:47:24.486747+00:00",
+  "claim_boundary": "zero Unicode exact-span candidates is limited to the frozen reference coverage and matching policy; 36 legacy membership hits are conservative hash candidates, not proof of literal benchmark content. Both scans were limited to the seventh tranche and preserve historical exclusions.",
+  "legacy_13word_hash": {
+    "candidate_file_count": 3,
+    "candidate_file_lines": 36,
+    "candidate_rows": 36,
+    "database_sha256": "661f939a8787d2c14a52b305ec6a6b5737aabe5146f557461473e89f22e3a256",
+    "report_sha256": "808de9f5302061c41f77e9c15fa0b6e050632c0a6e2b8f15bdb1b5b8e75cd528",
+    "rows": 36541,
+    "scan_from_tranche": 6,
+    "status": "LEGACY_HASH_SCAN_COMPLETE_NOT_ADMITTED",
+    "training_admitted": false
+  },
+  "next": "merge candidate exclusions with immutable six-tranche prefix union after old-FineWeb normalized-overlap scan; then run quality and family closure; no training admission yet",
+  "schema": "p529m-f2-continuation-supplemental-screens-v1",
+  "status": "BOTH_SCREENS_COMPLETE_CANDIDATES_NOT_APPLIED",
+  "training_admitted": false,
+  "training_launched": false,
+  "unicode_exact_span": {
+    "candidate_lines": 0,
+    "candidate_sha256_actual": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "candidate_sha256_matches_report": true,
+    "policy_sha256": "a1425d40265306353c3943c46ecbf2effdbf2e14a21cd7950df739998894f40e",
+    "report_sha256": "461270e6b07250fd6b5fa292b56e20faf2faa5c87495d986b4b96cd8169b0867",
+    "rows_scanned": 36541,
+    "scan_from_tranche": 6,
+    "status": "SUPPLEMENTAL_EXACT_SPAN_AUDIT_COMPLETE_ADMISSION_PENDING",
+    "training_admitted": false
+  }
+}
