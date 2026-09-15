@@ -1,0 +1,102 @@
+{
+  "checked_utc": "2026-09-15T23:43:21.861756+00:00",
+  "claim_boundary": "Both jobs have live metrics and 4 physical RTX 5090 identities on different allocated nodes. This is interim training and efficiency evidence, not completed continuation, held-out quality gain, 50%+ score, post-training promotion, or model superiority.",
+  "controller_capacity": "UNKNOWN_WHILE_SCONTROL_AND_SINFO_TIMEOUT",
+  "runs": [
+    {
+      "accounting": {
+        "alloc_tres": "billing=24,cpu=24,gres/gpu=4,mem=378000M,node=1",
+        "elapsed": "00:13:56",
+        "node": "wqd10nbj03g1",
+        "start_cluster_local": "2026-09-16T07:29:25",
+        "state": "RUNNING"
+      },
+      "admission_sha256": "0d3ad34bea4c58f5566811675494fb68cab1ba91bf23a49c0336294ee9ffe8c9",
+      "all_observed_losses_finite": true,
+      "content_verification": "rank 0 full SHA-256 before all-rank reader construction",
+      "data_manifest_sha256": "c87df8089acf908280e6e974d1ae7a13b1faa02175ad531191f7cfab773e1819",
+      "ddp_bucket_rebuild_events": 0,
+      "first_step_seen": 1,
+      "initial_equal_domain_validation_loss": 2.552636360615379,
+      "job_id": 1592301,
+      "last10_mean_mfu": 0.7619881827941849,
+      "last10_min_mfu": 0.7618102594538525,
+      "latest_finite_loss": 2.3489890098571777,
+      "latest_step": 51,
+      "metrics_snapshot_bytes": 16871,
+      "metrics_snapshot_sha256": "751fddb1ee907dfdfb90622d31e30f4539deefa27fd125704fdbcd075eda47bf",
+      "mfu_gate_strictly_above_0_70": true,
+      "parent_checkpoint_sha256": "69d9d8d3358f23815f2455f7e075645056f90fe01ed40a11525130a0e58ca085",
+      "physical_gpu_names": [
+        "NVIDIA GeForce RTX 5090",
+        "NVIDIA GeForce RTX 5090",
+        "NVIDIA GeForce RTX 5090",
+        "NVIDIA GeForce RTX 5090"
+      ],
+      "physical_gpu_uuids": [
+        "GPU-6e53281a-eb77-21fe-f050-632489a2250a",
+        "GPU-58ca92fa-a964-77a4-ac54-434066461e5c",
+        "GPU-7b6e598e-d087-f2ee-9642-5ce09596d840",
+        "GPU-30db8259-ea38-afbd-24c9-52beb2b3f47f"
+      ],
+      "prediction_tokens": 106954752,
+      "protocol_sha256": "0f4f7bd4a97fb3b4be4f9c095a012b33beb004af36c747fc7e2cb217b82a01f7",
+      "run_manifest_sha256": "485fa74f7375b04fb4af9107360776fcda71eea1109d9806e1096f2e8eca40e1",
+      "seed": 20260914,
+      "stderr_ddp_find_unused_warning_present": true,
+      "stderr_oom_present": false,
+      "stderr_traceback_present": false,
+      "target_prediction_tokens": 536870912,
+      "world_size": 4
+    },
+    {
+      "accounting": {
+        "alloc_tres": "billing=24,cpu=24,gres/gpu=4,mem=378000M,node=1",
+        "elapsed": "00:13:56",
+        "node": "wqd10nbj06g2",
+        "start_cluster_local": "2026-09-16T07:29:25",
+        "state": "RUNNING"
+      },
+      "admission_sha256": "0d3ad34bea4c58f5566811675494fb68cab1ba91bf23a49c0336294ee9ffe8c9",
+      "all_observed_losses_finite": true,
+      "content_verification": "rank 0 full SHA-256 before all-rank reader construction",
+      "data_manifest_sha256": "c87df8089acf908280e6e974d1ae7a13b1faa02175ad531191f7cfab773e1819",
+      "ddp_bucket_rebuild_events": 0,
+      "first_step_seen": 1,
+      "initial_equal_domain_validation_loss": 2.552572710120298,
+      "job_id": 1592302,
+      "last10_mean_mfu": 0.7724922378613016,
+      "last10_min_mfu": 0.7723746741453452,
+      "latest_finite_loss": 2.429161548614502,
+      "latest_step": 50,
+      "metrics_snapshot_bytes": 16544,
+      "metrics_snapshot_sha256": "5c818fa0152419a756f4a83fcbb73a734019eee0c45847d5ee9ef7416639cdbe",
+      "mfu_gate_strictly_above_0_70": true,
+      "parent_checkpoint_sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc",
+      "physical_gpu_names": [
+        "NVIDIA GeForce RTX 5090",
+        "NVIDIA GeForce RTX 5090",
+        "NVIDIA GeForce RTX 5090",
+        "NVIDIA GeForce RTX 5090"
+      ],
+      "physical_gpu_uuids": [
+        "GPU-331022d2-1189-487c-cdb5-2a2590f36eab",
+        "GPU-094d407e-d708-b790-4ae5-4ff1b30b8a23",
+        "GPU-19bd788e-b80c-8a18-1c35-62c5cccd76ae",
+        "GPU-7b1e60ef-57df-75ed-362a-a41af286b12c"
+      ],
+      "prediction_tokens": 104857600,
+      "protocol_sha256": "0f4f7bd4a97fb3b4be4f9c095a012b33beb004af36c747fc7e2cb217b82a01f7",
+      "run_manifest_sha256": "248a1941221068d8d5c8821d6b1cbc93ebc17db21873baf3bae41cf8c5c7b9ec",
+      "seed": 20260915,
+      "stderr_ddp_find_unused_warning_present": true,
+      "stderr_oom_present": false,
+      "stderr_traceback_present": false,
+      "target_prediction_tokens": 536870912,
+      "world_size": 4
+    }
+  ],
+  "schema": "p529m-f2-continuation-live-start-v1",
+  "source": "ParaCloud ln01 source-bound SSH, sacct accounting, run manifests, GPU CSV, metrics JSONL and job stderr",
+  "status": "PAIRED_F2_LIVE_TRAINING_QC_PASS_INTERIM"
+}
