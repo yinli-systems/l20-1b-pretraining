@@ -1,0 +1,234 @@
+{
+  "all_nine_f2_sources_pass_lineage_two_epoch_arithmetic": true,
+  "checked_utc": "2026-09-15T08:57:11.375281+00:00",
+  "claim_boundary": "Exact file identity, block arithmetic and observed-family reserved separation pass. This is not a training-admitted manifest, live GPU allocation, model improvement or market comparison.",
+  "development_confirmation_actual_index_families_disjoint": true,
+  "f2_sources": {
+    "code_cpp": {
+      "actual_packed_prediction_tokens": 20365312,
+      "document_index_sha256": "b5467df1368ebd7b3437a701d82246ad7896fbf01a6d88461fb6e7844f5edde9",
+      "full_blocks": 9944,
+      "required_unique_prediction_tokens_at_two_epoch_cap": 20131840,
+      "surplus_prediction_tokens": 233472,
+      "tail_sha256": "0b3762c6a97a697a3b6a000a7f436910fd13aea7079572bcb1811590c724090b",
+      "train_array_sha256": "a4d71c848471bbc7216d9ac9f50ebae0cf3c641685c7454c1794a86df9cc5f50"
+    },
+    "code_java": {
+      "actual_packed_prediction_tokens": 20568064,
+      "document_index_sha256": "4e5ec07fd8fb83b5448dd6d9c13357e43b14a5be79e023b59ffdfe6a9653d10e",
+      "full_blocks": 10043,
+      "required_unique_prediction_tokens_at_two_epoch_cap": 20131840,
+      "surplus_prediction_tokens": 436224,
+      "tail_sha256": "45c9dd49048603b76b2d1b91bd5841b8d9f3c19e90c06ab762cd422f43b6d6e8",
+      "train_array_sha256": "84e08469f68b9d06fc2da507087d9e28c576f96cf5aba6de7b5eda7927bd8488"
+    },
+    "code_javascript": {
+      "actual_packed_prediction_tokens": 41900032,
+      "document_index_sha256": "d4ae79c406eb470dc9f770ce253cc070d1e614733acac79b6eae672dc826cf85",
+      "full_blocks": 20459,
+      "required_unique_prediction_tokens_at_two_epoch_cap": 40269824,
+      "surplus_prediction_tokens": 1630208,
+      "tail_sha256": "505a3d9f8b13bd56c09a5dbfb1e50b4b1b08498408c515beb2eb73ad47e18d71",
+      "train_array_sha256": "4878205cb267fe11b797cdfe17e99104b76288f344e5479bd0504f9d4f79e2e3"
+    },
+    "code_python": {
+      "actual_packed_prediction_tokens": 105590784,
+      "document_index_sha256": "8319be167ef92546050799ce1179a0cb419fb6d1fc78cfe3adbcbb504a248ab4",
+      "full_blocks": 51558,
+      "required_unique_prediction_tokens_at_two_epoch_cap": 100665344,
+      "surplus_prediction_tokens": 4925440,
+      "tail_sha256": "539837a0c3fe0290ec258161bdeffd9f103ac13f56ff8f8ed9b7b3fb10895e9b",
+      "train_array_sha256": "01bc91bd71e1645480b00cd281186b3aa4492b696327604b72eb7d076b9ee1c4"
+    },
+    "code_typescript": {
+      "actual_packed_prediction_tokens": 20713472,
+      "document_index_sha256": "c57ce5a6ec3bee01e7949383e9eeacc9a9c2a9c76de8cc25ba2c4790b9e148e5",
+      "full_blocks": 10114,
+      "required_unique_prediction_tokens_at_two_epoch_cap": 20131840,
+      "surplus_prediction_tokens": 581632,
+      "tail_sha256": "effe09fbfd34b1f789428439e7b95cd737df3623b468fe151064dd560820f1a4",
+      "train_array_sha256": "ccec16937bfdcfc2c04fcf2ee2dd4d8cb027dc0cd52c6042a8c5125c868d183f"
+    },
+    "dclm": {
+      "actual_packed_prediction_tokens": 205131776,
+      "document_index_sha256": "fbee45b34979e89f3f6057b21e5436aa4cfe21f92048fd70307533a921e48ec1",
+      "full_blocks": 100162,
+      "required_unique_prediction_tokens_at_two_epoch_cap": 201324544,
+      "surplus_prediction_tokens": 3807232,
+      "tail_sha256": "782fc6a4b8e3fec33f8dcf28cb8a619dff13252d64749506146f9c300c30fded",
+      "train_array_sha256": "db9624ca33f61f658d21f0777014893f49de526a5d390580879611dee7f7e74d"
+    },
+    "finemath4": {
+      "actual_packed_prediction_tokens": 210585600,
+      "document_index_sha256": "79bbbf45cfbb0db383d5f386e10f469c8823e9c6aef2a875c584d8dbfbd7e321",
+      "full_blocks": 102825,
+      "required_unique_prediction_tokens_at_two_epoch_cap": 201328640,
+      "surplus_prediction_tokens": 9256960,
+      "tail_sha256": "959c8b350bbbee6102dd8e868d7be8ebe6cd6da93d7ee3901cd2ff438ae9d6fd",
+      "train_array_sha256": "a9ef74ce697290b4d068345167f986fe5b621806a6a02bd1b4296381eab803b0"
+    },
+    "infiwebmath4": {
+      "actual_packed_prediction_tokens": 68861952,
+      "document_index_sha256": "00a56e6d63c6cc0963614f1166f52baccfc7a6d6263bdceba2b5a08a591138f1",
+      "full_blocks": 33624,
+      "required_unique_prediction_tokens_at_two_epoch_cap": 67108864,
+      "surplus_prediction_tokens": 1753088,
+      "tail_sha256": "e559b23077a27903e5181b2247b72ad7c3e4c9420b185210e2a91ffc346ca571",
+      "train_array_sha256": "ae6d5c0e9672831810d7933773a16b2d4a07f13ee63e9784739cf0edad59b084"
+    },
+    "pdf_en": {
+      "actual_packed_prediction_tokens": 341024768,
+      "document_index_sha256": "ae2d1ed88b396c1ca6c1b63ea1483ec3ace8e5741bfa761dd7c31b5d58c90f7f",
+      "full_blocks": 166516,
+      "required_unique_prediction_tokens_at_two_epoch_cap": 335544320,
+      "surplus_prediction_tokens": 5480448,
+      "tail_sha256": "0a1dcd69195c196d4998043e3a23eeb2325ecae06e34f375b65e4c8fa2e0cdfd",
+      "train_array_sha256": "e352ccae5b5f1b834b7410122b88abc900afc2644cfa3241a7aadf980d535c89"
+    }
+  },
+  "family_report_sha256": "d02fe6a46088f19b85aa85061eabb878c9252c76751ef4ccf75006bb002ddda0",
+  "independent_actual_masked_files_verified_per_partition": 16,
+  "independent_actual_pack_file_bytes_read": 2475863079,
+  "independent_actual_pack_files_verified": 75,
+  "masked_reserved": {
+    "confirmation": {
+      "five_domains": {
+        "code": {
+          "blocks": 1577,
+          "distinct_families": 1000,
+          "documents": 1372,
+          "index_sha256": "88c3dfba7f02b7da41f74cdbed6a2bf2c60eef4ddee392f67b511a81bac6902e",
+          "mask_sha256": "098a97fe69e4229056df09c5538d83db87200f036b512b7c26cc088ecf1b0d39",
+          "token_sha256": "1e53a7cf6cea2356507fe52b1f9c882ea97bf5c43a768b216fed6c37b86a205d",
+          "valid_target_tokens": 1270644
+        },
+        "general_web": {
+          "blocks": 1320,
+          "distinct_families": 1000,
+          "documents": 1000,
+          "index_sha256": "a4dbb4e4b4966b80c27e26eb807ce29c932d30a423f95eae025e18903bc91e2a",
+          "mask_sha256": "f3ba96a37584d0270bac3fbd0a73c20690e38e9ca53cea4e21142724e619d0b5",
+          "token_sha256": "48fc66751d3994c053a35db60dcf218b36d10f64c0188b8b7e68ee6b9d5aeb42",
+          "valid_target_tokens": 1393754
+        },
+        "knowledge_reading": {
+          "blocks": 3225,
+          "distinct_families": 1000,
+          "documents": 1000,
+          "index_sha256": "7ea546da22e0d1b2f2e2eb0c3c762c8a9fb172856151f831c18e5444c8b60f0b",
+          "mask_sha256": "a3dd6540cfb8f270bb2900f11fb988441c196452c0e068d3e4b3655e054b59b8",
+          "token_sha256": "bd23f414eda23cd482d6cf8294a2d2ff4558eb87467c98455e76eded38ffba7f",
+          "valid_target_tokens": 5470769
+        },
+        "math": {
+          "blocks": 1302,
+          "distinct_families": 1000,
+          "documents": 1023,
+          "index_sha256": "9a4dcd86ae084c5645839159740910e3f0cb27fac2de49b30370e35fa74a79d1",
+          "mask_sha256": "6c0de6b265e788aa93978723ff4a834a675f9075b3451a3b1b7edb487d20ecd2",
+          "token_sha256": "b0edddd13ea0ce4d4e0964abf599240cff8868cd848b1f914097e8afdefb7163",
+          "valid_target_tokens": 1379352
+        },
+        "multilingual": {
+          "blocks": 1376,
+          "distinct_families": 1000,
+          "documents": 1000,
+          "index_sha256": "fa7d31a260195b2fadaedd97c8f90ba33aed613e837be1dd380cafc2f6a62efe",
+          "mask_sha256": "73061d9757a562cb8e8c6c3143b22de92e436fd68170eb42f12c9e154cab2770",
+          "token_sha256": "bd66e0028fced051fc57f73ea1a962ac5af7894836c0a6a869dbd60788c51cfd",
+          "valid_target_tokens": 1530539
+        }
+      },
+      "independently_verified_files": 16,
+      "manifest_sha256": "8d2f6add7a651401428da8684b5a3846facaec21fc3fa1705dc04065302e63bd",
+      "padded_prediction_tokens": 18022400,
+      "remote_report_sha256": "96b95978eebe6482a6dddb0b4af6b5790cce405ae475e425e4d76c25c43782b4",
+      "valid_target_tokens": 11045058
+    },
+    "development": {
+      "five_domains": {
+        "code": {
+          "blocks": 1442,
+          "distinct_families": 1000,
+          "documents": 1215,
+          "index_sha256": "4eac97fb40ae97eed2542e38d68cfdce369fe0430e0c31b8311bb2873106f110",
+          "mask_sha256": "b16e1c51500f36441a13bbdc035fe096109d15f4ddf47f5f76f2dea5f24ea142",
+          "token_sha256": "93b9761b820dfe8195e2c2974243b7f018d01616708c13448aa4ee872efe1e29",
+          "valid_target_tokens": 1256623
+        },
+        "general_web": {
+          "blocks": 1327,
+          "distinct_families": 1000,
+          "documents": 1000,
+          "index_sha256": "64afd720aa93523553139a86e73ea69d32174f02fb9cc88ab5f09dd621d2312f",
+          "mask_sha256": "a45fad962f901cedbe47aec179041d08a5e517a20622027bf7a67a23da26da56",
+          "token_sha256": "1f274d4de3f5724a080ca622dd175b69f7eff801461e293f982ec5cc40d9d277",
+          "valid_target_tokens": 1419389
+        },
+        "knowledge_reading": {
+          "blocks": 3454,
+          "distinct_families": 1000,
+          "documents": 1001,
+          "index_sha256": "248a0e99310ab47ea750122a1e19259eed65143167e39b0d1db9ed0dddbb87eb",
+          "mask_sha256": "1ecb79c71741e01766f080d6a5abacb30090ddd9301b2ff51c8efe3759714bc8",
+          "token_sha256": "8265d0cee4c24f6bfbb59627b2739aa88e518f7d432d167aec2cf2469fd04336",
+          "valid_target_tokens": 5924962
+        },
+        "math": {
+          "blocks": 1350,
+          "distinct_families": 1000,
+          "documents": 1001,
+          "index_sha256": "1416fd63f404b6d1bbed53c1a077556cd105a5f2659e08caac7e4948f7434de7",
+          "mask_sha256": "e01b024d2466faff2b29d160cef82d877bfb07fa739fda1cd42c0f8e2eb35c1e",
+          "token_sha256": "0700bf7942b9bedeecabd369ab897b943311c1bf60699637de86063dddb507e3",
+          "valid_target_tokens": 1531030
+        },
+        "multilingual": {
+          "blocks": 1339,
+          "distinct_families": 1000,
+          "documents": 1000,
+          "index_sha256": "d3dd180862bb1c6362c9b3af57e80e9287fb73f15a73fb2c76ec553fabce49d0",
+          "mask_sha256": "30d7df06d6ae3baacca50ddda66167f9d5f0c03f2fdb71371f5fb66613ba08ac",
+          "token_sha256": "5073f04a04dfb0bf7aba5dd1dede16ab49eab9f3535ffc8855b145e036674e5d",
+          "valid_target_tokens": 1446987
+        }
+      },
+      "independently_verified_files": 16,
+      "manifest_sha256": "b9791aff2b537689c165f504f3c0fb262952c9d87762e8c2aa3388c6b9e3aa3b",
+      "padded_prediction_tokens": 18251776,
+      "remote_report_sha256": "56c789445533daed78e661d86b5cb21b1f33c45b0417a25983ca0935bed7a28d",
+      "valid_target_tokens": 11578991
+    }
+  },
+  "next_gates": [
+    "FineWeb and all F2 source lineage-prior exposure inside final mixture reader",
+    "dataset rights/attribution and final corpus admission bound to exact hashes",
+    "fresh paired F2 checkpoint continuation and independent capability/retention/contamination evaluation",
+    "single-node four public 5090 GPUs and strict rolling ten-step MFU >0.70"
+  ],
+  "pack_report_sha256": "07246fa006f377a97ba55827b4f511075c04c530575797ef61222c9583a4a7d9",
+  "repacked_sources": [
+    "code_cpp",
+    "code_java",
+    "code_javascript",
+    "code_python",
+    "code_typescript",
+    "dclm",
+    "pdf_en"
+  ],
+  "reused_sources": [
+    "finemath4",
+    "infiwebmath4",
+    "multilingual_arb_Arab",
+    "multilingual_cmn_Hani",
+    "multilingual_deu_Latn",
+    "multilingual_fra_Latn",
+    "multilingual_jpn_Jpan",
+    "multilingual_spa_Latn"
+  ],
+  "root": "/ssd/scxi253/pretrain500m-20260912-v1",
+  "selected_documents": 712992,
+  "status": "F2_CONTINUATION_EXACT_PACK_AND_RESERVED_MASKS_PASS_NOT_ADMITTED",
+  "training_admitted": false,
+  "training_launched": false
+}
