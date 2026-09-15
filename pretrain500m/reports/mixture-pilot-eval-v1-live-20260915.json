@@ -1,0 +1,42 @@
+{
+  "checked_utc": "2026-09-15T02:52:51.179841+00:00",
+  "claim_boundary": "three adaptive seven-task capability screens have real two-GPU allocations and passed preflight; completion and candidate quality remain unverified",
+  "formal_promotion": false,
+  "jobs": [
+    {
+      "candidate_id": "r3-lr1e4-seed20260916",
+      "gpu_count": 2,
+      "gpu_model": "NVIDIA GeForce RTX 5090",
+      "job_id": 1591422,
+      "state": "RUNNING"
+    },
+    {
+      "candidate_id": "r0-lr6e5-seed20260916",
+      "gpu_count": 2,
+      "gpu_model": "NVIDIA GeForce RTX 5090",
+      "job_id": 1591423,
+      "state": "RUNNING"
+    },
+    {
+      "candidate_id": "r4-lr6e5-seed20260916",
+      "gpu_count": 2,
+      "gpu_model": "NVIDIA GeForce RTX 5090",
+      "job_id": 1591424,
+      "state": "RUNNING"
+    }
+  ],
+  "observed_concurrent_gpu_total": 6,
+  "preflight": {
+    "candidate_checkpoint_sha256": "PASS_ALL_THREE",
+    "distinct_physical_rtx5090_per_job": "PASS_ALL_THREE",
+    "eval_cache_manifest_sha256": "PASS",
+    "frozen_plan_sha256": "PASS",
+    "matched_two_gpu_base_aggregate_sha256": "PASS",
+    "offline_eval_cache": "PASS_ALL_THREE",
+    "protocol_sha256": "PASS",
+    "source_sha256s": "PASS"
+  },
+  "schema": "p529m-mixture-pilot-capability-live-validation-v1",
+  "status": "RUNNING_THREE_CONCURRENT_CAPABILITY_SCREENS",
+  "submission_receipt_sha256": "2ba3afd7c52f34351c9dabe89cfab35dc869e9163433e3855e1542eb6a631db6"
+}
