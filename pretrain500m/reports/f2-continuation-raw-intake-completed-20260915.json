@@ -1,0 +1,68 @@
+{
+  "aggregate": {
+    "blocked_sources": 0,
+    "compressed_output_bytes": 117477629,
+    "raw_rows": 36541,
+    "ready_sources": 3,
+    "row_groups": 40
+  },
+  "checked_utc": "2026-09-15T07:23:00.402496+00:00",
+  "claim_boundary": "36,541 raw rows are not known unique tokenizer prediction tokens; C++ full pinned shard SHA is verified while DCLM/PDF use pinned size and hashed HTTP ranges without a full-shard SHA reread; raw acquisition is not training admission or a new model result",
+  "first_infrastructure_attempt": {
+    "error_class": "ModuleNotFoundError: pyarrow",
+    "log_sha256": "59b904525a803db7b6f43ae372a87582a303be7bb02cb2be81c5712847b65544",
+    "repair": "PYTHONPATH pointed to the existing project overlay containing pyarrow 21.0.0; one controlled retry completed"
+  },
+  "next_gates": [
+    "revision and source-rights review",
+    "raw audit and benchmark family/contamination exclusions",
+    "quality filtering and cross-source dedup",
+    "document-family train/development/independent split",
+    "exact tokenizer pack and prediction-token capacity",
+    "F2 lineage repeat-cap check",
+    "new F2 continuation admission",
+    "single-node four-public-5090 and strict rolling MFU >0.70 pilot",
+    "paired capability/retention evaluation"
+  ],
+  "plan_sha256": "e916977e894b85baeb5fe7f2c3c5167a03e2cecdf309d80d5e323413284564d4",
+  "schema": "p529m-f2-continuation-raw-intake-completion-v1",
+  "source_receipts": {
+    "code_cpp_f2cont": {
+      "code_rehydration_counts": {
+        "CONTENT_VERIFIED": 541,
+        "UnicodeDecodeError": 24
+      },
+      "full_shard_sha256_verified": true,
+      "historical_row_group_overlap": 0,
+      "output_bytes": 626791,
+      "output_sha256_verified": "8d43f24fb0c9bd6683918eedbbeb497f23429d9aba1ea53e126f9cfea817c373",
+      "receipt_sha256": "2daf5705607174f3127721f245e8823d8308597ce4943da6897df31d2414c502",
+      "row_groups": 4,
+      "rows": 541
+    },
+    "dclm_f2cont": {
+      "code_rehydration_counts": {},
+      "full_shard_sha256_verified": false,
+      "historical_row_group_overlap": 0,
+      "output_bytes": 77835155,
+      "output_sha256_verified": "833ba35718b19268cca466e7b2a2c45cbf86c411dd9d8615c3d3ae4c8ec1bfc9",
+      "receipt_sha256": "0a47e350bf937695c4353de1a027f0114f024c99f7a884ec57eb8bb829e00ee8",
+      "row_groups": 31,
+      "rows": 31000
+    },
+    "pdf_en_f2cont": {
+      "code_rehydration_counts": {},
+      "full_shard_sha256_verified": false,
+      "historical_row_group_overlap": 0,
+      "output_bytes": 39015683,
+      "output_sha256_verified": "35316df2517f302a08ae84a8b3a4222c1feebd4d36220f05be05cb4c2e18d490",
+      "receipt_sha256": "9eca169a784d987a15e6fdc69a0e01568aad2501c15392055bf9b8fc45dcee7b",
+      "row_groups": 5,
+      "rows": 5000
+    }
+  },
+  "status": "PASS_RAW_INTAKE_NOT_TRAINING_ADMITTED",
+  "summary_sha256": "c758b881c63a55b9aba0c0df0ad21c1717a2a2918f6797632a6c51351b141e65",
+  "training_admitted": false,
+  "training_launched": false
+}
