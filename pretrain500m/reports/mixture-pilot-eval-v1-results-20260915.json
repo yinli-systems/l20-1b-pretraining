@@ -1,0 +1,111 @@
+{
+  "base_score": 0.479952415150124,
+  "candidates": [
+    {
+      "candidate_id": "r0-lr6e5-seed20260916",
+      "checkpoint_sha256": "b5328a6943085953f16a849e7f1537831ccdc9197b63d8a76a6c91757afefbb6",
+      "delta_vs_base": 0.0013585904908722246,
+      "development_equal_domain_loss": 2.7299546624733892,
+      "elapsed": "00:07:37",
+      "export_parity": "PASS",
+      "export_receipt_sha256": "685b0160a5fa49c9396a66a9777d3861d5ebe13878c53d46d23492d6c0ca7c3e",
+      "job_id": 1591423,
+      "recipe": "R0_F2_current_control",
+      "result_sha256": "564bce6ae86db883cbfc89aadb5073ae39ee03297e8deb3e70e5b3be2b0953b1",
+      "seven_task_score": 0.4813110056409962,
+      "slurm_exit_code": "0:0",
+      "slurm_state": "COMPLETED",
+      "task_delta_vs_base": {
+        "arc_challenge": 0.005119453924914696,
+        "arc_easy": -0.0012626262626262985,
+        "boolq": 0.013761467889908285,
+        "hellaswag": 0.0028878709420434023,
+        "openbookqa": -0.008000000000000007,
+        "piqa": 0.004896626768226331,
+        "winogrande": -0.007892659826361448
+      }
+    },
+    {
+      "candidate_id": "r4-lr6e5-seed20260916",
+      "checkpoint_sha256": "121997e8d876c88582368f67cf1fcb163ea6adff72b5eea00964dcb1060fbbbf",
+      "delta_vs_base": 0.0013370159081398936,
+      "development_equal_domain_loss": 2.730034727395478,
+      "elapsed": "00:08:35",
+      "export_parity": "PASS",
+      "export_receipt_sha256": "56c51572eed0d96ee9092dd5b7d89e1b7471394162f28b5c4f0bd218fcbcb0ec",
+      "job_id": 1591424,
+      "recipe": "R4_current_code_guard",
+      "result_sha256": "f14e4bead964ec758fcea8b1f42ae9294c9f37a9bb069dace95b096cee2b8d62",
+      "seven_task_score": 0.4812894310582639,
+      "slurm_exit_code": "0:0",
+      "slurm_state": "COMPLETED",
+      "task_delta_vs_base": {
+        "arc_challenge": 0.011092150170648463,
+        "arc_easy": 0.002104377104377053,
+        "boolq": 0.015596330275229331,
+        "hellaswag": 0.0027882891854212333,
+        "openbookqa": -0.006000000000000005,
+        "piqa": 0.002720348204570233,
+        "winogrande": -0.018942383583267608
+      }
+    },
+    {
+      "candidate_id": "r3-lr1e4-seed20260916",
+      "checkpoint_sha256": "d8a69b7b5a7076e6c082aeea8c3b0badefb1c9f8889ceb5db129eb7004658f0b",
+      "delta_vs_base": -0.00032868038045308356,
+      "development_equal_domain_loss": 2.7037605544255285,
+      "elapsed": "00:08:23",
+      "export_parity": "PASS",
+      "export_receipt_sha256": "970399a898ebce9137961d82c44a52b03aa64db3360164248a0cbd2b2c638537",
+      "job_id": 1591422,
+      "recipe": "R3_current_balanced",
+      "result_sha256": "865baab7d59cfec36091c9ef1772e87ec6d08c83fdb25cc8035f1b1e0a15ef88",
+      "seven_task_score": 0.4796237347696709,
+      "slurm_exit_code": "0:0",
+      "slurm_state": "COMPLETED",
+      "task_delta_vs_base": {
+        "arc_challenge": 0.008532423208191142,
+        "arc_easy": -0.0016835016835017313,
+        "boolq": 0.016513761467889965,
+        "hellaswag": 0.002190798645688108,
+        "openbookqa": -0.010000000000000009,
+        "piqa": 0.0010881392818280489,
+        "winogrande": -0.018942383583267608
+      }
+    }
+  ],
+  "checked_utc": "2026-09-15T03:06:19.719920+00:00",
+  "claim_boundary": "adaptive seven-task capability and retention screen; the R4 scale decision is experimental and does not establish sealed capability gains or market superiority",
+  "decision": {
+    "next_candidate": "r4-lr6e5",
+    "next_stage": "two-seed 1,073,741,824-token controlled extension, conditional on cumulative source capacity, disk >=75 GiB and single-node four-GPU availability",
+    "r0_role": "control; positive aggregate delta but lower than already-completed longer F2 incumbent",
+    "r4_role": "novel code-guard Pareto candidate; essentially tied with R0 aggregate while improving development code/general/multilingual loss",
+    "reason_r3": "best development loss but seven-task aggregate fell below Base",
+    "reject_r3_lr1e4_for_scaling": true
+  },
+  "formal_promotion": false,
+  "prior_f2_two_seed_mean": 0.4853114767846437,
+  "protocol": {
+    "id": "p500m-english-base-v5",
+    "scope": "adaptive reused seven-task protocol",
+    "sha256": "a71ce3c8cc85cac6fe6751cb46f7e50dfb78d266602d6377cb2e65249f11c761",
+    "tasks": [
+      "hellaswag",
+      "piqa",
+      "winogrande",
+      "openbookqa",
+      "arc_easy",
+      "arc_challenge",
+      "boolq"
+    ],
+    "world_size": 2
+  },
+  "ranking": [
+    "r0-lr6e5-seed20260916",
+    "r4-lr6e5-seed20260916",
+    "r3-lr1e4-seed20260916"
+  ],
+  "schema": "p529m-mixture-pilot-capability-campaign-summary-v1",
+  "status": "PASS_THREE_CANDIDATE_ADAPTIVE_CAPABILITY_SCREEN_COMPLETED"
+}
