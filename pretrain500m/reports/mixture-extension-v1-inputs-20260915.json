@@ -1,0 +1,19 @@
+{
+  "admission_sha256": "7fb6c257e9bc06f3aab46660c238a37bccd1a4600205ad396b5abb4fcd63db67",
+  "base_checkpoint_sha256": "13aa21721e15c48cdfdafe30d8fdd41d9c95c90be766327661d96af1e90dd6cf",
+  "capability_result_sha256": "f14e4bead964ec758fcea8b1f42ae9294c9f37a9bb069dace95b096cee2b8d62",
+  "checked_utc": "2026-09-15T03:11:13.600747+00:00",
+  "claim_boundary": "R4 current-corpus extension inputs admitted; training and capability improvement remain unverified",
+  "cumulative_capacity_passed": true,
+  "formal_promotion": false,
+  "manifest_sha256": "b55742b808216ac935bf51432a45a76768e39b75afd988e16a7f87bcaab6f1f9",
+  "protocol_sha256": "cd1531284a324a8ebe640f7e8c14b080288c3369f674fed448b89f585a5e9873",
+  "schema": "p529m-r4-two-seed-extension-inputs-v1",
+  "seeds": [
+    20260916,
+    20260917
+  ],
+  "status": "PASS_EXTENSION_INPUTS_ADMITTED",
+  "target_prediction_tokens_per_run": 1073741824,
+  "training_launched": false
+}
