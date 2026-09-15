@@ -1,0 +1,28 @@
+{
+  "build_receipt_sha256": "f6c382f37b2428d5569c41bf5fcd0617b1d6f20dd6d1694430bc6538dad34f76",
+  "capacity_snapshot": "\u516c\u5171partition\uff1a\nPartition      \u53ef\u7528GPU\u6570\u91cf  \u603b\u5361\u6570\ngpu_4090             0     248\ngpu_5090            28     248\nhp_4090              0     272\nhp_5090             36     408\n\n\u53ef\u8fd0\u884c\u4f5c\u4e1a\u6570\u91cf\uff08\u6309GPU\u89c4\u6a21\uff09\uff1a\nPartition      1\u5361GPU 2\u5361GPU 3\u5361GPU 4\u5361GPU 5\u5361GPU 6\u5361GPU 7\u5361GPU 8\u5361GPU\ngpu_4090        0      0      0      0      0      0      0      0\ngpu_5090       28     11      5      3      1      1      0      0\nhp_4090         0      0      0      0      0      0      0      0\nhp_5090        36     15      7      5      2      2      1      1\n",
+  "checked_utc": "2026-09-15T03:33:29.249787+00:00",
+  "claim_boundary": "submitted R4 current-corpus extensions; allocation, MFU, completion and capability remain unverified",
+  "formal_promotion": false,
+  "four_gpu_runnable_nodes_before_submit": 3,
+  "free_bytes_before_submit": 119395188736,
+  "jobs": [
+    {
+      "job_id": 1591570,
+      "job_name": "p529m-r4-t1b-s20260916",
+      "seed": 20260916
+    },
+    {
+      "job_id": 1591571,
+      "job_name": "p529m-r4-t1b-s20260917",
+      "seed": 20260917
+    }
+  ],
+  "runner_sha256": "41a77406eafda5f69833de0c0557dcc4a7646558f4931f78bf97c5668e053dd7",
+  "schema": "p529m-r4-two-seed-extension-submission-v1",
+  "status": "SUBMITTED_PENDING_ALLOCATION",
+  "storage_gate_bytes": 80530636800,
+  "submitted_gpu_total": 8,
+  "target_prediction_tokens_per_run": 1073741824,
+  "world_size_per_job": 4
+}
