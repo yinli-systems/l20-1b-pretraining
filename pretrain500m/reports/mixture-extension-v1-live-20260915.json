@@ -1,0 +1,39 @@
+{
+  "checked_utc": "2026-09-15T03:46:18.814030+00:00",
+  "claim_boundary": "both R4 extension seeds have live four-RTX5090 training and currently pass MFU/identity/numerical gates; completion and capability improvement remain unverified",
+  "mfu_gate_strictly_greater_than": 0.7,
+  "observed_concurrent_gpu_total": 8,
+  "runs": [
+    {
+      "ddp_buckets_rebuilt_any": false,
+      "gpu_count": 4,
+      "gpu_model": "NVIDIA GeForce RTX 5090",
+      "job_id": 1591570,
+      "last_mfu": 0.7789062242443665,
+      "last_rolling_10_median": 0.778824265046749,
+      "loss": 2.7557897567749023,
+      "minimum_post_grace_rolling_10_median": 0.778824265046749,
+      "prediction_tokens": 92274688,
+      "run": "r4-lr6e5-t1b-seed20260916-1591570",
+      "state": "RUNNING",
+      "step": 44
+    },
+    {
+      "ddp_buckets_rebuilt_any": false,
+      "gpu_count": 4,
+      "gpu_model": "NVIDIA GeForce RTX 5090",
+      "job_id": 1591571,
+      "last_mfu": 0.7709561777644853,
+      "last_rolling_10_median": 0.7702294169256566,
+      "loss": 2.7278077602386475,
+      "minimum_post_grace_rolling_10_median": 0.7696245877005201,
+      "prediction_tokens": 98566144,
+      "run": "r4-lr6e5-t1b-seed20260917-1591571",
+      "state": "RUNNING",
+      "step": 47
+    }
+  ],
+  "schema": "p529m-r4-two-seed-extension-live-v1",
+  "status": "RUNNING_TWO_CONCURRENT_FOUR_GPU_EXTENSIONS",
+  "submission_receipt_sha256": "e3dfd94d76b3aecfddb1a58dd03b86e3c40f63bdcdfaab29de50bd87b0c6515b"
+}
