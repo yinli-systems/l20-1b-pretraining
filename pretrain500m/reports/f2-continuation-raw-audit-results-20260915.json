@@ -1,0 +1,86 @@
+{
+  "audit_plan_sha256": "22539a83b664c5d397c2b3f48920d07cc117e7fb7bef1c330d0299fc8f9bc0d8",
+  "checked_utc": "2026-09-15T07:42:02.821019+00:00",
+  "claim_boundary": "raw globally deduplicated upper bounds include document EOS and precede quality, family closure, contamination, validation reserves and exact packing; a positive raw margin is not an admitted distinct train pool or capability gain. Prior reusable audit code includes a historical F2/F3 confirmation label; the hash-bound audit-plan thresholds here are for F2 continuation.",
+  "decision": {
+    "next": "run reserved benchmark/family/contamination, quality, rights and exact packed-capacity gates; supplement sources if post-filter quotas fail, then require public single-node 4x5090 and strict rolling MFU>0.70",
+    "start_f2_continuation_training": false
+  },
+  "input_hashes_stable": "PASS",
+  "physical_group_disjointness": "PASS",
+  "prior_report_sha256": "d776d956d79f14acd562f73321ec32030520a9397331c70fd256bda7da68cb28",
+  "row_index_sha256_independently_verified": "0c7c9e714ee73e864bd7354539ffde3b7f8c5e9221a4ca302bbe852a8fe3feb2",
+  "rows": 778365,
+  "schema": "p529m-f2-continuation-raw-token-audit-summary-v1",
+  "source_report_sha256": "53b3e9b83c7bad3527bf6b5b01503a590fecbc954fbe72777b8d9606041ca3ea",
+  "sources": {
+    "code_cpp": {
+      "globally_deduplicated_prediction_token_upper_bound": 21745664,
+      "shortage_lower_bound_before_filtering": 0,
+      "two_epoch_f2_continuation_unique_requirement": 20131840,
+      "upper_bound_surplus_before_filtering": 1613824,
+      "upper_bound_surplus_fraction_of_requirement": 0.08016276703967447
+    },
+    "code_java": {
+      "globally_deduplicated_prediction_token_upper_bound": 21182464,
+      "shortage_lower_bound_before_filtering": 0,
+      "two_epoch_f2_continuation_unique_requirement": 20131840,
+      "upper_bound_surplus_before_filtering": 1050624,
+      "upper_bound_surplus_fraction_of_requirement": 0.05218718209562564
+    },
+    "code_javascript": {
+      "globally_deduplicated_prediction_token_upper_bound": 43354112,
+      "shortage_lower_bound_before_filtering": 0,
+      "two_epoch_f2_continuation_unique_requirement": 40269824,
+      "upper_bound_surplus_before_filtering": 3084288,
+      "upper_bound_surplus_fraction_of_requirement": 0.07659055078065402
+    },
+    "code_python": {
+      "globally_deduplicated_prediction_token_upper_bound": 108802048,
+      "shortage_lower_bound_before_filtering": 0,
+      "two_epoch_f2_continuation_unique_requirement": 100665344,
+      "upper_bound_surplus_before_filtering": 8136704,
+      "upper_bound_surplus_fraction_of_requirement": 0.08082924745183406
+    },
+    "code_typescript": {
+      "globally_deduplicated_prediction_token_upper_bound": 21997568,
+      "shortage_lower_bound_before_filtering": 0,
+      "two_epoch_f2_continuation_unique_requirement": 20131840,
+      "upper_bound_surplus_before_filtering": 1865728,
+      "upper_bound_surplus_fraction_of_requirement": 0.09267548321464904
+    },
+    "dclm": {
+      "globally_deduplicated_prediction_token_upper_bound": 216086528,
+      "shortage_lower_bound_before_filtering": 0,
+      "two_epoch_f2_continuation_unique_requirement": 201324544,
+      "upper_bound_surplus_before_filtering": 14761984,
+      "upper_bound_surplus_fraction_of_requirement": 0.07332431360182294
+    },
+    "finemath4": {
+      "globally_deduplicated_prediction_token_upper_bound": 258613248,
+      "shortage_lower_bound_before_filtering": 0,
+      "two_epoch_f2_continuation_unique_requirement": 201328640,
+      "upper_bound_surplus_before_filtering": 57284608,
+      "upper_bound_surplus_fraction_of_requirement": 0.28453283149382025
+    },
+    "infiwebmath4": {
+      "globally_deduplicated_prediction_token_upper_bound": 78327808,
+      "shortage_lower_bound_before_filtering": 0,
+      "two_epoch_f2_continuation_unique_requirement": 67108864,
+      "upper_bound_surplus_before_filtering": 11218944,
+      "upper_bound_surplus_fraction_of_requirement": 0.16717529296875
+    },
+    "pdf_en": {
+      "globally_deduplicated_prediction_token_upper_bound": 391141376,
+      "shortage_lower_bound_before_filtering": 0,
+      "two_epoch_f2_continuation_unique_requirement": 335544320,
+      "upper_bound_surplus_before_filtering": 55597056,
+      "upper_bound_surplus_fraction_of_requirement": 0.165692138671875
+    }
+  },
+  "status": "RAW_UPPER_BOUNDS_PASS_NINE_F2_SOURCES_NOT_ADMITTED",
+  "tokenizer_sha256": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+  "training_admitted": false,
+  "training_launched": false,
+  "tranches": 7
+}
