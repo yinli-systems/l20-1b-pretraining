@@ -1,0 +1,39 @@
+{
+  "candidate_packed_tokens_divided_by_planning_target": 0.014247594666666667,
+  "capacity_interpretation": "arithmetic only; distinctness, source license, lineage repeat cap and cross-source admission for a new fresh pool remain unverified",
+  "checked_utc": "2026-09-15T06:01:13.885364+00:00",
+  "claim_boundary": "these two topups are identity-verified packed candidates, not an admitted fresh-corpus mixture or proof that 20B training capacity exists",
+  "combined_packed_candidate_prediction_tokens": 170971136,
+  "formal_training_admitted": false,
+  "planning_target_shortfall_if_all_candidate_tokens_were_distinct_and_admitted": 11829028864,
+  "planning_unique_token_target_for_20b_horizon": 12000000000,
+  "schema": "p529m-current-fresh-topup-capacity-audit-v1",
+  "sources": {
+    "dclm_topup": {
+      "array_sha256": "c3f49cbd1f4ee75a0dd526f7f6dd3d60470d5bd9230ab6dfaf81aa41c8592c55",
+      "array_token_slots": 166235370,
+      "dtype": "uint16",
+      "pack_report_sha256": "5ef7ff6e0bda80bd7be8f94dba837f559d4bbe7db341ebf78549bcfb4f6677f2",
+      "pack_status": "SELECTED_SOURCE_PACKS_COMPLETE_NOT_ADMITTED",
+      "pipeline_receipt_sha256": "d39179b4cab4cbe35ec191edb98efd43991b6009bd386b713c27bfb1af24631b",
+      "pipeline_status": "DCLM_TOPUP_FILTER_AND_PACK_COMPLETE_NOT_TRAINING_ADMITTED",
+      "train_blocks": 81130,
+      "train_documents": 118735,
+      "train_prediction_tokens": 166154240,
+      "training_admitted": false
+    },
+    "finemath4_topup": {
+      "array_sha256": "bea84df8ae79ece1ee0f4d06deaf959a4f7e2a9a33313051a3e97b724795dc79",
+      "array_token_slots": 4819248,
+      "dtype": "uint16",
+      "launch_receipt_sha256": "db2a7fd242f9f75f092231a56a0305b882390c965203e3715fc560a7bccc34dd",
+      "pack_report_sha256": "d435c29cd00eddc178b5fff9e0598490b2dcb761f8adc7c59d1f8ae5004c3bdb",
+      "pack_status": "FINEMATH_TOPUP_PACK_COMPLETE_NOT_ADMITTED",
+      "train_blocks": 2352,
+      "train_prediction_tokens": 4816896,
+      "training_admitted": false
+    }
+  },
+  "status": "PASS_HASHED_ARRAY_INVENTORY_NOT_TRAINING_ADMITTED",
+  "training_launched": false
+}
