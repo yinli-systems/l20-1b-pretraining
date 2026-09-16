@@ -1,0 +1,77 @@
+{
+  "artifact_policy": "retain all cell diagnostics and receipts; preserve the first fresh-seed HF export only for each continuation after it passes; parent exports are temporary",
+  "attention_backend": "eager",
+  "checkpoint_pairs": [
+    {
+      "checkpoints": [
+        {
+          "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260914-1589567/train/model-final.pt",
+          "checkpoint_sha256": "69d9d8d3358f23815f2455f7e075645056f90fe01ed40a11525130a0e58ca085",
+          "expected_step": 1024,
+          "id": "F2_parent_seed20260914",
+          "role": "parent"
+        },
+        {
+          "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/f2-continuation-v1/seed20260914-1592301/train/resume.pt",
+          "checkpoint_sha256": "98b21eb475aed1b0f6896395eb7cabf9c23ff5032f6f33a5cbcc5fdaec781ae9",
+          "expected_step": 256,
+          "id": "F2_continuation_seed20260914",
+          "role": "continuation"
+        }
+      ],
+      "pair_seed": 20260914
+    },
+    {
+      "checkpoints": [
+        {
+          "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260915-1590004/train/model-final.pt",
+          "checkpoint_sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc",
+          "expected_step": 1024,
+          "id": "F2_parent_seed20260915",
+          "role": "parent"
+        },
+        {
+          "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/f2-continuation-v1/seed20260915-1592302/train/resume.pt",
+          "checkpoint_sha256": "86ab770e671dd845c6de1c7724fb90cc22bc79449f9133e2a01047814f86fed8",
+          "expected_step": 256,
+          "id": "F2_continuation_seed20260915",
+          "role": "continuation"
+        }
+      ],
+      "pair_seed": 20260915
+    }
+  ],
+  "claim_boundary": "adaptive serialization-integrity protocol, not a sealed capability evaluation; passing cannot erase prior failures, prove seven-task improvement, authorize post-training promotion, or establish external superiority",
+  "execution": {
+    "cells_per_task": 8,
+    "gpu_model": "NVIDIA GeForce RTX 5090",
+    "gpus_per_task": 1,
+    "slurm_array_tasks": 2,
+    "total_cells": 16
+  },
+  "hard_invariants": {
+    "all_logits_finite": true,
+    "argmax_rule": "every changed argmax must have both native and reloaded top1 margins at most twice that row measured maximum absolute logit drift; all positions outside that ambiguity set must preserve argmax",
+    "maximum_absolute_logit_difference": 0.5,
+    "mean_absolute_logit_difference": 0.025,
+    "state_tensor_parity": "bitwise_exact"
+  },
+  "independent_sample_diagnostic_result_sha256": "352be61203320d326be059b353da10bf2dd13cecdfae611d13333cab85839e6e",
+  "original_strict_diagnostic_result_sha256": "5cab3acd7c2258f2ee451fae93a515187049c7f53360628e213560c139079d56",
+  "promotion_policy": "all 16 fresh cells must pass before these continuation exports may be used for the adaptive matched seven-task completion; no automatic model promotion",
+  "protocol_class": "adaptive export-integrity protocol designed after the original 256-position argmax threshold proved sample-sensitive",
+  "sample_seeds": [
+    20260918,
+    20260919,
+    20260920,
+    20260921
+  ],
+  "sample_shape": [
+    2,
+    128
+  ],
+  "schema": "p529m-f2-margin-aware-export-plan-v1",
+  "seven_task_negative_result_sha256": "a914d81d32677f1049ffe831749913f9d0bba1c3a5b6917a1fddcfecbc418714",
+  "status": "FROZEN_BEFORE_FRESH_SAMPLES",
+  "torch_deterministic_algorithms": true
+}
