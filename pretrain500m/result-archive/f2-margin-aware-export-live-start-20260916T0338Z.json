@@ -1,0 +1,39 @@
+{
+  "array_job_id": 1593643,
+  "array_tasks": [
+    {
+      "gpu_memory_mib": 32607,
+      "gpu_name": "NVIDIA GeForce RTX 5090",
+      "gpu_uuid": "GPU-57a8760c-95ef-f1f2-ebba-2789d58a951d",
+      "node": "wqd10naf02g1",
+      "pair_seed": 20260914,
+      "state": "RUNNING",
+      "task_id": 0
+    },
+    {
+      "gpu_memory_mib": 32607,
+      "gpu_name": "NVIDIA GeForce RTX 5090",
+      "gpu_uuid": "GPU-f0138ddb-ff2f-6707-f807-2aa1dc2d63c5",
+      "node": "wqd10nbj03g3",
+      "pair_seed": 20260915,
+      "state": "RUNNING",
+      "task_id": 1
+    }
+  ],
+  "checked_utc": "2026-09-16T03:38:43.548683+00:00",
+  "claim_boundary": "allocation and source-integrity evidence only; no margin-aware result, completed export, seven-task score, promotion, or superiority claim",
+  "expected_total_cells": 16,
+  "fresh_sample_seeds": [
+    20260918,
+    20260919,
+    20260920,
+    20260921
+  ],
+  "plan_sha256": "eb782b750ee95da76d78e5c285c9ba17f013dddba66ca977b6cd549dd153b9f6",
+  "result_available": false,
+  "scheduler_start": "2026-09-16T11:37:29+08:00",
+  "schema": "p529m-f2-margin-aware-export-live-start-receipt-v1",
+  "source_commit": "e46685d",
+  "source_sha256sums_verified_on_remote": true,
+  "status": "TWO_ARRAY_TASKS_ALLOCATED_AND_RUNNING_NO_RESULT_YET"
+}
