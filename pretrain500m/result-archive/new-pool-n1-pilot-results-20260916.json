@@ -1,0 +1,101 @@
+{
+  "candidate": {
+    "admission_sha256": "f4874ef2adadce7035fa625a3f883fab4397923fd62651a46ce78c136c3a7fd4",
+    "arm_id": "n1-lr6e5",
+    "base_checkpoint_sha256": "13aa21721e15c48cdfdafe30d8fdd41d9c95c90be766327661d96af1e90dd6cf",
+    "job_id": 1594609,
+    "manifest_sha256": "f1cef293be28f9a102ad7d15789f91d242c9c91f5ce7999187d5015ee544f6da",
+    "protocol_sha256": "495eb7f6d25ccad8fe9f091b9c3033632e464d51f6e59fc056dd6926a47bb819",
+    "recipe": "N1_new_pool_knowledge",
+    "seed": 20260916
+  },
+  "checked_utc": "2026-09-16T11:35:07.329713+00:00",
+  "checkpoint": {
+    "bytes": 2372504677,
+    "independent_remote_reread_matches_sidecar": true,
+    "remote_path": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/new-pool-mixture-pilots-v1/n1-lr6e5-seed20260916-1594609/train/model-final.pt",
+    "resumable": false,
+    "sha256": "949d79b7ff0d5f9b0dcb680d1b714c9557ccd5add13e2508a88a1f0de01247e2",
+    "stored_in_git": false
+  },
+  "claim_boundary": "N1 completed and improved the exposed development loss in all domains. N0 provisionally has lower equal-domain loss. This is not an independent capability result, confirmation result, promotion, or market-superiority evidence.",
+  "development_masked_loss": {
+    "absolute_delta": -0.6561349183675889,
+    "after_equal_domain": 2.6660707664663392,
+    "after_token_weighted": 2.667741964355378,
+    "all_five_domains_lower": true,
+    "before_equal_domain": 3.322205684833928,
+    "before_token_weighted": 3.211335755539882,
+    "domains": {
+      "code": {
+        "absolute_delta": -1.5872374432498049,
+        "after": 1.936836105432214,
+        "before": 3.524073548682019,
+        "relative_reduction": 0.4503985008608636
+      },
+      "general_web": {
+        "absolute_delta": -0.2465992202121412,
+        "after": 3.1024033955276518,
+        "before": 3.349002615739793,
+        "relative_reduction": 0.07363363021968485
+      },
+      "knowledge_reading": {
+        "absolute_delta": -0.3489226972888906,
+        "after": 2.599137624431466,
+        "before": 2.9480603217203565,
+        "relative_reduction": 0.11835670210617497
+      },
+      "math": {
+        "absolute_delta": -0.6350776505885842,
+        "after": 2.298998622353554,
+        "before": 2.9340762729421384,
+        "relative_reduction": 0.21644892344661565
+      },
+      "multilingual": {
+        "absolute_delta": -0.4628375804985243,
+        "after": 3.39297808458681,
+        "before": 3.855815665085334,
+        "relative_reduction": 0.1200362311636288
+      }
+    },
+    "relative_reduction": 0.19749978797606807,
+    "role": "adaptive development screen"
+  },
+  "formal_promotion": false,
+  "next_gate": "wait for all seven frozen arms, rank five-domain development loss, then run independent capability evaluation on the selected successor",
+  "provisional_completed_arm_comparison": {
+    "completed_arms": [
+      "n0-lr6e5",
+      "n1-lr6e5"
+    ],
+    "current_leader": "n0-lr6e5",
+    "n0_equal_domain_loss": 2.658868193857286,
+    "n1_equal_domain_loss": 2.6660707664663392,
+    "n1_minus_n0": 0.007202572609053437,
+    "selection_frozen_until_all_arms_complete": true
+  },
+  "schema": "p529m-new-pool-mixture-pilot-result-v1",
+  "status": "N1_QUALIFICATION_COMPLETED_DEVELOPMENT_LOSS_IMPROVED_ALL_DOMAINS",
+  "training": {
+    "all_rolling_windows_pass": true,
+    "complete_rolling_mfu_windows": 242,
+    "elapsed": "00:59:55",
+    "exit_code": "0:0",
+    "finite_loss_and_gradients": true,
+    "gpu_count": 4,
+    "gpu_model": "NVIDIA GeForce RTX 5090",
+    "latest_rolling_ten_step_median_mfu": 0.7667814643549962,
+    "mfu_gate_strictly_greater_than": 0.7,
+    "minimum_rolling_ten_step_median_mfu": 0.7667076519715733,
+    "prediction_tokens": 536870912,
+    "scheduler_state": "COMPLETED",
+    "step": 256
+  },
+  "verification": {
+    "checkpoint_identity_independently_recomputed": true,
+    "mfu_gate_passed": true,
+    "scheduler_job_and_all_steps_completed_0_0": true,
+    "small_snapshot_manifest_sha256": "c09764874ad92d25db18da54b05b5636f916a45cb2dde5696f2b7493d015df65",
+    "training_status_qualification_completed": true
+  }
+}
