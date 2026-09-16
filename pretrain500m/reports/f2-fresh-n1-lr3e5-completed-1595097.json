@@ -1,0 +1,96 @@
+{
+  "archive_files_sha256": {
+    "result-archive/para-f2-fresh-n1-lr3e5-1595097/gpu.csv": "64ff9df9297caf9d3745501bff3469df8d1db8e3e8542fd7f0d778e0b487e09e",
+    "result-archive/para-f2-fresh-n1-lr3e5-1595097/logs/p529m-f2n1-lr3e5-1595097.err": "45457efa9bbd8fb24abc62e955b0368511154ad2b9c6bace11bee93e516418e0",
+    "result-archive/para-f2-fresh-n1-lr3e5-1595097/logs/p529m-f2n1-lr3e5-1595097.out": "89f94167dd3f2a7197b4ce027a81da65076b9c9aef79c0d8f8993bd0480fcd93",
+    "result-archive/para-f2-fresh-n1-lr3e5-1595097/train/launches.jsonl": "63ba8c9a7f24bedad7aa24568c7cce84504a67fc5f39b56dea96a0812c61deb0",
+    "result-archive/para-f2-fresh-n1-lr3e5-1595097/train/metrics.jsonl": "798bc84ed88fe0b0c929b7c7ea6c63f9b7de89833572b3b2d7c92506a1171774",
+    "result-archive/para-f2-fresh-n1-lr3e5-1595097/train/resume.sha256": "5517960d42e58ea946448a425aaba806e71fa365f5d73f26ecd9ebde4caf7abc",
+    "result-archive/para-f2-fresh-n1-lr3e5-1595097/train/run-manifest.json": "64da75cc993f96024acb76703b9797c61e5d45d19e56a7657e446c3dec28297b",
+    "result-archive/para-f2-fresh-n1-lr3e5-1595097/train/training-status.json": "49761fa26f18199630e76e9bb5f462676a693a124e20a1a60d03e657d55a1f1a"
+  },
+  "arm_id": "f2n1-lr3e5",
+  "checked_utc": "2026-09-16T16:55:30Z",
+  "checkpoint": {
+    "bytes": 6345342423,
+    "path": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/f2-fresh-n1-continuation-v1/f2n1-lr3e5-seed20260915-1595097/train/resume.pt",
+    "resumable": true,
+    "sha256": "c27762f59a5e2cbefe208814b21c129132ab59440a784cb0c5e141b15e4cb7c4",
+    "stored_in_git": false
+  },
+  "claim_boundary": "Completed engineering and masked-validation qualification only; seven-task retention, promotion and superiority remain unverified.",
+  "data_manifest_sha256": "f1cef293be28f9a102ad7d15789f91d242c9c91f5ce7999187d5015ee544f6da",
+  "error_scan": {
+    "cuda_oom": false,
+    "mfu_gate_failure": false,
+    "traceback": false
+  },
+  "formal_promotion": false,
+  "job_id": 1595097,
+  "parent_checkpoint_sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc",
+  "remote_output": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/f2-fresh-n1-continuation-v1/f2n1-lr3e5-seed20260915-1595097",
+  "schema": "p529m-f2-fresh-n1-completed-arm-v1",
+  "status": "QUALIFICATION_COMPLETED_NOT_PROMOTED",
+  "training": {
+    "all_loss_and_grad_finite": true,
+    "last10_mfu_mean": 0.771530960262133,
+    "last10_mfu_min": 0.7713399624275621,
+    "last_grad_norm": 0.039115339517593384,
+    "last_loss": 2.5870461463928223,
+    "prediction_tokens": 536870912,
+    "steps": 256,
+    "strict_mfu_gate_passed": true,
+    "trajectory_mfu_min_after_grace": 0.7599714946768218
+  },
+  "validation": {
+    "after": {
+      "step": 256,
+      "unix": 1789577586.3665493,
+      "val_loss": 2.488062586122471,
+      "val_loss_by_domain": {
+        "code": 1.462939787403992,
+        "general_web": 3.0373073513079243,
+        "knowledge_reading": 2.543753741524413,
+        "math": 2.0298530685196483,
+        "multilingual": 3.366458981856378
+      },
+      "val_loss_equal_domain": 2.488062586122471,
+      "val_loss_objective": "equal-domain mean masked next-token loss",
+      "val_loss_token_weighted": 2.5354285638861525,
+      "val_ppl": 12.037931058534001,
+      "val_target_tokens_by_domain": {
+        "code": 1155811,
+        "general_web": 1240415,
+        "knowledge_reading": 4292341,
+        "math": 1280325,
+        "multilingual": 1478433
+      }
+    },
+    "all_domains_improved": true,
+    "before": {
+      "phase": "before_training",
+      "step": 0,
+      "unix": 1789574186.8377283,
+      "val_loss": 2.54658423831816,
+      "val_loss_by_domain": {
+        "code": 1.473302497801856,
+        "general_web": 3.0492362003843008,
+        "knowledge_reading": 2.5590605329531635,
+        "math": 2.034188524107709,
+        "multilingual": 3.61713343634377
+      },
+      "val_loss_equal_domain": 2.54658423831816,
+      "val_loss_objective": "equal-domain mean masked next-token loss",
+      "val_loss_token_weighted": 2.585033314899773,
+      "val_ppl": 12.763432396291998,
+      "val_target_tokens_by_domain": {
+        "code": 1155811,
+        "general_web": 1240415,
+        "knowledge_reading": 4292341,
+        "math": 1280325,
+        "multilingual": 1478433
+      }
+    },
+    "equal_domain_loss_delta": -0.058521652195688834
+  }
+}
