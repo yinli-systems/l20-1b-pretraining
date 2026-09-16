@@ -1,0 +1,152 @@
+{
+  "status": "4090_RECIPE_CONFIRMED_5090_STRICT_ACTIVE_MFU_GATE_PENDING",
+  "recorded_at": "2026-09-17T05:35:00+08:00",
+  "scope": "CVCR Top-2 ScatterMoE proxy runtime optimization",
+  "model": {
+    "deployed_parameters": 277801728,
+    "active_parameters": 79620864,
+    "sequence_length": 2048,
+    "world_size": 4
+  },
+  "selected_next_stage_recipe": {
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpus": 4,
+    "microbatch_per_rank": 38,
+    "gradient_accumulation": 2,
+    "compile": true,
+    "compile_mode": "max-autotune-no-cudagraphs",
+    "expert_backend": "ScatterMoE",
+    "loss_backend": "Liger",
+    "effective_prediction_tokens_per_optimizer_step": 622592,
+    "selection_basis": "highest sustained finite 4090 throughput among completed bounded screens"
+  },
+  "microbatch_frontier": [
+    {
+      "job_id": 1595704,
+      "label": "mb32",
+      "median_tokens_per_second": 557940.19,
+      "median_active_mfu": 0.41854955,
+      "median_rated_full_square_mfu": 0.53078771,
+      "all_finite": true,
+      "sha256": "34b68332abd636125177d0ebb753d279739cb67e28bd6c3da8233dffdba9ed03"
+    },
+    {
+      "job_id": 1595706,
+      "label": "mb34",
+      "median_tokens_per_second": 585883.0162533089,
+      "median_active_mfu": 0.43951139527427835,
+      "median_rated_full_square_mfu": 0.5573706858956495,
+      "all_finite": true,
+      "sha256": "66804e0750b55f9174c525ffb3b34e7b702df1bcb1fb4ec5bd7bab4381d4bdf0"
+    },
+    {
+      "job_id": 1595706,
+      "label": "mb36",
+      "median_tokens_per_second": 588546.1979373062,
+      "median_active_mfu": 0.4415092321552445,
+      "median_rated_full_square_mfu": 0.5599042623276256,
+      "all_finite": true,
+      "sha256": "8c2bbc15d5bacf6f01e099d154544c51650879c44deff1917af484aeaa721b3a"
+    },
+    {
+      "job_id": 1595706,
+      "label": "mb38",
+      "median_tokens_per_second": 590838.8213163163,
+      "median_active_mfu": 0.4432290876079438,
+      "median_rated_full_square_mfu": 0.5620853138853765,
+      "all_finite": true,
+      "sha256": "328bfaf87c7b6e1febd74c2f32f314b64b8987cebcbc6231fe21e9615158b86f"
+    },
+    {
+      "job_id": 1595704,
+      "label": "mb40",
+      "status": "CUDA_OOM",
+      "all_finite": false
+    }
+  ],
+  "sustained_confirmations": {
+    "mb38_default": {
+      "job_id": 1595731,
+      "node": "wqd10naf05g2",
+      "measured_steps_after_warmup": 361,
+      "median_tokens_per_second": 595407.1107465893,
+      "median_active_mfu": 0.44665607764830345,
+      "median_causal_useful_matmul_mfu": 0.49843827252545003,
+      "median_rated_full_square_mfu": 0.5664312849111355,
+      "last_cross_entropy": 4.463841438293457,
+      "all_finite": true,
+      "slurm_state": "COMPLETED",
+      "sha256": "c2d20f763efb4a5f87afc92f9937ac641e41886357f3dc91d2fe4ad7865b2962"
+    },
+    "mb38_max_autotune": {
+      "job_id": 1595745,
+      "node": "wqd10naf05g2",
+      "measured_steps_after_warmup": 361,
+      "median_tokens_per_second": 603590.313943323,
+      "median_active_mfu": 0.45279486466727104,
+      "median_causal_useful_matmul_mfu": 0.505288747757414,
+      "median_rated_full_square_mfu": 0.5742162478679981,
+      "last_cross_entropy": 4.41045618057251,
+      "all_finite": true,
+      "slurm_state": "COMPLETED",
+      "sha256": "d85599b681bd2a5bbb7606f4a72b1662c4720d61c569c5e9fd9efa8899d2131d"
+    }
+  },
+  "paired_compile_mode_screen": {
+    "job_id": 1595741,
+    "node": "wqd10naf05g2",
+    "default": {
+      "median_tokens_per_second": 587854.8661800167,
+      "median_active_mfu": 0.44099061636196407,
+      "sha256": "a7bd85e4e8cae9eb0c1a9bff7557f57c4eee503b961da459c07246f2ce410201"
+    },
+    "max_autotune_no_cudagraphs": {
+      "median_tokens_per_second": 596416.2864573852,
+      "median_active_mfu": 0.44741313018682094,
+      "sha256": "052c8f6011800cfe140013ef5b7b3527dd47da9ceee1b66b74aad7db4fd67439"
+    },
+    "throughput_ratio": 1.0145638333029412
+  },
+  "measured_improvements": {
+    "mb38_over_mb32_same_node_short_screen_ratio": 1.0589644408235162,
+    "max_autotune_over_default_paired_ratio": 1.0145638333029412,
+    "combined_attributable_ratio": 1.0743870224134122,
+    "best_sustained_over_current_fullpass_snapshot_ratio": 1.149359841666338,
+    "note": "The 14.94% snapshot difference includes node variation. The paired and same-node attributable estimate is 7.44%."
+  },
+  "mfu_gates": {
+    "active_mfu_strictly_greater_than_0_50": "FAIL_ON_4090",
+    "rated_full_square_mfu_strictly_greater_than_0_50": "PASS",
+    "best_sustained_active_mfu": 0.45279486466727104,
+    "best_sustained_rated_full_square_mfu": 0.5742162478679981
+  },
+  "current_fullpass": {
+    "job_id": 1595686,
+    "status_at_recording": "RUNNING",
+    "recipe": "microbatch32-accumulation2-default-compile",
+    "latest_step": 4780,
+    "latest_prediction_tokens": 2506096640,
+    "latest_tokens_per_second": 525153.4741880661,
+    "latest_active_mfu": 0.3939539631129017,
+    "latest_rated_full_square_mfu": 0.4995965815505624,
+    "action": "continue without interruption"
+  },
+  "resume_boundary": {
+    "status": "NO_IN_PLACE_BATCH_MIGRATION",
+    "reason": "The frozen checkpoint fingerprint binds microbatch, accumulation, tokens per step, and target tokens. Changing from 32x2 to 38x2 also changes the deterministic data cursor and learning-rate schedule.",
+    "application": "use the selected recipe for the next fresh training stage"
+  },
+  "pending_5090_screens": [
+    {
+      "job_id": 1595732,
+      "gpus": 4,
+      "status_at_recording": "PENDING_PRIORITY"
+    },
+    {
+      "job_id": 1595733,
+      "gpus": 8,
+      "status_at_recording": "PENDING_PRIORITY"
+    }
+  ],
+  "claim_boundary": "These results establish runtime stability, finiteness, throughput, and explicit MFU accounting for the proxy. They do not establish downstream capability gain, 7B feasibility, or superiority over other models. The strict active-parameter MFU greater-than-50-percent gate remains open until a sustained 5090 or kernel-level result passes it."
+}
