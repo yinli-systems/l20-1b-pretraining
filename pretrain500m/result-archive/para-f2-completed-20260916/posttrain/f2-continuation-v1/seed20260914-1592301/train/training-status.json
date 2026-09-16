@@ -1,0 +1,9 @@
+{
+  "checkpoint_sha256": "98b21eb475aed1b0f6896395eb7cabf9c23ff5032f6f33a5cbcc5fdaec781ae9",
+  "formal_promotion": false,
+  "mfu_window_passed": true,
+  "status": "QUALIFICATION_COMPLETED",
+  "step": 256,
+  "tokens": 536870912,
+  "unix": 1789518617.7175195
+}

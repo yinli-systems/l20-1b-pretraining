@@ -1,0 +1,105 @@
+{
+  "checked_utc": "2026-09-16T00:36:28.303524+00:00",
+  "claim_boundary": "The positive five-domain development masked-loss change is directional and adaptive. It does not establish sealed confirmation gain, broader capability, retention, absence of benchmark contamination, 50%+ benchmark score, post-training promotion, or market superiority. Slurm terminal exit is unconfirmed while controller RPC is unavailable.",
+  "confirmation_evaluation_completed": false,
+  "formal_promotion": false,
+  "runs": [
+    {
+      "all_gate_windows_strictly_above_0_70": true,
+      "all_train_losses_finite": true,
+      "checkpoint": {
+        "bytes": 6345342295,
+        "path": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/f2-continuation-v1/seed20260914-1592301/train/resume.pt",
+        "semantics": "full resumable state",
+        "sha256_independently_streamed": "98b21eb475aed1b0f6896395eb7cabf9c23ff5032f6f33a5cbcc5fdaec781ae9",
+        "sha256_sidecar_and_status_match": true
+      },
+      "ddp_bucket_rebuilds": 0,
+      "development_masked": {
+        "absolute_final_minus_initial": -0.011318975403022069,
+        "domain_final_minus_initial": {
+          "code": -0.020456084832670474,
+          "general_web": -0.00249637899110855,
+          "knowledge_reading": -0.004945787109512878,
+          "math": -0.014536432752944695,
+          "multilingual": -0.014160193328872861
+        },
+        "equal_domain_loss_by_step": {
+          "0": 2.552636360615379,
+          "128": 2.547804023662204,
+          "256": 2.541317385212357
+        },
+        "equal_domain_ppl_by_step": {
+          "0": 12.840912473040618,
+          "128": 12.779010543134763,
+          "256": 12.696385989510205
+        },
+        "manifest_sha256": "b9791aff2b537689c165f504f3c0fb262952c9d87762e8c2aa3388c6b9e3aa3b",
+        "relative_loss_reduction_vs_initial": 0.00443422948041583
+      },
+      "job_id": 1592301,
+      "last10_mean_mfu": 0.760987424990111,
+      "last10_median_mfu": 0.7618483219480604,
+      "lowest_gate_window_median_mfu": 0.7615698866076769,
+      "metrics_sha256": "4377ce106172ae5de21fbdecb3275c8fa9c8c0bacbb2f02e36911ea5cf12c7ec",
+      "parent_model_only_sha256": "69d9d8d3358f23815f2455f7e075645056f90fe01ed40a11525130a0e58ca085",
+      "prediction_tokens": 536870912,
+      "run_manifest_sha256": "485fa74f7375b04fb4af9107360776fcda71eea1109d9806e1096f2e8eca40e1",
+      "seed": 20260914,
+      "train_steps": 256,
+      "trainer_status": "QUALIFICATION_COMPLETED",
+      "training_status_sha256": "969e1266a8babd66881b44026990649c8e2db6772539f6b538ea4369d669b98e"
+    },
+    {
+      "all_gate_windows_strictly_above_0_70": true,
+      "all_train_losses_finite": true,
+      "checkpoint": {
+        "bytes": 6345342231,
+        "path": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/f2-continuation-v1/seed20260915-1592302/train/resume.pt",
+        "semantics": "full resumable state",
+        "sha256_independently_streamed": "86ab770e671dd845c6de1c7724fb90cc22bc79449f9133e2a01047814f86fed8",
+        "sha256_sidecar_and_status_match": true
+      },
+      "ddp_bucket_rebuilds": 0,
+      "development_masked": {
+        "absolute_final_minus_initial": -0.01068071663570569,
+        "domain_final_minus_initial": {
+          "code": -0.019946521464717648,
+          "general_web": -0.0021517696308204215,
+          "knowledge_reading": -0.00483056046245256,
+          "math": -0.013435541583806998,
+          "multilingual": -0.013039190036730819
+        },
+        "equal_domain_loss_by_step": {
+          "0": 2.552572710120298,
+          "128": 2.5498725621136966,
+          "256": 2.5418919934845925
+        },
+        "equal_domain_ppl_by_step": {
+          "0": 12.84009516861561,
+          "128": 12.805471776419223,
+          "256": 12.703683534341296
+        },
+        "manifest_sha256": "b9791aff2b537689c165f504f3c0fb262952c9d87762e8c2aa3388c6b9e3aa3b",
+        "relative_loss_reduction_vs_initial": 0.004184294767925478
+      },
+      "job_id": 1592302,
+      "last10_mean_mfu": 0.7735992366312832,
+      "last10_median_mfu": 0.7747502003665228,
+      "lowest_gate_window_median_mfu": 0.7723882909031321,
+      "metrics_sha256": "0050760b981ace6ea0d345c27aaed2b358c20e095df29fa2104167b8763da504",
+      "parent_model_only_sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc",
+      "prediction_tokens": 536870912,
+      "run_manifest_sha256": "248a1941221068d8d5c8821d6b1cbc93ebc17db21873baf3bae41cf8c5c7b9ec",
+      "seed": 20260915,
+      "train_steps": 256,
+      "trainer_status": "QUALIFICATION_COMPLETED",
+      "training_status_sha256": "91fd5edd63f53ad63e5902d6f8de635f7381d6c0f84fd8af184a5b82f32ec35e"
+    }
+  ],
+  "schema": "p529m-f2-continuation-two-seed-qualification-v1",
+  "snapshot_file_count": 16,
+  "snapshot_sha256sums_path": "pretrain500m/result-archive/para-f2-completed-20260916/SHA256SUMS",
+  "source": "copied ParaCloud run files independently SHA-rechecked; final checkpoint SHA-256 independently streamed on ln01; sacct last observed both RUNNING at 2026-09-16T00:30:58Z while controller RPC timed out",
+  "status": "PAIRED_TRAINER_QUALIFICATION_COMPLETED_SCHEDULER_EXIT_UNCONFIRMED"
+}
