@@ -1,0 +1,55 @@
+{
+  "candidate_id": "f2n1-lr3e5",
+  "checked_utc": "2026-09-16T18:55:32.949438+00:00",
+  "claim_boundary": "one-time confirmation half of the public MBPP Python proxy, comparing the frozen 3e-5 continuation with its matched F2 parent; execution occurs in the frozen restricted sandbox; not sealed, not broad software-engineering mastery, and not evidence of safety, formal promotion, or market superiority",
+  "domain": "code",
+  "formal_promotion": false,
+  "gate": {
+    "candidate_correct": 0,
+    "parent_correct": 0,
+    "passed": false,
+    "rule": "candidate must exceed parent execution passes, break the zero-pass floor, and retain syntax/policy within a -0.01 paired lower bound"
+  },
+  "input_sha256": {
+    "candidate": "55a42f8b3612bbc15d8a95717858bdc7577277dafac6100c173d61dd8f5cbf84",
+    "parent": "7ba1f5dbe8d6050041386f38e5046d997bda1506b02f574250ab08ef405747c2"
+  },
+  "metrics": {
+    "execution_pass_at_1": {
+      "candidate": 0.0,
+      "candidate_minus_parent": 0.0,
+      "improvement_direction_delta": 0.0,
+      "paired_bootstrap_improvement_ci95": [
+        0.0,
+        0.0
+      ],
+      "parent": 0.0
+    },
+    "gold_code_token_nll": {
+      "candidate": 1.743311368217764,
+      "candidate_minus_parent": -0.01193286559378454,
+      "improvement_direction_delta": 0.01193286559378454,
+      "paired_bootstrap_improvement_ci95": [
+        0.008448208487311076,
+        0.015408467876818753
+      ],
+      "parent": 1.7552442338115486
+    },
+    "syntax_and_policy_rate": {
+      "candidate": 1.0,
+      "candidate_minus_parent": 0.0,
+      "improvement_direction_delta": 0.0,
+      "paired_bootstrap_improvement_ci95": [
+        0.0,
+        0.0
+      ],
+      "parent": 1.0
+    }
+  },
+  "parent_id": "F2_parent_seed20260915",
+  "plan_sha256": "16912563e8f8cc81b826f8891497b6d96d228108b76f705f91828c1b715ba318",
+  "role": "confirmation",
+  "samples": 129,
+  "schema": "p529m-f2-fresh-n1-independent-confirmation-domain-summary-v1",
+  "status": "INDEPENDENT_CONFIRMATION_DOMAIN_COMPLETE"
+}

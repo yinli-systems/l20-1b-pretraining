@@ -1,0 +1,43 @@
+{
+  "bundle_manifest_sha256": "69df92d7c6136cb8ffea62f5394ef49cf825b9ebdbf2b5c3d89ceb9d713eb218",
+  "capacity_snapshot": "\u516c\u5171partition\uff1a\nPartition      \u53ef\u7528GPU\u6570\u91cf  \u603b\u5361\u6570\ngpu_4090            32     248\ngpu_5090             1     248\nhp_4090             32     272\nhp_5090              1     408\n\n\u53ef\u8fd0\u884c\u4f5c\u4e1a\u6570\u91cf\uff08\u6309GPU\u89c4\u6a21\uff09\uff1a\nPartition      1\u5361GPU 2\u5361GPU 3\u5361GPU 4\u5361GPU 5\u5361GPU 6\u5361GPU 7\u5361GPU 8\u5361GPU\ngpu_4090       32     11      6      0      0      0      0      0\ngpu_5090        1      0      0      0      0      0      0      0\nhp_4090        32     11      6      0      0      0      0      0\nhp_5090         1      0      0      0      0      0      0      0\n",
+  "checked_utc": "2026-09-16T18:32:49.312592+00:00",
+  "claim_boundary": "scheduler submission of four matched RTX 4090 confirmation jobs; allocation, completion, gate passage, replication, and promotion remain unverified",
+  "domains": [
+    "reading",
+    "math",
+    "code",
+    "knowledge"
+  ],
+  "formal_promotion": false,
+  "free_bytes_before_submit": 47201992704,
+  "gate_plan_sha256": "2ac1436cb21f4f41a7f91e7d4ad1e8a4817c473810444deea34a13ba0b19611b",
+  "jobs": [
+    {
+      "domain": "reading",
+      "job_id": 1595612,
+      "job_name": "p529m-f2n1-cf-read"
+    },
+    {
+      "domain": "math",
+      "job_id": 1595613,
+      "job_name": "p529m-f2n1-cf-math"
+    },
+    {
+      "domain": "code",
+      "job_id": 1595614,
+      "job_name": "p529m-f2n1-cf-code"
+    },
+    {
+      "domain": "knowledge",
+      "job_id": 1595615,
+      "job_name": "p529m-f2n1-cf-know"
+    }
+  ],
+  "runner_sha256": "6b59e13fa0242f59d2f553f9c87f468f5459472d258869177e481ade3cc3a084",
+  "schema": "p529m-f2-fresh-n1-independent-confirmation-submission-v1",
+  "status": "SUBMITTED_PENDING_ALLOCATION",
+  "storage_gate_bytes": 12884901888,
+  "submitted_gpu_total": 8,
+  "world_size_per_job": 2
+}

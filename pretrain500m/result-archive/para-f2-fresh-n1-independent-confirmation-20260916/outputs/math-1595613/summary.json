@@ -1,0 +1,45 @@
+{
+  "candidate_id": "f2n1-lr3e5",
+  "checked_utc": "2026-09-16T18:37:20.889218+00:00",
+  "claim_boundary": "one-time confirmation half of the public English MGSM proxy, comparing the frozen 3e-5 continuation with its matched F2 parent; not sealed, not broad math mastery, and not evidence of instruction following, safety, multilingual generation, formal promotion, or market superiority",
+  "domain": "math",
+  "formal_promotion": false,
+  "gate": {
+    "candidate_correct": 2,
+    "parent_correct": 3,
+    "passed": false,
+    "rule": "candidate exact-match correct count is no lower than parent and mean gold-answer NLL is no worse"
+  },
+  "input_sha256": {
+    "candidate": "39903092d94b195925cc999600de77d2d2b33f50ab83ba0bf8bdc9d71b8bc239",
+    "parent": "d9ec2b1a3d3bc30a46d26c28cbc564deaf8d44956f98ba39e5f09f3ab008403a"
+  },
+  "metrics": {
+    "exact_numeric_match": {
+      "candidate": 0.016,
+      "candidate_minus_parent": -0.008,
+      "improvement_direction_delta": -0.008,
+      "paired_bootstrap_improvement_ci95": [
+        -0.024,
+        0.0
+      ],
+      "parent": 0.024
+    },
+    "gold_answer_token_nll": {
+      "candidate": 7.81010595703125,
+      "candidate_minus_parent": -0.10692036056518554,
+      "improvement_direction_delta": 0.10692036056518554,
+      "paired_bootstrap_improvement_ci95": [
+        0.08872193908691406,
+        0.12588853073120118
+      ],
+      "parent": 7.917026317596435
+    }
+  },
+  "parent_id": "F2_parent_seed20260915",
+  "plan_sha256": "e1edae3168f79ab1972c8c498d1f0dfada454e20bed81ff557d5290436a5e9d3",
+  "role": "confirmation",
+  "samples": 125,
+  "schema": "p529m-f2-fresh-n1-independent-confirmation-domain-summary-v1",
+  "status": "INDEPENDENT_CONFIRMATION_DOMAIN_COMPLETE"
+}

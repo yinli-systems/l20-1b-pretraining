@@ -1,0 +1,43 @@
+{
+  "candidate_id": "f2n1-lr3e5",
+  "checked_utc": "2026-09-16T18:34:31.846368+00:00",
+  "claim_boundary": "one-time confirmation half of the public SciQ closed-book English science proxy, comparing the frozen 3e-5 continuation with its matched F2 parent; current-corpus contamination checks do not establish model-ancestor or semantic-paraphrase independence; not sealed, not broad knowledge, and not evidence of formal promotion or market superiority",
+  "domain": "knowledge",
+  "formal_promotion": false,
+  "gate": {
+    "passed": true,
+    "rule": "paired bootstrap 95% lower bound for acc_norm improvement is at least -0.01"
+  },
+  "input_sha256": {
+    "candidate": "b3b5d167e2e3f1481f399fa303e1c068377e841c954ee3b878347c8468c0ed0c",
+    "parent": "decbf78a2931231b9aed3f925ebf25e1cc9ee94b2cc69913e8df2e655a0278a4"
+  },
+  "metrics": {
+    "acc": {
+      "candidate": 0.6591836734693878,
+      "candidate_minus_parent": 0.01020408163265306,
+      "improvement_direction_delta": 0.01020408163265306,
+      "paired_bootstrap_improvement_ci95": [
+        -0.0020408163265306124,
+        0.024489795918367346
+      ],
+      "parent": 0.6489795918367347
+    },
+    "acc_norm": {
+      "candidate": 0.6346938775510204,
+      "candidate_minus_parent": 0.01020408163265306,
+      "improvement_direction_delta": 0.01020408163265306,
+      "paired_bootstrap_improvement_ci95": [
+        -0.0020408163265306124,
+        0.022448979591836733
+      ],
+      "parent": 0.6244897959183674
+    }
+  },
+  "parent_id": "F2_parent_seed20260915",
+  "plan_sha256": "6c915038892ddfd8237a4dbd3a5be61d041ac0a29237fa2f168183d405f8c494",
+  "role": "confirmation",
+  "samples": 490,
+  "schema": "p529m-f2-fresh-n1-independent-confirmation-domain-summary-v1",
+  "status": "INDEPENDENT_CONFIRMATION_DOMAIN_COMPLETE"
+}

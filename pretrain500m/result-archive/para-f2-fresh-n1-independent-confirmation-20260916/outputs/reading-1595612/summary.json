@@ -1,0 +1,43 @@
+{
+  "candidate_id": "f2n1-lr3e5",
+  "checked_utc": "2026-09-16T18:34:49.957689+00:00",
+  "claim_boundary": "one-time confirmation half of the public English Belebele reading proxy, comparing the frozen 3e-5 continuation with its matched F2 parent; not sealed, not a full seven-dimension evaluation, and not evidence of instruction following, safety, multilingual generation, formal promotion, or market superiority",
+  "domain": "reading",
+  "formal_promotion": false,
+  "gate": {
+    "passed": false,
+    "rule": "paired bootstrap 95% lower bound for acc_norm improvement is at least -0.01"
+  },
+  "input_sha256": {
+    "candidate": "3d5470934f8559908e53f653abcbba12310a767a7e36681f364a1242c7fec99f",
+    "parent": "b9069c49c2de06edec993ecd21b55c404987b1c4eec5854cedc7e268b372e8df"
+  },
+  "metrics": {
+    "acc": {
+      "candidate": 0.3333333333333333,
+      "candidate_minus_parent": 0.0044444444444444444,
+      "improvement_direction_delta": 0.0044444444444444444,
+      "paired_bootstrap_improvement_ci95": [
+        -0.008888888888888889,
+        0.017777777777777778
+      ],
+      "parent": 0.3288888888888889
+    },
+    "acc_norm": {
+      "candidate": 0.32666666666666666,
+      "candidate_minus_parent": -0.011111111111111112,
+      "improvement_direction_delta": -0.011111111111111112,
+      "paired_bootstrap_improvement_ci95": [
+        -0.024444444444444446,
+        0.0022222222222222222
+      ],
+      "parent": 0.3377777777777778
+    }
+  },
+  "parent_id": "F2_parent_seed20260915",
+  "plan_sha256": "ed73e373664167f17214d9b5d76e235efcbfc9fa79fd472e3db02a4173305867",
+  "role": "confirmation",
+  "samples": 450,
+  "schema": "p529m-f2-fresh-n1-independent-confirmation-domain-summary-v1",
+  "status": "INDEPENDENT_CONFIRMATION_DOMAIN_COMPLETE"
+}

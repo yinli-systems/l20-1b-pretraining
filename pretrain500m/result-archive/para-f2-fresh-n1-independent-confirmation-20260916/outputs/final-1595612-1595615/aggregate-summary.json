@@ -1,0 +1,223 @@
+{
+  "candidate_id": "f2n1-lr3e5",
+  "checked_utc": "2026-09-16T18:56:35.380551+00:00",
+  "claim_boundary": "one-time public independent-proxy confirmation of the frozen seed-20260915 3e-5 fresh-N1 continuation against its matched F2 parent; passing only authorizes second-seed replication and does not establish sealed generalization, instruction following, safety, multilingual quality, formal promotion, or market superiority",
+  "cross_domain_gate": {
+    "passed": false,
+    "rule": "all four frozen retention gates pass and at least two primary metrics strictly improve"
+  },
+  "domain_gate_pass": {
+    "code": false,
+    "knowledge": true,
+    "math": false,
+    "reading": false
+  },
+  "domain_summaries": {
+    "code": {
+      "candidate_id": "f2n1-lr3e5",
+      "checked_utc": "2026-09-16T18:55:32.949438+00:00",
+      "claim_boundary": "one-time confirmation half of the public MBPP Python proxy, comparing the frozen 3e-5 continuation with its matched F2 parent; execution occurs in the frozen restricted sandbox; not sealed, not broad software-engineering mastery, and not evidence of safety, formal promotion, or market superiority",
+      "domain": "code",
+      "formal_promotion": false,
+      "gate": {
+        "candidate_correct": 0,
+        "parent_correct": 0,
+        "passed": false,
+        "rule": "candidate must exceed parent execution passes, break the zero-pass floor, and retain syntax/policy within a -0.01 paired lower bound"
+      },
+      "input_sha256": {
+        "candidate": "55a42f8b3612bbc15d8a95717858bdc7577277dafac6100c173d61dd8f5cbf84",
+        "parent": "7ba1f5dbe8d6050041386f38e5046d997bda1506b02f574250ab08ef405747c2"
+      },
+      "metrics": {
+        "execution_pass_at_1": {
+          "candidate": 0.0,
+          "candidate_minus_parent": 0.0,
+          "improvement_direction_delta": 0.0,
+          "paired_bootstrap_improvement_ci95": [
+            0.0,
+            0.0
+          ],
+          "parent": 0.0
+        },
+        "gold_code_token_nll": {
+          "candidate": 1.743311368217764,
+          "candidate_minus_parent": -0.01193286559378454,
+          "improvement_direction_delta": 0.01193286559378454,
+          "paired_bootstrap_improvement_ci95": [
+            0.008448208487311076,
+            0.015408467876818753
+          ],
+          "parent": 1.7552442338115486
+        },
+        "syntax_and_policy_rate": {
+          "candidate": 1.0,
+          "candidate_minus_parent": 0.0,
+          "improvement_direction_delta": 0.0,
+          "paired_bootstrap_improvement_ci95": [
+            0.0,
+            0.0
+          ],
+          "parent": 1.0
+        }
+      },
+      "parent_id": "F2_parent_seed20260915",
+      "plan_sha256": "16912563e8f8cc81b826f8891497b6d96d228108b76f705f91828c1b715ba318",
+      "role": "confirmation",
+      "samples": 129,
+      "schema": "p529m-f2-fresh-n1-independent-confirmation-domain-summary-v1",
+      "status": "INDEPENDENT_CONFIRMATION_DOMAIN_COMPLETE"
+    },
+    "knowledge": {
+      "candidate_id": "f2n1-lr3e5",
+      "checked_utc": "2026-09-16T18:34:31.846368+00:00",
+      "claim_boundary": "one-time confirmation half of the public SciQ closed-book English science proxy, comparing the frozen 3e-5 continuation with its matched F2 parent; current-corpus contamination checks do not establish model-ancestor or semantic-paraphrase independence; not sealed, not broad knowledge, and not evidence of formal promotion or market superiority",
+      "domain": "knowledge",
+      "formal_promotion": false,
+      "gate": {
+        "passed": true,
+        "rule": "paired bootstrap 95% lower bound for acc_norm improvement is at least -0.01"
+      },
+      "input_sha256": {
+        "candidate": "b3b5d167e2e3f1481f399fa303e1c068377e841c954ee3b878347c8468c0ed0c",
+        "parent": "decbf78a2931231b9aed3f925ebf25e1cc9ee94b2cc69913e8df2e655a0278a4"
+      },
+      "metrics": {
+        "acc": {
+          "candidate": 0.6591836734693878,
+          "candidate_minus_parent": 0.01020408163265306,
+          "improvement_direction_delta": 0.01020408163265306,
+          "paired_bootstrap_improvement_ci95": [
+            -0.0020408163265306124,
+            0.024489795918367346
+          ],
+          "parent": 0.6489795918367347
+        },
+        "acc_norm": {
+          "candidate": 0.6346938775510204,
+          "candidate_minus_parent": 0.01020408163265306,
+          "improvement_direction_delta": 0.01020408163265306,
+          "paired_bootstrap_improvement_ci95": [
+            -0.0020408163265306124,
+            0.022448979591836733
+          ],
+          "parent": 0.6244897959183674
+        }
+      },
+      "parent_id": "F2_parent_seed20260915",
+      "plan_sha256": "6c915038892ddfd8237a4dbd3a5be61d041ac0a29237fa2f168183d405f8c494",
+      "role": "confirmation",
+      "samples": 490,
+      "schema": "p529m-f2-fresh-n1-independent-confirmation-domain-summary-v1",
+      "status": "INDEPENDENT_CONFIRMATION_DOMAIN_COMPLETE"
+    },
+    "math": {
+      "candidate_id": "f2n1-lr3e5",
+      "checked_utc": "2026-09-16T18:37:20.889218+00:00",
+      "claim_boundary": "one-time confirmation half of the public English MGSM proxy, comparing the frozen 3e-5 continuation with its matched F2 parent; not sealed, not broad math mastery, and not evidence of instruction following, safety, multilingual generation, formal promotion, or market superiority",
+      "domain": "math",
+      "formal_promotion": false,
+      "gate": {
+        "candidate_correct": 2,
+        "parent_correct": 3,
+        "passed": false,
+        "rule": "candidate exact-match correct count is no lower than parent and mean gold-answer NLL is no worse"
+      },
+      "input_sha256": {
+        "candidate": "39903092d94b195925cc999600de77d2d2b33f50ab83ba0bf8bdc9d71b8bc239",
+        "parent": "d9ec2b1a3d3bc30a46d26c28cbc564deaf8d44956f98ba39e5f09f3ab008403a"
+      },
+      "metrics": {
+        "exact_numeric_match": {
+          "candidate": 0.016,
+          "candidate_minus_parent": -0.008,
+          "improvement_direction_delta": -0.008,
+          "paired_bootstrap_improvement_ci95": [
+            -0.024,
+            0.0
+          ],
+          "parent": 0.024
+        },
+        "gold_answer_token_nll": {
+          "candidate": 7.81010595703125,
+          "candidate_minus_parent": -0.10692036056518554,
+          "improvement_direction_delta": 0.10692036056518554,
+          "paired_bootstrap_improvement_ci95": [
+            0.08872193908691406,
+            0.12588853073120118
+          ],
+          "parent": 7.917026317596435
+        }
+      },
+      "parent_id": "F2_parent_seed20260915",
+      "plan_sha256": "e1edae3168f79ab1972c8c498d1f0dfada454e20bed81ff557d5290436a5e9d3",
+      "role": "confirmation",
+      "samples": 125,
+      "schema": "p529m-f2-fresh-n1-independent-confirmation-domain-summary-v1",
+      "status": "INDEPENDENT_CONFIRMATION_DOMAIN_COMPLETE"
+    },
+    "reading": {
+      "candidate_id": "f2n1-lr3e5",
+      "checked_utc": "2026-09-16T18:34:49.957689+00:00",
+      "claim_boundary": "one-time confirmation half of the public English Belebele reading proxy, comparing the frozen 3e-5 continuation with its matched F2 parent; not sealed, not a full seven-dimension evaluation, and not evidence of instruction following, safety, multilingual generation, formal promotion, or market superiority",
+      "domain": "reading",
+      "formal_promotion": false,
+      "gate": {
+        "passed": false,
+        "rule": "paired bootstrap 95% lower bound for acc_norm improvement is at least -0.01"
+      },
+      "input_sha256": {
+        "candidate": "3d5470934f8559908e53f653abcbba12310a767a7e36681f364a1242c7fec99f",
+        "parent": "b9069c49c2de06edec993ecd21b55c404987b1c4eec5854cedc7e268b372e8df"
+      },
+      "metrics": {
+        "acc": {
+          "candidate": 0.3333333333333333,
+          "candidate_minus_parent": 0.0044444444444444444,
+          "improvement_direction_delta": 0.0044444444444444444,
+          "paired_bootstrap_improvement_ci95": [
+            -0.008888888888888889,
+            0.017777777777777778
+          ],
+          "parent": 0.3288888888888889
+        },
+        "acc_norm": {
+          "candidate": 0.32666666666666666,
+          "candidate_minus_parent": -0.011111111111111112,
+          "improvement_direction_delta": -0.011111111111111112,
+          "paired_bootstrap_improvement_ci95": [
+            -0.024444444444444446,
+            0.0022222222222222222
+          ],
+          "parent": 0.3377777777777778
+        }
+      },
+      "parent_id": "F2_parent_seed20260915",
+      "plan_sha256": "ed73e373664167f17214d9b5d76e235efcbfc9fa79fd472e3db02a4173305867",
+      "role": "confirmation",
+      "samples": 450,
+      "schema": "p529m-f2-fresh-n1-independent-confirmation-domain-summary-v1",
+      "status": "INDEPENDENT_CONFIRMATION_DOMAIN_COMPLETE"
+    }
+  },
+  "formal_promotion": false,
+  "gate_plan_sha256": "2ac1436cb21f4f41a7f91e7d4ad1e8a4817c473810444deea34a13ba0b19611b",
+  "input_sha256": {
+    "summary.json:code": "e4211a177a1598d697760a8076351dc24cbae7374ff9905178a99bde1de89552",
+    "summary.json:knowledge": "a15d512da7e51c54c5e0f3047c433b507cee548603afa642daf936c1ea4366a4",
+    "summary.json:math": "1fbd7dc772a0ef96ca8a74f03dcba1007c50cac3d2427e634bae9be0e57a1a09",
+    "summary.json:reading": "cd681fc58adc832cb8bbfd1fc707ecdc488b3ce152f3c8d2c7fd126ca27ccac3"
+  },
+  "parent_id": "F2_parent_seed20260915",
+  "primary_improvement_direction_delta": {
+    "code": 0.0,
+    "knowledge": 0.01020408163265306,
+    "math": -0.008,
+    "reading": -0.011111111111111112
+  },
+  "schema": "p529m-f2-fresh-n1-independent-confirmation-summary-v1",
+  "status": "HOLD_CANDIDATE_NO_AUTOMATIC_CONTINUATION",
+  "strictly_improving_primary_domains": [
+    "knowledge"
+  ]
+}
