@@ -1,0 +1,31 @@
+{
+  "checked_utc": "2026-09-16T01:41:06Z",
+  "claim_boundary": "This records real four-GPU allocation and active evaluation processes. No result JSON, paired masked-loss comparison, quality pass, capability/retention evidence, or market claim exists yet. Slurm's --test-only future start estimate was not used as an ETA.",
+  "confirmation_manifest_sha256": "8d2f6add7a651401428da8684b5a3846facaec21fc3fa1705dc04065302e63bd",
+  "gpu_observation": {
+    "memory_used_mib_each": [9823, 9823, 9823, 9823],
+    "model": "NVIDIA GeForce RTX 5090",
+    "utilization_percent_each": [98, 98, 97, 98],
+    "uuids": [
+      "GPU-28a5de68-35aa-6731-8c05-91bc2b28411e",
+      "GPU-28b2105b-82e8-8d98-2fa6-71cf8f749df6",
+      "GPU-5efb1466-61dc-63e6-fd42-bf752abdfe72",
+      "GPU-d18e4939-0452-580d-b366-f6d221c68193"
+    ]
+  },
+  "job_id": 1593179,
+  "node": "wqd10nah10g2",
+  "plan_sha256": "919d5738976491dd3d614a104372e5e7b7a57d21636468d7dad68acc8eba5310",
+  "result_json_present": false,
+  "schema": "p529m-f2-continuation-confirmation-live-start-v1",
+  "slurm": {
+    "allocated_gpus": 4,
+    "job_state": "RUNNING",
+    "partition": "gpu_5090",
+    "submit_local": "2026-09-16T09:39:44",
+    "start_local": "2026-09-16T09:39:45",
+    "training_step_state": "RUNNING"
+  },
+  "source": "source-bound ParaCloud SSH; scontrol/squeue/sacct; exact run.sbatch SHA256SUMS at live start; gpu.csv; direct read-only node process and nvidia-smi telemetry",
+  "status": "LIVE_PAIRED_CONFIRMATION_EVALUATION_RUNNING_NO_RESULT"
+}
