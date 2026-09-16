@@ -1,0 +1,55 @@
+{
+  "array_job": {
+    "array": "0-2%3",
+    "gpus_per_task": 1,
+    "id": 1594202,
+    "requested_gpus_total": 3,
+    "tasks": [
+      {
+        "array_task_id": 0,
+        "candidate": "base",
+        "gpu_uuid": "GPU-e64a85f0-b79a-930f-6613-00f3ae98b4a7",
+        "node": "wqd10nbj01g1",
+        "scheduler_job_id": 1594204,
+        "start_scheduler_local": "2026-09-16T14:42:17",
+        "state": "RUNNING"
+      },
+      {
+        "array_task_id": 1,
+        "candidate": "F2_parent_seed20260914",
+        "reason": "Priority",
+        "state": "PENDING"
+      },
+      {
+        "array_task_id": 2,
+        "candidate": "F2_parent_seed20260915",
+        "reason": "Priority",
+        "state": "PENDING"
+      }
+    ]
+  },
+  "capacity_at_check": {
+    "public_gpu_4090_free": 1,
+    "public_gpu_5090_free": 0,
+    "public_gpu_5090_runnable_one_gpu_jobs": 0,
+    "ssd_available_rounded": "90G"
+  },
+  "checked_utc": "2026-09-16T06:43:37.862653+00:00",
+  "claim_boundary": "one candidate has a real allocation; the two F2 candidates remain queued, no comparable code result exists yet, and this is not evidence of capability gain or market superiority",
+  "evaluation": {
+    "confirmation_scored": false,
+    "dataset": "MBPP sanitized test",
+    "plan_sha256": "a7e7cc4bf3f76bf1b255229fe9e5db6e6352bc94ad250a17af6baf72f488bb6f",
+    "primary_metric": "greedy execution pass@1 against all tests",
+    "role": "development",
+    "rows": 128
+  },
+  "formal_promotion": false,
+  "schema": "p529m-independent-code-proxy-v1-partial-live-start",
+  "source": {
+    "github_branch": "codex/529m-results",
+    "github_commit": "cc6f78b",
+    "source_hash_verification": "PASS"
+  },
+  "status": "BASE_RUNNING_TWO_F2_TASKS_PENDING"
+}
