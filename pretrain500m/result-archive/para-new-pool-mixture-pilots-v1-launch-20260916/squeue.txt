@@ -1,0 +1,7 @@
+1594614|PENDING|0:00|2026-09-17T00:35:00|(Priority)|gres/gpu:4|p529m-np1-n3-l1e4
+1594613|PENDING|0:00|2026-09-16T23:38:49|(Priority)|gres/gpu:4|p529m-np1-n3-l3e5
+1594612|PENDING|0:00|2026-09-16T21:46:00|(Priority)|gres/gpu:4|p529m-np1-n4-l6e5
+1594610|PENDING|0:00|2026-09-16T21:34:44|(Priority)|gres/gpu:4|p529m-np1-n2-l6e5
+1594611|PENDING|0:00|2026-09-16T21:34:44|(Priority)|gres/gpu:4|p529m-np1-n3-l6e5
+1594609|PENDING|0:00|2026-09-16T18:45:57|(Priority)|gres/gpu:4|p529m-np1-n1-l6e5
+1594608|RUNNING|13:01|2026-09-16T18:06:52|wqd10nbj03g1|gres/gpu:4|p529m-np1-n0-l6e5

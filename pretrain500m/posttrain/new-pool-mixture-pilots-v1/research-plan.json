@@ -1,0 +1,282 @@
+{
+  "schema": "p529m-research-plan-v2-NOT-A-PACKED-MANIFEST",
+  "as_of": "2026-09-15",
+  "status": "PROPOSED_NOT_TRAINED",
+  "formal_promotion": false,
+  "ready_for_training": false,
+  "repository": "yinli-systems/l20-1b-pretraining",
+  "repository_commit": "eb5eded979ba148b3dc06052d436eabc583bf3fc",
+  "mainline_recommendation": "R3 is the initial hypothesis, NOT an empirically selected winner. Compare all five recipes on NEW proxies.",
+  "model": {
+    "architecture": "deep",
+    "parameters_total": 528748800,
+    "hidden_size": 1280,
+    "intermediate_size": 3584,
+    "num_hidden_layers": 26,
+    "num_attention_heads": 20,
+    "num_key_value_heads": 5,
+    "head_dim": 64,
+    "vocab_size": 50280,
+    "max_position_embeddings": 2048,
+    "rope_theta": 10000,
+    "tie_word_embeddings": true,
+    "binary_shape_audit": "unknown"
+  },
+  "origin": {
+    "parent_checkpoint_sha256": "13aa21721e15c48cdfdafe30d8fdd41d9c95c90be766327661d96af1e90dd6cf",
+    "parent_prediction_tokens": 15999172608,
+    "parent_step": 7629,
+    "cpt_warmstart_semantics": "new optimizer, not exact optimizer resume of parent",
+    "parent_binary_available_in_this_session": false
+  },
+  "historical_F2_checkpoints": [
+    "69d9d8d3358f23815f2455f7e075645056f90fe01ed40a11525130a0e58ca085",
+    "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc"
+  ],
+  "tokenizer_sha256": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+  "recipes_percent_prediction_tokens": {
+    "R0_F2_fresh_control": {
+      "fineweb_edu_fresh": 25,
+      "dclm": 15,
+      "finepdfs_english": 25,
+      "math": 20,
+      "code": 15
+    },
+    "R1_F1_reconsider": {
+      "fineweb_edu_fresh": 35,
+      "dclm": 20,
+      "finepdfs_english": 20,
+      "math": 15,
+      "code": 10
+    },
+    "R2_retention_repair": {
+      "fineweb_edu_fresh": 35,
+      "dclm": 25,
+      "finepdfs_english": 20,
+      "math": 10,
+      "code": 10
+    },
+    "R3_balanced_recommended_hypothesis": {
+      "fineweb_edu_fresh": 30,
+      "dclm": 25,
+      "finepdfs_english": 20,
+      "math": 15,
+      "code": 10
+    },
+    "R4_code_retention_guard": {
+      "fineweb_edu_fresh": 30,
+      "dclm": 20,
+      "finepdfs_english": 20,
+      "math": 15,
+      "code": 15
+    }
+  },
+  "default_recipe": "R3_balanced_recommended_hypothesis",
+  "within_source_percent": {
+    "math": {
+      "finemath_4plus": 75,
+      "infiwebmath_4plus": 25
+    },
+    "code": {
+      "code_python": 50,
+      "code_javascript": 20,
+      "code_typescript": 10,
+      "code_cpp": 10,
+      "code_java": 10
+    }
+  },
+  "source_registry": [
+    {
+      "id": "fineweb_edu_fresh",
+      "repository": "HuggingFaceFW/fineweb-edu",
+      "revision": "87f09149ef4734204d70ed1d046ddc9ca3f2b8f9",
+      "revision_provenance": "user attachment and pinned project manifests; full remote shard bytes not independently verified here",
+      "dataset_license_public_card": "odc-by",
+      "underlying_document_rights": "per-document admission required",
+      "quality_policy": "Fresh family-disjoint English educational web; source score >=3; no default replay of the parent FineWeb pool.",
+      "source_revision_content_hash_verified": "unknown",
+      "admission_status": "BLOCKED_UNTIL_LOCAL_RECEIPT",
+      "max_lineage_epoch_equivalent": 2.0,
+      "unknown_license_action": "exclude",
+      "url": "https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu"
+    },
+    {
+      "id": "dclm",
+      "repository": "HuggingFaceFW/dclm_100BT",
+      "revision": "01022d378d944de6deeb1c79d08fecb4d27b2c6f",
+      "revision_provenance": "user attachment and pinned project manifests; full remote shard bytes not independently verified here",
+      "dataset_license_public_card": "odc-by",
+      "underlying_document_rights": "per-document admission required",
+      "quality_policy": "English broad prose, explanatory and narrative coverage; freeze quality strata on training data only.",
+      "source_revision_content_hash_verified": "unknown",
+      "admission_status": "BLOCKED_UNTIL_LOCAL_RECEIPT",
+      "max_lineage_epoch_equivalent": 2.0,
+      "unknown_license_action": "exclude",
+      "url": "https://huggingface.co/datasets/HuggingFaceFW/dclm_100BT"
+    },
+    {
+      "id": "finepdfs_english",
+      "repository": "HuggingFaceFW/finepdfs-edu",
+      "revision": "9cfabe2127faca99b3d5c4dc6d1fcb397399ebde",
+      "revision_provenance": "user attachment and pinned project manifests; full remote shard bytes not independently verified here",
+      "dataset_license_public_card": "odc-by",
+      "underlying_document_rights": "per-document admission required",
+      "quality_policy": "English full-document/per-page language agreement, coherent text spans; exclude extraction failures. Dataset top-10% selection is not equivalent to all score>=3.",
+      "source_revision_content_hash_verified": "unknown",
+      "admission_status": "BLOCKED_UNTIL_LOCAL_RECEIPT",
+      "max_lineage_epoch_equivalent": 2.0,
+      "unknown_license_action": "exclude",
+      "url": "https://huggingface.co/datasets/HuggingFaceFW/finepdfs-edu"
+    },
+    {
+      "id": "math",
+      "repository": "HuggingFaceTB/finemath",
+      "revision": "e92b25a616738fe95dc186b64dfb19f9c8525594",
+      "revision_provenance": "user attachment and pinned project manifests; full remote shard bytes not independently verified here",
+      "dataset_license_public_card": "odc-by",
+      "underlying_document_rights": "per-document admission required",
+      "quality_policy": "FineMath-4plus 75%, InfiWebMath-4plus 25%; reject unverified source license admission.",
+      "source_revision_content_hash_verified": "unknown",
+      "admission_status": "BLOCKED_UNTIL_LOCAL_RECEIPT",
+      "max_lineage_epoch_equivalent": 2.0,
+      "unknown_license_action": "exclude",
+      "url": "https://huggingface.co/datasets/HuggingFaceTB/finemath"
+    },
+    {
+      "id": "code",
+      "repository": "HuggingFaceTB/stack-edu",
+      "revision": "eeec5caac5cc3758a18f1d3ba4416837a9ba814c",
+      "revision_provenance": "user attachment and pinned project manifests; full remote shard bytes not independently verified here",
+      "dataset_license_public_card": "refer to The Stack v2; per-blob/repository license admission required",
+      "underlying_document_rights": "per-document admission required",
+      "quality_policy": "Per-blob source/repository license evidence required; unknown licenses excluded; parse, generated-code and vendored-code filters.",
+      "source_revision_content_hash_verified": "unknown",
+      "admission_status": "BLOCKED_UNTIL_LOCAL_RECEIPT",
+      "max_lineage_epoch_equivalent": 2.0,
+      "unknown_license_action": "exclude",
+      "url": "https://huggingface.co/datasets/HuggingFaceTB/stack-edu"
+    },
+    {
+      "id": "multilingual",
+      "repository": "epfml/FineWeb2-HQ",
+      "revision": "c0c06e94fd3a44ae9e802b2b0fc533817601eb5e",
+      "revision_provenance": "user attachment and pinned project manifests; full remote shard bytes not independently verified here",
+      "dataset_license_public_card": "odc-by",
+      "underlying_document_rights": "per-document admission required",
+      "quality_policy": "Not admitted to the English-mainline tranche; independent multilingual branch only.",
+      "source_revision_content_hash_verified": "unknown",
+      "admission_status": "BLOCKED_UNTIL_LOCAL_RECEIPT",
+      "max_lineage_epoch_equivalent": 2.0,
+      "unknown_license_action": "exclude",
+      "url": "https://huggingface.co/datasets/epfml/FineWeb2-HQ"
+    }
+  ],
+  "data_rules": {
+    "split_before_packing": true,
+    "family_split": [
+      "train",
+      "development",
+      "confirmation",
+      "sealed"
+    ],
+    "split_manifest_sha256": "unknown",
+    "benchmark_screen_scope": "all legacy seven splits + proxy and sealed families; independent evaluator holds sealed content",
+    "dedup_order": [
+      "exact",
+      "canonical_family",
+      "cross_source_near_duplicate",
+      "benchmark_contamination"
+    ],
+    "repeat_counting": "per lineage and source/document exposure, including warm-start ancestor exposure; never reset after a new manifest",
+    "old_fineweb_replay_percent": 0,
+    "old_fineweb_total_epoch_cap_if_reintroduced": 2.2,
+    "source_exhaustion_action": "STOP; never renormalize",
+    "synthetic_percent": 0
+  },
+  "training": {
+    "runner": "pretrain500m/posttrain/cpt-confirmation-v1/train_cpt.py",
+    "sequence_length": 2048,
+    "global_prediction_tokens_per_step": 2097152,
+    "gpus_per_run": 4,
+    "microbatch_per_gpu": 4,
+    "gradient_accumulation": 64,
+    "precision": "BF16 autocast; FP32 parameters/optimizer as in frozen runner",
+    "optimizer": "fused AdamW",
+    "betas": [
+      0.9,
+      0.95
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.1,
+    "peak_lr_initial_hypothesis": 6e-05,
+    "peak_lr_grid": [
+      3e-05,
+      6e-05,
+      0.0001
+    ],
+    "warmup_tokens": 67108864,
+    "schedule": "frozen global-horizon warmup-stable-cosine; final floor(steps/10) steps decay",
+    "gradient_clip_norm": 1.0,
+    "checkpoint_mode": "full",
+    "save_every_steps": 128,
+    "validate_every_steps": 256,
+    "validation_tokens": "unknown: obtain divisible budget from the new admitted five-domain masked manifest",
+    "max_steps_per_launch": 2048,
+    "continuation": "--resume with unchanged target_tokens, source snapshot, world size, runtime and fingerprint fields",
+    "seed_grid": [
+      20260916,
+      20260917
+    ],
+    "audit_seed": 20260918,
+    "default_curriculum": "static; 70/20/10 quality curriculum is a separate gated ablation"
+  },
+  "budgets": {
+    "pilot_prediction_tokens": 536870912,
+    "confirmation_prediction_tokens": 2147483648,
+    "intermediate_long_milestone_tokens": 8589934592,
+    "long_global_target_prediction_tokens": 20000538624,
+    "long_global_target_steps": 9537,
+    "long_milestone_semantics": "8.59B is an in-progress stable-phase checkpoint in the 20B horizon, NOT a separately completed decay run",
+    "long_confirmation_runs": 2,
+    "extra_seed_runs_conditional": 1,
+    "future_50B_100B_300B": "NOT_AUTHORIZED_BY_THIS_PLAN"
+  },
+  "mfu": {
+    "definition": "historical project FLOP convention, includes attention; not GPU utilization",
+    "estimated_model_flops_per_processed_token_at_2k": 3989975040,
+    "dense_bf16_fp32_accumulator_tflops_per_gpu": 209.5,
+    "denominator_source": "pinned repository run.sbatch; independent NVIDIA primary-document verification unknown in this audit",
+    "strict_lower_bound": 0.5,
+    "rolling_window_steps": 10,
+    "grace_steps_per_launch": 5,
+    "extra_audit": "audit every observed rolling window and launch exclusions; no failed-window deletion; cross-launch audit required",
+    "generation_or_end_to_end_RLVR_mfu_pass": "unknown"
+  },
+  "selection": {
+    "legacy_seven_allowed_for_tuning": false,
+    "new_proxy_sha256": "unknown",
+    "new_confirmation_sha256": "unknown",
+    "sealed_suite_sha256": "unknown",
+    "minimum_confirmation_seeds": 2,
+    "three_seed_stability_claim_requires_audit_seed": true,
+    "noninferiority_margin_pp": 1.0,
+    "proxy_practical_gain_min_pp": 0.5,
+    "statistical_method": "paired family bootstrap, task-equal aggregate, 10000 resamples; simultaneous noninferiority bounds; uncertainty across training seeds reported separately",
+    "new_seal_access": "single frozen candidate family, one unblinding; no automatic tuning on failure",
+    "legacy_final_access": "one additional locked audit run, explicitly still an exposed historical benchmark",
+    "final_checkpoint_selection": "fixed final step, not best legacy-seven checkpoint"
+  },
+  "blockers": [
+    "actual checkpoint hash and shapes",
+    "new source/document licenses and lineage exposure receipts",
+    "new packed train/five-domain masked validation admission",
+    "new proxy/confirmation/sealed manifests and custody",
+    "historical lm-eval/runtime exact hashes",
+    "4-GPU fixed-horizon segmented-resume qualification",
+    "full-state disk measurement and safe retention",
+    "full trajectory MFU qualification"
+  ],
+  "expected_legacy_seven_gain_pp": "unknown",
+  "probability_of_exceeding_50": "unknown",
+  "probability_of_beating_modern_comparison_set": "unknown"
+}

@@ -1,0 +1,77 @@
+{
+  "arms": [
+    {
+      "arm_id": "n0-lr6e5",
+      "peak_learning_rate": "0.00006",
+      "recipe": "N0_new_pool_broad"
+    },
+    {
+      "arm_id": "n1-lr6e5",
+      "peak_learning_rate": "0.00006",
+      "recipe": "N1_new_pool_knowledge"
+    },
+    {
+      "arm_id": "n2-lr6e5",
+      "peak_learning_rate": "0.00006",
+      "recipe": "N2_new_pool_reasoning_code"
+    },
+    {
+      "arm_id": "n3-lr6e5",
+      "peak_learning_rate": "0.00006",
+      "recipe": "N3_new_pool_balanced"
+    },
+    {
+      "arm_id": "n4-lr6e5",
+      "peak_learning_rate": "0.00006",
+      "recipe": "N4_new_pool_multilingual"
+    },
+    {
+      "arm_id": "n3-lr3e5",
+      "peak_learning_rate": "0.00003",
+      "recipe": "N3_new_pool_balanced"
+    },
+    {
+      "arm_id": "n3-lr1e4",
+      "peak_learning_rate": "0.0001",
+      "recipe": "N3_new_pool_balanced"
+    }
+  ],
+  "base_checkpoint": {
+    "path": "/ssd/scxi253/pretrain500m-20260912-v1/formal/run-v5/resume.pt",
+    "sha256": "13aa21721e15c48cdfdafe30d8fdd41d9c95c90be766327661d96af1e90dd6cf",
+    "step": 7629
+  },
+  "data_scope": "latest family-split, quality-filtered, decontaminated DCLM/PDF/math/code/multilingual pool; no Base-lineage FineWeb replay",
+  "excluded_source": {
+    "base_lineage_fineweb": "excluded to isolate new-pool signal",
+    "cosmopedia": "response-lineage admission did not close"
+  },
+  "mfu_gate": {
+    "dense_bf16_tflops_per_rtx5090": 209.5,
+    "grace_steps": 5,
+    "minimum_strictly_greater_than": 0.7,
+    "rolling_window_steps": 10
+  },
+  "schema": "p529m-new-pool-mixture-pilots-v1",
+  "seed": 20260916,
+  "selection": {
+    "automatic_market_superiority_claim": false,
+    "automatic_promotion": false,
+    "development_signal": "frozen five-domain equal-domain masked next-token loss",
+    "next_gate": "same seven-task capability screen, then two-seed confirmation for one selected successor"
+  },
+  "status": "FROZEN_EXPLORATORY_NEW_POOL",
+  "steps_per_run": 256,
+  "target_prediction_tokens_per_run": 536870912,
+  "training": {
+    "architecture": "deep",
+    "checkpoint_mode": "model-only-final",
+    "deterministic": true,
+    "global_prediction_tokens_per_step": 2097152,
+    "gradient_accumulation": 64,
+    "microbatch_per_gpu": 4,
+    "schedule": "warmup-stable-cosine-decay",
+    "warmup_prediction_tokens": 67108864
+  },
+  "world_size_per_run": 4
+}

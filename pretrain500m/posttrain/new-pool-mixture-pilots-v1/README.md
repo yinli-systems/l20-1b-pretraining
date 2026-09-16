@@ -1,0 +1,7 @@
+# New-pool mixture pilots v1
+
+This bundle freezes seven exploratory continuations from the immutable 528,748,800-parameter Base checkpoint. Five recipes vary broad English, PDF/knowledge, math, code, and multilingual proportions; the balanced recipe also runs a three-point learning-rate grid. Every arm uses four RTX 5090 GPUs, seed 20260916, and exactly 536,870,912 prediction tokens.
+
+The data are the latest DCLM-topup pipeline output: 1,115,090,944 unique packed prediction tokens across DCLM, English educational PDFs, FineMath/InfiWebMath, five permissively licensed code languages, and six FineWeb2-HQ languages. The builder verifies the full upstream report chain, pipeline receipt, source revisions, rights snapshot, tokenizer, packed-array hashes and shapes, family isolation, benchmark exclusions, Base identity, exact quotas, and per-source two-epoch caps. Cosmopedia remains excluded because response-lineage admission did not close. Historical Base-lineage FineWeb is excluded to isolate the new-pool signal.
+
+Each job enforces the previously qualified compiled DDP geometry and a rolling ten-step MFU median strictly above 0.70 after a five-step grace period. A job that fails this bound stops without a promotable checkpoint. The frozen five-domain masked loss is only the first screen; one successor still requires the same independent seven-task capability evaluation and two-seed confirmation before any promotion or superiority claim.

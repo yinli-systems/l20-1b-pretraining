@@ -1,0 +1,699 @@
+{
+  "arms": [
+    {
+      "arm_id": "n0-lr6e5",
+      "peak_learning_rate": "0.00006",
+      "recipe": "N0_new_pool_broad"
+    },
+    {
+      "arm_id": "n1-lr6e5",
+      "peak_learning_rate": "0.00006",
+      "recipe": "N1_new_pool_knowledge"
+    },
+    {
+      "arm_id": "n2-lr6e5",
+      "peak_learning_rate": "0.00006",
+      "recipe": "N2_new_pool_reasoning_code"
+    },
+    {
+      "arm_id": "n3-lr6e5",
+      "peak_learning_rate": "0.00006",
+      "recipe": "N3_new_pool_balanced"
+    },
+    {
+      "arm_id": "n4-lr6e5",
+      "peak_learning_rate": "0.00006",
+      "recipe": "N4_new_pool_multilingual"
+    },
+    {
+      "arm_id": "n3-lr3e5",
+      "peak_learning_rate": "0.00003",
+      "recipe": "N3_new_pool_balanced"
+    },
+    {
+      "arm_id": "n3-lr1e4",
+      "peak_learning_rate": "0.0001",
+      "recipe": "N3_new_pool_balanced"
+    }
+  ],
+  "base_checkpoint_sha256": "13aa21721e15c48cdfdafe30d8fdd41d9c95c90be766327661d96af1e90dd6cf",
+  "checked_utc": "2026-09-16T10:06:08.671327+00:00",
+  "claim_boundary": "hash-bound exploratory inputs admitted; training, capability gain, and superiority remain unverified",
+  "protocol_sha256": "495eb7f6d25ccad8fe9f091b9c3033632e464d51f6e59fc056dd6926a47bb819",
+  "recipes": {
+    "N0_new_pool_broad": {
+      "admission_sha256": "3aadd49757f1c5a035093f8b10520aea3a766652a6e8d00554fc44251df63483",
+      "basis_points": {
+        "code_cpp": 100,
+        "code_java": 100,
+        "code_javascript": 200,
+        "code_python": 500,
+        "code_typescript": 100,
+        "dclm": 2500,
+        "finemath4": 1875,
+        "infiwebmath4": 625,
+        "multilingual_arb_Arab": 50,
+        "multilingual_cmn_Hani": 250,
+        "multilingual_deu_Latn": 50,
+        "multilingual_fra_Latn": 50,
+        "multilingual_jpn_Jpan": 50,
+        "multilingual_spa_Latn": 50,
+        "pdf_en": 3500
+      },
+      "capacity": {
+        "code_cpp": {
+          "headroom_blocks": 16669,
+          "maximum_blocks_at_two_epochs": 19290,
+          "requested_blocks": 2621,
+          "unique_blocks": 9645
+        },
+        "code_java": {
+          "headroom_blocks": 17465,
+          "maximum_blocks_at_two_epochs": 20086,
+          "requested_blocks": 2621,
+          "unique_blocks": 10043
+        },
+        "code_javascript": {
+          "headroom_blocks": 35675,
+          "maximum_blocks_at_two_epochs": 40918,
+          "requested_blocks": 5243,
+          "unique_blocks": 20459
+        },
+        "code_python": {
+          "headroom_blocks": 89999,
+          "maximum_blocks_at_two_epochs": 103106,
+          "requested_blocks": 13107,
+          "unique_blocks": 51553
+        },
+        "code_typescript": {
+          "headroom_blocks": 17605,
+          "maximum_blocks_at_two_epochs": 20226,
+          "requested_blocks": 2621,
+          "unique_blocks": 10113
+        },
+        "dclm": {
+          "headroom_blocks": 96724,
+          "maximum_blocks_at_two_epochs": 162260,
+          "requested_blocks": 65536,
+          "unique_blocks": 81130
+        },
+        "finemath4": {
+          "headroom_blocks": 156498,
+          "maximum_blocks_at_two_epochs": 205650,
+          "requested_blocks": 49152,
+          "unique_blocks": 102825
+        },
+        "infiwebmath4": {
+          "headroom_blocks": 50864,
+          "maximum_blocks_at_two_epochs": 67248,
+          "requested_blocks": 16384,
+          "unique_blocks": 33624
+        },
+        "multilingual_arb_Arab": {
+          "headroom_blocks": 13221,
+          "maximum_blocks_at_two_epochs": 14532,
+          "requested_blocks": 1311,
+          "unique_blocks": 7266
+        },
+        "multilingual_cmn_Hani": {
+          "headroom_blocks": 62218,
+          "maximum_blocks_at_two_epochs": 68772,
+          "requested_blocks": 6554,
+          "unique_blocks": 34386
+        },
+        "multilingual_deu_Latn": {
+          "headroom_blocks": 12557,
+          "maximum_blocks_at_two_epochs": 13868,
+          "requested_blocks": 1311,
+          "unique_blocks": 6934
+        },
+        "multilingual_fra_Latn": {
+          "headroom_blocks": 11887,
+          "maximum_blocks_at_two_epochs": 13198,
+          "requested_blocks": 1311,
+          "unique_blocks": 6599
+        },
+        "multilingual_jpn_Jpan": {
+          "headroom_blocks": 12009,
+          "maximum_blocks_at_two_epochs": 13320,
+          "requested_blocks": 1311,
+          "unique_blocks": 6660
+        },
+        "multilingual_spa_Latn": {
+          "headroom_blocks": 13575,
+          "maximum_blocks_at_two_epochs": 14886,
+          "requested_blocks": 1311,
+          "unique_blocks": 7443
+        },
+        "pdf_en": {
+          "headroom_blocks": 219846,
+          "maximum_blocks_at_two_epochs": 311596,
+          "requested_blocks": 91750,
+          "unique_blocks": 155798
+        }
+      },
+      "manifest_sha256": "96e09e8d5e2681fb96e579041cf5a5306043ce850872060a30c147ce342f1c45",
+      "source_block_quotas": {
+        "code_cpp": 2621,
+        "code_java": 2621,
+        "code_javascript": 5243,
+        "code_python": 13107,
+        "code_typescript": 2621,
+        "dclm": 65536,
+        "finemath4": 49152,
+        "infiwebmath4": 16384,
+        "multilingual_arb_Arab": 1311,
+        "multilingual_cmn_Hani": 6554,
+        "multilingual_deu_Latn": 1311,
+        "multilingual_fra_Latn": 1311,
+        "multilingual_jpn_Jpan": 1311,
+        "multilingual_spa_Latn": 1311,
+        "pdf_en": 91750
+      }
+    },
+    "N1_new_pool_knowledge": {
+      "admission_sha256": "f4874ef2adadce7035fa625a3f883fab4397923fd62651a46ce78c136c3a7fd4",
+      "basis_points": {
+        "code_cpp": 100,
+        "code_java": 100,
+        "code_javascript": 200,
+        "code_python": 500,
+        "code_typescript": 100,
+        "dclm": 3000,
+        "finemath4": 1125,
+        "infiwebmath4": 375,
+        "multilingual_arb_Arab": 50,
+        "multilingual_cmn_Hani": 250,
+        "multilingual_deu_Latn": 50,
+        "multilingual_fra_Latn": 50,
+        "multilingual_jpn_Jpan": 50,
+        "multilingual_spa_Latn": 50,
+        "pdf_en": 4000
+      },
+      "capacity": {
+        "code_cpp": {
+          "headroom_blocks": 16669,
+          "maximum_blocks_at_two_epochs": 19290,
+          "requested_blocks": 2621,
+          "unique_blocks": 9645
+        },
+        "code_java": {
+          "headroom_blocks": 17465,
+          "maximum_blocks_at_two_epochs": 20086,
+          "requested_blocks": 2621,
+          "unique_blocks": 10043
+        },
+        "code_javascript": {
+          "headroom_blocks": 35675,
+          "maximum_blocks_at_two_epochs": 40918,
+          "requested_blocks": 5243,
+          "unique_blocks": 20459
+        },
+        "code_python": {
+          "headroom_blocks": 89999,
+          "maximum_blocks_at_two_epochs": 103106,
+          "requested_blocks": 13107,
+          "unique_blocks": 51553
+        },
+        "code_typescript": {
+          "headroom_blocks": 17605,
+          "maximum_blocks_at_two_epochs": 20226,
+          "requested_blocks": 2621,
+          "unique_blocks": 10113
+        },
+        "dclm": {
+          "headroom_blocks": 83617,
+          "maximum_blocks_at_two_epochs": 162260,
+          "requested_blocks": 78643,
+          "unique_blocks": 81130
+        },
+        "finemath4": {
+          "headroom_blocks": 176159,
+          "maximum_blocks_at_two_epochs": 205650,
+          "requested_blocks": 29491,
+          "unique_blocks": 102825
+        },
+        "infiwebmath4": {
+          "headroom_blocks": 57418,
+          "maximum_blocks_at_two_epochs": 67248,
+          "requested_blocks": 9830,
+          "unique_blocks": 33624
+        },
+        "multilingual_arb_Arab": {
+          "headroom_blocks": 13221,
+          "maximum_blocks_at_two_epochs": 14532,
+          "requested_blocks": 1311,
+          "unique_blocks": 7266
+        },
+        "multilingual_cmn_Hani": {
+          "headroom_blocks": 62218,
+          "maximum_blocks_at_two_epochs": 68772,
+          "requested_blocks": 6554,
+          "unique_blocks": 34386
+        },
+        "multilingual_deu_Latn": {
+          "headroom_blocks": 12557,
+          "maximum_blocks_at_two_epochs": 13868,
+          "requested_blocks": 1311,
+          "unique_blocks": 6934
+        },
+        "multilingual_fra_Latn": {
+          "headroom_blocks": 11887,
+          "maximum_blocks_at_two_epochs": 13198,
+          "requested_blocks": 1311,
+          "unique_blocks": 6599
+        },
+        "multilingual_jpn_Jpan": {
+          "headroom_blocks": 12009,
+          "maximum_blocks_at_two_epochs": 13320,
+          "requested_blocks": 1311,
+          "unique_blocks": 6660
+        },
+        "multilingual_spa_Latn": {
+          "headroom_blocks": 13575,
+          "maximum_blocks_at_two_epochs": 14886,
+          "requested_blocks": 1311,
+          "unique_blocks": 7443
+        },
+        "pdf_en": {
+          "headroom_blocks": 206738,
+          "maximum_blocks_at_two_epochs": 311596,
+          "requested_blocks": 104858,
+          "unique_blocks": 155798
+        }
+      },
+      "manifest_sha256": "f1cef293be28f9a102ad7d15789f91d242c9c91f5ce7999187d5015ee544f6da",
+      "source_block_quotas": {
+        "code_cpp": 2621,
+        "code_java": 2621,
+        "code_javascript": 5243,
+        "code_python": 13107,
+        "code_typescript": 2621,
+        "dclm": 78643,
+        "finemath4": 29491,
+        "infiwebmath4": 9830,
+        "multilingual_arb_Arab": 1311,
+        "multilingual_cmn_Hani": 6554,
+        "multilingual_deu_Latn": 1311,
+        "multilingual_fra_Latn": 1311,
+        "multilingual_jpn_Jpan": 1311,
+        "multilingual_spa_Latn": 1311,
+        "pdf_en": 104858
+      }
+    },
+    "N2_new_pool_reasoning_code": {
+      "admission_sha256": "d1a0e0fa1c031423afa5ec6c55fc657c18063f28b3fc305522213e2d83c0cb33",
+      "basis_points": {
+        "code_cpp": 150,
+        "code_java": 150,
+        "code_javascript": 300,
+        "code_python": 750,
+        "code_typescript": 150,
+        "dclm": 2000,
+        "finemath4": 2625,
+        "infiwebmath4": 875,
+        "multilingual_arb_Arab": 50,
+        "multilingual_cmn_Hani": 250,
+        "multilingual_deu_Latn": 50,
+        "multilingual_fra_Latn": 50,
+        "multilingual_jpn_Jpan": 50,
+        "multilingual_spa_Latn": 50,
+        "pdf_en": 2500
+      },
+      "capacity": {
+        "code_cpp": {
+          "headroom_blocks": 15358,
+          "maximum_blocks_at_two_epochs": 19290,
+          "requested_blocks": 3932,
+          "unique_blocks": 9645
+        },
+        "code_java": {
+          "headroom_blocks": 16154,
+          "maximum_blocks_at_two_epochs": 20086,
+          "requested_blocks": 3932,
+          "unique_blocks": 10043
+        },
+        "code_javascript": {
+          "headroom_blocks": 33054,
+          "maximum_blocks_at_two_epochs": 40918,
+          "requested_blocks": 7864,
+          "unique_blocks": 20459
+        },
+        "code_python": {
+          "headroom_blocks": 83445,
+          "maximum_blocks_at_two_epochs": 103106,
+          "requested_blocks": 19661,
+          "unique_blocks": 51553
+        },
+        "code_typescript": {
+          "headroom_blocks": 16294,
+          "maximum_blocks_at_two_epochs": 20226,
+          "requested_blocks": 3932,
+          "unique_blocks": 10113
+        },
+        "dclm": {
+          "headroom_blocks": 109831,
+          "maximum_blocks_at_two_epochs": 162260,
+          "requested_blocks": 52429,
+          "unique_blocks": 81130
+        },
+        "finemath4": {
+          "headroom_blocks": 136837,
+          "maximum_blocks_at_two_epochs": 205650,
+          "requested_blocks": 68813,
+          "unique_blocks": 102825
+        },
+        "infiwebmath4": {
+          "headroom_blocks": 44311,
+          "maximum_blocks_at_two_epochs": 67248,
+          "requested_blocks": 22937,
+          "unique_blocks": 33624
+        },
+        "multilingual_arb_Arab": {
+          "headroom_blocks": 13221,
+          "maximum_blocks_at_two_epochs": 14532,
+          "requested_blocks": 1311,
+          "unique_blocks": 7266
+        },
+        "multilingual_cmn_Hani": {
+          "headroom_blocks": 62219,
+          "maximum_blocks_at_two_epochs": 68772,
+          "requested_blocks": 6553,
+          "unique_blocks": 34386
+        },
+        "multilingual_deu_Latn": {
+          "headroom_blocks": 12557,
+          "maximum_blocks_at_two_epochs": 13868,
+          "requested_blocks": 1311,
+          "unique_blocks": 6934
+        },
+        "multilingual_fra_Latn": {
+          "headroom_blocks": 11887,
+          "maximum_blocks_at_two_epochs": 13198,
+          "requested_blocks": 1311,
+          "unique_blocks": 6599
+        },
+        "multilingual_jpn_Jpan": {
+          "headroom_blocks": 12009,
+          "maximum_blocks_at_two_epochs": 13320,
+          "requested_blocks": 1311,
+          "unique_blocks": 6660
+        },
+        "multilingual_spa_Latn": {
+          "headroom_blocks": 13575,
+          "maximum_blocks_at_two_epochs": 14886,
+          "requested_blocks": 1311,
+          "unique_blocks": 7443
+        },
+        "pdf_en": {
+          "headroom_blocks": 246060,
+          "maximum_blocks_at_two_epochs": 311596,
+          "requested_blocks": 65536,
+          "unique_blocks": 155798
+        }
+      },
+      "manifest_sha256": "5df8898409bf5cf8df142e8dee3c89512c231802a625f9005b53489ab7cf0ad1",
+      "source_block_quotas": {
+        "code_cpp": 3932,
+        "code_java": 3932,
+        "code_javascript": 7864,
+        "code_python": 19661,
+        "code_typescript": 3932,
+        "dclm": 52429,
+        "finemath4": 68813,
+        "infiwebmath4": 22937,
+        "multilingual_arb_Arab": 1311,
+        "multilingual_cmn_Hani": 6553,
+        "multilingual_deu_Latn": 1311,
+        "multilingual_fra_Latn": 1311,
+        "multilingual_jpn_Jpan": 1311,
+        "multilingual_spa_Latn": 1311,
+        "pdf_en": 65536
+      }
+    },
+    "N3_new_pool_balanced": {
+      "admission_sha256": "305bfc0868cdf405266c37111df2a2329b35ce4c14c7a49040fa90dcda2609a9",
+      "basis_points": {
+        "code_cpp": 150,
+        "code_java": 150,
+        "code_javascript": 300,
+        "code_python": 750,
+        "code_typescript": 150,
+        "dclm": 2500,
+        "finemath4": 1875,
+        "infiwebmath4": 625,
+        "multilingual_arb_Arab": 50,
+        "multilingual_cmn_Hani": 250,
+        "multilingual_deu_Latn": 50,
+        "multilingual_fra_Latn": 50,
+        "multilingual_jpn_Jpan": 50,
+        "multilingual_spa_Latn": 50,
+        "pdf_en": 3000
+      },
+      "capacity": {
+        "code_cpp": {
+          "headroom_blocks": 15358,
+          "maximum_blocks_at_two_epochs": 19290,
+          "requested_blocks": 3932,
+          "unique_blocks": 9645
+        },
+        "code_java": {
+          "headroom_blocks": 16154,
+          "maximum_blocks_at_two_epochs": 20086,
+          "requested_blocks": 3932,
+          "unique_blocks": 10043
+        },
+        "code_javascript": {
+          "headroom_blocks": 33054,
+          "maximum_blocks_at_two_epochs": 40918,
+          "requested_blocks": 7864,
+          "unique_blocks": 20459
+        },
+        "code_python": {
+          "headroom_blocks": 83445,
+          "maximum_blocks_at_two_epochs": 103106,
+          "requested_blocks": 19661,
+          "unique_blocks": 51553
+        },
+        "code_typescript": {
+          "headroom_blocks": 16294,
+          "maximum_blocks_at_two_epochs": 20226,
+          "requested_blocks": 3932,
+          "unique_blocks": 10113
+        },
+        "dclm": {
+          "headroom_blocks": 96724,
+          "maximum_blocks_at_two_epochs": 162260,
+          "requested_blocks": 65536,
+          "unique_blocks": 81130
+        },
+        "finemath4": {
+          "headroom_blocks": 156498,
+          "maximum_blocks_at_two_epochs": 205650,
+          "requested_blocks": 49152,
+          "unique_blocks": 102825
+        },
+        "infiwebmath4": {
+          "headroom_blocks": 50864,
+          "maximum_blocks_at_two_epochs": 67248,
+          "requested_blocks": 16384,
+          "unique_blocks": 33624
+        },
+        "multilingual_arb_Arab": {
+          "headroom_blocks": 13221,
+          "maximum_blocks_at_two_epochs": 14532,
+          "requested_blocks": 1311,
+          "unique_blocks": 7266
+        },
+        "multilingual_cmn_Hani": {
+          "headroom_blocks": 62219,
+          "maximum_blocks_at_two_epochs": 68772,
+          "requested_blocks": 6553,
+          "unique_blocks": 34386
+        },
+        "multilingual_deu_Latn": {
+          "headroom_blocks": 12557,
+          "maximum_blocks_at_two_epochs": 13868,
+          "requested_blocks": 1311,
+          "unique_blocks": 6934
+        },
+        "multilingual_fra_Latn": {
+          "headroom_blocks": 11887,
+          "maximum_blocks_at_two_epochs": 13198,
+          "requested_blocks": 1311,
+          "unique_blocks": 6599
+        },
+        "multilingual_jpn_Jpan": {
+          "headroom_blocks": 12009,
+          "maximum_blocks_at_two_epochs": 13320,
+          "requested_blocks": 1311,
+          "unique_blocks": 6660
+        },
+        "multilingual_spa_Latn": {
+          "headroom_blocks": 13575,
+          "maximum_blocks_at_two_epochs": 14886,
+          "requested_blocks": 1311,
+          "unique_blocks": 7443
+        },
+        "pdf_en": {
+          "headroom_blocks": 232953,
+          "maximum_blocks_at_two_epochs": 311596,
+          "requested_blocks": 78643,
+          "unique_blocks": 155798
+        }
+      },
+      "manifest_sha256": "c91866abc23945067770997ffb178e23aec1efcef52d5a91059b325dff432d67",
+      "source_block_quotas": {
+        "code_cpp": 3932,
+        "code_java": 3932,
+        "code_javascript": 7864,
+        "code_python": 19661,
+        "code_typescript": 3932,
+        "dclm": 65536,
+        "finemath4": 49152,
+        "infiwebmath4": 16384,
+        "multilingual_arb_Arab": 1311,
+        "multilingual_cmn_Hani": 6553,
+        "multilingual_deu_Latn": 1311,
+        "multilingual_fra_Latn": 1311,
+        "multilingual_jpn_Jpan": 1311,
+        "multilingual_spa_Latn": 1311,
+        "pdf_en": 78643
+      }
+    },
+    "N4_new_pool_multilingual": {
+      "admission_sha256": "654596f4d43c382c73a70e616058dc0a5b16a0859f251392134412def5e8fe8d",
+      "basis_points": {
+        "code_cpp": 100,
+        "code_java": 100,
+        "code_javascript": 200,
+        "code_python": 500,
+        "code_typescript": 100,
+        "dclm": 2000,
+        "finemath4": 1875,
+        "infiwebmath4": 625,
+        "multilingual_arb_Arab": 200,
+        "multilingual_cmn_Hani": 1000,
+        "multilingual_deu_Latn": 200,
+        "multilingual_fra_Latn": 200,
+        "multilingual_jpn_Jpan": 200,
+        "multilingual_spa_Latn": 200,
+        "pdf_en": 2500
+      },
+      "capacity": {
+        "code_cpp": {
+          "headroom_blocks": 16668,
+          "maximum_blocks_at_two_epochs": 19290,
+          "requested_blocks": 2622,
+          "unique_blocks": 9645
+        },
+        "code_java": {
+          "headroom_blocks": 17465,
+          "maximum_blocks_at_two_epochs": 20086,
+          "requested_blocks": 2621,
+          "unique_blocks": 10043
+        },
+        "code_javascript": {
+          "headroom_blocks": 35675,
+          "maximum_blocks_at_two_epochs": 40918,
+          "requested_blocks": 5243,
+          "unique_blocks": 20459
+        },
+        "code_python": {
+          "headroom_blocks": 89999,
+          "maximum_blocks_at_two_epochs": 103106,
+          "requested_blocks": 13107,
+          "unique_blocks": 51553
+        },
+        "code_typescript": {
+          "headroom_blocks": 17605,
+          "maximum_blocks_at_two_epochs": 20226,
+          "requested_blocks": 2621,
+          "unique_blocks": 10113
+        },
+        "dclm": {
+          "headroom_blocks": 109831,
+          "maximum_blocks_at_two_epochs": 162260,
+          "requested_blocks": 52429,
+          "unique_blocks": 81130
+        },
+        "finemath4": {
+          "headroom_blocks": 156498,
+          "maximum_blocks_at_two_epochs": 205650,
+          "requested_blocks": 49152,
+          "unique_blocks": 102825
+        },
+        "infiwebmath4": {
+          "headroom_blocks": 50864,
+          "maximum_blocks_at_two_epochs": 67248,
+          "requested_blocks": 16384,
+          "unique_blocks": 33624
+        },
+        "multilingual_arb_Arab": {
+          "headroom_blocks": 9289,
+          "maximum_blocks_at_two_epochs": 14532,
+          "requested_blocks": 5243,
+          "unique_blocks": 7266
+        },
+        "multilingual_cmn_Hani": {
+          "headroom_blocks": 42558,
+          "maximum_blocks_at_two_epochs": 68772,
+          "requested_blocks": 26214,
+          "unique_blocks": 34386
+        },
+        "multilingual_deu_Latn": {
+          "headroom_blocks": 8625,
+          "maximum_blocks_at_two_epochs": 13868,
+          "requested_blocks": 5243,
+          "unique_blocks": 6934
+        },
+        "multilingual_fra_Latn": {
+          "headroom_blocks": 7955,
+          "maximum_blocks_at_two_epochs": 13198,
+          "requested_blocks": 5243,
+          "unique_blocks": 6599
+        },
+        "multilingual_jpn_Jpan": {
+          "headroom_blocks": 8077,
+          "maximum_blocks_at_two_epochs": 13320,
+          "requested_blocks": 5243,
+          "unique_blocks": 6660
+        },
+        "multilingual_spa_Latn": {
+          "headroom_blocks": 9643,
+          "maximum_blocks_at_two_epochs": 14886,
+          "requested_blocks": 5243,
+          "unique_blocks": 7443
+        },
+        "pdf_en": {
+          "headroom_blocks": 246060,
+          "maximum_blocks_at_two_epochs": 311596,
+          "requested_blocks": 65536,
+          "unique_blocks": 155798
+        }
+      },
+      "manifest_sha256": "6217b69ce95db94c282b02faba34af05d53eafbd4ed6f83812690c4c3f2c687c",
+      "source_block_quotas": {
+        "code_cpp": 2622,
+        "code_java": 2621,
+        "code_javascript": 5243,
+        "code_python": 13107,
+        "code_typescript": 2621,
+        "dclm": 52429,
+        "finemath4": 49152,
+        "infiwebmath4": 16384,
+        "multilingual_arb_Arab": 5243,
+        "multilingual_cmn_Hani": 26214,
+        "multilingual_deu_Latn": 5243,
+        "multilingual_fra_Latn": 5243,
+        "multilingual_jpn_Jpan": 5243,
+        "multilingual_spa_Latn": 5243,
+        "pdf_en": 65536
+      }
+    }
+  },
+  "schema": "p529m-new-pool-mixture-pilot-inputs-v1",
+  "status": "PASS_NEW_POOL_INPUTS_ADMITTED_FOR_EXPLORATORY_PILOTS",
+  "target_prediction_tokens_per_run": 536870912,
+  "training_launched": false
+}

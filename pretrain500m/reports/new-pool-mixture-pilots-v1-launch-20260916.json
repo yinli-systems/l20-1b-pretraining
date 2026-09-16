@@ -1,0 +1,146 @@
+{
+  "bindings": {
+    "input_build_receipt_sha256": "44f38161746d0ddaff6efa4987bf83bb307d1cc513c3188a46497a25b0ac5c68",
+    "metrics_snapshot_sha256": "7fcbc0b3686588d6c22bca6a33cdf1254892ae0fa57bf571fdf9b0f31a3d90f4",
+    "run_manifest_sha256": "7f68a996f3b4ab37221e88adf009d878059fdee5a6f7ae99b597df227670bb2e",
+    "snapshot_manifest_sha256": "b6e207404f6cdcd7c9fe5f413ab17cb4402bd760f37f17208a4d7d255fe51f0d",
+    "submission_receipt_sha256": "2a0a306f8eafc293b04da0f2e430a9f02473c975f00eca4b3a606e5e7a9ae3ff"
+  },
+  "capacity": {
+    "claim_boundary": "available card counts do not guarantee a contiguous four-GPU allocation",
+    "hp_5090_access": "DENIED_USER_GROUP_NOT_PERMITTED",
+    "submission_snapshot_available_gpu_5090": 22,
+    "submission_snapshot_available_hp_5090": 30
+  },
+  "checked_utc": "2026-09-16T10:20:24.350714+00:00",
+  "claim_boundary": "One arm has a live four-RTX5090 allocation and all observed complete MFU windows pass. Six arms are scheduler-pending. No pilot has completed and no capability or superiority result exists.",
+  "initial_five_domain_validation": {
+    "equal_domain_loss": 3.322205684833928,
+    "loss_by_domain": {
+      "code": 3.524073548682019,
+      "general_web": 3.349002615739793,
+      "knowledge_reading": 2.9480603217203565,
+      "math": 2.9340762729421384,
+      "multilingual": 3.855815665085334
+    },
+    "target_tokens_by_domain": {
+      "code": 1155811,
+      "general_web": 1240415,
+      "knowledge_reading": 4292341,
+      "math": 1280325,
+      "multilingual": 1478433
+    },
+    "token_weighted_loss": 3.211335755539882
+  },
+  "jobs": [
+    {
+      "elapsed": "13:01",
+      "gres": "gres/gpu:4",
+      "job_id": 1594608,
+      "job_name": "p529m-np1-n0-l6e5",
+      "node_or_reason": "wqd10nbj03g1",
+      "scheduler_start_estimate": "2026-09-16T18:06:52",
+      "state": "RUNNING"
+    },
+    {
+      "elapsed": "0:00",
+      "gres": "gres/gpu:4",
+      "job_id": 1594609,
+      "job_name": "p529m-np1-n1-l6e5",
+      "node_or_reason": "(Priority)",
+      "scheduler_start_estimate": "2026-09-16T18:45:57",
+      "state": "PENDING"
+    },
+    {
+      "elapsed": "0:00",
+      "gres": "gres/gpu:4",
+      "job_id": 1594610,
+      "job_name": "p529m-np1-n2-l6e5",
+      "node_or_reason": "(Priority)",
+      "scheduler_start_estimate": "2026-09-16T21:34:44",
+      "state": "PENDING"
+    },
+    {
+      "elapsed": "0:00",
+      "gres": "gres/gpu:4",
+      "job_id": 1594611,
+      "job_name": "p529m-np1-n3-l6e5",
+      "node_or_reason": "(Priority)",
+      "scheduler_start_estimate": "2026-09-16T21:34:44",
+      "state": "PENDING"
+    },
+    {
+      "elapsed": "0:00",
+      "gres": "gres/gpu:4",
+      "job_id": 1594612,
+      "job_name": "p529m-np1-n4-l6e5",
+      "node_or_reason": "(Priority)",
+      "scheduler_start_estimate": "2026-09-16T21:46:00",
+      "state": "PENDING"
+    },
+    {
+      "elapsed": "0:00",
+      "gres": "gres/gpu:4",
+      "job_id": 1594613,
+      "job_name": "p529m-np1-n3-l3e5",
+      "node_or_reason": "(Priority)",
+      "scheduler_start_estimate": "2026-09-16T23:38:49",
+      "state": "PENDING"
+    },
+    {
+      "elapsed": "0:00",
+      "gres": "gres/gpu:4",
+      "job_id": 1594614,
+      "job_name": "p529m-np1-n3-l1e4",
+      "node_or_reason": "(Priority)",
+      "scheduler_start_estimate": "2026-09-17T00:35:00",
+      "state": "PENDING"
+    }
+  ],
+  "live_run": {
+    "all_complete_rolling_windows_pass": true,
+    "all_observed_grad_norms_finite": true,
+    "all_observed_losses_finite": true,
+    "arm_id": "n0-lr6e5",
+    "compile_step_within_grace": true,
+    "complete_rolling_ten_step_windows": 36,
+    "gpu_count": 4,
+    "gpu_model": "NVIDIA GeForce RTX 5090",
+    "initial_compile_step_mfu": 0.17749211484732894,
+    "job_id": 1594608,
+    "latest_grad_norm": 0.07610272616147995,
+    "latest_loss": 2.794041872024536,
+    "latest_prediction_tokens": 104857600,
+    "latest_rolling_ten_step_median_mfu": 0.7713669068910827,
+    "latest_step": 50,
+    "mfu_gate_strictly_greater_than": 0.7,
+    "minimum_rolling_ten_step_median_mfu": 0.7691220327553454,
+    "post_grace_mfu_max": 0.7715542357621598,
+    "post_grace_mfu_min": 0.7586684662483301,
+    "recipe": "N0_new_pool_broad",
+    "target_prediction_tokens": 536870912,
+    "training_complete": false
+  },
+  "next_gate": "complete all pilots, rank frozen five-domain deltas, then run independent capability evaluation before selecting a two-seed successor",
+  "schema": "p529m-new-pool-mixture-pilot-launch-v1",
+  "status": "ONE_RUNNING_SIX_PENDING_N0_MFU_GATE_PASSING",
+  "submission": {
+    "gpus_per_job": 4,
+    "job_ids": [
+      1594608,
+      1594609,
+      1594610,
+      1594611,
+      1594612,
+      1594613,
+      1594614
+    ],
+    "partition": "gpu_5090",
+    "requested_gpus_total": 28,
+    "state_counts": {
+      "PENDING": 6,
+      "RUNNING": 1
+    },
+    "submitted_jobs": 7
+  }
+}

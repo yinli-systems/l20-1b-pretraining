@@ -1,0 +1,238 @@
+{
+  "evidence": {
+    "contamination_report_sha256": "dfa181d03bff973ece7a5543ff06928f4efeb135abb680c4c1d32979926190b3",
+    "dclm_topup_plan_sha256": "60193bad768d705ea79c7c79bcb1dbe5a8e9c20f2773fda6959202671beb5b7b",
+    "development_manifest_sha256": "429c1ab33bdb8a92214ffdd2327462a05275b29fbd60abecc1d98b9fad634af3",
+    "exclusions_report_sha256": "7b45f883fb22abe2f135cf715b4ed508d77fac16b16b10e3871468f1af9ec0ad",
+    "expansion_plan_sha256": "ca16deedb115a04a33b7b49889317866fb806f64014b2161a04b7803e224d0a6",
+    "family_report_sha256": "541cb6418e9e1ee1e75c27abf3835b854f1ef7d5796391f54fecc7a5cac1a72a",
+    "legacy_report_sha256": "4fc6fbc188202f9b23f65e23714b0efb1b544e362238faded0adaa60a3fdd526",
+    "old_source_report_sha256": "a4049239090378386a97da02ead40c5f81006f0e0e3958ad3322da5459be8068",
+    "pack_report_sha256": "5ef7ff6e0bda80bd7be8f94dba837f559d4bbe7db341ebf78549bcfb4f6677f2",
+    "pipeline_receipt_sha256": "d39179b4cab4cbe35ec191edb98efd43991b6009bd386b713c27bfb1af24631b",
+    "protocol_sha256": "495eb7f6d25ccad8fe9f091b9c3033632e464d51f6e59fc056dd6926a47bb819",
+    "quality_report_sha256": "636bc502d84c9ca370488f8898f8f2a4c077d46f9b6b98e843c1b00a68411448",
+    "raw_report_sha256": "d776d956d79f14acd562f73321ec32030520a9397331c70fd256bda7da68cb28",
+    "research_plan_sha256": "58d56059111eb92dea1c0f9213a1e7ebbacabe7dea55c24cf31e366401dcc1a7",
+    "rights_snapshot_sha256": "07ae41dc8a4cf4d1597e79fed64ef035d75d57c961eaa5171a6464a2325eedf7"
+  },
+  "protocol_id": "p529m-new-pool-mixture-pilots-v1",
+  "recipe": "N2_new_pool_reasoning_code",
+  "schema": "p529m-packed-mixture-v3",
+  "sequence_length": 2048,
+  "source_block_quotas": {
+    "code_cpp": 3932,
+    "code_java": 3932,
+    "code_javascript": 7864,
+    "code_python": 19661,
+    "code_typescript": 3932,
+    "dclm": 52429,
+    "finemath4": 68813,
+    "infiwebmath4": 22937,
+    "multilingual_arb_Arab": 1311,
+    "multilingual_cmn_Hani": 6553,
+    "multilingual_deu_Latn": 1311,
+    "multilingual_fra_Latn": 1311,
+    "multilingual_jpn_Jpan": 1311,
+    "multilingual_spa_Latn": 1311,
+    "pdf_en": 65536
+  },
+  "sources": [
+    {
+      "id": "code_cpp",
+      "max_cumulative_epochs": "2.0",
+      "prior_prediction_tokens": 0,
+      "revision": "eeec5caac5cc3758a18f1d3ba4416837a9ba814c",
+      "shards": [
+        {
+          "blocks": 9645,
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-expansion-v1/train-code_cpp.blocks.npy",
+          "sha256": "fd49fd9ab55cd03905aa500a780699799b091e49249cc0ad52dd39fbd5e2dbf3"
+        }
+      ]
+    },
+    {
+      "id": "code_java",
+      "max_cumulative_epochs": "2.0",
+      "prior_prediction_tokens": 0,
+      "revision": "eeec5caac5cc3758a18f1d3ba4416837a9ba814c",
+      "shards": [
+        {
+          "blocks": 10043,
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-expansion-v1/train-code_java.blocks.npy",
+          "sha256": "b6ca4f4174f27f4f91b3ad75cac537251bdbb6f723b2519653a80ee7947eb4c4"
+        }
+      ]
+    },
+    {
+      "id": "code_javascript",
+      "max_cumulative_epochs": "2.0",
+      "prior_prediction_tokens": 0,
+      "revision": "eeec5caac5cc3758a18f1d3ba4416837a9ba814c",
+      "shards": [
+        {
+          "blocks": 20459,
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-expansion-v1/train-code_javascript.blocks.npy",
+          "sha256": "4878205cb267fe11b797cdfe17e99104b76288f344e5479bd0504f9d4f79e2e3"
+        }
+      ]
+    },
+    {
+      "id": "code_python",
+      "max_cumulative_epochs": "2.0",
+      "prior_prediction_tokens": 0,
+      "revision": "eeec5caac5cc3758a18f1d3ba4416837a9ba814c",
+      "shards": [
+        {
+          "blocks": 51553,
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-expansion-v1/train-code_python.blocks.npy",
+          "sha256": "532c6c104ac08dd6833d96b72d92feede0736fd5deb8cdb15f6cbda56c009eba"
+        }
+      ]
+    },
+    {
+      "id": "code_typescript",
+      "max_cumulative_epochs": "2.0",
+      "prior_prediction_tokens": 0,
+      "revision": "eeec5caac5cc3758a18f1d3ba4416837a9ba814c",
+      "shards": [
+        {
+          "blocks": 10113,
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-expansion-v1/train-code_typescript.blocks.npy",
+          "sha256": "00b0afe82757a87bc06d2c2aab09e9f4137caaa06d612070f0a6288bdaabc85a"
+        }
+      ]
+    },
+    {
+      "id": "dclm",
+      "max_cumulative_epochs": "2.0",
+      "prior_prediction_tokens": 0,
+      "revision": "01022d378d944de6deeb1c79d08fecb4d27b2c6f",
+      "shards": [
+        {
+          "blocks": 81130,
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-dclm-topup-v1/train-dclm.blocks.npy",
+          "sha256": "c3f49cbd1f4ee75a0dd526f7f6dd3d60470d5bd9230ab6dfaf81aa41c8592c55"
+        }
+      ]
+    },
+    {
+      "id": "finemath4",
+      "max_cumulative_epochs": "2.0",
+      "prior_prediction_tokens": 0,
+      "revision": "e92b25a616738fe95dc186b64dfb19f9c8525594",
+      "shards": [
+        {
+          "blocks": 102825,
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-expansion-v1/train-finemath4.blocks.npy",
+          "sha256": "a9ef74ce697290b4d068345167f986fe5b621806a6a02bd1b4296381eab803b0"
+        }
+      ]
+    },
+    {
+      "id": "infiwebmath4",
+      "max_cumulative_epochs": "2.0",
+      "prior_prediction_tokens": 0,
+      "revision": "e92b25a616738fe95dc186b64dfb19f9c8525594",
+      "shards": [
+        {
+          "blocks": 33624,
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-expansion-v1/train-infiwebmath4.blocks.npy",
+          "sha256": "ae6d5c0e9672831810d7933773a16b2d4a07f13ee63e9784739cf0edad59b084"
+        }
+      ]
+    },
+    {
+      "id": "multilingual_arb_Arab",
+      "max_cumulative_epochs": "2.0",
+      "prior_prediction_tokens": 0,
+      "revision": "c0c06e94fd3a44ae9e802b2b0fc533817601eb5e",
+      "shards": [
+        {
+          "blocks": 7266,
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-expansion-v1/train-multilingual_arb_Arab.blocks.npy",
+          "sha256": "7fd7404dd3cfaa1b0790593a4d97a2416dc62357e97316c83b11f5132159f4f9"
+        }
+      ]
+    },
+    {
+      "id": "multilingual_cmn_Hani",
+      "max_cumulative_epochs": "2.0",
+      "prior_prediction_tokens": 0,
+      "revision": "c0c06e94fd3a44ae9e802b2b0fc533817601eb5e",
+      "shards": [
+        {
+          "blocks": 34386,
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-expansion-v1/train-multilingual_cmn_Hani.blocks.npy",
+          "sha256": "3e647d5fc1c1dc6e19bf9d91c6caba924eb9e745fc1dc6986fa624a672e90382"
+        }
+      ]
+    },
+    {
+      "id": "multilingual_deu_Latn",
+      "max_cumulative_epochs": "2.0",
+      "prior_prediction_tokens": 0,
+      "revision": "c0c06e94fd3a44ae9e802b2b0fc533817601eb5e",
+      "shards": [
+        {
+          "blocks": 6934,
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-expansion-v1/train-multilingual_deu_Latn.blocks.npy",
+          "sha256": "107174daf7c960055f18b7df3628c1ad8ba1b89bf6608ae27f423835217e38ad"
+        }
+      ]
+    },
+    {
+      "id": "multilingual_fra_Latn",
+      "max_cumulative_epochs": "2.0",
+      "prior_prediction_tokens": 0,
+      "revision": "c0c06e94fd3a44ae9e802b2b0fc533817601eb5e",
+      "shards": [
+        {
+          "blocks": 6599,
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-expansion-v1/train-multilingual_fra_Latn.blocks.npy",
+          "sha256": "46559323263677dd65148c0ee0fdf0cf3da453c6256cc087262ef19a3329542f"
+        }
+      ]
+    },
+    {
+      "id": "multilingual_jpn_Jpan",
+      "max_cumulative_epochs": "2.0",
+      "prior_prediction_tokens": 0,
+      "revision": "c0c06e94fd3a44ae9e802b2b0fc533817601eb5e",
+      "shards": [
+        {
+          "blocks": 6660,
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-expansion-v1/train-multilingual_jpn_Jpan.blocks.npy",
+          "sha256": "236f5fa0a6a9083097fb4797669d5c3e07e4048d15be29ed5091b60995fc5981"
+        }
+      ]
+    },
+    {
+      "id": "multilingual_spa_Latn",
+      "max_cumulative_epochs": "2.0",
+      "prior_prediction_tokens": 0,
+      "revision": "c0c06e94fd3a44ae9e802b2b0fc533817601eb5e",
+      "shards": [
+        {
+          "blocks": 7443,
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-expansion-v1/train-multilingual_spa_Latn.blocks.npy",
+          "sha256": "e7143032bf83f5fe05c9b0ef4de18eb2c70a01b3b0a0fae5f26fb809a6ed4749"
+        }
+      ]
+    },
+    {
+      "id": "pdf_en",
+      "max_cumulative_epochs": "2.0",
+      "prior_prediction_tokens": 0,
+      "revision": "9cfabe2127faca99b3d5c4dc6d1fcb397399ebde",
+      "shards": [
+        {
+          "blocks": 155798,
+          "path": "/ssd/scxi253/pretrain500m-20260912-v1/data/selected-packs-expansion-v1/train-pdf_en.blocks.npy",
+          "sha256": "3df4460be8b0258a587bec82de48ae6f91cbf4f98fa18b5765ae3bf916219b53"
+        }
+      ]
+    }
+  ],
+  "tokenizer_sha256": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6"
+}

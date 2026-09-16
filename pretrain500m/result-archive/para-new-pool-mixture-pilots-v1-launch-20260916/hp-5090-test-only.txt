@@ -1,0 +1,1 @@
+allocation failure: User group is not permitted to use hp_5090 (sbatch --test-only, observed 2026-09-16)

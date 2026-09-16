@@ -1,0 +1,97 @@
+{
+  "artifacts": {
+    "N0_new_pool_broad_admission": "3aadd49757f1c5a035093f8b10520aea3a766652a6e8d00554fc44251df63483",
+    "N0_new_pool_broad_manifest": "96e09e8d5e2681fb96e579041cf5a5306043ce850872060a30c147ce342f1c45",
+    "N1_new_pool_knowledge_admission": "f4874ef2adadce7035fa625a3f883fab4397923fd62651a46ce78c136c3a7fd4",
+    "N1_new_pool_knowledge_manifest": "f1cef293be28f9a102ad7d15789f91d242c9c91f5ce7999187d5015ee544f6da",
+    "N2_new_pool_reasoning_code_admission": "d1a0e0fa1c031423afa5ec6c55fc657c18063f28b3fc305522213e2d83c0cb33",
+    "N2_new_pool_reasoning_code_manifest": "5df8898409bf5cf8df142e8dee3c89512c231802a625f9005b53489ab7cf0ad1",
+    "N3_new_pool_balanced_admission": "305bfc0868cdf405266c37111df2a2329b35ce4c14c7a49040fa90dcda2609a9",
+    "N3_new_pool_balanced_manifest": "c91866abc23945067770997ffb178e23aec1efcef52d5a91059b325dff432d67",
+    "N4_new_pool_multilingual_admission": "654596f4d43c382c73a70e616058dc0a5b16a0859f251392134412def5e8fe8d",
+    "N4_new_pool_multilingual_manifest": "6217b69ce95db94c282b02faba34af05d53eafbd4ed6f83812690c4c3f2c687c",
+    "build_receipt": "44f38161746d0ddaff6efa4987bf83bb307d1cc513c3188a46497a25b0ac5c68",
+    "protocol": "495eb7f6d25ccad8fe9f091b9c3033632e464d51f6e59fc056dd6926a47bb819",
+    "runner": "5e7ca78f4f3f2f625a98ad9b6c50668cdedcf08b7d4ff04fe1b33e9599b74288"
+  },
+  "capacity_snapshot": "\u516c\u5171partition\uff1a\n\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000Partition      \u53ef\u7528GPU\u6570\u91cf  \u603b\u5361\u6570\ngpu_4090            11     248\ngpu_5090            22     248\nhp_4090             11     272\nhp_5090             30     408\n\n\u53ef\u8fd0\u884c\u4f5c\u4e1a\u6570\u91cf\uff08\u6309GPU\u89c4\u6a21\uff09\uff1a\nPartition      1\u5361GPU 2\u5361GPU 3\u5361GPU 4\u5361GPU 5\u5361GPU 6\u5361GPU 7\u5361GPU 8\u5361GPU\ngpu_4090       11      3      0      0      0      0      0      0\ngpu_5090       22      8      2      1      1      0      0      0\nhp_4090        12      3      0      0      0      0      0      0\nhp_5090        30     12      4      3      2      1      1      1\n",
+  "capacity_snapshot_error": null,
+  "checked_utc": "2026-09-16T10:06:38.643428+00:00",
+  "claim_boundary": "scheduler submission only; allocation, live GPUs, MFU, completion, capability and superiority remain unverified",
+  "free_bytes_before_submit": 90368974848,
+  "jobs": [
+    {
+      "arm_id": "n0-lr6e5",
+      "job_id": 1594608,
+      "job_name": "p529m-np1-n0-l6e5",
+      "peak_learning_rate": "0.00006",
+      "recipe": "N0_new_pool_broad",
+      "seed": 20260916,
+      "submit_attempt": 1
+    },
+    {
+      "arm_id": "n1-lr6e5",
+      "job_id": 1594609,
+      "job_name": "p529m-np1-n1-l6e5",
+      "peak_learning_rate": "0.00006",
+      "recipe": "N1_new_pool_knowledge",
+      "seed": 20260916,
+      "submit_attempt": 1
+    },
+    {
+      "arm_id": "n2-lr6e5",
+      "job_id": 1594610,
+      "job_name": "p529m-np1-n2-l6e5",
+      "peak_learning_rate": "0.00006",
+      "recipe": "N2_new_pool_reasoning_code",
+      "seed": 20260916,
+      "submit_attempt": 1
+    },
+    {
+      "arm_id": "n3-lr6e5",
+      "job_id": 1594611,
+      "job_name": "p529m-np1-n3-l6e5",
+      "peak_learning_rate": "0.00006",
+      "recipe": "N3_new_pool_balanced",
+      "seed": 20260916,
+      "submit_attempt": 1
+    },
+    {
+      "arm_id": "n4-lr6e5",
+      "job_id": 1594612,
+      "job_name": "p529m-np1-n4-l6e5",
+      "peak_learning_rate": "0.00006",
+      "recipe": "N4_new_pool_multilingual",
+      "seed": 20260916,
+      "submit_attempt": 1
+    },
+    {
+      "arm_id": "n3-lr3e5",
+      "job_id": 1594613,
+      "job_name": "p529m-np1-n3-l3e5",
+      "peak_learning_rate": "0.00003",
+      "recipe": "N3_new_pool_balanced",
+      "seed": 20260916,
+      "submit_attempt": 1
+    },
+    {
+      "arm_id": "n3-lr1e4",
+      "job_id": 1594614,
+      "job_name": "p529m-np1-n3-l1e4",
+      "peak_learning_rate": "0.0001",
+      "recipe": "N3_new_pool_balanced",
+      "seed": 20260916,
+      "submit_attempt": 1
+    }
+  ],
+  "mfu_rule": "after five-step grace, every checked rolling ten-step median must be strictly greater than 0.70",
+  "owner": "pretrain500m new-pool pilots; Codex task 44ca",
+  "schema": "p529m-new-pool-mixture-pilot-submission-v1",
+  "status": "SUBMITTED_PENDING_ALLOCATION",
+  "storage_gate_bytes": 53687091200,
+  "storage_gate_passed": true,
+  "submitted_gpu_total": 28,
+  "target_prediction_tokens_per_run": 536870912,
+  "training_started": false,
+  "world_size_per_job": 4
+}

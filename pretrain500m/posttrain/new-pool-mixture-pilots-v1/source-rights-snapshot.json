@@ -1,0 +1,52 @@
+{
+  "checked_utc": "2026-09-15T09:03:44.751590+00:00",
+  "code_allowlist": [
+    "MIT",
+    "Apache-2.0",
+    "BSD-2-Clause",
+    "BSD-3-Clause",
+    "ISC",
+    "CC0-1.0",
+    "Unlicense"
+  ],
+  "dataset_rights_scope": "source-card/license filtering and attribution provenance for this internal corpus; model or dataset publication requires its own terms and release review",
+  "historical_f2_admission_sha256": "9aa303d6a6e5bf5cfbae5c377562fb141fb4a3fb1331fc3527fdc96720270176",
+  "limits": [
+    "Dataset metadata is not a blanket grant for individual Stack-Edu repositories.",
+    "Web/PDF source cards do not prove rights of each upstream document.",
+    "This snapshot alone does not grant training admission."
+  ],
+  "new_sources": [
+    {
+      "card_bytes": 14847,
+      "card_sha256": "fa264b336a946b87e05e540d449a51968149fbe1ab9b34af340f2d20fc290cd4",
+      "card_url": "https://huggingface.co/datasets/HuggingFaceTB/stack-edu/blob/eeec5caac5cc3758a18f1d3ba4416837a9ba814c/README.md",
+      "repo_id": "HuggingFaceTB/stack-edu",
+      "revision": "eeec5caac5cc3758a18f1d3ba4416837a9ba814c",
+      "source_id": "code_stack_edu",
+      "terms_scope": "per-record original licenses; selected code uses frozen permissive allowlist"
+    },
+    {
+      "card_bytes": 2143,
+      "card_sha256": "b69325071a250106a3ac1f6a988e4ed415ce8f7564feae7728aff5c783de5c69",
+      "card_url": "https://huggingface.co/datasets/HuggingFaceFW/dclm_100BT/blob/01022d378d944de6deeb1c79d08fecb4d27b2c6f/README.md",
+      "repo_id": "HuggingFaceFW/dclm_100BT",
+      "revision": "01022d378d944de6deeb1c79d08fecb4d27b2c6f",
+      "source_id": "dclm",
+      "terms_scope": "dataset metadata odc-by"
+    },
+    {
+      "card_bytes": 16192,
+      "card_sha256": "83950c5b703d8917bffcffe159d318e42f4d2b6e3527099b14747d22a8874943",
+      "card_url": "https://huggingface.co/datasets/HuggingFaceFW/finepdfs-edu/blob/9cfabe2127faca99b3d5c4dc6d1fcb397399ebde/README.md",
+      "repo_id": "HuggingFaceFW/finepdfs-edu",
+      "revision": "9cfabe2127faca99b3d5c4dc6d1fcb397399ebde",
+      "source_id": "pdf_en",
+      "terms_scope": "ODC-By v1.0 and CommonCrawl Terms of Use in pinned dataset card"
+    }
+  ],
+  "schema": "p529m-f2-source-rights-snapshot-v1",
+  "selected_code_filter": "license_type=permissive; nonempty detected_licenses subset of allowlist; failing code records excluded before family selection and packing",
+  "status": "PINNED_SOURCE_CARDS_AND_SELECTED_LICENSE_POLICY_REVIEWED",
+  "training_admitted": false
+}

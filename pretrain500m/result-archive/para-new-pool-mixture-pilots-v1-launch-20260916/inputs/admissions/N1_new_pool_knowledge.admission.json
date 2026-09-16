@@ -1,0 +1,138 @@
+{
+  "checked_utc": "2026-09-16T10:06:08.589012+00:00",
+  "checks": {
+    "benchmark_decontamination": "PASS",
+    "content_quality": "PASS",
+    "cross_source_deduplication": "PASS",
+    "family_disjoint_splits": "PASS",
+    "licenses": "PASS"
+  },
+  "cumulative_capacity": {
+    "code_cpp": {
+      "headroom_blocks": 16669,
+      "maximum_blocks_at_two_epochs": 19290,
+      "requested_blocks": 2621,
+      "unique_blocks": 9645
+    },
+    "code_java": {
+      "headroom_blocks": 17465,
+      "maximum_blocks_at_two_epochs": 20086,
+      "requested_blocks": 2621,
+      "unique_blocks": 10043
+    },
+    "code_javascript": {
+      "headroom_blocks": 35675,
+      "maximum_blocks_at_two_epochs": 40918,
+      "requested_blocks": 5243,
+      "unique_blocks": 20459
+    },
+    "code_python": {
+      "headroom_blocks": 89999,
+      "maximum_blocks_at_two_epochs": 103106,
+      "requested_blocks": 13107,
+      "unique_blocks": 51553
+    },
+    "code_typescript": {
+      "headroom_blocks": 17605,
+      "maximum_blocks_at_two_epochs": 20226,
+      "requested_blocks": 2621,
+      "unique_blocks": 10113
+    },
+    "dclm": {
+      "headroom_blocks": 83617,
+      "maximum_blocks_at_two_epochs": 162260,
+      "requested_blocks": 78643,
+      "unique_blocks": 81130
+    },
+    "finemath4": {
+      "headroom_blocks": 176159,
+      "maximum_blocks_at_two_epochs": 205650,
+      "requested_blocks": 29491,
+      "unique_blocks": 102825
+    },
+    "infiwebmath4": {
+      "headroom_blocks": 57418,
+      "maximum_blocks_at_two_epochs": 67248,
+      "requested_blocks": 9830,
+      "unique_blocks": 33624
+    },
+    "multilingual_arb_Arab": {
+      "headroom_blocks": 13221,
+      "maximum_blocks_at_two_epochs": 14532,
+      "requested_blocks": 1311,
+      "unique_blocks": 7266
+    },
+    "multilingual_cmn_Hani": {
+      "headroom_blocks": 62218,
+      "maximum_blocks_at_two_epochs": 68772,
+      "requested_blocks": 6554,
+      "unique_blocks": 34386
+    },
+    "multilingual_deu_Latn": {
+      "headroom_blocks": 12557,
+      "maximum_blocks_at_two_epochs": 13868,
+      "requested_blocks": 1311,
+      "unique_blocks": 6934
+    },
+    "multilingual_fra_Latn": {
+      "headroom_blocks": 11887,
+      "maximum_blocks_at_two_epochs": 13198,
+      "requested_blocks": 1311,
+      "unique_blocks": 6599
+    },
+    "multilingual_jpn_Jpan": {
+      "headroom_blocks": 12009,
+      "maximum_blocks_at_two_epochs": 13320,
+      "requested_blocks": 1311,
+      "unique_blocks": 6660
+    },
+    "multilingual_spa_Latn": {
+      "headroom_blocks": 13575,
+      "maximum_blocks_at_two_epochs": 14886,
+      "requested_blocks": 1311,
+      "unique_blocks": 7443
+    },
+    "pdf_en": {
+      "headroom_blocks": 206738,
+      "maximum_blocks_at_two_epochs": 311596,
+      "requested_blocks": 104858,
+      "unique_blocks": 155798
+    }
+  },
+  "evidence": {
+    "contamination_report_sha256": "dfa181d03bff973ece7a5543ff06928f4efeb135abb680c4c1d32979926190b3",
+    "dclm_topup_plan_sha256": "60193bad768d705ea79c7c79bcb1dbe5a8e9c20f2773fda6959202671beb5b7b",
+    "development_manifest_sha256": "429c1ab33bdb8a92214ffdd2327462a05275b29fbd60abecc1d98b9fad634af3",
+    "exclusions_report_sha256": "7b45f883fb22abe2f135cf715b4ed508d77fac16b16b10e3871468f1af9ec0ad",
+    "expansion_plan_sha256": "ca16deedb115a04a33b7b49889317866fb806f64014b2161a04b7803e224d0a6",
+    "family_report_sha256": "541cb6418e9e1ee1e75c27abf3835b854f1ef7d5796391f54fecc7a5cac1a72a",
+    "legacy_report_sha256": "4fc6fbc188202f9b23f65e23714b0efb1b544e362238faded0adaa60a3fdd526",
+    "old_source_report_sha256": "a4049239090378386a97da02ead40c5f81006f0e0e3958ad3322da5459be8068",
+    "pack_report_sha256": "5ef7ff6e0bda80bd7be8f94dba837f559d4bbe7db341ebf78549bcfb4f6677f2",
+    "pipeline_receipt_sha256": "d39179b4cab4cbe35ec191edb98efd43991b6009bd386b713c27bfb1af24631b",
+    "protocol_sha256": "495eb7f6d25ccad8fe9f091b9c3033632e464d51f6e59fc056dd6926a47bb819",
+    "quality_report_sha256": "636bc502d84c9ca370488f8898f8f2a4c077d46f9b6b98e843c1b00a68411448",
+    "raw_report_sha256": "d776d956d79f14acd562f73321ec32030520a9397331c70fd256bda7da68cb28",
+    "research_plan_sha256": "58d56059111eb92dea1c0f9213a1e7ebbacabe7dea55c24cf31e366401dcc1a7",
+    "rights_snapshot_sha256": "07ae41dc8a4cf4d1597e79fed64ef035d75d57c961eaa5171a6464a2325eedf7"
+  },
+  "limitations": [
+    "Admission is bounded to these exact hashes, quotas, and protocol.",
+    "Observed decontamination and family closure cannot detect every semantic paraphrase.",
+    "Dataset-card review is not a blanket grant for every upstream web or PDF document.",
+    "A successful pilot does not establish downstream or market superiority."
+  ],
+  "protocol_sha256": "495eb7f6d25ccad8fe9f091b9c3033632e464d51f6e59fc056dd6926a47bb819",
+  "recipe": "N1_new_pool_knowledge",
+  "schema": "p529m-corpus-admission-v1",
+  "scope": {
+    "benchmark_decontamination": "Frozen benchmark-prefix, exact-span, legacy-hash, and old-source overlap exclusions were applied.",
+    "content_quality": "Frozen structural, language, and quality filters were applied before packing.",
+    "cross_source_deduplication": "One eligible representative was selected after combined family closure.",
+    "family_disjoint_splits": "Training and reserved evaluation families are disjoint under observed exact, metadata, and verified near edges.",
+    "licenses": "Revision-pinned source cards plus the frozen permissive-code filter are bound; publication still requires release review."
+  },
+  "status": "PASS",
+  "training_manifest_sha256": "f1cef293be28f9a102ad7d15789f91d242c9c91f5ce7999187d5015ee544f6da",
+  "validation_manifest_sha256": "429c1ab33bdb8a92214ffdd2327462a05275b29fbd60abecc1d98b9fad634af3"
+}
