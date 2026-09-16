@@ -231,6 +231,34 @@ This is one public English reading task, not a sealed or complete capability
 suite. Math, code, and knowledge proxy components and fresh-corpus admission
 remain required before another training launch.
 
+## Independent math-proxy baseline
+
+The second proxy tranche used the previously reserved, revision- and
+hash-pinned MGSM English file. An output-blind SHA-256 ordering split its 250
+rows into 125 development and 125 unscored confirmation rows. Job 1594046
+evaluated Base and both long F2 parents concurrently on three RTX 5090 GPUs
+and completed in 1m49s. The job, batch, and extern records all ended
+`COMPLETED 0:0`; all candidate stderr files were empty.
+
+| Checkpoint | Direct-answer exact match | Gold-answer token NLL | NLL delta versus Base |
+| --- | ---: | ---: | ---: |
+| Base | 1.6000% (2/125) | 7.822144 | -- |
+| F2 seed 20260914 | 1.6000% (2/125) | 7.399616 | -0.422528 |
+| F2 seed 20260915 | 1.6000% (2/125) | 7.599755 | -0.222389 |
+| **F2 two-seed mean** | **1.6000% (+0.0000 pp)** | **7.499685** | **-0.322459** |
+
+Both paired 95% bootstrap NLL-delta intervals were below zero: -0.524208 to
+-0.317574 for seed 20260914 and -0.320212 to -0.122515 for seed 20260915.
+However, direct generated-answer accuracy was unchanged and extremely low.
+The result therefore supports a directional improvement in gold-answer token
+likelihood, not a generated-math capability gain or promotion. The confirmation
+half remains unscored. The
+[bound result receipt](result-archive/independent-math-proxy-v1-development-results-20260916.json)
+and [small artifact snapshot](result-archive/para-independent-math-proxy-v1-baseline-20260916/summary.json)
+preserve the result; per-example generations stay on ParaCloud and outside Git.
+Code and knowledge proxy components and fresh-corpus admission remain required
+before another training launch.
+
 ## Current gate
 
 The earlier F2 two-seed seven-task mean is 48.5311%, about 1.47 percentage
@@ -240,7 +268,8 @@ continuation is formally promoted: the continuation improved reserved masked
 loss in both seeds but failed the two-seed capability progression rule. Future
 recipe selection needs additional contamination-screened development proxies
 because the seven final task results have now been inspected and the new
-Belebele tranche covers only English reading comprehension.
+Belebele and MGSM development tranches cover only English reading
+comprehension and grade-school math.
 
 The present evidence supports reproducible training, checkpoint integrity,
 measured MFU, held-out loss improvement, and matched base-model multiple-choice

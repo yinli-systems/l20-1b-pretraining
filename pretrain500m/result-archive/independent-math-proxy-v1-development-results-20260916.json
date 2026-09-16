@@ -1,0 +1,141 @@
+{
+  "artifacts": {
+    "per_example_result_rows_in_git": false,
+    "remote_results_root": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-math-proxy-v1/1594046",
+    "small_snapshot": "pretrain500m/result-archive/para-independent-math-proxy-v1-baseline-20260916"
+  },
+  "bindings": {
+    "dataset_sha256": "50021d0f28cc957edcb44e7806425b1c7fbd648ddcb9e0a8ec689d10e57d40fa",
+    "output_sha256sums_sha256": "964dd23893173c1a43d684902e027fbaea115356433f893ef3e68264d9347d14",
+    "plan_sha256": "d559f4f3e349ccc937e067f06d7b776d3e6c0458a327b4aa924b0d7b5d2e4e60",
+    "remote_result_sha256": {
+      "F2_parent_seed20260914": "1dd1f53f2179ebf6561fbf9e00baab4e874c53edc892b95b5a7ae5aa77a6ad5d",
+      "F2_parent_seed20260915": "86aaa164f01e42c8a36641e2578e3e44edc7fde67ea794aeedf6331dcedb6790",
+      "base": "87e81a494018f4d0a546b655d8b1024d2d9890681e5b0fa7ee02ec133380b10e"
+    },
+    "split_manifest_sha256": "340ae14ffcbbe88b10f2fd0c4efb6d621dcf7d3c561d47c8e24bbf8bb707d001",
+    "summary_sha256": "02aad6609c54f8fb51d0ff05936526c8f0ec7ad086cf4ebb2c24886a0c54c639",
+    "tokenizer_json_sha256": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6"
+  },
+  "checked_utc": "2026-09-16T05:52:05.449781+00:00",
+  "claim_boundary": "fresh-to-selection public English grade-school math development proxy only; not sealed, not broad math mastery, and not evidence of instruction following, code, safety, multilingual generation, or market superiority",
+  "decision": {
+    "fresh_training_admitted": false,
+    "generated_math_gain_established": false,
+    "next": "add independent code and knowledge proxy components and complete fresh-corpus admission before new training",
+    "reason": "both F2 seeds improve gold-answer token NLL with paired intervals below zero, but greedy exact numeric match remains unchanged at 2/125",
+    "strong_F2_gain_established": false
+  },
+  "formal_promotion": false,
+  "job": {
+    "candidate_stderr_bytes": 0,
+    "derived_exit_code": "0:0",
+    "elapsed": "00:01:49",
+    "end_scheduler_local": "2026-09-16T13:52:05",
+    "exit_code": "0:0",
+    "gpu_uuids": [
+      "GPU-9f236f7c-a8d4-e2fe-051e-336f94a471d4",
+      "GPU-42f3ea23-0088-d24b-dd3a-81827a193501",
+      "GPU-2f8ee1f6-94f9-c355-ca4e-a09b78437e8f"
+    ],
+    "gpus": 3,
+    "id": 1594046,
+    "node": "wqd10nbl09g4",
+    "partition": "gpu_5090",
+    "state": "COMPLETED"
+  },
+  "metrics": {
+    "F2_parent_seed20260914": {
+      "exact_numeric_match": {
+        "ci95": [
+          0.0,
+          0.04
+        ],
+        "correct": 2,
+        "delta_vs_base": 0.0,
+        "paired_delta_ci95": [
+          -0.024,
+          0.024
+        ],
+        "score": 0.016
+      },
+      "gold_answer_token_nll": {
+        "delta_vs_base": -0.42252824783325194,
+        "mean": 7.39961576461792,
+        "paired_delta_ci95": [
+          -0.524207837677002,
+          -0.31757367801666264
+        ]
+      }
+    },
+    "F2_parent_seed20260915": {
+      "exact_numeric_match": {
+        "ci95": [
+          0.0,
+          0.04
+        ],
+        "correct": 2,
+        "delta_vs_base": 0.0,
+        "paired_delta_ci95": [
+          -0.024,
+          0.024
+        ],
+        "score": 0.016
+      },
+      "gold_answer_token_nll": {
+        "delta_vs_base": -0.22238901519775392,
+        "mean": 7.599754997253418,
+        "paired_delta_ci95": [
+          -0.32021210327148436,
+          -0.12251502399444592
+        ]
+      }
+    },
+    "F2_two_seed_mean": {
+      "exact_numeric_match": 0.016,
+      "gold_answer_token_nll": 7.499685380935669
+    },
+    "F2_two_seed_mean_delta_vs_base": {
+      "exact_numeric_match": 0.0,
+      "gold_answer_token_nll": -0.3224586315155029
+    },
+    "base": {
+      "exact_numeric_match": {
+        "ci95": [
+          0.0,
+          0.04
+        ],
+        "correct": 2,
+        "score": 0.016
+      },
+      "gold_answer_token_nll": {
+        "ci95": [
+          7.429608034515381,
+          8.217174913692475
+        ],
+        "mean": 7.822144012451172
+      }
+    }
+  },
+  "protocol": {
+    "confirmation_scored": false,
+    "dataset": "MGSM English",
+    "generation": "greedy direct answer; 64-token maximum; stop at newline or EOS",
+    "primary_metric": "exact_numeric_match",
+    "prompt_frozen_before_scoring": true,
+    "role": "development",
+    "samples": 125,
+    "secondary_metric": "gold_answer_token_nll"
+  },
+  "schema": "p529m-independent-math-proxy-v1-development-baseline-results",
+  "status": "INDEPENDENT_MATH_PROXY_DEVELOPMENT_BASELINE_COMPLETE",
+  "verification": {
+    "independent_generation_and_numeric_extraction_recalculation": "PASS",
+    "independent_local_result_hashes": "PASS",
+    "independent_metric_and_10000_resample_bootstrap_recalculation": "PASS",
+    "independent_result_row_content_digest": "PASS",
+    "independent_row_pairing": "PASS",
+    "remote_sha256sum_manifest": "PASS",
+    "sacct_job_batch_extern_all_completed_0_0": true
+  }
+}

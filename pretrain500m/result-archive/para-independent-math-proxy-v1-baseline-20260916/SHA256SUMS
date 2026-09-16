@@ -1,0 +1,11 @@
+1dd1f53f2179ebf6561fbf9e00baab4e874c53edc892b95b5a7ae5aa77a6ad5d  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-math-proxy-v1/1594046/F2_parent_seed20260914.json
+86aaa164f01e42c8a36641e2578e3e44edc7fde67ea794aeedf6331dcedb6790  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-math-proxy-v1/1594046/F2_parent_seed20260915.json
+87e81a494018f4d0a546b655d8b1024d2d9890681e5b0fa7ee02ec133380b10e  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-math-proxy-v1/1594046/base.json
+02aad6609c54f8fb51d0ff05936526c8f0ec7ad086cf4ebb2c24886a0c54c639  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-math-proxy-v1/1594046/summary.json
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-math-proxy-v1/1594046/F2_parent_seed20260914.stdout
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-math-proxy-v1/1594046/F2_parent_seed20260915.stdout
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-math-proxy-v1/1594046/base.stdout
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-math-proxy-v1/1594046/F2_parent_seed20260914.stderr
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-math-proxy-v1/1594046/F2_parent_seed20260915.stderr
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-math-proxy-v1/1594046/base.stderr
+85e1e9633f55ddd62177f2c28874a0a4f80eb756c5051ea178b10ccec14df508  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-math-proxy-v1/1594046/gpu.csv

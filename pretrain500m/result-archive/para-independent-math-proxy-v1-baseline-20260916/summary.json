@@ -1,0 +1,78 @@
+{
+  "candidates": [
+    {
+      "exact_numeric_match": {
+        "delta_vs_base": 0.0,
+        "paired_bootstrap_delta_ci95": [
+          0.0,
+          0.0
+        ],
+        "score": 0.016
+      },
+      "gold_answer_token_nll": {
+        "delta_vs_base": 0.0,
+        "mean": 7.822144012451172,
+        "paired_bootstrap_delta_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "id": "base",
+      "seed": null
+    },
+    {
+      "exact_numeric_match": {
+        "delta_vs_base": 0.0,
+        "paired_bootstrap_delta_ci95": [
+          -0.024,
+          0.024
+        ],
+        "score": 0.016
+      },
+      "gold_answer_token_nll": {
+        "delta_vs_base": -0.42252824783325194,
+        "mean": 7.39961576461792,
+        "paired_bootstrap_delta_ci95": [
+          -0.524207837677002,
+          -0.31757367801666264
+        ]
+      },
+      "id": "F2_parent_seed20260914",
+      "seed": 20260914
+    },
+    {
+      "exact_numeric_match": {
+        "delta_vs_base": 0.0,
+        "paired_bootstrap_delta_ci95": [
+          -0.024,
+          0.024
+        ],
+        "score": 0.016
+      },
+      "gold_answer_token_nll": {
+        "delta_vs_base": -0.22238901519775392,
+        "mean": 7.599754997253418,
+        "paired_bootstrap_delta_ci95": [
+          -0.32021210327148436,
+          -0.12251502399444592
+        ]
+      },
+      "id": "F2_parent_seed20260915",
+      "seed": 20260915
+    }
+  ],
+  "checked_utc": "2026-09-16T05:52:05.449781+00:00",
+  "claim_boundary": "fresh-to-selection public English grade-school math development proxy only; not sealed, not broad math mastery, and not evidence of instruction following, code, safety, multilingual generation, or market superiority",
+  "formal_promotion": false,
+  "plan_sha256": "d559f4f3e349ccc937e067f06d7b776d3e6c0458a327b4aa924b0d7b5d2e4e60",
+  "schema": "p529m-independent-math-proxy-mgsm-summary-v1",
+  "status": "INDEPENDENT_MATH_PROXY_DEVELOPMENT_BASELINE_COMPLETE",
+  "two_seed_mean": {
+    "exact_numeric_match": 0.016,
+    "gold_answer_token_nll": 7.499685380935669
+  },
+  "two_seed_mean_delta_vs_base": {
+    "exact_numeric_match": 0.0,
+    "gold_answer_token_nll": -0.3224586315155029
+  }
+}
