@@ -231,9 +231,13 @@ def main() -> None:
         torch_dtype=torch.bfloat16,
         attn_implementation="eager",
     ).to("cuda").eval()
-    if model.get_input_embeddings().num_embeddings != len(tokenizer):
+    embedding_vocab = model.get_input_embeddings().num_embeddings
+    maximum_input_id = max(
+        token for row in encoded for choice in row["choices"] for token in choice["ids"])
+    if embedding_vocab < len(tokenizer) or maximum_input_id >= embedding_vocab:
         raise ValueError(
-            f"model/tokenizer vocabulary mismatch: {model.get_input_embeddings().num_embeddings} != {len(tokenizer)}")
+            f"model/tokenizer vocabulary mismatch: embeddings={embedding_vocab}, "
+            f"tokenizer={len(tokenizer)}, maximum_input_id={maximum_input_id}")
     parameters = sum(parameter.numel() for parameter in model.parameters())
     results = score(model, encoded, batch_size=plan["execution"]["batch_size_per_gpu"],
                     pad_id=pad_id)
