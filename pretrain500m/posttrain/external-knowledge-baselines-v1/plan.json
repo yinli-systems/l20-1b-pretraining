@@ -1,0 +1,76 @@
+{
+  "automatic_promotion": false,
+  "bootstrap": {
+    "interval": [
+      0.025,
+      0.975
+    ],
+    "resamples": 10000,
+    "seed": 20260916
+  },
+  "candidates": [
+    {
+      "artifact_identity": "native pinned Hugging Face snapshot",
+      "id": "qwen2.5-0.5b",
+      "repo_id": "Qwen/Qwen2.5-0.5B",
+      "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "snapshot": "qwen2.5-0.5b",
+      "snapshot_manifest_sha256": "891a19ad16accbb5bc6b02ddc2e69226ae0f27fbe4773a5b14335ba92675bc28"
+    },
+    {
+      "artifact_identity": "native pinned Hugging Face snapshot with the officially documented Llama 2 tokenizer",
+      "id": "openelm-450m",
+      "repo_id": "apple/OpenELM-450M",
+      "revision": "b53a9c5a731d154b71f8d311ef702f327e0cfa3a",
+      "snapshot": "openelm-450m",
+      "snapshot_manifest_sha256": "4822e85ef5235bfb4a1a3a7b0aaa004d357e71f60bfbdf6616a8113d17e56940",
+      "tokenizer_repo_id": "meta-llama/Llama-2-7b-hf",
+      "tokenizer_revision": "01c7f73d771dfac7d292323805ebc428287df4f9",
+      "tokenizer_snapshot": "llama2-tokenizer",
+      "tokenizer_snapshot_manifest_sha256": "32ace575e7796ff8ff65f5255c32448aa3a77e87d949e4c08600183e617a2c80"
+    },
+    {
+      "artifact_identity": "native pinned Hugging Face snapshot",
+      "id": "smollm2-360m",
+      "repo_id": "HuggingFaceTB/SmolLM2-360M",
+      "revision": "f8027fd0eaeea54caa13c31d31b9fdc459c38b49",
+      "snapshot": "smollm2-360m",
+      "snapshot_manifest_sha256": "c5a9ae5a2f3831d84d87055efda60622d27d1ab08f1dd1a32b860aff4cd7d775"
+    },
+    {
+      "artifact_identity": "strict PyTorch reconstruction from a pinned public full-precision ONNX export declared to derive from facebook/MobileLLM-600M",
+      "artifact_source_repo_id": "onnx-community/MobileLLM-600M",
+      "artifact_source_revision": "25723a2c3beb2698878a620e4edf7bd17f5bd339",
+      "direct_official_weight_hash_comparison": false,
+      "id": "mobilellm-600m",
+      "repo_id": "facebook/MobileLLM-600M",
+      "revision": "5960118fcb0a9886360b03d1b48a96366e35cfff",
+      "snapshot": "mobilellm-600m-onnx",
+      "snapshot_manifest_sha256": "297073b3187456e2cd9715fab214b5c19d94a94fd63f5465f7135c87c8cbb42d",
+      "tokenizer_loader": "tokenizer_json"
+    }
+  ],
+  "claim_boundary": "Matched development-only comparison on one public closed-book English science multiple-choice proxy. The 489 rows, question-only prompt, completion text, choice order, metrics, BF16 dtype, batch size, and tie-break are fixed across candidates. Tokenization necessarily follows each model family. This is not a sealed test or evidence of broad market superiority. The MobileLLM result is structurally bound to a public full-precision ONNX conversion that declares the requested official model as its base; the gated official PyTorch weight file was unavailable for direct hash identity verification.",
+  "completion_template": " {choice_text}",
+  "data_sha256": "55cc70950fdd8892d6c7c2cbd458d2c3c6fc5f88548b909799d147b68e7c16da",
+  "execution": {
+    "attention_backend": "eager",
+    "batch_size_per_gpu": 8,
+    "dtype": "bfloat16",
+    "gpus_per_candidate": 1,
+    "max_length": 2048,
+    "seed": 20260916,
+    "torch_deterministic_algorithms": true
+  },
+  "metrics": {
+    "primary": "acc_norm: choose maximum mean answer-token conditional log likelihood",
+    "secondary": "acc: choose maximum total answer-token conditional log likelihood",
+    "tie_break": "lowest frozen choice index"
+  },
+  "prompt_template": "Question: {question}\nAnswer:",
+  "reference_base_result_sha256": "abba11fe4f21c40ca3d02ad80a674b364ccdb8612666024c321fe7bbedc0d95f",
+  "role": "development only; score exactly 489 rows and leave 490 confirmation rows unscored",
+  "schema": "p529m-matched-external-closed-book-sciq-plan-v1",
+  "split_manifest_sha256": "febdf159d2c3a08522d3964a42c18b74df76ac6b35f6d87986c2f8f80355981f",
+  "status": "FROZEN_BEFORE_EXTERNAL_SCORING"
+}
