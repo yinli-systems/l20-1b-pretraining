@@ -1,0 +1,53 @@
+{
+  "aggregate_delta_vs_base": -0.004184386764429671,
+  "base_aggregate_score": 0.479952415150124,
+  "base_tasks": {
+    "arc_challenge": 0.2832764505119454,
+    "arc_easy": 0.5526094276094277,
+    "boolq": 0.5629969418960244,
+    "hellaswag": 0.42342162915753834,
+    "openbookqa": 0.332,
+    "piqa": 0.6686615886833515,
+    "winogrande": 0.5367008681925809
+  },
+  "candidate": {
+    "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/new-pool-mixture-pilots-v1/n3-lr6e5-seed20260916-1594611/train/model-final.pt",
+    "checkpoint_sha256": "c2f334972a5b561285c28ffe76d69c5c65c09240af8115155560f5201ef759eb",
+    "expected_step": 256,
+    "id": "n3-lr6e5",
+    "recipe": "N3_new_pool_balanced",
+    "seed": 20260916,
+    "training_job_id": 1594611
+  },
+  "candidate_aggregate_score": 0.4757680283856943,
+  "candidate_tasks": {
+    "arc_challenge": 0.2909556313993174,
+    "arc_easy": 0.5488215488215489,
+    "boolq": 0.563914373088685,
+    "hellaswag": 0.42342162915753834,
+    "openbookqa": 0.316,
+    "piqa": 0.6702937976060935,
+    "winogrande": 0.5169692186266772
+  },
+  "claim_boundary": "adaptive matched two-GPU seven-task capability and retention screen; no sealed gain, automatic promotion, or market-superiority claim",
+  "formal_promotion": false,
+  "input_sha256": {
+    "base_aggregate": "c87aa54ec060154d594c6a7ca44b79b28cec27497cc867b0845ad492397535c1",
+    "candidate_aggregate": "cac59807a1a56b2832b9d7e3fd8f5b97fdfba952e9b817a87eab18afc78e7ecd",
+    "export_receipt": "40ef7f2cd63d4fd2b8233bd0c5425d237c04255468db47c8bc636a8bd26be998",
+    "plan": "b626daa92ab28e262a98bf077c2b0f8f302dff3f54190c19a5c2fd800358d661"
+  },
+  "protocol_id": "p500m-english-base-v5",
+  "protocol_sha256": "a71ce3c8cc85cac6fe6751cb46f7e50dfb78d266602d6377cb2e65249f11c761",
+  "schema": "p529m-new-pool-seven-task-eval-result-v1",
+  "status": "PASS_ADAPTIVE_NEW_POOL_SEVEN_TASK_SCREEN",
+  "task_delta_vs_base": {
+    "arc_challenge": 0.007679180887372017,
+    "arc_easy": -0.0037878787878787845,
+    "boolq": 0.0009174311926605228,
+    "hellaswag": 0.0,
+    "openbookqa": -0.016000000000000014,
+    "piqa": 0.0016322089227420733,
+    "winogrande": -0.019731649565903675
+  }
+}

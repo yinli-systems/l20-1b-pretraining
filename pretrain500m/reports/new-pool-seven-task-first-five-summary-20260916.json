@@ -1,0 +1,192 @@
+{
+  "base": {
+    "aggregate_score": 0.479952415150124,
+    "tasks": {
+      "arc_challenge": 0.2832764505119454,
+      "arc_easy": 0.5526094276094277,
+      "boolq": 0.5629969418960244,
+      "hellaswag": 0.42342162915753834,
+      "openbookqa": 0.332,
+      "piqa": 0.6686615886833515,
+      "winogrande": 0.5367008681925809
+    }
+  },
+  "checked_utc": "2026-09-16T14:10:52.442208+00:00",
+  "claim_boundary": "Matched adaptive English base-model multiple-choice point estimates only. One short continuation seed per new-pool arm, reused tasks, and mixed task regressions do not establish a sealed gain, statistical superiority, instruction following, multilingual generation, safety, or market superiority.",
+  "formal_promotion": false,
+  "input_sha256": {
+    "f2_reference_summary": "7eddae38ce9b1b002ede388dc73c55e078ccbeb38269c5e893609d997e31ab99",
+    "snapshot_manifest": "d35dffe6c7aafcf745d435b3bb39496e01133031bdace0f975cf6374026d70c6"
+  },
+  "pending_candidates": [
+    "n3-lr3e5",
+    "n3-lr1e4"
+  ],
+  "protocol_id": "p500m-english-base-v5",
+  "protocol_sha256": "a71ce3c8cc85cac6fe6751cb46f7e50dfb78d266602d6377cb2e65249f11c761",
+  "ranking": [
+    {
+      "aggregate_delta_vs_base": 0.0002380706342529071,
+      "aggregate_score": 0.4801904857843769,
+      "checkpoint_sha256": "949d79b7ff0d5f9b0dcb680d1b714c9557ccd5add13e2508a88a1f0de01247e2",
+      "id": "n1-lr6e5",
+      "job_id": 1595024,
+      "rank": 1,
+      "recipe": "N1_new_pool_knowledge",
+      "remote_output": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/new-pool-seven-task-eval-v1/n1-lr6e5-1595024",
+      "result_sha256": "01a191f797c2e701cf823fe2fbd7e68acd1e7e13494e2f5168e0121e4c375415",
+      "task_delta_vs_base": {
+        "arc_challenge": 0.015358361774744034,
+        "arc_easy": 0.007575757575757569,
+        "boolq": -0.0018348623853210455,
+        "hellaswag": 0.0,
+        "openbookqa": -0.008000000000000007,
+        "piqa": 0.0043525571273123065,
+        "winogrande": -0.015785319652723007
+      },
+      "tasks": {
+        "arc_challenge": 0.2986348122866894,
+        "arc_easy": 0.5601851851851852,
+        "boolq": 0.5611620795107034,
+        "hellaswag": 0.42342162915753834,
+        "openbookqa": 0.324,
+        "piqa": 0.6730141458106638,
+        "winogrande": 0.5209155485398579
+      }
+    },
+    {
+      "aggregate_delta_vs_base": -0.0016803860665369208,
+      "aggregate_score": 0.47827202908358707,
+      "checkpoint_sha256": "3bfa8f972abdbb3d70cda81fb6e8a73f3cbdb891979eb1c379889dbbf5e0b5ce",
+      "id": "n0-lr6e5",
+      "job_id": 1595023,
+      "rank": 2,
+      "recipe": "N0_new_pool_broad",
+      "remote_output": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/new-pool-seven-task-eval-v1/n0-lr6e5-1595023",
+      "result_sha256": "464fa51c60b648fb8fc47194e1d11bb4107dbfb1ac377204c5e220981bce8478",
+      "task_delta_vs_base": {
+        "arc_challenge": 0.010238907849829337,
+        "arc_easy": -0.0033670033670034627,
+        "boolq": -0.0006116207951070152,
+        "hellaswag": 0.0004979087831109563,
+        "openbookqa": -0.010000000000000009,
+        "piqa": 0.004896626768226331,
+        "winogrande": -0.013417521704814472
+      },
+      "tasks": {
+        "arc_challenge": 0.2935153583617747,
+        "arc_easy": 0.5492424242424242,
+        "boolq": 0.5623853211009174,
+        "hellaswag": 0.4239195379406493,
+        "openbookqa": 0.322,
+        "piqa": 0.6735582154515778,
+        "winogrande": 0.5232833464877664
+      }
+    },
+    {
+      "aggregate_delta_vs_base": -0.0023733252144723105,
+      "aggregate_score": 0.4775790899356517,
+      "checkpoint_sha256": "7f47565237b48660afe02bb16a66272c685aa196dbd31c3848483e68fc7ac0d8",
+      "id": "n4-lr6e5",
+      "job_id": 1595052,
+      "rank": 3,
+      "recipe": "N4_new_pool_multilingual",
+      "remote_output": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/new-pool-seven-task-eval-v2/n4-lr6e5-1595052",
+      "result_sha256": "027c7ca81f6e9361ccccd17e906de7055ea85d03fec0503a55ad9df057cf6902",
+      "task_delta_vs_base": {
+        "arc_challenge": 0.011092150170648463,
+        "arc_easy": -0.007996632996633002,
+        "boolq": -0.0033639143730886945,
+        "hellaswag": 0.0005974905397331254,
+        "openbookqa": -0.006000000000000005,
+        "piqa": 0.0032644178454842576,
+        "winogrande": -0.01420678768745065
+      },
+      "tasks": {
+        "arc_challenge": 0.29436860068259385,
+        "arc_easy": 0.5446127946127947,
+        "boolq": 0.5596330275229358,
+        "hellaswag": 0.42401911969727146,
+        "openbookqa": 0.326,
+        "piqa": 0.6719260065288357,
+        "winogrande": 0.5224940805051302
+      }
+    },
+    {
+      "aggregate_delta_vs_base": -0.0027486655864480403,
+      "aggregate_score": 0.47720374956367595,
+      "checkpoint_sha256": "9722bed7f178e05be87a857009e6bf54d3eef41ef4af1bd9ba4cea70c46d318d",
+      "id": "n2-lr6e5",
+      "job_id": 1595025,
+      "rank": 4,
+      "recipe": "N2_new_pool_reasoning_code",
+      "remote_output": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/new-pool-seven-task-eval-v1/n2-lr6e5-1595025",
+      "result_sha256": "9c8f31e272052a59c2967387f70c8a003dd9493e0451f80b673f4ceb08f9d46f",
+      "task_delta_vs_base": {
+        "arc_challenge": 0.010238907849829337,
+        "arc_easy": -0.007154882154882247,
+        "boolq": 0.004587155963302725,
+        "hellaswag": 0.00039832702648873175,
+        "openbookqa": -0.014000000000000012,
+        "piqa": 0.0032644178454842576,
+        "winogrande": -0.016574585635359074
+      },
+      "tasks": {
+        "arc_challenge": 0.2935153583617747,
+        "arc_easy": 0.5454545454545454,
+        "boolq": 0.5675840978593272,
+        "hellaswag": 0.42381995618402707,
+        "openbookqa": 0.318,
+        "piqa": 0.6719260065288357,
+        "winogrande": 0.5201262825572218
+      }
+    },
+    {
+      "aggregate_delta_vs_base": -0.004184386764429671,
+      "aggregate_score": 0.4757680283856943,
+      "checkpoint_sha256": "c2f334972a5b561285c28ffe76d69c5c65c09240af8115155560f5201ef759eb",
+      "id": "n3-lr6e5",
+      "job_id": 1595026,
+      "rank": 5,
+      "recipe": "N3_new_pool_balanced",
+      "remote_output": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/new-pool-seven-task-eval-v1/n3-lr6e5-1595026",
+      "result_sha256": "0123951bb42e1c3e6c14b79cb2f0fbe236a213bda47f52905dd09a36e8c9358c",
+      "task_delta_vs_base": {
+        "arc_challenge": 0.007679180887372017,
+        "arc_easy": -0.0037878787878787845,
+        "boolq": 0.0009174311926605228,
+        "hellaswag": 0.0,
+        "openbookqa": -0.016000000000000014,
+        "piqa": 0.0016322089227420733,
+        "winogrande": -0.019731649565903675
+      },
+      "tasks": {
+        "arc_challenge": 0.2909556313993174,
+        "arc_easy": 0.5488215488215489,
+        "boolq": 0.563914373088685,
+        "hellaswag": 0.42342162915753834,
+        "openbookqa": 0.316,
+        "piqa": 0.6702937976060935,
+        "winogrande": 0.5169692186266772
+      }
+    }
+  ],
+  "reference_f2_two_seed_incumbent": {
+    "mean_two_seed_aggregate": 0.4853114767846437,
+    "new_pool_best_minus_f2_mean": -0.005120991000266806,
+    "recipe": "F2_reasoning_no_synthetic",
+    "worst_seed_aggregate": 0.4851912390756937
+  },
+  "schema": "p529m-new-pool-seven-task-first-five-summary-v1",
+  "selected_by_point_estimate_only": "n1-lr6e5",
+  "status": "PASS_FIVE_CANDIDATE_MATCHED_ADAPTIVE_SCREEN",
+  "tasks_best_candidate_point_estimate": {
+    "arc_challenge": "n1-lr6e5",
+    "arc_easy": "n1-lr6e5",
+    "boolq": "n2-lr6e5",
+    "hellaswag": "n4-lr6e5",
+    "openbookqa": "n4-lr6e5",
+    "piqa": "n0-lr6e5",
+    "winogrande": "n0-lr6e5"
+  }
+}
