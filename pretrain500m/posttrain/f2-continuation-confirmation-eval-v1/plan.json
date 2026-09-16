@@ -1,0 +1,60 @@
+{
+  "checkpoints": [
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260914-1589567/train/model-final.pt",
+      "checkpoint_id": "parent_seed20260914",
+      "checkpoint_semantics": "model-only-final; fresh optimizer required",
+      "checkpoint_sha256": "69d9d8d3358f23815f2455f7e075645056f90fe01ed40a11525130a0e58ca085",
+      "role": "parent",
+      "seed": 20260914
+    },
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/f2-continuation-v1/seed20260914-1592301/train/resume.pt",
+      "checkpoint_bytes": 6345342295,
+      "checkpoint_id": "continuation_seed20260914",
+      "checkpoint_semantics": "full resumable state",
+      "checkpoint_sha256": "98b21eb475aed1b0f6896395eb7cabf9c23ff5032f6f33a5cbcc5fdaec781ae9",
+      "role": "continuation",
+      "seed": 20260914
+    },
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260915-1590004/train/model-final.pt",
+      "checkpoint_id": "parent_seed20260915",
+      "checkpoint_semantics": "model-only-final; fresh optimizer required",
+      "checkpoint_sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc",
+      "role": "parent",
+      "seed": 20260915
+    },
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/f2-continuation-v1/seed20260915-1592302/train/resume.pt",
+      "checkpoint_bytes": 6345342231,
+      "checkpoint_id": "continuation_seed20260915",
+      "checkpoint_semantics": "full resumable state",
+      "checkpoint_sha256": "86ab770e671dd845c6de1c7724fb90cc22bc79449f9133e2a01047814f86fed8",
+      "role": "continuation",
+      "seed": 20260915
+    }
+  ],
+  "claim_boundary": "reserved family-disjoint five-domain language-model masked loss only; capability/retention/benchmark contamination and market comparisons require separate evaluation; scheduler exit unconfirmed",
+  "confirmation_manifest": "/ssd/scxi253/pretrain500m-20260912-v1/data/confirmation-masked-f2-continuation-v1/confirmation-mixture.json",
+  "confirmation_manifest_sha256": "8d2f6add7a651401428da8684b5a3846facaec21fc3fa1705dc04065302e63bd",
+  "confirmation_padded_prediction_tokens": 18022400,
+  "confirmation_valid_target_tokens": 11045058,
+  "domains": [
+    "general_web",
+    "knowledge_reading",
+    "math",
+    "code",
+    "multilingual"
+  ],
+  "gate": {
+    "both_seeds_lower_equal_domain_masked_loss_vs_matched_parent": true,
+    "max_relative_domain_regression_vs_matched_parent": 0.005
+  },
+  "inputs_receipt_sha256": "5ce43e94d85aafc4400414be6de9aee24b0a1e214e5382a5796abc390a0bd20c",
+  "pack_receipt_sha256": "bc6a2936e7878c6163f740fe59992552d3d52353801b2f6ea7997f762c8a0467",
+  "protocol_sha256": "0f4f7bd4a97fb3b4be4f9c095a012b33beb004af36c747fc7e2cb217b82a01f7",
+  "run_receipt_sha256": "043858476ec781f328ca648519c6ed5ce04cc12cca0dce8c45eba20d5a50f803",
+  "schema": "p529m-f2-continuation-paired-confirmation-plan-v1",
+  "status": "FROZEN_BEFORE_CONFIRMATION_READ"
+}
