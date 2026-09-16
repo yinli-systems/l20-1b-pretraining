@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#SBATCH --partition=gpu_4090
+#SBATCH --partition=gpu_4090,gpu_5090
 #SBATCH --qos=gpugpu
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
@@ -10,6 +10,7 @@
 #SBATCH --job-name=p529m-sciq-proxy-1g
 #SBATCH --output=/ssd/scxi253/pretrain500m-20260912-v1/logs/%x-%A_%a.out
 #SBATCH --error=/ssd/scxi253/pretrain500m-20260912-v1/logs/%x-%A_%a.err
+#SBATCH --exclude=wqd10nbl11g5,wqd10nah08g5
 set -euo pipefail
 
 root=/ssd/scxi253/pretrain500m-20260912-v1
@@ -32,7 +33,8 @@ sha256sum -c SHA256SUMS
 echo "$plan_sha  $plan" | sha256sum -c -
 unshare -Urn true
 nvidia-smi --query-gpu=index,name,memory.total,uuid --format=csv > "$out/$candidate_id.gpu.csv"
-test "$(nvidia-smi --query-gpu=name --format=csv,noheader | grep -c '^NVIDIA GeForce RTX 4090$')" -eq 1
+gpu_name="$(nvidia-smi --query-gpu=name --format=csv,noheader)"
+test "$gpu_name" = "NVIDIA GeForce RTX 4090" || test "$gpu_name" = "NVIDIA GeForce RTX 5090"
 test "$(df -B1 --output=avail "$out" | tail -n 1)" -gt 4294967296
 
 export PYTHONPATH="$root/runtime/eval:$train_src"
