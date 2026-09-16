@@ -1,0 +1,41 @@
+{
+  "capacity_at_launch": {
+    "gpu_used_by_scan": 0,
+    "public_gpu_4090_free": 1,
+    "public_gpu_5090_free": 2
+  },
+  "checked_utc": "2026-09-16T07:29:10.608073+00:00",
+  "claim_boundary": "current-corpus contamination scan has started; no pass result, clean split, model score, capability gain, or market-superiority evidence exists yet",
+  "formal_promotion": false,
+  "reservation": {
+    "data_sha256": "3a719356a29b127fc54ef3c7f51a034db4bd105d5717215e8c85d2aa58d60667",
+    "dataset": "SciQ test",
+    "declared_license": "cc-by-nc-3.0",
+    "provider": "allenai/sciq",
+    "revision": "2c94ad3e1aafab77146f384e23536f97a4849815",
+    "rows": 1000,
+    "rows_jsonl_sha256": "55cc70950fdd8892d6c7c2cbd458d2c3c6fc5f88548b909799d147b68e7c16da",
+    "scoring_started": false,
+    "training_admitted": false
+  },
+  "scan": {
+    "expected_raw_rows": 199407,
+    "inputs": [
+      "diverse-intake-v1",
+      "diverse-intake-v2",
+      "diverse-intake-v3"
+    ],
+    "log": "/ssd/scxi253/pretrain500m-20260912-v1/logs/knowledge-contamination-v1.log",
+    "output": "/ssd/scxi253/pretrain500m-20260912-v1/data/knowledge-contamination-v1",
+    "pid": 3946869,
+    "policy": "normalized exact question plus lexical 5-token question/option and 13-token support shingle coverage",
+    "runtime": "login-node CPU process using pinned pyahocorasick 2.3.1 overlay"
+  },
+  "schema": "p529m-knowledge-contamination-v1-live-start",
+  "source": {
+    "github_branch": "codex/529m-results",
+    "github_commit": "12e91c8",
+    "source_hash_verification": "PASS"
+  },
+  "status": "RUNNING"
+}
