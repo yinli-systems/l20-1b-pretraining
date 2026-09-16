@@ -1,0 +1,52 @@
+{
+  "capacity_at_submit": {
+    "hp_5090_usable_by_account": false,
+    "public_gpu_4090_free": 0,
+    "public_gpu_5090_free": 0,
+    "public_gpu_5090_runnable_three_gpu_jobs": 0,
+    "ssd_free_bytes": 96465920000
+  },
+  "checked_utc": "2026-09-16T06:39:50.130101+00:00",
+  "claim_boundary": "submitted protocol-bound public Python function-generation development proxy; scheduler acceptance is not allocation, execution, a capability result, or evidence of market superiority",
+  "evaluation": {
+    "confirmation_scored": false,
+    "dataset": "MBPP sanitized test",
+    "dataset_sha256": "e9e9efa2c0d59ef5e55537a9d126b8f875d5ac010a8d75628d76824884e15850",
+    "plan_sha256": "a7e7cc4bf3f76bf1b255229fe9e5db6e6352bc94ad250a17af6baf72f488bb6f",
+    "primary_metric": "greedy execution pass@1 against all tests",
+    "role": "development",
+    "rows": 128,
+    "rows_jsonl_sha256": "2589596dfaf1e2de77b4dc623441350eb86bcbf9857d567fa9e08e94bc376c19",
+    "secondary_metrics": [
+      "syntax and policy pass rate",
+      "mean gold-code token NLL"
+    ],
+    "split_manifest_sha256": "bb6fc8c7aa567398701c2ad479104a25bc67a6c710ca1992c07ed9fd702cdfc2"
+  },
+  "formal_promotion": false,
+  "job": {
+    "allocated_node": null,
+    "gpu_uuids": [],
+    "id": 1594193,
+    "name": "p529m-code-proxy",
+    "partition": "gpu_5090",
+    "reason": "Priority",
+    "requested_cpus": 18,
+    "requested_gpus": 3,
+    "state": "PENDING",
+    "submit_scheduler_local": "2026-09-16T14:39:25"
+  },
+  "sandbox_validation": {
+    "blocked_import_rejection": "PASS",
+    "cpu_bound_process_limit": "PASS",
+    "safe_unit_test_execution": "PASS",
+    "unshare_user_and_network_namespaces": "PASS"
+  },
+  "schema": "p529m-independent-code-proxy-v1-submission",
+  "source": {
+    "github_branch": "codex/529m-results",
+    "github_commit": "413ec8b",
+    "source_hash_verification": "PASS"
+  },
+  "status": "SUBMITTED_PENDING_ALLOCATION"
+}
