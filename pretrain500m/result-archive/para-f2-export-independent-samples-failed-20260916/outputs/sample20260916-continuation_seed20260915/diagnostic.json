@@ -1,0 +1,76 @@
+{
+  "argmax_agreement": 0.984375,
+  "argmax_matches": 252,
+  "argmax_total": 256,
+  "attention_backend": "eager",
+  "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/f2-continuation-v1/seed20260915-1592302/train/resume.pt",
+  "checkpoint_sha256": "86ab770e671dd845c6de1c7724fb90cc22bc79449f9133e2a01047814f86fed8",
+  "checkpoint_step": 256,
+  "claim_boundary": "strict original export smoke and mismatch diagnostics; no threshold change or capability promotion",
+  "functional_limits": {
+    "max_abs_logit_difference": 0.5,
+    "mean_abs_logit_difference": 0.025,
+    "minimum_argmax_agreement": 0.97
+  },
+  "logit_difference_quantiles": {
+    "0.5": 0.015625,
+    "0.9": 0.0390625,
+    "0.99": 0.0625,
+    "0.999": 0.09375,
+    "0.9999": 0.125
+  },
+  "max_abs_logit_difference": 0.23046875,
+  "mean_abs_logit_difference": 0.018719030544161797,
+  "mismatches": [
+    {
+      "actual_top1_margin": 0.0,
+      "actual_top1_token_id": 3942,
+      "expected_margin_at_most_twice_row_max_drift": true,
+      "expected_top1_margin": 0.125,
+      "expected_top1_token_id": 3942,
+      "row_max_abs_logit_drift": 0.125,
+      "sample_index": 0,
+      "token_index": 28
+    },
+    {
+      "actual_top1_margin": 0.03125,
+      "actual_top1_token_id": 14,
+      "expected_margin_at_most_twice_row_max_drift": true,
+      "expected_top1_margin": 0.0,
+      "expected_top1_token_id": 14,
+      "row_max_abs_logit_drift": 0.09375,
+      "sample_index": 0,
+      "token_index": 52
+    },
+    {
+      "actual_top1_margin": 0.0,
+      "actual_top1_token_id": 84,
+      "expected_margin_at_most_twice_row_max_drift": true,
+      "expected_top1_margin": 0.03125,
+      "expected_top1_token_id": 84,
+      "row_max_abs_logit_drift": 0.1328125,
+      "sample_index": 0,
+      "token_index": 103
+    },
+    {
+      "actual_top1_margin": 0.125,
+      "actual_top1_token_id": 6336,
+      "expected_margin_at_most_twice_row_max_drift": true,
+      "expected_top1_margin": 0.0,
+      "expected_top1_token_id": 6336,
+      "row_max_abs_logit_drift": 0.15625,
+      "sample_index": 1,
+      "token_index": 51
+    }
+  ],
+  "sample_seed": 20260916,
+  "sample_shape": [
+    2,
+    128
+  ],
+  "schema": "p529m-f2-export-parity-independent-sample-diagnostic-v1",
+  "state_tensor_count": 237,
+  "state_tensor_parity": "bitwise_exact",
+  "status": "PASS_ORIGINAL_FROZEN_GATE",
+  "torch_deterministic_algorithms": true
+}

@@ -1,0 +1,131 @@
+{
+  "cells": [
+    {
+      "all_mismatch_margins_within_twice_own_row_max_drift": true,
+      "argmax_agreement": 0.96484375,
+      "argmax_matches": 247,
+      "argmax_total": 256,
+      "checkpoint_seed": 20260914,
+      "diagnostic_sha256": "8023d4fdce7c991eb98b86a41941294c2e8e2969659da73cdde0ca25ca2529e0",
+      "max_abs_logit_difference": 0.21875,
+      "maximum_expected_top1_margin_at_mismatch": 0.0625,
+      "mean_abs_logit_difference": 0.01849527843296528,
+      "mismatch_count": 9,
+      "sample_seed": 20260916,
+      "state_tensor_parity": "bitwise_exact",
+      "status": "FAIL_ORIGINAL_FROZEN_GATE"
+    },
+    {
+      "all_mismatch_margins_within_twice_own_row_max_drift": true,
+      "argmax_agreement": 0.984375,
+      "argmax_matches": 252,
+      "argmax_total": 256,
+      "checkpoint_seed": 20260915,
+      "diagnostic_sha256": "54c3b70db605be25545b31d16eeaab8eb3fe3dbb430bdd99fb045c7e73a9ca43",
+      "max_abs_logit_difference": 0.23046875,
+      "maximum_expected_top1_margin_at_mismatch": 0.125,
+      "mean_abs_logit_difference": 0.018719030544161797,
+      "mismatch_count": 4,
+      "sample_seed": 20260916,
+      "state_tensor_parity": "bitwise_exact",
+      "status": "PASS_ORIGINAL_FROZEN_GATE"
+    },
+    {
+      "all_mismatch_margins_within_twice_own_row_max_drift": true,
+      "argmax_agreement": 0.96484375,
+      "argmax_matches": 247,
+      "argmax_total": 256,
+      "checkpoint_seed": 20260914,
+      "diagnostic_sha256": "f651b58eee57474891f8b0a85062154e0c03354cb48cbc370dcc7474885883fd",
+      "max_abs_logit_difference": 0.3125,
+      "maximum_expected_top1_margin_at_mismatch": 0.0625,
+      "mean_abs_logit_difference": 0.018654869869351387,
+      "mismatch_count": 9,
+      "sample_seed": 20260917,
+      "state_tensor_parity": "bitwise_exact",
+      "status": "FAIL_ORIGINAL_FROZEN_GATE"
+    },
+    {
+      "all_mismatch_margins_within_twice_own_row_max_drift": true,
+      "argmax_agreement": 0.96875,
+      "argmax_matches": 248,
+      "argmax_total": 256,
+      "checkpoint_seed": 20260915,
+      "diagnostic_sha256": "8fcae284c4486c870c2c00c16ad0016d1e323999aff1788d0be894d6a5e1f9c2",
+      "max_abs_logit_difference": 0.2265625,
+      "maximum_expected_top1_margin_at_mismatch": 0.0625,
+      "mean_abs_logit_difference": 0.017993075773119926,
+      "mismatch_count": 8,
+      "sample_seed": 20260917,
+      "state_tensor_parity": "bitwise_exact",
+      "status": "FAIL_ORIGINAL_FROZEN_GATE"
+    }
+  ],
+  "checked_utc": "2026-09-16T03:26:19.641940+00:00",
+  "claim_boundary": "The original strict gate and three new failures remain failed. Exact tensor parity and bounded logit drift do not authorize post hoc threshold relaxation, a complete seven-task score, post-training promotion, or external superiority claims.",
+  "frozen_sample_seeds": [
+    20260916,
+    20260917
+  ],
+  "independent_checks": {
+    "all_cell_statuses_independently_recomputed": true,
+    "all_four_atomic_diagnostics_present": true,
+    "all_max_and_mean_logit_drift_within_unchanged_bounds": true,
+    "all_mismatch_expected_margins_within_twice_own_row_max_drift": true,
+    "all_state_tensors_bitwise_exact": true,
+    "nine_snapshot_files_match_independent_remote_sha256_reread": true
+  },
+  "interpretation": "The same exact checkpoint changes PASS/FAIL across predeclared random sample seeds, directly establishing sample sensitivity of the 256-position argmax threshold under otherwise fixed conditions. It does not invalidate any individual strict-gate failure.",
+  "job_elapsed": "00:03:49",
+  "job_exit_code": "1:0",
+  "job_failure_interpretation": "expected wrapper exit because three of four complete cells failed the unchanged original gate; the diagnostic grid itself is complete",
+  "job_id": 1593602,
+  "job_state": "FAILED",
+  "new_grid_completed_cells": 4,
+  "new_grid_fail_cells": 3,
+  "new_grid_pass_cells": 1,
+  "original_diagnostic_result_sha256": "5cab3acd7c2258f2ee451fae93a515187049c7f53360628e213560c139079d56",
+  "original_sample_seed": 20260912,
+  "plan_sha256": "44bc8f5a49e7d4a6d55d18a5f3e9af3ea6cb0ce09cc4822342ebf35ed3f39c5e",
+  "raw_result_sha256": "ef80b4cd99c07ef1079bd303437c732b658c496a8fa5c630c151e7f9c5ad7842",
+  "schema": "p529m-f2-export-parity-independent-samples-result-receipt-v1",
+  "snapshot": "pretrain500m/result-archive/para-f2-export-independent-samples-failed-20260916/SHA256SUMS",
+  "snapshot_file_count": 9,
+  "status": "COMPLETE_GRID_REPRODUCES_SAMPLE_SENSITIVE_STRICT_GATE_FAILURE",
+  "three_sample_status_patterns_by_checkpoint_seed": {
+    "20260914": [
+      {
+        "argmax_matches": 250,
+        "sample_seed": 20260912,
+        "status": "PASS_ORIGINAL_FROZEN_GATE"
+      },
+      {
+        "argmax_matches": 247,
+        "sample_seed": 20260916,
+        "status": "FAIL_ORIGINAL_FROZEN_GATE"
+      },
+      {
+        "argmax_matches": 247,
+        "sample_seed": 20260917,
+        "status": "FAIL_ORIGINAL_FROZEN_GATE"
+      }
+    ],
+    "20260915": [
+      {
+        "argmax_matches": 247,
+        "sample_seed": 20260912,
+        "status": "FAIL_ORIGINAL_FROZEN_GATE"
+      },
+      {
+        "argmax_matches": 252,
+        "sample_seed": 20260916,
+        "status": "PASS_ORIGINAL_FROZEN_GATE"
+      },
+      {
+        "argmax_matches": 248,
+        "sample_seed": 20260917,
+        "status": "FAIL_ORIGINAL_FROZEN_GATE"
+      }
+    ]
+  }
+}

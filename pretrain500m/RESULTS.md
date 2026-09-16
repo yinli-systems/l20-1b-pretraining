@@ -167,6 +167,18 @@ and [raw JSON snapshots](result-archive/para-f2-export-diagnostic-failed-2026091
 preserve this negative gate result. Numerical sensitivity is a plausible
 explanation, but the original gate remains failed and has not been relaxed.
 
+Two additional input seeds were then frozen before execution and applied to
+both continuation checkpoints under the same unchanged gate. Only one of four
+cells passed: seed 20260914 had 247/256 matches on both new samples; seed
+20260915 had 252/256 and 248/256. Across the original and two new samples,
+each exact checkpoint produced both a pass and a failure. All four new reloads
+again had bitwise-exact tensors and stayed inside the original max/mean logit
+drift bounds. This directly establishes that the 256-position argmax decision
+is sample-sensitive under the fixed setup, while leaving every individual
+failure valid. The [four-cell receipt](result-archive/f2-export-parity-independent-samples-results-20260916.json)
+and [nine-file snapshot](result-archive/para-f2-export-independent-samples-failed-20260916/SHA256SUMS)
+retain the complete diagnostic grid. No threshold has been changed.
+
 ## Current gate
 
 The earlier F2 two-seed seven-task mean is 48.5311%, about 1.47 percentage
