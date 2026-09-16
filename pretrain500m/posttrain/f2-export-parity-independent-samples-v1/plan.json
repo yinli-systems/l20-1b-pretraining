@@ -1,0 +1,43 @@
+{
+  "attention_backend": "eager",
+  "checkpoint_grid": [
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/f2-continuation-v1/seed20260914-1592301/train/resume.pt",
+      "checkpoint_sha256": "98b21eb475aed1b0f6896395eb7cabf9c23ff5032f6f33a5cbcc5fdaec781ae9",
+      "expected_step": 256,
+      "id": "continuation_seed20260914",
+      "seed": 20260914
+    },
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/f2-continuation-v1/seed20260915-1592302/train/resume.pt",
+      "checkpoint_sha256": "86ab770e671dd845c6de1c7724fb90cc22bc79449f9133e2a01047814f86fed8",
+      "expected_step": 256,
+      "id": "continuation_seed20260915",
+      "seed": 20260915
+    }
+  ],
+  "claim_boundary": "diagnostic-only sample-sensitivity measurement; original failure remains valid; no threshold relaxation, seven-task score, new export protocol, or automatic promotion",
+  "execution_order": "sample_seed ascending, then checkpoint seed ascending",
+  "failure_policy": "retain every atomic diagnostic, continue all four cells, exit nonzero if any unchanged gate fails",
+  "gpu_count": 1,
+  "gpu_model": "NVIDIA GeForce RTX 5090",
+  "original_diagnostic_result_sha256": "5cab3acd7c2258f2ee451fae93a515187049c7f53360628e213560c139079d56",
+  "original_functional_limits": {
+    "max_abs_logit_difference": 0.5,
+    "mean_abs_logit_difference": 0.025,
+    "minimum_argmax_agreement": 0.97
+  },
+  "original_sample_seed": 20260912,
+  "purpose": "test sample sensitivity of the original strict BF16 HF reload smoke gate without changing thresholds",
+  "sample_seeds": [
+    20260916,
+    20260917
+  ],
+  "sample_shape": [
+    2,
+    128
+  ],
+  "schema": "p529m-f2-export-parity-independent-samples-plan-v1",
+  "status": "FROZEN_BEFORE_EXECUTION",
+  "torch_deterministic_algorithms": true
+}
