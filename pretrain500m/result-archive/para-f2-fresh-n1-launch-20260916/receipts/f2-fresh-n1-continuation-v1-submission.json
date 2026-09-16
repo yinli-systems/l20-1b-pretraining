@@ -1,0 +1,27 @@
+{
+  "checked_utc": "2026-09-16T14:18:32.409991+00:00",
+  "claim_boundary": "scheduler submission only; allocation, live GPU identity, MFU, completion, capability gain and promotion remain unverified",
+  "free_bytes_before_submit": 75824947200,
+  "jobs": [
+    {
+      "arm_id": "f2n1-lr3e5",
+      "job_id": 1595097,
+      "job_name": "p529m-f2n1-lr3e5",
+      "peak_learning_rate": "0.00003"
+    },
+    {
+      "arm_id": "f2n1-lr6e5",
+      "job_id": 1595098,
+      "job_name": "p529m-f2n1-lr6e5",
+      "peak_learning_rate": "0.00006"
+    }
+  ],
+  "parent_checkpoint_sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc",
+  "queue_after": "1560103|PENDING|biomm-lssd03-receipt|(Dependency)\n1560080|PENDING|biomm-instr20-select|(Dependency)\n1560079|PENDING|biomm-instr-paired|(Dependency)\n1560078|PENDING|biomm-instr20-sqa|(DependencyNeverSatisfied)\n1560077|PENDING|biomm-instr20-vqa|(DependencyNeverSatisfied)\n1560076|PENDING|biomm-instr20-pmqa|(DependencyNeverSatisfied)\n1500015|PENDING|abf-late-scale-analyze|(DependencyNeverSatisfied)\n1595098|PENDING|p529m-f2n1-lr6e5|(Priority)\n1595097|PENDING|p529m-f2n1-lr3e5|(Priority)\n1594614|RUNNING|p529m-np1-n3-l1e4|wqd10nah09g4\n",
+  "queue_before": "1560103|PENDING|biomm-lssd03-receipt|(Dependency)\n1560080|PENDING|biomm-instr20-select|(Dependency)\n1560079|PENDING|biomm-instr-paired|(Dependency)\n1560078|PENDING|biomm-instr20-sqa|(DependencyNeverSatisfied)\n1560077|PENDING|biomm-instr20-vqa|(DependencyNeverSatisfied)\n1560076|PENDING|biomm-instr20-pmqa|(DependencyNeverSatisfied)\n1500015|PENDING|abf-late-scale-analyze|(DependencyNeverSatisfied)\n1594614|RUNNING|p529m-np1-n3-l1e4|wqd10nah09g4\n",
+  "runner_sha256": "0715b9b47dcbbbb3b5c26fb8333faf8378cd5fdb3ca0b93ab2fb3855e8299458",
+  "schema": "p529m-f2-fresh-n1-submission-v1",
+  "status": "SUBMITTED_PENDING_ALLOCATION",
+  "storage_gate_bytes": 32212254720,
+  "submitted_gpu_total": 8
+}

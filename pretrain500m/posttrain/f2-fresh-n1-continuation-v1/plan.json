@@ -1,0 +1,49 @@
+{
+  "schema": "p529m-f2-fresh-n1-continuation-plan-v1",
+  "as_of": "2026-09-16",
+  "status": "FROZEN_FOR_CONTROLLED_SUBMISSION",
+  "formal_promotion": false,
+  "rationale": "The exact old-F2 continuation failed the matched seven-task retention gate. Preserve the best original F2 weights while replacing old-mixture replay with the admitted fresh N1 knowledge mixture; pair learning rates to measure retention sensitivity.",
+  "parent": {
+    "id": "F2_reasoning_no_synthetic_seed20260915",
+    "path": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260915-1590004/train/model-final.pt",
+    "sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc",
+    "historical_seven_task_score": 0.48543171449359374,
+    "checkpoint_semantics": "model-only; first launch uses a fresh AdamW optimizer"
+  },
+  "data": {
+    "recipe": "N1_new_pool_knowledge",
+    "manifest_sha256": "f1cef293be28f9a102ad7d15789f91d242c9c91f5ce7999187d5015ee544f6da",
+    "admission_sha256": "f4874ef2adadce7035fa625a3f883fab4397923fd62651a46ce78c136c3a7fd4",
+    "protocol_sha256": "495eb7f6d25ccad8fe9f091b9c3033632e464d51f6e59fc056dd6926a47bb819",
+    "validation_sha256": "429c1ab33bdb8a92214ffdd2327462a05275b29fbd60abecc1d98b9fad634af3",
+    "base_lineage_fineweb_replay_percent": 0,
+    "synthetic_percent": 0
+  },
+  "arms": [
+    {"arm_id": "f2n1-lr3e5", "peak_learning_rate": 0.00003},
+    {"arm_id": "f2n1-lr6e5", "peak_learning_rate": 0.00006}
+  ],
+  "training": {
+    "gpus_per_arm": 4,
+    "gpu_type": "NVIDIA GeForce RTX 5090",
+    "seed": 20260915,
+    "target_prediction_tokens": 536870912,
+    "steps": 256,
+    "sequence_length": 2048,
+    "microbatch_per_gpu": 4,
+    "gradient_accumulation": 64,
+    "warmup_tokens": 67108864,
+    "checkpoint_mode": "full",
+    "mfu_min_strict": 0.70,
+    "mfu_grace_steps": 5,
+    "mfu_window_steps": 10
+  },
+  "selection": {
+    "engineering_gate": "all rolling ten-step MFU medians after grace are strictly above 0.70 and all losses are finite",
+    "first_quality_gate": "frozen five-domain masked validation",
+    "capability_gate": "same 489-row seven-task protocol, compared to the exact F2 parent",
+    "promotion_gate": "strict aggregate retention plus breadth checks; no point-estimate-only promotion"
+  },
+  "claim_boundary": "This is a paired experimental continuation plan, not evidence of quality gain, score above 0.50, or superiority."
+}

@@ -1,0 +1,61 @@
+{
+  "checked_utc": "2026-09-16T14:18:32.409991+00:00",
+  "claim_boundary": "The two jobs are accepted by Slurm but still pending. This does not establish allocation, live training, MFU, completion, quality gain, a score above 0.50, or superiority.",
+  "data": {
+    "admission_sha256": "f4874ef2adadce7035fa625a3f883fab4397923fd62651a46ce78c136c3a7fd4",
+    "manifest_sha256": "f1cef293be28f9a102ad7d15789f91d242c9c91f5ce7999187d5015ee544f6da",
+    "old_f2_mixture_reused": false,
+    "reason": "best point estimate among the first five fresh-pool seven-task screens",
+    "recipe": "N1_new_pool_knowledge"
+  },
+  "decision": "Reopen F2 only as a fresh-data paired continuation; do not repeat the rejected old-F2 mixture.",
+  "jobs": [
+    {
+      "arm_id": "f2n1-lr3e5",
+      "job_id": 1595097,
+      "job_name": "p529m-f2n1-lr3e5",
+      "peak_learning_rate": "0.00003"
+    },
+    {
+      "arm_id": "f2n1-lr6e5",
+      "job_id": 1595098,
+      "job_name": "p529m-f2n1-lr6e5",
+      "peak_learning_rate": "0.00006"
+    }
+  ],
+  "parent": {
+    "checkpoint_sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc",
+    "historical_seven_task_score": 0.48543171449359374,
+    "id": "F2_reasoning_no_synthetic_seed20260915",
+    "optimizer_semantics": "parent is model-only; both arms initialize a fresh AdamW optimizer"
+  },
+  "scheduler_at_submit": {
+    "allocation_verified": false,
+    "jobs_pending_reason": "Priority",
+    "live_gpu_identity_verified": false,
+    "public_gpu_5090_free": 0,
+    "training_started": false
+  },
+  "schema": "p529m-f2-fresh-n1-launch-v1",
+  "status": "SUBMITTED_PENDING_ALLOCATION",
+  "storage": {
+    "free_bytes_before_submit": 75824947200,
+    "passed": true,
+    "storage_gate_bytes": 32212254720
+  },
+  "training": {
+    "checkpoint_mode": "full",
+    "gpus_per_job": 4,
+    "steps_per_job": 256,
+    "strict_mfu_floor": 0.7,
+    "submitted_gpu_total": 8,
+    "target_prediction_tokens_per_job": 536870912
+  },
+  "verification": {
+    "bundle_sha256_check": "PASS",
+    "parent_sha256_recomputed_remote": true,
+    "runner_bash_syntax": "PASS",
+    "slurm_test_only": "PASS",
+    "submission_receipt_sha256": "d6241429d7be07e7711da8e7f5cf901ac715a4afb09e727546f4347e185ec9f9"
+  }
+}
