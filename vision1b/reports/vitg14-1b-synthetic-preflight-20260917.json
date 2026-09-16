@@ -1,0 +1,130 @@
+{
+  "status": "SYSTEMS_GATE_PASS_FORMAL_PRETRAINING_BLOCKED",
+  "recorded_at": "2026-09-17T06:47:22+08:00",
+  "scope": "Synthetic systems qualification for a DINO-style ViT-g/14 student-teacher pretraining workload",
+  "claim_boundary": "The evidence establishes construction, forward, backward, optimizer, memory, synthetic throughput, MFU/HFU accounting and bounded scaling. It is not image pretraining and provides no accuracy, representation-quality, convergence or superiority evidence.",
+  "model": {
+    "architecture": "DINO-style ViT-g/14 runtime proxy",
+    "student_parameters": 1147352576,
+    "teacher_parameters": 1147352576,
+    "global_views": 2,
+    "global_resolution": 224,
+    "local_views": 8,
+    "local_resolution": 98,
+    "proxy_objective": "normalized-projection MSE",
+    "formal_objective_gaps": [
+      "teacher EMA update",
+      "DINO centering and prototype objective",
+      "iBOT masked-patch objective",
+      "KoLeo regularization",
+      "real decode and multi-crop augmentation",
+      "checkpoint and deterministic resume",
+      "downstream frozen-feature and fine-tuning evaluation"
+    ]
+  },
+  "measurement_protocol": {
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "dense_non_sparse_bf16_tflops_per_gpu": 165.2,
+    "useful_training_flops_per_source_image": 7525825216512,
+    "hardware_training_flops_per_source_image_with_checkpointing": 9635230089216,
+    "mfu_definition": "Useful student forward/backward and teacher-forward dense matmul FLOPs divided by aggregate non-sparse dense BF16 peak; checkpoint recomputation is excluded.",
+    "hfu_definition": "Executed dense matmul FLOPs including checkpoint recomputation divided by aggregate non-sparse dense BF16 peak.",
+    "compile_mode": "max-autotune-no-cudagraphs",
+    "synthetic_inputs": true
+  },
+  "selected_efficiency_recipe": {
+    "job_id": 1595805,
+    "slurm_state": "COMPLETED",
+    "exit_code": "0:0",
+    "node": "wqd10nba06g3",
+    "elapsed": "00:04:03",
+    "gpus": 4,
+    "parallelism": "FSDP2",
+    "shard_group_size": 4,
+    "batch_per_rank": 64,
+    "global_source_batch_per_step": 256,
+    "activation_checkpointing": true,
+    "fused_multicrop": true,
+    "student_reshard_after_forward": false,
+    "teacher_reshard_after_forward": false,
+    "nccl_algorithm": "Ring",
+    "nccl_protocol": "Simple",
+    "measured_steps": 16,
+    "median_source_images_per_second": 44.01077745303095,
+    "median_augmented_views_per_second": 440.1077745303094,
+    "median_useful_mfu": 0.5012370138533869,
+    "median_hfu": 0.641728158543028,
+    "peak_memory_allocated_bytes": 21200897024,
+    "peak_memory_reserved_bytes": 23255318528,
+    "peak_memory_allocated_gib": 19.744874000549316,
+    "peak_memory_reserved_gib": 21.658203125,
+    "finite": true,
+    "strict_useful_mfu_greater_than_0_50": "PASS",
+    "source_sha256": "b7a4d71e96786e10d68cf38b97cdc14a4cd35ced8debc3a77a1d38607c04275f",
+    "artifact_sha256": {
+      "manifest.json": "5dcb284eec1391e837dc5eb85a6161b37dd1a0f9f47db2be3222c2fa416eac94",
+      "metrics.jsonl": "05b1a2beb98f75b8ed28ef1cacf18e7dd129f76741c4cbfe879158cedba60a8b",
+      "summary.json": "e3bc1fa06fb85bca3aee46c33ac5f8216a5ac8eeb2aeb92b294d812864ec652c",
+      "gpu.csv": "379ca142e89149683f73eb9e1754151dc441429b23cb9342c3443be6d8af6d59"
+    }
+  },
+  "selected_throughput_recipe": {
+    "job_id": 1595813,
+    "slurm_state": "COMPLETED",
+    "exit_code": "0:0",
+    "node": "wqd10nba07g1",
+    "elapsed": "00:04:11",
+    "gpus": 8,
+    "parallelism": "HSDP",
+    "replica_groups": 2,
+    "shard_group_size": 4,
+    "batch_per_rank": 64,
+    "global_source_batch_per_step": 512,
+    "measured_steps": 16,
+    "median_source_images_per_second": 81.6269237195078,
+    "median_augmented_views_per_second": 816.269237195078,
+    "median_useful_mfu": 0.4648229122840294,
+    "median_hfu": 0.5951075904300399,
+    "peak_memory_allocated_bytes": 21200897024,
+    "peak_memory_reserved_bytes": 23255318528,
+    "finite": true,
+    "aggregate_speedup_over_four_gpus": 1.8547030623719711,
+    "doubling_scaling_efficiency": 0.9273515311859856,
+    "source_sha256": "76fa67ef2b24a009bc319fd5ec19d50dc04f6ef8853028599efa50a655c439c4",
+    "artifact_sha256": {
+      "manifest.json": "84a65337bcc9fc94c5e7bdbcd0da79ce1f3231bf8deb394c120d75e868945bb8",
+      "metrics.jsonl": "8b97310dfae92784c12c9e0b66096054f8f0a1136de909c1bf0a6413eae60eaa",
+      "summary.json": "5c0a91b71af46b500b02e6c6766ab5472e14226b03c65469c69509622fa0e060",
+      "gpu.csv": "9403f29cd167cff535438f0143585726e75490b8c235467c1f53b5bd30735f09"
+    }
+  },
+  "frontier": [
+    {"job_id": 1595759, "gpus": 8, "batch_per_rank": 1, "median_source_images_per_second": 5.732158836408006, "recomputed_useful_mfu": 0.03264166579607404, "status": "PASS"},
+    {"job_id": 1595761, "gpus": 8, "batch_per_rank": 8, "median_source_images_per_second": 37.1454670327105, "recomputed_useful_mfu": 0.21152413171450352, "status": "PASS"},
+    {"job_id": 1595763, "gpus": 8, "batch_per_rank": 32, "median_source_images_per_second": 64.97343094352699, "recomputed_useful_mfu": 0.36998992508935874, "status": "PASS"},
+    {"job_id": 1595765, "gpus": 8, "batch_per_rank": 64, "median_source_images_per_second": 72.2079254382997, "recomputed_useful_mfu": 0.4111866117551258, "status": "PASS"},
+    {"job_id": 1595770, "gpus": 8, "batch_per_rank": 32, "activation_checkpointing": false, "status": "CUDA_OOM", "peak_process_memory_gib": 23.45},
+    {"job_id": 1595771, "gpus": 8, "batch_per_rank": 64, "fused_multicrop": true, "teacher_reshard_after_forward": false, "median_source_images_per_second": 74.71770557471166, "median_useful_mfu": 0.42547850539806614, "status": "PASS"},
+    {"job_id": 1595789, "gpus": 8, "batch_per_rank": 64, "fused_multicrop": true, "student_reshard_after_forward": false, "teacher_reshard_after_forward": false, "median_source_images_per_second": 79.66036182825324, "median_useful_mfu": 0.4536243642581252, "status": "PASS"},
+    {"job_id": 1595794, "gpus": 4, "batch_per_rank": 64, "median_source_images_per_second": 43.75447568736468, "median_useful_mfu": 0.498318003122322, "status": "PASS_RUNTIME_FAIL_STRICT_MFU"},
+    {"job_id": 1595805, "gpus": 4, "batch_per_rank": 64, "median_source_images_per_second": 44.01077745303095, "median_useful_mfu": 0.5012370138533869, "status": "PASS_STRICT_MFU"},
+    {"job_id": 1595813, "gpus": 8, "batch_per_rank": 64, "shard_group_size": 4, "median_source_images_per_second": 81.6269237195078, "median_useful_mfu": 0.4648229122840294, "status": "PASS_HSDP_SCALING"}
+  ],
+  "compute_only_lower_bounds": {
+    "basis": "The fastest eight-GPU synthetic proxy throughput. Real training will be slower because the proxy omits full objectives, decode, augmentation, checkpointing and evaluation.",
+    "one_142_million_source_image_pass_days": 20.134514981430552,
+    "imagenet_1k_100_epoch_source_exposures_days": 18.165969123390447,
+    "imagenet_1k_300_epoch_source_exposures_days": 54.49790737017133
+  },
+  "formal_training_gates": {
+    "data": "BLOCKED: no immutable admitted image corpus is present. Require source, license, attribution, integrity, quality, deduplication, benchmark-overlap and split receipts.",
+    "method": "BLOCKED: replace the proxy loss with a pinned full self-supervised objective, teacher EMA and formal checkpoint/resume semantics.",
+    "quality": "BLOCKED: define frozen downstream linear, k-NN, transfer, robustness and contamination-aware evaluation before training.",
+    "systems": "PASS_BOUNDED_SYNTHETIC: four-GPU strict useful MFU gate passed; eight-GPU HSDP scaling passed but per-GPU useful MFU is below 50%."
+  },
+  "references": {
+    "dinov2_repository": "https://github.com/facebookresearch/dinov2",
+    "dinov2_model_card": "https://github.com/facebookresearch/dinov2/blob/main/MODEL_CARD.md",
+    "imagenet_access_terms": "https://www.image-net.org/download.php"
+  }
+}
