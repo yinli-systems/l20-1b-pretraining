@@ -1,0 +1,113 @@
+{
+  "candidate": {
+    "admission_sha256": "305bfc0868cdf405266c37111df2a2329b35ce4c14c7a49040fa90dcda2609a9",
+    "arm_id": "n3-lr6e5",
+    "base_checkpoint_sha256": "13aa21721e15c48cdfdafe30d8fdd41d9c95c90be766327661d96af1e90dd6cf",
+    "job_id": 1594611,
+    "manifest_sha256": "ca23c964ec60a26f4fb972721518420b808f65cfe71d831c7e7c918e53f8a89b",
+    "protocol_sha256": "495eb7f6d25ccad8fe9f091b9c3033632e464d51f6e59fc056dd6926a47bb819",
+    "recipe": "N3_new_pool_balanced",
+    "seed": 20260916
+  },
+  "checked_utc": "2026-09-16T13:27:20.989932+00:00",
+  "checkpoint": {
+    "bytes": 2372504677,
+    "independent_remote_reread_matches_sidecar": true,
+    "remote_path": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/new-pool-mixture-pilots-v1/n3-lr6e5-seed20260916-1594611/train/model-final.pt",
+    "resumable": false,
+    "sha256": "c2f334972a5b561285c28ffe76d69c5c65c09240af8115155560f5201ef759eb",
+    "stored_in_git": false
+  },
+  "claim_boundary": "N3 at learning rate 6e-5 completed and improved the exposed development loss in all domains. It provisionally ranks second behind N2 among completed arms. This is not an independent capability result, confirmation result, promotion, or market-superiority evidence.",
+  "development_masked_loss": {
+    "absolute_delta": -0.6743498773086496,
+    "after_equal_domain": 2.6478558075252785,
+    "after_token_weighted": 2.6624962300053574,
+    "all_five_domains_lower": true,
+    "before_equal_domain": 3.322205684833928,
+    "before_token_weighted": 3.211335755539882,
+    "domains": {
+      "code": {
+        "absolute_delta": -1.6596648290399016,
+        "after": 1.8644087196421173,
+        "before": 3.524073548682019,
+        "relative_reduction": 0.47095067855794487
+      },
+      "general_web": {
+        "absolute_delta": -0.23822450481573032,
+        "after": 3.1107781109240626,
+        "before": 3.349002615739793,
+        "relative_reduction": 0.07113297066300041
+      },
+      "knowledge_reading": {
+        "absolute_delta": -0.32965181288206047,
+        "after": 2.618408508838296,
+        "before": 2.9480603217203565,
+        "relative_reduction": 0.11181990085253425
+      },
+      "math": {
+        "absolute_delta": -0.6829807834435568,
+        "after": 2.2510954894985815,
+        "before": 2.9340762729421384,
+        "relative_reduction": 0.2327754018332657
+      },
+      "multilingual": {
+        "absolute_delta": -0.461227456361998,
+        "after": 3.394588208723336,
+        "before": 3.855815665085334,
+        "relative_reduction": 0.119618647887772
+      }
+    },
+    "relative_reduction": 0.20298257882920914,
+    "role": "adaptive development screen"
+  },
+  "formal_promotion": false,
+  "next_gate": "wait for all seven frozen arms, rank five-domain development loss, then run independent capability evaluation on the selected successor",
+  "provisional_completed_arm_comparison": {
+    "completed_arms": [
+      "n0-lr6e5",
+      "n1-lr6e5",
+      "n2-lr6e5",
+      "n3-lr6e5"
+    ],
+    "current_leader": "n2-lr6e5",
+    "equal_domain_loss_by_arm": {
+      "n0-lr6e5": 2.658868193857286,
+      "n1-lr6e5": 2.6660707664663392,
+      "n2-lr6e5": 2.6435820127354948,
+      "n3-lr6e5": 2.6478558075252785
+    },
+    "n3_minus_n2": 0.004273794789783736,
+    "ranking_best_to_worst": [
+      "n2-lr6e5",
+      "n3-lr6e5",
+      "n0-lr6e5",
+      "n1-lr6e5"
+    ],
+    "selection_frozen_until_all_arms_complete": true
+  },
+  "schema": "p529m-new-pool-mixture-pilot-result-v1",
+  "status": "N3_LR6E5_QUALIFICATION_COMPLETED_DEVELOPMENT_LOSS_IMPROVED_ALL_DOMAINS",
+  "training": {
+    "all_rolling_windows_pass": true,
+    "complete_rolling_mfu_windows": 242,
+    "elapsed": "00:58:36",
+    "exit_code": "0:0",
+    "finite_loss_and_gradients": true,
+    "gpu_count": 4,
+    "gpu_model": "NVIDIA GeForce RTX 5090",
+    "latest_rolling_ten_step_median_mfu": 0.771306396653691,
+    "mfu_gate_strictly_greater_than": 0.7,
+    "minimum_rolling_ten_step_median_mfu": 0.768732038309039,
+    "prediction_tokens": 536870912,
+    "scheduler_state": "COMPLETED",
+    "step": 256
+  },
+  "verification": {
+    "checkpoint_identity_independently_recomputed": true,
+    "mfu_gate_passed": true,
+    "scheduler_job_and_all_steps_completed_0_0": true,
+    "small_snapshot_manifest_sha256": "85218303cb534016303e2073aaab94f88fbe1a0f171d7f434568a219ac9f5442",
+    "training_status_qualification_completed": true
+  }
+}
