@@ -1,0 +1,36 @@
+{
+  "capacity_snapshot": "\u516c\u5171partition\uff1a\nPartition      \u53ef\u7528GPU\u6570\u91cf  \u603b\u5361\u6570\ngpu_4090            30     248\ngpu_5090             0     248\nhp_4090             30     272\nhp_5090              8     408\n\n\u53ef\u8fd0\u884c\u4f5c\u4e1a\u6570\u91cf\uff08\u6309GPU\u89c4\u6a21\uff09\uff1a\nPartition      1\u5361GPU 2\u5361GPU 3\u5361GPU 4\u5361GPU 5\u5361GPU 6\u5361GPU 7\u5361GPU 8\u5361GPU\ngpu_4090       30     11      5      3      2      0      0      0\ngpu_5090        0      0      0      0      0      0      0      0\nhp_4090        30     11      5      3      2      0      0      0\nhp_5090         8      4      2      2      1      1      1      1\n",
+  "checked_utc": "2026-09-16T13:47:52.125929+00:00",
+  "claim_boundary": "submitted adaptive seven-task screens; scheduler allocation, completion, capability gain, and promotion remain unverified",
+  "formal_promotion": false,
+  "free_bytes_before_submit": 78505050112,
+  "jobs": [
+    {
+      "candidate_id": "n0-lr6e5",
+      "job_id": 1595023,
+      "job_name": "p529m-np7-n0lr6e5"
+    },
+    {
+      "candidate_id": "n1-lr6e5",
+      "job_id": 1595024,
+      "job_name": "p529m-np7-n1lr6e5"
+    },
+    {
+      "candidate_id": "n2-lr6e5",
+      "job_id": 1595025,
+      "job_name": "p529m-np7-n2lr6e5"
+    },
+    {
+      "candidate_id": "n3-lr6e5",
+      "job_id": 1595026,
+      "job_name": "p529m-np7-n3lr6e5"
+    }
+  ],
+  "plan_sha256": "b626daa92ab28e262a98bf077c2b0f8f302dff3f54190c19a5c2fd800358d661",
+  "runner_sha256": "9e358e2e77874f751fefbdeced6c9bd0834ab54a8698cb5f36dd617208cd7e72",
+  "schema": "p529m-new-pool-seven-task-eval-submission-v1",
+  "status": "SUBMITTED_PENDING_ALLOCATION",
+  "storage_gate_bytes": 10737418240,
+  "submitted_gpu_total": 8,
+  "world_size_per_job": 2
+}
