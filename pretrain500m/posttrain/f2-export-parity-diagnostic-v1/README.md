@@ -1,0 +1,5 @@
+# Original-gate BF16 export diagnostic
+
+This isolated job reruns the unchanged 97% BF16 reload argmax gate for both F2 continuation checkpoints on one public RTX 5090. The native checkpoint SHA-256 values, 256-step identities, sample seed and shape, eager attention backend, deterministic-algorithm setting, and original max/mean-logit drift limits are frozen in `plan.json` before the retest. The diagnostic exporter is a copy of the original HF exporter with one addition: it writes exact tensor-parity status, logit-drift metrics, and the expected/actual top-token margins at every changed argmax position before the original gate raises.
+
+The failing candidate must still exit nonzero. A diagnostic file is evidence for classifying BF16 numerical sensitivity; it is not a passing export receipt, a seven-task result, or grounds to relax a threshold without a new comparable protocol. The run keeps diagnostic JSON and any successful control receipt in a job-owned output directory, and removes only job-owned temporary HF exports. All large native checkpoints remain on ParaCloud.

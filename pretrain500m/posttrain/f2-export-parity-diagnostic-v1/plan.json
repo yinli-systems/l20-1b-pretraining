@@ -1,0 +1,38 @@
+{
+  "attention_backend": "eager",
+  "checkpoint_grid": [
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/f2-continuation-v1/seed20260914-1592301/train/resume.pt",
+      "checkpoint_sha256": "98b21eb475aed1b0f6896395eb7cabf9c23ff5032f6f33a5cbcc5fdaec781ae9",
+      "expected_step": 256,
+      "id": "continuation_seed20260914",
+      "seed": 20260914
+    },
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/f2-continuation-v1/seed20260915-1592302/train/resume.pt",
+      "checkpoint_sha256": "86ab770e671dd845c6de1c7724fb90cc22bc79449f9133e2a01047814f86fed8",
+      "expected_step": 256,
+      "id": "continuation_seed20260915",
+      "seed": 20260915
+    }
+  ],
+  "claim_boundary": "diagnostic-only exact original frozen gate; no threshold relaxation, no seven-task score, no automatic promotion",
+  "gpu_count": 1,
+  "gpu_model": "NVIDIA GeForce RTX 5090",
+  "original_functional_limits": {
+    "max_abs_logit_difference": 0.5,
+    "mean_abs_logit_difference": 0.025,
+    "minimum_argmax_agreement": 0.97
+  },
+  "original_seven_task_failed_result_sha256": "a914d81d32677f1049ffe831749913f9d0bba1c3a5b6917a1fddcfecbc418714",
+  "paired_confirmation_checkpoint_plan_sha256": "919d5738976491dd3d614a104372e5e7b7a57d21636468d7dad68acc8eba5310",
+  "purpose": "classify original strict BF16 HF reload smoke failure, preserving exact tensor parity and per-position logit margins",
+  "sample_seed": 20260912,
+  "sample_shape": [
+    2,
+    128
+  ],
+  "schema": "p529m-f2-export-parity-diagnostic-plan-v1",
+  "status": "FROZEN_BEFORE_RETEST",
+  "torch_deterministic_algorithms": true
+}

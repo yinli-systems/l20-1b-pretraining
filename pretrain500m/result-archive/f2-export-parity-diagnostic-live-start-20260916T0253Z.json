@@ -1,0 +1,25 @@
+{
+  "checked_utc": "2026-09-16T02:53:18Z",
+  "claim_boundary": "This is a real one-GPU allocation and source/checkpoint preflight for a strict diagnostic retest. No mismatch diagnostic, gate pass, seven-task score, or threshold change exists yet.",
+  "frozen_gate": {
+    "max_abs_logit_difference": 0.5,
+    "mean_abs_logit_difference": 0.025,
+    "minimum_argmax_agreement": 0.97
+  },
+  "gpu_model": "NVIDIA GeForce RTX 5090",
+  "gpu_uuid": "GPU-28b2105b-82e8-8d98-2fa6-71cf8f749df6",
+  "job_id": 1593488,
+  "node": "wqd10nah10g2",
+  "plan_sha256": "74b82292898dbec5487880d422e147abb3b47eea2c1e3c90fcc73efd1d290031",
+  "result_diagnostics_present": false,
+  "schema": "p529m-f2-export-parity-diagnostic-live-start-v1",
+  "slurm": {
+    "allocated_gpus": 1,
+    "job_state": "RUNNING",
+    "partition": "gpu_5090",
+    "submit_local": "2026-09-16T10:52:42",
+    "start_local": "2026-09-16T10:52:53"
+  },
+  "source": "source-bound ParaCloud SSH, squeue/sacct, deployed SHA256SUMS and first continuation checkpoint SHA preflight, job-owned GPU CSV",
+  "status": "LIVE_STRICT_ORIGINAL_GATE_DIAGNOSTIC_RUNNING"
+}
