@@ -1,0 +1,117 @@
+{
+  "all_logits_finite": true,
+  "all_mismatch_native_and_reloaded_margins_within_twice_own_row_max_drift": true,
+  "argmax_agreement": 0.97265625,
+  "argmax_matches": 249,
+  "argmax_total": 256,
+  "attention_backend": "eager",
+  "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/f2-continuation-v1/seed20260915-1592302/train/resume.pt",
+  "checkpoint_sha256": "86ab770e671dd845c6de1c7724fb90cc22bc79449f9133e2a01047814f86fed8",
+  "checkpoint_step": 256,
+  "claim_boundary": "adaptive export-integrity protocol frozen after the original small-sample argmax gate proved sample-sensitive; no capability score or automatic promotion",
+  "functional_limits": {
+    "max_abs_logit_difference": 0.5,
+    "mean_abs_logit_difference": 0.025
+  },
+  "logit_difference_quantiles": {
+    "0.5": 0.015625,
+    "0.9": 0.0390625,
+    "0.99": 0.06640625,
+    "0.999": 0.1015625,
+    "0.9999": 0.140625
+  },
+  "margin_aware_rule": "every changed argmax must have both native and reloaded top1 margins at most twice that row's measured maximum absolute logit drift; all positions outside that ambiguity set must preserve argmax",
+  "max_abs_logit_difference": 0.2890625,
+  "mean_abs_logit_difference": 0.018193555995821953,
+  "mismatches": [
+    {
+      "actual_margin_at_most_twice_row_max_drift": true,
+      "actual_top1_margin": 0.0,
+      "actual_top1_token_id": 187,
+      "expected_margin_at_most_twice_row_max_drift": true,
+      "expected_top1_margin": 0.03125,
+      "expected_top1_token_id": 187,
+      "row_max_abs_logit_drift": 0.078125,
+      "sample_index": 0,
+      "token_index": 100
+    },
+    {
+      "actual_margin_at_most_twice_row_max_drift": true,
+      "actual_top1_margin": 0.03125,
+      "actual_top1_token_id": 32,
+      "expected_margin_at_most_twice_row_max_drift": true,
+      "expected_top1_margin": 0.03125,
+      "expected_top1_token_id": 2566,
+      "row_max_abs_logit_drift": 0.125,
+      "sample_index": 1,
+      "token_index": 6
+    },
+    {
+      "actual_margin_at_most_twice_row_max_drift": true,
+      "actual_top1_margin": 0.0,
+      "actual_top1_token_id": 19,
+      "expected_margin_at_most_twice_row_max_drift": true,
+      "expected_top1_margin": 0.03125,
+      "expected_top1_token_id": 19,
+      "row_max_abs_logit_drift": 0.109375,
+      "sample_index": 1,
+      "token_index": 31
+    },
+    {
+      "actual_margin_at_most_twice_row_max_drift": true,
+      "actual_top1_margin": 0.0,
+      "actual_top1_token_id": 941,
+      "expected_margin_at_most_twice_row_max_drift": true,
+      "expected_top1_margin": 0.03125,
+      "expected_top1_token_id": 941,
+      "row_max_abs_logit_drift": 0.09375,
+      "sample_index": 1,
+      "token_index": 40
+    },
+    {
+      "actual_margin_at_most_twice_row_max_drift": true,
+      "actual_top1_margin": 0.0,
+      "actual_top1_token_id": 42363,
+      "expected_margin_at_most_twice_row_max_drift": true,
+      "expected_top1_margin": 0.0625,
+      "expected_top1_token_id": 42363,
+      "row_max_abs_logit_drift": 0.09375,
+      "sample_index": 1,
+      "token_index": 44
+    },
+    {
+      "actual_margin_at_most_twice_row_max_drift": true,
+      "actual_top1_margin": 0.03125,
+      "actual_top1_token_id": 1063,
+      "expected_margin_at_most_twice_row_max_drift": true,
+      "expected_top1_margin": 0.03125,
+      "expected_top1_token_id": 280,
+      "row_max_abs_logit_drift": 0.09375,
+      "sample_index": 1,
+      "token_index": 114
+    },
+    {
+      "actual_margin_at_most_twice_row_max_drift": true,
+      "actual_top1_margin": 0.03125,
+      "actual_top1_token_id": 272,
+      "expected_margin_at_most_twice_row_max_drift": true,
+      "expected_top1_margin": 0.0,
+      "expected_top1_token_id": 272,
+      "row_max_abs_logit_drift": 0.09375,
+      "sample_index": 1,
+      "token_index": 120
+    }
+  ],
+  "sample_seed": 20260918,
+  "sample_shape": [
+    2,
+    128
+  ],
+  "schema": "p529m-margin-aware-export-cell-v1",
+  "stable_position_matches": 167,
+  "stable_position_total": 167,
+  "state_tensor_count": 237,
+  "state_tensor_parity": "bitwise_exact",
+  "status": "PASS_FROZEN_MARGIN_AWARE_GATE",
+  "torch_deterministic_algorithms": true
+}

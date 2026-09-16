@@ -1,0 +1,62 @@
+{
+  "all_logits_finite": true,
+  "all_mismatch_native_and_reloaded_margins_within_twice_own_row_max_drift": true,
+  "argmax_agreement": 0.9921875,
+  "argmax_matches": 254,
+  "argmax_total": 256,
+  "attention_backend": "eager",
+  "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260914-1589567/train/model-final.pt",
+  "checkpoint_sha256": "69d9d8d3358f23815f2455f7e075645056f90fe01ed40a11525130a0e58ca085",
+  "checkpoint_step": 1024,
+  "claim_boundary": "adaptive export-integrity protocol frozen after the original small-sample argmax gate proved sample-sensitive; no capability score or automatic promotion",
+  "functional_limits": {
+    "max_abs_logit_difference": 0.5,
+    "mean_abs_logit_difference": 0.025
+  },
+  "logit_difference_quantiles": {
+    "0.5": 0.015625,
+    "0.9": 0.03125,
+    "0.99": 0.0625,
+    "0.999": 0.09375,
+    "0.9999": 0.125
+  },
+  "margin_aware_rule": "every changed argmax must have both native and reloaded top1 margins at most twice that row's measured maximum absolute logit drift; all positions outside that ambiguity set must preserve argmax",
+  "max_abs_logit_difference": 0.189453125,
+  "mean_abs_logit_difference": 0.016848566010594368,
+  "mismatches": [
+    {
+      "actual_margin_at_most_twice_row_max_drift": true,
+      "actual_top1_margin": 0.0,
+      "actual_top1_token_id": 362,
+      "expected_margin_at_most_twice_row_max_drift": true,
+      "expected_top1_margin": 0.0,
+      "expected_top1_token_id": 273,
+      "row_max_abs_logit_drift": 0.09375,
+      "sample_index": 0,
+      "token_index": 95
+    },
+    {
+      "actual_margin_at_most_twice_row_max_drift": true,
+      "actual_top1_margin": 0.0,
+      "actual_top1_token_id": 3348,
+      "expected_margin_at_most_twice_row_max_drift": true,
+      "expected_top1_margin": 0.0625,
+      "expected_top1_token_id": 3348,
+      "row_max_abs_logit_drift": 0.09375,
+      "sample_index": 1,
+      "token_index": 117
+    }
+  ],
+  "sample_seed": 20260920,
+  "sample_shape": [
+    2,
+    128
+  ],
+  "schema": "p529m-margin-aware-export-cell-v1",
+  "stable_position_matches": 185,
+  "stable_position_total": 185,
+  "state_tensor_count": 237,
+  "state_tensor_parity": "bitwise_exact",
+  "status": "PASS_FROZEN_MARGIN_AWARE_GATE",
+  "torch_deterministic_algorithms": true
+}

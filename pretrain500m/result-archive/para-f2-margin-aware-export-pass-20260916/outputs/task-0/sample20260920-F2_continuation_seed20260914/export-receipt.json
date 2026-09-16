@@ -1,0 +1,80 @@
+{
+  "all_mismatch_native_and_reloaded_margins_within_twice_own_row_max_drift": true,
+  "argmax_agreement": 0.9765625,
+  "argmax_matches": 250,
+  "argmax_total": 256,
+  "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/f2-continuation-v1/seed20260914-1592301/train/resume.pt",
+  "checkpoint_sha256": "98b21eb475aed1b0f6896395eb7cabf9c23ff5032f6f33a5cbcc5fdaec781ae9",
+  "checkpoint_step": 256,
+  "dtype": "bfloat16",
+  "files": [
+    {
+      "bytes": 696,
+      "path": "config.json",
+      "sha256": "880d4cdad66bf97a2d0830ae36ac999c844b2c16e6c4b8b00eea18013141a6a0"
+    },
+    {
+      "bytes": 115,
+      "path": "generation_config.json",
+      "sha256": "000cfff4d7f7c400a45cd02b275313ed128cf94fec5ecec7a5eee5dbb1833b9e"
+    },
+    {
+      "bytes": 1057524496,
+      "path": "model.safetensors",
+      "sha256": "f398527c52a41c6b836313619a1cd034c2a5fb96195b35bfd4d3cc933bf93645"
+    },
+    {
+      "bytes": 293,
+      "path": "special_tokens_map.json",
+      "sha256": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193"
+    },
+    {
+      "bytes": 3565402,
+      "path": "tokenizer.json",
+      "sha256": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6"
+    },
+    {
+      "bytes": 5307,
+      "path": "tokenizer_config.json",
+      "sha256": "65fb76dbcacdc8505ec00c53fa3cecac07b1124bf08c88a70bdf3b14d617bc87"
+    }
+  ],
+  "functional_limits": {
+    "max_abs_logit_difference": 0.5,
+    "mean_abs_logit_difference": 0.025
+  },
+  "logit_difference_quantiles": {
+    "0.5": 0.015625,
+    "0.9": 0.03515625,
+    "0.99": 0.0625,
+    "0.999": 0.09375,
+    "0.9999": 0.125
+  },
+  "logit_parity_attention": "eager",
+  "max_abs_logit_difference": 0.203125,
+  "mean_abs_logit_difference": 0.01794423535466194,
+  "parameters_total": 528748800,
+  "sample_seed": 20260920,
+  "sample_shape": [
+    2,
+    128
+  ],
+  "stable_position_matches": 175,
+  "stable_position_total": 175,
+  "state_tensor_count": 237,
+  "state_tensor_parity": "bitwise_exact",
+  "status": "PASS_HF_EXPORT_BITWISE_STATE_AND_FROZEN_MARGIN_AWARE_GATE",
+  "tokenizer_adapter": {
+    "eos_token_id": 50279,
+    "export_class": "PreTrainedTokenizerFast",
+    "original_class": "OLMoTokenizer",
+    "pad_token_id": 1,
+    "token_id_equivalence_samples": 3,
+    "vocab_size": 50280
+  },
+  "tokenizer_files_copied": [
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ]
+}

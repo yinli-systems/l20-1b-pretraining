@@ -179,6 +179,19 @@ failure valid. The [four-cell receipt](result-archive/f2-export-parity-independe
 and [nine-file snapshot](result-archive/para-f2-export-independent-samples-failed-20260916/SHA256SUMS)
 retain the complete diagnostic grid. No threshold has been changed.
 
+An adaptive margin-aware protocol was then frozen on four additional unseen
+input seeds and applied uniformly to both F2 parents and both continuations.
+All 16 cells passed: every reload retained bitwise-exact tensors and finite
+logits, all max/mean drift limits held, and every stable position preserved its
+argmax. Across 2,048 positions per role, descriptive raw argmax agreement was
+98.24% for the parents and 97.12% for the continuations; this raw rate is not
+the new gate. Both continuation HF artifacts were independently streamed and
+matched their export receipts. The [complete result receipt](result-archive/f2-margin-aware-export-results-20260916.json)
+and [52-file small-artifact snapshot](result-archive/para-f2-margin-aware-export-pass-20260916/SHA256SUMS)
+authorize completing the adaptive matched seven-task comparison. Because this
+protocol was designed after inspecting the original failures, it is not sealed
+evidence and does not itself establish a capability gain.
+
 ## Current gate
 
 The earlier F2 two-seed seven-task mean is 48.5311%, about 1.47 percentage

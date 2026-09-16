@@ -1,0 +1,150 @@
+{
+  "all_logits_finite": true,
+  "all_mismatch_native_and_reloaded_margins_within_twice_own_row_max_drift": true,
+  "argmax_agreement": 0.9609375,
+  "argmax_matches": 246,
+  "argmax_total": 256,
+  "attention_backend": "eager",
+  "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/f2-continuation-v1/seed20260915-1592302/train/resume.pt",
+  "checkpoint_sha256": "86ab770e671dd845c6de1c7724fb90cc22bc79449f9133e2a01047814f86fed8",
+  "checkpoint_step": 256,
+  "claim_boundary": "adaptive export-integrity protocol frozen after the original small-sample argmax gate proved sample-sensitive; no capability score or automatic promotion",
+  "functional_limits": {
+    "max_abs_logit_difference": 0.5,
+    "mean_abs_logit_difference": 0.025
+  },
+  "logit_difference_quantiles": {
+    "0.5": 0.015625,
+    "0.9": 0.046875,
+    "0.99": 0.0859375,
+    "0.999": 0.15625,
+    "0.9999": 0.234375
+  },
+  "margin_aware_rule": "every changed argmax must have both native and reloaded top1 margins at most twice that row's measured maximum absolute logit drift; all positions outside that ambiguity set must preserve argmax",
+  "max_abs_logit_difference": 0.40625,
+  "mean_abs_logit_difference": 0.01987968012690544,
+  "mismatches": [
+    {
+      "actual_margin_at_most_twice_row_max_drift": true,
+      "actual_top1_margin": 0.0625,
+      "actual_top1_token_id": 318,
+      "expected_margin_at_most_twice_row_max_drift": true,
+      "expected_top1_margin": 0.0625,
+      "expected_top1_token_id": 264,
+      "row_max_abs_logit_drift": 0.21875,
+      "sample_index": 0,
+      "token_index": 26
+    },
+    {
+      "actual_margin_at_most_twice_row_max_drift": true,
+      "actual_top1_margin": 0.03125,
+      "actual_top1_token_id": 398,
+      "expected_margin_at_most_twice_row_max_drift": true,
+      "expected_top1_margin": 0.0625,
+      "expected_top1_token_id": 1103,
+      "row_max_abs_logit_drift": 0.1328125,
+      "sample_index": 0,
+      "token_index": 69
+    },
+    {
+      "actual_margin_at_most_twice_row_max_drift": true,
+      "actual_top1_margin": 0.0,
+      "actual_top1_token_id": 50276,
+      "expected_margin_at_most_twice_row_max_drift": true,
+      "expected_top1_margin": 0.0,
+      "expected_top1_token_id": 50276,
+      "row_max_abs_logit_drift": 0.234375,
+      "sample_index": 0,
+      "token_index": 71
+    },
+    {
+      "actual_margin_at_most_twice_row_max_drift": true,
+      "actual_top1_margin": 0.03125,
+      "actual_top1_token_id": 265,
+      "expected_margin_at_most_twice_row_max_drift": true,
+      "expected_top1_margin": 0.0,
+      "expected_top1_token_id": 265,
+      "row_max_abs_logit_drift": 0.078125,
+      "sample_index": 0,
+      "token_index": 76
+    },
+    {
+      "actual_margin_at_most_twice_row_max_drift": true,
+      "actual_top1_margin": 0.15625,
+      "actual_top1_token_id": 1071,
+      "expected_margin_at_most_twice_row_max_drift": true,
+      "expected_top1_margin": 0.0,
+      "expected_top1_token_id": 1071,
+      "row_max_abs_logit_drift": 0.09375,
+      "sample_index": 0,
+      "token_index": 85
+    },
+    {
+      "actual_margin_at_most_twice_row_max_drift": true,
+      "actual_top1_margin": 0.0625,
+      "actual_top1_token_id": 959,
+      "expected_margin_at_most_twice_row_max_drift": true,
+      "expected_top1_margin": 0.0625,
+      "expected_top1_token_id": 5336,
+      "row_max_abs_logit_drift": 0.125,
+      "sample_index": 0,
+      "token_index": 111
+    },
+    {
+      "actual_margin_at_most_twice_row_max_drift": true,
+      "actual_top1_margin": 0.0,
+      "actual_top1_token_id": 5690,
+      "expected_margin_at_most_twice_row_max_drift": true,
+      "expected_top1_margin": 0.09375,
+      "expected_top1_token_id": 5690,
+      "row_max_abs_logit_drift": 0.15625,
+      "sample_index": 1,
+      "token_index": 25
+    },
+    {
+      "actual_margin_at_most_twice_row_max_drift": true,
+      "actual_top1_margin": 0.0,
+      "actual_top1_token_id": 187,
+      "expected_margin_at_most_twice_row_max_drift": true,
+      "expected_top1_margin": 0.03125,
+      "expected_top1_token_id": 187,
+      "row_max_abs_logit_drift": 0.125,
+      "sample_index": 1,
+      "token_index": 37
+    },
+    {
+      "actual_margin_at_most_twice_row_max_drift": true,
+      "actual_top1_margin": 0.0,
+      "actual_top1_token_id": 1647,
+      "expected_margin_at_most_twice_row_max_drift": true,
+      "expected_top1_margin": 0.03125,
+      "expected_top1_token_id": 1647,
+      "row_max_abs_logit_drift": 0.125,
+      "sample_index": 1,
+      "token_index": 69
+    },
+    {
+      "actual_margin_at_most_twice_row_max_drift": true,
+      "actual_top1_margin": 0.03125,
+      "actual_top1_token_id": 94,
+      "expected_margin_at_most_twice_row_max_drift": true,
+      "expected_top1_margin": 0.03125,
+      "expected_top1_token_id": 64,
+      "row_max_abs_logit_drift": 0.109375,
+      "sample_index": 1,
+      "token_index": 121
+    }
+  ],
+  "sample_seed": 20260919,
+  "sample_shape": [
+    2,
+    128
+  ],
+  "schema": "p529m-margin-aware-export-cell-v1",
+  "stable_position_matches": 180,
+  "stable_position_total": 180,
+  "state_tensor_count": 237,
+  "state_tensor_parity": "bitwise_exact",
+  "status": "PASS_FROZEN_MARGIN_AWARE_GATE",
+  "torch_deterministic_algorithms": true
+}

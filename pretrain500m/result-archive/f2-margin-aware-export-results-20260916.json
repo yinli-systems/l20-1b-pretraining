@@ -1,0 +1,102 @@
+{
+  "adaptive_seven_task_completion_authorized": true,
+  "array_job_id": 1593643,
+  "checked_utc": "2026-09-16T03:52:06.489336+00:00",
+  "claim_boundary": "This protocol was designed after observing the original gate failures. It does not erase those failures, constitute sealed capability evidence, establish a seven-task gain, authorize model promotion, or show external-model superiority.",
+  "continuation_hf_exports": [
+    {
+      "checkpoint_id": "F2_continuation_seed20260914",
+      "checkpoint_sha256": "98b21eb475aed1b0f6896395eb7cabf9c23ff5032f6f33a5cbcc5fdaec781ae9",
+      "hf_path": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/f2-export-margin-aware-v1/1593643/task-0/F2_continuation_seed20260914-hf",
+      "model_safetensors_bytes": 1057524496,
+      "model_safetensors_sha256": "f398527c52a41c6b836313619a1cd034c2a5fb96195b35bfd4d3cc933bf93645"
+    },
+    {
+      "checkpoint_id": "F2_continuation_seed20260915",
+      "checkpoint_sha256": "86ab770e671dd845c6de1c7724fb90cc22bc79449f9133e2a01047814f86fed8",
+      "hf_path": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/f2-export-margin-aware-v1/1593643/task-1/F2_continuation_seed20260915-hf",
+      "model_safetensors_bytes": 1057524496,
+      "model_safetensors_sha256": "803022851e95a852d76ce08240fec07fecc0d987158d380d434fb40e54d1eb9b"
+    }
+  ],
+  "descriptive_aggregates_by_role": {
+    "continuation": {
+      "argmax_matches": 1989,
+      "argmax_total": 2048,
+      "cells": 8,
+      "descriptive_argmax_agreement": 0.97119140625,
+      "stable_position_matches": 1378,
+      "stable_position_total": 1378
+    },
+    "parent": {
+      "argmax_matches": 2012,
+      "argmax_total": 2048,
+      "cells": 8,
+      "descriptive_argmax_agreement": 0.982421875,
+      "stable_position_matches": 1408,
+      "stable_position_total": 1408
+    }
+  },
+  "fail_cells": 0,
+  "formal_model_promotion": false,
+  "fresh_sample_seeds": [
+    20260918,
+    20260919,
+    20260920,
+    20260921
+  ],
+  "independent_checks": {
+    "all_cell_drift_bounds_passed": true,
+    "all_exported_hf_files_match_export_receipts_by_bytes_and_sha256": true,
+    "all_logits_finite": true,
+    "all_mismatch_native_and_reloaded_margins_within_twice_own_row_max_drift": true,
+    "all_stable_positions_preserved_argmax": true,
+    "all_state_tensors_bitwise_exact": true,
+    "both_model_safetensors_independently_streamed_sha256": true,
+    "snapshot_52_small_files_match_independent_remote_sha256_reread": true
+  },
+  "interpretation": "The adaptive serialization-integrity protocol passed uniformly for matched parents and continuations on four fresh predeclared samples. This supports using the two exact continuation exports to complete the already-adaptive matched seven-task comparison under the disclosed new export protocol.",
+  "large_model_files_committed_to_git": false,
+  "maximum_cell_max_abs_logit_difference": 0.40625,
+  "maximum_cell_mean_abs_logit_difference": 0.01997738517820835,
+  "pass_cells": 16,
+  "plan_sha256": "eb782b750ee95da76d78e5c285c9ba17f013dddba66ca977b6cd549dd153b9f6",
+  "scheduler_tasks": [
+    {
+      "derived_exit_code": "0:0",
+      "elapsed": "00:04:58",
+      "exit_code": "0:0",
+      "node": "wqd10naf02g1",
+      "state": "COMPLETED",
+      "task_id": 0
+    },
+    {
+      "derived_exit_code": "0:0",
+      "elapsed": "00:05:01",
+      "exit_code": "0:0",
+      "node": "wqd10nbj03g3",
+      "state": "COMPLETED",
+      "task_id": 1
+    }
+  ],
+  "schema": "p529m-f2-margin-aware-export-result-receipt-v1",
+  "snapshot": "pretrain500m/result-archive/para-f2-margin-aware-export-pass-20260916/SHA256SUMS",
+  "snapshot_file_count": 52,
+  "source_commit": "e46685d",
+  "status": "PASS_ALL_16_FROZEN_MARGIN_AWARE_EXPORT_CELLS",
+  "task_results": [
+    {
+      "array_task_id": 0,
+      "pair_seed": 20260914,
+      "status": "PASS_ALL_EIGHT_MARGIN_AWARE_CELLS",
+      "task_result_sha256": "c5a5bc2792cfeec48d2018d8d0722ba7eecbeebbbe56f86d2d0aa80b97e92717"
+    },
+    {
+      "array_task_id": 1,
+      "pair_seed": 20260915,
+      "status": "PASS_ALL_EIGHT_MARGIN_AWARE_CELLS",
+      "task_result_sha256": "06ac55c0536bd6e7f18d9b218dd9d7ca37356fa2c9687b47d4c6459982ef499f"
+    }
+  ],
+  "total_cells": 16
+}
