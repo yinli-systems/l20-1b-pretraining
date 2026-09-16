@@ -1,0 +1,136 @@
+{
+  "claim_boundary": "reserved five-domain language-model masked loss; capability, retention, contamination and market comparison separate",
+  "gate": {
+    "both_seeds_lower_equal_domain_masked_loss_vs_matched_parent": true,
+    "max_relative_domain_regression_vs_matched_parent": 0.005
+  },
+  "microbatch": 4,
+  "pairs": [
+    {
+      "continuation_checkpoint_sha256": "98b21eb475aed1b0f6896395eb7cabf9c23ff5032f6f33a5cbcc5fdaec781ae9",
+      "parent_checkpoint_sha256": "69d9d8d3358f23815f2455f7e075645056f90fe01ed40a11525130a0e58ca085",
+      "passed": true,
+      "relative_equal_domain_loss_reduction": 0.004318465209397271,
+      "relative_loss_change_by_domain": {
+        "code": -0.01319415788306233,
+        "general_web": -0.0007123089256040327,
+        "knowledge_reading": -0.0011139825251091917,
+        "math": -0.007209583654771201,
+        "multilingual": -0.00427856000994109
+      },
+      "seed": 20260914
+    },
+    {
+      "continuation_checkpoint_sha256": "86ab770e671dd845c6de1c7724fb90cc22bc79449f9133e2a01047814f86fed8",
+      "parent_checkpoint_sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc",
+      "passed": true,
+      "relative_equal_domain_loss_reduction": 0.004039074947212229,
+      "relative_loss_change_by_domain": {
+        "code": -0.013242096712668516,
+        "general_web": -0.0006025922259917937,
+        "knowledge_reading": -0.000888955277479897,
+        "math": -0.00702757456657066,
+        "multilingual": -0.0036191135026202303
+      },
+      "seed": 20260915
+    }
+  ],
+  "plan": "/ssd/scxi253/pretrain500m-20260912-v1/source/f2-continuation-confirmation-eval-v1/plan.json",
+  "plan_sha256": "919d5738976491dd3d614a104372e5e7b7a57d21636468d7dad68acc8eba5310",
+  "results": [
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260914-1589567/train/model-final.pt",
+      "checkpoint_id": "parent_seed20260914",
+      "checkpoint_sha256": "69d9d8d3358f23815f2455f7e075645056f90fe01ed40a11525130a0e58ca085",
+      "loss_by_domain": {
+        "code": 1.4833386801324495,
+        "general_web": 3.026975583050758,
+        "knowledge_reading": 2.580246654967795,
+        "math": 2.1315677402913185,
+        "multilingual": 3.6128204483931965
+      },
+      "loss_equal_domain": 2.5669898213671036,
+      "loss_token_weighted": 2.597481421553299,
+      "ppl_equal_domain": 13.026553111892762,
+      "target_tokens_by_domain": {
+        "code": 1270644,
+        "general_web": 1393754,
+        "knowledge_reading": 5470769,
+        "math": 1379352,
+        "multilingual": 1530539
+      }
+    },
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/f2-continuation-v1/seed20260914-1592301/train/resume.pt",
+      "checkpoint_id": "continuation_seed20260914",
+      "checkpoint_sha256": "98b21eb475aed1b0f6896395eb7cabf9c23ff5032f6f33a5cbcc5fdaec781ae9",
+      "loss_by_domain": {
+        "code": 1.4637672753927287,
+        "general_web": 3.0248194413253655,
+        "knowledge_reading": 2.5773723052836894,
+        "math": 2.1162000243518766,
+        "multilingual": 3.597362779299604
+      },
+      "loss_equal_domain": 2.5559043651306528,
+      "loss_token_weighted": 2.5894729187986067,
+      "ppl_equal_domain": 12.88294527727108,
+      "target_tokens_by_domain": {
+        "code": 1270644,
+        "general_web": 1393754,
+        "knowledge_reading": 5470769,
+        "math": 1379352,
+        "multilingual": 1530539
+      }
+    },
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260915-1590004/train/model-final.pt",
+      "checkpoint_id": "parent_seed20260915",
+      "checkpoint_sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc",
+      "loss_by_domain": {
+        "code": 1.4854969835960405,
+        "general_web": 3.0275016501564096,
+        "knowledge_reading": 2.57996786887815,
+        "math": 2.133674411664064,
+        "multilingual": 3.610763842530385
+      },
+      "loss_equal_domain": 2.56748095136501,
+      "loss_token_weighted": 2.5976361147267326,
+      "ppl_equal_domain": 13.03295241421137,
+      "target_tokens_by_domain": {
+        "code": 1270644,
+        "general_web": 1393754,
+        "knowledge_reading": 5470769,
+        "math": 1379352,
+        "multilingual": 1530539
+      }
+    },
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/f2-continuation-v1/seed20260915-1592302/train/resume.pt",
+      "checkpoint_id": "continuation_seed20260915",
+      "checkpoint_sha256": "86ab770e671dd845c6de1c7724fb90cc22bc79449f9133e2a01047814f86fed8",
+      "loss_by_domain": {
+        "code": 1.4658258888728843,
+        "general_web": 3.025677301197848,
+        "knowledge_reading": 2.5776743928253825,
+        "math": 2.118679855635311,
+        "multilingual": 3.5976960783531102
+      },
+      "loss_equal_domain": 2.557110703376907,
+      "loss_token_weighted": 2.590323502751583,
+      "ppl_equal_domain": 12.898495844619694,
+      "target_tokens_by_domain": {
+        "code": 1270644,
+        "general_web": 1393754,
+        "knowledge_reading": 5470769,
+        "math": 1379352,
+        "multilingual": 1530539
+      }
+    }
+  ],
+  "schema_version": 1,
+  "status": "PASS_PAIRED_F2_CONTINUATION_CONFIRMATION",
+  "validation_manifest": "/ssd/scxi253/pretrain500m-20260912-v1/data/confirmation-masked-f2-continuation-v1/confirmation-mixture.json",
+  "validation_manifest_sha256": "8d2f6add7a651401428da8684b5a3846facaec21fc3fa1705dc04065302e63bd",
+  "validation_prediction_tokens": 18022400,
+  "world_size": 4
+}

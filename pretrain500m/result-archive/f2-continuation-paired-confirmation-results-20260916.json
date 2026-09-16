@@ -1,0 +1,42 @@
+{
+  "checked_utc": "2026-09-16T01:45:23Z",
+  "claim_boundary": "This is a positive reserved family-disjoint five-domain language-model masked-loss comparison for the exact frozen paired checkpoints. It does not measure seven-task accuracy, instruction following, retention outside these domains, benchmark contamination beyond audited observed family joins, post-training readiness, a 50%+ capability score, or superiority to external models. Slurm terminal state is still unconfirmed while controller RPC times out.",
+  "confirmation_manifest_sha256": "8d2f6add7a651401428da8684b5a3846facaec21fc3fa1705dc04065302e63bd",
+  "confirmation_valid_target_tokens": 11045058,
+  "formal_promotion": false,
+  "independent_checks": {
+    "checkpoint_ids_paths_and_sha256_match_frozen_plan": true,
+    "equal_domain_loss_arithmetic_recomputed": true,
+    "paired_relative_changes_and_gate_recomputed": true,
+    "per_domain_valid_target_counts_match_audited_reserved_set": true,
+    "result_file_sha256_matches_independent_remote_reread": true
+  },
+  "job_id": 1593179,
+  "job_state_last_observed": "RUNNING",
+  "pairs": [
+    {
+      "seed": 20260914,
+      "parent_equal_domain_masked_loss": 2.5669898213671036,
+      "continuation_equal_domain_masked_loss": 2.5559043651306528,
+      "relative_loss_reduction": 0.004318465209397271,
+      "all_five_domain_losses_lower": true,
+      "frozen_gate_passed": true
+    },
+    {
+      "seed": 20260915,
+      "parent_equal_domain_masked_loss": 2.56748095136501,
+      "continuation_equal_domain_masked_loss": 2.557110703376907,
+      "relative_loss_reduction": 0.004039074947212229,
+      "all_five_domain_losses_lower": true,
+      "frozen_gate_passed": true
+    }
+  ],
+  "plan_sha256": "919d5738976491dd3d614a104372e5e7b7a57d21636468d7dad68acc8eba5310",
+  "raw_result": "pretrain500m/result-archive/para-f2-confirm-result-20260916/result.json",
+  "raw_result_sha256": "a899f9f4c2aeba34036fac7640c002590629346f399f4903e80ca105c00838a8",
+  "schema": "p529m-f2-continuation-paired-confirmation-result-receipt-v1",
+  "sealed_confirmation_gate": "PASS_PAIRED_F2_CONTINUATION_CONFIRMATION",
+  "source": "hash-bound distributed evaluate.py output; independent ParaCloud result SHA reread; independent local recomputation from four checkpoint rows against frozen plan and audited reserved target counts",
+  "status": "PASS_PAIRED_RESULT_FILE_SCHEDULER_EXIT_UNCONFIRMED",
+  "two_seed_mean_relative_loss_reduction": 0.00417877007830475
+}
