@@ -1,0 +1,90 @@
+{
+  "candidate": {
+    "admission_sha256": "3aadd49757f1c5a035093f8b10520aea3a766652a6e8d00554fc44251df63483",
+    "arm_id": "n0-lr6e5",
+    "base_checkpoint_sha256": "13aa21721e15c48cdfdafe30d8fdd41d9c95c90be766327661d96af1e90dd6cf",
+    "job_id": 1594608,
+    "manifest_sha256": "96e09e8d5e2681fb96e579041cf5a5306043ce850872060a30c147ce342f1c45",
+    "protocol_sha256": "495eb7f6d25ccad8fe9f091b9c3033632e464d51f6e59fc056dd6926a47bb819",
+    "recipe": "N0_new_pool_broad",
+    "seed": 20260916
+  },
+  "checked_utc": "2026-09-16T11:10:17.720839+00:00",
+  "checkpoint": {
+    "bytes": 2372504677,
+    "independent_remote_reread_matches_sidecar": true,
+    "remote_path": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/new-pool-mixture-pilots-v1/n0-lr6e5-seed20260916-1594608/train/model-final.pt",
+    "resumable": false,
+    "sha256": "3bfa8f972abdbb3d70cda81fb6e8a73f3cbdb891979eb1c379889dbbf5e0b5ce",
+    "stored_in_git": false
+  },
+  "claim_boundary": "N0 completed and improved the exposed development loss in all domains. This is not an independent capability result, confirmation result, promotion, or market-superiority evidence.",
+  "development_masked_loss": {
+    "absolute_delta": -0.6633374909766423,
+    "after_equal_domain": 2.658868193857286,
+    "after_token_weighted": 2.665294910064155,
+    "all_five_domains_lower": true,
+    "before_equal_domain": 3.322205684833928,
+    "before_token_weighted": 3.211335755539882,
+    "domains": {
+      "code": {
+        "absolute_delta": -1.589770513164124,
+        "after": 1.934303035517895,
+        "before": 3.524073548682019,
+        "relative_reduction": 0.45111729116967153
+      },
+      "general_web": {
+        "absolute_delta": -0.23854210381211693,
+        "after": 3.110460511927676,
+        "before": 3.349002615739793,
+        "relative_reduction": 0.07122780456814397
+      },
+      "knowledge_reading": {
+        "absolute_delta": -0.341231477996212,
+        "after": 2.6068288437241445,
+        "before": 2.9480603217203565,
+        "relative_reduction": 0.11574779372122364
+      },
+      "math": {
+        "absolute_delta": -0.6834483328464995,
+        "after": 2.250627940095639,
+        "before": 2.9340762729421384,
+        "relative_reduction": 0.23293475331545258
+      },
+      "multilingual": {
+        "absolute_delta": -0.46369502706426013,
+        "after": 3.392120638021074,
+        "before": 3.855815665085334,
+        "relative_reduction": 0.1202586086422775
+      }
+    },
+    "relative_reduction": 0.19966779721220107,
+    "role": "adaptive development screen"
+  },
+  "formal_promotion": false,
+  "next_gate": "wait for all seven frozen arms, rank five-domain development loss, then run independent capability evaluation on the selected successor",
+  "schema": "p529m-new-pool-mixture-pilot-result-v1",
+  "status": "N0_QUALIFICATION_COMPLETED_DEVELOPMENT_LOSS_IMPROVED_ALL_DOMAINS",
+  "training": {
+    "all_rolling_windows_pass": true,
+    "complete_rolling_mfu_windows": 242,
+    "elapsed": "00:58:19",
+    "exit_code": "0:0",
+    "finite_loss_and_gradients": true,
+    "gpu_count": 4,
+    "gpu_model": "NVIDIA GeForce RTX 5090",
+    "latest_rolling_ten_step_median_mfu": 0.7707323781250931,
+    "mfu_gate_strictly_greater_than": 0.7,
+    "minimum_rolling_ten_step_median_mfu": 0.7691220327553454,
+    "prediction_tokens": 536870912,
+    "scheduler_state": "COMPLETED",
+    "step": 256
+  },
+  "verification": {
+    "checkpoint_identity_independently_recomputed": true,
+    "mfu_gate_passed": true,
+    "scheduler_job_and_all_steps_completed_0_0": true,
+    "small_snapshot_manifest_sha256": "2a086e31dcba2dfb7915d4250edf82ecf77ffaf3a1521cb5a8fbcdcf94c36cfb",
+    "training_status_qualification_completed": true
+  }
+}

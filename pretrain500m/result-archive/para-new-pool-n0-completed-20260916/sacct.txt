@@ -1,0 +1,4 @@
+1594608|COMPLETED|0:0|00:58:19|billing=24,cpu=24,gres/gpu=4,mem=378000M,node=1|wqd10nbj03g1
+1594608.batch|COMPLETED|0:0|00:58:19|cpu=24,gres/gpu=4,mem=378000M,node=1|wqd10nbj03g1
+1594608.extern|COMPLETED|0:0|00:58:19|billing=24,cpu=24,gres/gpu=4,mem=378000M,node=1|wqd10nbj03g1
+1594608.0|COMPLETED|0:0|00:58:18|cpu=24,gres/gpu=4,mem=378000M,node=1|wqd10nbj03g1
