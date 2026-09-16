@@ -1,0 +1,94 @@
+{
+  "automatic_promotion": false,
+  "bootstrap": {
+    "interval": [
+      0.025,
+      0.975
+    ],
+    "resamples": 10000,
+    "seed": 20260916
+  },
+  "candidates": [
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/formal/run-v5/resume.pt",
+      "checkpoint_sha256": "13aa21721e15c48cdfdafe30d8fdd41d9c95c90be766327661d96af1e90dd6cf",
+      "expected_step": 7629,
+      "id": "base",
+      "role": "reference"
+    },
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260914-1589567/train/model-final.pt",
+      "checkpoint_sha256": "69d9d8d3358f23815f2455f7e075645056f90fe01ed40a11525130a0e58ca085",
+      "expected_step": 1024,
+      "id": "F2_parent_seed20260914",
+      "role": "incumbent",
+      "seed": 20260914
+    },
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260915-1590004/train/model-final.pt",
+      "checkpoint_sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc",
+      "expected_step": 1024,
+      "id": "F2_parent_seed20260915",
+      "role": "incumbent",
+      "seed": 20260915
+    }
+  ],
+  "claim_boundary": "fresh-to-selection public Python function-generation development proxy only; not sealed, not broad software-engineering mastery, and not evidence of instruction following, safety, multilingual generation, or market superiority",
+  "data": {
+    "bytes": 60864,
+    "dataset": "MBPP sanitized test",
+    "declared_license": "cc-by-4.0",
+    "path": "/ssd/scxi253/pretrain500m-20260912-v1/evaluation/benchmark-reservation-v1/data/raw/huggingface/google-research-datasets/mbpp/sanitized/test-00000-of-00001.parquet",
+    "provider": "google-research-datasets/mbpp",
+    "reference_bundle_report_sha256": "a54e2f81369430563698a61d7ecb74ab7e3003d006fd4fb542d716a4f0751855",
+    "revision": "4bb6404fdc6cacfda99d4ac4205087b89d32030c",
+    "rows": 257,
+    "rows_jsonl": "rows.jsonl",
+    "rows_jsonl_sha256": "2589596dfaf1e2de77b4dc623441350eb86bcbf9857d567fa9e08e94bc376c19",
+    "sha256": "e9e9efa2c0d59ef5e55537a9d126b8f875d5ac010a8d75628d76824884e15850"
+  },
+  "evaluation_class": "independent code development proxy; source reserved before protocol and unused in prior mixture selection",
+  "execution": {
+    "attention_backend": "eager",
+    "dtype": "bfloat16",
+    "gpus_per_candidate": 1,
+    "max_length": 2048,
+    "max_new_tokens": 256,
+    "torch_deterministic_algorithms": true
+  },
+  "execution_sandbox": {
+    "address_space_mib": 384,
+    "ast_policy": "allowlisted standard-library imports; block dangerous builtins and dunder attributes",
+    "cpu_seconds": 2,
+    "file_size_mib": 1,
+    "network": "unshare user and network namespaces",
+    "python": "/usr/bin/python3 -I -S",
+    "timeout_seconds": 3
+  },
+  "generation": {
+    "decoding": "greedy argmax",
+    "extraction": "use first fenced block when complete fences exist; otherwise strip full generated text",
+    "max_new_tokens": 256,
+    "stop": "EOS or token limit"
+  },
+  "metrics": {
+    "primary": "execution pass@1 against all provided unit tests",
+    "secondary": [
+      "syntax and policy pass rate",
+      "mean negative log likelihood per gold code token; lower is better"
+    ]
+  },
+  "prompt_template": "# Task: {prompt}\\n# Write only executable Python code.\\n# Solution:\\n",
+  "reference_candidate_id": "base",
+  "roles": {
+    "confirmation": "129 tasks; do not score until a candidate is frozen",
+    "development": "128 tasks; may guide fresh-corpus pilot selection"
+  },
+  "schema": "p529m-independent-code-proxy-mbpp-plan-v1",
+  "selection_use": "code component only; fresh pilot selection also requires reading, math, knowledge, masked loss, contamination and two-seed retention",
+  "split_manifest": "splits.json",
+  "split_manifest_sha256": "bb6fc8c7aa567398701c2ad479104a25bc67a6c710ca1992c07ed9fd702cdfc2",
+  "status": "FROZEN_BEFORE_DEVELOPMENT_SCORING",
+  "tokenizer_json": "/ssd/scxi253/pretrain500m-20260912-v1/source/pack-v3/tokenizer/tokenizer.json",
+  "tokenizer_json_sha256": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6"
+}
