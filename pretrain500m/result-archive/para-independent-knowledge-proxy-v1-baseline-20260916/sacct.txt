@@ -1,0 +1,9 @@
+1594382|p529m-sciq-proxy-1g|gpu_4090|COMPLETED|0:0|00:01:56|billing=6,cpu=6,gres/gpu=1,mem=60000M,node=1|wqd10nae09g3
+1594382.batch|batch||COMPLETED|0:0|00:01:56|cpu=6,gres/gpu=1,mem=60000M,node=1|wqd10nae09g3
+1594382.extern|extern||COMPLETED|0:0|00:01:56|billing=6,cpu=6,gres/gpu=1,mem=60000M,node=1|wqd10nae09g3
+1594383|p529m-sciq-proxy-1g|gpu_5090|COMPLETED|0:0|00:00:36|billing=6,cpu=6,gres/gpu=1,mem=94500M,node=1|wqd10nah10g5
+1594383.batch|batch||COMPLETED|0:0|00:00:36|cpu=6,gres/gpu=1,mem=94500M,node=1|wqd10nah10g5
+1594383.extern|extern||COMPLETED|0:0|00:00:36|billing=6,cpu=6,gres/gpu=1,mem=94500M,node=1|wqd10nah10g5
+1594381|p529m-sciq-proxy-1g|gpu_5090|COMPLETED|0:0|00:00:42|billing=6,cpu=6,gres/gpu=1,mem=94500M,node=1|wqd10nah10g5
+1594381.batch|batch||COMPLETED|0:0|00:00:42|cpu=6,gres/gpu=1,mem=94500M,node=1|wqd10nah10g5
+1594381.extern|extern||COMPLETED|0:0|00:00:42|billing=6,cpu=6,gres/gpu=1,mem=94500M,node=1|wqd10nah10g5

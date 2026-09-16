@@ -1,0 +1,12 @@
+e50bc2042c6372a09c8ebce7b57efb1be812fe047fa29d8751992d93a0dadfdd  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-knowledge-proxy-v1/1594381/summary.json
+3f085df4b1e3889a910d1e0fb6f806bd2df1edfc3067c748a08f35f90592f3dd  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-knowledge-proxy-v1/1594381/verification.json
+fc347368456460150fd10b9da24e36fb86f7c4066756136690799b0ebeabd279  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-knowledge-proxy-v1/1594381/F2_parent_seed20260914.gpu.csv
+fc347368456460150fd10b9da24e36fb86f7c4066756136690799b0ebeabd279  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-knowledge-proxy-v1/1594381/F2_parent_seed20260915.gpu.csv
+2e62e2ab1329932b63620aa547f01d87e319782ea5fad0ef22ac5037a7db65c4  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-knowledge-proxy-v1/1594381/base.gpu.csv
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-knowledge-proxy-v1/1594381/F2_parent_seed20260914.stdout
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-knowledge-proxy-v1/1594381/F2_parent_seed20260915.stdout
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-knowledge-proxy-v1/1594381/base.stdout
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-knowledge-proxy-v1/1594381/F2_parent_seed20260914.stderr
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-knowledge-proxy-v1/1594381/F2_parent_seed20260915.stderr
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-knowledge-proxy-v1/1594381/base.stderr
+7156a8f04a2a60fd70fff960a273efdb74c0e3b25bbd6f7e7add6c84ae9c58ee  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-knowledge-proxy-v1/1594381/SHA256SUMS

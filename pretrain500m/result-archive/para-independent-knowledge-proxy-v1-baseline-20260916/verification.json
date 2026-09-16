@@ -1,0 +1,21 @@
+{
+  "bootstrap_resamples_recomputed": 10000,
+  "checked_utc": "2026-09-16T07:56:09.297884+00:00",
+  "choice_and_gold_binding_verified": true,
+  "claim_boundary": "public closed-book English science multiple-choice development proxy only; current-corpus exact and lexical-near contamination gate passed, but the benchmark is not sealed and model-ancestor or semantic-paraphrase independence is not established; not evidence of broad knowledge, instruction following, safety, multilingual generation, formal promotion, or market superiority",
+  "confirmation_rows_scored": 0,
+  "development_rows": 489,
+  "job_id": 1594381,
+  "metrics_recomputed": true,
+  "plan_sha256": "756beb07408801f4b8ad6888306c9f0f5afb8a2f6d1eb44371e31120cc8acb2e",
+  "predictions_recomputed": true,
+  "result_pairing_verified": true,
+  "result_rows_sha256": {
+    "F2_parent_seed20260914": "c177b9f10854f903eccbd515a3c32e5c321a641dd7fafe1a1aee595194e0d2af",
+    "F2_parent_seed20260915": "6b6050184b8de72f64ac32fbbc003dd93c8e2003c2a702b9160de81bbf4626d6",
+    "base": "52818d11b1201c888a8b6249f39126261b39b078b8ed0e5159d436921084b870"
+  },
+  "schema": "p529m-independent-knowledge-proxy-sciq-independent-verification-v1",
+  "status": "VERIFY_OK",
+  "summary_sha256": "e50bc2042c6372a09c8ebce7b57efb1be812fe047fa29d8751992d93a0dadfdd"
+}

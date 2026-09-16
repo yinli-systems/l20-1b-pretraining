@@ -1,0 +1,102 @@
+{
+  "candidates": [
+    {
+      "id": "base",
+      "metrics": {
+        "acc": {
+          "correct": 331,
+          "delta_vs_base": 0.0,
+          "paired_bootstrap_delta_ci95": [
+            0.0,
+            0.0
+          ],
+          "score": 0.6768916155419223
+        },
+        "acc_norm": {
+          "correct": 300,
+          "delta_vs_base": 0.0,
+          "paired_bootstrap_delta_ci95": [
+            0.0,
+            0.0
+          ],
+          "score": 0.6134969325153374
+        }
+      },
+      "seed": null
+    },
+    {
+      "id": "F2_parent_seed20260914",
+      "metrics": {
+        "acc": {
+          "correct": 320,
+          "delta_vs_base": -0.02249488752556239,
+          "paired_bootstrap_delta_ci95": [
+            -0.049079754601226995,
+            0.00408997955010225
+          ],
+          "score": 0.65439672801636
+        },
+        "acc_norm": {
+          "correct": 293,
+          "delta_vs_base": -0.014314928425357865,
+          "paired_bootstrap_delta_ci95": [
+            -0.03680981595092025,
+            0.006134969325153374
+          ],
+          "score": 0.5991820040899796
+        }
+      },
+      "seed": 20260914
+    },
+    {
+      "id": "F2_parent_seed20260915",
+      "metrics": {
+        "acc": {
+          "correct": 320,
+          "delta_vs_base": -0.02249488752556239,
+          "paired_bootstrap_delta_ci95": [
+            -0.049079754601226995,
+            0.00408997955010225
+          ],
+          "score": 0.65439672801636
+        },
+        "acc_norm": {
+          "correct": 296,
+          "delta_vs_base": -0.008179959100204526,
+          "paired_bootstrap_delta_ci95": [
+            -0.03067484662576687,
+            0.014314928425357873
+          ],
+          "score": 0.6053169734151329
+        }
+      },
+      "seed": 20260915
+    }
+  ],
+  "checked_utc": "2026-09-16T07:52:06.957325+00:00",
+  "claim_boundary": "public closed-book English science multiple-choice development proxy only; current-corpus exact and lexical-near contamination gate passed, but the benchmark is not sealed and model-ancestor or semantic-paraphrase independence is not established; not evidence of broad knowledge, instruction following, safety, multilingual generation, formal promotion, or market superiority",
+  "confirmation_scored": false,
+  "formal_promotion": false,
+  "plan_sha256": "756beb07408801f4b8ad6888306c9f0f5afb8a2f6d1eb44371e31120cc8acb2e",
+  "reference_candidate_id": "base",
+  "schema": "p529m-independent-knowledge-proxy-sciq-summary-v1",
+  "status": "INDEPENDENT_KNOWLEDGE_PROXY_DEVELOPMENT_COMPLETE",
+  "two_seed_mean": {
+    "acc": {
+      "delta_vs_base": -0.022494887525562373,
+      "paired_bootstrap_delta_ci95": [
+        -0.049079754601226995,
+        0.003093047034764454
+      ],
+      "score": 0.65439672801636
+    },
+    "acc_norm": {
+      "delta_vs_base": -0.011247443762781187,
+      "paired_bootstrap_delta_ci95": [
+        -0.032719836400818,
+        0.010224948875255624
+      ],
+      "score": 0.6022494887525562
+    }
+  }
+}
