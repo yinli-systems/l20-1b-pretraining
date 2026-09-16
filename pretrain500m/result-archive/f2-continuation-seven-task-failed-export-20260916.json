@@ -1,0 +1,41 @@
+{
+  "checked_utc": "2026-09-16T02:44:40Z",
+  "claim_boundary": "This adaptive seven-task run is incomplete. Its Base and both parent scores exactly reproduced the earlier matched two-GPU results; seed 20260914 continuation produced a valid aggregate and export receipt, but seed 20260915 did not pass the predeclared HF export smoke gate. No two-seed continuation mean, >0.50 result, complete retention judgment, post-training promotion, or external-model comparison can be claimed. The positive reserved five-domain masked-loss result remains a separate measurement.",
+  "completed_aggregates": [
+    "base",
+    "F2_parent_seed20260914",
+    "F2_parent_seed20260915",
+    "F2_continuation_seed20260914"
+  ],
+  "completed_export_receipts": [
+    "base",
+    "F2_parent_seed20260914",
+    "F2_parent_seed20260915",
+    "F2_continuation_seed20260914"
+  ],
+  "continuation_seed20260914": {
+    "aggregate_score": 0.48551610620840446,
+    "matched_parent_score": 0.4851912390756937,
+    "aggregate_delta_new_vs_parent": 0.00032486713271077235,
+    "argmax_agreement_export_smoke": 0.9765625,
+    "export_status": "PASS_HF_EXPORT_BITWISE_STATE_AND_BOUNDED_BF16_LOGIT_DRIFT"
+  },
+  "failed_candidate": {
+    "checkpoint_id": "F2_continuation_seed20260915",
+    "checkpoint_sha256": "86ab770e671dd845c6de1c7724fb90cc22bc79449f9133e2a01047814f86fed8",
+    "failure": "HF export BF16 reload smoke argmax agreement 247/256=0.96484375 below frozen 0.97 minimum",
+    "formal_export_receipt_written": false,
+    "seven_task_aggregate_written": false
+  },
+  "job_id": 1593250,
+  "job_state": "FAILED",
+  "job_exit_code": "1:0",
+  "no_complete_summary": true,
+  "parent_and_base_scores_exactly_reproduced_prior_two_gpu_run": true,
+  "plan_sha256": "9463fb1999ec5478302ba144205fbfe80557a58660de13c42817350a83065765",
+  "schema": "p529m-f2-continuation-seven-task-negative-result-v1",
+  "snapshot": "pretrain500m/result-archive/para-f2-seven-failed-20260916/SHA256SUMS",
+  "snapshot_files_independently_rechecked_remote": 12,
+  "source": "fresh source-bound ParaCloud SSH; sacct FAILED/1:0; stderr traceback and checkpoint hash pass in stdout; 12 retained small artifacts independently SHA256 reread remotely after transfer; earlier two-GPU summary matched against the three Base/parent aggregate scores",
+  "status": "INCOMPLETE_SEVEN_TASK_FAILED_PREDECLARED_EXPORT_SMOKE_GATE"
+}
