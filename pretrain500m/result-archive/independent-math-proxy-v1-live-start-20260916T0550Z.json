@@ -1,0 +1,48 @@
+{
+  "capacity_at_submit": {
+    "public_gpu_4090_free": 0,
+    "public_gpu_5090_free": 4,
+    "public_gpu_5090_runnable_three_gpu_jobs": 1
+  },
+  "checked_utc": "2026-09-16T05:51:45.264378+00:00",
+  "claim_boundary": "public grade-school math development proxy only; not training, sealed evidence, broad math mastery, or market superiority",
+  "evaluation": {
+    "candidates": [
+      "base",
+      "F2_parent_seed20260914",
+      "F2_parent_seed20260915"
+    ],
+    "confirmation_scored": false,
+    "dataset": "MGSM English",
+    "dataset_sha256": "50021d0f28cc957edcb44e7806425b1c7fbd648ddcb9e0a8ec689d10e57d40fa",
+    "plan_sha256": "d559f4f3e349ccc937e067f06d7b776d3e6c0458a327b4aa924b0d7b5d2e4e60",
+    "primary_metric": "greedy direct-answer exact numeric match",
+    "role": "development",
+    "rows": 125,
+    "secondary_metric": "mean gold-answer token NLL",
+    "split_manifest_sha256": "340ae14ffcbbe88b10f2fd0c4efb6d621dcf7d3c561d47c8e24bbf8bb707d001"
+  },
+  "formal_promotion": false,
+  "job": {
+    "allocated_gpus": 3,
+    "gpu_uuids": [
+      "GPU-9f236f7c-a8d4-e2fe-051e-336f94a471d4",
+      "GPU-42f3ea23-0088-d24b-dd3a-81827a193501",
+      "GPU-2f8ee1f6-94f9-c355-ca4e-a09b78437e8f"
+    ],
+    "id": 1594046,
+    "name": "p529m-math-proxy",
+    "node": "wqd10nbl09g4",
+    "partition": "gpu_5090",
+    "start_scheduler_local": "2026-09-16T13:50:16",
+    "state": "RUNNING",
+    "submit_scheduler_local": "2026-09-16T13:50:15"
+  },
+  "schema": "p529m-independent-math-proxy-v1-live-start",
+  "source": {
+    "github_branch": "codex/529m-results",
+    "github_commit": "81d3e15",
+    "source_hash_verification": "PASS"
+  },
+  "status": "RUNNING"
+}
