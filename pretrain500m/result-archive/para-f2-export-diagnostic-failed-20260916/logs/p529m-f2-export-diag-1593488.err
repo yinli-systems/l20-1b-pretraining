@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/f2-export-parity-diagnostic-v1/diagnose_export.py", line 240, in <module>
+    main()
+  File "/ssd/scxi253/pretrain500m-20260912-v1/source/f2-export-parity-diagnostic-v1/diagnose_export.py", line 201, in main
+    raise RuntimeError(f"argmax agreement is {argmax_agreement}")
+RuntimeError: argmax agreement is 0.96484375

@@ -1,0 +1,46 @@
+{
+  "checked_utc": "2026-09-16T02:57:24Z",
+  "claim_boundary": "The original strict 97% argmax smoke gate remains failed for seed 20260915. Both checkpoints had bitwise-exact reloaded tensors and passed the original max/mean BF16 logit-drift bounds. Close top-token margins are consistent with numerical sensitivity but do not alone prove its full cause or authorize a post hoc gate relaxation. The seed 20260915 seven-task score and complete two-seed retention result remain unknown.",
+  "diagnostics": [
+    {
+      "seed": 20260914,
+      "status": "PASS_ORIGINAL_FROZEN_GATE",
+      "argmax_matches": 250,
+      "argmax_total": 256,
+      "max_abs_logit_difference": 0.23828125,
+      "mean_abs_logit_difference": 0.018565749749541283,
+      "bitwise_exact_state_tensor_parity": true,
+      "argmax_mismatches": 6,
+      "maximum_expected_top1_margin_at_mismatch": 0.03125,
+      "all_mismatch_margins_within_twice_own_row_max_drift": true,
+      "diagnostic_sha256": "ba5e16be2e7651e9c197ce87883fb3897534015f2ca7e1696e4ac65f1a44dd35"
+    },
+    {
+      "seed": 20260915,
+      "status": "FAIL_ORIGINAL_FROZEN_GATE",
+      "argmax_matches": 247,
+      "argmax_total": 256,
+      "max_abs_logit_difference": 0.25,
+      "mean_abs_logit_difference": 0.017827671021223068,
+      "bitwise_exact_state_tensor_parity": true,
+      "argmax_mismatches": 9,
+      "maximum_expected_top1_margin_at_mismatch": 0.0625,
+      "all_mismatch_margins_within_twice_own_row_max_drift": true,
+      "diagnostic_sha256": "d49ed07019ffd1acc16266f8cf013c2d84550fa85b3f8d5f739ea89f4eafe866"
+    }
+  ],
+  "job_id": 1593488,
+  "job_state": "FAILED",
+  "job_exit_code": "1:0",
+  "original_gate": {
+    "max_abs_logit_difference": 0.5,
+    "mean_abs_logit_difference": 0.025,
+    "minimum_argmax_agreement": 0.97
+  },
+  "plan_sha256": "74b82292898dbec5487880d422e147abb3b47eea2c1e3c90fcc73efd1d290031",
+  "schema": "p529m-f2-export-parity-diagnostic-result-v1",
+  "snapshot": "pretrain500m/result-archive/para-f2-export-diagnostic-failed-20260916/SHA256SUMS",
+  "snapshot_files_independently_rechecked_remote": 6,
+  "source": "original-gate isolated 5090 retest; both atomic diagnostic JSON outputs; bitwise tensor hashes checked by exporter; mismatch margin calculations; six small files independently SHA256 reread on remote after transfer",
+  "status": "STRICT_GATE_FAILURE_REPRODUCED_WITH_BITWISE_STATE_AND_BOUNDED_LOGIT_DRIFT"
+}
