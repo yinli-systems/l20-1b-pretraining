@@ -1,0 +1,79 @@
+{
+  "automatic_promotion": false,
+  "bootstrap": {
+    "interval": [
+      0.025,
+      0.975
+    ],
+    "resamples": 10000,
+    "seed": 20260916
+  },
+  "candidates": [
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/formal/run-v5/resume.pt",
+      "checkpoint_sha256": "13aa21721e15c48cdfdafe30d8fdd41d9c95c90be766327661d96af1e90dd6cf",
+      "expected_step": 7629,
+      "id": "base",
+      "role": "reference"
+    },
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260914-1589567/train/model-final.pt",
+      "checkpoint_sha256": "69d9d8d3358f23815f2455f7e075645056f90fe01ed40a11525130a0e58ca085",
+      "expected_step": 1024,
+      "id": "F2_parent_seed20260914",
+      "role": "incumbent",
+      "seed": 20260914
+    },
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260915-1590004/train/model-final.pt",
+      "checkpoint_sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc",
+      "expected_step": 1024,
+      "id": "F2_parent_seed20260915",
+      "role": "incumbent",
+      "seed": 20260915
+    }
+  ],
+  "claim_boundary": "fresh-to-selection public English grade-school math development proxy only; not sealed, not broad math mastery, and not evidence of instruction following, code, safety, multilingual generation, or market superiority",
+  "data": {
+    "bytes": 61299,
+    "dataset": "MGSM English",
+    "declared_license": "cc-by-sa-4.0",
+    "path": "/ssd/scxi253/pretrain500m-20260912-v1/evaluation/benchmark-reservation-v1/data/raw/github/google-research/url-nlp/mgsm/mgsm_en.tsv",
+    "reference_bundle_report_sha256": "a54e2f81369430563698a61d7ecb74ab7e3003d006fd4fb542d716a4f0751855",
+    "repository": "google-research/url-nlp",
+    "revision": "452a21ad3dae5668c06ceeac21ff073e1e40f9be",
+    "rows": 250,
+    "sha256": "50021d0f28cc957edcb44e7806425b1c7fbd648ddcb9e0a8ec689d10e57d40fa"
+  },
+  "evaluation_class": "independent math development proxy; source reserved before protocol and unused in prior mixture selection",
+  "execution": {
+    "attention_backend": "eager",
+    "dtype": "bfloat16",
+    "gpus_per_candidate": 1,
+    "max_length": 2048,
+    "max_new_tokens": 64,
+    "torch_deterministic_algorithms": true
+  },
+  "generation": {
+    "decoding": "greedy argmax",
+    "numeric_extraction": "first decimal expression, remove dollar sign and commas, compare Decimal.normalize values",
+    "stop": "first newline token or EOS"
+  },
+  "metrics": {
+    "primary": "exact_numeric_match generated answer accuracy",
+    "secondary": "mean negative log likelihood per gold answer token; lower is better"
+  },
+  "prompt_template": "Question: {question}\\nAnswer:",
+  "reference_candidate_id": "base",
+  "roles": {
+    "confirmation": "125 rows; do not score until a candidate is frozen",
+    "development": "125 rows; may guide fresh-corpus pilot selection"
+  },
+  "schema": "p529m-independent-math-proxy-mgsm-plan-v1",
+  "selection_use": "math component only; fresh pilot selection also requires reading, code, knowledge, masked loss, contamination and two-seed retention",
+  "split_manifest": "splits.json",
+  "split_manifest_sha256": "340ae14ffcbbe88b10f2fd0c4efb6d621dcf7d3c561d47c8e24bbf8bb707d001",
+  "status": "FROZEN_BEFORE_DEVELOPMENT_SCORING",
+  "tokenizer_json": "/ssd/scxi253/pretrain500m-20260912-v1/source/pack-v3/tokenizer/tokenizer.json",
+  "tokenizer_json_sha256": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6"
+}
