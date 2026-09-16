@@ -1,0 +1,133 @@
+{
+  "checked_utc": "2026-09-16T18:13:53Z",
+  "claim_boundary": "3e-5 is the matched-screen winner only. The small point-estimate gain does not establish statistical improvement, broad promotion, score above 0.50, or model superiority.",
+  "decision": {
+    "formal_promotion": false,
+    "reason": "Only 3e-5 improved the matched aggregate point estimate; it improved five tasks and its worst task decline was 0.8 percentage points. The lower-loss 6e-5 arm regressed aggregate capability.",
+    "rejected_for_progression": [
+      "f2n1-lr6e5"
+    ],
+    "score_over_0_50": false,
+    "selected_for_further_independent_gates": "f2n1-lr3e5"
+  },
+  "hardware": {
+    "all_jobs_exit_code": "0:0",
+    "gpu_model": "NVIDIA GeForce RTX 4090",
+    "same_hardware_parent_control": true,
+    "world_size_per_candidate": 2
+  },
+  "hardware_or_run_reproduction_delta": 0.0005687812228968303,
+  "historical_5090_parent_score": 0.48543171449359374,
+  "input_sha256": {
+    "f2-parent": "411608969eade99de920543b2727696cca50fb0696a793701623fe6af7cba99f",
+    "f2n1-lr3e5": "961c6ad9eff6a0a4b25c94f1f672df8813eca5848154bf6ea4a2652f64d0f352",
+    "f2n1-lr6e5": "e9c0677f272f8e8b0e750a32205d7376137320cb7d14e69975f979daf43c4e9c"
+  },
+  "limitations": [
+    "Adaptive reused seven-task suite",
+    "Single training seed and one matched evaluation run",
+    "Bootstrap intervals overlap heavily",
+    "No sealed, instruction-following, safety, multilingual-generation, or market-superiority evidence"
+  ],
+  "masked_validation_equal_domain_loss": {
+    "f2n1-lr3e5": 2.488062586122471,
+    "f2n1-lr6e5": 2.463942292804056
+  },
+  "matched_4090_parent_score": 0.48600049571649057,
+  "protocol_id": "p500m-english-base-v5",
+  "protocol_sha256": "a71ce3c8cc85cac6fe6751cb46f7e50dfb78d266602d6377cb2e65249f11c761",
+  "ranking": [
+    {
+      "aggregate_delta_vs_matched_parent": 0.0008498830462425611,
+      "aggregate_score": 0.4868503787627331,
+      "bootstrap_ci_95": [
+        0.4775422799710009,
+        0.4963928788631653
+      ],
+      "id": "f2n1-lr3e5",
+      "task_delta_vs_matched_parent": {
+        "arc_challenge": 0.0008532423208191253,
+        "arc_easy": -0.002104377104377053,
+        "boolq": 0.0009174311926606338,
+        "hellaswag": 0.0017924716191993206,
+        "openbookqa": -0.008000000000000007,
+        "piqa": 0.003808487486398282,
+        "winogrande": 0.008681925808997737
+      },
+      "task_scores": {
+        "arc_challenge": 0.2977815699658703,
+        "arc_easy": 0.539983164983165,
+        "boolq": 0.6015290519877676,
+        "hellaswag": 0.43158733320055764,
+        "openbookqa": 0.33,
+        "piqa": 0.6806311207834603,
+        "winogrande": 0.526440410418311
+      },
+      "tasks_declined": 2,
+      "tasks_improved": 5,
+      "worst_task_delta": -0.008000000000000007
+    },
+    {
+      "aggregate_delta_vs_matched_parent": 0.0,
+      "aggregate_score": 0.48600049571649057,
+      "bootstrap_ci_95": [
+        0.47667196561311065,
+        0.4956134690313891
+      ],
+      "id": "f2-parent",
+      "task_delta_vs_matched_parent": {
+        "arc_challenge": 0.0,
+        "arc_easy": 0.0,
+        "boolq": 0.0,
+        "hellaswag": 0.0,
+        "openbookqa": 0.0,
+        "piqa": 0.0,
+        "winogrande": 0.0
+      },
+      "task_scores": {
+        "arc_challenge": 0.29692832764505117,
+        "arc_easy": 0.5420875420875421,
+        "boolq": 0.600611620795107,
+        "hellaswag": 0.4297948615813583,
+        "openbookqa": 0.338,
+        "piqa": 0.676822633297062,
+        "winogrande": 0.5177584846093133
+      },
+      "tasks_declined": 0,
+      "tasks_improved": 0,
+      "worst_task_delta": 0.0
+    },
+    {
+      "aggregate_delta_vs_matched_parent": -0.001019945776380482,
+      "aggregate_score": 0.4849805499401101,
+      "bootstrap_ci_95": [
+        0.47562753310836536,
+        0.494513588249628
+      ],
+      "id": "f2n1-lr6e5",
+      "task_delta_vs_matched_parent": {
+        "arc_challenge": -0.004266211604095516,
+        "arc_easy": -0.0008417508417508657,
+        "boolq": 0.003669724770642202,
+        "hellaswag": 0.0005974905397330699,
+        "openbookqa": -0.006000000000000005,
+        "piqa": -0.0010881392818280489,
+        "winogrande": 0.0007892659826361781
+      },
+      "task_scores": {
+        "arc_challenge": 0.29266211604095566,
+        "arc_easy": 0.5412457912457912,
+        "boolq": 0.6042813455657492,
+        "hellaswag": 0.4303923521210914,
+        "openbookqa": 0.332,
+        "piqa": 0.675734494015234,
+        "winogrande": 0.5185477505919495
+      },
+      "tasks_declined": 4,
+      "tasks_improved": 3,
+      "worst_task_delta": -0.006000000000000005
+    }
+  ],
+  "schema": "p529m-f2-fresh-n1-4090-seven-task-comparison-v1",
+  "status": "MATCHED_4090_SCREEN_COMPLETE_3E5_SELECTED_FOR_FURTHER_GATES_NOT_PROMOTED"
+}
