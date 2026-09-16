@@ -1,0 +1,135 @@
+{
+  "claim_boundary": "adaptive completion of a reused seven-task suite under a disclosed adaptive export protocol; not sealed evidence, instruction following, safety, multilingual generation, or market superiority",
+  "formal_promotion": false,
+  "input_sha256": {
+    "new_continuation": "ca9673a81cf6b0d836e7e828d2f30fad00e8a1b355e89a59a9308d9dc8830c14",
+    "new_parent": "33e2df9f65969b969f5e52cc11a2d5dddc0fcbd8195f053e5e7d58a224cd1d24",
+    "reference_continuation_seed20260914": "57a52c968e848619d33d36050c950b76c72f4fa2ae98fedee80661b33027334c",
+    "reference_parent_seed20260914": "a4fd2404a2284643dd3a3340fd7a3935b2418e189052bae10fdc6a837f0abe2d",
+    "reference_parent_seed20260915": "0fac72146b950fcc837f6d60d3a980e7094884f4beab49a04c8a385c148bf147"
+  },
+  "pairs": [
+    {
+      "aggregate_delta_new_vs_parent": 0.00032486713271073775,
+      "continuation_aggregate_score": 0.48551610620840446,
+      "no_task_decline_over_two_percentage_points": true,
+      "parent_aggregate_score": 0.4851912390756937,
+      "seed": 20260914,
+      "strict_aggregate_gain": true,
+      "task_delta_new_vs_parent": {
+        "arc_challenge": 0.0,
+        "arc_easy": 0.008417508417508435,
+        "boolq": -0.00795107033639142,
+        "hellaswag": 0.0024895439155546706,
+        "openbookqa": 0.0,
+        "piqa": 0.0032644178454842576,
+        "winogrande": -0.003946329913180779
+      }
+    },
+    {
+      "aggregate_delta_new_vs_parent": -0.0018427541469022701,
+      "continuation_aggregate_score": 0.48358896034669147,
+      "no_task_decline_over_two_percentage_points": true,
+      "parent_aggregate_score": 0.48543171449359374,
+      "seed": 20260915,
+      "strict_aggregate_gain": false,
+      "task_delta_new_vs_parent": {
+        "arc_challenge": -0.004266211604095571,
+        "arc_easy": -0.0016835016835016203,
+        "boolq": -0.00397553516819571,
+        "hellaswag": 0.0022903804023103325,
+        "openbookqa": -0.006000000000000005,
+        "piqa": -0.0016322089227420733,
+        "winogrande": 0.0023677979479084232
+      }
+    }
+  ],
+  "parent_reproduction": {
+    "aggregate_equal": {
+      "bootstrap_ci_95": true,
+      "bootstrap_replicates": true,
+      "bootstrap_seed": true,
+      "percentile_method": true,
+      "score": true,
+      "task_weighting": true
+    },
+    "passed": true,
+    "task_equal": {
+      "arc_challenge": {
+        "primary_metric_equal": true,
+        "samples_equal": true,
+        "score_equal": true
+      },
+      "arc_easy": {
+        "primary_metric_equal": true,
+        "samples_equal": true,
+        "score_equal": true
+      },
+      "boolq": {
+        "primary_metric_equal": true,
+        "samples_equal": true,
+        "score_equal": true
+      },
+      "hellaswag": {
+        "primary_metric_equal": true,
+        "samples_equal": true,
+        "score_equal": true
+      },
+      "openbookqa": {
+        "primary_metric_equal": true,
+        "samples_equal": true,
+        "score_equal": true
+      },
+      "piqa": {
+        "primary_metric_equal": true,
+        "samples_equal": true,
+        "score_equal": true
+      },
+      "winogrande": {
+        "primary_metric_equal": true,
+        "samples_equal": true,
+        "score_equal": true
+      }
+    }
+  },
+  "plan_sha256": "76b0f5bbe5581f332d7e4b386d0acf34b91f3f5dc5e9b70602f5a923568c04fc",
+  "progression_gate": {
+    "both_seeds_no_task_decline_over_two_percentage_points": true,
+    "both_seeds_strict_aggregate_gain": false,
+    "two_seed_mean_strictly_over_0_50": false
+  },
+  "schema": "p529m-seven-task-f2-continuation-completion-result-v1",
+  "status": "COMPLETE_ADAPTIVE_TWO_SEED_F2_CONTINUATION_SEVEN_TASK_COMPARISON",
+  "two_seed": {
+    "aggregate_delta_new_vs_parent": -0.0007589435070957107,
+    "continuation_mean_aggregate": 0.484552533277548,
+    "continuation_mean_tasks": {
+      "arc_challenge": 0.2926621160409556,
+      "arc_easy": 0.5458754208754208,
+      "boolq": 0.5912844036697248,
+      "hellaswag": 0.43173670583549095,
+      "openbookqa": 0.334,
+      "piqa": 0.6773667029379761,
+      "winogrande": 0.5189423835832676
+    },
+    "parent_mean_aggregate": 0.4853114767846437,
+    "parent_mean_tasks": {
+      "arc_challenge": 0.29479522184300344,
+      "arc_easy": 0.5425084175084175,
+      "boolq": 0.5972477064220183,
+      "hellaswag": 0.42934674367655845,
+      "openbookqa": 0.337,
+      "piqa": 0.6765505984766049,
+      "winogrande": 0.5197316495659037
+    },
+    "task_delta_new_vs_parent": {
+      "arc_challenge": -0.002133105802047841,
+      "arc_easy": 0.0033670033670033517,
+      "boolq": -0.005963302752293509,
+      "hellaswag": 0.0023899621589325015,
+      "openbookqa": -0.0030000000000000027,
+      "piqa": 0.0008161044613711477,
+      "winogrande": -0.0007892659826360671
+    }
+  }
+}

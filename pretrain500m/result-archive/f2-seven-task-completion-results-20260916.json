@@ -1,0 +1,100 @@
+{
+  "checked_utc": "2026-09-16T04:14:03.487960+00:00",
+  "claim_boundary": "This reused adaptive seven-task result rejects promotion of this continuation. It is below 50% and does not establish instruction following, safety, domain mastery, or superiority over external models.",
+  "derived_exit_code": "0:0",
+  "elapsed": "00:13:23",
+  "formal_promotion": false,
+  "independent_checks": {
+    "pair_and_two_seed_arithmetic_recomputed": true,
+    "parent_all_seven_scores_counts_metrics_aggregate_and_ci_exactly_reproduced": true,
+    "per_example_sample_outputs_excluded_from_git": true,
+    "protocol_and_reference_hashes_match_frozen_plan": true,
+    "ten_small_snapshot_files_match_independent_remote_sha256_reread": true
+  },
+  "interpretation": "Seed 20260914 improved by 0.03249 percentage points, but seed 20260915 regressed by 0.18428 points. The continuation two-seed mean is 48.45525%, 0.07589 points below the matched parent mean of 48.53115%; no task declined by more than two points.",
+  "job_exit_code": "0:0",
+  "job_id": 1593740,
+  "job_state": "COMPLETED",
+  "node": "wqd10naf02g1",
+  "pairs": [
+    {
+      "aggregate_delta_new_vs_parent": 0.00032486713271073775,
+      "continuation_aggregate_score": 0.48551610620840446,
+      "no_task_decline_over_two_percentage_points": true,
+      "parent_aggregate_score": 0.4851912390756937,
+      "seed": 20260914,
+      "strict_aggregate_gain": true,
+      "task_delta_new_vs_parent": {
+        "arc_challenge": 0.0,
+        "arc_easy": 0.008417508417508435,
+        "boolq": -0.00795107033639142,
+        "hellaswag": 0.0024895439155546706,
+        "openbookqa": 0.0,
+        "piqa": 0.0032644178454842576,
+        "winogrande": -0.003946329913180779
+      }
+    },
+    {
+      "aggregate_delta_new_vs_parent": -0.0018427541469022701,
+      "continuation_aggregate_score": 0.48358896034669147,
+      "no_task_decline_over_two_percentage_points": true,
+      "parent_aggregate_score": 0.48543171449359374,
+      "seed": 20260915,
+      "strict_aggregate_gain": false,
+      "task_delta_new_vs_parent": {
+        "arc_challenge": -0.004266211604095571,
+        "arc_easy": -0.0016835016835016203,
+        "boolq": -0.00397553516819571,
+        "hellaswag": 0.0022903804023103325,
+        "openbookqa": -0.006000000000000005,
+        "piqa": -0.0016322089227420733,
+        "winogrande": 0.0023677979479084232
+      }
+    }
+  ],
+  "parent_reproduction_exact": true,
+  "plan_sha256": "76b0f5bbe5581f332d7e4b386d0acf34b91f3f5dc5e9b70602f5a923568c04fc",
+  "progression_gate": {
+    "both_seeds_no_task_decline_over_two_percentage_points": true,
+    "both_seeds_strict_aggregate_gain": false,
+    "two_seed_mean_strictly_over_0_50": false
+  },
+  "raw_summary_sha256": "3e0037a8ad3ae7863d6c124dfd95f2eac237456ea0e7c31de5ea9956326bb1c8",
+  "schema": "p529m-f2-seven-task-completion-result-receipt-v1",
+  "score_over_0_50": false,
+  "snapshot": "pretrain500m/result-archive/para-f2-seven-completion-negative-20260916/SHA256SUMS",
+  "snapshot_file_count": 10,
+  "status": "COMPLETE_NEGATIVE_TWO_SEED_ADAPTIVE_SEVEN_TASK_RESULT",
+  "two_seed": {
+    "aggregate_delta_new_vs_parent": -0.0007589435070957107,
+    "continuation_mean_aggregate": 0.484552533277548,
+    "continuation_mean_tasks": {
+      "arc_challenge": 0.2926621160409556,
+      "arc_easy": 0.5458754208754208,
+      "boolq": 0.5912844036697248,
+      "hellaswag": 0.43173670583549095,
+      "openbookqa": 0.334,
+      "piqa": 0.6773667029379761,
+      "winogrande": 0.5189423835832676
+    },
+    "parent_mean_aggregate": 0.4853114767846437,
+    "parent_mean_tasks": {
+      "arc_challenge": 0.29479522184300344,
+      "arc_easy": 0.5425084175084175,
+      "boolq": 0.5972477064220183,
+      "hellaswag": 0.42934674367655845,
+      "openbookqa": 0.337,
+      "piqa": 0.6765505984766049,
+      "winogrande": 0.5197316495659037
+    },
+    "task_delta_new_vs_parent": {
+      "arc_challenge": -0.002133105802047841,
+      "arc_easy": 0.0033670033670033517,
+      "boolq": -0.005963302752293509,
+      "hellaswag": 0.0023899621589325015,
+      "openbookqa": -0.0030000000000000027,
+      "piqa": 0.0008161044613711477,
+      "winogrande": -0.0007892659826360671
+    }
+  }
+}

@@ -192,16 +192,27 @@ authorize completing the adaptive matched seven-task comparison. Because this
 protocol was designed after inspecting the original failures, it is not sealed
 evidence and does not itself establish a capability gain.
 
+The missing seed-20260915 pair was then evaluated on two RTX 5090 GPUs. Its
+matched parent exactly reproduced every prior task score, sample count, metric,
+aggregate score, and bootstrap interval, permitting the cross-job two-seed
+combination. Seed 20260914 improved by 0.03249 percentage points, while seed
+20260915 regressed by 0.18428 points. The continuation two-seed mean was
+48.45525%, versus 48.53115% for the matched parents, a decline of 0.07589
+points. No individual task declined by more than two points, but the frozen
+progression rule requiring both seeds to improve failed. The
+[completion receipt](result-archive/f2-seven-task-completion-results-20260916.json)
+and [ten-file snapshot](result-archive/para-f2-seven-completion-negative-20260916/SHA256SUMS)
+retain the complete negative result. This continuation is not promoted.
+
 ## Current gate
 
 The earlier F2 two-seed seven-task mean is 48.5311%, about 1.47 percentage
-points short of 50%; the new continuation has no complete two-seed seven-task
-score. F3 remains the earlier held-out loss winner. Neither recipe nor the F2
-continuation is formally promoted because the accuracy gains are small relative
-to sampling uncertainty, both earlier recipes regress on WinoGrande and
-ARC-Easy, and the continuation's export gate failed for one seed. Future recipe
-selection needs new contamination-screened development proxies because the
-seven final task results have now been inspected.
+points short of 50%; the completed continuation mean is lower at 48.4553%.
+F3 remains the earlier held-out loss winner. Neither recipe nor the F2
+continuation is formally promoted: the continuation improved reserved masked
+loss in both seeds but failed the two-seed capability progression rule. Future
+recipe selection needs new contamination-screened development proxies because
+the seven final task results have now been inspected.
 
 The present evidence supports reproducible training, checkpoint integrity,
 measured MFU, held-out loss improvement, and matched base-model multiple-choice
