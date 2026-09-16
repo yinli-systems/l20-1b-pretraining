@@ -1,0 +1,7 @@
+# F2 continuation paired English seven-task progression
+
+`candidates.json` freezes two historical F2 parents and their matched full-state continuation checkpoints before this capability run. The checkpoint paths, SHA-256 values, steps, Base, evaluation cache, and English base-model protocol are pinned. The protocol repeats HellaSwag, PIQA, WinoGrande, OpenBookQA, ARC-Easy, ARC-Challenge, and BoolQ with the same zero-shot prompts, BF16 precision, context length, task versions, seeds, sample counts, two-GPU width, and unweighted seven-task aggregation as the prior matched run. The Base is rerun to expose execution drift.
+
+This suite already informed F2 recipe selection, so the new run measures **adaptive progression and retention** against matched parents. It cannot serve as a fresh sealed benchmark or prove external-model superiority. The summary reports exact parent/continuation deltas per seed and task, a strict two-seed aggregate-gain check, a two-percentage-point per-task retention check, and whether the two-seed mean is strictly above 0.50. No checkpoint is promoted automatically.
+
+The runner verifies source, plan, protocol, cache, Base, and checkpoint hashes; exports each native checkpoint to a job-owned temporary Hugging Face directory with bitwise tensor parity and bounded BF16 logit drift; evaluates every model on the same two RTX 5090 GPUs; retains aggregate, export, per-example and negative-run evidence; and removes only the job-owned temporary exports after copying their receipts. The large native checkpoints stay on ParaCloud.

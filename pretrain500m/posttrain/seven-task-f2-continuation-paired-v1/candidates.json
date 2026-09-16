@@ -1,0 +1,74 @@
+{
+  "base": {
+    "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/formal/run-v5/resume.pt",
+    "checkpoint_sha256": "13aa21721e15c48cdfdafe30d8fdd41d9c95c90be766327661d96af1e90dd6cf",
+    "expected_step": 7629,
+    "hf_export": "/ssd/scxi253/pretrain500m-20260912-v1/formal/hf-v5",
+    "hf_export_receipt": "/ssd/scxi253/pretrain500m-20260912-v1/formal/hf-v5/export-receipt.json",
+    "hf_export_receipt_sha256": "736705f36daad6a405e7a604191673ce43077ede464841f37888e985c891d0e4",
+    "id": "base"
+  },
+  "candidates": [
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260914-1589567/train/model-final.pt",
+      "checkpoint_sha256": "69d9d8d3358f23815f2455f7e075645056f90fe01ed40a11525130a0e58ca085",
+      "expected_step": 1024,
+      "id": "F2_parent_seed20260914",
+      "recipe": "F2_parent",
+      "role": "parent",
+      "seed": 20260914
+    },
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260915-1590004/train/model-final.pt",
+      "checkpoint_sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc",
+      "expected_step": 1024,
+      "id": "F2_parent_seed20260915",
+      "recipe": "F2_parent",
+      "role": "parent",
+      "seed": 20260915
+    },
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/f2-continuation-v1/seed20260914-1592301/train/resume.pt",
+      "checkpoint_sha256": "98b21eb475aed1b0f6896395eb7cabf9c23ff5032f6f33a5cbcc5fdaec781ae9",
+      "expected_step": 256,
+      "id": "F2_continuation_seed20260914",
+      "recipe": "F2_continuation",
+      "role": "continuation",
+      "seed": 20260914
+    },
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/f2-continuation-v1/seed20260915-1592302/train/resume.pt",
+      "checkpoint_sha256": "86ab770e671dd845c6de1c7724fb90cc22bc79449f9133e2a01047814f86fed8",
+      "expected_step": 256,
+      "id": "F2_continuation_seed20260915",
+      "recipe": "F2_continuation",
+      "role": "continuation",
+      "seed": 20260915
+    }
+  ],
+  "claim_boundary": "reused adaptive English seven-task capability/retention comparison; not an independent sealed benchmark, instruction following, safety, multilingual generation, or market superiority",
+  "eval_cache_manifest": "/ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/eval-cache-manifest.json",
+  "eval_cache_manifest_sha256": "699558cb80318870306eccf77fb1d200413bfdc03b6548fe41c9d39ed0044620",
+  "evaluation_class": "adaptive English seven-task progression and retention: the task suite already informed F2 recipe selection",
+  "execution": {
+    "batch_size": "auto",
+    "dtype": "bfloat16",
+    "gpu_model": "NVIDIA GeForce RTX 5090",
+    "world_size": 2
+  },
+  "frozen_checkpoint_plan_sha256": "919d5738976491dd3d614a104372e5e7b7a57d21636468d7dad68acc8eba5310",
+  "prior_adaptive_seven_task_result_sha256": "7eddae38ce9b1b002ede388dc73c55e078ccbeb38269c5e893609d997e31ab99",
+  "protocol": "/ssd/scxi253/pretrain500m-20260912-v1/source/protocol-v5.json",
+  "protocol_id": "p500m-english-base-v5",
+  "protocol_sha256": "a71ce3c8cc85cac6fe6751cb46f7e50dfb78d266602d6377cb2e65249f11c761",
+  "reference_base_aggregate": "/ssd/scxi253/pretrain500m-20260912-v1/formal/eval-v5/seven-task-aggregate.json",
+  "reference_base_aggregate_sha256": "34265389f4f85d54a1cdb4945b06016849f58b55b6c47e686ecc7c2423fd8c09",
+  "reserved_masked_confirmation_result_sha256": "a899f9f4c2aeba34036fac7640c002590629346f399f4903e80ca105c00838a8",
+  "schema": "p529m-seven-task-f2-continuation-paired-2gpu-plan-v1",
+  "selection": {
+    "automatic_checkpoint_promotion": false,
+    "metric": "seven-task unweighted zero-shot mean and per-task retention",
+    "pairing": "each continuation against its own parent on a matched Base/two-GPU run"
+  },
+  "status": "FROZEN_BEFORE_THIS_COMPARISON"
+}

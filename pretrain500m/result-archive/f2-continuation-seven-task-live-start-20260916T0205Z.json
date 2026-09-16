@@ -1,0 +1,26 @@
+{
+  "checked_utc": "2026-09-16T02:05:13Z",
+  "claim_boundary": "This is a real two-GPU live-start receipt for a reused adaptive seven-task capability/retention protocol. No seven-task scores or progression result are available yet. This protocol cannot establish a fresh sealed benchmark or external-model superiority.",
+  "checkpoint_grid": "matched Base plus F2 parent and continuation for seeds 20260914 and 20260915",
+  "eval_cache_status": "PASS_FROZEN_OFFLINE_EVAL_CACHE",
+  "gpu_uuids": [
+    "GPU-dee09c29-f33d-3d57-f1c9-36480d529a9b",
+    "GPU-65a54321-f3e0-4def-c02f-74bcb48dcae7"
+  ],
+  "job_id": 1593250,
+  "node": "wqd10nbh12g5",
+  "plan_sha256": "9463fb1999ec5478302ba144205fbfe80557a58660de13c42817350a83065765",
+  "protocol_sha256": "a71ce3c8cc85cac6fe6751cb46f7e50dfb78d266602d6377cb2e65249f11c761",
+  "result_summary_present": false,
+  "schema": "p529m-f2-continuation-seven-task-live-start-v1",
+  "slurm": {
+    "allocated_gpus": 2,
+    "gpu_model": "NVIDIA GeForce RTX 5090",
+    "job_state": "RUNNING",
+    "partition": "gpu_5090",
+    "start_local": "2026-09-16T10:04:33",
+    "submit_local": "2026-09-16T10:04:32"
+  },
+  "source": "source-bound ParaCloud SSH; squeue/sacct allocation; GPU CSV UUIDs; SHA256SUMS for deployed runner; protocol/cache/Base hash checks and offline cache verifier in live stdout",
+  "status": "LIVE_ADAPTIVE_SEVEN_TASK_PAIRED_EVALUATION_RUNNING_NO_RESULT"
+}
