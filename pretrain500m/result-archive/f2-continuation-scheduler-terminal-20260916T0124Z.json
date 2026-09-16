@@ -1,0 +1,43 @@
+{
+  "checked_utc": "2026-09-16T01:24:00Z",
+  "claim_boundary": "Both Slurm job, batch, extern and training step records are COMPLETED with exit and derived exit codes 0:0, and both trainers wrote QUALIFICATION_COMPLETED with hash-verified full-state checkpoints. However, seed 20260914's stderr later gained a slurmstepd termination diagnostic; clean scheduler teardown is not established. The controller still times out, scheduler-free GPU capacity is unknown, and independent reserved confirmation/capability evaluation has not started.",
+  "confirmation_evaluation_started": false,
+  "controller": {
+    "scontrol_ping_exit": 124,
+    "status": "UNREACHABLE"
+  },
+  "jobs": [
+    {
+      "job_id": 1592301,
+      "seed": 20260914,
+      "state_job_batch_extern_step": "COMPLETED",
+      "sacct_end_local": "2026-09-16T09:09:20",
+      "sacct_exit_code": "0:0",
+      "sacct_derived_exit_code": "0:0",
+      "sacct_reason": "None",
+      "stderr": {
+        "bytes": 2370,
+        "sha256_independently_rechecked_remote": "05d6e87f2708dbe8fd1dab59926a167765e844cc441266a0cd966d3ab26bd6bd",
+        "late_diagnostic": "slurmstepd: error: *** JOB 1592301 STEPD TERMINATED ON wqd10nbj03g1 AT 2026-09-16T09:23:40 DUE TO JOB NOT ENDING WITH SIGNALS ***"
+      }
+    },
+    {
+      "job_id": 1592302,
+      "seed": 20260915,
+      "state_job_batch_extern_step": "COMPLETED",
+      "sacct_end_local": "2026-09-16T09:20:48",
+      "sacct_exit_code": "0:0",
+      "sacct_derived_exit_code": "0:0",
+      "sacct_reason": "None",
+      "stderr": {
+        "bytes": 2240,
+        "sha256_independently_rechecked_remote": "d76fc1c6ea61f854170240eed0afa55e1cb15debf3437b1a5c5a04a721a03d1d",
+        "late_diagnostic": null
+      }
+    }
+  ],
+  "previous_training_receipt": "pretrain500m/result-archive/f2-continuation-two-seed-qualification-20260916.json",
+  "scheduler_available_gpu_count": null,
+  "schema": "p529m-f2-continuation-scheduler-terminal-v1",
+  "source": "fresh source-bound ParaCloud SSH, sacct top-level and all step records, direct read-only node process probes, stdout/stderr and checkpoint/status reread, independent remote SHA for copied final stderr"
+}
