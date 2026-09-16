@@ -259,6 +259,39 @@ preserve the result; per-example generations stay on ParaCloud and outside Git.
 Code and knowledge proxy components and fresh-corpus admission remain required
 before another training launch.
 
+## Independent code-proxy baseline
+
+The third proxy tranche used the pinned MBPP sanitized test parquet. An
+output-blind SHA-256 ordering based only on task ID and prompt split its 257
+tasks into 128 development and 129 unscored confirmation tasks. Public RTX
+5090 capacity was fragmented, so the unchanged three-candidate protocol ran as
+three independent one-GPU array tasks. Jobs 1594204, 1594217, and 1594202
+completed in 15m40s, 15m21s, and 15m22s respectively; every job, batch, and
+extern record ended `COMPLETED 0:0`, and all candidate stderr files were empty.
+
+| Checkpoint | Sandboxed execution pass@1 | Syntax/policy pass | Gold-code token NLL | NLL delta versus Base |
+| --- | ---: | ---: | ---: | ---: |
+| Base | 0.0000% (0/128) | 100.0000% | 4.243696 | -- |
+| F2 seed 20260914 | 0.0000% (0/128) | 100.0000% | 1.817241 | -2.426455 |
+| F2 seed 20260915 | 0.0000% (0/128) | 100.0000% | 1.819304 | -2.424392 |
+| **F2 two-seed mean** | **0.0000% (+0.0000 pp)** | **100.0000%** | **1.818272** | **-2.425424** |
+
+Both paired 95% bootstrap NLL-delta intervals were below zero: -2.535225 to
+-2.314871 for seed 20260914 and -2.533263 to -2.313247 for seed 20260915.
+However, all three checkpoints consumed the full 256-token generation budget
+on every task, largely continuing comments, and all 384 candidate-task cells
+failed with a missing-function `NameError`. The 100% syntax/policy rate only
+means the comment-heavy outputs parsed and passed the safety policy. This
+tranche therefore supports a large directional improvement in gold-code token
+likelihood, not an executable-code generation gain or promotion. The
+confirmation half remains unscored. The
+[bound result receipt](result-archive/independent-code-proxy-v1-development-results-20260916.json)
+and [small artifact snapshot](result-archive/para-independent-code-proxy-v1-baseline-20260916/summary.json)
+preserve the result; per-example generations stay on ParaCloud and outside Git.
+The zero-floor generation result also makes this exact prompt unsuitable as a
+sole selector for a new training recipe. A knowledge proxy and fresh-corpus
+admission remain required before another training launch.
+
 ## Current gate
 
 The earlier F2 two-seed seven-task mean is 48.5311%, about 1.47 percentage
@@ -269,7 +302,8 @@ loss in both seeds but failed the two-seed capability progression rule. Future
 recipe selection needs additional contamination-screened development proxies
 because the seven final task results have now been inspected and the new
 Belebele and MGSM development tranches cover only English reading
-comprehension and grade-school math.
+comprehension and grade-school math. The new MBPP tranche covers Python
+function generation but has a zero execution floor under its frozen prompt.
 
 The present evidence supports reproducible training, checkpoint integrity,
 measured MFU, held-out loss improvement, and matched base-model multiple-choice

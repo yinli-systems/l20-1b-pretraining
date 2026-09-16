@@ -1,0 +1,186 @@
+{
+  "artifacts": {
+    "per_example_result_rows_in_git": false,
+    "remote_results_root": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-code-proxy-v1/1594202",
+    "small_snapshot": "pretrain500m/result-archive/para-independent-code-proxy-v1-baseline-20260916"
+  },
+  "bindings": {
+    "dataset_sha256": "e9e9efa2c0d59ef5e55537a9d126b8f875d5ac010a8d75628d76824884e15850",
+    "output_sha256sums_sha256": "6334b221693580ea5291baed18f12ac8c6b6bd4d13c016bb4090e1fa441745cc",
+    "plan_sha256": "a7e7cc4bf3f76bf1b255229fe9e5db6e6352bc94ad250a17af6baf72f488bb6f",
+    "remote_result_sha256": {
+      "F2_parent_seed20260914": "ac50a50453062aae5c3aebb26babf1d29dd9e81d00f8233ce9464d708ecff769",
+      "F2_parent_seed20260915": "ca32f13286c98bae2e4327a21ddaa449ac446850b2d89d7210d9d3ef6c0f5115",
+      "base": "1aaa5b66b7da81eee32aa0f2e03581bc90b8a8bdd99183ba9fd87f04086cdd6b"
+    },
+    "rows_jsonl_sha256": "2589596dfaf1e2de77b4dc623441350eb86bcbf9857d567fa9e08e94bc376c19",
+    "split_manifest_sha256": "bb6fc8c7aa567398701c2ad479104a25bc67a6c710ca1992c07ed9fd702cdfc2",
+    "summary_sha256": "d06ba257f3e7055c5180a09f3837b086cc48f8aa65bd50595207ad610e21058c",
+    "tokenizer_json_sha256": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6"
+  },
+  "checked_utc": "2026-09-16T07:06:10.028424+00:00",
+  "claim_boundary": "fresh-to-selection public Python function-generation development proxy only; not sealed, not broad software-engineering mastery, and not evidence of instruction following, safety, multilingual generation, or market superiority",
+  "decision": {
+    "executable_code_gain_established": false,
+    "fresh_training_admitted": false,
+    "next": "add an independent knowledge proxy and complete fresh-corpus admission; treat this exact code-generation prompt as a zero-floor diagnostic rather than a sole selector",
+    "reason": "both F2 seeds substantially improve gold-code token NLL with paired intervals below zero, but Base and both F2 checkpoints score 0/128 execution pass@1",
+    "strong_F2_gain_established": false
+  },
+  "diagnostics": {
+    "all_candidates_used_full_256_token_budget": true,
+    "all_execution_failures": "384/384 NameError from missing required function",
+    "interpretation": "syntax/policy pass only establishes that comment-heavy outputs parsed and did not violate the execution policy"
+  },
+  "formal_promotion": false,
+  "jobs": [
+    {
+      "array_task_id": 0,
+      "candidate": "base",
+      "candidate_stderr_bytes": 0,
+      "derived_exit_code": "0:0",
+      "elapsed": "00:15:40",
+      "exit_code": "0:0",
+      "gpu_uuid": "GPU-e64a85f0-b79a-930f-6613-00f3ae98b4a7",
+      "id": 1594204,
+      "node": "wqd10nbj01g1",
+      "state": "COMPLETED"
+    },
+    {
+      "array_task_id": 1,
+      "candidate": "F2_parent_seed20260914",
+      "candidate_stderr_bytes": 0,
+      "derived_exit_code": "0:0",
+      "elapsed": "00:15:21",
+      "exit_code": "0:0",
+      "gpu_uuid": "GPU-748b372d-a99f-a45d-c717-c3ef8086037d",
+      "id": 1594217,
+      "node": "wqd10nah10g5",
+      "state": "COMPLETED"
+    },
+    {
+      "array_task_id": 2,
+      "candidate": "F2_parent_seed20260915",
+      "candidate_stderr_bytes": 0,
+      "derived_exit_code": "0:0",
+      "elapsed": "00:15:22",
+      "exit_code": "0:0",
+      "gpu_uuid": "GPU-28d20aaf-14b5-44d0-6c43-f3216fbe2fb1",
+      "id": 1594202,
+      "node": "wqd10nbj04g5",
+      "state": "COMPLETED"
+    }
+  ],
+  "metrics": {
+    "F2_parent_seed20260914": {
+      "execution_pass_at_1": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "correct": 0,
+        "delta_vs_base": 0.0,
+        "paired_delta_ci95": [
+          0.0,
+          0.0
+        ],
+        "score": 0.0
+      },
+      "gold_code_token_nll": {
+        "ci95": [
+          1.7354682383243927,
+          1.9001088163349777
+        ],
+        "delta_vs_base": -2.426455069333315,
+        "mean": 1.8172411620616913,
+        "paired_delta_ci95": [
+          -2.5352246589376595,
+          -2.314871033013333
+        ]
+      },
+      "syntax_and_policy_rate": 1.0
+    },
+    "F2_parent_seed20260915": {
+      "execution_pass_at_1": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "correct": 0,
+        "delta_vs_base": 0.0,
+        "paired_delta_ci95": [
+          0.0,
+          0.0
+        ],
+        "score": 0.0
+      },
+      "gold_code_token_nll": {
+        "ci95": [
+          1.7382088578655384,
+          1.9019590188749134
+        ],
+        "delta_vs_base": -2.4243924068287015,
+        "mean": 1.8193038245663047,
+        "paired_delta_ci95": [
+          -2.5332631728146224,
+          -2.3132466788520105
+        ]
+      },
+      "syntax_and_policy_rate": 1.0
+    },
+    "F2_two_seed_mean": {
+      "execution_pass_at_1": 0.0,
+      "gold_code_token_nll": 1.818272493313998,
+      "syntax_and_policy_rate": 1.0
+    },
+    "F2_two_seed_mean_delta_vs_base": {
+      "execution_pass_at_1": 0.0,
+      "gold_code_token_nll": -2.425423738081008,
+      "syntax_and_policy_rate": 0.0
+    },
+    "base": {
+      "execution_pass_at_1": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "correct": 0,
+        "score": 0.0
+      },
+      "gold_code_token_nll": {
+        "ci95": [
+          4.113496693549678,
+          4.374507298693061
+        ],
+        "mean": 4.243696231395006
+      },
+      "syntax_and_policy_rate": 1.0
+    }
+  },
+  "protocol": {
+    "confirmation_scored": false,
+    "dataset": "MBPP sanitized test",
+    "generation": "greedy; 256-token maximum; stop at EOS",
+    "primary_metric": "execution_pass_at_1",
+    "prompt_frozen_before_scoring": true,
+    "role": "development",
+    "samples": 128,
+    "secondary_metrics": [
+      "syntax_and_policy_rate",
+      "gold_code_token_nll"
+    ]
+  },
+  "schema": "p529m-independent-code-proxy-v1-development-baseline-results",
+  "status": "INDEPENDENT_CODE_PROXY_DEVELOPMENT_BASELINE_COMPLETE",
+  "verification": {
+    "independent_generated_text_and_code_hashes": "PASS",
+    "independent_local_result_hashes": "PASS",
+    "independent_metric_and_10000_resample_bootstrap_recalculation": "PASS",
+    "independent_output_blind_split_binding": "PASS",
+    "independent_result_row_content_digest": "PASS",
+    "independent_row_pairing": "PASS",
+    "independent_syntax_recalculation": "PASS",
+    "remote_sha256sum_manifest": "PASS",
+    "sacct_all_job_batch_extern_completed_0_0": true
+  }
+}

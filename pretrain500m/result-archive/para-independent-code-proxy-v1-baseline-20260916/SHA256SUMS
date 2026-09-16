@@ -1,0 +1,13 @@
+ac50a50453062aae5c3aebb26babf1d29dd9e81d00f8233ce9464d708ecff769  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-code-proxy-v1/1594202/F2_parent_seed20260914.json
+ca32f13286c98bae2e4327a21ddaa449ac446850b2d89d7210d9d3ef6c0f5115  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-code-proxy-v1/1594202/F2_parent_seed20260915.json
+1aaa5b66b7da81eee32aa0f2e03581bc90b8a8bdd99183ba9fd87f04086cdd6b  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-code-proxy-v1/1594202/base.json
+d06ba257f3e7055c5180a09f3837b086cc48f8aa65bd50595207ad610e21058c  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-code-proxy-v1/1594202/summary.json
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-code-proxy-v1/1594202/F2_parent_seed20260914.stdout
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-code-proxy-v1/1594202/F2_parent_seed20260915.stdout
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-code-proxy-v1/1594202/base.stdout
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-code-proxy-v1/1594202/F2_parent_seed20260914.stderr
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-code-proxy-v1/1594202/F2_parent_seed20260915.stderr
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-code-proxy-v1/1594202/base.stderr
+1b40e73229e2598183988d2eada7bffa4b1f34bfd0400432817fa583275daa13  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-code-proxy-v1/1594202/F2_parent_seed20260914.gpu.csv
+98c976925f2dd3ca0eea05b7a279556c3c6d7e1c538a232a3db424f006ec9b35  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-code-proxy-v1/1594202/F2_parent_seed20260915.gpu.csv
+f5972d4f024b07c90558258f4746d74a4f51de06f3b3250bb163b9b2b0791b73  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-code-proxy-v1/1594202/base.gpu.csv

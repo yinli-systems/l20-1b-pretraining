@@ -1,0 +1,104 @@
+{
+  "candidates": [
+    {
+      "execution_pass_at_1": {
+        "delta_vs_base": 0.0,
+        "mean": 0.0,
+        "paired_bootstrap_delta_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "gold_code_token_nll": {
+        "delta_vs_base": 0.0,
+        "mean": 4.243696231395006,
+        "paired_bootstrap_delta_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "id": "base",
+      "seed": null,
+      "syntax_and_policy_rate": {
+        "delta_vs_base": 0.0,
+        "mean": 1.0,
+        "paired_bootstrap_delta_ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "execution_pass_at_1": {
+        "delta_vs_base": 0.0,
+        "mean": 0.0,
+        "paired_bootstrap_delta_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "gold_code_token_nll": {
+        "delta_vs_base": -2.426455069333315,
+        "mean": 1.8172411620616913,
+        "paired_bootstrap_delta_ci95": [
+          -2.5352246589376595,
+          -2.314871033013333
+        ]
+      },
+      "id": "F2_parent_seed20260914",
+      "seed": 20260914,
+      "syntax_and_policy_rate": {
+        "delta_vs_base": 0.0,
+        "mean": 1.0,
+        "paired_bootstrap_delta_ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "execution_pass_at_1": {
+        "delta_vs_base": 0.0,
+        "mean": 0.0,
+        "paired_bootstrap_delta_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "gold_code_token_nll": {
+        "delta_vs_base": -2.4243924068287015,
+        "mean": 1.8193038245663047,
+        "paired_bootstrap_delta_ci95": [
+          -2.5332631728146224,
+          -2.3132466788520105
+        ]
+      },
+      "id": "F2_parent_seed20260915",
+      "seed": 20260915,
+      "syntax_and_policy_rate": {
+        "delta_vs_base": 0.0,
+        "mean": 1.0,
+        "paired_bootstrap_delta_ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  ],
+  "checked_utc": "2026-09-16T07:06:10.028424+00:00",
+  "claim_boundary": "fresh-to-selection public Python function-generation development proxy only; not sealed, not broad software-engineering mastery, and not evidence of instruction following, safety, multilingual generation, or market superiority",
+  "formal_promotion": false,
+  "plan_sha256": "a7e7cc4bf3f76bf1b255229fe9e5db6e6352bc94ad250a17af6baf72f488bb6f",
+  "schema": "p529m-independent-code-proxy-mbpp-summary-v1",
+  "status": "INDEPENDENT_CODE_PROXY_DEVELOPMENT_BASELINE_COMPLETE",
+  "two_seed_mean": {
+    "execution_pass_at_1": 0.0,
+    "gold_code_token_nll": 1.818272493313998,
+    "syntax_and_policy_rate": 1.0
+  },
+  "two_seed_mean_delta_vs_base": {
+    "execution_pass_at_1": 0.0,
+    "gold_code_token_nll": -2.425423738081008,
+    "syntax_and_policy_rate": 0.0
+  }
+}
