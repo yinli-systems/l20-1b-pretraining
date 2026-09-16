@@ -68,8 +68,8 @@ def main() -> None:
     gate = json.loads(GATE_PLAN.read_text())
     if gate.get("status") != "FROZEN_BEFORE_CONFIRMATION_SCORING":
         raise ValueError("gate plan is not frozen")
-    if tuple(gate.get("domains", {}).keys()) != DOMAINS:
-        raise ValueError("gate plan domain order mismatch")
+    if set(gate.get("domains", {})) != set(DOMAINS):
+        raise ValueError("gate plan domain set mismatch")
     expected = gate["candidates"]
     if [item["id"] for item in expected] != ["F2_parent_seed20260915", "f2n1-lr3e5"]:
         raise ValueError("candidate pair mismatch")
