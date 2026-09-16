@@ -1,0 +1,41 @@
+{
+  "checked_utc": "2026-09-16T06:42:27.671056+00:00",
+  "claim_boundary": "scheduler acceptance and resource-shape optimization only; no allocation, execution, capability result, or market-superiority evidence yet",
+  "evaluation_protocol": {
+    "confirmation_scored": false,
+    "metrics_changed": false,
+    "plan_sha256": "a7e7cc4bf3f76bf1b255229fe9e5db6e6352bc94ad250a17af6baf72f488bb6f",
+    "prompt_changed": false,
+    "split_changed": false
+  },
+  "formal_promotion": false,
+  "replacement_job": {
+    "allocated_nodes": [],
+    "array": "0-2%3",
+    "candidate_mapping": {
+      "0": "base",
+      "1": "F2_parent_seed20260914",
+      "2": "F2_parent_seed20260915"
+    },
+    "gpu_uuids": [],
+    "id": 1594202,
+    "reason": "Priority",
+    "shape": "three independent one-GPU array tasks, maximum concurrency three",
+    "state": "PENDING"
+  },
+  "scheduler_rationale": "the public gpu_5090 dashboard had previously shown multiple one-GPU slots while no multi-GPU layout was runnable; one GPU per candidate preserves the frozen evaluation and can consume fragmented capacity",
+  "schema": "p529m-independent-code-proxy-v1-fragmentation-resubmission",
+  "source": {
+    "github_branch": "codex/529m-results",
+    "github_commit": "77ce868",
+    "source_hash_verification": "PASS"
+  },
+  "status": "ONE_GPU_ARRAY_SUBMITTED_PENDING_ALLOCATION",
+  "superseded_job": {
+    "final_state": "CANCELLED_BEFORE_ALLOCATION",
+    "id": 1594193,
+    "reason": "replaced after scheduler estimated a long wait and public GPUs became fragmented",
+    "run_time": "00:00:00",
+    "shape": "one job requesting three GPUs on one node"
+  }
+}
