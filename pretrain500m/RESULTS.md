@@ -1,6 +1,6 @@
 # 529M experiment results
 
-Status date: 2026-09-15 UTC.
+Status date: 2026-09-16 UTC.
 
 ## Immutable parent
 
@@ -125,13 +125,57 @@ F2 ranked first by the frozen higher-worst-seed rule. Its two seed scores were
 with SHA-256
 `7eddae38ce9b1b002ede388dc73c55e078ccbeb38269c5e893609d997e31ab99`.
 
+## Paired F2 continuation and export diagnostic
+
+Two F2 continuations started from their exact matched long-confirmation
+checkpoints. Each completed 256 steps and 536,870,912 additional prediction
+tokens on four RTX 5090 GPUs, with every ten-step median MFU gate above 0.70.
+Both full-state checkpoint binaries were independently SHA-256 checked on
+ParaCloud; the binaries remain outside Git history.
+
+| Seed | Training job | Final ten-step mean MFU | Reserved five-domain masked-loss reduction versus matched parent | Seven-task mean |
+| ---: | ---: | ---: | ---: | ---: |
+| 20260914 | 1592301 | 0.76099 | 0.43185% | 48.5516% (parent 48.5191%) |
+| 20260915 | 1592302 | 0.77360 | 0.40391% | Unknown: export gate failed |
+
+The family-disjoint reserved comparison lowered masked loss in all five domains
+for both seeds. Its evaluation job 1593179 completed with Slurm exit `0:0`.
+The [training qualification](result-archive/f2-continuation-two-seed-qualification-20260916.json),
+[formal evaluation exit](result-archive/f2-continuation-confirmation-scheduler-terminal-20260916.json),
+and [paired masked-loss result](result-archive/f2-continuation-paired-confirmation-results-20260916.json)
+preserve checkpoint identities, metrics, and source checksums. Seed 20260914's
+training stderr gained a Slurm teardown diagnostic even though its job and step
+accounting eventually showed `COMPLETED 0:0`; the final stderr is archived.
+
+The adaptive matched seven-task rerun used two RTX 5090 GPUs and exactly
+reproduced the previous Base and both F2 parent aggregates. Seed 20260914's
+continuation passed the original HF export smoke and improved its matched
+parent by 0.03249 percentage points. Seed 20260915's export reload smoke had
+247/256 BF16 argmax matches, below the frozen 97% minimum; job 1593250 exited
+`FAILED 1:0` before its seven-task aggregate was written. The
+[negative evaluation receipt](result-archive/f2-continuation-seven-task-failed-export-20260916.json)
+and [partial artifacts](result-archive/para-f2-seven-failed-20260916/SHA256SUMS)
+are retained. No complete continuation two-seed score exists.
+
+A separate unchanged-gate export diagnostic on one RTX 5090 reproduced the
+failure at 247/256 for seed 20260915 and passed at 250/256 for seed 20260914.
+Both reloads had bitwise-exact model tensors and passed the original maximum
+and mean BF16 logit-drift bounds. All changed argmax positions had close
+native top-token margins, at most 0.0625. The
+[diagnostic result](result-archive/f2-export-parity-diagnostic-results-20260916.json)
+and [raw JSON snapshots](result-archive/para-f2-export-diagnostic-failed-20260916/SHA256SUMS)
+preserve this negative gate result. Numerical sensitivity is a plausible
+explanation, but the original gate remains failed and has not been relaxed.
+
 ## Current gate
 
-F2 provides a stable positive direction and is about 1.47 percentage points
-short of a 50% seven-task mean. F3 remains the held-out loss winner. Neither is
-formally promoted because the accuracy gains are small relative to sampling
-uncertainty and both recipes regress on WinoGrande and ARC-Easy. Future recipe
-selection must use new contamination-screened development proxies because the
+The earlier F2 two-seed seven-task mean is 48.5311%, about 1.47 percentage
+points short of 50%; the new continuation has no complete two-seed seven-task
+score. F3 remains the earlier held-out loss winner. Neither recipe nor the F2
+continuation is formally promoted because the accuracy gains are small relative
+to sampling uncertainty, both earlier recipes regress on WinoGrande and
+ARC-Easy, and the continuation's export gate failed for one seed. Future recipe
+selection needs new contamination-screened development proxies because the
 seven final task results have now been inspected.
 
 The present evidence supports reproducible training, checkpoint integrity,
