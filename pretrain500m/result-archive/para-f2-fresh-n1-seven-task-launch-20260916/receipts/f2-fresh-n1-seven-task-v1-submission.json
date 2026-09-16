@@ -1,0 +1,26 @@
+{
+  "capacity_snapshot": "\u516c\u5171partition\uff1a\nPartition      \u53ef\u7528GPU\u6570\u91cf  \u603b\u5361\u6570\ngpu_4090            38     248\ngpu_5090             0     248\nhp_4090             38     272\nhp_5090              0     408\n\n\u53ef\u8fd0\u884c\u4f5c\u4e1a\u6570\u91cf\uff08\u6309GPU\u89c4\u6a21\uff09\uff1a\nPartition      1\u5361GPU 2\u5361GPU 3\u5361GPU 4\u5361GPU 5\u5361GPU 6\u5361GPU 7\u5361GPU 8\u5361GPU\ngpu_4090       38     14      7      2      1      0      0      0\ngpu_5090        0      0      0      0      0      0      0      0\nhp_4090        38     14      7      2      1      0      0      0\nhp_5090         0      0      0      0      0      0      0      0\n",
+  "checked_utc": "2026-09-16T17:54:35.208250+00:00",
+  "claim_boundary": "submitted adaptive F2-parent-matched seven-task screens; scheduler allocation, completion, capability gain, and promotion remain unverified",
+  "formal_promotion": false,
+  "free_bytes_before_submit": 47403180032,
+  "jobs": [
+    {
+      "candidate_id": "f2n1-lr3e5",
+      "job_id": 1595552,
+      "job_name": "p529m-f2n1-7-f2n1lr3e5"
+    },
+    {
+      "candidate_id": "f2n1-lr6e5",
+      "job_id": 1595553,
+      "job_name": "p529m-f2n1-7-f2n1lr6e5"
+    }
+  ],
+  "plan_sha256": "6c1482c066eba665492bdcf6cc9bbc0874cdce57f5003ad630278d0c704b78a9",
+  "runner_sha256": "47168ba4c5c8cf8aa5712b16a65392e7ff896b923401b052bdd26a89595d4171",
+  "schema": "p529m-f2-fresh-n1-seven-task-eval-submission-v1",
+  "status": "SUBMITTED_PENDING_ALLOCATION",
+  "storage_gate_bytes": 10737418240,
+  "submitted_gpu_total": 4,
+  "world_size_per_job": 2
+}

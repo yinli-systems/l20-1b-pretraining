@@ -1,0 +1,43 @@
+{
+  "base": {
+    "aggregate": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/seven-task-confirmation-2gpu-v1/1590907/F2_reasoning_no_synthetic_seed20260915/seven-task-aggregate.json",
+    "aggregate_score": 0.48543171449359374,
+    "aggregate_sha256": "1aa05953aab4ea0b82b30a63114912b63aacd0a3811348c5b041bac57223ee7f",
+    "checkpoint_sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc",
+    "role": "matched_F2_parent"
+  },
+  "candidates": [
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/f2-fresh-n1-continuation-v1/f2n1-lr3e5-seed20260915-1595097/train/resume.pt",
+      "checkpoint_sha256": "c27762f59a5e2cbefe208814b21c129132ab59440a784cb0c5e141b15e4cb7c4",
+      "expected_step": 256,
+      "id": "f2n1-lr3e5",
+      "recipe": "N1_new_pool_knowledge",
+      "seed": 20260915,
+      "training_job_id": 1595097
+    },
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/f2-fresh-n1-continuation-v1/f2n1-lr6e5-seed20260915-1595098/train/resume.pt",
+      "checkpoint_sha256": "18718729785f6eac9bc46598d6bbc6d15f8293cd6c6d09dd825d8f4d1b6a03d7",
+      "expected_step": 256,
+      "id": "f2n1-lr6e5",
+      "recipe": "N1_new_pool_knowledge",
+      "seed": 20260915,
+      "training_job_id": 1595098
+    }
+  ],
+  "claim_boundary": "Adaptive matched 489-row English seven-task retention screen against the exact F2 parent; no sealed gain, automatic promotion, or market-superiority claim.",
+  "eval_cache_manifest": "/ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/eval-cache-manifest.json",
+  "eval_cache_manifest_sha256": "699558cb80318870306eccf77fb1d200413bfdc03b6548fe41c9d39ed0044620",
+  "execution": {
+    "batch_size": "auto",
+    "dtype": "bfloat16",
+    "gpu_model": "NVIDIA GeForce RTX 5090",
+    "world_size": 2
+  },
+  "protocol_id": "p500m-english-base-v5",
+  "protocol_sha256": "a71ce3c8cc85cac6fe6751cb46f7e50dfb78d266602d6377cb2e65249f11c761",
+  "schema": "p529m-f2-fresh-n1-seven-task-eval-plan-v1",
+  "selection_rule": "Compare each arm directly with the exact F2 seed-20260915 parent; no promotion on masked loss alone.",
+  "status": "FROZEN_TWO_COMPLETED_F2_FRESH_N1_ARMS_BEFORE_EVALUATION"
+}

@@ -1,0 +1,113 @@
+#!/usr/bin/env python3
+"""Submit the two frozen F2 fresh-N1 seven-task evaluations exactly once."""
+
+import datetime
+import hashlib
+import json
+import os
+from pathlib import Path
+import subprocess
+
+
+ROOT = Path("/ssd/scxi253/pretrain500m-20260912-v1")
+SOURCE = ROOT / "source/f2-fresh-n1-seven-task-v1"
+PLAN = SOURCE / "candidates.json"
+RUNNER = SOURCE / "run.sbatch"
+RECEIPT = ROOT / "receipts/f2-fresh-n1-seven-task-v1-submission.json"
+JOB_PREFIX = "p529m-f2n1-7-"
+STORAGE_GATE = 10 * 1024**3
+
+
+def digest(path: Path) -> str:
+    value = hashlib.sha256()
+    with path.open("rb") as stream:
+        for block in iter(lambda: stream.read(8 * 1024**2), b""):
+            value.update(block)
+    return value.hexdigest()
+
+
+def write_receipt(status: str, jobs: list[dict], free: int, **extra) -> None:
+    capacity = subprocess.run(
+        ["sinfo", "-p", "gpu_5090"], text=True, capture_output=True
+    ).stdout
+    document = {
+        "schema": "p529m-f2-fresh-n1-seven-task-eval-submission-v1",
+        "status": status,
+        "checked_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        "jobs": jobs,
+        "world_size_per_job": 2,
+        "submitted_gpu_total": 2 * len(jobs),
+        "plan_sha256": digest(PLAN),
+        "runner_sha256": digest(RUNNER),
+        "free_bytes_before_submit": free,
+        "storage_gate_bytes": STORAGE_GATE,
+        "capacity_snapshot": capacity,
+        "formal_promotion": False,
+        "claim_boundary": "submitted adaptive F2-parent-matched seven-task screens; scheduler allocation, completion, capability gain, and promotion remain unverified",
+        **extra,
+    }
+    RECEIPT.write_text(json.dumps(document, indent=2, sort_keys=True) + "\n")
+
+
+def main() -> None:
+    if RECEIPT.exists():
+        raise ValueError("submission receipt already exists")
+    plan = json.loads(PLAN.read_text())
+    if plan.get("status") != "FROZEN_TWO_COMPLETED_F2_FRESH_N1_ARMS_BEFORE_EVALUATION":
+        raise ValueError("evaluation plan is not frozen")
+    candidates = plan.get("candidates", [])
+    if len(candidates) != 2 or len({item["id"] for item in candidates}) != 2:
+        raise ValueError("evaluation plan must contain two unique candidates")
+    for item in candidates:
+        checkpoint = Path(item["checkpoint"])
+        if not checkpoint.is_file() or digest(checkpoint) != item["checkpoint_sha256"]:
+            raise ValueError(f"checkpoint identity failed: {item['id']}")
+    free = os.statvfs(ROOT).f_bavail * os.statvfs(ROOT).f_frsize
+    if free < STORAGE_GATE:
+        raise ValueError(f"evaluation storage gate failed: {free} < {STORAGE_GATE}")
+    queue = subprocess.run(
+        ["squeue", "-h", "-u", os.environ["USER"], "-o", "%A|%T|%j"],
+        check=True,
+        text=True,
+        capture_output=True,
+    ).stdout
+    active = [
+        line for line in queue.splitlines() if line.split("|")[-1].startswith(JOB_PREFIX)
+    ]
+    if active:
+        raise ValueError("active seven-task job already exists: " + ";".join(active))
+
+    plan_sha = digest(PLAN)
+    jobs = []
+    for item in candidates:
+        name = JOB_PREFIX + item["id"].replace("-", "")
+        command = [
+            "sbatch",
+            "--parsable",
+            "--partition=gpu_5090",
+            "--qos=gpugpu",
+            "--job-name=" + name,
+            "--export=ALL,CANDIDATE_ID=" + item["id"] + ",EXPECTED_PLAN_SHA256=" + plan_sha,
+            str(RUNNER),
+        ]
+        result = subprocess.run(command, text=True, capture_output=True)
+        if result.returncode != 0:
+            write_receipt(
+                "PARTIAL_SUBMISSION_REQUIRES_RECOVERY",
+                jobs,
+                free,
+                failed_candidate=item["id"],
+                scheduler_error=result.stderr.strip() or result.stdout.strip(),
+            )
+            raise RuntimeError(result.stderr.strip() or result.stdout.strip())
+        job_id = int(result.stdout.strip().split(";")[0])
+        jobs.append(
+            {"candidate_id": item["id"], "job_id": job_id, "job_name": name}
+        )
+
+    write_receipt("SUBMITTED_PENDING_ALLOCATION", jobs, free)
+    print(json.dumps({"status": "SUBMITTED_PENDING_ALLOCATION", "jobs": jobs}, sort_keys=True))
+
+
+if __name__ == "__main__":
+    main()
