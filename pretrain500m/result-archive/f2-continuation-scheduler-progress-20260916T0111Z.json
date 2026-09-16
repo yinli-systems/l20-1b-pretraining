@@ -1,0 +1,41 @@
+{
+  "checked_utc": "2026-09-16T01:11:36Z",
+  "claim_boundary": "Slurm accounting confirms a terminal exit only for seed 20260914. The seed 20260915 trainer wrote QUALIFICATION_COMPLETED, but accounting still lists RUNNING and the controller RPC times out. Node GPU sensor readings do not establish scheduler-free capacity or authorize bypassing Slurm. Independent confirmation has not run.",
+  "confirmation_evaluation_started": false,
+  "controller": {
+    "scontrol_ping_exit": 124,
+    "squeue_exit": 124,
+    "status": "UNREACHABLE"
+  },
+  "jobs": [
+    {
+      "job_id": 1592301,
+      "seed": 20260914,
+      "sacct_state": "COMPLETED",
+      "sacct_end_local": "2026-09-16T09:09:20",
+      "sacct_exit_code": "0:0",
+      "node": "wqd10nbj03g1",
+      "allocated_gpus": 4
+    },
+    {
+      "job_id": 1592302,
+      "seed": 20260915,
+      "sacct_state": "RUNNING",
+      "sacct_end_local": "Unknown",
+      "sacct_exit_code": "0:0",
+      "node": "wqd10nbj06g2",
+      "allocated_gpus": 4,
+      "node_sensor": {
+        "observed_gpus": 4,
+        "model": "NVIDIA GeForce RTX 5090",
+        "memory_used_mib_each": [0, 0, 0, 0],
+        "utilization_percent_each": [0, 0, 0, 0],
+        "observed_train_cpt_processes": 0
+      }
+    }
+  ],
+  "previous_training_receipt": "pretrain500m/result-archive/f2-continuation-two-seed-qualification-20260916.json",
+  "schema": "p529m-f2-continuation-scheduler-progress-v1",
+  "scheduler_available_gpu_count": null,
+  "source": "fresh source-bound SSH to ln01; sacct -X for exact jobs; timeout 8 scontrol/squeue; read-only SSH to job 1592302's recorded node for nvidia-smi and process listing"
+}
