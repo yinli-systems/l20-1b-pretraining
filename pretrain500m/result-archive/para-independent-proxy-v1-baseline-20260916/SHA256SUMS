@@ -1,0 +1,11 @@
+18e81c74b9893d2522d66eae06146cbdeb138ac268e5d2a77dc20ab1f0b6235c  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-proxy-v1/1593968/F2_parent_seed20260914.json
+fd094a49ab04616320d12f8087c82077d6e449743348855953a3e5bdbb5a2e2f  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-proxy-v1/1593968/F2_parent_seed20260915.json
+2f57a132df42ebd3c11ed2c56c64037428585467b443bbf7c725eec73a5d7c71  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-proxy-v1/1593968/base.json
+ea2ee5fd4c56336a531d6c70021d1728affd0167f5a017a2a03c773debd73b18  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-proxy-v1/1593968/summary.json
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-proxy-v1/1593968/F2_parent_seed20260914.stdout
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-proxy-v1/1593968/F2_parent_seed20260915.stdout
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-proxy-v1/1593968/base.stdout
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-proxy-v1/1593968/F2_parent_seed20260914.stderr
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-proxy-v1/1593968/F2_parent_seed20260915.stderr
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-proxy-v1/1593968/base.stderr
+b95a80ea7d49d25c34402350427a883d8d97e40f70c43e57374a1e1b1aff518b  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-proxy-v1/1593968/gpu.csv

@@ -1,0 +1,147 @@
+{
+  "artifacts": {
+    "per_example_result_rows_in_git": false,
+    "remote_results_root": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/independent-proxy-v1/1593968",
+    "small_snapshot": "pretrain500m/result-archive/para-independent-proxy-v1-baseline-20260916"
+  },
+  "bindings": {
+    "dataset_sha256": "15af884c2b5994fdc71199e79d553a1864b08ce1b31894aa87f6be925a064a31",
+    "plan_sha256": "a833d213fb17ff0fe6ee28b61e43cd9a4e0aca9dc34be2063a0f3711f44de7f1",
+    "remote_result_sha256": {
+      "F2_parent_seed20260914": "18e81c74b9893d2522d66eae06146cbdeb138ac268e5d2a77dc20ab1f0b6235c",
+      "F2_parent_seed20260915": "fd094a49ab04616320d12f8087c82077d6e449743348855953a3e5bdbb5a2e2f",
+      "base": "2f57a132df42ebd3c11ed2c56c64037428585467b443bbf7c725eec73a5d7c71"
+    },
+    "split_manifest_sha256": "f09c0603c4c76ec09cb95262b410103c8a6b4ad71b34dccc618ead82aab5ef57",
+    "summary_sha256": "ea2ee5fd4c56336a531d6c70021d1728affd0167f5a017a2a03c773debd73b18",
+    "tokenizer_json_sha256": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6"
+  },
+  "checked_utc": "2026-09-16T05:26:56.237342+00:00",
+  "claim_boundary": "fresh-to-selection public English reading-comprehension development proxy only; not sealed, not a full seven-dimension evaluation, and not evidence of instruction following, math, code, safety, multilingual generation, or market superiority",
+  "decision": {
+    "fresh_training_admitted": false,
+    "next": "add independent math, code and knowledge proxy components and complete fresh-corpus admission before new training",
+    "reason": "primary normalized F2 two-seed mean is only +0.2222 percentage points versus Base; each paired confidence interval includes zero, while secondary unnormalized accuracy is 1.0 point lower",
+    "strong_F2_gain_established": false
+  },
+  "formal_promotion": false,
+  "job": {
+    "candidate_stderr_bytes": 0,
+    "derived_exit_code": "0:0",
+    "elapsed": "00:02:34",
+    "exit_code": "0:0",
+    "gpu_uuids": [
+      "GPU-edd09059-a437-aa13-8101-3e011eab676c",
+      "GPU-50a665d1-40e9-87af-ec04-1fb2799f781a",
+      "GPU-bfc8e985-9585-8ce2-318b-7da6d4b05840"
+    ],
+    "gpus": 3,
+    "id": 1593968,
+    "node": "wqd10nbj04g1",
+    "partition": "gpu_5090",
+    "state": "COMPLETED"
+  },
+  "metrics": {
+    "F2_parent_seed20260914": {
+      "acc": {
+        "ci95": [
+          0.2911111111111111,
+          0.38
+        ],
+        "correct": 151,
+        "delta_vs_base": -0.00888888888888889,
+        "paired_delta_ci95": [
+          -0.028888888888888888,
+          0.013333333333333334
+        ],
+        "score": 0.33555555555555555
+      },
+      "acc_norm": {
+        "ci95": [
+          0.2644444444444444,
+          0.3488888888888889
+        ],
+        "correct": 138,
+        "delta_vs_base": 0.0044444444444444176,
+        "paired_delta_ci95": [
+          -0.015555555555555555,
+          0.024444444444444446
+        ],
+        "score": 0.30666666666666664
+      }
+    },
+    "F2_parent_seed20260915": {
+      "acc": {
+        "ci95": [
+          0.2911111111111111,
+          0.37555555555555553
+        ],
+        "correct": 150,
+        "delta_vs_base": -0.011111111111111127,
+        "paired_delta_ci95": [
+          -0.03111111111111111,
+          0.008888888888888889
+        ],
+        "score": 0.3333333333333333
+      },
+      "acc_norm": {
+        "ci95": [
+          0.26,
+          0.34444444444444444
+        ],
+        "correct": 136,
+        "delta_vs_base": 0.0,
+        "paired_delta_ci95": [
+          -0.017777777777777778,
+          0.017777777777777778
+        ],
+        "score": 0.3022222222222222
+      }
+    },
+    "F2_two_seed_mean": {
+      "acc": 0.33444444444444443,
+      "acc_norm": 0.3044444444444444
+    },
+    "F2_two_seed_mean_delta_vs_base": {
+      "acc": -0.010000000000000009,
+      "acc_norm": 0.0022222222222222088
+    },
+    "base": {
+      "acc": {
+        "ci95": [
+          0.3,
+          0.3888888888888889
+        ],
+        "correct": 155,
+        "score": 0.34444444444444444
+      },
+      "acc_norm": {
+        "ci95": [
+          0.26,
+          0.34444444444444444
+        ],
+        "correct": 136,
+        "score": 0.3022222222222222
+      }
+    }
+  },
+  "protocol": {
+    "confirmation_scored": false,
+    "dataset": "Belebele eng_Latn",
+    "primary_metric": "acc_norm",
+    "prompt_frozen_before_scoring": true,
+    "role": "development",
+    "samples": 450,
+    "secondary_metric": "acc"
+  },
+  "schema": "p529m-independent-proxy-v1-development-baseline-results",
+  "status": "INDEPENDENT_PROXY_FIRST_TRANCHE_BASELINE_COMPLETE",
+  "verification": {
+    "independent_choice_argmax_recalculation": "PASS",
+    "independent_local_result_hashes": "PASS",
+    "independent_metric_and_10000_resample_bootstrap_recalculation": "PASS",
+    "independent_row_pairing": "PASS",
+    "remote_sha256sum_manifest": "PASS",
+    "sacct_job_batch_extern_all_completed_0_0": true
+  }
+}

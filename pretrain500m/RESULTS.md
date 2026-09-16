@@ -204,6 +204,33 @@ progression rule requiring both seeds to improve failed. The
 and [ten-file snapshot](result-archive/para-f2-seven-completion-negative-20260916/SHA256SUMS)
 retain the complete negative result. This continuation is not promoted.
 
+## Independent reading-proxy baseline
+
+The first proxy tranche was frozen before scoring from the previously reserved,
+hash-pinned Belebele English file. An output-blind SHA-256 ordering split its
+900 rows into 450 development and 450 unscored confirmation rows. Job 1593968
+evaluated Base and both long F2 parents concurrently on three RTX 5090 GPUs
+and completed in 2m34s; the job, batch, and extern records all ended
+`COMPLETED 0:0`, with empty candidate stderr files.
+
+| Checkpoint | Primary normalized accuracy | Secondary unnormalized accuracy |
+| --- | ---: | ---: |
+| Base | 30.2222% (136/450) | 34.4444% (155/450) |
+| F2 seed 20260914 | 30.6667% (138/450) | 33.5556% (151/450) |
+| F2 seed 20260915 | 30.2222% (136/450) | 33.3333% (150/450) |
+| **F2 two-seed mean** | **30.4444% (+0.2222 pp)** | **33.4444% (-1.0000 pp)** |
+
+The primary paired 95% bootstrap delta intervals were -1.5556 to +2.4444
+points for seed 20260914 and -1.7778 to +1.7778 points for seed 20260915.
+Thus this tranche establishes an independent baseline but not a strong F2
+reading gain. The confirmation half remains unscored. The
+[bound result receipt](result-archive/independent-proxy-v1-development-results-20260916.json)
+and [small artifact snapshot](result-archive/para-independent-proxy-v1-baseline-20260916/summary.json)
+preserve the result; per-example rows remain on ParaCloud and outside Git.
+This is one public English reading task, not a sealed or complete capability
+suite. Math, code, and knowledge proxy components and fresh-corpus admission
+remain required before another training launch.
+
 ## Current gate
 
 The earlier F2 two-seed seven-task mean is 48.5311%, about 1.47 percentage
@@ -211,8 +238,9 @@ points short of 50%; the completed continuation mean is lower at 48.4553%.
 F3 remains the earlier held-out loss winner. Neither recipe nor the F2
 continuation is formally promoted: the continuation improved reserved masked
 loss in both seeds but failed the two-seed capability progression rule. Future
-recipe selection needs new contamination-screened development proxies because
-the seven final task results have now been inspected.
+recipe selection needs additional contamination-screened development proxies
+because the seven final task results have now been inspected and the new
+Belebele tranche covers only English reading comprehension.
 
 The present evidence supports reproducible training, checkpoint integrity,
 measured MFU, held-out loss improvement, and matched base-model multiple-choice

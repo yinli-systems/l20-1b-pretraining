@@ -1,0 +1,85 @@
+{
+  "candidates": [
+    {
+      "id": "base",
+      "metrics": {
+        "acc": {
+          "delta_vs_base": 0.0,
+          "paired_bootstrap_delta_ci95": [
+            0.0,
+            0.0
+          ],
+          "score": 0.34444444444444444
+        },
+        "acc_norm": {
+          "delta_vs_base": 0.0,
+          "paired_bootstrap_delta_ci95": [
+            0.0,
+            0.0
+          ],
+          "score": 0.3022222222222222
+        }
+      },
+      "seed": null
+    },
+    {
+      "id": "F2_parent_seed20260914",
+      "metrics": {
+        "acc": {
+          "delta_vs_base": -0.00888888888888889,
+          "paired_bootstrap_delta_ci95": [
+            -0.028888888888888888,
+            0.013333333333333334
+          ],
+          "score": 0.33555555555555555
+        },
+        "acc_norm": {
+          "delta_vs_base": 0.0044444444444444176,
+          "paired_bootstrap_delta_ci95": [
+            -0.015555555555555555,
+            0.024444444444444446
+          ],
+          "score": 0.30666666666666664
+        }
+      },
+      "seed": 20260914
+    },
+    {
+      "id": "F2_parent_seed20260915",
+      "metrics": {
+        "acc": {
+          "delta_vs_base": -0.011111111111111127,
+          "paired_bootstrap_delta_ci95": [
+            -0.03111111111111111,
+            0.008888888888888889
+          ],
+          "score": 0.3333333333333333
+        },
+        "acc_norm": {
+          "delta_vs_base": 0.0,
+          "paired_bootstrap_delta_ci95": [
+            -0.017777777777777778,
+            0.017777777777777778
+          ],
+          "score": 0.3022222222222222
+        }
+      },
+      "seed": 20260915
+    }
+  ],
+  "checked_utc": "2026-09-16T05:19:01.571836+00:00",
+  "claim_boundary": "fresh-to-selection public English reading-comprehension development proxy only; not sealed, not a full seven-dimension evaluation, and not evidence of instruction following, math, code, safety, multilingual generation, or market superiority",
+  "formal_promotion": false,
+  "plan_sha256": "a833d213fb17ff0fe6ee28b61e43cd9a4e0aca9dc34be2063a0f3711f44de7f1",
+  "reference_candidate_id": "base",
+  "schema": "p529m-independent-proxy-belebele-baseline-summary-v1",
+  "status": "INDEPENDENT_PROXY_FIRST_TRANCHE_BASELINE_COMPLETE",
+  "two_seed_mean": {
+    "acc": 0.33444444444444443,
+    "acc_norm": 0.3044444444444444
+  },
+  "two_seed_mean_delta_vs_base": {
+    "acc": -0.010000000000000009,
+    "acc_norm": 0.0022222222222222088
+  }
+}
