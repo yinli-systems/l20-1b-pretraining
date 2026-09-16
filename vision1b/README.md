@@ -14,6 +14,8 @@ node. It exercises the parts that dominate a self-supervised vision run:
 - BF16 compute with FP32 parameters, reductions, and AdamW state;
 - composable FSDP2 sharding and per-block activation checkpointing;
 - optional `torch.compile` using `max-autotune-no-cudagraphs`.
+- opt-in torchao FP8 and configurable block-checkpoint frequency for paired
+  screening without changing the BF16 defaults.
 
 Synthetic throughput is an engineering measurement. It excludes image decode,
 augmentation, storage and data-loader costs and cannot support an accuracy,
@@ -24,6 +26,34 @@ license, attribution, duplicate/benchmark-overlap, integrity, quality and split
 audits. ImageNet also requires authorized access under its terms.
 
 ## Qualified runtime recipe
+
+The fastest measured four-GPU recipe now uses RTX 5090, four-way FSDP2, BF16,
+batch 112 per rank, full per-block activation checkpointing, persistent student
+and teacher parameters between forward and backward, fused multicrop execution,
+Ring/Simple NCCL and `max-autotune-no-cudagraphs`. Job `1595879` completed at
+66.3996 source images/s, 59.6315% useful MFU and 76.3455% HFU. It reserved
+30.3086 GiB per GPU and was 50.87% faster than the selected four-RTX-4090 job.
+
+For a real input pipeline, job `1595846` is the recommended headroom variant:
+it reshards the student after forward, reserves 28.3926 GiB and retains 99.81%
+of the maximum synthetic throughput. This margin is more valuable than the
+0.19% synthetic gain once decode, augmentation and the full objective are
+present.
+
+The paired frontier rejected several plausible shortcuts on this exact stack:
+
+- batch 116 and 128 were slower than batch 112;
+- removing checkpointing at batches 28, 30 and 32 exhausted the 32GB cards;
+- checkpointing every second block at batches 40 and 44 also exhausted memory;
+- tensorwise FP8 plus FP8 FSDP all-gather ran correctly but was 37.8% slower
+  than BF16 batch 112;
+- xFormers 0.0.35 was numerically compatible on the tested attention shape but
+  its forward/backward path was 31.8% slower than native PyTorch SDPA.
+
+The complete 5090 receipt, source hashes and negative results are in
+`reports/vitg14-1b-extreme-optimization-20260917.json`. FP8 remains an opt-in
+research control because official torchao results are hardware- and
+shape-dependent; it is not the selected recipe for these RTX 5090 jobs.
 
 The 2026-09-17 synthetic qualification selected a four-GPU FSDP2 group with
 batch 64 per rank, fused global/local crop execution, BF16 all-gathers, FP32
@@ -53,3 +83,7 @@ before these runtime settings become a formal pretraining recipe.
 - DINOv2 repository: <https://github.com/facebookresearch/dinov2>
 - DINOv2 model card: <https://github.com/facebookresearch/dinov2/blob/main/MODEL_CARD.md>
 - ImageNet access terms: <https://www.image-net.org/download.php>
+- torchao quantized training: <https://docs.pytorch.org/ao/stable/workflows/training.html>
+- PyTorch float8 and FSDP2 study: <https://pytorch.org/blog/training-using-float8-fsdp2/>
+- PyTorch compile throughput study: <https://pytorch.org/blog/maximizing-training-throughput/>
+- xFormers optimized operators: <https://facebookresearch.github.io/xformers/components/ops.html>

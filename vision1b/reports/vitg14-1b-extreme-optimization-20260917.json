@@ -1,0 +1,164 @@
+{
+  "status": "SYSTEMS_OPTIMIZATION_PASS_FORMAL_PRETRAINING_BLOCKED",
+  "recorded_at": "2026-09-17T03:34:25+04:00",
+  "scope": "Paired RTX 5090 optimization of the DINO-style ViT-g/14 synthetic systems proxy",
+  "claim_boundary": "These jobs measure synthetic construction, forward, backward, optimizer, memory and throughput. They do not train on images and provide no representation-quality, convergence or model-superiority evidence.",
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 5090",
+    "gpus": 4,
+    "configured_dense_non_sparse_bf16_tflops_per_gpu": 209.5,
+    "node": "wqd10nbj02g1",
+    "runtime": "PyTorch 2.11.0+cu128",
+    "available_snapshot_after_experiments": {
+      "gpu_4090": 78,
+      "gpu_5090": 14,
+      "warning": "Scheduler availability is a point-in-time snapshot and can change immediately."
+    }
+  },
+  "selected_maximum_throughput_recipe": {
+    "job_id": 1595879,
+    "state": "COMPLETED",
+    "exit_code": "0:0",
+    "elapsed": "00:03:14",
+    "parallelism": "four-way FSDP2",
+    "precision": "BF16 compute with FP32 parameter shards, reductions and AdamW state",
+    "batch_per_rank": 112,
+    "global_source_batch_per_step": 448,
+    "activation_checkpointing": "every transformer block",
+    "student_reshard_after_forward": false,
+    "teacher_reshard_after_forward": false,
+    "compile_mode": "max-autotune-no-cudagraphs",
+    "measured_steps": 8,
+    "median_source_images_per_second": 66.39961025014787,
+    "median_augmented_views_per_second": 663.9961025014787,
+    "median_useful_mfu": 0.5963148701517083,
+    "median_hfu": 0.7634552775589974,
+    "strict_useful_mfu_greater_than_0_50": "PASS",
+    "peak_memory_allocated_bytes": 30166033408,
+    "peak_memory_reserved_bytes": 32543604736,
+    "peak_memory_allocated_gib": 28.094307899475098,
+    "peak_memory_reserved_gib": 30.30859375,
+    "throughput_gain_over_selected_4x4090_job_1595805": 0.508712503909086,
+    "source_sha256": "c2312e94518ed85d2d2d8cf3ead0ab902a8ecad2a1d69e908d9136352ffac519",
+    "artifact_sha256": {
+      "manifest.json": "b99267318f470f1ab6e1bc0332ea2b8b4b7e593ab4056518ff2098f454433fc3",
+      "metrics.jsonl": "50449fb4bfc219036d40d51617622d7fee10510f10d45f044d805782e7c7af5b",
+      "summary.json": "d8f17ca8035fa37a958c2a145b93ca347ea3b66d5abf496c303ff1dfd0fb1490",
+      "gpu.csv": "c5771286d8db32db46ce5b3e415dce9b45057cddeaa5112059e90698bb9d80c5"
+    }
+  },
+  "recommended_headroom_recipe": {
+    "job_id": 1595846,
+    "state": "COMPLETED",
+    "batch_per_rank": 112,
+    "student_reshard_after_forward": true,
+    "median_source_images_per_second": 66.27553893006484,
+    "median_useful_mfu": 0.595200623052273,
+    "median_hfu": 0.7620287194247818,
+    "peak_memory_reserved_gib": 28.392578125,
+    "throughput_fraction_of_maximum_recipe": 0.9981314450549391,
+    "reason": "It retains 1.916 GiB more reserved-memory headroom while giving up only 0.187% median synthetic throughput."
+  },
+  "frontier": [
+    {
+      "job_id": 1595842,
+      "configuration": "BF16, batch 96, student parameters persistent",
+      "status": "PASS",
+      "median_source_images_per_second": 66.06927130683428,
+      "median_useful_mfu": 0.5933481957488618,
+      "peak_memory_reserved_gib": 27.41796875
+    },
+    {
+      "job_id": 1595846,
+      "configuration": "BF16, batch 112, student reshard",
+      "status": "PASS_RECOMMENDED_HEADROOM",
+      "median_source_images_per_second": 66.27553893006484,
+      "median_useful_mfu": 0.595200623052273,
+      "peak_memory_reserved_gib": 28.392578125
+    },
+    {
+      "job_id": 1595879,
+      "configuration": "BF16, batch 112, student parameters persistent",
+      "status": "PASS_MAXIMUM_MEDIAN_THROUGHPUT",
+      "median_source_images_per_second": 66.39961025014787,
+      "median_useful_mfu": 0.5963148701517083,
+      "peak_memory_reserved_gib": 30.30859375
+    },
+    {
+      "job_id": 1595853,
+      "configuration": "BF16, batch 128, student reshard",
+      "status": "PASS_SLOWER",
+      "median_source_images_per_second": 63.25942963054104,
+      "median_useful_mfu": 0.568113855245456,
+      "peak_memory_reserved_gib": 30.51953125
+    },
+    {
+      "job_id": 1595886,
+      "configuration": "BF16, batch 116, student parameters persistent",
+      "status": "PASS_SLOWER_UNSTABLE_TIMING",
+      "median_source_images_per_second": 63.01890439024832,
+      "median_useful_mfu": 0.5659537706170521,
+      "peak_memory_reserved_gib": 30.5234375
+    },
+    {
+      "job_id": 1595855,
+      "configuration": "tensorwise FP8 for 161 eligible Linear layers per model, FP8 FSDP all-gather, BF16 attention",
+      "status": "PASS_RUNTIME_REJECT_THROUGHPUT",
+      "median_source_images_per_second": 41.246529118622625,
+      "bf16_peak_equivalent_useful_ratio": 0.37042263596005565,
+      "slowdown_vs_bf16_batch_112": 0.37765079266806545,
+      "metric_boundary": "This is a BF16-peak-equivalent useful-FLOP ratio, not FP8 MFU."
+    },
+    {
+      "job_ids": [1595857, 1595883, 1595890],
+      "configuration": "BF16 without activation checkpointing at batches 32, 30 and 28",
+      "status": "REJECT_CUDA_OOM",
+      "observed_allocated_gib_range": [30.25, 30.5]
+    },
+    {
+      "job_ids": [1595891, 1595897],
+      "configuration": "BF16 checkpointing every second block at batches 44 and 40",
+      "status": "REJECT_CUDA_OOM",
+      "observed_allocated_gib_range": [30.43, 30.5]
+    }
+  ],
+  "xformers_paired_screen": {
+    "jobs": [1595861, 1595863],
+    "status": "COMPATIBLE_REJECT_DIRECT_ATTENTION_REPLACEMENT",
+    "shape_bmhd": [16, 257, 24, 64],
+    "max_absolute_error_vs_sdpa": 0.0,
+    "gradients_finite": true,
+    "sdpa_forward_backward_milliseconds": 0.38036275655031204,
+    "xformers_forward_backward_milliseconds": 0.5577179603278637,
+    "xformers_speedup_over_sdpa": 0.6819983999201129,
+    "reason": "The installed xFormers 0.0.35 attention path was 31.8% slower than native PyTorch SDPA on the paired RTX 5090 shape."
+  },
+  "research_decisions": {
+    "torch_compile": "Retain max-autotune-no-cudagraphs. Official PyTorch reports material MFU gains from torch.compile; this project already measures the compiled path.",
+    "float8": "Keep the opt-in implementation for future hardware/runtime retesting, but reject it on the measured RTX 5090 stack. Official torchao guidance says tensorwise is fastest and integrates with compile/FSDP2, but also warns that shape and hardware determine gains.",
+    "xformers": "Do not replace native SDPA in this runtime. A future faithful DINO multicrop implementation may separately test xFormers block-diagonal nested execution, because upstream DINOv2 uses xFormers for nested tensors.",
+    "activation_checkpointing": "Keep checkpointing every block. Every tested reduced-checkpoint configuration exhausted 32GB memory before the first complete step.",
+    "batch": "Use 112 per rank. Batch 116 and 128 crossed the throughput knee and produced lower or less stable throughput."
+  },
+  "current_source": {
+    "vitg14_preflight.py_sha256": "2014b45a6a2fa5bb54e16efa96c51e730023ccbaf7859582f7853dc10c606e43",
+    "slurm_script_sha256": "ef389805bd3ef13937dfab9db6c541314347fe55763114f71734a6d12fc06bae",
+    "xformers_smoke.py_sha256": "960977dc38fe91c5cb7dcfc1b3165a19aa5b4d085ddbf84fad6c7623deb4802b",
+    "note": "The current preflight source adds opt-in FP8 and checkpoint-frequency controls. Defaults preserve the selected BF16 full-checkpoint behavior."
+  },
+  "formal_training_gates": {
+    "data": "BLOCKED: no immutable admitted image corpus has passed source, license, attribution, integrity, quality, deduplication, benchmark-overlap and split audits.",
+    "method": "BLOCKED: replace the synthetic MSE proxy with a pinned full DINO/iBOT objective, teacher EMA, deterministic checkpoint/resume and real decode/augmentation.",
+    "quality": "BLOCKED: preregister frozen-feature, k-NN, transfer, robustness and contamination-aware evaluation. FP8 cannot be promoted without BF16 loss and downstream parity."
+  },
+  "references": {
+    "torchao_float8_training": "https://docs.pytorch.org/ao/stable/workflows/training.html",
+    "torchao_pretraining_tutorial": "https://docs.pytorch.org/ao/stable/eager_tutorials/pretraining.html",
+    "pytorch_float8_fsdp2": "https://pytorch.org/blog/training-using-float8-fsdp2/",
+    "pytorch_compile_mfu": "https://pytorch.org/blog/maximizing-training-throughput/",
+    "dinov2_repository": "https://github.com/facebookresearch/dinov2",
+    "dinov2_nested_block": "https://github.com/facebookresearch/dinov2/blob/main/dinov2/layers/block.py",
+    "xformers_ops": "https://facebookresearch.github.io/xformers/components/ops.html",
+    "rtx_5090_official": "https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/"
+  }
+}

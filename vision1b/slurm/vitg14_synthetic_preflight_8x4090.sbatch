@@ -13,10 +13,14 @@ PYTHON=/ssd/scxi253/pretraining2/runtime/venv/bin/python
 SOURCE=/ssd/scxi253/vision1b-research/source
 BATCH_PER_RANK=${BATCH_PER_RANK:-1}
 COMPILE_MODE=${COMPILE_MODE:-max-autotune-no-cudagraphs}
+PEAK_BF16_TFLOPS_PER_GPU=${PEAK_BF16_TFLOPS_PER_GPU:-165.2}
 ACTIVATION_CHECKPOINTING=${ACTIVATION_CHECKPOINTING:-true}
+CHECKPOINT_EVERY_N_BLOCKS=${CHECKPOINT_EVERY_N_BLOCKS:-1}
 FUSED_MULTICROP=${FUSED_MULTICROP:-true}
 TEACHER_RESHARD_AFTER_FORWARD=${TEACHER_RESHARD_AFTER_FORWARD:-false}
 STUDENT_RESHARD_AFTER_FORWARD=${STUDENT_RESHARD_AFTER_FORWARD:-true}
+FLOAT8_RECIPE=${FLOAT8_RECIPE:-none}
+FLOAT8_FSDP_ALL_GATHER=${FLOAT8_FSDP_ALL_GATHER:-false}
 STEPS=${STEPS:-12}
 WARMUP_STEPS=${WARMUP_STEPS:-4}
 NPROC_PER_NODE=${NPROC_PER_NODE:-8}
@@ -46,6 +50,9 @@ export NCCL_ALGO=Ring
 export NCCL_PROTO=Simple
 unset CUDA_DEVICE_MAX_CONNECTIONS || true
 export OMP_NUM_THREADS=4
+if test "$FLOAT8_RECIPE" != none; then
+  export PYTHONPATH=/ssd/scxi253/vision1b-research/deps/torchao-0.18.0${PYTHONPATH:+:$PYTHONPATH}
+fi
 
 checkpoint_flag=--activation-checkpointing
 if test "$ACTIVATION_CHECKPOINTING" = false; then
@@ -63,6 +70,10 @@ student_reshard_flag=--student-reshard-after-forward
 if test "$STUDENT_RESHARD_AFTER_FORWARD" = false; then
   student_reshard_flag=--no-student-reshard-after-forward
 fi
+float8_all_gather_flag=--float8-fsdp-all-gather
+if test "$FLOAT8_FSDP_ALL_GATHER" = false; then
+  float8_all_gather_flag=--no-float8-fsdp-all-gather
+fi
 
 "$PYTHON" -m torch.distributed.run --standalone --nproc_per_node="$NPROC_PER_NODE" \
   "$LOCAL_ROOT/vitg14_preflight.py" \
@@ -70,13 +81,17 @@ fi
   --steps "$STEPS" \
   --warmup-steps "$WARMUP_STEPS" \
   --batch-per-rank "$BATCH_PER_RANK" \
+  --peak-bf16-tflops-per-gpu "$PEAK_BF16_TFLOPS_PER_GPU" \
   --shard-group-size "$SHARD_GROUP_SIZE" \
   --global-views 2 \
   --local-views 8 \
+  --checkpoint-every-n-blocks "$CHECKPOINT_EVERY_N_BLOCKS" \
   "$checkpoint_flag" \
   "$multicrop_flag" \
   "$teacher_reshard_flag" \
   "$student_reshard_flag" \
+  --float8-recipe "$FLOAT8_RECIPE" \
+  "$float8_all_gather_flag" \
   --compile-mode "$COMPILE_MODE"
 
 find "$ROOT" -type f ! -name SHA256SUMS -print0 | sort -z | xargs -0 sha256sum > "$ROOT/SHA256SUMS"

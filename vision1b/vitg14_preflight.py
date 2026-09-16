@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+from dataclasses import replace
 import json
 import math
 import os
@@ -44,6 +45,7 @@ def parse_args() -> argparse.Namespace:
         action=argparse.BooleanOptionalAction,
         default=True,
     )
+    parser.add_argument("--checkpoint-every-n-blocks", type=int, default=1)
     parser.add_argument(
         "--fused-multicrop",
         action=argparse.BooleanOptionalAction,
@@ -60,6 +62,16 @@ def parse_args() -> argparse.Namespace:
         default=True,
     )
     parser.add_argument("--compile-mode", choices=("none", "default", "max-autotune-no-cudagraphs"), default="none")
+    parser.add_argument(
+        "--float8-recipe",
+        choices=("none", "tensorwise", "rowwise", "rowwise_with_gw_hp"),
+        default="none",
+    )
+    parser.add_argument(
+        "--float8-fsdp-all-gather",
+        action=argparse.BooleanOptionalAction,
+        default=False,
+    )
     parser.add_argument("--seed", type=int, default=20260917)
     return parser.parse_args()
 
@@ -123,6 +135,7 @@ class VisionTransformer(nn.Module):
         ffn_width: int,
         projection_dim: int,
         activation_checkpointing: bool,
+        checkpoint_every_n_blocks: int = 1,
     ) -> None:
         super().__init__()
         if image_size % patch_size:
@@ -131,6 +144,9 @@ class VisionTransformer(nn.Module):
         self.patch_size = patch_size
         self.width = width
         self.activation_checkpointing = activation_checkpointing
+        if checkpoint_every_n_blocks < 1:
+            raise ValueError("checkpoint_every_n_blocks must be at least 1")
+        self.checkpoint_every_n_blocks = checkpoint_every_n_blocks
         grid = image_size // patch_size
         self.patch_embed = nn.Conv2d(3, width, patch_size, stride=patch_size)
         self.class_token = nn.Parameter(torch.empty(1, 1, width))
@@ -180,8 +196,12 @@ class VisionTransformer(nn.Module):
         multicrop = isinstance(pixels, tuple)
         pixel_views = pixels if multicrop else (pixels,)
         states = tuple(self.embed(view) for view in pixel_views)
-        for block in self.blocks:
-            if self.training and self.activation_checkpointing:
+        for block_index, block in enumerate(self.blocks):
+            if (
+                self.training
+                and self.activation_checkpointing
+                and block_index % self.checkpoint_every_n_blocks == 0
+            ):
                 block_output = checkpoint(block, *states, use_reentrant=False)
             else:
                 block_output = block(*states)
@@ -201,6 +221,7 @@ def model_parameters(arguments: argparse.Namespace) -> int:
             arguments.ffn_width,
             arguments.projection_dim,
             activation_checkpointing=True,
+            checkpoint_every_n_blocks=arguments.checkpoint_every_n_blocks,
         )
     return sum(parameter.numel() for parameter in model.parameters())
 
@@ -241,10 +262,11 @@ def hardware_training_flops_per_source(arguments: argparse.Namespace) -> int:
         return useful
     global_forward = forward_flops(arguments, arguments.global_size)
     local_forward = forward_flops(arguments, arguments.local_size)
+    checkpointed_blocks = (arguments.depth - 1) // arguments.checkpoint_every_n_blocks + 1
     recompute = (
         arguments.global_views * global_forward
         + arguments.local_views * local_forward
-    )
+    ) * checkpointed_blocks // arguments.depth
     return useful + recompute
 
 
@@ -268,6 +290,33 @@ def shard_model(
         mp_policy=policy,
         reshard_after_forward=reshard_after_forward,
     )
+
+
+def convert_float8(model: VisionTransformer, arguments: argparse.Namespace) -> int:
+    """Convert eligible Linear layers before FSDP2 wrapping and compilation."""
+    if arguments.float8_recipe == "none":
+        if arguments.float8_fsdp_all_gather:
+            raise ValueError("float8 FSDP all-gather requires a float8 recipe")
+        return 0
+    if arguments.float8_fsdp_all_gather and arguments.float8_recipe != "tensorwise":
+        raise ValueError("float8 FSDP all-gather is supported only for tensorwise scaling")
+
+    from torchao.float8 import Float8LinearConfig
+    from torchao.float8.float8_linear import Float8Linear
+    from torchao.float8.float8_linear_utils import convert_to_float8_training
+
+    config = Float8LinearConfig.from_recipe_name(arguments.float8_recipe)
+    if arguments.float8_fsdp_all_gather:
+        config = replace(config, enable_fsdp_float8_all_gather=True)
+
+    def eligible(module: nn.Module, _fqn: str) -> bool:
+        if not isinstance(module, nn.Linear):
+            return False
+        output_features, input_features = module.weight.shape
+        return input_features % 16 == 0 and output_features % 16 == 0
+
+    convert_to_float8_training(model, module_filter_fn=eligible, config=config)
+    return sum(isinstance(module, Float8Linear) for module in model.modules())
 
 
 def normalized(outputs: Tensor) -> Tensor:
@@ -320,6 +369,7 @@ def main() -> None:
         arguments.ffn_width,
         arguments.projection_dim,
         activation_checkpointing=arguments.activation_checkpointing,
+        checkpoint_every_n_blocks=arguments.checkpoint_every_n_blocks,
     ).to(device)
     teacher = VisionTransformer(
         arguments.global_size,
@@ -330,9 +380,12 @@ def main() -> None:
         arguments.ffn_width,
         arguments.projection_dim,
         activation_checkpointing=False,
+        checkpoint_every_n_blocks=arguments.checkpoint_every_n_blocks,
     ).to(device)
     teacher.load_state_dict(student.state_dict())
     teacher.requires_grad_(False)
+    student_float8_linears = convert_float8(student, arguments)
+    teacher_float8_linears = convert_float8(teacher, arguments)
     shard_model(
         student,
         mesh=shard_mesh,
@@ -392,17 +445,31 @@ def main() -> None:
         "global_size": arguments.global_size,
         "local_size": arguments.local_size,
         "compile_mode": arguments.compile_mode,
+        "float8_recipe": arguments.float8_recipe,
+        "float8_fsdp_all_gather": arguments.float8_fsdp_all_gather,
+        "student_float8_linears": student_float8_linears,
+        "teacher_float8_linears": teacher_float8_linears,
         "activation_checkpointing": arguments.activation_checkpointing,
+        "checkpoint_every_n_blocks": arguments.checkpoint_every_n_blocks,
         "fused_multicrop": arguments.fused_multicrop,
         "teacher_reshard_after_forward": arguments.teacher_reshard_after_forward,
         "student_reshard_after_forward": arguments.student_reshard_after_forward,
-        "dtype": "BF16 compute with FP32 parameters/reductions/optimizer state",
+        "dtype": (
+            "FP8 eligible Linear GEMMs with BF16 attention/non-Linear compute and FP32 parameters/reductions/optimizer state"
+            if arguments.float8_recipe != "none"
+            else "BF16 compute with FP32 parameters/reductions/optimizer state"
+        ),
         "synthetic_inputs": True,
         "useful_training_flops_per_source_image": useful_source_flops,
         "hardware_training_flops_per_source_image": hardware_source_flops,
         "peak_bf16_tflops_per_gpu": arguments.peak_bf16_tflops_per_gpu,
         "mfu_definition": "useful dense matmul FLOPs for student forward/backward plus global teacher forward divided by configured aggregate non-sparse dense BF16 peak; checkpoint recomputation and elementwise kernels are excluded",
         "hfu_definition": "executed dense matmul FLOPs including checkpoint recomputation divided by configured aggregate non-sparse dense BF16 peak; elementwise kernels are excluded",
+        "float8_metric_boundary": (
+            "For FP8 runs, BF16-peak ratios are throughput-equivalent ratios only and are not FP8 MFU/HFU."
+            if arguments.float8_recipe != "none"
+            else None
+        ),
         "claim_boundary": "This run tests construction, forward, backward, optimizer, memory and synthetic throughput only. It is not image pretraining and provides no quality or convergence evidence.",
     }
     if rank == 0:
@@ -441,6 +508,20 @@ def main() -> None:
         if distributed:
             dist.all_reduce(reduced)
             reduced /= world_size
+        useful_peak_ratio = (
+            useful_source_flops
+            * arguments.batch_per_rank
+            * world_size
+            / elapsed
+            / (world_size * arguments.peak_bf16_tflops_per_gpu * 1e12)
+        )
+        hardware_peak_ratio = (
+            hardware_source_flops
+            * arguments.batch_per_rank
+            * world_size
+            / elapsed
+            / (world_size * arguments.peak_bf16_tflops_per_gpu * 1e12)
+        )
         record = {
             "step": step,
             "loss": reduced.item(),
@@ -448,20 +529,10 @@ def main() -> None:
             "step_seconds": elapsed,
             "source_images_per_second": arguments.batch_per_rank * world_size / elapsed,
             "augmented_views_per_second": arguments.batch_per_rank * world_size * (arguments.global_views + arguments.local_views) / elapsed,
-            "estimated_dense_bf16_mfu": (
-                useful_source_flops
-                * arguments.batch_per_rank
-                * world_size
-                / elapsed
-                / (world_size * arguments.peak_bf16_tflops_per_gpu * 1e12)
-            ),
-            "estimated_dense_bf16_hfu": (
-                hardware_source_flops
-                * arguments.batch_per_rank
-                * world_size
-                / elapsed
-                / (world_size * arguments.peak_bf16_tflops_per_gpu * 1e12)
-            ),
+            "estimated_dense_bf16_mfu": useful_peak_ratio if arguments.float8_recipe == "none" else None,
+            "estimated_dense_bf16_hfu": hardware_peak_ratio if arguments.float8_recipe == "none" else None,
+            "bf16_peak_equivalent_useful_ratio": useful_peak_ratio if arguments.float8_recipe != "none" else None,
+            "bf16_peak_equivalent_hardware_ratio": hardware_peak_ratio if arguments.float8_recipe != "none" else None,
             "peak_memory_allocated_bytes": torch.cuda.max_memory_allocated(device),
             "peak_memory_reserved_bytes": torch.cuda.max_memory_reserved(device),
         }
@@ -486,6 +557,8 @@ def main() -> None:
             "median_augmented_views_per_second": middle["augmented_views_per_second"],
             "median_estimated_dense_bf16_mfu": middle["estimated_dense_bf16_mfu"],
             "median_estimated_dense_bf16_hfu": middle["estimated_dense_bf16_hfu"],
+            "median_bf16_peak_equivalent_useful_ratio": middle["bf16_peak_equivalent_useful_ratio"],
+            "median_bf16_peak_equivalent_hardware_ratio": middle["bf16_peak_equivalent_hardware_ratio"],
             "peak_memory_allocated_bytes": max(item["peak_memory_allocated_bytes"] for item in records),
             "peak_memory_reserved_bytes": max(item["peak_memory_reserved_bytes"] for item in records),
             "claim_boundary": manifest["claim_boundary"],
