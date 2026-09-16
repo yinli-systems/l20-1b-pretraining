@@ -1,0 +1,73 @@
+{
+  "automatic_promotion": false,
+  "bootstrap": {
+    "interval": [
+      0.025,
+      0.975
+    ],
+    "resamples": 10000,
+    "seed": 20260916
+  },
+  "candidates": [
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260915-1590004/train/model-final.pt",
+      "checkpoint_sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc",
+      "expected_step": 1024,
+      "id": "F2_parent_seed20260915",
+      "role": "matched_parent",
+      "seed": 20260915
+    },
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/f2-fresh-n1-continuation-v1/f2n1-lr3e5-seed20260915-1595097/train/resume.pt",
+      "checkpoint_sha256": "c27762f59a5e2cbefe208814b21c129132ab59440a784cb0c5e141b15e4cb7c4",
+      "expected_step": 256,
+      "id": "f2n1-lr3e5",
+      "role": "frozen_candidate",
+      "seed": 20260915
+    }
+  ],
+  "claim_boundary": "one-time confirmation half of the public SciQ closed-book English science proxy, comparing the frozen 3e-5 continuation with its matched F2 parent; current-corpus contamination checks do not establish model-ancestor or semantic-paraphrase independence; not sealed, not broad knowledge, and not evidence of formal promotion or market superiority",
+  "completion_template": " {choice_text}",
+  "contamination_gate": {
+    "excluded_reference_rows": 12,
+    "report_sha256": "9950ea90d82ffe460acae573b7d4555c8d8e7fc57ae17554e2924fb6006af5d4",
+    "status": "PASS_CLEAN_REFERENCE_POOL_READY"
+  },
+  "data": {
+    "bytes": 342808,
+    "dataset": "allenai/sciq",
+    "declared_license": "cc-by-nc-3.0",
+    "duplicate_choice_rows_excluded": 9,
+    "path": "/ssd/scxi253/pretrain500m-20260912-v1/source/independent-knowledge-proxy-v1/sciq-test.jsonl",
+    "revision": "2c94ad3e1aafab77146f384e23536f97a4849815",
+    "rows": 1000,
+    "sha256": "55cc70950fdd8892d6c7c2cbd458d2c3c6fc5f88548b909799d147b68e7c16da"
+  },
+  "evaluation_class": "one-time independent confirmation proxy after candidate freeze at git commit 6498ccb",
+  "execution": {
+    "attention_backend": "eager",
+    "batch_size_per_gpu": 8,
+    "dtype": "bfloat16",
+    "gpus_per_candidate": 1,
+    "max_length": 2048,
+    "torch_deterministic_algorithms": true
+  },
+  "metrics": {
+    "primary": "acc_norm: choose maximum mean answer-token conditional log likelihood",
+    "secondary": "acc: choose maximum total answer-token conditional log likelihood",
+    "tie_break": "lowest frozen choice index"
+  },
+  "prompt_template": "Question: {question}\\nAnswer:",
+  "reference_candidate_id": "F2_parent_seed20260915",
+  "roles": {
+    "confirmation": "490 rows; do not score during this development baseline",
+    "development": "489 rows; score Base and both long-F2 parents"
+  },
+  "schema": "p529m-independent-knowledge-proxy-sciq-plan-v1",
+  "selection_use": "confirmation gate only; a pass authorizes second-seed replication, not formal promotion or automatic continuation",
+  "split_manifest": "splits.json",
+  "split_manifest_sha256": "febdf159d2c3a08522d3964a42c18b74df76ac6b35f6d87986c2f8f80355981f",
+  "status": "FROZEN_BEFORE_CONFIRMATION_SCORING",
+  "tokenizer_json": "/ssd/scxi253/pretrain500m-20260912-v1/source/pack-v3/tokenizer/tokenizer.json",
+  "tokenizer_json_sha256": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6"
+}

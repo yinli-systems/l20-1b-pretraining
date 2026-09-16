@@ -1,0 +1,59 @@
+{
+  "automatic_promotion": false,
+  "candidate_selection_evidence": "matched two-GPU RTX 4090 seven-task aggregate delta +0.0008498830462425611 versus its rerun parent; five task point estimates up, two down; no significant aggregate separation claimed",
+  "candidate_selection_git_commit": "6498ccb",
+  "candidates": [
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260915-1590004/train/model-final.pt",
+      "checkpoint_sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc",
+      "expected_step": 1024,
+      "id": "F2_parent_seed20260915",
+      "role": "matched_parent",
+      "seed": 20260915
+    },
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/f2-fresh-n1-continuation-v1/f2n1-lr3e5-seed20260915-1595097/train/resume.pt",
+      "checkpoint_sha256": "c27762f59a5e2cbefe208814b21c129132ab59440a784cb0c5e141b15e4cb7c4",
+      "expected_step": 256,
+      "id": "f2n1-lr3e5",
+      "role": "frozen_candidate",
+      "seed": 20260915
+    }
+  ],
+  "claim_boundary": "one-time public independent-proxy confirmation of the frozen seed-20260915 3e-5 fresh-N1 continuation against its matched F2 parent; passing only authorizes second-seed replication and does not establish sealed generalization, instruction following, safety, multilingual quality, formal promotion, or market superiority",
+  "cross_domain_decision_rule": "advance to second-seed replication only if all four domain gates pass and at least two primary metrics strictly improve; otherwise hold with no automatic continuation",
+  "domains": {
+    "code": {
+      "dataset": "MBPP sanitized",
+      "gate": "candidate exceeds parent execution passes, has at least one execution pass, and paired syntax/policy lower bound is at least -0.01",
+      "primary": "execution_pass_at_1",
+      "role": "confirmation",
+      "samples": 129
+    },
+    "knowledge": {
+      "dataset": "allenai/sciq",
+      "gate": "paired bootstrap 95% lower bound for candidate-minus-parent accuracy is at least -0.01",
+      "primary": "acc_norm",
+      "role": "confirmation",
+      "samples": 490
+    },
+    "math": {
+      "dataset": "MGSM English",
+      "gate": "candidate exact-match correct count is no lower than parent and mean gold-answer token NLL is no worse",
+      "primary": "exact_numeric_match",
+      "role": "confirmation",
+      "samples": 125
+    },
+    "reading": {
+      "dataset": "facebook/belebele eng_Latn",
+      "gate": "paired bootstrap 95% lower bound for candidate-minus-parent accuracy is at least -0.01",
+      "primary": "acc_norm",
+      "role": "confirmation",
+      "samples": 450
+    }
+  },
+  "formal_promotion": false,
+  "frozen_utc": "2026-09-16T18:30:27Z",
+  "schema": "p529m-f2-fresh-n1-independent-confirmation-gate-plan-v1",
+  "status": "FROZEN_BEFORE_CONFIRMATION_SCORING"
+}
