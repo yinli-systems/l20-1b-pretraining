@@ -1,0 +1,30 @@
+{
+  "bytes": 342808,
+  "claim_boundary": "public closed-domain science QA reservation; not sealed and not evidence of independence from model ancestors",
+  "data_quality": {
+    "action": "exclude before role split",
+    "duplicate_choice_rows": [
+      67,
+      124,
+      318,
+      469,
+      526,
+      659,
+      718,
+      884,
+      926
+    ]
+  },
+  "declared_license": "cc-by-nc-3.0",
+  "path": "data/test-00000-of-00001.parquet",
+  "provider": "allenai/sciq",
+  "revision": "2c94ad3e1aafab77146f384e23536f97a4849815",
+  "rows": 1000,
+  "rows_jsonl_sha256": "55cc70950fdd8892d6c7c2cbd458d2c3c6fc5f88548b909799d147b68e7c16da",
+  "schema": "p529m-sciq-reservation-v1",
+  "scoring_started": false,
+  "sha256": "3a719356a29b127fc54ef3c7f51a034db4bd105d5717215e8c85d2aa58d60667",
+  "status": "PINNED_EVALUATION_ONLY",
+  "training_admitted": false,
+  "url": "https://huggingface.co/datasets/allenai/sciq/resolve/2c94ad3e1aafab77146f384e23536f97a4849815/data/test-00000-of-00001.parquet?download=true"
+}
