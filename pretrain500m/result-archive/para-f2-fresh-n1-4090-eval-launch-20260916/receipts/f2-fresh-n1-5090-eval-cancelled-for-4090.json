@@ -1,0 +1,13 @@
+{
+  "after": "1595552      CANCELLED+   00:00:00      0:0 \n1595553      CANCELLED+   00:00:00      0:0 ",
+  "before": "1595552|PENDING|p529m-f2n1-7-f2n1lr3e5|(Priority)\n1595553|PENDING|p529m-f2n1-7-f2n1lr6e5|(Priority)",
+  "cancelled_job_ids": [
+    1595552,
+    1595553
+  ],
+  "checked_utc": "2026-09-16T18:00:30.891256+00:00",
+  "claim_boundary": "cancellation occurred before allocation; replacement submission is separate from live execution",
+  "replacement": "matched parent plus both candidates on 2xRTX4090 each",
+  "schema": "p529m-f2-eval-migration-v1",
+  "status": "PENDING_5090_EVALS_CANCELLED_BEFORE_ALLOCATION"
+}

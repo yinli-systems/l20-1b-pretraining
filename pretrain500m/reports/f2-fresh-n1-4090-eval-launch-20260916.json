@@ -1,0 +1,38 @@
+{
+  "cancelled_5090_jobs": [
+    1595552,
+    1595553
+  ],
+  "checked_utc": "2026-09-16T18:00:46.914480+00:00",
+  "checkpoint_identity_checks": "PASS_ALL_THREE",
+  "claim_boundary": "Allocation, identity and cache verification are established; evaluation completion, scores, retention, promotion and superiority remain unverified.",
+  "error_scan": "NO_ERRORS_AT_INITIAL_EXPORT_STAGE",
+  "formal_promotion": false,
+  "free_bytes_before_submit": 47401148416,
+  "gpu_model": "NVIDIA GeForce RTX 4090",
+  "input_sha256": {
+    "cancellation_receipt": "7a45316fdc5970679c236c695b2d3e35eec98dbd3f5dd81100a6b3e51afa5764",
+    "submission_receipt": "43ceb8da2b3fc74da7593d19a8601e8caaa07ada822d96f6124de6dbd45f85b1"
+  },
+  "jobs": [
+    {
+      "candidate_id": "f2-parent",
+      "job_id": 1595565,
+      "job_name": "p529m-f2n1-4k7-f2parent"
+    },
+    {
+      "candidate_id": "f2n1-lr3e5",
+      "job_id": 1595566,
+      "job_name": "p529m-f2n1-4k7-f2n1lr3e5"
+    },
+    {
+      "candidate_id": "f2n1-lr6e5",
+      "job_id": 1595567,
+      "job_name": "p529m-f2n1-4k7-f2n1lr6e5"
+    }
+  ],
+  "physical_gpu_total_verified": 6,
+  "protocol_and_cache_checks": "PASS_ALL_THREE",
+  "schema": "p529m-f2-fresh-n1-4090-eval-launch-v1",
+  "status": "THREE_MATCHED_4090_EVALUATIONS_ALLOCATED_EXPORTING"
+}
