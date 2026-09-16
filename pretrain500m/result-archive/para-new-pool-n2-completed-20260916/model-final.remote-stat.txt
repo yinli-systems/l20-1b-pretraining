@@ -1,0 +1,1 @@
+/ssd/scxi253/pretrain500m-20260912-v1/posttrain/new-pool-mixture-pilots-v1/n2-lr6e5-seed20260916-1594610/train/model-final.pt|2372504677|1789564476
