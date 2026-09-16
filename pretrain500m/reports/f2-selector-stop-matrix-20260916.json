@@ -1,0 +1,235 @@
+{
+  "candidate_scope": {
+    "base": "formal run-v5 Base reference",
+    "f2_continuations": "matched 0.537B-token continuations of both long-F2 parents",
+    "long_f2_parents": "F2_reasoning_no_synthetic long parents, seeds 20260914 and 20260915",
+    "selection_rule": "A candidate cannot advance by averaging likelihood gains over zero-floor or negative capability metrics. Both seeds, executable/generated capabilities, retention, and data admission must pass."
+  },
+  "checked_utc": "2026-09-16T08:26:22.564127+00:00",
+  "claim_boundary": "This matrix combines engineering, masked-loss, adaptive capability, and independent development-proxy evidence. It rejects the old F2 continuation and blocks a new pilot pending data admission. It is not a sealed final evaluation or evidence of market superiority.",
+  "formal_promotion": false,
+  "fresh_training_admitted": false,
+  "gates": [
+    {
+      "candidate": "f2_continuations",
+      "decision_effect": "does not offset a capability failure",
+      "evidence": {
+        "finite_loss_both_seeds": true,
+        "last10_mean_mfu": [
+          0.760987424990111,
+          0.7735992366312832
+        ],
+        "minimum_required": 0.7
+      },
+      "evidence_class": "live training telemetry",
+      "id": "execution_efficiency",
+      "status": "PASS_ENGINEERING_ONLY"
+    },
+    {
+      "candidate": "f2_continuations",
+      "decision_effect": "necessary but insufficient",
+      "evidence": {
+        "all_five_domains_lower_both_seeds": true,
+        "relative_loss_reduction": [
+          0.004318465209397271,
+          0.004039074947212229
+        ]
+      },
+      "evidence_class": "reserved family-disjoint five-domain masked confirmation",
+      "id": "paired_masked_loss",
+      "status": "PASS_DIRECTIONAL"
+    },
+    {
+      "candidate": "f2_continuations",
+      "decision_effect": "reject continuation; do not extend or repeat",
+      "evidence": {
+        "both_seeds_strict_gain": false,
+        "continuation_two_seed_mean": 0.484552533277548,
+        "delta": -0.0007589435070957107,
+        "over_0_50": false,
+        "parent_two_seed_mean": 0.4853114767846437
+      },
+      "evidence_class": "adaptive matched seven-task capability",
+      "id": "seven_task_retention",
+      "status": "FAIL_STOP"
+    },
+    {
+      "candidate": "long_f2_parents",
+      "decision_effect": "cannot support F2-family capability promotion",
+      "evidence": {
+        "base_acc_norm": 0.3022222222222222,
+        "delta": 0.0022222222222222088,
+        "f2_two_seed_mean_acc_norm": 0.3044444444444444,
+        "secondary_acc_delta": -0.010000000000000009,
+        "seed_paired_intervals": [
+          [
+            -0.015555555555555555,
+            0.024444444444444446
+          ],
+          [
+            -0.017777777777777778,
+            0.017777777777777778
+          ]
+        ]
+      },
+      "evidence_class": "fresh development proxy",
+      "id": "independent_reading",
+      "status": "NO_STRONG_GAIN"
+    },
+    {
+      "candidate": "long_f2_parents",
+      "decision_effect": "likelihood improvement cannot substitute for unchanged generated correctness",
+      "evidence": {
+        "all_candidates_correct_over_samples": "2/125",
+        "base_exact_numeric_match": 0.016,
+        "f2_gold_answer_nll_delta": -0.3224586315155029,
+        "f2_two_seed_mean_exact_numeric_match": 0.016
+      },
+      "evidence_class": "fresh development proxy",
+      "id": "independent_generated_math",
+      "status": "FAIL_ZERO_FLOOR"
+    },
+    {
+      "candidate": "long_f2_parents",
+      "decision_effect": "likelihood improvement cannot substitute for zero executable generation",
+      "evidence": {
+        "all_cells_failure": "384/384 NameError from missing required function",
+        "base_execution_pass_at_1": 0.0,
+        "f2_gold_code_nll_delta": -2.425423738081008,
+        "f2_two_seed_mean_execution_pass_at_1": 0.0
+      },
+      "evidence_class": "fresh development proxy",
+      "id": "independent_executable_code",
+      "status": "FAIL_ZERO_FLOOR"
+    },
+    {
+      "candidate": "long_f2_parents",
+      "decision_effect": "Base remains the stronger point estimate; do not promote F2",
+      "evidence": {
+        "base_acc_norm": 0.6134969325153374,
+        "confirmation_scored": false,
+        "delta": -0.011247443762781187,
+        "f2_two_seed_mean_acc_norm": 0.6022494887525562,
+        "paired_ci95": [
+          -0.032719836400818,
+          0.010224948875255624
+        ]
+      },
+      "evidence_class": "contamination-filtered development proxy",
+      "id": "independent_closed_book_knowledge",
+      "status": "NO_GAIN_NEGATIVE_POINT_ESTIMATE"
+    },
+    {
+      "candidate": "knowledge proxy",
+      "decision_effect": "permits the development proxy only; semantic paraphrase and model-ancestor independence remain unresolved",
+      "evidence": {
+        "eligible_after_quality": 979,
+        "exact_question_hits": 0,
+        "lexical_overlap_rows_excluded": 12,
+        "raw_documents": 199407
+      },
+      "evidence_class": "exact and fixed lexical-near scan",
+      "id": "current_corpus_sciq_contamination",
+      "status": "PASS_LIMITED"
+    },
+    {
+      "candidate": "all future candidates",
+      "decision_effect": "preserve for a newly frozen candidate; do not tune on confirmation",
+      "evidence": {
+        "code_confirmation_unscored": true,
+        "knowledge_confirmation_unscored": true,
+        "math_confirmation_unscored": true,
+        "reading_confirmation_unscored": true
+      },
+      "evidence_class": "unscored reserved rows",
+      "id": "independent_confirmation_roles",
+      "status": "BLOCKED_NOT_YET_USED"
+    },
+    {
+      "candidate": "new pilot",
+      "decision_effect": "no fresh R0-R4 training may start",
+      "evidence": {
+        "candidate_inventory": "DCLM and one FineMath4 topup only",
+        "capacity_status": "PILOT_NOT_ADMITTED_CAPACITY_ONLY",
+        "formal_training_admitted": false,
+        "unresolved": [
+          "per-document rights and attribution",
+          "source and response lineage",
+          "family isolation and cross-source connected components",
+          "full exact/near benchmark contamination",
+          "quality review consumption",
+          "exact tokenizer packing and quota closure",
+          "minimum unique-token and repeat-cap sufficiency for all recipe leaves"
+        ]
+      },
+      "evidence_class": "data and pack admission",
+      "id": "fresh_corpus_admission",
+      "status": "FAIL_CLOSED_BLOCKED"
+    },
+    {
+      "candidate": "all current checkpoints",
+      "decision_effect": "no superiority claim",
+      "evidence": {
+        "same_protocol_external_models_scored": 0,
+        "score_over_0_50_on_seven_task": false
+      },
+      "evidence_class": "same-protocol competitor comparison",
+      "id": "external_market_superiority",
+      "status": "NOT_ESTABLISHED"
+    }
+  ],
+  "new_pilot_requirements": [
+    "freeze an actually admitted fresh corpus with exact hashes before training",
+    "target reading, generated math, executable code, and closed-book knowledge together",
+    "use matched Base and both-seed comparisons",
+    "keep MFU above 0.50 with finite loss and exact checkpoint identity",
+    "require both seeds to improve capability without zero-floor masking",
+    "retain paired masked-loss and seven-task retention gates",
+    "score confirmation roles once only after the candidate and decision rule are frozen"
+  ],
+  "schema": "p529m-f2-family-selector-stop-matrix-v1",
+  "selector": {
+    "base_reference_retained": true,
+    "current_corpus_r3_r4_repeat_allowed": false,
+    "f2_continuation_status": "rejected",
+    "fresh_pilot_status": "blocked pending corpus admission",
+    "long_f2_parent_status": "retained as a diagnostic incumbent, not established as broad improvement over Base",
+    "old_f2_extension_or_repeat_allowed": false,
+    "promoted_candidate": null
+  },
+  "source_bindings": {
+    "code": {
+      "path": "pretrain500m/result-archive/independent-code-proxy-v1-development-results-20260916.json",
+      "sha256": "70ea4deccdeb0aca0c9c2276dc1fa2d933c10dd59490c7c8d06f1b0cc6f8978e"
+    },
+    "contamination": {
+      "path": "pretrain500m/result-archive/knowledge-contamination-v1-results-20260916.json",
+      "sha256": "c14b94dcc325a444aef65268905ec41ab33107dbfa358e6fbf6277c9aae3612a"
+    },
+    "fresh_capacity": {
+      "path": "pretrain500m/reports/fresh-pilot-availability-20260915.json",
+      "sha256": "49b2a4a2523f79d50722af3a94a6cd2587e9118fb19e7aa7d582b8c090060830"
+    },
+    "knowledge": {
+      "path": "pretrain500m/result-archive/independent-knowledge-proxy-v1-development-results-20260916.json",
+      "sha256": "a6c09ec9facb116cee3fc9afaa7a04c437bfe79b6067a135e927089acfaa5da4"
+    },
+    "masked_confirmation": {
+      "path": "pretrain500m/result-archive/f2-continuation-paired-confirmation-results-20260916.json",
+      "sha256": "20379f367619624a39124a553ee6dd8173b41aeb4d603f7473b1aa401526c07e"
+    },
+    "math": {
+      "path": "pretrain500m/result-archive/independent-math-proxy-v1-development-results-20260916.json",
+      "sha256": "2d4c63b236027eb880028e51b86d894aacca8f9a25b5d063d29f54a9dfeb2103"
+    },
+    "reading": {
+      "path": "pretrain500m/result-archive/independent-proxy-v1-development-results-20260916.json",
+      "sha256": "201ef70189cc05e4e2ccd707bc82576813216f44092f1aec831c0bf05083e0fd"
+    },
+    "seven_task": {
+      "path": "pretrain500m/result-archive/f2-seven-task-completion-results-20260916.json",
+      "sha256": "27cbdbfd7d706e503c33b90fc048877ed87b98eb1ad9ba276cda26a76d0906ae"
+    }
+  },
+  "status": "STOP_OLD_F2_AND_BLOCK_FRESH_PILOT_PENDING_DATA_ADMISSION"
+}
