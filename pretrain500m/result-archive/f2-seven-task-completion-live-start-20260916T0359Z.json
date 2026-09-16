@@ -1,0 +1,28 @@
+{
+  "checked_utc": "2026-09-16T03:59:41.778705+00:00",
+  "claim_boundary": "allocation and source integrity only; no completed parent reproduction, continuation score, two-seed result, promotion, or superiority claim",
+  "gpus": [
+    {
+      "index": 0,
+      "memory_mib": 32607,
+      "name": "NVIDIA GeForce RTX 5090",
+      "uuid": "GPU-488cd833-3daf-9ae7-cdff-d8ffca597456"
+    },
+    {
+      "index": 1,
+      "memory_mib": 32607,
+      "name": "NVIDIA GeForce RTX 5090",
+      "uuid": "GPU-08010139-a2ac-d781-c3c6-662a39cb2eef"
+    }
+  ],
+  "job_id": 1593740,
+  "node": "wqd10naf02g1",
+  "plan_sha256": "76b0f5bbe5581f332d7e4b386d0acf34b91f3f5dc5e9b70602f5a923568c04fc",
+  "result_available": false,
+  "scheduler_start": "2026-09-16T11:58:29+08:00",
+  "schema": "p529m-seven-task-f2-continuation-completion-live-start-v1",
+  "source_commit": "e8a437f",
+  "source_sha256sums_verified_on_remote": true,
+  "status": "ALLOCATED_TWO_5090_AND_RUNNING_NO_SCORE_YET",
+  "work": "rerun seed20260915 parent reproduction control and evaluate missing continuation under the frozen seven-task protocol"
+}
