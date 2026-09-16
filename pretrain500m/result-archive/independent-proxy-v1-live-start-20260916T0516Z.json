@@ -1,0 +1,48 @@
+{
+  "capacity_at_submit": {
+    "public_gpu_4090_free": 0,
+    "public_gpu_5090_free": 12,
+    "public_gpu_5090_runnable_three_gpu_jobs": 2
+  },
+  "checked_utc": "2026-09-16T05:18:05.517569+00:00",
+  "claim_boundary": "first fresh-to-selection public English reading proxy tranche; not training, sealed evidence, full-domain capability, or market superiority",
+  "evaluation": {
+    "candidates": [
+      "base",
+      "F2_parent_seed20260914",
+      "F2_parent_seed20260915"
+    ],
+    "dataset_sha256": "15af884c2b5994fdc71199e79d553a1864b08ce1b31894aa87f6be925a064a31",
+    "metric_primary": "acc_norm",
+    "metric_secondary": "acc",
+    "plan_sha256": "a833d213fb17ff0fe6ee28b61e43cd9a4e0aca9dc34be2063a0f3711f44de7f1",
+    "role": "development",
+    "rows": 450,
+    "split_manifest_sha256": "f09c0603c4c76ec09cb95262b410103c8a6b4ad71b34dccc618ead82aab5ef57",
+    "tokenizer_json_sha256": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6"
+  },
+  "formal_promotion": false,
+  "job": {
+    "allocated_gpus": 3,
+    "gpu_uuids": [
+      "GPU-edd09059-a437-aa13-8101-3e011eab676c",
+      "GPU-50a665d1-40e9-87af-ec04-1fb2799f781a",
+      "GPU-bfc8e985-9585-8ce2-318b-7da6d4b05840"
+    ],
+    "id": 1593968,
+    "name": "p529m-proxy-v1",
+    "node": "wqd10nbj04g1",
+    "partition": "gpu_5090",
+    "start_scheduler_local": "2026-09-16T13:16:27",
+    "state": "RUNNING",
+    "submit_scheduler_local": "2026-09-16T13:16:25"
+  },
+  "schema": "p529m-independent-proxy-v1-live-start-receipt",
+  "source": {
+    "github_branch": "codex/529m-results",
+    "github_commit": "7e526db",
+    "remote_sha256s_sha256": "07e9fb4e0e5b600013058196a1b70be539007e1704b07c65e13c163112a4f6b9",
+    "source_hash_verification": "PASS"
+  },
+  "status": "RUNNING"
+}
