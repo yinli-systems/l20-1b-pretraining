@@ -1,0 +1,18 @@
+{
+  "checked_utc": "2026-09-16T01:59:08Z",
+  "claim_boundary": "The four-checkpoint reserved paired five-domain masked-loss gate passed and the evaluation job's Slurm records ended COMPLETED with exit code 0:0. The result establishes only this exact language-model loss comparison. Seven-task capability, retention outside the five domains, independent contamination checks, post-training promotion and external-model superiority remain unverified.",
+  "job_id": 1593179,
+  "job_batch_extern_and_step_state": "COMPLETED",
+  "job_exit_code": "0:0",
+  "job_derived_exit_code": "0:0",
+  "sacct_end_local": "2026-09-16T09:53:21",
+  "elapsed": "00:13:36",
+  "result_sha256_independently_reread_remote": "a899f9f4c2aeba34036fac7640c002590629346f399f4903e80ca105c00838a8",
+  "result_status": "PASS_PAIRED_F2_CONTINUATION_CONFIRMATION",
+  "schema": "p529m-f2-continuation-confirmation-scheduler-terminal-v1",
+  "snapshot": "pretrain500m/result-archive/para-f2-confirm-terminal-20260916/SHA256SUMS",
+  "snapshot_files_independently_rechecked_remote": 3,
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source": "fresh source-bound ParaCloud SSH; sacct job, batch, extern and training-step records; final stdout/stderr/GPU CSV SHA256 reread on remote after transfer; raw result SHA256 reread"
+}

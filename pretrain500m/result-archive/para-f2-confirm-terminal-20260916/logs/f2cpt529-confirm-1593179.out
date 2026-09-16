@@ -1,0 +1,7 @@
+evaluate.py: OK
+mixture.py: OK
+plan.json: OK
+run.sbatch: OK
+README.md: OK
+{"pairs": [{"continuation_checkpoint_sha256": "98b21eb475aed1b0f6896395eb7cabf9c23ff5032f6f33a5cbcc5fdaec781ae9", "parent_checkpoint_sha256": "69d9d8d3358f23815f2455f7e075645056f90fe01ed40a11525130a0e58ca085", "passed": true, "relative_equal_domain_loss_reduction": 0.004318465209397271, "relative_loss_change_by_domain": {"code": -0.01319415788306233, "general_web": -0.0007123089256040327, "knowledge_reading": -0.0011139825251091917, "math": -0.007209583654771201, "multilingual": -0.00427856000994109}, "seed": 20260914}, {"continuation_checkpoint_sha256": "86ab770e671dd845c6de1c7724fb90cc22bc79449f9133e2a01047814f86fed8", "parent_checkpoint_sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc", "passed": true, "relative_equal_domain_loss_reduction": 0.004039074947212229, "relative_loss_change_by_domain": {"code": -0.013242096712668516, "general_web": -0.0006025922259917937, "knowledge_reading": -0.000888955277479897, "math": -0.00702757456657066, "multilingual": -0.0036191135026202303}, "seed": 20260915}], "status": "PASS_PAIRED_F2_CONTINUATION_CONFIRMATION"}
+a899f9f4c2aeba34036fac7640c002590629346f399f4903e80ca105c00838a8  /ssd/scxi253/pretrain500m-20260912-v1/posttrain/f2-continuation-confirmation-eval-v1/1593179/result.json
