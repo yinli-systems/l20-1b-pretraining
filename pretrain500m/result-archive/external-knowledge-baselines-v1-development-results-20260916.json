@@ -1,0 +1,273 @@
+{
+  "bindings": {
+    "base_result_sha256": "abba11fe4f21c40ca3d02ad80a674b364ccdb8612666024c321fe7bbedc0d95f",
+    "dataset_sha256": "55cc70950fdd8892d6c7c2cbd458d2c3c6fc5f88548b909799d147b68e7c16da",
+    "local_summary_sha256": "93f25b20a4c6df5cf45bbab4c45806def7b29639b13ef6790eb6c0307b7da06d",
+    "mobilellm_reconstruction_receipt_sha256": "79ec9e5ad808e5cc73132c90195140661013df19a1a4d1ed7d1efa18e0f190a3",
+    "plan_sha256": "974d1ce3b6ff495ddf542054d55fb26a64706bc49988ab7fd65faceac524eacf",
+    "remote_output_manifest_sha256": "7bb7c576cb02cb1d057ec856e3129353ca72d6b716a18fb9af5b012f1d9e1e47",
+    "remote_summary_sha256": "d3589255cf7cd4f950354f85b426a9a455fc86dfedcfb18c0f84000287358cc1",
+    "split_manifest_sha256": "febdf159d2c3a08522d3964a42c18b74df76ac6b35f6d87986c2f8f80355981f",
+    "verification_sha256": "0f94da89a55cc451619de02d8639163f6f6367850cec75889c04861b8866c459"
+  },
+  "checked_utc": "2026-09-16T09:42:37.751086+00:00",
+  "claim_boundary": "Matched development-only comparison on one public closed-book English science multiple-choice proxy. The 489 rows, question-only prompt, completion text, choice order, metrics, BF16 dtype, batch size, and tie-break are fixed across candidates. Tokenization necessarily follows each model family. This is not a sealed test or evidence of broad market superiority. The MobileLLM result is structurally bound to a public full-precision ONNX conversion that declares the requested official model as its base; the gated official PyTorch weight file was unavailable for direct hash identity verification.",
+  "conclusions": {
+    "broad_market_superiority_established": false,
+    "next_training_signal": "Study and ablate the SmolLM2 data/optimization recipe against the current Base deficits; preserve the frozen 490-row confirmation set for a genuinely selected successor rather than spending it adaptively.",
+    "our_base_beats_openelm_and_mobilellm_on_acc_norm": true,
+    "our_base_best_in_matched_set": false,
+    "qwen_primary_delta_percentage_points": 2.0449897750511203,
+    "qwen_primary_difference_vs_base_established": false,
+    "same_protocol_comparison_complete": true,
+    "same_protocol_external_models_scored": 4,
+    "smollm2_advantage_vs_base_established": true,
+    "smollm2_primary_delta_percentage_points": 16.359918200408995
+  },
+  "jobs": [
+    {
+      "array_job_id": 1594569,
+      "array_task_id": 0,
+      "candidate": "qwen2.5-0.5b",
+      "elapsed": "00:01:01",
+      "exit_code": "0:0",
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "gpu_uuid": "GPU-6b42b1a2-9834-c92e-1b3d-f11b8f2a20f6",
+      "job_id": 1594570,
+      "node": "wqd10nba06g8",
+      "partition": "gpu_4090",
+      "state": "COMPLETED"
+    },
+    {
+      "array_job_id": 1594569,
+      "array_task_id": 1,
+      "candidate": "openelm-450m",
+      "elapsed": "00:02:10",
+      "exit_code": "0:0",
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "gpu_uuid": "GPU-47ef6a6d-8b3c-5562-b706-84290f79ae95",
+      "job_id": 1594571,
+      "node": "wqd10nba07g1",
+      "partition": "gpu_4090",
+      "state": "COMPLETED"
+    },
+    {
+      "array_job_id": 1594569,
+      "array_task_id": 2,
+      "candidate": "smollm2-360m",
+      "elapsed": "00:02:10",
+      "exit_code": "0:0",
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "gpu_uuid": "GPU-223487ea-9d79-b69b-3c66-5aca51381744",
+      "job_id": 1594572,
+      "node": "wqd10nba07g1",
+      "partition": "gpu_4090",
+      "state": "COMPLETED"
+    },
+    {
+      "array_job_id": 1594569,
+      "array_task_id": 3,
+      "candidate": "mobilellm-600m",
+      "elapsed": "00:02:10",
+      "exit_code": "0:0",
+      "gpu": "NVIDIA GeForce RTX 4090",
+      "gpu_uuid": "GPU-73290cae-78f5-bbd1-444c-22a6eedbed03",
+      "job_id": 1594569,
+      "node": "wqd10nba07g1",
+      "partition": "gpu_4090",
+      "state": "COMPLETED"
+    }
+  ],
+  "metrics": {
+    "external_candidates": [
+      {
+        "id": "qwen2.5-0.5b",
+        "metrics": {
+          "acc": {
+            "correct": 349,
+            "delta_vs_our_base": 0.036809815950920144,
+            "paired_bootstrap_delta_ci95": [
+              0.002044989775051125,
+              0.0736196319018405
+            ],
+            "score": 0.7137014314928425
+          },
+          "acc_norm": {
+            "correct": 310,
+            "delta_vs_our_base": 0.020449897750511203,
+            "paired_bootstrap_delta_ci95": [
+              -0.022494887525562373,
+              0.06339468302658487
+            ],
+            "score": 0.6339468302658486
+          }
+        },
+        "model_class": "Qwen2ForCausalLM",
+        "parameters": 494032768,
+        "repo_id": "Qwen/Qwen2.5-0.5B",
+        "result_sha256": "ddd08e3ddfe39f5cc099c9ecdc9a8e9ab39074e849ab310cb9642b96e009cc77",
+        "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987"
+      },
+      {
+        "id": "openelm-450m",
+        "metrics": {
+          "acc": {
+            "correct": 92,
+            "delta_vs_our_base": -0.48875255623721886,
+            "paired_bootstrap_delta_ci95": [
+              -0.5439672801635992,
+              -0.4335378323108384
+            ],
+            "score": 0.18813905930470348
+          },
+          "acc_norm": {
+            "correct": 124,
+            "delta_vs_our_base": -0.35991820040899797,
+            "paired_bootstrap_delta_ci95": [
+              -0.41922290388548056,
+              -0.30265848670756645
+            ],
+            "score": 0.25357873210633947
+          }
+        },
+        "model_class": "OpenELMForCausalLM",
+        "parameters": 457179136,
+        "repo_id": "apple/OpenELM-450M",
+        "result_sha256": "1ede326ffae98c80a30c07ed6c088cfbd7d7162f7144a6aab41ffd4bf6facbed",
+        "revision": "b53a9c5a731d154b71f8d311ef702f327e0cfa3a"
+      },
+      {
+        "id": "smollm2-360m",
+        "metrics": {
+          "acc": {
+            "correct": 386,
+            "delta_vs_our_base": 0.11247443762781184,
+            "paired_bootstrap_delta_ci95": [
+              0.07566462167689161,
+              0.1492842535787321
+            ],
+            "score": 0.7893660531697342
+          },
+          "acc_norm": {
+            "correct": 380,
+            "delta_vs_our_base": 0.16359918200408996,
+            "paired_bootstrap_delta_ci95": [
+              0.12065439672801637,
+              0.2065439672801636
+            ],
+            "score": 0.7770961145194274
+          }
+        },
+        "model_class": "LlamaForCausalLM",
+        "parameters": 361821120,
+        "repo_id": "HuggingFaceTB/SmolLM2-360M",
+        "result_sha256": "39780b5b96dd172b54d139bb372b07a27f0f510c779f8e56076c11e33c7fcae8",
+        "revision": "f8027fd0eaeea54caa13c31d31b9fdc459c38b49"
+      },
+      {
+        "id": "mobilellm-600m",
+        "metrics": {
+          "acc": {
+            "correct": 333,
+            "delta_vs_our_base": 0.004089979550102152,
+            "paired_bootstrap_delta_ci95": [
+              -0.03680981595092025,
+              0.04498977505112474
+            ],
+            "score": 0.6809815950920245
+          },
+          "acc_norm": {
+            "correct": 272,
+            "delta_vs_our_base": -0.05725971370143146,
+            "paired_bootstrap_delta_ci95": [
+              -0.1083844580777096,
+              -0.006134969325153374
+            ],
+            "score": 0.556237218813906
+          }
+        },
+        "model_class": "MobileLLMForCausalLM",
+        "parameters": 603188352,
+        "repo_id": "facebook/MobileLLM-600M",
+        "result_sha256": "d46743660efed31e9b5c8e80fc541346773d0b1c8793b41e39d51e6d02b66143",
+        "revision": "5960118fcb0a9886360b03d1b48a96366e35cfff"
+      }
+    ],
+    "our_base": {
+      "acc": 0.6768916155419223,
+      "acc_norm": 0.6134969325153374,
+      "result_sha256": "abba11fe4f21c40ca3d02ad80a674b364ccdb8612666024c321fe7bbedc0d95f"
+    },
+    "ranking_by_acc_norm": [
+      {
+        "acc_norm": 0.7770961145194274,
+        "id": "smollm2-360m"
+      },
+      {
+        "acc_norm": 0.6339468302658486,
+        "id": "qwen2.5-0.5b"
+      },
+      {
+        "acc_norm": 0.6134969325153374,
+        "id": "our_base"
+      },
+      {
+        "acc_norm": 0.556237218813906,
+        "id": "mobilellm-600m"
+      },
+      {
+        "acc_norm": 0.25357873210633947,
+        "id": "openelm-450m"
+      }
+    ]
+  },
+  "mobilellm_identity": {
+    "direct_official_weight_hash_comparison": false,
+    "evaluated_artifact": "strict PyTorch reconstruction from onnx-community/MobileLLM-600M full-precision ONNX revision 25723a2c3beb2698878a620e4edf7bd17f5bd339",
+    "model_safetensors_sha256": "cdcff8bc4004af4dae7190ba51652d623615075bf3c3d3dcd80ac0837103ece2",
+    "official_weight_access": "gated official PyTorch file unavailable to the current account",
+    "requested_repo_id": "facebook/MobileLLM-600M",
+    "requested_revision": "5960118fcb0a9886360b03d1b48a96366e35cfff",
+    "strict_state_load": true
+  },
+  "protocol": {
+    "attention_backend": "eager",
+    "batch_size_per_gpu": 8,
+    "choice_order": "identical frozen order for every model",
+    "completion": " {choice_text}",
+    "confirmation_samples": 490,
+    "confirmation_scored": false,
+    "dataset": "allenai/sciq test",
+    "deterministic_algorithms": true,
+    "dtype": "bfloat16",
+    "primary_metric": "acc_norm: maximum mean answer-token conditional log likelihood",
+    "prompt": "Question: {question}\\nAnswer:",
+    "role": "development",
+    "samples": 489,
+    "secondary_metric": "acc: maximum total answer-token conditional log likelihood",
+    "support_in_prompt": false,
+    "tie_break": "lowest frozen choice index",
+    "tokenization": "model-native tokenization; add_special_tokens=false for every model"
+  },
+  "schema": "p529m-external-knowledge-baselines-v1-development-results",
+  "source": {
+    "evaluation_github_commit": "cfd19f2",
+    "github_branch": "codex/529m-results",
+    "large_model_artifacts_in_git": false,
+    "per_example_result_rows_in_git": false,
+    "remote_results_root": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/external-knowledge-baselines-v1/1594569",
+    "small_snapshot": "pretrain500m/result-archive/para-external-knowledge-baselines-v1-20260916"
+  },
+  "status": "MATCHED_EXTERNAL_CLOSED_BOOK_SCIQ_VERIFY_OK",
+  "verification": {
+    "all_489_rows_match_base_binding": true,
+    "all_choice_loglikelihoods_finite": true,
+    "all_job_batch_extern_records_completed_0_0": true,
+    "all_pinned_snapshot_files_verified": true,
+    "confirmation_rows_scored": 0,
+    "paired_bootstrap_summary_independently_reproduced": true,
+    "predictions_and_metrics_recomputed": true,
+    "remote_small_artifact_manifest_verified": true,
+    "status": "VERIFY_OK"
+  }
+}

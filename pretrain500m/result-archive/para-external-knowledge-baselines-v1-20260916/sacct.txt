@@ -1,0 +1,12 @@
+1594570|p529m-ext-sciq-1g|gpu_4090|COMPLETED|0:0|00:01:01|billing=6,cpu=6,gres/gpu=1,mem=60000M,node=1|wqd10nba06g8
+1594570.batch|batch||COMPLETED|0:0|00:01:01|cpu=6,gres/gpu=1,mem=60000M,node=1|wqd10nba06g8
+1594570.extern|extern||COMPLETED|0:0|00:01:01|billing=6,cpu=6,gres/gpu=1,mem=60000M,node=1|wqd10nba06g8
+1594571|p529m-ext-sciq-1g|gpu_4090|COMPLETED|0:0|00:02:10|billing=6,cpu=6,gres/gpu=1,mem=60000M,node=1|wqd10nba07g1
+1594571.batch|batch||COMPLETED|0:0|00:02:10|cpu=6,gres/gpu=1,mem=60000M,node=1|wqd10nba07g1
+1594571.extern|extern||COMPLETED|0:0|00:02:10|billing=6,cpu=6,gres/gpu=1,mem=60000M,node=1|wqd10nba07g1
+1594572|p529m-ext-sciq-1g|gpu_4090|COMPLETED|0:0|00:02:10|billing=6,cpu=6,gres/gpu=1,mem=60000M,node=1|wqd10nba07g1
+1594572.batch|batch||COMPLETED|0:0|00:02:10|cpu=6,gres/gpu=1,mem=60000M,node=1|wqd10nba07g1
+1594572.extern|extern||COMPLETED|0:0|00:02:10|billing=6,cpu=6,gres/gpu=1,mem=60000M,node=1|wqd10nba07g1
+1594569|p529m-ext-sciq-1g|gpu_4090|COMPLETED|0:0|00:02:10|billing=6,cpu=6,gres/gpu=1,mem=60000M,node=1|wqd10nba07g1
+1594569.batch|batch||COMPLETED|0:0|00:02:10|cpu=6,gres/gpu=1,mem=60000M,node=1|wqd10nba07g1
+1594569.extern|extern||COMPLETED|0:0|00:02:10|billing=6,cpu=6,gres/gpu=1,mem=60000M,node=1|wqd10nba07g1

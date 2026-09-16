@@ -1,0 +1,163 @@
+{
+  "candidates": [
+    {
+      "id": "qwen2.5-0.5b",
+      "metrics": {
+        "acc": {
+          "correct": 349,
+          "delta_vs_our_base": 0.036809815950920144,
+          "paired_bootstrap_delta_ci95": [
+            0.002044989775051125,
+            0.0736196319018405
+          ],
+          "score": 0.7137014314928425
+        },
+        "acc_norm": {
+          "correct": 310,
+          "delta_vs_our_base": 0.020449897750511203,
+          "paired_bootstrap_delta_ci95": [
+            -0.022494887525562373,
+            0.06339468302658487
+          ],
+          "score": 0.6339468302658486
+        }
+      },
+      "model_class": "Qwen2ForCausalLM",
+      "parameters": 494032768,
+      "repo_id": "Qwen/Qwen2.5-0.5B",
+      "result_sha256": "ddd08e3ddfe39f5cc099c9ecdc9a8e9ab39074e849ab310cb9642b96e009cc77",
+      "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987"
+    },
+    {
+      "id": "openelm-450m",
+      "metrics": {
+        "acc": {
+          "correct": 92,
+          "delta_vs_our_base": -0.48875255623721886,
+          "paired_bootstrap_delta_ci95": [
+            -0.5439672801635992,
+            -0.4335378323108384
+          ],
+          "score": 0.18813905930470348
+        },
+        "acc_norm": {
+          "correct": 124,
+          "delta_vs_our_base": -0.35991820040899797,
+          "paired_bootstrap_delta_ci95": [
+            -0.41922290388548056,
+            -0.30265848670756645
+          ],
+          "score": 0.25357873210633947
+        }
+      },
+      "model_class": "OpenELMForCausalLM",
+      "parameters": 457179136,
+      "repo_id": "apple/OpenELM-450M",
+      "result_sha256": "1ede326ffae98c80a30c07ed6c088cfbd7d7162f7144a6aab41ffd4bf6facbed",
+      "revision": "b53a9c5a731d154b71f8d311ef702f327e0cfa3a"
+    },
+    {
+      "id": "smollm2-360m",
+      "metrics": {
+        "acc": {
+          "correct": 386,
+          "delta_vs_our_base": 0.11247443762781184,
+          "paired_bootstrap_delta_ci95": [
+            0.07566462167689161,
+            0.1492842535787321
+          ],
+          "score": 0.7893660531697342
+        },
+        "acc_norm": {
+          "correct": 380,
+          "delta_vs_our_base": 0.16359918200408996,
+          "paired_bootstrap_delta_ci95": [
+            0.12065439672801637,
+            0.2065439672801636
+          ],
+          "score": 0.7770961145194274
+        }
+      },
+      "model_class": "LlamaForCausalLM",
+      "parameters": 361821120,
+      "repo_id": "HuggingFaceTB/SmolLM2-360M",
+      "result_sha256": "39780b5b96dd172b54d139bb372b07a27f0f510c779f8e56076c11e33c7fcae8",
+      "revision": "f8027fd0eaeea54caa13c31d31b9fdc459c38b49"
+    },
+    {
+      "id": "mobilellm-600m",
+      "metrics": {
+        "acc": {
+          "correct": 333,
+          "delta_vs_our_base": 0.004089979550102152,
+          "paired_bootstrap_delta_ci95": [
+            -0.03680981595092025,
+            0.04498977505112474
+          ],
+          "score": 0.6809815950920245
+        },
+        "acc_norm": {
+          "correct": 272,
+          "delta_vs_our_base": -0.05725971370143146,
+          "paired_bootstrap_delta_ci95": [
+            -0.1083844580777096,
+            -0.006134969325153374
+          ],
+          "score": 0.556237218813906
+        }
+      },
+      "model_class": "MobileLLMForCausalLM",
+      "parameters": 603188352,
+      "repo_id": "facebook/MobileLLM-600M",
+      "result_sha256": "d46743660efed31e9b5c8e80fc541346773d0b1c8793b41e39d51e6d02b66143",
+      "revision": "5960118fcb0a9886360b03d1b48a96366e35cfff"
+    }
+  ],
+  "checked_utc": "2026-09-16T09:40:49.178468+00:00",
+  "claim_boundary": "Matched development-only comparison on one public closed-book English science multiple-choice proxy. The 489 rows, question-only prompt, completion text, choice order, metrics, BF16 dtype, batch size, and tie-break are fixed across candidates. Tokenization necessarily follows each model family. This is not a sealed test or evidence of broad market superiority. The MobileLLM result is structurally bound to a public full-precision ONNX conversion that declares the requested official model as its base; the gated official PyTorch weight file was unavailable for direct hash identity verification.",
+  "our_base": {
+    "acc": 0.6768916155419223,
+    "acc_norm": 0.6134969325153374,
+    "result_sha256": "abba11fe4f21c40ca3d02ad80a674b364ccdb8612666024c321fe7bbedc0d95f"
+  },
+  "protocol": {
+    "choice_order": "identical frozen order for every model",
+    "completion": " {choice_text}",
+    "dataset": "allenai/sciq test",
+    "dtype": "bfloat16",
+    "primary_metric": "mean answer-token conditional log likelihood accuracy (acc_norm)",
+    "prompt": "Question: {question}\\nAnswer:",
+    "samples": 489,
+    "secondary_metric": "total answer-token conditional log likelihood accuracy (acc)",
+    "support_in_prompt": false
+  },
+  "ranking_by_acc_norm": [
+    {
+      "acc_norm": 0.7770961145194274,
+      "id": "smollm2-360m"
+    },
+    {
+      "acc_norm": 0.6339468302658486,
+      "id": "qwen2.5-0.5b"
+    },
+    {
+      "acc_norm": 0.6134969325153374,
+      "id": "our_base"
+    },
+    {
+      "acc_norm": 0.556237218813906,
+      "id": "mobilellm-600m"
+    },
+    {
+      "acc_norm": 0.25357873210633947,
+      "id": "openelm-450m"
+    }
+  ],
+  "schema": "p529m-matched-external-closed-book-sciq-summary-v1",
+  "status": "MATCHED_EXTERNAL_CLOSED_BOOK_SCIQ_COMPLETE",
+  "verification": {
+    "all_489_row_choice_gold_bindings_match_our_base": true,
+    "paired_bootstrap_resamples": 10000,
+    "predictions_and_metrics_recomputed": true
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "claim_boundary": "The public ONNX repository declares facebook/MobileLLM-600M as its base. The reconstruction is structurally exact to that full-precision ONNX graph, but the gated official PyTorch weight file was unavailable for a direct hash comparison.",
+  "mapping_sha256": "05dd984ca3d2167539990c573fad4ae31065fd8844e7b642567305d971833139",
+  "model_safetensors_sha256": "cdcff8bc4004af4dae7190ba51652d623615075bf3c3d3dcd80ac0837103ece2",
+  "official_code_blob_identity": {
+    "configuration_mobilellm.py": "e291643d7582176f3c3da500e73a171e49b313e7",
+    "matched_via_public_code_mirror": "RoyArkh/02-12-facebook-MobileLLM-125M_xsum_client7_round1@5b76806d7421687982486908821da2439291e57a",
+    "modeling_mobilellm.py": "e1558bd14d9d976cd206055764cd7008beb2a1fd"
+  },
+  "parameters": 603188352,
+  "schema": "mobilellm-600m-onnx-to-pytorch-reconstruction-v1",
+  "source": {
+    "declared_base_model": "facebook/MobileLLM-600M",
+    "onnx_external_data_sha256": "5ac95d8a9a1601b377cfad8228b8d19cac49917ebd4cff3fbdcc0ce86aa8229d",
+    "onnx_graph_sha256": "becb40bd38132ae80ae8f89d3e650f7b239655fdd378ac1662147c4bb9f14eee",
+    "repo_id": "onnx-community/MobileLLM-600M",
+    "revision": "25723a2c3beb2698878a620e4edf7bd17f5bd339"
+  },
+  "state_entries": 362,
+  "status": "STRICT_STATE_RECONSTRUCTION_COMPLETE",
+  "validation": {
+    "all_parameters_finite": true,
+    "all_state_keys_and_shapes_matched": true,
+    "strict_pytorch_state_load": true
+  }
+}

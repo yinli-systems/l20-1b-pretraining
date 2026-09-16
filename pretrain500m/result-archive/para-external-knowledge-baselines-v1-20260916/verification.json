@@ -1,0 +1,156 @@
+{
+  "all_489_rows_match_base_binding": true,
+  "all_choice_loglikelihoods_finite": true,
+  "base_result_sha256": "abba11fe4f21c40ca3d02ad80a674b364ccdb8612666024c321fe7bbedc0d95f",
+  "candidates": [
+    {
+      "id": "qwen2.5-0.5b",
+      "metrics": {
+        "acc": {
+          "bootstrap_ci95": [
+            0.6728016359918201,
+            0.7525562372188139
+          ],
+          "correct": 349,
+          "samples": 489,
+          "score": 0.7137014314928425
+        },
+        "acc_norm": {
+          "bootstrap_ci95": [
+            0.591002044989775,
+            0.6748466257668712
+          ],
+          "correct": 310,
+          "samples": 489,
+          "score": 0.6339468302658486
+        }
+      },
+      "parameters": 494032768,
+      "result_rows_sha256": "928fcef445aa29453bb537c6bb34851e01784c000bc15b8b2c4abdbf45c8122d",
+      "result_sha256": "ddd08e3ddfe39f5cc099c9ecdc9a8e9ab39074e849ab310cb9642b96e009cc77"
+    },
+    {
+      "id": "openelm-450m",
+      "metrics": {
+        "acc": {
+          "bootstrap_ci95": [
+            0.15337423312883436,
+            0.2229038854805726
+          ],
+          "correct": 92,
+          "samples": 489,
+          "score": 0.18813905930470348
+        },
+        "acc_norm": {
+          "bootstrap_ci95": [
+            0.2147239263803681,
+            0.29243353783231085
+          ],
+          "correct": 124,
+          "samples": 489,
+          "score": 0.25357873210633947
+        }
+      },
+      "parameters": 457179136,
+      "result_rows_sha256": "fa4387396662365ce0c3db449de438ce7acd30fe4094e07e03cc69601b271f5f",
+      "result_sha256": "1ede326ffae98c80a30c07ed6c088cfbd7d7162f7144a6aab41ffd4bf6facbed"
+    },
+    {
+      "id": "smollm2-360m",
+      "metrics": {
+        "acc": {
+          "bootstrap_ci95": [
+            0.7525562372188139,
+            0.8261758691206544
+          ],
+          "correct": 386,
+          "samples": 489,
+          "score": 0.7893660531697342
+        },
+        "acc_norm": {
+          "bootstrap_ci95": [
+            0.7402862985685071,
+            0.8139059304703476
+          ],
+          "correct": 380,
+          "samples": 489,
+          "score": 0.7770961145194274
+        }
+      },
+      "parameters": 361821120,
+      "result_rows_sha256": "6d59ea664f609214ab082e9ba48f34b3a8c7b2094f1fb0ba90ff771e29b83cd6",
+      "result_sha256": "39780b5b96dd172b54d139bb372b07a27f0f510c779f8e56076c11e33c7fcae8"
+    },
+    {
+      "id": "mobilellm-600m",
+      "metrics": {
+        "acc": {
+          "bootstrap_ci95": [
+            0.6380368098159509,
+            0.721881390593047
+          ],
+          "correct": 333,
+          "samples": 489,
+          "score": 0.6809815950920245
+        },
+        "acc_norm": {
+          "bootstrap_ci95": [
+            0.5132924335378323,
+            0.6012269938650306
+          ],
+          "correct": 272,
+          "samples": 489,
+          "score": 0.556237218813906
+        }
+      },
+      "parameters": 603188352,
+      "result_rows_sha256": "9d48635aa1c72995425c716daab2ee853f8e660471cf564e6e91fe28aa9c54c2",
+      "result_sha256": "d46743660efed31e9b5c8e80fc541346773d0b1c8793b41e39d51e6d02b66143"
+    }
+  ],
+  "checked_utc": "2026-09-16T09:42:37.751086+00:00",
+  "claim_boundary": "Matched development-only comparison on one public closed-book English science multiple-choice proxy. The 489 rows, question-only prompt, completion text, choice order, metrics, BF16 dtype, batch size, and tie-break are fixed across candidates. Tokenization necessarily follows each model family. This is not a sealed test or evidence of broad market superiority. The MobileLLM result is structurally bound to a public full-precision ONNX conversion that declares the requested official model as its base; the gated official PyTorch weight file was unavailable for direct hash identity verification.",
+  "confirmation_rows_scored": 0,
+  "data_sha256": "55cc70950fdd8892d6c7c2cbd458d2c3c6fc5f88548b909799d147b68e7c16da",
+  "frozen_source_split_choice_and_gold_binding_verified": true,
+  "job_array_id": 1594569,
+  "local_summary_sha256": "93f25b20a4c6df5cf45bbab4c45806def7b29639b13ef6790eb6c0307b7da06d",
+  "mobilellm_reconstruction": {
+    "direct_official_weight_hash_comparison": false,
+    "model_safetensors_sha256": "cdcff8bc4004af4dae7190ba51652d623615075bf3c3d3dcd80ac0837103ece2",
+    "parameters": 603188352,
+    "receipt_sha256": "79ec9e5ad808e5cc73132c90195140661013df19a1a4d1ed7d1efa18e0f190a3",
+    "state_entries": 362,
+    "strict_state_load": true
+  },
+  "paired_bootstrap_summary_independently_reproduced": true,
+  "plan_sha256": "974d1ce3b6ff495ddf542054d55fb26a64706bc49988ab7fd65faceac524eacf",
+  "predictions_and_metrics_recomputed": true,
+  "remote_small_artifact_manifest_verified": true,
+  "remote_summary_sha256": "d3589255cf7cd4f950354f85b426a9a455fc86dfedcfb18c0f84000287358cc1",
+  "schema": "p529m-matched-external-closed-book-sciq-independent-verification-v1",
+  "snapshot_checks": {
+    "llama2-tokenizer": {
+      "files_verified": 4,
+      "manifest_sha256": "32ace575e7796ff8ff65f5255c32448aa3a77e87d949e4c08600183e617a2c80"
+    },
+    "mobilellm-600m-onnx": {
+      "files_verified": 10,
+      "manifest_sha256": "297073b3187456e2cd9715fab214b5c19d94a94fd63f5465f7135c87c8cbb42d"
+    },
+    "openelm-450m": {
+      "files_verified": 6,
+      "manifest_sha256": "4822e85ef5235bfb4a1a3a7b0aaa004d357e71f60bfbdf6616a8113d17e56940"
+    },
+    "qwen2.5-0.5b": {
+      "files_verified": 7,
+      "manifest_sha256": "891a19ad16accbb5bc6b02ddc2e69226ae0f27fbe4773a5b14335ba92675bc28"
+    },
+    "smollm2-360m": {
+      "files_verified": 8,
+      "manifest_sha256": "c5a9ae5a2f3831d84d87055efda60622d27d1ab08f1dd1a32b860aff4cd7d775"
+    }
+  },
+  "split_manifest_sha256": "febdf159d2c3a08522d3964a42c18b74df76ac6b35f6d87986c2f8f80355981f",
+  "status": "VERIFY_OK"
+}
