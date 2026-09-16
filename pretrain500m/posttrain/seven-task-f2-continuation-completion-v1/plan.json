@@ -1,0 +1,72 @@
+{
+  "automatic_promotion": false,
+  "cache": {
+    "path": "/ssd/scxi253/pretrain500m-20260912-v1/artifacts/eval-hf-home/eval-cache-manifest.json",
+    "sha256": "699558cb80318870306eccf77fb1d200413bfdc03b6548fe41c9d39ed0044620"
+  },
+  "claim_boundary": "adaptive completion of a reused seven-task suite under a disclosed adaptive export protocol; not sealed evidence, instruction following, safety, multilingual generation, or market superiority",
+  "combination_policy": "combine the new seed20260915 matched pair with the prior seed20260914 matched pair only if parent reproduction gate passes",
+  "continuation": {
+    "checkpoint_sha256": "86ab770e671dd845c6de1c7724fb90cc22bc79449f9133e2a01047814f86fed8",
+    "hf_export": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/f2-export-margin-aware-v1/1593643/task-1/F2_continuation_seed20260915-hf",
+    "hf_export_receipt_sha256": "be0bb72517d4df1e0a6df9845e0c7f53139898ab23085b7597b6316937689abd",
+    "id": "F2_continuation_seed20260915",
+    "model_safetensors_bytes": 1057524496,
+    "model_safetensors_sha256": "803022851e95a852d76ce08240fec07fecc0d987158d380d434fb40e54d1eb9b"
+  },
+  "evaluation_class": "adaptive English seven-task progression and retention; suite already informed F2 selection and export protocol was adapted after a failure",
+  "execution": {
+    "batch_size": "auto",
+    "dtype": "bfloat16",
+    "gpu_model": "NVIDIA GeForce RTX 5090",
+    "max_length": 2048,
+    "num_fewshot": 0,
+    "seeds": [
+      42,
+      42,
+      42,
+      1234
+    ],
+    "world_size": 2
+  },
+  "margin_aware_export_result_sha256": "c16fbc61b900a61f089ae9862d2b0b8d5ee30caaf6e7415693ff2cf179a9cdb6",
+  "new_pair_seed": 20260915,
+  "parent": {
+    "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260915-1590004/train/model-final.pt",
+    "checkpoint_sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc",
+    "expected_model_safetensors_bytes": 1057524496,
+    "expected_model_safetensors_sha256": "eff69f11a24eeebf248958ecbc870c6a5ae5e54c02e453b1e8fc0082a8aab9b5",
+    "expected_step": 1024,
+    "id": "F2_parent_seed20260915",
+    "prior_export_receipt_sha256": "14ed94adbef18e4ee898806bd9ad96ab79306283676fb22270aafe2e73c78d33"
+  },
+  "parent_reproduction_gate": "all seven task scores, sample counts, primary metrics, aggregate score and bootstrap CI must exactly reproduce the prior same-protocol parent result before cross-job two-seed combination",
+  "progression_metrics": [
+    "per-seed aggregate delta",
+    "per-task delta",
+    "two-seed mean aggregate",
+    "two-seed mean per-task delta",
+    "no task decline over two percentage points"
+  ],
+  "protocol": {
+    "id": "p500m-english-base-v5",
+    "path": "/ssd/scxi253/pretrain500m-20260912-v1/source/protocol-v5.json",
+    "sha256": "a71ce3c8cc85cac6fe6751cb46f7e50dfb78d266602d6377cb2e65249f11c761"
+  },
+  "references": {
+    "continuation_seed20260914": {
+      "path": "references/F2_continuation_seed20260914.json",
+      "sha256": "57a52c968e848619d33d36050c950b76c72f4fa2ae98fedee80661b33027334c"
+    },
+    "parent_seed20260914": {
+      "path": "references/F2_parent_seed20260914.json",
+      "sha256": "a4fd2404a2284643dd3a3340fd7a3935b2418e189052bae10fdc6a837f0abe2d"
+    },
+    "parent_seed20260915": {
+      "path": "references/F2_parent_seed20260915.json",
+      "sha256": "0fac72146b950fcc837f6d60d3a980e7094884f4beab49a04c8a385c148bf147"
+    }
+  },
+  "schema": "p529m-seven-task-f2-continuation-completion-plan-v1",
+  "status": "FROZEN_BEFORE_MISSING_PAIR_EVALUATION"
+}
