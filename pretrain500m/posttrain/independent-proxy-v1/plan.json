@@ -1,0 +1,75 @@
+{
+  "automatic_promotion": false,
+  "bootstrap": {
+    "interval": [
+      0.025,
+      0.975
+    ],
+    "resamples": 10000,
+    "seed": 20260916
+  },
+  "candidates": [
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/formal/run-v5/resume.pt",
+      "checkpoint_sha256": "13aa21721e15c48cdfdafe30d8fdd41d9c95c90be766327661d96af1e90dd6cf",
+      "expected_step": 7629,
+      "id": "base",
+      "role": "reference"
+    },
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260914-1589567/train/model-final.pt",
+      "checkpoint_sha256": "69d9d8d3358f23815f2455f7e075645056f90fe01ed40a11525130a0e58ca085",
+      "expected_step": 1024,
+      "id": "F2_parent_seed20260914",
+      "role": "incumbent",
+      "seed": 20260914
+    },
+    {
+      "checkpoint": "/ssd/scxi253/pretrain500m-20260912-v1/posttrain/confirmations-v1/F2_reasoning_no_synthetic-seed20260915-1590004/train/model-final.pt",
+      "checkpoint_sha256": "f6a4ff43aeeb892ce7dd3dd7ed69f022cef6af688f21b3f005f67850f6041cbc",
+      "expected_step": 1024,
+      "id": "F2_parent_seed20260915",
+      "role": "incumbent",
+      "seed": 20260915
+    }
+  ],
+  "claim_boundary": "fresh-to-selection public English reading-comprehension development proxy only; not sealed, not a full seven-dimension evaluation, and not evidence of instruction following, math, code, safety, multilingual generation, or market superiority",
+  "completion_template": " {mc_answerN}",
+  "data": {
+    "bytes": 836071,
+    "dataset": "facebook/belebele",
+    "declared_license": "cc-by-sa-4.0",
+    "path": "/ssd/scxi253/pretrain500m-20260912-v1/evaluation/benchmark-reservation-v1/data/raw/huggingface/facebook/belebele/data/eng_Latn.jsonl",
+    "reference_bundle_report_sha256": "a54e2f81369430563698a61d7ecb74ab7e3003d006fd4fb542d716a4f0751855",
+    "revision": "7899cdfa4e1e0d733fd77c848e2c273cb1d32be2",
+    "rows": 900,
+    "sha256": "15af884c2b5994fdc71199e79d553a1864b08ce1b31894aa87f6be925a064a31"
+  },
+  "evaluation_class": "independent first proxy tranche; benchmark reserved before protocol and not used in prior mixture selection",
+  "execution": {
+    "attention_backend": "eager",
+    "batch_size_per_gpu": 4,
+    "dtype": "bfloat16",
+    "gpus_per_candidate": 1,
+    "max_length": 2048,
+    "torch_deterministic_algorithms": true
+  },
+  "metrics": {
+    "primary": "acc_norm: choose maximum mean answer-token conditional log likelihood",
+    "secondary": "acc: choose maximum total answer-token conditional log likelihood",
+    "tie_break": "lowest answer index"
+  },
+  "prompt_template": "Passage: {flores_passage}\\nQuestion: {question}\\nAnswer:",
+  "reference_candidate_id": "base",
+  "roles": {
+    "confirmation": "450 rows; do not score until a candidate is frozen",
+    "development": "450 rows; may guide fresh-corpus pilot selection"
+  },
+  "schema": "p529m-independent-proxy-belebele-plan-v1",
+  "selection_use": "first component only; fresh pilot selection also requires new math/code/knowledge proxy components, paired masked loss, contamination and two-seed retention",
+  "split_manifest": "splits.json",
+  "split_manifest_sha256": "f09c0603c4c76ec09cb95262b410103c8a6b4ad71b34dccc618ead82aab5ef57",
+  "status": "FROZEN_BEFORE_DEVELOPMENT_SCORING",
+  "tokenizer_json": "/ssd/scxi253/pretrain500m-20260912-v1/source/pack-v3/tokenizer/tokenizer.json",
+  "tokenizer_json_sha256": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6"
+}
