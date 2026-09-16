@@ -1,0 +1,78 @@
+{
+  "artifacts": {
+    "per_document_text_in_git": false,
+    "small_snapshot": "pretrain500m/result-archive/para-knowledge-contamination-v1-20260916"
+  },
+  "checked_utc": "2026-09-16T07:35:25.961346+00:00",
+  "claim_boundary": "current three-tranche exact and fixed lexical-near gate only; not semantic decontamination, model-ancestor independence, a model score, or evidence of market superiority",
+  "data_quality": {
+    "duplicate_choice_rows": [
+      67,
+      124,
+      318,
+      469,
+      526,
+      659,
+      718,
+      884,
+      926
+    ],
+    "eligible_after_contamination_and_data_quality": 979,
+    "overlap_with_contaminated_rows": []
+  },
+  "decision": {
+    "confirmation_rows_planned": 490,
+    "confirmation_scoring_admitted": false,
+    "development_rows_planned": 489,
+    "model_scoring_admitted": true,
+    "training_admitted": false
+  },
+  "limits": [
+    "This detects exact questions and fixed lexical shingle overlap, not semantic paraphrases or model-ancestor contamination.",
+    "The three scanned raw tranches are a conservative superset of documents selected for F2.",
+    "A hit excludes the affected reference row from both proxy roles; it does not prove intentional benchmark training."
+  ],
+  "scan": {
+    "candidate_hits_sha256": "14908c7d4457d2101fefb68a4d6d419be2c2cca9f60705e6344c594538f5c9bf",
+    "clean_reference_count": 988,
+    "contaminated_reference_ordinals": [
+      68,
+      116,
+      143,
+      172,
+      265,
+      288,
+      300,
+      329,
+      335,
+      614,
+      748,
+      770
+    ],
+    "documents_with_candidate_hits": 11,
+    "elapsed_seconds": 395.8576695919037,
+    "exact_question_hits": 0,
+    "lexical_overlap_reference_rows": 12,
+    "raw_rows": 199407,
+    "reference_hit_records": 12,
+    "report_sha256": "9950ea90d82ffe460acae573b7d4555c8d8e7fc57ae17554e2924fb6006af5d4",
+    "text_characters": 1136956353,
+    "tranches": 3
+  },
+  "schema": "p529m-knowledge-contamination-v1-results",
+  "source": {
+    "data_sha256": "3a719356a29b127fc54ef3c7f51a034db4bd105d5717215e8c85d2aa58d60667",
+    "dataset": "SciQ test",
+    "declared_license": "cc-by-nc-3.0",
+    "github_commit": "12e91c8",
+    "revision": "2c94ad3e1aafab77146f384e23536f97a4849815",
+    "rows_jsonl_sha256": "55cc70950fdd8892d6c7c2cbd458d2c3c6fc5f88548b909799d147b68e7c16da"
+  },
+  "status": "PASS_CLEAN_REFERENCE_POOL_READY",
+  "verification": {
+    "candidate_hit_owner_recalculation": "PASS",
+    "clean_complement_recalculation": "PASS",
+    "independent_report_hash_and_arithmetic": "PASS",
+    "remote_input_binding_check": "PASS"
+  }
+}
