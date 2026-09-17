@@ -69,6 +69,37 @@ corpus-scale convergence, or superiority over another model. The frozen
 diagnostic below is the first downstream gate; broader natural-image transfer,
 robustness, contamination and fine-tuning evaluations remain open.
 
+## Bounded step-250 to step-1000 continuation
+
+Job `1598538` is queued for a second-stage continuation of the selected
+batch-112 RTX-5090 checkpoint. The parent step-250 checkpoint contains six
+files and 18,354,419,036 bytes. Every file is frozen by a receipt whose SHA-256
+is `c1e71d6c98091806ea35d1edba74fad256f828c7ff306d0d58722d21dcaaa0f1`.
+
+The continuation does not silently extend the original 250-step cosine
+horizon. It uses an explicit second-stage schedule: learning rate moves
+continuously from the parent's terminal `1e-5` to `1e-6`, EMA momentum moves
+from `0.9999` to `1.0`, and checkpoints are written at steps 500, 750 and
+1,000. The fastest qualified real-image layout remains fixed at four RTX 5090
+GPUs and batch 112 per rank. The job fails closed below 50% median end-to-end
+MFU, with less than 2 GiB of GPU memory headroom, on checkpoint drift, or on
+any inherited finite-value, gradient, feature-diversity or teacher-collapse
+gate.
+
+This adds 336,000 deterministic image exposures from the same admitted 25,000
+files. It is a bounded overtraining test, not new data or corpus-scale
+pretraining. The identical frozen diagnostic is preregistered for steps 500
+and 1,000. The continuation is promoted only if step 1,000 beats the step-250
+student's 67.8450% four-score mean without a material per-dataset regression;
+otherwise step 250 remains selected.
+
+The machine-readable contract is
+[`continuation_25k_stage2_protocol_v1.json`](continuation_25k_stage2_protocol_v1.json).
+The immutable remote source is
+`/ssd/scxi253/vision1b-research/source-cont-20260917-v1`, with
+`SOURCE_SHA256SUMS` SHA-256
+`4d182450c0e8097bafd73e44865a736696e5f826f4777d52f5db12e789d414e4`.
+
 ## Frozen-feature downstream diagnostic
 
 The preregistered evaluation uses the complete official 60,000-example train

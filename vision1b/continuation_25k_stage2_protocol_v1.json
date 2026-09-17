@@ -1,0 +1,51 @@
+{
+  "claim_boundary": "This is a bounded second-stage continuation on the same admitted 25000 Open Images files. It measures whether additional low-learning-rate self-distillation improves the frozen diagnostic. It is not corpus-scale DINOv2 pretraining and cannot establish natural-image quality, robustness, release readiness, or superiority over another model.",
+  "evaluation": {
+    "checkpoints": [
+      500,
+      1000
+    ],
+    "primary_protocol": "frozen_eval_protocol_v1.json",
+    "promotion_rule": "The step-1000 student must improve the identical four-score mean over step 250 without a material regression in either dataset; otherwise retain step 250 and stop this continuation recipe.",
+    "reference_step": 250,
+    "reference_student_four_score_mean": 0.6784500037670136
+  },
+  "parent_checkpoint": {
+    "bytes": 18354419036,
+    "completed_step": 250,
+    "files": 6,
+    "identity": {
+      "acquisition_receipt_sha256": "f441eb8bc42408d7add046c4cfd907b77d4da06004e2e3f7c2043b726359012d",
+      "backbone_source_sha256": "321359bb81fee1922a87697583ca7db0f2479afefa8ad31fa05740f8815b3575",
+      "manifest_sha256": "5241043cdaf73cfd5edfe9183e444e2f29a559162486f0f24af6c7539a363653",
+      "protocol_sha256": "15df80cc6d2c5243795a811653576741511bddc517f0f9ae7b47e73905c6e01f",
+      "source_sha256": "7fa0661e0a507a7884a7f42cb4541d3cc3aac913622df14a0c3900eacba9d5ca"
+    },
+    "metadata_sha256": "ec4163ec91666efc1bb14709a3a282305a9557b197f7dea2af7c88a9d40f5ee8",
+    "path": "/ssd/scxi253/vision1b-research/runs/vitg14-real-dino-25k-sinkhorn-fp16-qual-v10-5090-b112/checkpoints/step-000250",
+    "sha256s_path": "/ssd/scxi253/vision1b-research/runs/vitg14-real-dino-25k-sinkhorn-fp16-qual-v10-5090-b112/checkpoints/step-000250.SHA256SUMS",
+    "sha256s_sha256": "c1e71d6c98091806ea35d1edba74fad256f828c7ff306d0d58722d21dcaaa0f1"
+  },
+  "promotion_gates": {
+    "all_steps_finite": true,
+    "checkpoint_lineage_exact": true,
+    "feature_and_teacher_collapse_gates_inherited": true,
+    "median_end_to_end_mfu_minimum": 0.5,
+    "minimum_free_gpu_memory_gib": 2,
+    "step_1000_frozen_evaluation_required": true
+  },
+  "schema": "vision1b-bounded-continuation-v1",
+  "stage": {
+    "batch_per_rank": 112,
+    "ema_momentum_end": 1.0,
+    "ema_momentum_start": 0.9999,
+    "global_batch": 448,
+    "learning_rate_end": 1e-06,
+    "learning_rate_start": 1e-05,
+    "new_image_exposures": 336000,
+    "save_every": 250,
+    "target_steps": 1000,
+    "world_size": 4
+  },
+  "status": "AUTHORIZED_BOUNDED_STAGE2_CONTINUATION"
+}

@@ -44,6 +44,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--acquisition-receipt", type=Path, required=True)
     parser.add_argument("--output-dir", type=Path, required=True)
     parser.add_argument("--resume", type=Path)
+    parser.add_argument("--continuation-protocol", type=Path)
     parser.add_argument("--steps", type=int, default=250)
     parser.add_argument("--stop-after", type=int, default=0)
     parser.add_argument("--batch-per-rank", type=int, default=64)
@@ -484,6 +485,12 @@ def ema_schedule(step: int, steps: int, start: float, end: float) -> float:
     return end - (end - start) * 0.5 * (1.0 + math.cos(math.pi * step / max(1, steps)))
 
 
+def cosine_transition(step: int, steps: int, start: float, end: float) -> float:
+    """Move continuously from start to end over a bounded continuation stage."""
+    progress = min(1.0, max(0.0, step / max(1, steps)))
+    return start + (end - start) * 0.5 * (1.0 - math.cos(math.pi * progress))
+
+
 def save_checkpoint(
     root: Path,
     step: int,
@@ -529,8 +536,10 @@ def load_checkpoint(
     optimizer: torch.optim.Optimizer,
     center: torch.Tensor,
     metadata: dict,
+    expected_parent_identity: dict | None = None,
 ) -> int:
     saved = json.loads((path / "metadata.json").read_text())
+    expected = expected_parent_identity or metadata
     for key in (
         "manifest_sha256",
         "protocol_sha256",
@@ -538,7 +547,7 @@ def load_checkpoint(
         "backbone_source_sha256",
         "acquisition_receipt_sha256",
     ):
-        if saved.get(key) != metadata.get(key):
+        if saved.get(key) != expected.get(key):
             raise RuntimeError(f"resume identity mismatch for {key}")
     state = {
         "student": get_model_state_dict(student),
@@ -653,6 +662,53 @@ def main() -> None:
         "backbone_source_sha256": sha256(Path(backbone_source.__file__).resolve()),
         "acquisition_receipt_sha256": sha256(arguments.acquisition_receipt),
     }
+    continuation = None
+    parent_identity = None
+    continuation_start_step = 0
+    if arguments.continuation_protocol is not None:
+        if arguments.resume is None:
+            raise RuntimeError("continuation protocol requires an exact parent checkpoint")
+        continuation = json.loads(arguments.continuation_protocol.read_text())
+        if continuation.get("status") != "AUTHORIZED_BOUNDED_STAGE2_CONTINUATION":
+            raise RuntimeError("continuation protocol is not authorized")
+        parent = continuation["parent_checkpoint"]
+        stage = continuation["stage"]
+        if arguments.resume.resolve() != Path(parent["path"]).resolve():
+            raise RuntimeError("resume path does not match the frozen continuation parent")
+        if sha256(arguments.resume / "metadata.json") != parent["metadata_sha256"]:
+            raise RuntimeError("parent checkpoint metadata hash mismatch")
+        receipt_path = Path(parent["sha256s_path"])
+        if sha256(receipt_path) != parent["sha256s_sha256"]:
+            raise RuntimeError("parent checkpoint receipt hash mismatch")
+        parent_identity = parent["identity"]
+        for key in (
+            "manifest_sha256",
+            "protocol_sha256",
+            "backbone_source_sha256",
+            "acquisition_receipt_sha256",
+        ):
+            if identity[key] != parent_identity[key]:
+                raise RuntimeError(f"continuation data/objective identity mismatch for {key}")
+        continuation_start_step = int(parent["completed_step"])
+        expected_runtime = {
+            "target_steps": arguments.steps,
+            "batch_per_rank": arguments.batch_per_rank,
+            "world_size": world_size,
+            "save_every": arguments.save_every,
+        }
+        for key, actual in expected_runtime.items():
+            if int(stage[key]) != actual:
+                raise RuntimeError(f"continuation runtime mismatch for {key}")
+        if not 0 < float(stage["learning_rate_end"]) <= float(stage["learning_rate_start"]):
+            raise RuntimeError("invalid continuation learning-rate interval")
+        if not 0 < float(stage["ema_momentum_start"]) <= float(stage["ema_momentum_end"]) <= 1:
+            raise RuntimeError("invalid continuation EMA interval")
+        identity.update(
+            {
+                "continuation_protocol_sha256": sha256(arguments.continuation_protocol),
+                "parent_checkpoint_sha256s_sha256": parent["sha256s_sha256"],
+            }
+        )
     student = DINOModel(arguments, activation_checkpointing=True).to(device)
     teacher = DINOModel(arguments, activation_checkpointing=False).to(device)
     parameter_count = sum(parameter.numel() for parameter in student.parameters())
@@ -671,7 +727,17 @@ def main() -> None:
     center = torch.zeros(arguments.projection_dim, device=device)
     completed_step = 0
     if arguments.resume is not None:
-        completed_step = load_checkpoint(arguments.resume, student, teacher, optimizer, center, identity)
+        completed_step = load_checkpoint(
+            arguments.resume,
+            student,
+            teacher,
+            optimizer,
+            center,
+            identity,
+            expected_parent_identity=parent_identity,
+        )
+    if continuation is not None and completed_step != continuation_start_step:
+        raise RuntimeError("parent checkpoint step does not match continuation start")
     run_end = min(arguments.steps, arguments.stop_after or arguments.steps)
     if completed_step >= run_end:
         raise RuntimeError(f"checkpoint step {completed_step} already reaches this run end {run_end}")
@@ -729,6 +795,7 @@ def main() -> None:
         "layer_scale_init": arguments.layer_scale_init,
         "head_hidden_dim": arguments.head_hidden_dim,
         "peak_dense_non_sparse_tflops_per_gpu": arguments.peak_dense_tflops_per_gpu,
+        "device_memory_bytes": torch.cuda.get_device_properties(device).total_memory,
         "mfu_definition": "useful dense matmul FLOPs divided by configured aggregate non-sparse FP16/BF16 Tensor Core peak",
         "bottleneck_dim": arguments.bottleneck_dim,
         "weight_normalized_prototypes": arguments.projection_dim,
@@ -739,9 +806,14 @@ def main() -> None:
         "activation_checkpointing": True,
         "checkpoint_every_n_blocks": arguments.checkpoint_every_n_blocks,
         "checkpoint_format": "PyTorch distributed checkpoint plus identity metadata",
+        "continuation_stage": continuation["stage"] if continuation is not None else None,
         "dtype": f"{arguments.precision.upper()} compute with FP32 parameters, reductions, optimizer state and loss",
         **identity,
-        "claim_boundary": protocol["claim_boundary"],
+        "claim_boundary": (
+            continuation["claim_boundary"]
+            if continuation is not None
+            else protocol["claim_boundary"]
+        ),
     }
     if rank == 0:
         atomic_json(arguments.output_dir / "manifest.json", manifest)
@@ -758,7 +830,18 @@ def main() -> None:
         global_pixels = global_pixels.to(device, dtype=compute_dtype, non_blocking=True)
         local_pixels = local_pixels.to(device, dtype=compute_dtype, non_blocking=True)
         compute_started = time.perf_counter()
-        learning_rate = schedule(step, arguments.steps, arguments.warmup_steps, arguments.learning_rate)
+        if continuation is None:
+            learning_rate = schedule(
+                step, arguments.steps, arguments.warmup_steps, arguments.learning_rate
+            )
+        else:
+            stage = continuation["stage"]
+            learning_rate = cosine_transition(
+                step - continuation_start_step,
+                arguments.steps - continuation_start_step,
+                float(stage["learning_rate_start"]),
+                float(stage["learning_rate_end"]),
+            )
         for group in optimizer.param_groups:
             group["lr"] = learning_rate
         optimizer.zero_grad(set_to_none=True)
@@ -794,7 +877,18 @@ def main() -> None:
         if not bool(grad_is_finite.item()):
             raise RuntimeError(f"non-finite gradient norm before optimizer step {step}")
         optimizer.step()
-        momentum = ema_schedule(step, arguments.steps, arguments.ema_start, arguments.ema_end)
+        if continuation is None:
+            momentum = ema_schedule(
+                step, arguments.steps, arguments.ema_start, arguments.ema_end
+            )
+        else:
+            stage = continuation["stage"]
+            momentum = cosine_transition(
+                step - continuation_start_step,
+                arguments.steps - continuation_start_step,
+                float(stage["ema_momentum_start"]),
+                float(stage["ema_momentum_end"]),
+            )
         update_teacher(student, teacher, momentum)
         if protocol["objective"]["teacher_assignment"] == "centering":
             update_center(center, teacher_logits, arguments.center_momentum, world_size)
@@ -881,7 +975,12 @@ def main() -> None:
         measured = current_records[min(arguments.warmup_steps, len(current_records) - 1):]
         ordered = sorted(measured, key=lambda row: row["end_to_end_source_images_per_second"])
         median = ordered[len(ordered) // 2]
-        minimum_mfu = float(protocol["promotion_gates"]["median_end_to_end_mfu_minimum"])
+        promotion_gates = (
+            continuation["promotion_gates"]
+            if continuation is not None
+            else protocol["promotion_gates"]
+        )
+        minimum_mfu = float(promotion_gates["median_end_to_end_mfu_minimum"])
         if median["end_to_end_estimated_dense_mfu"] < minimum_mfu:
             raise RuntimeError(
                 "median end-to-end MFU gate failed: "
@@ -890,6 +989,14 @@ def main() -> None:
         minimum_gradient = float(protocol["promotion_gates"]["gradient_norm_minimum"])
         if min(row["gradient_norm_mean_ranks"] for row in measured) <= minimum_gradient:
             raise RuntimeError("gradient norm promotion gate failed")
+        peak_reserved = max(row["peak_memory_reserved_bytes"] for row in current_records)
+        if continuation is not None:
+            minimum_free_bytes = int(
+                float(promotion_gates["minimum_free_gpu_memory_gib"]) * 1024**3
+            )
+            device_memory = torch.cuda.get_device_properties(device).total_memory
+            if device_memory - peak_reserved < minimum_free_bytes:
+                raise RuntimeError("continuation GPU memory-headroom gate failed")
         summary = {
             "status": "PASS",
             "target_steps": arguments.steps,
@@ -901,9 +1008,13 @@ def main() -> None:
             "median_model_source_images_per_second": median["model_source_images_per_second"],
             "median_end_to_end_estimated_dense_mfu": median["end_to_end_estimated_dense_mfu"],
             "median_model_estimated_dense_mfu": median["model_estimated_dense_mfu"],
-            "peak_memory_reserved_bytes": max(row["peak_memory_reserved_bytes"] for row in current_records),
+            "peak_memory_reserved_bytes": peak_reserved,
             "latest_checkpoint": str(arguments.output_dir / "checkpoints" / "latest"),
-            "claim_boundary": protocol["claim_boundary"],
+            "claim_boundary": (
+                continuation["claim_boundary"]
+                if continuation is not None
+                else protocol["claim_boundary"]
+            ),
         }
         atomic_json(arguments.output_dir / "summary.json", summary)
         print(json.dumps(summary, sort_keys=True), flush=True)
