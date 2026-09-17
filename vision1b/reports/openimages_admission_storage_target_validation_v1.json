@@ -1,0 +1,19 @@
+{
+  "captured_unix": 1789667306,
+  "changed_files": [
+    "openimages_cvdf_admission_protocol_v1.json",
+    "slurm/openimages_cvdf_admission_audit_1gpu.sbatch",
+    "slurm/openimages_cvdf_admission_index_array_1gpu.sbatch",
+    "slurm/openimages_cvdf_admission_pack_array_1gpu.sbatch",
+    "slurm/openimages_cvdf_admission_prepare_1gpu.sbatch",
+    "slurm/openimages_cvdf_admission_reduce_1gpu.sbatch"
+  ],
+  "claim_boundary": "This receipt validates only the storage target and source rewrite. It does not admit data or submit jobs.",
+  "compute_write_probe": "PASS_PREVIOUSLY_VERIFIED_SAME_DAY",
+  "login_write_probe": "PASS",
+  "minimum_free_bytes": 2199023255552,
+  "observed_free_bytes": 4548797313024,
+  "schema": "vision1b-openimages-admission-storage-target-v1",
+  "status": "PREFLIGHT_TARGET_VALIDATED_NOT_ADMITTED",
+  "target": "/data/run01/scxi253/vision1b-data/openimages-cvdf-train-1p7m-admission-v1"
+}

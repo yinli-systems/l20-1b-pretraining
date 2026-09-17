@@ -11,9 +11,11 @@
   "download": {
     "archive_prefix": "train_",
     "archive_suffix": ".tar.gz",
-    "base_url": "https://open-images-dataset.s3.amazonaws.com/tar",
+    "base_url": "https://s3.amazonaws.com/open-images-dataset/tar",
     "expected_archive_count": 16,
+    "max_segment_workers_per_archive": 16,
     "parallel_downloads": 4,
+    "segment_bytes": 67108864,
     "shards": [
       "0",
       "1",
@@ -31,9 +33,15 @@
       "d",
       "e",
       "f"
-    ]
+    ],
+    "transport": {
+      "execution_host": "ln01",
+      "launch_control": "Slurm job over strict host-key SSH",
+      "rationale": "ParaCloud compute-node HTTPS egress is blocked; the login node has verified public egress and shared /ssd access."
+    }
   },
   "official_evidence": {
+    "aws_path_style_documentation": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/VirtualHosting.html",
     "cvdf_repository": "https://github.com/cvdfoundation/open-images-dataset",
     "download_page": "https://storage.googleapis.com/openimages/web/download_v7.html",
     "reported_archive_bytes_approx": 513000000000,

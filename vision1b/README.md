@@ -147,24 +147,27 @@ deterministic global reducer. It binds the official 638,407,721-byte metadata
 CSV, preserves attribution, verifies every JPEG without extracting the source
 archives, removes file/pixel duplicates and combined 128-bit perceptual near
 duplicates, and excludes a frozen MNIST/Fashion-MNIST downstream denylist.
-Packing remains one deterministic tar per source archive and runs on `/data`
-with a 2 TiB free-space floor, avoiding a second 500+ GB copy on the 92%-used
-`/ssd` volume. Finalization refuses `TRAINING_ADMITTED` until all 16 pack
+Packing remains one deterministic tar per source archive and runs under
+`/data/run01/scxi253` with a 2 TiB free-space floor, avoiding a second 500+ GB
+copy on the 92%-used `/ssd` volume. Finalization refuses `TRAINING_ADMITTED` until all 16 pack
 receipts, a complete safety-policy receipt, and the frozen 512-image human
 audit pass.
 
 The immutable admission source is
-`/ssd/scxi253/vision1b-research/source-openimages-admission-20260917-v3`, whose
+`/ssd/scxi253/vision1b-research/source-openimages-admission-20260917-v4`, whose
 `SOURCE_SHA256SUMS` SHA-256 is
-`2ec555cc73b7afd3f9de2b08451fb96550fe03102fa21ffa8d3d015ef4981510`.
-It passed its complete source manifest, official metadata identity, Python
-runtime import, shell syntax and all five Slurm test-only checks after being
-made read-only. Finalization rehashes every packed tar and checks protocol,
-acquisition, metadata, audit and pack identities before it can issue
-`TRAINING_ADMITTED`. The earlier v1 and v2 sources were never submitted:
-v1 lacked explicit remote dependency and bytecode-cache paths, and v2 did not
-repeat the packed-tar hashes at finalization. The end-to-end fail-closed behavior is covered by
+`3cf3b2bba837616479c6e1f8ba057b61a9bf9c9426a400127be4ac7ceaa7d365`.
+It preserves the v3 gates while changing only the packed-and-receipt target to
+`/data/run01/scxi253/vision1b-data/openimages-cvdf-train-1p7m-admission-v1`,
+which had 4,548,797,313,024 free bytes against the unchanged 2 TiB floor. It
+passed exact manifest coverage, JSON and Python validation, shell syntax, and
+all five Slurm test-only checks after being made read-only. Finalization
+rehashes every packed tar and checks protocol, acquisition, metadata, audit and
+pack identities before it can issue `TRAINING_ADMITTED`. The earlier v1-v3
+sources were never submitted. The end-to-end fail-closed behavior is covered by
 [`tests/test_vision_openimages_admission.py`](../tests/test_vision_openimages_admission.py).
+The frozen storage-target preflight is recorded in
+[`openimages_admission_storage_target_validation_v1.json`](reports/openimages_admission_storage_target_validation_v1.json).
 
 The frozen acquisition contract and resumable implementation are
 [`openimages_cvdf_1p7m_protocol_v1.json`](openimages_cvdf_1p7m_protocol_v1.json)
@@ -172,26 +175,45 @@ and [`acquire_openimages_cvdf_1p7m.py`](acquire_openimages_cvdf_1p7m.py).
 Research, scale choices, and promotion boundaries are recorded in
 [`../reports/massive_pretraining_data_expansion_20260917.md`](../reports/massive_pretraining_data_expansion_20260917.md).
 
-Open Images jobs `1598650`/`1598651` are the smoke/full pair. They use immutable
-source `/ssd/scxi253/data-scale-source-20260917-v1`, whose source-manifest
-SHA-256 is `de4f5b0412bf4354f10f6b75809fc2bb5f564f28726bcc2fc72f4924ccb114d3`.
+Open Images jobs `1598650`/`1598651` were closed after the smoke spent 1 hour
+15 minutes on `wqd10nba06g5` timing out against every resolved official S3
+address without writing a byte. The dependent full job never allocated. The
+zero-byte partial, released sole-writer lock, logs, scheduler records and
+recovery receipt are preserved under
+`/ssd/scxi253/vision1b-research/reports/openimages-acquisition-recovery-20260917`.
+The sole corrected pair is `1599005`/`1599006`, with full still gated by
+`afterok:1599005` and automatic requeue disabled. It uses immutable source
+`/ssd/scxi253/data-scale-source-20260917-v4`, whose source-manifest SHA-256 is
+`ca6fdac0b3253375ad0104228dffc54bf2b89b396f910ae429019bc957de301e`.
+The corrected transport keeps the official CVDF S3 objects, runs the downloader
+on `ln01` under the Slurm allocation's strict-host-key SSH session, and uses
+resumable 64 MiB ranges. Each archive must match the official `Content-Length`,
+pass `gzip --test`, and receive a full-file SHA-256 before commit. The first
+1 MiB from virtual-hosted and AWS path-style endpoints matched exactly at
+`984b755f863ac61906bed624f8eb3ce14a69e7d32f5b4ab776f2055aa768615b`.
 DataComp-medium metadata jobs `1598663`/`1598664` are a second smoke/full pair.
 They pin all 253 parquet files and 30,638,846,406 bytes at dataset revision
 `8af865e284668a1c52d12846eff0a9d6f1da6ec6`. Their immutable source-manifest
 SHA-256 is `26dff08a9b370ddd8ad7c527cb4a5ab58e05653e2b44895d549ef9864c94a260`.
-Open Images smoke job `1598650` allocated one verified RTX 4090 on
-`wqd10nba06g5`; its immutable source passed before download startup. The
-first live observation showed zero downloaded bytes while both the frozen S3
-endpoint and the official GCS endpoint timed out from that compute node.
-The job remains running, so this is network-blockage evidence rather than a
-failed acquisition. DataComp smoke `1598663` then allocated and failed before
+Open Images replacement smoke `1599005` is allocated on one verified RTX 4090
+and is actively writing resumable segments through `ln01`; at 21 minutes 9
+seconds it had written 3,692,003,328 segment bytes with empty stdout/stderr.
+No archive has completed and no image is admitted. Dependent full `1599006`
+remains gated by `afterok:1599005`. DataComp
+smoke `1598663` allocated and failed before
 download because `/data/scxi253` was not writable; its dependent full job
 `1598664` was cancelled without running. The failure logs were hashed, the
-source and 30.64 GB inventory were revalidated, and the only correction moved
-the metadata target to the writable `/ssd` project area, which had 923 GB
-free. Replacement smoke/full jobs `1598945`/`1598946` are scheduler-accepted,
-non-requeueable, and preserve `afterok:1598945`. No further automatic retry is
-permitted.
+source and 30.64 GB inventory were revalidated, and the only permitted
+correction moved the metadata target to `/ssd`. Replacement smoke `1598945`
+then failed before download because the frozen protocol requires 10 TiB free
+while `/ssd` had about 922 GB; dependent full `1598946` was cancelled without
+allocation. `/data/run01/scxi253` is writable but has about 4.55 TB free, also
+below the gate. The capacity receipt and hashes are preserved under
+`/ssd/scxi253/vision1b-research/reports/datacomp-metadata-capacity-failure-20260917`.
+The repository copy is
+[`datacomp_metadata_capacity_block_receipt.json`](reports/datacomp_metadata_capacity_block_receipt.json).
+No further retry is permitted until a writable path with at least 10 TiB free
+is provided.
 
 ## Frozen-feature downstream diagnostic
 

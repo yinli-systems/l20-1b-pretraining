@@ -12,7 +12,7 @@ set -euo pipefail
 SOURCE=${SOURCE:?set SOURCE to immutable admission source}
 PYTHON=${PYTHON:-/ssd/scxi253/pretraining2/runtime/venv/bin/python}
 DATA=${DATA:-/ssd/scxi253/vision1b-research/data/openimages-cvdf-train-1p7m-v1}
-ROOT=${ADMISSION_ROOT:-/data/scxi253/vision1b-data/openimages-cvdf-train-1p7m-admission-v1}
+ROOT=${ADMISSION_ROOT:-/data/run01/scxi253/vision1b-data/openimages-cvdf-train-1p7m-admission-v1}
 SHARDS=(0 1 2 3 4 5 6 7 8 9 a b c d e f)
 SHARD=${SHARDS[$SLURM_ARRAY_TASK_ID]}
 LOCAL_ROOT=$(mktemp -d "/tmp/vision1b-admission-pack-$SLURM_ARRAY_JOB_ID-$SLURM_ARRAY_TASK_ID-XXXXXX")

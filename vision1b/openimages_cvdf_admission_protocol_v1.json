@@ -55,7 +55,7 @@
   "schema": "vision1b-openimages-cvdf-admission-v1",
   "storage": {
     "minimum_free_bytes": 2199023255552,
-    "packed_and_receipt_root": "/data/scxi253/vision1b-data/openimages-cvdf-train-1p7m-admission-v1"
+    "packed_and_receipt_root": "/data/run01/scxi253/vision1b-data/openimages-cvdf-train-1p7m-admission-v1"
   },
   "status": "ADMISSION_PLAN_NOT_ADMITTED"
 }

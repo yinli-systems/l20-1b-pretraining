@@ -11,7 +11,7 @@ set -euo pipefail
 SOURCE=${SOURCE:?set SOURCE to immutable admission source}
 PYTHON=${PYTHON:-/ssd/scxi253/pretraining2/runtime/venv/bin/python}
 DATA=${DATA:-/ssd/scxi253/vision1b-research/data/openimages-cvdf-train-1p7m-v1}
-ROOT=${ADMISSION_ROOT:-/data/scxi253/vision1b-data/openimages-cvdf-train-1p7m-admission-v1}
+ROOT=${ADMISSION_ROOT:-/data/run01/scxi253/vision1b-data/openimages-cvdf-train-1p7m-admission-v1}
 LOCAL_ROOT=$(mktemp -d "/tmp/vision1b-admission-audit-$SLURM_JOB_ID-XXXXXX")
 trap 'chmod -R u+w "$LOCAL_ROOT" 2>/dev/null || true; rm -rf -- "$LOCAL_ROOT"' EXIT
 export PYTHONPATH="/ssd/scxi253/vision1b-research/deps/pillow${PYTHONPATH:+:$PYTHONPATH}"

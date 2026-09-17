@@ -79,14 +79,23 @@ GPUs. `/ssd` had about 88 TB available and `/data` about 192 TB. Acquisition
 jobs request one RTX 4090 each only because the cluster has no accessible CPU
 partition; their smoke/full dependencies start automatically when allocated.
 
-## Submitted execution
+## Current execution
 
 | Route | Smoke | Dependent full | Immutable source | Source-manifest SHA-256 |
 | --- | ---: | ---: | --- | --- |
-| Open Images 1.743M archives | `1598650` | `1598651` | `/ssd/scxi253/data-scale-source-20260917-v1` | `de4f5b0412bf4354f10f6b75809fc2bb5f564f28726bcc2fc72f4924ccb114d3` |
+| Open Images 1.743M archives | `1599005` | `1599006` | `/ssd/scxi253/data-scale-source-20260917-v4` | `ca6fdac0b3253375ad0104228dffc54bf2b89b396f910ae429019bc957de301e` |
 | Nemotron-CC 31,279 objects | `1598652` | `1598653` | `/ssd/scxi253/data-scale-source-20260917-v1` | `de4f5b0412bf4354f10f6b75809fc2bb5f564f28726bcc2fc72f4924ccb114d3` |
-| DataComp-medium metadata | `1598663` | `1598664` | `/ssd/scxi253/data-scale-source-20260917-v2` | `26dff08a9b370ddd8ad7c527cb4a5ab58e05653e2b44895d549ef9864c94a260` |
+| DataComp-medium metadata (capacity blocked) | `1598945` failed | `1598946` cancelled | `/ssd/scxi253/data-scale-source-20260917-v2` | `26dff08a9b370ddd8ad7c527cb4a5ab58e05653e2b44895d549ef9864c94a260` |
 
-At submission all three smoke jobs were `PENDING (Priority)` because no public
-GPU was available. Every full job was `PENDING (Dependency)`. Scheduler
-acceptance is not allocation, active transfer, completion, or admission.
+Open Images `1598650` was cancelled after a verified compute-node egress
+failure left its partial at zero bytes; `1598651` never allocated. The sole
+corrected pair uses a Slurm-controlled login-node downloader with resumable
+64 MiB segments and exact byte-length, gzip and full-file SHA-256 gates. Smoke
+`1599005` is allocated and has finite segment-byte progress; full `1599006`
+remains dependency-gated. DataComp `1598663` failed before download on an
+unwritable target and `1598664` never allocated. Its sole corrected smoke
+`1598945` then failed before download because the frozen 10 TiB free-space
+floor exceeded every writable scxi253 path; `1598946` was cancelled without
+allocation. No metadata or images were staged and no additional retry is
+permitted until capacity is provided. Allocation, transfer, completion and
+admission remain separate states.

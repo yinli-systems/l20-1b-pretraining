@@ -1,0 +1,13 @@
+{
+  "checked_at_utc": "2026-09-17T17:33:11Z",
+  "claim_boundary": "This proves byte identity for the first 1 MiB and equal declared object length. Every completed archive still requires exact byte length, gzip integrity, and a newly sealed full-file SHA-256.",
+  "content_length": 49310925536,
+  "endpoints": [
+    "https://open-images-dataset.s3.amazonaws.com/tar/train_0.tar.gz",
+    "https://s3.amazonaws.com/open-images-dataset/tar/train_0.tar.gz"
+  ],
+  "first_1048576_bytes_sha256": "984b755f863ac61906bed624f8eb3ce14a69e7d32f5b4ab776f2055aa768615b",
+  "object": "open-images-dataset/tar/train_0.tar.gz",
+  "schema": "vision1b-openimages-endpoint-equivalence-v1",
+  "status": "PASS"
+}

@@ -1,0 +1,45 @@
+{
+  "captured_unix": 1789667266,
+  "claim_boundary": "Metadata staging did not occur. No images were downloaded and no examples were admitted.",
+  "failure": [
+    {
+      "error": "RuntimeError('free-space floor reached')",
+      "path": "0020f0cbd157d470aa56bea08e304b90.parquet"
+    }
+  ],
+  "jobs": {
+    "full": {
+      "allocated": false,
+      "id": 1598946,
+      "state": "CANCELLED_DEPENDENCY"
+    },
+    "smoke": {
+      "exit_code": "1:0",
+      "id": 1598945,
+      "state": "FAILED"
+    }
+  },
+  "measurements": {
+    "/data/home/scxi253": {
+      "free_bytes": 0,
+      "total_bytes": 1073741824,
+      "used_bytes": 1073741824,
+      "writable": true
+    },
+    "/data/run01/scxi253": {
+      "free_bytes": 4548797358080,
+      "total_bytes": 16492674416640,
+      "used_bytes": 11943877058560,
+      "writable": true
+    },
+    "/ssd/scxi253": {
+      "free_bytes": 921399279616,
+      "total_bytes": 10995116277760,
+      "used_bytes": 10073716998144,
+      "writable": true
+    }
+  },
+  "protocol_minimum_free_bytes": 10995116277760,
+  "required_action": "Provide a writable scxi253 path with at least the frozen 10 TiB free-space floor; do not lower the gate or auto-retry.",
+  "status": "BLOCKED_STORAGE_CAPACITY_NO_RETRY"
+}

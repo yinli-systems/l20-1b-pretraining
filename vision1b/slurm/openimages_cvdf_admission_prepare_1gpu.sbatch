@@ -13,7 +13,7 @@ PYTHON=${PYTHON:-/ssd/scxi253/pretraining2/runtime/venv/bin/python}
 DATA=${DATA:-/ssd/scxi253/vision1b-research/data/openimages-cvdf-train-1p7m-v1}
 METADATA=${METADATA:-/ssd/scxi253/vision1b-research/data/openimages-real-pilot-v1/sources/train-images-boxable-with-rotation.csv}
 DOWNSTREAM_ROOT=${DOWNSTREAM_ROOT:-/ssd/scxi253/vision1b-research/data/downstream}
-ROOT=${ADMISSION_ROOT:-/data/scxi253/vision1b-data/openimages-cvdf-train-1p7m-admission-v1}
+ROOT=${ADMISSION_ROOT:-/data/run01/scxi253/vision1b-data/openimages-cvdf-train-1p7m-admission-v1}
 LOCAL_ROOT=$(mktemp -d "/tmp/vision1b-admission-prep-$SLURM_JOB_ID-XXXXXX")
 trap 'chmod -R u+w "$LOCAL_ROOT" 2>/dev/null || true; rm -rf -- "$LOCAL_ROOT"' EXIT
 export PYTHONPATH="/ssd/scxi253/vision1b-research/deps/pillow${PYTHONPATH:+:$PYTHONPATH}"
