@@ -71,10 +71,21 @@ robustness, contamination and fine-tuning evaluations remain open.
 
 ## Bounded step-250 to step-1000 continuation
 
-Job `1598538` is queued for a second-stage continuation of the selected
-batch-112 RTX-5090 checkpoint. The parent step-250 checkpoint contains six
-files and 18,354,419,036 bytes. Every file is frozen by a receipt whose SHA-256
-is `c1e71d6c98091806ea35d1edba74fad256f828c7ff306d0d58722d21dcaaa0f1`.
+Job `1598538` allocated four RTX 5090 GPUs and strictly loaded the selected
+batch-112 checkpoint. Steps 251 through 259 were finite; steps 252 through 259
+had 56.41% median end-to-end MFU and telemetry retained at least 4,972 MiB of
+free device memory. The job then failed before its first new checkpoint when
+invalid Triton autotune candidates exceeded the device resource limit and a
+rank-3 CUDA launch failure terminated the NCCL watchdog. This was a compiler
+autotune execution failure, not a training-memory OOM or a numerical failure.
+
+The sole corrected replacement, job `1598829`, keeps every training argument
+unchanged and is pending allocation. Its wrapper gives each job a fresh local
+Inductor/Triton cache and runs autotune candidates in subprocesses so an
+invalid candidate cannot poison the training CUDA context. The parent
+step-250 checkpoint was revalidated before submission: it contains six files
+and 18,354,419,036 bytes, frozen by a receipt whose SHA-256 is
+`c1e71d6c98091806ea35d1edba74fad256f828c7ff306d0d58722d21dcaaa0f1`.
 
 The continuation does not silently extend the original 250-step cosine
 horizon. It uses an explicit second-stage schedule: learning rate moves
@@ -95,10 +106,14 @@ otherwise step 250 remains selected.
 
 The machine-readable contract is
 [`continuation_25k_stage2_protocol_v1.json`](continuation_25k_stage2_protocol_v1.json).
-The immutable remote source is
-`/ssd/scxi253/vision1b-research/source-cont-20260917-v1`, with
-`SOURCE_SHA256SUMS` SHA-256
-`4d182450c0e8097bafd73e44865a736696e5f826f4777d52f5db12e789d414e4`.
+The original immutable source remains
+`/ssd/scxi253/vision1b-research/source-cont-20260917-v1`. The replacement uses
+the read-only source
+`/ssd/scxi253/vision1b-research/source-cont-20260917-v2`, whose
+`SOURCE_SHA256SUMS` SHA-256 is
+`65fa783ebe9e63324f48d921c8e720fd7a9625e2768728ff45b28f81c62c9b4e`.
+The failure and recovery evidence is frozen in
+[`reports/continuation-recovery-20260917/receipt.json`](reports/continuation-recovery-20260917/receipt.json).
 
 ## Corpus-scale expansion
 

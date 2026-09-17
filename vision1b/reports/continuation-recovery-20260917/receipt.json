@@ -1,0 +1,74 @@
+{
+  "claim_boundary": "The replacement has scheduler acceptance only. It is not allocated, has no live metrics, and has not yet demonstrated recovery, checkpoint completion, numerical validation, evaluation improvement, or superiority.",
+  "collected_at_utc": "2026-09-17T15:49:43Z",
+  "failed_job": {
+    "allocated_gpus": 4,
+    "checkpoint_files_written": 0,
+    "elapsed": "00:07:43",
+    "evidence_sha256": {
+      "stderr": "f7bf5d7fa5b7a71b471fc7ceec17a387d65f5270602e45aaef816cf7b8552cad",
+      "stdout": "1fd141c245b09ec77e58b65302779f53afb00dcb2790ec21a074b5b3f376f56f",
+      "run_gpu_csv": "e6e46986346eaec89ad09cade60818289256dc6b321e38475ec5f54015125662",
+      "run_manifest": "34d8bf5d8dbe52b3bfeb79447c5a3b28433fe650a6dcaac467bf1afa05ce5428",
+      "run_metrics_jsonl": "1fd141c245b09ec77e58b65302779f53afb00dcb2790ec21a074b5b3f376f56f"
+    },
+    "exit_code": "1:0",
+    "failure_class": "retryable_compiler_autotune_context_failure",
+    "failure_evidence": {
+      "final_error": "rank 3 CUDA error: unspecified launch failure terminated the NCCL watchdog with SIGABRT",
+      "invalid_candidate_resource_requirements": [
+        131072,
+        147456,
+        196608
+      ],
+      "triton_hardware_limit": 101376
+    },
+    "finite_steps": [
+      251,
+      252,
+      253,
+      254,
+      255,
+      256,
+      257,
+      258,
+      259
+    ],
+    "job_id": 1598538,
+    "node": "wqd10nah08g5",
+    "peak_reserved_bytes": 28001173504,
+    "state": "FAILED",
+    "steady_end_to_end_mfu": {
+      "maximum": 0.5741424370793341,
+      "median": 0.5641339829052221,
+      "minimum": 0.5463504536773426,
+      "steps": "252-259"
+    },
+    "telemetry_max_gpu_utilization_percent": 100.0,
+    "telemetry_minimum_free_memory_mib": 4972.0
+  },
+  "parent_checkpoint": {
+    "bytes": 18354419036,
+    "files": 6,
+    "full_receipt_check_passed_before_replacement": true,
+    "path": "/ssd/scxi253/vision1b-research/runs/vitg14-real-dino-25k-sinkhorn-fp16-qual-v10-5090-b112/checkpoints/step-000250",
+    "receipt_sha256": "c1e71d6c98091806ea35d1edba74fad256f828c7ff306d0d58722d21dcaaa0f1"
+  },
+  "replacement": {
+    "job_id": 1598829,
+    "job_name": "vision1b-cont1000-r1",
+    "recovery_changes": [
+      "fresh per-job TorchInductor and Triton cache",
+      "TORCHINDUCTOR_AUTOTUNE_IN_SUBPROC=1",
+      "cache removal at process exit"
+    ],
+    "scheduler_reason": "Priority",
+    "source_manifest_sha256": "65fa783ebe9e63324f48d921c8e720fd7a9625e2768728ff45b28f81c62c9b4e",
+    "source_path": "/ssd/scxi253/vision1b-research/source-cont-20260917-v2",
+    "source_read_only": true,
+    "state": "PENDING",
+    "training_arguments_identical_to_failed_job": true,
+    "wrapper_sha256": "02b5e8d1fa8b6b67cde259ac3a2c47fb7dcbdc7d02c20b203478795349ad3999"
+  },
+  "schema": "vision1b-continuation-recovery-v1"
+}
