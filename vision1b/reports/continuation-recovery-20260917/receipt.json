@@ -1,16 +1,29 @@
 {
-  "claim_boundary": "The sole permitted replacement failed its GPU identity gate before training. There is no recovery, new checkpoint, numerical validation, evaluation improvement, or superiority evidence. A further retry requires explicit authorization.",
-  "collected_at_utc": "2026-09-17T15:52:57Z",
+  "authorized_retry": {
+    "excluded_nodes": [
+      "wqd10nah08g5"
+    ],
+    "job_id": 1598870,
+    "job_name": "vision1b-cont1000-r2",
+    "requeue": false,
+    "scheduler_estimated_start": "2026-09-19T23:04:49",
+    "scheduler_reason": "Priority",
+    "source_manifest_sha256": "65fa783ebe9e63324f48d921c8e720fd7a9625e2768728ff45b28f81c62c9b4e",
+    "state": "PENDING",
+    "state_boundary": "scheduler accepted; no allocation or live metrics"
+  },
+  "claim_boundary": "The user-authorized retry is scheduler-pending with the faulty node excluded. There is still no recovery, new checkpoint, numerical validation, evaluation improvement, or superiority evidence.",
+  "collected_at_utc": "2026-09-17T16:19:13Z",
   "failed_job": {
     "allocated_gpus": 4,
     "checkpoint_files_written": 0,
     "elapsed": "00:07:43",
     "evidence_sha256": {
-      "stderr": "f7bf5d7fa5b7a71b471fc7ceec17a387d65f5270602e45aaef816cf7b8552cad",
-      "stdout": "1fd141c245b09ec77e58b65302779f53afb00dcb2790ec21a074b5b3f376f56f",
       "run_gpu_csv": "e6e46986346eaec89ad09cade60818289256dc6b321e38475ec5f54015125662",
       "run_manifest": "34d8bf5d8dbe52b3bfeb79447c5a3b28433fe650a6dcaac467bf1afa05ce5428",
-      "run_metrics_jsonl": "1fd141c245b09ec77e58b65302779f53afb00dcb2790ec21a074b5b3f376f56f"
+      "run_metrics_jsonl": "1fd141c245b09ec77e58b65302779f53afb00dcb2790ec21a074b5b3f376f56f",
+      "stderr": "f7bf5d7fa5b7a71b471fc7ceec17a387d65f5270602e45aaef816cf7b8552cad",
+      "stdout": "1fd141c245b09ec77e58b65302779f53afb00dcb2790ec21a074b5b3f376f56f"
     },
     "exit_code": "1:0",
     "failure_class": "probable_node_gpu3_device_loss",
@@ -83,9 +96,10 @@
   },
   "resolution": {
     "automatic_retry_allowed": false,
-    "required_user_action": "Authorize one exact resubmission of the immutable v2 job with node wqd10nah08g5 excluded.",
+    "required_user_action": null,
     "retry_cap_exhausted": true,
-    "status": "USER_ACTION_REQUIRED"
+    "status": "EXPLICITLY_AUTHORIZED_RETRY_SUBMITTED",
+    "user_authorization": "The user explicitly authorized the highest-efficiency stable Vision start and data preparation."
   },
   "schema": "vision1b-continuation-recovery-v1"
 }

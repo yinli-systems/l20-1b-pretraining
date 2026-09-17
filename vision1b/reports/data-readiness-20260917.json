@@ -1,0 +1,83 @@
+{
+  "admission_source": {
+    "path": "/ssd/scxi253/vision1b-research/source-openimages-admission-20260917-v3",
+    "read_only": true,
+    "source_manifest_sha256": "2ec555cc73b7afd3f9de2b08451fb96550fe03102fa21ffa8d3d015ef4981510",
+    "supersedes": [
+      {
+        "path": "/ssd/scxi253/vision1b-research/source-openimages-admission-20260917-v1",
+        "reason": "runtime dependency and bytecode-cache paths were not explicit",
+        "submitted": false
+      },
+      {
+        "path": "/ssd/scxi253/vision1b-research/source-openimages-admission-20260917-v2",
+        "reason": "finalization did not independently rehash packed tar artifacts",
+        "submitted": false
+      }
+    ],
+    "validation": {
+      "official_metadata_identity": "PASS",
+      "packed_artifact_rehash_gate": "PASS_SYNTHETIC_DRIFT_TEST",
+      "python_runtime_import": "PASS",
+      "shell_syntax": "PASS",
+      "slurm_test_only_jobs": 5,
+      "source_manifest": "PASS"
+    }
+  },
+  "claim_boundary": "Acquisition and training jobs are scheduler-pending with no allocation. There are no downloaded Open Images archives, staged DataComp parquet files, admitted images, packed training shards, or TRAINING_ADMITTED receipt yet.",
+  "collected_at_utc": "2026-09-17T16:24:48Z",
+  "datacomp_medium_metadata": {
+    "full_job": {
+      "dependency": "afterok:1598663",
+      "job_id": 1598664,
+      "state": "PENDING_DEPENDENCY"
+    },
+    "inventory_sha256": "bd191b81f5b4d9b9bb7b9a25a033d346a149397b3d01148b868ea208cce69695",
+    "published_candidate_rows": 128000000,
+    "smoke_job": {
+      "job_id": 1598663,
+      "reason": "Priority",
+      "scheduler_estimated_start": "2026-09-18T20:06:39",
+      "state": "PENDING"
+    },
+    "source_manifest_sha256": "26dff08a9b370ddd8ad7c527cb4a5ab58e05653e2b44895d549ef9864c94a260",
+    "status_boundary": "metadata plan only; no images and no admission"
+  },
+  "openimages_cvdf": {
+    "admission_pipeline": {
+      "audit_images": 512,
+      "exact_and_perceptual_global_deduplication": true,
+      "final_status_gate": "TRAINING_ADMITTED",
+      "index_tasks": 16,
+      "minimum_free_bytes_on_data": 2199023255552,
+      "packed_shards": 16,
+      "required_manual_receipts": [
+        "human audit PASS bound to audit-index SHA-256",
+        "safety audit PASS covering every candidate and bound to policy SHA-256"
+      ],
+      "synthetic_end_to_end_test": "PASS"
+    },
+    "full_job": {
+      "dependency": "afterok:1598650",
+      "job_id": 1598651,
+      "state": "PENDING_DEPENDENCY"
+    },
+    "reported_archive_bytes_approx": 513000000000,
+    "reported_images": 1743042,
+    "smoke_job": {
+      "job_id": 1598650,
+      "reason": "Priority",
+      "scheduler_estimated_start": "2026-09-18T03:07:50",
+      "state": "PENDING"
+    },
+    "source_manifest_sha256": "de4f5b0412bf4354f10f6b75809fc2bb5f564f28726bcc2fc72f4924ccb114d3",
+    "target_files_present": 0
+  },
+  "schema": "vision1b-data-readiness-v1",
+  "storage": {
+    "admission_output": "/data/scxi253/vision1b-data/openimages-cvdf-train-1p7m-admission-v1",
+    "ssd_available_bytes_before_acquisition": 923411390464,
+    "ssd_available_bytes_current": 923286519808,
+    "ssd_use_percent": 92
+  }
+}

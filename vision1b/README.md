@@ -88,6 +88,11 @@ This corroborates a node/GPU3 infrastructure fault and rules out the wrapper
 change as a recovery. The retry cap is now exhausted; another submission must
 be explicitly authorized and must exclude `wqd10nah08g5`.
 
+The user explicitly authorized that final retry. Job `1598870`,
+`vision1b-cont1000-r2`, uses the same read-only v2 source and exact training
+contract, has scheduler-level exclusion of `wqd10nah08g5`, and is pending four
+RTX 5090 GPUs. Scheduler acceptance is not allocation or recovery evidence.
+
 The parent step-250 checkpoint was revalidated before the replacement: it
 contains six files and 18,354,419,036 bytes, frozen by a receipt whose SHA-256
 is `c1e71d6c98091806ea35d1edba74fad256f828c7ff306d0d58722d21dcaaa0f1`.
@@ -136,6 +141,30 @@ safety audits, and a sealed receipt. The next scale rung is a separately
 filtered DataComp pool; its published small and medium pools contain 12.8M and
 128M samples. Neither published counts nor downloaded bytes are accepted as
 training examples.
+
+The post-download path is implemented as a 16-way archive index followed by a
+deterministic global reducer. It binds the official 638,407,721-byte metadata
+CSV, preserves attribution, verifies every JPEG without extracting the source
+archives, removes file/pixel duplicates and combined 128-bit perceptual near
+duplicates, and excludes a frozen MNIST/Fashion-MNIST downstream denylist.
+Packing remains one deterministic tar per source archive and runs on `/data`
+with a 2 TiB free-space floor, avoiding a second 500+ GB copy on the 92%-used
+`/ssd` volume. Finalization refuses `TRAINING_ADMITTED` until all 16 pack
+receipts, a complete safety-policy receipt, and the frozen 512-image human
+audit pass.
+
+The immutable admission source is
+`/ssd/scxi253/vision1b-research/source-openimages-admission-20260917-v3`, whose
+`SOURCE_SHA256SUMS` SHA-256 is
+`2ec555cc73b7afd3f9de2b08451fb96550fe03102fa21ffa8d3d015ef4981510`.
+It passed its complete source manifest, official metadata identity, Python
+runtime import, shell syntax and all five Slurm test-only checks after being
+made read-only. Finalization rehashes every packed tar and checks protocol,
+acquisition, metadata, audit and pack identities before it can issue
+`TRAINING_ADMITTED`. The earlier v1 and v2 sources were never submitted:
+v1 lacked explicit remote dependency and bytecode-cache paths, and v2 did not
+repeat the packed-tar hashes at finalization. The end-to-end fail-closed behavior is covered by
+[`tests/test_vision_openimages_admission.py`](../tests/test_vision_openimages_admission.py).
 
 The frozen acquisition contract and resumable implementation are
 [`openimages_cvdf_1p7m_protocol_v1.json`](openimages_cvdf_1p7m_protocol_v1.json)
