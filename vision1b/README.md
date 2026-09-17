@@ -52,6 +52,22 @@ entropy was 8.792 versus the 8.961 ceiling. Its median end-to-end MFU was only
 49.4005%, so the efficiency gate rejected it even though the step-25 checkpoint
 was saved. This negative result is retained rather than rounded up to a pass.
 
+Two 4xRTX-5090 routes subsequently completed the full bounded 250-step run.
+Batch 64 jobs `1596084` and `1596346` passed at 56.4352% median end-to-end MFU,
+62.8412 source images/s and 18.77 GB peak reserved memory per GPU; final loss
+was 8.9126, teacher entropy was 8.6793, and feature nearest-neighbor distance
+was 1.3472. Batch 112 jobs `1596349` and `1596350` were the faster selected
+route, passing at 57.6974% median end-to-end MFU, 64.2468 source images/s and
+28.32 GB peak reserved memory per GPU. Its final loss was 8.9033, teacher
+entropy was 8.6794, feature nearest-neighbor distance was 1.3406, and the mean
+rank gradient norm was 0.2205. Both final checkpoints and their identity-bound
+manifests were written at step 250.
+
+These are training-system and objective-health results on 25,000 admitted
+images. They do not establish downstream accuracy, representation quality,
+corpus-scale convergence, or superiority over another model. The next gate is
+a frozen downstream evaluation with declared datasets, metrics and baselines.
+
 ## Qualified runtime recipe
 
 The fastest measured four-GPU recipe now uses RTX 5090, four-way FSDP2, BF16,
@@ -109,6 +125,7 @@ before these runtime settings become a formal pretraining recipe.
 
 - DINOv2 repository: <https://github.com/facebookresearch/dinov2>
 - DINOv2 model card: <https://github.com/facebookresearch/dinov2/blob/main/MODEL_CARD.md>
+- Open Images facts and figures: <https://storage.googleapis.com/openimages/web/factsfigures.html>
 - ImageNet access terms: <https://www.image-net.org/download.php>
 - torchao quantized training: <https://docs.pytorch.org/ao/stable/workflows/training.html>
 - PyTorch float8 and FSDP2 study: <https://pytorch.org/blog/training-using-float8-fsdp2/>

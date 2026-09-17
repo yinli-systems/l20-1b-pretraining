@@ -1,5 +1,55 @@
 {
   "claim_boundary": "This is a bounded 25,000-image systems and method pilot. It does not establish downstream representation quality, full DINOv2/iBOT fidelity, corpus-scale pretraining, release readiness, or superiority over another model.",
+  "completed_training_runs": [
+    {
+      "artifact_sha256": {
+        "SHA256SUMS": "3244476b1239c36e3b981f6a9309a825c8572c14905793ec28ef5280227ebd33",
+        "manifest.json": "271c93afc22accf62595f5a9cce194d21d28fce70cee8860add090cee8c78b62",
+        "metrics.jsonl": "f317ea67f2d84ff48f69ea3bf39e32b2e00ee0f716fdc0d9d315dbc009450593",
+        "source.sha256": "45e26a13023bd8171cfdffff6d97ab2dc995ede5dcf6dde88c21b17e77e30b73",
+        "summary.json": "922fdc7a51272a6807cd69a0063e32f640ae95a2a3ec5679bf9686c5a9e6c43a"
+      },
+      "completed_steps": 250,
+      "continuation_job_id": 1596346,
+      "final_feature_nearest_neighbor_distance": 1.347221314907074,
+      "final_gradient_norm_mean_ranks": 0.18941731750965118,
+      "final_loss": 8.912611961364746,
+      "final_teacher_cross_sample_logit_std": 0.034676581621170044,
+      "final_teacher_entropy": 8.679348945617676,
+      "hardware": "4xRTX 5090",
+      "median_end_to_end_mfu": 0.564351834787914,
+      "median_end_to_end_source_images_per_second": 62.841229426779215,
+      "median_model_mfu": 0.5706749288760278,
+      "peak_memory_reserved_bytes": 18771607552,
+      "per_rank_batch": 64,
+      "qualification_job_id": 1596084,
+      "status": "PASS"
+    },
+    {
+      "artifact_sha256": {
+        "SHA256SUMS": "1ab05974197e7f1579288e412d7ed1f06a6988bc4508607ffa5106731da4ed59",
+        "manifest.json": "8721f217432ac491bfaded258416c449a1151e17a6edfd5dc4f3db53f9f46f74",
+        "metrics.jsonl": "3156182c293f9907e09bce105863f82a31d4a065d170b5320f15d256e2a49aea",
+        "source.sha256": "d23efee1d0484cc97996d97a1bbde389213d20a205d7911abb4685cd091e2297",
+        "summary.json": "d9027a3b96e604f211d5de55a31da13d020bda30b94a67ef9dd01b57708ba276"
+      },
+      "completed_steps": 250,
+      "continuation_job_id": 1596350,
+      "final_feature_nearest_neighbor_distance": 1.3405557870864868,
+      "final_gradient_norm_mean_ranks": 0.22050787508487701,
+      "final_loss": 8.903257369995117,
+      "final_teacher_cross_sample_logit_std": 0.03490043431520462,
+      "final_teacher_entropy": 8.679445266723633,
+      "hardware": "4xRTX 5090",
+      "median_end_to_end_mfu": 0.5769744212298304,
+      "median_end_to_end_source_images_per_second": 64.24676902399504,
+      "median_model_mfu": 0.5836477948077733,
+      "peak_memory_reserved_bytes": 28315746304,
+      "per_rank_batch": 112,
+      "qualification_job_id": 1596349,
+      "status": "PASS_SELECTED_EFFICIENCY_ROUTE"
+    }
+  ],
   "current_source": {
     "acquire_openimages_25k.py_sha256": "4aa0b179a3187d2f99e9cf773f17783cbd5070ec5c2371988da78bc5a8a192f1",
     "finalize_openimages_audit.py_sha256": "0f2759baecd3e106cc43e0761181729cdcb190d89890c4db8c9fd8c19e56c94c",
@@ -25,7 +75,7 @@
     "protocol_sha256": "15df80cc6d2c5243795a811653576741511bddc517f0f9ae7b47e73905c6e01f",
     "visual_audit_sha256": "de1f8a8966dba8e70a344b0771ecdf22a57ccb507b2e50d695bea6366e0f9c66"
   },
-  "next_gate": "Run one pending four-GPU qualification. Only a run passing semantic, finite-state, checkpoint-identity and median end-to-end MFU >= 0.50 gates may resume from step 25 to step 250.",
+  "next_gate": "Run a preregistered frozen downstream evaluation with declared datasets, metrics, baselines, contamination checks, and aggregate plus retention gates before making a representation-quality or superiority claim.",
   "qualification_frontier": [
     {
       "configuration": "superseded simplified BF16 head, batch 64",
@@ -103,17 +153,69 @@
       "configuration": "FP16, layer scale 0.01, batch 80, max-autotune with CUDA Graphs",
       "hardware": "4xRTX 4090",
       "job_id": 1596285,
-      "status": "PENDING_CONTIGUOUS_FOUR_GPU_CAPACITY"
+      "note": "CUDA Graph compilation ran stably but was materially slower than the admitted non-CUDA-Graph route.",
+      "observed_end_to_end_mfu_range": [
+        0.38,
+        0.39
+      ],
+      "status": "REJECT_THROUGHPUT_AND_CANCELLED"
     },
     {
+      "completed_steps": 25,
       "configuration": "FP16, layer scale 0.01, batch 64, max-autotune-no-cudagraphs",
+      "final_loss": 8.98658561706543,
       "hardware": "4xRTX 5090",
       "job_id": 1596084,
-      "status": "PENDING_CONTIGUOUS_FOUR_GPU_CAPACITY"
+      "median_end_to_end_mfu": 0.5652856284142006,
+      "median_end_to_end_source_images_per_second": 62.94520842691623,
+      "peak_memory_reserved_bytes": 18624806912,
+      "status": "PASS_QUALIFICATION"
+    },
+    {
+      "configuration": "FSDP2 foreach-kernel compatibility smoke",
+      "hardware": "2xRTX 4090",
+      "job_id": 1596328,
+      "note": "Completed only a focused optimizer/FSDP2 compatibility check; it is not a training or efficiency result.",
+      "status": "PASS_COMPATIBILITY_SMOKE"
+    },
+    {
+      "configuration": "FP16, batch 80, foreach optimizer screen",
+      "hardware": "4xRTX 4090",
+      "job_id": 1596329,
+      "observed_end_to_end_mfu_range": [
+        0.468,
+        0.476
+      ],
+      "status": "REJECT_THROUGHPUT_AND_CANCELLED"
+    },
+    {
+      "configuration": "batch 64 attempted continuation",
+      "hardware": "4xRTX 5090",
+      "job_id": 1596311,
+      "note": "Resume correctly rejected an experimental source hash. The exact qualified source was restored before job 1596346.",
+      "status": "FAIL_CLOSED_SOURCE_IDENTITY_MISMATCH"
+    },
+    {
+      "completed_steps": 25,
+      "configuration": "FP16, layer scale 0.01, batch 112, max-autotune-no-cudagraphs",
+      "final_loss": 8.976715087890625,
+      "hardware": "4xRTX 5090",
+      "job_id": 1596349,
+      "median_end_to_end_mfu": 0.5804952808335766,
+      "median_end_to_end_source_images_per_second": 64.63882081243592,
+      "peak_memory_reserved_bytes": 28043116544,
+      "status": "PASS_QUALIFICATION"
     }
   ],
-  "recorded_at": "2026-09-17T06:27:07+04:00",
+  "recorded_at": "2026-09-17T07:32:33+04:00",
   "scope": "Audited 25,000-image Open Images pilot for a 1.146B-parameter DINO-style ViT-g/14",
+  "selected_efficiency_recipe": {
+    "compile_mode": "max-autotune-no-cudagraphs",
+    "continuation_job_id": 1596350,
+    "hardware": "4xRTX 5090",
+    "per_rank_batch": 112,
+    "reason": "Highest passing full-run median end-to-end MFU among the audited real-image routes."
+  },
   "selected_method": {
     "architecture": "ViT-g/14 width 1536 depth 40 heads 24 SwiGLU 4096",
     "bottleneck_dim": 384,
@@ -136,5 +238,5 @@
     "student_parameters": 1146046336,
     "teacher_parameters": 1146046336
   },
-  "status": "REAL_DATA_TRAINING_STARTED_EFFICIENCY_QUALIFICATION_IN_PROGRESS"
+  "status": "PASS_TWO_REAL_DATA_STEP_250_RUNS"
 }
