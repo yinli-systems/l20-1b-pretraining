@@ -1,0 +1,86 @@
+{
+  "base_protocol_sha256": "0ceb7a210d8d0e598011e2e590dfee129bd03d9dc69871c6a7ef66b6309e6af5",
+  "claim_boundary": "These are inference-only reference baselines under the same frozen-feature datasets, preprocessing, classifiers, splits, and metrics as the bounded Vision 1B diagnostic. The DINOv2 models were pretrained on LVD-142M, so the results compare representation quality under this probe but not data efficiency, compute efficiency, training method, or release readiness.",
+  "datasets": {
+    "fashion_mnist": {
+      "test_examples": 10000,
+      "train_examples": 60000
+    },
+    "mnist": {
+      "test_examples": 10000,
+      "train_examples": 60000
+    }
+  },
+  "dinov2_source": {
+    "commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+    "repository": "https://github.com/facebookresearch/dinov2"
+  },
+  "evaluation": {
+    "feature": "official DINOv2 normalized CLS output",
+    "knn": {
+      "k": 20,
+      "temperature": 0.07,
+      "vote": "similarity-weighted"
+    },
+    "metrics": [
+      "top1_accuracy",
+      "top5_accuracy"
+    ],
+    "preprocessing": "repeat grayscale to RGB, bicubic resize to 224x224, ImageNet mean/std normalization",
+    "ridge_probe": {
+      "lambda_grid": [
+        0.0001,
+        0.001,
+        0.01,
+        0.1,
+        1.0,
+        10.0,
+        100.0
+      ],
+      "selection": "deterministic stratified 80/20 split of the official training set; refit on all training examples after lambda selection"
+    },
+    "seed": 20260917
+  },
+  "models": {
+    "dinov2_vitb14": {
+      "feature_dimension": 768,
+      "parameters": 86580480,
+      "pretraining": "LVD-142M",
+      "weights_bytes": 346378731,
+      "weights_sha256": "0b8b82f85de91b424aded121c7e1dcc2b7bc6d0adeea651bf73a13307fad8c73",
+      "weights_url": "https://dl.fbaipublicfiles.com/dinov2/dinov2_vitb14/dinov2_vitb14_pretrain.pth"
+    },
+    "dinov2_vitg14": {
+      "feature_dimension": 1536,
+      "parameters": 1136480768,
+      "pretraining": "LVD-142M",
+      "weights_bytes": 4546108579,
+      "weights_sha256": "baf8467e50af277596bbbafa06887c177ee899ab46033649c383577d7e9309d3",
+      "weights_url": "https://dl.fbaipublicfiles.com/dinov2/dinov2_vitg14/dinov2_vitg14_pretrain.pth"
+    },
+    "dinov2_vitl14": {
+      "feature_dimension": 1024,
+      "parameters": 304368640,
+      "pretraining": "LVD-142M",
+      "weights_bytes": 1217586395,
+      "weights_sha256": "d5383ea8f4877b2472eb973e0fd72d557c7da5d3611bd527ceeb1d7162cbf428",
+      "weights_url": "https://dl.fbaipublicfiles.com/dinov2/dinov2_vitl14/dinov2_vitl14_pretrain.pth"
+    },
+    "dinov2_vits14": {
+      "feature_dimension": 384,
+      "parameters": 22056576,
+      "pretraining": "LVD-142M",
+      "weights_bytes": 88283115,
+      "weights_sha256": "b938bf1bc15cd2ec0feacfe3a1bb553fe8ea9ca46a7e1d8d00217f29aef60cd9",
+      "weights_url": "https://dl.fbaipublicfiles.com/dinov2/dinov2_vits14/dinov2_vits14_pretrain.pth"
+    }
+  },
+  "preregistration": {
+    "batch_size_is_a_systems_parameter_only": true,
+    "model_selection_or_metric_tuning_after_results": false,
+    "one_shared_evaluator_for_all_models": true,
+    "official_full_splits_required": true
+  },
+  "recorded_at": "2026-09-17T12:48:00+04:00",
+  "status": "PREREGISTERED_REFERENCE_BASELINES"
+}
