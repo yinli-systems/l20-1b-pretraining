@@ -1,0 +1,52 @@
+{
+  "base_protocol_sha256": "0ceb7a210d8d0e598011e2e590dfee129bd03d9dc69871c6a7ef66b6309e6af5",
+  "claim_boundary": "This is an inference-only supervised ImageNet-1K reference under the same frozen-feature datasets, preprocessing, classifiers, splits, and metrics as the bounded Vision 1B diagnostic. It compares downstream representation quality under this probe but not self-supervised method quality, label efficiency, data efficiency, compute efficiency, or model scale.",
+  "evaluation": {
+    "feature": "2048-dimensional global-average-pooled penultimate ResNet-50 feature",
+    "knn": {
+      "k": 20,
+      "temperature": 0.07,
+      "vote": "similarity-weighted"
+    },
+    "metrics": [
+      "top1_accuracy",
+      "top5_accuracy"
+    ],
+    "preprocessing": "repeat grayscale to RGB, bicubic resize to 224x224, ImageNet mean/std normalization",
+    "ridge_probe": {
+      "lambda_grid": [
+        0.0001,
+        0.001,
+        0.01,
+        0.1,
+        1.0,
+        10.0,
+        100.0
+      ],
+      "selection": "deterministic stratified 80/20 split of the official training set; refit on all training examples after lambda selection"
+    },
+    "seed": 20260917
+  },
+  "model": {
+    "feature_dimension": 2048,
+    "id": "torchvision_resnet50_imagenet1k_v2",
+    "official_imagenet1k_top1_percent": 80.858,
+    "parameters": 25557032,
+    "pretraining": "supervised ImageNet-1K",
+    "weights_bytes": 102540417,
+    "weights_sha256": "11ad3fa62ca79e40addfd354a8ec4b7c75143b3038b8d2a807fbc68deab379ca",
+    "weights_url": "https://download.pytorch.org/models/resnet50-11ad3fa6.pth"
+  },
+  "preregistration": {
+    "batch_size_is_a_systems_parameter_only": true,
+    "model_selection_or_metric_tuning_after_results": false,
+    "official_full_splits_required": true
+  },
+  "recorded_at": "2026-09-17T13:02:00+04:00",
+  "status": "PREREGISTERED_SUPERVISED_REFERENCE",
+  "torchvision": {
+    "version": "0.26.0+cu128",
+    "wheel_sha256": "ccf26b4b659cfce6f2208cb8326071d51c70219a34856dfdf468d1e19af52c0d",
+    "wheel_source": "https://download.pytorch.org/whl/cu128"
+  }
+}
