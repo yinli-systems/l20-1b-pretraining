@@ -1,0 +1,11 @@
+{
+  "hidden_size": 1024,
+  "expert_intermediate_size": 1024,
+  "num_hidden_layers": 10,
+  "num_attention_heads": 16,
+  "num_key_value_heads": 4,
+  "num_experts": 16,
+  "experts_per_token": 2,
+  "method": "top2",
+  "expert_backend": "grouped_mm"
+}

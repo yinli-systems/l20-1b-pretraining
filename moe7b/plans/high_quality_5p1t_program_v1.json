@@ -1,0 +1,171 @@
+{
+  "base_training": {
+    "data": "winning proxy mixture scaled with >=95% unique prediction tokens overall and per-source replay caps",
+    "optimizer": "AdamW beta1=0.9 beta2=0.95 weight_decay=0.1; FP32 master/state semantics required for production qualification",
+    "routing": "dropless Top-2 with FP32 router logits; compare auxiliary-loss coefficient 0.001 and 0.01 plus auxiliary-loss-free bias only in bounded matched ablations",
+    "schedule": "cosine with predeclared 5T horizon; peak LR selected by proxy, no mid-run horizon extension",
+    "tokens": 5000000000000
+  },
+  "checkpoint_ladder_prediction_tokens": [
+    150000000000,
+    300000000000,
+    600000000000,
+    1000000000000,
+    2600000000000,
+    5000000000000,
+    5100000000000
+  ],
+  "claim_boundary": "This freezes budgets, experiments, and fail-closed gates. It does not claim that 5.1T tokens are downloaded or admitted, that the >=50% MFU production path is qualified, or that the model exceeds any competitor.",
+  "data_admission_gates": [
+    "immutable source revisions and byte hashes",
+    "document provenance and component license receipts",
+    "PII secret and unsafe-content policy",
+    "global URL exact document near and line-level deduplication",
+    "fresh evaluation contamination index with exact 13-gram fuzzy and semantic review",
+    "train validation and sealed test isolation",
+    "language domain and quality audits including random human review",
+    "tokenizer identity packed-shard hashes exact next-token counts and deterministic order",
+    "no benchmark train set in the final anneal"
+  ],
+  "data_mix_selection": {
+    "candidate_percentages": {
+      "A_web_heavy_olmoe_inspired": {
+        "general_filtered_web": 72,
+        "mathematics_reasoning": 8,
+        "multilingual_filtered_web": 6,
+        "permissive_educational_code": 12,
+        "science_reference": 2
+      },
+      "B_current_150b_candidate": {
+        "general_filtered_web": 58,
+        "mathematics_reasoning": 10,
+        "multilingual_filtered_web": 10,
+        "permissive_educational_code": 17,
+        "science_reference": 5
+      },
+      "C_capability_heavy_llama3_inspired": {
+        "general_filtered_web": 48,
+        "mathematics_reasoning": 25,
+        "multilingual_filtered_web": 8,
+        "permissive_educational_code": 17,
+        "science_reference": 2
+      }
+    },
+    "method": "matched 529M proxy microanneals from one immutable parent, followed by two-seed confirmation before freezing the 7B mixture",
+    "proxy_tokens_per_arm": 536870912,
+    "retired_recipe": "F2 continuation data recipe; its two-seed seven-task mean regressed from 0.4853114768 to 0.4845525333",
+    "reusable_engineering_from_f2": "large microbatch low accumulation constant tokens per update deterministic resume and rolling MFU gates",
+    "selection_gates": [
+      "all source identities and licenses admitted",
+      "same parent checkpoint optimizer schedule token count and record order across arms",
+      "finite training and validation metrics in every seed",
+      "rolling ten-step MFU median strictly above 0.70 for the 529M proxy after grace",
+      "two-seed gain on frozen multi-domain masked validation",
+      "no material regression on independent generated math executable code knowledge reading and multilingual probes",
+      "adaptive seven-task results may diagnose but cannot alone promote a mixture"
+    ]
+  },
+  "estimated_idealized_wall_days_excluding_queue_eval_and_io": {
+    "16x5090": {
+      "mfu_0_50": 266.4,
+      "mfu_0_70": 190.3,
+      "mfu_0_77": 173.0
+    },
+    "64x5090": {
+      "mfu_0_50": 66.6,
+      "mfu_0_70": 47.6,
+      "mfu_0_77": 43.3
+    },
+    "8x5090": {
+      "mfu_0_50": 532.9,
+      "mfu_0_70": 380.6,
+      "mfu_0_77": 346.0
+    },
+    "assumptions": {
+      "causal_useful_flops_per_prediction_token": 7565000000,
+      "rated_bf16_tflops_per_rtx5090": 209.5
+    }
+  },
+  "high_quality_anneal": {
+    "candidate_percentages": {
+      "decontaminated_mathematics_reasoning": 20,
+      "high_quality_multilingual": 5,
+      "more_restrictively_filtered_web": 50,
+      "permissive_code_and_technical_qa": 15,
+      "science_reference": 10
+    },
+    "checkpoint_averaging": "evaluate a preregistered 3-seed arithmetic average only after each component checkpoint passes independently",
+    "learning_rate": "linear decay from the inherited checkpoint LR to zero",
+    "maximum_small_source_repetitions": 4,
+    "requires_microanneal_ablation": true,
+    "tokens": 100000000000
+  },
+  "model": {
+    "active_parameters_per_token": 1263798272,
+    "experts": 16,
+    "experts_per_token": 2,
+    "sequence_length": 2048,
+    "tokenizer_vocabulary_size": 50280,
+    "total_parameters": 7077103616
+  },
+  "plan_id": "moe7b-5p1t-research-program-20260917",
+  "primary_sources": [
+    "https://arxiv.org/abs/2409.02060",
+    "https://arxiv.org/abs/2406.11794",
+    "https://arxiv.org/abs/2501.00656",
+    "https://arxiv.org/abs/2407.21783",
+    "https://arxiv.org/abs/2502.02737",
+    "https://arxiv.org/abs/2406.17557",
+    "https://arxiv.org/abs/2412.19437",
+    "https://docs.nvidia.com/megatron-core/developer-guide/0.15.0/user-guide/features/moe.html"
+  ],
+  "quality_gates": {
+    "competitor_claim_rule": "same weights tokenizer prompts support setting sample rows metrics and scoring code; superiority requires a positive paired bootstrap lower bound against every named competitor",
+    "domains": [
+      "general knowledge",
+      "commonsense and reasoning",
+      "mathematics",
+      "executable code",
+      "science and reading",
+      "multilingual",
+      "long context"
+    ],
+    "minimum_primary_seven_task_macro": 0.5,
+    "stop_or_revise_if": [
+      "validation loss or downstream scaling slope stalls at two successive checkpoints",
+      "any domain materially regresses outside its preregistered margin",
+      "router imbalance expert starvation non-finite values or data identity drift",
+      "production median causal-useful MFU falls below 0.50 after warmup"
+    ]
+  },
+  "schema": "moe7b-high-quality-program-v1",
+  "status": "RESEARCH_BACKED_PROGRAM_CANDIDATE_NOT_DATA_ADMITTED",
+  "systems_gates": {
+    "bounded_screen_minimum_median_causal_useful_mfu": 0.5,
+    "constant_prediction_tokens_per_optimizer_step": 131072,
+    "minimum_per_gpu_memory_headroom_gib": 2,
+    "performance_ladder": [
+      "4-way and 8-way expert-parallel screens",
+      "grouped expert GEMM and fused permutation/router kernels",
+      "expert all-to-all overlap after parity",
+      "distributed optimizer for shared and expert parameters",
+      "data parallel replicas only after expert-parallel correctness is frozen"
+    ],
+    "requirements_before_production": [
+      "all-tensor one-update parity against the numerical reference",
+      "FP32 master and optimizer-state semantics or independently qualified precision-aware optimizer",
+      "checkpoint save reload and topology conversion parity",
+      "sustained >=500-step confirmation with finite loss gradients and router load",
+      "no silent token drops and no expert starvation",
+      "same data order optimizer schedule and model fingerprint"
+    ]
+  },
+  "token_accounting": {
+    "formal_base_pretraining_tokens": 5000000000000,
+    "formal_high_quality_anneal_tokens": 100000000000,
+    "formal_total_prediction_tokens": 5100000000000,
+    "maximum_overall_replay_fraction": 0.05,
+    "padding_validation_failed_recomputed_and_pilot_tokens_do_not_count": true,
+    "systems_pilot_tokens_outside_formal_budget": 8376643584
+  }
+}
