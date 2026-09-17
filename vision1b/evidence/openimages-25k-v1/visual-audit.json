@@ -1,0 +1,60 @@
+{
+  "audit_method": "manual review of every cell in the four deterministic contact sheets at original resolution",
+  "audited_at": "2026-09-17",
+  "auditor": "primary_agent",
+  "checks": {
+    "contact_sheet_mismatch": 0,
+    "explicit_sexual_content": 0,
+    "fixed_items_reviewed": 64,
+    "graphic_violence_or_gore": 0,
+    "minors_or_babies_present": true,
+    "non_explicit_adult_or_suggestive_imagery_present": true,
+    "people_present": true,
+    "unreadable_or_corrupt": 0
+  },
+  "decision": "PASS_FOR_BOUNDED_SELF_SUPERVISED_RESEARCH_PILOT",
+  "limitations": [
+    "This 64-image deterministic audit cannot prove that all 25,000 images are free of sensitive or unsuitable content.",
+    "Open Images metadata carries source license and attribution fields, but the audit is not independent legal verification of every underlying image license.",
+    "People and minors are present; the corpus is admitted only for the bounded internal representation-learning pilot.",
+    "Passing this gate does not establish model quality, safety, release readiness, or benchmark superiority."
+  ],
+  "manifest": {
+    "rows": 25000,
+    "sha256": "5241043cdaf73cfd5edfe9183e444e2f29a559162486f0f24af6c7539a363653"
+  },
+  "observations": [
+    "The fixed sample contains diverse natural images including people, children, animals, objects, landscapes, architecture, transport, and artwork.",
+    "One non-explicit shirtless adult image, one adult lingerie/corset fashion image, and one non-explicit suggestive portrait were observed.",
+    "No sampled image was corrupt, explicitly sexual, graphically violent, or grossly mismatched to the manifest."
+  ],
+  "protocol_sha256": "15df80cc6d2c5243795a811653576741511bddc517f0f9ae7b47e73905c6e01f",
+  "schema_version": "2026-09-17-v1",
+  "sheets": [
+    {
+      "decision": "PASS",
+      "items": 16,
+      "path": "audit/openimages-25k-audit-00.jpg",
+      "sha256": "a15a8e65dca91eb78d0d7a20e326bbe62cbcb1e47b54a85c92b5ab2ecab0e97b"
+    },
+    {
+      "decision": "PASS",
+      "items": 16,
+      "path": "audit/openimages-25k-audit-01.jpg",
+      "sha256": "9f106aac25b55cac6bcc26a1d496e75dd297e00f70914e55ec8424413d03f7ba"
+    },
+    {
+      "decision": "PASS",
+      "items": 16,
+      "path": "audit/openimages-25k-audit-02.jpg",
+      "sha256": "6dca498606a4f577fe611264626ef79ee98e5e2c6d218849567024b564661cce"
+    },
+    {
+      "decision": "PASS",
+      "items": 16,
+      "path": "audit/openimages-25k-audit-03.jpg",
+      "sha256": "168e9a0d7e23f0b209db5db81df038e35d8776f9399eb5c6f4dda2742b7685a3"
+    }
+  ],
+  "status": "COMPLETE"
+}

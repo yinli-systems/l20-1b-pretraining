@@ -106,14 +106,20 @@ class SwiGLU(nn.Module):
 
 
 class Block(nn.Module):
-    def __init__(self, width: int, heads: int, ffn_width: int) -> None:
+    def __init__(
+        self,
+        width: int,
+        heads: int,
+        ffn_width: int,
+        layer_scale_init: float = 1e-5,
+    ) -> None:
         super().__init__()
         self.attention_norm = nn.LayerNorm(width, eps=1e-6)
         self.attention = Attention(width, heads)
         self.ffn_norm = nn.LayerNorm(width, eps=1e-6)
         self.ffn = SwiGLU(width, ffn_width)
-        self.attention_scale = nn.Parameter(torch.full((width,), 1e-5))
-        self.ffn_scale = nn.Parameter(torch.full((width,), 1e-5))
+        self.attention_scale = nn.Parameter(torch.full((width,), layer_scale_init))
+        self.ffn_scale = nn.Parameter(torch.full((width,), layer_scale_init))
 
     def forward_one(self, inputs: Tensor) -> Tensor:
         inputs = inputs + self.attention_scale * self.attention(self.attention_norm(inputs))
@@ -136,6 +142,7 @@ class VisionTransformer(nn.Module):
         projection_dim: int,
         activation_checkpointing: bool,
         checkpoint_every_n_blocks: int = 1,
+        layer_scale_init: float = 1e-5,
     ) -> None:
         super().__init__()
         if image_size % patch_size:
@@ -152,7 +159,7 @@ class VisionTransformer(nn.Module):
         self.class_token = nn.Parameter(torch.empty(1, 1, width))
         self.position = nn.Parameter(torch.empty(1, 1 + grid * grid, width))
         self.blocks = nn.ModuleList(
-            [Block(width, heads, ffn_width) for _ in range(depth)]
+            [Block(width, heads, ffn_width, layer_scale_init) for _ in range(depth)]
         )
         self.norm = nn.LayerNorm(width, eps=1e-6)
         self.projection = nn.Linear(width, projection_dim, bias=False)

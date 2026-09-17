@@ -1,8 +1,8 @@
 # Vision 1B pretraining qualification
 
-This directory contains a bounded systems qualification for a DINO-style
-ViT-g/14 vision backbone. It is not a trained image model and does not admit a
-dataset to training.
+This directory contains a synthetic systems qualification and a bounded
+real-image training pilot for a DINO-style ViT-g/14 vision backbone. It is not
+a released or corpus-scale pretrained image model.
 
 The first gate uses deterministic synthetic tensors to answer only whether an
 approximately 1.1B-parameter student plus an equally sized frozen teacher can
@@ -21,9 +21,36 @@ Synthetic throughput is an engineering measurement. It excludes image decode,
 augmentation, storage and data-loader costs and cannot support an accuracy,
 quality, convergence, or pretraining-completion claim.
 
-Formal training remains blocked until an immutable image corpus passes source,
-license, attribution, duplicate/benchmark-overlap, integrity, quality and split
-audits. ImageNet also requires authorized access under its terms.
+Corpus-scale training remains blocked pending a much larger admitted corpus,
+benchmark-overlap analysis, preregistered downstream evaluation, and a faithful
+full DINOv2/iBOT implementation. ImageNet also requires authorized access under
+its terms.
+
+## Bounded real-image pilot
+
+The admitted pilot uses a deterministic 25,000-image subset of the Open Images
+V6 train split. The acquisition receipt freezes the official metadata file,
+selection seed, exact 25,000-row manifest, per-image bytes and SHA-256 hashes,
+license and attribution fields, decode/integrity checks, exact-file deduplication,
+and a manual review of all 64 cells in four deterministic contact sheets. The
+sample contains people and minors and includes non-explicit adult imagery, so
+admission is limited to this internal representation-learning pilot. A 64-image
+review cannot establish the suitability or legal status of every image.
+
+The real objective uses a three-layer DINO projection head, row-normalized
+prototypes, Sinkhorn teacher assignments, an EMA teacher, and KoLeo loss on raw
+normalized backbone CLS tokens. FP16 compute uses FP32 parameters, reductions,
+loss and optimizer state with static loss scaling. Every run fails closed on
+non-finite gradients, low feature diversity, sample-invariant teacher logits,
+near-uniform teacher assignments, median end-to-end MFU below 50%, or checkpoint
+identity drift.
+
+The 4xRTX-4090 batch-80 qualification in job `1596192` completed 25 real-image
+steps without representation or teacher collapse. Loss fell from 9.25 to 8.97,
+the final feature nearest-neighbor distance reached 1.07, and final teacher
+entropy was 8.792 versus the 8.961 ceiling. Its median end-to-end MFU was only
+49.4005%, so the efficiency gate rejected it even though the step-25 checkpoint
+was saved. This negative result is retained rather than rounded up to a pass.
 
 ## Qualified runtime recipe
 

@@ -1,0 +1,140 @@
+{
+  "claim_boundary": "This is a bounded 25,000-image systems and method pilot. It does not establish downstream representation quality, full DINOv2/iBOT fidelity, corpus-scale pretraining, release readiness, or superiority over another model.",
+  "current_source": {
+    "acquire_openimages_25k.py_sha256": "4aa0b179a3187d2f99e9cf773f17783cbd5070ec5c2371988da78bc5a8a192f1",
+    "finalize_openimages_audit.py_sha256": "0f2759baecd3e106cc43e0761181729cdcb190d89890c4db8c9fd8c19e56c94c",
+    "train_dino_real.py_sha256": "7fa0661e0a507a7884a7f42cb4541d3cc3aac913622df14a0c3900eacba9d5ca",
+    "vitg14_preflight.py_sha256": "321359bb81fee1922a87697583ca7db0f2479afefa8ad31fa05740f8815b3575",
+    "vitg14_real_dino_4x5090.sbatch_sha256": "adf46159a652395854a51679fbe209bd46c1a3e35c9286566b7b3b50b7a81913"
+  },
+  "data_admission": {
+    "acquisition_receipt_sha256": "f441eb8bc42408d7add046c4cfd907b77d4da06004e2e3f7c2043b726359012d",
+    "admitted_unique_images": 25000,
+    "audit_decision": "PASS_FOR_BOUNDED_SELF_SUPERVISED_RESEARCH_PILOT",
+    "audit_limits": [
+      "People and minors are present.",
+      "Non-explicit adult or suggestive imagery is present.",
+      "A deterministic 64-image review cannot prove suitability or license validity for every admitted image."
+    ],
+    "candidate_images": 28000,
+    "dataset": "Open Images V6 train",
+    "fixed_visual_audit_items": 64,
+    "manifest_sha256": "5241043cdaf73cfd5edfe9183e444e2f29a559162486f0f24af6c7539a363653",
+    "metadata_bytes": 638407721,
+    "metadata_sha256": "05f3d68dbbb03728d1a37e51479f4f35c062b871e1a6cae8c4cefbe0e0c80ed0",
+    "protocol_sha256": "15df80cc6d2c5243795a811653576741511bddc517f0f9ae7b47e73905c6e01f",
+    "visual_audit_sha256": "de1f8a8966dba8e70a344b0771ecdf22a57ccb507b2e50d695bea6366e0f9c66"
+  },
+  "next_gate": "Run one pending four-GPU qualification. Only a run passing semantic, finite-state, checkpoint-identity and median end-to-end MFU >= 0.50 gates may resume from step 25 to step 250.",
+  "qualification_frontier": [
+    {
+      "configuration": "superseded simplified BF16 head, batch 64",
+      "corrected_median_end_to_end_mfu_after_step_10": 0.5647780474193314,
+      "hardware": "4xRTX 5090",
+      "job_id": 1596008,
+      "note": "The original log used a 165.2 TFLOP/s denominator. The corrected 5090 non-sparse peak is 209.5 TFLOP/s. Systems efficiency passed, but the method did not.",
+      "status": "REJECT_TEACHER_AND_FEATURE_COLLAPSE_AT_STEP_17"
+    },
+    {
+      "configuration": "superseded simplified BF16 head, batch 64",
+      "corrected_median_end_to_end_mfu_after_step_10": 0.4770716877020072,
+      "hardware": "4xRTX 4090",
+      "job_id": 1596015,
+      "note": "The original log used an 82.6 TFLOP/s denominator. The corrected 4090 non-sparse peak is 165.2 TFLOP/s.",
+      "status": "REJECT_TEACHER_AND_FEATURE_COLLAPSE_AT_STEP_17"
+    },
+    {
+      "configuration": "official-shape three-layer head with parametrized weight normalization",
+      "job_id": 1596085,
+      "status": "REJECT_COMPILE_BACKWARD_DTYPE_ERROR_BEFORE_STEP_1"
+    },
+    {
+      "completed_steps": 9,
+      "configuration": "explicit normalized prototypes, FP16, layer scale 0.001, batch 80",
+      "hardware": "4xRTX 4090",
+      "job_id": 1596135,
+      "last_feature_nearest_neighbor_distance": 0.04440847970545292,
+      "last_teacher_entropy": 9.01091194152832,
+      "observed_median_end_to_end_mfu": 0.4958377640917744,
+      "status": "REJECT_SAMPLE_INVARIANT_TEACHER_AT_STEP_10"
+    },
+    {
+      "configuration": "immediate strict teacher gate, layer scale 0.001, batch 80",
+      "hardware": "4xRTX 4090",
+      "job_id": 1596161,
+      "observed_teacher_entropy_range": [
+        9.00526,
+        9.0061
+      ],
+      "status": "REJECT_TEACHER_ENTROPY_AT_STEP_1"
+    },
+    {
+      "checkpoint_promoted": false,
+      "checkpoint_saved": "step-000025",
+      "completed_steps": 25,
+      "configuration": "FP16, layer scale 0.01, batch 80, max-autotune-no-cudagraphs",
+      "final_feature_nearest_neighbor_distance": 1.0699719786643982,
+      "final_loss": 8.974748611450195,
+      "final_teacher_cross_sample_logit_std": 0.027320168912410736,
+      "final_teacher_entropy": 8.792009353637695,
+      "hardware": "4xRTX 4090",
+      "initial_loss": 9.249338150024414,
+      "job_id": 1596192,
+      "median_end_to_end_mfu": 0.4940053198946,
+      "note": "The checkpoint predates the corrected hardware-neutral protocol identity and is retained as negative evidence only.",
+      "peak_memory_reserved_bytes": 21835546624,
+      "status": "PASS_SEMANTICS_REJECT_MFU"
+    },
+    {
+      "configuration": "FP16, layer scale 0.01, batch 96",
+      "hardware": "4xRTX 4090",
+      "job_id": 1596236,
+      "median_end_to_end_mfu_after_step_10": 0.4116597363567929,
+      "peak_memory_reserved_bytes": 24580718592,
+      "status": "REJECT_THROUGHPUT_AND_CANCELLED_AFTER_STEP_11"
+    },
+    {
+      "configuration": "CUDA Graph compile screen",
+      "job_id": 1596277,
+      "remediation": "Added max-autotune to the admitted compile-mode CLI choices.",
+      "status": "REJECT_ARGUMENT_WHITELIST_BEFORE_TRAINING"
+    },
+    {
+      "configuration": "FP16, layer scale 0.01, batch 80, max-autotune with CUDA Graphs",
+      "hardware": "4xRTX 4090",
+      "job_id": 1596285,
+      "status": "PENDING_CONTIGUOUS_FOUR_GPU_CAPACITY"
+    },
+    {
+      "configuration": "FP16, layer scale 0.01, batch 64, max-autotune-no-cudagraphs",
+      "hardware": "4xRTX 5090",
+      "job_id": 1596084,
+      "status": "PENDING_CONTIGUOUS_FOUR_GPU_CAPACITY"
+    }
+  ],
+  "recorded_at": "2026-09-17T06:27:07+04:00",
+  "scope": "Audited 25,000-image Open Images pilot for a 1.146B-parameter DINO-style ViT-g/14",
+  "selected_method": {
+    "architecture": "ViT-g/14 width 1536 depth 40 heads 24 SwiGLU 4096",
+    "bottleneck_dim": 384,
+    "global_views": 2,
+    "layer_scale_init": 0.01,
+    "local_views": 8,
+    "objective": "DINO class-token cross-view loss with three-layer head, row-normalized prototypes, Sinkhorn teacher assignments, EMA teacher, and KoLeo on raw normalized CLS tokens",
+    "parallelism": "four-way FSDP2 with per-block activation checkpointing",
+    "precision": "FP16 compute with FP32 parameters, reductions, loss and optimizer state; static loss scale 1024",
+    "promotion_gates": {
+      "all_steps_finite": true,
+      "checkpoint_resume_exact_identity_required": true,
+      "feature_nearest_neighbor_distance_minimum": 0.0001,
+      "gradient_norm_minimum": 1e-05,
+      "median_end_to_end_mfu_minimum": 0.5,
+      "teacher_cross_sample_logit_std_minimum": 1e-05,
+      "teacher_entropy_ceiling": 8.960913347279288
+    },
+    "prototypes": 8192,
+    "student_parameters": 1146046336,
+    "teacher_parameters": 1146046336
+  },
+  "status": "REAL_DATA_TRAINING_STARTED_EFFICIENCY_QUALIFICATION_IN_PROGRESS"
+}

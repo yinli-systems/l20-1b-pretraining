@@ -1,0 +1,61 @@
+{
+  "schema_version": "2026-09-17-v1",
+  "status": "authorized_bounded_real_image_self_distillation_pilot",
+  "authorized_by_user": true,
+  "authorized_at": "2026-09-17",
+  "purpose": "Replace the synthetic throughput proxy with a bounded, resumable DINO class-token self-distillation pilot on real Open Images pixels.",
+  "source": {
+    "dataset": "Open Images V6 train",
+    "official_description": "https://storage.googleapis.com/openimages/web/factsfigures.html",
+    "image_metadata_url": "https://storage.googleapis.com/openimages/2018_04/train/train-images-boxable-with-rotation.csv",
+    "image_metadata_expected_bytes": 638407721,
+    "image_url_template": "https://open-images-dataset.s3.amazonaws.com/train/{image_id}.jpg",
+    "required_image_license": "https://creativecommons.org/licenses/by/2.0/",
+    "selection_source": "The 24 train image IDs in the two fixed train sheets of the completed Open Images evidence-router visual audit.",
+    "selection_source_path": "../L20-VL-1.2B/evidence/openimages-evidence-router-pilot-v1-generation.json",
+    "selection_source_sha256": "2537db4402de8f8bee1717c95a9f4d3772561481212bea5472a9d65fef71d46c",
+    "visual_audit_path": "../L20-VL-1.2B/evidence/openimages-evidence-router-pilot-v1-primary-visual-audit.json",
+    "visual_audit_sha256": "d242e83b910d95d63ac378019d26a6a2b489914e7c77e2391e2e749ce1506e7f",
+    "allowed_split": "train",
+    "expected_unique_images": 24
+  },
+  "data_gates": {
+    "metadata_size_exact": true,
+    "selected_rows_unique": true,
+    "license_exact_match": true,
+    "attribution_fields_preserved": true,
+    "image_sha256_recorded": true,
+    "all_images_decode_rgb": true,
+    "minimum_width_and_height": 224,
+    "manifest_hash_frozen": true,
+    "development_and_test_images_prohibited": true
+  },
+  "objective": {
+    "name": "DINO class-token cross-view self-distillation pilot",
+    "bottleneck_dim": 256,
+    "weight_normalized_prototypes": 8192,
+    "global_views": 2,
+    "local_views": 8,
+    "student_temperature": 0.1,
+    "teacher_temperature": 0.04,
+    "teacher_center_momentum": 0.9,
+    "teacher_ema_start": 0.996,
+    "teacher_ema_end": 1.0
+  },
+  "promotion_gates": {
+    "all_steps_finite": true,
+    "median_end_to_end_mfu_minimum": 0.5,
+    "teacher_entropy_margin_below_log_prototypes": 0.05,
+    "gradient_norm_minimum": 0.00001,
+    "checkpoint_resume_exact_identity_required": true
+  },
+  "pilot_limits": {
+    "gpus": 4,
+    "hardware": "RTX 5090",
+    "qualification_steps": 12,
+    "initial_training_steps": 250,
+    "checkpoint_every_steps": 25,
+    "max_wall_seconds": 7200
+  },
+  "claim_boundary": "This is a systems and optimization pilot on 24 repeatedly augmented real images. Finite loss, throughput, or a falling training objective does not establish representation quality, generalization, full DINOv2/iBOT fidelity, dataset scale, or superiority over any model."
+}

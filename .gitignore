@@ -42,3 +42,6 @@ events.out.tfevents.*
 *.safetensors
 *.bin
 hf-release/
+
+# Fixed visual-audit contact sheets can contain people and licensed images.
+vision1b/evidence/**/*.jpg
