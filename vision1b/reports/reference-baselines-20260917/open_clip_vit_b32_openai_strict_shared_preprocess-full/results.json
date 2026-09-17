@@ -1,0 +1,204 @@
+{
+  "base_protocol_sha256": "0ceb7a210d8d0e598011e2e590dfee129bd03d9dc69871c6a7ef66b6309e6af5",
+  "batch_size": 512,
+  "claim_boundary": "This is an inference-only OpenAI CLIP reference under the exact shared ImageNet-normalized preprocessing and frozen-feature classifiers used by the bounded Vision 1B diagnostic. OpenAI CLIP was trained on roughly 400 million image-text pairs and normally uses CLIP-specific normalization, so this primary result compares strict shared-protocol transfer but not data efficiency, compute efficiency, training method, or best native-preprocessing CLIP performance.",
+  "evaluation_source_sha256": "c2223abd3e892f906a25ba18d320214033c83958b60a959af2f7d770d6cc15e1",
+  "feature_dimension": 512,
+  "identities": {
+    "dataset_files": {
+      "fashion_mnist": {
+        "t10k-images-idx3-ubyte.gz": {
+          "bytes": 4422102,
+          "md5": "bef4ecab320f06d8554ea6380940ec79",
+          "sha256": "346e55b948d973a97e58d2351dde16a484bd415d4595297633bb08f03db6a073"
+        },
+        "t10k-labels-idx1-ubyte.gz": {
+          "bytes": 5148,
+          "md5": "bb300cfdad3c16e7a12a480ee83cd310",
+          "sha256": "67da17c76eaffca5446c3361aaab5c3cd6d1c2608764d35dfb1850b086bf8dd5"
+        },
+        "train-images-idx3-ubyte.gz": {
+          "bytes": 26421880,
+          "md5": "8d4fb7e6c68d591d4c3dfef9ec88bf0d",
+          "sha256": "3aede38d61863908ad78613f6a32ed271626dd12800ba2636569512369268a84"
+        },
+        "train-labels-idx1-ubyte.gz": {
+          "bytes": 29515,
+          "md5": "25c81989df183df01b3e8a0aad5dffbe",
+          "sha256": "a04f17134ac03560a47e3764e11b92fc97de4d1bfaf8ba1a3aa29af54cc90845"
+        }
+      },
+      "mnist": {
+        "t10k-images-idx3-ubyte.gz": {
+          "bytes": 1648877,
+          "md5": "9fb629c4189551a2d022fa330f9573f3",
+          "sha256": "8d422c7b0a1c1c79245a5bcf07fe86e33eeafee792b84584aec276f5a2dbc4e6"
+        },
+        "t10k-labels-idx1-ubyte.gz": {
+          "bytes": 4542,
+          "md5": "ec29112dd5afa0611ce80d1b7f02629c",
+          "sha256": "f7ae60f92e00ec6debd23a6088c31dbd2371eca3ffa0defaefb259924204aec6"
+        },
+        "train-images-idx3-ubyte.gz": {
+          "bytes": 9912422,
+          "md5": "f68b3c2dcbeaaa9fbdd348bbdeb94873",
+          "sha256": "440fcabf73cc546fa21475e81ea370265605f56be210a4024d2ca8f203523609"
+        },
+        "train-labels-idx1-ubyte.gz": {
+          "bytes": 28881,
+          "md5": "d53e105ee54ea40749a09fcbcd1e9432",
+          "sha256": "3552534a0a558bbed6aed32b30c495cca23d567ec52cac8be1a0730e8010255c"
+        }
+      }
+    },
+    "python_wheels": {
+      "ftfy-6.3.1-py3-none-any.whl": {
+        "bytes": 44821,
+        "sha256": "7c70eb532015cd2f9adb53f101fb6c7945988d023a085d127d1573dc49dd0083"
+      },
+      "open_clip_torch-3.3.0-py3-none-any.whl": {
+        "bytes": 1547268,
+        "sha256": "c549ad5ed6bfc119cc11105033c0a2b9d7a2a4afeb40a58a09aab3da1a0043ce"
+      },
+      "timm-1.0.29-py3-none-any.whl": {
+        "bytes": 2633555,
+        "sha256": "4266486e355c9beb9432e689de580d09e2efe7fa92a9a79e76c03e7763eac724"
+      },
+      "torchvision-0.26.0+cu128-cp312-cp312-manylinux_2_28_x86_64.whl": {
+        "bytes": 8057226,
+        "sha256": "ccf26b4b659cfce6f2208cb8326071d51c70219a34856dfdf468d1e19af52c0d"
+      },
+      "wcwidth-0.2.13-py2.py3-none-any.whl": {
+        "bytes": 34166,
+        "sha256": "3da69048e4540d84af32131829ff948f1e022c1c6bdb8d6102117aac784f6859"
+      }
+    },
+    "weights_bytes": 353976522,
+    "weights_sha256": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af"
+  },
+  "model_id": "open_clip_vit_b32_openai_strict_shared_preprocess",
+  "parameters": 151277313,
+  "python_versions": {
+    "ftfy": "6.3.1",
+    "open_clip": "3.3.0",
+    "timm": "1.0.29",
+    "torchvision": "0.26.0+cu128"
+  },
+  "reference_protocol_sha256": "0319c8df1ce0ccfc1180488dadda925dc2cd4e951fbcfbcbbe8b53f907f2d720",
+  "results": {
+    "fashion_mnist": {
+      "feature_extraction_seconds": {
+        "test": 0.9249298553913832,
+        "train": 5.805423186160624
+      },
+      "knn": {
+        "k": 20,
+        "temperature": 0.07,
+        "top1": 0.8714,
+        "top5": 0.9939
+      },
+      "ridge_probe": {
+        "selected_lambda": 0.0001,
+        "top1": 0.8514000177383423,
+        "top5": 0.9936000108718872,
+        "validation_candidates": [
+          {
+            "lambda": 0.0001,
+            "validation_top1": 0.8540833592414856,
+            "validation_top5": 0.9960833191871643
+          },
+          {
+            "lambda": 0.001,
+            "validation_top1": 0.8149166703224182,
+            "validation_top5": 0.9945833086967468
+          },
+          {
+            "lambda": 0.01,
+            "validation_top1": 0.7666666507720947,
+            "validation_top5": 0.9904999732971191
+          },
+          {
+            "lambda": 0.1,
+            "validation_top1": 0.7142500281333923,
+            "validation_top5": 0.9815833568572998
+          },
+          {
+            "lambda": 1.0,
+            "validation_top1": 0.6955000162124634,
+            "validation_top5": 0.9797499775886536
+          },
+          {
+            "lambda": 10.0,
+            "validation_top1": 0.6938333511352539,
+            "validation_top5": 0.9793333411216736
+          },
+          {
+            "lambda": 100.0,
+            "validation_top1": 0.6934999823570251,
+            "validation_top5": 0.9792500138282776
+          }
+        ]
+      },
+      "test_examples": 10000,
+      "train_examples": 60000
+    },
+    "mnist": {
+      "feature_extraction_seconds": {
+        "test": 0.9260627562180161,
+        "train": 5.581260368227959
+      },
+      "knn": {
+        "k": 20,
+        "temperature": 0.07,
+        "top1": 0.9644,
+        "top5": 0.9969
+      },
+      "ridge_probe": {
+        "selected_lambda": 0.0001,
+        "top1": 0.9556999802589417,
+        "top5": 0.9987999796867371,
+        "validation_candidates": [
+          {
+            "lambda": 0.0001,
+            "validation_top1": 0.9529843330383301,
+            "validation_top5": 0.9984161257743835
+          },
+          {
+            "lambda": 0.001,
+            "validation_top1": 0.8942147493362427,
+            "validation_top5": 0.9949149489402771
+          },
+          {
+            "lambda": 0.01,
+            "validation_top1": 0.7384127974510193,
+            "validation_top5": 0.9779926538467407
+          },
+          {
+            "lambda": 0.1,
+            "validation_top1": 0.44706568121910095,
+            "validation_top5": 0.9435645341873169
+          },
+          {
+            "lambda": 1.0,
+            "validation_top1": 0.11237078905105591,
+            "validation_top5": 0.6954818367958069
+          },
+          {
+            "lambda": 10.0,
+            "validation_top1": 0.11237078905105591,
+            "validation_top5": 0.5180893540382385
+          },
+          {
+            "lambda": 100.0,
+            "validation_top1": 0.11237078905105591,
+            "validation_top5": 0.5174224972724915
+          }
+        ]
+      },
+      "test_examples": 10000,
+      "train_examples": 60000
+    }
+  },
+  "status": "COMPLETE",
+  "visual_parameters": 87849216
+}

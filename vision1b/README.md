@@ -101,6 +101,43 @@ Both datasets are low-resolution grayscale controls. These results cannot
 establish ImageNet performance, broad visual quality, release readiness or
 superiority over another model.
 
+## Frozen reference comparison
+
+Six official pretrained references completed the same full frozen-feature
+protocol with exit code 0 and verified artifact hashes.  Every row below uses
+the same Fashion-MNIST and MNIST files, 224-pixel ImageNet-normalized
+preprocessing, weighted 20-NN and ridge-probe implementation.  The four-score
+mean is the unweighted mean of the four displayed top-1 scores.
+
+| Frozen backbone | Fashion-MNIST 20-NN | Fashion-MNIST ridge | MNIST 20-NN | MNIST ridge | Four-score mean |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Vision 1B student, 25k images / step 250 | 67.10% | 69.91% | 63.61% | 70.76% | 67.85% |
+| DINOv2-g/14 | 91.57% | 91.95% | 92.39% | 96.37% | **93.07%** |
+| DINOv2-B/14 | 90.22% | 89.92% | 94.72% | 96.85% | 92.93% |
+| DINOv2-L/14 | 90.61% | 90.66% | 91.50% | 95.12% | 91.97% |
+| DINOv2-S/14 | 89.54% | 88.79% | 94.09% | 95.38% | 91.95% |
+| Supervised ImageNet-1K ResNet-50 | 88.47% | 87.48% | 95.10% | 96.13% | 91.80% |
+| OpenAI CLIP ViT-B/32, strict shared preprocessing | 87.14% | 85.14% | 96.44% | 95.57% | 91.07% |
+
+The bounded Vision 1B student trails the lowest reference by 23.2275
+percentage points and DINOv2-g/14 by 25.2250 points.  It therefore passed its
+preregistered random/teacher promotion gate and learned transferable features,
+but it does not approach these mature pretrained representations under this
+diagnostic.  DINOv2, CLIP and supervised ResNet use different and vastly larger
+training regimes, so the table does not compare data efficiency, compute
+efficiency, native preprocessing or overall model quality.
+
+The OpenCLIP runtime warns at empty model construction that pretrained weights
+were not loaded by `create_model`; the evaluator then verifies the official JIT
+file's exact byte length and SHA-256, removes only its three metadata buffers,
+and calls `load_state_dict(..., strict=True)` before evaluation.  This warning
+does not indicate a random-weight result.
+
+Jobs `1598045`, `1598047`, `1598049`, `1598051`, `1598088` and `1598116`
+produced the full reference rows.  Exact result JSON, source receipts, GPU
+telemetry, remote manifests and the computed comparison receipt are preserved
+in [`reports/reference-baselines-20260917/`](reports/reference-baselines-20260917/).
+
 ## Qualified runtime recipe
 
 The fastest measured four-GPU recipe now uses RTX 5090, four-way FSDP2, BF16,

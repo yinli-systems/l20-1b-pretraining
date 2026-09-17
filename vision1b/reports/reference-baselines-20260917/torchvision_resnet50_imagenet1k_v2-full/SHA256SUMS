@@ -1,0 +1,3 @@
+be6aa57135097b05d961cd3954654fd9b4722c66c02ca34a7eae8c979c922bd2  /ssd/scxi253/vision1b-research/evaluations/reference-baselines-v1/torchvision_resnet50_imagenet1k_v2-full/gpu.csv
+3d68039fdfd51842ff6954597915612bd9c53424db5e0fc209582a17567b37f8  /ssd/scxi253/vision1b-research/evaluations/reference-baselines-v1/torchvision_resnet50_imagenet1k_v2-full/results.json
+7db8b2d34dd9a0c1de5d6e64eee16977d751dd493e56543ab2797d379036317d  /ssd/scxi253/vision1b-research/evaluations/reference-baselines-v1/torchvision_resnet50_imagenet1k_v2-full/source.sha256

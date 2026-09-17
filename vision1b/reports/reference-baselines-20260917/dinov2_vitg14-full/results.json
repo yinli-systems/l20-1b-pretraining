@@ -1,0 +1,177 @@
+{
+  "base_protocol_sha256": "0ceb7a210d8d0e598011e2e590dfee129bd03d9dc69871c6a7ef66b6309e6af5",
+  "batch_size": 64,
+  "claim_boundary": "These are inference-only reference baselines under the same frozen-feature datasets, preprocessing, classifiers, splits, and metrics as the bounded Vision 1B diagnostic. The DINOv2 models were pretrained on LVD-142M, so the results compare representation quality under this probe but not data efficiency, compute efficiency, training method, or release readiness.",
+  "compile": false,
+  "evaluation_source_sha256": "ef9012363224feb324355e3d92776ee1c64b83b1aacb98777ebb870213dbbbdb",
+  "feature_dimension": 1536,
+  "identities": {
+    "dataset_files": {
+      "fashion_mnist": {
+        "t10k-images-idx3-ubyte.gz": {
+          "bytes": 4422102,
+          "md5": "bef4ecab320f06d8554ea6380940ec79",
+          "sha256": "346e55b948d973a97e58d2351dde16a484bd415d4595297633bb08f03db6a073"
+        },
+        "t10k-labels-idx1-ubyte.gz": {
+          "bytes": 5148,
+          "md5": "bb300cfdad3c16e7a12a480ee83cd310",
+          "sha256": "67da17c76eaffca5446c3361aaab5c3cd6d1c2608764d35dfb1850b086bf8dd5"
+        },
+        "train-images-idx3-ubyte.gz": {
+          "bytes": 26421880,
+          "md5": "8d4fb7e6c68d591d4c3dfef9ec88bf0d",
+          "sha256": "3aede38d61863908ad78613f6a32ed271626dd12800ba2636569512369268a84"
+        },
+        "train-labels-idx1-ubyte.gz": {
+          "bytes": 29515,
+          "md5": "25c81989df183df01b3e8a0aad5dffbe",
+          "sha256": "a04f17134ac03560a47e3764e11b92fc97de4d1bfaf8ba1a3aa29af54cc90845"
+        }
+      },
+      "mnist": {
+        "t10k-images-idx3-ubyte.gz": {
+          "bytes": 1648877,
+          "md5": "9fb629c4189551a2d022fa330f9573f3",
+          "sha256": "8d422c7b0a1c1c79245a5bcf07fe86e33eeafee792b84584aec276f5a2dbc4e6"
+        },
+        "t10k-labels-idx1-ubyte.gz": {
+          "bytes": 4542,
+          "md5": "ec29112dd5afa0611ce80d1b7f02629c",
+          "sha256": "f7ae60f92e00ec6debd23a6088c31dbd2371eca3ffa0defaefb259924204aec6"
+        },
+        "train-images-idx3-ubyte.gz": {
+          "bytes": 9912422,
+          "md5": "f68b3c2dcbeaaa9fbdd348bbdeb94873",
+          "sha256": "440fcabf73cc546fa21475e81ea370265605f56be210a4024d2ca8f203523609"
+        },
+        "train-labels-idx1-ubyte.gz": {
+          "bytes": 28881,
+          "md5": "d53e105ee54ea40749a09fcbcd1e9432",
+          "sha256": "3552534a0a558bbed6aed32b30c495cca23d567ec52cac8be1a0730e8010255c"
+        }
+      }
+    },
+    "dinov2_source_commit": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+    "weights_bytes": 4546108579,
+    "weights_sha256": "baf8467e50af277596bbbafa06887c177ee899ab46033649c383577d7e9309d3"
+  },
+  "model_id": "dinov2_vitg14",
+  "parameters": 1136480768,
+  "reference_protocol_sha256": "8046b57b37c0f8432af5207d6b34ea616d2a122e650e9b0f47c1e67f41b5e5d3",
+  "results": {
+    "fashion_mnist": {
+      "feature_extraction_seconds": {
+        "test": 39.31254096003249,
+        "train": 235.81231169798411
+      },
+      "knn": {
+        "k": 20,
+        "temperature": 0.07,
+        "top1": 0.9157,
+        "top5": 0.9957
+      },
+      "ridge_probe": {
+        "selected_lambda": 0.0001,
+        "top1": 0.9194999933242798,
+        "top5": 0.9977999925613403,
+        "validation_candidates": [
+          {
+            "lambda": 0.0001,
+            "validation_top1": 0.9204166531562805,
+            "validation_top5": 0.9984166622161865
+          },
+          {
+            "lambda": 0.001,
+            "validation_top1": 0.9024999737739563,
+            "validation_top5": 0.9986666440963745
+          },
+          {
+            "lambda": 0.01,
+            "validation_top1": 0.8814166784286499,
+            "validation_top5": 0.9973333477973938
+          },
+          {
+            "lambda": 0.1,
+            "validation_top1": 0.8637499809265137,
+            "validation_top5": 0.9939166903495789
+          },
+          {
+            "lambda": 1.0,
+            "validation_top1": 0.8549166917800903,
+            "validation_top5": 0.9915833473205566
+          },
+          {
+            "lambda": 10.0,
+            "validation_top1": 0.8535833358764648,
+            "validation_top5": 0.9912499785423279
+          },
+          {
+            "lambda": 100.0,
+            "validation_top1": 0.8531666398048401,
+            "validation_top5": 0.9912499785423279
+          }
+        ]
+      },
+      "test_examples": 10000,
+      "train_examples": 60000
+    },
+    "mnist": {
+      "feature_extraction_seconds": {
+        "test": 39.313388294074684,
+        "train": 235.88248085719533
+      },
+      "knn": {
+        "k": 20,
+        "temperature": 0.07,
+        "top1": 0.9239,
+        "top5": 0.9976
+      },
+      "ridge_probe": {
+        "selected_lambda": 0.0001,
+        "top1": 0.963699996471405,
+        "top5": 0.9991999864578247,
+        "validation_candidates": [
+          {
+            "lambda": 0.0001,
+            "validation_top1": 0.9636545777320862,
+            "validation_top5": 0.9989163279533386
+          },
+          {
+            "lambda": 0.001,
+            "validation_top1": 0.9203901290893555,
+            "validation_top5": 0.99616539478302
+          },
+          {
+            "lambda": 0.01,
+            "validation_top1": 0.8226075172424316,
+            "validation_top5": 0.9909136295318604
+          },
+          {
+            "lambda": 0.1,
+            "validation_top1": 0.6777259111404419,
+            "validation_top5": 0.9739079475402832
+          },
+          {
+            "lambda": 1.0,
+            "validation_top1": 0.24874958395957947,
+            "validation_top5": 0.8526175618171692
+          },
+          {
+            "lambda": 10.0,
+            "validation_top1": 0.11237078905105591,
+            "validation_top5": 0.6369622945785522
+          },
+          {
+            "lambda": 100.0,
+            "validation_top1": 0.11237078905105591,
+            "validation_top5": 0.5174224972724915
+          }
+        ]
+      },
+      "test_examples": 10000,
+      "train_examples": 60000
+    }
+  },
+  "status": "COMPLETE"
+}

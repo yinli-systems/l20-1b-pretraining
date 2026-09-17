@@ -1,0 +1,4 @@
+49ab5aa8d4566dbd2ecf275f4cfc0ee0228c6fab1fe099ab523f67a6ae174e55  /tmp/dinov2-ref-1598049-U3h2jQ/evaluate_frozen_features.py
+ef9012363224feb324355e3d92776ee1c64b83b1aacb98777ebb870213dbbbdb  /tmp/dinov2-ref-1598049-U3h2jQ/evaluate_reference_backbone.py
+0ceb7a210d8d0e598011e2e590dfee129bd03d9dc69871c6a7ef66b6309e6af5  /ssd/scxi253/vision1b-research/source/frozen_eval_protocol_v1.json
+8046b57b37c0f8432af5207d6b34ea616d2a122e650e9b0f47c1e67f41b5e5d3  /ssd/scxi253/vision1b-research/source/reference_baseline_protocol_v1.json
