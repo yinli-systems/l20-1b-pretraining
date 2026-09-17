@@ -1,0 +1,43 @@
+{
+  "admission_after_download": [
+    "bind every compressed shard to its byte length and SHA-256",
+    "verify zstd integrity and JSONL schema",
+    "apply secrets PII and unsafe-content policy",
+    "cross-deduplicate against all web code math science multilingual and evaluation sources",
+    "run exact 13-gram fuzzy and semantic benchmark contamination checks",
+    "tokenize with the frozen model tokenizer and count exact prediction tokens",
+    "preserve train validation and sealed-test isolation",
+    "issue TRAINING_ADMITTED only after quality and random human audits"
+  ],
+  "claim_boundary": "Downloaded Nemotron-CC objects remain raw source material. The published token count, compressed bytes, shard count, or zstd validity do not make them training-admitted tokens for this model.",
+  "download": {
+    "base_url": "https://data.commoncrawl.org",
+    "expected_index_sha256": "d8201c1e05b5e9fecef7678457c172f98a19a25f1dd656cdba1f937e7a29e68e",
+    "expected_objects": 31279,
+    "index_url": "https://data.commoncrawl.org/contrib/Nemotron/Nemotron-CC/data-jsonl.paths.gz",
+    "minimum_free_bytes": 21990232555520,
+    "parallel_downloads": 6,
+    "partition_object_counts": {
+      "high|actual|actual": 2755,
+      "high|synthetic|distill": 939,
+      "high|synthetic|diverse_qa_pairs": 2564,
+      "high|synthetic|extract_knowledge": 1694,
+      "high|synthetic|knowledge_list": 1140,
+      "high|synthetic|wrap_medium": 2016,
+      "low|actual|actual": 1964,
+      "low|synthetic|wrap_medium": 1788,
+      "medium-high|actual|actual": 2454,
+      "medium-low|actual|actual": 4287,
+      "medium|actual|actual": 9678
+    }
+  },
+  "official_evidence": {
+    "compressed_size": "10.4 TiB",
+    "dataset_index": "https://data.commoncrawl.org/contrib/Nemotron/Nemotron-CC/index.html",
+    "published_total_tokens": 6300000000000,
+    "published_unique_actual_tokens": 4400000000000,
+    "published_synthetic_tokens": 1900000000000
+  },
+  "schema": "moe7b-nemotron-cc-acquisition-v1",
+  "status": "DOWNLOAD_PLAN_NOT_ADMITTED"
+}

@@ -100,6 +100,39 @@ The immutable remote source is
 `SOURCE_SHA256SUMS` SHA-256
 `4d182450c0e8097bafd73e44865a736696e5f826f4777d52f5db12e789d414e4`.
 
+## Corpus-scale expansion
+
+The 25,000-image continuation is deliberately bounded. It cannot support a
+claim of large-scale visual pretraining. The first corpus-scale acquisition
+stage therefore targets the official CVDF Open Images train archives: 16
+archives, 1,743,042 reported images, and approximately 513 GB. A one-archive
+smoke job must complete before its dependent full download can run.
+
+Downloaded archives remain `NOT_ADMITTED`. Training admission additionally
+requires an identity-bound metadata join, per-image license and attribution,
+successful RGB decoding and dimension checks, exact and perceptual
+deduplication, downstream split-overlap removal, deterministic content and
+safety audits, and a sealed receipt. The next scale rung is a separately
+filtered DataComp pool; its published small and medium pools contain 12.8M and
+128M samples. Neither published counts nor downloaded bytes are accepted as
+training examples.
+
+The frozen acquisition contract and resumable implementation are
+[`openimages_cvdf_1p7m_protocol_v1.json`](openimages_cvdf_1p7m_protocol_v1.json)
+and [`acquire_openimages_cvdf_1p7m.py`](acquire_openimages_cvdf_1p7m.py).
+Research, scale choices, and promotion boundaries are recorded in
+[`../reports/massive_pretraining_data_expansion_20260917.md`](../reports/massive_pretraining_data_expansion_20260917.md).
+
+Open Images jobs `1598650`/`1598651` are the smoke/full pair. They use immutable
+source `/ssd/scxi253/data-scale-source-20260917-v1`, whose source-manifest
+SHA-256 is `de4f5b0412bf4354f10f6b75809fc2bb5f564f28726bcc2fc72f4924ccb114d3`.
+DataComp-medium metadata jobs `1598663`/`1598664` are a second smoke/full pair.
+They pin all 253 parquet files and 30,638,846,406 bytes at dataset revision
+`8af865e284668a1c52d12846eff0a9d6f1da6ec6`. Their immutable source-manifest
+SHA-256 is `26dff08a9b370ddd8ad7c527cb4a5ab58e05653e2b44895d549ef9864c94a260`.
+Both smoke jobs were scheduler-accepted and were pending priority at submission;
+their dependent full jobs cannot start early.
+
 ## Frozen-feature downstream diagnostic
 
 The preregistered evaluation uses the complete official 60,000-example train

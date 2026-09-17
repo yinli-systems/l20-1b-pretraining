@@ -114,6 +114,37 @@ The current writer remains fail-closed until every receipt advances to
 training today. Expansion toward 5.1T proceeds only after the proxy mixture,
 data identities, systems path, and first 150B gate all pass.
 
+The raw-corpus expansion now has a second independent entry point for the
+official Nemotron-CC release. Its frozen inventory contains 31,279 compressed
+JSONL objects and reports 6.3T tokens in 10.4 TiB: 4.4T globally deduplicated
+real tokens plus 1.9T synthetic tokens. Acquisition prioritizes high and
+medium-high partitions, validates the official path-index identity, tests each
+zstd stream, hashes every object, and stops before the 20 TiB free-space floor.
+A one-object smoke job must pass before the full resumable job can run.
+
+These are raw source tokens and are not automatically part of the 5.1T budget.
+Admission still requires document identities, provenance and license review,
+PII/secrets and safety handling, global cross-source deduplication, benchmark
+contamination checks, exact frozen-tokenizer counts, split isolation, quality
+stratification, and deterministic human audits. The acquisition contract and
+implementation are
+[`nemotron_cc_acquisition_protocol_v1.json`](nemotron_cc_acquisition_protocol_v1.json)
+and [`acquire_nemotron_cc.py`](acquire_nemotron_cc.py).
+
+The completed v8 real-shard benchmark (`1598301`) processed approximately
+64.15M token IDs in 242 seconds, about 265k token IDs/s for one pipeline. This
+proves the current serial builder is far too slow for a 5.1T programme. The
+production transformation stage must therefore shard download, filtering,
+deduplication and tokenization before it can issue a training-admission
+receipt.
+
+Nemotron-CC jobs `1598652`/`1598653` are the one-object smoke and dependent
+full-inventory pair. They use immutable source
+`/ssd/scxi253/data-scale-source-20260917-v1`; its source-manifest SHA-256 is
+`de4f5b0412bf4354f10f6b75809fc2bb5f564f28726bcc2fc72f4924ccb114d3`.
+The smoke was scheduler-accepted and pending priority at submission. The full
+job cannot start until smoke exits successfully.
+
 ## Compute boundary
 
 With the project's strict useful-FLOP numerator and RTX 5090 denominator, a

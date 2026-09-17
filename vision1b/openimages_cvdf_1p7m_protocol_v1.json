@@ -1,0 +1,44 @@
+{
+  "admission_after_download": [
+    "join every archive member to the frozen official image metadata",
+    "retain train split rows with exact CC-BY-2.0 license and attribution fields",
+    "decode RGB and require both dimensions at least 224 pixels",
+    "global exact pixel-byte and perceptual near-image deduplication",
+    "remove downstream validation and test overlaps before packing",
+    "run deterministic visual and safety audits before TRAINING_ADMITTED"
+  ],
+  "claim_boundary": "This contract authorizes resumable acquisition and integrity checks for the official CVDF Open Images train archive. Downloaded bytes are not training-admitted images until the metadata, license, content, deduplication, contamination, split and human-audit gates pass.",
+  "download": {
+    "archive_prefix": "train_",
+    "archive_suffix": ".tar.gz",
+    "base_url": "https://open-images-dataset.s3.amazonaws.com/tar",
+    "expected_archive_count": 16,
+    "parallel_downloads": 4,
+    "shards": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ]
+  },
+  "official_evidence": {
+    "cvdf_repository": "https://github.com/cvdfoundation/open-images-dataset",
+    "download_page": "https://storage.googleapis.com/openimages/web/download_v7.html",
+    "reported_archive_bytes_approx": 513000000000,
+    "reported_train_images": 1743042
+  },
+  "schema": "vision1b-openimages-cvdf-acquisition-v1",
+  "status": "DOWNLOAD_PLAN_NOT_ADMITTED"
+}

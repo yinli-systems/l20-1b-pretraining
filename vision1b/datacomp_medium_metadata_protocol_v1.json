@@ -1,0 +1,34 @@
+{
+  "admission_after_metadata": [
+    "validate parquet schemas and unique sample identifiers",
+    "freeze URL caption and source provenance fields before image retrieval",
+    "apply rights availability robots and removal policy",
+    "download only selected rows with bounded retries and response evidence",
+    "decode images and enforce deterministic resolution and content policy",
+    "perform exact and perceptual global deduplication",
+    "remove downstream validation and test overlaps",
+    "issue TRAINING_ADMITTED only after packed-shard identities and human audits"
+  ],
+  "claim_boundary": "The pinned DataComp medium parquet files are candidate metadata for a 128M-sample pool. Metadata staging is not image acquisition, rights clearance, content validation, training admission, or a claim of 128M usable images.",
+  "dataset": {
+    "expected_metadata_bytes": 30638846406,
+    "expected_parquet_files": 253,
+    "inventory_file": "datacomp_medium_parquet_inventory_v1.jsonl",
+    "inventory_sha256": "bd191b81f5b4d9b9bb7b9a25a033d346a149397b3d01148b868ea208cce69695",
+    "published_pool_samples": 128000000,
+    "repository": "mlfoundations/datacomp_medium",
+    "revision": "8af865e284668a1c52d12846eff0a9d6f1da6ec6"
+  },
+  "download": {
+    "minimum_free_bytes": 10995116277760,
+    "parallel_downloads": 4
+  },
+  "official_evidence": {
+    "datacomp_source_commit": "4a8df1992566ef8334773f7152e1855b1f716162",
+    "repository": "https://github.com/mlfoundations/datacomp",
+    "reported_image_tar_bytes": "4.5 TB",
+    "reported_parquet_bytes": "30 GB"
+  },
+  "schema": "vision1b-datacomp-medium-metadata-v1",
+  "status": "METADATA_DOWNLOAD_PLAN_NOT_ADMITTED"
+}
