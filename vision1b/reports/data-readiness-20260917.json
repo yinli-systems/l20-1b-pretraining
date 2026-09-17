@@ -24,8 +24,8 @@
       "source_manifest": "PASS"
     }
   },
-  "claim_boundary": "Acquisition and training jobs are scheduler-pending with no allocation. There are no downloaded Open Images archives, staged DataComp parquet files, admitted images, packed training shards, or TRAINING_ADMITTED receipt yet.",
-  "collected_at_utc": "2026-09-17T16:24:48Z",
+  "claim_boundary": "Open Images smoke is allocated but has not downloaded bytes; training and DataComp remain scheduler-pending. There are no completed Open Images archives, staged DataComp parquet files, admitted images, packed training shards, or TRAINING_ADMITTED receipt yet.",
+  "collected_at_utc": "2026-09-17T16:31:30Z",
   "datacomp_medium_metadata": {
     "full_job": {
       "dependency": "afterok:1598663",
@@ -37,7 +37,7 @@
     "smoke_job": {
       "job_id": 1598663,
       "reason": "Priority",
-      "scheduler_estimated_start": "2026-09-18T20:06:39",
+      "scheduler_estimated_start": "2026-09-18T03:07:50",
       "state": "PENDING"
     },
     "source_manifest_sha256": "26dff08a9b370ddd8ad7c527cb4a5ab58e05653e2b44895d549ef9864c94a260",
@@ -65,10 +65,23 @@
     "reported_archive_bytes_approx": 513000000000,
     "reported_images": 1743042,
     "smoke_job": {
+      "allocated_gpu": {
+        "count": 1,
+        "model": "NVIDIA GeForce RTX 4090",
+        "uuid": "GPU-be1e7896-76e6-286a-f65f-3d2fea0f04a3"
+      },
       "job_id": 1598650,
-      "reason": "Priority",
-      "scheduler_estimated_start": "2026-09-18T03:07:50",
-      "state": "PENDING"
+      "live_observation": {
+        "elapsed": "00:11:06",
+        "gcs_connectivity": "TIMEOUT",
+        "interpretation": "network blockage observed; job has not exited, so acquisition failure is not established",
+        "part_bytes": 0,
+        "s3_connectivity": "TIMEOUT"
+      },
+      "node": "wqd10nba06g5",
+      "source_manifest_sha256": "de4f5b0412bf4354f10f6b75809fc2bb5f564f28726bcc2fc72f4924ccb114d3",
+      "source_read_only": true,
+      "state": "RUNNING"
     },
     "source_manifest_sha256": "de4f5b0412bf4354f10f6b75809fc2bb5f564f28726bcc2fc72f4924ccb114d3",
     "target_files_present": 0

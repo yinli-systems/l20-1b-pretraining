@@ -179,8 +179,13 @@ DataComp-medium metadata jobs `1598663`/`1598664` are a second smoke/full pair.
 They pin all 253 parquet files and 30,638,846,406 bytes at dataset revision
 `8af865e284668a1c52d12846eff0a9d6f1da6ec6`. Their immutable source-manifest
 SHA-256 is `26dff08a9b370ddd8ad7c527cb4a5ab58e05653e2b44895d549ef9864c94a260`.
-Both smoke jobs were scheduler-accepted and were pending priority at submission;
-their dependent full jobs cannot start early.
+Open Images smoke job `1598650` allocated one verified RTX 4090 on
+`wqd10nba06g5`; its immutable source passed before download startup. The
+first live observation showed zero downloaded bytes while both the frozen S3
+endpoint and the official GCS endpoint timed out from that compute node.
+The job remains running, so this is network-blockage evidence rather than a
+failed acquisition. DataComp smoke `1598663` remains pending priority.
+Both full jobs retain their `afterok` dependencies and cannot start early.
 
 ## Frozen-feature downstream diagnostic
 
