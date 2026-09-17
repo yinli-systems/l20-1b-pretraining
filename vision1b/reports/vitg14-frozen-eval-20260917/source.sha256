@@ -1,0 +1,4 @@
+49ab5aa8d4566dbd2ecf275f4cfc0ee0228c6fab1fe099ab523f67a6ae174e55  /tmp/vitg14-eval-1597849-fjCehb/evaluate_frozen_features.py
+7fa0661e0a507a7884a7f42cb4541d3cc3aac913622df14a0c3900eacba9d5ca  /tmp/vitg14-eval-1597849-fjCehb/train_dino_real.py
+321359bb81fee1922a87697583ca7db0f2479afefa8ad31fa05740f8815b3575  /tmp/vitg14-eval-1597849-fjCehb/vitg14_preflight.py
+0ceb7a210d8d0e598011e2e590dfee129bd03d9dc69871c6a7ef66b6309e6af5  /ssd/scxi253/vision1b-research/source/frozen_eval_protocol_v1.json

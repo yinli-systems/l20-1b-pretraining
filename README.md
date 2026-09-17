@@ -20,6 +20,12 @@ four long confirmation runs, paired F2 continuation, reserved masked-loss
 confirmation, and the incomplete seven-task export diagnostic. Checkpoints and
 corpus payloads remain outside Git history.
 
+An audited bounded vision experiment is published under
+[`vision1b/`](vision1b/). It includes the real-image ViT-g/14 training receipt,
+the frozen Fashion-MNIST/MNIST protocol, random/teacher/student results, and
+their exact source and artifact hashes. It is a 25,000-image diagnostic rather
+than a released or corpus-scale vision model.
+
 This is a from-zero pretraining pipeline for one NVIDIA L20. It does not load a
 pretrained model or tokenizer. The model is a 1,100,048,384-parameter
 TinyLlama-class decoder (22 layers, width 2048, 32 attention heads, 4 query

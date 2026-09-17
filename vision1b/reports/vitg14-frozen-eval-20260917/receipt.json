@@ -1,0 +1,108 @@
+{
+  "artifact_identity": {
+    "checkpoint_sha256_receipt_sha256": "0cb2ad91b388c0ab76c66f901475bbb27fbf7daf1dfb7c725010c1547d159700",
+    "dcp_metadata_sha256": "f06168c4e772fdb7a9f86f531e1ffb22a6217c45d32aaf1a7fa5bbcc129e5dba",
+    "evaluation_source_sha256": "49ab5aa8d4566dbd2ecf275f4cfc0ee0228c6fab1fe099ab523f67a6ae174e55",
+    "gpu_csv_sha256": "2cb99c867c0858c2179692eab6fb7f55ba9e665ce4cfed4556915c62f079c5f0",
+    "protocol_sha256": "0ceb7a210d8d0e598011e2e590dfee129bd03d9dc69871c6a7ef66b6309e6af5",
+    "remote_sha256_receipt_sha256": "05d2c2c80ecbd8fd89fa44d6dadf33f600bfb74dc5ae660b9e37cad7a572f680",
+    "remote_sha256s": {
+      "gpu.csv": "2cb99c867c0858c2179692eab6fb7f55ba9e665ce4cfed4556915c62f079c5f0",
+      "results.json": "f2749681c666dee0e30ae333ab3450d2c4df67cc59307649621f12e796b7ab60",
+      "source.sha256": "d04024e032e8c3a2f19f38962be8658bd5d2024fdafd456a96470a36f1726da5"
+    },
+    "results_sha256": "f2749681c666dee0e30ae333ab3450d2c4df67cc59307649621f12e796b7ab60",
+    "source_receipt_sha256": "d04024e032e8c3a2f19f38962be8658bd5d2024fdafd456a96470a36f1726da5"
+  },
+  "claim_boundary": "This frozen-feature evaluation tests whether the bounded 250-step checkpoint transfers beyond its training images. MNIST and Fashion-MNIST are low-resolution grayscale diagnostics and cannot establish broad visual quality, ImageNet performance, release readiness, or superiority over another model.",
+  "execution": {
+    "batch_per_rank": 64,
+    "cancelled_unallocated_four_gpu_race_job_id": 1597845,
+    "compile_mode": "max-autotune-no-cudagraphs",
+    "elapsed": "00:24:52",
+    "full_job_exit_code": "0:0",
+    "full_job_id": 1597849,
+    "full_job_state": "COMPLETED",
+    "hardware": "1x NVIDIA GeForce RTX 5090",
+    "remote_output_root": "/ssd/scxi253/vision1b-research/evaluations/vitg14-frozen-eval-full-v1-1gpu",
+    "smoke_job_id": 1597829,
+    "smoke_job_state": "COMPLETED",
+    "world_size": 1
+  },
+  "gpu_telemetry": {
+    "median_power_w": 574.98,
+    "median_utilization_percent": 99.0,
+    "peak_memory_mib": 6629.0,
+    "peak_power_w": 585.04,
+    "samples": 745
+  },
+  "interpretation": [
+    "The preregistered teacher gate passed: its mean of four primary top-1 scores exceeded the deterministic random initialization by at least 2 percentage points.",
+    "The student was materially stronger than the EMA teacher on this diagnostic after the bounded 250-step run.",
+    "These low-resolution grayscale diagnostics do not establish ImageNet accuracy, broad visual quality, release readiness, or model superiority."
+  ],
+  "metrics": {
+    "fashion_mnist": {
+      "random": {
+        "knn_top1_percent": 64.74,
+        "knn_top5_percent": 96.47,
+        "ridge_selected_lambda": 0.0001,
+        "ridge_top1_percent": 54.439998,
+        "ridge_top5_percent": 94.550002
+      },
+      "student": {
+        "knn_top1_percent": 67.1,
+        "knn_top5_percent": 96.03,
+        "ridge_selected_lambda": 0.0001,
+        "ridge_top1_percent": 69.910002,
+        "ridge_top5_percent": 96.100003
+      },
+      "teacher": {
+        "knn_top1_percent": 65.41,
+        "knn_top5_percent": 96.37,
+        "ridge_selected_lambda": 0.0001,
+        "ridge_top1_percent": 59.859997,
+        "ridge_top5_percent": 95.62
+      }
+    },
+    "mnist": {
+      "random": {
+        "knn_top1_percent": 54.19,
+        "knn_top5_percent": 94.69,
+        "ridge_selected_lambda": 0.0001,
+        "ridge_top1_percent": 35.859999,
+        "ridge_top5_percent": 92.140001
+      },
+      "student": {
+        "knn_top1_percent": 63.61,
+        "knn_top5_percent": 95.72,
+        "ridge_selected_lambda": 0.0001,
+        "ridge_top1_percent": 70.76,
+        "ridge_top5_percent": 97.09
+      },
+      "teacher": {
+        "knn_top1_percent": 54.58,
+        "knn_top5_percent": 94.72,
+        "ridge_selected_lambda": 0.0001,
+        "ridge_top1_percent": 41.949999,
+        "ridge_top5_percent": 93.489999
+      }
+    }
+  },
+  "primary_mean_top1_percent": {
+    "random": 52.307499,
+    "student": 67.845,
+    "teacher": 55.449999
+  },
+  "promotion_gate": {
+    "minimum_gain_percentage_points": 2.0,
+    "status": "PASS",
+    "teacher_mean_top1_gain_over_random_percentage_points": 3.1425
+  },
+  "recorded_at": "2026-09-17T12:17:55+04:00",
+  "scope": "Full official 60,000-train/10,000-test Fashion-MNIST and MNIST frozen-feature diagnostic for the selected step-250 ViT-g/14 checkpoint",
+  "status": "PASS_PREREGISTERED_DIAGNOSTIC",
+  "student_mean_gain_over_random_percentage_points": 15.537501,
+  "student_mean_gain_over_teacher_percentage_points": 12.395001,
+  "teacher_mean_gain_over_random_percentage_points": 3.1425
+}

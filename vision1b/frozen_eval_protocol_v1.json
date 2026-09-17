@@ -1,0 +1,94 @@
+{
+  "checkpoint": {
+    "artifact_sha256": {
+      ".metadata": "f06168c4e772fdb7a9f86f531e1ffb22a6217c45d32aaf1a7fa5bbcc129e5dba",
+      "__0_0.distcp": "53681ba372b18bece760fca83e451e5f2f9169993e44b01e6d14d13ecd60cb21",
+      "__1_0.distcp": "348b0cd1530247cae16399553198270ca6fa6d6fa6bb2982bfb3c97b39ec84be",
+      "__2_0.distcp": "c21e4e4bb06fc4730f1184c7e2adb0382313c6be6af88cfeb3228eac8c7947d5",
+      "__3_0.distcp": "a3dcdeb63d893c1bb3179b725b234db3bcebefe577fa3513bea13b2acfe6557e",
+      "metadata.json": "ec4163ec91666efc1bb14709a3a282305a9557b197f7dea2af7c88a9d40f5ee8"
+    },
+    "artifact_sizes_bytes": {
+      ".metadata": 2266537,
+      "__0_0.distcp": 4592555284,
+      "__1_0.distcp": 4586542656,
+      "__2_0.distcp": 4586514363,
+      "__3_0.distcp": 4586539707,
+      "metadata.json": 489
+    },
+    "completed_step": 250,
+    "full_sha256_receipt_sha256": "0cb2ad91b388c0ab76c66f901475bbb27fbf7daf1dfb7c725010c1547d159700",
+    "metadata_identity": {
+      "acquisition_receipt_sha256": "f441eb8bc42408d7add046c4cfd907b77d4da06004e2e3f7c2043b726359012d",
+      "backbone_source_sha256": "321359bb81fee1922a87697583ca7db0f2479afefa8ad31fa05740f8815b3575",
+      "manifest_sha256": "5241043cdaf73cfd5edfe9183e444e2f29a559162486f0f24af6c7539a363653",
+      "protocol_sha256": "15df80cc6d2c5243795a811653576741511bddc517f0f9ae7b47e73905c6e01f",
+      "source_sha256": "7fa0661e0a507a7884a7f42cb4541d3cc3aac913622df14a0c3900eacba9d5ca"
+    },
+    "training_job_id": 1596350
+  },
+  "claim_boundary": "This frozen-feature evaluation tests whether the bounded 250-step checkpoint transfers beyond its training images. MNIST and Fashion-MNIST are low-resolution grayscale diagnostics and cannot establish broad visual quality, ImageNet performance, release readiness, or superiority over another model.",
+  "datasets": {
+    "fashion_mnist": {
+      "files": {
+        "t10k-images-idx3-ubyte.gz": "bef4ecab320f06d8554ea6380940ec79",
+        "t10k-labels-idx1-ubyte.gz": "bb300cfdad3c16e7a12a480ee83cd310",
+        "train-images-idx3-ubyte.gz": "8d4fb7e6c68d591d4c3dfef9ec88bf0d",
+        "train-labels-idx1-ubyte.gz": "25c81989df183df01b3e8a0aad5dffbe"
+      },
+      "test_examples": 10000,
+      "train_examples": 60000
+    },
+    "mnist": {
+      "files": {
+        "t10k-images-idx3-ubyte.gz": "9fb629c4189551a2d022fa330f9573f3",
+        "t10k-labels-idx1-ubyte.gz": "ec29112dd5afa0611ce80d1b7f02629c",
+        "train-images-idx3-ubyte.gz": "f68b3c2dcbeaaa9fbdd348bbdeb94873",
+        "train-labels-idx1-ubyte.gz": "d53e105ee54ea40749a09fcbcd1e9432"
+      },
+      "test_examples": 10000,
+      "train_examples": 60000
+    }
+  },
+  "evaluation": {
+    "feature": "final layer-normalized CLS token, L2-normalized for classifiers",
+    "knn": {
+      "k": 20,
+      "temperature": 0.07,
+      "vote": "similarity-weighted"
+    },
+    "metrics": [
+      "top1_accuracy",
+      "top5_accuracy"
+    ],
+    "preprocessing": "repeat grayscale to RGB, bicubic resize to 224x224, ImageNet mean/std normalization",
+    "ridge_probe": {
+      "lambda_grid": [
+        0.0001,
+        0.001,
+        0.01,
+        0.1,
+        1.0,
+        10.0,
+        100.0
+      ],
+      "selection": "deterministic stratified 80/20 split of the official training set; refit on all training examples after lambda selection"
+    },
+    "seed": 20260917,
+    "variants": [
+      "same-architecture deterministic random initialization",
+      "EMA teacher at step 250",
+      "student at step 250"
+    ]
+  },
+  "promotion_gate": {
+    "minimum_teacher_mean_top1_gain_over_random_percentage_points": 2.0,
+    "primary_scores": [
+      "fashion_mnist.knn_top1",
+      "fashion_mnist.ridge_top1",
+      "mnist.knn_top1",
+      "mnist.ridge_top1"
+    ]
+  },
+  "status": "PREREGISTERED_FROZEN_FEATURE_DIAGNOSTIC"
+}

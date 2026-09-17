@@ -65,8 +65,41 @@ manifests were written at step 250.
 
 These are training-system and objective-health results on 25,000 admitted
 images. They do not establish downstream accuracy, representation quality,
-corpus-scale convergence, or superiority over another model. The next gate is
-a frozen downstream evaluation with declared datasets, metrics and baselines.
+corpus-scale convergence, or superiority over another model. The frozen
+diagnostic below is the first downstream gate; broader natural-image transfer,
+robustness, contamination and fine-tuning evaluations remain open.
+
+## Frozen-feature downstream diagnostic
+
+The preregistered evaluation uses the complete official 60,000-example train
+and 10,000-example test splits of Fashion-MNIST and MNIST. It compares the same
+architecture at deterministic random initialization, the step-250 EMA teacher,
+and the step-250 student. Images are repeated to RGB, resized to 224 pixels and
+ImageNet-normalized. The two classifiers are similarity-weighted 20-NN at
+temperature 0.07 and a ridge probe selected on a deterministic stratified
+80/20 split before refitting on the full training set.
+
+| Frozen backbone | Fashion-MNIST 20-NN | Fashion-MNIST ridge | MNIST 20-NN | MNIST ridge | Four-score mean |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Random initialization | 64.74% | 54.44% | 54.19% | 35.86% | 52.31% |
+| EMA teacher, step 250 | 65.41% | 59.86% | 54.58% | 41.95% | 55.45% |
+| Student, step 250 | 67.10% | 69.91% | 63.61% | 70.76% | 67.85% |
+
+Job `1597849` completed the full protocol on one RTX 5090 in 24 minutes 52
+seconds with exit code 0. The teacher gained 3.1425 percentage points over the
+random baseline across the four primary top-1 scores, passing the frozen
+2-point promotion gate. The student gained 15.5375 points over random and
+12.3950 over the teacher. This makes the student the stronger representation
+for the next evaluation gate; this diagnostic alone does not identify why the
+bounded-run EMA teacher trails it.
+
+The protocol, executable, raw result JSON, source receipt, GPU telemetry and
+artifact hashes are in [`frozen_eval_protocol_v1.json`](frozen_eval_protocol_v1.json),
+[`evaluate_frozen_features.py`](evaluate_frozen_features.py), and
+[`reports/vitg14-frozen-eval-20260917/`](reports/vitg14-frozen-eval-20260917/).
+Both datasets are low-resolution grayscale controls. These results cannot
+establish ImageNet performance, broad visual quality, release readiness or
+superiority over another model.
 
 ## Qualified runtime recipe
 
