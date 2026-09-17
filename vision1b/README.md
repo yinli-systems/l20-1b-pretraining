@@ -71,21 +71,26 @@ robustness, contamination and fine-tuning evaluations remain open.
 
 ## Bounded step-250 to step-1000 continuation
 
-Job `1598538` allocated four RTX 5090 GPUs and strictly loaded the selected
-batch-112 checkpoint. Steps 251 through 259 were finite; steps 252 through 259
-had 56.41% median end-to-end MFU and telemetry retained at least 4,972 MiB of
-free device memory. The job then failed before its first new checkpoint when
-invalid Triton autotune candidates exceeded the device resource limit and a
-rank-3 CUDA launch failure terminated the NCCL watchdog. This was a compiler
-autotune execution failure, not a training-memory OOM or a numerical failure.
+Job `1598538` allocated four RTX 5090 GPUs on node `wqd10nah08g5` and strictly
+loaded the selected batch-112 checkpoint. Steps 251 through 259 were finite;
+steps 252 through 259 had 56.41% median end-to-end MFU and telemetry retained
+at least 4,972 MiB of free device memory. Rank 3 then lost its CUDA device and
+terminated the NCCL watchdog before the first new checkpoint. Invalid Triton
+autotune candidates appeared earlier in the log, but the later evidence below
+means they cannot be assigned as the root cause.
 
-The sole corrected replacement, job `1598829`, keeps every training argument
-unchanged and is pending allocation. Its wrapper gives each job a fresh local
-Inductor/Triton cache and runs autotune candidates in subprocesses so an
-invalid candidate cannot poison the training CUDA context. The parent
-step-250 checkpoint was revalidated before submission: it contains six files
-and 18,354,419,036 bytes, frozen by a receipt whose SHA-256 is
-`c1e71d6c98091806ea35d1edba74fad256f828c7ff306d0d58722d21dcaaa0f1`.
+The sole permitted replacement, job `1598829`, kept every training argument
+unchanged, used fresh local Inductor/Triton caches, and isolated autotune
+candidates in subprocesses. Slurm placed it on the same node. It failed in the
+initial `nvidia-smi` identity gate with `Unable to determine the device handle
+for GPU3 ... Unknown Error`, before Python training, metrics or checkpoints.
+This corroborates a node/GPU3 infrastructure fault and rules out the wrapper
+change as a recovery. The retry cap is now exhausted; another submission must
+be explicitly authorized and must exclude `wqd10nah08g5`.
+
+The parent step-250 checkpoint was revalidated before the replacement: it
+contains six files and 18,354,419,036 bytes, frozen by a receipt whose SHA-256
+is `c1e71d6c98091806ea35d1edba74fad256f828c7ff306d0d58722d21dcaaa0f1`.
 
 The continuation does not silently extend the original 250-step cosine
 horizon. It uses an explicit second-stage schedule: learning rate moves

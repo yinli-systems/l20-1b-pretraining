@@ -1,6 +1,6 @@
 {
-  "claim_boundary": "The replacement has scheduler acceptance only. It is not allocated, has no live metrics, and has not yet demonstrated recovery, checkpoint completion, numerical validation, evaluation improvement, or superiority.",
-  "collected_at_utc": "2026-09-17T15:49:43Z",
+  "claim_boundary": "The sole permitted replacement failed its GPU identity gate before training. There is no recovery, new checkpoint, numerical validation, evaluation improvement, or superiority evidence. A further retry requires explicit authorization.",
+  "collected_at_utc": "2026-09-17T15:52:57Z",
   "failed_job": {
     "allocated_gpus": 4,
     "checkpoint_files_written": 0,
@@ -13,9 +13,10 @@
       "run_metrics_jsonl": "1fd141c245b09ec77e58b65302779f53afb00dcb2790ec21a074b5b3f376f56f"
     },
     "exit_code": "1:0",
-    "failure_class": "retryable_compiler_autotune_context_failure",
+    "failure_class": "probable_node_gpu3_device_loss",
     "failure_evidence": {
       "final_error": "rank 3 CUDA error: unspecified launch failure terminated the NCCL watchdog with SIGABRT",
+      "interpretation": "The Triton resource errors were invalid autotune candidates, but the replacement failed on the same node because GPU3 had no device handle. The node/GPU3 fault is therefore the supported cause; compiler autotune is not established as the root cause.",
       "invalid_candidate_resource_requirements": [
         131072,
         147456,
@@ -55,20 +56,36 @@
     "receipt_sha256": "c1e71d6c98091806ea35d1edba74fad256f828c7ff306d0d58722d21dcaaa0f1"
   },
   "replacement": {
+    "allocated_gpus": 4,
+    "artifacts_written": 0,
+    "elapsed": "00:01:16",
+    "evidence_sha256": {
+      "stderr": "8c1658fa9e3a8731a1ec1f8cebe49e774073e59faf6f83e7f84ffacaa57955db",
+      "stdout_empty": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "exit_code": "1:0",
+    "failure": "nvidia-smi could not determine the device handle for GPU3 at PCI address 0000:D8:00.0",
     "job_id": 1598829,
     "job_name": "vision1b-cont1000-r1",
+    "node": "wqd10nah08g5",
     "recovery_changes": [
       "fresh per-job TorchInductor and Triton cache",
       "TORCHINDUCTOR_AUTOTUNE_IN_SUBPROC=1",
       "cache removal at process exit"
     ],
-    "scheduler_reason": "Priority",
+    "scheduler_reason": null,
     "source_manifest_sha256": "65fa783ebe9e63324f48d921c8e720fd7a9625e2768728ff45b28f81c62c9b4e",
     "source_path": "/ssd/scxi253/vision1b-research/source-cont-20260917-v2",
     "source_read_only": true,
-    "state": "PENDING",
+    "state": "FAILED",
     "training_arguments_identical_to_failed_job": true,
     "wrapper_sha256": "02b5e8d1fa8b6b67cde259ac3a2c47fb7dcbdc7d02c20b203478795349ad3999"
+  },
+  "resolution": {
+    "automatic_retry_allowed": false,
+    "required_user_action": "Authorize one exact resubmission of the immutable v2 job with node wqd10nah08g5 excluded.",
+    "retry_cap_exhausted": true,
+    "status": "USER_ACTION_REQUIRED"
   },
   "schema": "vision1b-continuation-recovery-v1"
 }
