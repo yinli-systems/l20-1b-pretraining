@@ -1,0 +1,16 @@
+{
+  "hidden_size": 1024,
+  "expert_intermediate_size": 1024,
+  "num_hidden_layers": 10,
+  "num_attention_heads": 16,
+  "num_key_value_heads": 4,
+  "num_experts": 16,
+  "experts_per_token": 2,
+  "method": "cvcr_abp",
+  "expert_backend": "grouped_mm",
+  "cvcr_rank": 8,
+  "cvcr_coefficient": 0.05,
+  "probe_fraction": 0.0625,
+  "probe_sampler": "abp",
+  "probe_probability_floor": 0.0001
+}

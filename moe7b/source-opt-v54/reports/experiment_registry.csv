@@ -1,0 +1,32 @@
+job_id,run_name,stage,method,gpus,microbatch,accumulation,compile,status,median_tokens_per_second,median_active_mfu,wall_overhead_fraction,claim_boundary
+1595101,kernel-preflight,kernel,top2+cvcr,1,,,false,completed,,,,kernel correctness only
+1595118,screen-proxy-top2-eager-mb2-ga8-v2,proxy-screen,top2,4,2,8,false,completed,118231.7471,0.1546798,,runtime only
+1595120,screen-proxy-top2-compile-mb2-ga8-v2,proxy-screen,top2,4,2,8,true,completed,125104.6086,0.1636714,,runtime only
+1595128,screen-proxy-cvcr-eager-mb2-ga8-v3,proxy-screen,cvcr-initial,4,2,8,false,rejected,80738.2536,0.1056279,0.4643833,overhead gate failed
+1595140,screen-proxy-cvcr-shared-mb2-ga8-v5,proxy-screen,cvcr-shared,4,2,8,false,rejected,98525.6475,0.1288987,0.2000098,overhead gate failed
+1595215,screen-oracle-top2-compile-mb4-ga16-v25,oracle-screen,top2,4,4,16,true,completed,323616.3611,0.2427670,,runtime only
+1595213,screen-oracle-cvcr-interval4-nodummy-compile-mb4-ga16-v23,oracle-screen,cvcr-interval4,4,4,16,true,passed-systems-gate,319401.0829,0.2396049,0.0131974,runtime only
+1595216,screen-oracle-top2-compile-mb8-ga8-v26,oracle-screen,top2,4,8,8,true,completed,387867.8930,0.2909665,,runtime only
+1595214,screen-oracle-cvcr-interval4-nodummy-compile-mb8-ga8-v24,oracle-screen,cvcr-interval4,4,8,8,true,passed-systems-gate,378696.3080,0.2840863,0.0242188,runtime only
+1595223,oracle-warmup-top2-s20260916-200m-v1,oracle-warmup,top2,4,8,8,true,completed,379433.9310,0.2846396,,pure product baseline
+1595224,oracle-warmup-cvcr-i4-s20260916-200m-v1,oracle-warmup,cvcr-r8-interval4,4,8,8,true,rejected-quality,363177.2435,0.2724444,0.0447624,systems pass but scientific gates fail
+1595249,oracle-warmup-cvcr-i4-s20260916-200m-v1-oracle,oracle-diagnostic,cvcr-r8,1,,,false,failed-predictor-gate,,,,predictor MSE reduction 16.63 percent
+1595250,oracle-warmup-pair-s20260916-200m-v1,paired-evaluation,cvcr-vs-top2,1,,,false,completed,,,,product-baseline delta +0.007324 is not the strict credit-only contrast
+1595251,oracle-warmup-cvcr-i4-s20260916-200m-v1-route-regret,exact-reroute,cvcr-r8,1,,,false,completed,,,,local-to-exact Pearson 0.206 and Spearman 0.199
+1595266,screen-oracle-cvcr-r16-predictor-only-i4-mb8-ga8-v1,oracle-screen,cvcr-r16-control,4,8,8,true,passed-systems-gate,378584.5748,0.2840025,0.0245211,runtime only
+1595272,oracle-warmup-cvcr-r16-predictor-only-i4-s20260916-200m-v1,oracle-warmup,cvcr-r16-control,4,8,8,true,completed,372678.6438,0.2795720,0.0181263,predictor-only negative control
+1595292,oracle-warmup-cvcr-r16-predictor-only-i4-s20260916-200m-v1-oracle,oracle-diagnostic,cvcr-r16-control,1,,,false,failed-predictor-gate,,,,predictor MSE reduction 16.42 percent
+1595293,oracle-warmup-r16-predictor-only-pair-s20260916-200m-v1,paired-evaluation,r16-control-vs-top2,1,,,false,completed,,,,different training graph causes large numerical trajectory divergence
+1595300,oracle-warmup-cvcr-r8-control-i4-s20260916-200m-v1,oracle-warmup,cvcr-r8-control,4,8,8,true,completed,370543.2402,0.2779701,0.0239937,strict credit-only baseline
+1595316,oracle-warmup-r8-credit-vs-control-pair-s20260916-200m-v1,paired-evaluation,cvcr-r8-vs-control,1,,,false,rejected-quality,,,,CE delta +0.023548 with 95 percent CI entirely above zero
+1595477,expert-backend-falsification,expert-kernel,scattermoe-vs-native,1,,,false,completed,,,,output dX and both dW passed balanced skewed and empty cases
+1595521,scattermoe-e5,sustained-confirmation,scattermoe-vs-native,4,8,8,true,rejected-quality,,,,minimum throughput gain 12.24 percent but quality upper bound +0.14655
+1595527,liger-linear-ce-gate,loss-operator,liger-vs-eager,1,,,false,completed,,,,operator parity passed and peak memory fell by 5.50 GB
+1595547,ddp-compile-order,systems-screen,ddp-before-compile,4,8,8,true,rejected,434934,,,gain only 0.12 percent
+1595562,ddp-bucket-screen,systems-screen,bucket-cap-sweep,4,8,8,true,rejected,435188,,,25 MiB default retained
+1595576,liger-microbatch-frontier,systems-frontier,scattermoe-liger,4,32,2,true,completed,569734,,,mb32 maximum feasible and mb64 OOM
+1595584,liger-mb32-abba,paired-systems,scattermoe-liger,4,32,2,true,completed,543547,,,ABBA ratio 1.2911
+1595607,liger-mb32-e5,sustained-confirmation,scattermoe-liger,4,32,2,true,rejected-quality,551491,,,minimum throughput ratio 1.2862 and quality upper bound +0.00317
+1595625,native-liger-mb32-e5-attempt,sustained-confirmation,native-liger,4,32,2,true,failed-fragmentation,,,,lower-memory node failed at candidate step 31
+1595633,native-liger-mb32-e5,sustained-confirmation,native-liger,4,32,2,true,rejected-quality,481297,,,minimum throughput ratio 1.3490 and quality upper bound +0.01571
+1595686,top2-scattermoe-liger-mb32-fullpass-s20260917-v1,proxy-fullpass,scattermoe-liger,4,32,2,true,running,,,,8.3765B-token one-pass training allocated with checksum-gated resume
