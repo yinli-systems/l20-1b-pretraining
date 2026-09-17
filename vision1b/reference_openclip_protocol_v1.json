@@ -1,0 +1,71 @@
+{
+  "base_protocol_sha256": "0ceb7a210d8d0e598011e2e590dfee129bd03d9dc69871c6a7ef66b6309e6af5",
+  "claim_boundary": "This is an inference-only OpenAI CLIP reference under the exact shared ImageNet-normalized preprocessing and frozen-feature classifiers used by the bounded Vision 1B diagnostic. OpenAI CLIP was trained on roughly 400 million image-text pairs and normally uses CLIP-specific normalization, so this primary result compares strict shared-protocol transfer but not data efficiency, compute efficiency, training method, or best native-preprocessing CLIP performance.",
+  "evaluation": {
+    "feature": "512-dimensional projected OpenAI CLIP ViT-B/32 visual feature before L2 normalization",
+    "knn": {
+      "k": 20,
+      "temperature": 0.07,
+      "vote": "similarity-weighted"
+    },
+    "metrics": [
+      "top1_accuracy",
+      "top5_accuracy"
+    ],
+    "preprocessing": "repeat grayscale to RGB, bicubic resize to 224x224, ImageNet mean/std normalization",
+    "ridge_probe": {
+      "lambda_grid": [
+        0.0001,
+        0.001,
+        0.01,
+        0.1,
+        1.0,
+        10.0,
+        100.0
+      ],
+      "selection": "deterministic stratified 80/20 split of the official training set; refit on all training examples after lambda selection"
+    },
+    "seed": 20260917
+  },
+  "model": {
+    "feature_dimension": 512,
+    "id": "open_clip_vit_b32_openai_strict_shared_preprocess",
+    "native_mean": [
+      0.48145466,
+      0.4578275,
+      0.40821073
+    ],
+    "native_std": [
+      0.26862954,
+      0.26130258,
+      0.27577711
+    ],
+    "parameters": 151277313,
+    "pretraining": "OpenAI CLIP image-text pretraining, approximately 400 million pairs",
+    "visual_parameters": 87849216,
+    "weights_bytes": 353976522,
+    "weights_sha256": "40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af",
+    "weights_url": "https://openaipublic.azureedge.net/clip/models/40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af/ViT-B-32.pt"
+  },
+  "preregistration": {
+    "batch_size_is_a_systems_parameter_only": true,
+    "model_selection_or_metric_tuning_after_results": false,
+    "native_preprocessing_is_not_the_primary_result": true,
+    "official_full_splits_required": true
+  },
+  "python_versions": {
+    "ftfy": "6.3.1",
+    "open_clip": "3.3.0",
+    "timm": "1.0.29",
+    "torchvision": "0.26.0+cu128"
+  },
+  "python_wheels": {
+    "ftfy-6.3.1-py3-none-any.whl": "7c70eb532015cd2f9adb53f101fb6c7945988d023a085d127d1573dc49dd0083",
+    "open_clip_torch-3.3.0-py3-none-any.whl": "c549ad5ed6bfc119cc11105033c0a2b9d7a2a4afeb40a58a09aab3da1a0043ce",
+    "timm-1.0.29-py3-none-any.whl": "4266486e355c9beb9432e689de580d09e2efe7fa92a9a79e76c03e7763eac724",
+    "torchvision-0.26.0+cu128-cp312-cp312-manylinux_2_28_x86_64.whl": "ccf26b4b659cfce6f2208cb8326071d51c70219a34856dfdf468d1e19af52c0d",
+    "wcwidth-0.2.13-py2.py3-none-any.whl": "3da69048e4540d84af32131829ff948f1e022c1c6bdb8d6102117aac784f6859"
+  },
+  "recorded_at": "2026-09-17T13:11:00+04:00",
+  "status": "PREREGISTERED_OPENCLIP_REFERENCE"
+}
