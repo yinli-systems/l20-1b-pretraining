@@ -184,8 +184,14 @@ Open Images smoke job `1598650` allocated one verified RTX 4090 on
 first live observation showed zero downloaded bytes while both the frozen S3
 endpoint and the official GCS endpoint timed out from that compute node.
 The job remains running, so this is network-blockage evidence rather than a
-failed acquisition. DataComp smoke `1598663` remains pending priority.
-Both full jobs retain their `afterok` dependencies and cannot start early.
+failed acquisition. DataComp smoke `1598663` then allocated and failed before
+download because `/data/scxi253` was not writable; its dependent full job
+`1598664` was cancelled without running. The failure logs were hashed, the
+source and 30.64 GB inventory were revalidated, and the only correction moved
+the metadata target to the writable `/ssd` project area, which had 923 GB
+free. Replacement smoke/full jobs `1598945`/`1598946` are scheduler-accepted,
+non-requeueable, and preserve `afterok:1598945`. No further automatic retry is
+permitted.
 
 ## Frozen-feature downstream diagnostic
 
