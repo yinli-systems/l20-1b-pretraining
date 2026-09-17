@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "policy_id": "moe7b-code-license-candidate-allowlist-v1",
+  "status": "CANDIDATE_REQUIRES_FINAL_LICENSE_REVIEW",
+  "allowed_spdx_identifiers": [
+    "0BSD",
+    "Apache-2.0",
+    "BSD-2-Clause",
+    "BSD-3-Clause",
+    "BSL-1.0",
+    "CC0-1.0",
+    "ISC",
+    "MIT",
+    "Unlicense",
+    "Zlib"
+  ],
+  "file_rules": {
+    "license_type_must_equal": "permissive",
+    "detected_licenses_must_be_nonempty": true,
+    "every_detected_license_must_be_allowlisted": true,
+    "vendor_files_allowed": false,
+    "missing_or_unknown_license_allowed": false,
+    "preserve_repository_commit_path_and_license_provenance": true,
+    "preserve_required_attribution": true,
+    "respect_upstream_opt_outs": true
+  },
+  "excluded_pending_separate_review": [
+    "AFL-3.0",
+    "Artistic-2.0",
+    "CC-BY-4.0",
+    "LPPL-1.3c",
+    "WTFPL",
+    "curl"
+  ],
+  "claim_boundary": "This is a conservative technical candidate filter, not legal advice or final license approval. The dataset-level license does not replace per-file obligations."
+}

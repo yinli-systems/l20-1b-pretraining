@@ -1,0 +1,151 @@
+{
+  "schema": "moe7b-full-data-build-v1",
+  "build_id": "moe7b-150b-production-candidate-v1",
+  "status": "FROZEN_BUILD_CONTRACT_NOT_ADMITTED",
+  "mixture_plan": "data/moe7b_150b_mixture_v1.json",
+  "source_lock_directory": "data/source-lock-20260917-v2",
+  "selection_seed": 20260917,
+  "block_tokens": 2049,
+  "prediction_tokens_per_block": 2048,
+  "validation_modulus": 1000,
+  "maximum_document_tokens": 262144,
+  "minimum_document_characters": 200,
+  "code_minimum_document_characters": 80,
+  "raw_cache_policy": "retain_hash_verified_source_files",
+  "deduplication": {
+    "exact": "sha256_nfkc_casefold_whitespace_v1",
+    "near": "word_or_cjk_5gram_minhash16_lsh4_similarity_0.75_v1",
+    "scope": "global_across_all_components",
+    "priority": "component_order_below"
+  },
+  "decontamination": {
+    "index": "frontier3b-v1/eval/public-eval-contamination-index-v2.json.gz",
+    "index_sha256": "5d986c549213c8bcd74f30e475461f7b76042398415e1cb844c152b87a41314d",
+    "exact_prompt_hash": "sha256_normalized_match_text",
+    "ngram_width": 13,
+    "ngram_hash": "sha256",
+    "claim_boundary": "This public index is applied during packing, but the frozen coverage audit still lacks an exact RULER variant and a clean-room semantic audit. Completion of this build therefore does not by itself admit training data."
+  },
+  "privacy": {
+    "web_email_and_valid_ipv4": "redact",
+    "code_email_valid_ipv4_and_secret_pattern": "reject_document"
+  },
+  "components": [
+    {
+      "component_id": "pes2o",
+      "aggregate_source": "olmoe_science_reference",
+      "source_id": "olmoe_science_reference",
+      "path_prefix": "data/pes2o/",
+      "format": "json.gz",
+      "target_prediction_tokens": 6000000000
+    },
+    {
+      "component_id": "wikipedia_wikibooks",
+      "aggregate_source": "olmoe_science_reference",
+      "source_id": "olmoe_science_reference",
+      "path_prefix": "data/wiki/",
+      "format": "json.gz",
+      "target_prediction_tokens": 1500000000
+    },
+    {
+      "component_id": "finemath_4plus",
+      "aggregate_source": "finemath",
+      "source_id": "finemath",
+      "path_prefix": "finemath-4plus/",
+      "format": "parquet",
+      "minimum_int_score": 4,
+      "minimum_language_score": 0.9,
+      "target_prediction_tokens": 9600000000
+    },
+    {
+      "component_id": "stack_v3_permissive",
+      "aggregate_source": "stack_v3_permissive",
+      "source_id": "stack_v3_permissive",
+      "path_prefix": "data/",
+      "format": "stack-v3-parquet",
+      "license_allowlist": "data/code_license_allowlist_v1.json",
+      "target_prediction_tokens": 25000000000
+    },
+    {
+      "component_id": "fineweb2_zh",
+      "aggregate_source": "fineweb2_multilingual",
+      "source_id": "fineweb2_multilingual",
+      "path_prefix": "data/cmn_Hani/train/",
+      "format": "parquet",
+      "minimum_language_score": 0.65,
+      "target_prediction_tokens": 9000000000
+    },
+    {
+      "component_id": "fineweb2_es",
+      "aggregate_source": "fineweb2_multilingual",
+      "source_id": "fineweb2_multilingual",
+      "path_prefix": "data/spa_Latn/train/",
+      "format": "parquet",
+      "minimum_language_score": 0.65,
+      "target_prediction_tokens": 1500000000
+    },
+    {
+      "component_id": "fineweb2_fr",
+      "aggregate_source": "fineweb2_multilingual",
+      "source_id": "fineweb2_multilingual",
+      "path_prefix": "data/fra_Latn/train/",
+      "format": "parquet",
+      "minimum_language_score": 0.65,
+      "target_prediction_tokens": 1500000000
+    },
+    {
+      "component_id": "fineweb2_de",
+      "aggregate_source": "fineweb2_multilingual",
+      "source_id": "fineweb2_multilingual",
+      "path_prefix": "data/deu_Latn/train/",
+      "format": "parquet",
+      "minimum_language_score": 0.65,
+      "target_prediction_tokens": 1500000000
+    },
+    {
+      "component_id": "fineweb2_ar",
+      "aggregate_source": "fineweb2_multilingual",
+      "source_id": "fineweb2_multilingual",
+      "path_prefix": "data/arb_Arab/train/",
+      "format": "parquet",
+      "minimum_language_score": 0.65,
+      "target_prediction_tokens": 1500000000
+    },
+    {
+      "component_id": "finemath_3plus_remainder",
+      "aggregate_source": "finemath",
+      "source_id": "finemath",
+      "path_prefix": "finemath-3plus/",
+      "format": "parquet",
+      "minimum_int_score": 3,
+      "minimum_language_score": 0.9,
+      "target_prediction_tokens": 5900000000
+    },
+    {
+      "component_id": "fineweb_edu",
+      "aggregate_source": "fineweb_edu",
+      "source_id": "fineweb_edu",
+      "path_prefix": "sample/100BT/",
+      "format": "parquet",
+      "minimum_int_score": 3,
+      "minimum_language_score": 0.9,
+      "target_prediction_tokens": 61000000000
+    },
+    {
+      "component_id": "dclm_baseline",
+      "aggregate_source": "dclm_baseline",
+      "source_id": "dclm_baseline",
+      "path_prefix": "global-shard_",
+      "format": "jsonl.zst",
+      "target_prediction_tokens": 26000000000
+    }
+  ],
+  "completion_contract": {
+    "required_prediction_tokens": 150000000000,
+    "all_components_must_reach_target": true,
+    "all_downloads_must_match_frozen_lfs_sha256": true,
+    "every_output_shard_must_have_sha256_receipt": true,
+    "stage_manifest_must_be_generated": true,
+    "training_admission_remains_fail_closed": true
+  }
+}

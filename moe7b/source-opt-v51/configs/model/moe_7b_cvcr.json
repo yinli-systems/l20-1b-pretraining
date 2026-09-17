@@ -1,0 +1,18 @@
+{
+  "vocab_size": 32000,
+  "hidden_size": 2048,
+  "expert_intermediate_size": 2816,
+  "num_hidden_layers": 24,
+  "num_attention_heads": 32,
+  "num_key_value_heads": 4,
+  "num_experts": 16,
+  "experts_per_token": 2,
+  "tie_word_embeddings": false,
+  "method": "cvcr_abp",
+  "expert_backend": "grouped_mm",
+  "cvcr_rank": 8,
+  "cvcr_coefficient": 0.05,
+  "probe_fraction": 0.0625,
+  "probe_sampler": "abp",
+  "probe_probability_floor": 0.0001
+}

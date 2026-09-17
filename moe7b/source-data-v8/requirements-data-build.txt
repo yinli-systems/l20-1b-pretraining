@@ -1,0 +1,5 @@
+# ParaCloud data-build runtime locked on 2026-09-17.
+numpy==2.3.5
+pyarrow==20.0.0
+tokenizers==0.22.2
+zstandard==0.25.0

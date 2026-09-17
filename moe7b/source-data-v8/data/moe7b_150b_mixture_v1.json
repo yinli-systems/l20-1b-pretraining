@@ -1,0 +1,232 @@
+{
+  "schema_version": 1,
+  "plan_id": "moe7b-150b-mixture-v1",
+  "status": "FROZEN_CANDIDATE_PLAN_NOT_ADMITTED",
+  "created_utc": "2026-09-17T00:00:00Z",
+  "claim_boundary": "This file freezes quotas, source revisions, tokenizer identity, and admission rules. It does not claim that source bytes have been downloaded, audited, admitted, packed, or used for training.",
+  "model_contract": {
+    "total_parameters": 7077103616,
+    "active_parameters_per_token": 1263798272,
+    "experts": 16,
+    "experts_per_token": 2,
+    "vocabulary_size": 50280,
+    "sequence_length": 2048
+  },
+  "tokenizer": {
+    "family": "OLMoTokenizer",
+    "vocabulary_size": 50280,
+    "eos_token_id": 50279,
+    "pad_token_id": 1,
+    "files": {
+      "tokenizer.json": "30d71356c5ba154006df5bbb4a0583fc434525ceeb2f27a7d8a237ce5db26dc6",
+      "tokenizer_config.json": "a178447e5b7165a9e1ad9c133cad418e948bf53467d03ef41753e179e57c18f6",
+      "special_tokens_map.json": "a6188c1e366f8ed715e60ff39c46a8c500fc33508e2affeb23e8c547c5853193"
+    }
+  },
+  "budget": {
+    "target_exposed_tokens": 150000000000,
+    "minimum_unique_tokens": 142500000000,
+    "maximum_replay_fraction": 0.05,
+    "accounting_rule": "Count every next-token target shown to the optimizer, including replay and resumed presentations. Padding and validation tokens do not count toward the training budget."
+  },
+  "stages": [
+    {
+      "stage": "A",
+      "purpose": "broad knowledge and stable language modeling base",
+      "target_tokens": 100000000000,
+      "source_quotas": {
+        "fineweb_edu": 45000000000,
+        "dclm_baseline": 20000000000,
+        "fineweb2_multilingual": 10000000000,
+        "stack_v3_permissive": 12000000000,
+        "finemath": 8000000000,
+        "olmoe_science_reference": 5000000000
+      }
+    },
+    {
+      "stage": "B",
+      "purpose": "increase code and mathematical density without abandoning broad text",
+      "target_tokens": 40000000000,
+      "source_quotas": {
+        "fineweb_edu": 14000000000,
+        "dclm_baseline": 5000000000,
+        "fineweb2_multilingual": 4000000000,
+        "stack_v3_permissive": 10000000000,
+        "finemath": 5000000000,
+        "olmoe_science_reference": 2000000000
+      }
+    },
+    {
+      "stage": "C",
+      "purpose": "short capability upsample with retained web and multilingual coverage",
+      "target_tokens": 10000000000,
+      "source_quotas": {
+        "fineweb_edu": 2000000000,
+        "dclm_baseline": 1000000000,
+        "fineweb2_multilingual": 1000000000,
+        "stack_v3_permissive": 3000000000,
+        "finemath": 2500000000,
+        "olmoe_science_reference": 500000000
+      }
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "fineweb_edu",
+      "category": "education_and_explanatory_web",
+      "target_tokens": 61000000000,
+      "minimum_unique_tokens": 57950000000,
+      "dataset_id": "HuggingFaceFW/fineweb-edu",
+      "subset": "sample/100BT",
+      "revision": "87f09149ef4734204d70ed1d046ddc9ca3f2b8f9",
+      "declared_dataset_license": "ODC-By-1.0 plus Common Crawl source terms",
+      "selection_policy": {
+        "educational_score_min": 3,
+        "global_cross_source_near_dedup_required": true,
+        "fresh_eval_contamination_scan_required": true
+      }
+    },
+    {
+      "source_id": "dclm_baseline",
+      "category": "broad_web",
+      "target_tokens": 26000000000,
+      "minimum_unique_tokens": 24700000000,
+      "dataset_id": "mlfoundations/dclm-baseline-1.0",
+      "subset": "all_global_shards",
+      "revision": "a3b142c183aebe5af344955ae20836eb34dcf69b",
+      "declared_dataset_license": "CC-BY-4.0; source and PII constraints require independent audit",
+      "selection_policy": {
+        "pii_policy_must_pass": true,
+        "global_cross_source_near_dedup_required": true,
+        "fresh_eval_contamination_scan_required": true
+      }
+    },
+    {
+      "source_id": "fineweb2_multilingual",
+      "category": "multilingual_web",
+      "target_tokens": 15000000000,
+      "minimum_unique_tokens": 14250000000,
+      "dataset_id": "HuggingFaceFW/fineweb-2",
+      "subset": "filtered_cmn_Hani_spa_Latn_fra_Latn_deu_Latn_arb_Arab",
+      "revision": "af9c13333eb981300149d5ca60a8e9d659b276b9",
+      "declared_dataset_license": "ODC-By-1.0 plus Common Crawl source terms",
+      "language_quotas": {
+        "zh": 9000000000,
+        "es": 1500000000,
+        "fr": 1500000000,
+        "de": 1500000000,
+        "ar": 1500000000
+      },
+      "selection_policy": {
+        "filtered_split_only": true,
+        "exclude_test_split": true,
+        "language_id_audit_required": true,
+        "global_cross_source_near_dedup_required": true
+      }
+    },
+    {
+      "source_id": "stack_v3_permissive",
+      "category": "code",
+      "target_tokens": 25000000000,
+      "minimum_unique_tokens": 23750000000,
+      "dataset_id": "HuggingFaceCode/stack-v3-train",
+      "subset": "train_permissive_only",
+      "revision": "8f3f25d86e44fd691428131efd17af75d4716499",
+      "declared_dataset_license": "ODC-By-1.0 metadata distribution; every file retains its upstream repository license and attribution obligations",
+      "selection_policy": {
+        "license_type_must_equal": "permissive",
+        "detected_spdx_licenses_must_all_be_allowlisted": true,
+        "reject_missing_unknown_copyleft_or_mixed_restrictive_license": true,
+        "preserve_repository_commit_path_license_and_attribution": true,
+        "respect_opt_outs": true,
+        "global_cross_source_near_dedup_required": true,
+        "fresh_eval_contamination_scan_required": true
+      }
+    },
+    {
+      "source_id": "finemath",
+      "category": "mathematics",
+      "target_tokens": 15500000000,
+      "minimum_unique_tokens": 14725000000,
+      "dataset_id": "HuggingFaceTB/finemath",
+      "subset": "4plus_then_nonoverlapping_audited_3plus",
+      "revision": "e92b25a616738fe95dc186b64dfb19f9c8525594",
+      "declared_dataset_license": "ODC-By-1.0 plus source terms",
+      "subsource_quotas": {
+        "finemath_4plus": 9600000000,
+        "finemath_3plus_excluding_4plus": 5900000000
+      },
+      "selection_policy": {
+        "do_not_double_count_nested_subsets": true,
+        "score_3_remainder_requires_separate_quality_audit": true,
+        "global_cross_source_near_dedup_required": true,
+        "fresh_eval_contamination_scan_required": true
+      }
+    },
+    {
+      "source_id": "olmoe_science_reference",
+      "category": "science_and_reference",
+      "target_tokens": 7500000000,
+      "minimum_unique_tokens": 7125000000,
+      "dataset_id": "allenai/OLMoE-mix-0924",
+      "subset": "pes2o_and_wikipedia_wikibooks_only",
+      "revision": "1e44595eaffc7491dfab23947ea4d5a62b33aff3",
+      "declared_dataset_license": "ODC-By-1.0 collection; preserve component-specific licenses and provenance",
+      "subsource_quotas": {
+        "pes2o": 6000000000,
+        "wikipedia_and_wikibooks": 1500000000
+      },
+      "selection_policy": {
+        "component_allowlist_only": true,
+        "component_license_and_provenance_receipts_required": true,
+        "global_cross_source_near_dedup_required": true,
+        "fresh_eval_contamination_scan_required": true
+      }
+    }
+  ],
+  "packing_contract": {
+    "dtype": "uint16",
+    "block_size": 2049,
+    "document_eos_required": true,
+    "no_cross_document_loss_masking": false,
+    "deterministic_seed": 20260917,
+    "per_source_shards_required": true,
+    "stage_mix_manifest_required": true,
+    "manifest_must_bind": [
+      "source_revision",
+      "source_file_sha256",
+      "selection_policy_version",
+      "tokenizer_file_sha256",
+      "document_dedup_receipt",
+      "semantic_dedup_receipt",
+      "contamination_receipt",
+      "license_receipt",
+      "pii_receipt",
+      "packed_shard_sha256",
+      "exact_prediction_token_count"
+    ]
+  },
+  "admission_gates": [
+    "immutable_source_revision_and_file_hashes",
+    "license_terms_and_attribution_approved",
+    "provenance_complete",
+    "privacy_and_pii_policy_passed",
+    "document_exact_deduplication_passed",
+    "cross_source_semantic_near_deduplication_passed",
+    "evaluation_contamination_scan_passed",
+    "language_and_domain_audits_passed",
+    "human_content_audit_passed",
+    "train_validation_test_isolation_passed",
+    "tokenizer_identity_verified",
+    "packed_manifest_reproducible",
+    "unique_token_floor_passed"
+  ],
+  "promotion_policy": {
+    "pre_admission_correction": "The initial draft allocated 2B tokens to the separately reported OLMoE arXiv component, but the pinned public repository tree exposes no independently selectable arXiv path. Before admission, that 2B was reassigned to the exposed peS2o component; the 7.5B science/reference total did not change.",
+    "current_8376643584_token_fineweb_edu_run_role": "systems_and_stability_pilot_only_outside_the_150b_budget",
+    "main_run_starts_from_fresh_initialization": true,
+    "mixture_amendment_method": "Only a versioned amendment supported by proxy-scale held-out loss and downstream retention evidence may change Stage B or C. Stage A remains this conservative baseline.",
+    "replay_above_five_percent_requires_new_plan_version": true,
+    "training_forbidden_until_all_admission_gates_pass": true
+  }
+}
