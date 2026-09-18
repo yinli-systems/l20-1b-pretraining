@@ -1,0 +1,106 @@
+{
+  "checkpoint": {
+    "artifact_sha256": {
+      ".metadata": "d89f407b36424e1a5cf174866a2e680b964a7dcc01ba6d89570a6e179e5a7161",
+      "__0_0.distcp": "ca3169e1e989aae9c93550d641d029c5abe8c23fc3a4070a20bf5c474437e834",
+      "__1_0.distcp": "83e67ce804274255d208a175db4cb8ae1cef08542bd3d7fb4fcb2578b63603fb",
+      "__2_0.distcp": "1b089f2254f453fdbf3abf6ede91ae96c83c0a84d8721b956fdc3d7a72c3a9b4",
+      "__3_0.distcp": "4e4c23d26efd93f30b0e9e5ddd51d54dc490fb9844d6ad2539c4a434b1a9c6f1",
+      "metadata.json": "8a52a3fc156899bfe0e87b668822314ebf80e8859179d6874958f7596ac29dc9"
+    },
+    "artifact_sizes_bytes": {
+      ".metadata": 2266516,
+      "__0_0.distcp": 4592555284,
+      "__1_0.distcp": 4586542656,
+      "__2_0.distcp": 4586514363,
+      "__3_0.distcp": 4586539707,
+      "metadata.json": 698
+    },
+    "completed_step": 1000,
+    "full_sha256_receipt_sha256": "d8e412bc0cdf5c17916ca48f1d93f21591231fba58d842a1f7a04e2133c6dbf5",
+    "metadata_identity": {
+      "acquisition_receipt_sha256": "f441eb8bc42408d7add046c4cfd907b77d4da06004e2e3f7c2043b726359012d",
+      "backbone_source_sha256": "321359bb81fee1922a87697583ca7db0f2479afefa8ad31fa05740f8815b3575",
+      "continuation_protocol_sha256": "aafe4c0e05376084d227fe8f700e1ca1249376c389fa559369d978f3c37b8517",
+      "manifest_sha256": "5241043cdaf73cfd5edfe9183e444e2f29a559162486f0f24af6c7539a363653",
+      "parent_checkpoint_sha256s_sha256": "c1e71d6c98091806ea35d1edba74fad256f828c7ff306d0d58722d21dcaaa0f1",
+      "protocol_sha256": "15df80cc6d2c5243795a811653576741511bddc517f0f9ae7b47e73905c6e01f",
+      "source_sha256": "67cf7ebf4a1a91a74b322b70818adfcb323ca8e6a3eabe5faf152270a19090fb"
+    },
+    "training_job_id": 1598870
+  },
+  "claim_boundary": "This user-authorized diagnostic evaluates the step-1000 continuation checkpoint with the same frozen-feature MNIST and Fashion-MNIST protocol as step 250. It does not retrospectively satisfy the continuation run's external zero-stderr gate, establish broad visual quality, ImageNet performance, release readiness, or superiority over reference models.",
+  "continuation_comparison_gate": {
+    "baseline_primary_scores": {
+      "fashion_mnist.knn_top1": 0.671,
+      "fashion_mnist.ridge_top1": 0.6991000175476074,
+      "mnist.knn_top1": 0.6361,
+      "mnist.ridge_top1": 0.7075999975204468
+    },
+    "baseline_step": 250,
+    "baseline_student_mean_top1": 0.6784500037670136,
+    "maximum_absolute_regression_per_primary_score": 0.01,
+    "step1000_mean_must_be_strictly_greater": true
+  },
+  "datasets": {
+    "fashion_mnist": {
+      "files": {
+        "t10k-images-idx3-ubyte.gz": "bef4ecab320f06d8554ea6380940ec79",
+        "t10k-labels-idx1-ubyte.gz": "bb300cfdad3c16e7a12a480ee83cd310",
+        "train-images-idx3-ubyte.gz": "8d4fb7e6c68d591d4c3dfef9ec88bf0d",
+        "train-labels-idx1-ubyte.gz": "25c81989df183df01b3e8a0aad5dffbe"
+      },
+      "test_examples": 10000,
+      "train_examples": 60000
+    },
+    "mnist": {
+      "files": {
+        "t10k-images-idx3-ubyte.gz": "9fb629c4189551a2d022fa330f9573f3",
+        "t10k-labels-idx1-ubyte.gz": "ec29112dd5afa0611ce80d1b7f02629c",
+        "train-images-idx3-ubyte.gz": "f68b3c2dcbeaaa9fbdd348bbdeb94873",
+        "train-labels-idx1-ubyte.gz": "d53e105ee54ea40749a09fcbcd1e9432"
+      },
+      "test_examples": 10000,
+      "train_examples": 60000
+    }
+  },
+  "evaluation": {
+    "feature": "final layer-normalized CLS token, L2-normalized for classifiers",
+    "knn": {
+      "k": 20,
+      "temperature": 0.07,
+      "vote": "similarity-weighted"
+    },
+    "metrics": [
+      "top1_accuracy",
+      "top5_accuracy"
+    ],
+    "preprocessing": "repeat grayscale to RGB, bicubic resize to 224x224, ImageNet mean/std normalization",
+    "ridge_probe": {
+      "lambda_grid": [
+        0.0001,
+        0.001,
+        0.01,
+        0.1,
+        1.0,
+        10.0,
+        100.0
+      ],
+      "selection": "deterministic stratified 80/20 split of the official training set; refit on all training examples after lambda selection"
+    },
+    "seed": 20260917,
+    "variants": [
+      "student at step 1000"
+    ]
+  },
+  "promotion_gate": {
+    "minimum_teacher_mean_top1_gain_over_random_percentage_points": 2.0,
+    "primary_scores": [
+      "fashion_mnist.knn_top1",
+      "fashion_mnist.ridge_top1",
+      "mnist.knn_top1",
+      "mnist.ridge_top1"
+    ]
+  },
+  "status": "PREREGISTERED_FROZEN_FEATURE_DIAGNOSTIC"
+}

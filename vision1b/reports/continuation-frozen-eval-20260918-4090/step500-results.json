@@ -1,0 +1,187 @@
+{
+  "checkpoint": "/ssd/scxi253/vision1b-research/runs/vision1b-25k-cont1000-r1-1598870/checkpoints/step-000500",
+  "claim_boundary": "This user-authorized diagnostic evaluates the step-500 continuation checkpoint with the same frozen-feature MNIST and Fashion-MNIST protocol as step 250. It does not retrospectively satisfy the continuation run's external zero-stderr gate, establish broad visual quality, ImageNet performance, release readiness, or superiority over reference models.",
+  "compile_mode": "max-autotune-no-cudagraphs",
+  "data_root": "/ssd/scxi253/vision1b-research/data/downstream",
+  "identities": {
+    "checkpoint_metadata": {
+      "acquisition_receipt_sha256": "f441eb8bc42408d7add046c4cfd907b77d4da06004e2e3f7c2043b726359012d",
+      "backbone_source_sha256": "321359bb81fee1922a87697583ca7db0f2479afefa8ad31fa05740f8815b3575",
+      "completed_step": 500,
+      "continuation_protocol_sha256": "aafe4c0e05376084d227fe8f700e1ca1249376c389fa559369d978f3c37b8517",
+      "manifest_sha256": "5241043cdaf73cfd5edfe9183e444e2f29a559162486f0f24af6c7539a363653",
+      "parent_checkpoint_sha256s_sha256": "c1e71d6c98091806ea35d1edba74fad256f828c7ff306d0d58722d21dcaaa0f1",
+      "protocol_sha256": "15df80cc6d2c5243795a811653576741511bddc517f0f9ae7b47e73905c6e01f",
+      "source_sha256": "67cf7ebf4a1a91a74b322b70818adfcb323ca8e6a3eabe5faf152270a19090fb"
+    },
+    "checkpoint_metadata_json_sha256": "9a1aa73b568daefa1971919b206ba6cacfb8eae93a6c2e53538c85ad127ff83b",
+    "checkpoint_sha256_receipt_sha256": "4251e33fb766b6d16dd312370558dd0763cd5349ec955ae1ba6faf68484851b5",
+    "dataset_files": {
+      "fashion_mnist": {
+        "t10k-images-idx3-ubyte.gz": {
+          "bytes": 4422102,
+          "md5": "bef4ecab320f06d8554ea6380940ec79",
+          "sha256": "346e55b948d973a97e58d2351dde16a484bd415d4595297633bb08f03db6a073"
+        },
+        "t10k-labels-idx1-ubyte.gz": {
+          "bytes": 5148,
+          "md5": "bb300cfdad3c16e7a12a480ee83cd310",
+          "sha256": "67da17c76eaffca5446c3361aaab5c3cd6d1c2608764d35dfb1850b086bf8dd5"
+        },
+        "train-images-idx3-ubyte.gz": {
+          "bytes": 26421880,
+          "md5": "8d4fb7e6c68d591d4c3dfef9ec88bf0d",
+          "sha256": "3aede38d61863908ad78613f6a32ed271626dd12800ba2636569512369268a84"
+        },
+        "train-labels-idx1-ubyte.gz": {
+          "bytes": 29515,
+          "md5": "25c81989df183df01b3e8a0aad5dffbe",
+          "sha256": "a04f17134ac03560a47e3764e11b92fc97de4d1bfaf8ba1a3aa29af54cc90845"
+        }
+      },
+      "mnist": {
+        "t10k-images-idx3-ubyte.gz": {
+          "bytes": 1648877,
+          "md5": "9fb629c4189551a2d022fa330f9573f3",
+          "sha256": "8d422c7b0a1c1c79245a5bcf07fe86e33eeafee792b84584aec276f5a2dbc4e6"
+        },
+        "t10k-labels-idx1-ubyte.gz": {
+          "bytes": 4542,
+          "md5": "ec29112dd5afa0611ce80d1b7f02629c",
+          "sha256": "f7ae60f92e00ec6debd23a6088c31dbd2371eca3ffa0defaefb259924204aec6"
+        },
+        "train-images-idx3-ubyte.gz": {
+          "bytes": 9912422,
+          "md5": "f68b3c2dcbeaaa9fbdd348bbdeb94873",
+          "sha256": "440fcabf73cc546fa21475e81ea370265605f56be210a4024d2ca8f203523609"
+        },
+        "train-labels-idx1-ubyte.gz": {
+          "bytes": 28881,
+          "md5": "d53e105ee54ea40749a09fcbcd1e9432",
+          "sha256": "3552534a0a558bbed6aed32b30c495cca23d567ec52cac8be1a0730e8010255c"
+        }
+      }
+    },
+    "dcp_metadata_sha256": "5a39e9f00f54085761cffe6413b1e1ecb573b590267b6965054c3eaf726b571e"
+  },
+  "protocol_sha256": "e4f8e24409a15b743a674bc1f1bf832240bd8a45d68c75e1a582c64ee4d76df1",
+  "results": {
+    "student": {
+      "fashion_mnist": {
+        "feature_extraction_seconds_max_rank": {
+          "test": 45.88779067993164,
+          "train": 319.7656555175781
+        },
+        "knn": {
+          "k": 20,
+          "temperature": 0.07,
+          "top1": 0.6775,
+          "top5": 0.9603
+        },
+        "ridge_probe": {
+          "selected_lambda": 0.0001,
+          "top1": 0.7009999752044678,
+          "top5": 0.9581000208854675,
+          "validation_candidates": [
+            {
+              "lambda": 0.0001,
+              "validation_top1": 0.7045833468437195,
+              "validation_top5": 0.9599166512489319
+            },
+            {
+              "lambda": 0.001,
+              "validation_top1": 0.6903333067893982,
+              "validation_top5": 0.9627500176429749
+            },
+            {
+              "lambda": 0.01,
+              "validation_top1": 0.6211666464805603,
+              "validation_top5": 0.9509166479110718
+            },
+            {
+              "lambda": 0.1,
+              "validation_top1": 0.5289999842643738,
+              "validation_top5": 0.9311666488647461
+            },
+            {
+              "lambda": 1.0,
+              "validation_top1": 0.503166675567627,
+              "validation_top5": 0.9227499961853027
+            },
+            {
+              "lambda": 10.0,
+              "validation_top1": 0.49924999475479126,
+              "validation_top5": 0.9224166870117188
+            },
+            {
+              "lambda": 100.0,
+              "validation_top1": 0.4989166557788849,
+              "validation_top5": 0.9223333597183228
+            }
+          ]
+        },
+        "test_examples": 10000,
+        "train_examples": 60000
+      },
+      "mnist": {
+        "feature_extraction_seconds_max_rank": {
+          "test": 45.845455169677734,
+          "train": 272.2306823730469
+        },
+        "knn": {
+          "k": 20,
+          "temperature": 0.07,
+          "top1": 0.645,
+          "top5": 0.9587
+        },
+        "ridge_probe": {
+          "selected_lambda": 0.0001,
+          "top1": 0.7121000289916992,
+          "top5": 0.9711999893188477,
+          "validation_candidates": [
+            {
+              "lambda": 0.0001,
+              "validation_top1": 0.7032344341278076,
+              "validation_top5": 0.9668222665786743
+            },
+            {
+              "lambda": 0.001,
+              "validation_top1": 0.6754751801490784,
+              "validation_top5": 0.96448814868927
+            },
+            {
+              "lambda": 0.01,
+              "validation_top1": 0.5727742314338684,
+              "validation_top5": 0.9492330551147461
+            },
+            {
+              "lambda": 0.1,
+              "validation_top1": 0.41355451941490173,
+              "validation_top5": 0.9203901290893555
+            },
+            {
+              "lambda": 1.0,
+              "validation_top1": 0.14238078892230988,
+              "validation_top5": 0.7204901576042175
+            },
+            {
+              "lambda": 10.0,
+              "validation_top1": 0.11237078905105591,
+              "validation_top5": 0.5554351210594177
+            },
+            {
+              "lambda": 100.0,
+              "validation_top1": 0.11237078905105591,
+              "validation_top5": 0.5174224972724915
+            }
+          ]
+        },
+        "test_examples": 10000,
+        "train_examples": 60000
+      }
+    }
+  },
+  "source_sha256": "49ab5aa8d4566dbd2ecf275f4cfc0ee0228c6fab1fe099ab523f67a6ae174e55",
+  "status": "COMPLETE",
+  "world_size": 1
+}

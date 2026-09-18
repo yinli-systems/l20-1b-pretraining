@@ -1,0 +1,48 @@
+{
+  "baseline": {
+    "scores": {
+      "fashion_mnist.knn_top1": 0.671,
+      "fashion_mnist.ridge_top1": 0.6991000175476074,
+      "mnist.knn_top1": 0.6361,
+      "mnist.ridge_top1": 0.7075999975204468
+    },
+    "step": 250,
+    "student_mean_top1": 0.6784500037670136
+  },
+  "claim_boundary": "This diagnostic compares frozen-feature transfer on MNIST and Fashion-MNIST only. It does not retrospectively satisfy the continuation run's external zero-stderr gate, establish broad visual quality, or establish superiority over reference models.",
+  "gate": {
+    "maximum_absolute_regression_per_primary_score": 0.01,
+    "requires_step1000_mean_strictly_above_step250": true
+  },
+  "inputs": {
+    "step1000_protocol_sha256": "1e4c3eac221721bf7fb3c7ba79a6dff2c5d9dda30bcc9f132f40934cc348dc3b",
+    "step1000_results_sha256": "fb8721de69ac2f12a5947f28580da4cc4a805a12145828e7d971a1ab845dbedb",
+    "step500_protocol_sha256": "e4f8e24409a15b743a674bc1f1bf832240bd8a45d68c75e1a582c64ee4d76df1",
+    "step500_results_sha256": "59290dde6afe84925b2aed8fc406970c126d393182e06ff654b66352c02e486f"
+  },
+  "status": "PROMOTE_STEP1000",
+  "step1000": {
+    "deltas_from_step250": {
+      "fashion_mnist.knn_top1": 0.0030000000000000027,
+      "fashion_mnist.ridge_top1": 0.0026999711990356445,
+      "mnist.knn_top1": 0.0018000000000000238,
+      "mnist.ridge_top1": 0.010399997234344482
+    },
+    "scores": {
+      "fashion_mnist.knn_top1": 0.674,
+      "fashion_mnist.ridge_top1": 0.7017999887466431,
+      "mnist.knn_top1": 0.6379,
+      "mnist.ridge_top1": 0.7179999947547913
+    },
+    "student_mean_top1": 0.6829249958753586
+  },
+  "step500": {
+    "scores": {
+      "fashion_mnist.knn_top1": 0.6775,
+      "fashion_mnist.ridge_top1": 0.7009999752044678,
+      "mnist.knn_top1": 0.645,
+      "mnist.ridge_top1": 0.7121000289916992
+    },
+    "student_mean_top1": 0.6839000010490417
+  }
+}

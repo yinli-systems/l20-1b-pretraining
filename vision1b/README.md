@@ -89,9 +89,13 @@ change as a recovery. The retry cap is now exhausted; another submission must
 be explicitly authorized and must exclude `wqd10nah08g5`.
 
 The user explicitly authorized that final retry. Job `1598870`,
-`vision1b-cont1000-r2`, uses the same read-only v2 source and exact training
-contract, has scheduler-level exclusion of `wqd10nah08g5`, and is pending four
-RTX 5090 GPUs. Scheduler acceptance is not allocation or recovery evidence.
+`vision1b-cont1000-r2`, excluded `wqd10nah08g5`, allocated four RTX 5090 GPUs
+on `wqd10nbj06g4`, and completed through step 1,000 with exit code 0. Its
+training summary records 55.15% median end-to-end estimated dense MFU across
+740 measured steps, 61.41 source images/s, finite final loss `8.8834552765`,
+and checkpoints at steps 500, 750 and 1,000. The run's stderr contains 3,136
+lines of Inductor autotune warnings, so it does not satisfy the external
+zero-stderr qualification gate even though its internal summary is `PASS`.
 
 The parent step-250 checkpoint was revalidated before the replacement: it
 contains six files and 18,354,419,036 bytes, frozen by a receipt whose SHA-256
@@ -114,6 +118,30 @@ and 1,000. The continuation is promoted only if step 1,000 beats the step-250
 student's 67.8450% four-score mean without a material per-dataset regression;
 otherwise step 250 remains selected.
 
+The user authorized diagnostic evaluation despite the unmet training
+zero-stderr gate. RTX 4090 smoke jobs `1600580` and `1600584` completed before
+their dependent full jobs `1600582` and `1600586`. Both full jobs completed
+with exit code 0 on one exact RTX 4090, finite scores, complete sample counts
+and verified artifact hashes. Their stderr preserves nonfatal Inductor
+autotune failures for invalid Triton resource configurations; the evaluator
+fell back to valid kernels and completed, so these logs are retained rather
+than described as clean stderr.
+
+| Checkpoint | Fashion-MNIST 20-NN | Fashion-MNIST ridge | MNIST 20-NN | MNIST ridge | Four-score mean |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Step 250 baseline | 67.10% | 69.91% | 63.61% | 70.76% | 67.8450% |
+| Step 500 diagnostic | 67.75% | 70.10% | 64.50% | 71.21% | 68.3900% |
+| Step 1,000 diagnostic | 67.40% | 70.18% | 63.79% | 71.80% | **68.2925%** |
+
+Step 1,000 passes the frozen continuation gate: its mean is 0.4475 percentage
+points above step 250 and every primary score improves, so the comparison
+receipt is `PROMOTE_STEP1000`. Step 500's slightly higher mean is reported but
+was not the preregistered selection target. The continuation evaluation ran on
+RTX 4090 while the frozen step-250 baseline ran on RTX 5090; this is a hardware
+confound for exact-score attribution. Promotion therefore selects step 1,000
+only for this bounded continuation diagnostic. It does not retroactively
+qualify training or establish broad visual quality or superiority.
+
 The machine-readable contract is
 [`continuation_25k_stage2_protocol_v1.json`](continuation_25k_stage2_protocol_v1.json).
 The original immutable source remains
@@ -124,6 +152,9 @@ the read-only source
 `65fa783ebe9e63324f48d921c8e720fd7a9625e2768728ff45b28f81c62c9b4e`.
 The failure and recovery evidence is frozen in
 [`reports/continuation-recovery-20260917/receipt.json`](reports/continuation-recovery-20260917/receipt.json).
+The evaluation protocols, exact result JSON, GPU telemetry, stderr, source
+receipts and hashed comparison are preserved in
+[`reports/continuation-frozen-eval-20260918-4090/`](reports/continuation-frozen-eval-20260918-4090/).
 
 ## Corpus-scale expansion
 
@@ -258,6 +289,7 @@ mean is the unweighted mean of the four displayed top-1 scores.
 | Frozen backbone | Fashion-MNIST 20-NN | Fashion-MNIST ridge | MNIST 20-NN | MNIST ridge | Four-score mean |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | Vision 1B student, 25k images / step 250 | 67.10% | 69.91% | 63.61% | 70.76% | 67.85% |
+| Vision 1B student, bounded continuation / step 1,000 | 67.40% | 70.18% | 63.79% | 71.80% | **68.29%** |
 | DINOv2-g/14 | 91.57% | 91.95% | 92.39% | 96.37% | **93.07%** |
 | DINOv2-B/14 | 90.22% | 89.92% | 94.72% | 96.85% | 92.93% |
 | DINOv2-L/14 | 90.61% | 90.66% | 91.50% | 95.12% | 91.97% |
@@ -265,13 +297,15 @@ mean is the unweighted mean of the four displayed top-1 scores.
 | Supervised ImageNet-1K ResNet-50 | 88.47% | 87.48% | 95.10% | 96.13% | 91.80% |
 | OpenAI CLIP ViT-B/32, strict shared preprocessing | 87.14% | 85.14% | 96.44% | 95.57% | 91.07% |
 
-The bounded Vision 1B student trails the lowest reference by 23.2275
-percentage points and DINOv2-g/14 by 25.2250 points.  It therefore passed its
-preregistered random/teacher promotion gate and learned transferable features,
+The selected bounded step-1,000 diagnostic trails the lowest reference by
+22.7775 percentage points and DINOv2-g/14 by 24.7775 points. It passes the
+preregistered continuation gate and retains evidence of transferable features,
 but it does not approach these mature pretrained representations under this
-diagnostic.  DINOv2, CLIP and supervised ResNet use different and vastly larger
-training regimes, so the table does not compare data efficiency, compute
-efficiency, native preprocessing or overall model quality.
+diagnostic. The continuation row ran on RTX 4090 while the step-250 and mature
+reference rows ran on RTX 5090. DINOv2, CLIP and supervised ResNet also use
+different and vastly larger training regimes, so the table does not compare
+data efficiency, compute efficiency, native preprocessing or overall model
+quality.
 
 The OpenCLIP runtime warns at empty model construction that pretrained weights
 were not loaded by `create_model`; the evaluator then verifies the official JIT
