@@ -1,0 +1,22 @@
+{
+  "date": "2026-09-28",
+  "trigger": "post-merge main CI terminated by SIGTERM (exit143) during the old in-process signal test",
+  "failed_workflow_run": 36471459154,
+  "failed_job": 109094470050,
+  "fix": "real SIGTERM in a dedicated child after installed-handler verification and iterator entry, rather than a0.2second wall-clock timer",
+  "production_pack_data_modified": false,
+  "original_test_preserved_at": "pretraining/archive/tests/test_pack_data_checkpoint_stop.py",
+  "active_test_sha256": "12e7f44ac757beee34eb6cfbb4fb36147e041a42d3f466fa1b76569662076c17",
+  "full_CPU_suite": {
+    "passed": 149,
+    "skipped": 1,
+    "failed": 0,
+    "warnings": 6,
+    "seconds": 5.34
+  },
+  "new_regression": "deliberately delayed tokenizer initialization still checkpoints aligned buffers safely",
+  "extra_repeat_stress_test_executed": false,
+  "skipped_test": "original GPU serialization contract; not run in CPU-only validation",
+  "old_evidence_and_model_results_changed": false,
+  "all646_original_file_hashes_still_preserved": true
+}
