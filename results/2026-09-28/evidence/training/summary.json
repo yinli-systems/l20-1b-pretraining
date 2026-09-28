@@ -1,0 +1,20 @@
+{
+  "status": "bounded_stop",
+  "checkpoint": "${RUN}/memory-training/checkpoints/step-005120",
+  "steps": 5120,
+  "totals": {
+    "image_events": 327680,
+    "new_image_events": 163840,
+    "answer_tokens": 3350198,
+    "visual_tokens": 184647680,
+    "text_tokens": 5242880
+  },
+  "training_seconds_this_process": 4842.987561678514,
+  "wall_seconds_including_input_preparation_and_checks": 5726.015090389177,
+  "input_chain_sha256": "947c3a721eca3f942d5a787f63f629d010d1ffda589c47f3e8225a74a7d77459",
+  "stop_reason": "retention_guard",
+  "post_training_evaluation_pending": true,
+  "no_model_promotion": true,
+  "no_prior_or_new_checkpoint_deleted": true,
+  "created_unix": 1790613057.141943
+}

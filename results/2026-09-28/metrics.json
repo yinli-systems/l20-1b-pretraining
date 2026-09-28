@@ -1,0 +1,244 @@
+{
+  "schema_version": 1,
+  "date": "2026-09-28",
+  "experiment": "evaluation-first streamed multimodal expansion",
+  "status": "training_stopped_by_retention_guard; published-split_evaluation_complete",
+  "checkpoint_manifest_sha256": "ff8a6684ec1922a04e7948dbfbbfb8f345c64c650f6fa99ceb311ebdc6af11b0",
+  "baseline_checkpoint_manifest_sha256": "11fce0dc36e742fba02457aaed43fae7dd5a40f942734ea5215b4c592e26353c",
+  "model": {
+    "total_parameters": 1203213056,
+    "trainable_parameters": 10280448,
+    "language_parent": "AliceYin/L20-1B-20B-Base",
+    "language_and_vision_backbones_frozen": true,
+    "visual_tokens_high": 784,
+    "visual_tokens_low": 196,
+    "route": "448 source image; four native 224 tiles; ordered 28x28 patch grid"
+  },
+  "training": {
+    "steps": 5120,
+    "new_image_events_used_in_saved_lineage": 163840,
+    "prepared_images": 165376,
+    "global_image_events": 327680,
+    "supervised_answer_tokens": 3350198,
+    "text_replay_prediction_tokens": 5242880,
+    "maximum_new_image_target": 250000,
+    "target_reached": false,
+    "single_source_pass": true,
+    "stop_reason": "retention_guard",
+    "automatic_promotion": false,
+    "training_seconds_after_resume_only": 4842.987561678514,
+    "total_runtime_or_energy_claimed": false,
+    "restart": {
+      "last_logged_step_before_stall": 3856,
+      "resumed_from_saved_step": 3840,
+      "uncheckpointed_updates_replayed": 16,
+      "incident": "file-descriptor exhaustion in multiprocessing input pipeline",
+      "mitigation": "new process soft open-file limit raised; saved optimizer/RNG/input cursor restored",
+      "resource_leak_root_cause_proven_fixed": false
+    }
+  },
+  "evaluation": {
+    "total_questions": 15937,
+    "all_rows_retained": true,
+    "custom_model_wrapper_not_full_lmms_eval_CLI": true,
+    "harness_reference_commit": "42296f8fd2f0929d88a6ac4f7a1f2d784537f8d8",
+    "batch_size": 8,
+    "greedy": true,
+    "max_new_tokens": {
+      "textvqa": 32,
+      "chartqa": 16,
+      "ai2d": 16,
+      "docvqa": 32
+    },
+    "external_OCR_or_gold_boxes": false,
+    "bootstrap_resamples": 4000,
+    "bootstrap_seed": 2026092802,
+    "uncertainty_scope": "paired image-cluster sample uncertainty, not training-seed uncertainty",
+    "training_seeds": 1,
+    "four_domain_comparisons_not_multiplicity_adjusted": true,
+    "benchmark_not_blind_after_format_diagnosis": true,
+    "known_previous_ChartQA_overlap_questions": 2,
+    "not_a_leaderboard_submission": true
+  },
+  "tasks": {
+    "textvqa": {
+      "questions": 5000,
+      "unique_images": 3166,
+      "before": 0.17506,
+      "after": 0.23774,
+      "delta": 0.06268,
+      "paired_ci95": [
+        0.05346495092721508,
+        0.07162553667840947
+      ],
+      "paired_ci97_5": [
+        0.05204780107788168,
+        0.07273273216853335
+      ],
+      "source_data_sha256": "a0e020a66e4e6692214c4b6c272c4bdca6e5d903352882eaa0be5f19a1ecdd10",
+      "before_predictions_sha256": "bb05f630bff91c1d4870d6d6c91e9560670af9989fa21f7fd84833ba7abb3d17",
+      "after_predictions_sha256": "71ce9473ab8710d289c737190862b0ed2bf6f9905f00d0200e56534024ae2d63",
+      "before_subsets": {
+        "None": {
+          "n": 5000,
+          "score": 0.17506
+        }
+      },
+      "after_subsets": {
+        "None": {
+          "n": 5000,
+          "score": 0.23774
+        }
+      },
+      "metric": "ten-reference EvalAI-style VQA"
+    },
+    "docvqa": {
+      "questions": 5349,
+      "unique_images": 1285,
+      "before": 0.04590524261792368,
+      "after": 0.09483324343305596,
+      "delta": 0.04892800081513229,
+      "paired_ci95": [
+        0.042228283510259465,
+        0.05556565825188754
+      ],
+      "paired_ci97_5": [
+        0.041243405843745445,
+        0.056729051864593004
+      ],
+      "source_data_sha256": "2b7a746a211c4b9bb32e53e10b8efb88813a3f7b44b89a837c24027f4978ce81",
+      "before_predictions_sha256": "04ab5003b28781df42c788dd6e844a443a788d7e29487441c554abf802adad2c",
+      "after_predictions_sha256": "3489261efe761f5e086c81328c53f529fcdcd52d4bde66c7955eae16869b2546",
+      "before_subsets": {
+        "None": {
+          "n": 5349,
+          "score": 0.04590524261792368
+        }
+      },
+      "after_subsets": {
+        "None": {
+          "n": 5349,
+          "score": 0.09483324343305596
+        }
+      },
+      "metric": "max-reference ANLS"
+    },
+    "chartqa": {
+      "questions": 2500,
+      "unique_images": 1509,
+      "before": 0.1132,
+      "after": 0.1216,
+      "delta": 0.0084,
+      "paired_ci95": [
+        -0.0016038814181322492,
+        0.01888308557653676
+      ],
+      "paired_ci97_5": [
+        -0.0032091304929163975,
+        0.02057338343113079
+      ],
+      "source_data_sha256": "9ff37448c0a2c9c4f05f94a47ceb863c5772f31cdc58b26a6adec9b60523cb63",
+      "before_predictions_sha256": "353510fc5c1c61151afc5ef16846427449eada4d3618e0f7366f8d5e64ac4a8f",
+      "after_predictions_sha256": "d96d61431f628024c1ee3a29f2cedb911972bdfab477ff882b471a80c9d3291e",
+      "before_subsets": {
+        "human_test": {
+          "n": 1250,
+          "score": 0.1
+        },
+        "augmented_test": {
+          "n": 1250,
+          "score": 0.1264
+        }
+      },
+      "after_subsets": {
+        "human_test": {
+          "n": 1250,
+          "score": 0.1072
+        },
+        "augmented_test": {
+          "n": 1250,
+          "score": 0.136
+        }
+      },
+      "metric": "relaxed numeric accuracy"
+    },
+    "ai2d": {
+      "questions": 3088,
+      "unique_images": 814,
+      "before": 0.07318652849740932,
+      "after": 0.26262953367875647,
+      "delta": 0.18944300518134716,
+      "paired_ci95": [
+        0.17391127088119346,
+        0.20603928231807436
+      ],
+      "paired_ci97_5": [
+        0.1717063207649176,
+        0.20854974443127422
+      ],
+      "source_data_sha256": "0355df168d0e0f81f93e51fb25142add36f1eb6f830d7cfe0b280636cbd7bc9e",
+      "before_predictions_sha256": "6fd08a446383adf1cd10f32b5f086ac048ee444398cf973935a44d9a41a1280b",
+      "after_predictions_sha256": "ab7f675b433a2d0d3166ac6a69cb57a0a3853fb78dd24b4e8c89ae6a0d8fa882",
+      "before_subsets": {
+        "None": {
+          "n": 3088,
+          "score": 0.07318652849740932
+        }
+      },
+      "after_subsets": {
+        "None": {
+          "n": 3088,
+          "score": 0.26262953367875647
+        }
+      },
+      "metric": "default letter filter + exact match"
+    }
+  },
+  "retention": {
+    "before": {
+      "old_QA": 0.5625,
+      "old_caption_nll": 1.6197589449584484,
+      "text_nll": {
+        "web": 2.387526661157608,
+        "dclm": 2.713881492614746,
+        "math": 2.39383202791214,
+        "code": 1.020752675831318
+      }
+    },
+    "at_stop": {
+      "old_QA": 0.50859375,
+      "old_caption_nll": 1.593834886327386,
+      "text_nll": {
+        "web": 2.394646018743515,
+        "dclm": 2.720978230237961,
+        "math": 2.403410643339157,
+        "code": 1.0271678939461708
+      }
+    },
+    "checks_at_4864": {
+      "old_QA": false,
+      "caption": true,
+      "text": true,
+      "old_multidomain_NLL": true
+    },
+    "checks_at_5120": {
+      "old_QA": false,
+      "caption": true,
+      "text": true,
+      "old_multidomain_NLL": true
+    },
+    "consecutive_failures": 2,
+    "old_QA_drop": 0.053906250000000044,
+    "old_QA_allowed_absolute_drop": 0.05
+  },
+  "limitations": [
+    "No SmolVLM parity or frontier claim.",
+    "Quantity, source mixture, replay and AI2D target formatting changed together; this does not isolate a data-only scaling law.",
+    "AI2D primary improvement includes output-format effects; ChartQA confidence interval crosses zero.",
+    "Frozen high-resolution path and language maturity are hypotheses to test, not established causes of the remaining gap.",
+    "Prepared images are not completed training exposures.",
+    "The endpoint failed the old-QA retention gate and is not a promoted release.",
+    "No current VLM MFU or full-run energy measurement is asserted.",
+    "Earlier exact image overlap, unknown semantic/document-level overlap and public baseline training exposure are not erased."
+  ]
+}

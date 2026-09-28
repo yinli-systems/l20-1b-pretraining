@@ -1,0 +1,22 @@
+{
+  "AI2D": {
+    "full_primary_default_filter_score": 0.07318652849740932,
+    "diagnostic_Answer_prefix_accepting_score": 0.25615284974093266,
+    "answer_prefix_distribution": {
+      "without_Answer_prefix": 848,
+      "with_Answer_prefix": 2240
+    },
+    "questions": 3088,
+    "primary_score_not_replaced": true,
+    "diagnostic_not_a_new_inference_run": true,
+    "no_prompt_or_checkpoint_search": true
+  },
+  "ChartQA": {
+    "primary_all_questions": 2500,
+    "primary_all_score": 0.1132,
+    "exact_nonoverlap_diagnostic_questions": 2498,
+    "exact_nonoverlap_diagnostic_score": 0.11329063250600481,
+    "primary_score_not_replaced": true
+  },
+  "evidence": "Outputs reused read-only; official test rows and scores remain intact. Format mismatch is not equivalent to perception failure."
+}
