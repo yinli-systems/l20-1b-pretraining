@@ -1,0 +1,197 @@
+{
+  "schema_version": "2026-09-27-v1",
+  "project": "L20-VL-1.2B",
+  "parent_lm": {
+    "parameters": 1100048384,
+    "pretraining_tokens": 19999703040,
+    "seven_task_macro": 0.512601,
+    "six_task_macro_ex_boolq": 0.499411
+  },
+  "vlm": {
+    "combined_parameters": 1203213056,
+    "main_trainable_parameters": 10280448,
+    "visual_tokens": {
+      "low_224": 196,
+      "high_448": 784
+    }
+  },
+  "general_vision": {
+    "updates": 1024,
+    "image_events": 65536,
+    "supervised_answer_tokens": 594278,
+    "nonpadding_input_tokens": 14663423,
+    "text_replay_tokens": 4194304,
+    "images_per_second": 40.656,
+    "peak_allocated_gib": 13.3,
+    "local_vqa_subset": {
+      "true_consensus": 0.458594,
+      "wrong_consensus": 0.32598,
+      "correct_image_advantage_pp": 13.2617,
+      "complementary_true": 0.38008,
+      "pair_joint_exact": 0.10156
+    }
+  },
+  "smol_gap_audit": {
+    "smol_model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+    "revision": "a7da5b986cb59b408707209984f360a5f4ad7e47",
+    "same_local_subset": {
+      "own": 0.458594,
+      "smol_native": 0.717773,
+      "smol_source_capped_diagnostic": 0.658984,
+      "own_minus_native_pp": -25.9179,
+      "own_minus_source_capped_pp": -20.039
+    },
+    "latency_ms": {
+      "own_first_token_p50": 37.735,
+      "smol_native_first_token_p50": 346.161,
+      "same_work_comparison": false
+    }
+  },
+  "negative_results": {
+    "scale_vision": {
+      "seeds": 3,
+      "steps_per_arm": 256,
+      "dev_means": {
+        "C": 0.506901,
+        "D": 0.489974,
+        "M": 0.488672
+      },
+      "promoted": false
+    },
+    "replay": {
+      "seeds": 3,
+      "steps_per_arm": 512,
+      "dev_means": {
+        "C": 0.522005,
+        "R": 0.501823
+      },
+      "R_minus_C_per_seed": [
+        -0.0265625,
+        -0.045703125,
+        0.01171875
+      ],
+      "promoted": false
+    }
+  },
+  "integrated_textvqa_128": {
+    "scores": {
+      "parent_G": 0.05703,
+      "parent_T": 0.0625,
+      "G": 0.06953,
+      "T": 0.08828,
+      "smol_source448": 0.41016,
+      "smol_native": 0.575
+    },
+    "official_subset_only": true
+  },
+  "prefix_engine_fresh_textvqa_256": {
+    "scores": {
+      "parent": 0.099609375,
+      "C": 0.087109375,
+      "V": 0.083203125,
+      "V10": 0.0921875,
+      "P": 0.091796875,
+      "smol_source448": 0.444921875,
+      "smol_native": 0.61796875
+    },
+    "train_diagnostic": {
+      "V10_train": 0.74453125,
+      "V10_fresh": 0.0921875,
+      "P_train": 0.84375,
+      "P_fresh": 0.091796875
+    },
+    "prefix_cache": {
+      "baseline_img_s": 19.0356755673,
+      "warm_img_s": 20.1026377936,
+      "warm_ratio": 1.0560506625,
+      "three_pass_amortized_ratio": 1.0079188078,
+      "quality_claim": false
+    }
+  },
+  "unique_image_scale": {
+    "steps": 1934,
+    "planned_train_unique_photos": 31178,
+    "train_unique_clusters": 30958,
+    "new_unique_examples": 47690,
+    "new_image_events": 61888,
+    "global_image_events": 123776,
+    "maximum_cluster_exposures": 2,
+    "training_seconds": 6430.380106,
+    "trainable_parameters": 10280448,
+    "new_QA_events_by_domain": {
+      "ai2d": 3462,
+      "docvqa": 6498,
+      "textvqa": 25950,
+      "chartqa": 25978
+    },
+    "final_confirmation": {
+      "textvqa": {
+        "images": 256,
+        "parent": 0.137109375,
+        "final": 0.180859375,
+        "delta": 0.04375,
+        "ci95": [
+          0.021484375,
+          0.069140625
+        ],
+        "wrong_image": 0.097265625,
+        "correct_image_advantage": 0.08359375
+      },
+      "docvqa": {
+        "images": 256,
+        "parent": 0.0478991135,
+        "final": 0.0821954719,
+        "delta": 0.0342963584,
+        "ci95": [
+          0.0114560068,
+          0.0589142393
+        ],
+        "wrong_image": 0.0545444681,
+        "correct_image_advantage": 0.0276510038
+      },
+      "chartqa": {
+        "images": 256,
+        "parent": 0.078125,
+        "final": 0.13671875,
+        "delta": 0.05859375,
+        "ci95": [
+          0.03125,
+          0.08984375
+        ],
+        "wrong_image": 0.0859375,
+        "correct_image_advantage": 0.05078125
+      },
+      "ai2d": {
+        "images": 192,
+        "parent": 0.1979166667,
+        "final": 0.25,
+        "delta": 0.0520833333,
+        "ci95": [
+          -0.0208333333,
+          0.1302083333
+        ],
+        "wrong_image": 0.2395833333,
+        "correct_image_advantage": 0.0104166667
+      }
+    },
+    "final_retention": {
+      "old_QA": 0.5625,
+      "old_caption_nll": 1.619758945,
+      "text_nll": {
+        "web": 2.3875266612,
+        "dclm": 2.7138814926,
+        "math": 2.3938320279,
+        "code": 1.0207526758
+      },
+      "consecutive_failures": 0
+    }
+  },
+  "reporting_boundaries": {
+    "one_training_seed": true,
+    "final_confirmation_is_full_public_leaderboard": false,
+    "CIs_are_evaluation_sample_uncertainty": true,
+    "semantic_overlap_exhaustively_excluded": false,
+    "smol_same_training_or_compute": false,
+    "raw_data_or_weights_in_repo": false
+  }
+}

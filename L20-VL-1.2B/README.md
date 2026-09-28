@@ -6,6 +6,31 @@ encoder on one NVIDIA L20. It contains protocols, code, and evidence receipts,
 but no model weights or raw data. The current system is not a released or
 deployment-ready multimodal model.
 
+
+## Latest consolidated results — 2026-09-27
+
+The current strongest evidence comes from a **1,934-update unique-image scaling run** built on the existing L20-VL stack. The run used about **31k planned unique training photos**, **30,958 image clusters**, at most two exposures per cluster, and retained the original language/vision parents.
+
+On the frozen local image-disjoint confirmation split, the final endpoint improved over the immutable parent by:
+
+| Task | Parent | Final | Delta | Paired 95% CI |
+|---|---:|---:|---:|---:|
+| TextVQA-style, 256 images | 13.71% | **18.09%** | **+4.38 pp** | **[+2.15, +6.91]** |
+| DocVQA-style, 256 images | 4.79% | **8.22%** | **+3.43 pp** | **[+1.15, +5.89]** |
+| ChartQA-style, 256 images | 7.81% | **13.67%** | **+5.86 pp** | **[+3.13, +8.98]** |
+| AI2D, 192 images | 19.79% | **25.00%** | +5.21 pp | [-2.08, +13.02] |
+
+The TextVQA-style final endpoint also scored **18.09% with the correct image versus 9.73% with a deterministic wrong-image control**, indicating a materially stronger image-dependent signal than in the earlier small-pool continuation experiments.
+
+These are **local source-corpus confirmation measurements, not full official leaderboard scores**. Confidence intervals cover evaluation-sample uncertainty, not training-seed variance. SmolVLM remains substantially stronger in the same-machine reference tests.
+
+Full positive, negative and inconclusive results are consolidated in:
+
+- [results/2026-09-27/RESULTS_SO_FAR.md](results/2026-09-27/RESULTS_SO_FAR.md)
+- [results/2026-09-27/metrics.json](results/2026-09-27/metrics.json)
+- [results/2026-09-27/CLAIMS_AND_LIMITATIONS.md](results/2026-09-27/CLAIMS_AND_LIMITATIONS.md)
+
+
 ## Evidence-adaptive routing results
 
 The current architecture starts from a 49-token global view, predicts either a
