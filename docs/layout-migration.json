@@ -3165,7 +3165,7 @@
     },
     {
       "original_path": "tests/test_pack_data_checkpoint_stop.py",
-      "current_path": "pretraining/tests/test_pack_data_checkpoint_stop.py",
+      "current_path": "pretraining/archive/tests/test_pack_data_checkpoint_stop.py",
       "sha256": "dc3a73cc5d7a59ede7c59e33e39c9c3d9a0165b78e743befb35235d6761ba8d7"
     },
     {

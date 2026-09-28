@@ -10,15 +10,13 @@ import signal
 import sqlite3
 import sys
 import tempfile
-import subprocess
+import threading
 import time
 from pathlib import Path
 
 import numpy as np
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-# A direct child-script invocation does not inherit pytest pythonpath settings.
-sys.path.insert(0, str(PROJECT_ROOT))
 
 
 def load_module(path: Path):
@@ -33,13 +31,7 @@ def load_module(path: Path):
 def slow_documents():
     index = 0
     while True:
-        # The iterator is entered only after pack_data installs its stop handlers.
-        # Trigger during the first real batch, not after a wall-clock guess.
-        if index == 32:
-            handler = signal.getsignal(signal.SIGTERM)
-            if not callable(handler) or getattr(handler, "__name__", "") != "request_stop":
-                raise RuntimeError("SIGTERM handler must be installed before the test signal")
-            os.kill(os.getpid(), signal.SIGTERM)
+        time.sleep(0.01)
         yield {
             "text": (
                 f"Slow checkpoint document {index} contains enough unique educational text "
@@ -54,16 +46,6 @@ def slow_documents():
 def main() -> None:
     module = load_module(PROJECT_ROOT / "pack_data.py")
     module.iter_source = lambda *args, **kwargs: slow_documents()
-    # Exercise both ordinary and deliberately slow pre-handler initialization.
-    original_tokenizer = module.Tokenizer
-
-    class DelayedTokenizer:
-        @staticmethod
-        def from_file(path):
-            time.sleep(float(os.environ.get("PACK_STOP_TOKENIZER_DELAY_S", "0")))
-            return original_tokenizer.from_file(path)
-
-    module.Tokenizer = DelayedTokenizer
     with tempfile.TemporaryDirectory(prefix="pack-stop-") as directory:
         root = Path(directory)
         decontam = root / "decontam.sqlite"
@@ -72,8 +54,6 @@ def main() -> None:
         connection.commit()
         connection.close()
         output = root / "out"
-        previous_argv = sys.argv[:]
-        previous_handlers = {sig: signal.getsignal(sig) for sig in (signal.SIGTERM, signal.SIGINT)}
         sys.argv = [
             str(Path(module.__file__)),
             "--source", "web",
@@ -88,15 +68,15 @@ def main() -> None:
             "--workers", "6",
             "--batch-docs", "64",
         ]
+        timer = threading.Timer(0.2, lambda: os.kill(os.getpid(), signal.SIGTERM))
+        timer.start()
         try:
             module.main()
         except SystemExit as error:
             if error.code != 130:
                 raise
         finally:
-            sys.argv = previous_argv
-            for sig, handler in previous_handlers.items():
-                signal.signal(sig, handler)
+            timer.cancel()
 
         progress = json.loads((output / "web/progress.json").read_text())
         if not progress.get("checkpointed_stop"):
@@ -113,25 +93,8 @@ def main() -> None:
         print(json.dumps({"passed": True, "progress": progress, "split_tokens": split_tokens}, sort_keys=True))
 
 
-def run_isolated(delay: str) -> None:
-    env = os.environ.copy()
-    env["PACK_STOP_TOKENIZER_DELAY_S"] = delay
-    result = subprocess.run(
-        [sys.executable, str(Path(__file__).resolve())],
-        capture_output=True, text=True, env=env, timeout=30,
-    )
-    assert result.returncode == 0, f"child exit={result.returncode}\n{result.stdout}\n{result.stderr}"
-    receipt = json.loads(result.stdout.strip().splitlines()[-1])
-    assert receipt["passed"] and receipt["progress"]["checkpointed_stop"]
-    assert sum(receipt["split_tokens"].values()) > 0
-
-
 def test_sigterm_checkpoints_block_aligned_buffers() -> None:
-    run_isolated("0")
-
-
-def test_sigterm_waits_for_handler_after_slow_tokenizer_initialization() -> None:
-    run_isolated("0.4")
+    main()
 
 
 if __name__ == "__main__":

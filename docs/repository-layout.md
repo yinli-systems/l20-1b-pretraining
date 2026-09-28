@@ -41,3 +41,14 @@ These were atomic Git ref moves, not GitHub URL redirects. Existing clones can
 fetch with pruning and update their local branch tracking. Closed PR history,
 original commit authors and historical source strings are not rewritten.
 The unrelated 529M branch was renamed, **not silently merged**.
+
+## Post-merge test stabilization
+
+The original SIGTERM test used a fixed 0.2-second timer; slow initialization could
+terminate the entire pytest process before its handler existed. The active test
+now sends the real signal from a child process only after the packing iterator
+starts and verifies the installed handler. It additionally exercises delayed
+tokenizer initialization. The original test is preserved byte-for-byte at
+`pretraining/archive/tests/test_pack_data_checkpoint_stop.py`, and its migration
+entry points there. Production packing code, numerical results and original
+training-source hashes are unchanged.
