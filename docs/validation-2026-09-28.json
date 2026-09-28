@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-28",
+  "tested_git_tree_before_this_receipt": "83a171810befd0c89cba271f1dd7f6ed1ab66a0e",
+  "tested_archive_sha256": "74ce1f972f01e9fe4dcd06dfccb743100675068dc852e6c1bf3bc6def3759aae",
+  "test_environment": {
+    "python": "3.12",
+    "pytest": "8.4.2",
+    "numpy": "2.5.2",
+    "pyarrow": "25.0.1",
+    "tokenizers": "0.22.2",
+    "GPU_disabled": true,
+    "isolated_pytest_installation": true,
+    "existing_training_environment_packages_read_only": true
+  },
+  "pytest": {
+    "passed": 148,
+    "skipped": 1,
+    "failed": 0,
+    "seconds": 5.41,
+    "warnings": 6,
+    "warning_type": "multiprocessing fork deprecation warning",
+    "skipped_reason": "GPU serialization contract runs on the target host; not exercised in this CPU-only check"
+  },
+  "checks": {
+    "compileall": "passed",
+    "repository_verifier": "verified",
+    "historical_files_byte_preserved": 646,
+    "new_result_questions_recomputed": 15937,
+    "paired_image_clusters": 6774,
+    "active_relative_document_links": 60,
+    "original_language_bundle": "verified",
+    "original_language_paired_CI_replay": "verified_exact_statistical_replay",
+    "git_diff_check": "passed",
+    "new_credential_patterns": "none_found",
+    "new_raw_datasets_or_model_weights": "none_found"
+  },
+  "scope": "Local independent CPU verification of the staged tree; not a GitHub Actions green-status claim, fresh GPU experiment or model reproduction. Only this validation receipt was added after testing."
+}

@@ -1,0 +1,71 @@
+{
+  "paired_cluster_intervals": {
+    "textvqa": {
+      "estimate": 0.06268,
+      "ci95": [
+        0.05346495092721508,
+        0.07162553667840947
+      ],
+      "ci97_5": [
+        0.05204780107788168,
+        0.07273273216853335
+      ],
+      "clusters": 3166,
+      "rows": 5000,
+      "resamples": 4000,
+      "method": "paired cluster percentile bootstrap; weighted numerator/denominator; not training-seed uncertainty"
+    },
+    "chartqa": {
+      "estimate": 0.0084,
+      "ci95": [
+        -0.0016038814181322492,
+        0.01888308557653676
+      ],
+      "ci97_5": [
+        -0.0032091304929163975,
+        0.02057338343113079
+      ],
+      "clusters": 1509,
+      "rows": 2500,
+      "resamples": 4000,
+      "method": "paired cluster percentile bootstrap; weighted numerator/denominator; not training-seed uncertainty"
+    },
+    "ai2d": {
+      "estimate": 0.18944300518134716,
+      "ci95": [
+        0.17391127088119346,
+        0.20603928231807436
+      ],
+      "ci97_5": [
+        0.1717063207649176,
+        0.20854974443127422
+      ],
+      "clusters": 814,
+      "rows": 3088,
+      "resamples": 4000,
+      "method": "paired cluster percentile bootstrap; weighted numerator/denominator; not training-seed uncertainty"
+    },
+    "docvqa": {
+      "estimate": 0.04892800081513229,
+      "ci95": [
+        0.042228283510259465,
+        0.05556565825188754
+      ],
+      "ci97_5": [
+        0.041243405843745445,
+        0.056729051864593004
+      ],
+      "clusters": 1285,
+      "rows": 5349,
+      "resamples": 4000,
+      "method": "paired cluster percentile bootstrap; weighted numerator/denominator; not training-seed uncertainty"
+    }
+  },
+  "one_training_seed": true,
+  "not_training_seed_uncertainty": true,
+  "no_checkpoint_selection_or_promotion": true,
+  "AI2D_primary_gain_can_include_answer_format_improvement": true,
+  "known_previous_ChartQA_image_overlap_questions": 2,
+  "all_rows_retained": true,
+  "unix": 1790614654.5149004
+}

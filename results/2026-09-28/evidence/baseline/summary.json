@@ -1,0 +1,109 @@
+{
+  "status": "complete",
+  "policy": {
+    "checkpoint": "${VLM_PROJECT}/data-scale-20260927T1756Z/run/checkpoints/step-001934",
+    "manifest_sha256": "11fce0dc36e742fba02457aaed43fae7dd5a40f942734ea5215b4c592e26353c",
+    "tasks": [
+      "textvqa",
+      "chartqa",
+      "ai2d",
+      "docvqa"
+    ],
+    "all_questions": true,
+    "batch_size": 8,
+    "greedy": true,
+    "max_new_tokens": {
+      "textvqa": 32,
+      "chartqa": 16,
+      "ai2d": 16,
+      "docvqa": 32
+    },
+    "external_OCR_or_gold_boxes": false,
+    "route": "T448source 4native224tiles 784tokens",
+    "harness_commit": "42296f8fd2f0929d88a6ac4f7a1f2d784537f8d8",
+    "custom_model_wrapper_not_full_harness_CLI": true,
+    "scoring": "EvalAI-style tenreference VQA; pinned ChartQA numeric formula; max-reference ANLS; default AI2D letter filter",
+    "test_prompt_search": false,
+    "before_new_training": true,
+    "weight_updates": 0,
+    "evaluator_sha256": "cc23f93bac2b6f091ca6c8f33f34c0d54405837f11850373b95b77e280f7aa98",
+    "start_unix": 1790543405.2451842
+  },
+  "scores": {
+    "textvqa": {
+      "questions": 5000,
+      "unique_images": 3166,
+      "score": 0.17506,
+      "subsets": {
+        "None": {
+          "n": 5000,
+          "score": 0.17506
+        }
+      },
+      "empty_answers": 0,
+      "exact_training_overlap_questions": 0,
+      "all_rows_reported": true,
+      "seconds": 410.4124128948897,
+      "predictions_sha256": "bb05f630bff91c1d4870d6d6c91e9560670af9989fa21f7fd84833ba7abb3d17",
+      "data_sha256": "a0e020a66e4e6692214c4b6c272c4bdca6e5d903352882eaa0be5f19a1ecdd10"
+    },
+    "chartqa": {
+      "questions": 2500,
+      "unique_images": 1509,
+      "score": 0.1132,
+      "subsets": {
+        "human_test": {
+          "n": 1250,
+          "score": 0.1
+        },
+        "augmented_test": {
+          "n": 1250,
+          "score": 0.1264
+        }
+      },
+      "empty_answers": 0,
+      "exact_training_overlap_questions": 2,
+      "all_rows_reported": true,
+      "seconds": 180.99702349118888,
+      "predictions_sha256": "353510fc5c1c61151afc5ef16846427449eada4d3618e0f7366f8d5e64ac4a8f",
+      "data_sha256": "9ff37448c0a2c9c4f05f94a47ceb863c5772f31cdc58b26a6adec9b60523cb63"
+    },
+    "ai2d": {
+      "questions": 3088,
+      "unique_images": 814,
+      "score": 0.07318652849740932,
+      "subsets": {
+        "None": {
+          "n": 3088,
+          "score": 0.07318652849740932
+        }
+      },
+      "empty_answers": 0,
+      "exact_training_overlap_questions": 0,
+      "all_rows_reported": true,
+      "seconds": 210.1549735851586,
+      "predictions_sha256": "6fd08a446383adf1cd10f32b5f086ac048ee444398cf973935a44d9a41a1280b",
+      "data_sha256": "0355df168d0e0f81f93e51fb25142add36f1eb6f830d7cfe0b280636cbd7bc9e"
+    },
+    "docvqa": {
+      "questions": 5349,
+      "unique_images": 1285,
+      "score": 0.04590524261792368,
+      "subsets": {
+        "None": {
+          "n": 5349,
+          "score": 0.04590524261792368
+        }
+      },
+      "empty_answers": 0,
+      "exact_training_overlap_questions": 0,
+      "all_rows_reported": true,
+      "seconds": 740.8855847921222,
+      "predictions_sha256": "04ab5003b28781df42c788dd6e844a443a788d7e29487441c554abf802adad2c",
+      "data_sha256": "2b7a746a211c4b9bb32e53e10b8efb88813a3f7b44b89a837c24027f4978ce81"
+    }
+  },
+  "no_model_updates": true,
+  "historical_semantic_overlap_not_exhaustively_excluded": true,
+  "completed_unix": 1790544961.9141817
+}

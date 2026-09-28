@@ -1,0 +1,83 @@
+{
+  "files": {
+    "evidence/baseline/format-and-overlap-audit.json": {
+      "original_sha256": "fbe98a52ef874b92faeea38c31e8338a35e7a054cb7a76604f16cadcdc3e3390",
+      "published_sha256": "1176c3887c78217bd929e6497315f2f8e9bb75c94120c319a5a4284facf11f55",
+      "transformation": "JSON serialization and machine-local path aliases; numerical fields unchanged"
+    },
+    "evidence/baseline/summary.json": {
+      "original_sha256": "21dd9c99cd365549fd5e0dfe7e20b863bd173c358ae52bcf418f256580b1aa05",
+      "published_sha256": "a7abf6611c3c6ffff5b26f6e2fac9b4a11d4f155cbb6527b25ea30945e787efe",
+      "transformation": "JSON serialization and machine-local path aliases; numerical fields unchanged"
+    },
+    "evidence/post-evaluation/before-after-comparison.json": {
+      "original_sha256": "6912fd180cd91e16c1cfbca69fb500b77c1119fe36182c82e5c749d3347827cf",
+      "published_sha256": "6df23def7d878dd1ea5eeb42a6120a01dbfd962202003a1e294f4b83db9d747f",
+      "transformation": "JSON serialization and machine-local path aliases; numerical fields unchanged"
+    },
+    "evidence/post-evaluation/summary.json": {
+      "original_sha256": "34c515103662cf7471f31b8e2bdac62d43cf27504b9e6eea25ebe7ea46834ad1",
+      "published_sha256": "bd845ae7c57273b1ae6b3ef7c11aac9ebf91be6aa3c671e1a074143600a7c7b1",
+      "transformation": "JSON serialization and machine-local path aliases; numerical fields unchanged"
+    },
+    "evidence/training/baseline-retention.json": {
+      "original_sha256": "c72ecfd9bffdd92f5f039d6ea5257d175f5550b130698af39ad376b878f045fe",
+      "published_sha256": "fd941f875a8b3b122e7e2160eaac7b00c7ea62594baf93b80ede82f6c269abee",
+      "transformation": "JSON serialization and machine-local path aliases; numerical fields unchanged"
+    },
+    "evidence/training/protocol.json": {
+      "original_sha256": "ea08dafc7dd9eca58d2c82cfc9f57f572700f513f622ac9eab9658899d73a0ff",
+      "published_sha256": "e50cd3244cef4d2d92fdbd69822a684557a1c83aa6452c88d74194150da7d1e0",
+      "transformation": "JSON serialization and machine-local path aliases; numerical fields unchanged"
+    },
+    "evidence/training/step-004864-health.json": {
+      "original_sha256": "dd346bed87a70b1812dac38411dd64a70a7abe7ea01bcd2b388b15306367fece",
+      "published_sha256": "f8acfedb439e9b9a6b175a90ecb9cadcde5eec7d25a23f2631088ee4c15fb4fa",
+      "transformation": "JSON serialization and machine-local path aliases; numerical fields unchanged"
+    },
+    "evidence/training/step-005120-health.json": {
+      "original_sha256": "e1f90586df389891b2dc32ff484c87593a8a42669146d018a67612c8ec152a2f",
+      "published_sha256": "e70bf19d4d492458db5e37d5099fa9eac58de835195a547bd6e10aa0e4578c93",
+      "transformation": "JSON serialization and machine-local path aliases; numerical fields unchanged"
+    },
+    "evidence/training/summary.json": {
+      "original_sha256": "085f3858adfad6b591a665ae4d54cbd2b76eab41e99fd99eba42fae2a9635375",
+      "published_sha256": "e4aa1579f6838974bd115e8cd863b7494f689ab53513cbd33ff252b607b994c1",
+      "transformation": "JSON serialization and machine-local path aliases; numerical fields unchanged"
+    }
+  },
+  "metrics_sha256": "f1ea32164cdd2a17f1ce16ddbc0f2cc634d0d0afd5dcea901dbaadbce4e50f86",
+  "checkpoint_manifest_sha256": "ff8a6684ec1922a04e7948dbfbbfb8f345c64c650f6fa99ceb311ebdc6af11b0",
+  "raw_images_weights_optimizer_states_and_credentials_included": false,
+  "public_evidence_is_sanitized_not_byte_identical_to_remote": true,
+  "cluster_score_files": {
+    "scores/textvqa-clusters.csv": {
+      "sha256": "7d2ad0994d4fd7a3443a59141632d3dca89828a26b02e437f1bf7b742e525db5",
+      "clusters": 3166,
+      "questions": 5000,
+      "contains": "image hashes and paired sufficient sums only; no images, answers or prompts",
+      "cluster_order": "first occurrence in frozen evaluation order"
+    },
+    "scores/docvqa-clusters.csv": {
+      "sha256": "90e0294e2eb7e0ee87cb7656925ef1c1d62e8659131c04bf0ad7a0ed11446ff3",
+      "clusters": 1285,
+      "questions": 5349,
+      "contains": "image hashes and paired sufficient sums only; no images, answers or prompts",
+      "cluster_order": "first occurrence in frozen evaluation order"
+    },
+    "scores/chartqa-clusters.csv": {
+      "sha256": "1e793fd8cd69e80a377fa869b1cbe9a438dad735308388fc65205b0cca47b2f9",
+      "clusters": 1509,
+      "questions": 2500,
+      "contains": "image hashes and paired sufficient sums only; no images, answers or prompts",
+      "cluster_order": "first occurrence in frozen evaluation order"
+    },
+    "scores/ai2d-clusters.csv": {
+      "sha256": "8950d2d58df58fc59a0885859aadb8345fd5d5ccf75d0d368b045de46c142095",
+      "clusters": 814,
+      "questions": 3088,
+      "contains": "image hashes and paired sufficient sums only; no images, answers or prompts",
+      "cluster_order": "first occurrence in frozen evaluation order"
+    }
+  }
+}
