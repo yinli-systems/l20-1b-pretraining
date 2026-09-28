@@ -57,3 +57,16 @@ The newest VLM campaigns also depend on machine-local code/data/checkpoints
 not fully packaged here. This cleanup does not turn an evidence archive into a
 turnkey VLM training release. No GPU experiment was rerun merely to reorganize
 the repository.
+
+## Language-model README and figure
+
+`python3 tools/build_language_showcase.py --check` verifies the peer table and
+figure hashes against the unchanged frozen language evidence. To regenerate:
+
+```bash
+python3 tools/build_language_showcase.py
+python3 -m pip install matplotlib
+python3 tools/plot_language_comparison.py
+```
+
+This regenerates a presentation of stored results, not model predictions.

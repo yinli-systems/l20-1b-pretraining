@@ -27,5 +27,7 @@ jobs:
         run: python pretraining/reproducibility/recompute_efficiency_ci.py
       - name: Verify repository layout and published results
         run: python tools/verify_repository.py
+      - name: Verify language-model comparison and README
+        run: python tools/build_language_showcase.py --check
       - name: Run tests
         run: python -m pytest -q

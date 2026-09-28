@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "Please cite this software repository when using its implementation or evaluation artifacts."
+type: software
+title: "L20 Pretraining Lab: Single-GPU Language Pretraining and Multimodal Research"
+authors:
+  - family-names: Li
+    given-names: Yin
+repository-code: "https://github.com/yinli-systems/l20-pretraining-lab"
+url: "https://github.com/yinli-systems/l20-pretraining-lab"
+license: MIT
+abstract: >-
+  A scratch-trained 1.1B English language model on 20B prediction tokens using
+  one NVIDIA L20, with frozen same-protocol small-model comparisons and
+  separately reported multimodal adaptation experiments. This citation names
+  a software repository, not a peer-reviewed paper or a new model release.

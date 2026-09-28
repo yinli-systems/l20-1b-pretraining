@@ -13,3 +13,7 @@ a single comparable leaderboard or a fitted scaling law.
 The latest package distinguishes 165,376 prepared images from 163,840 used
 new-image events and a 250,000-image ceiling. No result in this index implies
 a released competitive general-purpose VLM.
+
+## Language-model comparison
+
+[All 36 same-protocol baselines, per-task scores and intervals](language-model/README.md).

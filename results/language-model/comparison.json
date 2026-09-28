@@ -1,0 +1,1180 @@
+{
+  "schema": "language-showcase-v1",
+  "presentation_date": "2026-09-28",
+  "study_frozen_date": "2026-09-12",
+  "source": "pretraining/reports/metrics/efficiency-all-results-final-20260912.json",
+  "source_sha256": "b08cabcf5b216e6c31d7c760debe210722bd4cf0c7a9c8f3dc5792093a406c4e",
+  "ours": {
+    "parameters": 1100048384,
+    "training_tokens": 19999703040,
+    "seven_task_macro_percent": 51.260130590660346,
+    "six_task_without_boolq_percent": 49.94110036800283
+  },
+  "protocol": {
+    "lm_eval_version": "0.4.9",
+    "dtype": "bfloat16",
+    "batch_size": "auto:4",
+    "max_length": 2048,
+    "num_fewshot": 0,
+    "random_seed": 42,
+    "numpy_random_seed": 42,
+    "torch_random_seed": 42,
+    "fewshot_random_seed": 1234,
+    "limit": null,
+    "apply_chat_template": false,
+    "tasks": [
+      "hellaswag",
+      "piqa",
+      "winogrande",
+      "openbookqa",
+      "arc_easy",
+      "arc_challenge",
+      "boolq"
+    ],
+    "bootstrap_repetitions": 10000,
+    "bootstrap_seed": 20260912
+  },
+  "homepage_selection": [
+    "dd_dclm_baseline_qc_7p_fw3_12500",
+    "tinyllama_early_21b",
+    "weborganizer_domain_mix",
+    "phi_1_5",
+    "opt_1_3b",
+    "pythia_1b",
+    "falcon_rw_1b",
+    "tinyllama_1t",
+    "tinyllama_1_5t",
+    "tinyllama_2t",
+    "tinyllama_2_5t"
+  ],
+  "selection_rule": "Recognizable families, TinyLlama training trajectory, a near-budget and a stronger modern data-recipe reference; all 36 remain in the figure and full table.",
+  "checkpoints": [
+    {
+      "index": 1,
+      "job": "pythia_1b",
+      "repo": "EleutherAI/pythia-1b",
+      "revision": "f73d7dcc545c8bd326d8559c8ef84ffe92fea6b2",
+      "category": "natural_corpus_base",
+      "training_tokens": 300000000000,
+      "token_kind": "author_rounded",
+      "total_parameters": 1011781632,
+      "training_compute_proxy_ratio_vs_ours_6ND": 13.796620265160115,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.4810419498375301,
+        "ours_minus_baseline_pp": 3.1559356069073408,
+        "paired_95_ci_pp": [
+          2.3022545999009774,
+          4.020053702814538
+        ],
+        "inference": "ours_significant_win"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.4601452717523478,
+        "ours_minus_baseline_pp": 3.926573192768044,
+        "paired_95_ci_pp": [
+          2.981293129389027,
+          4.8736100552950345
+        ],
+        "inference": "ours_significant_win"
+      }
+    },
+    {
+      "index": 2,
+      "job": "dd_dclm_baseline_qc_20p_10000",
+      "repo": "allenai/DataDecide-dclm-baseline-qc-20p-1B",
+      "revision": "244b2ba2babd4a0a5e5a4d3a279c0be7aa281602",
+      "category": "natural_corpus_base",
+      "training_tokens": 14417920000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "total_parameters": 1279854592,
+      "training_compute_proxy_ratio_vs_ours_6ND": 0.838741067181178,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.4984364414222595,
+        "ours_minus_baseline_pp": 1.4164864484344066,
+        "paired_95_ci_pp": [
+          0.5600084736456981,
+          2.282061643726884
+        ],
+        "inference": "ours_significant_win"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.4970035751353476,
+        "ours_minus_baseline_pp": 0.24074285446807178,
+        "paired_95_ci_pp": [
+          -0.6803472467914765,
+          1.1674652289350371
+        ],
+        "inference": "inconclusive"
+      }
+    },
+    {
+      "index": 3,
+      "job": "dd_dclm_baseline_qc_20p_12500",
+      "repo": "allenai/DataDecide-dclm-baseline-qc-20p-1B",
+      "revision": "e97c7eb177d48cc33763a49a34769318a19a1eb1",
+      "category": "natural_corpus_base",
+      "training_tokens": 18022400000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "total_parameters": 1279854592,
+      "training_compute_proxy_ratio_vs_ours_6ND": 1.0484263339764726,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5138324635634633,
+        "ours_minus_baseline_pp": -0.1231157656859774,
+        "paired_95_ci_pp": [
+          -0.9789277934706767,
+          0.7016188691855261
+        ],
+        "inference": "inconclusive"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.5089513298148662,
+        "ours_minus_baseline_pp": -0.9540326134837933,
+        "paired_95_ci_pp": [
+          -1.8818929990332083,
+          -0.050381760886679006
+        ],
+        "inference": "ours_significant_loss"
+      }
+    },
+    {
+      "index": 4,
+      "job": "dd_dclm_baseline_qc_20p_15000",
+      "repo": "allenai/DataDecide-dclm-baseline-qc-20p-1B",
+      "revision": "65973642315bd332172ae3fd04bbcf7edad077fe",
+      "category": "natural_corpus_base",
+      "training_tokens": 21626880000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "total_parameters": 1279854592,
+      "training_compute_proxy_ratio_vs_ours_6ND": 1.2581116007717672,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5202162294831799,
+        "ours_minus_baseline_pp": -0.7614923576576406,
+        "paired_95_ci_pp": [
+          -1.6135633590519178,
+          0.08409467796001198
+        ],
+        "inference": "inconclusive"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.5118119007578995,
+        "ours_minus_baseline_pp": -1.240089707787125,
+        "paired_95_ci_pp": [
+          -2.1786021423361017,
+          -0.3088517099925861
+        ],
+        "inference": "ours_significant_loss"
+      }
+    },
+    {
+      "index": 5,
+      "job": "tinyllama_early_10b",
+      "repo": "TinyLlama/tinyLlama-intermediate-checkpoints",
+      "revision": "feb60e43f33c2b8db5b122dbaef76b9dffd557c8",
+      "category": "natural_corpus_base",
+      "training_tokens": 10000000000,
+      "token_kind": "nominal_official_branch_label",
+      "total_parameters": 1100048384,
+      "training_compute_proxy_ratio_vs_ours_6ND": 0.5000074241102331,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.407694458211109,
+        "ours_minus_baseline_pp": 10.490684769549455,
+        "paired_95_ci_pp": [
+          9.49712022038485,
+          11.444415355257558
+        ],
+        "inference": "ours_significant_win"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.39562314721979025,
+        "ours_minus_baseline_pp": 10.378785646023802,
+        "paired_95_ci_pp": [
+          9.280619114571923,
+          11.431537532506615
+        ],
+        "inference": "ours_significant_win"
+      }
+    },
+    {
+      "index": 6,
+      "job": "tinyllama_early_21b",
+      "repo": "TinyLlama/tinyLlama-intermediate-checkpoints",
+      "revision": "2912f88458c920a786d8a2be58854dd12598ce3a",
+      "category": "natural_corpus_base",
+      "training_tokens": 21000000000,
+      "token_kind": "nominal_official_branch_label",
+      "total_parameters": 1100048384,
+      "training_compute_proxy_ratio_vs_ours_6ND": 1.0500155906314896,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.4363878046471022,
+        "ours_minus_baseline_pp": 7.621350125950137,
+        "paired_95_ci_pp": [
+          6.683855052506811,
+          8.549670561132425
+        ],
+        "inference": "ours_significant_win"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.4117694622004164,
+        "ours_minus_baseline_pp": 8.764154147961195,
+        "paired_95_ci_pp": [
+          7.715998275531924,
+          9.790758628460914
+        ],
+        "inference": "ours_significant_win"
+      }
+    },
+    {
+      "index": 7,
+      "job": "weborganizer_dclm",
+      "repo": "WebOrganizer/LM-1b_1x-DCLMFasttext",
+      "revision": "fc4aea2a8605a3e636a69904d890b2a6686f6584",
+      "category": "natural_corpus_base",
+      "training_tokens": 28795904000,
+      "token_kind": "author_training_config",
+      "total_parameters": 1439893504,
+      "training_compute_proxy_ratio_vs_ours_6ND": 1.8846285021084197,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5444427660331644,
+        "ours_minus_baseline_pp": -3.184146012656087,
+        "paired_95_ci_pp": [
+          -4.027083030918059,
+          -2.3441578797687956
+        ],
+        "inference": "ours_significant_loss"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.5351322586390996,
+        "ours_minus_baseline_pp": -3.572125495907127,
+        "paired_95_ci_pp": [
+          -4.488789111969716,
+          -2.643624457693005
+        ],
+        "inference": "ours_significant_loss"
+      }
+    },
+    {
+      "index": 8,
+      "job": "dd_fineweb_edu_12500",
+      "repo": "allenai/DataDecide-fineweb-edu-1B",
+      "revision": "dfaa1ead8b1f6fb38b9310c32c49e48916ae2303",
+      "category": "natural_corpus_base",
+      "training_tokens": 18022400000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "total_parameters": 1279854592,
+      "training_compute_proxy_ratio_vs_ours_6ND": 1.0484263339764726,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5119909937536472,
+        "ours_minus_baseline_pp": 0.0610312152956234,
+        "paired_95_ci_pp": [
+          -0.749832986210728,
+          0.8739283263319648
+        ],
+        "inference": "inconclusive"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.4984950992365436,
+        "ours_minus_baseline_pp": 0.09159044434846175,
+        "paired_95_ci_pp": [
+          -0.8048347265649316,
+          0.9913421698671975
+        ],
+        "inference": "inconclusive"
+      }
+    },
+    {
+      "index": 9,
+      "job": "dd_fineweb_edu_15000",
+      "repo": "allenai/DataDecide-fineweb-edu-1B",
+      "revision": "583c9e00ac2759d63b4e5c66c2e38e8aebe36d7e",
+      "category": "natural_corpus_base",
+      "training_tokens": 21626880000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "total_parameters": 1279854592,
+      "training_compute_proxy_ratio_vs_ours_6ND": 1.2581116007717672,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5203228373495281,
+        "ours_minus_baseline_pp": -0.772153144292456,
+        "paired_95_ci_pp": [
+          -1.5886156973827572,
+          0.03892724298741531
+        ],
+        "inference": "inconclusive"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.5062787842472324,
+        "ours_minus_baseline_pp": -0.6867780567204035,
+        "paired_95_ci_pp": [
+          -1.5810102938973405,
+          0.21429328978456963
+        ],
+        "inference": "inconclusive"
+      }
+    },
+    {
+      "index": 10,
+      "job": "dd_dclm_baseline_qc_20p_20000",
+      "repo": "allenai/DataDecide-dclm-baseline-qc-20p-1B",
+      "revision": "a50bdbfbfa8dd448280b49782691ad8bd430a821",
+      "category": "natural_corpus_base",
+      "training_tokens": 28835840000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "total_parameters": 1279854592,
+      "training_compute_proxy_ratio_vs_ours_6ND": 1.677482134362356,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.520780006178765,
+        "ours_minus_baseline_pp": -0.8178700272161386,
+        "paired_95_ci_pp": [
+          -1.6835287632776867,
+          0.07786723548217589
+        ],
+        "inference": "inconclusive"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.5182800377895989,
+        "ours_minus_baseline_pp": -1.8869034109570546,
+        "paired_95_ci_pp": [
+          -2.833561658187993,
+          -0.9134815406530373
+        ],
+        "inference": "ours_significant_loss"
+      }
+    },
+    {
+      "index": 11,
+      "job": "dd_dclm_baseline_qc_20p_42500",
+      "repo": "allenai/DataDecide-dclm-baseline-qc-20p-1B",
+      "revision": "d7a69717858683a90fd3cb24e611c6d8717cec6d",
+      "category": "natural_corpus_base",
+      "training_tokens": 61276160000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "total_parameters": 1279854592,
+      "training_compute_proxy_ratio_vs_ours_6ND": 3.5646495355200067,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5670621061061075,
+        "ours_minus_baseline_pp": -5.446080019950395,
+        "paired_95_ci_pp": [
+          -6.285912855732478,
+          -4.613892013605869
+        ],
+        "inference": "ours_significant_loss"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.5552014071747604,
+        "ours_minus_baseline_pp": -5.579040349473218,
+        "paired_95_ci_pp": [
+          -6.503497481534197,
+          -4.654895996434397
+        ],
+        "inference": "ours_significant_loss"
+      }
+    },
+    {
+      "index": 12,
+      "job": "dd_fineweb_edu_10000",
+      "repo": "allenai/DataDecide-fineweb-edu-1B",
+      "revision": "8551c6bc021306d7e1e5c23dd58eed39006ac773",
+      "category": "natural_corpus_base",
+      "training_tokens": 14417920000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "total_parameters": 1279854592,
+      "training_compute_proxy_ratio_vs_ours_6ND": 0.838741067181178,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5082850732201251,
+        "ours_minus_baseline_pp": 0.43162326864784856,
+        "paired_95_ci_pp": [
+          -0.3889912799713344,
+          1.2618168092771755
+        ],
+        "inference": "inconclusive"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.49452830407791354,
+        "ours_minus_baseline_pp": 0.48826996021148084,
+        "paired_95_ci_pp": [
+          -0.42690090299903355,
+          1.4114217574432422
+        ],
+        "inference": "inconclusive"
+      }
+    },
+    {
+      "index": 13,
+      "job": "dd_fineweb_edu_20000",
+      "repo": "allenai/DataDecide-fineweb-edu-1B",
+      "revision": "91f35da0ec988fc94cd110c91dcb430d706d852a",
+      "category": "natural_corpus_base",
+      "training_tokens": 28835840000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "total_parameters": 1279854592,
+      "training_compute_proxy_ratio_vs_ours_6ND": 1.677482134362356,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5242602134971781,
+        "ours_minus_baseline_pp": -1.1658907590574579,
+        "paired_95_ci_pp": [
+          -2.004163946910706,
+          -0.33494172133003935
+        ],
+        "inference": "ours_significant_loss"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.510260768957717,
+        "ours_minus_baseline_pp": -1.084976527768869,
+        "paired_95_ci_pp": [
+          -2.0265411730996745,
+          -0.17073617953991438
+        ],
+        "inference": "ours_significant_loss"
+      }
+    },
+    {
+      "index": 14,
+      "job": "dd_fineweb_edu_42500",
+      "repo": "allenai/DataDecide-fineweb-edu-1B",
+      "revision": "772865f3211700174971c9fa048bf7b2f133b7ad",
+      "category": "natural_corpus_base",
+      "training_tokens": 61276160000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "total_parameters": 1279854592,
+      "training_compute_proxy_ratio_vs_ours_6ND": 3.5646495355200067,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5507185469877426,
+        "ours_minus_baseline_pp": -3.8117241081139044,
+        "paired_95_ci_pp": [
+          -4.6517401890454435,
+          -2.9758123571903794
+        ],
+        "inference": "ours_significant_loss"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.5431165922808067,
+        "ours_minus_baseline_pp": -4.370558860077843,
+        "paired_95_ci_pp": [
+          -5.291046596324131,
+          -3.453515251155374
+        ],
+        "inference": "ours_significant_loss"
+      }
+    },
+    {
+      "index": 15,
+      "job": "dd_dclm_baseline_10000",
+      "repo": "allenai/DataDecide-dclm-baseline-1B",
+      "revision": "0b59a37442f71e96a2762dec5c2a1007b31039e2",
+      "category": "natural_corpus_base",
+      "training_tokens": 14417920000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "total_parameters": 1279854592,
+      "training_compute_proxy_ratio_vs_ours_6ND": 0.838741067181178,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.4906243040914052,
+        "ours_minus_baseline_pp": 2.1977001815198385,
+        "paired_95_ci_pp": [
+          1.3376760510644914,
+          3.071614143969438
+        ],
+        "inference": "ours_significant_win"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.4779505769955283,
+        "ours_minus_baseline_pp": 2.1460426684500056,
+        "paired_95_ci_pp": [
+          1.195485820191374,
+          3.1118175783760993
+        ],
+        "inference": "ours_significant_win"
+      }
+    },
+    {
+      "index": 16,
+      "job": "dd_dclm_baseline_12500",
+      "repo": "allenai/DataDecide-dclm-baseline-1B",
+      "revision": "ae58b957e29595e9eb582c5266508c410ec89472",
+      "category": "natural_corpus_base",
+      "training_tokens": 18022400000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "total_parameters": 1279854592,
+      "training_compute_proxy_ratio_vs_ours_6ND": 1.0484263339764726,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5069991138366816,
+        "ours_minus_baseline_pp": 0.560219206992198,
+        "paired_95_ci_pp": [
+          -0.2777777769145643,
+          1.3982957245915286
+        ],
+        "inference": "inconclusive"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.49149896614279515,
+        "ours_minus_baseline_pp": 0.7912037537233135,
+        "paired_95_ci_pp": [
+          -0.13800681805709444,
+          1.71633879529512
+        ],
+        "inference": "inconclusive"
+      }
+    },
+    {
+      "index": 17,
+      "job": "dd_dclm_baseline_15000",
+      "repo": "allenai/DataDecide-dclm-baseline-1B",
+      "revision": "75f394be7ee8847d3a1c9d25f2398ec92be91bd2",
+      "category": "natural_corpus_base",
+      "training_tokens": 21626880000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "total_parameters": 1279854592,
+      "training_compute_proxy_ratio_vs_ours_6ND": 1.2581116007717672,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5122724707742297,
+        "ours_minus_baseline_pp": 0.032883513237390596,
+        "paired_95_ci_pp": [
+          -0.7922243367143639,
+          0.8772642690026823
+        ],
+        "inference": "inconclusive"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.4975492791040834,
+        "ours_minus_baseline_pp": 0.18617245759448883,
+        "paired_95_ci_pp": [
+          -0.7213256501150981,
+          1.0909989034169723
+        ],
+        "inference": "inconclusive"
+      }
+    },
+    {
+      "index": 18,
+      "job": "dd_dclm_baseline_20000",
+      "repo": "allenai/DataDecide-dclm-baseline-1B",
+      "revision": "b99dacc5a6d127dee0df82eb3966327794f80024",
+      "category": "natural_corpus_base",
+      "training_tokens": 28835840000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "total_parameters": 1279854592,
+      "training_compute_proxy_ratio_vs_ours_6ND": 1.677482134362356,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5144246936626433,
+        "ours_minus_baseline_pp": -0.18233877560397885,
+        "paired_95_ci_pp": [
+          -1.0358031459935726,
+          0.6769322884027019
+        ],
+        "inference": "inconclusive"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.5025066889876608,
+        "ours_minus_baseline_pp": -0.30956853076325563,
+        "paired_95_ci_pp": [
+          -1.2506874050386914,
+          0.6266023479411883
+        ],
+        "inference": "inconclusive"
+      }
+    },
+    {
+      "index": 19,
+      "job": "dd_dclm_baseline_42500",
+      "repo": "allenai/DataDecide-dclm-baseline-1B",
+      "revision": "424685d36e00bf3da8912abf4b04914785b5e7bd",
+      "category": "natural_corpus_base",
+      "training_tokens": 61276160000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "total_parameters": 1279854592,
+      "training_compute_proxy_ratio_vs_ours_6ND": 3.5646495355200067,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5500045777232196,
+        "ours_minus_baseline_pp": -3.740327181661605,
+        "paired_95_ci_pp": [
+          -4.596542558720971,
+          -2.8993882934294
+        ],
+        "inference": "ours_significant_loss"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.5400919869563964,
+        "ours_minus_baseline_pp": -4.068098327636807,
+        "paired_95_ci_pp": [
+          -5.023748684950715,
+          -3.1427184834581707
+        ],
+        "inference": "ours_significant_loss"
+      }
+    },
+    {
+      "index": 20,
+      "job": "dd_dclm_baseline_qc_7p_fw3_10000",
+      "repo": "allenai/DataDecide-dclm-baseline-qc-7p-fw3-1B",
+      "revision": "69d0d322ff9150e755f53540d20648f8ccf60d88",
+      "category": "natural_corpus_base",
+      "training_tokens": 14417920000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "total_parameters": 1279854592,
+      "training_compute_proxy_ratio_vs_ours_6ND": 0.838741067181178,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5201086251100725,
+        "ours_minus_baseline_pp": -0.750731920346891,
+        "paired_95_ci_pp": [
+          -1.6156049036099673,
+          0.11618801694016344
+        ],
+        "inference": "inconclusive"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.5098005315376941,
+        "ours_minus_baseline_pp": -1.0389527857665817,
+        "paired_95_ci_pp": [
+          -1.9925631375876687,
+          -0.0702707323042332
+        ],
+        "inference": "ours_significant_loss"
+      }
+    },
+    {
+      "index": 21,
+      "job": "dd_dclm_baseline_qc_7p_fw3_12500",
+      "repo": "allenai/DataDecide-dclm-baseline-qc-7p-fw3-1B",
+      "revision": "92cf4a29e96944aef67e15b0560f31851e474dd6",
+      "category": "natural_corpus_base",
+      "training_tokens": 18022400000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "total_parameters": 1279854592,
+      "training_compute_proxy_ratio_vs_ours_6ND": 1.0484263339764726,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.524851104869611,
+        "ours_minus_baseline_pp": -1.2249798963007343,
+        "paired_95_ci_pp": [
+          -2.04816164777944,
+          -0.3833438127467909
+        ],
+        "inference": "ours_significant_loss"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.5124791942133228,
+        "ours_minus_baseline_pp": -1.3068190533294501,
+        "paired_95_ci_pp": [
+          -2.230451862667618,
+          -0.3657503451171927
+        ],
+        "inference": "ours_significant_loss"
+      }
+    },
+    {
+      "index": 22,
+      "job": "dd_dclm_baseline_qc_7p_fw3_15000",
+      "repo": "allenai/DataDecide-dclm-baseline-qc-7p-fw3-1B",
+      "revision": "53b4ee752d243ae7fc3c15b7c9b5b6e87b947ced",
+      "category": "natural_corpus_base",
+      "training_tokens": 21626880000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "total_parameters": 1279854592,
+      "training_compute_proxy_ratio_vs_ours_6ND": 1.2581116007717672,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.528553663984732,
+        "ours_minus_baseline_pp": -1.5952358078128377,
+        "paired_95_ci_pp": [
+          -2.474805118761478,
+          -0.7201103079179052
+        ],
+        "inference": "ours_significant_loss"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.5213860024776001,
+        "ours_minus_baseline_pp": -2.197499879757179,
+        "paired_95_ci_pp": [
+          -3.141386295028439,
+          -1.2519839120070895
+        ],
+        "inference": "ours_significant_loss"
+      }
+    },
+    {
+      "index": 23,
+      "job": "dd_dclm_baseline_qc_7p_fw3_20000",
+      "repo": "allenai/DataDecide-dclm-baseline-qc-7p-fw3-1B",
+      "revision": "318bf7b9bd59bcb9fc706e3c69dab495275f42b6",
+      "category": "natural_corpus_base",
+      "training_tokens": 28835840000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "total_parameters": 1279854592,
+      "training_compute_proxy_ratio_vs_ours_6ND": 1.677482134362356,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.53703739531705,
+        "ours_minus_baseline_pp": -2.4436089410446393,
+        "paired_95_ci_pp": [
+          -3.278307668963903,
+          -1.6000510550404368
+        ],
+        "inference": "ours_significant_loss"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.5261358806731536,
+        "ours_minus_baseline_pp": -2.6724876993125277,
+        "paired_95_ci_pp": [
+          -3.621290335397371,
+          -1.7421545261064764
+        ],
+        "inference": "ours_significant_loss"
+      }
+    },
+    {
+      "index": 24,
+      "job": "dd_dclm_baseline_qc_7p_fw3_42500",
+      "repo": "allenai/DataDecide-dclm-baseline-qc-7p-fw3-1B",
+      "revision": "21c67019be5d0f7946a00024746dd41d68375a56",
+      "category": "natural_corpus_base",
+      "training_tokens": 61276160000,
+      "token_kind": "step_times_global_batch_times_sequence_length",
+      "total_parameters": 1279854592,
+      "training_compute_proxy_ratio_vs_ours_6ND": 3.5646495355200067,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5636811824764714,
+        "ours_minus_baseline_pp": -5.107987656986782,
+        "paired_95_ci_pp": [
+          -5.98037848294412,
+          -4.2461259013193455
+        ],
+        "inference": "ours_significant_loss"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.5544680054478303,
+        "ours_minus_baseline_pp": -5.505700176780196,
+        "paired_95_ci_pp": [
+          -6.47884403643154,
+          -4.548888190467932
+        ],
+        "inference": "ours_significant_loss"
+      }
+    },
+    {
+      "index": 25,
+      "job": "weborganizer_domain_mix",
+      "repo": "WebOrganizer/LM-1b_1x-DCLMFasttext_over_Topics_x_Formats_for_MMLU_and_Hellaswag",
+      "revision": "faf9d00dcbbb55be03600abeb52ae9dd423d0bac",
+      "category": "natural_corpus_base",
+      "training_tokens": 28795904000,
+      "token_kind": "author_training_config",
+      "total_parameters": 1439893504,
+      "training_compute_proxy_ratio_vs_ours_6ND": 1.8846285021084197,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5515642321745825,
+        "ours_minus_baseline_pp": -3.8962926267978966,
+        "paired_95_ci_pp": [
+          -4.70299756223746,
+          -3.080368103005063
+        ],
+        "inference": "ours_significant_loss"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.5466516449783992,
+        "ours_minus_baseline_pp": -4.724064129837097,
+        "paired_95_ci_pp": [
+          -5.624929348742968,
+          -3.8315319047664333
+        ],
+        "inference": "ours_significant_loss"
+      }
+    },
+    {
+      "index": 26,
+      "job": "phi_1_5",
+      "repo": "microsoft/phi-1_5",
+      "revision": "77aa61eeac94fbf33d492b9f2744c98b42d5b5eb",
+      "category": "teacher_synthetic_reference",
+      "training_tokens": 150000000000,
+      "token_kind": "author_rounded",
+      "total_parameters": 1418270720,
+      "training_compute_proxy_ratio_vs_ours_6ND": 9.669745890897547,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.6502616782183371,
+        "ours_minus_baseline_pp": -13.766037231173359,
+        "paired_95_ci_pp": [
+          -14.777331697157564,
+          -12.780377842940583
+        ],
+        "inference": "ours_significant_loss"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.6341228243841864,
+        "ours_minus_baseline_pp": -13.471182070415809,
+        "paired_95_ci_pp": [
+          -14.591919476957923,
+          -12.368794660004523
+        ],
+        "inference": "ours_significant_loss"
+      }
+    },
+    {
+      "index": 27,
+      "job": "opt_1_3b",
+      "repo": "facebook/opt-1.3b",
+      "revision": "3f5c25d0bc631cb57ac65913f76e22c2dfb61d62",
+      "category": "natural_corpus_base",
+      "training_tokens": 180000000000,
+      "token_kind": "author_rounded",
+      "total_parameters": 1315758080,
+      "training_compute_proxy_ratio_vs_ours_6ND": 10.764979724741336,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5099553031511255,
+        "ours_minus_baseline_pp": 0.2646002755478079,
+        "paired_95_ci_pp": [
+          -0.6408969804965966,
+          1.1547235963718623
+        ],
+        "inference": "inconclusive"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.498974357244101,
+        "ours_minus_baseline_pp": 0.043664643592728,
+        "paired_95_ci_pp": [
+          -0.9353240462112515,
+          0.9865087846081169
+        ],
+        "inference": "inconclusive"
+      }
+    },
+    {
+      "index": 28,
+      "job": "falcon_rw_1b",
+      "repo": "tiiuae/falcon-rw-1b",
+      "revision": "e4b9872bb803165eb22f0a867d4e6a64d34fce19",
+      "category": "natural_corpus_base",
+      "training_tokens": 350000000000,
+      "token_kind": "author_rounded",
+      "total_parameters": 1311625216,
+      "training_compute_proxy_ratio_vs_ours_6ND": 20.866156826931523,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5499392673614891,
+        "ours_minus_baseline_pp": -3.7337961454885593,
+        "paired_95_ci_pp": [
+          -4.63786855218101,
+          -2.859094869198314
+        ],
+        "inference": "ours_significant_loss"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.5381809291490564,
+        "ours_minus_baseline_pp": -3.87699254690281,
+        "paired_95_ci_pp": [
+          -4.8513326585949725,
+          -2.896474039084158
+        ],
+        "inference": "ours_significant_loss"
+      }
+    },
+    {
+      "index": 29,
+      "job": "tinyllama_early_31b",
+      "repo": "TinyLlama/tinyLlama-intermediate-checkpoints",
+      "revision": "60ddc9dcab19b6542e68316f1fd8a9758415ce2e",
+      "category": "natural_corpus_base",
+      "training_tokens": 31000000000,
+      "token_kind": "nominal_official_branch_label",
+      "total_parameters": 1100048384,
+      "training_compute_proxy_ratio_vs_ours_6ND": 1.5500230147417229,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.44079420528619245,
+        "ours_minus_baseline_pp": 7.180710062041108,
+        "paired_95_ci_pp": [
+          6.277536641127536,
+          8.068382311369264
+        ],
+        "inference": "ours_significant_win"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.4154321793578464,
+        "ours_minus_baseline_pp": 8.397882432218195,
+        "paired_95_ci_pp": [
+          7.384128899823487,
+          9.391717943830285
+        ],
+        "inference": "ours_significant_win"
+      }
+    },
+    {
+      "index": 30,
+      "job": "tinyllama_early_63b",
+      "repo": "TinyLlama/tinyLlama-intermediate-checkpoints",
+      "revision": "af28afc492acefd741b0b5964d4d348c2a164c2c",
+      "category": "natural_corpus_base",
+      "training_tokens": 63000000000,
+      "token_kind": "nominal_official_branch_label",
+      "total_parameters": 1100048384,
+      "training_compute_proxy_ratio_vs_ours_6ND": 3.150046771894469,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.45502847412919273,
+        "ours_minus_baseline_pp": 5.757283177741085,
+        "paired_95_ci_pp": [
+          4.857221458726809,
+          6.634606118165011
+        ],
+        "inference": "ours_significant_win"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.43321109953196846,
+        "ours_minus_baseline_pp": 6.619990414805986,
+        "paired_95_ci_pp": [
+          5.608587230429837,
+          7.604897418833597
+        ],
+        "inference": "ours_significant_win"
+      }
+    },
+    {
+      "index": 31,
+      "job": "tinyllama_early_105b",
+      "repo": "TinyLlama/tinyLlama-intermediate-checkpoints",
+      "revision": "7c98387695e55e843a4c6286c1fbb8dd8df41770",
+      "category": "natural_corpus_base",
+      "training_tokens": 105000000000,
+      "token_kind": "nominal_official_branch_label",
+      "total_parameters": 1100048384,
+      "training_compute_proxy_ratio_vs_ours_6ND": 5.250077953157448,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.4613473984764215,
+        "ours_minus_baseline_pp": 5.125390743018206,
+        "paired_95_ci_pp": [
+          4.261161136540714,
+          5.995171070364455
+        ],
+        "inference": "ours_significant_win"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.4388502523509321,
+        "ours_minus_baseline_pp": 6.056075132909619,
+        "paired_95_ci_pp": [
+          5.102741328316352,
+          7.026324136643344
+        ],
+        "inference": "ours_significant_win"
+      }
+    },
+    {
+      "index": 32,
+      "job": "tinyllama_503b",
+      "repo": "TinyLlama/TinyLlama-1.1B-intermediate-step-240k-503b",
+      "revision": "a016b960b941eb6eb7884e363b935370bafa5932",
+      "category": "natural_corpus_base",
+      "training_tokens": 503000000000,
+      "token_kind": "nominal_repo_label",
+      "total_parameters": 1100048384,
+      "training_compute_proxy_ratio_vs_ours_6ND": 25.15037343274473,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.4826269298761657,
+        "ours_minus_baseline_pp": 2.997437603043783,
+        "paired_95_ci_pp": [
+          2.1387675680645577,
+          3.8651336045821285
+        ],
+        "inference": "ours_significant_win"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.46887514907571015,
+        "ours_minus_baseline_pp": 3.053585460431814,
+        "paired_95_ci_pp": [
+          2.1016195993198528,
+          4.013318081902678
+        ],
+        "inference": "ours_significant_win"
+      }
+    },
+    {
+      "index": 33,
+      "job": "tinyllama_1t",
+      "repo": "TinyLlama/TinyLlama-1.1B-intermediate-step-480k-1T",
+      "revision": "0e23ce8110cbb7e9afe5296bc9686e6dfdae47c2",
+      "category": "natural_corpus_base",
+      "training_tokens": 1000000000000,
+      "token_kind": "nominal_repo_label",
+      "total_parameters": 1100048384,
+      "training_compute_proxy_ratio_vs_ours_6ND": 50.00074241102332,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5024196747311408,
+        "ours_minus_baseline_pp": 1.0181631175462784,
+        "paired_95_ci_pp": [
+          0.1583640571808928,
+          1.885984268946491
+        ],
+        "inference": "ours_significant_win"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.48702274997939915,
+        "ours_minus_baseline_pp": 1.238825370062911,
+        "paired_95_ci_pp": [
+          0.2789790267226128,
+          2.2227792867373015
+        ],
+        "inference": "ours_significant_win"
+      }
+    },
+    {
+      "index": 34,
+      "job": "tinyllama_1_5t",
+      "repo": "TinyLlama/TinyLlama-1.1B-intermediate-step-715k-1.5T",
+      "revision": "19a81efa07bf28ec81dc4de327776fa00e34cf3f",
+      "category": "natural_corpus_base",
+      "training_tokens": 1500000000000,
+      "token_kind": "nominal_repo_label",
+      "total_parameters": 1100048384,
+      "training_compute_proxy_ratio_vs_ours_6ND": 75.00111361653498,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5116914455208509,
+        "ours_minus_baseline_pp": 0.09098603857526537,
+        "paired_95_ci_pp": [
+          -0.7770536892759299,
+          0.9744890673998504
+        ],
+        "inference": "inconclusive"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.49936886788849527,
+        "ours_minus_baseline_pp": 0.0042135791533040035,
+        "paired_95_ci_pp": [
+          -0.9691794394791237,
+          0.9813445958886327
+        ],
+        "inference": "inconclusive"
+      }
+    },
+    {
+      "index": 35,
+      "job": "tinyllama_2t",
+      "repo": "TinyLlama/TinyLlama-1.1B-intermediate-step-955k-token-2T",
+      "revision": "195255c4e3e1a56ac89ceb95899c58f742a730dc",
+      "category": "natural_corpus_base",
+      "training_tokens": 2000000000000,
+      "token_kind": "nominal_repo_label",
+      "total_parameters": 1100048384,
+      "training_compute_proxy_ratio_vs_ours_6ND": 100.00148482204663,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5156201411271628,
+        "ours_minus_baseline_pp": -0.3018835220559253,
+        "paired_95_ci_pp": [
+          -1.1978224624584721,
+          0.5871120823567979
+        ],
+        "inference": "inconclusive"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.49635805455661347,
+        "ours_minus_baseline_pp": 0.3052949123414817,
+        "paired_95_ci_pp": [
+          -0.6941683904707208,
+          1.308362467721879
+        ],
+        "inference": "inconclusive"
+      }
+    },
+    {
+      "index": 36,
+      "job": "tinyllama_2_5t",
+      "repo": "TinyLlama/TinyLlama-1.1B-intermediate-step-1195k-token-2.5T",
+      "revision": "706bc2851338c4a89bb212e96ff23f9cc1ebde1d",
+      "category": "natural_corpus_base",
+      "training_tokens": 2500000000000,
+      "token_kind": "nominal_repo_label",
+      "total_parameters": 1100048384,
+      "training_compute_proxy_ratio_vs_ours_6ND": 125.0018560275583,
+      "seven_task_macro": {
+        "ours": 0.5126013059066035,
+        "baseline": 0.5389181238503081,
+        "ours_minus_baseline_pp": -2.6316817943704547,
+        "paired_95_ci_pp": [
+          -3.489065222629526,
+          -1.800558474497951
+        ],
+        "inference": "ours_significant_loss"
+      },
+      "six_task_without_boolq": {
+        "ours": 0.4994110036800283,
+        "baseline": 0.5238448447978366,
+        "ours_minus_baseline_pp": -2.4433841117808215,
+        "paired_95_ci_pp": [
+          -3.38658840791592,
+          -1.502683524956029
+        ],
+        "inference": "ours_significant_loss"
+      }
+    }
+  ],
+  "new_inference_performed": false,
+  "claims": {
+    "different_training_recipes": true,
+    "different_tokenizers": true,
+    "evaluation_sample_uncertainty_not_training_seeds": true,
+    "multiplicity_adjusted": false,
+    "confidence_interval_crossing_zero_is_not_equivalence": true,
+    "six_task_sensitivity_excludes_not_explicitly_decontaminated_BoolQ": true,
+    "6ND_is_not_measured_hardware_cost": true,
+    "global_SOTA_claim": false
+  }
+}
