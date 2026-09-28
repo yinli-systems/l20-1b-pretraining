@@ -109,7 +109,8 @@ def verify_results(root: Path) -> dict:
 def verify_active_links(root: Path) -> dict:
     paths = [root/'README.md', root/'MODEL_CARD.md', root/'pretraining/README.md',
              root/'L20-VL-1.2B/README.md', *sorted((root/'docs').glob('*.md')),
-             root/'results/README.md', root/'results/2026-09-28/README.md']
+             root/'results/README.md', root/'results/2026-09-28/README.md',
+             root/'results/language-model/README.md']
     checked = 0
     for path in paths:
         for target in re.findall(r'\]\(([^)\s]+)(?:\s+[^)]*)?\)', path.read_text(encoding='utf-8')):

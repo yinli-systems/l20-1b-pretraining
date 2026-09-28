@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-28",
+  "tested_git_tree_before_this_receipt": "d10d8ae4acc6f7009c7f04e159c41615ba07ad28",
+  "test_environment": "Isolated pytest environment, Python 3.12; original NumPy 2.5.2/PyArrow 25.0.1/Tokenizers 0.22.2 read-only; CUDA disabled",
+  "pytest": {
+    "passed": 160,
+    "skipped": 1,
+    "failed": 0,
+    "seconds": 5.55,
+    "warnings": 6,
+    "skipped_reason": "GPU serialization contract intentionally not exercised by CPU-only checks"
+  },
+  "checks": {
+    "historical_files_byte_preserved": 646,
+    "same_protocol_language_baselines": 36,
+    "original_language_task_alignments_checked": 252,
+    "active_relative_links_checked": 73,
+    "original_language_evidence": "verified",
+    "original_paired_CI_replay": "verified_exact_statistical_replay",
+    "new_VLM_score_aggregate_questions_recomputed": 15937,
+    "language_README_table_and_figure_source_hashes": "verified",
+    "new_model_inference": false,
+    "git_diff_check": "passed"
+  },
+  "metadata_change": {
+    "repo_id_unchanged": 1355588282,
+    "old_name": "yinli-systems/l20-1b-pretraining",
+    "new_name": "yinli-systems/l20-pretraining-lab",
+    "description": "1.1B from scratch on one NVIDIA L20: 20B tokens, 36-checkpoint matched evaluation, released weights, and multimodal scaling studies.",
+    "topics": [
+      "language-model",
+      "nvidia-l20",
+      "pretraining",
+      "pytorch",
+      "single-gpu",
+      "multimodal-learning",
+      "reproducible-research",
+      "small-language-model",
+      "transformers",
+      "vision-language-model"
+    ],
+    "homepage": "https://huggingface.co/AliceYin/L20-1B-20B-Base",
+    "model_release_renamed": false,
+    "history_rewritten": false,
+    "git_tags_changed": false
+  },
+  "scope": "Stored-evidence and presentation validation, not new benchmark inference or a claim of hosted GitHub Actions success. Only this receipt was added after the tested tree."
+}

@@ -52,3 +52,12 @@ tokenizer initialization. The original test is preserved byte-for-byte at
 `pretraining/archive/tests/test_pack_data_checkpoint_stop.py`, and its migration
 entry points there. Production packing code, numerical results and original
 training-source hashes are unchanged.
+
+## Language-results presentation refresh
+
+The repository is now `yinli-systems/l20-pretraining-lab`; the underlying
+repository ID and history are unchanged. `assets/` contains one reproducible
+comparison figure, not decorative/generated benchmark imagery.
+`results/language-model/` exposes the existing 36-checkpoint study, including
+stronger competitors, the six-task sensitivity, confidence intervals and
+per-task scores. Historical sources remain at their recorded paths and hashes.
