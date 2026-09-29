@@ -1,0 +1,117 @@
+{
+  "pass": true,
+  "rows": [
+    {
+      "batch": 0,
+      "true_tokens_equal": true,
+      "wrong_tokens_equal": true,
+      "strings_equal": true,
+      "diagnostics_max_abs": 0.0
+    },
+    {
+      "batch": 1,
+      "true_tokens_equal": true,
+      "wrong_tokens_equal": true,
+      "strings_equal": true,
+      "diagnostics_max_abs": 0.0
+    },
+    {
+      "batch": 2,
+      "true_tokens_equal": true,
+      "wrong_tokens_equal": true,
+      "strings_equal": true,
+      "diagnostics_max_abs": 0.0
+    },
+    {
+      "batch": 3,
+      "true_tokens_equal": true,
+      "wrong_tokens_equal": true,
+      "strings_equal": true,
+      "diagnostics_max_abs": 0.0
+    },
+    {
+      "batch": 4,
+      "true_tokens_equal": true,
+      "wrong_tokens_equal": true,
+      "strings_equal": true,
+      "diagnostics_max_abs": 0.0
+    },
+    {
+      "batch": 5,
+      "true_tokens_equal": true,
+      "wrong_tokens_equal": true,
+      "strings_equal": true,
+      "diagnostics_max_abs": 0.0
+    },
+    {
+      "batch": 6,
+      "true_tokens_equal": true,
+      "wrong_tokens_equal": true,
+      "strings_equal": true,
+      "diagnostics_max_abs": 0.0
+    },
+    {
+      "batch": 7,
+      "true_tokens_equal": true,
+      "wrong_tokens_equal": true,
+      "strings_equal": true,
+      "diagnostics_max_abs": 0.0
+    },
+    {
+      "batch": 8,
+      "true_tokens_equal": true,
+      "wrong_tokens_equal": true,
+      "strings_equal": true,
+      "diagnostics_max_abs": 0.0
+    },
+    {
+      "batch": 9,
+      "true_tokens_equal": true,
+      "wrong_tokens_equal": true,
+      "strings_equal": true,
+      "diagnostics_max_abs": 0.0
+    },
+    {
+      "batch": 10,
+      "true_tokens_equal": true,
+      "wrong_tokens_equal": true,
+      "strings_equal": true,
+      "diagnostics_max_abs": 0.0
+    },
+    {
+      "batch": 11,
+      "true_tokens_equal": true,
+      "wrong_tokens_equal": true,
+      "strings_equal": true,
+      "diagnostics_max_abs": 0.0
+    },
+    {
+      "batch": 12,
+      "true_tokens_equal": true,
+      "wrong_tokens_equal": true,
+      "strings_equal": true,
+      "diagnostics_max_abs": 0.0
+    },
+    {
+      "batch": 13,
+      "true_tokens_equal": true,
+      "wrong_tokens_equal": true,
+      "strings_equal": true,
+      "diagnostics_max_abs": 0.0
+    },
+    {
+      "batch": 14,
+      "true_tokens_equal": true,
+      "wrong_tokens_equal": true,
+      "strings_equal": true,
+      "diagnostics_max_abs": 0.0
+    },
+    {
+      "batch": 15,
+      "true_tokens_equal": true,
+      "wrong_tokens_equal": true,
+      "strings_equal": true,
+      "diagnostics_max_abs": 0.0
+    }
+  ]
+}

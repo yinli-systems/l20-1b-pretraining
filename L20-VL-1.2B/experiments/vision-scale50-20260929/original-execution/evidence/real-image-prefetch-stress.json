@@ -1,0 +1,78 @@
+{
+  "read_decode_operations": 3000,
+  "unique_images": 64,
+  "not_training_scale": true,
+  "hash_verified_every_read": true,
+  "order_verified_every_read": true,
+  "workers": 2,
+  "max_pending": 3,
+  "file_descriptors_before": 40,
+  "file_descriptors_after": 40,
+  "max_observed_fds": 40,
+  "threads_before": 4,
+  "threads_after": 4,
+  "samples": [
+    {
+      "reads": 250,
+      "fd": 40,
+      "threads": 6
+    },
+    {
+      "reads": 500,
+      "fd": 40,
+      "threads": 6
+    },
+    {
+      "reads": 750,
+      "fd": 40,
+      "threads": 6
+    },
+    {
+      "reads": 1000,
+      "fd": 40,
+      "threads": 6
+    },
+    {
+      "reads": 1250,
+      "fd": 40,
+      "threads": 6
+    },
+    {
+      "reads": 1500,
+      "fd": 40,
+      "threads": 6
+    },
+    {
+      "reads": 1750,
+      "fd": 40,
+      "threads": 6
+    },
+    {
+      "reads": 2000,
+      "fd": 40,
+      "threads": 6
+    },
+    {
+      "reads": 2250,
+      "fd": 40,
+      "threads": 6
+    },
+    {
+      "reads": 2500,
+      "fd": 40,
+      "threads": 6
+    },
+    {
+      "reads": 2750,
+      "fd": 40,
+      "threads": 6
+    },
+    {
+      "reads": 3000,
+      "fd": 40,
+      "threads": 6
+    }
+  ],
+  "seconds": 14.37609494291246,
+  "training_updates": 0
+}

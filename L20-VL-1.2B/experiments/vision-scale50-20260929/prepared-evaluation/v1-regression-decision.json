@@ -1,0 +1,12 @@
+{
+  "T448_128image_qualification": "passed",
+  "original224_8image_regression": "failed",
+  "largest_diagnostic_difference": 0.010163605213165283,
+  "v1_not_general_route_qualified": true,
+  "root_cause": "candidate precomputation did not inherit outer BF16 autocast; T448 explicitly disables AMP internally while224 does not",
+  "fix": "same BF16 autocast scope as original full evaluation",
+  "v1_source_sha256": "9091ca93a97fbc1c51376385227bba68de26e0a7efda25b3e551148bb1f64267",
+  "v2_source_sha256": "e492d7623966e9f6ece9e7b1606b7d213ba4a3d9aa0d11e8f972f5fe902cdff8",
+  "prior_failed_diagnostic_retained": true,
+  "production_model_and_training_code_changed": false
+}

@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-29",
+  "purpose": "end-to-end fixed-model inference and input pipeline qualification; no optimizer or trainer",
+  "images": 128,
+  "tasks": [
+    "plotqa",
+    "docmatix"
+  ],
+  "train_only": true,
+  "batch_size": 8,
+  "max_new_tokens": 24,
+  "greedy": true,
+  "precision": "unchanged IEEE-FP32 high vision and BF16 decoder",
+  "acceptance": {
+    "pixels_bitwise_equal": true,
+    "all_generated_token_ids_identical": true,
+    "parent_weights_unchanged": true
+  },
+  "final_holdouts_used": false,
+  "new_training_allowed_by_this_probe": false
+}

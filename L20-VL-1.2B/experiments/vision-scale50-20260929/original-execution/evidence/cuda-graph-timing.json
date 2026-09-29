@@ -1,0 +1,70 @@
+{
+  "records": [
+    {
+      "mode": "eager",
+      "seconds": 0.44364822655916214,
+      "max_abs": 0.0
+    },
+    {
+      "mode": "graph",
+      "seconds": 0.46237022057175636,
+      "max_abs": 0.0
+    },
+    {
+      "mode": "graph",
+      "seconds": 0.4465800728648901,
+      "max_abs": 0.0
+    },
+    {
+      "mode": "eager",
+      "seconds": 0.46392430923879147,
+      "max_abs": 0.0
+    },
+    {
+      "mode": "eager",
+      "seconds": 0.44713310711085796,
+      "max_abs": 0.0
+    },
+    {
+      "mode": "graph",
+      "seconds": 0.46471966430544853,
+      "max_abs": 0.0
+    },
+    {
+      "mode": "graph",
+      "seconds": 0.45408160239458084,
+      "max_abs": 0.0
+    },
+    {
+      "mode": "eager",
+      "seconds": 0.45933798141777515,
+      "max_abs": 0.0
+    },
+    {
+      "mode": "eager",
+      "seconds": 0.4558430816978216,
+      "max_abs": 0.0
+    },
+    {
+      "mode": "graph",
+      "seconds": 0.4590965211391449,
+      "max_abs": 0.0
+    },
+    {
+      "mode": "graph",
+      "seconds": 0.4648150112479925,
+      "max_abs": 0.0
+    },
+    {
+      "mode": "eager",
+      "seconds": 0.45566915161907673,
+      "max_abs": 0.0
+    }
+  ],
+  "real_images_per_call": 16,
+  "reference_seconds": 2.725555857643485,
+  "graph_seconds": 2.7516630925238132,
+  "speed_ratio": 0.9905121978954252,
+  "capture_seconds": 0.09953339397907257,
+  "scope": "H896 frozen vision+packing only; not full training throughput"
+}

@@ -1,0 +1,16 @@
+{
+  "images": 128,
+  "timing_images": 64,
+  "max_new_tokens": 24,
+  "batch": 8,
+  "abba_blocks": 2,
+  "precision": "unchanged",
+  "pixels_and_features_not_recomputed_between_three_checks": true,
+  "generated_token_ids_must_be_identical": true,
+  "diagnostic_values_must_be_identical": true,
+  "optimizer_steps": 0,
+  "source_hashes": {
+    "qualify_prepared_eval.py": "bf0d4eec9541d3d404f08dbfd0474f43c34b40b434323b3f5c9f3b5dde60b809",
+    "prepared_eval.py": "e492d7623966e9f6ece9e7b1606b7d213ba4a3d9aa0d11e8f972f5fe902cdff8"
+  }
+}

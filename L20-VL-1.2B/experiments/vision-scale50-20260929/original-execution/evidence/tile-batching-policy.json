@@ -1,0 +1,18 @@
+{
+  "scope": "frozen-encoder batching only; no weight updates",
+  "real_train_images": 16,
+  "reference_tile_batch": 16,
+  "candidate_tile_batches": [
+    32,
+    64,
+    128,
+    256
+  ],
+  "precision": "IEEE FP32; TF32 disabled",
+  "relative_feature_error_max": 1e-06,
+  "answer_nll_abs_max": 1e-05,
+  "greedy_exact_agreement_min": 1.0,
+  "warmups": 2,
+  "timing_order": "ABBA repeated twice per candidate",
+  "timing_excludes_loading_and_image_preprocessing": true
+}

@@ -1,0 +1,14 @@
+{
+  "False": {
+    "nll_max_absolute_delta": 0.0,
+    "greedy_identical": 64,
+    "questions": 64,
+    "one_pass_seconds_not_ABBA_performance": 18.26199658960104
+  },
+  "True": {
+    "nll_max_absolute_delta": 0.0,
+    "greedy_identical": 64,
+    "questions": 64,
+    "one_pass_seconds_not_ABBA_performance": 18.74770187214017
+  }
+}

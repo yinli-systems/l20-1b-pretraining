@@ -1,0 +1,80 @@
+{
+  "records": [
+    {
+      "mode": "eager",
+      "seconds": 0.434641582891345,
+      "feature_relative_l2": 0.0,
+      "feature_max_absolute": 0.0
+    },
+    {
+      "mode": "compiled",
+      "seconds": 0.3963004257529974,
+      "feature_relative_l2": 7.916192771517672e-06,
+      "feature_max_absolute": 0.0020614564418792725
+    },
+    {
+      "mode": "compiled",
+      "seconds": 0.4189579952508211,
+      "feature_relative_l2": 7.916192771517672e-06,
+      "feature_max_absolute": 0.0020614564418792725
+    },
+    {
+      "mode": "eager",
+      "seconds": 0.44002020359039307,
+      "feature_relative_l2": 0.0,
+      "feature_max_absolute": 0.0
+    },
+    {
+      "mode": "eager",
+      "seconds": 0.44978426583111286,
+      "feature_relative_l2": 0.0,
+      "feature_max_absolute": 0.0
+    },
+    {
+      "mode": "compiled",
+      "seconds": 0.4113434813916683,
+      "feature_relative_l2": 7.916192771517672e-06,
+      "feature_max_absolute": 0.0020614564418792725
+    },
+    {
+      "mode": "compiled",
+      "seconds": 0.40656451135873795,
+      "feature_relative_l2": 7.916192771517672e-06,
+      "feature_max_absolute": 0.0020614564418792725
+    },
+    {
+      "mode": "eager",
+      "seconds": 0.454457376152277,
+      "feature_relative_l2": 0.0,
+      "feature_max_absolute": 0.0
+    },
+    {
+      "mode": "eager",
+      "seconds": 0.44483502954244614,
+      "feature_relative_l2": 0.0,
+      "feature_max_absolute": 0.0
+    },
+    {
+      "mode": "compiled",
+      "seconds": 0.41439264453947544,
+      "feature_relative_l2": 7.916192771517672e-06,
+      "feature_max_absolute": 0.0020614564418792725
+    },
+    {
+      "mode": "compiled",
+      "seconds": 0.4114355631172657,
+      "feature_relative_l2": 7.916192771517672e-06,
+      "feature_max_absolute": 0.0020614564418792725
+    },
+    {
+      "mode": "eager",
+      "seconds": 0.4499865900725126,
+      "feature_relative_l2": 0.0,
+      "feature_max_absolute": 0.0
+    }
+  ],
+  "speed_ratio": 1.0873244800128554,
+  "compile_first_forward_seconds": 11.934661170467734,
+  "source_images_per_call": 16,
+  "scope": "frozen H896 feature path, not full training"
+}

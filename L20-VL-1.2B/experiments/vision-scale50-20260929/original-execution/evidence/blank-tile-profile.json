@@ -1,0 +1,10 @@
+{
+  "real_images": 64,
+  "native_tiles": 1024,
+  "uniform_tiles": 49,
+  "uniform_colors": {
+    "(255, 255, 255)": 45,
+    "(128, 128, 128)": 4
+  },
+  "decision": "do_not_build_blank_tile_cache; only4.8percent coverage before overhead"
+}

@@ -1,0 +1,63 @@
+{
+  "batches": [
+    {
+      "batch": 0,
+      "feature_rel_l2": 0.0,
+      "feature_max_abs": 0.0,
+      "nll_max_abs": 0.0,
+      "mean_nll": 3.5284783840179443
+    },
+    {
+      "batch": 1,
+      "feature_rel_l2": 0.0,
+      "feature_max_abs": 0.0,
+      "nll_max_abs": 0.0,
+      "mean_nll": 3.0193028450012207
+    },
+    {
+      "batch": 2,
+      "feature_rel_l2": 0.0,
+      "feature_max_abs": 0.0,
+      "nll_max_abs": 0.0,
+      "mean_nll": 3.0927507877349854
+    },
+    {
+      "batch": 3,
+      "feature_rel_l2": 0.0,
+      "feature_max_abs": 0.0,
+      "nll_max_abs": 0.0,
+      "mean_nll": 3.2301247119903564
+    },
+    {
+      "batch": 4,
+      "feature_rel_l2": 0.0,
+      "feature_max_abs": 0.0,
+      "nll_max_abs": 0.0,
+      "mean_nll": 2.412902593612671
+    },
+    {
+      "batch": 5,
+      "feature_rel_l2": 0.0,
+      "feature_max_abs": 0.0,
+      "nll_max_abs": 0.0,
+      "mean_nll": 2.7222652435302734
+    },
+    {
+      "batch": 6,
+      "feature_rel_l2": 0.0,
+      "feature_max_abs": 0.0,
+      "nll_max_abs": 0.0,
+      "mean_nll": 2.496659994125366
+    },
+    {
+      "batch": 7,
+      "feature_rel_l2": 0.0,
+      "feature_max_abs": 0.0,
+      "nll_max_abs": 0.0,
+      "mean_nll": 2.8026328086853027
+    }
+  ],
+  "greedy_identical": 64,
+  "questions": 64,
+  "nll_feature_seconds": 3.001918226480484
+}

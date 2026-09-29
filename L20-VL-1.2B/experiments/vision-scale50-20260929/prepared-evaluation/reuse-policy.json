@@ -1,0 +1,13 @@
+{
+  "purpose": "amortize invariant image work within existing true/wrong/NLL evaluation, not train or alter scoring",
+  "reference": "unmodified lab.generate twice plus lab.diagnostics",
+  "quality_images": 128,
+  "batch_size": 8,
+  "max_new": 24,
+  "raw_token_ids_must_match": true,
+  "all_diagnostic_values_must_match": true,
+  "timing_includes_image_decode_preprocessing_and_bundle_creation": true,
+  "timing_order": "ABBA repeated twice over64realimages",
+  "no_cross_batch_image_cache": true,
+  "optimizer_steps": 0
+}

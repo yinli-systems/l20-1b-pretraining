@@ -1,0 +1,170 @@
+{
+  "32": {
+    "records": [
+      {
+        "tile_batch": 16,
+        "seconds": 0.45541044883430004
+      },
+      {
+        "tile_batch": 32,
+        "seconds": 0.41791689954698086
+      },
+      {
+        "tile_batch": 32,
+        "seconds": 0.4208381902426481
+      },
+      {
+        "tile_batch": 16,
+        "seconds": 0.4568071309477091
+      },
+      {
+        "tile_batch": 16,
+        "seconds": 0.46109775826334953
+      },
+      {
+        "tile_batch": 32,
+        "seconds": 0.4183114133775234
+      },
+      {
+        "tile_batch": 32,
+        "seconds": 0.42074787616729736
+      },
+      {
+        "tile_batch": 16,
+        "seconds": 0.4583960883319378
+      }
+    ],
+    "reference_seconds": 1.8317114263772964,
+    "candidate_seconds": 1.6778143793344498,
+    "speed_ratio": 1.0917247157602106,
+    "max_absolute_feature_delta": 0.0038013458251953125,
+    "max_relative_feature_delta": 1.4332557839225046e-05,
+    "real_image_count_per_call": 16
+  },
+  "64": {
+    "records": [
+      {
+        "tile_batch": 16,
+        "seconds": 0.46060146018862724
+      },
+      {
+        "tile_batch": 64,
+        "seconds": 0.4234217368066311
+      },
+      {
+        "tile_batch": 64,
+        "seconds": 0.4218047522008419
+      },
+      {
+        "tile_batch": 16,
+        "seconds": 0.45453216321766376
+      },
+      {
+        "tile_batch": 16,
+        "seconds": 0.45766353607177734
+      },
+      {
+        "tile_batch": 64,
+        "seconds": 0.4238302744925022
+      },
+      {
+        "tile_batch": 64,
+        "seconds": 0.4220854602754116
+      },
+      {
+        "tile_batch": 16,
+        "seconds": 0.4572562612593174
+      }
+    ],
+    "reference_seconds": 1.8300534207373857,
+    "candidate_seconds": 1.6911422237753868,
+    "speed_ratio": 1.0821404580933984,
+    "max_absolute_feature_delta": 0.0038013458251953125,
+    "max_relative_feature_delta": 1.4332557839225046e-05,
+    "real_image_count_per_call": 16
+  },
+  "128": {
+    "records": [
+      {
+        "tile_batch": 16,
+        "seconds": 0.4603781681507826
+      },
+      {
+        "tile_batch": 128,
+        "seconds": 0.4185078963637352
+      },
+      {
+        "tile_batch": 128,
+        "seconds": 0.4188911598175764
+      },
+      {
+        "tile_batch": 16,
+        "seconds": 0.458986759185791
+      },
+      {
+        "tile_batch": 16,
+        "seconds": 0.46304966136813164
+      },
+      {
+        "tile_batch": 128,
+        "seconds": 0.4218449480831623
+      },
+      {
+        "tile_batch": 128,
+        "seconds": 0.4220138881355524
+      },
+      {
+        "tile_batch": 16,
+        "seconds": 0.461288757622242
+      }
+    ],
+    "reference_seconds": 1.8437033463269472,
+    "candidate_seconds": 1.6812578924000263,
+    "speed_ratio": 1.0966213777560485,
+    "max_absolute_feature_delta": 0.0038013458251953125,
+    "max_relative_feature_delta": 1.4332557839225046e-05,
+    "real_image_count_per_call": 16
+  },
+  "256": {
+    "records": [
+      {
+        "tile_batch": 16,
+        "seconds": 0.4639611802995205
+      },
+      {
+        "tile_batch": 256,
+        "seconds": 0.4240753259509802
+      },
+      {
+        "tile_batch": 256,
+        "seconds": 0.4250934235751629
+      },
+      {
+        "tile_batch": 16,
+        "seconds": 0.4655093252658844
+      },
+      {
+        "tile_batch": 16,
+        "seconds": 0.46782268211245537
+      },
+      {
+        "tile_batch": 256,
+        "seconds": 0.4275006949901581
+      },
+      {
+        "tile_batch": 256,
+        "seconds": 0.4185722637921572
+      },
+      {
+        "tile_batch": 16,
+        "seconds": 0.45800618454813957
+      }
+    ],
+    "reference_seconds": 1.8552993722259998,
+    "candidate_seconds": 1.6952417083084583,
+    "speed_ratio": 1.0944158364751713,
+    "max_absolute_feature_delta": 0.0038013458251953125,
+    "max_relative_feature_delta": 1.4332557839225046e-05,
+    "real_image_count_per_call": 16
+  }
+}
