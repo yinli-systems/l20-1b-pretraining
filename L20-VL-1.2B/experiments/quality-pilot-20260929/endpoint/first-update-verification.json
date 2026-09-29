@@ -1,0 +1,8 @@
+{
+  "optimizer_updates": 1,
+  "weights_changed_from_parent": true,
+  "reload_parameter_max_abs": 0.0,
+  "saved_optimizer_and_RNG_restored": true,
+  "fresh_process_resume_tested": false,
+  "checkpoint_manifest_sha256": "7d1032168cee63cfb419452bb4b2afcf4f7406bc382f2792a0ec89f4c5ec42f2"
+}

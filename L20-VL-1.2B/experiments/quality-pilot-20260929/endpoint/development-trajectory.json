@@ -1,0 +1,82 @@
+{
+  "baseline-development.json": {
+    "plotqa": {
+      "images": 32,
+      "mean_answer_including_EOS_NLL": 3.2127227149903774,
+      "normalized_exact_match": 0.0,
+      "not_official_benchmark": true,
+      "max_new_tokens": 64
+    },
+    "docmatix": {
+      "images": 32,
+      "mean_answer_including_EOS_NLL": 2.3315841630101204,
+      "normalized_exact_match": 0.0,
+      "not_official_benchmark": true,
+      "max_new_tokens": 64
+    }
+  },
+  "step-000032-development.json": {
+    "plotqa": {
+      "images": 32,
+      "mean_answer_including_EOS_NLL": 2.1909449147060513,
+      "normalized_exact_match": 0.03125,
+      "not_official_benchmark": true,
+      "max_new_tokens": 64
+    },
+    "docmatix": {
+      "images": 32,
+      "mean_answer_including_EOS_NLL": 2.2535130195319653,
+      "normalized_exact_match": 0.0,
+      "not_official_benchmark": true,
+      "max_new_tokens": 64
+    }
+  },
+  "step-000064-development.json": {
+    "plotqa": {
+      "images": 32,
+      "mean_answer_including_EOS_NLL": 2.0533836148679256,
+      "normalized_exact_match": 0.03125,
+      "not_official_benchmark": true,
+      "max_new_tokens": 64
+    },
+    "docmatix": {
+      "images": 32,
+      "mean_answer_including_EOS_NLL": 2.1870390493422747,
+      "normalized_exact_match": 0.0,
+      "not_official_benchmark": true,
+      "max_new_tokens": 64
+    }
+  },
+  "step-000096-development.json": {
+    "plotqa": {
+      "images": 32,
+      "mean_answer_including_EOS_NLL": 2.018838921561837,
+      "normalized_exact_match": 0.03125,
+      "not_official_benchmark": true,
+      "max_new_tokens": 64
+    },
+    "docmatix": {
+      "images": 32,
+      "mean_answer_including_EOS_NLL": 2.1576807238161564,
+      "normalized_exact_match": 0.0,
+      "not_official_benchmark": true,
+      "max_new_tokens": 64
+    }
+  },
+  "step-000128-development.json": {
+    "plotqa": {
+      "images": 32,
+      "mean_answer_including_EOS_NLL": 2.024855867959559,
+      "normalized_exact_match": 0.03125,
+      "not_official_benchmark": true,
+      "max_new_tokens": 64
+    },
+    "docmatix": {
+      "images": 32,
+      "mean_answer_including_EOS_NLL": 2.1461548786610365,
+      "normalized_exact_match": 0.0,
+      "not_official_benchmark": true,
+      "max_new_tokens": 64
+    }
+  }
+}

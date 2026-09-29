@@ -1,0 +1,32 @@
+{
+  "files": {
+    "bridge.safetensors": {
+      "bytes": 23100016,
+      "sha256": "88d8c538cedae6ab597f82dae40000bfa906bf35080b4a8781d4ac1a0d2c613d"
+    },
+    "resume.pt": {
+      "bytes": 82408196,
+      "sha256": "6891150d2efb7ad6312021f1d91dabe69782a9b15a349ee4d211baeed25aa217"
+    },
+    "language_adapter/adapter_config.json": {
+      "bytes": 1126,
+      "sha256": "d5ca27214bbf08d0a498b37cdbb63b9f74df85d8e87b8b511ba6115ae47ba749"
+    },
+    "language_adapter/adapter_model.safetensors": {
+      "bytes": 18045856,
+      "sha256": "fe4ecdb50986333c21bc76481a042fafa19679c484865802737e96a837dfb029"
+    },
+    "language_adapter/README.md": {
+      "bytes": 5240,
+      "sha256": "f407afe8f68f7c8ae6e5481746045d4c64b8a896aaaa8aa63fe4c8d881061873"
+    }
+  },
+  "step": 128,
+  "plan_sha256": "80fe2302e1727bd92c7ba4a83989b7064a268f30db77eb3f516412e89942af56",
+  "parent_manifest_sha256": "3751ac488fa45c20d29b2cf231ee9593ec59d7ee52cf24e15724e3e75489efa7",
+  "protocol_sha256": "1fae13f626a54560471ee2ddc8ef83b4a6267e9ea42ac1412d07ae27fa0b89b9",
+  "arm": "C448",
+  "warmstart_not_base_replacement": true,
+  "optimizer_RNG_and_next_plan_cursor_saved": true,
+  "automatic_promotion": false
+}

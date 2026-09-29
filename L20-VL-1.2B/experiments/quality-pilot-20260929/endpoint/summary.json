@@ -1,0 +1,21 @@
+{
+  "status": "complete",
+  "arm": "C448",
+  "steps": 128,
+  "totals": {
+    "new_image_events": 4096,
+    "image_events": 8192,
+    "answer_tokens": 96722,
+    "visual_tokens": 4616192,
+    "text_tokens": 131072
+  },
+  "checkpoint": "/home/hhai/l20-vl-1.2b/quality-pilot-20260929T1105Z/C448/checkpoints/step-000128",
+  "stop_reason": "planned_endpoint",
+  "weights_changed": true,
+  "parent_unchanged": true,
+  "consecutive_retention_failures": 0,
+  "confirmation_not_accessed": true,
+  "automatic_promotion": false,
+  "wall_seconds_this_process": 591.09863743186,
+  "unix": 1790681019.7135897
+}

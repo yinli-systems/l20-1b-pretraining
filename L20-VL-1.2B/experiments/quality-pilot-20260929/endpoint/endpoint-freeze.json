@@ -1,0 +1,6 @@
+{
+  "step": 128,
+  "checkpoint": "/home/hhai/l20-vl-1.2b/quality-pilot-20260929T1105Z/C448/checkpoints/step-000128",
+  "stop_reason": "planned_endpoint",
+  "confirmation_not_accessed": true
+}

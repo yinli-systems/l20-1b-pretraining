@@ -1,0 +1,65 @@
+{
+  "status": "first_real_C448_pilot_completed",
+  "steps": 128,
+  "new_distinct_training_images": 4096,
+  "all_image_events": 8192,
+  "supervised_answer_tokens": 96722,
+  "text_replay_prediction_tokens": 131072,
+  "parent_checkpoint_step": 4608,
+  "final_checkpoint_step_in_this_run": 128,
+  "final_checkpoint_manifest_sha256": "8394936a175fbcd5384e54f6e136ce85f1ab10334938f86b4c7ee0b53406cf15",
+  "old_QA_before": 0.55234375,
+  "old_QA_after": 0.5281250000000001,
+  "old_QA_drop_pp": 2.4218749999999956,
+  "original_old_QA_anchor": 0.5625,
+  "old_QA_floor": 0.5125,
+  "retention_checks": {
+    "old_QA": true,
+    "caption": true,
+    "text": true
+  },
+  "all_four_retention_checkpoints_pass": true,
+  "development_before": {
+    "plotqa": {
+      "images": 32,
+      "mean_answer_including_EOS_NLL": 3.2127227149903774,
+      "normalized_exact_match": 0.0,
+      "not_official_benchmark": true,
+      "max_new_tokens": 64
+    },
+    "docmatix": {
+      "images": 32,
+      "mean_answer_including_EOS_NLL": 2.3315841630101204,
+      "normalized_exact_match": 0.0,
+      "not_official_benchmark": true,
+      "max_new_tokens": 64
+    }
+  },
+  "development_after": {
+    "plotqa": {
+      "images": 32,
+      "mean_answer_including_EOS_NLL": 2.024855867959559,
+      "normalized_exact_match": 0.03125,
+      "not_official_benchmark": true,
+      "max_new_tokens": 64
+    },
+    "docmatix": {
+      "images": 32,
+      "mean_answer_including_EOS_NLL": 2.1461548786610365,
+      "normalized_exact_match": 0.0,
+      "not_official_benchmark": true,
+      "max_new_tokens": 64
+    }
+  },
+  "sum_recorded_update_seconds": 463.30642746575177,
+  "post_preparation_loop_seconds_including_checks": 591.09863743186,
+  "full_process_loading_time_included": false,
+  "newly_trained_base_model_replaced": false,
+  "confirmation_not_accessed": true,
+  "new_full_public_benchmark_scores": false,
+  "automatic_promotion": false,
+  "A448_started": false,
+  "H896_started": false,
+  "remaining_arm_queue_blocked_not_retried": true,
+  "bulk_8_4M_training_started": false
+}

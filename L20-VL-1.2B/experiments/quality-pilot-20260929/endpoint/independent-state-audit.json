@@ -1,0 +1,23 @@
+{
+  "all_checkpoint_members_hash_verified": true,
+  "optimizer_states": 183,
+  "Adam_step_increment_min": 128.0,
+  "Adam_step_increment_max": 128.0,
+  "parameters_vs_parent": {
+    "bridge.safetensors": {
+      "tensor_count": 7,
+      "changed": 7,
+      "all_finite": true
+    },
+    "language_adapter/adapter_model.safetensors": {
+      "tensor_count": 176,
+      "changed": 176,
+      "all_finite": true
+    }
+  },
+  "saved_cursor": 128,
+  "complete_128_step_log": true,
+  "original_parent_manifest_sha256": "3751ac488fa45c20d29b2cf231ee9593ec59d7ee52cf24e15724e3e75489efa7",
+  "final_manifest_sha256": "8394936a175fbcd5384e54f6e136ce85f1ab10334938f86b4c7ee0b53406cf15",
+  "fresh_process_GPU_resume_executed": false
+}
