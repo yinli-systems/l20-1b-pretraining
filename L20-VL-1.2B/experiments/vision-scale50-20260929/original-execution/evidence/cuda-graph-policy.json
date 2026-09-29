@@ -1,0 +1,10 @@
+{
+  "scope": "frozen vision encoder CUDA graph, original tile batch16 and IEEE FP32 arithmetic",
+  "requires_zero_feature_delta": true,
+  "requires_zero_answer_nll_delta": true,
+  "requires_identical_64_greedy_answers": true,
+  "requires_parent_parameter_hash_unchanged": true,
+  "no_optimizer_steps": true,
+  "timing_order": "ABBA repeated3",
+  "capture_cost_reported_separately": true
+}

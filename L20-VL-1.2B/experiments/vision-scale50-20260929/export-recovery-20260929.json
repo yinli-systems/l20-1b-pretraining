@@ -1,0 +1,23 @@
+{
+  "status": "verified",
+  "archive_sha256": "849dc1646b3c4d849d4e2a4309a3869c6372eb90193c4d1f0e5d00a4be5672bd",
+  "remote_and_Mac_archive_hashes_match": true,
+  "original_export_bound_files": 26,
+  "transcribed_summary_cross_checks": {
+    "split_conflicts": true,
+    "counts": true,
+    "numeric_training_labels": true,
+    "26_CPU_tests": true,
+    "tf32_greedy": true,
+    "tf32_NLL": true,
+    "bf16_greedy": true,
+    "bf16_NLL": true,
+    "graph_ratio": true,
+    "compile_ratio": true,
+    "gradients_184": true,
+    "parent_manifest": true,
+    "zero_updates": true
+  },
+  "previous_timeout_resolved": true,
+  "no_original_evidence_files_changed": true
+}

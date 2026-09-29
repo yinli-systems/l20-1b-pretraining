@@ -1,0 +1,6 @@
+{
+  "feature_max_abs": 0.00738525390625,
+  "feature_relative_l2": 0.00012951792450621724,
+  "valid_comparison": false,
+  "reason": "projection ran outside the IEEE-FP32 precision context; first attempt preserved, not counted as benchmark"
+}

@@ -1,0 +1,92 @@
+{
+  "records": [
+    {
+      "sequence": 0,
+      "block": 0,
+      "mode": "reference",
+      "seconds": 19.238061564043164,
+      "image_question_rows": 64,
+      "generated_answers": 128,
+      "nll_rows": 64,
+      "peak_allocated_bytes": 3510840832
+    },
+    {
+      "sequence": 1,
+      "block": 0,
+      "mode": "prepared",
+      "seconds": 15.064289711415768,
+      "image_question_rows": 64,
+      "generated_answers": 128,
+      "nll_rows": 64,
+      "peak_allocated_bytes": 3520488960
+    },
+    {
+      "sequence": 2,
+      "block": 0,
+      "mode": "prepared",
+      "seconds": 15.061391649767756,
+      "image_question_rows": 64,
+      "generated_answers": 128,
+      "nll_rows": 64,
+      "peak_allocated_bytes": 3520488960
+    },
+    {
+      "sequence": 3,
+      "block": 0,
+      "mode": "reference",
+      "seconds": 19.360144391655922,
+      "image_question_rows": 64,
+      "generated_answers": 128,
+      "nll_rows": 64,
+      "peak_allocated_bytes": 3510840832
+    },
+    {
+      "sequence": 4,
+      "block": 1,
+      "mode": "reference",
+      "seconds": 19.315555442124605,
+      "image_question_rows": 64,
+      "generated_answers": 128,
+      "nll_rows": 64,
+      "peak_allocated_bytes": 3510840832
+    },
+    {
+      "sequence": 5,
+      "block": 1,
+      "mode": "prepared",
+      "seconds": 15.077177779749036,
+      "image_question_rows": 64,
+      "generated_answers": 128,
+      "nll_rows": 64,
+      "peak_allocated_bytes": 3520488960
+    },
+    {
+      "sequence": 6,
+      "block": 1,
+      "mode": "prepared",
+      "seconds": 15.081203998997808,
+      "image_question_rows": 64,
+      "generated_answers": 128,
+      "nll_rows": 64,
+      "peak_allocated_bytes": 3520488960
+    },
+    {
+      "sequence": 7,
+      "block": 1,
+      "mode": "reference",
+      "seconds": 19.297886300832033,
+      "image_question_rows": 64,
+      "generated_answers": 128,
+      "nll_rows": 64,
+      "peak_allocated_bytes": 3510840832
+    }
+  ],
+  "reference_seconds": 77.21164769865572,
+  "prepared_seconds": 60.28406313993037,
+  "speed_ratio": 1.2807970079825794,
+  "wall_time_reduction_percent": 21.9236152358656,
+  "images_per_arm": 256,
+  "unique_images_across_repetitions": 64,
+  "scope": "true-image/wrong-image/content-NLL evaluation bundle including image decode and preprocessing; not training throughput or public-benchmark single-pass throughput",
+  "weights_unchanged": true
+}

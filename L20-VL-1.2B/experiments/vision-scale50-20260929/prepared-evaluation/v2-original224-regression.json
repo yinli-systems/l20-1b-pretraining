@@ -1,0 +1,8 @@
+{
+  "images": 8,
+  "true_token_ids_equal": true,
+  "wrong_token_ids_equal": true,
+  "diagnostics_max_abs": 0.0,
+  "source_sha256": "e492d7623966e9f6ece9e7b1606b7d213ba4a3d9aa0d11e8f972f5fe902cdff8",
+  "candidate_AMP_context_fixed_not_a_model_update": true
+}

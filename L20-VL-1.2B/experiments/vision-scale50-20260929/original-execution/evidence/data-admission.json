@@ -1,0 +1,37 @@
+{
+  "status": "data_integrity_verified_not_training_release",
+  "checks": {
+    "rows": 9386,
+    "ledger_split_mismatches": 0,
+    "document_cross_split_conflicts": 0,
+    "old_holdout_to_train": 0,
+    "original_heldout_labels_changed": 0
+  },
+  "source_conflicts_fixed": 1968,
+  "counts": {
+    "plotqa/train": 6239,
+    "plotqa/excluded": 18,
+    "plotqa/development": 800,
+    "docmatix/confirmation": 161,
+    "docmatix/train": 1161,
+    "docmatix/development": 163,
+    "plotqa/confirmation": 843,
+    "docmatix/excluded": 1
+  },
+  "raw_images_hash_verified": 9386,
+  "training_numeric_labels_canonicalized": 1186,
+  "full_semantic_label_audit": false,
+  "original_source_rows_unchanged": true,
+  "bulk_training_authorized": false,
+  "training_updates": 0,
+  "parent_and_all_checkpoints_unchanged": true,
+  "files": {
+    "rows.json": "55918147e585d17fde0f20b922d33d3d8de6013a041559946da39f1ad96318d2",
+    "identity.sqlite": "04b23fdc4c997cbb5685def2661f142fe51fca53ed661c6b6bed23d4a018674d",
+    "format-edits.json": "9d9983c52eb39fef3bc0239b234a6ce287dcc8a4cd32e3ba59e0a9cf6f3d5792",
+    "split-policy.json": "2e02d43a4e3932b893cb2c2595a99a890ad52898149abebe3ad68720e55c8c55"
+  },
+  "source_program_sha256": "3a639469c0720250955fa13b7cc53b4096bace0ebfa8b3a89cbdfece919ed61e",
+  "seconds": 4.248851161450148,
+  "created_unix": 1790658505.9562402
+}

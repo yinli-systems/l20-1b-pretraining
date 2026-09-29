@@ -1,0 +1,8 @@
+{
+  "questions": 64,
+  "greedy_identical": 61,
+  "nll_max_absolute_delta": 0.031029939651489258,
+  "feature_relative_max": 7.916192771517672e-06,
+  "speed_ratio": 1.0873244800128554,
+  "no_weight_updates": true
+}

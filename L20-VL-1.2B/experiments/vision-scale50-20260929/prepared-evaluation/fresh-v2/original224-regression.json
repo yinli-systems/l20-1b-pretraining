@@ -1,0 +1,6 @@
+{
+  "images": 8,
+  "true_tokens_equal": true,
+  "wrong_tokens_equal": true,
+  "diagnostics_max_abs": 0.0
+}

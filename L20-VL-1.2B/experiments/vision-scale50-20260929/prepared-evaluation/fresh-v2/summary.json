@@ -1,0 +1,87 @@
+{
+  "status": "complete",
+  "qualification_pass": true,
+  "original224_regression": {
+    "images": 8,
+    "true_tokens_equal": true,
+    "wrong_tokens_equal": true,
+    "diagnostics_max_abs": 0.0
+  },
+  "timing": [
+    {
+      "sequence": 0,
+      "block": 0,
+      "mode": "reference",
+      "seconds": 18.020581495016813,
+      "images": 64,
+      "peak_allocated_bytes": 3468243456
+    },
+    {
+      "sequence": 1,
+      "block": 0,
+      "mode": "prepared",
+      "seconds": 13.896020960062742,
+      "images": 64,
+      "peak_allocated_bytes": 3477199360
+    },
+    {
+      "sequence": 2,
+      "block": 0,
+      "mode": "prepared",
+      "seconds": 13.88250831514597,
+      "images": 64,
+      "peak_allocated_bytes": 3477199360
+    },
+    {
+      "sequence": 3,
+      "block": 0,
+      "mode": "reference",
+      "seconds": 18.062975412234664,
+      "images": 64,
+      "peak_allocated_bytes": 3468243456
+    },
+    {
+      "sequence": 4,
+      "block": 1,
+      "mode": "reference",
+      "seconds": 18.14195852354169,
+      "images": 64,
+      "peak_allocated_bytes": 3468243456
+    },
+    {
+      "sequence": 5,
+      "block": 1,
+      "mode": "prepared",
+      "seconds": 13.96181202866137,
+      "images": 64,
+      "peak_allocated_bytes": 3477199360
+    },
+    {
+      "sequence": 6,
+      "block": 1,
+      "mode": "prepared",
+      "seconds": 13.924353331327438,
+      "images": 64,
+      "peak_allocated_bytes": 3477199360
+    },
+    {
+      "sequence": 7,
+      "block": 1,
+      "mode": "reference",
+      "seconds": 18.04407112672925,
+      "images": 64,
+      "peak_allocated_bytes": 3468243456
+    }
+  ],
+  "speed_ratio": 1.2983020392215607,
+  "time_reduction_percent": 22.976320625701053,
+  "weights_unchanged": true,
+  "checkpoint_manifest_sha256": "3751ac488fa45c20d29b2cf231ee9593ec59d7ee52cf24e15724e3e75489efa7",
+  "optimizer_steps": 0,
+  "scope": "true/wrong/NLL evaluation bundle only; not full training or benchmark single-pass throughput",
+  "environment": {
+    "torch": "2.12.1+cu130",
+    "gpu": "NVIDIA L20"
+  },
+  "created_unix": 1790663221.8321483
+}

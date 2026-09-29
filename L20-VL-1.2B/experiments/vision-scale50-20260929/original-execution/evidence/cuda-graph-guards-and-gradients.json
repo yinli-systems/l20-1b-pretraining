@@ -1,0 +1,35 @@
+{
+  "guards": {
+    "returned_storage_independent": true,
+    "earlier_output_not_overwritten": true,
+    "A_B_A_replay_exact": true,
+    "wrong_shape_rejected": true,
+    "other_stream_rejected": true,
+    "other_thread_rejected": true
+  },
+  "gradients": [
+    {
+      "graph": false,
+      "loss": 3.254566192626953,
+      "loss_abs_delta": 0.0,
+      "gradient_tensors": 184,
+      "all_finite": true,
+      "relative_gradient_l2": 0.0,
+      "cosine": 1.0,
+      "packing_projection_gradient_norm": 13.667025566101074,
+      "frozen_encoder_has_no_gradients": true
+    },
+    {
+      "graph": true,
+      "loss": 3.254566192626953,
+      "loss_abs_delta": 0.0,
+      "gradient_tensors": 184,
+      "all_finite": true,
+      "relative_gradient_l2": 0.0,
+      "cosine": 1.0,
+      "packing_projection_gradient_norm": 13.667025566101074,
+      "frozen_encoder_has_no_gradients": true
+    }
+  ],
+  "optimizer_updates": 0
+}

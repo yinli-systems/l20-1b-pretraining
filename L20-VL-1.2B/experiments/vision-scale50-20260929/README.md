@@ -6,6 +6,27 @@ The healthy step-4608 parent remains unchanged. The 8.4M-unique-image goal is a 
 
 [Machine-readable summary](metrics-summary.json)
 
+## Follow-up: original evidence recovered; faster quality checks
+
+The earlier transfer timeout is resolved. The **26-file original execution
+package** was recovered with matching remote/Mac archive hashes and its
+published manifest verified. Thirteen recorded headline cross-checks agree
+with the earlier transcribed summary. See [recovery receipt](export-recovery-20260929.json)
+and [original evidence](original-execution/README.md). The original files are
+preserved; the operational-boundary paragraph below describes the earlier state.
+
+The new [prepared-evaluation module](prepared-evaluation/README.md) measured
+**1.2983x throughput / 22.98% less wall time** for the local
+true-image / wrong-image / content-NLL bundle, including reading and preprocessing.
+A fresh-process qualification reproduced all256 T448 generated sequences on128
+real images and passed the original224 regression after correcting an AMP-context
+bug in the first candidate. The failed candidate remains recorded.
+
+This is **not** a training-throughput, public-benchmark single-pass, or model-quality
+improvement. No optimizer steps occurred. Main model scores and the8.4M-image
+target are unchanged. [Latest measured summary](prepared-evaluation/headline.json).
+
+
 ## Completed data repair
 
 The previous pilot JSON and SQLite registry disagreed on **1,968 of 9,386 records**. The repair creates a separate derived corpus and preserves the union of both original holdouts. An image is training data only when both old registries classify it as training. Conflicting development/confirmation assignments are excluded; no heldout image moves into training.

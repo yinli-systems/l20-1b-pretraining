@@ -1,0 +1,11 @@
+{
+  "scope": "forward-only precision and kernel qualification, no optimizer updates",
+  "fixed_train_images": 64,
+  "repetitions": 4,
+  "warmups": 2,
+  "feature_relative_l2_max": 0.01,
+  "per_example_answer_nll_abs_max": 0.02,
+  "greedy_answer_exact_agreement_min": 0.98,
+  "minimum_feature_speed_ratio": 1.1,
+  "parent_checkpoint_unchanged": true
+}

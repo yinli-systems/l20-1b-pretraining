@@ -1,0 +1,40 @@
+{
+  "date": "2026-09-29",
+  "tested_git_tree_before_receipt": "0cf203e80cad140f0ace277d29de79f1a145f19b",
+  "scope": "local independent CPU suite; separate fresh-process L20 evaluator qualification in prepared-evaluation/fresh-v2",
+  "pytest": {
+    "passed": 168,
+    "skipped": 1,
+    "failed": 0,
+    "warnings": 6,
+    "seconds": 5.54,
+    "skip_reason": "GPU serialization contract not exercised in CPU suite"
+  },
+  "validation": {
+    "compileall": "passed",
+    "repository_layout_and_prior_scores": "verified",
+    "original_execution_bound_files": 26,
+    "prepared_evaluation_bound_files": 20,
+    "prior646_historical_files_preserved": true
+  },
+  "environment": {
+    "python": "3.12",
+    "pytest": "8.4.2",
+    "numpy": "2.5.2",
+    "pyarrow": "25.0.1",
+    "tokenizers": "0.22.2",
+    "CUDA_VISIBLE_DEVICES": "",
+    "existing_training_packages_read_only": true,
+    "no_package_installation": true
+  },
+  "first_local_test_attempt": {
+    "status": "dependency_collection_failure",
+    "collection_errors": 15,
+    "cause": "isolated pytest interpreter lacked the existing numerical/data packages on its import path",
+    "failure_log_preserved_on_host": true,
+    "resolution": "read-only PYTHONPATH to already-installed project dependencies; no tests skipped to hide errors"
+  },
+  "fresh_model_updates": 0,
+  "new_8_4M_training_started": false,
+  "source_or_evidence_changed_after_test": "only this validation receipt added"
+}

@@ -1,0 +1,31 @@
+{
+  "schema": "vision-qualification-evidence-v1",
+  "files": {
+    "reconcile_data.py": "3a639469c0720250955fa13b7cc53b4096bace0ebfa8b3a89cbdfece919ed61e",
+    "test_data_contract.py": "aabc7c186766e5db4e29b18c86b2e25926c8e6e36444a56320fb5ba488d6eb50",
+    "verify.py": "a9bc498e74372240f6dd9a860f83c281682f4899d4d13735a18a1ab0553bc630",
+    "frozen_vision_graph.py": "5011ad02e1f9177a4e83255d6722194783b723e6438174f0f9cddb0d7c5c9110",
+    "README.md": "3043b80935e4292ffe1c8579d6c2dac32cc248e4c202479bb7812afc7ce5d627",
+    "evidence/tile-batching-policy.json": "465b776cfb8b25b74e2ca191f85c4ad693030dca840f2815f1840f3a5331a5bb",
+    "evidence/cuda-graph-full-model-qualification.json": "8fe2b12857caa3e2675da6334a3d87de466ad7d2a18151ab0b0fdb1c077db503",
+    "evidence/summary.json": "54011b228c9badcbfc88c3cab818e65402595f3e774a0c26bccc4271f2d02d07",
+    "evidence/forward-policy.json": "642e559ce72afcf1fbc2db4ae5138e7c5768c009bd8321f95a81955fbfdd7b82",
+    "evidence/compile-timing.json": "d7cd0dc55223f21aaf6826948816d389fbc95b6d9bb4eb93cdf9ef201c88c16f",
+    "evidence/cuda-graph-harness-first-attempt.json": "419771079086f02725ff0f32c1a70d9cfb82584c3a78ff36b1c3e9069479509f",
+    "evidence/cuda-graph-guards-and-gradients.json": "a6905cd9e057248631d6b4a21c1f85c4055113559a56c7625c716644ac154b5a",
+    "evidence/forward-selection.json": "0cb940b4676802c5b45890105afa6675e6e8112794e0da40d46c856b0a189c84",
+    "evidence/compile-full-model-qualification.json": "6ec4c7d977e9318d7b2bd3b3606686eeb936607bf9958d8570a43d766671eb4c",
+    "evidence/forward-tf32.json": "f8e24a29ff17a90a649c26f3f973dc919abaa5a883a9830cae96a9b3b174c2e4",
+    "evidence/blank-tile-profile.json": "be809606ccd6e535634c2389a350102c8bb546bfc315b21f8a284cdb70fa9275",
+    "evidence/cuda-graph-policy.json": "430688071d22f6e800cc78793d57d84258542cc89efa451831ef922a0e83114d",
+    "evidence/real-image-prefetch-stress.json": "e67b6b74b13644b6456913e850603470af7b0feae6f1fa685b5ee4af9a553584",
+    "evidence/forward-bf16.json": "219e45a2bade18ec967156e66c392cdb2d4236e68d73bbb179ee3739870963da",
+    "evidence/compile-policy.json": "373631d71dcb20ae7f7d99884429ffecf2a98ceeb378e195e4da3baca80552ce",
+    "evidence/data-admission.json": "4b2460c98219c848cf8c9150bc71f1e57284c676984844b7ff81db31c1bf1027",
+    "evidence/data-contract-tests.json": "4c190c5b78f549260cc68d18efbbf49e4f00b3ed8040b9d593af5c70dfb7ad2f",
+    "evidence/forward-ieee.json": "59f64e54ae3311543ff9b8a032fc0c22951ab41286dd15ee2cdb4a975cc2dfce",
+    "evidence/graph-gradient-policy.json": "97816c6f7fcb40bd4a91bf5ee6b2e527e08b75187e20c76b0ee9fd5723bf2661",
+    "evidence/tile-batching-results.json": "c7c2b5fbec02148cf3823974aa30c20023e1b3119b6237389684315d78b119ca",
+    "evidence/cuda-graph-timing.json": "d788f33b4bf073677d57adc451afa609c7c1bc60fb4ecd519fd67924515b0fb8"
+  }
+}

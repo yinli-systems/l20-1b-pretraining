@@ -1,0 +1,7 @@
+{
+  "tests": 26,
+  "failures": 0,
+  "errors": 0,
+  "pass": true,
+  "scope": "CPU unit and complete actual-pilot metadata integration checks"
+}

@@ -1,0 +1,10 @@
+{
+  "loss_abs_max": 0.002,
+  "relative_gradient_l2_max": 0.02,
+  "gradient_cosine_min": 0.9998,
+  "no_optimizer_steps": true,
+  "sample_ids": [
+    "000162c1e3f9b223dd8c924f0ad50de698ee25757a454e18dd6e99264501ac1a",
+    "0059c7fa1a24769b6e06cb6ec0a87f4ff03382f988e5e131b2b787cd825facd6"
+  ]
+}
