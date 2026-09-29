@@ -108,3 +108,15 @@ for source-data provenance and numeric reasoning tasks;
 [Docmatix](https://huggingface.co/datasets/HuggingFaceM4/Docmatix) for the
 single/multipage document schema; [PyTorch checkpoint guidance](https://docs.pytorch.org/tutorials/beginner/saving_loading_models.html)
 for preserving optimizer state. These motivate the design, not a score claim.
+
+## Later live check
+
+At 2026-09-29T11:55:11.330965+00:00, the same long-training process was alive. See
+[the timestamped snapshot](progress-snapshot-1154.json). At step64, old-QA was
+53.671875%, versus52.8125% at this run's start, and all existing QA/caption/text
+retention checks passed. This small diagnostic is not a public-benchmark gain.
+
+The original review receipt's wording about two full-image inspections was too
+broad. [This clarification](review-scope-clarification.json) records the actual
+prelaunch review scope without altering source data, the frozen training code
+or thresholds. Exhaustive semantic review of all future data is not claimed.

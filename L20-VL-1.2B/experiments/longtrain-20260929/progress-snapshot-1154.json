@@ -1,0 +1,54 @@
+{
+  "snapshot_UTC": "2026-09-29T11:55:11.330965+00:00",
+  "training_process_alive_and_matches_script": true,
+  "live": {
+    "phase": "training",
+    "step": 92,
+    "maximum_updates": 4096,
+    "new_unique_image_events": 2944,
+    "global_image_events": 5888,
+    "last_step_seconds": 3.506919315084815,
+    "last_full_weighted_objective": 1.0576301217079163,
+    "last_consumed_catalog": 91,
+    "pid": 594470,
+    "remaining_wall_seconds": 21108.563209768385,
+    "unix": 1790682907.2269464
+  },
+  "latest_saved_checkpoint": {
+    "step": 64,
+    "checkpoint": "/home/hhai/l20-vl-1.2b/longtrain-20260929T1129Z/run/checkpoints/step-000064",
+    "manifest_sha256": "26abdd1a72b1bef1222ed31f3c33bbf3b3320e010a445f999174edcc87206b6c",
+    "unix": 1790682788.3077137
+  },
+  "health_at_step64": {
+    "scores": {
+      "old_QA": 0.53671875,
+      "old_caption_nll": 1.5917948801070452,
+      "text_nll": {
+        "web": 2.394576847553253,
+        "dclm": 2.720585197210312,
+        "math": 2.4028075337409973,
+        "code": 1.026693232357502
+      }
+    },
+    "checks": {
+      "old_QA": true,
+      "caption": true,
+      "text": true
+    },
+    "absolute_old_QA_anchor": 0.5625,
+    "absolute_old_QA_floor": 0.5125,
+    "consecutive_bad": 0
+  },
+  "starting_old_QA": 0.5281250000000001,
+  "gpu_sample_csv": "25687 MiB, 89 %, 337.91 W",
+  "free_disk_bytes": 9921716224,
+  "model_failure_marker": false,
+  "data_failure_marker": false,
+  "initial_16step_saved_state_independently_audited": true,
+  "new_full_public_benchmark_improvement_claimed": false,
+  "current_stage_maximum_seconds": 21600,
+  "current_stage_maximum_updates": 4096,
+  "current_stage_maximum_unique_new_images": 131072,
+  "full_8_4M_campaign_completed": false
+}
