@@ -1,0 +1,42 @@
+{
+  "config_sha256": "27cb5ece86ae21c7843bdc20df15f3f13569cb3815e639ca59ae06b30c89d295",
+  "source_sha256": {
+    "/home/hhai/l20-vl-1.2b/longtrain-20260929T1129Z/long_train.py": "9da108c02954e09ae2b21a3d5d4b940a1f6e5962b302d7145a09c9fd8e98996b",
+    "/home/hhai/l20-vl-1.2b/longtrain-20260929T1129Z/stream_sources.py": "25052b67530b7087ec2639399eb1c77d292b41893b73f01042a2cf443abe1b9b",
+    "/home/hhai/l20-vl-1.2b/longtrain-20260929T1129Z/config.json": "27cb5ece86ae21c7843bdc20df15f3f13569cb3815e639ca59ae06b30c89d295",
+    "/home/hhai/l20-vl-1.2b/quality-pilot-20260929T1105Z/train_quality.py": "8d78d8c32b3e584cc679448f86c08f2923e00d24ca202bfd7f352138319a4b2d",
+    "/home/hhai/l20-vl-1.2b/integrated-stable-20260927T0914Z/integrated_core.py": "a275e312429f3fae7985218ab60d4a3a2016dd1f2f9751046f0697c0d0328bf2",
+    "/home/hhai/l20-vl-1.2b/vlm-opt-20260925T1537Z/train_pilot.py": "b9f3d88efd7090e4214259524e5de0028766e142901a96400618b5df1eab752c",
+    "/home/hhai/l20-vl-1.2b/vision-scale50-20260928T1954Z/spatial_route.py": "d1a3f9c58bae2e05fca8a1ce1c1642da46198265bdf0cabaacc7c3f90cda9eda",
+    "/home/hhai/l20-vl-1.2b/vision-scale50-20260928T1954Z/input_runtime.py": "e9492ccf60fbce58d4590f4130de4b7f4a1a3d626f9e2f68ad399e0e8e6a2f75",
+    "/home/hhai/l20-vl-1.2b/vlm-opt-20260925T1537Z/vlm_lab.py": "4559c724a36a737d875d593634fb0a9e884cd689b64a0ea7eff83a2f93d66cfb"
+  },
+  "warmstart": "/home/hhai/l20-vl-1.2b/quality-pilot-20260929T1105Z/C448/checkpoints/step-000128",
+  "warmstart_manifest_sha256": "8394936a175fbcd5384e54f6e136ce85f1ab10334938f86b4c7ee0b53406cf15",
+  "teacher": "/home/hhai/l20-vl-1.2b/scale-next-20260927T2058Z/memory-training/checkpoints/step-004608",
+  "teacher_fingerprint": "7bc8763e888933b52d0c657493a1052d90b4279ec605ec45de0b7dbbaf55f57e",
+  "actual_teacher_is_healthier_pre_pilot_checkpoint": true,
+  "frozen_language_and_vision": true,
+  "trainable_parameters": 10280448,
+  "trainable_tensors": 183,
+  "maximum_updates": 4096,
+  "maximum_wall_seconds": 21600,
+  "new_source_images_without_replacement": true,
+  "old_replay_plan_repeats_are_reported_separately": true,
+  "old_task_replay_cycles_over_128_frozen_pilot_groups": true,
+  "final_confirmation_not_used_for_decisions": true,
+  "checkpoint_policy": [
+    1,
+    16,
+    64,
+    128,
+    256
+  ],
+  "then_every_updates": 256,
+  "no_deletion_or_new_compute": true,
+  "optimizer_inherited_from_successful_128step_pilot": true,
+  "old_QA_anchor": 0.5625,
+  "old_QA_floor": 0.5125,
+  "quality_claim": "hypothesis_under_test_not_guaranteed_best_model",
+  "torch": "2.12.1+cu130"
+}

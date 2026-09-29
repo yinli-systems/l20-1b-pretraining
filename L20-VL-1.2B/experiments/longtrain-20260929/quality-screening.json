@@ -1,0 +1,22 @@
+{
+  "phase": "before_any_longrun_model_updates",
+  "images_visually_checked": 8,
+  "two_original_full_images_inspected": true,
+  "confirmed_source_label_problem": {
+    "selection_sha256": "e6db870dc6337bc2e862185c9ff4aa396af52aff29a144c46a233f1b2423a1da",
+    "source_answer": "3.38e+1.",
+    "image_axis_order_of_magnitude": "about3.38e10; not33.8",
+    "action": "exclude_scientific_notation_chart_labels_in_this_stage;do_not_synthesize_replacement_answers"
+  },
+  "low_value_document": {
+    "document_key_source": "PDFA key: 1324038",
+    "action": "exclude_document_download_boilerplate_patterns_before_selecting_QA"
+  },
+  "old_preflight_rows_or_holdouts_relabelled": false,
+  "original_source_and_preflight_preserved": true,
+  "new_catalog_root": "data-v2",
+  "original_seed_source_bytes_reused_after_SHA256_checks": true,
+  "stream_v1_sha256": "e7a88382fb6d4e0274af3d1e534113cd7f87dc2c1fbcf84eb4a176e65506ac04",
+  "stream_v2_sha256": "25052b67530b7087ec2639399eb1c77d292b41893b73f01042a2cf443abe1b9b",
+  "full_corpus_semantic_annotation_quality_proven": false
+}

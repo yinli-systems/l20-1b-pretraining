@@ -1,0 +1,88 @@
+{
+  "status": "real_long_training_running",
+  "audited_checkpoint_step": 16,
+  "optimizer_states": 183,
+  "optimizer_step_increment_min": 16.0,
+  "optimizer_step_increment_max": 16.0,
+  "new_distinct_images_in_saved_checkpoint": 512,
+  "last_consumed_data_catalog": 15,
+  "catalog_chain_verified": true,
+  "parameter_changes": {
+    "bridge.safetensors": {
+      "tensors": 7,
+      "changed_tensors": 7,
+      "all_finite": true
+    },
+    "language_adapter/adapter_model.safetensors": {
+      "tensors": 176,
+      "changed_tensors": 176,
+      "all_finite": true
+    }
+  },
+  "checkpoint_manifest_sha256": "7ff5c34483c4a1e1254b55b3bdf081a4db9dda120b436101e3548453e6aa52aa",
+  "maximum_updates": 4096,
+  "maximum_new_images": 131072,
+  "maximum_wall_seconds": 21600,
+  "warmstart_manifest_sha256": "8394936a175fbcd5384e54f6e136ce85f1ab10334938f86b4c7ee0b53406cf15",
+  "teacher_manifest_sha256": "3751ac488fa45c20d29b2cf231ee9593ec59d7ee52cf24e15724e3e75489efa7",
+  "CPU_tests": {
+    "tests": 30,
+    "failures": 0,
+    "errors": 0,
+    "pass": true,
+    "scope": "source/label/budget/checkpoint CPU contracts; not new quality scores"
+  },
+  "source_cursor_resume_test": {
+    "pass": true,
+    "resumed_from_consumed_catalog": 0,
+    "next_catalog": 1,
+    "real_next32_image_and_QA_ids_identical": true,
+    "catalog_sha256": "fc28632ba08e9ee62ba6d49197dfea025ee8d1e0a6e90894ce2d24009557c701",
+    "not_a_GPU_optimizer_resume_test": true
+  },
+  "first_update": {
+    "optimizer_updates": 1,
+    "parameters_changed_from_warmstart": true,
+    "same_process_reload_hash_equal": true,
+    "optimizer_rng_and_consumed_data_cursor_saved": true,
+    "fresh_process_GPU_resume_equivalence_tested": false,
+    "checkpoint_manifest_sha256": "2ef72ecdbfc64609c1410cd88b54cddd6017f1421c915051b28a6c96971d293f"
+  },
+  "baseline_retention": {
+    "scores": {
+      "old_QA": 0.5281250000000001,
+      "old_caption_nll": 1.5922091212123632,
+      "text_nll": {
+        "web": 2.3944267630577087,
+        "dclm": 2.7204169929027557,
+        "math": 2.4026506543159485,
+        "code": 1.0268639102578163
+      }
+    },
+    "checks": {
+      "old_QA": true,
+      "caption": true,
+      "text": true
+    },
+    "absolute_old_QA_anchor": 0.5625,
+    "absolute_old_QA_floor": 0.5125
+  },
+  "observed_live": {
+    "phase": "training",
+    "step": 32,
+    "maximum_updates": 4096,
+    "new_unique_image_events": 1024,
+    "global_image_events": 2048,
+    "last_step_seconds": 3.5104808881878853,
+    "last_full_weighted_objective": 1.1939327642321587,
+    "last_consumed_catalog": 31,
+    "pid": 594470,
+    "remaining_wall_seconds": 21408.57851781696,
+    "unix": 1790682607.211638
+  },
+  "new_model_benchmark_improvement_claimed": false,
+  "highest_quality_proven": false,
+  "8_4M_campaign_completed": false,
+  "old_QA_floor": 0.5125,
+  "created_unix": 1790682610.5272384
+}

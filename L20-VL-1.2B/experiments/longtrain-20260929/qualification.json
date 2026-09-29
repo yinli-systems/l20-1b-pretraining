@@ -1,0 +1,19 @@
+{
+  "pass": true,
+  "scope": "one_existing_L20_quality_gated_long_run; not_full_8_4M_campaign_admission",
+  "config_sha256": "27cb5ece86ae21c7843bdc20df15f3f13569cb3815e639ca59ae06b30c89d295",
+  "trainer_sha256": "9da108c02954e09ae2b21a3d5d4b940a1f6e5962b302d7145a09c9fd8e98996b",
+  "stream_source_sha256": "25052b67530b7087ec2639399eb1c77d292b41893b73f01042a2cf443abe1b9b",
+  "source_preflight_64_real_images": true,
+  "data_cursor_resume_next32_real_rows_identical": true,
+  "CPU_contract_tests": 30,
+  "initial_8_images_visually_reviewed": true,
+  "revised_8_images_visually_reviewed": true,
+  "review_defects_quarantined_before_training": true,
+  "all_dataset_annotations_not_manually_verified": true,
+  "old_sources_and_failed_preflight_preserved": true,
+  "maximum_updates": 4096,
+  "maximum_wall_seconds": 21600,
+  "model_updates_so_far_in_this_run": 0,
+  "created_unix": 1790682404.75587
+}

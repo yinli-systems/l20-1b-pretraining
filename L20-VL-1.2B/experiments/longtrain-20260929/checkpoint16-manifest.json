@@ -1,0 +1,34 @@
+{
+  "files": {
+    "bridge.safetensors": {
+      "bytes": 23100016,
+      "sha256": "8aa4bd281bfd3b6d8c77e9c6d884c0a981ea0df2ae40ebf594226d40b0c0e861"
+    },
+    "resume.pt": {
+      "bytes": 82408324,
+      "sha256": "4ca47aaa9021c916139a89669e253046a726815601280992fc10232d2384615b"
+    },
+    "language_adapter/adapter_config.json": {
+      "bytes": 1126,
+      "sha256": "49df8e48651559e7d194bc361cc85deaa0924034c15c7166ea85ec35c64f4621"
+    },
+    "language_adapter/adapter_model.safetensors": {
+      "bytes": 18045856,
+      "sha256": "3979449aa939879061ec5bbb8058fa85bffc9dc7432178fb9fbb326763b3c802"
+    },
+    "language_adapter/README.md": {
+      "bytes": 5240,
+      "sha256": "f407afe8f68f7c8ae6e5481746045d4c64b8a896aaaa8aa63fe4c8d881061873"
+    }
+  },
+  "step": 16,
+  "config_sha256": "27cb5ece86ae21c7843bdc20df15f3f13569cb3815e639ca59ae06b30c89d295",
+  "protocol_sha256": "84b1d9b4264ffcc833263694e1495cb006e6bc176308cc5affabfe3b7d647f48",
+  "warmstart_manifest_sha256": "8394936a175fbcd5384e54f6e136ce85f1ab10334938f86b4c7ee0b53406cf15",
+  "teacher_manifest_sha256": "3751ac488fa45c20d29b2cf231ee9593ec59d7ee52cf24e15724e3e75489efa7",
+  "last_consumed_catalog": 15,
+  "catalog_chain_sha256": "2bc8c6510546adf22a7cf6a7cba389c5b788d683a5b69ce4c51823738dcc4cd0",
+  "checkpoint_includes_optimizer_RNG_and_data_cursor": true,
+  "requires_unchanged_original_language_and_vision_models": true,
+  "automatic_promotion": false
+}

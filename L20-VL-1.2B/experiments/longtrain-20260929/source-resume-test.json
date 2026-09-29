@@ -1,0 +1,8 @@
+{
+  "pass": true,
+  "resumed_from_consumed_catalog": 0,
+  "next_catalog": 1,
+  "real_next32_image_and_QA_ids_identical": true,
+  "catalog_sha256": "fc28632ba08e9ee62ba6d49197dfea025ee8d1e0a6e90894ce2d24009557c701",
+  "not_a_GPU_optimizer_resume_test": true
+}
