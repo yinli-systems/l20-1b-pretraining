@@ -1,0 +1,63 @@
+{
+  "arm": "C448",
+  "steps": 128,
+  "global_image_batch": 64,
+  "new_images_per_step": 32,
+  "new_mixture": {
+    "plotqa": 24,
+    "single_page_docmatix": 8
+  },
+  "old_replay": {
+    "natural_QA": 16,
+    "balanced_four_domains": 8,
+    "caption": 8
+  },
+  "loss_weights": {
+    "new_CE": 0.4,
+    "QA_CE": 0.3,
+    "domain_replay_CE": 0.15,
+    "caption_CE": 0.15,
+    "each_old_task_KL": 0.5,
+    "text_every4steps": 0.1
+  },
+  "learning_rates": {
+    "bridge": 1e-05,
+    "LoRA": 1e-05,
+    "H896_packing": 5e-05
+  },
+  "warmup": 16,
+  "same_parent_optimizer_moments_inherited": true,
+  "parent": "/home/hhai/l20-vl-1.2b/scale-next-20260927T2058Z/memory-training/checkpoints/step-004608",
+  "parent_manifest_sha256": "3751ac488fa45c20d29b2cf231ee9593ec59d7ee52cf24e15724e3e75489efa7",
+  "plan_sha256": "80fe2302e1727bd92c7ba4a83989b7064a268f30db77eb3f516412e89942af56",
+  "pilot_rows_sha256": "55918147e585d17fde0f20b922d33d3d8de6013a041559946da39f1ad96318d2",
+  "full_LM_and_vision_frozen": true,
+  "retention_original_anchor": 0.5625,
+  "retention_floor": 0.5125,
+  "stop_after_consecutive_failures": 2,
+  "wall_seconds_cap": 2400,
+  "checkpoint_steps": [
+    1,
+    16,
+    32,
+    64,
+    96,
+    128
+  ],
+  "development_not_confirmation_for_selection": true,
+  "not_8_4M_bulk_training": true,
+  "automatic_promotion": false,
+  "no_download_or_deletion": true,
+  "source_sha256": {
+    "/home/hhai/l20-vl-1.2b/quality-pilot-20260929T1105Z/train_quality.py": "8d78d8c32b3e584cc679448f86c08f2923e00d24ca202bfd7f352138319a4b2d",
+    "/home/hhai/l20-vl-1.2b/vision-scale50-20260928T1954Z/spatial_route.py": "d1a3f9c58bae2e05fca8a1ce1c1642da46198265bdf0cabaacc7c3f90cda9eda",
+    "/home/hhai/l20-vl-1.2b/vision-scale50-20260928T1954Z/input_runtime.py": "e9492ccf60fbce58d4590f4130de4b7f4a1a3d626f9e2f68ad399e0e8e6a2f75",
+    "/home/hhai/l20-vl-1.2b/integrated-stable-20260927T0914Z/integrated_core.py": "a275e312429f3fae7985218ab60d4a3a2016dd1f2f9751046f0697c0d0328bf2",
+    "/home/hhai/l20-vl-1.2b/vlm-opt-20260925T1537Z/train_pilot.py": "b9f3d88efd7090e4214259524e5de0028766e142901a96400618b5df1eab752c",
+    "/home/hhai/l20-vl-1.2b/data-scale-20260927T1756Z/train_scale.py": "a001cf8f32f962d5efd20825c9f7d686ff988ef6b66357f17332a57491a5cb80",
+    "/home/hhai/l20-vl-1.2b/vlm-opt-20260925T1537Z/vlm_lab.py": "4559c724a36a737d875d593634fb0a9e884cd689b64a0ea7eff83a2f93d66cfb"
+  },
+  "torch": "2.12.1+cu130",
+  "trainable_parameters": 10280448,
+  "seed": 2026092911
+}

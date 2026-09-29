@@ -1,0 +1,20 @@
+{
+  "scores": {
+    "old_QA": 0.5265625,
+    "old_caption_nll": 1.595232019200921,
+    "text_nll": {
+      "web": 2.394609659910202,
+      "dclm": 2.720427632331848,
+      "math": 2.4026192873716354,
+      "code": 1.0270006358623505
+    }
+  },
+  "checks": {
+    "old_QA": true,
+    "caption": true,
+    "text": true
+  },
+  "absolute_old_QA_anchor": 0.5625,
+  "absolute_old_QA_floor": 0.5125,
+  "consecutive_bad": 0
+}

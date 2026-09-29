@@ -1,0 +1,22 @@
+{
+  "checkpoint_step": 64,
+  "checkpoint_files_hash_verified": true,
+  "optimizer_state_tensors": 183,
+  "Adam_step_increment_min": 64.0,
+  "Adam_step_increment_max": 64.0,
+  "actual_new_image_events": 2048,
+  "parameter_changes_vs_healthy_parent": {
+    "bridge.safetensors": {
+      "tensors": 7,
+      "changed_tensors": 7,
+      "all_final_parameters_finite": true
+    },
+    "language_adapter/adapter_model.safetensors": {
+      "tensors": 176,
+      "changed_tensors": 176,
+      "all_final_parameters_finite": true
+    }
+  },
+  "resume_includes_python_numpy_torch_cuda_rng": true,
+  "scope": "independent CPU audit of saved states, not a fresh-process GPU continuation test"
+}

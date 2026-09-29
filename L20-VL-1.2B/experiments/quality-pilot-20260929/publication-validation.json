@@ -1,0 +1,11 @@
+{
+  "status": "verified",
+  "bound_export_files": 13,
+  "planned_unique_training_ids": 4096,
+  "first32_updates": 32,
+  "saved_new_image_events": 1024,
+  "source_and_plan_hashes_match": true,
+  "weights_or_images_in_public_export": false,
+  "source_syntax_and_26_data_contract_tests_passed_on_L20": true,
+  "this_check_does_not_rerun_training": true
+}

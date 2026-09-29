@@ -1,0 +1,15 @@
+{
+  "syntax_pass": true,
+  "data_contract_suite": "26 passed",
+  "new_plan_image_count": 4096,
+  "new_plan_unique_images": 4096,
+  "domain_counts": {
+    "plotqa": 3072,
+    "docmatix": 1024
+  },
+  "all_complete_answers_within_bounds": true,
+  "no_reserved_row_admitted": true,
+  "all_three_arms_use_same_plan_seed": true,
+  "trainer_sha256": "8d78d8c32b3e584cc679448f86c08f2923e00d24ca202bfd7f352138319a4b2d",
+  "no_model_updates_yet": true
+}

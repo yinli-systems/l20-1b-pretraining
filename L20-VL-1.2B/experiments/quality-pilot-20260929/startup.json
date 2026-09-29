@@ -1,0 +1,35 @@
+{
+  "real_optimizer_updates_verified": 32,
+  "new_images_in_saved_lineage": 1024,
+  "all_first32_losses_finite": true,
+  "all_grad_norms_finite": true,
+  "first_update_changed_weights": true,
+  "checkpoint_reload_max_abs": 0.0,
+  "optimizer_and_rng_restored": true,
+  "step32_health": {
+    "scores": {
+      "old_QA": 0.5265625,
+      "old_caption_nll": 1.595232019200921,
+      "text_nll": {
+        "web": 2.394609659910202,
+        "dclm": 2.720427632331848,
+        "math": 2.4026192873716354,
+        "code": 1.0270006358623505
+      }
+    },
+    "checks": {
+      "old_QA": true,
+      "caption": true,
+      "text": true
+    },
+    "absolute_old_QA_anchor": 0.5625,
+    "absolute_old_QA_floor": 0.5125,
+    "consecutive_bad": 0
+  },
+  "trainer_sha256": "8d78d8c32b3e584cc679448f86c08f2923e00d24ca202bfd7f352138319a4b2d",
+  "time_unix": 1790680688.531709,
+  "scope": "startup snapshot, run still progressing; not final accuracy or full-scale completion",
+  "other_two_arms_started": false,
+  "remaining_arm_auto_queue_submission": "blocked_by_tool_safety;not_executed_or_retried",
+  "no_checkpoint_or_dataset_deletion": true
+}
