@@ -1,0 +1,17 @@
+{
+  "files": {
+    "README.md": "70b37a3048b237219f194a865da39026f3cd655d96f9491510fcfd82c502013e",
+    "evidence/baseline-development.json": "9030e43cb9723b3448783688ee21050b32db3972e6f77e3ae49c12318b028252",
+    "evidence/baseline-health.json": "a09f8fc4e345115e833cd152b21aabf6013d0924560cdfa8773223769b4ec10f",
+    "evidence/first-update-verification.json": "5ddf2781d0eb17ed6affcfd2409c750edeb4a16ca7b8295e7e5642d0e42a4a90",
+    "evidence/initial.json": "9ba685a4115351350187ace59288f9ea4a8b97a2a492b35d9cd330c1f73c5c46",
+    "evidence/plan.json": "2ad123c62fdb9672508f3baa17aa5ab8efff54c2cd07c251b09d50e577ba8dc0",
+    "evidence/protocol.json": "1fae13f626a54560471ee2ddc8ef83b4a6267e9ea42ac1412d07ae27fa0b89b9",
+    "evidence/step-000032-development.json": "9ae14618a30edc46e3a43b7195408acc8f8c3affd2ee35c35b39bb23935f7f60",
+    "evidence/step-000032-health.json": "93f071d76e8ac86e3f9bc443e0d4b2aa99d7c73388b8a77cbcb81589ee83ba60",
+    "evidence/train-first32.jsonl": "35db4e2b4219b5ab4178e56b2a4251ea5833c7247d3186f2ed4784a9e78a01e1",
+    "preflight.json": "afc521f5ee2347802ccb36c7254679f01692a6325adf14b637ec26c300bf843f",
+    "startup.json": "d8bb8c72de4eaebfb12501d720445409f1986917647703e7b5ecf41b4f11c11c",
+    "train_quality.py": "8d78d8c32b3e584cc679448f86c08f2923e00d24ca202bfd7f352138319a4b2d"
+  }
+}

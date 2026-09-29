@@ -1,0 +1,16 @@
+{
+  "plotqa": {
+    "images": 32,
+    "mean_answer_including_EOS_NLL": 2.1909449147060513,
+    "normalized_exact_match": 0.03125,
+    "not_official_benchmark": true,
+    "max_new_tokens": 64
+  },
+  "docmatix": {
+    "images": 32,
+    "mean_answer_including_EOS_NLL": 2.2535130195319653,
+    "normalized_exact_match": 0.0,
+    "not_official_benchmark": true,
+    "max_new_tokens": 64
+  }
+}
