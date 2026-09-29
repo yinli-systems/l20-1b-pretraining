@@ -1,0 +1,8 @@
+{
+  "field_corrected": "quality-screening.json:two_original_full_images_inspected",
+  "earlier_value_too_broad": true,
+  "actual_prelaunch_review": "Two eight-image contact sheets (overlapping images), two original source QA records, and one standalone full-resolution chart image were inspected. The second original image was exported but not separately displayed full-size.",
+  "new_training_or_test_data_relabelled": false,
+  "no_runtime_source_or_threshold_changed": true,
+  "source_annotation_defect_and_boilerplate_decisions_unchanged": true
+}

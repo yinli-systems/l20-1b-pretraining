@@ -1,0 +1,8 @@
+{
+  "optimizer_updates": 1,
+  "parameters_changed_from_warmstart": true,
+  "same_process_reload_hash_equal": true,
+  "optimizer_rng_and_consumed_data_cursor_saved": true,
+  "fresh_process_GPU_resume_equivalence_tested": false,
+  "checkpoint_manifest_sha256": "2ef72ecdbfc64609c1410cd88b54cddd6017f1421c915051b28a6c96971d293f"
+}

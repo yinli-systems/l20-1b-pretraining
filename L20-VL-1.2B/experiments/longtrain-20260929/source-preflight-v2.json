@@ -1,0 +1,23 @@
+{
+  "pass": true,
+  "actual_train_images": 64,
+  "packet_sizes": [
+    32,
+    32
+  ],
+  "source_hashes_verified": true,
+  "original_preflight_holdouts_not_promoted": true,
+  "config_sha256": "27cb5ece86ae21c7843bdc20df15f3f13569cb3815e639ca59ae06b30c89d295",
+  "source_rejections": {
+    "historical_or_stream_pixel_near": 7,
+    "plotqa_scientific_notation_requires_upstream_revalidation": 1274,
+    "reserved_not_trained": 1,
+    "document_download_spam": 1,
+    "docmatix/multi_image_excluded": 18,
+    "empty_or_placeholder_QA": 9
+  },
+  "catalog_hashes": [
+    "73682b351a09616680ae168c799ade30ada751fe4ffb1395f2eb658ed18676aa",
+    "fc28632ba08e9ee62ba6d49197dfea025ee8d1e0a6e90894ce2d24009557c701"
+  ]
+}

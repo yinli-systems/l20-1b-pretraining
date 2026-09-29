@@ -1,0 +1,6 @@
+{
+  "warm_model_hash": "5de647f4e0f78aa48b3f159b9fea6231d97940d83e49998d458cd20b1ab301ac",
+  "teacher_fingerprint": "7bc8763e888933b52d0c657493a1052d90b4279ec605ec45de0b7dbbaf55f57e",
+  "starting_checkpoint": "/home/hhai/l20-vl-1.2b/quality-pilot-20260929T1105Z/C448/checkpoints/step-000128",
+  "new_updates": 0
+}

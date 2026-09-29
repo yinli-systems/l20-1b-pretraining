@@ -1,0 +1,21 @@
+{
+  "files": {
+    "initial.json": "e7ebc78e6fba1065510a734464d7bde278aaa5ba547120819f15c3f0601a7982",
+    "first16-updates.jsonl": "37ef3fc3f858bdc09c1b9735f3129fb1ac04eaceceb4de2ff87c66e26901eaf1",
+    "source-preflight-v2.json": "b79e80efc3ce8e90b00e9d664d00dd384111f915b0a3055abb015bd92379639e",
+    "test_longrun.py": "a0328591ded954f301752a5b418dcc89c60d26a336bdc0a410e57abfc092b935",
+    "config.json": "27cb5ece86ae21c7843bdc20df15f3f13569cb3815e639ca59ae06b30c89d295",
+    "source-resume-test.json": "039f012d41af7a6bf4d80e1b2f38852d1de81b118fee8782b4df3eb6e3ab9b0f",
+    "quality-screening.json": "029bf9172599a098555d8ddf5f3494cb838abac6e50ce713175bf02f176ac9ef",
+    "qualification.json": "f2c7efbff23e719d101c6678de19fdd3be48dac75a3951729790e4a0082e9232",
+    "cpu-tests.json": "001bd703d3f62a4e28fb525e7b4ce6342dc81c22ca1733fe953ac68335428209",
+    "checkpoint16-manifest.json": "7ff5c34483c4a1e1254b55b3bdf081a4db9dda120b436101e3548453e6aa52aa",
+    "first-update-verification.json": "b3cfe8a41b336017bb3fe85e9a9cb204ab60140b08ca8a5932177a40c8cb08fe",
+    "stream_sources.py": "25052b67530b7087ec2639399eb1c77d292b41893b73f01042a2cf443abe1b9b",
+    "startup-audit.json": "ebf789762741ac412ae4ef787324ab9096dd474f2f1482eac88b9003676cee9d",
+    "stream_sources-v1.py": "e7a88382fb6d4e0274af3d1e534113cd7f87dc2c1fbcf84eb4a176e65506ac04",
+    "protocol.json": "84b1d9b4264ffcc833263694e1495cb006e6bc176308cc5affabfe3b7d647f48",
+    "baseline-health.json": "9ade8d7a69a1ed829bcccf389a18600a8963f8b78537f06102f35350c569e2de",
+    "long_train.py": "9da108c02954e09ae2b21a3d5d4b940a1f6e5962b302d7145a09c9fd8e98996b"
+  }
+}
