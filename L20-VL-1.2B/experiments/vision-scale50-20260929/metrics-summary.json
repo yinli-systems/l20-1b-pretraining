@@ -1,0 +1,107 @@
+{
+  "schema": "vision-scale50-qualification-summary-v1",
+  "date": "2026-09-29",
+  "reporting_status": "transcribed_from_returned_execution_outputs; full_source_export_readback_pending",
+  "scope": "data repair, real-image forward tests and no-update gradient qualification; not model-quality improvement",
+  "data": {
+    "original_records": 9386,
+    "original_split_mismatches": 1968,
+    "repaired_split_mismatches": 0,
+    "prior_holdout_images_promoted_to_training": 0,
+    "prior_heldout_labels_changed": 0,
+    "raw_image_hashes_verified": 9386,
+    "train_numeric_labels_normalized": 1186,
+    "split_conflicts_excluded": 17,
+    "fixed_training_quality_cases_excluded": 2,
+    "counts": {
+      "plotqa": {"train": 6239, "development": 800, "confirmation": 843, "excluded": 18},
+      "docmatix": {"train": 1161, "development": 163, "confirmation": 161, "excluded": 1}
+    },
+    "original_rows_sha256": "fd5d4c600dcee971accbddff685a13d8f05c13c01213996827d76b0ccdd990f8",
+    "derived_rows_sha256": "55918147e585d17fde0f20b922d33d3d8de6013a041559946da39f1ad96318d2",
+    "derived_ledger_sha256": "04b23fdc4c997cbb5685def2661f142fe51fca53ed661c6b6bed23d4a018674d",
+    "format_edits_sha256": "9d9983c52eb39fef3bc0239b234a6ce287dcc8a4cd32e3ba59e0a9cf6f3d5792",
+    "reconciliation_source_sha256": "3a639469c0720250955fa13b7cc53b4096bace0ebfa8b3a89cbdfece919ed61e",
+    "complete_semantic_label_audit": false,
+    "cpu_tests": {"passed": 26, "failures": 0, "errors": 0}
+  },
+  "precision_probes_T448": {
+    "images": 64,
+    "images_are_train_only_in_both_prior_registries": true,
+    "reference": "IEEE-FP32 frozen high vision",
+    "policy": {"feature_relative_l2_max": 0.01, "per_example_answer_nll_abs_max": 0.02, "greedy_exact_agreement_min": 0.98},
+    "tf32": {"feature_relative_l2_max": 0.0125992801040411, "answer_nll_abs_max": 0.09045147895812988, "greedy_identical": 60, "decision": "not_admitted_as_drop_in_equivalent"},
+    "bf16": {"feature_relative_l2_max": 0.11454656720161438, "answer_nll_abs_max": 0.06320619583129883, "greedy_identical": 58, "decision": "not_admitted_as_drop_in_equivalent"}
+  },
+  "H896": {
+    "packing_projection_is_untrained": true,
+    "quality_score_claimed": false,
+    "larger_tile_batches": {
+      "reference_tile_batch": 16,
+      "timing_images_per_call": 16,
+      "timing_order": "ABBA repeated twice for each candidate",
+      "relative_feature_error_gate": 0.000001,
+      "32": {"feature_path_speed_ratio": 1.0917247157602106, "feature_max_abs": 0.0038013458251953125, "feature_relative_l2": 0.000014332557839225046},
+      "64": {"feature_path_speed_ratio": 1.0821404580933984, "feature_max_abs": 0.0038013458251953125, "feature_relative_l2": 0.000014332557839225046},
+      "128": {"feature_path_speed_ratio": 1.0966213777560485, "feature_max_abs": 0.0038013458251953125, "feature_relative_l2": 0.000014332557839225046},
+      "256": {"feature_path_speed_ratio": 1.0944158364751713, "feature_max_abs": 0.0038013458251953125, "feature_relative_l2": 0.000014332557839225046},
+      "decision": "all_failed_predeclared_feature_gate; not_enabled"
+    },
+    "compiled_FP32": {
+      "mode": "default", "fullgraph": true, "dynamic": false, "native_tile_batch": 16,
+      "first_compile_and_forward_seconds": 11.934661170467734,
+      "feature_path_speed_ratio": 1.0873244800128554,
+      "feature_relative_l2_max": 0.000007916192771517672,
+      "answer_nll_abs_max": 0.031029939651489258,
+      "greedy_identical": 61, "images": 64,
+      "decision": "not_admitted_as_drop_in_equivalent; answer_and_NLL_gates_failed"
+    },
+    "CUDA_graph": {
+      "native_tile_batch": 16,
+      "capture_seconds": 0.09953339397907257,
+      "feature_path_speed_ratio": 0.9905121978954252,
+      "feature_max_abs_delta": 0.0,
+      "answer_nll_abs_max": 0.0,
+      "greedy_identical": 64, "images": 64,
+      "guard_checks_passed": 6,
+      "guard_checks": ["owned_output_storage", "no_earlier_output_overwrite", "exact_A_B_A_replay", "wrong_shape_rejected", "other_stream_rejected", "other_thread_rejected"],
+      "gradient_test": {"real_images": 2, "trainable_tensors": 184, "relative_l2_delta": 0.0, "cosine": 1.0, "loss_abs_delta": 0.0, "finite_gradients": true, "packing_projection_grad_norm": 13.667025566101074, "frozen_encoder_has_no_gradients": true, "optimizer_steps": 0},
+      "first_harness_attempt": {"valid_benchmark": false, "feature_max_abs_delta": 0.00738525390625, "feature_relative_l2_delta": 0.00012951792450621724, "reason": "projection outside IEEE precision context; corrected and failed diagnostic retained"},
+      "decision": "numerically_qualified_on_tested_inputs; no_measured_speed_win; not_enabled_by_default",
+      "arbitrary_external_data_mutation_supported": false
+    }
+  },
+  "input_prefetch_stress": {
+    "real_image_read_hash_decode_operations": 3000,
+    "distinct_images": 64,
+    "not_training_scale": true,
+    "ordered_results_verified": true,
+    "workers": 2, "maximum_pending_work": 3,
+    "file_descriptors_before": 40, "file_descriptors_after": 40, "max_sampled_file_descriptors": 40,
+    "threads_before": 4, "threads_after": 4,
+    "seconds": 14.37609494291246,
+    "multi_day_stability_proven": false
+  },
+  "blank_tile_diagnostic": {"images": 64, "native_tiles": 1024, "uniform_tiles": 49, "cache_implemented": false},
+  "integrity": {
+    "parent_checkpoint_step": 4608,
+    "parent_manifest_sha256": "3751ac488fa45c20d29b2cf231ee9593ec59d7ee52cf24e15724e3e75489efa7",
+    "parent_checkpoint_members_hash_verified": true,
+    "old_trainable_parameter_fingerprint_unchanged": true,
+    "optimizer_steps_this_session": 0,
+    "new_model_quality_evaluation": false,
+    "new_training_launched": false,
+    "previously_blocked_trainer_creation_retried_or_rerouted": false,
+    "additional_data_or_checkpoint_deletion": false,
+    "last_confirmed_GPU_idle_UTC": "2026-09-29T05:27:18Z"
+  },
+  "scale": {"target_distinct_new_images": 8400000, "prior_actual_new_images": 163840, "prior_prepared_images": 165376, "reconciled_pilot_training_images": 7400, "new_training_exposures": 0, "target_completed": false},
+  "limitations": [
+    "These results concern numerical equivalence and implementation behavior, not improved accuracy.",
+    "Changed predictions need not be worse predictions; reduced precision may warrant a separately qualified training recipe.",
+    "T448 and H896 have different reference paths; H896 packing weights have not been trained.",
+    "All speed ratios concern the feature path, exclude loading/preprocessing, and have small repetition counts.",
+    "No complete-training throughput, MFU, seed-robust accuracy or 8.4M-image completion is claimed.",
+    "Remote export/readback timed out after testing; this public summary was reconstructed from returned tool outputs rather than claimed as a byte-identical raw receipt export."
+  ]
+}
